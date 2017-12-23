@@ -1,0 +1,179 @@
+\hypertarget{classmarian_1_1DeviceCPU}{}\section{marian\+:\+:Device\+C\+PU Class Reference}
+\label{classmarian_1_1DeviceCPU}\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+
+
+{\ttfamily \#include $<$tensor\+\_\+cpu.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Device\+C\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d3/d87/classmarian_1_1DeviceCPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmarian_1_1TensorCPU}{Tensor\+C\+PU} \hyperlink{classmarian_1_1DeviceCPU_a16eb33ef98e4cdebd241da1c0c8c6f8f}{tensor\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1DeviceCPU_a68536c49befa3793d58ad903b8ffa44c}{Device\+C\+PU} ()
+\item 
+\hyperlink{classmarian_1_1DeviceCPU_a1f1e574e3137a56653fdacafd6a5a8ba}{$\sim$\+Device\+C\+PU} ()
+\item 
+void \hyperlink{classmarian_1_1DeviceCPU_abdcf01c5e5c8e4aa89f8a16fc6c357e6}{reserve} (size\+\_\+t size)
+\item 
+float $\ast$ \hyperlink{classmarian_1_1DeviceCPU_a2a0078ab9d4e01573828ff9ce55bba06}{data} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceCPU_af3a127e8b95a28a67d647eb75701c31a}{capacity} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 50 of file tensor\+\_\+cpu.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!tensor\+\_\+type@{tensor\+\_\+type}}
+\index{tensor\+\_\+type@{tensor\+\_\+type}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{tensor\+\_\+type}{tensor_type}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Tensor\+C\+PU} {\bf marian\+::\+Device\+C\+P\+U\+::tensor\+\_\+type}}\hypertarget{classmarian_1_1DeviceCPU_a16eb33ef98e4cdebd241da1c0c8c6f8f}{}\label{classmarian_1_1DeviceCPU_a16eb33ef98e4cdebd241da1c0c8c6f8f}
+
+
+Definition at line 63 of file tensor\+\_\+cpu.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!Device\+C\+PU@{Device\+C\+PU}}
+\index{Device\+C\+PU@{Device\+C\+PU}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{Device\+C\+P\+U()}{DeviceCPU()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Device\+C\+P\+U\+::\+Device\+C\+PU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceCPU_a68536c49befa3793d58ad903b8ffa44c}{}\label{classmarian_1_1DeviceCPU_a68536c49befa3793d58ad903b8ffa44c}
+
+
+Definition at line 55 of file tensor\+\_\+cpu.\+h.
+
+
+\begin{DoxyCode}
+55              : \hyperlink{classmarian_1_1DeviceCPU_a68536c49befa3793d58ad903b8ffa44c}{DeviceCPU}()
+56       : \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_}(0), size\_(0) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!````~Device\+C\+PU@{$\sim$\+Device\+C\+PU}}
+\index{````~Device\+C\+PU@{$\sim$\+Device\+C\+PU}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device\+C\+P\+U()}{~DeviceCPU()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Device\+C\+P\+U\+::$\sim$\+Device\+C\+PU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceCPU_a1f1e574e3137a56653fdacafd6a5a8ba}{}\label{classmarian_1_1DeviceCPU_a1f1e574e3137a56653fdacafd6a5a8ba}
+
+
+Definition at line 58 of file tensor\+\_\+cpu.\+h.
+
+
+\begin{DoxyCode}
+58                \{
+59     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_})
+60       \textcolor{keyword}{delete}[] \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_};
+61   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!capacity@{capacity}}
+\index{capacity@{capacity}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{capacity()}{capacity()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+C\+P\+U\+::capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceCPU_af3a127e8b95a28a67d647eb75701c31a}{}\label{classmarian_1_1DeviceCPU_af3a127e8b95a28a67d647eb75701c31a}
+
+
+Definition at line 80 of file tensor\+\_\+cpu.\+h.
+
+
+\begin{DoxyCode}
+80 \{ \textcolor{keywordflow}{return} size\_; \}
+\end{DoxyCode}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!data@{data}}
+\index{data@{data}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Device\+C\+P\+U\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceCPU_a2a0078ab9d4e01573828ff9ce55bba06}{}\label{classmarian_1_1DeviceCPU_a2a0078ab9d4e01573828ff9ce55bba06}
+
+
+Definition at line 78 of file tensor\+\_\+cpu.\+h.
+
+
+\begin{DoxyCode}
+78 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!reserve@{reserve}}
+\index{reserve@{reserve}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t size)}{reserve(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Device\+C\+P\+U\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceCPU_abdcf01c5e5c8e4aa89f8a16fc6c357e6}{}\label{classmarian_1_1DeviceCPU_abdcf01c5e5c8e4aa89f8a16fc6c357e6}
+
+
+Definition at line 65 of file tensor\+\_\+cpu.\+h.
+
+
+\begin{DoxyCode}
+65                             \{
+66     UTIL\_THROW\_IF2(size < size\_, \textcolor{stringliteral}{"New size must be larger than old size"});
+67     \textcolor{keywordtype}{float}* temp = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[size];
+68 
+69     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_}) \{
+70       std::memcpy(temp, \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_}, size\_ * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}));
+71       \textcolor{keyword}{delete}[] \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_};
+72     \}
+73 
+74     \hyperlink{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{data\_} = temp;
+75     size\_ = size;
+76   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2d/classmarian_1_1DeviceCPU_abdcf01c5e5c8e4aa89f8a16fc6c357e6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Device\+C\+PU@{marian\+::\+Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Device\+C\+P\+U\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}{}\label{classmarian_1_1DeviceCPU_ab572019008e518a425622428fe384501}
+
+
+Definition at line 52 of file tensor\+\_\+cpu.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tensor__cpu_8h}{tensor\+\_\+cpu.\+h}\end{DoxyCompactItemize}

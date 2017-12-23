@@ -1,0 +1,5 @@
+<map id="marian::Scorer" name="marian::Scorer">
+<area shape="rect" id="node2" href="$d1/dbc/classmarian_1_1ScorerWrapper.html" title="{marian::ScorerWrapper\l\&lt; EncoderDecoder \&gt;\n|&#45; encdec_\l&#45; fname_\l|+ ScorerWrapper()\l+ ScorerWrapper()\l+ init()\l+ clear()\l+ startState()\l+ step()\l}" alt="" coords="5,233,161,413"/>
+<area shape="rect" id="node3" href="$d5/de6/classmarian_1_1UnseenWordPenalty.html" title="{marian::UnseenWordPenalty\n|&#45; batchIndex_\l&#45; dimVocab_\l&#45; penalties_\l|+ UnseenWordPenalty()\l+ clear()\l+ startState()\l+ step()\l}" alt="" coords="186,248,375,399"/>
+<area shape="rect" id="node4" href="$da/d63/classmarian_1_1WordPenalty.html" title="{marian::WordPenalty\n|&#45; dimVocab_\l&#45; penalties_\l|+ WordPenalty()\l+ clear()\l+ startState()\l+ step()\l}" alt="" coords="399,255,543,391"/>
+</map>

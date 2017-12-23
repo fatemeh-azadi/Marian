@@ -1,0 +1,83 @@
+\hypertarget{types-gpu_8h}{}\section{types-\/gpu.h File Reference}
+\label{types-gpu_8h}\index{types-\/gpu.\+h@{types-\/gpu.\+h}}
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+{\ttfamily \#include $<$thrust/device\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$boost/timer/timer.\+hpp$>$}\\*
+Include dependency graph for types-\/gpu.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dcd/types-gpu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/de1/types-gpu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU}{amunmt\+::\+G\+PU}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR}(err)~(Handle\+Error( err, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ))
+\item 
+\#define \hyperlink{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}{B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER}(str)~\{\}
+\item 
+\#define \hyperlink{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}{P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER}(str)~\{\}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_aebe531e40abaff95bbd58b556b1a570f}{amunmt\+::\+G\+P\+U\+::\+Handle\+Error} (cuda\+Error\+\_\+t err, const char $\ast$file, int line)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, boost\+::timer\+::cpu\+\_\+timer $>$ \hyperlink{namespaceamunmt_1_1GPU_a308fc6e1bfa76da409cba239406bb7fa}{amunmt\+::\+G\+P\+U\+::timers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{types-\/gpu.\+h@{types-\/gpu.\+h}!B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER@{B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER}}
+\index{B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER@{B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER}!types-\/gpu.\+h@{types-\/gpu.\+h}}
+\subsubsection[{\texorpdfstring{B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER}{BEGIN_TIMER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+E\+G\+I\+N\+\_\+\+T\+I\+M\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~\{\}}\hypertarget{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}{}\label{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}
+
+
+Definition at line 28 of file types-\/gpu.\+h.
+
+\index{types-\/gpu.\+h@{types-\/gpu.\+h}!H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR@{H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR}}
+\index{H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR@{H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR}!types-\/gpu.\+h@{types-\/gpu.\+h}}
+\subsubsection[{\texorpdfstring{H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR}{HANDLE_ERROR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+A\+N\+D\+L\+E\+\_\+\+E\+R\+R\+OR(
+\begin{DoxyParamCaption}
+\item[{}]{err}
+\end{DoxyParamCaption}
+)~(Handle\+Error( err, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ))}\hypertarget{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{}\label{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}
+
+
+Definition at line 16 of file types-\/gpu.\+h.
+
+\index{types-\/gpu.\+h@{types-\/gpu.\+h}!P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER@{P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER}}
+\index{P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER@{P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER}!types-\/gpu.\+h@{types-\/gpu.\+h}}
+\subsubsection[{\texorpdfstring{P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER}{PAUSE_TIMER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+U\+S\+E\+\_\+\+T\+I\+M\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~\{\}}\hypertarget{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}{}\label{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}
+
+
+Definition at line 29 of file types-\/gpu.\+h.
+

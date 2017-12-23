@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_d48850a18dc121e563fc40ce97aaa548">
+    <title>processor Directory Reference</title>
+<para>Directory dependency diagram for processor</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_d48850a18dc121e563fc40ce97aaa548_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d1/da6/bpe_8cpp">bpe.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dd/d80/bpe_8h">bpe.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/d99/processor_8h">processor.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/amun/common/processor/</para>
+    </simplesect>
+</section>

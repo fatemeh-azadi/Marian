@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d2d/classmarian_1_1DeviceCPU">
+<title>marian::DeviceCPU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d58/tensor__cpu_8h">&lt;tensor_cpu.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DeviceCPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d29/classmarian_1_1DeviceCPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DeviceCPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d87/classmarian_1_1DeviceCPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d0/d5b/classmarian_1_1TensorCPU">TensorCPU</link>  <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1a16eb33ef98e4cdebd241da1c0c8c6f8f">tensor_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1a68536c49befa3793d58ad903b8ffa44c">DeviceCPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1a1f1e574e3137a56653fdacafd6a5a8ba">~DeviceCPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1abdcf01c5e5c8e4aa89f8a16fc6c357e6">reserve</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1a2a0078ab9d4e01573828ff9ce55bba06">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d6/d2d/classmarian_1_1DeviceCPU_1af3a127e8b95a28a67d647eb75701c31a">capacity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1a16eb33ef98e4cdebd241da1c0c8c6f8f">
+                <title>typedef TensorCPU marian::DeviceCPU::tensor_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1a68536c49befa3793d58ad903b8ffa44c">
+                <title>marian::DeviceCPU::DeviceCPU ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1a1f1e574e3137a56653fdacafd6a5a8ba">
+                <title>marian::DeviceCPU::~DeviceCPU ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1abdcf01c5e5c8e4aa89f8a16fc6c357e6">
+                <title>void marian::DeviceCPU::reserve (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1a2a0078ab9d4e01573828ff9ce55bba06">
+                <title>float* marian::DeviceCPU::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d2d/classmarian_1_1DeviceCPU_1af3a127e8b95a28a67d647eb75701c31a">
+                <title>size_t marian::DeviceCPU::capacity ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

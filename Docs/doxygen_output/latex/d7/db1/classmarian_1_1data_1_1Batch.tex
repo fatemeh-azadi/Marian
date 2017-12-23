@@ -1,0 +1,127 @@
+\hypertarget{classmarian_1_1data_1_1Batch}{}\section{marian\+:\+:data\+:\+:Batch Class Reference}
+\label{classmarian_1_1data_1_1Batch}\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+
+
+{\ttfamily \#include $<$batch.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dc4/classmarian_1_1data_1_1Batch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{de/d79/classmarian_1_1data_1_1Batch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1data_1_1Batch_a94c7526a079220adb07575e302c670c4}{size} () const =0
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1data_1_1Batch_add894ad400ec53d81b4a9950fe4b34b6}{words} () const 
+\item 
+const std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{classmarian_1_1data_1_1Batch_a97e46e2989b883d9bda1c53840ef5315}{get\+Sentence\+Ids} () const 
+\item 
+void \hyperlink{classmarian_1_1data_1_1Batch_a22fd2ded066b30034cc506849b0cc4c3}{set\+Sentence\+Ids} (const std\+::vector$<$ size\+\_\+t $>$ \&ids)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classmarian_1_1data_1_1Batch_aeaa5d26797761e4e0abbe56cf2d89c3a}{sentence\+Ids\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file batch.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}!get\+Sentence\+Ids@{get\+Sentence\+Ids}}
+\index{get\+Sentence\+Ids@{get\+Sentence\+Ids}!marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+\subsubsection[{\texorpdfstring{get\+Sentence\+Ids() const }{getSentenceIds() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$size\+\_\+t$>$\& marian\+::data\+::\+Batch\+::get\+Sentence\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1Batch_a97e46e2989b883d9bda1c53840ef5315}{}\label{classmarian_1_1data_1_1Batch_a97e46e2989b883d9bda1c53840ef5315}
+
+
+Definition at line 13 of file batch.\+h.
+
+
+\begin{DoxyCode}
+13 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1Batch_aeaa5d26797761e4e0abbe56cf2d89c3a}{sentenceIds\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}!set\+Sentence\+Ids@{set\+Sentence\+Ids}}
+\index{set\+Sentence\+Ids@{set\+Sentence\+Ids}!marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+\subsubsection[{\texorpdfstring{set\+Sentence\+Ids(const std\+::vector$<$ size\+\_\+t $>$ \&ids)}{setSentenceIds(const std::vector< size_t > &ids)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Batch\+::set\+Sentence\+Ids (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{ids}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1Batch_a22fd2ded066b30034cc506849b0cc4c3}{}\label{classmarian_1_1data_1_1Batch_a22fd2ded066b30034cc506849b0cc4c3}
+
+
+Definition at line 14 of file batch.\+h.
+
+
+\begin{DoxyCode}
+14 \{ \hyperlink{classmarian_1_1data_1_1Batch_aeaa5d26797761e4e0abbe56cf2d89c3a}{sentenceIds\_} = ids; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}!size@{size}}
+\index{size@{size}!marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+\subsubsection[{\texorpdfstring{size() const =0}{size() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::data\+::\+Batch\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1data_1_1Batch_a94c7526a079220adb07575e302c670c4}{}\label{classmarian_1_1data_1_1Batch_a94c7526a079220adb07575e302c670c4}
+
+
+Implemented in \hyperlink{classmarian_1_1data_1_1CorpusBatch_acabd255446e0d9b00214072ef3060117}{marian\+::data\+::\+Corpus\+Batch}, and \hyperlink{classmarian_1_1data_1_1DataBatch_a19021abc5f6e1aeed56c3b68d49a4a4a}{marian\+::data\+::\+Data\+Batch}.
+
+\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}!words@{words}}
+\index{words@{words}!marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+\subsubsection[{\texorpdfstring{words() const }{words() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::data\+::\+Batch\+::words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Batch_add894ad400ec53d81b4a9950fe4b34b6}{}\label{classmarian_1_1data_1_1Batch_add894ad400ec53d81b4a9950fe4b34b6}
+
+
+Reimplemented in \hyperlink{classmarian_1_1data_1_1CorpusBatch_a5597c93166aaa6ed811d0b2df54b59b6}{marian\+::data\+::\+Corpus\+Batch}.
+
+
+
+Definition at line 11 of file batch.\+h.
+
+
+\begin{DoxyCode}
+11 \{ \textcolor{keywordflow}{return} 0; \};
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}!sentence\+Ids\+\_\+@{sentence\+Ids\+\_\+}}
+\index{sentence\+Ids\+\_\+@{sentence\+Ids\+\_\+}!marian\+::data\+::\+Batch@{marian\+::data\+::\+Batch}}
+\subsubsection[{\texorpdfstring{sentence\+Ids\+\_\+}{sentenceIds_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ marian\+::data\+::\+Batch\+::sentence\+Ids\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1data_1_1Batch_aeaa5d26797761e4e0abbe56cf2d89c3a}{}\label{classmarian_1_1data_1_1Batch_aeaa5d26797761e4e0abbe56cf2d89c3a}
+
+
+Definition at line 17 of file batch.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batch_8h}{batch.\+h}\end{DoxyCompactItemize}

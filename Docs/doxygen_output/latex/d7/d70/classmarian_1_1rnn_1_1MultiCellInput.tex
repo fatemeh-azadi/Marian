@@ -1,0 +1,203 @@
+\hypertarget{classmarian_1_1rnn_1_1MultiCellInput}{}\section{marian\+:\+:rnn\+:\+:Multi\+Cell\+Input Class Reference}
+\label{classmarian_1_1rnn_1_1MultiCellInput}\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Multi\+Cell\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d7a/classmarian_1_1rnn_1_1MultiCellInput__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Multi\+Cell\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dbb/classmarian_1_1rnn_1_1MultiCellInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1MultiCellInput_aface631182bc9360f9516c2a5b59cb5b}{Multi\+Cell\+Input} (const std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1CellInput}{Cell\+Input} $>$$>$ \&inputs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_a099cc1af045103e8ef1be23deb4515e7}{push\+\_\+back} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1CellInput}{Cell\+Input} $>$ input)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_a2ac13f95a42a983a77dfa33c02b62a84}{apply} (\hyperlink{structmarian_1_1rnn_1_1State}{State} state)
+\item 
+virtual int \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ad3fac6f8682f6af651147cd045075d4a}{dim\+Output} ()
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_a0ac479a873c47c2817015c26b2ccc213}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1CellInput}{Cell\+Input} $>$ $>$ \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 168 of file marian/src/rnn/types.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!Multi\+Cell\+Input@{Multi\+Cell\+Input}}
+\index{Multi\+Cell\+Input@{Multi\+Cell\+Input}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{Multi\+Cell\+Input(const std\+::vector$<$ Ptr$<$ Cell\+Input $>$$>$ \&inputs, Ptr$<$ Options $>$ options)}{MultiCellInput(const std::vector< Ptr< CellInput >> &inputs, Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Multi\+Cell\+Input\+::\+Multi\+Cell\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Ptr}$<$ {\bf Cell\+Input} $>$$>$ \&}]{inputs, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_aface631182bc9360f9516c2a5b59cb5b}{}\label{classmarian_1_1rnn_1_1MultiCellInput_aface631182bc9360f9516c2a5b59cb5b}
+
+
+Definition at line 173 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+174   : \hyperlink{classmarian_1_1rnn_1_1CellInput_a05e62c038ab45237fcf5866a4e4ad75f}{CellInput}(options), \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\_}(inputs) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!apply@{apply}}
+\index{apply@{apply}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{apply(\+State state)}{apply(State state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::rnn\+::\+Multi\+Cell\+Input\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_a2ac13f95a42a983a77dfa33c02b62a84}{}\label{classmarian_1_1rnn_1_1MultiCellInput_a2ac13f95a42a983a77dfa33c02b62a84}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1CellInput_afecfcb2679941468cf4dbab6dba4617e}{marian\+::rnn\+::\+Cell\+Input}.
+
+
+
+Definition at line 180 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+180                                   \{
+181     std::vector<Expr> outputs;
+182     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} input : \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\_})
+183       outputs.push\_back(input->apply(state));
+184 
+185     \textcolor{keywordflow}{if}(outputs.size() > 1)
+186       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(outputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+187     \textcolor{keywordflow}{else}
+188       \textcolor{keywordflow}{return} outputs[0];
+189   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d70/classmarian_1_1rnn_1_1MultiCellInput_a2ac13f95a42a983a77dfa33c02b62a84_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!clear@{clear}}
+\index{clear@{clear}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Multi\+Cell\+Input\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_a0ac479a873c47c2817015c26b2ccc213}{}\label{classmarian_1_1rnn_1_1MultiCellInput_a0ac479a873c47c2817015c26b2ccc213}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Stackable_a322f402f6edc55cee4d1368df35bae8b}{marian\+::rnn\+::\+Stackable}.
+
+
+
+Definition at line 198 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+198                        \{
+199     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\_})
+200       i->clear();
+201   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!dim\+Output@{dim\+Output}}
+\index{dim\+Output@{dim\+Output}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{dim\+Output()}{dimOutput()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int marian\+::rnn\+::\+Multi\+Cell\+Input\+::dim\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_ad3fac6f8682f6af651147cd045075d4a}{}\label{classmarian_1_1rnn_1_1MultiCellInput_ad3fac6f8682f6af651147cd045075d4a}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1CellInput_a824402c4abc7e7197f32e7d5fcb7ce0c}{marian\+::rnn\+::\+Cell\+Input}.
+
+
+
+Definition at line 191 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+191                           \{
+192     \textcolor{keywordtype}{int} \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = 0;
+193     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} input : \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\_})
+194       sum += input->dimOutput();
+195     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+196   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d7/d70/classmarian_1_1rnn_1_1MultiCellInput_ad3fac6f8682f6af651147cd045075d4a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(\+Ptr$<$ Cell\+Input $>$ input)}{push_back(Ptr< CellInput > input)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::rnn\+::\+Multi\+Cell\+Input\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Cell\+Input} $>$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_a099cc1af045103e8ef1be23deb4515e7}{}\label{classmarian_1_1rnn_1_1MultiCellInput_a099cc1af045103e8ef1be23deb4515e7}
+
+
+Definition at line 176 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+176                                        \{
+177     \hyperlink{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{inputs\_}.push\_back(input);
+178   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}!inputs\+\_\+@{inputs\+\_\+}}
+\index{inputs\+\_\+@{inputs\+\_\+}!marian\+::rnn\+::\+Multi\+Cell\+Input@{marian\+::rnn\+::\+Multi\+Cell\+Input}}
+\subsubsection[{\texorpdfstring{inputs\+\_\+}{inputs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Cell\+Input}$>$ $>$ marian\+::rnn\+::\+Multi\+Cell\+Input\+::inputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}{}\label{classmarian_1_1rnn_1_1MultiCellInput_ab01412858661b632d40ea29351859f8e}
+
+
+Definition at line 170 of file marian/src/rnn/types.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2rnn_2types_8h}{marian/src/rnn/types.\+h}\end{DoxyCompactItemize}

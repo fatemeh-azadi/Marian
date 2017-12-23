@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['r_5f',['R_',['../d8/dc9/classamunmt_1_1GPU_1_1SlowGRU.html#a6149bb77260336fc2fcb996efb869894',1,'amunmt::GPU::SlowGRU']]],
+  ['reloaded_5f',['reloaded_',['../da/db9/classmarian_1_1ExpressionGraph.html#aa10988c85ca38b3a1ffd72fa42278987',1,'marian::ExpressionGraph']]],
+  ['reshapee_5f',['reshapee_',['../d0/d2d/classmarian_1_1ReshapeNodeOp.html#a29e5ebe2b9959994bca8b08018b11117',1,'marian::ReshapeNodeOp']]],
+  ['result',['result',['../da/d47/namespacetest2.html#a05591d1f1584c3b3d1490fc9ac7519a6',1,'test2']]],
+  ['returnattentionweights_5f',['returnAttentionWeights_',['../df/d94/classamunmt_1_1BestHypsBase.html#a5c7d967963222a1a8cd64950830da217',1,'amunmt::BestHypsBase']]],
+  ['returnnbestlist_5f',['returnNBestList_',['../d7/d4e/classamunmt_1_1God.html#a83284d424437eb00ebe5fcd5666cebfb',1,'amunmt::God']]],
+  ['reversemap_5f',['reverseMap_',['../d0/dd6/classmarian_1_1FilterInfo.html#a18e06a5f0cb4ae6ab7e1505a47c6f4a0',1,'marian::FilterInfo']]],
+  ['rnn1_5f',['rnn1_',['../db/dd5/classamunmt_1_1GPU_1_1Decoder.html#ad7956fe0c4c077a501e171dd104a14af',1,'amunmt::GPU::Decoder']]],
+  ['rnn2_5f',['rnn2_',['../db/dd5/classamunmt_1_1GPU_1_1Decoder.html#a45258c2a114feb9570202953371256b4',1,'amunmt::GPU::Decoder']]],
+  ['rnn_5f',['rnn_',['../d1/dcc/classmarian_1_1DecoderHardAtt.html#a7e56a5d65ae8e1251b7c4fa572ac99a2',1,'marian::DecoderHardAtt::rnn_()'],['../de/d21/classmarian_1_1DecoderHardSoftAtt.html#ae077a0f8f32a457c0c2c972ca4251ede',1,'marian::DecoderHardSoftAtt::rnn_()'],['../d3/d3b/classmarian_1_1MultiDecoderS2S.html#aa17bae4e5a1cb917737c8d23511a5701',1,'marian::MultiDecoderS2S::rnn_()'],['../d3/d4b/classmarian_1_1DecoderS2S.html#aa4292be54117f5fc7bee31fac549a93c',1,'marian::DecoderS2S::rnn_()']]],
+  ['rnnl1',['rnnL1',['../d5/d22/classmarian_1_1EncoderDecoderRec.html#ad0d471b436beab644c14a8b692a4d53f',1,'marian::EncoderDecoderRec']]],
+  ['rowindices_5f',['rowIndices_',['../d1/d62/classmarian_1_1sparse_1_1CSR.html#a6d20131d1a2e8b89ed037bc6d4debdeb',1,'marian::sparse::CSR::rowIndices_()'],['../dc/da3/classmarian_1_1LexProbs.html#af0877c33d19bcec0d40e3cc99946d93b',1,'marian::LexProbs::rowIndices_()']]],
+  ['rows_5f',['rows_',['../d1/d62/classmarian_1_1sparse_1_1CSR.html#adc2e92a08b1ac2c6ace0c1283e4c353e',1,'marian::sparse::CSR']]],
+  ['rpl_5fid',['RPL_ID',['../da/d22/namespacemarian.html#ae421bed2a0160f392a3c21bed9cabc73',1,'marian']]],
+  ['rpl_5fstr',['RPL_STR',['../da/d22/namespacemarian.html#a0609886bc1d9c2f4fc75e5e9fc6905ad',1,'marian']]],
+  ['ru_5f',['RU_',['../d8/dc9/classamunmt_1_1GPU_1_1SlowGRU.html#a6d2c972c738d73a06832fc1c986c0661',1,'amunmt::GPU::SlowGRU']]],
+  ['ruh_5f',['RUH_',['../d9/df6/classamunmt_1_1GPU_1_1FastGRU.html#a859346068a908bdf3226a12c759c45e8',1,'amunmt::GPU::FastGRU']]]
+];

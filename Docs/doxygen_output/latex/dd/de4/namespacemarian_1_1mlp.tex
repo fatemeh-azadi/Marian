@@ -1,0 +1,73 @@
+\hypertarget{namespacemarian_1_1mlp}{}\section{marian\+:\+:mlp Namespace Reference}
+\label{namespacemarian_1_1mlp}\index{marian\+::mlp@{marian\+::mlp}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1mlp_1_1DenseFactory}{Dense\+Factory}
+\item 
+struct \hyperlink{structmarian_1_1mlp_1_1LayerFactory}{Layer\+Factory}
+\item 
+class \hyperlink{classmarian_1_1mlp_1_1MLP}{M\+LP}
+\item 
+class \hyperlink{classmarian_1_1mlp_1_1MLPFactory}{M\+L\+P\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory}{Dense\+Factory} $>$ \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory}{M\+L\+P\+Factory} $>$ \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}{act} \+: int \{ \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa}{act\+::linear}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}{act\+::tanh}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a79130f0e17bb058f015320f691eeb3dc}{act\+::logit}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72add10d919fa85cf27fc78c0e06fe0b378}{act\+::\+Re\+LU}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{marian\+::mlp@{marian\+::mlp}!dense@{dense}}
+\index{dense@{dense}!marian\+::mlp@{marian\+::mlp}}
+\subsubsection[{\texorpdfstring{dense}{dense}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf Dense\+Factory}$>$ {\bf marian\+::mlp\+::dense}}\hypertarget{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{}\label{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}
+
+
+Definition at line 57 of file layers/constructors.\+h.
+
+\index{marian\+::mlp@{marian\+::mlp}!mlp@{mlp}}
+\index{mlp@{mlp}!marian\+::mlp@{marian\+::mlp}}
+\subsubsection[{\texorpdfstring{mlp}{mlp}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf M\+L\+P\+Factory}$>$ {\bf marian\+::mlp\+::mlp}}\hypertarget{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{}\label{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}
+
+
+Definition at line 119 of file layers/constructors.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{marian\+::mlp@{marian\+::mlp}!act@{act}}
+\index{act@{act}!marian\+::mlp@{marian\+::mlp}}
+\subsubsection[{\texorpdfstring{act}{act}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf marian\+::mlp\+::act} \+: int\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}{}\label{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{linear@{linear}!marian\+::mlp@{marian\+::mlp}}\index{marian\+::mlp@{marian\+::mlp}!linear@{linear}}\item[{\em 
+linear\hypertarget{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa}{}\label{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa}
+}]\index{tanh@{tanh}!marian\+::mlp@{marian\+::mlp}}\index{marian\+::mlp@{marian\+::mlp}!tanh@{tanh}}\item[{\em 
+tanh\hypertarget{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}{}\label{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}
+}]\index{logit@{logit}!marian\+::mlp@{marian\+::mlp}}\index{marian\+::mlp@{marian\+::mlp}!logit@{logit}}\item[{\em 
+logit\hypertarget{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a79130f0e17bb058f015320f691eeb3dc}{}\label{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a79130f0e17bb058f015320f691eeb3dc}
+}]\index{Re\+LU@{Re\+LU}!marian\+::mlp@{marian\+::mlp}}\index{marian\+::mlp@{marian\+::mlp}!Re\+LU@{Re\+LU}}\item[{\em 
+Re\+LU\hypertarget{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72add10d919fa85cf27fc78c0e06fe0b378}{}\label{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72add10d919fa85cf27fc78c0e06fe0b378}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 12 of file generic.\+h.
+
+
+\begin{DoxyCode}
+12 : \textcolor{keywordtype}{int} \{ \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa}{linear}, \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{tanh}, \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{logit}, \hyperlink{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}{ReLU} \};
+\end{DoxyCode}

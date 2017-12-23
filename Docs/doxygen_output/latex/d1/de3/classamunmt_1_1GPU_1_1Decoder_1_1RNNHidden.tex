@@ -1,0 +1,193 @@
+\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden}{}\section{amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:R\+N\+N\+Hidden$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden}\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden$<$ Weights $>$}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:R\+N\+N\+Hidden$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a50a8e946df49d61acc5061c4f169cdfa}{R\+N\+N\+Hidden} ()=default
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a42705cd0728dbd79b755908f480b4824}{R\+N\+N\+Hidden} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&init\+Model, std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ cell)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4e603e53eb86acbacce1a348e2be20f4}{Initialize\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Source\+Context, const size\+\_\+t batch\+Size, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a88bef032a7281492b4045e78ec2a7c3d}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4ea4b32b4268f35782f0d72972e8c804}{R\+N\+N\+Hidden} (const \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden}{R\+N\+N\+Hidden} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}{gru\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a1a68b1758b067423c6727404933caa4f}{Temp1\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}{Temp2\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden$<$ Weights $>$}
+
+
+
+Definition at line 59 of file decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!R\+N\+N\+Hidden@{R\+N\+N\+Hidden}}
+\index{R\+N\+N\+Hidden@{R\+N\+N\+Hidden}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Hidden()=default}{RNNHidden()=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::{\bf R\+N\+N\+Hidden} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a50a8e946df49d61acc5061c4f169cdfa}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a50a8e946df49d61acc5061c4f169cdfa}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!R\+N\+N\+Hidden@{R\+N\+N\+Hidden}}
+\index{R\+N\+N\+Hidden@{R\+N\+N\+Hidden}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Hidden(const Weights \&init\+Model, std\+::unique\+\_\+ptr$<$ Cell $>$ cell)}{RNNHidden(const Weights &initModel, std::unique_ptr< Cell > cell)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::{\bf R\+N\+N\+Hidden} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{init\+Model, }
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Cell} $>$}]{cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a42705cd0728dbd79b755908f480b4824}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a42705cd0728dbd79b755908f480b4824}
+
+
+Definition at line 62 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+63         : \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}(initModel)
+64         , \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}{gru\_}(std::move(cell))
+65         \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!R\+N\+N\+Hidden@{R\+N\+N\+Hidden}}
+\index{R\+N\+N\+Hidden@{R\+N\+N\+Hidden}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Hidden(const R\+N\+N\+Hidden \&)=delete}{RNNHidden(const RNNHidden &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::{\bf R\+N\+N\+Hidden} (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\+N\+N\+Hidden}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4ea4b32b4268f35782f0d72972e8c804}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4ea4b32b4268f35782f0d72972e8c804}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context)}{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a88bef032a7281492b4045e78ec2a7c3d}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a88bef032a7281492b4045e78ec2a7c3d}
+
+
+Definition at line 105 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+107                                                       \{
+108           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}{gru\_}->GetNextState(NextState, State, Context);
+109         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!Initialize\+State@{Initialize\+State}}
+\index{Initialize\+State@{Initialize\+State}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{Initialize\+State(\+Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Source\+Context, const size\+\_\+t batch\+Size, const mblas\+::\+I\+Matrix \&sentence\+Lengths)}{InitializeState(CellState &State, const mblas::Matrix &SourceContext, const size_t batchSize, const mblas::IMatrix &sentenceLengths)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::Initialize\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Source\+Context, }
+\item[{const size\+\_\+t}]{batch\+Size, }
+\item[{const {\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4e603e53eb86acbacce1a348e2be20f4}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a4e603e53eb86acbacce1a348e2be20f4}
+
+
+Definition at line 67 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+71         \{
+72           \textcolor{keyword}{using namespace }mblas;
+73 
+74           CellLength cellLength = \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}{gru\_}->GetStateLength();
+75           \textcolor{keywordflow}{if} (cellLength.cell > 0) \{
+76             State.cell->NewSize(batchSize, cellLength.cell);
+77             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc}{mblas::Fill}(*(State.cell), 0.0f);
+78           \}
+79           \textcolor{comment}{//std::cerr << "1Temp2\_=" << Temp2\_.Debug(1) << std::endl;}
+80           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}{Temp2\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a379c5cc8ef7ca2f71da2d5055c9fb542}{NewSize}(batchSize, SourceContext.dim(1), 1, 1);
+81           \textcolor{comment}{//std::cerr << "2Temp2\_=" << Temp2\_.Debug(1) << std::endl;}
+82 
+83           \textcolor{comment}{//std::cerr << "SourceContext=" << SourceContext.Debug(1) << std::endl;}
+84           \textcolor{comment}{//std::cerr << "mapping=" << Debug(mapping, 2) << std::endl;}
+85           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45}{Mean}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}{Temp2\_}, SourceContext, sentenceLengths);
+86 
+87           \textcolor{comment}{//std::cerr << "1State=" << State.Debug(1) << std::endl;}
+88           \textcolor{comment}{//std::cerr << "3Temp2\_=" << Temp2\_.Debug(1) << std::endl;}
+89           \textcolor{comment}{//std::cerr << "w\_.Wi\_=" << w\_.Wi\_->Debug(1) << std::endl;}
+90           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(*(State.output), \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}{Temp2\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}.Wi\_);
+91 
+92           \textcolor{comment}{//std::cerr << "2State=" << State.Debug(1) << std::endl;}
+93           \textcolor{comment}{//State.ReduceDimensions();}
+94 
+95           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}.Gamma\_->size()) \{
+96             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(*(State.output), *(State.output), *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}.Gamma\_, *
+      \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}.Bi\_, 1e-9);
+97             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1), *(State.output));
+98           \} \textcolor{keywordflow}{else} \{
+99             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1 + \_2), *(State.output), *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{w\_}.Bi\_);
+100           \}
+101           \textcolor{comment}{//std::cerr << "3State=" << State.Debug(1) << std::endl;}
+102           \textcolor{comment}{//std::cerr << "\(\backslash\)n";}
+103         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!gru\+\_\+@{gru\+\_\+}}
+\index{gru\+\_\+@{gru\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{gru\+\_\+}{gru_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ std\+::unique\+\_\+ptr$<${\bf Cell}$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::gru\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_adb4c82513eebad0bf15fc30e80a773c5}
+
+
+Definition at line 113 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!Temp1\+\_\+@{Temp1\+\_\+}}
+\index{Temp1\+\_\+@{Temp1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{Temp1\+\_\+}{Temp1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::Temp1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a1a68b1758b067423c6727404933caa4f}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a1a68b1758b067423c6727404933caa4f}
+
+
+Definition at line 115 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!Temp2\+\_\+@{Temp2\+\_\+}}
+\index{Temp2\+\_\+@{Temp2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{Temp2\+\_\+}{Temp2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::Temp2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a19dc15b3feae837ac18e9014cffc4a9d}
+
+
+Definition at line 116 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Hidden}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_a96f70b0f258c493213bccb861f0014d0}
+
+
+Definition at line 112 of file decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8h}{decoder.\+h}\end{DoxyCompactItemize}

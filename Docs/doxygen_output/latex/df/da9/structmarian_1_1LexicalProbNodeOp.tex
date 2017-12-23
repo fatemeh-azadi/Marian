@@ -1,0 +1,235 @@
+\hypertarget{structmarian_1_1LexicalProbNodeOp}{}\section{marian\+:\+:Lexical\+Prob\+Node\+Op Struct Reference}
+\label{structmarian_1_1LexicalProbNodeOp}\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Lexical\+Prob\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/da7/structmarian_1_1LexicalProbNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Lexical\+Prob\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d8f/structmarian_1_1LexicalProbNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1LexicalProbNodeOp_a10af564b7706713f46ad6a16c0bf386f}{Lexical\+Prob\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} logits, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} att, float eps, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ lf, Args...\+args)
+\item 
+void \hyperlink{structmarian_1_1LexicalProbNodeOp_aaa0bb6a2dd3d270abfabc505bffedb50}{forward} ()
+\item 
+void \hyperlink{structmarian_1_1LexicalProbNodeOp_a494a1751a4a92064d0b6f88672e67e69}{backward} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1LexicalProbNodeOp_a33bc4b8ebb28aa7bf86285dd36277523}{type} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structmarian_1_1LexicalProbNodeOp_a4ba3fd4673c37e3f791eb0e6880e0b10}{eps\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{lf\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 672 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!Lexical\+Prob\+Node\+Op@{Lexical\+Prob\+Node\+Op}}
+\index{Lexical\+Prob\+Node\+Op@{Lexical\+Prob\+Node\+Op}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Lexical\+Prob\+Node\+Op(\+Expr logits, Expr att, float eps, Ptr$<$ sparse\+::\+C\+S\+R $>$ lf, Args...\+args)}{LexicalProbNodeOp(Expr logits, Expr att, float eps, Ptr< sparse::CSR > lf, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Lexical\+Prob\+Node\+Op\+::\+Lexical\+Prob\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{logits, }
+\item[{{\bf Expr}}]{att, }
+\item[{float}]{eps, }
+\item[{{\bf Ptr}$<$ {\bf sparse\+::\+C\+SR} $>$}]{lf, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1LexicalProbNodeOp_a10af564b7706713f46ad6a16c0bf386f}{}\label{structmarian_1_1LexicalProbNodeOp_a10af564b7706713f46ad6a16c0bf386f}
+
+
+Definition at line 674 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+676       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(\{logits, att\}, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = logits->shape(), args...),
+677         \hyperlink{structmarian_1_1LexicalProbNodeOp_a4ba3fd4673c37e3f791eb0e6880e0b10}{eps\_}(\hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{eps}),
+678         \hyperlink{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{lf\_}(lf) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!backward@{backward}}
+\index{backward@{backward}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward()}{backward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Lexical\+Prob\+Node\+Op\+::backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LexicalProbNodeOp_a494a1751a4a92064d0b6f88672e67e69}{}\label{structmarian_1_1LexicalProbNodeOp_a494a1751a4a92064d0b6f88672e67e69}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a4710c71a35130cf0e382bb0a430725d3}{marian\+::\+Node}.
+
+
+
+Definition at line 686 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+686                   \{
+687     \hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_});
+688     \textcolor{comment}{// adj' = adj / (p + eps) = adj / exp(val - x)}
+689     \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \_1 / \hyperlink{namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2}{Exp}(\_2 - \_3), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}());
+690     \hyperlink{namespacemarian_1_1sparse_ae51a1c2f9f89106dde6193dcf00a7b76}{sparse::LfaBackward}(\hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, 
+      \hyperlink{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{lf\_});
+691   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da9/structmarian_1_1LexicalProbNodeOp_a494a1751a4a92064d0b6f88672e67e69_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!forward@{forward}}
+\index{forward@{forward}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward()}{forward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Lexical\+Prob\+Node\+Op\+::forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LexicalProbNodeOp_aaa0bb6a2dd3d270abfabc505bffedb50}{}\label{structmarian_1_1LexicalProbNodeOp_aaa0bb6a2dd3d270abfabc505bffedb50}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0ace1579b496977ac75fadfffc41416b}{marian\+::\+Node}.
+
+
+
+Definition at line 680 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+680                  \{
+681     \hyperlink{namespacemarian_1_1sparse_ac9a85dbc1c93bd5cf582d9f298203d55}{sparse::LfaForward}(\hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), 
+      \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), \hyperlink{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{lf\_});
+682     \textcolor{comment}{// val = x + ln(p + eps)}
+683     \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = (\hyperlink{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}{Log}(\_1 + \hyperlink{structmarian_1_1LexicalProbNodeOp_a4ba3fd4673c37e3f791eb0e6880e0b10}{eps\_}) + \_2), \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}());
+684   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da9/structmarian_1_1LexicalProbNodeOp_aaa0bb6a2dd3d270abfabc505bffedb50_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Lexical\+Prob\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca}{}\label{structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 695 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+695                         \{
+696     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+697       \textcolor{keywordtype}{size\_t} seed = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+698       \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, (\textcolor{keywordtype}{size\_t})\hyperlink{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{lf\_}.get());
+699       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = seed;
+700     \}
+701     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+702   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da9/structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Lexical\+Prob\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LexicalProbNodeOp_a33bc4b8ebb28aa7bf86285dd36277523}{}\label{structmarian_1_1LexicalProbNodeOp_a33bc4b8ebb28aa7bf86285dd36277523}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 693 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+693 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"lexical\_prob"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!eps\+\_\+@{eps\+\_\+}}
+\index{eps\+\_\+@{eps\+\_\+}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{eps\+\_\+}{eps_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Lexical\+Prob\+Node\+Op\+::eps\+\_\+}\hypertarget{structmarian_1_1LexicalProbNodeOp_a4ba3fd4673c37e3f791eb0e6880e0b10}{}\label{structmarian_1_1LexicalProbNodeOp_a4ba3fd4673c37e3f791eb0e6880e0b10}
+
+
+Definition at line 704 of file node\+\_\+operators\+\_\+unary.\+h.
+
+\index{marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}!lf\+\_\+@{lf\+\_\+}}
+\index{lf\+\_\+@{lf\+\_\+}!marian\+::\+Lexical\+Prob\+Node\+Op@{marian\+::\+Lexical\+Prob\+Node\+Op}}
+\subsubsection[{\texorpdfstring{lf\+\_\+}{lf_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lexical\+Prob\+Node\+Op\+::lf\+\_\+}\hypertarget{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}{}\label{structmarian_1_1LexicalProbNodeOp_a138b28948628890606c40eda04ab8f5e}
+
+
+Definition at line 705 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

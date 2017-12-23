@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d77/node_8h">
+    <title>node.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &quot;common/keywords.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/backend.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/chainable.h&quot;</programlisting>
+    <programlisting>#include &quot;tensors/tensor.h&quot;</programlisting>
+<para>Include dependency diagram for node.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dc9/node_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for node.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d32/node_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d7a/classmarian_1_1Node">marian::Node</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da7/structmarian_1_1NaryNodeOp">marian::NaryNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file node.h</para>
+    </simplesect>
+</section>

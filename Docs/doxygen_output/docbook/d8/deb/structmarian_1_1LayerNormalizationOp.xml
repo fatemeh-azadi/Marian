@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/deb/structmarian_1_1LayerNormalizationOp">
+<title>marian::LayerNormalizationOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::LayerNormalizationOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d53/structmarian_1_1LayerNormalizationOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::LayerNormalizationOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/dc1/structmarian_1_1LayerNormalizationOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp_1a924c6c6c68f93e09234f3bc08c1d4958">LayerNormalizationOp</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp_1aaad6bcd73ad2c58582ec90b1e9da9887">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp_1a31596fee029ef32402528e24376e2c69">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp_1a4181e34fd584d36ffb6397feb1c2ef51">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/deb/structmarian_1_1LayerNormalizationOp_1a924c6c6c68f93e09234f3bc08c1d4958">
+                <title>marian::LayerNormalizationOp::LayerNormalizationOp (const std::vector&lt; Expr &gt; &amp;nodes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/deb/structmarian_1_1LayerNormalizationOp_1aaad6bcd73ad2c58582ec90b1e9da9887">
+                <title>NodeOps marian::LayerNormalizationOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/deb/structmarian_1_1LayerNormalizationOp_1a31596fee029ef32402528e24376e2c69">
+                <title>NodeOps marian::LayerNormalizationOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/deb/structmarian_1_1LayerNormalizationOp_1a4181e34fd584d36ffb6397feb1c2ef51">
+                <title>const std::string marian::LayerNormalizationOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

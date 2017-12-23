@@ -1,0 +1,1532 @@
+\hypertarget{namespaceamunmt_1_1GPU_1_1mblas}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas Namespace Reference}
+\label{namespaceamunmt_1_1GPU_1_1mblas}\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{Array}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler}{Cublas\+Handler}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler}{Cuda\+Stream\+Handler}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix}$<$ float $>$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix}
+\item 
+typedef \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix}$<$ uint $>$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{I\+Matrix}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6d3fc25d9092bb620ee6cf18bf08466a}{g\+Sum} (const T $\ast$data, size\+\_\+t count, T \&ret)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}{Sum} (const T $\ast$data, size\+\_\+t count)
+\item 
+{\footnotesize template$<$class M $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_acd328e19f90abba621b306ccfa9ac0a5}{Debug} (const M \&m, size\+\_\+t pos=0, size\+\_\+t l=8)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aabb52352b84ff8df12e584cc48f0c150}{Debug} (const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ T $>$ \&vec, size\+\_\+t verbosity=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a0da5f0038d776f323a166d9deecac270}{Debug} (const std\+::vector$<$ T $>$ \&vec, size\+\_\+t verbosity=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{copy} (const T $\ast$in, size\+\_\+t count, T $\ast$out, cuda\+Memcpy\+Kind kind)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc}{Fill} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, float value=0.\+0f)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}{Swap} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45}{Mean} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e}{Weighted\+Mean} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&\hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \&mapping)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a671f08d54e14b86a354517acc8d457e2}{Transpose} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{Copy} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aff338966a337172d52673594c7a31474}{Paste\+Row} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const size\+\_\+t r=0, const size\+\_\+t c=0)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aea9adf68efb5a26cb9bca66189c1786c}{Paste\+Rows} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const size\+\_\+t row\+No, size\+\_\+t col\+No=0)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a4cbcf6af0265debf12e8348d2eea6daa}{Copy\+Row} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const size\+\_\+t r=0, const size\+\_\+t c=0)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}{Concat} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac4634f9a58b95ccdd997393c75a9fc69}{Map\+Matrix} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&state, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths, size\+\_\+t i)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab9e2664595a60723ce6158c22f2ed527}{Copy\+Rows} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \&indices)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{Assemble} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \&indices)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{Slice} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, size\+\_\+t n, size\+\_\+t dim)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&C, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&A, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&B, bool transA=false, bool transB=false)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe}{Softmax} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \&batch\+Ids, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths, size\+\_\+t batch\+Size)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77}{Log\+Softmax} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a60fe9588f1af65f7b3f39b69aadebe9c}{g\+Broadcast} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in1\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in2\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ uint $>$ batch\+Mapping\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143}{Broadcast} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&in1, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&in2, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \&batch\+Mapping, size\+\_\+t src\+Size)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_abb917582af813cef1c2292204dbf327b}{g\+Broadcast\+Vec\+Column} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a468e534364a213f40977fad2c8ce6024}{Broadcast\+Vec\+Column} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ float $>$ \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac798f85afe19741e1c3bc34d516d6545}{g\+Broadcast\+Vec} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{Broadcast\+Vec} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a2af92dc8b21ca5e91d449759338b8c2c}{g\+Element} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a0712a4ff2aa70bb93b88666856ff3f13}{g\+Element} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a138142180375dfb251db78a6a377d8fe}{Element} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aa6fb358a30ce9510db093cfce4aa4f7f}{g\+Element} (Functor functor, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in1\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{Matrix\+Wrapper}$<$ float $>$ in2\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac9aba8feb376d85497281715e31ef4ae}{Element} (Functor functor, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&Out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In1, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In2)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_acc42d3fa7b4113baf1824863975336eb}{Set\+Column} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&In, int no\+Column, float value)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&in, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&alpha, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&beta, float eps)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae1115239ef99415332b16c92bb64ca2d}{Normalization} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&in, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&alpha, float eps)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac32bfddb0814404f44facd8cf8b9a810}{Log\+Softmax\+And\+N\+Best} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} $>$ \&n\+Best, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&in, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} \&b4, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ float $>$ \&costs, bool forbid\+U\+NK, uint max\+Beam\+Size, const std\+::vector$<$ uint $>$ \&beam\+Sizes, uint beam\+Size\+Sum, bool is\+First)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab76a2b350282de9a3eaea50aab7dc329}{Test\+Mem\+Cpy} (size\+\_\+t size, const T $\ast$data1)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aaef53311a23d2ea53d71d0ae0cfe73d0}{Test\+Mem\+Cpy} ()
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a0c789c549a804f74120e5e6fd546a58f}{testid\+To\+Matrix\+Ind} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!I\+Matrix@{I\+Matrix}}
+\index{I\+Matrix@{I\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{I\+Matrix}{IMatrix}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\+Matrix}$<$uint$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+I\+Matrix}}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}
+
+
+Definition at line 274 of file matrix.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Matrix}{Matrix}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\+Matrix}$<$float$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix}}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}
+
+
+Definition at line 273 of file matrix.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Assemble@{Assemble}}
+\index{Assemble@{Assemble}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Assemble(\+Matrix \&\+Out, const Matrix \&\+In, const mblas\+::\+Array$<$ uint $>$ \&indices)}{Assemble(Matrix &Out, const Matrix &In, const mblas::Array< uint > &indices)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Assemble (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const {\bf mblas\+::\+Array}$<$ uint $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Broadcast@{Broadcast}}
+\index{Broadcast@{Broadcast}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Broadcast(\+Functor functor, Matrix \&out, const Matrix \&in1, const Matrix \&in2, const mblas\+::\+Array$<$ uint $>$ \&batch\+Mapping, size\+\_\+t src\+Size)}{Broadcast(Functor functor, Matrix &out, const Matrix &in1, const Matrix &in2, const mblas::Array< uint > &batchMapping, size_t srcSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{out, }
+\item[{const {\bf Matrix} \&}]{in1, }
+\item[{const {\bf Matrix} \&}]{in2, }
+\item[{const {\bf mblas\+::\+Array}$<$ uint $>$ \&}]{batch\+Mapping, }
+\item[{size\+\_\+t}]{src\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143}{}\label{namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143}
+
+
+Definition at line 187 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+193 \{
+194   \textcolor{keywordtype}{size\_t} sumOfBeamSizes = in2.dim(0);
+195 
+196   \textcolor{comment}{//size\_t rows = srcSize * sumOfBeamSizes;}
+197   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}  = in1.dim(1);
+198 
+199   out.NewSize(sumOfBeamSizes, cols, srcSize);
+200 
+201   MatrixWrapper<float> outWrap(out);
+202   \textcolor{keyword}{const} MatrixWrapper<float> in1Wrap(in1);
+203   \textcolor{keyword}{const} MatrixWrapper<float> in2Wrap(in2);
+204   \textcolor{keyword}{const} MatrixWrapper<uint> batchMappingWrap(batchMapping);
+205 
+206   uint size = out.size();
+207   uint threads = std::min((uint) \hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (uint)size);
+208   uint blocks  = (size / threads) + ((size % threads == 0) ?  0 : 1);
+209 
+210   gBroadcast<<<blocks, threads, 0, CudaStreamHandler::GetStream()>>>
+211     (functor, outWrap, in1Wrap, in2Wrap, batchMappingWrap);
+212 
+213   \textcolor{comment}{/*}
+214 \textcolor{comment}{  std::cerr << "nBlocks=" << blocks << std::endl;}
+215 \textcolor{comment}{  std::cerr << "nThreads=" << threads << std::endl;}
+216 \textcolor{comment}{  std::cerr << "outWrap=" << outWrap.Debug() << std::endl;}
+217 \textcolor{comment}{  std::cerr << "in1Wrap=" << in1Wrap.Debug() << std::endl;}
+218 \textcolor{comment}{  std::cerr << "in2Wrap=" << in2Wrap.Debug() << std::endl;}
+219 \textcolor{comment}{  std::cerr << "batchMapping=" << Debug(batchMapping, 2) << std::endl;}
+220 \textcolor{comment}{  std::cerr << "srcSize=" << srcSize << std::endl;}
+221 \textcolor{comment}{  std::cerr << "sumOfBeamSizes=" << sumOfBeamSizes << std::endl;}
+222 \textcolor{comment}{  std::cerr << std::endl;}
+223 \textcolor{comment}{}
+224 \textcolor{comment}{  HANDLE\_ERROR(cudaDeviceSynchronize());}
+225 \textcolor{comment}{  */}
+226 
+227   \textcolor{keywordflow}{return} out;
+228 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Broadcast\+Vec@{Broadcast\+Vec}}
+\index{Broadcast\+Vec@{Broadcast\+Vec}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Broadcast\+Vec(\+Functor functor, Matrix \&\+Out, const Matrix \&\+In)}{BroadcastVec(Functor functor, Matrix &Out, const Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast\+Vec (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}
+
+
+Definition at line 298 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+299 \{
+300   \textcolor{comment}{//std::cerr << "Out=" << Out.Debug() << std::endl;}
+301   \textcolor{comment}{//std::cerr << "In=" << In.Debug() << std::endl;}
+302 
+303   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = Out.dim(1);
+304 
+305   MatrixWrapper<float> outWrap(Out);
+306   \textcolor{keyword}{const} MatrixWrapper<float> inWrap(In);
+307 
+308   \textcolor{keywordtype}{int} threads = std::min(\hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (\textcolor{keywordtype}{int})cols);
+309   \textcolor{keywordtype}{int} blocks  = cols / threads  + ((cols % threads == 0) ?  0 : 1);
+310   \textcolor{keyword}{const} cudaStream\_t& stream = CudaStreamHandler::GetStream();
+311 
+312   gBroadcastVec<<<blocks, threads, 0, stream>>>
+313     (functor, outWrap, inWrap);
+314 
+315   \textcolor{keywordflow}{return} Out;
+316 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Broadcast\+Vec\+Column@{Broadcast\+Vec\+Column}}
+\index{Broadcast\+Vec\+Column@{Broadcast\+Vec\+Column}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Broadcast\+Vec\+Column(\+Functor functor, Matrix \&\+Out, const mblas\+::\+Array$<$ float $>$ \&\+In)}{BroadcastVecColumn(Functor functor, Matrix &Out, const mblas::Array< float > &In)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast\+Vec\+Column (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf mblas\+::\+Array}$<$ float $>$ \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a468e534364a213f40977fad2c8ce6024}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a468e534364a213f40977fad2c8ce6024}
+
+
+Definition at line 257 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+258 \{
+259   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}  = Out.dim(0);
+260   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = Out.dim(1);
+261 
+262   MatrixWrapper<float> outWrap(Out);
+263   \textcolor{keyword}{const} MatrixWrapper<float> inWrap(In);
+264 
+265   \textcolor{keywordtype}{int} threads = std::min(\hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (\textcolor{keywordtype}{int})cols);
+266   \textcolor{keywordtype}{int} blocks  = cols / threads  + ((cols % threads == 0) ?  0 : 1);
+267 
+268   gBroadcastVecColumn<<<blocks, threads, rows * sizeof(float), CudaStreamHandler::GetStream()>>>
+269     (functor, outWrap, inWrap);
+270 
+271   \textcolor{keywordflow}{return} Out;
+272 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a468e534364a213f40977fad2c8ce6024_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Concat@{Concat}}
+\index{Concat@{Concat}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Concat(\+Matrix \&\+Out, const Matrix \&\+In)}{Concat(Matrix &Out, const Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Concat (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}{}\label{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!copy@{copy}}
+\index{copy@{copy}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{copy(const T $\ast$in, size\+\_\+t count, T $\ast$out, cuda\+Memcpy\+Kind kind)}{copy(const T *in, size_t count, T *out, cudaMemcpyKind kind)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void amunmt\+::\+G\+P\+U\+::mblas\+::copy (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{in, }
+\item[{size\+\_\+t}]{count, }
+\item[{T $\ast$}]{out, }
+\item[{cuda\+Memcpy\+Kind}]{kind}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}
+
+
+Definition at line 87 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+87                                                                    \{
+88   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(out, in, count * \textcolor{keyword}{sizeof}(T), kind, CudaStreamHandler::GetStream(
+      )) );
+89 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Copy@{Copy}}
+\index{Copy@{Copy}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Copy(\+Matrix \&\+Out, const Matrix \&\+In)}{Copy(Matrix &Out, const Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Copy\+Row@{Copy\+Row}}
+\index{Copy\+Row@{Copy\+Row}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Copy\+Row(\+Matrix \&\+Out, const Matrix \&\+In, const size\+\_\+t r=0, const size\+\_\+t c=0)}{CopyRow(Matrix &Out, const Matrix &In, const size_t r=0, const size_t c=0)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy\+Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const size\+\_\+t}]{r = {\ttfamily 0}, }
+\item[{const size\+\_\+t}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a4cbcf6af0265debf12e8348d2eea6daa}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a4cbcf6af0265debf12e8348d2eea6daa}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a4cbcf6af0265debf12e8348d2eea6daa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Copy\+Rows@{Copy\+Rows}}
+\index{Copy\+Rows@{Copy\+Rows}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Copy\+Rows(\+Matrix \&\+Out, const Matrix \&\+In, const mblas\+::\+Array$<$ uint $>$ \&indices)}{CopyRows(Matrix &Out, const Matrix &In, const mblas::Array< uint > &indices)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy\+Rows (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const {\bf mblas\+::\+Array}$<$ uint $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ab9e2664595a60723ce6158c22f2ed527}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ab9e2664595a60723ce6158c22f2ed527}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ab9e2664595a60723ce6158c22f2ed527_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Debug(const M \&m, size\+\_\+t pos=0, size\+\_\+t l=8)}{Debug(const M &m, size_t pos=0, size_t l=8)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class M $>$ void amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const M \&}]{m, }
+\item[{size\+\_\+t}]{pos = {\ttfamily 0}, }
+\item[{size\+\_\+t}]{l = {\ttfamily 8}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_acd328e19f90abba621b306ccfa9ac0a5}{}\label{namespaceamunmt_1_1GPU_1_1mblas_acd328e19f90abba621b306ccfa9ac0a5}
+
+
+Definition at line 23 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+23                                                      \{
+24   std::cerr << \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(0) << \textcolor{stringliteral}{" "} << \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1) << std::endl;
+25   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(0); ++i) \{
+26     std::cerr << i << \textcolor{stringliteral}{": "};
+27     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = pos; j < \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1) && j < pos + l; ++j) \{
+28       std::cerr << \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.GetVec()[i * \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1) + j] << \textcolor{stringliteral}{" "};
+29     \}
+30     std::cerr << \textcolor{stringliteral}{" ... "};
+31 
+32     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1) - l; j < \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1);  ++j) \{
+33       std::cerr << \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.GetVec()[i * \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim(1) + j] << \textcolor{stringliteral}{" "};
+34     \}
+35     std::cerr << std::endl;
+36     \textcolor{comment}{// if(i == 4)}
+37       \textcolor{comment}{// break;}
+38   \}
+39 \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Debug(const mblas\+::\+Array$<$ T $>$ \&vec, size\+\_\+t verbosity=1)}{Debug(const mblas::Array< T > &vec, size_t verbosity=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const {\bf mblas\+::\+Array}$<$ T $>$ \&}]{vec, }
+\item[{size\+\_\+t}]{verbosity = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aabb52352b84ff8df12e584cc48f0c150}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aabb52352b84ff8df12e584cc48f0c150}
+
+
+Definition at line 42 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+43 \{
+44   std::stringstream strm;
+45 
+46   strm << \textcolor{stringliteral}{"size="} << vec.size();
+47 
+48   \textcolor{keywordflow}{if} (verbosity) \{
+49     T \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum}(0);
+50     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+51       \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} += vec[i];
+52     \}
+53     strm << \textcolor{stringliteral}{" sum="} << \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+54   \}
+55 
+56   \textcolor{keywordflow}{if} (verbosity == 2) \{
+57     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+58       strm << \textcolor{stringliteral}{" "} << vec[i];
+59     \}
+60   \}
+61 
+62   \textcolor{keywordflow}{return} strm.str();
+63 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aabb52352b84ff8df12e584cc48f0c150_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Debug(const std\+::vector$<$ T $>$ \&vec, size\+\_\+t verbosity=1)}{Debug(const std::vector< T > &vec, size_t verbosity=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ T $>$ \&}]{vec, }
+\item[{size\+\_\+t}]{verbosity = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a0da5f0038d776f323a166d9deecac270}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a0da5f0038d776f323a166d9deecac270}
+
+
+Definition at line 66 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+67 \{
+68   std::stringstream strm;
+69 
+70   strm << \textcolor{stringliteral}{"size="} << vec.size();
+71 
+72   \textcolor{keywordflow}{if} (verbosity) \{
+73     T \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}{Sum}(vec.data(), vec.size());
+74     strm << \textcolor{stringliteral}{" sum="} << \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+75   \}
+76 
+77   \textcolor{keywordflow}{if} (verbosity == 2) \{
+78     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+79       strm << \textcolor{stringliteral}{" "} << vec[i];
+80     \}
+81   \}
+82 
+83   \textcolor{keywordflow}{return} strm.str();
+84 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a0da5f0038d776f323a166d9deecac270_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Element@{Element}}
+\index{Element@{Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Element(\+Functor functor, Matrix \&\+Out)}{Element(Functor functor, Matrix &Out)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{Out}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{}\label{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}
+
+
+Definition at line 329 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+331 \{
+332   uint size = Out.size();
+333   uint threads = std::min((uint) \hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (uint)size);
+334   uint blocks  = size / threads + ((size % threads == 0) ?  0 : 1);
+335   \textcolor{keyword}{const} cudaStream\_t& stream = CudaStreamHandler::GetStream();
+336 
+337   MatrixWrapper<float> outWrap(Out);
+338 
+339   gElement<<<blocks, threads, 0, stream>>>
+340     (functor, outWrap);
+341 
+342   \textcolor{keywordflow}{return} Out;
+343 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Element@{Element}}
+\index{Element@{Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Element(\+Functor functor, Matrix \&\+Out, const Matrix \&\+In)}{Element(Functor functor, Matrix &Out, const Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a138142180375dfb251db78a6a377d8fe}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a138142180375dfb251db78a6a377d8fe}
+
+
+Definition at line 357 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+359 \{
+360   assert(Out.size() == In.size());
+361 
+362   uint size = Out.size();
+363   uint threads = std::min((uint) \hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (uint)size);
+364   uint blocks  = size / threads + ((size % threads == 0) ?  0 : 1);
+365   \textcolor{keyword}{const} cudaStream\_t& stream = CudaStreamHandler::GetStream();
+366 
+367   MatrixWrapper<float> outWrap(Out);
+368   \textcolor{keyword}{const} MatrixWrapper<float> inWrap(In);
+369 
+370   gElement<<<blocks, threads, 0, stream>>>
+371     (functor, outWrap, inWrap);
+372 
+373   \textcolor{keywordflow}{return} Out;
+374 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a138142180375dfb251db78a6a377d8fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Element@{Element}}
+\index{Element@{Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Element(\+Functor functor, Matrix \&\+Out, const Matrix \&\+In1, const Matrix \&\+In2)}{Element(Functor functor, Matrix &Out, const Matrix &In1, const Matrix &In2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ {\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In1, }
+\item[{const {\bf Matrix} \&}]{In2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ac9aba8feb376d85497281715e31ef4ae}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ac9aba8feb376d85497281715e31ef4ae}
+
+
+Definition at line 389 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+391 \{
+392   \textcolor{comment}{//std::cerr << "Out=" << Out.Debug() << std::endl;}
+393   \textcolor{comment}{//std::cerr << "In1=" << In1.Debug() << std::endl;}
+394   \textcolor{comment}{//std::cerr << "In2=" << In2.Debug() << std::endl;}
+395 
+396   assert(Out.size() == In1.size());
+397   assert(Out.size() == In2.size());
+398 
+399   uint size = Out.size();
+400   uint threads = std::min((uint) \hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (uint)size);
+401   uint blocks  = size / threads + ((size % threads == 0) ?  0 : 1);
+402   \textcolor{keyword}{const} cudaStream\_t& stream = CudaStreamHandler::GetStream();
+403 
+404   \textcolor{comment}{//std::cerr << "Element3=" << Out.Debug(0) << std::endl;}
+405   \textcolor{comment}{//std::cerr << "Element3=" << In1.Debug(0) << std::endl;}
+406   \textcolor{comment}{//std::cerr << "Element3=" << In2.Debug(0) << std::endl;}
+407   \textcolor{comment}{//std::cerr << std::endl;}
+408   MatrixWrapper<float> outWrap(Out);
+409   \textcolor{keyword}{const} MatrixWrapper<float> in1Wrap(In1);
+410   \textcolor{keyword}{const} MatrixWrapper<float> in2Wrap(In2);
+411   \textcolor{comment}{//std::cerr << "outWrap=" << outWrap.Debug() << std::endl;}
+412 
+413   gElement<<<blocks, threads, 0, stream>>>
+414     (functor, outWrap, in1Wrap, in2Wrap);
+415 
+416   \textcolor{comment}{//HANDLE\_ERROR( cudaPeekAtLastError() );}
+417   \textcolor{comment}{//HANDLE\_ERROR( cudaDeviceSynchronize() );}
+418   \textcolor{comment}{//HANDLE\_ERROR( cudaPeekAtLastError() );}
+419 
+420   \textcolor{keywordflow}{return} Out;
+421 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ac9aba8feb376d85497281715e31ef4ae_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Fill@{Fill}}
+\index{Fill@{Fill}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Fill(\+Matrix \&\+In, float value=0.\+0f)}{Fill(Matrix &In, float value=0.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Fill (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{In, }
+\item[{float}]{value = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Broadcast@{g\+Broadcast}}
+\index{g\+Broadcast@{g\+Broadcast}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Broadcast(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in1\+Wrap, const Matrix\+Wrapper$<$ float $>$ in2\+Wrap, const Matrix\+Wrapper$<$ uint $>$ batch\+Mapping\+Wrap)}{gBroadcast(Functor functor, MatrixWrapper< float > outWrap, const MatrixWrapper< float > in1Wrap, const MatrixWrapper< float > in2Wrap, const MatrixWrapper< uint > batchMappingWrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in1\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in2\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ uint $>$}]{batch\+Mapping\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a60fe9588f1af65f7b3f39b69aadebe9c}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a60fe9588f1af65f7b3f39b69aadebe9c}
+
+
+Definition at line 147 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+152 \{
+153   \textcolor{keywordtype}{size\_t} srcSize = outWrap.dim(2);
+154   \textcolor{keywordtype}{size\_t} inRows = in2Wrap.dim(0);
+155   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}  = in1Wrap.dim(1);
+156 
+157   \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = threadIdx.x + blockIdx.x * blockDim.x;
+158   \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} < outWrap.size()) \{
+159     \textcolor{comment}{/*}
+160 \textcolor{comment}{    size\_t indices[SHAPE\_SIZE];}
+161 \textcolor{comment}{    outWrap.id2Indices(id, indices);}
+162 \textcolor{comment}{}
+163 \textcolor{comment}{    int row = id / cols; // len * batch for in1}
+164 \textcolor{comment}{    int srcId = row % srcSize;  // source pos for in1}
+165 \textcolor{comment}{}
+166 \textcolor{comment}{    int batchMappingIdx = row / srcSize; // batch for in1}
+167 \textcolor{comment}{    int batchIdx = batchMappingWrap[batchMappingIdx]; // batch id for in1}
+168 \textcolor{comment}{}
+169 \textcolor{comment}{    outWrap[id] = functor(in1Wrap(srcId, indices[1], 0, batchIdx),}
+170 \textcolor{comment}{                          in2Wrap(batchMappingIdx, indices[1], 0, 0) );}
+171 \textcolor{comment}{    */}
+172 
+173     \textcolor{keywordtype}{int} row = \textcolor{keywordtype}{id} / \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols};
+174     \textcolor{keywordtype}{int} stateIdx = \textcolor{keywordtype}{id} % \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols};
+175 
+176     \textcolor{keywordtype}{int} beamIdx = row / srcSize;
+177     \textcolor{keywordtype}{int} srcId = row % srcSize;
+178 
+179     \textcolor{keywordtype}{int} batchIdx = batchMappingWrap[beamIdx];
+180 
+181     outWrap[id] = functor(in1Wrap[(batchIdx * srcSize + srcId) * cols + stateIdx],
+182                           in2Wrap[beamIdx * cols + stateIdx]);
+183   \}
+184 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a60fe9588f1af65f7b3f39b69aadebe9c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Broadcast\+Vec@{g\+Broadcast\+Vec}}
+\index{g\+Broadcast\+Vec@{g\+Broadcast\+Vec}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Broadcast\+Vec(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)}{gBroadcastVec(Functor functor, MatrixWrapper< float > outWrap, const MatrixWrapper< float > inWrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast\+Vec (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ac798f85afe19741e1c3bc34d516d6545}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ac798f85afe19741e1c3bc34d516d6545}
+
+
+Definition at line 275 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+278 \{
+279   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = outWrap.dim(1);
+280 
+281   \textcolor{keywordtype}{int} noColumn = threadIdx.x + blockDim.x * blockIdx.x;
+282   \textcolor{keywordflow}{if} (noColumn < cols) \{
+283     \textcolor{keywordtype}{float} vecValue = inWrap(0, noColumn, 0, 0);
+284 
+285     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} dim0 = 0; dim0 < outWrap.dim(0); ++dim0) \{
+286       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} dim2 = 0; dim2 < outWrap.dim(2); ++dim2) \{
+287         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} dim3 = 0; dim3 < outWrap.dim(3); ++dim3) \{
+288           \textcolor{keywordtype}{float} &val = outWrap(dim0, noColumn, dim2, dim3);
+289           val = functor(val, vecValue);
+290         \}
+291       \}
+292     \}
+293 
+294   \}
+295 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ac798f85afe19741e1c3bc34d516d6545_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Broadcast\+Vec\+Column@{g\+Broadcast\+Vec\+Column}}
+\index{g\+Broadcast\+Vec\+Column@{g\+Broadcast\+Vec\+Column}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Broadcast\+Vec\+Column(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)}{gBroadcastVecColumn(Functor functor, MatrixWrapper< float > outWrap, const MatrixWrapper< float > inWrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast\+Vec\+Column (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_abb917582af813cef1c2292204dbf327b}{}\label{namespaceamunmt_1_1GPU_1_1mblas_abb917582af813cef1c2292204dbf327b}
+
+
+Definition at line 231 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+233                                                                        \{
+234   \textcolor{keyword}{extern} \_\_shared\_\_ \textcolor{keywordtype}{float} sdataOrig[];
+235 
+236   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}  = outWrap.dim(0);
+237   \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = outWrap.dim(1);
+238 
+239   MatrixWrapper<float> sdata(sdataOrig, rows, 1, 1, 1);
+240 
+241   \textcolor{keywordflow}{if} (threadIdx.x == 0) \{
+242     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}; ++i)
+243       sdata[i] = inWrap[i];
+244   \}
+245   \_\_syncthreads();
+246 
+247   \textcolor{keywordtype}{int} noColumn = threadIdx.x + blockDim.x * blockIdx.x;
+248   \textcolor{keywordflow}{if} (noColumn < cols) \{
+249     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} noRow = 0; noRow < \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}; ++noRow) \{
+250       \textcolor{keywordtype}{float} &val = outWrap(noRow, noColumn, 0, 0);
+251       val = functor(val, sdata[noRow]);
+252     \}
+253   \}
+254 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_abb917582af813cef1c2292204dbf327b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Element@{g\+Element}}
+\index{g\+Element@{g\+Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Element(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap)}{gElement(Functor functor, MatrixWrapper< float > outWrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a2af92dc8b21ca5e91d449759338b8c2c}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a2af92dc8b21ca5e91d449759338b8c2c}
+
+
+Definition at line 319 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+321 \{
+322   \textcolor{keywordtype}{size\_t} ind = blockIdx.x * blockDim.x + threadIdx.x;
+323   \textcolor{keywordflow}{if} (ind < outWrap.size()) \{
+324     outWrap[ind] = functor(outWrap[ind]);
+325   \}
+326 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a2af92dc8b21ca5e91d449759338b8c2c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Element@{g\+Element}}
+\index{g\+Element@{g\+Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Element(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)}{gElement(Functor functor, MatrixWrapper< float > outWrap, const MatrixWrapper< float > inWrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a0712a4ff2aa70bb93b88666856ff3f13}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a0712a4ff2aa70bb93b88666856ff3f13}
+
+
+Definition at line 346 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+349 \{
+350   \textcolor{keywordtype}{size\_t} ind = blockIdx.x * blockDim.x + threadIdx.x;
+351   \textcolor{keywordflow}{if} (ind < outWrap.size()) \{
+352     outWrap[ind] = functor(outWrap[ind], inWrap[ind]);
+353   \}
+354 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a0712a4ff2aa70bb93b88666856ff3f13_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Element@{g\+Element}}
+\index{g\+Element@{g\+Element}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Element(\+Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in1\+Wrap, const Matrix\+Wrapper$<$ float $>$ in2\+Wrap)}{gElement(Functor functor, MatrixWrapper< float > outWrap, const MatrixWrapper< float > in1Wrap, const MatrixWrapper< float > in2Wrap)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Functor $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element (
+\begin{DoxyParamCaption}
+\item[{Functor}]{functor, }
+\item[{{\bf Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in1\+Wrap, }
+\item[{const {\bf Matrix\+Wrapper}$<$ float $>$}]{in2\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aa6fb358a30ce9510db093cfce4aa4f7f}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aa6fb358a30ce9510db093cfce4aa4f7f}
+
+
+Definition at line 377 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+381 \{
+382   \textcolor{keywordtype}{size\_t} ind = blockIdx.x * blockDim.x + threadIdx.x;
+383   \textcolor{keywordflow}{if} (ind < outWrap.size()) \{
+384     outWrap[ind] = functor(outWrap[ind], in1Wrap[ind], in2Wrap[ind]);
+385   \}
+386 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aa6fb358a30ce9510db093cfce4aa4f7f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!g\+Sum@{g\+Sum}}
+\index{g\+Sum@{g\+Sum}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{g\+Sum(const T $\ast$data, size\+\_\+t count, T \&ret)}{gSum(const T *data, size_t count, T &ret)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::mblas\+::g\+Sum (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{data, }
+\item[{size\+\_\+t}]{count, }
+\item[{T \&}]{ret}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a6d3fc25d9092bb620ee6cf18bf08466a}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a6d3fc25d9092bb620ee6cf18bf08466a}
+
+
+Definition at line 22 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+23 \{
+24   ret = 0;
+25   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < count; ++i) \{
+26     ret += data[i];
+27   \}
+28 \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Log\+Softmax@{Log\+Softmax}}
+\index{Log\+Softmax@{Log\+Softmax}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Log\+Softmax(\+Matrix \&\+Out)}{LogSoftmax(Matrix &Out)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Log\+Softmax (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Log\+Softmax\+And\+N\+Best@{Log\+Softmax\+And\+N\+Best}}
+\index{Log\+Softmax\+And\+N\+Best@{Log\+Softmax\+And\+N\+Best}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Log\+Softmax\+And\+N\+Best(mblas\+::\+Array$<$ Nth\+Out\+Batch $>$ \&n\+Best, const Matrix \&in, const Matrix \&b4, const mblas\+::\+Array$<$ float $>$ \&costs, bool forbid\+U\+N\+K, uint max\+Beam\+Size, const std\+::vector$<$ uint $>$ \&beam\+Sizes, uint beam\+Size\+Sum, bool is\+First)}{LogSoftmaxAndNBest(mblas::Array< NthOutBatch > &nBest, const Matrix &in, const Matrix &b4, const mblas::Array< float > &costs, bool forbidUNK, uint maxBeamSize, const std::vector< uint > &beamSizes, uint beamSizeSum, bool isFirst)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Log\+Softmax\+And\+N\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Array}$<$ {\bf Nth\+Out\+Batch} $>$ \&}]{n\+Best, }
+\item[{const {\bf Matrix} \&}]{in, }
+\item[{const {\bf Matrix} \&}]{b4, }
+\item[{const {\bf mblas\+::\+Array}$<$ float $>$ \&}]{costs, }
+\item[{bool}]{forbid\+U\+NK, }
+\item[{uint}]{max\+Beam\+Size, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{uint}]{beam\+Size\+Sum, }
+\item[{bool}]{is\+First}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ac32bfddb0814404f44facd8cf8b9a810}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ac32bfddb0814404f44facd8cf8b9a810}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ac32bfddb0814404f44facd8cf8b9a810_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Map\+Matrix@{Map\+Matrix}}
+\index{Map\+Matrix@{Map\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Map\+Matrix(\+Matrix \&state, const mblas\+::\+I\+Matrix \&sentence\+Lengths, size\+\_\+t i)}{MapMatrix(Matrix &state, const mblas::IMatrix &sentenceLengths, size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Map\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{state, }
+\item[{const {\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths, }
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ac4634f9a58b95ccdd997393c75a9fc69}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ac4634f9a58b95ccdd997393c75a9fc69}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ac4634f9a58b95ccdd997393c75a9fc69_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Mean@{Mean}}
+\index{Mean@{Mean}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Mean(\+Matrix \&\+Out, const Matrix \&\+In, const mblas\+::\+I\+Matrix \&sentence\+Lengths)}{Mean(Matrix &Out, const Matrix &In, const mblas::IMatrix &sentenceLengths)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Mean (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const {\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Normalization@{Normalization}}
+\index{Normalization@{Normalization}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Normalization(\+Matrix \&out, const Matrix \&in, const Matrix \&alpha, const Matrix \&beta, float eps)}{Normalization(Matrix &out, const Matrix &in, const Matrix &alpha, const Matrix &beta, float eps)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Normalization (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{out, }
+\item[{const {\bf Matrix} \&}]{in, }
+\item[{const {\bf Matrix} \&}]{alpha, }
+\item[{const {\bf Matrix} \&}]{beta, }
+\item[{float}]{eps}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Normalization@{Normalization}}
+\index{Normalization@{Normalization}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Normalization(\+Matrix \&out, const Matrix \&in, const Matrix \&alpha, float eps)}{Normalization(Matrix &out, const Matrix &in, const Matrix &alpha, float eps)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Normalization (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{out, }
+\item[{const {\bf Matrix} \&}]{in, }
+\item[{const {\bf Matrix} \&}]{alpha, }
+\item[{float}]{eps}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ae1115239ef99415332b16c92bb64ca2d}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ae1115239ef99415332b16c92bb64ca2d}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Paste\+Row@{Paste\+Row}}
+\index{Paste\+Row@{Paste\+Row}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Paste\+Row(\+Matrix \&\+Out, const Matrix \&\+In, const size\+\_\+t r=0, const size\+\_\+t c=0)}{PasteRow(Matrix &Out, const Matrix &In, const size_t r=0, const size_t c=0)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Paste\+Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const size\+\_\+t}]{r = {\ttfamily 0}, }
+\item[{const size\+\_\+t}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aff338966a337172d52673594c7a31474}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aff338966a337172d52673594c7a31474}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aff338966a337172d52673594c7a31474_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Paste\+Rows@{Paste\+Rows}}
+\index{Paste\+Rows@{Paste\+Rows}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Paste\+Rows(\+Matrix \&\+Out, const Matrix \&\+In, const size\+\_\+t row\+No, size\+\_\+t col\+No=0)}{PasteRows(Matrix &Out, const Matrix &In, const size_t rowNo, size_t colNo=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Paste\+Rows (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const size\+\_\+t}]{row\+No, }
+\item[{size\+\_\+t}]{col\+No = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aea9adf68efb5a26cb9bca66189c1786c}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aea9adf68efb5a26cb9bca66189c1786c}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aea9adf68efb5a26cb9bca66189c1786c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Prod@{Prod}}
+\index{Prod@{Prod}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Prod(\+Matrix \&\+C, const Matrix \&\+A, const Matrix \&\+B, bool trans\+A=false, bool trans\+B=false)}{Prod(Matrix &C, const Matrix &A, const Matrix &B, bool transA=false, bool transB=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Prod (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{C, }
+\item[{const {\bf Matrix} \&}]{A, }
+\item[{const {\bf Matrix} \&}]{B, }
+\item[{bool}]{transA = {\ttfamily false}, }
+\item[{bool}]{transB = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Set\+Column@{Set\+Column}}
+\index{Set\+Column@{Set\+Column}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Set\+Column(\+Matrix \&\+In, int no\+Column, float value)}{SetColumn(Matrix &In, int noColumn, float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Set\+Column (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{In, }
+\item[{int}]{no\+Column, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_acc42d3fa7b4113baf1824863975336eb}{}\label{namespaceamunmt_1_1GPU_1_1mblas_acc42d3fa7b4113baf1824863975336eb}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_acc42d3fa7b4113baf1824863975336eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Slice@{Slice}}
+\index{Slice@{Slice}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Slice(\+Matrix \&\+Out, const Matrix \&\+In, size\+\_\+t n, size\+\_\+t dim)}{Slice(Matrix &Out, const Matrix &In, size_t n, size_t dim)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Slice (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{size\+\_\+t}]{n, }
+\item[{size\+\_\+t}]{dim}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Softmax@{Softmax}}
+\index{Softmax@{Softmax}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Softmax(\+Matrix \&\+Out, const mblas\+::\+Array$<$ uint $>$ \&batch\+Ids, const mblas\+::\+I\+Matrix \&sentence\+Lengths, size\+\_\+t batch\+Size)}{Softmax(Matrix &Out, const mblas::Array< uint > &batchIds, const mblas::IMatrix &sentenceLengths, size_t batchSize)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Softmax (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf mblas\+::\+Array}$<$ uint $>$ \&}]{batch\+Ids, }
+\item[{const {\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths, }
+\item[{size\+\_\+t}]{batch\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Sum@{Sum}}
+\index{Sum@{Sum}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Sum(const T $\ast$data, size\+\_\+t count)}{Sum(const T *data, size_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T amunmt\+::\+G\+P\+U\+::mblas\+::\+Sum (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{data, }
+\item[{size\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}
+
+
+Definition at line 31 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+32 \{
+33   T ret;
+34   T *d\_ret;
+35   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&d\_ret, \textcolor{keyword}{sizeof}(T)) );
+36 
+37   \textcolor{keyword}{const} cudaStream\_t stream = CudaStreamHandler::GetStream();
+38 
+39   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaStreamSynchronize(stream));
+40   gSum<<<1, 1, 0, stream>>>(data, count, *d\_ret);
+41   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(&ret, d\_ret, \textcolor{keyword}{sizeof}(T), cudaMemcpyDeviceToHost, stream) );
+42 
+43   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaStreamSynchronize(stream));
+44   \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaFree(d\_ret));
+45 
+46   \textcolor{keywordflow}{return} ret;
+47 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Swap@{Swap}}
+\index{Swap@{Swap}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Swap(\+Matrix \&\+Out, Matrix \&\+In)}{Swap(Matrix &Out, Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{{\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!testid\+To\+Matrix\+Ind@{testid\+To\+Matrix\+Ind}}
+\index{testid\+To\+Matrix\+Ind@{testid\+To\+Matrix\+Ind}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{testid\+To\+Matrix\+Ind()}{testidToMatrixInd()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::testid\+To\+Matrix\+Ind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a0c789c549a804f74120e5e6fd546a58f}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a0c789c549a804f74120e5e6fd546a58f}
+
+
+Definition at line 256 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+257 \{
+258   MatrixWrapper<float> matrix(2, 4, 3, 5);
+259 
+260   std::cerr << \textcolor{stringliteral}{"matrix="} << matrix.Debug() << std::endl;
+261 
+262   \textcolor{keywordflow}{for} (uint i = 0; i < matrix.size(); ++i) \{
+263     uint dim[\hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{SHAPE\_SIZE}];
+264     matrix.id2Indices(i, dim);
+265 
+266     std::cerr << i << \textcolor{stringliteral}{"="};
+267     \textcolor{keywordflow}{for} (uint j = 0; j < \hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{SHAPE\_SIZE}; ++j) \{
+268       std::cerr << \textcolor{stringliteral}{" "} << dim[j];
+269     \}
+270 
+271     std::cerr << \textcolor{stringliteral}{" = "} << matrix.indices2Id(dim[0], dim[1], dim[2], dim[3]);
+272     std::cerr << std::endl;
+273   \}
+274 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a0c789c549a804f74120e5e6fd546a58f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Test\+Mem\+Cpy@{Test\+Mem\+Cpy}}
+\index{Test\+Mem\+Cpy@{Test\+Mem\+Cpy}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Test\+Mem\+Cpy(size\+\_\+t size, const T $\ast$data1)}{TestMemCpy(size_t size, const T *data1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void amunmt\+::\+G\+P\+U\+::mblas\+::\+Test\+Mem\+Cpy (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size, }
+\item[{const T $\ast$}]{data1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_ab76a2b350282de9a3eaea50aab7dc329}{}\label{namespaceamunmt_1_1GPU_1_1mblas_ab76a2b350282de9a3eaea50aab7dc329}
+
+
+Definition at line 441 of file matrix\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+442 \{
+443   \textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+444 
+445   vector<T> h\_vec2(size);
+446 
+447   T *d\_vec;
+448   cudaMalloc(&d\_vec, size * \textcolor{keyword}{sizeof}(T));
+449 
+450   \textcolor{comment}{// copy}
+451   \textcolor{comment}{//cudaMemcpy(d\_vec, h\_vec1.data(), NUM * sizeof(float), cudaMemcpyHostToDevice);}
+452   \textcolor{comment}{//cudaMemcpy(h\_vec2.data(), d\_vec, NUM * sizeof(float), cudaMemcpyDeviceToHost);}
+453 
+454   cudaStream\_t stream = mblas::CudaStreamHandler::GetStream();
+455 
+456   \textcolor{comment}{//cudaMemcpyAsync(d\_vec, data1, size * sizeof(T), cudaMemcpyHostToDevice, stream);}
+457   \textcolor{comment}{//cudaMemcpyAsync(h\_vec2.data(), d\_vec, size * sizeof(T), cudaMemcpyDeviceToHost, stream);}
+458 
+459   \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{mblas::copy}(data1, size, d\_vec, cudaMemcpyHostToDevice);
+460   \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{mblas::copy}(d\_vec, size, h\_vec2.data(), cudaMemcpyDeviceToHost);
+461 
+462   cerr << \textcolor{stringliteral}{"h\_vec2="};
+463   T \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = 0;
+464   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < size; ++i) \{
+465     \textcolor{comment}{//cerr << h\_vec2[i] << " ";}
+466     sum += h\_vec2[i];
+467   \}
+468   cerr << \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+469   cerr << endl;
+470   \textcolor{comment}{//cudaStreamDestroy(stream);}
+471   cudaFree(d\_vec);
+472 
+473 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_ab76a2b350282de9a3eaea50aab7dc329_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Test\+Mem\+Cpy@{Test\+Mem\+Cpy}}
+\index{Test\+Mem\+Cpy@{Test\+Mem\+Cpy}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Test\+Mem\+Cpy()}{TestMemCpy()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Test\+Mem\+Cpy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_aaef53311a23d2ea53d71d0ae0cfe73d0}{}\label{namespaceamunmt_1_1GPU_1_1mblas_aaef53311a23d2ea53d71d0ae0cfe73d0}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Transpose(\+Matrix \&\+Out, const Matrix \&\+In)}{Transpose(Matrix &Out, const Matrix &In)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Transpose (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{In}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Transpose(\+Matrix \&\+Out)}{Transpose(Matrix &Out)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Transpose (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a671f08d54e14b86a354517acc8d457e2}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a671f08d54e14b86a354517acc8d457e2}
+\index{amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}!Weighted\+Mean@{Weighted\+Mean}}
+\index{Weighted\+Mean@{Weighted\+Mean}!amunmt\+::\+G\+P\+U\+::mblas@{amunmt\+::\+G\+P\+U\+::mblas}}
+\subsubsection[{\texorpdfstring{Weighted\+Mean(\+Matrix \&\+Out, const Matrix \&\+Weights, const Matrix \&\+In, const mblas\+::\+Array$<$ uint $>$ \&mapping)}{WeightedMean(Matrix &Out, const Matrix &Weights, const Matrix &In, const mblas::Array< uint > &mapping)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::mblas\+::\+Weighted\+Mean (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix} \&}]{Out, }
+\item[{const {\bf Matrix} \&}]{Weights, }
+\item[{const {\bf Matrix} \&}]{In, }
+\item[{const {\bf mblas\+::\+Array}$<$ uint $>$ \&}]{mapping}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e}{}\label{namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d49/namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e_icgraph}
+\end{center}
+\end{figure}
+
+

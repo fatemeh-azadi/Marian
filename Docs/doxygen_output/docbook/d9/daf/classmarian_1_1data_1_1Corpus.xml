@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/daf/classmarian_1_1data_1_1Corpus">
+<title>marian::data::Corpus class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/d8f/corpus_8h">&lt;corpus.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::Corpus</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/def/classmarian_1_1data_1_1Corpus__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::Corpus</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d3c/classmarian_1_1data_1_1Corpus__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; UPtr&lt; TemporaryFile &gt; &gt; tempFiles_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; UPtr&lt; InputFileStream &gt; &gt; files_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; Vocab &gt; &gt; vocabs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t maxLength_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::mt19937 g_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; ids_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t pos_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; WordAlignment &gt; wordAlignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a79332fb47ae25ab7dbca936dfdc01391">shuffleFiles</link> (
+const std::vector&lt; std::string &gt; &amp; paths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a8081d9e92cffc981bbb26d9e6c6a9f12">setWordAlignment</link> (
+const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a42b8f8778f2a08c1c9f8e9fd45465a82">Corpus</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, bool translate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a70a6fa97c673146090a075c0e54c894b">Corpus</link> (
+std::vector&lt; std::string &gt; paths, std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt;&gt; vocabs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, size_t maxLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1afc6678b770b6da1edabe3ed6d29b4bdd">sample</link> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a383139a28eb51cc4140e3c97fd0ecebe">next</link> (
+)<para><emphasis>Iterates sentence tuples in the corpus.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1acd46d4ac2667b7490d14543c96362928">shuffle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a145f4b656cfb4036f1ded4df925b418b">reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">iterator</link> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a054a1ee5ac98508eba55365e32e234f6">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">iterator</link> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1aaf3680a2d946cd804efc978c7f526881">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; &gt; &amp; <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1ab05ca913f9db36d2f9b47128f3986d7b">getVocabs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a4cb5e9051a072fcc61ed4638862f01f5">batch_ptr</link> <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1ac822ed674cbb116ad7a47f6742fab7ac">toBatch</link> (
+const std::vector&lt; <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1afc6678b770b6da1edabe3ed6d29b4bdd">sample</link> &gt; &amp; batchVector)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/daf/classmarian_1_1data_1_1Corpus_1a6c6058eb862c1129038523f11e0326c2">prepare</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a79332fb47ae25ab7dbca936dfdc01391">
+                <title>void marian::data::Corpus::shuffleFiles (const std::vector&lt; std::string &gt; &amp;paths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a8081d9e92cffc981bbb26d9e6c6a9f12">
+                <title>void marian::data::Corpus::setWordAlignment (const std::string &amp;path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a42b8f8778f2a08c1c9f8e9fd45465a82">
+                <title>marian::data::Corpus::Corpus (Ptr&lt; Config &gt; options, bool translate=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a70a6fa97c673146090a075c0e54c894b">
+                <title>marian::data::Corpus::Corpus (std::vector&lt; std::string &gt; paths, std::vector&lt; Ptr&lt; Vocab &gt;&gt; vocabs, Ptr&lt; Config &gt; options, size_t maxLength=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a383139a28eb51cc4140e3c97fd0ecebe">
+                <title>SentenceTuple marian::data::Corpus::next ()</title> <emphasis>Iterates sentence tuples in the corpus.</emphasis>
+                
+<para>A sentence tuple is skipped with no warning if any sentence in the tuple (e.g. a source or target) is longer than the maximum allowed sentence length in words.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>A tuple representing parallel sentences. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1acd46d4ac2667b7490d14543c96362928">
+                <title>void marian::data::Corpus::shuffle ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a145f4b656cfb4036f1ded4df925b418b">
+                <title>void marian::data::Corpus::reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a054a1ee5ac98508eba55365e32e234f6">
+                <title>iterator marian::data::Corpus::begin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1aaf3680a2d946cd804efc978c7f526881">
+                <title>iterator marian::data::Corpus::end ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1ab05ca913f9db36d2f9b47128f3986d7b">
+                <title>std::vector&lt;Ptr&lt;Vocab&gt; &gt;&amp; marian::data::Corpus::getVocabs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1ac822ed674cbb116ad7a47f6742fab7ac">
+                <title>batch_ptr marian::data::Corpus::toBatch (const std::vector&lt; sample &gt; &amp;batchVector)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/daf/classmarian_1_1data_1_1Corpus_1a6c6058eb862c1129038523f11e0326c2">
+                <title>void marian::data::Corpus::prepare ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

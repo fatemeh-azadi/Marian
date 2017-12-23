@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/deb/classmarian_1_1data_1_1DatasetBase">
+<title>marian::data::DatasetBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/daf/data_2dataset_8h">&lt;dataset.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::DatasetBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dbb/classmarian_1_1data_1_1DatasetBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::DatasetBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dd1/classmarian_1_1data_1_1DatasetBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Sample</declname>
+        <defname>Sample</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>Iterator</declname>
+        <defname>Iterator</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>Batch</declname>
+        <defname>Batch</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/db1/classmarian_1_1data_1_1Batch">Batch</link>  <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a8dd8e5fa405155eb3207e5aaa4fbdc0f">batch_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">Batch</link> &gt;  <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a4cb5e9051a072fcc61ed4638862f01f5">batch_ptr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Iterator  <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">iterator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Sample  <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1afc6678b770b6da1edabe3ed6d29b4bdd">sample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; paths_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a81594f55f2b25ac638cd616c6f550f55">DatasetBase</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a706866a93abcc9a4840ce23548dfa3b3">DatasetBase</link> (
+std::vector&lt; std::string &gt; paths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual Iterator <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a3656bd4d7627dc8705ffd4a20899b746">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual Iterator <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1ae0ad2f60d79142852bd1ecd10a7c254a">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1aad122bcd2636f0cbe0caf94e07a1aaf7">shuffle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a4cb5e9051a072fcc61ed4638862f01f5">batch_ptr</link> <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1af41218c6327ebf36ed3d8abd952fd1cd">toBatch</link> (
+const std::vector&lt; <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1afc6678b770b6da1edabe3ed6d29b4bdd">sample</link> &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a397079308a957ee9036a81884989c047">reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a48671563fec835e08131fb05d5e0e6da">prepare</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a8dd8e5fa405155eb3207e5aaa4fbdc0f">
+                <title>typedef Batch marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::batch_type</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a4cb5e9051a072fcc61ed4638862f01f5">
+                <title>typedef Ptr&lt;Batch&gt; marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::batch_ptr</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">
+                <title>typedef Iterator marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::iterator</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1afc6678b770b6da1edabe3ed6d29b4bdd">
+                <title>typedef Sample marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::sample</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a81594f55f2b25ac638cd616c6f550f55">
+                <title>marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::DatasetBase ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a706866a93abcc9a4840ce23548dfa3b3">
+                <title>marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::DatasetBase (std::vector&lt; std::string &gt; paths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a3656bd4d7627dc8705ffd4a20899b746">
+                <title>virtual Iterator marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::begin ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1ae0ad2f60d79142852bd1ecd10a7c254a">
+                <title>virtual Iterator marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::end ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1aad122bcd2636f0cbe0caf94e07a1aaf7">
+                <title>virtual void marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::shuffle ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1af41218c6327ebf36ed3d8abd952fd1cd">
+                <title>virtual batch_ptr marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::toBatch (const std::vector&lt; sample &gt; &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a397079308a957ee9036a81884989c047">
+                <title>virtual void marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/deb/classmarian_1_1data_1_1DatasetBase_1a48671563fec835e08131fb05d5e0e6da">
+                <title>virtual void marian::data::DatasetBase&lt; Sample, Iterator, Batch &gt;::prepare ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,88 @@
+\hypertarget{structamunmt_1_1DeviceInfo}{}\section{amunmt\+:\+:Device\+Info Struct Reference}
+\label{structamunmt_1_1DeviceInfo}\index{amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Device\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d3/d73/structamunmt_1_1DeviceInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17}{Device\+Type} \hyperlink{structamunmt_1_1DeviceInfo_a31a1a7886be3f6468888584ae87332d9}{device\+Type}
+\item 
+size\+\_\+t \hyperlink{structamunmt_1_1DeviceInfo_ab6f553877f91f2905b44af11faaf22c1}{thread\+Ind}
+\item 
+size\+\_\+t \hyperlink{structamunmt_1_1DeviceInfo_a20495d767d88f5eeebb3f036503034e7}{device\+Id}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{structamunmt_1_1DeviceInfo_ab0434d0a7cd44975e6d63b8913e25766}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file amun/common/types.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Device\+Info} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{structamunmt_1_1DeviceInfo_ab0434d0a7cd44975e6d63b8913e25766}{}\label{structamunmt_1_1DeviceInfo_ab0434d0a7cd44975e6d63b8913e25766}
+
+
+Definition at line 5 of file types.\+cpp.
+
+
+\begin{DoxyCode}
+6 \{
+7   out << obj.deviceType << \textcolor{stringliteral}{" t="} << obj.threadInd << \textcolor{stringliteral}{" d="} << obj.deviceId;
+8   \textcolor{keywordflow}{return} out;
+9 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}!device\+Id@{device\+Id}}
+\index{device\+Id@{device\+Id}!amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}}
+\subsubsection[{\texorpdfstring{device\+Id}{deviceId}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Device\+Info\+::device\+Id}\hypertarget{structamunmt_1_1DeviceInfo_a20495d767d88f5eeebb3f036503034e7}{}\label{structamunmt_1_1DeviceInfo_a20495d767d88f5eeebb3f036503034e7}
+
+
+Definition at line 32 of file amun/common/types.\+h.
+
+\index{amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}!device\+Type@{device\+Type}}
+\index{device\+Type@{device\+Type}!amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}}
+\subsubsection[{\texorpdfstring{device\+Type}{deviceType}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device\+Type} amunmt\+::\+Device\+Info\+::device\+Type}\hypertarget{structamunmt_1_1DeviceInfo_a31a1a7886be3f6468888584ae87332d9}{}\label{structamunmt_1_1DeviceInfo_a31a1a7886be3f6468888584ae87332d9}
+
+
+Definition at line 30 of file amun/common/types.\+h.
+
+\index{amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}!thread\+Ind@{thread\+Ind}}
+\index{thread\+Ind@{thread\+Ind}!amunmt\+::\+Device\+Info@{amunmt\+::\+Device\+Info}}
+\subsubsection[{\texorpdfstring{thread\+Ind}{threadInd}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Device\+Info\+::thread\+Ind}\hypertarget{structamunmt_1_1DeviceInfo_ab6f553877f91f2905b44af11faaf22c1}{}\label{structamunmt_1_1DeviceInfo_ab6f553877f91f2905b44af11faaf22c1}
+
+
+Definition at line 31 of file amun/common/types.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2types_8h}{amun/common/types.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d7e/classmarian_1_1ClipperBase">
+<title>marian::ClipperBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/def/clippers_8h">&lt;clippers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ClipperBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d5e/classmarian_1_1ClipperBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ClipperBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d88/classmarian_1_1ClipperBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d8/d7e/classmarian_1_1ClipperBase_1a6f7b11e38c66ff53736ad8a6c2a90610">clip</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/d7e/classmarian_1_1ClipperBase_1a6f7b11e38c66ff53736ad8a6c2a90610">
+                <title>virtual void marian::ClipperBase::clip (Tensor)=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

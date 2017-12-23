@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings">
+<title>amunmt::GPU::Decoder::Embeddings class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Decoder::Embeddings</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d46/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Decoder::Embeddings</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d7c/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Weights</declname>
+        <defname>Weights</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; uint &gt; indices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a94b03b0cbce11ec4b1b2b4e2c0ac20b0">Embeddings</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a5c32bbdcdde7a6d814f8599e8d4955a8">Lookup</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Rows, const std::vector&lt; uint &gt; &amp; ids)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a4fb8ced10c1c7b6107b1da22dd38161a">GetCols</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1ac12423a688365ada8d2a3f744eb40086">GetRows</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a1995aa26ef329885c0858e9a9afb16ba">Embeddings</link> (
+const <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings">Embeddings</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a94b03b0cbce11ec4b1b2b4e2c0ac20b0">
+                <title>amunmt::GPU::Decoder::Embeddings&lt; Weights &gt;::Embeddings (const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a5c32bbdcdde7a6d814f8599e8d4955a8">
+                <title>void amunmt::GPU::Decoder::Embeddings&lt; Weights &gt;::Lookup (mblas::Matrix &amp;Rows, const std::vector&lt; uint &gt; &amp;ids)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a4fb8ced10c1c7b6107b1da22dd38161a">
+                <title>size_t amunmt::GPU::Decoder::Embeddings&lt; Weights &gt;::GetCols ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1ac12423a688365ada8d2a3f744eb40086">
+                <title>size_t amunmt::GPU::Decoder::Embeddings&lt; Weights &gt;::GetRows () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_1a1995aa26ef329885c0858e9a9afb16ba">
+                <title>amunmt::GPU::Decoder::Embeddings&lt; Weights &gt;::Embeddings (const Embeddings &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

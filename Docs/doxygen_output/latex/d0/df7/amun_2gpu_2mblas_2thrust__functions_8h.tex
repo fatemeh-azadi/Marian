@@ -1,0 +1,55 @@
+\hypertarget{amun_2gpu_2mblas_2thrust__functions_8h}{}\section{thrust\+\_\+functions.\+h File Reference}
+\label{amun_2gpu_2mblas_2thrust__functions_8h}\index{thrust\+\_\+functions.\+h@{thrust\+\_\+functions.\+h}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$cublas\+\_\+v2.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/device\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/functional.\+h$>$}\\*
+Include dependency graph for amun/gpu/mblas/thrust\+\_\+functions.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dcd/amun_2gpu_2mblas_2thrust__functions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d78/amun_2gpu_2mblas_2thrust__functions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__exp}{thrust\+::detail\+::functional\+::unary\+\_\+exp$<$ T $>$}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__log}{thrust\+::detail\+::functional\+::unary\+\_\+log$<$ T $>$}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__logit}{thrust\+::detail\+::functional\+::unary\+\_\+logit$<$ T $>$}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__tanh}{thrust\+::detail\+::functional\+::unary\+\_\+tanh$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacethrust}{thrust}
+\item 
+ \hyperlink{namespacethrust_1_1detail}{thrust\+::detail}
+\item 
+ \hyperlink{namespacethrust_1_1detail_1_1functional}{thrust\+::detail\+::functional}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$unary\+\_\+exp $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2}{thrust\+::detail\+::functional\+::\+Exp} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$unary\+\_\+log $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}{thrust\+::detail\+::functional\+::\+Log} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$unary\+\_\+logit $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3}{thrust\+::detail\+::functional\+::\+Logit} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$unary\+\_\+tanh $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{thrust\+::detail\+::functional\+::\+Tanh} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$thrust\+::maximum $>$, actor$<$ T1 $>$, actor$<$ T2 $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a2249ce1e61c19c18fed1d15a9ee5cffb}{thrust\+::detail\+::functional\+::\+Max} (const actor$<$ T1 $>$ \&\+\_\+1, const actor$<$ T2 $>$ \&\+\_\+2)
+\end{DoxyCompactItemize}

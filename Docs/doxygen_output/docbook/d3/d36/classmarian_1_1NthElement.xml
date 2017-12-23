@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d36/classmarian_1_1NthElement">
+<title>marian::NthElement class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/dc2/marian_2src_2translator_2nth__element_8h">&lt;nth_element.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::NthElement</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d63/classmarian_1_1NthElement__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::NthElement</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d2d/classmarian_1_1NthElement__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int BLOCK_SIZE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int NUM_BLOCKS</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * d_ind</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * d_out</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * d_res_idx</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * d_res</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * h_res_idx</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * h_res</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * d_breakdown</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * d_batchPosition</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * d_cumBeamSizes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t lastN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d36/classmarian_1_1NthElement_1a75796b4374692eafd5c0da6b26325aec">NthElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d36/classmarian_1_1NthElement_1ae4bf1b02013a04ef25c215bdfbdfbd65">NthElement</link> (
+const <link linkend="d3/d36/classmarian_1_1NthElement">NthElement</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d36/classmarian_1_1NthElement_1a86a2229456a3288b0fa7878b2e3a66b2">NthElement</link> (
+size_t maxBeamSize, size_t maxBatchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d3/d36/classmarian_1_1NthElement_1a612b995014b8931dbcc5dbb9752c470b">~NthElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d36/classmarian_1_1NthElement_1a7ad21a736b9c1c4d632bca89b8168a6e">getNBestList</link> (
+float * probs, const std::vector&lt; int &gt; &amp; batchFirstElementIdxs, const std::vector&lt; int &gt; &amp; cummulatedBeamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d36/classmarian_1_1NthElement_1ace2d94f2aadaedde5dbdc6673366c15a">getNBestList</link> (
+const std::vector&lt; size_t &gt; &amp; beamSizes, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> Probs, std::vector&lt; float &gt; &amp; outCosts, std::vector&lt; unsigned &gt; &amp; outKeys, const bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d36/classmarian_1_1NthElement_1ac31cf171a8bcfb2bb7c6dd4635878c4f">GetPairs</link> (
+size_t number, std::vector&lt; unsigned &gt; &amp; outKeys, std::vector&lt; float &gt; &amp; outValues)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d36/classmarian_1_1NthElement_1af24fa08a8abc7b41e21abc8504ef10eb">getValueByKey</link> (
+std::vector&lt; float &gt; &amp; out, float * d_in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1a75796b4374692eafd5c0da6b26325aec">
+                <title>marian::NthElement::NthElement ()=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1ae4bf1b02013a04ef25c215bdfbdfbd65">
+                <title>marian::NthElement::NthElement (const NthElement &amp;copy)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1a86a2229456a3288b0fa7878b2e3a66b2">
+                <title>marian::NthElement::NthElement (size_t maxBeamSize, size_t maxBatchSize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1a612b995014b8931dbcc5dbb9752c470b">
+                <title>virtual marian::NthElement::~NthElement ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1a7ad21a736b9c1c4d632bca89b8168a6e">
+                <title>void marian::NthElement::getNBestList (float *probs, const std::vector&lt; int &gt; &amp;batchFirstElementIdxs, const std::vector&lt; int &gt; &amp;cummulatedBeamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1ace2d94f2aadaedde5dbdc6673366c15a">
+                <title>void marian::NthElement::getNBestList (const std::vector&lt; size_t &gt; &amp;beamSizes, Tensor Probs, std::vector&lt; float &gt; &amp;outCosts, std::vector&lt; unsigned &gt; &amp;outKeys, const bool isFirst=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1ac31cf171a8bcfb2bb7c6dd4635878c4f">
+                <title>void marian::NthElement::GetPairs (size_t number, std::vector&lt; unsigned &gt; &amp;outKeys, std::vector&lt; float &gt; &amp;outValues)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d36/classmarian_1_1NthElement_1af24fa08a8abc7b41e21abc8504ef10eb">
+                <title>void marian::NthElement::getValueByKey (std::vector&lt; float &gt; &amp;out, float *d_in)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d72/classGPU_1_1ApePenalty">
+<title>GPU::ApePenalty class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d0c/ape__penalty_8h">&lt;ape_penalty.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for GPU::ApePenalty</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/ddf/classGPU_1_1ApePenalty__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for GPU::ApePenalty</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d8d/classGPU_1_1ApePenalty__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; costs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const SrcTrgMap &amp; srcTrgMap_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Probs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Penalties &amp; penalties_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d72/classGPU_1_1ApePenalty_1a83488f2624845fda223b786277a04070">ApePenalty</link> (
+const std::string &amp; name, const YAML::Node &amp; config, size_t tab, const <link linkend="da/d27/namespaceGPU_1af00d3987455a7200ce4556e53eb3d228">SrcTrgMap</link> &amp; srcTrgMap, const <link linkend="da/d27/namespaceGPU_1ac29cf59ddc71f2086318cc8a5b166269">Penalties</link> &amp; penalties)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d72/classGPU_1_1ApePenalty_1ab8b121e02ceba70adcdcf70989bf2799">SetSource</link> (
+const Sentence &amp; source)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d72/classGPU_1_1ApePenalty_1a7a7122eb1b3216f57cfafcc66a908fbc">Score</link> (
+const State &amp; in, State &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual State * <link linkend="db/d72/classGPU_1_1ApePenalty_1a066a608aaca6db9ba49bd42554cdb6be">NewState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d72/classGPU_1_1ApePenalty_1a1eb9aeaaae7584490e9663c4942e841a">BeginSentenceState</link> (
+State &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d72/classGPU_1_1ApePenalty_1a3910e3567c1645ab417e05bc673baa30">AssembleBeamState</link> (
+const State &amp; in, const Beam &amp; beam, State &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="db/d72/classGPU_1_1ApePenalty_1ab9831d9a76f171017038f75ec0782770">GetVocabSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d72/classGPU_1_1ApePenalty_1aa87b18d414bede8e6cb238ccf2a99077">Filter</link> (
+const std::vector&lt; size_t &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual BaseMatrix &amp; <link linkend="db/d72/classGPU_1_1ApePenalty_1a2ca72a0f526af45b6b75bcd1115f91dc">GetProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a83488f2624845fda223b786277a04070">
+                <title>GPU::ApePenalty::ApePenalty (const std::string &amp;name, const YAML::Node &amp;config, size_t tab, const SrcTrgMap &amp;srcTrgMap, const Penalties &amp;penalties)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1ab8b121e02ceba70adcdcf70989bf2799">
+                <title>virtual void GPU::ApePenalty::SetSource (const Sentence &amp;source)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a7a7122eb1b3216f57cfafcc66a908fbc">
+                <title>virtual void GPU::ApePenalty::Score (const State &amp;in, State &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a066a608aaca6db9ba49bd42554cdb6be">
+                <title>virtual State* GPU::ApePenalty::NewState ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a1eb9aeaaae7584490e9663c4942e841a">
+                <title>virtual void GPU::ApePenalty::BeginSentenceState (State &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a3910e3567c1645ab417e05bc673baa30">
+                <title>virtual void GPU::ApePenalty::AssembleBeamState (const State &amp;in, const Beam &amp;beam, State &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1ab9831d9a76f171017038f75ec0782770">
+                <title>virtual size_t GPU::ApePenalty::GetVocabSize () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1aa87b18d414bede8e6cb238ccf2a99077">
+                <title>void GPU::ApePenalty::Filter (const std::vector&lt; size_t &gt; &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d72/classGPU_1_1ApePenalty_1a2ca72a0f526af45b6b75bcd1115f91dc">
+                <title>virtual BaseMatrix&amp; GPU::ApePenalty::GetProbs ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

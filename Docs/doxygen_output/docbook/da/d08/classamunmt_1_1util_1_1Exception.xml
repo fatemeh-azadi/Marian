@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d08/classamunmt_1_1util_1_1Exception">
+<title>amunmt::util::Exception::ExceptionTag struct Reference</title>
+<para>Inheritance diagram for amunmt::util::Exception::ExceptionTag</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d13/structamunmt_1_1util_1_1Exception_1_1ExceptionTag__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::util::Exception::ExceptionTag</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dec/structamunmt_1_1util_1_1Exception_1_1ExceptionTag__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef T  <link linkend="da/d08/classamunmt_1_1util_1_1Exception_1a522c96bc678aff4fc469bf9b75296f26">Identity</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/d08/classamunmt_1_1util_1_1Exception_1a522c96bc678aff4fc469bf9b75296f26">
+                <title>typedef T amunmt::util::Exception::ExceptionTag&lt; T &gt;::Identity</title> <emphasis></emphasis>
+                
+            </section>
+</section>

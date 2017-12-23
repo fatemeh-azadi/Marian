@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d18/types-gpu_8h">
+    <title>types-gpu.h File Reference</title>
+    <programlisting>#include &lt;unordered_map&gt;</programlisting>
+    <programlisting>#include &lt;thrust/device_vector.h&gt;</programlisting>
+    <programlisting>#include &lt;boost/timer/timer.hpp&gt;</programlisting>
+<para>Include dependency diagram for types-gpu.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dcd/types-gpu_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for types-gpu.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/de1/types-gpu_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d18/types-gpu_8h_1af415eaa6c6ad014020a7ece805612466">HANDLE_ERROR</link> (HandleError( err, __FILE__, __LINE__ ))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d18/types-gpu_8h_1a5ac3df3e0b737334da2bdc07aa8093dc">BEGIN_TIMER</link> {}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d18/types-gpu_8h_1a75141a93e26693d16bb3f3cfab03e6d6">PAUSE_TIMER</link> {}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file types-gpu.h</para>
+    </simplesect>
+</section>

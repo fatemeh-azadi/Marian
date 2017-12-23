@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d57/god_8h">
+    <title>god.h File Reference</title>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;boost/thread/shared_mutex.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/thread/locks.hpp&gt;</programlisting>
+    <programlisting>#include &quot;common/processor/processor.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/loader.h&quot;</programlisting>
+    <programlisting>#include &quot;common/logging.h&quot;</programlisting>
+    <programlisting>#include &quot;common/scorer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/types.h&quot;</programlisting>
+    <programlisting>#include &quot;common/base_best_hyps.h&quot;</programlisting>
+    <programlisting>#include &quot;common/output_collector.h&quot;</programlisting>
+    <programlisting>#include &quot;common/vocab.h&quot;</programlisting>
+    <programlisting>#include &quot;common/threadpool.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+    <programlisting>#include &quot;common/filter.h&quot;</programlisting>
+    <programlisting>#include &quot;common/processor/bpe.h&quot;</programlisting>
+    <programlisting>#include &quot;common/utils.h&quot;</programlisting>
+<para>Include dependency diagram for god.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dee/god_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for god.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/daa/god_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d4e/classamunmt_1_1God">amunmt::God</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file god.h</para>
+    </simplesect>
+</section>

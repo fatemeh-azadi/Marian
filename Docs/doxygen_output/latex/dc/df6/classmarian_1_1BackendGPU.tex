@@ -1,0 +1,234 @@
+\hypertarget{classmarian_1_1BackendGPU}{}\section{marian\+:\+:Backend\+G\+PU Class Reference}
+\label{classmarian_1_1BackendGPU}\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+
+
+{\ttfamily \#include $<$backend\+\_\+gpu.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Backend\+G\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d3/d53/classmarian_1_1BackendGPU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Backend\+G\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{de/d23/classmarian_1_1BackendGPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1BackendGPU_adf0609049c6b7cea424fee23f789bc52}{set\+Device} (size\+\_\+t device)
+\item 
+void \hyperlink{classmarian_1_1BackendGPU_a2cdac5f8db383a13f1dadd92739362d9}{set\+Handles} (size\+\_\+t device, size\+\_\+t seed)
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a49fb5580e176ef2e794772d1904458f9}{get\+Cublas\+Handle} ()
+\item 
+curand\+Generator\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a0070cdc52a18b15942a911a2f774bd04}{get\+Curand\+Generator} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+curand\+Generator\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a47ba8ab67609328e2ac7239f96776c52}{create\+Curand\+Generator} (size\+\_\+t device, size\+\_\+t seed)
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a48b75aa1fb526adafaaad99281518d08}{create\+\_\+handle} (size\+\_\+t device)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a810b6cd016639ed114076ad69f8a8df9}{cublas\+Handle\+\_\+}
+\item 
+curand\+Generator\+\_\+t \hyperlink{classmarian_1_1BackendGPU_a9988ccab12ceb4e0dc920c12394484e6}{curand\+Generator\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file backend\+\_\+gpu.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!create\+\_\+handle@{create\+\_\+handle}}
+\index{create\+\_\+handle@{create\+\_\+handle}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{create\+\_\+handle(size\+\_\+t device)}{create_handle(size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}cublas\+Handle\+\_\+t marian\+::\+Backend\+G\+P\+U\+::create\+\_\+handle (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1BackendGPU_a48b75aa1fb526adafaaad99281518d08}{}\label{classmarian_1_1BackendGPU_a48b75aa1fb526adafaaad99281518d08}
+
+
+Definition at line 49 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+49                                               \{
+50     cudaSetDevice(device);
+51     cublasHandle\_t cublasHandle;
+52     cublasCreate(&cublasHandle);
+53     \textcolor{keywordflow}{return} cublasHandle;
+54   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{dc/df6/classmarian_1_1BackendGPU_a48b75aa1fb526adafaaad99281518d08_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!create\+Curand\+Generator@{create\+Curand\+Generator}}
+\index{create\+Curand\+Generator@{create\+Curand\+Generator}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{create\+Curand\+Generator(size\+\_\+t device, size\+\_\+t seed)}{createCurandGenerator(size_t device, size_t seed)}}]{\setlength{\rightskip}{0pt plus 5cm}curand\+Generator\+\_\+t marian\+::\+Backend\+G\+P\+U\+::create\+Curand\+Generator (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device, }
+\item[{size\+\_\+t}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1BackendGPU_a47ba8ab67609328e2ac7239f96776c52}{}\label{classmarian_1_1BackendGPU_a47ba8ab67609328e2ac7239f96776c52}
+
+
+Definition at line 37 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+37                                                                       \{
+38     cudaSetDevice(device);
+39     curandGenerator\_t generator;
+40     \hyperlink{backend__gpu_8h_a02680eff1ab25683ec230fc4f4c41268}{CURAND\_CALL}(curandCreateGenerator(&generator, CURAND\_RNG\_PSEUDO\_DEFAULT));
+41     \hyperlink{backend__gpu_8h_a02680eff1ab25683ec230fc4f4c41268}{CURAND\_CALL}(curandSetPseudoRandomGeneratorSeed(generator, seed));
+42 
+43     \textcolor{comment}{// cudaStream\_t stream = 0;}
+44     \textcolor{comment}{// CURAND\_CALL(curandSetStream(generator, stream));}
+45     \textcolor{comment}{// CURAND\_CALL(curandDestroyGenerator(generator));}
+46     \textcolor{keywordflow}{return} generator;
+47   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/df6/classmarian_1_1BackendGPU_a47ba8ab67609328e2ac7239f96776c52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!get\+Cublas\+Handle@{get\+Cublas\+Handle}}
+\index{get\+Cublas\+Handle@{get\+Cublas\+Handle}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{get\+Cublas\+Handle()}{getCublasHandle()}}]{\setlength{\rightskip}{0pt plus 5cm}cublas\+Handle\+\_\+t marian\+::\+Backend\+G\+P\+U\+::get\+Cublas\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BackendGPU_a49fb5580e176ef2e794772d1904458f9}{}\label{classmarian_1_1BackendGPU_a49fb5580e176ef2e794772d1904458f9}
+
+
+Definition at line 29 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1BackendGPU_a810b6cd016639ed114076ad69f8a8df9}{cublasHandle\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!get\+Curand\+Generator@{get\+Curand\+Generator}}
+\index{get\+Curand\+Generator@{get\+Curand\+Generator}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{get\+Curand\+Generator()}{getCurandGenerator()}}]{\setlength{\rightskip}{0pt plus 5cm}curand\+Generator\+\_\+t marian\+::\+Backend\+G\+P\+U\+::get\+Curand\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BackendGPU_a0070cdc52a18b15942a911a2f774bd04}{}\label{classmarian_1_1BackendGPU_a0070cdc52a18b15942a911a2f774bd04}
+
+
+Definition at line 31 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1BackendGPU_a9988ccab12ceb4e0dc920c12394484e6}{curandGenerator\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!set\+Device@{set\+Device}}
+\index{set\+Device@{set\+Device}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{set\+Device(size\+\_\+t device)}{setDevice(size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Backend\+G\+P\+U\+::set\+Device (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1BackendGPU_adf0609049c6b7cea424fee23f789bc52}{}\label{classmarian_1_1BackendGPU_adf0609049c6b7cea424fee23f789bc52}
+
+
+Implements \hyperlink{classmarian_1_1Backend_a63e2684ba7296f57312e89769b01038d}{marian\+::\+Backend}.
+
+
+
+Definition at line 22 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+22 \{ cudaSetDevice(device); \}
+\end{DoxyCode}
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!set\+Handles@{set\+Handles}}
+\index{set\+Handles@{set\+Handles}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{set\+Handles(size\+\_\+t device, size\+\_\+t seed)}{setHandles(size_t device, size_t seed)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Backend\+G\+P\+U\+::set\+Handles (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device, }
+\item[{size\+\_\+t}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BackendGPU_a2cdac5f8db383a13f1dadd92739362d9}{}\label{classmarian_1_1BackendGPU_a2cdac5f8db383a13f1dadd92739362d9}
+
+
+Definition at line 24 of file backend\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+24                                               \{
+25     \hyperlink{classmarian_1_1BackendGPU_a810b6cd016639ed114076ad69f8a8df9}{cublasHandle\_} = \hyperlink{classmarian_1_1BackendGPU_a48b75aa1fb526adafaaad99281518d08}{create\_handle}(device);
+26     \hyperlink{classmarian_1_1BackendGPU_a9988ccab12ceb4e0dc920c12394484e6}{curandGenerator\_} = \hyperlink{classmarian_1_1BackendGPU_a47ba8ab67609328e2ac7239f96776c52}{createCurandGenerator}(device, 
+      \hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{Config::seed});
+27   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/df6/classmarian_1_1BackendGPU_a2cdac5f8db383a13f1dadd92739362d9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!cublas\+Handle\+\_\+@{cublas\+Handle\+\_\+}}
+\index{cublas\+Handle\+\_\+@{cublas\+Handle\+\_\+}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{cublas\+Handle\+\_\+}{cublasHandle_}}]{\setlength{\rightskip}{0pt plus 5cm}cublas\+Handle\+\_\+t marian\+::\+Backend\+G\+P\+U\+::cublas\+Handle\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1BackendGPU_a810b6cd016639ed114076ad69f8a8df9}{}\label{classmarian_1_1BackendGPU_a810b6cd016639ed114076ad69f8a8df9}
+
+
+Definition at line 34 of file backend\+\_\+gpu.\+h.
+
+\index{marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}!curand\+Generator\+\_\+@{curand\+Generator\+\_\+}}
+\index{curand\+Generator\+\_\+@{curand\+Generator\+\_\+}!marian\+::\+Backend\+G\+PU@{marian\+::\+Backend\+G\+PU}}
+\subsubsection[{\texorpdfstring{curand\+Generator\+\_\+}{curandGenerator_}}]{\setlength{\rightskip}{0pt plus 5cm}curand\+Generator\+\_\+t marian\+::\+Backend\+G\+P\+U\+::curand\+Generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1BackendGPU_a9988ccab12ceb4e0dc920c12394484e6}{}\label{classmarian_1_1BackendGPU_a9988ccab12ceb4e0dc920c12394484e6}
+
+
+Definition at line 35 of file backend\+\_\+gpu.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{backend__gpu_8h}{backend\+\_\+gpu.\+h}\end{DoxyCompactItemize}

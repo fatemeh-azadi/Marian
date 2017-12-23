@@ -1,0 +1,196 @@
+\hypertarget{classmarian_1_1EncoderStatePooling}{}\section{marian\+:\+:Encoder\+State\+Pooling Class Reference}
+\label{classmarian_1_1EncoderStatePooling}\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+
+
+{\ttfamily \#include $<$pooling.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+State\+Pooling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d5/d68/classmarian_1_1EncoderStatePooling__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+State\+Pooling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d4/da1/classmarian_1_1EncoderStatePooling__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1EncoderStatePooling_a657d3789fda3f2f80e7163087f584cf9}{Encoder\+State\+Pooling} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} context, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} attended, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_ab870704b9a38d6917a1e8b365978e36e}{get\+Context} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_aac79a7a0a281bd88b50cafd278802a22}{get\+Attended} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_ace601efa11aebfbd545a094d1fb222e9}{get\+Mask} ()
+\item 
+virtual const std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{classmarian_1_1EncoderStatePooling_abf81ac7384016df3846fb56d12c0ec05}{get\+Source\+Words} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_a22341e3d6177b35fe1cadbacabb989a3}{context\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_ac921a26622027025fddb7e8ef262c817}{attended\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderStatePooling_ad023ae72c350215cdb4748391a0e6bb6}{mask\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ \hyperlink{classmarian_1_1EncoderStatePooling_adbdcc152b7a78c92b4eaeb849e128874}{batch\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file pooling.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!Encoder\+State\+Pooling@{Encoder\+State\+Pooling}}
+\index{Encoder\+State\+Pooling@{Encoder\+State\+Pooling}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{Encoder\+State\+Pooling(\+Expr context, Expr attended, Expr mask, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{EncoderStatePooling(Expr context, Expr attended, Expr mask, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Encoder\+State\+Pooling\+::\+Encoder\+State\+Pooling (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{context, }
+\item[{{\bf Expr}}]{attended, }
+\item[{{\bf Expr}}]{mask, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderStatePooling_a657d3789fda3f2f80e7163087f584cf9}{}\label{classmarian_1_1EncoderStatePooling_a657d3789fda3f2f80e7163087f584cf9}
+
+
+Definition at line 16 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+17       : \hyperlink{classmarian_1_1EncoderStatePooling_a22341e3d6177b35fe1cadbacabb989a3}{context\_}(context), \hyperlink{classmarian_1_1EncoderStatePooling_ac921a26622027025fddb7e8ef262c817}{attended\_}(attended), \hyperlink{classmarian_1_1EncoderStatePooling_ad023ae72c350215cdb4748391a0e6bb6}{mask\_}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}), 
+      \hyperlink{classmarian_1_1EncoderStatePooling_adbdcc152b7a78c92b4eaeb849e128874}{batch\_}(batch) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!get\+Attended@{get\+Attended}}
+\index{get\+Attended@{get\+Attended}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{get\+Attended()}{getAttended()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::get\+Attended (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderStatePooling_aac79a7a0a281bd88b50cafd278802a22}{}\label{classmarian_1_1EncoderStatePooling_aac79a7a0a281bd88b50cafd278802a22}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a00f8d237ecedfae174695526969e590a}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 20 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+20 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderStatePooling_ac921a26622027025fddb7e8ef262c817}{attended\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!get\+Context@{get\+Context}}
+\index{get\+Context@{get\+Context}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{get\+Context()}{getContext()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::get\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderStatePooling_ab870704b9a38d6917a1e8b365978e36e}{}\label{classmarian_1_1EncoderStatePooling_ab870704b9a38d6917a1e8b365978e36e}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a35888943fb53059c7b524b3b011d7a0c}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 19 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+19 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderStatePooling_a22341e3d6177b35fe1cadbacabb989a3}{context\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!get\+Mask@{get\+Mask}}
+\index{get\+Mask@{get\+Mask}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{get\+Mask()}{getMask()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::get\+Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderStatePooling_ace601efa11aebfbd545a094d1fb222e9}{}\label{classmarian_1_1EncoderStatePooling_ace601efa11aebfbd545a094d1fb222e9}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a5ae25950692389c47b4035ebcae4725e}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 21 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+21 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderStatePooling_ad023ae72c350215cdb4748391a0e6bb6}{mask\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!get\+Source\+Words@{get\+Source\+Words}}
+\index{get\+Source\+Words@{get\+Source\+Words}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{get\+Source\+Words()}{getSourceWords()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::vector$<$size\+\_\+t$>$\& marian\+::\+Encoder\+State\+Pooling\+::get\+Source\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderStatePooling_abf81ac7384016df3846fb56d12c0ec05}{}\label{classmarian_1_1EncoderStatePooling_abf81ac7384016df3846fb56d12c0ec05}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a21e65549359c321ee7874e56ca04405b}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 23 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+23                                                     \{
+24     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderStatePooling_adbdcc152b7a78c92b4eaeb849e128874}{batch\_}->front()->indeces();
+25   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!attended\+\_\+@{attended\+\_\+}}
+\index{attended\+\_\+@{attended\+\_\+}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{attended\+\_\+}{attended_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::attended\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderStatePooling_ac921a26622027025fddb7e8ef262c817}{}\label{classmarian_1_1EncoderStatePooling_ac921a26622027025fddb7e8ef262c817}
+
+
+Definition at line 11 of file pooling.\+h.
+
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!batch\+\_\+@{batch\+\_\+}}
+\index{batch\+\_\+@{batch\+\_\+}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{batch\+\_\+}{batch_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf data\+::\+Corpus\+Batch}$>$ marian\+::\+Encoder\+State\+Pooling\+::batch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderStatePooling_adbdcc152b7a78c92b4eaeb849e128874}{}\label{classmarian_1_1EncoderStatePooling_adbdcc152b7a78c92b4eaeb849e128874}
+
+
+Definition at line 13 of file pooling.\+h.
+
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!context\+\_\+@{context\+\_\+}}
+\index{context\+\_\+@{context\+\_\+}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{context\+\_\+}{context_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderStatePooling_a22341e3d6177b35fe1cadbacabb989a3}{}\label{classmarian_1_1EncoderStatePooling_a22341e3d6177b35fe1cadbacabb989a3}
+
+
+Definition at line 10 of file pooling.\+h.
+
+\index{marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}!mask\+\_\+@{mask\+\_\+}}
+\index{mask\+\_\+@{mask\+\_\+}!marian\+::\+Encoder\+State\+Pooling@{marian\+::\+Encoder\+State\+Pooling}}
+\subsubsection[{\texorpdfstring{mask\+\_\+}{mask_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+State\+Pooling\+::mask\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderStatePooling_ad023ae72c350215cdb4748391a0e6bb6}{}\label{classmarian_1_1EncoderStatePooling_ad023ae72c350215cdb4748391a0e6bb6}
+
+
+Definition at line 12 of file pooling.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pooling_8h}{pooling.\+h}\end{DoxyCompactItemize}

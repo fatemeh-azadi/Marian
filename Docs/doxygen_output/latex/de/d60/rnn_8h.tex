@@ -1,0 +1,317 @@
+\hypertarget{rnn_8h}{}\section{rnn.\+h File Reference}
+\label{rnn_8h}\index{rnn.\+h@{rnn.\+h}}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}common/definitions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+operators.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}layers/generic.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rnn/types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rnn/attention.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rnn/cells.\+h\char`\"{}}\\*
+Include dependency graph for rnn.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d45/rnn_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/ddd/rnn_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\item 
+ \hyperlink{namespacemarian_1_1rnn}{marian\+::rnn}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{marian\+::rnn\+::dir} \+: int \{ \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{marian\+::rnn\+::dir\+::forward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{marian\+::rnn\+::dir\+::backward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{marian\+::rnn\+::dir\+::alternating\+\_\+forward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{marian\+::rnn\+::dir\+::alternating\+\_\+backward}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rnn_8h_a6f2f21bd7c93596375b78161b0ff7fae}{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE} (\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{marian\+::rnn\+::dir}, int) namespace marian
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rnn.\+h@{rnn.\+h}!Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}!rnn.\+h@{rnn.\+h}}
+\subsubsection[{\texorpdfstring{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+P\+E(marian\+::rnn\+::dir, int) namespace marian}{YAML_REGISTER_TYPE(marian::rnn::dir, int) namespace marian}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE (
+\begin{DoxyParamCaption}
+\item[{{\bf marian\+::rnn\+::dir}}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{rnn_8h_a6f2f21bd7c93596375b78161b0ff7fae}{}\label{rnn_8h_a6f2f21bd7c93596375b78161b0ff7fae}
+
+
+Definition at line 24 of file rnn.\+h.
+
+
+\begin{DoxyCode}
+26                  \{
+27 \textcolor{keyword}{namespace }\hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn} \{
+28 
+29 \textcolor{keyword}{class }BaseRNN \{
+30 \textcolor{keyword}{protected}:
+31   Ptr<ExpressionGraph> graph\_;
+32   Ptr<Options> options\_;
+33 
+34 \textcolor{keyword}{public}:
+35   BaseRNN(Ptr<ExpressionGraph> graph, Ptr<Options> options)
+36       : graph\_(graph), options\_(options) \{\}
+37 
+38   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} = \textcolor{keyword}{nullptr}) = 0;
+39   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}, State, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} = \textcolor{keyword}{nullptr}) = 0;
+40   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} = \textcolor{keyword}{nullptr}) = 0;
+41   \textcolor{keyword}{virtual} \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} lastCellStates() = 0;
+42   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} push\_back(Ptr<Cell>) = 0;
+43   \textcolor{keyword}{virtual} Ptr<Cell> at(\textcolor{keywordtype}{int} i) = 0;
+44   \textcolor{keyword}{virtual} Ptr<Options> getOptions() \{ \textcolor{keywordflow}{return} options\_; \}
+45 \};
+46 
+47 \textcolor{keyword}{class }RNN;
+48 
+49 \textcolor{keyword}{class }SingleLayerRNN : \textcolor{keyword}{public} BaseRNN \{
+50 \textcolor{keyword}{private}:
+51   Ptr<Cell> cell\_;
+52   \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{dir} direction\_;
+53   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} last\_;
+54 
+55   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} apply(\textcolor{keyword}{const} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input,
+56                \textcolor{keyword}{const} \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} initialState,
+57                \textcolor{keyword}{const} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+58     last\_.clear();
+59 
+60     State state = initialState.front();
+61 
+62     cell\_->clear();
+63 
+64     \textcolor{keyword}{auto} xWs = cell\_->applyInput(\{input\});
+65 
+66     \textcolor{keywordtype}{size\_t} timeSteps = input->shape()[2];
+67 
+68     \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} outputs;
+69     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < timeSteps; ++i) \{
+70       \textcolor{keywordtype}{int} j = i;
+71 
+72       \textcolor{keywordflow}{if}(direction\_ == dir::backward)
+73         j = timeSteps - i - 1;
+74 
+75       std::vector<Expr> steps(xWs.size());
+76       std::transform(xWs.begin(), xWs.end(), steps.begin(),
+77                      [j](\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} e) \{ \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step}(e, j); \});
+78 
+79       \textcolor{keywordflow}{if}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask})
+80         state = cell\_->applyState(steps, state, \hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}, j));
+81       \textcolor{keywordflow}{else}
+82         state = cell\_->applyState(steps, state);
+83 
+84       outputs.push\_back(state);
+85     \}
+86 
+87     \textcolor{keywordflow}{if}(direction\_ == dir::backward)
+88       outputs.reverse();
+89 
+90     last\_.push\_back(outputs.back());
+91 
+92     \textcolor{keywordflow}{return} outputs;
+93   \}
+94 
+95   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} apply(\textcolor{keyword}{const} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, \textcolor{keyword}{const} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+96     \textcolor{keyword}{auto} graph = input->graph();
+97     \textcolor{keywordtype}{int} dimBatch = input->shape()[0];
+98     \textcolor{keywordtype}{int} dimState = cell\_->getOptions()->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimState"});
+99 
+100     \textcolor{keyword}{auto} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output} = graph->zeros(\hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \{dimBatch, dimState\});
+101     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+102     State startState\{ \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output}, cell \};
+103 
+104     \textcolor{keywordflow}{return} apply(input, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}(\{startState\}), \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+105   \}
+106 
+107   SingleLayerRNN(Ptr<ExpressionGraph> graph, Ptr<Options> options)
+108       : BaseRNN(graph, options),
+109         direction\_(options->get<\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{dir}>(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{dir}::\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{forward}))
+110       \{\}
+111 
+112 \textcolor{keyword}{public}:
+113   \textcolor{keyword}{friend} RNN;
+114 
+115   \textcolor{comment}{// @TODO: benchmark whether this concatenation is a good idea}
+116   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+117     \textcolor{keywordflow}{return} apply(input, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}).outputs();
+118   \}
+119 
+120   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} states, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+121     \textcolor{keywordflow}{return} apply(input, states, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}).outputs();
+122   \}
+123 
+124   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, State state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+125     \textcolor{keywordflow}{return} apply(input, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}(\{state\}), \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}).outputs();
+126   \}
+127 
+128   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} lastCellStates() \{
+129     \textcolor{keywordflow}{return} last\_;
+130   \}
+131 
+132   \textcolor{keywordtype}{void} push\_back(Ptr<Cell> cell) \{
+133     cell\_ = \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+134   \}
+135 
+136   \textcolor{keyword}{virtual} Ptr<Cell> at(\textcolor{keywordtype}{int} i) \{
+137     UTIL\_THROW\_IF2(i > 0, \textcolor{stringliteral}{"SingleRNN only has one cell"});
+138     \textcolor{keywordflow}{return} cell\_;
+139   \}
+140 \};
+141 
+142 
+143 \textcolor{keyword}{class }RNN : \textcolor{keyword}{public} BaseRNN,
+144             \textcolor{keyword}{public} std::enable\_shared\_from\_this<RNN> \{
+145 \textcolor{keyword}{private}:
+146   \textcolor{keywordtype}{bool} skip\_;
+147   \textcolor{keywordtype}{bool} skipFirst\_;
+148   std::vector<Ptr<SingleLayerRNN>> rnns\_;
+149 
+150 \textcolor{keyword}{public}:
+151   RNN(Ptr<ExpressionGraph> graph, Ptr<Options> options)
+152       : BaseRNN(graph, options),
+153         skip\_(options->get(\textcolor{stringliteral}{"skip"}, false)),
+154         skipFirst\_(options->get(\textcolor{stringliteral}{"skipFirst"}, false)) \{\}
+155 
+156   \textcolor{keywordtype}{void} push\_back(Ptr<Cell> cell) \{
+157     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn} = Ptr<SingleLayerRNN>(\textcolor{keyword}{new} SingleLayerRNN(graph\_, cell->getOptions()));
+158     \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}->push\_back(cell);
+159     rnns\_.push\_back(\hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn});
+160   \}
+161 
+162   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+163     UTIL\_THROW\_IF2(rnns\_.empty(), \textcolor{stringliteral}{"0 layers in RNN"});
+164 
+165     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+166     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} layerInput = input;
+167     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < rnns\_.size(); ++i) \{
+168       \textcolor{keyword}{auto} lazyInput = layerInput;
+169 
+170       \textcolor{keyword}{auto} cell = rnns\_[i]->at(0);
+171       \textcolor{keyword}{auto} lazyInputs = cell->getLazyInputs(shared\_from\_this());
+172       \textcolor{keywordflow}{if}(!lazyInputs.empty()) \{
+173         lazyInputs.push\_back(layerInput);
+174         lazyInput = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(lazyInputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}=1);
+175       \}
+176 
+177       \textcolor{keyword}{auto} layerOutput = rnns\_[i]->transduce(lazyInput, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+178 
+179       \textcolor{keywordflow}{if}(skip\_ && (skipFirst\_ || i > 0))
+180         output = layerOutput + layerInput;
+181       \textcolor{keywordflow}{else}
+182         output = layerOutput;
+183 
+184       layerInput = \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+185     \}
+186     \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+187   \}
+188 
+189   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} states, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+190     UTIL\_THROW\_IF2(rnns\_.empty(), \textcolor{stringliteral}{"0 layers in RNN"});
+191 
+192     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+193     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} layerInput = input;
+194     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < rnns\_.size(); ++i) \{
+195       \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} lazyInput;
+196       \textcolor{keyword}{auto} cell = rnns\_[i]->at(0);
+197       \textcolor{keyword}{auto} lazyInputs = cell->getLazyInputs(shared\_from\_this());
+198       \textcolor{keywordflow}{if}(!lazyInputs.empty()) \{
+199         lazyInputs.push\_back(layerInput);
+200         lazyInput = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(lazyInputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}=1);
+201       \}
+202       \textcolor{keywordflow}{else} \{
+203         lazyInput = layerInput;
+204       \}
+205 
+206       \textcolor{keyword}{auto} layerOutput = rnns\_[i]->transduce(lazyInput, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}(\{states[i]\}), 
+      \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+207 
+208       \textcolor{keywordflow}{if}(skip\_ && (skipFirst\_ || i > 0))
+209         output = layerOutput + layerInput;
+210       \textcolor{keywordflow}{else}
+211         output = layerOutput;
+212 
+213       layerInput = \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+214     \}
+215     \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+216   \}
+217 
+218   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} transduce(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input, State state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \textcolor{keyword}{nullptr}) \{
+219     UTIL\_THROW\_IF2(rnns\_.empty(), \textcolor{stringliteral}{"0 layers in RNN"});
+220 
+221     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+222     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} layerInput = input;
+223     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < rnns\_.size(); ++i) \{
+224       \textcolor{keyword}{auto} lazyInput = layerInput;
+225 
+226       \textcolor{keyword}{auto} cell = rnns\_[i]->at(0);
+227       \textcolor{keyword}{auto} lazyInputs = cell->getLazyInputs(shared\_from\_this());
+228       \textcolor{keywordflow}{if}(!lazyInputs.empty()) \{
+229         lazyInputs.push\_back(layerInput);
+230         lazyInput = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(lazyInputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}=1);
+231       \}
+232 
+233       \textcolor{keyword}{auto} layerOutput = rnns\_[i]->transduce(lazyInput, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}(\{state\}), 
+      \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+234 
+235       \textcolor{keywordflow}{if}(skip\_ && (skipFirst\_ || i > 0))
+236         output = layerOutput + layerInput;
+237       \textcolor{keywordflow}{else}
+238         output = layerOutput;
+239 
+240       layerInput = \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+241     \}
+242     \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+243   \}
+244 
+245   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} lastCellStates() \{
+246     \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} temp;
+247     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn} : rnns\_)
+248       temp.push\_back(\hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}->lastCellStates().back());
+249     \textcolor{keywordflow}{return} temp;
+250   \}
+251 
+252   \textcolor{keyword}{virtual} Ptr<Cell> at(\textcolor{keywordtype}{int} i) \{
+253     \textcolor{keywordflow}{return} rnns\_[i]->at(0);
+254   \}
+255 
+256 \};
+257 
+258 \}
+259 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d60/rnn_8h_a6f2f21bd7c93596375b78161b0ff7fae_cgraph}
+\end{center}
+\end{figure}
+
+

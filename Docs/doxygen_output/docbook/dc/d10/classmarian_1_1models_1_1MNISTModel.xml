@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel">
+<title>marian::models::MNISTModel class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d39/marian_2src_2examples_2mnist_2model_8h">&lt;model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::models::MNISTModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d8d/classmarian_1_1models_1_1MNISTModel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::models::MNISTModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d72/classmarian_1_1models_1_1MNISTModel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/d07/classmarian_1_1data_1_1MNIST">data::MNIST</link>  <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1a51d3bba55e9fb1f82f7cf18987f22c01">dataset_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool inference_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; dims_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1a018d81eab7abfb2e97de6712a04a9f8a">MNISTModel</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1aacea07dc6d02c753955564f36df0959c">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1a2e46784797746aabdfe65fea058720ef">load</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1a6aa8f9f5efe1b9ed5e84438c91f7bb0c">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, const std::string &amp; name, bool foo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">data::BatchStats</link> &gt; <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1aacfb206fb5bda4dafde8a72ad1f059a5">collectStats</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d10/classmarian_1_1models_1_1MNISTModel_1ad6f17d5d5db7302dd4a9daec556ed121">FeedforwardClassifier</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; g, const std::vector&lt; int &gt; &amp; dims, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch, bool inference)<para><emphasis>Constructs an expression graph representing a feed-forward
+classifier.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1a51d3bba55e9fb1f82f7cf18987f22c01">
+                <title>typedef data::MNIST marian::models::MNISTModel::dataset_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1a018d81eab7abfb2e97de6712a04a9f8a">
+                <title>marian::models::MNISTModel::MNISTModel (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1aacea07dc6d02c753955564f36df0959c">
+                <title>Expr marian::models::MNISTModel::build (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1a2e46784797746aabdfe65fea058720ef">
+                <title>void marian::models::MNISTModel::load (Ptr&lt; ExpressionGraph &gt; graph, const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1a6aa8f9f5efe1b9ed5e84438c91f7bb0c">
+                <title>void marian::models::MNISTModel::save (Ptr&lt; ExpressionGraph &gt; graph, const std::string &amp;name, bool foo=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1aacfb206fb5bda4dafde8a72ad1f059a5">
+                <title>Ptr&lt;data::BatchStats&gt; marian::models::MNISTModel::collectStats (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d10/classmarian_1_1models_1_1MNISTModel_1ad6f17d5d5db7302dd4a9daec556ed121">
+                <title>Expr marian::models::MNISTModel::FeedforwardClassifier (Ptr&lt; ExpressionGraph &gt; g, const std::vector&lt; int &gt; &amp;dims, Ptr&lt; data::Batch &gt; batch, bool inference=false)</title> <emphasis>Constructs an expression graph representing a feed-forward
+classifier.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dims</entry>
+                                <entry>
+<para>number of nodes in each layer of the feed-forward classifier </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>batch</entry>
+                                <entry>
+<para>a batch of training or testing examples </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>training</entry>
+                                <entry>
+<para>create a classifier for training or for inference only</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>a shared pointer to the newly constructed expression graph </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

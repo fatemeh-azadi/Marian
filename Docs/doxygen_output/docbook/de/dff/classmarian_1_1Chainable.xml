@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dff/classmarian_1_1Chainable">
+<title>marian::Chainable struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/dc2/definitions_8h">&lt;definitions.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Chainable</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d2f/classmarian_1_1Chainable__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Chainable</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d8d/classmarian_1_1Chainable__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>DataType</declname>
+        <defname>DataType</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/dff/classmarian_1_1Chainable_1a7dca365afdad93e9f14dd3a9eb448a67">Chainable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="de/dff/classmarian_1_1Chainable_1a97748d5fa4766b4006be2e00509f9d69">~Chainable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1ae34ca176aa8332060971e48e5924021d">forward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1ac378f88a43e622f8ebe915e07a6e3afd">backward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="de/dff/classmarian_1_1Chainable_1ad384c497e09e7af6a5a2e5b660a587a1">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="de/dff/classmarian_1_1Chainable_1a309d5314142f2a3bbdb555c631b9ff81">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="de/dff/classmarian_1_1Chainable_1abfe36e67806df6681bdcd7bf81cbab16">allocate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a0b0a98056948c3cb92e1bad73f32781c">free</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a38fc006b882be3f26352a6b6364e60e7">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a489e63a97b6940ab1d7065e2b4f935f2">init_dependent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1ab8d92dd0145cc2fdf9c634f3493afa3e">set_zero_adjoint</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="de/dff/classmarian_1_1Chainable_1aaec9da795a462f3ed88325769d8c238a">trainable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a0af1d5f65be7f857b18370dfa1df1638">setTrainable</link> (
+bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a394a7e3f35fc90a7d9e717c7512fd2f1">setId</link> (
+size_t )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="de/dff/classmarian_1_1Chainable_1a2dff8542fdaf06b18dcf26f5a5834621">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; <link linkend="de/dff/classmarian_1_1Chainable_1a3e89dfd767b54ae685e9a3ec57888376">graph</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> &amp; <link linkend="de/dff/classmarian_1_1Chainable_1aec5a801e7b0c7bc3b0d0956ced52f90b">shape</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; <link linkend="de/dff/classmarian_1_1Chainable_1a8baafc6c50d01876b34404e033ab06ab">children</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="de/dff/classmarian_1_1Chainable_1a5bd9e384a91c5aa70b33fdaa085df11b">child</link> (
+size_t )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual DataType &amp; <link linkend="de/dff/classmarian_1_1Chainable_1a5b4abc3fddef0cc1dea251820bf98d95">val</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual DataType &amp; <link linkend="de/dff/classmarian_1_1Chainable_1a91111faa04d388d623f86a75735a65be">grad</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="de/dff/classmarian_1_1Chainable_1a7aa762e76967be25d3f1fe73d0007890">scalar</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="de/dff/classmarian_1_1Chainable_1a2b7a5cbdac7a7d3bd7d781a6ff148fc3">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="de/dff/classmarian_1_1Chainable_1aabc65436f44051e63f3469c587d59803">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="de/dff/classmarian_1_1Chainable_1abe6229de0b61614d629e48fa6f1a9ca6">form</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="de/dff/classmarian_1_1Chainable_1a5ed3d68211003bf4f8c3185cc909d92a">label</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="de/dff/classmarian_1_1Chainable_1a16566c8b8d4c718d8c35737f80ed45da">graphviz</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a7d75ea224b53df6c2e1b32d86a65c359">set_name</link> (
+const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string &amp; <link linkend="de/dff/classmarian_1_1Chainable_1a7de20b12268f18b186e2d76bfb19e899">name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/dff/classmarian_1_1Chainable_1a6cb078bf79069c097c8078b7ab8a1eb7">debug</link> (
+const std::string &amp; message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="de/dff/classmarian_1_1Chainable_1a5b58fb9fa5f168310936ffe3fc05505a">marked_for_debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string &amp; <link linkend="de/dff/classmarian_1_1Chainable_1a92895c4575aefd1a67373b02cdf31472">debug_message</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="de/dff/classmarian_1_1Chainable_1a5124cecc616150ff33fae3eff61e7372">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Abstraction of an element in a computation graph for which a derivative can be calculated. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>The name of this class comes from the fact that this element is <link xlink:href="https://en.wikipedia.org/wiki/Function_composition">composable</link> (aka chainable) in the context of the <link xlink:href="https://en.wikipedia.org/wiki/Chain_rule">chain rule of calculus</link>.</para>
+
+<para>Given that context, in the documentation for this class, the following notation is used:<itemizedlist>
+<listitem>
+<para>Given an expression graph of composed functions, <equation><title>form_0</title>$y$</equation> refers to the final value resulting from evaluating the entire graph</para>
+</listitem><listitem>
+<para><equation><title>form_1</title>$w_i$</equation> refers to the partial result of evaluating the expression subgraph rooted at the <emphasis>i</emphasis>-th <link linkend="de/dff/classmarian_1_1Chainable">Chainable</link> element</para>
+</listitem><listitem>
+<para><equation><title>form_2</title>$\bar{w}_i$</equation> refers to the <link xlink:href="https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation">adjoint</link> of <equation><title>form_1</title>$w_i$</equation>, where <equation><title>form_2</title>$\bar{w}_i$</equation> is defined as the partial derivative of <equation><title>form_0</title>$y$</equation> with respect to <equation><title>form_1</title>$w_i$</equation>, or formally <equation><title>form_3</title>$\bar{w}_i = \frac{\partial y}{\partial w_i}$</equation> </para>
+</listitem></itemizedlist>
+</para>
+                <para>Definition at line 46 of file definitions.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>definitions.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a7dca365afdad93e9f14dd3a9eb448a67">
+                <title>marian::Chainable&lt; DataType &gt;::Chainable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a97748d5fa4766b4006be2e00509f9d69">
+                <title>virtual marian::Chainable&lt; DataType &gt;::~Chainable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1ae34ca176aa8332060971e48e5924021d">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::forward ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1ac378f88a43e622f8ebe915e07a6e3afd">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::backward ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1ad384c497e09e7af6a5a2e5b660a587a1">
+                <title>virtual NodeOps marian::Chainable&lt; DataType &gt;::forwardOps ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a309d5314142f2a3bbdb555c631b9ff81">
+                <title>virtual NodeOps marian::Chainable&lt; DataType &gt;::backwardOps ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1abfe36e67806df6681bdcd7bf81cbab16">
+                <title>virtual size_t marian::Chainable&lt; DataType &gt;::allocate ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a0b0a98056948c3cb92e1bad73f32781c">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::free ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a38fc006b882be3f26352a6b6364e60e7">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::init ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a489e63a97b6940ab1d7065e2b4f935f2">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::init_dependent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1ab8d92dd0145cc2fdf9c634f3493afa3e">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::set_zero_adjoint ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1aaec9da795a462f3ed88325769d8c238a">
+                <title>virtual bool marian::Chainable&lt; DataType &gt;::trainable ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a0af1d5f65be7f857b18370dfa1df1638">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::setTrainable (bool)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a394a7e3f35fc90a7d9e717c7512fd2f1">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::setId (size_t)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a2dff8542fdaf06b18dcf26f5a5834621">
+                <title>virtual size_t marian::Chainable&lt; DataType &gt;::getId ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a3e89dfd767b54ae685e9a3ec57888376">
+                <title>virtual Ptr&lt;ExpressionGraph&gt; marian::Chainable&lt; DataType &gt;::graph ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1aec5a801e7b0c7bc3b0d0956ced52f90b">
+                <title>virtual const Shape&amp; marian::Chainable&lt; DataType &gt;::shape ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a8baafc6c50d01876b34404e033ab06ab">
+                <title>virtual std::vector&lt;Expr&gt;&amp; marian::Chainable&lt; DataType &gt;::children ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a5bd9e384a91c5aa70b33fdaa085df11b">
+                <title>virtual Expr marian::Chainable&lt; DataType &gt;::child (size_t)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a5b4abc3fddef0cc1dea251820bf98d95">
+                <title>virtual DataType&amp; marian::Chainable&lt; DataType &gt;::val ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a91111faa04d388d623f86a75735a65be">
+                <title>virtual DataType&amp; marian::Chainable&lt; DataType &gt;::grad ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a7aa762e76967be25d3f1fe73d0007890">
+                <title>virtual float marian::Chainable&lt; DataType &gt;::scalar ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a2b7a5cbdac7a7d3bd7d781a6ff148fc3">
+                <title>virtual const std::string marian::Chainable&lt; DataType &gt;::type ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1aabc65436f44051e63f3469c587d59803">
+                <title>virtual const std::string marian::Chainable&lt; DataType &gt;::color ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1abe6229de0b61614d629e48fa6f1a9ca6">
+                <title>virtual const std::string marian::Chainable&lt; DataType &gt;::form ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a5ed3d68211003bf4f8c3185cc909d92a">
+                <title>virtual const std::string marian::Chainable&lt; DataType &gt;::label ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a16566c8b8d4c718d8c35737f80ed45da">
+                <title>virtual std::string marian::Chainable&lt; DataType &gt;::graphviz ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a7d75ea224b53df6c2e1b32d86a65c359">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::set_name (const std::string &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a7de20b12268f18b186e2d76bfb19e899">
+                <title>virtual const std::string&amp; marian::Chainable&lt; DataType &gt;::name () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a6cb078bf79069c097c8078b7ab8a1eb7">
+                <title>virtual void marian::Chainable&lt; DataType &gt;::debug (const std::string &amp;message)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a5b58fb9fa5f168310936ffe3fc05505a">
+                <title>virtual bool marian::Chainable&lt; DataType &gt;::marked_for_debug ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a92895c4575aefd1a67373b02cdf31472">
+                <title>virtual const std::string&amp; marian::Chainable&lt; DataType &gt;::debug_message ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dff/classmarian_1_1Chainable_1a5124cecc616150ff33fae3eff61e7372">
+                <title>virtual size_t marian::Chainable&lt; DataType &gt;::hash ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

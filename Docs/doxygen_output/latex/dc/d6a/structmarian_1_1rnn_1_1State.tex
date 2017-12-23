@@ -1,0 +1,104 @@
+\hypertarget{structmarian_1_1rnn_1_1State}{}\section{marian\+:\+:rnn\+:\+:State Struct Reference}
+\label{structmarian_1_1rnn_1_1State}\index{marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{df/d4a/structmarian_1_1rnn_1_1State__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{structmarian_1_1rnn_1_1State_a8ec95a2be079d859761e58cb46c4d6c8}{select} (const std\+::vector$<$ size\+\_\+t $>$ \&indices)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}{output}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{structmarian_1_1rnn_1_1State_a4afb5d8340bcb9afd2a5de80b2771aba}{cell}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file marian/src/rnn/types.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}!select@{select}}
+\index{select@{select}!marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}}
+\subsubsection[{\texorpdfstring{select(const std\+::vector$<$ size\+\_\+t $>$ \&indices)}{select(const std::vector< size_t > &indices)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} marian\+::rnn\+::\+State\+::select (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1rnn_1_1State_a8ec95a2be079d859761e58cb46c4d6c8}{}\label{structmarian_1_1rnn_1_1State_a8ec95a2be079d859761e58cb46c4d6c8}
+
+
+Definition at line 17 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+17                                                  \{
+18 
+19     \textcolor{keywordtype}{int} numSelected = indices.size();
+20     \textcolor{keywordtype}{int} dimState = \hyperlink{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}{output}->shape()[1];
+21 
+22     \textcolor{keywordflow}{if}(\hyperlink{structmarian_1_1rnn_1_1State_a4afb5d8340bcb9afd2a5de80b2771aba}{cell}) \{
+23       \textcolor{keywordflow}{return} State\{
+24         \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(\hyperlink{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}{output}, indices), \{1, dimState, 1, numSelected\}),
+25         \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(\hyperlink{structmarian_1_1rnn_1_1State_a4afb5d8340bcb9afd2a5de80b2771aba}{cell}, indices), \{1, dimState, 1, numSelected\})
+26       \};
+27     \}
+28     \textcolor{keywordflow}{else} \{
+29       \textcolor{keywordflow}{return} State\{
+30         \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(\hyperlink{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}{output}, indices), \{1, dimState, 1, numSelected\}),
+31         \textcolor{keyword}{nullptr}
+32       \};
+33     \}
+34   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{dc/d6a/structmarian_1_1rnn_1_1State_a8ec95a2be079d859761e58cb46c4d6c8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}!cell@{cell}}
+\index{cell@{cell}!marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}}
+\subsubsection[{\texorpdfstring{cell}{cell}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+State\+::cell}\hypertarget{structmarian_1_1rnn_1_1State_a4afb5d8340bcb9afd2a5de80b2771aba}{}\label{structmarian_1_1rnn_1_1State_a4afb5d8340bcb9afd2a5de80b2771aba}
+
+
+Definition at line 15 of file marian/src/rnn/types.\+h.
+
+\index{marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}!output@{output}}
+\index{output@{output}!marian\+::rnn\+::\+State@{marian\+::rnn\+::\+State}}
+\subsubsection[{\texorpdfstring{output}{output}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+State\+::output}\hypertarget{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}{}\label{structmarian_1_1rnn_1_1State_a299c1c1383dbccf829d7768d046fee83}
+
+
+Definition at line 14 of file marian/src/rnn/types.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2rnn_2types_8h}{marian/src/rnn/types.\+h}\end{DoxyCompactItemize}

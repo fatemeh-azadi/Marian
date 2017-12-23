@@ -1,0 +1,672 @@
+\hypertarget{classmarian_1_1Scheduler}{}\section{marian\+:\+:Scheduler$<$ Data\+Set $>$ Class Template Reference}
+\label{classmarian_1_1Scheduler}\index{marian\+::\+Scheduler$<$ Data\+Set $>$@{marian\+::\+Scheduler$<$ Data\+Set $>$}}
+
+
+{\ttfamily \#include $<$scheduler.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Scheduler$<$ Data\+Set $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d4/dc6/classmarian_1_1Scheduler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Scheduler$<$ Data\+Set $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d8f/classmarian_1_1Scheduler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Scheduler_a359fad66eecaa3154e59376cad3678dd}{Scheduler} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TrainingState}{Training\+State} $>$ state)
+\item 
+bool \hyperlink{classmarian_1_1Scheduler_a2e95b34dd1986da820bde25d789a4731}{keep\+Going} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a0ee8d27640f833b0affbd97c533f5c41}{increase\+Epoch} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_af07b9207caf41976becdd83b6db0ba1b}{started} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a8413088ceeec0a34377ab494040bc63d}{finished} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a7be0ff053576c291ee6ae67f643b99b6}{add\+Validator} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Validator}{Validator}$<$ Data\+Set $>$$>$ validator)
+\item 
+bool \hyperlink{classmarian_1_1Scheduler_afcc419dc5a3e63ea527a5736cd74c20a}{validating} ()
+\item 
+bool \hyperlink{classmarian_1_1Scheduler_aca8964e80c6841115d315eb32c8bc82f}{saving} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_abbd43aacb8b92dd94ffb0f5a104f6c59}{validate} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_a4cf4975987ba59c33d01d4d29d2f3dbd}{stalled} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a597f3c74e486631a95ea94d892e80c4c}{update} (float cost, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a3ff42a5102d69aa8858c0dad4aebfa65}{load} (const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a642cb71f2c550c9a91e3551f66dd8942}{save} (const std\+::string \&name)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_ab6fb552ba76bf2a0981b232792911383}{number\+Of\+Batches} ()
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a43f6d5da10c7110e6f566b3e9b50a1d7}{register\+Training\+Observer} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TrainingObserver}{Training\+Observer} $>$ observer)
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a2dc5ce5d6188cd5dc46781952159179d}{act\+After\+Epoch} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\item 
+void \hyperlink{classmarian_1_1Scheduler_a60bfc4c438a7dbc758a1890057f20d88}{act\+After\+Batches} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\item 
+void \hyperlink{classmarian_1_1Scheduler_aabac3f0247038406f6a55ac8e086790f}{act\+After\+Stalled} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Scheduler_ae3fc3dd391d460a070c88a133997d187}{progress}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Validator}{Validator}$<$ Data\+Set $>$ $>$ $>$ \hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}{cost\+Sum} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs} \{1\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{samples} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}{samples\+Disp} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}{words\+Disp} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} \{0\}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TrainingState}{Training\+State} $>$ \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{train\+State\+\_\+}
+\item 
+boost\+::timer\+::cpu\+\_\+timer \hyperlink{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}{timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Set$>$\\*
+class marian\+::\+Scheduler$<$ Data\+Set $>$}
+
+
+
+Definition at line 10 of file scheduler.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{Scheduler(\+Ptr$<$ Config $>$ options, Ptr$<$ Training\+State $>$ state)}{Scheduler(Ptr< Config > options, Ptr< TrainingState > state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::{\bf Scheduler} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{{\bf Ptr}$<$ {\bf Training\+State} $>$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a359fad66eecaa3154e59376cad3678dd}{}\label{classmarian_1_1Scheduler_a359fad66eecaa3154e59376cad3678dd}
+
+
+Definition at line 30 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+31       : \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}(options), \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{trainState\_}(state) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!act\+After\+Batches@{act\+After\+Batches}}
+\index{act\+After\+Batches@{act\+After\+Batches}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{act\+After\+Batches(\+Training\+State \&state)}{actAfterBatches(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::act\+After\+Batches (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Scheduler_a60bfc4c438a7dbc758a1890057f20d88}{}\label{classmarian_1_1Scheduler_a60bfc4c438a7dbc758a1890057f20d88}
+
+
+Reimplemented from \hyperlink{classmarian_1_1TrainingObserver_a941ffcde6aaa5f3b48b48826897829a4}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 201 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+201                                              \{
+202     \textcolor{keywordtype}{float} factor = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"lr-decay"});
+203     \textcolor{keywordflow}{if}(factor > 0.0) \{
+204       \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"batches"} == \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"})) \{
+205         \textcolor{keywordtype}{int} start
+206             = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"}).front();
+207         \textcolor{keywordtype}{int} freq = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"lr-decay-freq"});
+208 
+209         \textcolor{keywordflow}{if}(start > 0 && freq > 0 && state.batches >= start
+210            && ((state.batches - start) % freq == 0)) \{
+211           state.eta *= factor;
+212           \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})
+213               ->info(\textcolor{stringliteral}{"Decaying learning rate to \{\} after \{\} batches"},
+214                      state.eta,
+215                      state.batches);
+216         \}
+217       \}
+218     \}
+219   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!act\+After\+Epoch@{act\+After\+Epoch}}
+\index{act\+After\+Epoch@{act\+After\+Epoch}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{act\+After\+Epoch(\+Training\+State \&state)}{actAfterEpoch(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::act\+After\+Epoch (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Scheduler_a2dc5ce5d6188cd5dc46781952159179d}{}\label{classmarian_1_1Scheduler_a2dc5ce5d6188cd5dc46781952159179d}
+
+
+Implements \hyperlink{classmarian_1_1TrainingObserver_a518893407fa20fc4b7ab892154de238d}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 166 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+166                                            \{
+167     \textcolor{keywordtype}{float} factor = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"lr-decay"});
+168     \textcolor{keywordflow}{if}(factor > 0.0) \{
+169       \textcolor{keywordtype}{bool} decay = \textcolor{keyword}{false};
+170       \textcolor{keyword}{auto} strategy = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"});
+171       \textcolor{keywordtype}{int} startEpoch
+172           = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"}).front();
+173 
+174       \textcolor{keywordflow}{if}(strategy == \textcolor{stringliteral}{"epoch"}) \{
+175         \textcolor{keywordflow}{if}(startEpoch && state.epochs >= startEpoch)
+176           decay = \textcolor{keyword}{true};
+177       \}
+178       \textcolor{keywordflow}{if}(strategy == \textcolor{stringliteral}{"epoch+batches"}) \{
+179         \textcolor{keywordtype}{int} startBatches
+180             = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"})[1];
+181         \textcolor{keywordflow}{if}(startEpoch && startBatches && state.batches >= startBatches)
+182           decay = \textcolor{keyword}{true};
+183       \}
+184       \textcolor{keywordflow}{if}(strategy == \textcolor{stringliteral}{"epoch+stalled"}) \{
+185         \textcolor{keywordtype}{int} startStalled
+186             = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"})[1];
+187         \textcolor{keywordflow}{if}(startEpoch && startStalled && state.maxStalled >= startStalled)
+188           decay = \textcolor{keyword}{true};
+189       \}
+190 
+191       \textcolor{keywordflow}{if}(decay) \{
+192         state.eta *= factor;
+193         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})
+194             ->info(\textcolor{stringliteral}{"Decaying learning rate to \{\} in epoch \{\}"},
+195                    state.eta,
+196                    state.epochs);
+197       \}
+198     \}
+199   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!act\+After\+Stalled@{act\+After\+Stalled}}
+\index{act\+After\+Stalled@{act\+After\+Stalled}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{act\+After\+Stalled(\+Training\+State \&state)}{actAfterStalled(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::act\+After\+Stalled (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Scheduler_aabac3f0247038406f6a55ac8e086790f}{}\label{classmarian_1_1Scheduler_aabac3f0247038406f6a55ac8e086790f}
+
+
+Reimplemented from \hyperlink{classmarian_1_1TrainingObserver_ac9ae3ce0bb0f3f9d48d6198087161bfc}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 221 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+221                                              \{
+222     \textcolor{keywordtype}{float} factor = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"lr-decay"});
+223     \textcolor{keywordflow}{if}(factor > 0.0) \{
+224       \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"stalled"} == \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"})) \{
+225         \textcolor{keywordtype}{int} startStalled
+226             = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"}).front();
+227         \textcolor{keywordflow}{if}(startStalled && state.stalled >= startStalled) \{
+228           state.eta *= factor;
+229           \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})
+230               ->info(\textcolor{stringliteral}{"Decaying learning rate to \{\} after stalled \{\} time(s)"},
+231                      state.eta,
+232                      state.stalled);
+233         \}
+234       \}
+235     \}
+236   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!add\+Validator@{add\+Validator}}
+\index{add\+Validator@{add\+Validator}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{add\+Validator(\+Ptr$<$ Validator$<$ Data\+Set $>$$>$ validator)}{addValidator(Ptr< Validator< DataSet >> validator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::add\+Validator (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Validator}$<$ Data\+Set $>$$>$}]{validator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a7be0ff053576c291ee6ae67f643b99b6}{}\label{classmarian_1_1Scheduler_a7be0ff053576c291ee6ae67f643b99b6}
+
+
+Definition at line 66 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+66                                                        \{
+67     \hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}.push\_back(validator);
+68   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!finished@{finished}}
+\index{finished@{finished}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{finished()}{finished()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a8413088ceeec0a34377ab494040bc63d}{}\label{classmarian_1_1Scheduler_a8413088ceeec0a34377ab494040bc63d}
+
+
+Definition at line 64 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+64 \{ \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Training finshed"}); \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!increase\+Epoch@{increase\+Epoch}}
+\index{increase\+Epoch@{increase\+Epoch}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{increase\+Epoch()}{increaseEpoch()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::increase\+Epoch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a0ee8d27640f833b0affbd97c533f5c41}{}\label{classmarian_1_1Scheduler_a0ee8d27640f833b0affbd97c533f5c41}
+
+
+Definition at line 53 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+53                        \{
+54     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Seen \{\} samples"}, \hyperlink{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{samples});
+55 
+56     \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs}++;
+57     \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{trainState\_}->newEpoch(\hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs});
+58     \hyperlink{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{samples} = 0;
+59 
+60     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Starting epoch \{\}"}, \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs});
+61   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!keep\+Going@{keep\+Going}}
+\index{keep\+Going@{keep\+Going}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{keep\+Going()}{keepGoing()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ bool {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::keep\+Going (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a2e95b34dd1986da820bde25d789a4731}{}\label{classmarian_1_1Scheduler_a2e95b34dd1986da820bde25d789a4731}
+
+
+Definition at line 33 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+33                    \{
+34     \textcolor{comment}{// stop if it reached the maximum number of epochs}
+35     \textcolor{keywordtype}{int} stopAfterEpochs = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"after-epochs"});
+36     \textcolor{keywordflow}{if}(stopAfterEpochs > 0 && \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs} > stopAfterEpochs)
+37       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+38 
+39     \textcolor{comment}{// stop if it reached the maximum number of batch updates}
+40     \textcolor{keywordtype}{int} stopAfterBatches = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"after-batches"});
+41     \textcolor{keywordflow}{if}(stopAfterBatches > 0 && \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} >= stopAfterBatches)
+42       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+43 
+44     \textcolor{comment}{// stop if the first validator did not improve for a given number of checks}
+45     \textcolor{keywordtype}{int} stopAfterStalled = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"early-stopping"});
+46     \textcolor{keywordflow}{if}(stopAfterStalled > 0 && !\hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}.empty()
+47        && \hyperlink{classmarian_1_1Scheduler_a4cf4975987ba59c33d01d4d29d2f3dbd}{stalled}() >= stopAfterStalled)
+48       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+49 
+50     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+51   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d2/dab/classmarian_1_1Scheduler_a2e95b34dd1986da820bde25d789a4731_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!load@{load}}
+\index{load@{load}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{load(const std\+::string \&name)}{load(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a3ff42a5102d69aa8858c0dad4aebfa65}{}\label{classmarian_1_1Scheduler_a3ff42a5102d69aa8858c0dad4aebfa65}
+
+
+Definition at line 141 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+141                                    \{
+142     std::string nameYaml = name + \textcolor{stringliteral}{".yml"};
+143     \textcolor{keywordflow}{if}(boost::filesystem::exists(nameYaml)) \{
+144       YAML::Node config = YAML::LoadFile(nameYaml);
+145       \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs} = config[\textcolor{stringliteral}{"progress"}][\textcolor{stringliteral}{"epochs"}].as<\textcolor{keywordtype}{size\_t}>();
+146       \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} = config[\textcolor{stringliteral}{"progress"}][\textcolor{stringliteral}{"batches"}].as<\textcolor{keywordtype}{size\_t}>();
+147     \}
+148   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!number\+Of\+Batches@{number\+Of\+Batches}}
+\index{number\+Of\+Batches@{number\+Of\+Batches}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{number\+Of\+Batches()}{numberOfBatches()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::number\+Of\+Batches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_ab6fb552ba76bf2a0981b232792911383}{}\label{classmarian_1_1Scheduler_ab6fb552ba76bf2a0981b232792911383}
+
+
+Definition at line 160 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+160 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches}; \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!register\+Training\+Observer@{register\+Training\+Observer}}
+\index{register\+Training\+Observer@{register\+Training\+Observer}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{register\+Training\+Observer(\+Ptr$<$ Training\+Observer $>$ observer)}{registerTrainingObserver(Ptr< TrainingObserver > observer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::register\+Training\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Training\+Observer} $>$}]{observer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a43f6d5da10c7110e6f566b3e9b50a1d7}{}\label{classmarian_1_1Scheduler_a43f6d5da10c7110e6f566b3e9b50a1d7}
+
+
+Definition at line 162 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+162                                                                 \{
+163     \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{trainState\_}->registerObserver(observer);
+164   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!save@{save}}
+\index{save@{save}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{save(const std\+::string \&name)}{save(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a642cb71f2c550c9a91e3551f66dd8942}{}\label{classmarian_1_1Scheduler_a642cb71f2c550c9a91e3551f66dd8942}
+
+
+Definition at line 150 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+150                                    \{
+151     YAML::Node config = \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get();
+152     config[\textcolor{stringliteral}{"progress"}][\textcolor{stringliteral}{"epochs"}] = \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs};
+153     config[\textcolor{stringliteral}{"progress"}][\textcolor{stringliteral}{"batches"}] = \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches};
+154 
+155     std::string nameYaml = name + \textcolor{stringliteral}{".yml"};
+156     std::ofstream fout(nameYaml);
+157     fout << config;
+158   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!saving@{saving}}
+\index{saving@{saving}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{saving()}{saving()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ bool {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::saving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_aca8964e80c6841115d315eb32c8bc82f}{}\label{classmarian_1_1Scheduler_aca8964e80c6841115d315eb32c8bc82f}
+
+
+Definition at line 75 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+75 \{ \textcolor{keywordflow}{return} (\hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} % \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"save-freq"}) == 0); \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!stalled@{stalled}}
+\index{stalled@{stalled}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{stalled()}{stalled()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::stalled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a4cf4975987ba59c33d01d4d29d2f3dbd}{}\label{classmarian_1_1Scheduler_a4cf4975987ba59c33d01d4d29d2f3dbd}
+
+
+Definition at line 107 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+107                    \{
+108     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}.empty())
+109       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}[0])
+110         \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}[0]->stalled();
+111     \textcolor{keywordflow}{return} 0;
+112   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d2/dab/classmarian_1_1Scheduler_a4cf4975987ba59c33d01d4d29d2f3dbd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!started@{started}}
+\index{started@{started}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{started()}{started()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::started (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_af07b9207caf41976becdd83b6db0ba1b}{}\label{classmarian_1_1Scheduler_af07b9207caf41976becdd83b6db0ba1b}
+
+
+Definition at line 63 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+63 \{ \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Training started"}); \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!update@{update}}
+\index{update@{update}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{update(float cost, Ptr$<$ data\+::\+Batch $>$ batch)}{update(float cost, Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{cost, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_a597f3c74e486631a95ea94d892e80c4c}{}\label{classmarian_1_1Scheduler_a597f3c74e486631a95ea94d892e80c4c}
+
+
+Definition at line 114 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+114                                                 \{
+115     \hyperlink{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}{costSum} += cost * batch->size();
+116     \hyperlink{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{samples} += batch->size();
+117     \hyperlink{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}{samplesDisp} += batch->size();
+118     \hyperlink{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}{wordsDisp} += batch->words();
+119     \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches}++;
+120 
+121     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} % \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"disp-freq"}) == 0) \{
+122       \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})
+123           ->info(
+124               \textcolor{stringliteral}{"Ep. \{\} : Up. \{\} : Sen. \{\} : Cost \{:.2f\} : Time \{\} : \{:.2f\} "}
+125               \textcolor{stringliteral}{"words/s"},
+126               \hyperlink{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{epochs},
+127               \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches},
+128               \hyperlink{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{samples},
+129               \hyperlink{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}{costSum} / \hyperlink{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}{samplesDisp},
+130               \hyperlink{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}{timer}.format(2, \textcolor{stringliteral}{"%ws"}),
+131               \hyperlink{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}{wordsDisp} / std::stof(\hyperlink{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}{timer}.format(5, \textcolor{stringliteral}{"%w"})));
+132       \hyperlink{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}{timer}.start();
+133       \hyperlink{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}{costSum} = 0;
+134       \hyperlink{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}{wordsDisp} = 0;
+135       \hyperlink{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}{samplesDisp} = 0;
+136     \}
+137 
+138     \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{trainState\_}->newBatches(\hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches});
+139   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!validate@{validate}}
+\index{validate@{validate}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{validate(\+Ptr$<$ Expression\+Graph $>$ graph)}{validate(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ void {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::validate (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_abbd43aacb8b92dd94ffb0f5a104f6c59}{}\label{classmarian_1_1Scheduler_abbd43aacb8b92dd94ffb0f5a104f6c59}
+
+
+Definition at line 77 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+77                                             \{
+78     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} % \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"valid-freq"}) != 0)
+79       \textcolor{keywordflow}{return};
+80 
+81     \textcolor{keywordtype}{bool} firstValidator = \textcolor{keyword}{true};
+82     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} validator : \hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}) \{
+83       \textcolor{keywordflow}{if}(!validator)
+84         \textcolor{keywordflow}{continue};
+85 
+86       \textcolor{keywordtype}{size\_t} stalledPrev = validator->stalled();
+87       \textcolor{keywordtype}{float} \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value} = validator->validate(graph);
+88       \textcolor{keywordflow}{if}(validator->stalled() > 0)
+89         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{valid})
+90             ->info(\textcolor{stringliteral}{"\{\} : \{\} : \{\} : stalled \{\} times"},
+91                    \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches},
+92                    validator->type(),
+93                    \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value},
+94                    validator->stalled());
+95       \textcolor{keywordflow}{else}
+96         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{valid})
+97             ->info(
+98                 \textcolor{stringliteral}{"\{\} : \{\} : \{\} : new best"}, \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches}, validator->type(), 
+      \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value});
+99 
+100       \textcolor{comment}{// notify training observers if the first validator did not improve}
+101       \textcolor{keywordflow}{if}(firstValidator && validator->stalled() > stalledPrev)
+102         \hyperlink{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{trainState\_}->newStalled(validator->stalled());
+103       firstValidator = \textcolor{keyword}{false};
+104     \}
+105   \}
+\end{DoxyCode}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!validating@{validating}}
+\index{validating@{validating}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{validating()}{validating()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ bool {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::validating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Scheduler_afcc419dc5a3e63ea527a5736cd74c20a}{}\label{classmarian_1_1Scheduler_afcc419dc5a3e63ea527a5736cd74c20a}
+
+
+Definition at line 70 of file scheduler.\+h.
+
+
+\begin{DoxyCode}
+70                     \{
+71     \textcolor{keywordflow}{return} (!\hyperlink{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{validators\_}.empty()
+72             && \hyperlink{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{batches} % \hyperlink{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"valid-freq"}) == 0);
+73   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!batches@{batches}}
+\index{batches@{batches}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{batches}{batches}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::batches \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}{}\label{classmarian_1_1Scheduler_a3a226357e546863179c3b635dd10de39}
+
+
+Definition at line 23 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!cost\+Sum@{cost\+Sum}}
+\index{cost\+Sum@{cost\+Sum}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{cost\+Sum}{costSum}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ float {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::cost\+Sum \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}{}\label{classmarian_1_1Scheduler_a277799516747fa7de995c0502b1ca481}
+
+
+Definition at line 17 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!epochs@{epochs}}
+\index{epochs@{epochs}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{epochs}{epochs}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::epochs \{1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}{}\label{classmarian_1_1Scheduler_af63f13e7b7219211e9b1e353f36000fa}
+
+
+Definition at line 19 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}{}\label{classmarian_1_1Scheduler_a82aeb8a4ec08a364bec7c6aac6a25e01}
+
+
+Definition at line 14 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!progress@{progress}}
+\index{progress@{progress}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{progress}{progress}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ Y\+A\+M\+L\+::\+Node {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::progress\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_ae3fc3dd391d460a070c88a133997d187}{}\label{classmarian_1_1Scheduler_ae3fc3dd391d460a070c88a133997d187}
+
+
+Definition at line 12 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!samples@{samples}}
+\index{samples@{samples}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{samples}{samples}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::samples \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}{}\label{classmarian_1_1Scheduler_aa04e56213d32a491b15a9abdafe7ee94}
+
+
+Definition at line 20 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!samples\+Disp@{samples\+Disp}}
+\index{samples\+Disp@{samples\+Disp}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{samples\+Disp}{samplesDisp}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::samples\+Disp \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}{}\label{classmarian_1_1Scheduler_a766d4b314a640dcdd36405887217d262}
+
+
+Definition at line 21 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!timer@{timer}}
+\index{timer@{timer}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ boost\+::timer\+::cpu\+\_\+timer {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::timer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}{}\label{classmarian_1_1Scheduler_a67aa9ed4773be96d9490ffce8ba663d6}
+
+
+Definition at line 27 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!train\+State\+\_\+@{train\+State\+\_\+}}
+\index{train\+State\+\_\+@{train\+State\+\_\+}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{train\+State\+\_\+}{trainState_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ {\bf Ptr}$<${\bf Training\+State}$>$ {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::train\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}{}\label{classmarian_1_1Scheduler_adfe60998ce4ead7e9c0e6f7ff65a7ec7}
+
+
+Definition at line 25 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!validators\+\_\+@{validators\+\_\+}}
+\index{validators\+\_\+@{validators\+\_\+}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{validators\+\_\+}{validators_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ std\+::vector$<${\bf Ptr}$<${\bf Validator}$<$Data\+Set$>$ $>$ $>$ {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::validators\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}{}\label{classmarian_1_1Scheduler_aaaad6769ded3ed1fa5e307cde44fecdf}
+
+
+Definition at line 15 of file scheduler.\+h.
+
+\index{marian\+::\+Scheduler@{marian\+::\+Scheduler}!words\+Disp@{words\+Disp}}
+\index{words\+Disp@{words\+Disp}!marian\+::\+Scheduler@{marian\+::\+Scheduler}}
+\subsubsection[{\texorpdfstring{words\+Disp}{wordsDisp}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set $>$ size\+\_\+t {\bf marian\+::\+Scheduler}$<$ Data\+Set $>$\+::words\+Disp \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}{}\label{classmarian_1_1Scheduler_a2609c2386b4afc3eb67c10e0da7ce975}
+
+
+Definition at line 22 of file scheduler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scheduler_8h}{scheduler.\+h}\end{DoxyCompactItemize}

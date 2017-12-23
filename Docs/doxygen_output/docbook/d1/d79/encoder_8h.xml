@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d79/encoder_8h">
+    <title>encoder.h File Reference</title>
+    <programlisting>#include &lt;yaml-cpp/yaml.h&gt;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix_functions.h&quot;</programlisting>
+    <programlisting>#include &quot;model.h&quot;</programlisting>
+    <programlisting>#include &quot;gru.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentence.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/types-gpu.h&quot;</programlisting>
+    <programlisting>#include &quot;lstm.h&quot;</programlisting>
+    <programlisting>#include &quot;multiplicative.h&quot;</programlisting>
+    <programlisting>#include &quot;cell.h&quot;</programlisting>
+    <programlisting>#include &quot;cellstate.h&quot;</programlisting>
+<para>Include dependency diagram for encoder.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dde/encoder_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for encoder.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d16/encoder_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d9b/classamunmt_1_1GPU_1_1Encoder">amunmt::GPU::Encoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings">amunmt::GPU::Encoder::Embeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN">amunmt::GPU::Encoder::RNN</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file encoder.h</para>
+    </simplesect>
+</section>

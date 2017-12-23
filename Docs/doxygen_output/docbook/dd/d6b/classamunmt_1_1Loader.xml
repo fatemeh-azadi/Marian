@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d6b/classamunmt_1_1Loader">
+<title>amunmt::Loader class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/db8/loader_8h">&lt;loader.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Loader</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d94/classamunmt_1_1Loader__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Loader</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d20/classamunmt_1_1Loader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string name_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const YAML::Node config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d6b/classamunmt_1_1Loader_1ab0da3064fe4981b4584c680b592f807e">Loader</link> (
+const std::string &amp; name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dd/d6b/classamunmt_1_1Loader_1aa27bd2ce4f7ac26a839c86448c85d4d5">~Loader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dd/d6b/classamunmt_1_1Loader_1abe91595545e37f86e02781ebcd30d376">Load</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dd/d6b/classamunmt_1_1Loader_1a3aa1a74d11f559e3377c69080ce3595b">Has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="dd/d6b/classamunmt_1_1Loader_1a326350dac6f7d9e840069565f579a1ff">Get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link> <link linkend="dd/d6b/classamunmt_1_1Loader_1ae7d4a77639e94b4cd56a9dd3a8e1170d">NewScorer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/dd3/namespaceamunmt_1a4a9522da34de52554ec07cedc30361b8">BestHypsBasePtr</link> <link linkend="dd/d6b/classamunmt_1_1Loader_1ae573f16f13820224c3b6d880473f20f9">GetBestHyps</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string &amp; <link linkend="dd/d6b/classamunmt_1_1Loader_1aede9852e4ef857191be3490b0e544d9f">GetName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1ab0da3064fe4981b4584c680b592f807e">
+                <title>amunmt::Loader::Loader (const std::string &amp;name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1aa27bd2ce4f7ac26a839c86448c85d4d5">
+                <title>virtual amunmt::Loader::~Loader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1abe91595545e37f86e02781ebcd30d376">
+                <title>virtual void amunmt::Loader::Load (const God &amp;god)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1a3aa1a74d11f559e3377c69080ce3595b">
+                <title>bool amunmt::Loader::Has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1a326350dac6f7d9e840069565f579a1ff">
+                <title>T amunmt::Loader::Get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1ae7d4a77639e94b4cd56a9dd3a8e1170d">
+                <title>virtual ScorerPtr amunmt::Loader::NewScorer (const God &amp;god, const DeviceInfo &amp;deviceInfo) const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1ae573f16f13820224c3b6d880473f20f9">
+                <title>virtual BestHypsBasePtr amunmt::Loader::GetBestHyps (const God &amp;god, const DeviceInfo &amp;deviceInfo) const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d6b/classamunmt_1_1Loader_1aede9852e4ef857191be3490b0e544d9f">
+                <title>const std::string&amp; amunmt::Loader::GetName () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

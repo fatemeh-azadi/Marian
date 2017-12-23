@@ -1,0 +1,143 @@
+\hypertarget{classmarian_1_1rnn_1_1AttentionFactory}{}\section{marian\+:\+:rnn\+:\+:Attention\+Factory Class Reference}
+\label{classmarian_1_1rnn_1_1AttentionFactory}\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Attention\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d19/classmarian_1_1rnn_1_1AttentionFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Attention\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d34/classmarian_1_1rnn_1_1AttentionFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1AttentionFactory_ac29b6943ef7485c30662265deb36fef1}{Attention\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1CellInput}{Cell\+Input} $>$ \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_ad40def6ee2a38873a116fd80dd4916f1}{construct} ()
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1AttentionFactory}{Attention\+Factory} $>$ \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_abcd9aae6d8cbe7c73c8b0d1598372312}{set\+\_\+state} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ state)
+\item 
+int \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_ace65b44df01b174a1d730bdd7db36d60}{dim\+Attended} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 133 of file rnn/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}!Attention\+Factory@{Attention\+Factory}}
+\index{Attention\+Factory@{Attention\+Factory}!marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+\subsubsection[{\texorpdfstring{Attention\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{AttentionFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Attention\+Factory\+::\+Attention\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1AttentionFactory_ac29b6943ef7485c30662265deb36fef1}{}\label{classmarian_1_1rnn_1_1AttentionFactory_ac29b6943ef7485c30662265deb36fef1}
+
+
+Definition at line 138 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+138 : \hyperlink{structmarian_1_1rnn_1_1InputFactory_a27fda3c2dfb71c9922ffa8b9fda38dad}{InputFactory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Cell\+Input}$>$ marian\+::rnn\+::\+Attention\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1AttentionFactory_ad40def6ee2a38873a116fd80dd4916f1}{}\label{classmarian_1_1rnn_1_1AttentionFactory_ad40def6ee2a38873a116fd80dd4916f1}
+
+
+Implements \hyperlink{structmarian_1_1rnn_1_1InputFactory_a0b02c7e1c29d2cd7decc4d5d2c577621}{marian\+::rnn\+::\+Input\+Factory}.
+
+
+
+Definition at line 140 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+140                              \{
+141     UTIL\_THROW\_IF2(!\hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\_}, \textcolor{stringliteral}{"EncoderState not set"});
+142     \textcolor{keywordflow}{return} New<Attention>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}, \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\_});
+143   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}!dim\+Attended@{dim\+Attended}}
+\index{dim\+Attended@{dim\+Attended}!marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+\subsubsection[{\texorpdfstring{dim\+Attended()}{dimAttended()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::rnn\+::\+Attention\+Factory\+::dim\+Attended (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1AttentionFactory_ace65b44df01b174a1d730bdd7db36d60}{}\label{classmarian_1_1rnn_1_1AttentionFactory_ace65b44df01b174a1d730bdd7db36d60}
+
+
+Definition at line 150 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+150                     \{
+151     UTIL\_THROW\_IF2(!\hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\_}, \textcolor{stringliteral}{"EncoderState not set"});
+152     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\_}->getAttended()->shape()[1];
+153   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}!set\+\_\+state@{set\+\_\+state}}
+\index{set\+\_\+state@{set\+\_\+state}!marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+\subsubsection[{\texorpdfstring{set\+\_\+state(\+Ptr$<$ Encoder\+State $>$ state)}{set_state(Ptr< EncoderState > state)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accumulator}$<${\bf Attention\+Factory}$>$ marian\+::rnn\+::\+Attention\+Factory\+::set\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1AttentionFactory_abcd9aae6d8cbe7c73c8b0d1598372312}{}\label{classmarian_1_1rnn_1_1AttentionFactory_abcd9aae6d8cbe7c73c8b0d1598372312}
+
+
+Definition at line 145 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+145                                                                    \{
+146     \hyperlink{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{state\_} = state;
+147     \textcolor{keywordflow}{return} Accumulator<AttentionFactory>(*this);
+148   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!marian\+::rnn\+::\+Attention\+Factory@{marian\+::rnn\+::\+Attention\+Factory}}
+\subsubsection[{\texorpdfstring{state\+\_\+}{state_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::rnn\+::\+Attention\+Factory\+::state\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}{}\label{classmarian_1_1rnn_1_1AttentionFactory_a8dccbb224732caa5da73d4cb754a2a19}
+
+
+Definition at line 135 of file rnn/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rnn_2constructors_8h}{rnn/constructors.\+h}\end{DoxyCompactItemize}

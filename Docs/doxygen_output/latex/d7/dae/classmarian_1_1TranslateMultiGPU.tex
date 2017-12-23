@@ -1,0 +1,226 @@
+\hypertarget{classmarian_1_1TranslateMultiGPU}{}\section{marian\+:\+:Translate\+Multi\+G\+PU$<$ Search $>$ Class Template Reference}
+\label{classmarian_1_1TranslateMultiGPU}\index{marian\+::\+Translate\+Multi\+G\+P\+U$<$ Search $>$@{marian\+::\+Translate\+Multi\+G\+P\+U$<$ Search $>$}}
+
+
+{\ttfamily \#include $<$translator.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Translate\+Multi\+G\+PU$<$ Search $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{d1/d99/classmarian_1_1TranslateMultiGPU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Translate\+Multi\+G\+PU$<$ Search $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d7e/classmarian_1_1TranslateMultiGPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1TranslateMultiGPU_a4a15c6991ead6ec7515441a726cc2009}{Translate\+Multi\+G\+PU} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1TranslateMultiGPU_a6d0b7f15fe6870b772cc9aa03d361840}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ $>$ \hyperlink{classmarian_1_1TranslateMultiGPU_ab4ffb4c6d4e65d3cc564f0b290f0bc72}{graphs\+\_\+}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scorer}{Scorer} $>$ $>$ $>$ \hyperlink{classmarian_1_1TranslateMultiGPU_a783f8e4ecfcba37a2dc516fc685a403d}{scorers\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Corpus}{data\+::\+Corpus} $>$ \hyperlink{classmarian_1_1TranslateMultiGPU_a7fce5f63667fe7a8dbdf94d1146aa2f8}{corpus\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ \hyperlink{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}{trg\+Vocab\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Search$>$\\*
+class marian\+::\+Translate\+Multi\+G\+P\+U$<$ Search $>$}
+
+
+
+Definition at line 17 of file translator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!Translate\+Multi\+G\+PU@{Translate\+Multi\+G\+PU}}
+\index{Translate\+Multi\+G\+PU@{Translate\+Multi\+G\+PU}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{Translate\+Multi\+G\+P\+U(\+Ptr$<$ Config $>$ options)}{TranslateMultiGPU(Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::{\bf Translate\+Multi\+G\+PU} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TranslateMultiGPU_a4a15c6991ead6ec7515441a726cc2009}{}\label{classmarian_1_1TranslateMultiGPU_a4a15c6991ead6ec7515441a726cc2009}
+
+
+Definition at line 28 of file translator.\+h.
+
+
+\begin{DoxyCode}
+29       : \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}(options),
+30         \hyperlink{classmarian_1_1TranslateMultiGPU_a7fce5f63667fe7a8dbdf94d1146aa2f8}{corpus\_}(New<data::Corpus>(\hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}, \textcolor{keyword}{true})),
+31         \hyperlink{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}{trgVocab\_}(New<Vocab>()) \{
+32     \textcolor{keyword}{auto} vocabs = \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"vocabs"});
+33     \hyperlink{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}{trgVocab\_}->load(vocabs.back());
+34 
+35     \textcolor{comment}{// if(options\_->has("lexical-table"))}
+36     \textcolor{comment}{//  lexProbs\_ = New<LexProbs>(options\_,}
+37     \textcolor{comment}{//                       corpus\_->getVocabs().front(),}
+38     \textcolor{comment}{//                       trgVocab\_);}
+39 
+40     \textcolor{keyword}{auto} devices = \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"devices"});
+41     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& device : devices) \{
+42       \textcolor{keyword}{auto} graph = New<ExpressionGraph>(\textcolor{keyword}{true});
+43       graph->setDevice(device);
+44       graph->reserveWorkspaceMB(\hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"workspace"}));
+45       \hyperlink{classmarian_1_1TranslateMultiGPU_ab4ffb4c6d4e65d3cc564f0b290f0bc72}{graphs\_}.push\_back(graph);
+46 
+47       \textcolor{keyword}{auto} scorers = \hyperlink{namespacemarian_aa68a12c768f24cc7d06314eadfab8938}{createScorers}(options);
+48       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} scorer : scorers)
+49         scorer->init(graph);
+50       \hyperlink{classmarian_1_1TranslateMultiGPU_a783f8e4ecfcba37a2dc516fc685a403d}{scorers\_}.push\_back(scorers);
+51     \}
+52   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dae/classmarian_1_1TranslateMultiGPU_a4a15c6991ead6ec7515441a726cc2009_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!run@{run}}
+\index{run@{run}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ void {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TranslateMultiGPU_a6d0b7f15fe6870b772cc9aa03d361840}{}\label{classmarian_1_1TranslateMultiGPU_a6d0b7f15fe6870b772cc9aa03d361840}
+
+
+Implements \hyperlink{structmarian_1_1ModelTask_a2f4fddd0f227555bf792e3c3d4bfdb0d}{marian\+::\+Model\+Task}.
+
+
+
+Definition at line 54 of file translator.\+h.
+
+
+\begin{DoxyCode}
+54              \{
+55     data::BatchGenerator<data::Corpus> bg(\hyperlink{classmarian_1_1TranslateMultiGPU_a7fce5f63667fe7a8dbdf94d1146aa2f8}{corpus\_}, \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_});
+56 
+57     \textcolor{keyword}{auto} devices = \hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"devices"});
+58     ThreadPool threadPool(devices.size(), devices.size());
+59 
+60     \textcolor{keyword}{auto} collector = New<OutputCollector>();
+61     \textcolor{keywordtype}{size\_t} sentenceId = 0;
+62 
+63     bg.prepare(\textcolor{keyword}{false});
+64 
+65     \textcolor{keywordflow}{while}(bg) \{
+66       \textcolor{keyword}{auto} batch = bg.next();
+67 
+68       \textcolor{keyword}{auto} task = [=](\textcolor{keywordtype}{size\_t} id) \{
+69         thread\_local Ptr<ExpressionGraph> graph;
+70         thread\_local std::vector<Ptr<Scorer>> scorers;
+71 
+72         \textcolor{keywordflow}{if}(!graph) \{
+73           graph = \hyperlink{classmarian_1_1TranslateMultiGPU_ab4ffb4c6d4e65d3cc564f0b290f0bc72}{graphs\_}[\textcolor{keywordtype}{id} % devices.size()];
+74           graph->getBackend()->setDevice(graph->getDevice());
+75           scorers = \hyperlink{classmarian_1_1TranslateMultiGPU_a783f8e4ecfcba37a2dc516fc685a403d}{scorers\_}[\textcolor{keywordtype}{id} % devices.size()];
+76         \}
+77 
+78         \textcolor{keyword}{auto} search = New<Search>(\hyperlink{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{options\_}, scorers);
+79         \textcolor{keyword}{auto} history = search->search(graph, batch, \textcolor{keywordtype}{id});
+80 
+81         std::stringstream best1;
+82         std::stringstream bestn;
+83         \hyperlink{namespacemarian_a3a6ae585e5e6554beee2ab09a6433e83}{Printer}(options\_, \hyperlink{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}{trgVocab\_}, history, best1, bestn);
+84         collector->Write(history->GetLineNum(),
+85                          best1.str(),
+86                          bestn.str(),
+87                          options\_->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"n-best"}));
+88       \};
+89 
+90       threadPool.enqueue(task, sentenceId);
+91 
+92       sentenceId++;
+93     \}
+94   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dae/classmarian_1_1TranslateMultiGPU_a6d0b7f15fe6870b772cc9aa03d361840_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!corpus\+\_\+@{corpus\+\_\+}}
+\index{corpus\+\_\+@{corpus\+\_\+}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{corpus\+\_\+}{corpus_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ {\bf Ptr}$<${\bf data\+::\+Corpus}$>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::corpus\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TranslateMultiGPU_a7fce5f63667fe7a8dbdf94d1146aa2f8}{}\label{classmarian_1_1TranslateMultiGPU_a7fce5f63667fe7a8dbdf94d1146aa2f8}
+
+
+Definition at line 23 of file translator.\+h.
+
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!graphs\+\_\+@{graphs\+\_\+}}
+\index{graphs\+\_\+@{graphs\+\_\+}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{graphs\+\_\+}{graphs_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ std\+::vector$<${\bf Ptr}$<${\bf Expression\+Graph}$>$ $>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::graphs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TranslateMultiGPU_ab4ffb4c6d4e65d3cc564f0b290f0bc72}{}\label{classmarian_1_1TranslateMultiGPU_ab4ffb4c6d4e65d3cc564f0b290f0bc72}
+
+
+Definition at line 20 of file translator.\+h.
+
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}{}\label{classmarian_1_1TranslateMultiGPU_aee684bc13d5c8a9f84c1a1a18a73a147}
+
+
+Definition at line 19 of file translator.\+h.
+
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!scorers\+\_\+@{scorers\+\_\+}}
+\index{scorers\+\_\+@{scorers\+\_\+}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{scorers\+\_\+}{scorers_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ std\+::vector$<$std\+::vector$<${\bf Ptr}$<${\bf Scorer}$>$ $>$ $>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::scorers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TranslateMultiGPU_a783f8e4ecfcba37a2dc516fc685a403d}{}\label{classmarian_1_1TranslateMultiGPU_a783f8e4ecfcba37a2dc516fc685a403d}
+
+
+Definition at line 21 of file translator.\+h.
+
+\index{marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}!trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}}
+\index{trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}!marian\+::\+Translate\+Multi\+G\+PU@{marian\+::\+Translate\+Multi\+G\+PU}}
+\subsubsection[{\texorpdfstring{trg\+Vocab\+\_\+}{trgVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Search $>$ {\bf Ptr}$<${\bf Vocab}$>$ {\bf marian\+::\+Translate\+Multi\+G\+PU}$<$ Search $>$\+::trg\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}{}\label{classmarian_1_1TranslateMultiGPU_a7a87528adeb1af7db2bdd9880634cd24}
+
+
+Definition at line 24 of file translator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{translator_8h}{translator.\+h}\end{DoxyCompactItemize}

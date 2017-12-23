@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/ddd/classmarian_1_1rnn_1_1SlowLSTM">
+<title>marian::rnn::SlowLSTM class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/de1/cells_8h">&lt;cells.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::SlowLSTM</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/de9/classmarian_1_1rnn_1_1SlowLSTM__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::SlowLSTM</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d5a/classmarian_1_1rnn_1_1SlowLSTM__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Uf_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Wf_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr bf_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Ui_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Wi_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr bi_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Uo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Wo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr bo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Uc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Wc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr bc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a28c3e53540b5187322118062ba5cdc52">SlowLSTM</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a70fd0fdd071fd698f82ede70b1479fbb">apply</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a769b9436d2c615073b0e6f3482dd953b">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1af6563558351e655ddf77f918dfa848a6">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; xWs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a28c3e53540b5187322118062ba5cdc52">
+                <title>marian::rnn::SlowLSTM::SlowLSTM (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a70fd0fdd071fd698f82ede70b1479fbb">
+                <title>State marian::rnn::SlowLSTM::apply (std::vector&lt; Expr &gt; inputs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1a769b9436d2c615073b0e6f3482dd953b">
+                <title>std::vector&lt;Expr&gt; marian::rnn::SlowLSTM::applyInput (std::vector&lt; Expr &gt; inputs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/ddd/classmarian_1_1rnn_1_1SlowLSTM_1af6563558351e655ddf77f918dfa848a6">
+                <title>State marian::rnn::SlowLSTM::applyState (std::vector&lt; Expr &gt; xWs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

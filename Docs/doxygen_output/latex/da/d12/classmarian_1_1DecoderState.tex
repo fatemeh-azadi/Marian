@@ -1,0 +1,358 @@
+\hypertarget{classmarian_1_1DecoderState}{}\section{marian\+:\+:Decoder\+State Class Reference}
+\label{classmarian_1_1DecoderState}\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+
+
+{\ttfamily \#include $<$states.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Decoder\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d4/daf/classmarian_1_1DecoderState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Decoder\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d76/classmarian_1_1DecoderState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1DecoderState_a4b2139b187e040ba2b910310ad5eb136}{Decoder\+State} (const \hyperlink{classmarian_1_1rnn_1_1States}{rnn\+::\+States} \&states, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} probs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ enc\+State)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1DecoderState_a1e32dbe1d2757e890cce367911cdf819}{get\+Encoder\+State} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1DecoderState_af761b699d78e9545987adc743bc579b8}{get\+Probs} ()
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderState_a7d99dcec147de0654c049736314e0792}{set\+Probs} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} probs)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1DecoderState_af0f090185bd8f34b53b6a3cf79d7eea3}{select} (const std\+::vector$<$ size\+\_\+t $>$ \&sel\+Idx)
+\item 
+virtual const \hyperlink{classmarian_1_1rnn_1_1States}{rnn\+::\+States} \& \hyperlink{classmarian_1_1DecoderState_a7ba0022e125c8392b43423107af33f5b}{get\+States} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1DecoderState_a93f6000b711e4f710f46268e0781eed4}{get\+Target\+Embeddings} ()
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderState_a9ba5f20385a0b96e5306dd81bba2a203}{set\+Target\+Embeddings} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} target\+Embeddings)
+\item 
+virtual bool \hyperlink{classmarian_1_1DecoderState_aa05a373b7a8e423af70829189e96fea5}{do\+Single\+Step} ()
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderState_a670f20d329fe47a6e9a483619bb0c115}{set\+Single\+Step} (bool single\+Step=true)
+\item 
+virtual const std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{classmarian_1_1DecoderState_a9ab2da41ff8e8565476f83c7870ad46b}{get\+Source\+Words} ()
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderState_abc513554a6dec21e221b18def05297cb}{blacklist} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} total\+Costs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{enc\+State\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1DecoderState_a67f590c5a27b165002f52f1fcfaa2c5f}{target\+Embeddings\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1DecoderState_a6b7abc3679621fab6ae8807214bac9a8}{single\+Step\+\_\+} \{false\}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1States}{rnn\+::\+States} \hyperlink{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{states\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file states.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!Decoder\+State@{Decoder\+State}}
+\index{Decoder\+State@{Decoder\+State}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{Decoder\+State(const rnn\+::\+States \&states, Expr probs, Ptr$<$ Encoder\+State $>$ enc\+State)}{DecoderState(const rnn::States &states, Expr probs, Ptr< EncoderState > encState)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Decoder\+State\+::\+Decoder\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf rnn\+::\+States} \&}]{states, }
+\item[{{\bf Expr}}]{probs, }
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{enc\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DecoderState_a4b2139b187e040ba2b910310ad5eb136}{}\label{classmarian_1_1DecoderState_a4b2139b187e040ba2b910310ad5eb136}
+
+
+Definition at line 41 of file states.\+h.
+
+
+\begin{DoxyCode}
+44       : \hyperlink{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{states\_}(states), \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\_}(probs), \hyperlink{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{encState\_}(encState) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!blacklist@{blacklist}}
+\index{blacklist@{blacklist}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{blacklist(\+Expr total\+Costs, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{blacklist(Expr totalCosts, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+::blacklist (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{total\+Costs, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_abc513554a6dec21e221b18def05297cb}{}\label{classmarian_1_1DecoderState_abc513554a6dec21e221b18def05297cb}
+
+
+Reimplemented in \hyperlink{classmarian_1_1DecoderStateHardAtt_a467625af0dfe9d6f08ce69484d4e1799}{marian\+::\+Decoder\+State\+Hard\+Att}.
+
+
+
+Definition at line 72 of file states.\+h.
+
+
+\begin{DoxyCode}
+72 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!do\+Single\+Step@{do\+Single\+Step}}
+\index{do\+Single\+Step@{do\+Single\+Step}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{do\+Single\+Step()}{doSingleStep()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool marian\+::\+Decoder\+State\+::do\+Single\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_aa05a373b7a8e423af70829189e96fea5}{}\label{classmarian_1_1DecoderState_aa05a373b7a8e423af70829189e96fea5}
+
+
+Definition at line 62 of file states.\+h.
+
+
+\begin{DoxyCode}
+62 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_a6b7abc3679621fab6ae8807214bac9a8}{singleStep\_}; \};
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!get\+Encoder\+State@{get\+Encoder\+State}}
+\index{get\+Encoder\+State@{get\+Encoder\+State}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Encoder\+State()}{getEncoderState()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Decoder\+State\+::get\+Encoder\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a1e32dbe1d2757e890cce367911cdf819}{}\label{classmarian_1_1DecoderState_a1e32dbe1d2757e890cce367911cdf819}
+
+
+Definition at line 46 of file states.\+h.
+
+
+\begin{DoxyCode}
+46 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{encState\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d12/classmarian_1_1DecoderState_a1e32dbe1d2757e890cce367911cdf819_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!get\+Probs@{get\+Probs}}
+\index{get\+Probs@{get\+Probs}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Probs()}{getProbs()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Decoder\+State\+::get\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_af761b699d78e9545987adc743bc579b8}{}\label{classmarian_1_1DecoderState_af761b699d78e9545987adc743bc579b8}
+
+
+Definition at line 47 of file states.\+h.
+
+
+\begin{DoxyCode}
+47 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!get\+Source\+Words@{get\+Source\+Words}}
+\index{get\+Source\+Words@{get\+Source\+Words}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Source\+Words()}{getSourceWords()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::vector$<$size\+\_\+t$>$\& marian\+::\+Decoder\+State\+::get\+Source\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a9ab2da41ff8e8565476f83c7870ad46b}{}\label{classmarian_1_1DecoderState_a9ab2da41ff8e8565476f83c7870ad46b}
+
+
+Definition at line 68 of file states.\+h.
+
+
+\begin{DoxyCode}
+68                                                     \{
+69     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_a1e32dbe1d2757e890cce367911cdf819}{getEncoderState}()->getSourceWords();
+70   \}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!get\+States@{get\+States}}
+\index{get\+States@{get\+States}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{get\+States()}{getStates()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf rnn\+::\+States}\& marian\+::\+Decoder\+State\+::get\+States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a7ba0022e125c8392b43423107af33f5b}{}\label{classmarian_1_1DecoderState_a7ba0022e125c8392b43423107af33f5b}
+
+
+Definition at line 54 of file states.\+h.
+
+
+\begin{DoxyCode}
+54 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{states\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!get\+Target\+Embeddings@{get\+Target\+Embeddings}}
+\index{get\+Target\+Embeddings@{get\+Target\+Embeddings}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Target\+Embeddings()}{getTargetEmbeddings()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Decoder\+State\+::get\+Target\+Embeddings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a93f6000b711e4f710f46268e0781eed4}{}\label{classmarian_1_1DecoderState_a93f6000b711e4f710f46268e0781eed4}
+
+
+Definition at line 56 of file states.\+h.
+
+
+\begin{DoxyCode}
+56 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderState_a67f590c5a27b165002f52f1fcfaa2c5f}{targetEmbeddings\_}; \};
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d12/classmarian_1_1DecoderState_a93f6000b711e4f710f46268e0781eed4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!select@{select}}
+\index{select@{select}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{select(const std\+::vector$<$ size\+\_\+t $>$ \&sel\+Idx)}{select(const std::vector< size_t > &selIdx)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Decoder\+State\+::select (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{sel\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_af0f090185bd8f34b53b6a3cf79d7eea3}{}\label{classmarian_1_1DecoderState_af0f090185bd8f34b53b6a3cf79d7eea3}
+
+
+Reimplemented in \hyperlink{classmarian_1_1DecoderStateHardAtt_adc303898f195c6db90b67dab9444f4f1}{marian\+::\+Decoder\+State\+Hard\+Att}.
+
+
+
+Definition at line 50 of file states.\+h.
+
+
+\begin{DoxyCode}
+50                                                                     \{
+51     \textcolor{keywordflow}{return} New<DecoderState>(\hyperlink{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{states\_}.\hyperlink{classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584}{select}(selIdx), \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\_}, 
+      \hyperlink{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{encState\_});
+52   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d12/classmarian_1_1DecoderState_af0f090185bd8f34b53b6a3cf79d7eea3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!set\+Probs@{set\+Probs}}
+\index{set\+Probs@{set\+Probs}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{set\+Probs(\+Expr probs)}{setProbs(Expr probs)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+::set\+Probs (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{probs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a7d99dcec147de0654c049736314e0792}{}\label{classmarian_1_1DecoderState_a7d99dcec147de0654c049736314e0792}
+
+
+Definition at line 48 of file states.\+h.
+
+
+\begin{DoxyCode}
+48 \{ \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\_} = probs; \}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!set\+Single\+Step@{set\+Single\+Step}}
+\index{set\+Single\+Step@{set\+Single\+Step}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{set\+Single\+Step(bool single\+Step=true)}{setSingleStep(bool singleStep=true)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+::set\+Single\+Step (
+\begin{DoxyParamCaption}
+\item[{bool}]{single\+Step = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a670f20d329fe47a6e9a483619bb0c115}{}\label{classmarian_1_1DecoderState_a670f20d329fe47a6e9a483619bb0c115}
+
+
+Definition at line 64 of file states.\+h.
+
+
+\begin{DoxyCode}
+64                                                      \{
+65     \hyperlink{classmarian_1_1DecoderState_a6b7abc3679621fab6ae8807214bac9a8}{singleStep\_} = singleStep;
+66   \}
+\end{DoxyCode}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!set\+Target\+Embeddings@{set\+Target\+Embeddings}}
+\index{set\+Target\+Embeddings@{set\+Target\+Embeddings}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{set\+Target\+Embeddings(\+Expr target\+Embeddings)}{setTargetEmbeddings(Expr targetEmbeddings)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+::set\+Target\+Embeddings (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{target\+Embeddings}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderState_a9ba5f20385a0b96e5306dd81bba2a203}{}\label{classmarian_1_1DecoderState_a9ba5f20385a0b96e5306dd81bba2a203}
+
+
+Definition at line 58 of file states.\+h.
+
+
+\begin{DoxyCode}
+58                                                           \{
+59     \hyperlink{classmarian_1_1DecoderState_a67f590c5a27b165002f52f1fcfaa2c5f}{targetEmbeddings\_} = targetEmbeddings;
+60   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!enc\+State\+\_\+@{enc\+State\+\_\+}}
+\index{enc\+State\+\_\+@{enc\+State\+\_\+}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{enc\+State\+\_\+}{encState_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Decoder\+State\+::enc\+State\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{}\label{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}
+
+
+Definition at line 33 of file states.\+h.
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!probs\+\_\+@{probs\+\_\+}}
+\index{probs\+\_\+@{probs\+\_\+}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{probs\+\_\+}{probs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Decoder\+State\+::probs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{}\label{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}
+
+
+Definition at line 36 of file states.\+h.
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!single\+Step\+\_\+@{single\+Step\+\_\+}}
+\index{single\+Step\+\_\+@{single\+Step\+\_\+}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{single\+Step\+\_\+}{singleStep_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Decoder\+State\+::single\+Step\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderState_a6b7abc3679621fab6ae8807214bac9a8}{}\label{classmarian_1_1DecoderState_a6b7abc3679621fab6ae8807214bac9a8}
+
+
+Definition at line 37 of file states.\+h.
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!states\+\_\+@{states\+\_\+}}
+\index{states\+\_\+@{states\+\_\+}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{states\+\_\+}{states_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rnn\+::\+States} marian\+::\+Decoder\+State\+::states\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{}\label{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}
+
+
+Definition at line 38 of file states.\+h.
+
+\index{marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}!target\+Embeddings\+\_\+@{target\+Embeddings\+\_\+}}
+\index{target\+Embeddings\+\_\+@{target\+Embeddings\+\_\+}!marian\+::\+Decoder\+State@{marian\+::\+Decoder\+State}}
+\subsubsection[{\texorpdfstring{target\+Embeddings\+\_\+}{targetEmbeddings_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Decoder\+State\+::target\+Embeddings\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderState_a67f590c5a27b165002f52f1fcfaa2c5f}{}\label{classmarian_1_1DecoderState_a67f590c5a27b165002f52f1fcfaa2c5f}
+
+
+Definition at line 35 of file states.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{states_8h}{states.\+h}\end{DoxyCompactItemize}

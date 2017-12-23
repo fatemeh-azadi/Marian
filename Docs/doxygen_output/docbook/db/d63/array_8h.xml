@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d63/array_8h">
+    <title>array.h File Reference</title>
+    <programlisting>#include &lt;cuda.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/host_vector.h&gt;</programlisting>
+<para>Include dependency diagram for array.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d1e/array_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for array.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d43/array_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">amunmt::GPU::mblas::Array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas">amunmt::GPU::mblas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file array.h</para>
+    </simplesect>
+</section>

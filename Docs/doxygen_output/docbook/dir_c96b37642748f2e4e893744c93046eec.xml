@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_c96b37642748f2e4e893744c93046eec">
+    <title>tests Directory Reference</title>
+<para>Directory dependency diagram for tests</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_c96b37642748f2e4e893744c93046eec_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d1/dc6/allocator__test_8cpp">allocator_test.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/d05/graph__tests_8cpp">graph_tests.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/d83/logger__test_8cpp">logger_test.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/d92/operator__tests_8cpp">operator_tests.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/d6e/run__tests_8cpp">run_tests.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/marian/src/tests/</para>
+    </simplesect>
+</section>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d50/pooling_8h">
+    <title>pooling.h File Reference</title>
+    <programlisting>#include &quot;models/encdec.h&quot;</programlisting>
+    <programlisting>#include &quot;models/s2s.h&quot;</programlisting>
+<para>Include dependency diagram for pooling.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dd7/pooling_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for pooling.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d76/pooling_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d65/classmarian_1_1EncoderStatePooling">marian::EncoderStatePooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8d/classmarian_1_1EncoderPooling">marian::EncoderPooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file pooling.h</para>
+    </simplesect>
+</section>

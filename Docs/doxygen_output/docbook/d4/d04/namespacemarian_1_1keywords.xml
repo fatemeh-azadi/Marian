@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d04/namespacemarian_1_1keywords">
+<title>marian::keywords::True struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/db7/keywords_8h">&lt;keywords.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::keywords::True</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/ddb/structmarian_1_1keywords_1_1True__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::keywords::True</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/dd2/structmarian_1_1keywords_1_1True__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+</section>

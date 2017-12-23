@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/df9/classamunmt_1_1LoaderFactory">
+<title>amunmt::LoaderFactory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d2b/loader__factory_8h">&lt;loader_factory.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::LoaderFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/de8/classamunmt_1_1LoaderFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::LoaderFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/da1/classamunmt_1_1LoaderFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d7/dd3/namespaceamunmt_1a7907c3626488deed31e31452d178d78e">LoaderPtr</link> <link linkend="d8/df9/classamunmt_1_1LoaderFactory_1aaaf8621316a4c3832bcdfecbd5f69598">Create</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config, const <link linkend="d7/dd3/namespaceamunmt_1a0f0dad0deb73c5a4c574d8c63833ab17">DeviceType</link> deviceType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="dd/d6b/classamunmt_1_1Loader">Loader</link> * <link linkend="d8/df9/classamunmt_1_1LoaderFactory_1a78832d75891d43a96d36c1e61c6940b4">CreateCPU</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="dd/d6b/classamunmt_1_1Loader">Loader</link> * <link linkend="d8/df9/classamunmt_1_1LoaderFactory_1a78af7437386e23443b9d02bb4f8be24b">CreateGPU</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="dd/d6b/classamunmt_1_1Loader">Loader</link> * <link linkend="d8/df9/classamunmt_1_1LoaderFactory_1a167b89f68880a90da333d3a61458472b">CreateFPGA</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/df9/classamunmt_1_1LoaderFactory_1aaaf8621316a4c3832bcdfecbd5f69598">
+                <title>LoaderPtr amunmt::LoaderFactory::Create (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config, const DeviceType deviceType)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/df9/classamunmt_1_1LoaderFactory_1a78832d75891d43a96d36c1e61c6940b4">
+                <title>static Loader* amunmt::LoaderFactory::CreateCPU (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/df9/classamunmt_1_1LoaderFactory_1a78af7437386e23443b9d02bb4f8be24b">
+                <title>static Loader* amunmt::LoaderFactory::CreateGPU (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/df9/classamunmt_1_1LoaderFactory_1a167b89f68880a90da333d3a61458472b">
+                <title>static Loader* amunmt::LoaderFactory::CreateFPGA (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

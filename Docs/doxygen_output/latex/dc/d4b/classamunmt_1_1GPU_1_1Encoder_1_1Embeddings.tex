@@ -1,0 +1,112 @@
+\hypertarget{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings}{}\section{amunmt\+:\+:G\+PU\+:\+:Encoder\+:\+:Embeddings$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings}\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings$<$ Weights $>$}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Encoder\+:\+:Embeddings$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d25/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a3db8a8514e670fbc7b3c9a2b5dc236fc}{Embeddings} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a8cb9331defa2af0c29d42a776b2b574b}{Lookup} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Row, const \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \&words)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_ab3ad5a86c18939f8ebbcc05d178b020a}{Embeddings} (const \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings}{Embeddings} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{w\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings$<$ Weights $>$}
+
+
+
+Definition at line 25 of file encoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}!Embeddings@{Embeddings}}
+\index{Embeddings@{Embeddings}!amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Embeddings(const Weights \&model)}{Embeddings(const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::{\bf Embeddings} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a3db8a8514e670fbc7b3c9a2b5dc236fc}{}\label{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a3db8a8514e670fbc7b3c9a2b5dc236fc}
+
+
+Definition at line 27 of file encoder.\+h.
+
+
+\begin{DoxyCode}
+28         : \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{w\_}(model)
+29         \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}!Embeddings@{Embeddings}}
+\index{Embeddings@{Embeddings}!amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Embeddings(const Embeddings \&)=delete}{Embeddings(const Embeddings &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::{\bf Embeddings} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Embeddings}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_ab3ad5a86c18939f8ebbcc05d178b020a}{}\label{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_ab3ad5a86c18939f8ebbcc05d178b020a}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Lookup(mblas\+::\+Matrix \&\+Row, const Words \&words)}{Lookup(mblas::Matrix &Row, const Words &words)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::Lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Row, }
+\item[{const {\bf Words} \&}]{words}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a8cb9331defa2af0c29d42a776b2b574b}{}\label{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a8cb9331defa2af0c29d42a776b2b574b}
+
+
+Definition at line 31 of file encoder.\+h.
+
+
+\begin{DoxyCode}
+31                                                           \{
+32           std::vector<uint> knownWords(words.size(), 1);
+33           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < words.size(); ++i) \{
+34             \textcolor{keywordflow}{if} (words[i] < \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{w\_}.E\_->dim(0)) \{
+35               knownWords[i] = words[i];
+36             \}
+37           \}
+38 
+39           mblas::Array<uint> dKnownWords(knownWords);
+40 
+41           Row.NewSize(words.size(), \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{w\_}.E\_->dim(1));
+42           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{mblas::Assemble}(Row, *\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{w\_}.E\_, dKnownWords);
+43           \textcolor{comment}{//std::cerr << "Row3=" << Row.Debug(1) << std::endl;}
+44         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}{}\label{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_a17bf92e9d4b8683b51f28876a1f4b1eb}
+
+
+Definition at line 47 of file encoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encoder_8h}{encoder.\+h}\end{DoxyCompactItemize}

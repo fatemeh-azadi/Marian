@@ -1,0 +1,57 @@
+\hypertarget{namespaceexport__embeddings}{}\section{export\+\_\+embeddings Namespace Reference}
+\label{namespaceexport__embeddings}\index{export\+\_\+embeddings@{export\+\_\+embeddings}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceexport__embeddings_a461679a46a183a3fee6ec09b838d4da0}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{export\+\_\+embeddings@{export\+\_\+embeddings}!main@{main}}
+\index{main@{main}!export\+\_\+embeddings@{export\+\_\+embeddings}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def export\+\_\+embeddings.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceexport__embeddings_a461679a46a183a3fee6ec09b838d4da0}{}\label{namespaceexport__embeddings_a461679a46a183a3fee6ec09b838d4da0}
+
+
+Definition at line 11 of file export\+\_\+embeddings.\+py.
+
+
+\begin{DoxyCode}
+11 \textcolor{keyword}{def }\hyperlink{namespaceexport__embeddings_a461679a46a183a3fee6ec09b838d4da0}{main}():
+12     desc = \textcolor{stringliteral}{"""Export word embedding from model"""}
+13     parser = argparse.ArgumentParser(
+14         formatter\_class=argparse.RawDescriptionHelpFormatter, description=desc)
+15     parser.add\_argument(\textcolor{stringliteral}{"-m"}, \textcolor{stringliteral}{"--model"}, help=\textcolor{stringliteral}{"Model file"}, required=\textcolor{keyword}{True})
+16     parser.add\_argument(
+17         \textcolor{stringliteral}{"-o"}, \textcolor{stringliteral}{"--output-prefix"}, help=\textcolor{stringliteral}{"Output files prefix"}, required=\textcolor{keyword}{True})
+18     args = parser.parse\_args()
+19 
+20     print(\textcolor{stringliteral}{"Loading model"})
+21     model = np.load(args.model)
+22     special = yaml.load(model[\textcolor{stringliteral}{"special:model.yml"}][:-1].tobytes())
+23 
+24     \textcolor{keywordflow}{if} special[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"amun"}:
+25         enc\_emb = model[\textcolor{stringliteral}{"Wemb"}]
+26         dec\_emb = model[\textcolor{stringliteral}{"Wemb\_dec"}]
+27     \textcolor{keywordflow}{else}:
+28         enc\_emb = model[\textcolor{stringliteral}{"encoder\_Wemb"}]
+29         dec\_emb = model[\textcolor{stringliteral}{"decoder\_Wemb"}]
+30 
+31     with open(args.output\_prefix + \textcolor{stringliteral}{".src"}, \textcolor{stringliteral}{"w"}) \textcolor{keyword}{as} out:
+32         out.write(\textcolor{stringliteral}{"\{0\} \{1\}\(\backslash\)n"}.format(*enc\_emb.shape))
+33         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(enc\_emb.shape[0]):
+34             vec = \textcolor{stringliteral}{" "}.join(\textcolor{stringliteral}{"\{0:.8f\}"}.format(v) \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} enc\_emb[i])
+35             out.write(\textcolor{stringliteral}{"\{0\} \{1\}\(\backslash\)n"}.format(i, vec))
+36 
+37     with open(args.output\_prefix + \textcolor{stringliteral}{".trg"}, \textcolor{stringliteral}{"w"}) \textcolor{keyword}{as} out:
+38         out.write(\textcolor{stringliteral}{"\{0\} \{1\}\(\backslash\)n"}.format(*dec\_emb.shape))
+39         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(dec\_emb.shape[0]):
+40             vec = \textcolor{stringliteral}{" "}.join(\textcolor{stringliteral}{"\{0:.8f\}"}.format(v) \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} dec\_emb[i])
+41             out.write(\textcolor{stringliteral}{"\{0\} \{1\}\(\backslash\)n"}.format(i, vec))
+42 
+43 
+\end{DoxyCode}

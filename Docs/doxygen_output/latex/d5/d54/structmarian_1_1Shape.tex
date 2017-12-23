@@ -1,0 +1,815 @@
+\hypertarget{structmarian_1_1Shape}{}\section{marian\+:\+:Shape Struct Reference}
+\label{structmarian_1_1Shape}\index{marian\+::\+Shape@{marian\+::\+Shape}}
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{dc/d3a/structmarian_1_1Shape__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}{Shape} ()
+\begin{DoxyCompactList}\small\item\em Constructs a default shape. \end{DoxyCompactList}\item 
+\hyperlink{structmarian_1_1Shape_adb8f3c0ab0efd3ca4253d5d7e998b9cc}{Shape} (std\+::initializer\+\_\+list$<$ int $>$ il)
+\begin{DoxyCompactList}\small\item\em Constructs a shape. \end{DoxyCompactList}\item 
+void \hyperlink{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}{update\+Strides} ()
+\item 
+\hyperlink{structmarian_1_1Shape_a5b79f3dd7ab6441b2b2bffdd07eba8a3}{Shape} (const \hyperlink{structmarian_1_1Shape}{Shape} \&shape)
+\item 
+void \hyperlink{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}{set} (int i, int \hyperlink{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{dim})
+\item 
+int \hyperlink{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{dim} (int i)
+\begin{DoxyCompactList}\small\item\em Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_aca204099494ae601fddeb4be4bc3f189}{dim} (int i) const 
+\begin{DoxyCompactList}\small\item\em Gets the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_a08ec40e4c6a6236f8392d3328a40c8cc}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_ac6532138e02276d3a79bad788ca7e00b}{operator\mbox{[}$\,$\mbox{]}} (int i) const 
+\begin{DoxyCompactList}\small\item\em Gets the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{stride} (int i) const 
+\item 
+int \hyperlink{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{bstride} (int i) const 
+\item 
+size\+\_\+t \hyperlink{structmarian_1_1Shape_ad44c5095408e203526566bc8b7c20a4b}{size} () const 
+\begin{DoxyCompactList}\small\item\em Gets the number of dimensions represented by this object. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}{elements} () const 
+\begin{DoxyCompactList}\small\item\em Gets the total number of elements in a tensor of this shape. \end{DoxyCompactList}\item 
+int \hyperlink{structmarian_1_1Shape_a6fd892ce40df247ae6e8631061cd182f}{index} (int $\ast$d) const 
+\item 
+int \hyperlink{structmarian_1_1Shape_a323033b473c9563967559bbd2def9f3c}{bindex} (int $\ast$d) const 
+\item 
+void \hyperlink{structmarian_1_1Shape_afe51de9add418af661585454ff3ed30b}{dims} (int i, int $\ast$d) const 
+\item 
+int $\ast$ \hyperlink{structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057}{begin} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to an int that specifies the size of the first dimension represented by this object. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structmarian_1_1Shape_ac024a9b46f6a11c46019cd9a5daad0cd}{end} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to an int that specifies the size of the last dimension represented by this object. \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{structmarian_1_1Shape_a93da043421ee163164382cc55237dfcd}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Gets a const pointer to an int that specifies the size of the first dimension represented by this object. \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{structmarian_1_1Shape_a7c60b16a225007f5d7fb9de59084dcd3}{end} () const 
+\begin{DoxyCompactList}\small\item\em Gets a const pointer to an int that specifies the size of the last dimension represented by this object. \end{DoxyCompactList}\item 
+bool \hyperlink{structmarian_1_1Shape_aa2eb67555a64ae06a4ec561dbd18b4e0}{operator==} (const \hyperlink{structmarian_1_1Shape}{Shape} \&other) const 
+\begin{DoxyCompactList}\small\item\em Tests this object for equality against another {\ttfamily \hyperlink{structmarian_1_1Shape}{Shape}} object. \end{DoxyCompactList}\item 
+bool \hyperlink{structmarian_1_1Shape_acfc1599d458f3b6837be724e4e96161a}{operator!=} (const \hyperlink{structmarian_1_1Shape}{Shape} \&other) const 
+\begin{DoxyCompactList}\small\item\em Tests this object for inequality against another {\ttfamily \hyperlink{structmarian_1_1Shape}{Shape}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+int \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+int \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{structmarian_1_1Shape_a2ca21ca4a18d413e83e47c5759e728d3}{operator$<$$<$} (std\+::ostream \&strm, const \hyperlink{structmarian_1_1Shape}{Shape} \&shape)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file shape.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{Shape()}{Shape()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}{}\label{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}
+
+
+Constructs a default shape. 
+
+This default shape has four dimensions. The size of each dimension is 1. 
+
+Definition at line 30 of file shape.\+h.
+
+
+\begin{DoxyCode}
+30 : \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}\{1, 1, 1, 1\}, \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}\{1, 1, 1, 1\}, \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}\{0, 0, 0, 0\} \{\}
+\end{DoxyCode}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{Shape(std\+::initializer\+\_\+list$<$ int $>$ il)}{Shape(std::initializer_list< int > il)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ int $>$}]{il}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_adb8f3c0ab0efd3ca4253d5d7e998b9cc}{}\label{structmarian_1_1Shape_adb8f3c0ab0efd3ca4253d5d7e998b9cc}
+
+
+Constructs a shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & A list of integers representing the size of each dimension. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file shape.\+h.
+
+
+\begin{DoxyCode}
+37                                      : \hyperlink{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}{Shape}() \{
+38     \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(il.begin(), il.end(), \hyperlink{structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057}{begin}());
+39     \hyperlink{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}{updateStrides}();
+40   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d54/structmarian_1_1Shape_adb8f3c0ab0efd3ca4253d5d7e998b9cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{Shape(const Shape \&shape)}{Shape(const Shape &shape)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape} \&}]{shape}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a5b79f3dd7ab6441b2b2bffdd07eba8a3}{}\label{structmarian_1_1Shape_a5b79f3dd7ab6441b2b2bffdd07eba8a3}
+
+
+Definition at line 54 of file shape.\+h.
+
+
+\begin{DoxyCode}
+54                             : \hyperlink{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}{Shape}() \{
+55     \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[0] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[0];
+56     \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[1] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[1];
+57     \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[2] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[2];
+58     \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[3] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[3];
+59     \hyperlink{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}{updateStrides}();
+60   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_a5b79f3dd7ab6441b2b2bffdd07eba8a3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!begin@{begin}}
+\index{begin@{begin}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Shape\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057}{}\label{structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057}
+
+
+Gets a pointer to an int that specifies the size of the first dimension represented by this object. 
+
+
+
+Definition at line 144 of file shape.\+h.
+
+
+\begin{DoxyCode}
+144 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!begin@{begin}}
+\index{begin@{begin}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}const int$\ast$ marian\+::\+Shape\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a93da043421ee163164382cc55237dfcd}{}\label{structmarian_1_1Shape_a93da043421ee163164382cc55237dfcd}
+
+
+Gets a const pointer to an int that specifies the size of the first dimension represented by this object. 
+
+
+
+Definition at line 152 of file shape.\+h.
+
+
+\begin{DoxyCode}
+152 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!bindex@{bindex}}
+\index{bindex@{bindex}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{bindex(int $\ast$d) const }{bindex(int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::bindex (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a323033b473c9563967559bbd2def9f3c}{}\label{structmarian_1_1Shape_a323033b473c9563967559bbd2def9f3c}
+
+
+Definition at line 130 of file shape.\+h.
+
+
+\begin{DoxyCode}
+130                                   \{
+131     \textcolor{keywordflow}{return} \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] * \hyperlink{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{bstride}(0) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] * \hyperlink{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{bstride}(1) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] * 
+      \hyperlink{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{bstride}(2)
+132            + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] * \hyperlink{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{bstride}(3);
+133   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{d5/d54/structmarian_1_1Shape_a323033b473c9563967559bbd2def9f3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!bstride@{bstride}}
+\index{bstride@{bstride}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{bstride(int i) const }{bstride(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::bstride (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}{}\label{structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2}
+
+
+Definition at line 104 of file shape.\+h.
+
+
+\begin{DoxyCode}
+104 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{d5/d54/structmarian_1_1Shape_a1d256f7b75335696bf3dec9368a718b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!dim@{dim}}
+\index{dim@{dim}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{dim(int i)}{dim(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::dim (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{}\label{structmarian_1_1Shape_af416da295388777386ae8b834115066f}
+
+
+Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file shape.\+h.
+
+
+\begin{DoxyCode}
+73 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_af416da295388777386ae8b834115066f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!dim@{dim}}
+\index{dim@{dim}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{dim(int i) const }{dim(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::dim (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_aca204099494ae601fddeb4be4bc3f189}{}\label{structmarian_1_1Shape_aca204099494ae601fddeb4be4bc3f189}
+
+
+Gets the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file shape.\+h.
+
+
+\begin{DoxyCode}
+82 \{ \textcolor{keywordflow}{return} \textcolor{keyword}{const\_cast<}\hyperlink{structmarian_1_1Shape_a5d3976a7b93ffeb26bcb4fd020760f6f}{Shape}&\textcolor{keyword}{>}(*this).dim(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d5/d54/structmarian_1_1Shape_aca204099494ae601fddeb4be4bc3f189_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!dims@{dims}}
+\index{dims@{dims}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{dims(int i, int $\ast$d) const }{dims(int i, int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Shape\+::dims (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_afe51de9add418af661585454ff3ed30b}{}\label{structmarian_1_1Shape_afe51de9add418af661585454ff3ed30b}
+
+
+Definition at line 135 of file shape.\+h.
+
+
+\begin{DoxyCode}
+135                                         \{
+136     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] = (i / \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[0]) % \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[0];
+137     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] = (i / \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[1]) % \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[1];
+138     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] = (i / \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[2]) % \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[2];
+139     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] = i / \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[3];
+140   \}
+\end{DoxyCode}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!elements@{elements}}
+\index{elements@{elements}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{elements() const }{elements() const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}{}\label{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}
+
+
+Gets the total number of elements in a tensor of this shape. 
+
+For example, if this shape represents a 5x100 tensor, this method would return 500.
+
+\begin{DoxyReturn}{Returns}
+the total number of elements in a tensor of this shape 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file shape.\+h.
+
+
+\begin{DoxyCode}
+121                               \{
+122     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[0] * \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[1] * \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[2] * \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[3];
+123   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!end@{end}}
+\index{end@{end}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Shape\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_ac024a9b46f6a11c46019cd9a5daad0cd}{}\label{structmarian_1_1Shape_ac024a9b46f6a11c46019cd9a5daad0cd}
+
+
+Gets a pointer to an int that specifies the size of the last dimension represented by this object. 
+
+
+
+Definition at line 148 of file shape.\+h.
+
+
+\begin{DoxyCode}
+148 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_} + \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_ac024a9b46f6a11c46019cd9a5daad0cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!end@{end}}
+\index{end@{end}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}const int$\ast$ marian\+::\+Shape\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a7c60b16a225007f5d7fb9de59084dcd3}{}\label{structmarian_1_1Shape_a7c60b16a225007f5d7fb9de59084dcd3}
+
+
+Gets a const pointer to an int that specifies the size of the last dimension represented by this object. 
+
+
+
+Definition at line 156 of file shape.\+h.
+
+
+\begin{DoxyCode}
+156 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_} + \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!index@{index}}
+\index{index@{index}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{index(int $\ast$d) const }{index(int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::index (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a6fd892ce40df247ae6e8631061cd182f}{}\label{structmarian_1_1Shape_a6fd892ce40df247ae6e8631061cd182f}
+
+
+Definition at line 125 of file shape.\+h.
+
+
+\begin{DoxyCode}
+125                                  \{
+126     \textcolor{keywordflow}{return} \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] * \hyperlink{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{stride}(0) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] * \hyperlink{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{stride}(1) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] * \hyperlink{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{stride}(2)
+127            + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] * \hyperlink{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{stride}(3);
+128   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d5/d54/structmarian_1_1Shape_a6fd892ce40df247ae6e8631061cd182f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{operator"!=(const Shape \&other) const }{operator!=(const Shape &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Shape\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_acfc1599d458f3b6837be724e4e96161a}{}\label{structmarian_1_1Shape_acfc1599d458f3b6837be724e4e96161a}
+
+
+Tests this object for inequality against another {\ttfamily \hyperlink{structmarian_1_1Shape}{Shape}} object. 
+
+
+
+Definition at line 175 of file shape.\+h.
+
+
+\begin{DoxyCode}
+175 \{ \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == other); \}
+\end{DoxyCode}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!operator==@{operator==}}
+\index{operator==@{operator==}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{operator==(const Shape \&other) const }{operator==(const Shape &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Shape\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_aa2eb67555a64ae06a4ec561dbd18b4e0}{}\label{structmarian_1_1Shape_aa2eb67555a64ae06a4ec561dbd18b4e0}
+
+
+Tests this object for equality against another {\ttfamily \hyperlink{structmarian_1_1Shape}{Shape}} object. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the size of each dimension in this object is equal to the size of the corresponding dimension in the other object, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file shape.\+h.
+
+
+\begin{DoxyCode}
+167                                             \{
+168     \textcolor{keywordflow}{return} std::equal(\hyperlink{structmarian_1_1Shape_aec078a9049c1007834e21090a0fcd057}{begin}(), \hyperlink{structmarian_1_1Shape_ac024a9b46f6a11c46019cd9a5daad0cd}{end}(), other.begin());
+169   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_aa2eb67555a64ae06a4ec561dbd18b4e0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{operator[](int i)}{operator[](int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a08ec40e4c6a6236f8392d3328a40c8cc}{}\label{structmarian_1_1Shape_a08ec40e4c6a6236f8392d3328a40c8cc}
+
+
+Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file shape.\+h.
+
+
+\begin{DoxyCode}
+91 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{dim}(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d5/d54/structmarian_1_1Shape_a08ec40e4c6a6236f8392d3328a40c8cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{operator[](int i) const }{operator[](int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_ac6532138e02276d3a79bad788ca7e00b}{}\label{structmarian_1_1Shape_ac6532138e02276d3a79bad788ca7e00b}
+
+
+Gets the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file shape.\+h.
+
+
+\begin{DoxyCode}
+100 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{dim}(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d5/d54/structmarian_1_1Shape_ac6532138e02276d3a79bad788ca7e00b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!set@{set}}
+\index{set@{set}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{set(int i, int dim)}{set(int i, int dim)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Shape\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}{}\label{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}
+
+
+Definition at line 62 of file shape.\+h.
+
+
+\begin{DoxyCode}
+62                                   \{
+63     \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[i] = \hyperlink{structmarian_1_1Shape_af416da295388777386ae8b834115066f}{dim};
+64     \hyperlink{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}{updateStrides}();
+65   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!size@{size}}
+\index{size@{size}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Shape\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_ad44c5095408e203526566bc8b7c20a4b}{}\label{structmarian_1_1Shape_ad44c5095408e203526566bc8b7c20a4b}
+
+
+Gets the number of dimensions represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the number of dimensions represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file shape.\+h.
+
+
+\begin{DoxyCode}
+111 \{ \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_ad44c5095408e203526566bc8b7c20a4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!stride@{stride}}
+\index{stride@{stride}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{stride(int i) const }{stride(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::stride (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}{}\label{structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8}
+
+
+Definition at line 102 of file shape.\+h.
+
+
+\begin{DoxyCode}
+102 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d5/d54/structmarian_1_1Shape_aca536a163ca8729bd0703250a0f83aa8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!update\+Strides@{update\+Strides}}
+\index{update\+Strides@{update\+Strides}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{update\+Strides()}{updateStrides()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Shape\+::update\+Strides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}{}\label{structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9}
+
+
+Definition at line 42 of file shape.\+h.
+
+
+\begin{DoxyCode}
+42                        \{
+43     \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[0] = \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[1];
+44     \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[1] = 1;
+45     \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[2] = \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[0] * \hyperlink{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{shape\_}[1];
+46     \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[3] = shape\_[0] * shape\_[1] * shape\_[2];
+47 
+48     \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}[0] = shape\_[0] == 1 ? 0 : \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[0];
+49     \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}[1] = shape\_[1] == 1 ? 0 : \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[1];
+50     \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}[2] = shape\_[2] == 1 ? 0 : \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[2];
+51     \hyperlink{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{bstride\_}[3] = shape\_[3] == 1 ? 0 : \hyperlink{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{stride\_}[3];
+52   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d54/structmarian_1_1Shape_a9cf031011a4b53538dda070a77ad19f9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{strm, }
+\item[{const {\bf Shape} \&}]{shape}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{structmarian_1_1Shape_a2ca21ca4a18d413e83e47c5759e728d3}{}\label{structmarian_1_1Shape_a2ca21ca4a18d413e83e47c5759e728d3}
+
+
+Definition at line 177 of file shape.\+h.
+
+
+\begin{DoxyCode}
+177                                                                       \{
+178     strm << \textcolor{stringliteral}{"shape="} << \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[0];
+179     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i < shape.size(); ++i)
+180       strm << \textcolor{stringliteral}{"x"} << shape[i];
+181     strm << \textcolor{stringliteral}{" size="} << shape.elements() << \textcolor{stringliteral}{" ("}
+182          << shape.elements() * \textcolor{keyword}{sizeof}(float) << \textcolor{stringliteral}{"B)"};
+183     \textcolor{keywordflow}{return} strm;
+184   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Shape@{marian\+::\+Shape}!bstride\+\_\+@{bstride\+\_\+}}
+\index{bstride\+\_\+@{bstride\+\_\+}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{bstride\+\_\+}{bstride_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::bstride\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}{}\label{structmarian_1_1Shape_a50802a690e7e067603040f71d7bce8ee}
+
+
+Definition at line 22 of file shape.\+h.
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!shape\+\_\+@{shape\+\_\+}}
+\index{shape\+\_\+@{shape\+\_\+}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{shape\+\_\+}{shape_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::shape\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}{}\label{structmarian_1_1Shape_a87dd6e1cf78a4bc46d80c63d14f9d2de}
+
+
+Definition at line 20 of file shape.\+h.
+
+\index{marian\+::\+Shape@{marian\+::\+Shape}!stride\+\_\+@{stride\+\_\+}}
+\index{stride\+\_\+@{stride\+\_\+}!marian\+::\+Shape@{marian\+::\+Shape}}
+\subsubsection[{\texorpdfstring{stride\+\_\+}{stride_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+::stride\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}{}\label{structmarian_1_1Shape_a960bb2f1f175e64fa00baa56891aafcb}
+
+
+Definition at line 21 of file shape.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shape_8h}{shape.\+h}\end{DoxyCompactItemize}

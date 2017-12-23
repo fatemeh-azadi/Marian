@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/de6/structmarian_1_1MinusNodeOp">
+<title>marian::MinusNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MinusNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d8f/structmarian_1_1MinusNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MinusNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d70/structmarian_1_1MinusNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/de6/structmarian_1_1MinusNodeOp_1ab1c64071a6a5bd68de315b0c5d544303">MinusNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d1/de6/structmarian_1_1MinusNodeOp_1aea7d65faca82ef791bb618a6b7de5467">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d1/de6/structmarian_1_1MinusNodeOp_1a126094d4dcd7a89fc897f0017d18e51b">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d1/de6/structmarian_1_1MinusNodeOp_1af53ee5f8b9c44ee3e09ecac0c1714899">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/de6/structmarian_1_1MinusNodeOp_1ab1c64071a6a5bd68de315b0c5d544303">
+                <title>marian::MinusNodeOp::MinusNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de6/structmarian_1_1MinusNodeOp_1aea7d65faca82ef791bb618a6b7de5467">
+                <title>NodeOps marian::MinusNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de6/structmarian_1_1MinusNodeOp_1a126094d4dcd7a89fc897f0017d18e51b">
+                <title>NodeOps marian::MinusNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de6/structmarian_1_1MinusNodeOp_1af53ee5f8b9c44ee3e09ecac0c1714899">
+                <title>const std::string marian::MinusNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/db7/keywords_8h">
+    <title>keywords.h File Reference</title>
+    <programlisting>#include &lt;boost/any.hpp&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;typeindex&gt;</programlisting>
+    <programlisting>#include &lt;typeinfo&gt;</programlisting>
+    <programlisting>#include &quot;compile_time_crc32.h&quot;</programlisting>
+<para>Include dependency diagram for keywords.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/de2/keywords_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for keywords.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d15/keywords_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword">marian::keywords::Keyword</link></para>
+<para><emphasis>Represents a named keyword capable of storing a single value.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d47/structmarian_1_1keywords_1_1is__one__of">marian::keywords::is_one_of</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d8b/structmarian_1_1keywords_1_1is__one__of_3_01F_00_01S_00_01T_8_8_8_01_4">marian::keywords::is_one_of&lt; F, S, T... &gt;</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d04/namespacemarian_1_1keywords">marian::keywords::Index</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d04/namespacemarian_1_1keywords">marian::keywords::True</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d04/namespacemarian_1_1keywords">marian::keywords::False</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords">marian::keywords::Keywords</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d04/namespacemarian_1_1keywords">marian::keywords</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/db7/keywords_8h_1ad6c9fa5917736eee3d55706caf21469d">KEY</link> typedef const Keyword&lt;<link linkend="d3/de0/compile__time__crc32_8h_1a3bf1b54ed65de428c2878ac7fbf2cb19">COMPILE_TIME_CRC32_STR</link>(#name), value_type&gt; name##_k; \
+  name##_k name<para><emphasis>Defines a preprocessor macro that can be used to construct an
+appropriately templated instance of the &lt;code&gt;Keyword&lt;/code&gt; class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file keywords.h</para>
+    </simplesect>
+</section>

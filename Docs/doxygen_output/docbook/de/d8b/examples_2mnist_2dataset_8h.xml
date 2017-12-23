@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d8b/examples_2mnist_2dataset_8h">
+    <title>examples/mnist/dataset.h File Reference</title>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;cassert&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;common/shape.h&quot;</programlisting>
+    <programlisting>#include &quot;data/batch.h&quot;</programlisting>
+    <programlisting>#include &quot;data/dataset.h&quot;</programlisting>
+    <programlisting>#include &quot;data/vocab.h&quot;</programlisting>
+<para>Include dependency diagram for examples/mnist/dataset.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d01/examples_2mnist_2dataset_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for examples/mnist/dataset.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/db0/examples_2mnist_2dataset_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d07/classmarian_1_1data_1_1MNIST">marian::data::MNIST</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d56/namespacemarian_1_1data">marian::data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file dataset.h</para>
+    </simplesect>
+</section>

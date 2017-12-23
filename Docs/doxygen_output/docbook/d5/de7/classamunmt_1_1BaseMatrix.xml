@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/de7/classamunmt_1_1BaseMatrix">
+<title>amunmt::BaseMatrix class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d75/base__matrix_8h">&lt;base_matrix.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::BaseMatrix</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d6c/classamunmt_1_1BaseMatrix__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::BaseMatrix</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d49/classamunmt_1_1BaseMatrix__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1a4be3ab768df6a7039efbb14d43463a2c">BaseMatrix</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1afb3ba3f074a7464fbb991cb467c7e84d">~BaseMatrix</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1a8fca680b1a864b3d99e9cfe6aa60f1d4">dim</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1a52ccc5b9234726532fe0452a8aed5b1f">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1a340cbf16c47ba57d32cab301705f7776">empty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1a4cb69cec51d0849c2e9126131265a044">Resize</link> (
+size_t rows, size_t cols, size_t beam, size_t batches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="d5/de7/classamunmt_1_1BaseMatrix_1ae7601bd2c92e0102c263e143c36fb6cd">Debug</link> (
+size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1a4be3ab768df6a7039efbb14d43463a2c">
+                <title>amunmt::BaseMatrix::BaseMatrix ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1afb3ba3f074a7464fbb991cb467c7e84d">
+                <title>virtual amunmt::BaseMatrix::~BaseMatrix ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1a8fca680b1a864b3d99e9cfe6aa60f1d4">
+                <title>virtual size_t amunmt::BaseMatrix::dim (size_t i) const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1a52ccc5b9234726532fe0452a8aed5b1f">
+                <title>size_t amunmt::BaseMatrix::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1a340cbf16c47ba57d32cab301705f7776">
+                <title>bool amunmt::BaseMatrix::empty () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1a4cb69cec51d0849c2e9126131265a044">
+                <title>virtual void amunmt::BaseMatrix::Resize (size_t rows, size_t cols, size_t beam=1, size_t batches=1)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de7/classamunmt_1_1BaseMatrix_1ae7601bd2c92e0102c263e143c36fb6cd">
+                <title>std::string amunmt::BaseMatrix::Debug (size_t verbosity=1) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

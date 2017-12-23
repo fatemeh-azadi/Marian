@@ -1,0 +1,15 @@
+<map id="marian::LayerNormalizationOp::type" name="marian::LayerNormalizationOp::type">
+<area shape="rect" id="node2" href="$d0/da7/structmarian_1_1NaryNodeOp.html#aed8f74da7153fd55707ea8cd1456058b" title="marian::NaryNodeOp\l::NaryNodeOp" alt="" coords="247,5,393,47"/>
+<area shape="rect" id="node5" href="$d0/d7a/classmarian_1_1Node.html#aa631f0244ad94b4c64efab0f140bd1d5" title="marian::Node::shape" alt="" coords="249,71,391,98"/>
+<area shape="rect" id="node6" href="$d5/d54/structmarian_1_1Shape.html#aec078a9049c1007834e21090a0fcd057" title="Gets a pointer to an int that specifies the size of the first dimension represented by this object..." alt="" coords="247,122,393,149"/>
+<area shape="rect" id="node7" href="$dc/d8c/structmarian_1_1DotNodeOp.html#a72a5f5125f26d022b23630dc90ea5c2d" title="marian::DotNodeOp::\lforwardOps" alt="" coords="247,239,393,280"/>
+<area shape="rect" id="node11" href="$d0/d7a/classmarian_1_1Node.html#a0df86f2ff4a169111d6ba0865e6fd935" title="marian::Node::val" alt="" coords="480,325,605,351"/>
+<area shape="rect" id="node12" href="$dc/d8c/structmarian_1_1DotNodeOp.html#a015697830536478b4b8226c7e963dd3a" title="marian::DotNodeOp::\lbackwardOps" alt="" coords="247,173,393,215"/>
+<area shape="rect" id="node14" href="$dc/d8c/structmarian_1_1DotNodeOp.html#a26ba9e725a0220dd11201529bb8edbfb" title="marian::DotNodeOp::type" alt="" coords="235,355,405,382"/>
+<area shape="rect" id="node3" href="$d0/d7a/classmarian_1_1Node.html#a04b5aa3633d6a01b074f59fd93d7fb15" title="marian::Node::setTrainable" alt="" coords="453,13,632,39"/>
+<area shape="rect" id="node4" href="$d0/d7a/classmarian_1_1Node.html#a924457f1be4e8f51fc563118185e3e83" title="marian::Node::trainable" alt="" coords="690,13,847,39"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#a509f2975b7c8da70df1cd56de5d3e79e" title="marian::Prod" alt="" coords="495,173,591,199"/>
+<area shape="rect" id="node9" href="$d0/d7a/classmarian_1_1Node.html#a4aa5aa482c70595fa5d43c1fbabf5c18" title="marian::Node::getBackend" alt="" coords="680,223,857,250"/>
+<area shape="rect" id="node10" href="$d0/d7a/classmarian_1_1Node.html#a71a9c8ad6ba12d421fa97222d74a90b9" title="marian::Node::child" alt="" coords="475,223,610,250"/>
+<area shape="rect" id="node13" href="$d0/d7a/classmarian_1_1Node.html#a0497d2c3515385212b1086f8b8502826" title="marian::Node::grad" alt="" coords="476,71,609,98"/>
+</map>

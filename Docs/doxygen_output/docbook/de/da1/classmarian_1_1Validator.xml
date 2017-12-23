@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/da1/classmarian_1_1Validator">
+<title>marian::Validator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d7d/training_2validator_8h">&lt;validator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Validator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/deb/classmarian_1_1Validator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Validator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d9c/classmarian_1_1Validator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>DataSet</declname>
+        <defname>DataSet</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; Vocab &gt; &gt; vocabs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float lastBest_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t stalled_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/da1/classmarian_1_1Validator_1a438455be8ec5c8e0158ad4d8586b6d51">Validator</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt;&gt; vocabs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="de/da1/classmarian_1_1Validator_1a46fae77a7ebd17d3727beb0858f025f0">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/da1/classmarian_1_1Validator_1ab70989b9c6aef7dc0d0655fd066e7fa9">keepBest</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="de/da1/classmarian_1_1Validator_1a48b6583b7452642638e3fe463b27c9bb">lowerIsBetter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/da1/classmarian_1_1Validator_1a6f65080ef5845f74757a5deafc5a397f">initLastBest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="de/da1/classmarian_1_1Validator_1aa72a8e064f655802123c7c18e6bc229e">stalled</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="de/da1/classmarian_1_1Validator_1a30afe5c990329fdb37133cad5e323c31">validate</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="de/da1/classmarian_1_1Validator_1a62416349540dc2b628b70b4f401c4a49">validateBG</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator">data::BatchGenerator</link>&lt; DataSet &gt;&gt; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a438455be8ec5c8e0158ad4d8586b6d51">
+                <title>marian::Validator&lt; DataSet &gt;::Validator (std::vector&lt; Ptr&lt; Vocab &gt;&gt; vocabs, Ptr&lt; Config &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a46fae77a7ebd17d3727beb0858f025f0">
+                <title>virtual std::string marian::Validator&lt; DataSet &gt;::type ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1ab70989b9c6aef7dc0d0655fd066e7fa9">
+                <title>virtual void marian::Validator&lt; DataSet &gt;::keepBest (Ptr&lt; ExpressionGraph &gt; graph)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a48b6583b7452642638e3fe463b27c9bb">
+                <title>virtual bool marian::Validator&lt; DataSet &gt;::lowerIsBetter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a6f65080ef5845f74757a5deafc5a397f">
+                <title>virtual void marian::Validator&lt; DataSet &gt;::initLastBest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1aa72a8e064f655802123c7c18e6bc229e">
+                <title>size_t marian::Validator&lt; DataSet &gt;::stalled ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a30afe5c990329fdb37133cad5e323c31">
+                <title>virtual float marian::Validator&lt; DataSet &gt;::validate (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da1/classmarian_1_1Validator_1a62416349540dc2b628b70b4f401c4a49">
+                <title>virtual float marian::Validator&lt; DataSet &gt;::validateBG (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; data::BatchGenerator&lt; DataSet &gt;&gt;)=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

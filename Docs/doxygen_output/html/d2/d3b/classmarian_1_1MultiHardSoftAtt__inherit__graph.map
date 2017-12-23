@@ -1,0 +1,4 @@
+<map id="marian::MultiHardSoftAtt" name="marian::MultiHardSoftAtt">
+<area shape="rect" id="node2" href="$d7/d2c/classmarian_1_1EncoderDecoder.html" title="{marian::EncoderDecoder\l\&lt; MultiEncoderS2S, MultiDecoder\lHardSoftAtt \&gt;\n|# options_\l# prefix_\l# encoder_\l# decoder_\l# batchIndices_\l# inference_\l|+ EncoderDecoder()\l+ EncoderDecoder()\l+ getEncoder()\l+ getDecoder()\l+ load()\l+ save()\l+ save()\l+ clear()\l+ startState()\l+ step()\land 7 more...\l}" alt="" coords="5,248,225,575"/>
+<area shape="rect" id="node3" href="$d1/dad/classmarian_1_1EncoderDecoderBase.html" title="{marian::EncoderDecoderBase\n||+ load()\l+ save()\l+ save()\l+ selectEmbeddings()\l+ step()\l+ step()\l+ build()\l+ getEncoder()\l+ getDecoder()\l}" alt="" coords="17,5,213,200"/>
+</map>

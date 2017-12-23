@@ -1,0 +1,5 @@
+<map id="marian::MultiDecoderHardSoftAtt" name="marian::MultiDecoderHardSoftAtt">
+<area shape="rect" id="node2" href="$de/d21/classmarian_1_1DecoderHardSoftAtt.html" title="{marian::DecoderHardSoftAtt\n|# rnn_\l|+ DecoderHardSoftAtt()\l+ step()\l+ getAlignments()\l}" alt="" coords="6,461,193,568"/>
+<area shape="rect" id="node3" href="$d1/dcc/classmarian_1_1DecoderHardAtt.html" title="{marian::DecoderHardAtt\n|# rnn_\l# specialSymbols_\l|+ DecoderHardAtt()\l+ startState()\l+ step()\l+ groundTruth()\l+ selectEmbeddings()\l+ getAlignments()\l}" alt="" coords="18,248,181,413"/>
+<area shape="rect" id="node4" href="$db/d04/classmarian_1_1DecoderBase.html" title="{marian::DecoderBase\n|# options_\l# prefix_\l# inference_\l|+ DecoderBase()\l+ startState()\l+ step()\l+ groundTruth()\l+ selectEmbeddings()\l+ getAlignments()\l+ opt()\l}" alt="" coords="25,5,174,200"/>
+</map>

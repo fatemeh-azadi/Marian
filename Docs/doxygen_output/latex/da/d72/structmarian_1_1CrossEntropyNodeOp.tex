@@ -1,0 +1,207 @@
+\hypertarget{structmarian_1_1CrossEntropyNodeOp}{}\section{marian\+:\+:Cross\+Entropy\+Node\+Op Struct Reference}
+\label{structmarian_1_1CrossEntropyNodeOp}\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+binary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Cross\+Entropy\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/da2/structmarian_1_1CrossEntropyNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Cross\+Entropy\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da0/structmarian_1_1CrossEntropyNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1CrossEntropyNodeOp_ac48a140d97cbf643601b2d16cdc674e0}{Cross\+Entropy\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} b, Args...\+args)
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1CrossEntropyNodeOp_a1e72292a14569fda92abc806dbc79acb}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1CrossEntropyNodeOp_a97a41f78385e61ab9b5228e6a8429e81}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1CrossEntropyNodeOp_ac500562de661363f71a0f16331dd60e7}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1CrossEntropyNodeOp_abce29fdc82fc339597d2e2f06a585e4d}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 213 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}!Cross\+Entropy\+Node\+Op@{Cross\+Entropy\+Node\+Op}}
+\index{Cross\+Entropy\+Node\+Op@{Cross\+Entropy\+Node\+Op}!marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Cross\+Entropy\+Node\+Op(\+Expr a, Expr b, Args...\+args)}{CrossEntropyNodeOp(Expr a, Expr b, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Cross\+Entropy\+Node\+Op\+::\+Cross\+Entropy\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{{\bf Expr}}]{b, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1CrossEntropyNodeOp_ac48a140d97cbf643601b2d16cdc674e0}{}\label{structmarian_1_1CrossEntropyNodeOp_ac48a140d97cbf643601b2d16cdc674e0}
+
+
+Definition at line 215 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+216       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(\{a, b\}, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1CrossEntropyNodeOp_a1e72292a14569fda92abc806dbc79acb}{newShape}(a), args...) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d72/structmarian_1_1CrossEntropyNodeOp_ac48a140d97cbf643601b2d16cdc674e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Cross\+Entropy\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1CrossEntropyNodeOp_ac500562de661363f71a0f16331dd60e7}{}\label{structmarian_1_1CrossEntropyNodeOp_ac500562de661363f71a0f16331dd60e7}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 229 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+229                         \{
+230     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_ad12afd6fbca17c63f3444bdbd535c146}{CrossEntropyPickBackward}(
+231         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+232   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d72/structmarian_1_1CrossEntropyNodeOp_ac500562de661363f71a0f16331dd60e7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Cross\+Entropy\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1CrossEntropyNodeOp_a97a41f78385e61ab9b5228e6a8429e81}{}\label{structmarian_1_1CrossEntropyNodeOp_a97a41f78385e61ab9b5228e6a8429e81}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 224 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+224                        \{
+225     \textcolor{comment}{// C = sum(-logsoftmax(A) * delta(y', y))}
+226     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a22ac2bab1004e993e09c272af096cbc3}{CrossEntropyPick}(\hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+227   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d72/structmarian_1_1CrossEntropyNodeOp_a97a41f78385e61ab9b5228e6a8429e81_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a)}{newShape(Expr a)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Cross\+Entropy\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1CrossEntropyNodeOp_a1e72292a14569fda92abc806dbc79acb}{}\label{structmarian_1_1CrossEntropyNodeOp_a1e72292a14569fda92abc806dbc79acb}
+
+
+Definition at line 218 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+218                          \{
+219     Shape shape1 = a->shape();
+220     shape1.set(1, 1);
+221     \textcolor{keywordflow}{return} shape1;
+222   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d72/structmarian_1_1CrossEntropyNodeOp_a1e72292a14569fda92abc806dbc79acb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Cross\+Entropy\+Node\+Op@{marian\+::\+Cross\+Entropy\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Cross\+Entropy\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1CrossEntropyNodeOp_abce29fdc82fc339597d2e2f06a585e4d}{}\label{structmarian_1_1CrossEntropyNodeOp_abce29fdc82fc339597d2e2f06a585e4d}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 234 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+234 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"x-ent"}; \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__binary_8h}{node\+\_\+operators\+\_\+binary.\+h}\end{DoxyCompactItemize}

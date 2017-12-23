@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d0d/marian_2src_2data_2filter_8h">
+    <title>marian/src/data/filter.h File Reference</title>
+    <programlisting>#include &lt;unordered_map&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+<para>Include dependency diagram for marian/src/data/filter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/def/marian_2src_2data_2filter_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/data/filter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d0a/marian_2src_2data_2filter_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/dd6/classmarian_1_1FilterInfo">marian::FilterInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d5d/classmarian_1_1Filter">marian::Filter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file filter.h</para>
+    </simplesect>
+</section>

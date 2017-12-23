@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dbc/classmarian_1_1EncoderS2S">
+<title>marian::EncoderS2S class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/da6/s2s_8h">&lt;s2s.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::EncoderS2S</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/da6/classmarian_1_1EncoderS2S__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::EncoderS2S</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d77/classmarian_1_1EncoderS2S__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d3/dbc/classmarian_1_1EncoderS2S_1a4c184957715cc7cfa910be04396b3f01">applyEncoderRNN</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> embeddings, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask, std::string type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/dbc/classmarian_1_1EncoderS2S_1ad9075c849041e923ca7b92f5e96fa7bd">EncoderS2S</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; <link linkend="d3/dbc/classmarian_1_1EncoderS2S_1ac7066b7a2aabebd2efce08215a1c00c7">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, size_t encoderIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d3/dbc/classmarian_1_1EncoderS2S_1a4c184957715cc7cfa910be04396b3f01">
+                <title>Expr marian::EncoderS2S::applyEncoderRNN (Ptr&lt; ExpressionGraph &gt; graph, Expr embeddings, Expr mask, std::string type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dbc/classmarian_1_1EncoderS2S_1ad9075c849041e923ca7b92f5e96fa7bd">
+                <title>marian::EncoderS2S::EncoderS2S (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dbc/classmarian_1_1EncoderS2S_1ac7066b7a2aabebd2efce08215a1c00c7">
+                <title>Ptr&lt;EncoderState&gt; marian::EncoderS2S::build (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch, size_t encoderIndex)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

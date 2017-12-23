@@ -1,0 +1,217 @@
+\hypertarget{classmarian_1_1GraphGroup}{}\section{marian\+:\+:Graph\+Group Class Reference}
+\label{classmarian_1_1GraphGroup}\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+
+
+{\ttfamily \#include $<$graph\+\_\+group.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Graph\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d6b/classmarian_1_1GraphGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Graph\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{db/d9d/classmarian_1_1GraphGroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1GraphGroup_a5d421471110114cb3c6816eb444043df}{Graph\+Group} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+virtual \hyperlink{classmarian_1_1GraphGroup_ac425bf61f8a0f9a392a8dce76dc9cf35}{$\sim$\+Graph\+Group} ()
+\item 
+virtual void \hyperlink{classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc}{update} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$)=0
+\item 
+virtual void \hyperlink{classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565}{load} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b}{save} (bool=false)=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{data\+::\+Batch\+Stats} $>$ \hyperlink{classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198}{collect\+Stats} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1OptimizerBase}{Optimizer\+Base} $>$ \hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file graph\+\_\+group.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!Graph\+Group@{Graph\+Group}}
+\index{Graph\+Group@{Graph\+Group}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{Graph\+Group(\+Ptr$<$ Config $>$ options)}{GraphGroup(Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Graph\+Group\+::\+Graph\+Group (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1GraphGroup_a5d421471110114cb3c6816eb444043df}{}\label{classmarian_1_1GraphGroup_a5d421471110114cb3c6816eb444043df}
+
+
+Definition at line 28 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+29       : \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}(options), \hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_}(\hyperlink{namespacemarian_adcc0fde2e522c9f55abdca1186c9a6db}{Optimizer}(options)) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!````~Graph\+Group@{$\sim$\+Graph\+Group}}
+\index{````~Graph\+Group@{$\sim$\+Graph\+Group}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{$\sim$\+Graph\+Group()}{~GraphGroup()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual marian\+::\+Graph\+Group\+::$\sim$\+Graph\+Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1GraphGroup_ac425bf61f8a0f9a392a8dce76dc9cf35}{}\label{classmarian_1_1GraphGroup_ac425bf61f8a0f9a392a8dce76dc9cf35}
+
+
+Definition at line 31 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+31 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/dbe/classmarian_1_1GraphGroup_ac425bf61f8a0f9a392a8dce76dc9cf35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!collect\+Stats@{collect\+Stats}}
+\index{collect\+Stats@{collect\+Stats}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{collect\+Stats()=0}{collectStats()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf data\+::\+Batch\+Stats}$>$ marian\+::\+Graph\+Group\+::collect\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198}{}\label{classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198}
+
+
+Implemented in \hyperlink{classmarian_1_1AsyncGraphGroup_af06826971306ef236a0e4ff13e7b2e74}{marian\+::\+Async\+Graph\+Group$<$ Builder $>$}, and \hyperlink{classmarian_1_1SingletonGraph_a1a06f75eecc4c6548bbdc55538c53f2c}{marian\+::\+Singleton\+Graph$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/dbe/classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!load@{load}}
+\index{load@{load}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{load()=0}{load()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Graph\+Group\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565}{}\label{classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565}
+
+
+Implemented in \hyperlink{classmarian_1_1AsyncGraphGroup_aa67a42e3de3f05cacc19971605cb95ba}{marian\+::\+Async\+Graph\+Group$<$ Builder $>$}, and \hyperlink{classmarian_1_1SingletonGraph_a0cd71fba2f6c9b6d41f043d3000270a7}{marian\+::\+Singleton\+Graph$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/dbe/classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!save@{save}}
+\index{save@{save}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{save(bool=false)=0}{save(bool=false)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Graph\+Group\+::save (
+\begin{DoxyParamCaption}
+\item[{bool}]{ = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b}{}\label{classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b}
+
+
+Implemented in \hyperlink{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}{marian\+::\+Async\+Graph\+Group$<$ Builder $>$}, and \hyperlink{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}{marian\+::\+Singleton\+Graph$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dbe/classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!update@{update}}
+\index{update@{update}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{update(\+Ptr$<$ data\+::\+Batch $>$)=0}{update(Ptr< data::Batch >)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Graph\+Group\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc}{}\label{classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc}
+
+
+Implemented in \hyperlink{classmarian_1_1AsyncGraphGroup_a0a5075263b8f643c4c87401cd3baf893}{marian\+::\+Async\+Graph\+Group$<$ Builder $>$}, and \hyperlink{classmarian_1_1SingletonGraph_a4fdb7d93ca5e9d4b219a4dc8f761be0b}{marian\+::\+Singleton\+Graph$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/dbe/classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!opt\+\_\+@{opt\+\_\+}}
+\index{opt\+\_\+@{opt\+\_\+}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{opt\+\_\+}{opt_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Optimizer\+Base}$>$ marian\+::\+Graph\+Group\+::opt\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{}\label{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}
+
+
+Definition at line 25 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Graph\+Group@{marian\+::\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::\+Graph\+Group\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{}\label{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}
+
+
+Definition at line 24 of file graph\+\_\+group.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graph__group_8h}{graph\+\_\+group.\+h}\end{DoxyCompactItemize}

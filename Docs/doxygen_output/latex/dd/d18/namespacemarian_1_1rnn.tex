@@ -1,0 +1,254 @@
+\hypertarget{namespacemarian_1_1rnn}{}\section{marian\+:\+:rnn Namespace Reference}
+\label{namespacemarian_1_1rnn}\index{marian\+::rnn@{marian\+::rnn}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1AttentionFactory}{Attention\+Factory}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Cell}{Cell}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1CellFactory}{Cell\+Factory}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1CellInput}{Cell\+Input}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1FastLSTM}{Fast\+L\+S\+TM}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1GlobalAttention}{Global\+Attention}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1GRU}{G\+RU}
+\item 
+struct \hyperlink{structmarian_1_1rnn_1_1InputFactory}{Input\+Factory}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1MultiCellInput}{Multi\+Cell\+Input}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Multiplicative}{Multiplicative}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1RNNFactory}{R\+N\+N\+Factory}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1SlowLSTM}{Slow\+L\+S\+TM}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Stackable}{Stackable}
+\item 
+struct \hyperlink{structmarian_1_1rnn_1_1StackableFactory}{Stackable\+Factory}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1StackedCell}{Stacked\+Cell}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory}{Stacked\+Cell\+Factory}
+\item 
+struct \hyperlink{structmarian_1_1rnn_1_1State}{State}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1States}{States}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Tanh}{Tanh}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1TestLSTM}{Test\+L\+S\+TM}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{Attention} = \hyperlink{classmarian_1_1rnn_1_1GlobalAttention}{Global\+Attention}
+\item 
+using \hyperlink{namespacemarian_1_1rnn_a386737951397fd1835581e82809f052a}{L\+S\+TM} = \hyperlink{classmarian_1_1rnn_1_1FastLSTM}{Fast\+L\+S\+TM}
+\item 
+using \hyperlink{namespacemarian_1_1rnn_a183afd65ecbacf38477504074a793fa8}{M\+L\+S\+TM} = \hyperlink{classmarian_1_1rnn_1_1Multiplicative}{Multiplicative}$<$ \hyperlink{namespacemarian_1_1rnn_a386737951397fd1835581e82809f052a}{L\+S\+TM} $>$
+\item 
+using \hyperlink{namespacemarian_1_1rnn_aa3f59f19b6e405cf6f4671cc027fcf7a}{M\+G\+RU} = \hyperlink{classmarian_1_1rnn_1_1Multiplicative}{Multiplicative}$<$ \hyperlink{classmarian_1_1rnn_1_1GRU}{G\+RU} $>$
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1CellFactory}{Cell\+Factory} $>$ \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory}{Stacked\+Cell\+Factory} $>$ \hyperlink{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{stacked\+\_\+cell}
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1AttentionFactory}{Attention\+Factory} $>$ \hyperlink{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}{attention}
+\item 
+typedef \hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory}{R\+N\+N\+Factory} $>$ \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{dir} \+: int \{ \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{dir\+::forward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{dir\+::backward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{dir\+::alternating\+\_\+forward}, 
+\hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{dir\+::alternating\+\_\+backward}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1rnn_a7dd35a8b53e7515e0d3bd91c7be32fe3}{att\+Ops} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} va, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} context, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} coverage=nullptr)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}{gru\+Ops} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes, bool final=false)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}{lstm\+OpsC} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}{lstm\+OpsO} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{marian\+::rnn@{marian\+::rnn}!Attention@{Attention}}
+\index{Attention@{Attention}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{Attention}{Attention}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf marian\+::rnn\+::\+Attention} = typedef {\bf Global\+Attention}}\hypertarget{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{}\label{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}
+
+
+Definition at line 138 of file attention.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!attention@{attention}}
+\index{attention@{attention}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{attention}{attention}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf Attention\+Factory}$>$ {\bf marian\+::rnn\+::attention}}\hypertarget{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}{}\label{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}
+
+
+Definition at line 156 of file rnn/constructors.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!cell@{cell}}
+\index{cell@{cell}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{cell}{cell}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf Cell\+Factory}$>$ {\bf marian\+::rnn\+::cell}}\hypertarget{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{}\label{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}
+
+
+Definition at line 83 of file rnn/constructors.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!L\+S\+TM@{L\+S\+TM}}
+\index{L\+S\+TM@{L\+S\+TM}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{L\+S\+TM}{LSTM}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf marian\+::rnn\+::\+L\+S\+TM} = typedef {\bf Fast\+L\+S\+TM}}\hypertarget{namespacemarian_1_1rnn_a386737951397fd1835581e82809f052a}{}\label{namespacemarian_1_1rnn_a386737951397fd1835581e82809f052a}
+
+
+Definition at line 389 of file cells.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!M\+G\+RU@{M\+G\+RU}}
+\index{M\+G\+RU@{M\+G\+RU}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{M\+G\+RU}{MGRU}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf marian\+::rnn\+::\+M\+G\+RU} = typedef {\bf Multiplicative}$<${\bf G\+RU}$>$}\hypertarget{namespacemarian_1_1rnn_aa3f59f19b6e405cf6f4671cc027fcf7a}{}\label{namespacemarian_1_1rnn_aa3f59f19b6e405cf6f4671cc027fcf7a}
+
+
+Definition at line 461 of file cells.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!M\+L\+S\+TM@{M\+L\+S\+TM}}
+\index{M\+L\+S\+TM@{M\+L\+S\+TM}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{M\+L\+S\+TM}{MLSTM}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf marian\+::rnn\+::\+M\+L\+S\+TM} = typedef {\bf Multiplicative}$<${\bf L\+S\+TM}$>$}\hypertarget{namespacemarian_1_1rnn_a183afd65ecbacf38477504074a793fa8}{}\label{namespacemarian_1_1rnn_a183afd65ecbacf38477504074a793fa8}
+
+
+Definition at line 460 of file cells.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!rnn@{rnn}}
+\index{rnn@{rnn}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{rnn}{rnn}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf R\+N\+N\+Factory}$>$ {\bf marian\+::rnn\+::rnn}}\hypertarget{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{}\label{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}
+
+
+Definition at line 216 of file rnn/constructors.\+h.
+
+\index{marian\+::rnn@{marian\+::rnn}!stacked\+\_\+cell@{stacked\+\_\+cell}}
+\index{stacked\+\_\+cell@{stacked\+\_\+cell}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{stacked\+\_\+cell}{stacked_cell}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Accumulator}$<${\bf Stacked\+Cell\+Factory}$>$ {\bf marian\+::rnn\+::stacked\+\_\+cell}}\hypertarget{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{}\label{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}
+
+
+Definition at line 131 of file rnn/constructors.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{marian\+::rnn@{marian\+::rnn}!dir@{dir}}
+\index{dir@{dir}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{dir}{dir}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf marian\+::rnn\+::dir} \+: int\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}{}\label{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34ca}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{forward@{forward}!marian\+::rnn@{marian\+::rnn}}\index{marian\+::rnn@{marian\+::rnn}!forward@{forward}}\item[{\em 
+forward\hypertarget{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{}\label{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}
+}]\index{backward@{backward}!marian\+::rnn@{marian\+::rnn}}\index{marian\+::rnn@{marian\+::rnn}!backward@{backward}}\item[{\em 
+backward\hypertarget{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{}\label{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}
+}]\index{alternating\+\_\+forward@{alternating\+\_\+forward}!marian\+::rnn@{marian\+::rnn}}\index{marian\+::rnn@{marian\+::rnn}!alternating\+\_\+forward@{alternating\+\_\+forward}}\item[{\em 
+alternating\+\_\+forward\hypertarget{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{}\label{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}
+}]\index{alternating\+\_\+backward@{alternating\+\_\+backward}!marian\+::rnn@{marian\+::rnn}}\index{marian\+::rnn@{marian\+::rnn}!alternating\+\_\+backward@{alternating\+\_\+backward}}\item[{\em 
+alternating\+\_\+backward\hypertarget{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{}\label{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 20 of file rnn.\+h.
+
+
+\begin{DoxyCode}
+20 : \textcolor{keywordtype}{int} \{ \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{forward}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{backward}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{alternating\_forward}, 
+      \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{alternating\_backward} \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{marian\+::rnn@{marian\+::rnn}!att\+Ops@{att\+Ops}}
+\index{att\+Ops@{att\+Ops}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{att\+Ops(\+Expr va, Expr context, Expr state, Expr coverage=nullptr)}{attOps(Expr va, Expr context, Expr state, Expr coverage=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::att\+Ops (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{va, }
+\item[{{\bf Expr}}]{context, }
+\item[{{\bf Expr}}]{state, }
+\item[{{\bf Expr}}]{coverage = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1rnn_a7dd35a8b53e7515e0d3bd91c7be32fe3}{}\label{namespacemarian_1_1rnn_a7dd35a8b53e7515e0d3bd91c7be32fe3}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d18/namespacemarian_1_1rnn_a7dd35a8b53e7515e0d3bd91c7be32fe3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn@{marian\+::rnn}!gru\+Ops@{gru\+Ops}}
+\index{gru\+Ops@{gru\+Ops}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{gru\+Ops(const std\+::vector$<$ Expr $>$ \&nodes, bool final=false)}{gruOps(const std::vector< Expr > &nodes, bool final=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::gru\+Ops (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes, }
+\item[{bool}]{final = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}{}\label{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d18/namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn@{marian\+::rnn}!lstm\+OpsC@{lstm\+OpsC}}
+\index{lstm\+OpsC@{lstm\+OpsC}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{lstm\+Ops\+C(const std\+::vector$<$ Expr $>$ \&nodes)}{lstmOpsC(const std::vector< Expr > &nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::lstm\+OpsC (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}{}\label{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d18/namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn@{marian\+::rnn}!lstm\+OpsO@{lstm\+OpsO}}
+\index{lstm\+OpsO@{lstm\+OpsO}!marian\+::rnn@{marian\+::rnn}}
+\subsubsection[{\texorpdfstring{lstm\+Ops\+O(const std\+::vector$<$ Expr $>$ \&nodes)}{lstmOpsO(const std::vector< Expr > &nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::lstm\+OpsO (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}{}\label{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d18/namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e_icgraph}
+\end{center}
+\end{figure}
+
+

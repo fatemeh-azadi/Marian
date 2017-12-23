@@ -1,0 +1,212 @@
+\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper}{}\section{amunmt\+:\+:G\+PU\+:\+:Npz\+Converter\+:\+:Npy\+Matrix\+Wrapper Class Reference}
+\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper}\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Npz\+Converter\+:\+:Npy\+Matrix\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d7/d21/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a34e7df7be8aa7f118d8e9b00b42f9f7e}{Npy\+Matrix\+Wrapper} (const cnpy\+::\+Npy\+Array \&npy)
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a000c809949a76b3d46a95d1945c4f431}{size} () const 
+\item 
+float $\ast$ \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a0d8bf20456bf15f3dddfd0663a57e3b0}{data} () const 
+\item 
+float \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a78ebad93add1ed2586e70126917ed887}{operator()} (size\+\_\+t i, size\+\_\+t j) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_ac8c242dc2da5e984e7b18f64e5931ed4}{size1} () const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6}{size2} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const cnpy\+::\+Npy\+Array \& \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!Npy\+Matrix\+Wrapper@{Npy\+Matrix\+Wrapper}}
+\index{Npy\+Matrix\+Wrapper@{Npy\+Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Npy\+Matrix\+Wrapper(const cnpy\+::\+Npy\+Array \&npy)}{NpyMatrixWrapper(const cnpy::NpyArray &npy)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::\+Npy\+Matrix\+Wrapper (
+\begin{DoxyParamCaption}
+\item[{const cnpy\+::\+Npy\+Array \&}]{npy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a34e7df7be8aa7f118d8e9b00b42f9f7e}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a34e7df7be8aa7f118d8e9b00b42f9f7e}
+
+
+Definition at line 13 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+14         : \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}(npy) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a0d8bf20456bf15f3dddfd0663a57e3b0}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a0d8bf20456bf15f3dddfd0663a57e3b0}
+
+
+Definition at line 20 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+20                             \{
+21           \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float}*)\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}.data;
+22         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator()(size\+\_\+t i, size\+\_\+t j) const }{operator()(size_t i, size_t j) const }}]{\setlength{\rightskip}{0pt plus 5cm}float amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::operator() (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i, }
+\item[{size\+\_\+t}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a78ebad93add1ed2586e70126917ed887}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a78ebad93add1ed2586e70126917ed887}
+
+
+Definition at line 24 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+24                                                    \{
+25           \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{float}*)\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}.data)[i * \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6}{size2}() + j];
+26         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a78ebad93add1ed2586e70126917ed887_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size@{size}}
+\index{size@{size}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a000c809949a76b3d46a95d1945c4f431}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a000c809949a76b3d46a95d1945c4f431}
+
+
+Definition at line 16 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+16                             \{
+17           \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_ac8c242dc2da5e984e7b18f64e5931ed4}{size1}() * \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6}{size2}();
+18         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a000c809949a76b3d46a95d1945c4f431_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size1@{size1}}
+\index{size1@{size1}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size1() const }{size1() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_ac8c242dc2da5e984e7b18f64e5931ed4}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_ac8c242dc2da5e984e7b18f64e5931ed4}
+
+
+Definition at line 28 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+28                              \{
+29           \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}.shape[0];
+30         \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_ac8c242dc2da5e984e7b18f64e5931ed4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size2@{size2}}
+\index{size2@{size2}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size2() const }{size2() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6}
+
+
+Definition at line 32 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+32                              \{
+33           \textcolor{keywordflow}{if}(\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}.shape.size() == 1)
+34             \textcolor{keywordflow}{return} 1;
+35           \textcolor{keywordflow}{else}
+36             \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{npy\_}.shape[1];
+37         \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_a7152ffabd4b46c9ece7321cacf39eaf6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!npy\+\_\+@{npy\+\_\+}}
+\index{npy\+\_\+@{npy\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{npy\+\_\+}{npy_}}]{\setlength{\rightskip}{0pt plus 5cm}const cnpy\+::\+Npy\+Array\& amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::npy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}{}\label{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_aa2c8adb7f7950ccdbb0f7fe9144dd757}
+
+
+Definition at line 40 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2gpu_2npz__converter_8h}{amun/gpu/npz\+\_\+converter.\+h}\end{DoxyCompactItemize}

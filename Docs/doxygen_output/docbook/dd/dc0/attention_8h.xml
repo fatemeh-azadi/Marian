@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dc0/attention_8h">
+    <title>attention.h File Reference</title>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;models/states.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/types.h&quot;</programlisting>
+<para>Include dependency diagram for attention.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d38/attention_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for attention.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d35/attention_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/db4/classmarian_1_1rnn_1_1GlobalAttention">marian::rnn::GlobalAttention</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d18/namespacemarian_1_1rnn">marian::rnn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file attention.h</para>
+    </simplesect>
+</section>

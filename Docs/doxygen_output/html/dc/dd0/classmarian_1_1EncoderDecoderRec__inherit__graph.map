@@ -1,0 +1,4 @@
+<map id="marian::EncoderDecoderRec" name="marian::EncoderDecoderRec">
+<area shape="rect" id="node2" href="$d7/d2c/classmarian_1_1EncoderDecoder.html" title="{marian::EncoderDecoder\l\&lt; EncoderS2S, DecoderS2S \&gt;\n|# options_\l# prefix_\l# encoder_\l# decoder_\l# batchIndices_\l# inference_\l|+ EncoderDecoder()\l+ EncoderDecoder()\l+ getEncoder()\l+ getDecoder()\l+ load()\l+ save()\l+ save()\l+ clear()\l+ startState()\l+ step()\land 7 more...\l}" alt="" coords="5,248,207,560"/>
+<area shape="rect" id="node3" href="$d1/dad/classmarian_1_1EncoderDecoderBase.html" title="{marian::EncoderDecoderBase\n||+ load()\l+ save()\l+ save()\l+ selectEmbeddings()\l+ step()\l+ step()\l+ build()\l+ getEncoder()\l+ getDecoder()\l}" alt="" coords="8,5,204,200"/>
+</map>

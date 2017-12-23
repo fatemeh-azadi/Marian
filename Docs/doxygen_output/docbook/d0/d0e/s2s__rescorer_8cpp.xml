@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d0e/s2s__rescorer_8cpp">
+    <title>s2s_rescorer.cpp File Reference</title>
+    <programlisting>#include &quot;marian.h&quot;</programlisting>
+    <programlisting>#include &quot;rescorer/rescorer.h&quot;</programlisting>
+<para>Include dependency diagram for s2s_rescorer.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dd4/s2s__rescorer_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for s2s_rescorer.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dcf/s2s__rescorer_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d0/d0e/s2s__rescorer_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file s2s_rescorer.cpp</para>
+    </simplesect>
+</section>

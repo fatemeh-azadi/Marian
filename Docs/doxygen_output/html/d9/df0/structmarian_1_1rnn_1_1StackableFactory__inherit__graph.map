@@ -1,0 +1,7 @@
+<map id="marian::rnn::StackableFactory" name="marian::rnn::StackableFactory">
+<area shape="rect" id="node4" href="$d5/d41/classmarian_1_1rnn_1_1CellFactory.html" title="{marian::rnn::CellFactory\n|# inputs_\l|+ CellFactory()\l+ construct()\l+ clone()\l+ add_input()\l+ add_input()\l}" alt="" coords="10,557,173,693"/>
+<area shape="rect" id="node6" href="$de/d3f/structmarian_1_1rnn_1_1InputFactory.html" title="{marian::rnn::InputFactory\n||+ InputFactory()\l+ construct()\l}" alt="" coords="203,579,371,671"/>
+<area shape="rect" id="node2" href="$d5/d28/classmarian_1_1Factory.html" title="{marian::Factory\n|# options_\l# graph_\l|+ Factory()\l+ ~Factory()\l+ getOptions()\l+ str()\l+ opt()\l+ opt()\l}" alt="" coords="129,145,243,311"/>
+<area shape="rect" id="node5" href="$db/d9f/classmarian_1_1rnn_1_1StackedCellFactory.html" title="{marian::rnn::StackedCell\lFactory\n|# stackableFactories_\l|+ StackedCellFactory()\l+ construct()\l+ push_back()\l}" alt="" coords="5,741,172,863"/>
+<area shape="rect" id="node7" href="$d9/dc9/classmarian_1_1rnn_1_1AttentionFactory.html" title="{marian::rnn::AttentionFactory\n|# state_\l|+ AttentionFactory()\l+ construct()\l+ set_state()\l+ dimAttended()\l}" alt="" coords="196,741,387,863"/>
+</map>

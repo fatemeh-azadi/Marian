@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement">
+<title>amunmt::GPU::NthElement class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d58/amun_2gpu_2mblas_2nth__element_8h">&lt;nth_element.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::NthElement</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d33/classamunmt_1_1GPU_1_1NthElement__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::NthElement</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/da7/classamunmt_1_1GPU_1_1NthElement__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const uint BLOCK_SIZE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::TMatrix&lt; NthOut &gt; d_out</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::TMatrix&lt; NthOut &gt; d_res</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; NthOut &gt; h_res</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::TMatrix&lt; float &gt; d_breakdown</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::TMatrix&lt; uint &gt; d_batchPosition</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::TMatrix&lt; uint &gt; d_cumBeamSizes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint maxBeamSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint maxBatchSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a9481caa29f7c86f5eef0893e0eb0c179">NthElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a2fd3cfcd80c78af56bbffa10e2a86b61">NthElement</link> (
+const <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement">NthElement</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a2309a381e27377ca51a9befa39d2fb88">NthElement</link> (
+uint maxBeamSize, uint maxBatchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a35b16ed77f4e2981ad0cc38a2d60dfe8">~NthElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1aaed3b2c335f19a3e95dbbc4f5bc899db">getNBestList</link> (
+const std::vector&lt; uint &gt; &amp; beamSizes, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Probs, std::vector&lt; float &gt; &amp; outCosts, std::vector&lt; uint &gt; &amp; outKeys, const bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1aee660af609c4cd3787bed4c7a457df08">GetPairs</link> (
+uint number, std::vector&lt; uint &gt; &amp; outKeys, std::vector&lt; float &gt; &amp; outValues)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a76f1dcaa21cab7d3dae79e8065df2e3a">getValueByKey</link> (
+std::vector&lt; float &gt; &amp; out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; d_in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement_1a89c467a1af86daa2407335b71dcae372">getNBestList</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; probs, const std::vector&lt; uint &gt; &amp; batchFirstElementIdxs, const std::vector&lt; uint &gt; &amp; cummulatedBeamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a9481caa29f7c86f5eef0893e0eb0c179">
+                <title>amunmt::GPU::NthElement::NthElement ()=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a2fd3cfcd80c78af56bbffa10e2a86b61">
+                <title>amunmt::GPU::NthElement::NthElement (const NthElement &amp;copy)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a2309a381e27377ca51a9befa39d2fb88">
+                <title>amunmt::GPU::NthElement::NthElement (uint maxBeamSize, uint maxBatchSize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a35b16ed77f4e2981ad0cc38a2d60dfe8">
+                <title>virtual amunmt::GPU::NthElement::~NthElement ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1aaed3b2c335f19a3e95dbbc4f5bc899db">
+                <title>void amunmt::GPU::NthElement::getNBestList (const std::vector&lt; uint &gt; &amp;beamSizes, mblas::Matrix &amp;Probs, std::vector&lt; float &gt; &amp;outCosts, std::vector&lt; uint &gt; &amp;outKeys, const bool isFirst=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1aee660af609c4cd3787bed4c7a457df08">
+                <title>void amunmt::GPU::NthElement::GetPairs (uint number, std::vector&lt; uint &gt; &amp;outKeys, std::vector&lt; float &gt; &amp;outValues)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a76f1dcaa21cab7d3dae79e8065df2e3a">
+                <title>void amunmt::GPU::NthElement::getValueByKey (std::vector&lt; float &gt; &amp;out, const mblas::Matrix &amp;d_in) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d25/classamunmt_1_1GPU_1_1NthElement_1a89c467a1af86daa2407335b71dcae372">
+                <title>void amunmt::GPU::NthElement::getNBestList (mblas::Matrix &amp;probs, const std::vector&lt; uint &gt; &amp;batchFirstElementIdxs, const std::vector&lt; uint &gt; &amp;cummulatedBeamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

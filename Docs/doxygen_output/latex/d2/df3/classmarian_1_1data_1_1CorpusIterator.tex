@@ -1,0 +1,215 @@
+\hypertarget{classmarian_1_1data_1_1CorpusIterator}{}\section{marian\+:\+:data\+:\+:Corpus\+Iterator Class Reference}
+\label{classmarian_1_1data_1_1CorpusIterator}\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+
+
+{\ttfamily \#include $<$corpus.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:Corpus\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{d9/d9f/classmarian_1_1data_1_1CorpusIterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Corpus\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d5f/classmarian_1_1data_1_1CorpusIterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1CorpusIterator_a92c02bbdf32a86020a67fa8b1c7dadd1}{Corpus\+Iterator} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1CorpusIterator_a764a04bff4c5198bab87349daaa2c8dd}{Corpus\+Iterator} (\hyperlink{classmarian_1_1data_1_1Corpus}{Corpus} \&corpus)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1data_1_1CorpusIterator_a5ed84552327c21fb556a1d0185990b9d}{increment} ()
+\item 
+bool \hyperlink{classmarian_1_1data_1_1CorpusIterator_a4812630a233e6cf5e2412ebcb2b68bd7}{equal} (\hyperlink{classmarian_1_1data_1_1CorpusIterator}{Corpus\+Iterator} const \&other) const 
+\item 
+const \hyperlink{classmarian_1_1data_1_1SentenceTuple}{Sentence\+Tuple} \& \hyperlink{classmarian_1_1data_1_1CorpusIterator_a06c4c53091baf2ecb4a1afc756778c6f}{dereference} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1Corpus}{Corpus} $\ast$ \hyperlink{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}{corpus\+\_\+}
+\item 
+\hyperlink{classmarian_1_1data_1_1SentenceTuple}{Sentence\+Tuple} \hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\+\_\+}
+\item 
+long long int \hyperlink{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{pos\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1data_1_1CorpusIterator_ac09f73e325921cc50ebcd96bed0f8096}{boost\+::iterator\+\_\+core\+\_\+access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 148 of file corpus.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!Corpus\+Iterator@{Corpus\+Iterator}}
+\index{Corpus\+Iterator@{Corpus\+Iterator}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{Corpus\+Iterator()}{CorpusIterator()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Corpus\+Iterator\+::\+Corpus\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a92c02bbdf32a86020a67fa8b1c7dadd1}{}\label{classmarian_1_1data_1_1CorpusIterator_a92c02bbdf32a86020a67fa8b1c7dadd1}
+
+
+Definition at line 13 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+13 : \hyperlink{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{pos\_}(-1), \hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\_}(0) \{\}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!Corpus\+Iterator@{Corpus\+Iterator}}
+\index{Corpus\+Iterator@{Corpus\+Iterator}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{Corpus\+Iterator(\+Corpus \&corpus)}{CorpusIterator(Corpus &corpus)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Corpus\+Iterator\+::\+Corpus\+Iterator (
+\begin{DoxyParamCaption}
+\item[{{\bf Corpus} \&}]{corpus}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a764a04bff4c5198bab87349daaa2c8dd}{}\label{classmarian_1_1data_1_1CorpusIterator_a764a04bff4c5198bab87349daaa2c8dd}
+
+
+Definition at line 15 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+16     : \hyperlink{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}{corpus\_}(&corpus), \hyperlink{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{pos\_}(0), \hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\_}(\hyperlink{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}{corpus\_}->\hyperlink{classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe}{next}()) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!dereference@{dereference}}
+\index{dereference@{dereference}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{dereference() const }{dereference() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sentence\+Tuple} \& marian\+::data\+::\+Corpus\+Iterator\+::dereference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a06c4c53091baf2ecb4a1afc756778c6f}{}\label{classmarian_1_1data_1_1CorpusIterator_a06c4c53091baf2ecb4a1afc756778c6f}
+
+
+Definition at line 27 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                        \{
+28   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\_};
+29 \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!equal@{equal}}
+\index{equal@{equal}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{equal(\+Corpus\+Iterator const \&other) const }{equal(CorpusIterator const &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::data\+::\+Corpus\+Iterator\+::equal (
+\begin{DoxyParamCaption}
+\item[{{\bf Corpus\+Iterator} const \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a4812630a233e6cf5e2412ebcb2b68bd7}{}\label{classmarian_1_1data_1_1CorpusIterator_a4812630a233e6cf5e2412ebcb2b68bd7}
+
+
+Definition at line 23 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+23                                                             \{
+24   \textcolor{keywordflow}{return} this->\hyperlink{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{pos\_} == other.pos\_ || (this->\hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\_}.\hyperlink{classmarian_1_1data_1_1SentenceTuple_a8a06101b2aa23aa9c93f414c93f1e618}{empty}() && other.tup\_.empty());
+25 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df3/classmarian_1_1data_1_1CorpusIterator_a4812630a233e6cf5e2412ebcb2b68bd7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!increment@{increment}}
+\index{increment@{increment}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{increment()}{increment()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+Iterator\+::increment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a5ed84552327c21fb556a1d0185990b9d}{}\label{classmarian_1_1data_1_1CorpusIterator_a5ed84552327c21fb556a1d0185990b9d}
+
+
+Definition at line 18 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+18                                \{
+19   \hyperlink{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{tup\_} = \hyperlink{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}{corpus\_}->\hyperlink{classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe}{next}();
+20   \hyperlink{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{pos\_}++;
+21 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df3/classmarian_1_1data_1_1CorpusIterator_a5ed84552327c21fb556a1d0185990b9d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}}
+\index{boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{boost\+::iterator\+\_\+core\+\_\+access}{boost::iterator_core_access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::iterator\+\_\+core\+\_\+access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_ac09f73e325921cc50ebcd96bed0f8096}{}\label{classmarian_1_1data_1_1CorpusIterator_ac09f73e325921cc50ebcd96bed0f8096}
+
+
+Definition at line 157 of file corpus.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!corpus\+\_\+@{corpus\+\_\+}}
+\index{corpus\+\_\+@{corpus\+\_\+}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{corpus\+\_\+}{corpus_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Corpus}$\ast$ marian\+::data\+::\+Corpus\+Iterator\+::corpus\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}{}\label{classmarian_1_1data_1_1CorpusIterator_a654288ed5f1fb4064c17237508a7437e}
+
+
+Definition at line 165 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!pos\+\_\+@{pos\+\_\+}}
+\index{pos\+\_\+@{pos\+\_\+}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{pos\+\_\+}{pos_}}]{\setlength{\rightskip}{0pt plus 5cm}long long int marian\+::data\+::\+Corpus\+Iterator\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}{}\label{classmarian_1_1data_1_1CorpusIterator_a88c3108e7338412a02908b676ff5f637}
+
+
+Definition at line 168 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}!tup\+\_\+@{tup\+\_\+}}
+\index{tup\+\_\+@{tup\+\_\+}!marian\+::data\+::\+Corpus\+Iterator@{marian\+::data\+::\+Corpus\+Iterator}}
+\subsubsection[{\texorpdfstring{tup\+\_\+}{tup_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sentence\+Tuple} marian\+::data\+::\+Corpus\+Iterator\+::tup\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}{}\label{classmarian_1_1data_1_1CorpusIterator_ab7067a22ad8be0e6598b80ee39a19c4e}
+
+
+Definition at line 167 of file corpus.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corpus_8h}{corpus.\+h}\item 
+\hyperlink{corpus_8cpp}{corpus.\+cpp}\end{DoxyCompactItemize}

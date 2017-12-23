@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/daf/structmarian_1_1ReLUNodeOp">
+<title>marian::ReLUNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ReLUNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d75/structmarian_1_1ReLUNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ReLUNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d84/structmarian_1_1ReLUNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/daf/structmarian_1_1ReLUNodeOp_1a9d78ae7fb96f90cc9946cce6139d33b9">ReLUNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d6/daf/structmarian_1_1ReLUNodeOp_1aa38a8dc93b07420cf7a1dcae7a23dce9">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d6/daf/structmarian_1_1ReLUNodeOp_1ad1878b3530b0044d1bc7bbe1ad2d66a1">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d6/daf/structmarian_1_1ReLUNodeOp_1a04b0aeb6dc756ea06cfb27dfaeabd048">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Represents a <link xlink:href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">rectified linear</link> node in an expression graph.</para>
+
+<para>This node implements the <link xlink:href="https://en.wikipedia.org/wiki/Activation_function">activation function</link> <equation><title>form_4</title>$f(x) = \max(0, x)$</equation> and its derivative:</para>
+
+<para><equation><title>form_5</title>\[ f^\prime(x) = \begin{cases} 0 &amp; \text{if } x \leq 0 \\ 1 &amp; \text{if } x &gt; 0 \end{cases} \]</equation> </para>
+                <para>Definition at line 163 of file node_operators_unary.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>node_operators_unary.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d6/daf/structmarian_1_1ReLUNodeOp_1a9d78ae7fb96f90cc9946cce6139d33b9">
+                <title>marian::ReLUNodeOp::ReLUNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/daf/structmarian_1_1ReLUNodeOp_1aa38a8dc93b07420cf7a1dcae7a23dce9">
+                <title>NodeOps marian::ReLUNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/daf/structmarian_1_1ReLUNodeOp_1ad1878b3530b0044d1bc7bbe1ad2d66a1">
+                <title>NodeOps marian::ReLUNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/daf/structmarian_1_1ReLUNodeOp_1a04b0aeb6dc756ea06cfb27dfaeabd048">
+                <title>const std::string marian::ReLUNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,66 @@
+\hypertarget{structthrust_1_1detail_1_1functional_1_1unary__relu}{}\section{thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+relu$<$ T $>$ Struct Template Reference}
+\label{structthrust_1_1detail_1_1functional_1_1unary__relu}\index{thrust\+::detail\+::functional\+::unary\+\_\+relu$<$ T $>$@{thrust\+::detail\+::functional\+::unary\+\_\+relu$<$ T $>$}}
+
+
+{\ttfamily \#include $<$thrust\+\_\+functions.\+h$>$}
+
+
+
+Inheritance diagram for thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+relu$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d0/d07/structthrust_1_1detail_1_1functional_1_1unary__relu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+relu$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{dd/d56/structthrust_1_1detail_1_1functional_1_1unary__relu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__relu_ac740060f5bd91475760625d5702dac67}{operator()} (const T \&x) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct thrust\+::detail\+::functional\+::unary\+\_\+relu$<$ T $>$}
+
+
+
+Definition at line 78 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{thrust\+::detail\+::functional\+::unary\+\_\+relu@{thrust\+::detail\+::functional\+::unary\+\_\+relu}!operator()@{operator()}}
+\index{operator()@{operator()}!thrust\+::detail\+::functional\+::unary\+\_\+relu@{thrust\+::detail\+::functional\+::unary\+\_\+relu}}
+\subsubsection[{\texorpdfstring{operator()(const T \&x) const }{operator()(const T &x) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T {\bf thrust\+::detail\+::functional\+::unary\+\_\+relu}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structthrust_1_1detail_1_1functional_1_1unary__relu_ac740060f5bd91475760625d5702dac67}{}\label{structthrust_1_1detail_1_1functional_1_1unary__relu_ac740060f5bd91475760625d5702dac67}
+
+
+Definition at line 79 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+79                                                      \{
+80     \textcolor{keywordflow}{return} x > 0.0f ? x : 0.0f;
+81   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2kernels_2thrust__functions_8h}{marian/src/kernels/thrust\+\_\+functions.\+h}\end{DoxyCompactItemize}

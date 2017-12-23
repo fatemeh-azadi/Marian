@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d3a/classmarian_1_1mlp_1_1MLPFactory">
+<title>marian::mlp::MLPFactory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dc3/layers_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::mlp::MLPFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d06/classmarian_1_1mlp_1_1MLPFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::mlp::MLPFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d7e/classmarian_1_1mlp_1_1MLPFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; LayerFactory &gt; &gt; layers_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a135e6f01d76d5f10d687e5e63e0a7dbe">MLPFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/d36/classmarian_1_1mlp_1_1MLP">MLP</link> &gt; <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1adadee03fb4f6a53f3332d86b6571cfd7">construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/d36/classmarian_1_1mlp_1_1MLP">MLP</link> &gt; <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a1b69334212c9c9c79d384a868b375be6">operator-&gt;</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory">MLPFactory</link> &gt; <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a7920938cb7287430fd3f8feac3f9729d">push_back</link> (
+const LF &amp; lf)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a135e6f01d76d5f10d687e5e63e0a7dbe">
+                <title>marian::mlp::MLPFactory::MLPFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1adadee03fb4f6a53f3332d86b6571cfd7">
+                <title>Ptr&lt;MLP&gt; marian::mlp::MLPFactory::construct ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a1b69334212c9c9c79d384a868b375be6">
+                <title>Ptr&lt;MLP&gt; marian::mlp::MLPFactory::operator-&gt; ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d3a/classmarian_1_1mlp_1_1MLPFactory_1a7920938cb7287430fd3f8feac3f9729d">
+                <title>Accumulator&lt;MLPFactory&gt; marian::mlp::MLPFactory::push_back (const LF &amp;lf)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

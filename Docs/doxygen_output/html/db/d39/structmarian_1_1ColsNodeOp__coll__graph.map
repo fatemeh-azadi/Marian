@@ -1,0 +1,9 @@
+<map id="marian::ColsNodeOp" name="marian::ColsNodeOp">
+<area shape="rect" id="node2" href="$d9/dd2/structmarian_1_1UnaryNodeOp.html" title="{marian::UnaryNodeOp\n||+ UnaryNodeOp()\l+ color()\l}" alt="" coords="498,1052,650,1144"/>
+<area shape="rect" id="node3" href="$d0/da7/structmarian_1_1NaryNodeOp.html" title="{marian::NaryNodeOp\n|+ hash_\l|+ NaryNodeOp()\l+ ~NaryNodeOp()\l+ children()\l+ hash()\l+ remove_children_from\l_top_nodes()\l}" alt="" coords="493,852,655,1003"/>
+<area shape="rect" id="node4" href="$d0/d7a/classmarian_1_1Node.html" title="{marian::Node\n|# id_\l# edges_\l# trainable_\l# destroy_\l# val_\l# adj_\l# markedForDebug_\l|+ Node()\l+ ~Node()\l+ scalar()\l+ forwardOps()\l+ backwardOps()\l+ runForward()\l+ runBackward()\l+ forward()\l+ backward()\l+ trainable()\land 27 more...\l}" alt="" coords="504,491,644,803"/>
+<area shape="rect" id="node5" href="$de/dff/classmarian_1_1Chainable.html" title="{marian::Chainable\&lt;\l Tensor \&gt;\n||+ Chainable()\l+ ~Chainable()\l+ forward()\l+ backward()\l+ forwardOps()\l+ backwardOps()\l+ allocate()\l+ free()\l+ init()\l+ init_dependent()\land 23 more...\l}" alt="" coords="5,167,140,406"/>
+<area shape="rect" id="node6" href="$d4/d9b/classmarian_1_1keywords_1_1Keywords.html" title="{marian::keywords::Keywords\n||+ Keywords()\l+ Has()\l+ Get()\l&#45; add()\l&#45; add()\l&#45; add()\l}" alt="" coords="164,211,355,362"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="542,248,622,325"/>
+<area shape="rect" id="node11" href="$d5/d54/structmarian_1_1Shape.html" title="{marian::Shape\n|+ shape_\l+ stride_\l+ bstride_\l|+ Shape()\l+ Shape()\l+ updateStrides()\l+ Shape()\l+ set()\l+ dim()\l+ dim()\l+ operator[]()\l+ operator[]()\l+ stride()\land 12 more...\l}" alt="" coords="646,160,769,413"/>
+</map>

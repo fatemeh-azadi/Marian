@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/da6/backend__gpu_8h">
+    <title>backend_gpu.h File Reference</title>
+    <programlisting>#include &lt;cublas_v2.h&gt;</programlisting>
+    <programlisting>#include &lt;cuda.h&gt;</programlisting>
+    <programlisting>#include &lt;curand.h&gt;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/backend.h&quot;</programlisting>
+<para>Include dependency diagram for backend_gpu.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/db1/backend__gpu_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for backend_gpu.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d7c/backend__gpu_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/df6/classmarian_1_1BackendGPU">marian::BackendGPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da6/backend__gpu_8h_1a02680eff1ab25683ec230fc4f4c41268">CURAND_CALL</link> do {                                                \
+    if((x) != CURAND_STATUS_SUCCESS) {                \
+      printf(&quot;Error at %s:%d\n&quot;, __FILE__, __LINE__); \
+      exit(1);                                        \
+    }                                                 \
+  } while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file backend_gpu.h</para>
+    </simplesect>
+</section>

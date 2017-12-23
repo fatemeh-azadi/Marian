@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d03/classmarian_1_1rnn_1_1GRU">
+<title>marian::rnn::GRU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/de1/cells_8h">&lt;cells.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::GRU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d00/classmarian_1_1rnn_1_1GRU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::GRU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d7e/classmarian_1_1rnn_1_1GRU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string prefix_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr U_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr W_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr b_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr gamma1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr gamma2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool final_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool layerNorm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float dropout_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr dropMaskX_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr dropMaskS_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr fakeInput_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d03/classmarian_1_1rnn_1_1GRU_1a3f47434b08986222608a2a31f776c334">GRU</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d7/d03/classmarian_1_1rnn_1_1GRU_1af8c554f9e899a74dfd897de082ef893e">apply</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d7/d03/classmarian_1_1rnn_1_1GRU_1a1e68f7a3e40ee5fefa954096e3eb2bdc">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d7/d03/classmarian_1_1rnn_1_1GRU_1a80e15118ba400b0e393a4b2eb9fcf23d">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; xWs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d03/classmarian_1_1rnn_1_1GRU_1a3f47434b08986222608a2a31f776c334">
+                <title>marian::rnn::GRU::GRU (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d03/classmarian_1_1rnn_1_1GRU_1af8c554f9e899a74dfd897de082ef893e">
+                <title>virtual State marian::rnn::GRU::apply (std::vector&lt; Expr &gt; inputs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d03/classmarian_1_1rnn_1_1GRU_1a1e68f7a3e40ee5fefa954096e3eb2bdc">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::GRU::applyInput (std::vector&lt; Expr &gt; inputs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d03/classmarian_1_1rnn_1_1GRU_1a80e15118ba400b0e393a4b2eb9fcf23d">
+                <title>virtual State marian::rnn::GRU::applyState (std::vector&lt; Expr &gt; xWs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

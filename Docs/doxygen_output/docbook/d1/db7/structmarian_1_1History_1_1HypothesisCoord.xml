@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/db7/structmarian_1_1History_1_1HypothesisCoord">
+<title>marian::History::HypothesisCoord struct Reference</title>
+<para>Inheritance diagram for marian::History::HypothesisCoord</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dfd/structmarian_1_1History_1_1HypothesisCoord__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::History::HypothesisCoord</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dd9/structmarian_1_1History_1_1HypothesisCoord__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t i</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t j</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float cost</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/db7/structmarian_1_1History_1_1HypothesisCoord_1a0a75885db6d52a53a217182793d0705a">operator&lt;</link> (
+const <link linkend="d1/db7/structmarian_1_1History_1_1HypothesisCoord">HypothesisCoord</link> &amp; hc)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/db7/structmarian_1_1History_1_1HypothesisCoord_1a0a75885db6d52a53a217182793d0705a">
+                <title>bool marian::History::HypothesisCoord::operator&lt; (const HypothesisCoord &amp;hc) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

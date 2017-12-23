@@ -1,0 +1,191 @@
+\hypertarget{classmarian_1_1data_1_1WordAlignment}{}\section{marian\+:\+:data\+:\+:Word\+Alignment Class Reference}
+\label{classmarian_1_1data_1_1WordAlignment}\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+
+
+{\ttfamily \#include $<$corpus.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Word\+Alignment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{da/d6c/classmarian_1_1data_1_1WordAlignment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1WordAlignment_abfedf789cab3e70b085e977d8638f2dc}{Word\+Alignment} (const std\+::string \&fname)
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmarian_1_1data_1_1WordAlignment_a9bd45b6d1d88ebacef9fbd40b9a36556}{split} (const std\+::string \&input, const std\+::string \&chars)
+\item 
+void \hyperlink{classmarian_1_1data_1_1WordAlignment_a30dc39303000417c226304523114c6f4}{guided\+Alignment} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ int, int $>$ \hyperlink{classmarian_1_1data_1_1WordAlignment_aeb672afb1cec0627e27447d9afb50357}{Point}
+\item 
+typedef std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1WordAlignment_aeb672afb1cec0627e27447d9afb50357}{Point} $>$ \hyperlink{classmarian_1_1data_1_1WordAlignment_a30535cd052cdd3d686d53917d8be5259}{Alignment}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1WordAlignment_a30535cd052cdd3d686d53917d8be5259}{Alignment} $>$ \hyperlink{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}{data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 171 of file corpus.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{Alignment}{Alignment}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Point}$>$ {\bf marian\+::data\+::\+Word\+Alignment\+::\+Alignment}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_a30535cd052cdd3d686d53917d8be5259}{}\label{classmarian_1_1data_1_1WordAlignment_a30535cd052cdd3d686d53917d8be5259}
+
+
+Definition at line 174 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!Point@{Point}}
+\index{Point@{Point}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{Point}{Point}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$int, int$>$ {\bf marian\+::data\+::\+Word\+Alignment\+::\+Point}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_aeb672afb1cec0627e27447d9afb50357}{}\label{classmarian_1_1data_1_1WordAlignment_aeb672afb1cec0627e27447d9afb50357}
+
+
+Definition at line 173 of file corpus.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!Word\+Alignment@{Word\+Alignment}}
+\index{Word\+Alignment@{Word\+Alignment}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{Word\+Alignment(const std\+::string \&fname)}{WordAlignment(const std::string &fname)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Word\+Alignment\+::\+Word\+Alignment (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_abfedf789cab3e70b085e977d8638f2dc}{}\label{classmarian_1_1data_1_1WordAlignment_abfedf789cab3e70b085e977d8638f2dc}
+
+
+Definition at line 179 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+179                                         \{
+180     \hyperlink{classInputFileStream}{InputFileStream} aStream(fname);
+181     std::string line;
+182     \textcolor{keywordtype}{size\_t} c = 0;
+183 
+184     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Loading word alignment from \{\}"}, fname);
+185 
+186     \textcolor{keywordflow}{while}(std::getline((std::istream&)aStream, line)) \{
+187       \hyperlink{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}{data\_}.emplace\_back();
+188       std::vector<std::string> atok = \hyperlink{classmarian_1_1data_1_1WordAlignment_a9bd45b6d1d88ebacef9fbd40b9a36556}{split}(line, \textcolor{stringliteral}{" -"});
+189       ;
+190       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < atok.size(); i += 2)
+191         \hyperlink{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}{data\_}.back().emplace\_back(std::stoi(atok[i]), std::stoi(atok[i + 1]));
+192       c++;
+193     \}
+194 
+195     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Done"});
+196   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{dc/d73/classmarian_1_1data_1_1WordAlignment_abfedf789cab3e70b085e977d8638f2dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!guided\+Alignment@{guided\+Alignment}}
+\index{guided\+Alignment@{guided\+Alignment}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{guided\+Alignment(\+Ptr$<$ Corpus\+Batch $>$ batch)}{guidedAlignment(Ptr< CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Word\+Alignment\+::guided\+Alignment (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_a30dc39303000417c226304523114c6f4}{}\label{classmarian_1_1data_1_1WordAlignment_a30dc39303000417c226304523114c6f4}
+
+
+Definition at line 205 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+205                                                \{
+206     \textcolor{keywordtype}{int} srcWords = batch->front()->batchWidth();
+207     \textcolor{keywordtype}{int} trgWords = batch->back()->batchWidth();
+208 
+209     \textcolor{keywordtype}{int} dimBatch = batch->getSentenceIds().size();
+210     std::vector<float> guided(dimBatch * srcWords * trgWords, 0.f);
+211 
+212     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} b = 0; b < dimBatch; ++b) \{
+213       \textcolor{keyword}{auto}& alignment = \hyperlink{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}{data\_}[batch->getSentenceIds()[b]];
+214       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& p : alignment) \{
+215         \textcolor{keywordtype}{int} sid, tid;
+216         std::tie(sid, tid) = p;
+217 
+218         \textcolor{keywordtype}{size\_t} idx = b + sid * dimBatch + tid * srcWords * dimBatch;
+219         guided[idx] = 1.f;
+220       \}
+221     \}
+222     batch->setGuidedAlignment(guided);
+223   \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!split@{split}}
+\index{split@{split}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{split(const std\+::string \&input, const std\+::string \&chars)}{split(const std::string &input, const std::string &chars)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ marian\+::data\+::\+Word\+Alignment\+::split (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input, }
+\item[{const std\+::string \&}]{chars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_a9bd45b6d1d88ebacef9fbd40b9a36556}{}\label{classmarian_1_1data_1_1WordAlignment_a9bd45b6d1d88ebacef9fbd40b9a36556}
+
+
+Definition at line 198 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+199                                                          \{
+200     std::vector<std::string> \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+201     \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{boost::split}(output, input, boost::is\_any\_of(chars));
+202     \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+203   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{dc/d73/classmarian_1_1data_1_1WordAlignment_a9bd45b6d1d88ebacef9fbd40b9a36556_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::data\+::\+Word\+Alignment@{marian\+::data\+::\+Word\+Alignment}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Alignment}$>$ marian\+::data\+::\+Word\+Alignment\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}{}\label{classmarian_1_1data_1_1WordAlignment_a03d54c486b6d888ad1d3605c6c402b2b}
+
+
+Definition at line 176 of file corpus.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corpus_8h}{corpus.\+h}\end{DoxyCompactItemize}

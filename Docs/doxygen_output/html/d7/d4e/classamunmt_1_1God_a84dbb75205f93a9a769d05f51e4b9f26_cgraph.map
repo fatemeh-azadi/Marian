@@ -1,0 +1,15 @@
+<map id="amunmt::God::UseFusedSoftmax" name="amunmt::God::UseFusedSoftmax">
+<area shape="rect" id="node2" href="$d7/d4e/classamunmt_1_1God.html#a6ce7fae6876a5e4d39451a0de1691105" title="amunmt::God::LoadScorers" alt="" coords="273,137,455,163"/>
+<area shape="rect" id="node8" href="$d7/d4e/classamunmt_1_1God.html#a112ca45757470e5bca5ec924538b5b80" title="amunmt::God::LoadFiltering" alt="" coords="273,234,455,261"/>
+<area shape="rect" id="node12" href="$d7/d4e/classamunmt_1_1God.html#a9fd4b0bf9cb28b74651640055f488484" title="amunmt::God::LoadPrePost\lProcessing" alt="" coords="272,285,456,327"/>
+<area shape="rect" id="node3" href="$da/d4e/classamunmt_1_1Config.html#a5257f41272d06c35bebe8130b5897d23" title="amunmt::Config::Get" alt="" coords="768,246,912,273"/>
+<area shape="rect" id="node4" href="$d8/df9/classamunmt_1_1LoaderFactory.html#aaaf8621316a4c3832bcdfecbd5f69598" title="amunmt::LoaderFactory\l::Create" alt="" coords="528,71,688,112"/>
+<area shape="rect" id="node5" href="$d8/df9/classamunmt_1_1LoaderFactory.html#a78af7437386e23443b9d02bb4f8be24b" title="amunmt::LoaderFactory\l::CreateGPU" alt="" coords="760,136,920,177"/>
+<area shape="rect" id="node6" href="$d8/df9/classamunmt_1_1LoaderFactory.html#a78832d75891d43a96d36c1e61c6940b4" title="amunmt::LoaderFactory\l::CreateCPU" alt="" coords="760,5,920,47"/>
+<area shape="rect" id="node7" href="$d8/df9/classamunmt_1_1LoaderFactory.html#a167b89f68880a90da333d3a61458472b" title="amunmt::LoaderFactory\l::CreateFPGA" alt="" coords="760,71,920,112"/>
+<area shape="rect" id="node9" href="$d7/d4e/classamunmt_1_1God.html#ad0d3efbdf165ba0bc4de9052a826f7b6" title="amunmt::God::Get" alt="" coords="543,289,673,315"/>
+<area shape="rect" id="node10" href="$d7/d4e/classamunmt_1_1God.html#a032b43755a3050ee9fb97ad27a91a63b" title="amunmt::God::GetSourceVocab" alt="" coords="504,187,712,214"/>
+<area shape="rect" id="node11" href="$d7/d4e/classamunmt_1_1God.html#aabd3caa5eb93346428948ce6639dc931" title="amunmt::God::GetTargetVocab" alt="" coords="506,238,710,265"/>
+<area shape="rect" id="node13" href="$d7/d4e/classamunmt_1_1God.html#a5c284bd5bdde636f02dbb86af55744ae" title="amunmt::God::Has" alt="" coords="541,339,675,366"/>
+<area shape="rect" id="node14" href="$da/d4e/classamunmt_1_1Config.html#aea1c78c5d37a811d86d8b49b8dac94d1" title="amunmt::Config::Has" alt="" coords="767,339,913,366"/>
+</map>

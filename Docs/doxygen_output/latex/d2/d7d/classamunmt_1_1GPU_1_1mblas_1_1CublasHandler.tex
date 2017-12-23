@@ -1,0 +1,147 @@
+\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Cublas\+Handler Class Reference}
+\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler}\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+
+
+{\ttfamily \#include $<$handles.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Cublas\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d1/d27/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static cublas\+Handle\+\_\+t \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a8259296c298b79e8b742e6157a7f8a02}{Get\+Handle} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_aa2e4a863191a149911d71111832b16c9}{Cublas\+Handler} ()
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_abe4bb4660639c58fb086d2f308980c0e}{$\sim$\+Cublas\+Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{handle\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static thread\+\_\+local \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler}{Cublas\+Handler} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a75aae236b136e113a77b90f42a53ce44}{instance\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file handles.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}!Cublas\+Handler@{Cublas\+Handler}}
+\index{Cublas\+Handler@{Cublas\+Handler}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+\subsubsection[{\texorpdfstring{Cublas\+Handler()}{CublasHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler\+::\+Cublas\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_aa2e4a863191a149911d71111832b16c9}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_aa2e4a863191a149911d71111832b16c9}
+
+
+Definition at line 43 of file handles.\+h.
+
+
+\begin{DoxyCode}
+44     \{
+45       cublasStatus\_t stat;
+46       stat = cublasCreate(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{handle\_});
+47       \textcolor{keywordflow}{if} (stat != CUBLAS\_STATUS\_SUCCESS) \{
+48       printf (\textcolor{stringliteral}{"cublasCreate initialization failed\(\backslash\)n"});
+49       abort();
+50       \}
+51 
+52       stat = cublasSetStream(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{handle\_}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}());
+53       \textcolor{keywordflow}{if} (stat != CUBLAS\_STATUS\_SUCCESS) \{
+54       printf (\textcolor{stringliteral}{"cublasSetStream initialization failed\(\backslash\)n"});
+55       abort();
+56       \}
+57     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_aa2e4a863191a149911d71111832b16c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}!````~Cublas\+Handler@{$\sim$\+Cublas\+Handler}}
+\index{````~Cublas\+Handler@{$\sim$\+Cublas\+Handler}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cublas\+Handler()}{~CublasHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler\+::$\sim$\+Cublas\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_abe4bb4660639c58fb086d2f308980c0e}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_abe4bb4660639c58fb086d2f308980c0e}
+
+
+Definition at line 59 of file handles.\+h.
+
+
+\begin{DoxyCode}
+59                      \{
+60       cublasDestroy(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{handle\_});
+61     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}!Get\+Handle@{Get\+Handle}}
+\index{Get\+Handle@{Get\+Handle}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+\subsubsection[{\texorpdfstring{Get\+Handle()}{GetHandle()}}]{\setlength{\rightskip}{0pt plus 5cm}static cublas\+Handle\+\_\+t\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler\+::\+Get\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a8259296c298b79e8b742e6157a7f8a02}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a8259296c298b79e8b742e6157a7f8a02}
+
+
+Definition at line 38 of file handles.\+h.
+
+
+\begin{DoxyCode}
+38                                        \{
+39         \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a75aae236b136e113a77b90f42a53ce44}{instance\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{handle\_};
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}!handle\+\_\+@{handle\+\_\+}}
+\index{handle\+\_\+@{handle\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+\subsubsection[{\texorpdfstring{handle\+\_\+}{handle_}}]{\setlength{\rightskip}{0pt plus 5cm}cublas\+Handle\+\_\+t amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler\+::handle\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a2e032d5257f286f3f829b5e684525121}
+
+
+Definition at line 64 of file handles.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}!instance\+\_\+@{instance\+\_\+}}
+\index{instance\+\_\+@{instance\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler}}
+\subsubsection[{\texorpdfstring{instance\+\_\+}{instance_}}]{\setlength{\rightskip}{0pt plus 5cm}thread\+\_\+local {\bf Cublas\+Handler} amunmt\+::\+G\+P\+U\+::mblas\+::\+Cublas\+Handler\+::instance\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a75aae236b136e113a77b90f42a53ce44}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_a75aae236b136e113a77b90f42a53ce44}
+
+
+Definition at line 63 of file handles.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{handles_8h}{handles.\+h}\end{DoxyCompactItemize}

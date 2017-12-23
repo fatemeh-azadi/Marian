@@ -1,0 +1,454 @@
+\hypertarget{classmarian_1_1TensorBase}{}\section{marian\+:\+:Tensor\+Base Class Reference}
+\label{classmarian_1_1TensorBase}\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+
+
+{\ttfamily \#include $<$tensor.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Tensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d4/dd3/classmarian_1_1TensorBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Tensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d8/d77/classmarian_1_1TensorBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1TensorBase_a1542be522ca1bdfb1c314580859b8982}{Tensor\+Base} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{memory}, \hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{classmarian_1_1TensorBase_adbee0ca45fa5a195171a99fc7a9b00c8}{shape}, size\+\_\+t device)
+\item 
+\hyperlink{classmarian_1_1TensorBase_a3a7c371bb0c969d5984ab976518b8dee}{$\sim$\+Tensor\+Base} ()
+\item 
+virtual void \hyperlink{classmarian_1_1TensorBase_af507312f77caa146a8c0bf13eaf96bd4}{reset} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{memory})
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{memory} ()
+\item 
+virtual \hyperlink{structmarian_1_1Shape}{Shape} \& \hyperlink{classmarian_1_1TensorBase_adbee0ca45fa5a195171a99fc7a9b00c8}{shape} ()
+\item 
+virtual float $\ast$ \hyperlink{classmarian_1_1TensorBase_a67e5b255f621fbae8152d5e75dbb2339}{data} ()
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{size} ()
+\item 
+virtual float \hyperlink{classmarian_1_1TensorBase_aa627fcb0c643d0ef671973ca2c9ecd3b}{scalar} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1TensorBase_a7b8de35867bf1502ae1c8393670686fe}{get\+Device} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1TensorBase_ac2b98828c27c5900889acab2c6887ae0}{subtensor} (int offset, int \hyperlink{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{size})
+\item 
+float \hyperlink{classmarian_1_1TensorBase_a7e314b9f748c97582b8828d030d95392}{get} (size\+\_\+t i)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_a71a6d16f11e6e9cb81ee432d47ff8384}{set} (size\+\_\+t i, float value)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_ac74a5bcfcf3e06c3a90a61974167d72c}{get} (std\+::vector$<$ float $>$ \&v)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_ade643d2744839460f321ca1c06a0929d}{set} (float value)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_a923d9d297704c6a83478e024f75b1af3}{set} (const std\+::vector$<$ float $>$ \&v)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_a86fbac9f53e727f7c1777cfc91a0d4c5}{set\+Sparse} (const std\+::vector$<$ size\+\_\+t $>$ \&k, const std\+::vector$<$ float $>$ \&v)
+\item 
+void \hyperlink{classmarian_1_1TensorBase_a4a485c5ed143b21af0984875094dd020}{copy\+From} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})
+\item 
+std\+::string \hyperlink{classmarian_1_1TensorBase_a87368e8344d51db32558263242e6343e}{debug} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\+\_\+}
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}{shape\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}{device\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file tensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!Tensor\+Base@{Tensor\+Base}}
+\index{Tensor\+Base@{Tensor\+Base}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{Tensor\+Base(\+Ptr$<$ Memory\+Piece $>$ memory, Shape shape, size\+\_\+t device)}{TensorBase(Ptr< MemoryPiece > memory, Shape shape, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Tensor\+Base\+::\+Tensor\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Memory\+Piece} $>$}]{memory, }
+\item[{{\bf Shape}}]{shape, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TensorBase_a1542be522ca1bdfb1c314580859b8982}{}\label{classmarian_1_1TensorBase_a1542be522ca1bdfb1c314580859b8982}
+
+
+Definition at line 22 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+23       : \hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\_}(\hyperlink{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{memory}), \hyperlink{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}{shape\_}(\hyperlink{classmarian_1_1TensorBase_adbee0ca45fa5a195171a99fc7a9b00c8}{shape}), \hyperlink{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}{device\_}(device) \{\}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_a1542be522ca1bdfb1c314580859b8982_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!````~Tensor\+Base@{$\sim$\+Tensor\+Base}}
+\index{````~Tensor\+Base@{$\sim$\+Tensor\+Base}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{$\sim$\+Tensor\+Base()}{~TensorBase()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Tensor\+Base\+::$\sim$\+Tensor\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TensorBase_a3a7c371bb0c969d5984ab976518b8dee}{}\label{classmarian_1_1TensorBase_a3a7c371bb0c969d5984ab976518b8dee}
+
+
+Definition at line 25 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+25 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!copy\+From@{copy\+From}}
+\index{copy\+From@{copy\+From}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{copy\+From(\+Tensor)}{copyFrom(Tensor)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::copy\+From (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a4a485c5ed143b21af0984875094dd020}{}\label{classmarian_1_1TensorBase_a4a485c5ed143b21af0984875094dd020}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_a4a485c5ed143b21af0984875094dd020_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!data@{data}}
+\index{data@{data}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual float$\ast$ marian\+::\+Tensor\+Base\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_a67e5b255f621fbae8152d5e75dbb2339}{}\label{classmarian_1_1TensorBase_a67e5b255f621fbae8152d5e75dbb2339}
+
+
+Definition at line 33 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+33 \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float}*)\hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\_}->data(); \}
+\end{DoxyCode}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!debug@{debug}}
+\index{debug@{debug}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{debug()}{debug()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::\+Tensor\+Base\+::debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a87368e8344d51db32558263242e6343e}{}\label{classmarian_1_1TensorBase_a87368e8344d51db32558263242e6343e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_a87368e8344d51db32558263242e6343e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!get@{get}}
+\index{get@{get}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{get(size\+\_\+t i)}{get(size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Tensor\+Base\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a7e314b9f748c97582b8828d030d95392}{}\label{classmarian_1_1TensorBase_a7e314b9f748c97582b8828d030d95392}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!get@{get}}
+\index{get@{get}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{get(std\+::vector$<$ float $>$ \&v)}{get(std::vector< float > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::get (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_ac74a5bcfcf3e06c3a90a61974167d72c}{}\label{classmarian_1_1TensorBase_ac74a5bcfcf3e06c3a90a61974167d72c}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Tensor\+Base\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TensorBase_a7b8de35867bf1502ae1c8393670686fe}{}\label{classmarian_1_1TensorBase_a7b8de35867bf1502ae1c8393670686fe}
+
+
+Definition at line 42 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+42 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}{device\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!memory@{memory}}
+\index{memory@{memory}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{memory()}{memory()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Memory\+Piece}$>$ marian\+::\+Tensor\+Base\+::memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{}\label{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}
+
+
+Definition at line 29 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!reset@{reset}}
+\index{reset@{reset}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{reset(\+Ptr$<$ Memory\+Piece $>$ memory)}{reset(Ptr< MemoryPiece > memory)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Tensor\+Base\+::reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Memory\+Piece} $>$}]{memory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_af507312f77caa146a8c0bf13eaf96bd4}{}\label{classmarian_1_1TensorBase_af507312f77caa146a8c0bf13eaf96bd4}
+
+
+Definition at line 27 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+27 \{ \hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\_} = \hyperlink{classmarian_1_1TensorBase_a0fef86a2f4c3704c38cbe3aa6d11b113}{memory}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_af507312f77caa146a8c0bf13eaf96bd4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!scalar@{scalar}}
+\index{scalar@{scalar}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{scalar()}{scalar()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual float marian\+::\+Tensor\+Base\+::scalar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_aa627fcb0c643d0ef671973ca2c9ecd3b}{}\label{classmarian_1_1TensorBase_aa627fcb0c643d0ef671973ca2c9ecd3b}
+
+
+Definition at line 37 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+37                          \{
+38     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{size}() != 1, \textcolor{stringliteral}{"Tensor is not a scalar"});
+39     \textcolor{keywordflow}{return} \textcolor{keyword}{get}(0);
+40   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d3c/classmarian_1_1TensorBase_aa627fcb0c643d0ef671973ca2c9ecd3b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!set@{set}}
+\index{set@{set}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{set(size\+\_\+t i, float value)}{set(size_t i, float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a71a6d16f11e6e9cb81ee432d47ff8384}{}\label{classmarian_1_1TensorBase_a71a6d16f11e6e9cb81ee432d47ff8384}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!set@{set}}
+\index{set@{set}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{set(float value)}{set(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::set (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_ade643d2744839460f321ca1c06a0929d}{}\label{classmarian_1_1TensorBase_ade643d2744839460f321ca1c06a0929d}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!set@{set}}
+\index{set@{set}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{set(const std\+::vector$<$ float $>$ \&v)}{set(const std::vector< float > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::set (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a923d9d297704c6a83478e024f75b1af3}{}\label{classmarian_1_1TensorBase_a923d9d297704c6a83478e024f75b1af3}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!set\+Sparse@{set\+Sparse}}
+\index{set\+Sparse@{set\+Sparse}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{set\+Sparse(const std\+::vector$<$ size\+\_\+t $>$ \&k, const std\+::vector$<$ float $>$ \&v)}{setSparse(const std::vector< size_t > &k, const std::vector< float > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Tensor\+Base\+::set\+Sparse (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{k, }
+\item[{const std\+::vector$<$ float $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1TensorBase_a86fbac9f53e727f7c1777cfc91a0d4c5}{}\label{classmarian_1_1TensorBase_a86fbac9f53e727f7c1777cfc91a0d4c5}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d3c/classmarian_1_1TensorBase_a86fbac9f53e727f7c1777cfc91a0d4c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!shape@{shape}}
+\index{shape@{shape}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{shape()}{shape()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Shape}\& marian\+::\+Tensor\+Base\+::shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_adbee0ca45fa5a195171a99fc7a9b00c8}{}\label{classmarian_1_1TensorBase_adbee0ca45fa5a195171a99fc7a9b00c8}
+
+
+Definition at line 31 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}{shape\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!size@{size}}
+\index{size@{size}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Tensor\+Base\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{}\label{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}
+
+
+Definition at line 35 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+35 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}{shape\_}.\hyperlink{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}{elements}(); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{dd/d3c/classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{dd/d3c/classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!subtensor@{subtensor}}
+\index{subtensor@{subtensor}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{subtensor(int offset, int size)}{subtensor(int offset, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Tensor\+Base\+::subtensor (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TensorBase_ac2b98828c27c5900889acab2c6887ae0}{}\label{classmarian_1_1TensorBase_ac2b98828c27c5900889acab2c6887ae0}
+
+
+Definition at line 44 of file tensor.\+h.
+
+
+\begin{DoxyCode}
+44                                          \{
+45     \textcolor{keyword}{auto} mem = New<MemoryPiece>(\hyperlink{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{memory\_}->data() + \textcolor{keyword}{sizeof}(float) * offset,
+46                                 \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * \hyperlink{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{size});
+47     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor}(\textcolor{keyword}{new} \hyperlink{classmarian_1_1TensorBase_a1542be522ca1bdfb1c314580859b8982}{TensorBase}(mem, \{1, \hyperlink{classmarian_1_1TensorBase_ae4a6d6a80b85704484a5f21b9c1506d0}{size}\}, \hyperlink{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}{device\_}));
+48   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d3c/classmarian_1_1TensorBase_ac2b98828c27c5900889acab2c6887ae0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Tensor\+Base\+::device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}{}\label{classmarian_1_1TensorBase_a67a05977eed105fde5c494ce332564ff}
+
+
+Definition at line 19 of file tensor.\+h.
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!memory\+\_\+@{memory\+\_\+}}
+\index{memory\+\_\+@{memory\+\_\+}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{memory\+\_\+}{memory_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Memory\+Piece}$>$ marian\+::\+Tensor\+Base\+::memory\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}{}\label{classmarian_1_1TensorBase_a3283bb8429b1225b1790a5569cda8022}
+
+
+Definition at line 17 of file tensor.\+h.
+
+\index{marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}!shape\+\_\+@{shape\+\_\+}}
+\index{shape\+\_\+@{shape\+\_\+}!marian\+::\+Tensor\+Base@{marian\+::\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{shape\+\_\+}{shape_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Tensor\+Base\+::shape\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}{}\label{classmarian_1_1TensorBase_acf1bac1c20fdd4cbed780b74ad05bcae}
+
+
+Definition at line 18 of file tensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tensor_8h}{tensor.\+h}\end{DoxyCompactItemize}

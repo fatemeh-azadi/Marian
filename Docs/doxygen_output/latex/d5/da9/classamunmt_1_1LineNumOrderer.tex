@@ -1,0 +1,50 @@
+\hypertarget{classamunmt_1_1LineNumOrderer}{}\section{amunmt\+:\+:Line\+Num\+Orderer Class Reference}
+\label{classamunmt_1_1LineNumOrderer}\index{amunmt\+::\+Line\+Num\+Orderer@{amunmt\+::\+Line\+Num\+Orderer}}
+
+
+Collaboration diagram for amunmt\+:\+:Line\+Num\+Orderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{da/d8c/classamunmt_1_1LineNumOrderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classamunmt_1_1LineNumOrderer_ad97c6e97efb55628c8018d0f9f039f75}{operator()} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1History}{History} $>$ \&a, const std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1History}{History} $>$ \&b) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file amun/common/history.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Line\+Num\+Orderer@{amunmt\+::\+Line\+Num\+Orderer}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+Line\+Num\+Orderer@{amunmt\+::\+Line\+Num\+Orderer}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::shared\+\_\+ptr$<$ History $>$ \&a, const std\+::shared\+\_\+ptr$<$ History $>$ \&b) const }{operator()(const std::shared_ptr< History > &a, const std::shared_ptr< History > &b) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Line\+Num\+Orderer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf History} $>$ \&}]{a, }
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf History} $>$ \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1LineNumOrderer_ad97c6e97efb55628c8018d0f9f039f75}{}\label{classamunmt_1_1LineNumOrderer_ad97c6e97efb55628c8018d0f9f039f75}
+
+
+Definition at line 30 of file amun/common/history.\+cpp.
+
+
+\begin{DoxyCode}
+31     \{
+32       \textcolor{keywordflow}{return} a->GetLineNum() < b->GetLineNum();
+33     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2history_8cpp}{amun/common/history.\+cpp}\end{DoxyCompactItemize}

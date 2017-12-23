@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dc5/node__operators__binary_8h">
+    <title>node_operators_binary.h File Reference</title>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &quot;graph/backend_gpu.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/node.h&quot;</programlisting>
+    <programlisting>#include &quot;kernels/tensor_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;kernels/thrust_functions.h&quot;</programlisting>
+<para>Include dependency diagram for node_operators_binary.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d74/node__operators__binary_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for node_operators_binary.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d15/node__operators__binary_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d8c/structmarian_1_1DotNodeOp">marian::DotNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp">marian::ScalarProductNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dff/structmarian_1_1ElementBinaryNodeOp">marian::ElementBinaryNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8b/structmarian_1_1PlusNodeOp">marian::PlusNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/de6/structmarian_1_1MinusNodeOp">marian::MinusNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d98/structmarian_1_1MultNodeOp">marian::MultNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/de1/structmarian_1_1DivNodeOp">marian::DivNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp">marian::CrossEntropyNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp">marian::ConcatenateNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d6a/structmarian_1_1AffineNodeOp">marian::AffineNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp">marian::LayerNormalizationOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file node_operators_binary.h</para>
+    </simplesect>
+</section>

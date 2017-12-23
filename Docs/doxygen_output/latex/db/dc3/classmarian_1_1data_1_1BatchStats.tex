@@ -1,0 +1,99 @@
+\hypertarget{classmarian_1_1data_1_1BatchStats}{}\section{marian\+:\+:data\+:\+:Batch\+Stats Class Reference}
+\label{classmarian_1_1data_1_1BatchStats}\index{marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}}
+
+
+{\ttfamily \#include $<$batch\+\_\+stats.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Batch\+Stats\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{dd/d49/classmarian_1_1data_1_1BatchStats__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1BatchStats_a4f93dbb14442f458ffd59fc61013121d}{get\+Batch\+Size} (const std\+::vector$<$ size\+\_\+t $>$ \&lengths)
+\item 
+void \hyperlink{classmarian_1_1data_1_1BatchStats_af6f94f769fcb4ef0555d6dd9c7530ad5}{add} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::vector$<$ size\+\_\+t $>$, size\+\_\+t $>$ \hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file batch\+\_\+stats.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}!add@{add}}
+\index{add@{add}!marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}}
+\subsubsection[{\texorpdfstring{add(\+Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{add(Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Batch\+Stats\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchStats_af6f94f769fcb4ef0555d6dd9c7530ad5}{}\label{classmarian_1_1data_1_1BatchStats_af6f94f769fcb4ef0555d6dd9c7530ad5}
+
+
+Definition at line 29 of file batch\+\_\+stats.\+h.
+
+
+\begin{DoxyCode}
+29                                        \{
+30     std::vector<size\_t> lengths;
+31     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < batch->sets(); ++i)
+32       lengths.push\_back((*batch)[i]->batchWidth());
+33     \textcolor{keywordtype}{size\_t} batchSize = batch->size();
+34 
+35     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\_}[lengths] < batchSize)
+36       \hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\_}[lengths] = batchSize;
+37   \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}!get\+Batch\+Size@{get\+Batch\+Size}}
+\index{get\+Batch\+Size@{get\+Batch\+Size}!marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}}
+\subsubsection[{\texorpdfstring{get\+Batch\+Size(const std\+::vector$<$ size\+\_\+t $>$ \&lengths)}{getBatchSize(const std::vector< size_t > &lengths)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Batch\+Stats\+::get\+Batch\+Size (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{lengths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchStats_a4f93dbb14442f458ffd59fc61013121d}{}\label{classmarian_1_1data_1_1BatchStats_a4f93dbb14442f458ffd59fc61013121d}
+
+
+Definition at line 19 of file batch\+\_\+stats.\+h.
+
+
+\begin{DoxyCode}
+19                                                         \{
+20     \textcolor{keyword}{auto} it = \hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\_}.lower\_bound(lengths);
+21     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < lengths.size(); ++i)
+22       \textcolor{keywordflow}{while}(it != \hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\_}.end() && it->first[i] < lengths[i])
+23         it++;
+24 
+25     UTIL\_THROW\_IF2(it == \hyperlink{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{map\_}.end(), \textcolor{stringliteral}{"Missing batch statistics"});
+26     \textcolor{keywordflow}{return} it->second;
+27   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}!map\+\_\+@{map\+\_\+}}
+\index{map\+\_\+@{map\+\_\+}!marian\+::data\+::\+Batch\+Stats@{marian\+::data\+::\+Batch\+Stats}}
+\subsubsection[{\texorpdfstring{map\+\_\+}{map_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::vector$<$size\+\_\+t$>$, size\+\_\+t$>$ marian\+::data\+::\+Batch\+Stats\+::map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}{}\label{classmarian_1_1data_1_1BatchStats_aef18dc170f66ae7505328f1ccd12959b}
+
+
+Definition at line 16 of file batch\+\_\+stats.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batch__stats_8h}{batch\+\_\+stats.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/de1/structmarian_1_1DivNodeOp">
+<title>marian::DivNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DivNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d41/structmarian_1_1DivNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DivNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/dc7/structmarian_1_1DivNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/de1/structmarian_1_1DivNodeOp_1a4f2cca4b481a2bbeed2ae95cb1949891">DivNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="df/de1/structmarian_1_1DivNodeOp_1aa55dcc191fb80a22cbcc60eb08b36b05">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="df/de1/structmarian_1_1DivNodeOp_1affd4ce9819f516cb1ea37786ffd8815a">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="df/de1/structmarian_1_1DivNodeOp_1ad744731ea15436e917b4d109a639bcd3">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="df/de1/structmarian_1_1DivNodeOp_1a4f2cca4b481a2bbeed2ae95cb1949891">
+                <title>marian::DivNodeOp::DivNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/structmarian_1_1DivNodeOp_1aa55dcc191fb80a22cbcc60eb08b36b05">
+                <title>NodeOps marian::DivNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/structmarian_1_1DivNodeOp_1affd4ce9819f516cb1ea37786ffd8815a">
+                <title>NodeOps marian::DivNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/structmarian_1_1DivNodeOp_1ad744731ea15436e917b4d109a639bcd3">
+                <title>const std::string marian::DivNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

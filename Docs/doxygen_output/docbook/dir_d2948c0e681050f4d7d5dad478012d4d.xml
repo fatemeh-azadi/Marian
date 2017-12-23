@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_d2948c0e681050f4d7d5dad478012d4d">
+    <title>common Directory Reference</title>
+<para>Directory dependency diagram for common</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_d2948c0e681050f4d7d5dad478012d4d_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Directories </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_d48850a18dc121e563fc40ce97aaa548">processor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/dbc/base__best__hyps_8h">base_best_hyps.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/db4/base__matrix_8cpp">base_matrix.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d75/base__matrix_8h">base_matrix.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d8/ddf/amun_2common_2config_8cpp">amun/common/config.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="df/d5e/amun_2common_2config_8h">amun/common/config.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/d73/decoder__main_8cpp">decoder_main.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/d9e/exception_8cpp">exception.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dd/d2d/exception_8h">exception.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/de5/amun_2common_2file__stream_8h">amun/common/file_stream.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/d63/filter_8cpp">filter.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/da4/amun_2common_2filter_8h">amun/common/filter.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="db/df6/git__version_8h">git_version.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d73/god_8cpp">god.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/d57/god_8h">god.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/ddc/amun_2common_2history_8cpp">amun/common/history.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="df/dc1/amun_2common_2history_8h">amun/common/history.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/df3/hypothesis_8cpp">hypothesis.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d6/d52/amun_2common_2hypothesis_8h">amun/common/hypothesis.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d2/d2b/loader_8cpp">loader.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="db/db8/loader_8h">loader.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/dec/loader__factory_8cpp">loader_factory.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/d2b/loader__factory_8h">loader_factory.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/d5a/amun_2common_2logging_8cpp">amun/common/logging.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d8/dbe/amun_2common_2logging_8h">amun/common/logging.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/df4/amun_2common_2output__collector_8cpp">amun/common/output_collector.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d2/d83/amun_2common_2output__collector_8h">amun/common/output_collector.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/db8/amun_2common_2printer_8cpp">amun/common/printer.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/dc4/amun_2common_2printer_8h">amun/common/printer.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d00/scorer_8cpp">scorer.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="da/d3b/scorer_8h">scorer.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/def/search_8cpp">search.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/d85/search_8h">search.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/d57/sentence_8cpp">sentence.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d6/df4/sentence_8h">sentence.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/da3/sentences_8cpp">sentences.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/ddf/sentences_8h">sentences.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d59/soft__alignment_8h">soft_alignment.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d40/threadpool_8h">threadpool.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="df/d6f/translation__task_8cpp">translation_task.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/da7/translation__task_8h">translation_task.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="da/ddf/types_8cpp">types.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/de7/amun_2common_2types_8h">amun/common/types.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="db/d79/amun_2common_2utils_8cpp">amun/common/utils.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="da/de8/amun_2common_2utils_8h">amun/common/utils.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/d9f/amun_2common_2vocab_8cpp">amun/common/vocab.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/dc9/amun_2common_2vocab_8h">amun/common/vocab.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/amun/common/</para>
+    </simplesect>
+</section>

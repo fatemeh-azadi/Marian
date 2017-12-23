@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d5b/classmarian_1_1TensorCPU">
+<title>marian::TensorCPU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d58/tensor__cpu_8h">&lt;tensor_cpu.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TensorCPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/db4/classmarian_1_1TensorCPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TensorCPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/de2/classmarian_1_1TensorCPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d5b/classmarian_1_1TensorCPU_1a3e5666197c38deed084d1d39832e0f48">TensorCPU</link> (
+float * data, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d0/d5b/classmarian_1_1TensorCPU_1af186f6647176e261a5baf1c6609eeaa2">get</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/classmarian_1_1TensorCPU_1abfd193889e623394d1aaa6ca5422489c">set</link> (
+size_t i, float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/classmarian_1_1TensorCPU_1a783de048c2d0a6400359bac0f3268080">get</link> (
+std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/classmarian_1_1TensorCPU_1ac5ce20b62588fe95e38d2edaa2fb3c5b">set</link> (
+float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/classmarian_1_1TensorCPU_1a6ab34ca2fa6d297c4ae2686bdaff12a2">set</link> (
+const std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1a3e5666197c38deed084d1d39832e0f48">
+                <title>marian::TensorCPU::TensorCPU (float *data, Shape shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1af186f6647176e261a5baf1c6609eeaa2">
+                <title>float marian::TensorCPU::get (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1abfd193889e623394d1aaa6ca5422489c">
+                <title>void marian::TensorCPU::set (size_t i, float value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1a783de048c2d0a6400359bac0f3268080">
+                <title>void marian::TensorCPU::get (std::vector&lt; float &gt; &amp;v)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1ac5ce20b62588fe95e38d2edaa2fb3c5b">
+                <title>void marian::TensorCPU::set (float value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d5b/classmarian_1_1TensorCPU_1a6ab34ca2fa6d297c4ae2686bdaff12a2">
+                <title>void marian::TensorCPU::set (const std::vector&lt; float &gt; &amp;v)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

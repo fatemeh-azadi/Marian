@@ -1,0 +1,415 @@
+\hypertarget{classmarian_1_1TimestepNodeOp}{}\section{marian\+:\+:Timestep\+Node\+Op Class Reference}
+\label{classmarian_1_1TimestepNodeOp}\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Timestep\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d81/classmarian_1_1TimestepNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Timestep\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d49/classmarian_1_1TimestepNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1TimestepNodeOp_ab613494bd1a3df6657a9723c514298c9}{Timestep\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, size\+\_\+t \hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step})
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{classmarian_1_1TimestepNodeOp_af59462293088e6859217d6436b929bd3}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1TimestepNodeOp_ac014b5b002e36eeefccfaf4939d2a535}{allocate} ()
+\item 
+void \hyperlink{classmarian_1_1TimestepNodeOp_a0c4ed1e755023af411edc66c20f7f816}{free} ()
+\item 
+void \hyperlink{classmarian_1_1TimestepNodeOp_abe5db4fc2772dbe3692475450cdb7643}{forward} ()
+\item 
+void \hyperlink{classmarian_1_1TimestepNodeOp_a008635706bbc2acd247d2488a856fba9}{backward} ()
+\item 
+void \hyperlink{classmarian_1_1TimestepNodeOp_a64818c7734019fc042d3712f07e3b087}{init\+\_\+dependent} ()
+\item 
+void \hyperlink{classmarian_1_1TimestepNodeOp_a41bff17de35cad13c3c9492a862ac944}{set\+\_\+zero\+\_\+adjoint} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \& \hyperlink{classmarian_1_1TimestepNodeOp_a9d16e5a4d7b7359c4b4e230500a45343}{val} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \& \hyperlink{classmarian_1_1TimestepNodeOp_a02af0c9c13e16888c53deb7032061d1d}{grad} ()
+\item 
+const std\+::string \hyperlink{classmarian_1_1TimestepNodeOp_a2624a53aaedf5c6838cab594c2f65229}{type} ()
+\item 
+const std\+::string \hyperlink{classmarian_1_1TimestepNodeOp_a2beedbe285b4c1f5b5528d0d2f406ae1}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{step\+Node\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{step\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 583 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!Timestep\+Node\+Op@{Timestep\+Node\+Op}}
+\index{Timestep\+Node\+Op@{Timestep\+Node\+Op}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Timestep\+Node\+Op(\+Expr a, size\+\_\+t step)}{TimestepNodeOp(Expr a, size_t step)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Timestep\+Node\+Op\+::\+Timestep\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{size\+\_\+t}]{step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TimestepNodeOp_ab613494bd1a3df6657a9723c514298c9}{}\label{classmarian_1_1TimestepNodeOp_ab613494bd1a3df6657a9723c514298c9}
+
+
+Definition at line 589 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+590       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{classmarian_1_1TimestepNodeOp_af59462293088e6859217d6436b929bd3}{newShape}(a)),
+591         \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{stepNode\_}(a),
+592         \hyperlink{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{step\_}(\hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step}) \{
+593     \hyperlink{classmarian_1_1Node_aa83237be30a1afc0f0423b23d534d2d3}{Node::destroy\_} = \textcolor{keyword}{false};
+594   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!allocate@{allocate}}
+\index{allocate@{allocate}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{allocate()}{allocate()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Timestep\+Node\+Op\+::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_ac014b5b002e36eeefccfaf4939d2a535}{}\label{classmarian_1_1TimestepNodeOp_ac014b5b002e36eeefccfaf4939d2a535}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a66c54550ad60cc510329435eb21f8589}{marian\+::\+Node}.
+
+
+
+Definition at line 603 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+603 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!backward@{backward}}
+\index{backward@{backward}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward()}{backward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Timestep\+Node\+Op\+::backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a008635706bbc2acd247d2488a856fba9}{}\label{classmarian_1_1TimestepNodeOp_a008635706bbc2acd247d2488a856fba9}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a4710c71a35130cf0e382bb0a430725d3}{marian\+::\+Node}.
+
+
+
+Definition at line 607 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+607 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Timestep\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a2beedbe285b4c1f5b5528d0d2f406ae1}{}\label{classmarian_1_1TimestepNodeOp_a2beedbe285b4c1f5b5528d0d2f406ae1}
+
+
+Reimplemented from \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}.
+
+
+
+Definition at line 633 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+633 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"grey"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!forward@{forward}}
+\index{forward@{forward}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward()}{forward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Timestep\+Node\+Op\+::forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_abe5db4fc2772dbe3692475450cdb7643}{}\label{classmarian_1_1TimestepNodeOp_abe5db4fc2772dbe3692475450cdb7643}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0ace1579b496977ac75fadfffc41416b}{marian\+::\+Node}.
+
+
+
+Definition at line 606 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+606 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!free@{free}}
+\index{free@{free}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Timestep\+Node\+Op\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a0c4ed1e755023af411edc66c20f7f816}{}\label{classmarian_1_1TimestepNodeOp_a0c4ed1e755023af411edc66c20f7f816}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_ab8ceeb421fca5b912330d6b7ac2cb14b}{marian\+::\+Node}.
+
+
+
+Definition at line 604 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+604 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!grad@{grad}}
+\index{grad@{grad}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{grad()}{grad()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor}\& marian\+::\+Timestep\+Node\+Op\+::grad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a02af0c9c13e16888c53deb7032061d1d}{}\label{classmarian_1_1TimestepNodeOp_a02af0c9c13e16888c53deb7032061d1d}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{marian\+::\+Node}.
+
+
+
+Definition at line 622 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+622                  \{
+623     \textcolor{keyword}{auto} childGrad = \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{stepNode\_}->grad();
+624     \textcolor{keywordtype}{size\_t} offset = \hyperlink{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{step\_} * \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}().\hyperlink{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}{elements}() * \textcolor{keyword}{sizeof}(float);
+625     \textcolor{keyword}{auto} mem = New<MemoryPiece>(childGrad->memory()->data() + offset,
+626                                 childGrad->memory()->size());
+627     \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}.reset(\textcolor{keyword}{new} TensorBase(mem, \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}(), childGrad->getDevice()));
+628     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_};
+629   \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d75/classmarian_1_1TimestepNodeOp_a02af0c9c13e16888c53deb7032061d1d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Timestep\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107}{}\label{classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 635 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+635                         \{
+636     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+637       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+638       \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}, \hyperlink{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{step\_});
+639     \}
+640     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+641   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d75/classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!init\+\_\+dependent@{init\+\_\+dependent}}
+\index{init\+\_\+dependent@{init\+\_\+dependent}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{init\+\_\+dependent()}{init_dependent()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Timestep\+Node\+Op\+::init\+\_\+dependent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a64818c7734019fc042d3712f07e3b087}{}\label{classmarian_1_1TimestepNodeOp_a64818c7734019fc042d3712f07e3b087}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a42807d121dc8bc008176a3f922b4a5eb}{marian\+::\+Node}.
+
+
+
+Definition at line 609 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+609 \{ \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{stepNode\_}->init\_dependent(); \}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a)}{newShape(Expr a)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Timestep\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TimestepNodeOp_af59462293088e6859217d6436b929bd3}{}\label{classmarian_1_1TimestepNodeOp_af59462293088e6859217d6436b929bd3}
+
+
+Definition at line 596 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+596                          \{
+597     Shape outShape = a->shape();
+598     outShape.set(2, 1);
+599     outShape.set(3, 1);
+600     \textcolor{keywordflow}{return} outShape;
+601   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d75/classmarian_1_1TimestepNodeOp_af59462293088e6859217d6436b929bd3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}}
+\index{set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{set\+\_\+zero\+\_\+adjoint()}{set_zero_adjoint()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Timestep\+Node\+Op\+::set\+\_\+zero\+\_\+adjoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a41bff17de35cad13c3c9492a862ac944}{}\label{classmarian_1_1TimestepNodeOp_a41bff17de35cad13c3c9492a862ac944}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_ad818ff58b17c5bdcee78c19b9f0df0d6}{marian\+::\+Node}.
+
+
+
+Definition at line 611 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+611 \{ \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{stepNode\_}->set\_zero\_adjoint(); \}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Timestep\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a2624a53aaedf5c6838cab594c2f65229}{}\label{classmarian_1_1TimestepNodeOp_a2624a53aaedf5c6838cab594c2f65229}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 631 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+631 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"step"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!val@{val}}
+\index{val@{val}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{val()}{val()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor}\& marian\+::\+Timestep\+Node\+Op\+::val (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TimestepNodeOp_a9d16e5a4d7b7359c4b4e230500a45343}{}\label{classmarian_1_1TimestepNodeOp_a9d16e5a4d7b7359c4b4e230500a45343}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{marian\+::\+Node}.
+
+
+
+Definition at line 613 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+613                 \{
+614     \textcolor{keyword}{auto} childVal = \hyperlink{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{stepNode\_}->val();
+615     \textcolor{keywordtype}{size\_t} offset = \hyperlink{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{step\_} * \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}().\hyperlink{structmarian_1_1Shape_ac5b429b8024a6de2e2b4c089757f398f}{elements}() * \textcolor{keyword}{sizeof}(float);
+616     \textcolor{keyword}{auto} mem = New<MemoryPiece>(childVal->memory()->data() + offset,
+617                                 childVal->memory()->size());
+618     \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}.reset(\textcolor{keyword}{new} TensorBase(mem, \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}(), childVal->getDevice()));
+619     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_};
+620   \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d75/classmarian_1_1TimestepNodeOp_a9d16e5a4d7b7359c4b4e230500a45343_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!step\+\_\+@{step\+\_\+}}
+\index{step\+\_\+@{step\+\_\+}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{step\+\_\+}{step_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Timestep\+Node\+Op\+::step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}{}\label{classmarian_1_1TimestepNodeOp_a2d925edb9c3a91f3621bb3eec9abb089}
+
+
+Definition at line 586 of file node\+\_\+operators\+\_\+unary.\+h.
+
+\index{marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}!step\+Node\+\_\+@{step\+Node\+\_\+}}
+\index{step\+Node\+\_\+@{step\+Node\+\_\+}!marian\+::\+Timestep\+Node\+Op@{marian\+::\+Timestep\+Node\+Op}}
+\subsubsection[{\texorpdfstring{step\+Node\+\_\+}{stepNode_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Timestep\+Node\+Op\+::step\+Node\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}{}\label{classmarian_1_1TimestepNodeOp_ae2de782a41318926105ad31179d3436f}
+
+
+Definition at line 585 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

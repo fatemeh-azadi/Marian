@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d9e/classamunmt_1_1Vocab">
+<title>amunmt::Vocab class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/dc9/amun_2common_2vocab_8h">&lt;vocab.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Vocab</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dde/classamunmt_1_1Vocab__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Vocab</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d2a/classamunmt_1_1Vocab__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; std::string, size_t &gt;  <link linkend="d4/d9e/classamunmt_1_1Vocab_1aa5df0ddc7a061269c9d22892fa07e060">Str2Id</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; std::string &gt;  <link linkend="d4/d9e/classamunmt_1_1Vocab_1a3cdf2946c36276f80c05e29d601c11fc">Id2Str</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Str2Id str2id_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Id2Str id2str_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d9e/classamunmt_1_1Vocab_1afba1a9cfd5441b9a4455bb69cc656e93">Vocab</link> (
+const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d4/d9e/classamunmt_1_1Vocab_1a18466782bbc9fd453034fa5a58e72be9">operator[]</link> (
+const std::string &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> <link linkend="d4/d9e/classamunmt_1_1Vocab_1a0e6c0ff224b78f0e99b184c9d9432d11">operator()</link> (
+const std::vector&lt; std::string &gt; &amp; lineTokens, bool addEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> <link linkend="d4/d9e/classamunmt_1_1Vocab_1a557548134490b9904832cddecae4c55d">operator()</link> (
+const std::string &amp; line, bool addEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="d4/d9e/classamunmt_1_1Vocab_1ad04a5e797a3e47de9a14a5246eb813db">operator()</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> &amp; sentence, bool ignoreEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string &amp; <link linkend="d4/d9e/classamunmt_1_1Vocab_1abeae26d24cc48fba79af12a0bdfd5f0b">operator[]</link> (
+size_t id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d4/d9e/classamunmt_1_1Vocab_1ae48b739add0c08cb29aeef394641dd4b">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1aa5df0ddc7a061269c9d22892fa07e060">
+                <title>typedef std::map&lt;std::string, size_t&gt; amunmt::Vocab::Str2Id</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1a3cdf2946c36276f80c05e29d601c11fc">
+                <title>typedef std::vector&lt;std::string&gt; amunmt::Vocab::Id2Str</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1afba1a9cfd5441b9a4455bb69cc656e93">
+                <title>amunmt::Vocab::Vocab (const std::string &amp;path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1a18466782bbc9fd453034fa5a58e72be9">
+                <title>size_t amunmt::Vocab::operator[] (const std::string &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1a0e6c0ff224b78f0e99b184c9d9432d11">
+                <title>Words amunmt::Vocab::operator() (const std::vector&lt; std::string &gt; &amp;lineTokens, bool addEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1a557548134490b9904832cddecae4c55d">
+                <title>Words amunmt::Vocab::operator() (const std::string &amp;line, bool addEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1ad04a5e797a3e47de9a14a5246eb813db">
+                <title>std::vector&lt; std::string &gt; amunmt::Vocab::operator() (const Words &amp;sentence, bool ignoreEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1abeae26d24cc48fba79af12a0bdfd5f0b">
+                <title>const std::string &amp; amunmt::Vocab::operator[] (size_t id) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9e/classamunmt_1_1Vocab_1ae48b739add0c08cb29aeef394641dd4b">
+                <title>size_t amunmt::Vocab::size () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

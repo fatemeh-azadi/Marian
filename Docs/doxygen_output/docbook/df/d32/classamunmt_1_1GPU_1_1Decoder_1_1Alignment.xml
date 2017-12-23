@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment">
+<title>amunmt::GPU::Decoder::Alignment class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Decoder::Alignment</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db3/classamunmt_1_1GPU_1_1Decoder_1_1Alignment__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Decoder::Alignment</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d26/classamunmt_1_1GPU_1_1Decoder_1_1Alignment__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Weights</declname>
+        <defname>Weights</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; uint &gt; dBatchMapping_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix SCU_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix A_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Ones_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Sums_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1af47ff2a53bffd4fbba26a3c3947f0163">Alignment</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a1c314472de493ae8cc1b3a4a2946f437">Init</link> (
+const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1aca6a7ea06e3db456c9cf723cb62a975f">GetAlignedSourceContext</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; AlignedSourceContext, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; HiddenState, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths, const std::vector&lt; uint &gt; &amp; beamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1aed7d728b2215ca90b3bdbda2a4eee4b3">GetAttention</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Attention)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a4636a760faa3cfb514d206a5edb753d7">GetAttention</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a027ea50b30f3251069c35ec2ee64b68b">Alignment</link> (
+const <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment">Alignment</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1af47ff2a53bffd4fbba26a3c3947f0163">
+                <title>amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::Alignment (const God &amp;god, const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a1c314472de493ae8cc1b3a4a2946f437">
+                <title>void amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::Init (const mblas::Matrix &amp;SourceContext)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1aca6a7ea06e3db456c9cf723cb62a975f">
+                <title>void amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::GetAlignedSourceContext (mblas::Matrix &amp;AlignedSourceContext, const CellState &amp;HiddenState, const mblas::Matrix &amp;SourceContext, const mblas::IMatrix &amp;sentenceLengths, const std::vector&lt; uint &gt; &amp;beamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1aed7d728b2215ca90b3bdbda2a4eee4b3">
+                <title>void amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::GetAttention (mblas::Matrix &amp;Attention)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a4636a760faa3cfb514d206a5edb753d7">
+                <title>mblas::Matrix&amp; amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::GetAttention ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment_1a027ea50b30f3251069c35ec2ee64b68b">
+                <title>amunmt::GPU::Decoder::Alignment&lt; Weights &gt;::Alignment (const Alignment &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

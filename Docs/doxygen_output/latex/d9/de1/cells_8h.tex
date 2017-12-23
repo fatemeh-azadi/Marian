@@ -1,0 +1,68 @@
+\hypertarget{cells_8h}{}\section{cells.\+h File Reference}
+\label{cells_8h}\index{cells.\+h@{cells.\+h}}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}common/definitions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+operators.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}layers/generic.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rnn/rnn.\+h\char`\"{}}\\*
+Include dependency graph for cells.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d66/cells_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d28/cells_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Tanh}{marian\+::rnn\+::\+Tanh}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1GRU}{marian\+::rnn\+::\+G\+RU}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1FastLSTM}{marian\+::rnn\+::\+Fast\+L\+S\+TM}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1Multiplicative}{marian\+::rnn\+::\+Multiplicative$<$ Cell\+Type $>$}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1SlowLSTM}{marian\+::rnn\+::\+Slow\+L\+S\+TM}
+\item 
+class \hyperlink{classmarian_1_1rnn_1_1TestLSTM}{marian\+::rnn\+::\+Test\+L\+S\+TM}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\item 
+ \hyperlink{namespacemarian_1_1rnn}{marian\+::rnn}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacemarian_1_1rnn_a386737951397fd1835581e82809f052a}{marian\+::rnn\+::\+L\+S\+TM} = Fast\+L\+S\+TM
+\item 
+using \hyperlink{namespacemarian_1_1rnn_a183afd65ecbacf38477504074a793fa8}{marian\+::rnn\+::\+M\+L\+S\+TM} = Multiplicative$<$ L\+S\+TM $>$
+\item 
+using \hyperlink{namespacemarian_1_1rnn_aa3f59f19b6e405cf6f4671cc027fcf7a}{marian\+::rnn\+::\+M\+G\+RU} = Multiplicative$<$ G\+RU $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Expr \hyperlink{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}{marian\+::rnn\+::gru\+Ops} (const std\+::vector$<$ Expr $>$ \&nodes, bool final=false)
+\item 
+Expr \hyperlink{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}{marian\+::rnn\+::lstm\+OpsC} (const std\+::vector$<$ Expr $>$ \&nodes)
+\item 
+Expr \hyperlink{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}{marian\+::rnn\+::lstm\+OpsO} (const std\+::vector$<$ Expr $>$ \&nodes)
+\end{DoxyCompactItemize}

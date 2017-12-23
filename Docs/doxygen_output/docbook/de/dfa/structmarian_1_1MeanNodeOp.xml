@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dfa/structmarian_1_1MeanNodeOp">
+<title>marian::MeanNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MeanNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d0b/structmarian_1_1MeanNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MeanNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/ded/structmarian_1_1MeanNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1ad07d3567d7f72f2feb462a60c5881abd">MeanNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a381e225665df25b105acaab9c60818d3">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a6ea05faab13f92bf40430274016db0f6">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a21514a578bd7952b2d863cd164279baf">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a4d61e4573be915e1d0bbeb463aab54d6">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a695658ac77c947c09a49e8520f8879b3">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="de/dfa/structmarian_1_1MeanNodeOp_1a9cffc1e5e7ccf48c08cba8ec8432bebb">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1ad07d3567d7f72f2feb462a60c5881abd">
+                <title>marian::MeanNodeOp::MeanNodeOp (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a381e225665df25b105acaab9c60818d3">
+                <title>NodeOps marian::MeanNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a6ea05faab13f92bf40430274016db0f6">
+                <title>NodeOps marian::MeanNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a21514a578bd7952b2d863cd164279baf">
+                <title>Shape marian::MeanNodeOp::newShape (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a4d61e4573be915e1d0bbeb463aab54d6">
+                <title>const std::string marian::MeanNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a695658ac77c947c09a49e8520f8879b3">
+                <title>const std::string marian::MeanNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/dfa/structmarian_1_1MeanNodeOp_1a9cffc1e5e7ccf48c08cba8ec8432bebb">
+                <title>virtual size_t marian::MeanNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

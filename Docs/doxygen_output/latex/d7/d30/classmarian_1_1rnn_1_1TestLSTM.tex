@@ -1,0 +1,282 @@
+\hypertarget{classmarian_1_1rnn_1_1TestLSTM}{}\section{marian\+:\+:rnn\+:\+:Test\+L\+S\+TM Class Reference}
+\label{classmarian_1_1rnn_1_1TestLSTM}\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+
+
+{\ttfamily \#include $<$cells.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Test\+L\+S\+TM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/dc5/classmarian_1_1rnn_1_1TestLSTM__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Test\+L\+S\+TM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d10/classmarian_1_1rnn_1_1TestLSTM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1TestLSTM_afd996ed5e9ee36a15247187e3f67fd78}{Test\+L\+S\+TM} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a1e2524b853677d43eb4425d3e0bf9d97}{apply} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f}{apply\+Input} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs)
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae}{apply\+State} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ x\+Ws, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_aea81b51a3f0af12142e2f805d2dfb98b}{U\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42bf53d25a767f033fd0e24309d22c2a}{W\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 565 of file cells.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!Test\+L\+S\+TM@{Test\+L\+S\+TM}}
+\index{Test\+L\+S\+TM@{Test\+L\+S\+TM}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Test\+L\+S\+T\+M(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Options $>$ options)}{TestLSTM(Ptr< ExpressionGraph > graph, Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::\+Test\+L\+S\+TM (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_afd996ed5e9ee36a15247187e3f67fd78}{}\label{classmarian_1_1rnn_1_1TestLSTM_afd996ed5e9ee36a15247187e3f67fd78}
+
+
+Definition at line 570 of file cells.\+h.
+
+
+\begin{DoxyCode}
+571       : \hyperlink{classmarian_1_1rnn_1_1Cell_acc392c8adfb002c17993f02e6d3085a6}{Cell}(options) \{
+572 
+573     \textcolor{keywordtype}{int} dimInput = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimInput"});
+574     \textcolor{keywordtype}{int} dimState = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimState"});
+575     std::string \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{prefix} = options->get<std::string>(\textcolor{stringliteral}{"prefix"});
+576 
+577     \textcolor{keyword}{auto} Uf = graph->param(prefix + \textcolor{stringliteral}{"\_Uf"}, \{dimState, dimState\},
+578                        \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init}=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+579     \textcolor{keyword}{auto} Wf = graph->param(prefix + \textcolor{stringliteral}{"\_Wf"}, \{dimInput, dimState\},
+580                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+581     \textcolor{keyword}{auto} bf = graph->param(prefix + \textcolor{stringliteral}{"\_bf"}, \{1, dimState\},
+582                        keywords::init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+583 
+584     \textcolor{keyword}{auto} Ui = graph->param(prefix + \textcolor{stringliteral}{"\_Ui"}, \{dimState, dimState\},
+585                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+586     \textcolor{keyword}{auto} Wi = graph->param(prefix + \textcolor{stringliteral}{"\_Wi"}, \{dimInput, dimState\},
+587                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+588     \textcolor{keyword}{auto} bi = graph->param(prefix + \textcolor{stringliteral}{"\_bi"}, \{1, dimState\},
+589                        keywords::init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+590 
+591     \textcolor{keyword}{auto} Uc = graph->param(prefix + \textcolor{stringliteral}{"\_Uc"}, \{dimState, dimState\},
+592                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+593     \textcolor{keyword}{auto} Wc = graph->param(prefix + \textcolor{stringliteral}{"\_Wc"}, \{dimInput, dimState\},
+594                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+595     \textcolor{keyword}{auto} bc = graph->param(prefix + \textcolor{stringliteral}{"\_bc"}, \{1, dimState\},
+596                        keywords::init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+597 
+598     \textcolor{keyword}{auto} Uo = graph->param(prefix + \textcolor{stringliteral}{"\_Uo"}, \{dimState, dimState\},
+599                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+600     \textcolor{keyword}{auto} Wo = graph->param(prefix + \textcolor{stringliteral}{"\_Wo"}, \{dimInput, dimState\},
+601                        keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+602     \textcolor{keyword}{auto} bo = graph->param(prefix + \textcolor{stringliteral}{"\_bo"}, \{1, dimState\},
+603                        keywords::init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+604 
+605     \hyperlink{classmarian_1_1rnn_1_1TestLSTM_aea81b51a3f0af12142e2f805d2dfb98b}{U\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{Uf, Ui, Uc, Uo\}, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+606     \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42bf53d25a767f033fd0e24309d22c2a}{W\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{Wf, Wi, Wc, Wo\}, keywords::axis = 1);
+607     \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{bf, bi, bc, bo\}, keywords::axis = 1);
+608 
+609   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d7/d30/classmarian_1_1rnn_1_1TestLSTM_afd996ed5e9ee36a15247187e3f67fd78_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!apply@{apply}}
+\index{apply@{apply}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{apply(std\+::vector$<$ Expr $>$ inputs, State state, Expr mask=nullptr)}{apply(std::vector< Expr > inputs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::apply (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_a1e2524b853677d43eb4425d3e0bf9d97}{}\label{classmarian_1_1rnn_1_1TestLSTM_a1e2524b853677d43eb4425d3e0bf9d97}
+
+
+Definition at line 611 of file cells.\+h.
+
+
+\begin{DoxyCode}
+613                                       \{
+614     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae}{applyState}(\hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f}{applyInput}(inputs), state, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+615   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d30/classmarian_1_1rnn_1_1TestLSTM_a1e2524b853677d43eb4425d3e0bf9d97_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!apply\+Input@{apply\+Input}}
+\index{apply\+Input@{apply\+Input}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{apply\+Input(std\+::vector$<$ Expr $>$ inputs)}{applyInput(std::vector< Expr > inputs)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::apply\+Input (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f}{}\label{classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}{marian\+::rnn\+::\+Cell}.
+
+
+
+Definition at line 617 of file cells.\+h.
+
+
+\begin{DoxyCode}
+617                                                      \{
+618     UTIL\_THROW\_IF2(inputs.empty(), \textcolor{stringliteral}{"Test LSTM expects input"});
+619 
+620     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input;
+621     \textcolor{keywordflow}{if}(inputs.size() > 1)
+622       input = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(inputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+623     \textcolor{keywordflow}{else}
+624       input = inputs.front();
+625 
+626     \textcolor{keyword}{auto} xW = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(input, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42bf53d25a767f033fd0e24309d22c2a}{W\_});
+627 
+628     \textcolor{keywordflow}{return} \{xW\};
+629   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d7/d30/classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!apply\+State@{apply\+State}}
+\index{apply\+State@{apply\+State}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{apply\+State(std\+::vector$<$ Expr $>$ x\+Ws, State state, Expr mask=nullptr)}{applyState(std::vector< Expr > xWs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::apply\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{x\+Ws, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae}{}\label{classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}{marian\+::rnn\+::\+Cell}.
+
+
+
+Definition at line 631 of file cells.\+h.
+
+
+\begin{DoxyCode}
+633                                            \{
+634 
+635     \textcolor{keyword}{auto} recState = state.output;
+636     \textcolor{keyword}{auto} cellState = state.cell;
+637 
+638     \textcolor{keyword}{auto} sU = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(recState, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_aea81b51a3f0af12142e2f805d2dfb98b}{U\_});
+639 
+640     \textcolor{keyword}{auto} xW = xWs.front();
+641 
+642     \textcolor{comment}{// dc/dp where p = W\_i, U\_i, ..., but without index o}
+643     \textcolor{keyword}{auto} nextCellState = \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} ?
+644       \hyperlink{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}{lstmOpsC}(\{cellState, xW, sU, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\_}, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}\}) :
+645       \hyperlink{namespacemarian_1_1rnn_a0704350093b1deda5d7b5aaef99a9c71}{lstmOpsC}(\{cellState, xW, sU, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\_}\});
+646 
+647     \textcolor{comment}{// dh/dp dh/dc where p = W\_o, U\_o, b\_o}
+648     \textcolor{keyword}{auto} nextRecState = \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} ?
+649       \hyperlink{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}{lstmOpsO}(\{nextCellState, xW, sU, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\_}, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}\}) :
+650       \hyperlink{namespacemarian_1_1rnn_a8ab210a35f8c3fa6c4872689ec45295e}{lstmOpsO}(\{nextCellState, xW, sU, \hyperlink{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{b\_}\});
+651 
+652     \textcolor{keywordflow}{return} \{nextRecState, nextCellState\};
+653   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d7/d30/classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!b\+\_\+@{b\+\_\+}}
+\index{b\+\_\+@{b\+\_\+}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{b\+\_\+}{b_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::b\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}{}\label{classmarian_1_1rnn_1_1TestLSTM_a42841212d517619b37559870c0d65ed1}
+
+
+Definition at line 567 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!U\+\_\+@{U\+\_\+}}
+\index{U\+\_\+@{U\+\_\+}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{U\+\_\+}{U_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::\+U\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_aea81b51a3f0af12142e2f805d2dfb98b}{}\label{classmarian_1_1rnn_1_1TestLSTM_aea81b51a3f0af12142e2f805d2dfb98b}
+
+
+Definition at line 567 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}!W\+\_\+@{W\+\_\+}}
+\index{W\+\_\+@{W\+\_\+}!marian\+::rnn\+::\+Test\+L\+S\+TM@{marian\+::rnn\+::\+Test\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{W\+\_\+}{W_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Test\+L\+S\+T\+M\+::\+W\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1TestLSTM_a42bf53d25a767f033fd0e24309d22c2a}{}\label{classmarian_1_1rnn_1_1TestLSTM_a42bf53d25a767f033fd0e24309d22c2a}
+
+
+Definition at line 567 of file cells.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cells_8h}{cells.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights">
+<title>amunmt::GPU::Weights struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d2c/amun_2gpu_2dl4mt_2model_8h">&lt;model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Weights</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d23/structamunmt_1_1GPU_1_1Weights__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Weights</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dcd/structamunmt_1_1GPU_1_1Weights__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment">amunmt::GPU::Weights::DecAlignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings">amunmt::GPU::Weights::DecEmbeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d47/structamunmt_1_1GPU_1_1Weights_1_1DecGRU1">amunmt::GPU::Weights::DecGRU1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/df4/structamunmt_1_1GPU_1_1Weights_1_1DecGRU2">amunmt::GPU::Weights::DecGRU2</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db1/structamunmt_1_1GPU_1_1Weights_1_1DecInit">amunmt::GPU::Weights::DecInit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/dbb/structamunmt_1_1GPU_1_1Weights_1_1DecLSTM1">amunmt::GPU::Weights::DecLSTM1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dac/structamunmt_1_1GPU_1_1Weights_1_1DecLSTM2">amunmt::GPU::Weights::DecLSTM2</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d14/structamunmt_1_1GPU_1_1Weights_1_1DecSoftmax">amunmt::GPU::Weights::DecSoftmax</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d57/structamunmt_1_1GPU_1_1Weights_1_1EncBackwardGRU">amunmt::GPU::Weights::EncBackwardGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d39/structamunmt_1_1GPU_1_1Weights_1_1EncBackwardLSTM">amunmt::GPU::Weights::EncBackwardLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d6b/structamunmt_1_1GPU_1_1Weights_1_1EncEmbeddings">amunmt::GPU::Weights::EncEmbeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dd6/structamunmt_1_1GPU_1_1Weights_1_1EncForwardGRU">amunmt::GPU::Weights::EncForwardGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/db2/structamunmt_1_1GPU_1_1Weights_1_1EncForwardLSTM">amunmt::GPU::Weights::EncForwardLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights">amunmt::GPU::Weights::MultWeights</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const EncEmbeddings encEmbeddings_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const DecEmbeddings decEmbeddings_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; EncForwardGRU &gt; encForwardGRU_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; EncBackwardGRU &gt; encBackwardGRU_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; EncForwardLSTM &gt; encForwardLSTM_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; EncBackwardLSTM &gt; encBackwardLSTM_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; MultWeights&lt; EncForwardLSTM &gt; &gt; encForwardMLSTM_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; MultWeights&lt; EncBackwardLSTM &gt; &gt; encBackwardMLSTM_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const DecInit decInit_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; DecGRU1 &gt; decGru1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; DecGRU2 &gt; decGru2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; DecLSTM1 &gt; decLSTM1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; DecLSTM2 &gt; decLSTM2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; MultWeights&lt; DecLSTM1 &gt; &gt; decMLSTM1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; MultWeights&lt; DecLSTM2 &gt; &gt; decMLSTM2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const DecAlignment decAlignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const DecSoftmax decSoftmax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1a360340474fc01e6f9e0f1eb5e97dce77">Weights</link> (
+const std::string &amp; npzFile, const YAML::Node &amp; config, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1a17cf38fe88d08d6b5fbae781a722f33c">Weights</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, const YAML::Node &amp; config, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1a99568f81de9438196644923b9b0403b4">Weights</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1abfe1c75646d906c8297a7dd8b7cd89a8">GetDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1a0c173121920f426f51efddb518f92650">initEncForward</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, std::string celltype)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1adfb2ca7faf26debdbbad12e2b5957bd4">initEncBackward</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, std::string celltype)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1aa83a05e029a0f893b62dd3854474e144">initDec1</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, std::string celltype)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights_1ae0137c30edfe7541a35a09907ecbb76a">initDec2</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, std::string celltype)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1a360340474fc01e6f9e0f1eb5e97dce77">
+                <title>amunmt::GPU::Weights::Weights (const std::string &amp;npzFile, const YAML::Node &amp;config, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1a17cf38fe88d08d6b5fbae781a722f33c">
+                <title>amunmt::GPU::Weights::Weights (const NpzConverter &amp;model, const YAML::Node &amp;config, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1a99568f81de9438196644923b9b0403b4">
+                <title>amunmt::GPU::Weights::Weights (const Weights &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1abfe1c75646d906c8297a7dd8b7cd89a8">
+                <title>size_t amunmt::GPU::Weights::GetDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1a0c173121920f426f51efddb518f92650">
+                <title>void amunmt::GPU::Weights::initEncForward (const NpzConverter &amp;model, std::string celltype)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1adfb2ca7faf26debdbbad12e2b5957bd4">
+                <title>void amunmt::GPU::Weights::initEncBackward (const NpzConverter &amp;model, std::string celltype)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1aa83a05e029a0f893b62dd3854474e144">
+                <title>void amunmt::GPU::Weights::initDec1 (const NpzConverter &amp;model, std::string celltype)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dce/structamunmt_1_1GPU_1_1Weights_1ae0137c30edfe7541a35a09907ecbb76a">
+                <title>void amunmt::GPU::Weights::initDec2 (const NpzConverter &amp;model, std::string celltype)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

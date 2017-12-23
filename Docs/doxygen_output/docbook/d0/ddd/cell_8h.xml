@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/ddd/cell_8h">
+    <title>cell.h File Reference</title>
+    <programlisting>#include &quot;gpu/mblas/matrix_functions.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix_wrapper.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/handles.h&quot;</programlisting>
+    <programlisting>#include &quot;cellstate.h&quot;</programlisting>
+<para>Include dependency diagram for cell.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/df1/cell_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cell.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d7e/cell_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">amunmt::GPU::CellLength</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">amunmt::GPU::Cell</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file cell.h</para>
+    </simplesect>
+</section>

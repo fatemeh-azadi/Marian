@@ -1,0 +1,242 @@
+\hypertarget{classDeviceCPU}{}\section{Device\+C\+PU Class Reference}
+\label{classDeviceCPU}\index{Device\+C\+PU@{Device\+C\+PU}}
+
+
+Collaboration diagram for Device\+C\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{db/d96/classDeviceCPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDeviceCPU_acc3a2e8a88179459a4a46d0372deb4b4}{Device\+C\+PU} (size\+\_\+t device, size\+\_\+t alignment=256)
+\item 
+\hyperlink{classDeviceCPU_a19924f8ccde58531dd6e2e1b2c63948c}{$\sim$\+Device\+C\+PU} ()
+\item 
+size\+\_\+t \hyperlink{classDeviceCPU_a645be50c4147bf92c0f3bb3b1f5dc19e}{align} (size\+\_\+t \hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size})
+\item 
+void \hyperlink{classDeviceCPU_ad86a817a1e6d8e56ce39ceaf0c61ba27}{reserve} (size\+\_\+t \hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size})
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classDeviceCPU_a403496227a13cdd58b4ecbb4b11cc802}{data} ()
+\item 
+size\+\_\+t \hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size} ()
+\item 
+size\+\_\+t \hyperlink{classDeviceCPU_a7b66f203a6bef405b888ec808381d41f}{get\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}{alignment\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file allocator\+\_\+test.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Device\+C\+PU@{Device\+C\+PU}!Device\+C\+PU@{Device\+C\+PU}}
+\index{Device\+C\+PU@{Device\+C\+PU}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{Device\+C\+P\+U(size\+\_\+t device, size\+\_\+t alignment=256)}{DeviceCPU(size_t device, size_t alignment=256)}}]{\setlength{\rightskip}{0pt plus 5cm}Device\+C\+P\+U\+::\+Device\+C\+PU (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device, }
+\item[{size\+\_\+t}]{alignment = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_acc3a2e8a88179459a4a46d0372deb4b4}{}\label{classDeviceCPU_acc3a2e8a88179459a4a46d0372deb4b4}
+
+
+Definition at line 17 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+18    : \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}(0), \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}(0), \hyperlink{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}{alignment\_}(alignment) \{\}
+\end{DoxyCode}
+\index{Device\+C\+PU@{Device\+C\+PU}!````~Device\+C\+PU@{$\sim$\+Device\+C\+PU}}
+\index{````~Device\+C\+PU@{$\sim$\+Device\+C\+PU}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device\+C\+P\+U()}{~DeviceCPU()}}]{\setlength{\rightskip}{0pt plus 5cm}Device\+C\+P\+U\+::$\sim$\+Device\+C\+PU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_a19924f8ccde58531dd6e2e1b2c63948c}{}\label{classDeviceCPU_a19924f8ccde58531dd6e2e1b2c63948c}
+
+
+Definition at line 20 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+20 \{ \textcolor{keyword}{delete}[] \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Device\+C\+PU@{Device\+C\+PU}!align@{align}}
+\index{align@{align}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{align(size\+\_\+t size)}{align(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Device\+C\+P\+U\+::align (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_a645be50c4147bf92c0f3bb3b1f5dc19e}{}\label{classDeviceCPU_a645be50c4147bf92c0f3bb3b1f5dc19e}
+
+
+Definition at line 22 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+22                             \{
+23     \textcolor{keywordflow}{return} ceil(\hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size} / (\textcolor{keywordtype}{float})\hyperlink{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}{alignment\_}) * \hyperlink{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}{alignment\_};
+24   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d2/d16/classDeviceCPU_a645be50c4147bf92c0f3bb3b1f5dc19e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\+C\+PU@{Device\+C\+PU}!data@{data}}
+\index{data@{data}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ Device\+C\+P\+U\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_a403496227a13cdd58b4ecbb4b11cc802}{}\label{classDeviceCPU_a403496227a13cdd58b4ecbb4b11cc802}
+
+
+Definition at line 46 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+46 \{ \textcolor{keywordflow}{return} \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}; \}
+\end{DoxyCode}
+\index{Device\+C\+PU@{Device\+C\+PU}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Device\+C\+P\+U\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_a7b66f203a6bef405b888ec808381d41f}{}\label{classDeviceCPU_a7b66f203a6bef405b888ec808381d41f}
+
+
+Definition at line 50 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+50 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\index{Device\+C\+PU@{Device\+C\+PU}!reserve@{reserve}}
+\index{reserve@{reserve}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t size)}{reserve(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Device\+C\+P\+U\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_ad86a817a1e6d8e56ce39ceaf0c61ba27}{}\label{classDeviceCPU_ad86a817a1e6d8e56ce39ceaf0c61ba27}
+
+
+Definition at line 26 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+26                             \{
+27     \hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size} = \hyperlink{classDeviceCPU_a645be50c4147bf92c0f3bb3b1f5dc19e}{align}(\hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size});
+28     UTIL\_THROW\_IF2(\hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size} < \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}, \textcolor{stringliteral}{"New size must be larger than old size"});
+29 
+30     \textcolor{keywordflow}{if}(\hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}) \{
+31       \textcolor{comment}{// Allocate memory by going through host memory}
+32       uint8\_t *temp = \textcolor{keyword}{new} uint8\_t[\hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}];
+33       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(\hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}, \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_} + \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}, temp);
+34       std::fill(\hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_}, \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_} + \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}, 0);
+35       \textcolor{keyword}{delete}[] \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_};
+36       \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_} = \textcolor{keyword}{new} uint8\_t[\hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size}];
+37       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(temp, temp + \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}, \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_});
+38       \textcolor{keyword}{delete}[] temp;
+39     \} \textcolor{keywordflow}{else} \{
+40       \hyperlink{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{data\_} = \textcolor{keyword}{new} uint8\_t[\hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size}];
+41     \}
+42 
+43     \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_} = \hyperlink{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{size};
+44   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d16/classDeviceCPU_ad86a817a1e6d8e56ce39ceaf0c61ba27_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\+C\+PU@{Device\+C\+PU}!size@{size}}
+\index{size@{size}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Device\+C\+P\+U\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}{}\label{classDeviceCPU_a7d0c88aa549974bb767c40d21b990167}
+
+
+Definition at line 48 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+48 \{ \textcolor{keywordflow}{return} \hyperlink{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{size\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{d2/d16/classDeviceCPU_a7d0c88aa549974bb767c40d21b990167_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Device\+C\+PU@{Device\+C\+PU}!alignment\+\_\+@{alignment\+\_\+}}
+\index{alignment\+\_\+@{alignment\+\_\+}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{alignment\+\_\+}{alignment_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Device\+C\+P\+U\+::alignment\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}{}\label{classDeviceCPU_a933ca67a884aa78d97d535ac519dbb21}
+
+
+Definition at line 14 of file allocator\+\_\+test.\+cpp.
+
+\index{Device\+C\+PU@{Device\+C\+PU}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ Device\+C\+P\+U\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}{}\label{classDeviceCPU_a90432e8ebf17e7b2eb184a47bee74bf5}
+
+
+Definition at line 12 of file allocator\+\_\+test.\+cpp.
+
+\index{Device\+C\+PU@{Device\+C\+PU}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!Device\+C\+PU@{Device\+C\+PU}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Device\+C\+P\+U\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}{}\label{classDeviceCPU_a6e8ad38cd656798fa20752238dcd1c83}
+
+
+Definition at line 13 of file allocator\+\_\+test.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{allocator__test_8cpp}{allocator\+\_\+test.\+cpp}\end{DoxyCompactItemize}

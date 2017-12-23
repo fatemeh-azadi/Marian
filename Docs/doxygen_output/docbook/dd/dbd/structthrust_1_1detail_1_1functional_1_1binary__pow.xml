@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dbd/structthrust_1_1detail_1_1functional_1_1binary__pow">
+<title>thrust::detail::functional::binary_pow struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dde/marian_2src_2kernels_2thrust__functions_8h">&lt;thrust_functions.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for thrust::detail::functional::binary_pow</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dec/structthrust_1_1detail_1_1functional_1_1binary__pow__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for thrust::detail::functional::binary_pow</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d38/structthrust_1_1detail_1_1functional_1_1binary__pow__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ T <link linkend="dd/dbd/structthrust_1_1detail_1_1functional_1_1binary__pow_1a94eb06171d280e4b64a1483e5332dd87">operator()</link> (
+const T &amp; x, const T &amp; y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dd/dbd/structthrust_1_1detail_1_1functional_1_1binary__pow_1a94eb06171d280e4b64a1483e5332dd87">
+                <title>__host__ __device__ T thrust::detail::functional::binary_pow&lt; T &gt;::operator() (const T &amp;x, const T &amp;y) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

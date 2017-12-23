@@ -1,0 +1,64 @@
+\hypertarget{structthrust_1_1detail_1_1functional_1_1unary__logit}{}\section{thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+logit$<$ T $>$ Struct Template Reference}
+\label{structthrust_1_1detail_1_1functional_1_1unary__logit}\index{thrust\+::detail\+::functional\+::unary\+\_\+logit$<$ T $>$@{thrust\+::detail\+::functional\+::unary\+\_\+logit$<$ T $>$}}
+
+
+{\ttfamily \#include $<$thrust\+\_\+functions.\+h$>$}
+
+
+
+Inheritance diagram for thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+logit$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{df/d4f/structthrust_1_1detail_1_1functional_1_1unary__logit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for thrust\+:\+:detail\+:\+:functional\+:\+:unary\+\_\+logit$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{dc/dd2/structthrust_1_1detail_1_1functional_1_1unary__logit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__logit_a8de2bf134020649c943862533931057c}{operator()} (const T \&x) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct thrust\+::detail\+::functional\+::unary\+\_\+logit$<$ T $>$}
+
+
+
+Definition at line 43 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{thrust\+::detail\+::functional\+::unary\+\_\+logit@{thrust\+::detail\+::functional\+::unary\+\_\+logit}!operator()@{operator()}}
+\index{operator()@{operator()}!thrust\+::detail\+::functional\+::unary\+\_\+logit@{thrust\+::detail\+::functional\+::unary\+\_\+logit}}
+\subsubsection[{\texorpdfstring{operator()(const T \&x) const }{operator()(const T &x) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T {\bf thrust\+::detail\+::functional\+::unary\+\_\+logit}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structthrust_1_1detail_1_1functional_1_1unary__logit_a8de2bf134020649c943862533931057c}{}\label{structthrust_1_1detail_1_1functional_1_1unary__logit_a8de2bf134020649c943862533931057c}
+
+
+Definition at line 45 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+45 \{ \textcolor{keywordflow}{return} 1.0 / (1.0 + expf(-x)); \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2gpu_2mblas_2thrust__functions_8h}{amun/gpu/mblas/thrust\+\_\+functions.\+h}\end{DoxyCompactItemize}

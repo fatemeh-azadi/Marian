@@ -1,0 +1,46 @@
+\hypertarget{nth__element__kernels_8h}{}\section{nth\+\_\+element\+\_\+kernels.\+h File Reference}
+\label{nth__element__kernels_8h}\index{nth\+\_\+element\+\_\+kernels.\+h@{nth\+\_\+element\+\_\+kernels.\+h}}
+{\ttfamily \#include \char`\"{}matrix\+\_\+wrapper.\+h\char`\"{}}\\*
+Include dependency graph for nth\+\_\+element\+\_\+kernels.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/df0/nth__element__kernels_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d51/nth__element__kernels_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1NthOut}{amunmt\+::\+G\+P\+U\+::\+Nth\+Out}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU}{amunmt\+::\+G\+PU}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{namespaceamunmt_1_1GPU_a85a2c70f9666759dd9db598bfcd51bab}{amunmt\+::\+G\+P\+U\+::operator$<$$<$} (std\+::ostream \&out, const Nth\+Out \&obj)
+\item 
+std\+::ostream \& \hyperlink{namespaceamunmt_1_1GPU_aa3a73ca48e972648baa9d227e8e97da9}{amunmt\+::\+G\+P\+U\+::operator$<$$<$} (std\+::ostream \&out, const Nth\+Out\+Batch \&obj)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_acf0906d22f8965ad5160853abf94b437}{amunmt\+::\+G\+P\+U\+::g\+Max\+Element} (mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ out, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ probs\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ batch\+Position\+Wrap, uint num\+Batches)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_a51fe7e37c1246d7a4e6fff93ac7e079c}{amunmt\+::\+G\+P\+U\+::g\+Max\+Element\+Update} (mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ out, mblas\+::\+Matrix\+Wrapper$<$ float $>$ probs\+Wrap, mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ res\+New\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ batch\+Position\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ cum\+Beam\+Sizes\+Wrap, uint num\+Blocks)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_a2b768df4c05b3d5f4c1894cbb56c8d05}{amunmt\+::\+G\+P\+U\+::g\+Get\+Value\+By\+Key} (mblas\+::\+Matrix\+Wrapper$<$ float $>$ out, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ in, uint $\ast$indices, uint n)
+\end{DoxyCompactItemize}

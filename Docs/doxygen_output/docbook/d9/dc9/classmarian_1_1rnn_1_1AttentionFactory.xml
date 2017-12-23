@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory">
+<title>marian::rnn::AttentionFactory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d3a/rnn_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::AttentionFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d19/classmarian_1_1rnn_1_1AttentionFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::AttentionFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d34/classmarian_1_1rnn_1_1AttentionFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; EncoderState &gt; state_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ac29b6943ef7485c30662265deb36fef1">AttentionFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/d5d/classmarian_1_1rnn_1_1CellInput">CellInput</link> &gt; <link linkend="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ad40def6ee2a38873a116fd80dd4916f1">construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory">AttentionFactory</link> &gt; <link linkend="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1abcd9aae6d8cbe7c73c8b0d1598372312">set_state</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ace65b44df01b174a1d730bdd7db36d60">dimAttended</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ac29b6943ef7485c30662265deb36fef1">
+                <title>marian::rnn::AttentionFactory::AttentionFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ad40def6ee2a38873a116fd80dd4916f1">
+                <title>Ptr&lt;CellInput&gt; marian::rnn::AttentionFactory::construct ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1abcd9aae6d8cbe7c73c8b0d1598372312">
+                <title>Accumulator&lt;AttentionFactory&gt; marian::rnn::AttentionFactory::set_state (Ptr&lt; EncoderState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dc9/classmarian_1_1rnn_1_1AttentionFactory_1ace65b44df01b174a1d730bdd7db36d60">
+                <title>int marian::rnn::AttentionFactory::dimAttended ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

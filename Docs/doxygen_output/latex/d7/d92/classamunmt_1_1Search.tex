@@ -1,0 +1,477 @@
+\hypertarget{classamunmt_1_1Search}{}\section{amunmt\+:\+:Search Class Reference}
+\label{classamunmt_1_1Search}\index{amunmt\+::\+Search@{amunmt\+::\+Search}}
+
+
+{\ttfamily \#include $<$search.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classamunmt_1_1Search__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Search_a53c2b92efabd8d05077a4b8edd7ffba3}{Search} (const \hyperlink{classamunmt_1_1God}{God} \&god)
+\item 
+virtual \hyperlink{classamunmt_1_1Search_a0e03aa98be68900afc313ff9a8ead751}{$\sim$\+Search} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Histories}{Histories} $>$ \hyperlink{classamunmt_1_1Search_a8a55a67dbc9dab24441767d7b2066b9a}{Translate} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&sentences)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} \hyperlink{classamunmt_1_1Search_a1cd54cd91f09de25de5967d0704dc77d}{New\+States} () const 
+\item 
+void \hyperlink{classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06}{Filter\+Target\+Vocab} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&sentences)
+\item 
+\hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} \hyperlink{classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a}{Encode} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&sentences)
+\item 
+void \hyperlink{classamunmt_1_1Search_acdf0343e135ef26bf53ebb9389b379f6}{Clean\+After\+Translation} ()
+\item 
+bool \hyperlink{classamunmt_1_1Search_a80d628a5581c65ebe73fe0b941497eba}{Calc\+Beam} (std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Histories}{Histories} $>$ \&histories, std\+::vector$<$ uint $>$ \&beam\+Sizes, \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&prev\+Hyps, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} \&states, \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} \&next\+States)
+\item 
+\hyperlink{classamunmt_1_1Search_a4c25f77fc140b60ce1b2b847478b58ed}{Search} (const \hyperlink{classamunmt_1_1Search}{Search} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{device\+Info\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr} $>$ \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ const \hyperlink{classamunmt_1_1Filter}{Filter} $>$ \hyperlink{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}{filter\+\_\+}
+\item 
+const size\+\_\+t \hyperlink{classamunmt_1_1Search_ab06351b3fe1ae98f6b839bb088f59ea9}{max\+Beam\+Size\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1Search_a5eecaafd5f951a216e0a4e1873c0b392}{normalize\+Score\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \hyperlink{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}{filter\+Indices\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_a4a9522da34de52554ec07cedc30361b8}{Best\+Hyps\+Base\+Ptr} \hyperlink{classamunmt_1_1Search_a1454a9ba53f206b38f21111b9ad67bc3}{best\+Hyps\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file search.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Search@{Search}}
+\index{Search@{Search}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Search(const God \&god)}{Search(const God &god)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Search\+::\+Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Search_a53c2b92efabd8d05077a4b8edd7ffba3}{}\label{classamunmt_1_1Search_a53c2b92efabd8d05077a4b8edd7ffba3}
+
+
+Definition at line 18 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+19   : \hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{deviceInfo\_}(god.GetNextDevice()),
+20     \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}(god.GetScorers(\hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{deviceInfo\_})),
+21     \hyperlink{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}{filter\_}(god.GetFilter()),
+22     \hyperlink{classamunmt_1_1Search_ab06351b3fe1ae98f6b839bb088f59ea9}{maxBeamSize\_}(god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"beam-size"})),
+23     \hyperlink{classamunmt_1_1Search_a5eecaafd5f951a216e0a4e1873c0b392}{normalizeScore\_}(god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"normalize"})),
+24     \hyperlink{classamunmt_1_1Search_a1454a9ba53f206b38f21111b9ad67bc3}{bestHyps\_}(god.GetBestHyps(\hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{deviceInfo\_}))
+25 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!````~Search@{$\sim$\+Search}}
+\index{````~Search@{$\sim$\+Search}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{$\sim$\+Search()}{~Search()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Search\+::$\sim$\+Search (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1Search_a0e03aa98be68900afc313ff9a8ead751}{}\label{classamunmt_1_1Search_a0e03aa98be68900afc313ff9a8ead751}
+
+
+Definition at line 28 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+28                 \{
+29 \textcolor{preprocessor}{#ifdef CUDA}
+30   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{deviceInfo\_}.\hyperlink{structamunmt_1_1DeviceInfo_a31a1a7886be3f6468888584ae87332d9}{deviceType} == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice}) \{
+31     cudaSetDevice(\hyperlink{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{deviceInfo\_}.\hyperlink{structamunmt_1_1DeviceInfo_a20495d767d88f5eeebb3f036503034e7}{deviceId});
+32   \}
+33 \textcolor{preprocessor}{#endif}
+34 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Search@{Search}}
+\index{Search@{Search}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Search(const Search \&)=delete}{Search(const Search &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Search\+::\+Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf Search} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1Search_a4c25f77fc140b60ce1b2b847478b58ed}{}\label{classamunmt_1_1Search_a4c25f77fc140b60ce1b2b847478b58ed}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Calc\+Beam@{Calc\+Beam}}
+\index{Calc\+Beam@{Calc\+Beam}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Calc\+Beam(std\+::shared\+\_\+ptr$<$ Histories $>$ \&histories, std\+::vector$<$ uint $>$ \&beam\+Sizes, Beam \&prev\+Hyps, States \&states, States \&next\+States)}{CalcBeam(std::shared_ptr< Histories > &histories, std::vector< uint > &beamSizes, Beam &prevHyps, States &states, States &nextStates)}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Search\+::\+Calc\+Beam (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Histories} $>$ \&}]{histories, }
+\item[{std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{{\bf Beam} \&}]{prev\+Hyps, }
+\item[{{\bf States} \&}]{states, }
+\item[{{\bf States} \&}]{next\+States}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a80d628a5581c65ebe73fe0b941497eba}{}\label{classamunmt_1_1Search_a80d628a5581c65ebe73fe0b941497eba}
+
+
+Definition at line 92 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+98 \{
+99     \textcolor{keywordtype}{size\_t} batchSize = beamSizes.size();
+100     \hyperlink{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}{Beams} beams(batchSize);
+101     \hyperlink{classamunmt_1_1Search_a1454a9ba53f206b38f21111b9ad67bc3}{bestHyps\_}->CalcBeam(prevHyps, \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}, \hyperlink{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}{filterIndices\_}, beams, beamSizes
+      );
+102     histories->Add(beams);
+103 
+104     \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} survivors;
+105     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} batchId = 0; batchId < batchSize; ++batchId) \{
+106       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& h : beams[batchId]) \{
+107         \textcolor{keywordflow}{if} (h->GetWord() != \hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{EOS\_ID}) \{
+108           survivors.push\_back(h);
+109         \} \textcolor{keywordflow}{else} \{
+110           --beamSizes[batchId];
+111         \}
+112       \}
+113     \}
+114 
+115     \textcolor{keywordflow}{if} (survivors.size() == 0) \{
+116       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+117     \}
+118 
+119     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}.size(); i++) \{
+120       \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}[i]->AssembleBeamState(*nextStates[i], survivors, *states[i]);
+121     \}
+122 
+123     prevHyps.swap(survivors);
+124     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+125 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_a80d628a5581c65ebe73fe0b941497eba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Clean\+After\+Translation@{Clean\+After\+Translation}}
+\index{Clean\+After\+Translation@{Clean\+After\+Translation}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Clean\+After\+Translation()}{CleanAfterTranslation()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Search\+::\+Clean\+After\+Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_acdf0343e135ef26bf53ebb9389b379f6}{}\label{classamunmt_1_1Search_acdf0343e135ef26bf53ebb9389b379f6}
+
+
+Definition at line 36 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+37 \{
+38   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} scorer : \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}) \{
+39     scorer->CleanUpAfterSentence();
+40   \}
+41 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_acdf0343e135ef26bf53ebb9389b379f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Encode@{Encode}}
+\index{Encode@{Encode}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Encode(const Sentences \&sentences)}{Encode(const Sentences &sentences)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf States} amunmt\+::\+Search\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{sentences}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a}{}\label{classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a}
+
+
+Definition at line 81 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+81                                                 \{
+82   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} states;
+83   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& scorer : \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}) \{
+84     scorer->Encode(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences});
+85     \textcolor{keyword}{auto} state = scorer->NewState();
+86     scorer->BeginSentenceState(*state, \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.size());
+87     states.emplace\_back(state);
+88   \}
+89   \textcolor{keywordflow}{return} states;
+90 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Filter\+Target\+Vocab@{Filter\+Target\+Vocab}}
+\index{Filter\+Target\+Vocab@{Filter\+Target\+Vocab}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Filter\+Target\+Vocab(const Sentences \&sentences)}{FilterTargetVocab(const Sentences &sentences)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Search\+::\+Filter\+Target\+Vocab (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{sentences}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06}{}\label{classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06}
+
+
+Definition at line 136 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+136                                                          \{
+137   \textcolor{keywordtype}{size\_t} vocabSize = \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}[0]->GetVocabSize();
+138   std::set<Word> srcWords;
+139   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.size(); ++i) \{
+140     \textcolor{keyword}{const} Sentence& sentence = *\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.at(i);
+141     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& srcWord : sentence.GetWords()) \{
+142       srcWords.insert(srcWord);
+143     \}
+144   \}
+145 
+146   \hyperlink{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}{filterIndices\_} = \hyperlink{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}{filter\_}->GetFilteredVocab(srcWords, vocabSize);
+147   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& scorer : \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}) \{
+148     scorer->Filter(\hyperlink{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}{filterIndices\_});
+149   \}
+150 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!New\+States@{New\+States}}
+\index{New\+States@{New\+States}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{New\+States() const }{NewStates() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf States} amunmt\+::\+Search\+::\+New\+States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a1cd54cd91f09de25de5967d0704dc77d}{}\label{classamunmt_1_1Search_a1cd54cd91f09de25de5967d0704dc77d}
+
+
+Definition at line 128 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+128                                \{
+129   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} states;
+130   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& scorer : \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}) \{
+131     states.emplace\_back(scorer->NewState());
+132   \}
+133   \textcolor{keywordflow}{return} states;
+134 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_a1cd54cd91f09de25de5967d0704dc77d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!Translate@{Translate}}
+\index{Translate@{Translate}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{Translate(const Sentences \&sentences)}{Translate(const Sentences &sentences)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Histories} $>$ amunmt\+::\+Search\+::\+Translate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{sentences}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Search_a8a55a67dbc9dab24441767d7b2066b9a}{}\label{classamunmt_1_1Search_a8a55a67dbc9dab24441767d7b2066b9a}
+
+
+Definition at line 43 of file search.\+cpp.
+
+
+\begin{DoxyCode}
+43                                                                      \{
+44   boost::timer::cpu\_timer timer;
+45 
+46   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}{filter\_}) \{
+47     \hyperlink{classamunmt_1_1Search_adab7a84cbd820e7395a3f79fc604bb06}{FilterTargetVocab}(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences});
+48   \}
+49 
+50   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} states = \hyperlink{classamunmt_1_1Search_aeca132502f793a9cf8f54ba5e12a333a}{Encode}(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences});
+51   \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} nextStates = \hyperlink{classamunmt_1_1Search_a1cd54cd91f09de25de5967d0704dc77d}{NewStates}();
+52   std::vector<uint> beamSizes(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.size(), 1);
+53 
+54   std::shared\_ptr<Histories> histories(\textcolor{keyword}{new} \hyperlink{namespacemarian_a805aaffc4cae6d189e6a22d2a14cca84}{Histories}(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}, 
+      \hyperlink{classamunmt_1_1Search_a5eecaafd5f951a216e0a4e1873c0b392}{normalizeScore\_}));
+55   \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} prevHyps = histories->GetFirstHyps();
+56 
+57   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} decoderStep = 0; decoderStep < 3 * \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.GetMaxLength(); ++decoderStep) \{
+58     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}.size(); i++) \{
+59       \hyperlink{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{scorers\_}[i]->Decode(*states[i], *nextStates[i], beamSizes);
+60     \}
+61 
+62     \textcolor{keywordflow}{if} (decoderStep == 0) \{
+63       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& beamSize : beamSizes) \{
+64         beamSize = \hyperlink{classamunmt_1_1Search_ab06351b3fe1ae98f6b839bb088f59ea9}{maxBeamSize\_};
+65       \}
+66     \}
+67     \textcolor{comment}{//cerr << "beamSizes=" << Debug(beamSizes, 1) << endl;}
+68 
+69     \textcolor{keywordtype}{bool} hasSurvivors = \hyperlink{classamunmt_1_1Search_a80d628a5581c65ebe73fe0b941497eba}{CalcBeam}(histories, beamSizes, prevHyps, states, nextStates);
+70     \textcolor{keywordflow}{if} (!hasSurvivors) \{
+71       \textcolor{keywordflow}{break};
+72     \}
+73   \}
+74 
+75   \hyperlink{classamunmt_1_1Search_acdf0343e135ef26bf53ebb9389b379f6}{CleanAfterTranslation}();
+76 
+77   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(progress)->info(\textcolor{stringliteral}{"Search took \{\}"}, timer.format(3, \textcolor{stringliteral}{"%ws"}));
+78   \textcolor{keywordflow}{return} histories;
+79 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_a8a55a67dbc9dab24441767d7b2066b9a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d92/classamunmt_1_1Search_a8a55a67dbc9dab24441767d7b2066b9a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!best\+Hyps\+\_\+@{best\+Hyps\+\_\+}}
+\index{best\+Hyps\+\_\+@{best\+Hyps\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{best\+Hyps\+\_\+}{bestHyps_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Best\+Hyps\+Base\+Ptr} amunmt\+::\+Search\+::best\+Hyps\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a1454a9ba53f206b38f21111b9ad67bc3}{}\label{classamunmt_1_1Search_a1454a9ba53f206b38f21111b9ad67bc3}
+
+
+Definition at line 44 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!device\+Info\+\_\+@{device\+Info\+\_\+}}
+\index{device\+Info\+\_\+@{device\+Info\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{device\+Info\+\_\+}{deviceInfo_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device\+Info} amunmt\+::\+Search\+::device\+Info\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}{}\label{classamunmt_1_1Search_ad382dcf0a7fb1d22b4150e19f46941c6}
+
+
+Definition at line 38 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!filter\+\_\+@{filter\+\_\+}}
+\index{filter\+\_\+@{filter\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{filter\+\_\+}{filter_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$const {\bf Filter}$>$ amunmt\+::\+Search\+::filter\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}{}\label{classamunmt_1_1Search_a7f88d68c699628bd5022ba947f3e95e8}
+
+
+Definition at line 40 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!filter\+Indices\+\_\+@{filter\+Indices\+\_\+}}
+\index{filter\+Indices\+\_\+@{filter\+Indices\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{filter\+Indices\+\_\+}{filterIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words} amunmt\+::\+Search\+::filter\+Indices\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}{}\label{classamunmt_1_1Search_abadfb4133f18d21a442cbf183a3c7b58}
+
+
+Definition at line 43 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}}
+\index{max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{max\+Beam\+Size\+\_\+}{maxBeamSize_}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t amunmt\+::\+Search\+::max\+Beam\+Size\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_ab06351b3fe1ae98f6b839bb088f59ea9}{}\label{classamunmt_1_1Search_ab06351b3fe1ae98f6b839bb088f59ea9}
+
+
+Definition at line 41 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!normalize\+Score\+\_\+@{normalize\+Score\+\_\+}}
+\index{normalize\+Score\+\_\+@{normalize\+Score\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{normalize\+Score\+\_\+}{normalizeScore_}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Search\+::normalize\+Score\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a5eecaafd5f951a216e0a4e1873c0b392}{}\label{classamunmt_1_1Search_a5eecaafd5f951a216e0a4e1873c0b392}
+
+
+Definition at line 42 of file search.\+h.
+
+\index{amunmt\+::\+Search@{amunmt\+::\+Search}!scorers\+\_\+@{scorers\+\_\+}}
+\index{scorers\+\_\+@{scorers\+\_\+}!amunmt\+::\+Search@{amunmt\+::\+Search}}
+\subsubsection[{\texorpdfstring{scorers\+\_\+}{scorers_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Scorer\+Ptr}$>$ amunmt\+::\+Search\+::scorers\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}{}\label{classamunmt_1_1Search_a9cbbe53cebfb587a8db93618bf56ea13}
+
+
+Definition at line 39 of file search.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{search_8h}{search.\+h}\item 
+\hyperlink{search_8cpp}{search.\+cpp}\end{DoxyCompactItemize}

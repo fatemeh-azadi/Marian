@@ -1,0 +1,640 @@
+\hypertarget{classmarian_1_1data_1_1Corpus}{}\section{marian\+:\+:data\+:\+:Corpus Class Reference}
+\label{classmarian_1_1data_1_1Corpus}\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+
+
+{\ttfamily \#include $<$corpus.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:Corpus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{d8/def/classmarian_1_1data_1_1Corpus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Corpus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d3c/classmarian_1_1data_1_1Corpus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1Corpus_a42b8f8778f2a08c1c9f8e9fd45465a82}{Corpus} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, bool \hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate}=false)
+\item 
+\hyperlink{classmarian_1_1data_1_1Corpus_a70a6fa97c673146090a075c0e54c894b}{Corpus} (std\+::vector$<$ std\+::string $>$ paths, std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$$>$ vocabs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, size\+\_\+t max\+Length=0)
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_afc6678b770b6da1edabe3ed6d29b4bdd}{sample} \hyperlink{classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe}{next} ()
+\begin{DoxyCompactList}\small\item\em Iterates sentence tuples in the corpus. \end{DoxyCompactList}\item 
+void \hyperlink{classmarian_1_1data_1_1Corpus_acd46d4ac2667b7490d14543c96362928}{shuffle} ()
+\item 
+void \hyperlink{classmarian_1_1data_1_1Corpus_a145f4b656cfb4036f1ded4df925b418b}{reset} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator} \hyperlink{classmarian_1_1data_1_1Corpus_a054a1ee5ac98508eba55365e32e234f6}{begin} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator} \hyperlink{classmarian_1_1data_1_1Corpus_aaf3680a2d946cd804efc978c7f526881}{end} ()
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ $>$ \& \hyperlink{classmarian_1_1data_1_1Corpus_ab05ca913f9db36d2f9b47128f3986d7b}{get\+Vocabs} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a4cb5e9051a072fcc61ed4638862f01f5}{batch\+\_\+ptr} \hyperlink{classmarian_1_1data_1_1Corpus_ac822ed674cbb116ad7a47f6742fab7ac}{to\+Batch} (const std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1DatasetBase_afc6678b770b6da1edabe3ed6d29b4bdd}{sample} $>$ \&batch\+Vector)
+\item 
+void \hyperlink{classmarian_1_1data_1_1Corpus_a6c6058eb862c1129038523f11e0326c2}{prepare} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1data_1_1Corpus_a79332fb47ae25ab7dbca936dfdc01391}{shuffle\+Files} (const std\+::vector$<$ std\+::string $>$ \&paths)
+\item 
+void \hyperlink{classmarian_1_1data_1_1Corpus_a8081d9e92cffc981bbb26d9e6c6a9f12}{set\+Word\+Alignment} (const std\+::string \&path)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_aef1c1bbe14b70285b1e8f7653f134cb1}{U\+Ptr}$<$ \hyperlink{classTemporaryFile}{Temporary\+File} $>$ $>$ \hyperlink{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{temp\+Files\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_aef1c1bbe14b70285b1e8f7653f134cb1}{U\+Ptr}$<$ \hyperlink{classInputFileStream}{Input\+File\+Stream} $>$ $>$ \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ $>$ \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}{max\+Length\+\_\+}
+\item 
+std\+::mt19937 \hyperlink{classmarian_1_1data_1_1Corpus_af02635ddeb7bd28cf197b7167326aeea}{g\+\_\+}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\+\_\+} \{0\}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1WordAlignment}{Word\+Alignment} $>$ \hyperlink{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}{word\+Alignment\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 226 of file corpus.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!Corpus@{Corpus}}
+\index{Corpus@{Corpus}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{Corpus(\+Ptr$<$ Config $>$ options, bool translate=false)}{Corpus(Ptr< Config > options, bool translate=false)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Corpus\+::\+Corpus (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{bool}]{translate = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1data_1_1Corpus_a42b8f8778f2a08c1c9f8e9fd45465a82}{}\label{classmarian_1_1data_1_1Corpus_a42b8f8778f2a08c1c9f8e9fd45465a82}
+
+
+Definition at line 31 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+32     : \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}(options),
+33       \hyperlink{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}{maxLength\_}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"max-length"})),
+34       \hyperlink{classmarian_1_1data_1_1Corpus_af02635ddeb7bd28cf197b7167326aeea}{g\_}(\hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{Config::seed}) \{
+35   \textcolor{keywordflow}{if}(!\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate})
+36     \hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_} = \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"});
+37   \textcolor{keywordflow}{else}
+38     \hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_} = \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"input"});
+39 
+40   std::vector<std::string> vocabPaths;
+41   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->has(\textcolor{stringliteral}{"vocabs"}))
+42     vocabPaths = \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"vocabs"});
+43 
+44   \textcolor{keywordflow}{if}(!\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate}) \{
+45     UTIL\_THROW\_IF2(!vocabPaths.empty() && paths\_.size() != vocabPaths.size(),
+46                    \textcolor{stringliteral}{"Number of corpus files and vocab files does not agree"});
+47   \}
+48 
+49   std::vector<int> maxVocabs = \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"});
+50 
+51   \textcolor{keywordflow}{if}(!\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate}) \{
+52     std::vector<Vocab> vocabs;
+53     \textcolor{keywordflow}{if}(vocabPaths.empty()) \{
+54       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < paths\_.size(); ++i) \{
+55         Ptr<Vocab> vocab = New<Vocab>();
+56         vocab->loadOrCreate(\textcolor{stringliteral}{""}, paths\_[i], maxVocabs[i]);
+57         \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get()[\textcolor{stringliteral}{"vocabs"}].push\_back(paths\_[i] + \textcolor{stringliteral}{".yml"});
+58         \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}.emplace\_back(vocab);
+59       \}
+60     \} \textcolor{keywordflow}{else} \{
+61       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < vocabPaths.size(); ++i) \{
+62         Ptr<Vocab> vocab = New<Vocab>();
+63         vocab->loadOrCreate(vocabPaths[i], paths\_[i], maxVocabs[i]);
+64         \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}.emplace\_back(vocab);
+65       \}
+66     \}
+67   \} \textcolor{keywordflow}{else} \{
+68     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < vocabPaths.size() - 1; ++i) \{
+69       Ptr<Vocab> vocab = New<Vocab>();
+70       vocab->loadOrCreate(vocabPaths[i], paths\_[i], maxVocabs[i]);
+71       \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}.emplace\_back(vocab);
+72     \}
+73   \}
+74 
+75   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} path : paths\_) \{
+76     \textcolor{keywordflow}{if}(path == \textcolor{stringliteral}{"stdin"})
+77       \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(std::cin));
+78     \textcolor{keywordflow}{else} \{
+79       \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(path));
+80       UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.back()->empty(), \textcolor{stringliteral}{"File "} << path << \textcolor{stringliteral}{" is empty"});
+81     \}
+82   \}
+83 \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!Corpus@{Corpus}}
+\index{Corpus@{Corpus}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{Corpus(std\+::vector$<$ std\+::string $>$ paths, std\+::vector$<$ Ptr$<$ Vocab $>$$>$ vocabs, Ptr$<$ Config $>$ options, size\+\_\+t max\+Length=0)}{Corpus(std::vector< std::string > paths, std::vector< Ptr< Vocab >> vocabs, Ptr< Config > options, size_t maxLength=0)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Corpus\+::\+Corpus (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{paths, }
+\item[{std\+::vector$<$ {\bf Ptr}$<$ {\bf Vocab} $>$$>$}]{vocabs, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{size\+\_\+t}]{max\+Length = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1data_1_1Corpus_a70a6fa97c673146090a075c0e54c894b}{}\label{classmarian_1_1data_1_1Corpus_a70a6fa97c673146090a075c0e54c894b}
+
+
+Definition at line 85 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+89     : \hyperlink{classmarian_1_1data_1_1DatasetBase_a81594f55f2b25ac638cd616c6f550f55}{DatasetBase}(paths),
+90       \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}(options),
+91       \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}(vocabs),
+92       \hyperlink{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}{maxLength\_}(maxLength ? maxLength : \hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"max-length"})) \{
+93   UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}.size() != \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}.size(),
+94                  \textcolor{stringliteral}{"Number of corpus files and vocab files does not agree"});
+95 
+96   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} path : \hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}) \{
+97     \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(path));
+98   \}
+99 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!begin@{begin}}
+\index{begin@{begin}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} marian\+::data\+::\+Corpus\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_a054a1ee5ac98508eba55365e32e234f6}{}\label{classmarian_1_1data_1_1Corpus_a054a1ee5ac98508eba55365e32e234f6}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_a3656bd4d7627dc8705ffd4a20899b746}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 266 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+266 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator}(*\textcolor{keyword}{this}); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!end@{end}}
+\index{end@{end}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} marian\+::data\+::\+Corpus\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_aaf3680a2d946cd804efc978c7f526881}{}\label{classmarian_1_1data_1_1Corpus_aaf3680a2d946cd804efc978c7f526881}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_ae0ad2f60d79142852bd1ecd10a7c254a}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 268 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+268 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator}(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!get\+Vocabs@{get\+Vocabs}}
+\index{get\+Vocabs@{get\+Vocabs}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{get\+Vocabs()}{getVocabs()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Vocab}$>$ $>$\& marian\+::data\+::\+Corpus\+::get\+Vocabs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1Corpus_ab05ca913f9db36d2f9b47128f3986d7b}{}\label{classmarian_1_1data_1_1Corpus_ab05ca913f9db36d2f9b47128f3986d7b}
+
+
+Definition at line 270 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+270 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!next@{next}}
+\index{next@{next}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sentence\+Tuple} marian\+::data\+::\+Corpus\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe}{}\label{classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe}
+
+
+Iterates sentence tuples in the corpus. 
+
+A sentence tuple is skipped with no warning if any sentence in the tuple (e.\+g. a source or target) is longer than the maximum allowed sentence length in words.
+
+\begin{DoxyReturn}{Returns}
+A tuple representing parallel sentences. 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+101                            \{
+102   \textcolor{keywordtype}{bool} cont = \textcolor{keyword}{true};
+103   \textcolor{keywordflow}{while}(cont) \{
+104     \textcolor{comment}{// get index of the current sentence}
+105     \textcolor{keywordtype}{size\_t} curId = \hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_};
+106     \textcolor{comment}{// if corpus has been shuffled, ids\_ contains sentence indexes}
+107     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_} < \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.size())
+108       curId = \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}[\hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_}];
+109     \hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_}++;
+110 
+111     \textcolor{comment}{// fill up the sentence tuple with sentences from all input files}
+112     SentenceTuple tup(curId);
+113     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.size(); ++i) \{
+114       std::string line;
+115       \textcolor{keywordflow}{if}(std::getline((std::istream&)*\hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}[i], line)) \{
+116         \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} words = (*\hyperlink{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{vocabs\_}[i])(line);
+117         \textcolor{keywordflow}{if}(words.empty())
+118           words.push\_back(0);
+119         tup.push\_back(words);
+120       \}
+121     \}
+122 
+123     \textcolor{comment}{// continue only if each input file has provided an example}
+124     cont = tup.size() == \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.size();
+125 
+126     \textcolor{comment}{// continue if all sentences are no longer than maximum allowed length}
+127     \textcolor{keywordflow}{if}(cont && std::all\_of(tup.begin(), tup.end(), [=](\textcolor{keyword}{const} \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words}& words) \{
+128          \textcolor{keywordflow}{return} words.size() > 0 && words.size() <= \hyperlink{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}{maxLength\_};
+129        \}))
+130       \textcolor{keywordflow}{return} tup;
+131   \}
+132   \textcolor{keywordflow}{return} SentenceTuple(0);
+133 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/daf/classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/daf/classmarian_1_1data_1_1Corpus_a383139a28eb51cc4140e3c97fd0ecebe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!prepare@{prepare}}
+\index{prepare@{prepare}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{prepare()}{prepare()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+::prepare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_a6c6058eb862c1129038523f11e0326c2}{}\label{classmarian_1_1data_1_1Corpus_a6c6058eb862c1129038523f11e0326c2}
+
+
+Reimplemented from \hyperlink{classmarian_1_1data_1_1DatasetBase_a48671563fec835e08131fb05d5e0e6da}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 316 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+316                  \{
+317     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->has(\textcolor{stringliteral}{"guided-alignment"}))
+318       \hyperlink{classmarian_1_1data_1_1Corpus_a8081d9e92cffc981bbb26d9e6c6a9f12}{setWordAlignment}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::string>(\textcolor{stringliteral}{"guided-alignment"}));
+319   \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!reset@{reset}}
+\index{reset@{reset}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_a145f4b656cfb4036f1ded4df925b418b}{}\label{classmarian_1_1data_1_1Corpus_a145f4b656cfb4036f1ded4df925b418b}
+
+
+Reimplemented from \hyperlink{classmarian_1_1data_1_1DatasetBase_a397079308a957ee9036a81884989c047}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 139 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+139                    \{
+140   \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.clear();
+141   \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.clear();
+142   \hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_} = 0;
+143   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& path : \hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}) \{
+144     \textcolor{keywordflow}{if}(path == \textcolor{stringliteral}{"stdin"})
+145       \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(std::cin));
+146     \textcolor{keywordflow}{else}
+147       \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(path));
+148   \}
+149 \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!set\+Word\+Alignment@{set\+Word\+Alignment}}
+\index{set\+Word\+Alignment@{set\+Word\+Alignment}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{set\+Word\+Alignment(const std\+::string \&path)}{setWordAlignment(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+::set\+Word\+Alignment (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a8081d9e92cffc981bbb26d9e6c6a9f12}{}\label{classmarian_1_1data_1_1Corpus_a8081d9e92cffc981bbb26d9e6c6a9f12}
+
+
+Definition at line 322 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+322                                                \{
+323     \hyperlink{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}{wordAlignment\_} = New<WordAlignment>(path);
+324   \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{shuffle()}{shuffle()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+::shuffle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_acd46d4ac2667b7490d14543c96362928}{}\label{classmarian_1_1data_1_1Corpus_acd46d4ac2667b7490d14543c96362928}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_aad122bcd2636f0cbe0caf94e07a1aaf7}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 135 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+135                      \{
+136   \hyperlink{classmarian_1_1data_1_1Corpus_a79332fb47ae25ab7dbca936dfdc01391}{shuffleFiles}(\hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_});
+137 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d9/daf/classmarian_1_1data_1_1Corpus_acd46d4ac2667b7490d14543c96362928_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!shuffle\+Files@{shuffle\+Files}}
+\index{shuffle\+Files@{shuffle\+Files}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{shuffle\+Files(const std\+::vector$<$ std\+::string $>$ \&paths)}{shuffleFiles(const std::vector< std::string > &paths)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Corpus\+::shuffle\+Files (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{paths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a79332fb47ae25ab7dbca936dfdc01391}{}\label{classmarian_1_1data_1_1Corpus_a79332fb47ae25ab7dbca936dfdc01391}
+
+
+Definition at line 151 of file corpus.\+cpp.
+
+
+\begin{DoxyCode}
+151                                                            \{
+152   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Shuffling files"});
+153 
+154   std::vector<std::vector<std::string>> corpus;
+155 
+156   \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.clear();
+157   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} path : paths) \{
+158     \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(path));
+159   \}
+160 
+161   \textcolor{keywordtype}{bool} cont = \textcolor{keyword}{true};
+162   \textcolor{keywordflow}{while}(cont) \{
+163     std::vector<std::string> lines(\hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.size());
+164     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.size(); ++i) \{
+165       cont = cont && std::getline((std::istream&)*\hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}[i], lines[i]);
+166     \}
+167     \textcolor{keywordflow}{if}(cont)
+168       corpus.push\_back(lines);
+169   \}
+170 
+171   \hyperlink{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{pos\_} = 0;
+172   \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.resize(corpus.size());
+173   std::iota(\hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.begin(), \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.end(), 0);
+174   std::shuffle(\hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.begin(), \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}.end(), \hyperlink{classmarian_1_1data_1_1Corpus_af02635ddeb7bd28cf197b7167326aeea}{g\_});
+175 
+176   \hyperlink{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{tempFiles\_}.clear();
+177 
+178   std::vector<UPtr<OutputFileStream>> outs;
+179   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.size(); ++i) \{
+180     \hyperlink{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{tempFiles\_}.emplace\_back(
+181         \textcolor{keyword}{new} \hyperlink{classTemporaryFile}{TemporaryFile}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->get<std::string>(\textcolor{stringliteral}{"tempdir"})));
+182     outs.emplace\_back(\textcolor{keyword}{new} \hyperlink{classOutputFileStream}{OutputFileStream}(*\hyperlink{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{tempFiles\_}[i]));
+183   \}
+184 
+185   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} \textcolor{keywordtype}{id} : \hyperlink{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{ids\_}) \{
+186     \textcolor{keyword}{auto}& lines = corpus[id];
+187     \textcolor{keywordtype}{size\_t} i = 0;
+188     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& line : lines) \{
+189       (std::ostream&)*outs[i++] << line << std::endl;
+190     \}
+191   \}
+192 
+193   \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.clear();
+194   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < outs.size(); ++i) \{
+195     \hyperlink{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{files\_}.emplace\_back(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(*\hyperlink{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{tempFiles\_}[i]));
+196   \}
+197 
+198   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Done"});
+199 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d9/daf/classmarian_1_1data_1_1Corpus_a79332fb47ae25ab7dbca936dfdc01391_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!to\+Batch@{to\+Batch}}
+\index{to\+Batch@{to\+Batch}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{to\+Batch(const std\+::vector$<$ sample $>$ \&batch\+Vector)}{toBatch(const std::vector< sample > &batchVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf batch\+\_\+ptr} marian\+::data\+::\+Corpus\+::to\+Batch (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf sample} $>$ \&}]{batch\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Corpus_ac822ed674cbb116ad7a47f6742fab7ac}{}\label{classmarian_1_1data_1_1Corpus_ac822ed674cbb116ad7a47f6742fab7ac}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_af41218c6327ebf36ed3d8abd952fd1cd}{marian\+::data\+::\+Dataset\+Base$<$ Sentence\+Tuple, Corpus\+Iterator, Corpus\+Batch $>$}.
+
+
+
+Definition at line 272 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+272                                                           \{
+273     \textcolor{keywordtype}{int} batchSize = batchVector.size();
+274 
+275     std::vector<size\_t> sentenceIds;
+276 
+277     std::vector<int> maxDims;
+278     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& ex : batchVector) \{
+279       \textcolor{keywordflow}{if}(maxDims.size() < ex.size())
+280         maxDims.resize(ex.size(), 0);
+281       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < ex.size(); ++i) \{
+282         \textcolor{keywordflow}{if}(ex[i].size() > (size\_t)maxDims[i])
+283           maxDims[i] = ex[i].size();
+284       \}
+285       sentenceIds.push\_back(ex.getId());
+286     \}
+287 
+288     std::vector<Ptr<SubBatch>> subBatches;
+289     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m} : maxDims) \{
+290       subBatches.emplace\_back(New<SubBatch>(batchSize, \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}));
+291     \}
+292 
+293     std::vector<size\_t> words(maxDims.size(), 0);
+294     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < batchSize; ++i) \{
+295       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < maxDims.size(); ++j) \{
+296         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} k = 0; k < batchVector[i][j].size(); ++k) \{
+297           subBatches[j]->indices()[k * batchSize + i] = batchVector[i][j][k];
+298           subBatches[j]->mask()[k * batchSize + i] = 1.f;
+299           words[j]++;
+300         \}
+301       \}
+302     \}
+303 
+304     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < maxDims.size(); ++j)
+305       subBatches[j]->setWords(words[j]);
+306 
+307     \textcolor{keyword}{auto} batch = \hyperlink{classmarian_1_1data_1_1DatasetBase_a4cb5e9051a072fcc61ed4638862f01f5}{batch\_ptr}(\textcolor{keyword}{new} \hyperlink{classmarian_1_1data_1_1DatasetBase_a8dd8e5fa405155eb3207e5aaa4fbdc0f}{batch\_type}(subBatches));
+308     batch->setSentenceIds(sentenceIds);
+309 
+310     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{options\_}->has(\textcolor{stringliteral}{"guided-alignment"}) && \hyperlink{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}{wordAlignment\_})
+311       \hyperlink{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}{wordAlignment\_}->guidedAlignment(batch);
+312 
+313     \textcolor{keywordflow}{return} batch;
+314   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/daf/classmarian_1_1data_1_1Corpus_ac822ed674cbb116ad7a47f6742fab7ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!files\+\_\+@{files\+\_\+}}
+\index{files\+\_\+@{files\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{files\+\_\+}{files_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf U\+Ptr}$<${\bf Input\+File\+Stream}$>$ $>$ marian\+::data\+::\+Corpus\+::files\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}{}\label{classmarian_1_1data_1_1Corpus_a3f3028cb2032b3b4629883fb48328851}
+
+
+Definition at line 231 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!g\+\_\+@{g\+\_\+}}
+\index{g\+\_\+@{g\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{g\+\_\+}{g_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937 marian\+::data\+::\+Corpus\+::g\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_af02635ddeb7bd28cf197b7167326aeea}{}\label{classmarian_1_1data_1_1Corpus_af02635ddeb7bd28cf197b7167326aeea}
+
+
+Definition at line 235 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!ids\+\_\+@{ids\+\_\+}}
+\index{ids\+\_\+@{ids\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{ids\+\_\+}{ids_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ marian\+::data\+::\+Corpus\+::ids\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}{}\label{classmarian_1_1data_1_1Corpus_af61cc6f764d82fa6764d7faa6c7c29d8}
+
+
+Definition at line 236 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!max\+Length\+\_\+@{max\+Length\+\_\+}}
+\index{max\+Length\+\_\+@{max\+Length\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{max\+Length\+\_\+}{maxLength_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Corpus\+::max\+Length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}{}\label{classmarian_1_1data_1_1Corpus_a319aa74a24b0f7e865defbb17db817fe}
+
+
+Definition at line 233 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::data\+::\+Corpus\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}{}\label{classmarian_1_1data_1_1Corpus_aafc430571f253aec977c03bdc4fe0987}
+
+
+Definition at line 228 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!pos\+\_\+@{pos\+\_\+}}
+\index{pos\+\_\+@{pos\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{pos\+\_\+}{pos_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Corpus\+::pos\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}{}\label{classmarian_1_1data_1_1Corpus_a71f13714f2aba56a3784f4416656dcce}
+
+
+Definition at line 237 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!temp\+Files\+\_\+@{temp\+Files\+\_\+}}
+\index{temp\+Files\+\_\+@{temp\+Files\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{temp\+Files\+\_\+}{tempFiles_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf U\+Ptr}$<${\bf Temporary\+File}$>$ $>$ marian\+::data\+::\+Corpus\+::temp\+Files\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}{}\label{classmarian_1_1data_1_1Corpus_aa01a09870346c79a900f8938ad1f3be7}
+
+
+Definition at line 230 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!vocabs\+\_\+@{vocabs\+\_\+}}
+\index{vocabs\+\_\+@{vocabs\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{vocabs\+\_\+}{vocabs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Vocab}$>$ $>$ marian\+::data\+::\+Corpus\+::vocabs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}{}\label{classmarian_1_1data_1_1Corpus_a25b11761814f5a8f383d1b8d81bcc869}
+
+
+Definition at line 232 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}!word\+Alignment\+\_\+@{word\+Alignment\+\_\+}}
+\index{word\+Alignment\+\_\+@{word\+Alignment\+\_\+}!marian\+::data\+::\+Corpus@{marian\+::data\+::\+Corpus}}
+\subsubsection[{\texorpdfstring{word\+Alignment\+\_\+}{wordAlignment_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Word\+Alignment}$>$ marian\+::data\+::\+Corpus\+::word\+Alignment\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}{}\label{classmarian_1_1data_1_1Corpus_ad6beb16ba8ae3d8fcd2efb1927b42016}
+
+
+Definition at line 239 of file corpus.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corpus_8h}{corpus.\+h}\item 
+\hyperlink{corpus_8cpp}{corpus.\+cpp}\end{DoxyCompactItemize}

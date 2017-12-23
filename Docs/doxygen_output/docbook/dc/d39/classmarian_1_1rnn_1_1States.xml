@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d39/classmarian_1_1rnn_1_1States">
+<title>marian::rnn::States class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::States</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/ddf/classmarian_1_1rnn_1_1States__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::States</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/db7/classmarian_1_1rnn_1_1States__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; State &gt; states_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a6c7f0d8f86f47997f1af17fe705c71d5">States</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a75ec1bb99b5e17f8bc253845b143aaa9">States</link> (
+const std::vector&lt; <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &gt; &amp; states)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a685063fb4d227663cf1cdb8937fa4ac6">States</link> (
+size_t num, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>auto <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a60e61291cb512a79f263d56431a1f33f">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>auto <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a1c6ba08bb8971e1afc621dd393f47684">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a616c6828055565099320924bcb77b3da">outputs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a9208d7250a1217c3003433d71843d21e">operator[]</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a53476e8b579873f89229a9ea08e9a783">operator[]</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a678c607577574116ef2a7883bf698ec3">back</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a59846fcf53c9e0cf3bb7520bc0b93731">back</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1aa4591eb77bab804e0f32b6a71fceda29">front</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a8c824d694f2cccdd343b0e4e3d9e2096">front</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a349665bcd4d6afa53cbd76a9bba6d29d">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a85ffd790e403eb26f6153060d9997a4f">push_back</link> (
+const <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d39/classmarian_1_1rnn_1_1States">States</link> <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a73f73fda27e8dcb664513b3e7dc94584">select</link> (
+const std::vector&lt; size_t &gt; &amp; indices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1a7b971406b7426daad07da698219711bf">reverse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d39/classmarian_1_1rnn_1_1States_1aba3db864a663b5570d5a02dc2b9cfe72">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a6c7f0d8f86f47997f1af17fe705c71d5">
+                <title>marian::rnn::States::States ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a75ec1bb99b5e17f8bc253845b143aaa9">
+                <title>marian::rnn::States::States (const std::vector&lt; State &gt; &amp;states)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a685063fb4d227663cf1cdb8937fa4ac6">
+                <title>marian::rnn::States::States (size_t num, State state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a60e61291cb512a79f263d56431a1f33f">
+                <title>auto marian::rnn::States::begin () -&gt; decltype(states_.begin())</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a1c6ba08bb8971e1afc621dd393f47684">
+                <title>auto marian::rnn::States::end () -&gt; decltype(states_.begin())</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a616c6828055565099320924bcb77b3da">
+                <title>Expr marian::rnn::States::outputs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a9208d7250a1217c3003433d71843d21e">
+                <title>State&amp; marian::rnn::States::operator[] (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a53476e8b579873f89229a9ea08e9a783">
+                <title>const State&amp; marian::rnn::States::operator[] (size_t i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a678c607577574116ef2a7883bf698ec3">
+                <title>State&amp; marian::rnn::States::back ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a59846fcf53c9e0cf3bb7520bc0b93731">
+                <title>const State&amp; marian::rnn::States::back () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1aa4591eb77bab804e0f32b6a71fceda29">
+                <title>State&amp; marian::rnn::States::front ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a8c824d694f2cccdd343b0e4e3d9e2096">
+                <title>const State&amp; marian::rnn::States::front () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a349665bcd4d6afa53cbd76a9bba6d29d">
+                <title>size_t marian::rnn::States::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a85ffd790e403eb26f6153060d9997a4f">
+                <title>void marian::rnn::States::push_back (const State &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a73f73fda27e8dcb664513b3e7dc94584">
+                <title>States marian::rnn::States::select (const std::vector&lt; size_t &gt; &amp;indices)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1a7b971406b7426daad07da698219711bf">
+                <title>void marian::rnn::States::reverse ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d39/classmarian_1_1rnn_1_1States_1aba3db864a663b5570d5a02dc2b9cfe72">
+                <title>void marian::rnn::States::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd9/classamunmt_1_1util_1_1OverflowException">
+<title>amunmt::util::OverflowException class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/d2d/exception_8h">&lt;exception.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::util::OverflowException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dd0/classamunmt_1_1util_1_1OverflowException__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::util::OverflowException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d0b/classamunmt_1_1util_1_1OverflowException__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd9/classamunmt_1_1util_1_1OverflowException_1ae366992ee386c907befe86691309a36e">OverflowException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd9/classamunmt_1_1util_1_1OverflowException_1a8cb176b8fc66297a0d2a08eab0818517">~OverflowException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/dd9/classamunmt_1_1util_1_1OverflowException_1ae366992ee386c907befe86691309a36e">
+                <title>amunmt::util::OverflowException::OverflowException ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd9/classamunmt_1_1util_1_1OverflowException_1a8cb176b8fc66297a0d2a08eab0818517">
+                <title>amunmt::util::OverflowException::~OverflowException ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

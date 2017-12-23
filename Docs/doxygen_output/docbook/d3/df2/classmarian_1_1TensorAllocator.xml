@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/df2/classmarian_1_1TensorAllocator">
+<title>marian::TensorAllocator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d6c/tensor__allocator_8h">&lt;tensor_allocator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TensorAllocator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dfe/classmarian_1_1TensorAllocator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TensorAllocator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dad/classmarian_1_1TensorAllocator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t CHUNK</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t MBYTE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t GROW</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t ALIGN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Allocator&lt; DeviceGPU &gt; &gt; allocator_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a2f03fd2af1e841452bdd987fbdd1a99b">TensorAllocator</link> (
+size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a9c29d993bcd9c68292df2b6f8d0f3aa8">~TensorAllocator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1abea1f9334979c6ffa5e01b9fd30c33d8">throwAtReallocation</link> (
+bool throwRealloc)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a108f43553dde1508f4e835ed8d90d5b7">reserve</link> (
+size_t bytes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a3586fcca88cae8c80ebc7ce1b7b4d76c">reserveExact</link> (
+size_t bytes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1aacd475130da9dc8dfcceddae324122c8">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a72534a67e125523fc97edec3dbe6597f">capacity</link> (
+<link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1ac5ecda49dde41d94952298ce9c33ef5f">allocate</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; t, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a53a59558f7849713f76ec373e82ddae2">free</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> <link linkend="d3/df2/classmarian_1_1TensorAllocator_1ab3045ee0699ca705168a0db409450120">asTensor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/df2/classmarian_1_1TensorAllocator_1a943d693eaab5cfe7fc16b009f2c219af">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a2f03fd2af1e841452bdd987fbdd1a99b">
+                <title>marian::TensorAllocator::TensorAllocator (size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a9c29d993bcd9c68292df2b6f8d0f3aa8">
+                <title>marian::TensorAllocator::~TensorAllocator ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1abea1f9334979c6ffa5e01b9fd30c33d8">
+                <title>void marian::TensorAllocator::throwAtReallocation (bool throwRealloc)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a108f43553dde1508f4e835ed8d90d5b7">
+                <title>void marian::TensorAllocator::reserve (size_t bytes=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a3586fcca88cae8c80ebc7ce1b7b4d76c">
+                <title>void marian::TensorAllocator::reserveExact (size_t bytes=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1aacd475130da9dc8dfcceddae324122c8">
+                <title>void marian::TensorAllocator::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a72534a67e125523fc97edec3dbe6597f">
+                <title>size_t marian::TensorAllocator::capacity (Shape shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1ac5ecda49dde41d94952298ce9c33ef5f">
+                <title>void marian::TensorAllocator::allocate (Tensor &amp;t, Shape shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a53a59558f7849713f76ec373e82ddae2">
+                <title>void marian::TensorAllocator::free (Tensor &amp;t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1ab3045ee0699ca705168a0db409450120">
+                <title>Tensor marian::TensorAllocator::asTensor ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/df2/classmarian_1_1TensorAllocator_1a943d693eaab5cfe7fc16b009f2c219af">
+                <title>size_t marian::TensorAllocator::size ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

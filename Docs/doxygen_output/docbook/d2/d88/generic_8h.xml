@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d88/generic_8h">
+    <title>generic.h File Reference</title>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;common/options.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/factory.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/param_initializers.h&quot;</programlisting>
+<para>Include dependency diagram for generic.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dfc/generic_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for generic.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dd2/generic_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/de4/namespacemarian_1_1mlp">marian::mlp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d88/generic_8h_1a2c61aac8c1ec585882b5b11755204516">YAML_REGISTER_TYPE</link> (
+<link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72">marian::mlp::act</link> , int )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file generic.h</para>
+    </simplesect>
+</section>

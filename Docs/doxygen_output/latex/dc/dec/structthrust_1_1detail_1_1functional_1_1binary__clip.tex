@@ -1,0 +1,79 @@
+\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__clip}{}\section{thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+clip$<$ T $>$ Struct Template Reference}
+\label{structthrust_1_1detail_1_1functional_1_1binary__clip}\index{thrust\+::detail\+::functional\+::binary\+\_\+clip$<$ T $>$@{thrust\+::detail\+::functional\+::binary\+\_\+clip$<$ T $>$}}
+
+
+{\ttfamily \#include $<$thrust\+\_\+functions.\+h$>$}
+
+
+
+Inheritance diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+clip$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{df/d6f/structthrust_1_1detail_1_1functional_1_1binary__clip__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+clip$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d7/db6/structthrust_1_1detail_1_1functional_1_1binary__clip__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__clip_ae58e1871aabef8c3a629806af9992cd1}{operator()} (const T \&x, const T \&y) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct thrust\+::detail\+::functional\+::binary\+\_\+clip$<$ T $>$}
+
+
+
+Definition at line 110 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{thrust\+::detail\+::functional\+::binary\+\_\+clip@{thrust\+::detail\+::functional\+::binary\+\_\+clip}!operator()@{operator()}}
+\index{operator()@{operator()}!thrust\+::detail\+::functional\+::binary\+\_\+clip@{thrust\+::detail\+::functional\+::binary\+\_\+clip}}
+\subsubsection[{\texorpdfstring{operator()(const T \&x, const T \&y) const }{operator()(const T &x, const T &y) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T {\bf thrust\+::detail\+::functional\+::binary\+\_\+clip}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__clip_ae58e1871aabef8c3a629806af9992cd1}{}\label{structthrust_1_1detail_1_1functional_1_1binary__clip_ae58e1871aabef8c3a629806af9992cd1}
+
+
+Definition at line 111 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+111                                                                  \{
+112     \textcolor{keywordflow}{return} abs(x) >= y ? \hyperlink{namespacethrust_1_1detail_1_1functional_a340839a77ee36e3897fe8a8a53365ed0}{sgn}(x) * y : x;
+113   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dec/structthrust_1_1detail_1_1functional_1_1binary__clip_ae58e1871aabef8c3a629806af9992cd1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2kernels_2thrust__functions_8h}{marian/src/kernels/thrust\+\_\+functions.\+h}\end{DoxyCompactItemize}

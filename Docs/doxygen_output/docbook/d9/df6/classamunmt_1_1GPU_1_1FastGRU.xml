@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU">
+<title>amunmt::GPU::FastGRU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/db8/gru_8h">&lt;gru.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::FastGRU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d93/classamunmt_1_1GPU_1_1FastGRU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::FastGRU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d53/classamunmt_1_1GPU_1_1FastGRU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link></type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix WWx_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix UUx_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix RUH_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1ad194ae3cba0565a97dbf16b74308d49a">FastGRU</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1a80dfed3a6e61b1ee726085adb714deb0">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1add49af38ef2aa9a37b3b4da08bb03eae">ElementwiseOps</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; NextState, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; RUH, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1ae99ea776f3f65eb593621f733feffeb0">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1affbc095bb02e7ee6e50995d5dbdd12a0">FastGRU</link> (
+const <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU">FastGRU</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1ad194ae3cba0565a97dbf16b74308d49a">
+                <title>amunmt::GPU::FastGRU&lt; Weights &gt;::FastGRU (const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1a80dfed3a6e61b1ee726085adb714deb0">
+                <title>virtual void amunmt::GPU::FastGRU&lt; Weights &gt;::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1add49af38ef2aa9a37b3b4da08bb03eae">
+                <title>void amunmt::GPU::FastGRU&lt; Weights &gt;::ElementwiseOps (mblas::Matrix &amp;NextState, const mblas::Matrix &amp;State, const mblas::Matrix &amp;RUH, const mblas::Matrix &amp;Temp) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1ae99ea776f3f65eb593621f733feffeb0">
+                <title>virtual CellLength amunmt::GPU::FastGRU&lt; Weights &gt;::GetStateLength () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/df6/classamunmt_1_1GPU_1_1FastGRU_1affbc095bb02e7ee6e50995d5dbdd12a0">
+                <title>amunmt::GPU::FastGRU&lt; Weights &gt;::FastGRU (const FastGRU &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,124 @@
+\hypertarget{classmarian_1_1ScorerState}{}\section{marian\+:\+:Scorer\+State Class Reference}
+\label{classmarian_1_1ScorerState}\index{marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}}
+
+
+{\ttfamily \#include $<$scorers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Scorer\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dbd/classmarian_1_1ScorerState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Scorer\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d2/d87/classmarian_1_1ScorerState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1ScorerState_a438e0327d2913a70bbebe80765e04395}{get\+Probs} ()=0
+\item 
+virtual float \hyperlink{classmarian_1_1ScorerState_a3318dc52892b0f22efd4e3d6fd93bd97}{break\+Down} (size\+\_\+t i)
+\item 
+virtual void \hyperlink{classmarian_1_1ScorerState_a81f5db49f9528f950a633771136b768f}{blacklist} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} total\+Costs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file scorers.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}!blacklist@{blacklist}}
+\index{blacklist@{blacklist}!marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}}
+\subsubsection[{\texorpdfstring{blacklist(\+Expr total\+Costs, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{blacklist(Expr totalCosts, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Scorer\+State\+::blacklist (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{total\+Costs, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerState_a81f5db49f9528f950a633771136b768f}{}\label{classmarian_1_1ScorerState_a81f5db49f9528f950a633771136b768f}
+
+
+Reimplemented in \hyperlink{classmarian_1_1ScorerWrapperState_a7a9b9e94ed1361444ddf3c1dfba69803}{marian\+::\+Scorer\+Wrapper\+State}.
+
+
+
+Definition at line 18 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+18 \{\};
+\end{DoxyCode}
+\index{marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}!break\+Down@{break\+Down}}
+\index{break\+Down@{break\+Down}!marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}}
+\subsubsection[{\texorpdfstring{break\+Down(size\+\_\+t i)}{breakDown(size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual float marian\+::\+Scorer\+State\+::break\+Down (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerState_a3318dc52892b0f22efd4e3d6fd93bd97}{}\label{classmarian_1_1ScorerState_a3318dc52892b0f22efd4e3d6fd93bd97}
+
+
+Reimplemented in \hyperlink{classmarian_1_1WordPenaltyState_aaef5349b3175fbf3d88cee8a72348259}{marian\+::\+Word\+Penalty\+State}.
+
+
+
+Definition at line 16 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+16 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1ScorerState_a438e0327d2913a70bbebe80765e04395}{getProbs}()->val()->get(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/dcc/classmarian_1_1ScorerState_a3318dc52892b0f22efd4e3d6fd93bd97_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}!get\+Probs@{get\+Probs}}
+\index{get\+Probs@{get\+Probs}!marian\+::\+Scorer\+State@{marian\+::\+Scorer\+State}}
+\subsubsection[{\texorpdfstring{get\+Probs()=0}{getProbs()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Scorer\+State\+::get\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1ScorerState_a438e0327d2913a70bbebe80765e04395}{}\label{classmarian_1_1ScorerState_a438e0327d2913a70bbebe80765e04395}
+
+
+Implemented in \hyperlink{classmarian_1_1WordPenaltyState_a785626a12dcffe85dca004b7536ba927}{marian\+::\+Word\+Penalty\+State}, and \hyperlink{classmarian_1_1ScorerWrapperState_a10bbf53cf092a16916634183c728fdf2}{marian\+::\+Scorer\+Wrapper\+State}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classmarian_1_1ScorerState_a438e0327d2913a70bbebe80765e04395_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scorers_8h}{scorers.\+h}\end{DoxyCompactItemize}

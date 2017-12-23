@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/db9/classmarian_1_1SparseTensorBase">
+<title>marian::SparseTensorBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/dcf/sparse__tensor_8h">&lt;sparse_tensor.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::SparseTensorBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dfa/classmarian_1_1SparseTensorBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::SparseTensorBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d3c/classmarian_1_1SparseTensorBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * indices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int capacity_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * d_is_unsorted</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * gstart_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * gend_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a14749b9a7f78366bfe1cc9695c132128">SparseTensorBase</link> (
+int capacity, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a7e958f74b9bda76d07ae95b0c1323037">SparseTensorBase</link> (
+float * data, int * indices, int size, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a0ea47eeb67b66813f10e6a47eaa24208">~SparseTensorBase</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a7f9b952552b3310028356e9062f8dbcb">capacity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1af8c34e3fb5b12c7a65dbe6892c5ca0d1">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1aff6f84e8e953b957e131c474c4485563">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a6b3971141be6c3baddc84d70eea1f0c2">indices</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a8cde6c7346cf727cd195dc36527db4c0">copyFrom</link> (
+float * data, int * indices, int size, bool data_only)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a4392bbfef3fd38761890e1160a070e99">copyFrom</link> (
+std::shared_ptr&lt; <link linkend="d2/db9/classmarian_1_1SparseTensorBase">SparseTensorBase</link> &gt; t, bool data_only)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a794e424ecff64e4f6030ab684a02b7e3">copyFromDense</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a94a6cf320854651c0912cd4b36247488">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a251307ea1a595fd304be1eda5c28eed3">setSize</link> (
+int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a137f5bf36d71f75ae77c7d8adbe7cb1a">toDense</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, int offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1a2ee4ca96e1f220c5883cf2d557ddd280">scatterAdd</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, int offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="d2/db9/classmarian_1_1SparseTensorBase">SparseTensorBase</link> &gt; <link linkend="d2/db9/classmarian_1_1SparseTensorBase_1af7f5d119d88cad27434eba2dc49bc848">subtensor</link> (
+int pos, int size, int idx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a14749b9a7f78366bfe1cc9695c132128">
+                <title>marian::SparseTensorBase::SparseTensorBase (int capacity, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a7e958f74b9bda76d07ae95b0c1323037">
+                <title>marian::SparseTensorBase::SparseTensorBase (float *data, int *indices, int size, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a0ea47eeb67b66813f10e6a47eaa24208">
+                <title>marian::SparseTensorBase::~SparseTensorBase ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a7f9b952552b3310028356e9062f8dbcb">
+                <title>int marian::SparseTensorBase::capacity ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1af8c34e3fb5b12c7a65dbe6892c5ca0d1">
+                <title>int marian::SparseTensorBase::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1aff6f84e8e953b957e131c474c4485563">
+                <title>float* marian::SparseTensorBase::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a6b3971141be6c3baddc84d70eea1f0c2">
+                <title>int* marian::SparseTensorBase::indices ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a8cde6c7346cf727cd195dc36527db4c0">
+                <title>void marian::SparseTensorBase::copyFrom (float *data, int *indices, int size, bool data_only)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a4392bbfef3fd38761890e1160a070e99">
+                <title>void marian::SparseTensorBase::copyFrom (std::shared_ptr&lt; SparseTensorBase &gt; t, bool data_only=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a794e424ecff64e4f6030ab684a02b7e3">
+                <title>void marian::SparseTensorBase::copyFromDense (Tensor t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a94a6cf320854651c0912cd4b36247488">
+                <title>size_t marian::SparseTensorBase::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a251307ea1a595fd304be1eda5c28eed3">
+                <title>void marian::SparseTensorBase::setSize (int size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a137f5bf36d71f75ae77c7d8adbe7cb1a">
+                <title>void marian::SparseTensorBase::toDense (Tensor t, int offset)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1a2ee4ca96e1f220c5883cf2d557ddd280">
+                <title>void marian::SparseTensorBase::scatterAdd (Tensor t, int offset=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/classmarian_1_1SparseTensorBase_1af7f5d119d88cad27434eba2dc49bc848">
+                <title>std::shared_ptr&lt;SparseTensorBase&gt; marian::SparseTensorBase::subtensor (int pos, int size, int idx)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

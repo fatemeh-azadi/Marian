@@ -1,0 +1,4 @@
+<map id="marian::TensorCPU" name="marian::TensorCPU">
+<area shape="rect" id="node2" href="$dd/d3c/classmarian_1_1TensorBase.html" title="{marian::TensorBase\n|&#45; memory_\l&#45; device_\l|+ TensorBase()\l+ ~TensorBase()\l+ reset()\l+ memory()\l+ shape()\l+ data()\l+ size()\l+ scalar()\l+ getDevice()\l+ subtensor()\land 8 more...\l}" alt="" coords="111,321,250,560"/>
+<area shape="rect" id="node4" href="$d5/d54/structmarian_1_1Shape.html" title="{marian::Shape\n|+ shape_\l+ stride_\l+ bstride_\l|+ Shape()\l+ Shape()\l+ updateStrides()\l+ Shape()\l+ set()\l+ dim()\l+ dim()\l+ operator[]()\l+ operator[]()\l+ stride()\land 12 more...\l}" alt="" coords="207,5,330,259"/>
+</map>

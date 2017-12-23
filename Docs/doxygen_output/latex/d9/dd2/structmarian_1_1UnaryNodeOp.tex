@@ -1,0 +1,91 @@
+\hypertarget{structmarian_1_1UnaryNodeOp}{}\section{marian\+:\+:Unary\+Node\+Op Struct Reference}
+\label{structmarian_1_1UnaryNodeOp}\index{marian\+::\+Unary\+Node\+Op@{marian\+::\+Unary\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Unary\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/da6/structmarian_1_1UnaryNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Unary\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d71/structmarian_1_1UnaryNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{Unary\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+const std\+::string \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{color} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Unary\+Node\+Op@{marian\+::\+Unary\+Node\+Op}!Unary\+Node\+Op@{Unary\+Node\+Op}}
+\index{Unary\+Node\+Op@{Unary\+Node\+Op}!marian\+::\+Unary\+Node\+Op@{marian\+::\+Unary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Unary\+Node\+Op(\+Expr a, Args...\+args)}{UnaryNodeOp(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Unary\+Node\+Op\+::\+Unary\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{}\label{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}
+
+
+Definition at line 28 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+29       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(\{a\}, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = a->shape(), args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Unary\+Node\+Op@{marian\+::\+Unary\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Unary\+Node\+Op@{marian\+::\+Unary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Unary\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{}\label{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1TimestepNodeOp_a2beedbe285b4c1f5b5528d0d2f406ae1}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_af2273386eb99822cd20bce1b9e877f49}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1TransposeNodeOp_a207e692b92be4e144ace62033039b1cc}{marian\+::\+Transpose\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_a7a05f997b241c0f524c125e111096218}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_ab00d9d52a8dc80de0655d1cab56a8718}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a695658ac77c947c09a49e8520f8879b3}{marian\+::\+Mean\+Node\+Op}, and \hyperlink{structmarian_1_1SumNodeOp_ae2985b156380c467fa272cc38233074a}{marian\+::\+Sum\+Node\+Op}.
+
+
+
+Definition at line 31 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"yellow"}; \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

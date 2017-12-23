@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d2d/structmarian_1_1ModelTask">
+<title>marian::ModelTask struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/dd1/model__task_8h">&lt;model_task.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ModelTask</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d2c/structmarian_1_1ModelTask__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ModelTask</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d4f/structmarian_1_1ModelTask__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="de/d2d/structmarian_1_1ModelTask_1a2f4fddd0f227555bf792e3c3d4bfdb0d">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="de/d2d/structmarian_1_1ModelTask_1a2f4fddd0f227555bf792e3c3d4bfdb0d">
+                <title>virtual void marian::ModelTask::run ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

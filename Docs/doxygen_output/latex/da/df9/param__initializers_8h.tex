@@ -1,0 +1,69 @@
+\hypertarget{param__initializers_8h}{}\section{param\+\_\+initializers.\+h File Reference}
+\label{param__initializers_8h}\index{param\+\_\+initializers.\+h@{param\+\_\+initializers.\+h}}
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include \char`\"{}cnpy/cnpy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tensors/tensor.\+h\char`\"{}}\\*
+Include dependency graph for param\+\_\+initializers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d47/param__initializers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d81/param__initializers_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\item 
+ \hyperlink{namespacemarian_1_1inits}{marian\+::inits}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{namespacemarian_1_1inits_a0b3a55d11c2c9df0b982c3d7ebeb3361}{marian\+::inits\+::xor128} ()
+\item 
+void \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{marian\+::inits\+::zeros} (Tensor t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{marian\+::inits\+::ones} (Tensor t)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{marian\+::inits\+::from\+\_\+value} (float v)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_a41ba9c52b4ff5938b68c85042bbd8fb6}{marian\+::inits\+::diag} (float val)
+\item 
+{\footnotesize template$<$class Distribution $>$ }\\void \hyperlink{namespacemarian_1_1inits_abae13bbee70d5a54e5aff0e07dc51e10}{marian\+::inits\+::distribution} (std\+::vector$<$ float $>$ \&vals, float a, float b)
+\item 
+{\footnotesize template$<$class Distribution $>$ }\\void \hyperlink{namespacemarian_1_1inits_a4d7520676277911627cd1d73ac2380c6}{marian\+::inits\+::distribution} (Tensor t, float a, float b)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_ab7e64c6e535adbc8b3ace787a9027de5}{marian\+::inits\+::normal} (float scale=0.\+1, bool ortho=true)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{marian\+::inits\+::uniform} (float scale=0.\+1)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1}{marian\+::inits\+::ortho} (Tensor t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{marian\+::inits\+::glorot\+\_\+uniform} (Tensor t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a8b5e30d897124066180a5d55ce811ee0}{marian\+::inits\+::xorshift} (Tensor t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_aa41bfdd6abbcc4567bad71f7a76b50da}{marian\+::inits\+::glorot\+\_\+normal} (Tensor t)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{marian\+::inits\+::from\+\_\+vector} (const std\+::vector$<$ float $>$ \&v)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_af5f6f0108b5161e1596151ded5953a71}{marian\+::inits\+::from\+\_\+vector} (const std\+::vector$<$ size\+\_\+t $>$ \&v)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_aa01b0ccf77ec55218396670f8c49e191}{marian\+::inits\+::from\+\_\+sparse\+\_\+vector} (std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&v)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200}{marian\+::inits\+::from\+\_\+numpy} (const cnpy\+::\+Npy\+Array \&np)
+\item 
+std\+::function$<$ void(Tensor)$>$ \hyperlink{namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756}{marian\+::inits\+::from\+\_\+word2vec} (const std\+::string \&file, int dim\+Voc, int dim\+Emb, bool normalize=false)
+\end{DoxyCompactItemize}

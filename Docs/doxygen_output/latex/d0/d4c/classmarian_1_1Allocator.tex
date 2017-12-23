@@ -1,0 +1,539 @@
+\hypertarget{classmarian_1_1Allocator}{}\section{marian\+:\+:Allocator$<$ Device $>$ Class Template Reference}
+\label{classmarian_1_1Allocator}\index{marian\+::\+Allocator$<$ Device $>$@{marian\+::\+Allocator$<$ Device $>$}}
+
+
+{\ttfamily \#include $<$allocator.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Allocator$<$ Device $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d2/d69/classmarian_1_1Allocator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Allocator_ae2f62305efe8dacd88646dcc682cf456}{Allocator} (size\+\_\+t device\+No, size\+\_\+t bytes, size\+\_\+t \hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step}, size\+\_\+t alignment=256)
+\item 
+void \hyperlink{classmarian_1_1Allocator_a7481723a5cde8f7c10e56733fc5b9fcc}{throw\+At\+Reallocation} (bool throw\+Realloc)
+\item 
+void \hyperlink{classmarian_1_1Allocator_afdac64600119b40b07cb12626f343d6a}{reserve} (size\+\_\+t bytes)
+\item 
+{\footnotesize template$<$typename T $>$ }\\size\+\_\+t \hyperlink{classmarian_1_1Allocator_a17a7469579d224e54ba0740d72db3f80}{capacity} (size\+\_\+t num)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1Allocator_aeddab9eeed82b8702c22d91a105d644b}{alloc} (size\+\_\+t num)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1Allocator_a7deb1124f98c6f1befd7455326478e7c}{alloc} (size\+\_\+t bytes)
+\item 
+bool \hyperlink{classmarian_1_1Allocator_a26b71806d3b207af1a2f983c4979487d}{free} (uint8\+\_\+t $\ast$ptr, size\+\_\+t bytes)
+\item 
+bool \hyperlink{classmarian_1_1Allocator_a63bea58b067fce5cdb99365b00075887}{free} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ mp)
+\item 
+void \hyperlink{classmarian_1_1Allocator_a8f6497f24fdf8509c29a73b76667a66a}{clear} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ \hyperlink{classmarian_1_1Allocator_a0d674662cfae11d3e221dbf1f764a49b}{memory} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_a557ffeb3d6563ac533e5e9a7e334f8bd}{available} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_ab9cde5e32bc9d9bf836540f58a697103}{get\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align} (size\+\_\+t \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size})
+\item 
+void \hyperlink{classmarian_1_1Allocator_a019a57dc40f12b739fa2cc1a7fbbe9f2}{grow} (size\+\_\+t add)
+\item 
+\hyperlink{classmarian_1_1Gap}{Gap} \hyperlink{classmarian_1_1Allocator_af67c8e9dd2c1cee26a1c064bf2c1f352}{get\+Gap} (size\+\_\+t \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size})
+\item 
+void \hyperlink{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{insert\+Gap} (\hyperlink{classmarian_1_1Gap}{Gap} gap, bool consolidate=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Device \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\+\_\+} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\+\_\+} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_a1d2edd412f03ab7d3b72634498424354}{step\+\_\+} \{128 $\ast$ 1024 $\ast$ 1024\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}{alignment\+\_\+} \{256\}
+\item 
+bool \hyperlink{classmarian_1_1Allocator_afcc8754622b6574b234dc7dba46ccea7}{throw\+\_\+} \{false\}
+\item 
+\hyperlink{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{std\+::set}$<$ \hyperlink{classmarian_1_1Gap}{Gap} $>$ \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\+\_\+}
+\item 
+std\+::unordered\+\_\+map$<$ uint8\+\_\+t $\ast$, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} $>$ $>$ \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Device$>$\\*
+class marian\+::\+Allocator$<$ Device $>$}
+
+
+
+Definition at line 72 of file allocator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{Allocator(size\+\_\+t device\+No, size\+\_\+t bytes, size\+\_\+t step, size\+\_\+t alignment=256)}{Allocator(size_t deviceNo, size_t bytes, size_t step, size_t alignment=256)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::{\bf Allocator} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device\+No, }
+\item[{size\+\_\+t}]{bytes, }
+\item[{size\+\_\+t}]{step, }
+\item[{size\+\_\+t}]{alignment = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_ae2f62305efe8dacd88646dcc682cf456}{}\label{classmarian_1_1Allocator_ae2f62305efe8dacd88646dcc682cf456}
+
+
+Definition at line 149 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+150     : \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}(deviceNo, alignment), \hyperlink{classmarian_1_1Allocator_a1d2edd412f03ab7d3b72634498424354}{step\_}(\hyperlink{namespacemarian_a2e7193e67292a4c3347f296f5e669581}{step}), \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\_}(0), 
+      \hyperlink{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}{alignment\_}(alignment) \{
+151       \hyperlink{classmarian_1_1Allocator_afdac64600119b40b07cb12626f343d6a}{reserve}(bytes);
+152     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!align@{align}}
+\index{align@{align}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{align(size\+\_\+t size)}{align(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::align (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{}\label{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}
+
+
+Definition at line 83 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+83                               \{
+84       \textcolor{keywordflow}{return} ceil(\hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size} / (\textcolor{keywordtype}{float})\hyperlink{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}{alignment\_}) * \hyperlink{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}{alignment\_};
+85     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!alloc@{alloc}}
+\index{alloc@{alloc}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{alloc(size\+\_\+t num)}{alloc(size_t num)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ template$<$typename T $>$ {\bf Ptr}$<${\bf Memory\+Piece}$>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::alloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_aeddab9eeed82b8702c22d91a105d644b}{}\label{classmarian_1_1Allocator_aeddab9eeed82b8702c22d91a105d644b}
+
+
+Definition at line 168 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+168                                        \{
+169       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Allocator_aeddab9eeed82b8702c22d91a105d644b}{alloc}(capacity<T>(num));
+170     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!alloc@{alloc}}
+\index{alloc@{alloc}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{alloc(size\+\_\+t bytes)}{alloc(size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ {\bf Ptr}$<${\bf Memory\+Piece}$>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::alloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a7deb1124f98c6f1befd7455326478e7c}{}\label{classmarian_1_1Allocator_a7deb1124f98c6f1befd7455326478e7c}
+
+
+Definition at line 172 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+172                                          \{
+173       bytes = \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(bytes);
+174       Gap gap = \hyperlink{classmarian_1_1Allocator_af67c8e9dd2c1cee26a1c064bf2c1f352}{getGap}(bytes);
+175 
+176       \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.erase(gap);
+177       \textcolor{keywordflow}{if}(gap.size() > bytes) \{
+178         \hyperlink{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{insertGap}(gap.rest(bytes), \textcolor{keyword}{false});
+179       \}
+180 
+181       \textcolor{keyword}{auto} ptr = gap.data();
+182       \textcolor{keyword}{auto} mp = New<MemoryPiece>(ptr, bytes);
+183       \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}[ptr] = mp;
+184 
+185       \textcolor{keywordflow}{return} mp;
+186     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{d0/d4c/classmarian_1_1Allocator_a7deb1124f98c6f1befd7455326478e7c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!available@{available}}
+\index{available@{available}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a557ffeb3d6563ac533e5e9a7e334f8bd}{}\label{classmarian_1_1Allocator_a557ffeb3d6563ac533e5e9a7e334f8bd}
+
+
+Definition at line 226 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+226 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!capacity@{capacity}}
+\index{capacity@{capacity}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{capacity(size\+\_\+t num)}{capacity(size_t num)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ template$<$typename T $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::capacity (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a17a7469579d224e54ba0740d72db3f80}{}\label{classmarian_1_1Allocator_a17a7469579d224e54ba0740d72db3f80}
+
+
+Definition at line 163 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+163                                 \{
+164       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(num * \textcolor{keyword}{sizeof}(T));
+165     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ void {\bf marian\+::\+Allocator}$<$ Device $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a8f6497f24fdf8509c29a73b76667a66a}{}\label{classmarian_1_1Allocator_a8f6497f24fdf8509c29a73b76667a66a}
+
+
+Definition at line 213 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+213                  \{
+214       \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\_} = 0;
+215       \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.clear();
+216       \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}.clear();
+217       \hyperlink{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{insertGap}(\{\hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data(), \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.size()\}, \textcolor{keyword}{false});
+218     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!free@{free}}
+\index{free@{free}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{free(uint8\+\_\+t $\ast$ptr, size\+\_\+t bytes)}{free(uint8_t *ptr, size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ bool {\bf marian\+::\+Allocator}$<$ Device $>$\+::free (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{ptr, }
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a26b71806d3b207af1a2f983c4979487d}{}\label{classmarian_1_1Allocator_a26b71806d3b207af1a2f983c4979487d}
+
+
+Definition at line 188 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+188                                           \{
+189       bytes = \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(bytes);
+190 
+191       UTIL\_THROW\_IF2(ptr == 0, \textcolor{stringliteral}{"Double free?"});
+192 
+193       \textcolor{keywordflow}{if}(!ptr)
+194         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+195 
+196       \textcolor{keyword}{auto} it = \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}.find(ptr);
+197       \textcolor{keywordflow}{if}(it != \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}.end()) \{
+198         \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}.erase(ptr);
+199         \hyperlink{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{insertGap}(Gap(ptr, bytes), \textcolor{keyword}{true});
+200         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+201       \}
+202       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+203     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!free@{free}}
+\index{free@{free}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{free(\+Ptr$<$ Memory\+Piece $>$ mp)}{free(Ptr< MemoryPiece > mp)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ bool {\bf marian\+::\+Allocator}$<$ Device $>$\+::free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Memory\+Piece} $>$}]{mp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a63bea58b067fce5cdb99365b00075887}{}\label{classmarian_1_1Allocator_a63bea58b067fce5cdb99365b00075887}
+
+
+Definition at line 205 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+205                                    \{
+206       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Allocator_a26b71806d3b207af1a2f983c4979487d}{free}(mp->data(), mp->size())) \{
+207         mp->set(\textcolor{keyword}{nullptr}, 0);
+208         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+209       \}
+210       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+211     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_ab9cde5e32bc9d9bf836540f58a697103}{}\label{classmarian_1_1Allocator_ab9cde5e32bc9d9bf836540f58a697103}
+
+
+Definition at line 228 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+228 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.getDevice(); \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!get\+Gap@{get\+Gap}}
+\index{get\+Gap@{get\+Gap}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{get\+Gap(size\+\_\+t size)}{getGap(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ {\bf Gap} {\bf marian\+::\+Allocator}$<$ Device $>$\+::get\+Gap (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_af67c8e9dd2c1cee26a1c064bf2c1f352}{}\label{classmarian_1_1Allocator_af67c8e9dd2c1cee26a1c064bf2c1f352}
+
+
+Definition at line 110 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+110                             \{
+111       \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size} = \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(\hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size});
+112       \textcolor{keyword}{auto} it = std::lower\_bound(\hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.begin(), \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.end(),
+113                                  Gap(\textcolor{keyword}{nullptr}, \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size}));
+114 
+115       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Allocator_afcc8754622b6574b234dc7dba46ccea7}{throw\_} && it == \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.end()) \{
+116         \textcolor{keywordflow}{throw} AllocationException();
+117       \}
+118 
+119       \textcolor{keywordflow}{while}(it == \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.end()) \{
+120         \hyperlink{classmarian_1_1Allocator_a019a57dc40f12b739fa2cc1a7fbbe9f2}{grow}(\hyperlink{classmarian_1_1Allocator_a1d2edd412f03ab7d3b72634498424354}{step\_});
+121         it = std::lower\_bound(\hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.begin(), \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.end(),
+122                               Gap(\textcolor{keyword}{nullptr}, \hyperlink{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{size}));
+123       \}
+124 
+125       \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\_} -= it->size();
+126       \textcolor{keywordflow}{return} *it;
+127     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!grow@{grow}}
+\index{grow@{grow}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{grow(size\+\_\+t add)}{grow(size_t add)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ void {\bf marian\+::\+Allocator}$<$ Device $>$\+::grow (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{add}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a019a57dc40f12b739fa2cc1a7fbbe9f2}{}\label{classmarian_1_1Allocator_a019a57dc40f12b739fa2cc1a7fbbe9f2}
+
+
+Definition at line 87 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+87                           \{
+88       add = \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(add);
+89       uint8\_t* oldData = \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data();
+90       \textcolor{keywordtype}{size\_t} oldSize = \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.size();
+91 
+92       \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.reserve(oldSize + add);
+93 
+94       std::set<Gap> oldGaps;
+95       \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.swap(oldGaps);
+96 
+97       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} gap : oldGaps)
+98         \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.insert(Gap(\hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data() + std::distance(oldData, gap.data()), gap.size()));
+99       \hyperlink{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{insertGap}(Gap(\hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data() + oldSize, add));
+100 
+101       std::unordered\_map<uint8\_t*, Ptr<MemoryPiece>> oldAllocated;
+102       \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}.swap(oldAllocated);
+103       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : oldAllocated) \{
+104         uint8\_t* newPtr = \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data() + std::distance(oldData, it.first);
+105         \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}[newPtr] = oldAllocated[it.first];
+106         \hyperlink{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{allocated\_}[newPtr]->setPtr(newPtr);
+107       \}
+108     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!insert\+Gap@{insert\+Gap}}
+\index{insert\+Gap@{insert\+Gap}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{insert\+Gap(\+Gap gap, bool consolidate=true)}{insertGap(Gap gap, bool consolidate=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ void {\bf marian\+::\+Allocator}$<$ Device $>$\+::insert\+Gap (
+\begin{DoxyParamCaption}
+\item[{{\bf Gap}}]{gap, }
+\item[{bool}]{consolidate = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}{}\label{classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b}
+
+
+Definition at line 129 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+129                                                      \{
+130       \hyperlink{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{available\_} += gap.size();
+131       \textcolor{keywordflow}{if}(consolidate) \{
+132         \textcolor{keyword}{auto} it = \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.begin();
+133         std::vector<decltype(it)> adjacent;
+134         \textcolor{keywordflow}{while}(it != \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.end()) \{
+135           \textcolor{keywordflow}{if}(gap.adjacent(*it)) \{
+136             gap = gap.combine(*it);
+137             adjacent.push\_back(it);
+138           \}
+139           it++;
+140         \}
+141         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& a : adjacent)
+142           \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.erase(a);
+143       \}
+144       \hyperlink{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{gaps\_}.insert(gap);
+145     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4c/classmarian_1_1Allocator_a29dec83519003c94b5ef7520a8235f5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!memory@{memory}}
+\index{memory@{memory}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{memory()}{memory()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ {\bf Ptr}$<${\bf Memory\+Piece}$>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a0d674662cfae11d3e221dbf1f764a49b}{}\label{classmarian_1_1Allocator_a0d674662cfae11d3e221dbf1f764a49b}
+
+
+Definition at line 220 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+220                               \{
+221       \textcolor{keywordflow}{return} New<MemoryPiece>(\hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.data(), \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.size());
+222     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!reserve@{reserve}}
+\index{reserve@{reserve}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t bytes)}{reserve(size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ void {\bf marian\+::\+Allocator}$<$ Device $>$\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_afdac64600119b40b07cb12626f343d6a}{}\label{classmarian_1_1Allocator_afdac64600119b40b07cb12626f343d6a}
+
+
+Definition at line 156 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+156                                \{
+157       bytes = \hyperlink{classmarian_1_1Allocator_ad35f239037c6bdd96370d04a54812a9b}{align}(bytes);
+158       \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.reserve(bytes);
+159       \hyperlink{classmarian_1_1Allocator_a8f6497f24fdf8509c29a73b76667a66a}{clear}();
+160     \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!size@{size}}
+\index{size@{size}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}{}\label{classmarian_1_1Allocator_a93bed619eb9ee33bea60953aae2451bb}
+
+
+Definition at line 224 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+224 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{device\_}.size(); \}
+\end{DoxyCode}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!throw\+At\+Reallocation@{throw\+At\+Reallocation}}
+\index{throw\+At\+Reallocation@{throw\+At\+Reallocation}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{throw\+At\+Reallocation(bool throw\+Realloc)}{throwAtReallocation(bool throwRealloc)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ void {\bf marian\+::\+Allocator}$<$ Device $>$\+::throw\+At\+Reallocation (
+\begin{DoxyParamCaption}
+\item[{bool}]{throw\+Realloc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Allocator_a7481723a5cde8f7c10e56733fc5b9fcc}{}\label{classmarian_1_1Allocator_a7481723a5cde8f7c10e56733fc5b9fcc}
+
+
+Definition at line 154 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+154 \{ \hyperlink{classmarian_1_1Allocator_afcc8754622b6574b234dc7dba46ccea7}{throw\_} = throwRealloc; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!alignment\+\_\+@{alignment\+\_\+}}
+\index{alignment\+\_\+@{alignment\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{alignment\+\_\+}{alignment_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::alignment\+\_\+ \{256\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}{}\label{classmarian_1_1Allocator_a7a1d6e931c3c27aa9acd1a6c6e4536d4}
+
+
+Definition at line 77 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!allocated\+\_\+@{allocated\+\_\+}}
+\index{allocated\+\_\+@{allocated\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{allocated\+\_\+}{allocated_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ std\+::unordered\+\_\+map$<$uint8\+\_\+t$\ast$, {\bf Ptr}$<${\bf Memory\+Piece}$>$ $>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::allocated\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}{}\label{classmarian_1_1Allocator_a26ed19566ebce33bdf4e6806566e7498}
+
+
+Definition at line 81 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!available\+\_\+@{available\+\_\+}}
+\index{available\+\_\+@{available\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{available\+\_\+}{available_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::available\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}{}\label{classmarian_1_1Allocator_afd4c68c5640f478ce3d370c6cf5b5078}
+
+
+Definition at line 75 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ Device {\bf marian\+::\+Allocator}$<$ Device $>$\+::device\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}{}\label{classmarian_1_1Allocator_af67d68259655a2bb58926f57a18107d0}
+
+
+Definition at line 74 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!gaps\+\_\+@{gaps\+\_\+}}
+\index{gaps\+\_\+@{gaps\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{gaps\+\_\+}{gaps_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ {\bf std\+::set}$<${\bf Gap}$>$ {\bf marian\+::\+Allocator}$<$ Device $>$\+::gaps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}{}\label{classmarian_1_1Allocator_a460784b3875b3cfa400c7737a6f6a1f0}
+
+
+Definition at line 80 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!step\+\_\+@{step\+\_\+}}
+\index{step\+\_\+@{step\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{step\+\_\+}{step_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ size\+\_\+t {\bf marian\+::\+Allocator}$<$ Device $>$\+::step\+\_\+ \{128 $\ast$ 1024 $\ast$ 1024\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_a1d2edd412f03ab7d3b72634498424354}{}\label{classmarian_1_1Allocator_a1d2edd412f03ab7d3b72634498424354}
+
+
+Definition at line 76 of file allocator.\+h.
+
+\index{marian\+::\+Allocator@{marian\+::\+Allocator}!throw\+\_\+@{throw\+\_\+}}
+\index{throw\+\_\+@{throw\+\_\+}!marian\+::\+Allocator@{marian\+::\+Allocator}}
+\subsubsection[{\texorpdfstring{throw\+\_\+}{throw_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Device $>$ bool {\bf marian\+::\+Allocator}$<$ Device $>$\+::throw\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Allocator_afcc8754622b6574b234dc7dba46ccea7}{}\label{classmarian_1_1Allocator_afcc8754622b6574b234dc7dba46ccea7}
+
+
+Definition at line 78 of file allocator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{allocator_8h}{allocator.\+h}\end{DoxyCompactItemize}

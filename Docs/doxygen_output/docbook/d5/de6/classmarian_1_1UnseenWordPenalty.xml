@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/de6/classmarian_1_1UnseenWordPenalty">
+<title>marian::UnseenWordPenalty class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d00/scorers_8h">&lt;scorers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::UnseenWordPenalty</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d7a/classmarian_1_1UnseenWordPenalty__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::UnseenWordPenalty</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d31/classmarian_1_1UnseenWordPenalty__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int batchIndex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int dimVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr penalties_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/de6/classmarian_1_1UnseenWordPenalty_1afb5aa146f8abeb551cbe1721545d305f">UnseenWordPenalty</link> (
+const std::string &amp; name, float weight, int dimVocab, int batchIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/de6/classmarian_1_1UnseenWordPenalty_1a77573bbeb2cd9f40386132a780402387">clear</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="d5/de6/classmarian_1_1UnseenWordPenalty_1a82b26a81ff8b5fa14747358ea82736f8">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="d5/de6/classmarian_1_1UnseenWordPenalty_1a89e3992565f5452648813689ab329b25">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; state, const std::vector&lt; size_t &gt; &amp; hypIndices, const std::vector&lt; size_t &gt; &amp; embIndices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/de6/classmarian_1_1UnseenWordPenalty_1afb5aa146f8abeb551cbe1721545d305f">
+                <title>marian::UnseenWordPenalty::UnseenWordPenalty (const std::string &amp;name, float weight, int dimVocab, int batchIndex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de6/classmarian_1_1UnseenWordPenalty_1a77573bbeb2cd9f40386132a780402387">
+                <title>virtual void marian::UnseenWordPenalty::clear (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de6/classmarian_1_1UnseenWordPenalty_1a82b26a81ff8b5fa14747358ea82736f8">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::UnseenWordPenalty::startState (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de6/classmarian_1_1UnseenWordPenalty_1a89e3992565f5452648813689ab329b25">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::UnseenWordPenalty::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; ScorerState &gt; state, const std::vector&lt; size_t &gt; &amp;hypIndices, const std::vector&lt; size_t &gt; &amp;embIndices)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

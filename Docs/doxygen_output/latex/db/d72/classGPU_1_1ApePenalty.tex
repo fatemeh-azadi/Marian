@@ -1,0 +1,185 @@
+\hypertarget{classGPU_1_1ApePenalty}{}\section{G\+PU\+:\+:Ape\+Penalty Class Reference}
+\label{classGPU_1_1ApePenalty}\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+
+
+{\ttfamily \#include $<$ape\+\_\+penalty.\+h$>$}
+
+
+
+Inheritance diagram for G\+PU\+:\+:Ape\+Penalty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{d8/ddf/classGPU_1_1ApePenalty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+PU\+:\+:Ape\+Penalty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d8d/classGPU_1_1ApePenalty__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGPU_1_1ApePenalty_a83488f2624845fda223b786277a04070}{Ape\+Penalty} (const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t tab, const \hyperlink{namespaceGPU_af00d3987455a7200ce4556e53eb3d228}{Src\+Trg\+Map} \&src\+Trg\+Map, const \hyperlink{namespaceGPU_ac29cf59ddc71f2086318cc8a5b166269}{Penalties} \&penalties)
+\item 
+virtual void \hyperlink{classGPU_1_1ApePenalty_ab8b121e02ceba70adcdcf70989bf2799}{Set\+Source} (const Sentence \&source)
+\item 
+virtual void \hyperlink{classGPU_1_1ApePenalty_a7a7122eb1b3216f57cfafcc66a908fbc}{Score} (const State \&in, State \&out)
+\item 
+virtual State $\ast$ \hyperlink{classGPU_1_1ApePenalty_a066a608aaca6db9ba49bd42554cdb6be}{New\+State} ()
+\item 
+virtual void \hyperlink{classGPU_1_1ApePenalty_a1eb9aeaaae7584490e9663c4942e841a}{Begin\+Sentence\+State} (State \&state)
+\item 
+virtual void \hyperlink{classGPU_1_1ApePenalty_a3910e3567c1645ab417e05bc673baa30}{Assemble\+Beam\+State} (const State \&in, const Beam \&beam, State \&out)
+\item 
+virtual size\+\_\+t \hyperlink{classGPU_1_1ApePenalty_ab9831d9a76f171017038f75ec0782770}{Get\+Vocab\+Size} () const 
+\item 
+void \hyperlink{classGPU_1_1ApePenalty_aa87b18d414bede8e6cb238ccf2a99077}{Filter} (const std\+::vector$<$ size\+\_\+t $>$ \&)
+\item 
+virtual Base\+Matrix \& \hyperlink{classGPU_1_1ApePenalty_a2ca72a0f526af45b6b75bcd1115f91dc}{Get\+Probs} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classGPU_1_1ApePenalty_a5e7813c5952e43004029ec4555dc7952}{costs\+\_\+}
+\item 
+const \hyperlink{namespaceGPU_af00d3987455a7200ce4556e53eb3d228}{Src\+Trg\+Map} \& \hyperlink{classGPU_1_1ApePenalty_ad78cff59e0294e7e42da2ca5fedec151}{src\+Trg\+Map\+\_\+}
+\item 
+mblas\+::\+Matrix \hyperlink{classGPU_1_1ApePenalty_a9f7c2134d832fe081cd86973d19bb58b}{Probs\+\_\+}
+\item 
+const \hyperlink{namespaceGPU_ac29cf59ddc71f2086318cc8a5b166269}{Penalties} \& \hyperlink{classGPU_1_1ApePenalty_aaa86c75eac67269551b29b9b12f47df8}{penalties\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file ape\+\_\+penalty.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Ape\+Penalty@{Ape\+Penalty}}
+\index{Ape\+Penalty@{Ape\+Penalty}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Ape\+Penalty(const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t tab, const Src\+Trg\+Map \&src\+Trg\+Map, const Penalties \&penalties)}{ApePenalty(const std::string &name, const YAML::Node &config, size_t tab, const SrcTrgMap &srcTrgMap, const Penalties &penalties)}}]{\setlength{\rightskip}{0pt plus 5cm}G\+P\+U\+::\+Ape\+Penalty\+::\+Ape\+Penalty (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{size\+\_\+t}]{tab, }
+\item[{const {\bf Src\+Trg\+Map} \&}]{src\+Trg\+Map, }
+\item[{const {\bf Penalties} \&}]{penalties}
+\end{DoxyParamCaption}
+)}\hypertarget{classGPU_1_1ApePenalty_a83488f2624845fda223b786277a04070}{}\label{classGPU_1_1ApePenalty_a83488f2624845fda223b786277a04070}
+
+
+\subsection{Member Function Documentation}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Assemble\+Beam\+State@{Assemble\+Beam\+State}}
+\index{Assemble\+Beam\+State@{Assemble\+Beam\+State}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Assemble\+Beam\+State(const State \&in, const Beam \&beam, State \&out)}{AssembleBeamState(const State &in, const Beam &beam, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+P\+U\+::\+Ape\+Penalty\+::\+Assemble\+Beam\+State (
+\begin{DoxyParamCaption}
+\item[{const State \&}]{in, }
+\item[{const Beam \&}]{beam, }
+\item[{State \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_a3910e3567c1645ab417e05bc673baa30}{}\label{classGPU_1_1ApePenalty_a3910e3567c1645ab417e05bc673baa30}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Begin\+Sentence\+State@{Begin\+Sentence\+State}}
+\index{Begin\+Sentence\+State@{Begin\+Sentence\+State}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Begin\+Sentence\+State(\+State \&state)}{BeginSentenceState(State &state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+P\+U\+::\+Ape\+Penalty\+::\+Begin\+Sentence\+State (
+\begin{DoxyParamCaption}
+\item[{State \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_a1eb9aeaaae7584490e9663c4942e841a}{}\label{classGPU_1_1ApePenalty_a1eb9aeaaae7584490e9663c4942e841a}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Filter@{Filter}}
+\index{Filter@{Filter}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Filter(const std\+::vector$<$ size\+\_\+t $>$ \&)}{Filter(const std::vector< size_t > &)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+P\+U\+::\+Ape\+Penalty\+::\+Filter (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGPU_1_1ApePenalty_aa87b18d414bede8e6cb238ccf2a99077}{}\label{classGPU_1_1ApePenalty_aa87b18d414bede8e6cb238ccf2a99077}
+
+
+Definition at line 51 of file ape\+\_\+penalty.\+h.
+
+
+\begin{DoxyCode}
+51 \{\}
+\end{DoxyCode}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Get\+Probs@{Get\+Probs}}
+\index{Get\+Probs@{Get\+Probs}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Get\+Probs()}{GetProbs()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Base\+Matrix\& G\+P\+U\+::\+Ape\+Penalty\+::\+Get\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_a2ca72a0f526af45b6b75bcd1115f91dc}{}\label{classGPU_1_1ApePenalty_a2ca72a0f526af45b6b75bcd1115f91dc}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Get\+Vocab\+Size@{Get\+Vocab\+Size}}
+\index{Get\+Vocab\+Size@{Get\+Vocab\+Size}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Get\+Vocab\+Size() const }{GetVocabSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t G\+P\+U\+::\+Ape\+Penalty\+::\+Get\+Vocab\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_ab9831d9a76f171017038f75ec0782770}{}\label{classGPU_1_1ApePenalty_ab9831d9a76f171017038f75ec0782770}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!New\+State@{New\+State}}
+\index{New\+State@{New\+State}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{New\+State()}{NewState()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual State$\ast$ G\+P\+U\+::\+Ape\+Penalty\+::\+New\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_a066a608aaca6db9ba49bd42554cdb6be}{}\label{classGPU_1_1ApePenalty_a066a608aaca6db9ba49bd42554cdb6be}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Score@{Score}}
+\index{Score@{Score}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Score(const State \&in, State \&out)}{Score(const State &in, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+P\+U\+::\+Ape\+Penalty\+::\+Score (
+\begin{DoxyParamCaption}
+\item[{const State \&}]{in, }
+\item[{State \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_a7a7122eb1b3216f57cfafcc66a908fbc}{}\label{classGPU_1_1ApePenalty_a7a7122eb1b3216f57cfafcc66a908fbc}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Set\+Source@{Set\+Source}}
+\index{Set\+Source@{Set\+Source}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Set\+Source(const Sentence \&source)}{SetSource(const Sentence &source)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+P\+U\+::\+Ape\+Penalty\+::\+Set\+Source (
+\begin{DoxyParamCaption}
+\item[{const Sentence \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGPU_1_1ApePenalty_ab8b121e02ceba70adcdcf70989bf2799}{}\label{classGPU_1_1ApePenalty_ab8b121e02ceba70adcdcf70989bf2799}
+
+
+\subsection{Member Data Documentation}
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!costs\+\_\+@{costs\+\_\+}}
+\index{costs\+\_\+@{costs\+\_\+}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{costs\+\_\+}{costs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ G\+P\+U\+::\+Ape\+Penalty\+::costs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGPU_1_1ApePenalty_a5e7813c5952e43004029ec4555dc7952}{}\label{classGPU_1_1ApePenalty_a5e7813c5952e43004029ec4555dc7952}
+
+
+Definition at line 56 of file ape\+\_\+penalty.\+h.
+
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!penalties\+\_\+@{penalties\+\_\+}}
+\index{penalties\+\_\+@{penalties\+\_\+}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{penalties\+\_\+}{penalties_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Penalties}\& G\+P\+U\+::\+Ape\+Penalty\+::penalties\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGPU_1_1ApePenalty_aaa86c75eac67269551b29b9b12f47df8}{}\label{classGPU_1_1ApePenalty_aaa86c75eac67269551b29b9b12f47df8}
+
+
+Definition at line 59 of file ape\+\_\+penalty.\+h.
+
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!Probs\+\_\+@{Probs\+\_\+}}
+\index{Probs\+\_\+@{Probs\+\_\+}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{Probs\+\_\+}{Probs_}}]{\setlength{\rightskip}{0pt plus 5cm}mblas\+::\+Matrix G\+P\+U\+::\+Ape\+Penalty\+::\+Probs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGPU_1_1ApePenalty_a9f7c2134d832fe081cd86973d19bb58b}{}\label{classGPU_1_1ApePenalty_a9f7c2134d832fe081cd86973d19bb58b}
+
+
+Definition at line 58 of file ape\+\_\+penalty.\+h.
+
+\index{G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}!src\+Trg\+Map\+\_\+@{src\+Trg\+Map\+\_\+}}
+\index{src\+Trg\+Map\+\_\+@{src\+Trg\+Map\+\_\+}!G\+P\+U\+::\+Ape\+Penalty@{G\+P\+U\+::\+Ape\+Penalty}}
+\subsubsection[{\texorpdfstring{src\+Trg\+Map\+\_\+}{srcTrgMap_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Src\+Trg\+Map}\& G\+P\+U\+::\+Ape\+Penalty\+::src\+Trg\+Map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGPU_1_1ApePenalty_ad78cff59e0294e7e42da2ca5fedec151}{}\label{classGPU_1_1ApePenalty_ad78cff59e0294e7e42da2ca5fedec151}
+
+
+Definition at line 57 of file ape\+\_\+penalty.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ape__penalty_8h}{ape\+\_\+penalty.\+h}\end{DoxyCompactItemize}

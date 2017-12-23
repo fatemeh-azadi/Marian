@@ -1,0 +1,15 @@
+<map id="marian::rnn::GlobalAttention::apply" name="marian::rnn::GlobalAttention::apply">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#a268400392f22176821c7c4a36733b178" title="marian::dropout" alt="" coords="269,107,381,133"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#ad7fbf1ba8e2e04ffdc7d5e4841b5e691" title="marian::dot" alt="" coords="281,157,368,184"/>
+<area shape="rect" id="node9" href="$da/d22/namespacemarian.html#a6202278a9da8ca8a281a6a96e75082f6" title="marian::layer_norm" alt="" coords="258,208,391,235"/>
+<area shape="rect" id="node10" href="$dd/d18/namespacemarian_1_1rnn.html#a7dd35a8b53e7515e0d3bd91c7be32fe3" title="marian::rnn::attOps" alt="" coords="257,259,392,285"/>
+<area shape="rect" id="node11" href="$da/d22/namespacemarian.html#acd984f43188d0ae23c2a6ef13ae5293f" title="marian::reshape" alt="" coords="267,309,382,336"/>
+<area shape="rect" id="node12" href="$da/d22/namespacemarian.html#a00669690ef16ce9b1bde5ee9d1b77ac6" title="marian::transpose" alt="" coords="261,360,388,387"/>
+<area shape="rect" id="node13" href="$da/d22/namespacemarian.html#a3c08107d509be52ee2c17eb6d54c7ebc" title="marian::softmax" alt="" coords="267,411,383,437"/>
+<area shape="rect" id="node14" href="$da/d22/namespacemarian.html#a8ccb9507a69a32ecd48410fd1557f209" title="marian::weighted_average" alt="" coords="237,461,412,488"/>
+<area shape="rect" id="node3" href="$d4/d04/namespacemarian_1_1keywords.html#a74d7a2502faafdd421ef3dff629e284f" title="marian::keywords::Get" alt="" coords="460,5,615,32"/>
+<area shape="rect" id="node4" href="$da/d22/namespacemarian.html#a763e5e9b5d5a329d2420fe9bab95476d" title="marian::shift" alt="" coords="490,56,585,83"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a3dbe8b5eb203876cd08cf3fe75a1c6bc" title="marian::convolution" alt="" coords="470,107,605,133"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#a8ee119d3ee4867a3c826de62ea1de4f5" title="marian::avg_pooling" alt="" coords="468,157,607,184"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#abfe3b8c37f479da0a31a1e843d8bdedf" title="marian::max_pooling" alt="" coords="466,208,609,235"/>
+</map>

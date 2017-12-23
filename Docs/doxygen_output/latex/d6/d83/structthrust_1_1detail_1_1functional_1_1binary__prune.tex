@@ -1,0 +1,67 @@
+\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__prune}{}\section{thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+prune$<$ T $>$ Struct Template Reference}
+\label{structthrust_1_1detail_1_1functional_1_1binary__prune}\index{thrust\+::detail\+::functional\+::binary\+\_\+prune$<$ T $>$@{thrust\+::detail\+::functional\+::binary\+\_\+prune$<$ T $>$}}
+
+
+{\ttfamily \#include $<$thrust\+\_\+functions.\+h$>$}
+
+
+
+Inheritance diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+prune$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{dc/d2e/structthrust_1_1detail_1_1functional_1_1binary__prune__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+prune$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{df/d4c/structthrust_1_1detail_1_1functional_1_1binary__prune__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__prune_a721994995b68481a8729281e2166a128}{operator()} (const T \&x, const T \&eps) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct thrust\+::detail\+::functional\+::binary\+\_\+prune$<$ T $>$}
+
+
+
+Definition at line 126 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{thrust\+::detail\+::functional\+::binary\+\_\+prune@{thrust\+::detail\+::functional\+::binary\+\_\+prune}!operator()@{operator()}}
+\index{operator()@{operator()}!thrust\+::detail\+::functional\+::binary\+\_\+prune@{thrust\+::detail\+::functional\+::binary\+\_\+prune}}
+\subsubsection[{\texorpdfstring{operator()(const T \&x, const T \&eps) const }{operator()(const T &x, const T &eps) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T {\bf thrust\+::detail\+::functional\+::binary\+\_\+prune}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{eps}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__prune_a721994995b68481a8729281e2166a128}{}\label{structthrust_1_1detail_1_1functional_1_1binary__prune_a721994995b68481a8729281e2166a128}
+
+
+Definition at line 127 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+127                                                                    \{
+128     \textcolor{keywordflow}{return} abs(x) >= \hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{eps} ? x : 0;
+129   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2kernels_2thrust__functions_8h}{marian/src/kernels/thrust\+\_\+functions.\+h}\end{DoxyCompactItemize}

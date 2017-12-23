@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/da9/classmarian_1_1SingletonGraph">
+<title>marian::SingletonGraph class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d9d/graph__group_8h">&lt;graph_group.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::SingletonGraph</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d1e/classmarian_1_1SingletonGraph__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::SingletonGraph</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/de9/classmarian_1_1SingletonGraph__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Builder</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Builder  <link linkend="d5/da9/classmarian_1_1SingletonGraph_1aa1976dc1eff06ae05814084160b1cd3e">builder_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Builder::dataset_type  <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a6bb5603e1b8641cd65bd7b032cbecefd">dataset_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Builder &gt; builder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; ExpressionGraph &gt; graph_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Scheduler&lt; dataset_type &gt; &gt; scheduler_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; ExpressionGraph &gt; mvAvgGraph_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool mvAvg_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float mvDecay_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a5d46b2cbb40e334e4885ce507fb2019b">setScheduler</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d2/dab/classmarian_1_1Scheduler">Scheduler</link>&lt; <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a6bb5603e1b8641cd65bd7b032cbecefd">dataset_type</link> &gt;&gt; scheduler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a64ed90859cc12969682365c9dff9c8ae">SingletonGraph</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a4fdb7d93ca5e9d4b219a4dc8f761be0b">update</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a0cd71fba2f6c9b6d41f043d3000270a7">load</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1ae1b4d1afb1be47551f76e9f7b75eb3d0">save</link> (
+bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a6c6c46e945ae75e779253a3623237b3b">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">data::BatchStats</link> &gt; <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a1a06f75eecc4c6548bbdc55538c53f2c">collectStats</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a4d30a0f1e811e89be524666e3a197dac">updateMovingAverage</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> mvAvgParams, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> params, size_t batches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/da9/classmarian_1_1SingletonGraph_1a857b38654fac79ce8a8b584deaf7525c">execute</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1aa1976dc1eff06ae05814084160b1cd3e">
+                <title>typedef Builder marian::SingletonGraph&lt; Builder &gt;::builder_type</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a6bb5603e1b8641cd65bd7b032cbecefd">
+                <title>typedef Builder::dataset_type marian::SingletonGraph&lt; Builder &gt;::dataset_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a5d46b2cbb40e334e4885ce507fb2019b">
+                <title>virtual void marian::SingletonGraph&lt; Builder &gt;::setScheduler (Ptr&lt; Scheduler&lt; dataset_type &gt;&gt; scheduler)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a64ed90859cc12969682365c9dff9c8ae">
+                <title>marian::SingletonGraph&lt; Builder &gt;::SingletonGraph (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a4fdb7d93ca5e9d4b219a4dc8f761be0b">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::update (Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a0cd71fba2f6c9b6d41f043d3000270a7">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::load ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1ae1b4d1afb1be47551f76e9f7b75eb3d0">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::save (bool final=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a6c6c46e945ae75e779253a3623237b3b">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::save (Ptr&lt; ExpressionGraph &gt; graph, bool final=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a1a06f75eecc4c6548bbdc55538c53f2c">
+                <title>Ptr&lt;data::BatchStats&gt; marian::SingletonGraph&lt; Builder &gt;::collectStats ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a4d30a0f1e811e89be524666e3a197dac">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::updateMovingAverage (Tensor mvAvgParams, Tensor params, size_t batches)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da9/classmarian_1_1SingletonGraph_1a857b38654fac79ce8a8b584deaf7525c">
+                <title>void marian::SingletonGraph&lt; Builder &gt;::execute (Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

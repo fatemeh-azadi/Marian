@@ -1,0 +1,316 @@
+\hypertarget{classamunmt_1_1Histories}{}\section{amunmt\+:\+:Histories Class Reference}
+\label{classamunmt_1_1Histories}\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+
+
+{\ttfamily \#include $<$history.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Histories\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{de/d07/classamunmt_1_1Histories__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Histories_a33bfdb800a56a0b22e380d526bcd8bd0}{Histories} ()
+\item 
+\hyperlink{classamunmt_1_1Histories_a87f59abc788622fab88049244f3a5d12}{Histories} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&sentences, bool normalize\+Score)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1History}{History} $>$ \hyperlink{classamunmt_1_1Histories_a757045db713628fa453bdebd8a35be29}{at} (size\+\_\+t id) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5}{size} () const 
+\item 
+void \hyperlink{classamunmt_1_1Histories_ad20c0157f71101a93f7c4d4802d1e80a}{Add} (const \hyperlink{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}{Beams} \&beams)
+\item 
+void \hyperlink{classamunmt_1_1Histories_a1cd0e1d06d2ebea1e026f03592f0e492}{Sort\+By\+Line\+Num} ()
+\item 
+void \hyperlink{classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3}{Append} (const \hyperlink{classamunmt_1_1Histories}{Histories} \&other)
+\item 
+\hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \hyperlink{classamunmt_1_1Histories_a50c82a944c20c3d0d06ee93d1eab1b5b}{Get\+First\+Hyps} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Histories_aad8595e134d36141386c1a3f67991bde}{Histories} (const \hyperlink{classamunmt_1_1Histories}{Histories} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1History}{History} $>$ $>$ \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 87 of file amun/common/history.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Histories@{Histories}}
+\index{Histories@{Histories}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Histories()}{Histories()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Histories\+::\+Histories (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Histories_a33bfdb800a56a0b22e380d526bcd8bd0}{}\label{classamunmt_1_1Histories_a33bfdb800a56a0b22e380d526bcd8bd0}
+
+
+Definition at line 89 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+89 \{\} \textcolor{comment}{// for all histories in translation task}
+\end{DoxyCode}
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Histories@{Histories}}
+\index{Histories@{Histories}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Histories(const Sentences \&sentences, bool normalize\+Score)}{Histories(const Sentences &sentences, bool normalizeScore)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Histories\+::\+Histories (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{sentences, }
+\item[{bool}]{normalize\+Score}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Histories_a87f59abc788622fab88049244f3a5d12}{}\label{classamunmt_1_1Histories_a87f59abc788622fab88049244f3a5d12}
+
+
+Definition at line 16 of file amun/common/history.\+cpp.
+
+
+\begin{DoxyCode}
+17  : \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}(\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.size())
+18 \{
+19   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.size(); ++i) \{
+20     \textcolor{keyword}{const} Sentence &sentence = *\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}.at(i).get();
+21     History *history = \textcolor{keyword}{new} History(sentence.GetLineNum(), normalizeScore, 3 * sentence.size());
+22     \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}[i].reset(history);
+23   \}
+24 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d0b/classamunmt_1_1Histories_a87f59abc788622fab88049244f3a5d12_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Histories@{Histories}}
+\index{Histories@{Histories}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Histories(const Histories \&)=delete}{Histories(const Histories &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Histories\+::\+Histories (
+\begin{DoxyParamCaption}
+\item[{const {\bf Histories} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1Histories_aad8595e134d36141386c1a3f67991bde}{}\label{classamunmt_1_1Histories_aad8595e134d36141386c1a3f67991bde}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Add@{Add}}
+\index{Add@{Add}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Add(const Beams \&beams)}{Add(const Beams &beams)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Histories\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beams} \&}]{beams}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Histories_ad20c0157f71101a93f7c4d4802d1e80a}{}\label{classamunmt_1_1Histories_ad20c0157f71101a93f7c4d4802d1e80a}
+
+
+Definition at line 100 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+100                                  \{
+101       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5}{size}(); ++i) \{
+102         \textcolor{keywordflow}{if} (!beams[i].empty()) \{
+103           \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}[i]->Add(beams[i]);
+104         \}
+105       \}
+106     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d2/d0b/classamunmt_1_1Histories_ad20c0157f71101a93f7c4d4802d1e80a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Append@{Append}}
+\index{Append@{Append}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Append(const Histories \&other)}{Append(const Histories &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Histories\+::\+Append (
+\begin{DoxyParamCaption}
+\item[{const {\bf Histories} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3}{}\label{classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3}
+
+
+Definition at line 43 of file amun/common/history.\+cpp.
+
+
+\begin{DoxyCode}
+44 \{
+45   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < other.size(); ++i) \{
+46     std::shared\_ptr<History> history = other.coll\_[i];
+47     \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}.push\_back(history);
+48   \}
+49 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d2/d0b/classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d0b/classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!at@{at}}
+\index{at@{at}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{at(size\+\_\+t id) const }{at(size_t id) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf History}$>$ amunmt\+::\+Histories\+::at (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Histories_a757045db713628fa453bdebd8a35be29}{}\label{classamunmt_1_1Histories_a757045db713628fa453bdebd8a35be29}
+
+
+Definition at line 92 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+92                                                \{
+93       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}.at(\textcolor{keywordtype}{id});
+94     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d0b/classamunmt_1_1Histories_a757045db713628fa453bdebd8a35be29_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Get\+First\+Hyps@{Get\+First\+Hyps}}
+\index{Get\+First\+Hyps@{Get\+First\+Hyps}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Get\+First\+Hyps()}{GetFirstHyps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beam} amunmt\+::\+Histories\+::\+Get\+First\+Hyps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Histories_a50c82a944c20c3d0d06ee93d1eab1b5b}{}\label{classamunmt_1_1Histories_a50c82a944c20c3d0d06ee93d1eab1b5b}
+
+
+Definition at line 111 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+111                         \{
+112       \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} beam;
+113       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& history : \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}) \{
+114         beam.emplace\_back(history->front()[0]);
+115       \}
+116       \textcolor{keywordflow}{return} beam;
+117     \}
+\end{DoxyCode}
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!size@{size}}
+\index{size@{size}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Histories\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5}{}\label{classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5}
+
+
+Definition at line 96 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+96                         \{
+97       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}.size();
+98     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d0b/classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!Sort\+By\+Line\+Num@{Sort\+By\+Line\+Num}}
+\index{Sort\+By\+Line\+Num@{Sort\+By\+Line\+Num}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{Sort\+By\+Line\+Num()}{SortByLineNum()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Histories\+::\+Sort\+By\+Line\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Histories_a1cd0e1d06d2ebea1e026f03592f0e492}{}\label{classamunmt_1_1Histories_a1cd0e1d06d2ebea1e026f03592f0e492}
+
+
+Definition at line 37 of file amun/common/history.\+cpp.
+
+
+\begin{DoxyCode}
+38 \{
+39   std::sort(\hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}.begin(), \hyperlink{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{coll\_}.end(), LineNumOrderer());
+40 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d0b/classamunmt_1_1Histories_a1cd0e1d06d2ebea1e026f03592f0e492_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Histories@{amunmt\+::\+Histories}!coll\+\_\+@{coll\+\_\+}}
+\index{coll\+\_\+@{coll\+\_\+}!amunmt\+::\+Histories@{amunmt\+::\+Histories}}
+\subsubsection[{\texorpdfstring{coll\+\_\+}{coll_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::shared\+\_\+ptr$<${\bf History}$>$ $>$ amunmt\+::\+Histories\+::coll\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}{}\label{classamunmt_1_1Histories_a7e7986695d324bd0dcf5186633667b09}
+
+
+Definition at line 120 of file amun/common/history.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2history_8h}{amun/common/history.\+h}\item 
+\hyperlink{amun_2common_2history_8cpp}{amun/common/history.\+cpp}\end{DoxyCompactItemize}

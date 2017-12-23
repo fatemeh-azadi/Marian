@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">
+<title>amunmt::GPU::mblas::Array class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d63/array_8h">&lt;array.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::mblas::Array</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d6c/classamunmt_1_1GPU_1_1mblas_1_1Array__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::mblas::Array</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dc0/classamunmt_1_1GPU_1_1mblas_1_1Array__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t m_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t m_maxSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T * m_arr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a501b947b592228c9245db2de1b888e7c">Array</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ac45fd24a2490f07d91407cfb75534f14">Array</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a40ec3bfface5916ccba7d197f5451873">Array</link> (
+size_t size, const T &amp; val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1af41e6ca82ec8fe42e11c3a59f7b13464">Array</link> (
+const std::vector&lt; T &gt; &amp; vec)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a74ca79cbf8d528450cece797953a14ff">~Array</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a904061864a097bb4e00227c00216fb38">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T * <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a4034555b63c429f5f3113e7297094861">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const T * <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a4dfaf4ea712df2f99a07261da03b6810">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ac5a8bd146e017b8bacd499053ca159cb">resize</link> (
+size_t newSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a82a366e0d0ea82a50ab46497edf112e1">reserve</link> (
+size_t newSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ab5dba7376988356cae89a636e462da24">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a501b947b592228c9245db2de1b888e7c">
+                <title>amunmt::GPU::mblas::Array&lt; T &gt;::Array ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ac45fd24a2490f07d91407cfb75534f14">
+                <title>amunmt::GPU::mblas::Array&lt; T &gt;::Array (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a40ec3bfface5916ccba7d197f5451873">
+                <title>amunmt::GPU::mblas::Array&lt; T &gt;::Array (size_t size, const T &amp;val)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1af41e6ca82ec8fe42e11c3a59f7b13464">
+                <title>amunmt::GPU::mblas::Array&lt; T &gt;::Array (const std::vector&lt; T &gt; &amp;vec)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a74ca79cbf8d528450cece797953a14ff">
+                <title>amunmt::GPU::mblas::Array&lt; T &gt;::~Array ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a904061864a097bb4e00227c00216fb38">
+                <title>size_t amunmt::GPU::mblas::Array&lt; T &gt;::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a4034555b63c429f5f3113e7297094861">
+                <title>T* amunmt::GPU::mblas::Array&lt; T &gt;::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a4dfaf4ea712df2f99a07261da03b6810">
+                <title>const T* amunmt::GPU::mblas::Array&lt; T &gt;::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ac5a8bd146e017b8bacd499053ca159cb">
+                <title>void amunmt::GPU::mblas::Array&lt; T &gt;::resize (size_t newSize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1a82a366e0d0ea82a50ab46497edf112e1">
+                <title>void amunmt::GPU::mblas::Array&lt; T &gt;::reserve (size_t newSize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_1ab5dba7376988356cae89a636e462da24">
+                <title>void amunmt::GPU::mblas::Array&lt; T &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dbc/classmarian_1_1Scorer">
+<title>marian::Scorer class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d00/scorers_8h">&lt;scorers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Scorer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dce/classmarian_1_1Scorer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Scorer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dbe/classmarian_1_1Scorer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string name_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float weight_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/dbc/classmarian_1_1Scorer_1a70f41d372a9989811cd83852f3283c32">Scorer</link> (
+const std::string &amp; name, float weight)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="dd/dbc/classmarian_1_1Scorer_1a0ad62a34381151462c960b1e731563bf">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="dd/dbc/classmarian_1_1Scorer_1af4fc7bb72abdd1a19a9d22a6202a41cd">getWeight</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dd/dbc/classmarian_1_1Scorer_1a303fd84dab071186dee77891c8351e55">clear</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="dd/dbc/classmarian_1_1Scorer_1aaefbe7744d015a273344eea6729b0bed">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="dd/dbc/classmarian_1_1Scorer_1a377f003fbab702227d0aa895af54a94a">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; , const std::vector&lt; size_t &gt; &amp; , const std::vector&lt; size_t &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dd/dbc/classmarian_1_1Scorer_1a5146708323940573726fda431f3baa51">init</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1a70f41d372a9989811cd83852f3283c32">
+                <title>marian::Scorer::Scorer (const std::string &amp;name, float weight)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1a0ad62a34381151462c960b1e731563bf">
+                <title>std::string marian::Scorer::getName ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1af4fc7bb72abdd1a19a9d22a6202a41cd">
+                <title>float marian::Scorer::getWeight ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1a303fd84dab071186dee77891c8351e55">
+                <title>virtual void marian::Scorer::clear (Ptr&lt; ExpressionGraph &gt;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1aaefbe7744d015a273344eea6729b0bed">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::Scorer::startState (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; data::CorpusBatch &gt;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1a377f003fbab702227d0aa895af54a94a">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::Scorer::step (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; ScorerState &gt;, const std::vector&lt; size_t &gt; &amp;, const std::vector&lt; size_t &gt; &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dbc/classmarian_1_1Scorer_1a5146708323940573726fda431f3baa51">
+                <title>virtual void marian::Scorer::init (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

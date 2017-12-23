@@ -1,0 +1,54 @@
+\hypertarget{dropper_8h}{}\section{dropper.\+h File Reference}
+\label{dropper_8h}\index{dropper.\+h@{dropper.\+h}}
+{\ttfamily \#include $<$curand.\+h$>$}\\*
+{\ttfamily \#include $<$curand\+\_\+kernel.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/device\+\_\+ptr.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/sort.\+h$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include \char`\"{}kernels/cuda\+\_\+helpers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kernels/tensor\+\_\+operators.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}training/sparse\+\_\+tensor.\+h\char`\"{}}\\*
+Include dependency graph for dropper.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d5d/dropper_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{d3/d70/dropper_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1GradientDropBase}{marian\+::\+Gradient\+Drop\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Ptr$<$ Gradient\+Drop\+Base $>$ \hyperlink{namespacemarian_a000da7078105881168a3f17ce1b148bb}{marian\+::\+Gradient\+Drop}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_ad52c2ed4c1cb5883cc029c4d7ff500e3}{marian\+::grad\+\_\+drop} (float $\ast$data, float $\ast$tmp, float $\ast$errors, float cut\+\_\+off, int max\+\_\+size)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a73f09514b9433048ccaf4d07059fc6b9}{marian\+::grad\+\_\+add\+\_\+error} (float $\ast$data, float $\ast$errors, int max\+\_\+size)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a3c73193a12dc93840c7d8bfec3df5dd1}{marian\+::full\+\_\+abs} (float $\ast$data, int max\+\_\+size)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a2f5bce2be75828dd7d0484aa48830564}{marian\+::build\+Indices} (float $\ast$dense\+Data, float $\ast$dense\+Sum, float $\ast$sparse\+Data, int $\ast$sparse\+Indices, int dense\+Size)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_aca9103c0b9695e03f87782c1ffc21d3a}{marian\+::random\+Sampling} (float $\ast$original\+Data, float $\ast$data, int size, int scale, int full\+Size)
+\end{DoxyCompactItemize}

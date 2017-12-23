@@ -1,0 +1,387 @@
+\hypertarget{classmarian_1_1ReshapeNodeOp}{}\section{marian\+:\+:Reshape\+Node\+Op Class Reference}
+\label{classmarian_1_1ReshapeNodeOp}\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Reshape\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d6a/classmarian_1_1ReshapeNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Reshape\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d52/classmarian_1_1ReshapeNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1ReshapeNodeOp_a5e7f049300ccff3d578f3e4c67b258f1}{Reshape\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, \hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}, Args...\+args)
+\item 
+\hyperlink{classmarian_1_1ReshapeNodeOp_ae314c869db74529cd4b114e2a677b891}{$\sim$\+Reshape\+Node\+Op} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1ReshapeNodeOp_a243a36a9cd6424ebefb74d025309f560}{allocate} ()
+\item 
+void \hyperlink{classmarian_1_1ReshapeNodeOp_a91830ea5e627891025195ded73877bcb}{free} ()
+\item 
+void \hyperlink{classmarian_1_1ReshapeNodeOp_a8f9ca94013f3465349e43d3c2353b6ac}{forward} ()
+\item 
+void \hyperlink{classmarian_1_1ReshapeNodeOp_ac9699ea9bb2347584e26d9b4e7460a81}{backward} ()
+\item 
+void \hyperlink{classmarian_1_1ReshapeNodeOp_a989d96bc6466ecb0bc3fc46b9cc8674d}{init\+\_\+dependent} ()
+\item 
+void \hyperlink{classmarian_1_1ReshapeNodeOp_a201cb6e0e0095a314b3cb72b38bc5a1d}{set\+\_\+zero\+\_\+adjoint} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \& \hyperlink{classmarian_1_1ReshapeNodeOp_a61262825805f0d2ab311d7ad36fed515}{val} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \& \hyperlink{classmarian_1_1ReshapeNodeOp_a74f6cd342abd616d2b8f8a89948e45ea}{grad} ()
+\item 
+const std\+::string \hyperlink{classmarian_1_1ReshapeNodeOp_a55763fba7127dae91e3cc878f5617edd}{type} ()
+\item 
+const std\+::string \hyperlink{classmarian_1_1ReshapeNodeOp_af2273386eb99822cd20bce1b9e877f49}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 531 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!Reshape\+Node\+Op@{Reshape\+Node\+Op}}
+\index{Reshape\+Node\+Op@{Reshape\+Node\+Op}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Reshape\+Node\+Op(\+Expr a, Shape shape, Args...\+args)}{ReshapeNodeOp(Expr a, Shape shape, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Reshape\+Node\+Op\+::\+Reshape\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{{\bf Shape}}]{shape, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a5e7f049300ccff3d578f3e4c67b258f1}{}\label{classmarian_1_1ReshapeNodeOp_a5e7f049300ccff3d578f3e4c67b258f1}
+
+
+Definition at line 537 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+538       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}, args...), 
+      \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\_}(a) \{
+539     \hyperlink{classmarian_1_1Node_aa83237be30a1afc0f0423b23d534d2d3}{Node::destroy\_} = \textcolor{keyword}{false};
+540   \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!````~Reshape\+Node\+Op@{$\sim$\+Reshape\+Node\+Op}}
+\index{````~Reshape\+Node\+Op@{$\sim$\+Reshape\+Node\+Op}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{$\sim$\+Reshape\+Node\+Op()}{~ReshapeNodeOp()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Reshape\+Node\+Op\+::$\sim$\+Reshape\+Node\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1ReshapeNodeOp_ae314c869db74529cd4b114e2a677b891}{}\label{classmarian_1_1ReshapeNodeOp_ae314c869db74529cd4b114e2a677b891}
+
+
+Definition at line 542 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+542 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!allocate@{allocate}}
+\index{allocate@{allocate}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{allocate()}{allocate()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Reshape\+Node\+Op\+::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a243a36a9cd6424ebefb74d025309f560}{}\label{classmarian_1_1ReshapeNodeOp_a243a36a9cd6424ebefb74d025309f560}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a66c54550ad60cc510329435eb21f8589}{marian\+::\+Node}.
+
+
+
+Definition at line 544 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+544 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!backward@{backward}}
+\index{backward@{backward}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward()}{backward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Reshape\+Node\+Op\+::backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_ac9699ea9bb2347584e26d9b4e7460a81}{}\label{classmarian_1_1ReshapeNodeOp_ac9699ea9bb2347584e26d9b4e7460a81}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a4710c71a35130cf0e382bb0a430725d3}{marian\+::\+Node}.
+
+
+
+Definition at line 548 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+548 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Reshape\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_af2273386eb99822cd20bce1b9e877f49}{}\label{classmarian_1_1ReshapeNodeOp_af2273386eb99822cd20bce1b9e877f49}
+
+
+Reimplemented from \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}.
+
+
+
+Definition at line 570 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+570 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"grey"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!forward@{forward}}
+\index{forward@{forward}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward()}{forward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Reshape\+Node\+Op\+::forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a8f9ca94013f3465349e43d3c2353b6ac}{}\label{classmarian_1_1ReshapeNodeOp_a8f9ca94013f3465349e43d3c2353b6ac}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0ace1579b496977ac75fadfffc41416b}{marian\+::\+Node}.
+
+
+
+Definition at line 547 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+547 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!free@{free}}
+\index{free@{free}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Reshape\+Node\+Op\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a91830ea5e627891025195ded73877bcb}{}\label{classmarian_1_1ReshapeNodeOp_a91830ea5e627891025195ded73877bcb}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_ab8ceeb421fca5b912330d6b7ac2cb14b}{marian\+::\+Node}.
+
+
+
+Definition at line 545 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+545 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!grad@{grad}}
+\index{grad@{grad}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{grad()}{grad()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor}\& marian\+::\+Reshape\+Node\+Op\+::grad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a74f6cd342abd616d2b8f8a89948e45ea}{}\label{classmarian_1_1ReshapeNodeOp_a74f6cd342abd616d2b8f8a89948e45ea}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{marian\+::\+Node}.
+
+
+
+Definition at line 561 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+561                  \{
+562     \textcolor{keyword}{auto} childGrad = \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\_}->grad();
+563     \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}.reset(
+564         \textcolor{keyword}{new} TensorBase(childGrad->memory(), \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}(), childGrad->getDevice()));
+565     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_};
+566   \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d2d/classmarian_1_1ReshapeNodeOp_a74f6cd342abd616d2b8f8a89948e45ea_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Reshape\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860}{}\label{classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 572 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+572                         \{
+573     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+574       \textcolor{keywordtype}{size\_t} seed = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+575       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} s : \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}())
+576         \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, s);
+577       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = seed;
+578     \}
+579     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+580   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d2d/classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!init\+\_\+dependent@{init\+\_\+dependent}}
+\index{init\+\_\+dependent@{init\+\_\+dependent}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{init\+\_\+dependent()}{init_dependent()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Reshape\+Node\+Op\+::init\+\_\+dependent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a989d96bc6466ecb0bc3fc46b9cc8674d}{}\label{classmarian_1_1ReshapeNodeOp_a989d96bc6466ecb0bc3fc46b9cc8674d}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a42807d121dc8bc008176a3f922b4a5eb}{marian\+::\+Node}.
+
+
+
+Definition at line 550 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+550 \{ \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\_}->init\_dependent(); \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}}
+\index{set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{set\+\_\+zero\+\_\+adjoint()}{set_zero_adjoint()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Reshape\+Node\+Op\+::set\+\_\+zero\+\_\+adjoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a201cb6e0e0095a314b3cb72b38bc5a1d}{}\label{classmarian_1_1ReshapeNodeOp_a201cb6e0e0095a314b3cb72b38bc5a1d}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_ad818ff58b17c5bdcee78c19b9f0df0d6}{marian\+::\+Node}.
+
+
+
+Definition at line 552 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+552 \{ \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\_}->set\_zero\_adjoint(); \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Reshape\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a55763fba7127dae91e3cc878f5617edd}{}\label{classmarian_1_1ReshapeNodeOp_a55763fba7127dae91e3cc878f5617edd}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 568 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+568 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"reshape"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!val@{val}}
+\index{val@{val}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{val()}{val()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor}\& marian\+::\+Reshape\+Node\+Op\+::val (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a61262825805f0d2ab311d7ad36fed515}{}\label{classmarian_1_1ReshapeNodeOp_a61262825805f0d2ab311d7ad36fed515}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{marian\+::\+Node}.
+
+
+
+Definition at line 554 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+554                 \{
+555     \textcolor{keyword}{auto} childVal = \hyperlink{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{reshapee\_}->val();
+556     \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}.reset(
+557         \textcolor{keyword}{new} TensorBase(childVal->memory(), \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape}(), childVal->getDevice()));
+558     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_};
+559   \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d2d/classmarian_1_1ReshapeNodeOp_a61262825805f0d2ab311d7ad36fed515_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}!reshapee\+\_\+@{reshapee\+\_\+}}
+\index{reshapee\+\_\+@{reshapee\+\_\+}!marian\+::\+Reshape\+Node\+Op@{marian\+::\+Reshape\+Node\+Op}}
+\subsubsection[{\texorpdfstring{reshapee\+\_\+}{reshapee_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Reshape\+Node\+Op\+::reshapee\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}{}\label{classmarian_1_1ReshapeNodeOp_a29e5ebe2b9959994bca8b08018b11117}
+
+
+Definition at line 533 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

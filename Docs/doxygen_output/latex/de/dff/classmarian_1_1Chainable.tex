@@ -1,0 +1,856 @@
+\hypertarget{classmarian_1_1Chainable}{}\section{marian\+:\+:Chainable$<$ Data\+Type $>$ Struct Template Reference}
+\label{classmarian_1_1Chainable}\index{marian\+::\+Chainable$<$ Data\+Type $>$@{marian\+::\+Chainable$<$ Data\+Type $>$}}
+
+
+Abstraction of an element in a computation graph for which a derivative can be calculated.  
+
+
+
+
+{\ttfamily \#include $<$definitions.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Chainable$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{d7/d8d/classmarian_1_1Chainable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Chainable_a7dca365afdad93e9f14dd3a9eb448a67}{Chainable} ()
+\item 
+virtual \hyperlink{classmarian_1_1Chainable_a97748d5fa4766b4006be2e00509f9d69}{$\sim$\+Chainable} ()
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_ae34ca176aa8332060971e48e5924021d}{forward} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_ac378f88a43e622f8ebe915e07a6e3afd}{backward} ()=0
+\item 
+virtual \hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{classmarian_1_1Chainable_ad384c497e09e7af6a5a2e5b660a587a1}{forward\+Ops} ()=0
+\item 
+virtual \hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{classmarian_1_1Chainable_a309d5314142f2a3bbdb555c631b9ff81}{backward\+Ops} ()=0
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1Chainable_abfe36e67806df6681bdcd7bf81cbab16}{allocate} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a0b0a98056948c3cb92e1bad73f32781c}{free} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a38fc006b882be3f26352a6b6364e60e7}{init} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a489e63a97b6940ab1d7065e2b4f935f2}{init\+\_\+dependent} ()
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_ab8d92dd0145cc2fdf9c634f3493afa3e}{set\+\_\+zero\+\_\+adjoint} ()
+\item 
+virtual bool \hyperlink{classmarian_1_1Chainable_aaec9da795a462f3ed88325769d8c238a}{trainable} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a0af1d5f65be7f857b18370dfa1df1638}{set\+Trainable} (bool)=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a394a7e3f35fc90a7d9e717c7512fd2f1}{set\+Id} (size\+\_\+t)=0
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1Chainable_a2dff8542fdaf06b18dcf26f5a5834621}{get\+Id} ()=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1Chainable_a3e89dfd767b54ae685e9a3ec57888376}{graph} ()=0
+\item 
+virtual const \hyperlink{structmarian_1_1Shape}{Shape} \& \hyperlink{classmarian_1_1Chainable_aec5a801e7b0c7bc3b0d0956ced52f90b}{shape} ()=0
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \& \hyperlink{classmarian_1_1Chainable_a8baafc6c50d01876b34404e033ab06ab}{children} ()=0
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1Chainable_a5bd9e384a91c5aa70b33fdaa085df11b}{child} (size\+\_\+t)=0
+\item 
+virtual Data\+Type \& \hyperlink{classmarian_1_1Chainable_a5b4abc3fddef0cc1dea251820bf98d95}{val} ()=0
+\item 
+virtual Data\+Type \& \hyperlink{classmarian_1_1Chainable_a91111faa04d388d623f86a75735a65be}{grad} ()=0
+\item 
+virtual float \hyperlink{classmarian_1_1Chainable_a7aa762e76967be25d3f1fe73d0007890}{scalar} ()=0
+\item 
+virtual const std\+::string \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{type} ()=0
+\item 
+virtual const std\+::string \hyperlink{classmarian_1_1Chainable_aabc65436f44051e63f3469c587d59803}{color} ()=0
+\item 
+virtual const std\+::string \hyperlink{classmarian_1_1Chainable_abe6229de0b61614d629e48fa6f1a9ca6}{form} ()=0
+\item 
+virtual const std\+::string \hyperlink{classmarian_1_1Chainable_a5ed3d68211003bf4f8c3185cc909d92a}{label} ()=0
+\item 
+virtual std\+::string \hyperlink{classmarian_1_1Chainable_a16566c8b8d4c718d8c35737f80ed45da}{graphviz} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a7d75ea224b53df6c2e1b32d86a65c359}{set\+\_\+name} (const std\+::string \&)=0
+\item 
+virtual const std\+::string \& \hyperlink{classmarian_1_1Chainable_a7de20b12268f18b186e2d76bfb19e899}{name} () const =0
+\item 
+virtual void \hyperlink{classmarian_1_1Chainable_a6cb078bf79069c097c8078b7ab8a1eb7}{debug} (const std\+::string \&message)=0
+\item 
+virtual bool \hyperlink{classmarian_1_1Chainable_a5b58fb9fa5f168310936ffe3fc05505a}{marked\+\_\+for\+\_\+debug} ()=0
+\item 
+virtual const std\+::string \& \hyperlink{classmarian_1_1Chainable_a92895c4575aefd1a67373b02cdf31472}{debug\+\_\+message} ()=0
+\item 
+virtual size\+\_\+t \hyperlink{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}{hash} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\\*
+struct marian\+::\+Chainable$<$ Data\+Type $>$}
+
+Abstraction of an element in a computation graph for which a derivative can be calculated. 
+
+The name of this class comes from the fact that this element is \href{https://en.wikipedia.org/wiki/Function_composition}{\tt composable} (aka chainable) in the context of the \href{https://en.wikipedia.org/wiki/Chain_rule}{\tt chain rule of calculus}.
+
+Given that context, in the documentation for this class, the following notation is used\+:
+\begin{DoxyItemize}
+\item Given an expression graph of composed functions, $y$ refers to the final value resulting from evaluating the entire graph
+\item $w_i$ refers to the partial result of evaluating the expression subgraph rooted at the {\itshape i}-\/th \hyperlink{classmarian_1_1Chainable}{Chainable} element
+\item $\bar{w}_i$ refers to the \href{https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation}{\tt adjoint} of $w_i$, where $\bar{w}_i$ is defined as the partial derivative of $y$ with respect to $w_i$, or formally $\bar{w}_i = \frac{\partial y}{\partial w_i}$ 
+\end{DoxyItemize}
+
+Definition at line 46 of file definitions.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!Chainable@{Chainable}}
+\index{Chainable@{Chainable}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{Chainable()}{Chainable()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::{\bf Chainable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Chainable_a7dca365afdad93e9f14dd3a9eb448a67}{}\label{classmarian_1_1Chainable_a7dca365afdad93e9f14dd3a9eb448a67}
+
+
+Definition at line 54 of file chainable.\+h.
+
+
+\begin{DoxyCode}
+54 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!````~Chainable@{$\sim$\+Chainable}}
+\index{````~Chainable@{$\sim$\+Chainable}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{$\sim$\+Chainable()}{~Chainable()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::$\sim${\bf Chainable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Chainable_a97748d5fa4766b4006be2e00509f9d69}{}\label{classmarian_1_1Chainable_a97748d5fa4766b4006be2e00509f9d69}
+
+
+Definition at line 55 of file chainable.\+h.
+
+
+\begin{DoxyCode}
+55 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!allocate@{allocate}}
+\index{allocate@{allocate}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{allocate()=0}{allocate()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual size\+\_\+t {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_abfe36e67806df6681bdcd7bf81cbab16}{}\label{classmarian_1_1Chainable_abfe36e67806df6681bdcd7bf81cbab16}
+
+
+Implemented in \hyperlink{classmarian_1_1TimestepNodeOp_ac014b5b002e36eeefccfaf4939d2a535}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a243a36a9cd6424ebefb74d025309f560}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{classmarian_1_1Node_a66c54550ad60cc510329435eb21f8589}{marian\+::\+Node}, \hyperlink{structmarian_1_1ParamNode_a3b95c7c7a19f6ae26b0001b15e9cffe6}{marian\+::\+Param\+Node}, and \hyperlink{structmarian_1_1ConstantNode_ae86ec3d578ec6288453ffd6393ffc812}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{de/dff/classmarian_1_1Chainable_abfe36e67806df6681bdcd7bf81cbab16_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!backward@{backward}}
+\index{backward@{backward}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{backward()=0}{backward()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_ac378f88a43e622f8ebe915e07a6e3afd}{}\label{classmarian_1_1Chainable_ac378f88a43e622f8ebe915e07a6e3afd}
+
+
+Implemented in \hyperlink{structmarian_1_1LexicalProbNodeOp_a494a1751a4a92064d0b6f88672e67e69}{marian\+::\+Lexical\+Prob\+Node\+Op}, \hyperlink{classmarian_1_1TimestepNodeOp_a008635706bbc2acd247d2488a856fba9}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_ac9699ea9bb2347584e26d9b4e7460a81}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1ConcatenateNodeOp_a256bf52a8e098dddcdeddacb39e55929}{marian\+::\+Concatenate\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a4710c71a35130cf0e382bb0a430725d3}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{de/dff/classmarian_1_1Chainable_ac378f88a43e622f8ebe915e07a6e3afd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{backward\+Ops()=0}{backwardOps()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual {\bf Node\+Ops} {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a309d5314142f2a3bbdb555c631b9ff81}{}\label{classmarian_1_1Chainable_a309d5314142f2a3bbdb555c631b9ff81}
+
+
+Implemented in \hyperlink{structmarian_1_1ShiftNodeOp_aa23a0bc2d5f513cb6d2f540783a720a3}{marian\+::\+Shift\+Node\+Op}, \hyperlink{structmarian_1_1TransposeNodeOp_ac924d0a88ccf18ed27ffc6e10a5fd075}{marian\+::\+Transpose\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_ab5711eb131212a41924e7da36d2e396c}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_a09fcd9c3cd6c67f9c0ab37c48d9c41cd}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1NegNodeOp_ab7f6421e5106374dae28e016b48280fd}{marian\+::\+Neg\+Node\+Op}, \hyperlink{structmarian_1_1SquareNodeOp_acc9e02797b8bdbbb797033bc0712bee7}{marian\+::\+Square\+Node\+Op}, \hyperlink{structmarian_1_1LayerNormalizationOp_a31596fee029ef32402528e24376e2c69}{marian\+::\+Layer\+Normalization\+Op}, \hyperlink{structmarian_1_1SqrtNodeOp_adeeaeffd66c0f516cc43b2f84b2a3240}{marian\+::\+Sqrt\+Node\+Op}, \hyperlink{structmarian_1_1ExpNodeOp_a99a3c11f354e675876e681abd964c99d}{marian\+::\+Exp\+Node\+Op}, \hyperlink{structmarian_1_1AffineNodeOp_a277f706113217219266122ccbd44679b}{marian\+::\+Affine\+Node\+Op}, \hyperlink{structmarian_1_1LogNodeOp_a739a39b083f5995aee9badd4b528de03}{marian\+::\+Log\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a6ea05faab13f92bf40430274016db0f6}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_a705a3304de7f9aad90b7ead6736a8e46}{marian\+::\+Sum\+Node\+Op}, \hyperlink{structmarian_1_1CrossEntropyNodeOp_ac500562de661363f71a0f16331dd60e7}{marian\+::\+Cross\+Entropy\+Node\+Op}, \hyperlink{structmarian_1_1LogSoftmaxNodeOp_ab2ae88fe3ba607a32e566c6e0022c9f7}{marian\+::\+Log\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1SoftmaxNodeOp_a60b215754e045ea3442cb8bb1ba26465}{marian\+::\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1DivNodeOp_affd4ce9819f516cb1ea37786ffd8815a}{marian\+::\+Div\+Node\+Op}, \hyperlink{structmarian_1_1MultNodeOp_a27aa4d7f39e4ba64e3be883ca6dfaf45}{marian\+::\+Mult\+Node\+Op}, \hyperlink{structmarian_1_1ReLUNodeOp_ad1878b3530b0044d1bc7bbe1ad2d66a1}{marian\+::\+Re\+L\+U\+Node\+Op}, \hyperlink{structmarian_1_1MinusNodeOp_a126094d4dcd7a89fc897f0017d18e51b}{marian\+::\+Minus\+Node\+Op}, \hyperlink{structmarian_1_1PlusNodeOp_a3a9f5aac6cb519bc00c7cd916d458859}{marian\+::\+Plus\+Node\+Op}, \hyperlink{structmarian_1_1TanhNodeOp_a01f8dfc69d49509d2ba630517d3e10d6}{marian\+::\+Tanh\+Node\+Op}, \hyperlink{structmarian_1_1ScalarProductNodeOp_ad8f0e8f1aa0b07f36280265ce5b2d808}{marian\+::\+Scalar\+Product\+Node\+Op}, \hyperlink{structmarian_1_1LogitNodeOp_a574fae9f1ecf9e601c5ab0312b88d136}{marian\+::\+Logit\+Node\+Op}, \hyperlink{structmarian_1_1ScalarMultNodeOp_ae090e81626c938ff80aa51f0ec738e43}{marian\+::\+Scalar\+Mult\+Node\+Op}, \hyperlink{structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a}{marian\+::\+Dot\+Node\+Op}, \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}, and \hyperlink{structmarian_1_1ScalarAddNodeOp_a9507deac5ac29d8b07fc950a1e7b3aff}{marian\+::\+Scalar\+Add\+Node\+Op}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{de/dff/classmarian_1_1Chainable_a309d5314142f2a3bbdb555c631b9ff81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!child@{child}}
+\index{child@{child}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{child(size\+\_\+t)=0}{child(size_t)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual {\bf Expr} {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::child (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a5bd9e384a91c5aa70b33fdaa085df11b}{}\label{classmarian_1_1Chainable_a5bd9e384a91c5aa70b33fdaa085df11b}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a5bd9e384a91c5aa70b33fdaa085df11b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!children@{children}}
+\index{children@{children}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{children()=0}{children()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual std\+::vector$<${\bf Expr}$>$\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a8baafc6c50d01876b34404e033ab06ab}{}\label{classmarian_1_1Chainable_a8baafc6c50d01876b34404e033ab06ab}
+
+
+Implemented in \hyperlink{structmarian_1_1NaryNodeOp_a594b5e543321e738a365eecab5db0638}{marian\+::\+Nary\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a72e48d89624de0ea4ee98c39e60b3ecb}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a8baafc6c50d01876b34404e033ab06ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!color@{color}}
+\index{color@{color}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{color()=0}{color()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_aabc65436f44051e63f3469c587d59803}{}\label{classmarian_1_1Chainable_aabc65436f44051e63f3469c587d59803}
+
+
+Implemented in \hyperlink{classmarian_1_1TimestepNodeOp_a2beedbe285b4c1f5b5528d0d2f406ae1}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_af2273386eb99822cd20bce1b9e877f49}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1TransposeNodeOp_a207e692b92be4e144ace62033039b1cc}{marian\+::\+Transpose\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_a7a05f997b241c0f524c125e111096218}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_ab00d9d52a8dc80de0655d1cab56a8718}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a695658ac77c947c09a49e8520f8879b3}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_ae2985b156380c467fa272cc38233074a}{marian\+::\+Sum\+Node\+Op}, \hyperlink{structmarian_1_1TanhNodeOp_acb68c7e8dbabe5285de4b0666044302a}{marian\+::\+Tanh\+Node\+Op}, \hyperlink{structmarian_1_1ElementBinaryNodeOp_a89eb88dac250c1d77a701579ce1eb23e}{marian\+::\+Element\+Binary\+Node\+Op}, \hyperlink{structmarian_1_1ScalarProductNodeOp_ae79cbb113a6dc429415721240e21d8af}{marian\+::\+Scalar\+Product\+Node\+Op}, \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}, \hyperlink{structmarian_1_1DotNodeOp_aab065629807f2abbe28a61fa1f800c63}{marian\+::\+Dot\+Node\+Op}, \hyperlink{structmarian_1_1ParamNode_aead6b45314b0b5a53c998acf994db204}{marian\+::\+Param\+Node}, \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}, and \hyperlink{structmarian_1_1ConstantNode_ae6c4dd1a5cf3b9fa6371e6e67a9f0013}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_aabc65436f44051e63f3469c587d59803_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!debug@{debug}}
+\index{debug@{debug}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{debug(const std\+::string \&message)=0}{debug(const std::string &message)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::debug (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a6cb078bf79069c097c8078b7ab8a1eb7}{}\label{classmarian_1_1Chainable_a6cb078bf79069c097c8078b7ab8a1eb7}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a3db75b69ad510029816420fd96ee0132}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a6cb078bf79069c097c8078b7ab8a1eb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!debug\+\_\+message@{debug\+\_\+message}}
+\index{debug\+\_\+message@{debug\+\_\+message}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{debug\+\_\+message()=0}{debug_message()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::debug\+\_\+message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a92895c4575aefd1a67373b02cdf31472}{}\label{classmarian_1_1Chainable_a92895c4575aefd1a67373b02cdf31472}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a9cc23aff9a5e62bc7f8990e2ad580f43}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a92895c4575aefd1a67373b02cdf31472_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!form@{form}}
+\index{form@{form}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{form()=0}{form()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_abe6229de0b61614d629e48fa6f1a9ca6}{}\label{classmarian_1_1Chainable_abe6229de0b61614d629e48fa6f1a9ca6}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a7aaaab594766b33355f2b31821b8af49}{marian\+::\+Node}, \hyperlink{structmarian_1_1ParamNode_a8ed000b20face6bd31bdb9af750c56b0}{marian\+::\+Param\+Node}, and \hyperlink{structmarian_1_1ConstantNode_a7a26bbfe4c964f9b2380270c88c62f6b}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{de/dff/classmarian_1_1Chainable_abe6229de0b61614d629e48fa6f1a9ca6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!forward@{forward}}
+\index{forward@{forward}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{forward()=0}{forward()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_ae34ca176aa8332060971e48e5924021d}{}\label{classmarian_1_1Chainable_ae34ca176aa8332060971e48e5924021d}
+
+
+Implemented in \hyperlink{structmarian_1_1LexicalProbNodeOp_aaa0bb6a2dd3d270abfabc505bffedb50}{marian\+::\+Lexical\+Prob\+Node\+Op}, \hyperlink{classmarian_1_1TimestepNodeOp_abe5db4fc2772dbe3692475450cdb7643}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a8f9ca94013f3465349e43d3c2353b6ac}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1ConcatenateNodeOp_abf66689ce65575ad5593ba1f68db74c3}{marian\+::\+Concatenate\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a0ace1579b496977ac75fadfffc41416b}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{de/dff/classmarian_1_1Chainable_ae34ca176aa8332060971e48e5924021d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{forward\+Ops()=0}{forwardOps()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual {\bf Node\+Ops} {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_ad384c497e09e7af6a5a2e5b660a587a1}{}\label{classmarian_1_1Chainable_ad384c497e09e7af6a5a2e5b660a587a1}
+
+
+Implemented in \hyperlink{structmarian_1_1ShiftNodeOp_a42cd06dbea0bf66e744d1503a9ff8a1b}{marian\+::\+Shift\+Node\+Op}, \hyperlink{structmarian_1_1TransposeNodeOp_a963c8d08cf6cb274d9d5c88361317864}{marian\+::\+Transpose\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_aa896f8391cb93021b9bd375dc5e2764f}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_a4a65cd8cff116fe1f8ae51ea0b10381c}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1NegNodeOp_a13e2bb54f68b3d7d42cc21dcbfdb0b26}{marian\+::\+Neg\+Node\+Op}, \hyperlink{structmarian_1_1SquareNodeOp_a9830637ea6eb13dfbadf8478e585049b}{marian\+::\+Square\+Node\+Op}, \hyperlink{structmarian_1_1LayerNormalizationOp_aaad6bcd73ad2c58582ec90b1e9da9887}{marian\+::\+Layer\+Normalization\+Op}, \hyperlink{structmarian_1_1SqrtNodeOp_aeefdf4eab958bdab2b4f8a70dcbc6c15}{marian\+::\+Sqrt\+Node\+Op}, \hyperlink{structmarian_1_1ExpNodeOp_af16da957d7201c081c7ccac9e2122a2e}{marian\+::\+Exp\+Node\+Op}, \hyperlink{structmarian_1_1AffineNodeOp_a56e7eeac215b8dbbd1e138559f2dc10f}{marian\+::\+Affine\+Node\+Op}, \hyperlink{structmarian_1_1LogNodeOp_a0ad5ecdd99694a41ddd443700f03b52b}{marian\+::\+Log\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a381e225665df25b105acaab9c60818d3}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_aefc02387c6ddad9a5825e204a511d9be}{marian\+::\+Sum\+Node\+Op}, \hyperlink{structmarian_1_1LogSoftmaxNodeOp_a37bbd793241ab857be6ca238383867f1}{marian\+::\+Log\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1CrossEntropyNodeOp_a97a41f78385e61ab9b5228e6a8429e81}{marian\+::\+Cross\+Entropy\+Node\+Op}, \hyperlink{structmarian_1_1DivNodeOp_aa55dcc191fb80a22cbcc60eb08b36b05}{marian\+::\+Div\+Node\+Op}, \hyperlink{structmarian_1_1SoftmaxNodeOp_ac840d869fb28c00f91bab78b04012e42}{marian\+::\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1MultNodeOp_a659fc65e22c0921a06bd167b0b1c2102}{marian\+::\+Mult\+Node\+Op}, \hyperlink{structmarian_1_1ReLUNodeOp_aa38a8dc93b07420cf7a1dcae7a23dce9}{marian\+::\+Re\+L\+U\+Node\+Op}, \hyperlink{structmarian_1_1MinusNodeOp_aea7d65faca82ef791bb618a6b7de5467}{marian\+::\+Minus\+Node\+Op}, \hyperlink{structmarian_1_1PlusNodeOp_a53ac7e34d662a37cea8b27e1fed496dc}{marian\+::\+Plus\+Node\+Op}, \hyperlink{structmarian_1_1ScalarProductNodeOp_ab3be975c79c5bf5337b9110f1f5e05b2}{marian\+::\+Scalar\+Product\+Node\+Op}, \hyperlink{structmarian_1_1TanhNodeOp_a96a8cfc7646b2b73b421a099cabdb579}{marian\+::\+Tanh\+Node\+Op}, \hyperlink{structmarian_1_1LogitNodeOp_a01cdefe75c98513764cdbcdc8999b5ef}{marian\+::\+Logit\+Node\+Op}, \hyperlink{structmarian_1_1ScalarMultNodeOp_aea3d4960c02b19c9c1ce9a82a0612bed}{marian\+::\+Scalar\+Mult\+Node\+Op}, \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}, \hyperlink{structmarian_1_1ScalarAddNodeOp_a539179a95c828073b865e721140223f6}{marian\+::\+Scalar\+Add\+Node\+Op}, and \hyperlink{structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d}{marian\+::\+Dot\+Node\+Op}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{de/dff/classmarian_1_1Chainable_ad384c497e09e7af6a5a2e5b660a587a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!free@{free}}
+\index{free@{free}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{free()=0}{free()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a0b0a98056948c3cb92e1bad73f32781c}{}\label{classmarian_1_1Chainable_a0b0a98056948c3cb92e1bad73f32781c}
+
+
+Implemented in \hyperlink{classmarian_1_1TimestepNodeOp_a0c4ed1e755023af411edc66c20f7f816}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a91830ea5e627891025195ded73877bcb}{marian\+::\+Reshape\+Node\+Op}, and \hyperlink{classmarian_1_1Node_ab8ceeb421fca5b912330d6b7ac2cb14b}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{de/dff/classmarian_1_1Chainable_a0b0a98056948c3cb92e1bad73f32781c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{get\+Id()=0}{getId()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual size\+\_\+t {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a2dff8542fdaf06b18dcf26f5a5834621}{}\label{classmarian_1_1Chainable_a2dff8542fdaf06b18dcf26f5a5834621}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_afa641168d6cd6994cd29e50f12801296}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a2dff8542fdaf06b18dcf26f5a5834621_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!grad@{grad}}
+\index{grad@{grad}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{grad()=0}{grad()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual Data\+Type\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::grad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a91111faa04d388d623f86a75735a65be}{}\label{classmarian_1_1Chainable_a91111faa04d388d623f86a75735a65be}
+
+
+Implemented in \hyperlink{classmarian_1_1TimestepNodeOp_a02af0c9c13e16888c53deb7032061d1d}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a74f6cd342abd616d2b8f8a89948e45ea}{marian\+::\+Reshape\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{de/dff/classmarian_1_1Chainable_a91111faa04d388d623f86a75735a65be_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!graph@{graph}}
+\index{graph@{graph}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{graph()=0}{graph()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual {\bf Ptr}$<${\bf Expression\+Graph}$>$ {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a3e89dfd767b54ae685e9a3ec57888376}{}\label{classmarian_1_1Chainable_a3e89dfd767b54ae685e9a3ec57888376}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a6a95b0e641febd5f2893e8982f497735}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a3e89dfd767b54ae685e9a3ec57888376_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!graphviz@{graphviz}}
+\index{graphviz@{graphviz}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{graphviz()=0}{graphviz()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual std\+::string {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::graphviz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a16566c8b8d4c718d8c35737f80ed45da}{}\label{classmarian_1_1Chainable_a16566c8b8d4c718d8c35737f80ed45da}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_af2a1cdef73f50b9dd16d3c363cc12222}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a16566c8b8d4c718d8c35737f80ed45da_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{hash()=0}{hash()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual size\+\_\+t {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}{}\label{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}
+
+
+Implemented in \hyperlink{structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca}{marian\+::\+Lexical\+Prob\+Node\+Op}, \hyperlink{structmarian_1_1ShiftNodeOp_a687a08ebcb58fc58deca832b226fe2dd}{marian\+::\+Shift\+Node\+Op}, \hyperlink{classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_ab673a759e07f33c57da2bb4e02082b25}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1SqrtNodeOp_a83836f4ce180733221a17b5af8e2db58}{marian\+::\+Sqrt\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280}{marian\+::\+Concatenate\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17}{marian\+::\+Sum\+Node\+Op}, \hyperlink{structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1}{marian\+::\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}, \hyperlink{structmarian_1_1ParamNode_a851c5d3d18a4fbde8e84c2a2f758e200}{marian\+::\+Param\+Node}, and \hyperlink{structmarian_1_1ConstantNode_ab85566eb0da3759e9c3ae91b9d229ac5}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{de/dff/classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!init@{init}}
+\index{init@{init}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{init()=0}{init()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a38fc006b882be3f26352a6b6364e60e7}{}\label{classmarian_1_1Chainable_a38fc006b882be3f26352a6b6364e60e7}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_abf3d18a7c661ba0d3d7fbcfb4e883736}{marian\+::\+Node}, \hyperlink{structmarian_1_1ParamNode_a3d6c140ce46f6c97912fa4de460752cc}{marian\+::\+Param\+Node}, and \hyperlink{structmarian_1_1ConstantNode_a5c1241fba007195c72b828073689e9b2}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{de/dff/classmarian_1_1Chainable_a38fc006b882be3f26352a6b6364e60e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!init\+\_\+dependent@{init\+\_\+dependent}}
+\index{init\+\_\+dependent@{init\+\_\+dependent}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{init\+\_\+dependent()}{init_dependent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::init\+\_\+dependent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Chainable_a489e63a97b6940ab1d7065e2b4f935f2}{}\label{classmarian_1_1Chainable_a489e63a97b6940ab1d7065e2b4f935f2}
+
+
+Reimplemented in \hyperlink{classmarian_1_1TimestepNodeOp_a64818c7734019fc042d3712f07e3b087}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a989d96bc6466ecb0bc3fc46b9cc8674d}{marian\+::\+Reshape\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a42807d121dc8bc008176a3f922b4a5eb}{marian\+::\+Node}.
+
+
+
+Definition at line 65 of file chainable.\+h.
+
+
+\begin{DoxyCode}
+65 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!label@{label}}
+\index{label@{label}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{label()=0}{label()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a5ed3d68211003bf4f8c3185cc909d92a}{}\label{classmarian_1_1Chainable_a5ed3d68211003bf4f8c3185cc909d92a}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_aa29cd2fb7c4e0b81387e70b318b8f001}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a5ed3d68211003bf4f8c3185cc909d92a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!marked\+\_\+for\+\_\+debug@{marked\+\_\+for\+\_\+debug}}
+\index{marked\+\_\+for\+\_\+debug@{marked\+\_\+for\+\_\+debug}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{marked\+\_\+for\+\_\+debug()=0}{marked_for_debug()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual bool {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::marked\+\_\+for\+\_\+debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a5b58fb9fa5f168310936ffe3fc05505a}{}\label{classmarian_1_1Chainable_a5b58fb9fa5f168310936ffe3fc05505a}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_ad934732664a396b3df7c64f60a88bbb0}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a5b58fb9fa5f168310936ffe3fc05505a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!name@{name}}
+\index{name@{name}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{name() const =0}{name() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a7de20b12268f18b186e2d76bfb19e899}{}\label{classmarian_1_1Chainable_a7de20b12268f18b186e2d76bfb19e899}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_ad5437ac41eaa8316791698db9ad46ab0}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{de/dff/classmarian_1_1Chainable_a7de20b12268f18b186e2d76bfb19e899_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!scalar@{scalar}}
+\index{scalar@{scalar}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{scalar()=0}{scalar()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual float {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::scalar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a7aa762e76967be25d3f1fe73d0007890}{}\label{classmarian_1_1Chainable_a7aa762e76967be25d3f1fe73d0007890}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a078122f6a9c2df448139780a1e3a323b}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a7aa762e76967be25d3f1fe73d0007890_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{set\+\_\+name(const std\+::string \&)=0}{set_name(const std::string &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a7d75ea224b53df6c2e1b32d86a65c359}{}\label{classmarian_1_1Chainable_a7d75ea224b53df6c2e1b32d86a65c359}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a49ccf279e3d19a3d49efca7444c66543}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a7d75ea224b53df6c2e1b32d86a65c359_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}}
+\index{set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{set\+\_\+zero\+\_\+adjoint()}{set_zero_adjoint()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::set\+\_\+zero\+\_\+adjoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Chainable_ab8d92dd0145cc2fdf9c634f3493afa3e}{}\label{classmarian_1_1Chainable_ab8d92dd0145cc2fdf9c634f3493afa3e}
+
+
+Reimplemented in \hyperlink{classmarian_1_1TimestepNodeOp_a41bff17de35cad13c3c9492a862ac944}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a201cb6e0e0095a314b3cb72b38bc5a1d}{marian\+::\+Reshape\+Node\+Op}, and \hyperlink{classmarian_1_1Node_ad818ff58b17c5bdcee78c19b9f0df0d6}{marian\+::\+Node}.
+
+
+
+Definition at line 66 of file chainable.\+h.
+
+
+\begin{DoxyCode}
+66 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{set\+Id(size\+\_\+t)=0}{setId(size_t)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a394a7e3f35fc90a7d9e717c7512fd2f1}{}\label{classmarian_1_1Chainable_a394a7e3f35fc90a7d9e717c7512fd2f1}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_ab40b40d8c7e00d1dd1ac9f69e3e510f4}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a394a7e3f35fc90a7d9e717c7512fd2f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!set\+Trainable@{set\+Trainable}}
+\index{set\+Trainable@{set\+Trainable}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{set\+Trainable(bool)=0}{setTrainable(bool)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual void {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::set\+Trainable (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a0af1d5f65be7f857b18370dfa1df1638}{}\label{classmarian_1_1Chainable_a0af1d5f65be7f857b18370dfa1df1638}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a04b5aa3633d6a01b074f59fd93d7fb15}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_a0af1d5f65be7f857b18370dfa1df1638_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!shape@{shape}}
+\index{shape@{shape}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{shape()=0}{shape()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const {\bf Shape}\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_aec5a801e7b0c7bc3b0d0956ced52f90b}{}\label{classmarian_1_1Chainable_aec5a801e7b0c7bc3b0d0956ced52f90b}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_aec5a801e7b0c7bc3b0d0956ced52f90b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!trainable@{trainable}}
+\index{trainable@{trainable}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{trainable()=0}{trainable()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual bool {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::trainable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_aaec9da795a462f3ed88325769d8c238a}{}\label{classmarian_1_1Chainable_aaec9da795a462f3ed88325769d8c238a}
+
+
+Implemented in \hyperlink{classmarian_1_1Node_a924457f1be4e8f51fc563118185e3e83}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{de/dff/classmarian_1_1Chainable_aaec9da795a462f3ed88325769d8c238a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!type@{type}}
+\index{type@{type}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{type()=0}{type()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual const std\+::string {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{}\label{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}
+
+
+Implemented in \hyperlink{structmarian_1_1LexicalProbNodeOp_a33bc4b8ebb28aa7bf86285dd36277523}{marian\+::\+Lexical\+Prob\+Node\+Op}, \hyperlink{structmarian_1_1ShiftNodeOp_ad76f8eb10fecb4724458cfae39daf283}{marian\+::\+Shift\+Node\+Op}, \hyperlink{classmarian_1_1TimestepNodeOp_a2624a53aaedf5c6838cab594c2f65229}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a55763fba7127dae91e3cc878f5617edd}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1TransposeNodeOp_a72262ff92b274ed93ccc389ec556638a}{marian\+::\+Transpose\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_a80be0674db468899b33ab96ee859d4f6}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_a6d8356e3da82ef0bcfbbe832423fc9c0}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1NegNodeOp_afa43ad1f4e1b5e77063d2dfbe8b9bd29}{marian\+::\+Neg\+Node\+Op}, \hyperlink{structmarian_1_1LayerNormalizationOp_a4181e34fd584d36ffb6397feb1c2ef51}{marian\+::\+Layer\+Normalization\+Op}, \hyperlink{structmarian_1_1SquareNodeOp_a1fecb17ca82abda65d0ff9b991221963}{marian\+::\+Square\+Node\+Op}, \hyperlink{structmarian_1_1AffineNodeOp_a455fa5b662dc84146f17058a50de2982}{marian\+::\+Affine\+Node\+Op}, \hyperlink{structmarian_1_1SqrtNodeOp_affe5bea1a901dd7b1a22dc0b974690cb}{marian\+::\+Sqrt\+Node\+Op}, \hyperlink{structmarian_1_1ExpNodeOp_a8c2d1dcefe80f3124fe0502118ad72be}{marian\+::\+Exp\+Node\+Op}, \hyperlink{structmarian_1_1LogNodeOp_adc780bb152e730c3e4414e37f6814442}{marian\+::\+Log\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a4d61e4573be915e1d0bbeb463aab54d6}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1ConcatenateNodeOp_ac1d53d75ef0fa4c851ea58cec367db18}{marian\+::\+Concatenate\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_aefe4aa2ebd3ff63972c8550bfc9d4fb4}{marian\+::\+Sum\+Node\+Op}, \hyperlink{structmarian_1_1LogSoftmaxNodeOp_a9be31a897d97bad9da23e8adbc3bbcf8}{marian\+::\+Log\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1CrossEntropyNodeOp_abce29fdc82fc339597d2e2f06a585e4d}{marian\+::\+Cross\+Entropy\+Node\+Op}, \hyperlink{structmarian_1_1SoftmaxNodeOp_aa6282d5e41f36d4de1144db398308723}{marian\+::\+Softmax\+Node\+Op}, \hyperlink{structmarian_1_1DivNodeOp_ad744731ea15436e917b4d109a639bcd3}{marian\+::\+Div\+Node\+Op}, \hyperlink{structmarian_1_1MultNodeOp_a69109e1f4c13884564ca7ba27eb5cf49}{marian\+::\+Mult\+Node\+Op}, \hyperlink{structmarian_1_1ReLUNodeOp_a04b0aeb6dc756ea06cfb27dfaeabd048}{marian\+::\+Re\+L\+U\+Node\+Op}, \hyperlink{structmarian_1_1MinusNodeOp_af53ee5f8b9c44ee3e09ecac0c1714899}{marian\+::\+Minus\+Node\+Op}, \hyperlink{structmarian_1_1PlusNodeOp_a15c5a3a64a20a33d8429c620eaebc503}{marian\+::\+Plus\+Node\+Op}, \hyperlink{structmarian_1_1TanhNodeOp_a451895f7e17e7fe2ac3c20250a998758}{marian\+::\+Tanh\+Node\+Op}, \hyperlink{structmarian_1_1ScalarProductNodeOp_abce18c14be11adeb27417cd5a3f6d866}{marian\+::\+Scalar\+Product\+Node\+Op}, \hyperlink{structmarian_1_1LogitNodeOp_a89ce677c70d1f65f2a359336b6f14543}{marian\+::\+Logit\+Node\+Op}, \hyperlink{structmarian_1_1DotNodeOp_a26ba9e725a0220dd11201529bb8edbfb}{marian\+::\+Dot\+Node\+Op}, \hyperlink{structmarian_1_1ScalarMultNodeOp_a1b6803c97ccd411a77c76cc0307b6b0e}{marian\+::\+Scalar\+Mult\+Node\+Op}, \hyperlink{structmarian_1_1ParamNode_aecb590c68e3996b385779f896639036e}{marian\+::\+Param\+Node}, \hyperlink{structmarian_1_1ScalarAddNodeOp_aea481e268815b105bd769b22d796af1d}{marian\+::\+Scalar\+Add\+Node\+Op}, and \hyperlink{structmarian_1_1ConstantNode_ac83eb6772734df9119de9dd6a3d4672b}{marian\+::\+Constant\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{de/dff/classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Chainable@{marian\+::\+Chainable}!val@{val}}
+\index{val@{val}!marian\+::\+Chainable@{marian\+::\+Chainable}}
+\subsubsection[{\texorpdfstring{val()=0}{val()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Type$>$ virtual Data\+Type\& {\bf marian\+::\+Chainable}$<$ Data\+Type $>$\+::val (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Chainable_a5b4abc3fddef0cc1dea251820bf98d95}{}\label{classmarian_1_1Chainable_a5b4abc3fddef0cc1dea251820bf98d95}
+
+
+Implemented in \hyperlink{classmarian_1_1TimestepNodeOp_a9d16e5a4d7b7359c4b4e230500a45343}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a61262825805f0d2ab311d7ad36fed515}{marian\+::\+Reshape\+Node\+Op}, and \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{de/dff/classmarian_1_1Chainable_a5b4abc3fddef0cc1dea251820bf98d95_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{definitions_8h}{definitions.\+h}\item 
+\hyperlink{chainable_8h}{chainable.\+h}\end{DoxyCompactItemize}

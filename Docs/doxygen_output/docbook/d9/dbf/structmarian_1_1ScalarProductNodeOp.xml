@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp">
+<title>marian::ScalarProductNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ScalarProductNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d9c/structmarian_1_1ScalarProductNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ScalarProductNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dff/structmarian_1_1ScalarProductNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ab5e665a3dc2a9c6601182f7b9f3b4c39">ScalarProductNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ae050799808ccec985a488ab6849944fe">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ab3be975c79c5bf5337b9110f1f5e05b2">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ad8f0e8f1aa0b07f36280265ce5b2d808">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1abce18c14be11adeb27417cd5a3f6d866">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ae79cbb113a6dc429415721240e21d8af">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ab5e665a3dc2a9c6601182f7b9f3b4c39">
+                <title>marian::ScalarProductNodeOp::ScalarProductNodeOp (Expr a, Expr b, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ae050799808ccec985a488ab6849944fe">
+                <title>Shape marian::ScalarProductNodeOp::newShape (Expr a, Expr b, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ab3be975c79c5bf5337b9110f1f5e05b2">
+                <title>NodeOps marian::ScalarProductNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ad8f0e8f1aa0b07f36280265ce5b2d808">
+                <title>NodeOps marian::ScalarProductNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1abce18c14be11adeb27417cd5a3f6d866">
+                <title>const std::string marian::ScalarProductNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbf/structmarian_1_1ScalarProductNodeOp_1ae79cbb113a6dc429415721240e21d8af">
+                <title>const std::string marian::ScalarProductNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

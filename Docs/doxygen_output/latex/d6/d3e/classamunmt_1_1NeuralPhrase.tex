@@ -1,0 +1,203 @@
+\hypertarget{classamunmt_1_1NeuralPhrase}{}\section{amunmt\+:\+:Neural\+Phrase Class Reference}
+\label{classamunmt_1_1NeuralPhrase}\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+
+
+{\ttfamily \#include $<$neural\+\_\+phrase.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Neural\+Phrase\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{de/d74/classamunmt_1_1NeuralPhrase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1NeuralPhrase_a59964db7f14d82c9025977fa56c8fb6d}{Neural\+Phrase} ()
+\item 
+\hyperlink{classamunmt_1_1NeuralPhrase_a45837437152f12f6f4eafa76c388e7d4}{Neural\+Phrase} (const std\+::vector$<$ size\+\_\+t $>$ \&\hyperlink{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{words}, std\+::vector$<$ float $>$ \hyperlink{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}{scores}, int \hyperlink{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{start\+Pos}, int \hyperlink{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{end\+Pos})
+\item 
+float \hyperlink{classamunmt_1_1NeuralPhrase_a32728077890714218a7adaf86349a5a3}{get\+Score} (int i)
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classamunmt_1_1NeuralPhrase_a9f3ef1aa7227270c1538424fbf66e6ea}{get\+Coverage} ()
+\item 
+std\+::string \hyperlink{classamunmt_1_1NeuralPhrase_a6a8c5c7b397153ac84384b712e28daf5}{Debug} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{words}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}{scores}
+\item 
+int \hyperlink{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{start\+Pos}
+\item 
+int \hyperlink{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{end\+Pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file neural\+\_\+phrase.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!Neural\+Phrase@{Neural\+Phrase}}
+\index{Neural\+Phrase@{Neural\+Phrase}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{Neural\+Phrase()}{NeuralPhrase()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Neural\+Phrase\+::\+Neural\+Phrase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1NeuralPhrase_a59964db7f14d82c9025977fa56c8fb6d}{}\label{classamunmt_1_1NeuralPhrase_a59964db7f14d82c9025977fa56c8fb6d}
+
+
+Definition at line 14 of file neural\+\_\+phrase.\+h.
+
+
+\begin{DoxyCode}
+14 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!Neural\+Phrase@{Neural\+Phrase}}
+\index{Neural\+Phrase@{Neural\+Phrase}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{Neural\+Phrase(const std\+::vector$<$ size\+\_\+t $>$ \&words, std\+::vector$<$ float $>$ scores, int start\+Pos, int end\+Pos)}{NeuralPhrase(const std::vector< size_t > &words, std::vector< float > scores, int startPos, int endPos)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Neural\+Phrase\+::\+Neural\+Phrase (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{words, }
+\item[{std\+::vector$<$ float $>$}]{scores, }
+\item[{int}]{start\+Pos, }
+\item[{int}]{end\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1NeuralPhrase_a45837437152f12f6f4eafa76c388e7d4}{}\label{classamunmt_1_1NeuralPhrase_a45837437152f12f6f4eafa76c388e7d4}
+
+
+Definition at line 16 of file neural\+\_\+phrase.\+h.
+
+
+\begin{DoxyCode}
+18       : \hyperlink{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{words}(words), \hyperlink{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}{scores}(scores), \hyperlink{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{startPos}(\hyperlink{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{startPos}), 
+      \hyperlink{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{endPos}(\hyperlink{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{endPos}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{Debug() const }{Debug() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Neural\+Phrase\+::\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1NeuralPhrase_a6a8c5c7b397153ac84384b712e28daf5}{}\label{classamunmt_1_1NeuralPhrase_a6a8c5c7b397153ac84384b712e28daf5}
+
+
+Definition at line 9 of file neural\+\_\+phrase.\+cpp.
+
+
+\begin{DoxyCode}
+10 \{
+11   stringstream strm;
+12   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{words}.size(); ++i) \{
+13     strm << \hyperlink{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{words}[i] << \textcolor{stringliteral}{" "};
+14   \}
+15   \textcolor{keywordflow}{return} strm.str(); 
+16 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d3e/classamunmt_1_1NeuralPhrase_a6a8c5c7b397153ac84384b712e28daf5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!get\+Coverage@{get\+Coverage}}
+\index{get\+Coverage@{get\+Coverage}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{get\+Coverage()}{getCoverage()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$int, int$>$ amunmt\+::\+Neural\+Phrase\+::get\+Coverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1NeuralPhrase_a9f3ef1aa7227270c1538424fbf66e6ea}{}\label{classamunmt_1_1NeuralPhrase_a9f3ef1aa7227270c1538424fbf66e6ea}
+
+
+Definition at line 24 of file neural\+\_\+phrase.\+h.
+
+
+\begin{DoxyCode}
+24                                     \{
+25       \textcolor{keywordflow}{return} std::make\_pair(\hyperlink{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{startPos}, \hyperlink{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{endPos});
+26     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d3e/classamunmt_1_1NeuralPhrase_a9f3ef1aa7227270c1538424fbf66e6ea_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{get\+Score(int i)}{getScore(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}float amunmt\+::\+Neural\+Phrase\+::get\+Score (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1NeuralPhrase_a32728077890714218a7adaf86349a5a3}{}\label{classamunmt_1_1NeuralPhrase_a32728077890714218a7adaf86349a5a3}
+
+
+Definition at line 20 of file neural\+\_\+phrase.\+h.
+
+
+\begin{DoxyCode}
+20                           \{
+21       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}{scores}[i];
+22     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!end\+Pos@{end\+Pos}}
+\index{end\+Pos@{end\+Pos}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{end\+Pos}{endPos}}]{\setlength{\rightskip}{0pt plus 5cm}int amunmt\+::\+Neural\+Phrase\+::end\+Pos}\hypertarget{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}{}\label{classamunmt_1_1NeuralPhrase_a2fb1906a21cf9f011fa6a125a7f3a2d1}
+
+
+Definition at line 12 of file neural\+\_\+phrase.\+h.
+
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!scores@{scores}}
+\index{scores@{scores}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{scores}{scores}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ amunmt\+::\+Neural\+Phrase\+::scores}\hypertarget{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}{}\label{classamunmt_1_1NeuralPhrase_a56aa0c73fedf932885d0819024574b8e}
+
+
+Definition at line 11 of file neural\+\_\+phrase.\+h.
+
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!start\+Pos@{start\+Pos}}
+\index{start\+Pos@{start\+Pos}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{start\+Pos}{startPos}}]{\setlength{\rightskip}{0pt plus 5cm}int amunmt\+::\+Neural\+Phrase\+::start\+Pos}\hypertarget{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}{}\label{classamunmt_1_1NeuralPhrase_a5df2af7cda11b962e76712de6a555f30}
+
+
+Definition at line 12 of file neural\+\_\+phrase.\+h.
+
+\index{amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}!words@{words}}
+\index{words@{words}!amunmt\+::\+Neural\+Phrase@{amunmt\+::\+Neural\+Phrase}}
+\subsubsection[{\texorpdfstring{words}{words}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ amunmt\+::\+Neural\+Phrase\+::words}\hypertarget{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}{}\label{classamunmt_1_1NeuralPhrase_a11ad83191b990eff20e271d8c300cba5}
+
+
+Definition at line 10 of file neural\+\_\+phrase.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{neural__phrase_8h}{neural\+\_\+phrase.\+h}\item 
+\hyperlink{neural__phrase_8cpp}{neural\+\_\+phrase.\+cpp}\end{DoxyCompactItemize}

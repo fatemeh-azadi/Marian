@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dc8/classamunmt_1_1MosesPlugin">
+<title>amunmt::MosesPlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d6d/nmt_8h">&lt;nmt.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::MosesPlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/ddb/classamunmt_1_1MosesPlugin__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::MosesPlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d4d/classamunmt_1_1MosesPlugin__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>amunmt::God god_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1a6b6ac85a09e5e1d2f59832270e297d10">MosesPlugin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1a4cf0e80cbe5dbb41aad8439ed0c017e2">~MosesPlugin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1a7dc4be454151129de1b078b26d994e61">SetDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1aac74e782d9d7da7e098ea8fc684ef2e7">GetDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d7/d4e/classamunmt_1_1God">amunmt::God</link> &amp; <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1a297677460151491e90a579da01134fbc">GetGod</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1a2e31053e2017170243ec920034d2cffe">initGod</link> (
+const std::string &amp; configPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d9/d4b/structamunmt_1_1HypoState">HypoState</link> <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1ac47178604826bfe65710f1647fe0eb48">SetSource</link> (
+const std::vector&lt; size_t &gt; &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1acca30714a48f384cccf36370d6869b40">HypoStates</link> <link linkend="df/dc8/classamunmt_1_1MosesPlugin_1adfad6d011db069e2a3c07c3188c9ad25">Score</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a5a9307eef76c887cbe1a67e780437eae">AmunInputs</link> &amp; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1a6b6ac85a09e5e1d2f59832270e297d10">
+                <title>amunmt::MosesPlugin::MosesPlugin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1a4cf0e80cbe5dbb41aad8439ed0c017e2">
+                <title>amunmt::MosesPlugin::~MosesPlugin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1a7dc4be454151129de1b078b26d994e61">
+                <title>void amunmt::MosesPlugin::SetDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1aac74e782d9d7da7e098ea8fc684ef2e7">
+                <title>size_t amunmt::MosesPlugin::GetDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1a297677460151491e90a579da01134fbc">
+                <title>const amunmt::God&amp; amunmt::MosesPlugin::GetGod () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1a2e31053e2017170243ec920034d2cffe">
+                <title>void amunmt::MosesPlugin::initGod (const std::string &amp;configPath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1ac47178604826bfe65710f1647fe0eb48">
+                <title>HypoState amunmt::MosesPlugin::SetSource (const std::vector&lt; size_t &gt; &amp;words)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/dc8/classamunmt_1_1MosesPlugin_1adfad6d011db069e2a3c07c3188c9ad25">
+                <title>HypoStates amunmt::MosesPlugin::Score (const AmunInputs &amp;inputs)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

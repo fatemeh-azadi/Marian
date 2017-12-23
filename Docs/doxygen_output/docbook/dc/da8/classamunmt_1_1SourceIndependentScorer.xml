@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da8/classamunmt_1_1SourceIndependentScorer">
+<title>amunmt::SourceIndependentScorer class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d3b/scorer_8h">&lt;scorer.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::SourceIndependentScorer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/df7/classamunmt_1_1SourceIndependentScorer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::SourceIndependentScorer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d85/classamunmt_1_1SourceIndependentScorer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/da8/classamunmt_1_1SourceIndependentScorer_1a4bc8ce3f30f26b74f55ac72ab754a983">SourceIndependentScorer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config, size_t )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/da8/classamunmt_1_1SourceIndependentScorer_1af81fd630959c977dd0dc3eacc9d4314d">~SourceIndependentScorer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dc/da8/classamunmt_1_1SourceIndependentScorer_1a1fae40f47292149ecb7b9ac90f5b0e4d">SetSource</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/da8/classamunmt_1_1SourceIndependentScorer_1a4bc8ce3f30f26b74f55ac72ab754a983">
+                <title>amunmt::SourceIndependentScorer::SourceIndependentScorer (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config, size_t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da8/classamunmt_1_1SourceIndependentScorer_1af81fd630959c977dd0dc3eacc9d4314d">
+                <title>virtual amunmt::SourceIndependentScorer::~SourceIndependentScorer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da8/classamunmt_1_1SourceIndependentScorer_1a1fae40f47292149ecb7b9ac90f5b0e4d">
+                <title>virtual void amunmt::SourceIndependentScorer::SetSource (const Sentences &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

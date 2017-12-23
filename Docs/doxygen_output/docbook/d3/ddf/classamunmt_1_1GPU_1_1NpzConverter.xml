@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">
+<title>amunmt::GPU::NpzConverter class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/dd8/amun_2gpu_2npz__converter_8h">&lt;npz_converter.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::NpzConverter</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/dde/classamunmt_1_1GPU_1_1NpzConverter__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::NpzConverter</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dd1/classamunmt_1_1GPU_1_1NpzConverter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper">amunmt::GPU::NpzConverter::NpyMatrixWrapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cnpy::npz_t model_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool destructed_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a8224784edd4b369216e414bcead20c4a">NpzConverter</link> (
+const std::string &amp; file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1abde0ffc848f1290870b4b6c7336626a5">~NpzConverter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1af38fa6db0c029115fc19f3360303b1de">Destruct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &gt; <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a26aeafd22013bc125b82b6a0ff80da8b">get</link> (
+const std::string &amp; key, bool mandatory, bool transpose)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &gt; <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a01dd60fd9a2c429e3ca254306f0780eb">getFirstOfMany</link> (
+const std::vector&lt; std::pair&lt; std::string, bool &gt;&gt; keys, bool mandatory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a8224784edd4b369216e414bcead20c4a">
+                <title>amunmt::GPU::NpzConverter::NpzConverter (const std::string &amp;file)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1abde0ffc848f1290870b4b6c7336626a5">
+                <title>amunmt::GPU::NpzConverter::~NpzConverter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1af38fa6db0c029115fc19f3360303b1de">
+                <title>void amunmt::GPU::NpzConverter::Destruct ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a26aeafd22013bc125b82b6a0ff80da8b">
+                <title>std::shared_ptr&lt;mblas::Matrix&gt; amunmt::GPU::NpzConverter::get (const std::string &amp;key, bool mandatory, bool transpose=false) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter_1a01dd60fd9a2c429e3ca254306f0780eb">
+                <title>std::shared_ptr&lt;mblas::Matrix&gt; amunmt::GPU::NpzConverter::getFirstOfMany (const std::vector&lt; std::pair&lt; std::string, bool &gt;&gt; keys, bool mandatory) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

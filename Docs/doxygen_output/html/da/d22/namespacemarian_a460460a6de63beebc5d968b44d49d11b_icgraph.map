@@ -1,0 +1,24 @@
+<map id="marian::sum" name="marian::sum">
+<area shape="rect" id="node2" href="$d7/d2c/classmarian_1_1EncoderDecoder.html#a3a4c9f318d7d21fc4b9eead88a09798b" title="marian::EncoderDecoder\l\&lt; MultiEncoderS2S, MultiDecoder\lS2S \&gt;::buildToScore" alt="" coords="148,5,368,61"/>
+<area shape="rect" id="node3" href="$da/d22/namespacemarian.html#ae5810f27b42d7d5f9b83ae23ddf544f2" title="marian::tanh" alt="" coords="211,85,305,112"/>
+<area shape="rect" id="node4" href="$d2/d88/generic_8h.html#a2c61aac8c1ec585882b5b11755204516" title="YAML_REGISTER_TYPE" alt="" coords="170,136,346,163"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a1d13d69eb58fd5635225dbfbae4f4292" title="marian::guidedAlignmentCost" alt="" coords="161,187,355,213"/>
+<area shape="rect" id="node7" href="$da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix.html#a2a1e6f455240cec3b8406cfef94128e5" title="amunmt::GPU::mblas\l::TMatrix\&lt; uint \&gt;::Debug" alt="" coords="175,238,341,279"/>
+<area shape="rect" id="node8" href="$d1/d49/namespaceamunmt_1_1GPU_1_1mblas.html#aabb52352b84ff8df12e584cc48f0c150" title="amunmt::GPU::mblas\l::Debug" alt="" coords="183,303,333,345"/>
+<area shape="rect" id="node9" href="$d1/d49/namespaceamunmt_1_1GPU_1_1mblas.html#ab76a2b350282de9a3eaea50aab7dc329" title="amunmt::GPU::mblas\l::TestMemCpy" alt="" coords="183,369,333,410"/>
+<area shape="rect" id="node10" href="$dc/d36/classmarian_1_1Parameters.html#a7fb3719a18566cf659baa929fcbfcc5d" title="marian::Parameters\l::totalCapacity" alt="" coords="190,434,326,475"/>
+<area shape="rect" id="node13" href="$da/d22/namespacemarian.html#ae5b4088136fa6f7ebc01aed5a2d65c5c" title="marian::ConvolutionInTime" alt="" coords="169,500,347,527"/>
+<area shape="rect" id="node15" href="$d2/d9d/namespaceprepare__corpus.html#aa70e0cc7eb57e827cc406e421ee340d2" title="prepare_corpus.main" alt="" coords="187,551,329,577"/>
+<area shape="rect" id="node17" href="$dd/df7/namespaceprocess__word2vec.html#ab3d9c1343a892a23ca1e60230b030dce" title="process_word2vec.main" alt="" coords="177,601,339,628"/>
+<area shape="rect" id="node19" href="$da/d22/namespacemarian.html#a6e23ca23d59f5e88256ee5257c412f2f" title="marian::gAddR2" alt="" coords="200,652,316,679"/>
+<area shape="rect" id="node20" href="$da/d22/namespacemarian.html#a690541df38dba6c9e5fbd9237945f673" title="marian::gAddR3" alt="" coords="200,703,316,729"/>
+<area shape="rect" id="node21" href="$da/d22/namespacemarian.html#a07c7c2280aabd4e48cdba0d2cf4a917d" title="marian::gAddR4" alt="" coords="200,753,316,780"/>
+<area shape="rect" id="node22" href="$d7/d70/classmarian_1_1rnn_1_1MultiCellInput.html#ad3fac6f8682f6af651147cd045075d4a" title="marian::rnn::MultiCellInput\l::dimOutput" alt="" coords="171,805,345,846"/>
+<area shape="rect" id="node23" href="$d7/dd3/namespaceamunmt.html#a7dbfb9dca5a82c17500ab26efe71623e" title="amunmt::Debug" alt="" coords="201,871,315,897"/>
+<area shape="rect" id="node6" href="$d7/d2c/classmarian_1_1EncoderDecoder.html#a859d35d8ad42e6de1f8a55d5efa9b998" title="marian::EncoderDecoder\l\&lt; MultiEncoderS2S, MultiDecoder\lS2S \&gt;::build" alt="" coords="416,172,636,228"/>
+<area shape="rect" id="node11" href="$dc/d36/classmarian_1_1Parameters.html#a9603af4faeb75926c9a0efd7ad3189ca" title="marian::Parameters\l::allocateForward" alt="" coords="458,347,594,389"/>
+<area shape="rect" id="node12" href="$dc/d36/classmarian_1_1Parameters.html#a350f3682c45b13d7a59a61e6cad14f57" title="marian::Parameters\l::allocateBackward" alt="" coords="458,413,594,454"/>
+<area shape="rect" id="node14" href="$dd/d8d/classmarian_1_1EncoderPooling.html#a676142ec672b7e9e84d8dc539039c57a" title="marian::EncoderPooling\l::build" alt="" coords="446,478,606,519"/>
+<area shape="rect" id="node16" href="$d2/d9d/namespaceprepare__corpus.html#a8cd0e0b6ee5199bd8838a625ef5803b9" title="prepare_corpus.parse\l_user_args" alt="" coords="453,543,599,585"/>
+<area shape="rect" id="node18" href="$dd/df7/namespaceprocess__word2vec.html#a104f2b1f7f16fe4bb005d75d662b5407" title="process_word2vec.parse\l_user_args" alt="" coords="443,609,609,650"/>
+</map>

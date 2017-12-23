@@ -1,0 +1,212 @@
+\hypertarget{classmarian_1_1GradientDropBase}{}\section{marian\+:\+:Gradient\+Drop\+Base Class Reference}
+\label{classmarian_1_1GradientDropBase}\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+
+
+{\ttfamily \#include $<$dropper.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Gradient\+Drop\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{d5/d0b/classmarian_1_1GradientDropBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1GradientDropBase_aff9094cc995db83c07424ceba9592028}{drop\+Graph} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t, \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} destination, double rate=0.\+99)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1GradientDropBase_af88d41a0e4f999745653b61276426d8a}{grad\+\_\+drop\+\_\+do} (float $\ast$data, float $\ast$errors, float $\ast$tmp, int len, float rate)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{feedback}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{temp\+\_\+d}
+\item 
+float \hyperlink{classmarian_1_1GradientDropBase_ae0a2f7a33c37a512aae27cc064a76055}{cut\+\_\+off}
+\item 
+int \hyperlink{classmarian_1_1GradientDropBase_acead9d9d021ef412b7e62776c96a5e51}{step}
+\item 
+int \hyperlink{classmarian_1_1GradientDropBase_a2ad2b7d1cb32b380dbf5e87672f0cf55}{\+\_\+device}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 74 of file dropper.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!drop\+Graph@{drop\+Graph}}
+\index{drop\+Graph@{drop\+Graph}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{drop\+Graph(\+Tensor t, Sparse\+Tensor destination, double rate=0.\+99)}{dropGraph(Tensor t, SparseTensor destination, double rate=0.99)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Gradient\+Drop\+Base\+::drop\+Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t, }
+\item[{{\bf Sparse\+Tensor}}]{destination, }
+\item[{double}]{rate = {\ttfamily 0.99}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1GradientDropBase_aff9094cc995db83c07424ceba9592028}{}\label{classmarian_1_1GradientDropBase_aff9094cc995db83c07424ceba9592028}
+
+
+Definition at line 107 of file dropper.\+h.
+
+
+\begin{DoxyCode}
+107                                                                          \{
+108     cudaSetDevice(t->getDevice());
+109     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{feedback}) \{
+110       \hyperlink{classmarian_1_1GradientDropBase_a2ad2b7d1cb32b380dbf5e87672f0cf55}{\_device} = t->getDevice();
+111       cudaMalloc(&\hyperlink{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{feedback}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * t->size());
+112       cudaMalloc(&\hyperlink{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{temp\_d}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * t->size());
+113       cudaMemset(\hyperlink{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{feedback}, 0, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * t->size());
+114       cudaMemset(\hyperlink{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{temp\_d}, 0, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * t->size());
+115 
+116       \hyperlink{classmarian_1_1GradientDropBase_acead9d9d021ef412b7e62776c96a5e51}{step} = 0;
+117     \}
+118 
+119     \hyperlink{classmarian_1_1GradientDropBase_af88d41a0e4f999745653b61276426d8a}{grad\_drop\_do}(t->data(), \hyperlink{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{feedback}, \hyperlink{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{temp\_d}, t->size(), rate);
+120 
+121     thrust::device\_ptr<float> mask\_ptr(temp\_d);
+122     \textcolor{keywordtype}{int} denseSize = t->size();
+123     thrust::inclusive\_scan(mask\_ptr, mask\_ptr + denseSize, mask\_ptr);
+124     \textcolor{keywordtype}{float} sparseSize;
+125 
+126     cudaMemcpy(&sparseSize,
+127                temp\_d + denseSize - 1,
+128                \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}),
+129                cudaMemcpyDeviceToHost);
+130 
+131     \textcolor{comment}{// convert result of exscan to indices.}
+132     \textcolor{keywordtype}{int} threads = 512;
+133     \textcolor{keywordtype}{int} blocks = 1 + denseSize / threads;
+134     cudaSetDevice(t->getDevice());
+135     buildIndices<<<blocks, threads>>>(t->data(),
+136                                       \hyperlink{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{temp\_d},
+137                                       destination->data(),
+138                                       destination->indices(),
+139                                       denseSize);
+140     destination->setSize(sparseSize);
+141 
+142     cudaStreamSynchronize(0);
+143 
+144     \hyperlink{classmarian_1_1GradientDropBase_acead9d9d021ef412b7e62776c96a5e51}{step}++;
+145   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dc4/classmarian_1_1GradientDropBase_aff9094cc995db83c07424ceba9592028_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!grad\+\_\+drop\+\_\+do@{grad\+\_\+drop\+\_\+do}}
+\index{grad\+\_\+drop\+\_\+do@{grad\+\_\+drop\+\_\+do}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{grad\+\_\+drop\+\_\+do(float $\ast$data, float $\ast$errors, float $\ast$tmp, int len, float rate)}{grad_drop_do(float *data, float *errors, float *tmp, int len, float rate)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Gradient\+Drop\+Base\+::grad\+\_\+drop\+\_\+do (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{data, }
+\item[{float $\ast$}]{errors, }
+\item[{float $\ast$}]{tmp, }
+\item[{int}]{len, }
+\item[{float}]{rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_af88d41a0e4f999745653b61276426d8a}{}\label{classmarian_1_1GradientDropBase_af88d41a0e4f999745653b61276426d8a}
+
+
+Definition at line 81 of file dropper.\+h.
+
+
+\begin{DoxyCode}
+82                                                                    \{
+83     \textcolor{keywordtype}{int} threads = 512;
+84     \textcolor{keywordtype}{int} blocks = 1 + len / threads;
+85     cudaSetDevice(\hyperlink{classmarian_1_1GradientDropBase_a2ad2b7d1cb32b380dbf5e87672f0cf55}{\_device});
+86 
+87     grad\_add\_error<<<blocks, threads>>>(data, errors, len);
+88     \textcolor{comment}{// full sort}
+89     \textcolor{comment}{// int sortSize = len;}
+90     \textcolor{keywordtype}{int} sortSize = min(100000, len);
+91     \textcolor{keywordtype}{int} blocksSample = 1 + sortSize / threads;
+92     randomSampling<<<blocksSample, threads>>>(
+93         data, tmp, sortSize, len / sortSize, len);
+94     \textcolor{comment}{// dont update the cut threshold every step}
+95 
+96     thrust::device\_ptr<float> dev\_data\_ptr(tmp);
+97     thrust::sort(dev\_data\_ptr, dev\_data\_ptr + sortSize);
+98 
+99     \textcolor{keywordtype}{int} cut\_index = std::max(0, (\textcolor{keywordtype}{int})(sortSize * rate) - 1);
+100     cudaMemcpy(
+101         &\hyperlink{classmarian_1_1GradientDropBase_ae0a2f7a33c37a512aae27cc064a76055}{cut\_off}, tmp + cut\_index, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}), cudaMemcpyDeviceToHost);
+102 
+103     grad\_drop<<<blocks, threads>>>(data, tmp, errors, \hyperlink{classmarian_1_1GradientDropBase_ae0a2f7a33c37a512aae27cc064a76055}{cut\_off}, len);
+104   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dc4/classmarian_1_1GradientDropBase_af88d41a0e4f999745653b61276426d8a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!\+\_\+device@{\+\_\+device}}
+\index{\+\_\+device@{\+\_\+device}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{\+\_\+device}{_device}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Gradient\+Drop\+Base\+::\+\_\+device\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_a2ad2b7d1cb32b380dbf5e87672f0cf55}{}\label{classmarian_1_1GradientDropBase_a2ad2b7d1cb32b380dbf5e87672f0cf55}
+
+
+Definition at line 79 of file dropper.\+h.
+
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!cut\+\_\+off@{cut\+\_\+off}}
+\index{cut\+\_\+off@{cut\+\_\+off}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{cut\+\_\+off}{cut_off}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Gradient\+Drop\+Base\+::cut\+\_\+off\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_ae0a2f7a33c37a512aae27cc064a76055}{}\label{classmarian_1_1GradientDropBase_ae0a2f7a33c37a512aae27cc064a76055}
+
+
+Definition at line 77 of file dropper.\+h.
+
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!feedback@{feedback}}
+\index{feedback@{feedback}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{feedback}{feedback}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Gradient\+Drop\+Base\+::feedback\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}{}\label{classmarian_1_1GradientDropBase_aba05eed3ccef8a7a9907265c5bb71113}
+
+
+Definition at line 75 of file dropper.\+h.
+
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!step@{step}}
+\index{step@{step}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{step}{step}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Gradient\+Drop\+Base\+::step\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_acead9d9d021ef412b7e62776c96a5e51}{}\label{classmarian_1_1GradientDropBase_acead9d9d021ef412b7e62776c96a5e51}
+
+
+Definition at line 78 of file dropper.\+h.
+
+\index{marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}!temp\+\_\+d@{temp\+\_\+d}}
+\index{temp\+\_\+d@{temp\+\_\+d}!marian\+::\+Gradient\+Drop\+Base@{marian\+::\+Gradient\+Drop\+Base}}
+\subsubsection[{\texorpdfstring{temp\+\_\+d}{temp_d}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Gradient\+Drop\+Base\+::temp\+\_\+d\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}{}\label{classmarian_1_1GradientDropBase_a90fc3332c4dbfbb0e59e421db411be27}
+
+
+Definition at line 76 of file dropper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dropper_8h}{dropper.\+h}\end{DoxyCompactItemize}

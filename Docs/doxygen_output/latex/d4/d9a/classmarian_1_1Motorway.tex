@@ -1,0 +1,123 @@
+\hypertarget{classmarian_1_1Motorway}{}\section{marian\+:\+:Motorway Class Reference}
+\label{classmarian_1_1Motorway}\index{marian\+::\+Motorway@{marian\+::\+Motorway}}
+
+
+{\ttfamily \#include $<$highway.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Motorway\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d5/d8e/classmarian_1_1Motorway__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Motorway\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d5/d82/classmarian_1_1Motorway__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Motorway_a28e881c47337e7d8135d44d800b61c47}{Motorway} (const std\+::string name, size\+\_\+t depth)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1Motorway_a1a6728a3791ca247ec9aa0632673c9ce}{operator()} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} x)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Motorway_a384982b62bfffcef2bc23cbd74ebdf4a}{depth\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file highway.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Motorway@{marian\+::\+Motorway}!Motorway@{Motorway}}
+\index{Motorway@{Motorway}!marian\+::\+Motorway@{marian\+::\+Motorway}}
+\subsubsection[{\texorpdfstring{Motorway(const std\+::string name, size\+\_\+t depth)}{Motorway(const std::string name, size_t depth)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Motorway\+::\+Motorway (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{name, }
+\item[{size\+\_\+t}]{depth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Motorway_a28e881c47337e7d8135d44d800b61c47}{}\label{classmarian_1_1Motorway_a28e881c47337e7d8135d44d800b61c47}
+
+
+Definition at line 9 of file highway.\+h.
+
+
+\begin{DoxyCode}
+10       : Layer(name),
+11         \hyperlink{classmarian_1_1Motorway_a384982b62bfffcef2bc23cbd74ebdf4a}{depth\_}(depth)
+12     \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Motorway@{marian\+::\+Motorway}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Motorway@{marian\+::\+Motorway}}
+\subsubsection[{\texorpdfstring{operator()(\+Expr x)}{operator()(Expr x)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Motorway\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Motorway_a1a6728a3791ca247ec9aa0632673c9ce}{}\label{classmarian_1_1Motorway_a1a6728a3791ca247ec9aa0632673c9ce}
+
+
+Definition at line 14 of file highway.\+h.
+
+
+\begin{DoxyCode}
+14                             \{
+15       \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input = x;
+16       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classmarian_1_1Motorway_a384982b62bfffcef2bc23cbd74ebdf4a}{depth\_}; ++i) \{
+17         \textcolor{keywordtype}{size\_t} out\_dim = x->shape()[1];
+18         \textcolor{keyword}{auto} g = Dense(name\_ + \textcolor{stringliteral}{"d1\_"} + std::to\_string(i), out\_dim, keywords::activation=
+      \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{act::logit})(x);
+19         \textcolor{keyword}{auto} dense\_2 = Dense(name\_ + \textcolor{stringliteral}{"d2\_"} + std::to\_string(i), out\_dim, keywords::activation=act::linear)(
+      x);
+20         \textcolor{keyword}{auto} rr = \hyperlink{namespacemarian_a6228f7e46aeed337e3886df6446b7840}{relu}(dense\_2);
+21         input = (g * rr) + ((1 - g) * input);
+22       \}
+23       \textcolor{keywordflow}{return} input;
+24     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d4/d9a/classmarian_1_1Motorway_a1a6728a3791ca247ec9aa0632673c9ce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Motorway@{marian\+::\+Motorway}!depth\+\_\+@{depth\+\_\+}}
+\index{depth\+\_\+@{depth\+\_\+}!marian\+::\+Motorway@{marian\+::\+Motorway}}
+\subsubsection[{\texorpdfstring{depth\+\_\+}{depth_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Motorway\+::depth\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Motorway_a384982b62bfffcef2bc23cbd74ebdf4a}{}\label{classmarian_1_1Motorway_a384982b62bfffcef2bc23cbd74ebdf4a}
+
+
+Definition at line 27 of file highway.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{highway_8h}{highway.\+h}\end{DoxyCompactItemize}

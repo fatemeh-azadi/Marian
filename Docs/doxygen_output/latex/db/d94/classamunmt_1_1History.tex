@@ -1,0 +1,365 @@
+\hypertarget{classamunmt_1_1History}{}\section{amunmt\+:\+:History Class Reference}
+\label{classamunmt_1_1History}\index{amunmt\+::\+History@{amunmt\+::\+History}}
+
+
+{\ttfamily \#include $<$history.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d62/classamunmt_1_1History__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structamunmt_1_1History_1_1HypothesisCoord}{Hypothesis\+Coord}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1History_a9fd2660a9cb09d6659382d7a440f8c11}{History} (size\+\_\+t line\+No, bool normalize\+Score, size\+\_\+t max\+Length)
+\item 
+void \hyperlink{classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1}{Add} (const \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&beam)
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1History_af2af49a16004f49ddb5b1eacc9abe43f}{size} () const 
+\item 
+\hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \& \hyperlink{classamunmt_1_1History_a2067358d635e512d2c1262288cbdae5d}{front} ()
+\item 
+\hyperlink{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}{N\+Best\+List} \hyperlink{classamunmt_1_1History_af982104b58a4d8cf3893d39724a120c4}{N\+Best} (size\+\_\+t n) const 
+\item 
+\hyperlink{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}{Result} \hyperlink{classamunmt_1_1History_a1ba4f3d97546a08e25a9c0de1ef02e50}{Top} () const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1History_aab6c98bebac14e388e23ea849b0bba8b}{Get\+Line\+Num} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1History_ac5f3e4be93bcf4709ec53313868af48d}{History} (const \hyperlink{classamunmt_1_1History}{History} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} $>$ \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\+\_\+}
+\item 
+std\+::priority\+\_\+queue$<$ \hyperlink{structamunmt_1_1History_1_1HypothesisCoord}{Hypothesis\+Coord} $>$ \hyperlink{classamunmt_1_1History_a592117925905726ff46d3bfa3a55a529}{top\+Hyps\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1History_ad43884859a97646dc7f1c8abbf9b50c4}{normalize\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1History_a11989109ba68d057cce9a61560f4ab2e}{line\+No\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1History_af78aa04752c1920599f44628311c2eef}{max\+Length\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file amun/common/history.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+History@{amunmt\+::\+History}!History@{History}}
+\index{History@{History}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{History(const History \&)=delete}{History(const History &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+History\+::\+History (
+\begin{DoxyParamCaption}
+\item[{const {\bf History} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1History_ac5f3e4be93bcf4709ec53313868af48d}{}\label{classamunmt_1_1History_ac5f3e4be93bcf4709ec53313868af48d}
+\index{amunmt\+::\+History@{amunmt\+::\+History}!History@{History}}
+\index{History@{History}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{History(size\+\_\+t line\+No, bool normalize\+Score, size\+\_\+t max\+Length)}{History(size_t lineNo, bool normalizeScore, size_t maxLength)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+History\+::\+History (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{line\+No, }
+\item[{bool}]{normalize\+Score, }
+\item[{size\+\_\+t}]{max\+Length}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1History_a9fd2660a9cb09d6659382d7a440f8c11}{}\label{classamunmt_1_1History_a9fd2660a9cb09d6659382d7a440f8c11}
+
+
+Definition at line 7 of file amun/common/history.\+cpp.
+
+
+\begin{DoxyCode}
+8   : \hyperlink{classamunmt_1_1History_ad43884859a97646dc7f1c8abbf9b50c4}{normalize\_}(normalizeScore),
+9     \hyperlink{classamunmt_1_1History_a11989109ba68d057cce9a61560f4ab2e}{lineNo\_}(lineNo),
+10    \hyperlink{classamunmt_1_1History_af78aa04752c1920599f44628311c2eef}{maxLength\_}(maxLength)
+11 \{
+12   \hyperlink{classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1}{Add}(\{\hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr}(\textcolor{keyword}{new} Hypothesis())\});
+13 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_a9fd2660a9cb09d6659382d7a440f8c11_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+History@{amunmt\+::\+History}!Add@{Add}}
+\index{Add@{Add}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{Add(const Beam \&beam)}{Add(const Beam &beam)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+History\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{beam}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1}{}\label{classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1}
+
+
+Definition at line 29 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+29                                \{
+30       \textcolor{keywordflow}{if} (beam.back()->GetPrevHyp() != \textcolor{keyword}{nullptr}) \{
+31         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < beam.size(); ++j)
+32           \textcolor{keywordflow}{if}(beam[j]->GetWord() == \hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{EOS\_ID} || \hyperlink{classamunmt_1_1History_af2af49a16004f49ddb5b1eacc9abe43f}{size}() == \hyperlink{classamunmt_1_1History_af78aa04752c1920599f44628311c2eef}{maxLength\_} ) \{
+33             \textcolor{keywordtype}{float} cost = \hyperlink{classamunmt_1_1History_ad43884859a97646dc7f1c8abbf9b50c4}{normalize\_} ? beam[j]->GetCost() / \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}.size() : beam[j]->
+      GetCost();
+34             \hyperlink{classamunmt_1_1History_a592117925905726ff46d3bfa3a55a529}{topHyps\_}.push(\{ \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}.size(), j, cost \});
+35           \}
+36       \}
+37       \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}.push\_back(beam);
+38     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{db/d94/classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_a2b05a26f7874eb4e85f66e27458b18c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!front@{front}}
+\index{front@{front}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{front()}{front()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beam}\& amunmt\+::\+History\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_a2067358d635e512d2c1262288cbdae5d}{}\label{classamunmt_1_1History_a2067358d635e512d2c1262288cbdae5d}
+
+
+Definition at line 44 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+44                   \{
+45       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}.front();
+46     \}
+\end{DoxyCode}
+\index{amunmt\+::\+History@{amunmt\+::\+History}!Get\+Line\+Num@{Get\+Line\+Num}}
+\index{Get\+Line\+Num@{Get\+Line\+Num}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{Get\+Line\+Num() const }{GetLineNum() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+History\+::\+Get\+Line\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_aab6c98bebac14e388e23ea849b0bba8b}{}\label{classamunmt_1_1History_aab6c98bebac14e388e23ea849b0bba8b}
+
+
+Definition at line 75 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+76     \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1History_a11989109ba68d057cce9a61560f4ab2e}{lineNo\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_aab6c98bebac14e388e23ea849b0bba8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!N\+Best@{N\+Best}}
+\index{N\+Best@{N\+Best}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{N\+Best(size\+\_\+t n) const }{NBest(size_t n) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+List} amunmt\+::\+History\+::\+N\+Best (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_af982104b58a4d8cf3893d39724a120c4}{}\label{classamunmt_1_1History_af982104b58a4d8cf3893d39724a120c4}
+
+
+Definition at line 48 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+48                                     \{
+49       \hyperlink{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}{NBestList} nbest;
+50       \textcolor{keyword}{auto} topHypsCopy = \hyperlink{classamunmt_1_1History_a592117925905726ff46d3bfa3a55a529}{topHyps\_};
+51       \textcolor{keywordflow}{while} (nbest.size() < n && !topHypsCopy.empty()) \{
+52         \textcolor{keyword}{auto} bestHypCoord = topHypsCopy.top();
+53         topHypsCopy.pop();
+54 
+55         \textcolor{keywordtype}{size\_t} start = bestHypCoord.i;
+56         \textcolor{keywordtype}{size\_t} j  = bestHypCoord.j;
+57 
+58         \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} targetWords;
+59         \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} bestHyp = \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}[start][j];
+60         \textcolor{keywordflow}{while}(bestHyp->GetPrevHyp() != \textcolor{keyword}{nullptr}) \{
+61           targetWords.push\_back(bestHyp->GetWord());
+62           bestHyp = bestHyp->GetPrevHyp();
+63         \}
+64 
+65         std::reverse(targetWords.begin(), targetWords.end());
+66         nbest.emplace\_back(targetWords, \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}[bestHypCoord.i][bestHypCoord.j]);
+67       \}
+68       \textcolor{keywordflow}{return} nbest;
+69     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_af982104b58a4d8cf3893d39724a120c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!size@{size}}
+\index{size@{size}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+History\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_af2af49a16004f49ddb5b1eacc9abe43f}{}\label{classamunmt_1_1History_af2af49a16004f49ddb5b1eacc9abe43f}
+
+
+Definition at line 40 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+40                         \{
+41       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{history\_}.size();
+42     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_af2af49a16004f49ddb5b1eacc9abe43f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!Top@{Top}}
+\index{Top@{Top}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{Top() const }{Top() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} amunmt\+::\+History\+::\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1History_a1ba4f3d97546a08e25a9c0de1ef02e50}{}\label{classamunmt_1_1History_a1ba4f3d97546a08e25a9c0de1ef02e50}
+
+
+Definition at line 71 of file amun/common/history.\+h.
+
+
+\begin{DoxyCode}
+71                        \{
+72       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1History_af982104b58a4d8cf3893d39724a120c4}{NBest}(1)[0];
+73     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_a1ba4f3d97546a08e25a9c0de1ef02e50_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d94/classamunmt_1_1History_a1ba4f3d97546a08e25a9c0de1ef02e50_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+History@{amunmt\+::\+History}!history\+\_\+@{history\+\_\+}}
+\index{history\+\_\+@{history\+\_\+}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{history\+\_\+}{history_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Beam}$>$ amunmt\+::\+History\+::history\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}{}\label{classamunmt_1_1History_af461c82a737eb49ea7f0374082294875}
+
+
+Definition at line 79 of file amun/common/history.\+h.
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!line\+No\+\_\+@{line\+No\+\_\+}}
+\index{line\+No\+\_\+@{line\+No\+\_\+}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{line\+No\+\_\+}{lineNo_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+History\+::line\+No\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1History_a11989109ba68d057cce9a61560f4ab2e}{}\label{classamunmt_1_1History_a11989109ba68d057cce9a61560f4ab2e}
+
+
+Definition at line 82 of file amun/common/history.\+h.
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!max\+Length\+\_\+@{max\+Length\+\_\+}}
+\index{max\+Length\+\_\+@{max\+Length\+\_\+}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{max\+Length\+\_\+}{maxLength_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+History\+::max\+Length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1History_af78aa04752c1920599f44628311c2eef}{}\label{classamunmt_1_1History_af78aa04752c1920599f44628311c2eef}
+
+
+Definition at line 83 of file amun/common/history.\+h.
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!normalize\+\_\+@{normalize\+\_\+}}
+\index{normalize\+\_\+@{normalize\+\_\+}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{normalize\+\_\+}{normalize_}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+History\+::normalize\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1History_ad43884859a97646dc7f1c8abbf9b50c4}{}\label{classamunmt_1_1History_ad43884859a97646dc7f1c8abbf9b50c4}
+
+
+Definition at line 81 of file amun/common/history.\+h.
+
+\index{amunmt\+::\+History@{amunmt\+::\+History}!top\+Hyps\+\_\+@{top\+Hyps\+\_\+}}
+\index{top\+Hyps\+\_\+@{top\+Hyps\+\_\+}!amunmt\+::\+History@{amunmt\+::\+History}}
+\subsubsection[{\texorpdfstring{top\+Hyps\+\_\+}{topHyps_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::priority\+\_\+queue$<${\bf Hypothesis\+Coord}$>$ amunmt\+::\+History\+::top\+Hyps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1History_a592117925905726ff46d3bfa3a55a529}{}\label{classamunmt_1_1History_a592117925905726ff46d3bfa3a55a529}
+
+
+Definition at line 80 of file amun/common/history.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2history_8h}{amun/common/history.\+h}\item 
+\hyperlink{amun_2common_2history_8cpp}{amun/common/history.\+cpp}\end{DoxyCompactItemize}

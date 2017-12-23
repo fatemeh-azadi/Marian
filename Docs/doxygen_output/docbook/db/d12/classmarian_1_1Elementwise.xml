@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d12/classmarian_1_1Elementwise">
+<title>marian::Elementwise class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/def/clippers_8h">&lt;clippers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Elementwise</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d39/classmarian_1_1Elementwise__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Elementwise</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d79/classmarian_1_1Elementwise__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float c_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d12/classmarian_1_1Elementwise_1a0e512bb10653046540bac860a910bfb9">Elementwise</link> (
+float c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d12/classmarian_1_1Elementwise_1acd671c1626e9156df165e4732a1ddfd3">clip</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d12/classmarian_1_1Elementwise_1a0e512bb10653046540bac860a910bfb9">
+                <title>marian::Elementwise::Elementwise (float c=10.0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d12/classmarian_1_1Elementwise_1acd671c1626e9156df165e4732a1ddfd3">
+                <title>void marian::Elementwise::clip (Tensor t)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

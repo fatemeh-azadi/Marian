@@ -1,0 +1,817 @@
+\hypertarget{structmarian_1_1ShapeGPU}{}\section{marian\+:\+:Shape\+G\+PU Struct Reference}
+\label{structmarian_1_1ShapeGPU}\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+
+
+Represents the size of each dimension in a tensor.  
+
+
+
+
+{\ttfamily \#include $<$shape\+\_\+gpu.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Shape\+G\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{d1/d24/structmarian_1_1ShapeGPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{Shape\+G\+PU} ()
+\begin{DoxyCompactList}\small\item\em Constructs a default shape. \end{DoxyCompactList}\item 
+\hyperlink{structmarian_1_1ShapeGPU_a13529f654e08e8b5b5a74f6e66c22fdc}{Shape\+G\+PU} (std\+::initializer\+\_\+list$<$ int $>$ il)
+\begin{DoxyCompactList}\small\item\em Constructs a shape. \end{DoxyCompactList}\item 
+\hyperlink{structmarian_1_1ShapeGPU_a1d1f437e8b921acc0044d6b27fd9c0de}{Shape\+G\+PU} (const \hyperlink{structmarian_1_1ShapeGPU}{Shape\+G\+PU} \&shape)
+\item 
+\hyperlink{structmarian_1_1ShapeGPU_a0860255b1ddd7e4bbde8c9ebc60738ca}{Shape\+G\+PU} (const \hyperlink{structmarian_1_1Shape}{Shape} \&shape)
+\item 
+void \hyperlink{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{update\+Strides} ()
+\item 
+void \hyperlink{structmarian_1_1ShapeGPU_aabf629e515546d98185f54651936fa4e}{set} (int i, int \hyperlink{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{dim})
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{dim} (int i)
+\begin{DoxyCompactList}\small\item\em Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a081cd10d19ea282349cd6258d1b438a1}{dim} (int i) const 
+\begin{DoxyCompactList}\small\item\em Gets the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_aa055cb9851f538831c1ffdd6b7b9f06a}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a4f9dc2d347c1c665d7988dc9b931299b}{operator\mbox{[}$\,$\mbox{]}} (int i) const 
+\begin{DoxyCompactList}\small\item\em Gets the size of the {\ttfamily i}th dimension represented by this object. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{stride} (int i) const 
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{bstride} (int i) const 
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ size\+\_\+t \hyperlink{structmarian_1_1ShapeGPU_aa9f763893bf9869c8d1e185fd8ffd46f}{size} () const 
+\begin{DoxyCompactList}\small\item\em Gets the number of dimensions represented by this object. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_a4af583e3ce361798a8b84c4f0a058e5d}{elements} () const 
+\begin{DoxyCompactList}\small\item\em Gets the total number of elements in a tensor of this shape. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_ab7d93ef443405d53f34cd2d41c25fd37}{index} (int $\ast$d) const 
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{structmarian_1_1ShapeGPU_abba723039045f88819630d71dc448744}{bindex} (int $\ast$d) const 
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{structmarian_1_1ShapeGPU_a35f26e62cc21105d42ab2e872298d01a}{dims} (int i, int $\ast$d) const 
+\item 
+int $\ast$ \hyperlink{structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13}{begin} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to an int that specifies the size of the first dimension represented by this object. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structmarian_1_1ShapeGPU_a72aa4cb98ce3cfd74f4a32ffbdc5731c}{end} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to an int that specifies the size of the last dimension represented by this object. \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{structmarian_1_1ShapeGPU_aee7df6d72cd1f6902bbf6b55204f3c9f}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Gets a const pointer to an int that specifies the size of the first dimension represented by this object. \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{structmarian_1_1ShapeGPU_a2b79e2858c5728c879ecdbe715d1fef5}{end} () const 
+\begin{DoxyCompactList}\small\item\em Gets a const pointer to an int that specifies the size of the last dimension represented by this object. \end{DoxyCompactList}\item 
+bool \hyperlink{structmarian_1_1ShapeGPU_ad0c633b0b24bd5fe274cd5fd82829edf}{operator==} (const \hyperlink{structmarian_1_1ShapeGPU}{Shape\+G\+PU} \&other) const 
+\item 
+bool \hyperlink{structmarian_1_1ShapeGPU_a17fd00f6b6ead0006f376cf97595c1d6}{operator!=} (const \hyperlink{structmarian_1_1ShapeGPU}{Shape\+G\+PU} \&other) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+int \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+int \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\+\_\+} \mbox{[}\hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the size of each dimension in a tensor. 
+
+Note\+: this class currently is hard-\/coded to four dimensions. 
+
+Definition at line 17 of file shape\+\_\+gpu.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!Shape\+G\+PU@{Shape\+G\+PU}}
+\index{Shape\+G\+PU@{Shape\+G\+PU}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{Shape\+G\+P\+U()}{ShapeGPU()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+G\+P\+U\+::\+Shape\+G\+PU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{}\label{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}
+
+
+Constructs a default shape. 
+
+This default shape has four dimensions. The size of each dimension is 1. 
+
+Definition at line 28 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+28 : \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}\{1, 1, 1, 1\}, \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}\{1, 1, 1, 1\}, \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}\{0, 0, 0, 0\} \{\}
+\end{DoxyCode}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!Shape\+G\+PU@{Shape\+G\+PU}}
+\index{Shape\+G\+PU@{Shape\+G\+PU}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{Shape\+G\+P\+U(std\+::initializer\+\_\+list$<$ int $>$ il)}{ShapeGPU(std::initializer_list< int > il)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+G\+P\+U\+::\+Shape\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ int $>$}]{il}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a13529f654e08e8b5b5a74f6e66c22fdc}{}\label{structmarian_1_1ShapeGPU_a13529f654e08e8b5b5a74f6e66c22fdc}
+
+
+Constructs a shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & A list of integers representing the size of each dimension. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+35                                         : \hyperlink{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{ShapeGPU}() \{
+36     \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(il.begin(), il.end(), \hyperlink{structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13}{begin}());
+37     \hyperlink{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{updateStrides}();
+38   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/dbf/structmarian_1_1ShapeGPU_a13529f654e08e8b5b5a74f6e66c22fdc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!Shape\+G\+PU@{Shape\+G\+PU}}
+\index{Shape\+G\+PU@{Shape\+G\+PU}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{Shape\+G\+P\+U(const Shape\+G\+P\+U \&shape)}{ShapeGPU(const ShapeGPU &shape)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+G\+P\+U\+::\+Shape\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape\+G\+PU} \&}]{shape}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a1d1f437e8b921acc0044d6b27fd9c0de}{}\label{structmarian_1_1ShapeGPU_a1d1f437e8b921acc0044d6b27fd9c0de}
+
+
+Definition at line 40 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+40                                   : \hyperlink{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{ShapeGPU}() \{
+41     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[0] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[0];
+42     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[1];
+43     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[2] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[2];
+44     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[3] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}.shape\_[3];
+45     \hyperlink{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{updateStrides}();
+46   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a1d1f437e8b921acc0044d6b27fd9c0de_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!Shape\+G\+PU@{Shape\+G\+PU}}
+\index{Shape\+G\+PU@{Shape\+G\+PU}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{Shape\+G\+P\+U(const Shape \&shape)}{ShapeGPU(const Shape &shape)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Shape\+G\+P\+U\+::\+Shape\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape} \&}]{shape}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a0860255b1ddd7e4bbde8c9ebc60738ca}{}\label{structmarian_1_1ShapeGPU_a0860255b1ddd7e4bbde8c9ebc60738ca}
+
+
+Definition at line 48 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+48                                : \hyperlink{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{ShapeGPU}() \{
+49     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[0] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[0];
+50     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[1];
+51     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[2] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[2];
+52     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[3] = \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[3];
+53     \hyperlink{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{updateStrides}();
+54   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a0860255b1ddd7e4bbde8c9ebc60738ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!begin@{begin}}
+\index{begin@{begin}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Shape\+G\+P\+U\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13}{}\label{structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13}
+
+
+Gets a pointer to an int that specifies the size of the first dimension represented by this object. 
+
+
+
+Definition at line 152 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+152 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!begin@{begin}}
+\index{begin@{begin}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}const int$\ast$ marian\+::\+Shape\+G\+P\+U\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_aee7df6d72cd1f6902bbf6b55204f3c9f}{}\label{structmarian_1_1ShapeGPU_aee7df6d72cd1f6902bbf6b55204f3c9f}
+
+
+Gets a const pointer to an int that specifies the size of the first dimension represented by this object. 
+
+
+
+Definition at line 160 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+160 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!bindex@{bindex}}
+\index{bindex@{bindex}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{bindex(int $\ast$d) const }{bindex(int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::bindex (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_abba723039045f88819630d71dc448744}{}\label{structmarian_1_1ShapeGPU_abba723039045f88819630d71dc448744}
+
+
+Definition at line 138 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+138                                                       \{
+139     \textcolor{keywordflow}{return} \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] * \hyperlink{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{bstride}(0) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] * \hyperlink{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{bstride}(1) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] * 
+      \hyperlink{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{bstride}(2)
+140            + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] * \hyperlink{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{bstride}(3);
+141   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_abba723039045f88819630d71dc448744_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_abba723039045f88819630d71dc448744_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!bstride@{bstride}}
+\index{bstride@{bstride}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{bstride(int i) const }{bstride(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::bstride (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}{}\label{structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292}
+
+
+Definition at line 112 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+112 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a654ae2347fb721431816e338b1f55292_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!dim@{dim}}
+\index{dim@{dim}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{dim(int i)}{dim(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::dim (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{}\label{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}
+
+
+Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+79 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!dim@{dim}}
+\index{dim@{dim}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{dim(int i) const }{dim(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::dim (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a081cd10d19ea282349cd6258d1b438a1}{}\label{structmarian_1_1ShapeGPU_a081cd10d19ea282349cd6258d1b438a1}
+
+
+Gets the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+88                                                   \{
+89     \textcolor{keywordflow}{return} \textcolor{keyword}{const\_cast<}\hyperlink{structmarian_1_1ShapeGPU_a0a8de43da6ef2eff572585f5780f8b61}{ShapeGPU}&\textcolor{keyword}{>}(*this).dim(i);
+90   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a081cd10d19ea282349cd6258d1b438a1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!dims@{dims}}
+\index{dims@{dims}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{dims(int i, int $\ast$d) const }{dims(int i, int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void marian\+::\+Shape\+G\+P\+U\+::dims (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a35f26e62cc21105d42ab2e872298d01a}{}\label{structmarian_1_1ShapeGPU_a35f26e62cc21105d42ab2e872298d01a}
+
+
+Definition at line 143 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+143                                                             \{
+144     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] = (i / \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[0]) % \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[0];
+145     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] = (i / \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[1]) % \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1];
+146     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] = (i / \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[2]) % \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[2];
+147     \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] = i / \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[3];
+148   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a35f26e62cc21105d42ab2e872298d01a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!elements@{elements}}
+\index{elements@{elements}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{elements() const }{elements() const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a4af583e3ce361798a8b84c4f0a058e5d}{}\label{structmarian_1_1ShapeGPU_a4af583e3ce361798a8b84c4f0a058e5d}
+
+
+Gets the total number of elements in a tensor of this shape. 
+
+For example, if this shape represents a 5x100 tensor, this method would return 500.
+
+\begin{DoxyReturn}{Returns}
+the total number of elements in a tensor of this shape 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+129                                                   \{
+130     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[0] * \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1] * \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[2] * \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[3];
+131   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a4af583e3ce361798a8b84c4f0a058e5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!end@{end}}
+\index{end@{end}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Shape\+G\+P\+U\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a72aa4cb98ce3cfd74f4a32ffbdc5731c}{}\label{structmarian_1_1ShapeGPU_a72aa4cb98ce3cfd74f4a32ffbdc5731c}
+
+
+Gets a pointer to an int that specifies the size of the last dimension represented by this object. 
+
+
+
+Definition at line 156 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+156 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_} + \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a72aa4cb98ce3cfd74f4a32ffbdc5731c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!end@{end}}
+\index{end@{end}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}const int$\ast$ marian\+::\+Shape\+G\+P\+U\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a2b79e2858c5728c879ecdbe715d1fef5}{}\label{structmarian_1_1ShapeGPU_a2b79e2858c5728c879ecdbe715d1fef5}
+
+
+Gets a const pointer to an int that specifies the size of the last dimension represented by this object. 
+
+
+
+Definition at line 164 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+164 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_} + \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!index@{index}}
+\index{index@{index}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{index(int $\ast$d) const }{index(int *d) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::index (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_ab7d93ef443405d53f34cd2d41c25fd37}{}\label{structmarian_1_1ShapeGPU_ab7d93ef443405d53f34cd2d41c25fd37}
+
+
+Definition at line 133 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+133                                                      \{
+134     \textcolor{keywordflow}{return} \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0] * \hyperlink{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{stride}(0) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[1] * \hyperlink{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{stride}(1) + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[2] * \hyperlink{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{stride}(2)
+135            + \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[3] * \hyperlink{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{stride}(3);
+136   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_ab7d93ef443405d53f34cd2d41c25fd37_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator"!=(const Shape\+G\+P\+U \&other) const }{operator!=(const ShapeGPU &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Shape\+G\+P\+U\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape\+G\+PU} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a17fd00f6b6ead0006f376cf97595c1d6}{}\label{structmarian_1_1ShapeGPU_a17fd00f6b6ead0006f376cf97595c1d6}
+
+
+Definition at line 170 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+170 \{ \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == other); \}
+\end{DoxyCode}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!operator==@{operator==}}
+\index{operator==@{operator==}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator==(const Shape\+G\+P\+U \&other) const }{operator==(const ShapeGPU &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Shape\+G\+P\+U\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shape\+G\+PU} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_ad0c633b0b24bd5fe274cd5fd82829edf}{}\label{structmarian_1_1ShapeGPU_ad0c633b0b24bd5fe274cd5fd82829edf}
+
+
+Definition at line 166 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+166                                                \{
+167     \textcolor{keywordflow}{return} std::equal(\hyperlink{structmarian_1_1ShapeGPU_ad554ee83ce80bb45f6ae0cb1f3757a13}{begin}(), \hyperlink{structmarian_1_1ShapeGPU_a72aa4cb98ce3cfd74f4a32ffbdc5731c}{end}(), other.begin());
+168   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_ad0c633b0b24bd5fe274cd5fd82829edf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator[](int i)}{operator[](int i)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_aa055cb9851f538831c1ffdd6b7b9f06a}{}\label{structmarian_1_1ShapeGPU_aa055cb9851f538831c1ffdd6b7b9f06a}
+
+
+Gets a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the int representing the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+99 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{dim}(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_aa055cb9851f538831c1ffdd6b7b9f06a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator[](int i) const }{operator[](int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a4f9dc2d347c1c665d7988dc9b931299b}{}\label{structmarian_1_1ShapeGPU_a4f9dc2d347c1c665d7988dc9b931299b}
+
+
+Gets the size of the {\ttfamily i}th dimension represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the size of the {\ttfamily i}th dimension represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+108 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{dim}(i); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a4f9dc2d347c1c665d7988dc9b931299b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!set@{set}}
+\index{set@{set}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{set(int i, int dim)}{set(int i, int dim)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Shape\+G\+P\+U\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_aabf629e515546d98185f54651936fa4e}{}\label{structmarian_1_1ShapeGPU_aabf629e515546d98185f54651936fa4e}
+
+
+Definition at line 68 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+68                                   \{
+69     \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[i] = \hyperlink{structmarian_1_1ShapeGPU_a5a960d13af52f0b02aa1ba0e6d29a734}{dim};
+70     \hyperlink{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{updateStrides}();
+71   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_aabf629e515546d98185f54651936fa4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!size@{size}}
+\index{size@{size}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ size\+\_\+t marian\+::\+Shape\+G\+P\+U\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_aa9f763893bf9869c8d1e185fd8ffd46f}{}\label{structmarian_1_1ShapeGPU_aa9f763893bf9869c8d1e185fd8ffd46f}
+
+
+Gets the number of dimensions represented by this object. 
+
+\begin{DoxyReturn}{Returns}
+the number of dimensions represented by this object 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+119 \{ \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a3df798260496f2cf8c2d39272ce213ad}{SHAPE\_SIZE}; \}
+\end{DoxyCode}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!stride@{stride}}
+\index{stride@{stride}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{stride(int i) const }{stride(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int marian\+::\+Shape\+G\+P\+U\+::stride (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}{}\label{structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72}
+
+
+Definition at line 110 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+110 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_a411087bfb2a81997c34fc70d16915b72_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!update\+Strides@{update\+Strides}}
+\index{update\+Strides@{update\+Strides}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{update\+Strides()}{updateStrides()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Shape\+G\+P\+U\+::update\+Strides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}{}\label{structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547}
+
+
+Definition at line 56 of file shape\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+56                        \{
+57     \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[0] = \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1];
+58     \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[1] = 1;
+59     \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[2] = \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[0] * \hyperlink{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{shape\_}[1];
+60     \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[3] = shape\_[0] * shape\_[1] * shape\_[2];
+61 
+62     \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}[0] = shape\_[0] == 1 ? 0 : \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[0];
+63     \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}[1] = shape\_[1] == 1 ? 0 : \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[1];
+64     \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}[2] = shape\_[2] == 1 ? 0 : \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[2];
+65     \hyperlink{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{bstride\_}[3] = shape\_[3] == 1 ? 0 : \hyperlink{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{stride\_}[3];
+66   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dbf/structmarian_1_1ShapeGPU_ac0dcb3abcea0f59dafd339cd49249547_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!bstride\+\_\+@{bstride\+\_\+}}
+\index{bstride\+\_\+@{bstride\+\_\+}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{bstride\+\_\+}{bstride_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+G\+P\+U\+::bstride\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}{}\label{structmarian_1_1ShapeGPU_a72150ef1445911f1eeeb0225395f6306}
+
+
+Definition at line 20 of file shape\+\_\+gpu.\+h.
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!shape\+\_\+@{shape\+\_\+}}
+\index{shape\+\_\+@{shape\+\_\+}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{shape\+\_\+}{shape_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+G\+P\+U\+::shape\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}{}\label{structmarian_1_1ShapeGPU_a13380b3887523932f3a300e0e3adc57b}
+
+
+Definition at line 18 of file shape\+\_\+gpu.\+h.
+
+\index{marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}!stride\+\_\+@{stride\+\_\+}}
+\index{stride\+\_\+@{stride\+\_\+}!marian\+::\+Shape\+G\+PU@{marian\+::\+Shape\+G\+PU}}
+\subsubsection[{\texorpdfstring{stride\+\_\+}{stride_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Shape\+G\+P\+U\+::stride\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}{}\label{structmarian_1_1ShapeGPU_a1e701422755ceccd83ce44a01fce4845}
+
+
+Definition at line 19 of file shape\+\_\+gpu.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shape__gpu_8h}{shape\+\_\+gpu.\+h}\end{DoxyCompactItemize}

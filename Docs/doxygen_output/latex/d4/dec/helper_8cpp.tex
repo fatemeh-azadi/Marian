@@ -1,0 +1,203 @@
+\hypertarget{helper_8cpp}{}\section{helper.\+cpp File Reference}
+\label{helper_8cpp}\index{helper.\+cpp@{helper.\+cpp}}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for helper.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d6c/helper_8cpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{d9/d7b/helper_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{helper_8cpp_a48e064c32fa6ac4d4333cc00f9d158da}{read\+Iris\+Data} (const std\+::string file\+Name, std\+::vector$<$ float $>$ \&features, std\+::vector$<$ float $>$ \&labels)
+\item 
+void \hyperlink{helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0}{shuffle\+Data} (std\+::vector$<$ float $>$ \&features, std\+::vector$<$ float $>$ \&labels)
+\item 
+float \hyperlink{helper_8cpp_adf5c5e47905ba030c0798c4f55fa87ad}{calculate\+Accuracy} (const std\+::vector$<$ float $>$ probs, const std\+::vector$<$ float $>$ labels)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES} = 4
+\item 
+const int \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{N\+U\+M\+\_\+\+L\+A\+B\+E\+LS} = 3
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{helper.\+cpp@{helper.\+cpp}!calculate\+Accuracy@{calculate\+Accuracy}}
+\index{calculate\+Accuracy@{calculate\+Accuracy}!helper.\+cpp@{helper.\+cpp}}
+\subsubsection[{\texorpdfstring{calculate\+Accuracy(const std\+::vector$<$ float $>$ probs, const std\+::vector$<$ float $>$ labels)}{calculateAccuracy(const std::vector< float > probs, const std::vector< float > labels)}}]{\setlength{\rightskip}{0pt plus 5cm}float calculate\+Accuracy (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$}]{probs, }
+\item[{const std\+::vector$<$ float $>$}]{labels}
+\end{DoxyParamCaption}
+)}\hypertarget{helper_8cpp_adf5c5e47905ba030c0798c4f55fa87ad}{}\label{helper_8cpp_adf5c5e47905ba030c0798c4f55fa87ad}
+
+
+Definition at line 66 of file helper.\+cpp.
+
+
+\begin{DoxyCode}
+67                                                        \{
+68   \textcolor{keywordtype}{size\_t} numCorrect = 0;
+69   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < probs.size(); i += \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{NUM\_LABELS}) \{
+70     \textcolor{keyword}{auto} pred = std::distance(
+71         probs.begin() + i,
+72         std::max\_element(probs.begin() + i, probs.begin() + i + \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{NUM\_LABELS}));
+73     \textcolor{keywordflow}{if}(pred == labels[i / \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{NUM\_LABELS}])
+74       ++numCorrect;
+75   \}
+76   \textcolor{keywordflow}{return} numCorrect / float(labels.size());
+77 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d4/dec/helper_8cpp_adf5c5e47905ba030c0798c4f55fa87ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{helper.\+cpp@{helper.\+cpp}!read\+Iris\+Data@{read\+Iris\+Data}}
+\index{read\+Iris\+Data@{read\+Iris\+Data}!helper.\+cpp@{helper.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+Iris\+Data(const std\+::string file\+Name, std\+::vector$<$ float $>$ \&features, std\+::vector$<$ float $>$ \&labels)}{readIrisData(const std::string fileName, std::vector< float > &features, std::vector< float > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+Iris\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{file\+Name, }
+\item[{std\+::vector$<$ float $>$ \&}]{features, }
+\item[{std\+::vector$<$ float $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)}\hypertarget{helper_8cpp_a48e064c32fa6ac4d4333cc00f9d158da}{}\label{helper_8cpp_a48e064c32fa6ac4d4333cc00f9d158da}
+
+
+Definition at line 14 of file helper.\+cpp.
+
+
+\begin{DoxyCode}
+16                                             \{
+17   std::map<std::string, int> CLASSES
+18       = \{\{\textcolor{stringliteral}{"Iris-setosa"}, 0\}, \{\textcolor{stringliteral}{"Iris-versicolor"}, 1\}, \{\textcolor{stringliteral}{"Iris-virginica"}, 2\}\};
+19 
+20   std::ifstream in(fileName);
+21   \textcolor{keywordflow}{if}(!in.is\_open()) \{
+22     std::cerr << \textcolor{stringliteral}{"Iris dataset not found: "} << fileName << std::endl;
+23   \}
+24   std::string line;
+25   std::string \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value};
+26   \textcolor{keywordflow}{while}(std::getline(in, line)) \{
+27     std::stringstream ss(line);
+28     \textcolor{keywordtype}{int} i = 0;
+29     \textcolor{keywordflow}{while}(std::getline(ss, value, \textcolor{charliteral}{','})) \{
+30       \textcolor{keywordflow}{if}(++i == 5)
+31         labels.emplace\_back(CLASSES[value]);
+32       \textcolor{keywordflow}{else}
+33         features.emplace\_back(std::stof(value));
+34     \}
+35   \}
+36 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d4/dec/helper_8cpp_a48e064c32fa6ac4d4333cc00f9d158da_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{helper.\+cpp@{helper.\+cpp}!shuffle\+Data@{shuffle\+Data}}
+\index{shuffle\+Data@{shuffle\+Data}!helper.\+cpp@{helper.\+cpp}}
+\subsubsection[{\texorpdfstring{shuffle\+Data(std\+::vector$<$ float $>$ \&features, std\+::vector$<$ float $>$ \&labels)}{shuffleData(std::vector< float > &features, std::vector< float > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}void shuffle\+Data (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{features, }
+\item[{std\+::vector$<$ float $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)}\hypertarget{helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0}{}\label{helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0}
+
+
+Definition at line 38 of file helper.\+cpp.
+
+
+\begin{DoxyCode}
+38                                                                        \{
+39   \textcolor{comment}{// Create a list of indeces 0...K}
+40   std::vector<int> indeces;
+41   indeces.reserve(labels.size());
+42   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < labels.size(); ++i)
+43     indeces.push\_back(i);
+44 
+45   \textcolor{comment}{// Shuffle indeces}
+46   std::random\_shuffle(indeces.begin(), indeces.end());
+47 
+48   std::vector<float> featuresTemp;
+49   featuresTemp.reserve(features.size());
+50   std::vector<float> labelsTemp;
+51   labelsTemp.reserve(labels.size());
+52 
+53   \textcolor{comment}{// Get shuffled features and labels}
+54   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i = 0; i < indeces.size(); ++i) \{
+55     \textcolor{keyword}{auto} idx = indeces[i];
+56     labelsTemp.push\_back(labels[idx]);
+57     featuresTemp.insert(featuresTemp.end(),
+58                         features.begin() + (idx * \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES}),
+59                         features.begin() + ((idx + 1) * \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES}));
+60   \}
+61 
+62   features = featuresTemp;
+63   labels = labelsTemp;
+64 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{d4/dec/helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{helper.\+cpp@{helper.\+cpp}!N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES}}
+\index{N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES}!helper.\+cpp@{helper.\+cpp}}
+\subsubsection[{\texorpdfstring{N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES}{NUM_FEATURES}}]{\setlength{\rightskip}{0pt plus 5cm}const int N\+U\+M\+\_\+\+F\+E\+A\+T\+U\+R\+ES = 4}\hypertarget{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{}\label{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}
+
+
+Definition at line 11 of file helper.\+cpp.
+
+\index{helper.\+cpp@{helper.\+cpp}!N\+U\+M\+\_\+\+L\+A\+B\+E\+LS@{N\+U\+M\+\_\+\+L\+A\+B\+E\+LS}}
+\index{N\+U\+M\+\_\+\+L\+A\+B\+E\+LS@{N\+U\+M\+\_\+\+L\+A\+B\+E\+LS}!helper.\+cpp@{helper.\+cpp}}
+\subsubsection[{\texorpdfstring{N\+U\+M\+\_\+\+L\+A\+B\+E\+LS}{NUM_LABELS}}]{\setlength{\rightskip}{0pt plus 5cm}const int N\+U\+M\+\_\+\+L\+A\+B\+E\+LS = 3}\hypertarget{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{}\label{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}
+
+
+Definition at line 12 of file helper.\+cpp.
+

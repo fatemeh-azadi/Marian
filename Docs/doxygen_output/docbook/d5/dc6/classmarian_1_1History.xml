@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dc6/classmarian_1_1History">
+<title>marian::History class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d8c/marian_2src_2translator_2history_8h">&lt;history.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::History</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d57/classmarian_1_1History__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::History</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d6a/classmarian_1_1History__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/db7/structmarian_1_1History_1_1HypothesisCoord">marian::History::HypothesisCoord</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Beam &gt; history_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::priority_queue&lt; HypothesisCoord &gt; topHyps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool normalize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t lineNo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/dc6/classmarian_1_1History_1ab19b9b047826d261a3e974928112324c">History</link> (
+size_t lineNo, bool normalize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc6/classmarian_1_1History_1a4234f2678e208ba1a7b971a02d332725">Add</link> (
+const <link linkend="da/d22/namespacemarian_1aebdf5ddcd9e7774939696be6e1ceb8f0">Beam</link> &amp; beam, bool last)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d5/dc6/classmarian_1_1History_1a5c416401eb3f4e852cef8f123871d87c">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1aaae4a49bda201e73a4671babdb7df6b8">NBestList</link> <link linkend="d5/dc6/classmarian_1_1History_1ad182b116b7e4f77258e4605e1d0d40db">NBest</link> (
+size_t n)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a39014b8d5e6a286ac891f3da661d6a46">Result</link> <link linkend="d5/dc6/classmarian_1_1History_1aa992b2edf204a4b6e00bac53511b1d95">Top</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d5/dc6/classmarian_1_1History_1af9fb02fdd4165303964b0e4117726137">GetLineNum</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1ab19b9b047826d261a3e974928112324c">
+                <title>marian::History::History (size_t lineNo, bool normalize=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1a4234f2678e208ba1a7b971a02d332725">
+                <title>void marian::History::Add (const Beam &amp;beam, bool last=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1a5c416401eb3f4e852cef8f123871d87c">
+                <title>size_t marian::History::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1ad182b116b7e4f77258e4605e1d0d40db">
+                <title>NBestList marian::History::NBest (size_t n) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1aa992b2edf204a4b6e00bac53511b1d95">
+                <title>Result marian::History::Top () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dc6/classmarian_1_1History_1af9fb02fdd4165303964b0e4117726137">
+                <title>size_t marian::History::GetLineNum () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

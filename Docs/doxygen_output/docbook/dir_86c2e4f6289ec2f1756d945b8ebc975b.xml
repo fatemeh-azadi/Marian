@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_86c2e4f6289ec2f1756d945b8ebc975b">
+    <title>mblas Directory Reference</title>
+<para>Directory dependency diagram for mblas</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_86c2e4f6289ec2f1756d945b8ebc975b_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="db/d63/array_8h">array.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/d23/handles_8h">handles.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dd/df4/matrix_8h">matrix.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="da/dbc/matrix__functions_8h">matrix_functions.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d1/df1/matrix__wrapper_8h">matrix_wrapper.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/d58/amun_2gpu_2mblas_2nth__element_8h">amun/gpu/mblas/nth_element.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/db1/nth__element__kernels_8h">nth_element_kernels.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/df7/amun_2gpu_2mblas_2thrust__functions_8h">amun/gpu/mblas/thrust_functions.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/amun/gpu/mblas/</para>
+    </simplesect>
+</section>

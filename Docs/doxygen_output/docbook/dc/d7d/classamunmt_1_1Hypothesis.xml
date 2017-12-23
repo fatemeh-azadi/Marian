@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d7d/classamunmt_1_1Hypothesis">
+<title>amunmt::Hypothesis class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d52/amun_2common_2hypothesis_8h">&lt;hypothesis.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Hypothesis</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d3f/classamunmt_1_1Hypothesis__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Hypothesis</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d6e/classamunmt_1_1Hypothesis__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const HypothesisPtr prevHyp_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t prevIndex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t word_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const float cost_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SoftAlignmentPtr &gt; alignments_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; costBreakdown_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a317ba0639cedb867b1914eed43996af9">Hypothesis</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1acd7c9409c8e482416e858cd196481e9a">Hypothesis</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> prevHyp, size_t word, size_t prevIndex, float cost)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a0132565e3571b7d075a7d8f49163b164">Hypothesis</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> prevHyp, size_t word, size_t prevIndex, float cost, std::vector&lt; <link linkend="d3/d59/soft__alignment_8h_1a875ec1de0fda25e65d972952540246ff">SoftAlignmentPtr</link> &gt; alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a8a4f3fb6e6dd5064f7717641fff48253">GetPrevHyp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a6aee92eddaaf538f7bde3f1fce767a45">GetWord</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1aa7cbaf7f54edbe24a140893521c3a982">GetPrevStateIndex</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1abc6eea3924489fe416a0ae4b1b1d90f1">GetCost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; &amp; <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1acf48ef334a8444930794a94ea067aa6a">GetCostBreakdown</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/d59/soft__alignment_8h_1a875ec1de0fda25e65d972952540246ff">SoftAlignmentPtr</link> <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a6d48e570a4e2010d9252aff05583e9c4">GetAlignment</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d3/d59/soft__alignment_8h_1a875ec1de0fda25e65d972952540246ff">SoftAlignmentPtr</link> &gt; &amp; <link linkend="dc/d7d/classamunmt_1_1Hypothesis_1a2b7fd0476f31bb7edf0c695609fb3096">GetAlignments</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a317ba0639cedb867b1914eed43996af9">
+                <title>amunmt::Hypothesis::Hypothesis ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1acd7c9409c8e482416e858cd196481e9a">
+                <title>amunmt::Hypothesis::Hypothesis (const HypothesisPtr prevHyp, size_t word, size_t prevIndex, float cost)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a0132565e3571b7d075a7d8f49163b164">
+                <title>amunmt::Hypothesis::Hypothesis (const HypothesisPtr prevHyp, size_t word, size_t prevIndex, float cost, std::vector&lt; SoftAlignmentPtr &gt; alignment)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a8a4f3fb6e6dd5064f7717641fff48253">
+                <title>const HypothesisPtr amunmt::Hypothesis::GetPrevHyp () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a6aee92eddaaf538f7bde3f1fce767a45">
+                <title>size_t amunmt::Hypothesis::GetWord () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1aa7cbaf7f54edbe24a140893521c3a982">
+                <title>size_t amunmt::Hypothesis::GetPrevStateIndex () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1abc6eea3924489fe416a0ae4b1b1d90f1">
+                <title>float amunmt::Hypothesis::GetCost () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1acf48ef334a8444930794a94ea067aa6a">
+                <title>std::vector&lt;float&gt;&amp; amunmt::Hypothesis::GetCostBreakdown ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a6d48e570a4e2010d9252aff05583e9c4">
+                <title>SoftAlignmentPtr amunmt::Hypothesis::GetAlignment (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7d/classamunmt_1_1Hypothesis_1a2b7fd0476f31bb7edf0c695609fb3096">
+                <title>std::vector&lt;SoftAlignmentPtr&gt;&amp; amunmt::Hypothesis::GetAlignments ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

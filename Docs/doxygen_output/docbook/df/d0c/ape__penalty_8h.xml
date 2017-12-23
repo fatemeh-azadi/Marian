@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d0c/ape__penalty_8h">
+    <title>ape_penalty.h File Reference</title>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &quot;common/types.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+    <programlisting>#include &quot;common/scorer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/base_best_hyps.h&quot;</programlisting>
+    <programlisting>#include &quot;common/loader.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix.h&quot;</programlisting>
+<para>Include dependency diagram for ape_penalty.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dc2/ape__penalty_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for ape_penalty.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d1b/ape__penalty_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6a/classGPU_1_1ApePenaltyState">GPU::ApePenaltyState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d72/classGPU_1_1ApePenalty">GPU::ApePenalty</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/db0/classGPU_1_1ApePenaltyLoader">GPU::ApePenaltyLoader</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d27/namespaceGPU">GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file ape_penalty.h</para>
+    </simplesect>
+</section>

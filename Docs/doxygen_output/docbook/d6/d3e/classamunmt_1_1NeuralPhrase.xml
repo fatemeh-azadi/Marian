@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d3e/classamunmt_1_1NeuralPhrase">
+<title>amunmt::NeuralPhrase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d7d/neural__phrase_8h">&lt;neural_phrase.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::NeuralPhrase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d95/classamunmt_1_1NeuralPhrase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::NeuralPhrase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d74/classamunmt_1_1NeuralPhrase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; words</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; scores</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int startPos</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int endPos</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase_1a59964db7f14d82c9025977fa56c8fb6d">NeuralPhrase</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase_1a45837437152f12f6f4eafa76c388e7d4">NeuralPhrase</link> (
+const std::vector&lt; size_t &gt; &amp; words, std::vector&lt; float &gt; scores, int startPos, int endPos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase_1a32728077890714218a7adaf86349a5a3">getScore</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::pair&lt; int, int &gt; <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase_1a9f3ef1aa7227270c1538424fbf66e6ea">getCoverage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase_1a6a8c5c7b397153ac84384b712e28daf5">Debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d3e/classamunmt_1_1NeuralPhrase_1a59964db7f14d82c9025977fa56c8fb6d">
+                <title>amunmt::NeuralPhrase::NeuralPhrase ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d3e/classamunmt_1_1NeuralPhrase_1a45837437152f12f6f4eafa76c388e7d4">
+                <title>amunmt::NeuralPhrase::NeuralPhrase (const std::vector&lt; size_t &gt; &amp;words, std::vector&lt; float &gt; scores, int startPos, int endPos)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d3e/classamunmt_1_1NeuralPhrase_1a32728077890714218a7adaf86349a5a3">
+                <title>float amunmt::NeuralPhrase::getScore (int i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d3e/classamunmt_1_1NeuralPhrase_1a9f3ef1aa7227270c1538424fbf66e6ea">
+                <title>std::pair&lt;int, int&gt; amunmt::NeuralPhrase::getCoverage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d3e/classamunmt_1_1NeuralPhrase_1a6a8c5c7b397153ac84384b712e28daf5">
+                <title>std::string amunmt::NeuralPhrase::Debug () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

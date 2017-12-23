@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d95/namespaceamunmt_1_1GPU">
+<title>amunmt::GPU</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps">amunmt::GPU::BestHyps</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">amunmt::GPU::Cell</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">amunmt::GPU::CellLength</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">amunmt::GPU::CellState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/dd3/classamunmt_1_1GPU_1_1ClassLanguageModel">amunmt::GPU::ClassLanguageModel</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder">amunmt::GPU::Decoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d9b/classamunmt_1_1GPU_1_1Encoder">amunmt::GPU::Encoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder">amunmt::GPU::EncoderDecoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader">amunmt::GPU::EncoderDecoderLoader</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState">amunmt::GPU::EncoderDecoderState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU">amunmt::GPU::FastGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dad/classamunmt_1_1GPU_1_1Multiplicative">amunmt::GPU::Multiplicative</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">amunmt::GPU::NpzConverter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d25/classamunmt_1_1GPU_1_1NthElement">amunmt::GPU::NthElement</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">amunmt::GPU::NthOut</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">amunmt::GPU::NthOutBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU">amunmt::GPU::SlowGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM">amunmt::GPU::SlowLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">amunmt::GPU::Weights</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas">amunmt::GPU::mblas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d9/df6/classamunmt_1_1GPU_1_1FastGRU">FastGRU</link>&lt; T &gt;  <link linkend="d7/d95/namespaceamunmt_1_1GPU_1aef4855cf4b6eab614a38b158bda76705">GRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM">SlowLSTM</link>&lt; T &gt;  <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a5da1f5e1c7dfe4068d4a79ae464191d7">LSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unordered_map&lt; std::string, boost::timer::cpu_timer &gt; <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a308fc6e1bfa76da409cba239406bb7fa">timers</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a92130d6efa8121cebe9e3ffdfa9fff8a">gElementwiseOps</link> (
+<link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; stateWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; ruhWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; tempWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; bWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; bx1Wrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; bx2Wrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a85a2c70f9666759dd9db598bfcd51bab">operator&lt;&lt;</link> (
+std::ostream &amp; out, const <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &amp; obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; <link linkend="d7/d95/namespaceamunmt_1_1GPU_1aa3a73ca48e972648baa9d227e8e97da9">operator&lt;&lt;</link> (
+std::ostream &amp; out, const <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &amp; obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d7/d95/namespaceamunmt_1_1GPU_1acf0906d22f8965ad5160853abf94b437">gMaxElement</link> (
+<link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &gt; out, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; probsWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; uint &gt; batchPositionWrap, uint numBatches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a51fe7e37c1246d7a4e6fff93ac7e079c">gMaxElementUpdate</link> (
+<link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &gt; out, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; probsWrap, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &gt; resNewWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; uint &gt; batchPositionWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; uint &gt; cumBeamSizesWrap, uint numBlocks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d7/d95/namespaceamunmt_1_1GPU_1a2b768df4c05b3d5f4c1894cbb56c8d05">gGetValueByKey</link> (
+<link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; out, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">mblas::MatrixWrapper</link>&lt; float &gt; in, uint * indices, uint n)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d95/namespaceamunmt_1_1GPU_1aebe531e40abaff95bbd58b556b1a570f">HandleError</link> (
+cudaError_t err, const char * file, int line)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

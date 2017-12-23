@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d5b/options_8h">
+    <title>options.h File Reference</title>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;3rd_party/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;3rd_party/yaml-cpp/yaml.h&quot;</programlisting>
+<para>Include dependency diagram for options.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d2c/options_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for options.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d25/options_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/db8/classmarian_1_1Options">marian::Options</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d5b/options_8h_1a45814e723c9ae75407159b5ff5f5c4d6">YAML_REGISTER_TYPE</link> namespace YAML {\
+template&lt;&gt;\
+struct convert&lt;registered&gt; {\
+  static Node encode(const registered&amp; rhs) {\
+    type value = static_cast&lt;type&gt;(rhs);\
+    return Node(value);\
+  }\
+  static bool decode(const Node&amp; node, registered&amp; rhs) {\
+    type value = node.as&lt;type&gt;();\
+    rhs = static_cast&lt;registered&gt;(value);\
+    return true;\
+  }\
+};\
+}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file options.h</para>
+    </simplesect>
+</section>

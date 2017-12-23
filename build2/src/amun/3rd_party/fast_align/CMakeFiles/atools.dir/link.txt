@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -fPIC -O3 -Ofast -m64 -march=native -funroll-loops -ffinite-math-only -Wno-unused-result -Wno-deprecated -pthread -DNDEBUG -Wall -std=c++11 -O3 -g -fopenmp   CMakeFiles/atools.dir/src/alignment_io.cc.o CMakeFiles/atools.dir/src/atools.cc.o  -o ../../../../atools -rdynamic 

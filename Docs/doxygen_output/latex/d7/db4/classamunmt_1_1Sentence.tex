@@ -1,0 +1,275 @@
+\hypertarget{classamunmt_1_1Sentence}{}\section{amunmt\+:\+:Sentence Class Reference}
+\label{classamunmt_1_1Sentence}\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+
+
+{\ttfamily \#include $<$sentence.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Sentence\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d2/dc5/classamunmt_1_1Sentence__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Sentence_aa0f7259a5e6f30f4b50e71dc44c83a2e}{Sentence} (const \hyperlink{classamunmt_1_1God}{God} \&god, size\+\_\+t v\+Line\+Num, const std\+::string \&line)
+\item 
+\hyperlink{classamunmt_1_1Sentence_a571bf14105075f95c2d58562fcc86018}{Sentence} (const \hyperlink{classamunmt_1_1God}{God} \&god, size\+\_\+t v\+Line\+Num, const std\+::vector$<$ std\+::string $>$ \&words)
+\item 
+\hyperlink{classamunmt_1_1Sentence_a855d515a6973ef61ed2f5a9c469dfb75}{Sentence} (\hyperlink{classamunmt_1_1God}{God} \&god, size\+\_\+t line\+Num, const std\+::vector$<$ uint $>$ \&words)
+\item 
+const \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \& \hyperlink{classamunmt_1_1Sentence_a929bbcefc70b6bc280bbdadb3be00ec9}{Get\+Words} (size\+\_\+t index=0) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentence_a9f6ee04c9dd03b9933d8fbee4eadc259}{size} (size\+\_\+t index=0) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentence_a4166fdc6aacb417cb7e21334f57a1e34}{Get\+Line\+Num} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Sentence_a18cc0ecedde9d644f895f3ce70ac5afb}{Sentence} (const \hyperlink{classamunmt_1_1Sentence}{Sentence} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} $>$ \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{line\+Num\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file sentence.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Sentence@{Sentence}}
+\index{Sentence@{Sentence}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Sentence(const God \&god, size\+\_\+t v\+Line\+Num, const std\+::string \&line)}{Sentence(const God &god, size_t vLineNum, const std::string &line)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentence\+::\+Sentence (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{size\+\_\+t}]{v\+Line\+Num, }
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentence_aa0f7259a5e6f30f4b50e71dc44c83a2e}{}\label{classamunmt_1_1Sentence_aa0f7259a5e6f30f4b50e71dc44c83a2e}
+
+
+Definition at line 8 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+9   : \hyperlink{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{lineNum\_}(vLineNum)
+10 \{
+11   std::vector<std::string> tabs;
+12   \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, tabs, \textcolor{stringliteral}{"\(\backslash\)t"});
+13   \textcolor{keywordflow}{if} (tabs.size() == 0) \{
+14     tabs.push\_back(\textcolor{stringliteral}{""});
+15   \}
+16 
+17   \textcolor{keywordtype}{size\_t} maxLength = god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"max-length"});
+18   \textcolor{keywordtype}{size\_t} i = 0;
+19   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& tab : tabs) \{
+20     std::vector<std::string> lineTokens;
+21     \hyperlink{namespaceamunmt_a4578e863aaec8293556404432d7e8d04}{Trim}(tab);
+22     \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(tab, lineTokens, \textcolor{stringliteral}{" "});
+23 
+24     \textcolor{keywordflow}{if} (maxLength && lineTokens.size() > maxLength) \{
+25       lineTokens.resize(maxLength);
+26     \}
+27 
+28     \textcolor{keyword}{auto} processed = god.Preprocess(i, lineTokens);
+29     \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\_}.push\_back(god.GetSourceVocab(i++)(processed));
+30   \}
+31 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classamunmt_1_1Sentence_aa0f7259a5e6f30f4b50e71dc44c83a2e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Sentence@{Sentence}}
+\index{Sentence@{Sentence}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Sentence(const God \&god, size\+\_\+t v\+Line\+Num, const std\+::vector$<$ std\+::string $>$ \&words)}{Sentence(const God &god, size_t vLineNum, const std::vector< std::string > &words)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentence\+::\+Sentence (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{size\+\_\+t}]{v\+Line\+Num, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{words}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentence_a571bf14105075f95c2d58562fcc86018}{}\label{classamunmt_1_1Sentence_a571bf14105075f95c2d58562fcc86018}
+
+
+Definition at line 33 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+34   : \hyperlink{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{lineNum\_}(lineNum) \{
+35     \textcolor{keyword}{auto} processed = god.Preprocess(0, words);
+36     \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\_}.push\_back(god.GetSourceVocab(0)(processed));
+37 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classamunmt_1_1Sentence_a571bf14105075f95c2d58562fcc86018_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Sentence@{Sentence}}
+\index{Sentence@{Sentence}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Sentence(\+God \&god, size\+\_\+t line\+Num, const std\+::vector$<$ uint $>$ \&words)}{Sentence(God &god, size_t lineNum, const std::vector< uint > &words)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentence\+::\+Sentence (
+\begin{DoxyParamCaption}
+\item[{{\bf God} \&}]{god, }
+\item[{size\+\_\+t}]{line\+Num, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{words}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentence_a855d515a6973ef61ed2f5a9c469dfb75}{}\label{classamunmt_1_1Sentence_a855d515a6973ef61ed2f5a9c469dfb75}
+
+
+Definition at line 39 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+40   : \hyperlink{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{lineNum\_}(lineNum) \{
+41     \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\_}.push\_back(words);
+42 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Sentence@{Sentence}}
+\index{Sentence@{Sentence}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Sentence(const Sentence \&)=delete}{Sentence(const Sentence &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentence\+::\+Sentence (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentence} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1Sentence_a18cc0ecedde9d644f895f3ce70ac5afb}{}\label{classamunmt_1_1Sentence_a18cc0ecedde9d644f895f3ce70ac5afb}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Get\+Line\+Num@{Get\+Line\+Num}}
+\index{Get\+Line\+Num@{Get\+Line\+Num}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Get\+Line\+Num() const }{GetLineNum() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentence\+::\+Get\+Line\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentence_a4166fdc6aacb417cb7e21334f57a1e34}{}\label{classamunmt_1_1Sentence_a4166fdc6aacb417cb7e21334f57a1e34}
+
+
+Definition at line 45 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+45                                   \{
+46   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{lineNum\_};
+47 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classamunmt_1_1Sentence_a4166fdc6aacb417cb7e21334f57a1e34_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!Get\+Words@{Get\+Words}}
+\index{Get\+Words@{Get\+Words}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{Get\+Words(size\+\_\+t index=0) const }{GetWords(size_t index=0) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Words} \& amunmt\+::\+Sentence\+::\+Get\+Words (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentence_a929bbcefc70b6bc280bbdadb3be00ec9}{}\label{classamunmt_1_1Sentence_a929bbcefc70b6bc280bbdadb3be00ec9}
+
+
+Definition at line 49 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+49                                                   \{
+50   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\_}[index];
+51 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classamunmt_1_1Sentence_a929bbcefc70b6bc280bbdadb3be00ec9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!size@{size}}
+\index{size@{size}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{size(size\+\_\+t index=0) const }{size(size_t index=0) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentence\+::size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentence_a9f6ee04c9dd03b9933d8fbee4eadc259}{}\label{classamunmt_1_1Sentence_a9f6ee04c9dd03b9933d8fbee4eadc259}
+
+
+Definition at line 53 of file sentence.\+cpp.
+
+
+\begin{DoxyCode}
+53                                         \{
+54   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{words\_}[index].size();
+55 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d7/db4/classamunmt_1_1Sentence_a9f6ee04c9dd03b9933d8fbee4eadc259_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!line\+Num\+\_\+@{line\+Num\+\_\+}}
+\index{line\+Num\+\_\+@{line\+Num\+\_\+}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{line\+Num\+\_\+}{lineNum_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentence\+::line\+Num\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}{}\label{classamunmt_1_1Sentence_af0413112c4e70c373cff66cffa0f4dfa}
+
+
+Definition at line 26 of file sentence.\+h.
+
+\index{amunmt\+::\+Sentence@{amunmt\+::\+Sentence}!words\+\_\+@{words\+\_\+}}
+\index{words\+\_\+@{words\+\_\+}!amunmt\+::\+Sentence@{amunmt\+::\+Sentence}}
+\subsubsection[{\texorpdfstring{words\+\_\+}{words_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Words}$>$ amunmt\+::\+Sentence\+::words\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}{}\label{classamunmt_1_1Sentence_a471f42578c2547cd66b903e3da22dc78}
+
+
+Definition at line 25 of file sentence.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sentence_8h}{sentence.\+h}\item 
+\hyperlink{sentence_8cpp}{sentence.\+cpp}\end{DoxyCompactItemize}

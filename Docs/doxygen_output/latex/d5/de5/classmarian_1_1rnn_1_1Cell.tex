@@ -1,0 +1,202 @@
+\hypertarget{classmarian_1_1rnn_1_1Cell}{}\section{marian\+:\+:rnn\+:\+:Cell Class Reference}
+\label{classmarian_1_1rnn_1_1Cell}\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d25/classmarian_1_1rnn_1_1Cell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d59/classmarian_1_1rnn_1_1Cell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1Cell_acc392c8adfb002c17993f02e6d3085a6}{Cell} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1Cell_a88c852cfe707ab973aa30780bd8e66bc}{apply} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1Cell_a982be20556f9ba25eb76714ef264efeb}{get\+Lazy\+Inputs} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ rnn\+::\+R\+NN $>$ parent)
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1Cell_a3561734479d2121025c5e3f834ce2397}{set\+Lazy\+Inputs} (std\+::vector$<$ std\+::function$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}(\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ rnn\+::\+R\+NN $>$)$>$$>$ lazy)
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}{apply\+Input} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs)=0
+\item 
+virtual \hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}{apply\+State} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$, \hyperlink{structmarian_1_1rnn_1_1State}{State}, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}=nullptr)=0
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1Cell_a115c5d440c516f7ed7982bc08e66d87d}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::function$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}(\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ rnn\+::\+R\+NN $>$)$>$ $>$ \hyperlink{classmarian_1_1rnn_1_1Cell_ad77a8ad9d648096996887ea57faa6fe2}{lazy\+Inputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 139 of file marian/src/rnn/types.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Cell(\+Ptr$<$ Options $>$ options)}{Cell(Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1Cell_acc392c8adfb002c17993f02e6d3085a6}{}\label{classmarian_1_1rnn_1_1Cell_acc392c8adfb002c17993f02e6d3085a6}
+
+
+Definition at line 144 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+145     : \hyperlink{classmarian_1_1rnn_1_1Stackable_a0aded6af5da3482e4e16bdb54d00c4b3}{Stackable}(options) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!apply@{apply}}
+\index{apply@{apply}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{apply(std\+::vector$<$ Expr $>$ inputs, State state, Expr mask=nullptr)}{apply(std::vector< Expr > inputs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} marian\+::rnn\+::\+Cell\+::apply (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a88c852cfe707ab973aa30780bd8e66bc}{}\label{classmarian_1_1rnn_1_1Cell_a88c852cfe707ab973aa30780bd8e66bc}
+
+
+Definition at line 147 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+147                                                                         \{
+148     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}{applyState}(\hyperlink{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}{applyInput}(inputs), state, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+149   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!apply\+Input@{apply\+Input}}
+\index{apply\+Input@{apply\+Input}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{apply\+Input(std\+::vector$<$ Expr $>$ inputs)=0}{applyInput(std::vector< Expr > inputs)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+Cell\+::apply\+Input (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}{}\label{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}
+
+
+Implemented in \hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac09c1e1826106361719f05b47ed5fb9f}{marian\+::rnn\+::\+Test\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1SlowLSTM_a769b9436d2c615073b0e6f3482dd953b}{marian\+::rnn\+::\+Slow\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1FastLSTM_ab6b81e03d65d3f49f345ddf14a379b38}{marian\+::rnn\+::\+Fast\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1StackedCell_ae4448d097ccf117bf9385e074ccb346a}{marian\+::rnn\+::\+Stacked\+Cell}, \hyperlink{classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc}{marian\+::rnn\+::\+G\+RU}, and \hyperlink{classmarian_1_1rnn_1_1Tanh_a27567fac50eea00c776cc76d6f9351df}{marian\+::rnn\+::\+Tanh}.
+
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!apply\+State@{apply\+State}}
+\index{apply\+State@{apply\+State}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{apply\+State(std\+::vector$<$ Expr $>$, State, Expr=nullptr)=0}{applyState(std::vector< Expr >, State, Expr=nullptr)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf State} marian\+::rnn\+::\+Cell\+::apply\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{, }
+\item[{{\bf State}}]{, }
+\item[{{\bf Expr}}]{ = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}{}\label{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}
+
+
+Implemented in \hyperlink{classmarian_1_1rnn_1_1TestLSTM_ac19a0a1f05d7eb0510af4436dfdd40ae}{marian\+::rnn\+::\+Test\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1SlowLSTM_af6563558351e655ddf77f918dfa848a6}{marian\+::rnn\+::\+Slow\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1FastLSTM_a3d1a86ed6706682489aeaeac9e41ee4e}{marian\+::rnn\+::\+Fast\+L\+S\+TM}, \hyperlink{classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d}{marian\+::rnn\+::\+G\+RU}, \hyperlink{classmarian_1_1rnn_1_1StackedCell_a21feb9e10b75dca081f701343a0f35ac}{marian\+::rnn\+::\+Stacked\+Cell}, and \hyperlink{classmarian_1_1rnn_1_1Tanh_a241e6bcc6cb37c94c8965dea5a5e2e91}{marian\+::rnn\+::\+Tanh}.
+
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!clear@{clear}}
+\index{clear@{clear}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Cell\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a115c5d440c516f7ed7982bc08e66d87d}{}\label{classmarian_1_1rnn_1_1Cell_a115c5d440c516f7ed7982bc08e66d87d}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Stackable_a322f402f6edc55cee4d1368df35bae8b}{marian\+::rnn\+::\+Stackable}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1rnn_1_1StackedCell_aaba6d09533f30c9622f4045e608aa09e}{marian\+::rnn\+::\+Stacked\+Cell}.
+
+
+
+Definition at line 165 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+165 \{\}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!get\+Lazy\+Inputs@{get\+Lazy\+Inputs}}
+\index{get\+Lazy\+Inputs@{get\+Lazy\+Inputs}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{get\+Lazy\+Inputs(\+Ptr$<$ rnn\+::\+R\+N\+N $>$ parent)}{getLazyInputs(Ptr< rnn::RNN > parent)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+Cell\+::get\+Lazy\+Inputs (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ rnn\+::\+R\+NN $>$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a982be20556f9ba25eb76714ef264efeb}{}\label{classmarian_1_1rnn_1_1Cell_a982be20556f9ba25eb76714ef264efeb}
+
+
+Reimplemented in \hyperlink{classmarian_1_1rnn_1_1StackedCell_a1f7cf03b01bc99cfa3f5174d24407939}{marian\+::rnn\+::\+Stacked\+Cell}.
+
+
+
+Definition at line 151 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+151                                                             \{
+152     std::vector<Expr> inputs;
+153     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} lazy : \hyperlink{classmarian_1_1rnn_1_1Cell_ad77a8ad9d648096996887ea57faa6fe2}{lazyInputs\_})
+154       inputs.push\_back(lazy(parent));
+155     \textcolor{keywordflow}{return} inputs;
+156   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!set\+Lazy\+Inputs@{set\+Lazy\+Inputs}}
+\index{set\+Lazy\+Inputs@{set\+Lazy\+Inputs}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{set\+Lazy\+Inputs(std\+::vector$<$ std\+::function$<$ Expr(\+Ptr$<$ rnn\+::\+R\+N\+N $>$)$>$$>$ lazy)}{setLazyInputs(std::vector< std::function< Expr(Ptr< rnn::RNN >)>> lazy)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Cell\+::set\+Lazy\+Inputs (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::function$<$ {\bf Expr}({\bf Ptr}$<$ rnn\+::\+R\+NN $>$)$>$$>$}]{lazy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1Cell_a3561734479d2121025c5e3f834ce2397}{}\label{classmarian_1_1rnn_1_1Cell_a3561734479d2121025c5e3f834ce2397}
+
+
+Reimplemented in \hyperlink{classmarian_1_1rnn_1_1StackedCell_a87a4b17016e0d60ff14ed81f806dfd6d}{marian\+::rnn\+::\+Stacked\+Cell}.
+
+
+
+Definition at line 158 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+158                                                                              \{
+159     \hyperlink{classmarian_1_1rnn_1_1Cell_ad77a8ad9d648096996887ea57faa6fe2}{lazyInputs\_} = lazy;
+160   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}!lazy\+Inputs\+\_\+@{lazy\+Inputs\+\_\+}}
+\index{lazy\+Inputs\+\_\+@{lazy\+Inputs\+\_\+}!marian\+::rnn\+::\+Cell@{marian\+::rnn\+::\+Cell}}
+\subsubsection[{\texorpdfstring{lazy\+Inputs\+\_\+}{lazyInputs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::function$<${\bf Expr}({\bf Ptr}$<$rnn\+::\+R\+NN$>$)$>$ $>$ marian\+::rnn\+::\+Cell\+::lazy\+Inputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Cell_ad77a8ad9d648096996887ea57faa6fe2}{}\label{classmarian_1_1rnn_1_1Cell_ad77a8ad9d648096996887ea57faa6fe2}
+
+
+Definition at line 141 of file marian/src/rnn/types.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2rnn_2types_8h}{marian/src/rnn/types.\+h}\end{DoxyCompactItemize}

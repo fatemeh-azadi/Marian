@@ -1,0 +1,244 @@
+\hypertarget{classmarian_1_1History}{}\section{marian\+:\+:History Class Reference}
+\label{classmarian_1_1History}\index{marian\+::\+History@{marian\+::\+History}}
+
+
+{\ttfamily \#include $<$history.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d6a/classmarian_1_1History__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmarian_1_1History_1_1HypothesisCoord}{Hypothesis\+Coord}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1History_ab19b9b047826d261a3e974928112324c}{History} (size\+\_\+t line\+No, bool normalize=false)
+\item 
+void \hyperlink{classmarian_1_1History_a4234f2678e208ba1a7b971a02d332725}{Add} (const \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} \&beam, bool last=false)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1History_a5c416401eb3f4e852cef8f123871d87c}{size} () const 
+\item 
+\hyperlink{namespacemarian_aaae4a49bda201e73a4671babdb7df6b8}{N\+Best\+List} \hyperlink{classmarian_1_1History_ad182b116b7e4f77258e4605e1d0d40db}{N\+Best} (size\+\_\+t n) const 
+\item 
+\hyperlink{namespacemarian_a39014b8d5e6a286ac891f3da661d6a46}{Result} \hyperlink{classmarian_1_1History_aa992b2edf204a4b6e00bac53511b1d95}{Top} () const 
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1History_af9fb02fdd4165303964b0e4117726137}{Get\+Line\+Num} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} $>$ \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\+\_\+}
+\item 
+std\+::priority\+\_\+queue$<$ \hyperlink{structmarian_1_1History_1_1HypothesisCoord}{Hypothesis\+Coord} $>$ \hyperlink{classmarian_1_1History_a75e9bfc4321c98b1fe52fb598f6850ce}{top\+Hyps\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1History_a1cf4e26623038e022a05a4be96fcd2fc}{normalize\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1History_a4ca1166441cc8f3d598355019220eff6}{line\+No\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file marian/src/translator/history.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+History@{marian\+::\+History}!History@{History}}
+\index{History@{History}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{History(size\+\_\+t line\+No, bool normalize=false)}{History(size_t lineNo, bool normalize=false)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+History\+::\+History (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{line\+No, }
+\item[{bool}]{normalize = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1History_ab19b9b047826d261a3e974928112324c}{}\label{classmarian_1_1History_ab19b9b047826d261a3e974928112324c}
+
+
+Definition at line 5 of file marian/src/translator/history.\+cpp.
+
+
+\begin{DoxyCode}
+6     : \hyperlink{classmarian_1_1History_a1cf4e26623038e022a05a4be96fcd2fc}{normalize\_}(\hyperlink{namespacemarian_1_1keywords_a0865ee916b32905390a7c6e6bdfd8a9f}{normalize}), \hyperlink{classmarian_1_1History_a4ca1166441cc8f3d598355019220eff6}{lineNo\_}(lineNo) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+History@{marian\+::\+History}!Add@{Add}}
+\index{Add@{Add}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{Add(const Beam \&beam, bool last=false)}{Add(const Beam &beam, bool last=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+History\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{beam, }
+\item[{bool}]{last = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1History_a4234f2678e208ba1a7b971a02d332725}{}\label{classmarian_1_1History_a4234f2678e208ba1a7b971a02d332725}
+
+
+Definition at line 22 of file marian/src/translator/history.\+h.
+
+
+\begin{DoxyCode}
+22                                                 \{
+23     \textcolor{keywordflow}{if}(beam.back()->GetPrevHyp() != \textcolor{keyword}{nullptr}) \{
+24       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < beam.size(); ++j)
+25         \textcolor{keywordflow}{if}(beam[j]->GetWord() == 0 || last) \{
+26           \textcolor{keywordtype}{float} cost = \hyperlink{classmarian_1_1History_a1cf4e26623038e022a05a4be96fcd2fc}{normalize\_} ? beam[j]->GetCost() / \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}.size() :
+27                                     beam[j]->GetCost();
+28           \hyperlink{classmarian_1_1History_a75e9bfc4321c98b1fe52fb598f6850ce}{topHyps\_}.push(\{\hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}.size(), j, cost\});
+29         \}
+30     \}
+31     \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}.push\_back(beam);
+32   \}
+\end{DoxyCode}
+\index{marian\+::\+History@{marian\+::\+History}!Get\+Line\+Num@{Get\+Line\+Num}}
+\index{Get\+Line\+Num@{Get\+Line\+Num}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{Get\+Line\+Num() const }{GetLineNum() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+History\+::\+Get\+Line\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1History_af9fb02fdd4165303964b0e4117726137}{}\label{classmarian_1_1History_af9fb02fdd4165303964b0e4117726137}
+
+
+Definition at line 61 of file marian/src/translator/history.\+h.
+
+
+\begin{DoxyCode}
+61 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1History_a4ca1166441cc8f3d598355019220eff6}{lineNo\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+History@{marian\+::\+History}!N\+Best@{N\+Best}}
+\index{N\+Best@{N\+Best}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{N\+Best(size\+\_\+t n) const }{NBest(size_t n) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+List} marian\+::\+History\+::\+N\+Best (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1History_ad182b116b7e4f77258e4605e1d0d40db}{}\label{classmarian_1_1History_ad182b116b7e4f77258e4605e1d0d40db}
+
+
+Definition at line 36 of file marian/src/translator/history.\+h.
+
+
+\begin{DoxyCode}
+36                                   \{
+37     \hyperlink{namespacemarian_aaae4a49bda201e73a4671babdb7df6b8}{NBestList} nbest;
+38     \textcolor{keyword}{auto} topHypsCopy = \hyperlink{classmarian_1_1History_a75e9bfc4321c98b1fe52fb598f6850ce}{topHyps\_};
+39     \textcolor{keywordflow}{while}(nbest.size() < n && !topHypsCopy.empty()) \{
+40       \textcolor{keyword}{auto} bestHypCoord = topHypsCopy.top();
+41       topHypsCopy.pop();
+42 
+43       \textcolor{keywordtype}{size\_t} start = bestHypCoord.i;
+44       \textcolor{keywordtype}{size\_t} j = bestHypCoord.j;
+45 
+46       \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} targetWords;
+47       Ptr<Hypothesis> bestHyp = \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}[start][j];
+48       \textcolor{keywordflow}{while}(bestHyp->GetPrevHyp() != \textcolor{keyword}{nullptr}) \{
+49         targetWords.push\_back(bestHyp->GetWord());
+50         bestHyp = bestHyp->GetPrevHyp();
+51       \}
+52 
+53       std::reverse(targetWords.begin(), targetWords.end());
+54       nbest.emplace\_back(targetWords, \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}[bestHypCoord.i][bestHypCoord.j]);
+55     \}
+56     \textcolor{keywordflow}{return} nbest;
+57   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d5/dc6/classmarian_1_1History_ad182b116b7e4f77258e4605e1d0d40db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+History@{marian\+::\+History}!size@{size}}
+\index{size@{size}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+History\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1History_a5c416401eb3f4e852cef8f123871d87c}{}\label{classmarian_1_1History_a5c416401eb3f4e852cef8f123871d87c}
+
+
+Definition at line 34 of file marian/src/translator/history.\+h.
+
+
+\begin{DoxyCode}
+34 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{history\_}.size(); \}
+\end{DoxyCode}
+\index{marian\+::\+History@{marian\+::\+History}!Top@{Top}}
+\index{Top@{Top}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{Top() const }{Top() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} marian\+::\+History\+::\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1History_aa992b2edf204a4b6e00bac53511b1d95}{}\label{classmarian_1_1History_aa992b2edf204a4b6e00bac53511b1d95}
+
+
+Definition at line 59 of file marian/src/translator/history.\+h.
+
+
+\begin{DoxyCode}
+59 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1History_ad182b116b7e4f77258e4605e1d0d40db}{NBest}(1)[0]; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d5/dc6/classmarian_1_1History_aa992b2edf204a4b6e00bac53511b1d95_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+History@{marian\+::\+History}!history\+\_\+@{history\+\_\+}}
+\index{history\+\_\+@{history\+\_\+}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{history\+\_\+}{history_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Beam}$>$ marian\+::\+History\+::history\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}{}\label{classmarian_1_1History_ad886f50f5893449224d6a8b97349fbc7}
+
+
+Definition at line 64 of file marian/src/translator/history.\+h.
+
+\index{marian\+::\+History@{marian\+::\+History}!line\+No\+\_\+@{line\+No\+\_\+}}
+\index{line\+No\+\_\+@{line\+No\+\_\+}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{line\+No\+\_\+}{lineNo_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+History\+::line\+No\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1History_a4ca1166441cc8f3d598355019220eff6}{}\label{classmarian_1_1History_a4ca1166441cc8f3d598355019220eff6}
+
+
+Definition at line 67 of file marian/src/translator/history.\+h.
+
+\index{marian\+::\+History@{marian\+::\+History}!normalize\+\_\+@{normalize\+\_\+}}
+\index{normalize\+\_\+@{normalize\+\_\+}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{normalize\+\_\+}{normalize_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+History\+::normalize\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1History_a1cf4e26623038e022a05a4be96fcd2fc}{}\label{classmarian_1_1History_a1cf4e26623038e022a05a4be96fcd2fc}
+
+
+Definition at line 66 of file marian/src/translator/history.\+h.
+
+\index{marian\+::\+History@{marian\+::\+History}!top\+Hyps\+\_\+@{top\+Hyps\+\_\+}}
+\index{top\+Hyps\+\_\+@{top\+Hyps\+\_\+}!marian\+::\+History@{marian\+::\+History}}
+\subsubsection[{\texorpdfstring{top\+Hyps\+\_\+}{topHyps_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::priority\+\_\+queue$<${\bf Hypothesis\+Coord}$>$ marian\+::\+History\+::top\+Hyps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1History_a75e9bfc4321c98b1fe52fb598f6850ce}{}\label{classmarian_1_1History_a75e9bfc4321c98b1fe52fb598f6850ce}
+
+
+Definition at line 65 of file marian/src/translator/history.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2translator_2history_8h}{marian/src/translator/history.\+h}\item 
+\hyperlink{marian_2src_2translator_2history_8cpp}{marian/src/translator/history.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d08/marian_2CMakeLists_8txt">
+    <title>marian/CMakeLists.txt File Reference</title>
+<para>Include dependency diagram for marian/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d37/marian_2CMakeLists_8txt__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d4e/marian_2CMakeLists_8txt__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d08/marian_2CMakeLists_8txt_1af1873b1d80980a95788b5caed82004c5">cmake_minimum_required</link> (
+VERSION 3.5. 1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cmake <link linkend="dd/d08/marian_2CMakeLists_8txt_1a49778e365054af1e8eaea58d3bbc19d2">set</link> (
+CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH}/usr/local/cuda-8.0/ lib64)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file CMakeLists.txt</para>
+    </simplesect>
+</section>

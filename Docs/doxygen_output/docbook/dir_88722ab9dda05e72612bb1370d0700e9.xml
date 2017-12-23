@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_88722ab9dda05e72612bb1370d0700e9">
+    <title>examples Directory Reference</title>
+<para>Directory dependency diagram for examples</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_88722ab9dda05e72612bb1370d0700e9_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Directories </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_25ea517ae1fc102256262fa1734fee3b">iris</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_1f48c601c4ac758e39714ff83238a45d">mnist</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/marian/src/examples/</para>
+    </simplesect>
+</section>

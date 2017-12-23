@@ -1,0 +1,20 @@
+<map id="marian::models::LeNetModel::FeedforwardClassifier" name="marian::models::LeNetModel::FeedforwardClassifier">
+<area shape="rect" id="node2" href="$d5/d49/amunmt_8cpp.html#a2e8ddb8bd2f3405f554c9f2c52277f4b" title="init" alt="" coords="299,5,337,32"/>
+<area shape="rect" id="node4" href="$d4/dec/namespacemarian_1_1inits.html#ab9566318ddbacd376c74cdbdfac091e4" title="marian::inits::from\l_vector" alt="" coords="255,57,381,98"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a6228f7e46aeed337e3886df6446b7840" title="marian::relu" alt="" coords="273,123,363,149"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#aea8d2acadf0d96f6e455addd57cba80d" title="marian::flatten" alt="" coords="265,173,371,200"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#acd984f43188d0ae23c2a6ef13ae5293f" title="marian::reshape" alt="" coords="261,224,375,251"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#a268400392f22176821c7c4a36733b178" title="marian::dropout" alt="" coords="262,275,374,301"/>
+<area shape="rect" id="node14" href="$da/d22/namespacemarian.html#aefe65d738dc9a0536f3a1f9346b8d47b" title="marian::affine" alt="" coords="267,325,369,352"/>
+<area shape="rect" id="node15" href="$d4/dec/namespacemarian_1_1inits.html#a835dcbebcc1ee135e5637b2225eaf9d1" title="marian::inits::uniform" alt="" coords="246,376,390,403"/>
+<area shape="rect" id="node16" href="$d4/dec/namespacemarian_1_1inits.html#a1bd34fd256e3df7bb1e27955a7f2b359" title="marian::inits::zeros" alt="" coords="251,427,385,453"/>
+<area shape="rect" id="node17" href="$da/d22/namespacemarian.html#a15ec9743709e47180378db974ddbf116" title="marian::mean" alt="" coords="267,477,369,504"/>
+<area shape="rect" id="node18" href="$da/d22/namespacemarian.html#a37652ca2a00f3c36816fe5fec28104a0" title="marian::cross_entropy" alt="" coords="243,528,393,555"/>
+<area shape="rect" id="node19" href="$da/d22/namespacemarian.html#a471a2cbd15b4094528a1643abc814bb6" title="marian::logsoftmax" alt="" coords="251,579,385,605"/>
+<area shape="rect" id="node3" href="$d7/d4e/classamunmt_1_1God.html#add49c80e570f5be5b2802565458f1c36" title="amunmt::God::Init" alt="" coords="455,5,582,32"/>
+<area shape="rect" id="node9" href="$d4/d04/namespacemarian_1_1keywords.html#a74d7a2502faafdd421ef3dff629e284f" title="marian::keywords::Get" alt="" coords="441,173,596,200"/>
+<area shape="rect" id="node10" href="$da/d22/namespacemarian.html#a763e5e9b5d5a329d2420fe9bab95476d" title="marian::shift" alt="" coords="471,224,566,251"/>
+<area shape="rect" id="node11" href="$da/d22/namespacemarian.html#a3dbe8b5eb203876cd08cf3fe75a1c6bc" title="marian::convolution" alt="" coords="451,275,586,301"/>
+<area shape="rect" id="node12" href="$da/d22/namespacemarian.html#a8ee119d3ee4867a3c826de62ea1de4f5" title="marian::avg_pooling" alt="" coords="449,325,588,352"/>
+<area shape="rect" id="node13" href="$da/d22/namespacemarian.html#abfe3b8c37f479da0a31a1e843d8bdedf" title="marian::max_pooling" alt="" coords="447,376,590,403"/>
+</map>

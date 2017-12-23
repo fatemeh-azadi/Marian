@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d73/decoder__main_8cpp">
+    <title>decoder_main.cpp File Reference</title>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;boost/timer/timer.hpp&gt;</programlisting>
+    <programlisting>#include &quot;common/god.h&quot;</programlisting>
+    <programlisting>#include &quot;common/logging.h&quot;</programlisting>
+    <programlisting>#include &quot;common/search.h&quot;</programlisting>
+    <programlisting>#include &quot;common/threadpool.h&quot;</programlisting>
+    <programlisting>#include &quot;common/printer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentence.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentences.h&quot;</programlisting>
+    <programlisting>#include &quot;common/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;common/translation_task.h&quot;</programlisting>
+<para>Include dependency diagram for decoder_main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d52/decoder__main_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for decoder_main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d71/decoder__main_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d0/d73/decoder__main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (
+int argc, char * argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file decoder_main.cpp</para>
+    </simplesect>
+</section>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp">
+<title>marian::ConcatenateNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ConcatenateNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d27/structmarian_1_1ConcatenateNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ConcatenateNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d9d/structmarian_1_1ConcatenateNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a04e7182f5fbee8312008a4fdfec98c35">ConcatenateNodeOp</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a7e9ce31c059ea7f61e778c16fbb62e2c">newShape</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes, int ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1abf66689ce65575ad5593ba1f68db74c3">forward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a256bf52a8e098dddcdeddacb39e55929">backward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1ade186966864e82498336129c608ab280">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp_1ac1d53d75ef0fa4c851ea58cec367db18">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a04e7182f5fbee8312008a4fdfec98c35">
+                <title>marian::ConcatenateNodeOp::ConcatenateNodeOp (const std::vector&lt; Expr &gt; &amp;nodes, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a7e9ce31c059ea7f61e778c16fbb62e2c">
+                <title>Shape marian::ConcatenateNodeOp::newShape (const std::vector&lt; Expr &gt; &amp;nodes, int ax)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1abf66689ce65575ad5593ba1f68db74c3">
+                <title>void marian::ConcatenateNodeOp::forward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1a256bf52a8e098dddcdeddacb39e55929">
+                <title>void marian::ConcatenateNodeOp::backward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1ade186966864e82498336129c608ab280">
+                <title>virtual size_t marian::ConcatenateNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d3e/structmarian_1_1ConcatenateNodeOp_1ac1d53d75ef0fa4c851ea58cec367db18">
+                <title>const std::string marian::ConcatenateNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dfd/structmarian_1_1RowsNodeOp">
+<title>marian::RowsNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::RowsNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d37/structmarian_1_1RowsNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::RowsNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d55/structmarian_1_1RowsNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; indeces_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1aa3d6bae3ede50be28d7ecb8a500da5f6">RowsNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, const std::vector&lt; size_t &gt; &amp; indeces, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1a4a65cd8cff116fe1f8ae51ea0b10381c">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1a09fcd9c3cd6c67f9c0ab37c48d9c41cd">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1ae973282fa06756d61cd0827136138dad">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1a6d8356e3da82ef0bcfbbe832423fc9c0">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1ab00d9d52a8dc80de0655d1cab56a8718">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="db/dfd/structmarian_1_1RowsNodeOp_1ab673a759e07f33c57da2bb4e02082b25">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1aa3d6bae3ede50be28d7ecb8a500da5f6">
+                <title>marian::RowsNodeOp::RowsNodeOp (Expr a, const std::vector&lt; size_t &gt; &amp;indeces, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1a4a65cd8cff116fe1f8ae51ea0b10381c">
+                <title>NodeOps marian::RowsNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1a09fcd9c3cd6c67f9c0ab37c48d9c41cd">
+                <title>NodeOps marian::RowsNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1ae973282fa06756d61cd0827136138dad">
+                <title>Shape marian::RowsNodeOp::newShape (Expr a, const std::vector&lt; size_t &gt; &amp;indeces)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1a6d8356e3da82ef0bcfbbe832423fc9c0">
+                <title>const std::string marian::RowsNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1ab00d9d52a8dc80de0655d1cab56a8718">
+                <title>const std::string marian::RowsNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dfd/structmarian_1_1RowsNodeOp_1ab673a759e07f33c57da2bb4e02082b25">
+                <title>virtual size_t marian::RowsNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

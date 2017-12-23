@@ -1,0 +1,225 @@
+\hypertarget{classmarian_1_1data_1_1Dataset}{}\section{marian\+:\+:data\+:\+:Dataset Class Reference}
+\label{classmarian_1_1data_1_1Dataset}\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+
+
+{\ttfamily \#include $<$dataset.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:Dataset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{dd/daa/classmarian_1_1data_1_1Dataset__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Dataset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d9b/classmarian_1_1data_1_1Dataset__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1Dataset_a6db460dbb984620b13700ac6069f9925}{Dataset} (std\+::vector$<$ std\+::string $>$ paths)
+\item 
+virtual void \hyperlink{classmarian_1_1data_1_1Dataset_ae999d10fb3509203d694639582e438a6}{load\+Data} ()=0
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator} \hyperlink{classmarian_1_1data_1_1Dataset_ad2cd49a5cd8a999e9d33bb1e0147f03e}{begin} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a5ab99390e2f5f8c7eab612977ae64f38}{iterator} \hyperlink{classmarian_1_1data_1_1Dataset_a123311e204818aeee4d5e4011e1b79fe}{end} ()
+\item 
+void \hyperlink{classmarian_1_1data_1_1Dataset_abaaf65b7a716604071b8756dd11e8391}{shuffle} ()
+\item 
+\hyperlink{classmarian_1_1data_1_1DatasetBase_a4cb5e9051a072fcc61ed4638862f01f5}{batch\+\_\+ptr} \hyperlink{classmarian_1_1data_1_1Dataset_a27ff57e73e81b555305a5f45cde30d91}{to\+Batch} (const \hyperlink{namespacemarian_1_1data_a39201a9c7e3f08ea31141ec770b60868}{Examples} \&batch\+Vector)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_1_1data_a39201a9c7e3f08ea31141ec770b60868}{Examples} \hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 87 of file data/dataset.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!Dataset@{Dataset}}
+\index{Dataset@{Dataset}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{Dataset(std\+::vector$<$ std\+::string $>$ paths)}{Dataset(std::vector< std::string > paths)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Dataset\+::\+Dataset (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{paths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1Dataset_a6db460dbb984620b13700ac6069f9925}{}\label{classmarian_1_1data_1_1Dataset_a6db460dbb984620b13700ac6069f9925}
+
+
+Definition at line 92 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+92 : \hyperlink{classmarian_1_1data_1_1DatasetBase_a81594f55f2b25ac638cd616c6f550f55}{DatasetBase}(paths) \{\}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d2/d2b/classmarian_1_1data_1_1Dataset_a6db460dbb984620b13700ac6069f9925_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!begin@{begin}}
+\index{begin@{begin}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} marian\+::data\+::\+Dataset\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Dataset_ad2cd49a5cd8a999e9d33bb1e0147f03e}{}\label{classmarian_1_1data_1_1Dataset_ad2cd49a5cd8a999e9d33bb1e0147f03e}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_a3656bd4d7627dc8705ffd4a20899b746}{marian\+::data\+::\+Dataset\+Base$<$ Example, Example\+Iterator, Data\+Batch $>$}.
+
+
+
+Definition at line 96 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+96 \{ \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1data_a45ade1945852d979da7433e0d4456bff}{ExampleIterator}(\hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\_}.begin()); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!end@{end}}
+\index{end@{end}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} marian\+::data\+::\+Dataset\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Dataset_a123311e204818aeee4d5e4011e1b79fe}{}\label{classmarian_1_1data_1_1Dataset_a123311e204818aeee4d5e4011e1b79fe}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_ae0ad2f60d79142852bd1ecd10a7c254a}{marian\+::data\+::\+Dataset\+Base$<$ Example, Example\+Iterator, Data\+Batch $>$}.
+
+
+
+Definition at line 98 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+98 \{ \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1data_a45ade1945852d979da7433e0d4456bff}{ExampleIterator}(\hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\_}.end()); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{load\+Data()=0}{loadData()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::data\+::\+Dataset\+::load\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1data_1_1Dataset_ae999d10fb3509203d694639582e438a6}{}\label{classmarian_1_1data_1_1Dataset_ae999d10fb3509203d694639582e438a6}
+
+
+Implemented in \hyperlink{classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173}{marian\+::data\+::\+M\+N\+I\+ST}.
+
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{shuffle()}{shuffle()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Dataset\+::shuffle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1Dataset_abaaf65b7a716604071b8756dd11e8391}{}\label{classmarian_1_1data_1_1Dataset_abaaf65b7a716604071b8756dd11e8391}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1DatasetBase_aad122bcd2636f0cbe0caf94e07a1aaf7}{marian\+::data\+::\+Dataset\+Base$<$ Example, Example\+Iterator, Data\+Batch $>$}.
+
+
+
+Definition at line 100 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+100 \{ std::random\_shuffle(\hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\_}.begin(), \hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\_}.end()); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!to\+Batch@{to\+Batch}}
+\index{to\+Batch@{to\+Batch}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{to\+Batch(const Examples \&batch\+Vector)}{toBatch(const Examples &batchVector)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf batch\+\_\+ptr} marian\+::data\+::\+Dataset\+::to\+Batch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Examples} \&}]{batch\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1Dataset_a27ff57e73e81b555305a5f45cde30d91}{}\label{classmarian_1_1data_1_1Dataset_a27ff57e73e81b555305a5f45cde30d91}
+
+
+Definition at line 102 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+102                                                  \{
+103     \textcolor{keywordtype}{int} batchSize = batchVector.size();
+104 
+105     std::vector<int> maxDims;
+106     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& ex : batchVector) \{
+107       \textcolor{keywordflow}{if}(maxDims.size() < ex.size())
+108         maxDims.resize(ex.size(), 0);
+109       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < ex.size(); ++i) \{
+110         \textcolor{keywordflow}{if}(ex[i].size() > (size\_t)maxDims[i])
+111           maxDims[i] = ex[i].size();
+112       \}
+113     \}
+114 
+115     \hyperlink{classmarian_1_1data_1_1DatasetBase_a4cb5e9051a072fcc61ed4638862f01f5}{batch\_ptr} batch(\textcolor{keyword}{new} DataBatch());
+116     std::vector<Input::iterator> iterators;
+117     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m} : maxDims) \{
+118       batch->push\_back(Shape(\{batchSize, \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}\}));
+119       iterators.push\_back(batch->inputs().back().begin());
+120     \}
+121 
+122     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& ex : batchVector) \{
+123       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < ex.size(); ++i) \{
+124         \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d} = ex[i];
+125         d.resize(maxDims[i], 0.0f);
+126         iterators[i] = \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(d.begin(), d.end(), iterators[i]);
+127       \}
+128     \}
+129     \textcolor{keywordflow}{return} batch;
+130   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d2b/classmarian_1_1data_1_1Dataset_a27ff57e73e81b555305a5f45cde30d91_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}!examples\+\_\+@{examples\+\_\+}}
+\index{examples\+\_\+@{examples\+\_\+}!marian\+::data\+::\+Dataset@{marian\+::data\+::\+Dataset}}
+\subsubsection[{\texorpdfstring{examples\+\_\+}{examples_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Examples} marian\+::data\+::\+Dataset\+::examples\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{}\label{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}
+
+
+Definition at line 89 of file data/dataset.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_2dataset_8h}{data/dataset.\+h}\end{DoxyCompactItemize}

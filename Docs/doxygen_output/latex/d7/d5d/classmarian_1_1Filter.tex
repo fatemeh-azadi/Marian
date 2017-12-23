@@ -1,0 +1,305 @@
+\hypertarget{classmarian_1_1Filter}{}\section{marian\+:\+:Filter Class Reference}
+\label{classmarian_1_1Filter}\index{marian\+::\+Filter@{marian\+::\+Filter}}
+
+
+{\ttfamily \#include $<$filter.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{dd/d8b/classmarian_1_1Filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Filter_a06b1bb4499db641fc5515da686ec81a4}{Filter} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ src\+Vocab, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ trg\+Vocab)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1FilterInfo}{Filter\+Info} $>$ \hyperlink{classmarian_1_1Filter_a8d8273bc026392ffd220d2cb5314b60c}{create\+Info} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1SubBatch}{data\+::\+Sub\+Batch} $>$ src\+Batch, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1SubBatch}{data\+::\+Sub\+Batch} $>$ trg\+Batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1Filter_af947fe56dd94605ee2cbf8959918d1bf}{load} (const std\+::string \&fname)
+\item 
+void \hyperlink{classmarian_1_1Filter_ad3de142a4ea393d5ceffbedbf7bbc14f}{prune} (float threshold=0.f)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1Filter_a4a7ec367d7b3ca5e95021a83181a7304}{options\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ \hyperlink{classmarian_1_1Filter_a87666bc7520862fc5adb6923c59a7a98}{src\+Vocab\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ \hyperlink{classmarian_1_1Filter_a2003fa017c08e47172cf1f102ec0e9be}{trg\+Vocab\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Filter_ae7cffff59aba67252377a48d9f3b4bc4}{first\+Num\+\_\+} \{100\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Filter_a31bcefb59cbae4752b1e50b682631945}{best\+Num\+\_\+} \{100\}
+\item 
+std\+::vector$<$ std\+::unordered\+\_\+map$<$ size\+\_\+t, float $>$ $>$ \hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file marian/src/data/filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Filter@{marian\+::\+Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Filter(\+Ptr$<$ Config $>$ options, Ptr$<$ Vocab $>$ src\+Vocab, Ptr$<$ Vocab $>$ trg\+Vocab)}{Filter(Ptr< Config > options, Ptr< Vocab > srcVocab, Ptr< Vocab > trgVocab)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Filter\+::\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{src\+Vocab, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{trg\+Vocab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Filter_a06b1bb4499db641fc5515da686ec81a4}{}\label{classmarian_1_1Filter_a06b1bb4499db641fc5515da686ec81a4}
+
+
+Definition at line 87 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+88       : \hyperlink{classmarian_1_1Filter_a4a7ec367d7b3ca5e95021a83181a7304}{options\_}(options), \hyperlink{classmarian_1_1Filter_a87666bc7520862fc5adb6923c59a7a98}{srcVocab\_}(srcVocab), \hyperlink{classmarian_1_1Filter_a2003fa017c08e47172cf1f102ec0e9be}{trgVocab\_}(trgVocab) \{
+89     std::vector<std::string> vals
+90         = \hyperlink{classmarian_1_1Filter_a4a7ec367d7b3ca5e95021a83181a7304}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"filter"});
+91 
+92     UTIL\_THROW\_IF2(vals.empty(), \textcolor{stringliteral}{"No path to filter path given"});
+93     std::string fname = vals[0];
+94 
+95     \hyperlink{classmarian_1_1Filter_ae7cffff59aba67252377a48d9f3b4bc4}{firstNum\_} = vals.size() > 1 ? std::stoi(vals[1]) : 100;
+96     \hyperlink{classmarian_1_1Filter_a31bcefb59cbae4752b1e50b682631945}{bestNum\_} = vals.size() > 2 ? std::stoi(vals[2]) : 100;
+97     \textcolor{keywordtype}{float} threshold = vals.size() > 3 ? std::stof(vals[3]) : 0;
+98 
+99     \hyperlink{classmarian_1_1Filter_af947fe56dd94605ee2cbf8959918d1bf}{load}(fname);
+100     \hyperlink{classmarian_1_1Filter_ad3de142a4ea393d5ceffbedbf7bbc14f}{prune}(threshold);
+101   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Filter@{marian\+::\+Filter}!create\+Info@{create\+Info}}
+\index{create\+Info@{create\+Info}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{create\+Info(\+Ptr$<$ data\+::\+Sub\+Batch $>$ src\+Batch, Ptr$<$ data\+::\+Sub\+Batch $>$ trg\+Batch)}{createInfo(Ptr< data::SubBatch > srcBatch, Ptr< data::SubBatch > trgBatch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Filter\+Info}$>$ marian\+::\+Filter\+::create\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Sub\+Batch} $>$}]{src\+Batch, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Sub\+Batch} $>$}]{trg\+Batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Filter_a8d8273bc026392ffd220d2cb5314b60c}{}\label{classmarian_1_1Filter_a8d8273bc026392ffd220d2cb5314b60c}
+
+
+Definition at line 103 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+104                                                          \{
+105     \textcolor{comment}{// add firstNum most frequent words}
+106     std::unordered\_set<Word> idxSet;
+107     \textcolor{keywordflow}{for}(\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} i = 0; i < \hyperlink{classmarian_1_1Filter_ae7cffff59aba67252377a48d9f3b4bc4}{firstNum\_} && i < \hyperlink{classmarian_1_1Filter_a2003fa017c08e47172cf1f102ec0e9be}{trgVocab\_}->size(); ++i)
+108       idxSet.insert(i);
+109 
+110     \textcolor{comment}{// add all words from ground truth}
+111     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : trgBatch->indeces())
+112       idxSet.insert(i);
+113 
+114     \textcolor{comment}{// collect unique words form source}
+115     std::unordered\_set<Word> srcSet;
+116     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : srcBatch->indeces())
+117       srcSet.insert(i);
+118 
+119     \textcolor{comment}{// add aligned target words}
+120     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : srcSet)
+121       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& it : \hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}[i])
+122         idxSet.insert(it.first);
+123 
+124     \textcolor{comment}{// turn into vector and sort (slected indeces)}
+125     std::vector<Word> idx(idxSet.begin(), idxSet.end());
+126     std::sort(idx.begin(), idx.end());
+127 
+128     \textcolor{comment}{// assign new shifted position}
+129     std::unordered\_map<Word, Word> pos;
+130     std::vector<Word> reverseMap;
+131 
+132     \textcolor{keywordflow}{for}(\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} i = 0; i < idx.size(); ++i) \{
+133       pos[idx[i]] = i;
+134       reverseMap.push\_back(idx[i]);
+135     \}
+136 
+137     std::vector<Word> mapped;
+138     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : trgBatch->indeces()) \{
+139       \textcolor{comment}{// mapped postions for cross-entropy}
+140       mapped.push\_back(pos[i]);
+141     \}
+142 
+143     \textcolor{keywordtype}{size\_t} p = 0;
+144     std::vector<size\_t> sparse;
+145     std::vector<float> probs;
+146     \textcolor{keywordtype}{float} \hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{eps} = 1e-5 / srcBatch->batchWidth();
+147     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < srcBatch->batchWidth(); ++i) \{
+148       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < srcBatch->batchSize(); ++j) \{
+149         \textcolor{keyword}{auto} srcWord = srcBatch->indeces()[i * srcBatch->batchSize() + j];
+150         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} v : idx) \{
+151           \textcolor{keywordflow}{if}(v <= 1) \{
+152             probs.push\_back(1);
+153             sparse.push\_back(p);
+154           \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}[srcWord].count(v)) \{
+155             probs.push\_back(\hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}[srcWord][v] + eps);
+156             sparse.push\_back(p);
+157           \}
+158           p++;
+159         \}
+160       \}
+161     \}
+162 
+163     \textcolor{keywordflow}{return} New<FilterInfo>(
+164         idx, mapped, reverseMap, std::make\_pair(sparse, probs));
+165   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d7/d5d/classmarian_1_1Filter_a8d8273bc026392ffd220d2cb5314b60c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!load@{load}}
+\index{load@{load}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{load(const std\+::string \&fname)}{load(const std::string &fname)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Filter\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_af947fe56dd94605ee2cbf8959918d1bf}{}\label{classmarian_1_1Filter_af947fe56dd94605ee2cbf8959918d1bf}
+
+
+Definition at line 46 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+46                                     \{
+47     \hyperlink{classInputFileStream}{InputFileStream} in(fname);
+48 
+49     std::string src, trg;
+50     \textcolor{keywordtype}{float} prob;
+51     \textcolor{keywordflow}{while}(in >> trg >> src >> prob) \{
+52       \textcolor{keywordflow}{if}(src == \textcolor{stringliteral}{"NULL"} || trg == \textcolor{stringliteral}{"NULL"})
+53         \textcolor{keywordflow}{continue};
+54 
+55       \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} sId = (*srcVocab\_)[src];
+56       \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} tId = (*trgVocab\_)[trg];
+57 
+58       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}.size() <= sId)
+59         \hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}.resize(sId + 1);
+60       \hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}[sId][tId] = prob;
+61     \}
+62   \}
+\end{DoxyCode}
+\index{marian\+::\+Filter@{marian\+::\+Filter}!prune@{prune}}
+\index{prune@{prune}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{prune(float threshold=0.\+f)}{prune(float threshold=0.f)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Filter\+::prune (
+\begin{DoxyParamCaption}
+\item[{float}]{threshold = {\ttfamily 0.f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_ad3de142a4ea393d5ceffbedbf7bbc14f}{}\label{classmarian_1_1Filter_ad3de142a4ea393d5ceffbedbf7bbc14f}
+
+
+Definition at line 64 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+64                                     \{
+65     \textcolor{keywordtype}{size\_t} i = 0;
+66     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& probs : \hyperlink{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{data\_}) \{
+67       std::vector<std::pair<float, Word>> sorter;
+68       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& it : probs)
+69         sorter.emplace\_back(it.second, it.first);
+70 
+71       std::sort(
+72           sorter.begin(), sorter.end(), std::greater<std::pair<float, Word>>());
+73 
+74       probs.clear();
+75       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& it : sorter) \{
+76         \textcolor{keywordflow}{if}(probs.size() < \hyperlink{classmarian_1_1Filter_a31bcefb59cbae4752b1e50b682631945}{bestNum\_} && it.first > threshold)
+77           probs[it.second] = it.first;
+78         \textcolor{keywordflow}{else}
+79           \textcolor{keywordflow}{break};
+80       \}
+81 
+82       ++i;
+83     \}
+84   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d7/d5d/classmarian_1_1Filter_ad3de142a4ea393d5ceffbedbf7bbc14f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Filter@{marian\+::\+Filter}!best\+Num\+\_\+@{best\+Num\+\_\+}}
+\index{best\+Num\+\_\+@{best\+Num\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{best\+Num\+\_\+}{bestNum_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Filter\+::best\+Num\+\_\+ \{100\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_a31bcefb59cbae4752b1e50b682631945}{}\label{classmarian_1_1Filter_a31bcefb59cbae4752b1e50b682631945}
+
+
+Definition at line 42 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::unordered\+\_\+map$<$size\+\_\+t, float$>$ $>$ marian\+::\+Filter\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}{}\label{classmarian_1_1Filter_aad459e8cec49017a0d60e158bdd4b8e6}
+
+
+Definition at line 44 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!first\+Num\+\_\+@{first\+Num\+\_\+}}
+\index{first\+Num\+\_\+@{first\+Num\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{first\+Num\+\_\+}{firstNum_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Filter\+::first\+Num\+\_\+ \{100\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_ae7cffff59aba67252377a48d9f3b4bc4}{}\label{classmarian_1_1Filter_ae7cffff59aba67252377a48d9f3b4bc4}
+
+
+Definition at line 41 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::\+Filter\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_a4a7ec367d7b3ca5e95021a83181a7304}{}\label{classmarian_1_1Filter_a4a7ec367d7b3ca5e95021a83181a7304}
+
+
+Definition at line 37 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!src\+Vocab\+\_\+@{src\+Vocab\+\_\+}}
+\index{src\+Vocab\+\_\+@{src\+Vocab\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{src\+Vocab\+\_\+}{srcVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Vocab}$>$ marian\+::\+Filter\+::src\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_a87666bc7520862fc5adb6923c59a7a98}{}\label{classmarian_1_1Filter_a87666bc7520862fc5adb6923c59a7a98}
+
+
+Definition at line 38 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter@{marian\+::\+Filter}!trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}}
+\index{trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}!marian\+::\+Filter@{marian\+::\+Filter}}
+\subsubsection[{\texorpdfstring{trg\+Vocab\+\_\+}{trgVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Vocab}$>$ marian\+::\+Filter\+::trg\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Filter_a2003fa017c08e47172cf1f102ec0e9be}{}\label{classmarian_1_1Filter_a2003fa017c08e47172cf1f102ec0e9be}
+
+
+Definition at line 39 of file marian/src/data/filter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2data_2filter_8h}{marian/src/data/filter.\+h}\end{DoxyCompactItemize}

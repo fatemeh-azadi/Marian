@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dcc/classmarian_1_1DecoderHardAtt">
+<title>marian::DecoderHardAtt class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d82/hardatt_8h">&lt;hardatt.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DecoderHardAtt</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/def/classmarian_1_1DecoderHardAtt__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DecoderHardAtt</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dde/classmarian_1_1DecoderHardAtt__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; rnn::RNN &gt; rnn_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unordered_set&lt; Word &gt; specialSymbols_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1ad3b9d947796bce9562666d12a7ccecc2">DecoderHardAtt</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1a242961c2a50950ca158b5f4965df4ef7">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; encState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1ab938d5649fc73437fa39a462330245bf">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::tuple&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link>, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1a20c5fc9460ee067576498a4e1c653706">groundTruth</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1a7da3e691169734a9c952c6402e13f379">selectEmbeddings</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state, const std::vector&lt; size_t &gt; &amp; embIdx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt_1a1ab5187807e2cc388a0679785928b103">getAlignments</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1ad3b9d947796bce9562666d12a7ccecc2">
+                <title>marian::DecoderHardAtt::DecoderHardAtt (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1a242961c2a50950ca158b5f4965df4ef7">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::DecoderHardAtt::startState (Ptr&lt; EncoderState &gt; encState)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1ab938d5649fc73437fa39a462330245bf">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::DecoderHardAtt::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1a20c5fc9460ee067576498a4e1c653706">
+                <title>virtual std::tuple&lt;Expr, Expr&gt; marian::DecoderHardAtt::groundTruth (Ptr&lt; DecoderState &gt; state, Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch, size_t index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1a7da3e691169734a9c952c6402e13f379">
+                <title>virtual void marian::DecoderHardAtt::selectEmbeddings (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state, const std::vector&lt; size_t &gt; &amp;embIdx)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dcc/classmarian_1_1DecoderHardAtt_1a1ab5187807e2cc388a0679785928b103">
+                <title>const std::vector&lt;Expr&gt; marian::DecoderHardAtt::getAlignments ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

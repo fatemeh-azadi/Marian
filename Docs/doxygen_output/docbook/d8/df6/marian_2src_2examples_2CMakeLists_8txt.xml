@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/df6/marian_2src_2examples_2CMakeLists_8txt">
+    <title>marian/src/examples/CMakeLists.txt File Reference</title>
+<para>Include dependency diagram for marian/src/examples/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d5f/marian_2src_2examples_2CMakeLists_8txt__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/examples/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d42/marian_2src_2examples_2CMakeLists_8txt__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/df6/marian_2src_2examples_2CMakeLists_8txt_1a5ee868a598e11939db5f1237cb57056d">add_executable</link> (
+iris_example iris/iris. cpp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file CMakeLists.txt</para>
+    </simplesect>
+</section>

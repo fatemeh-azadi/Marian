@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/de1/cells_8h">
+    <title>cells.h File Reference</title>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;chrono&gt;</programlisting>
+    <programlisting>#include &lt;cstdio&gt;</programlisting>
+    <programlisting>#include &lt;iomanip&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/generic.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/rnn.h&quot;</programlisting>
+<para>Include dependency diagram for cells.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d66/cells_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cells.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d28/cells_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d1d/classmarian_1_1rnn_1_1Tanh">marian::rnn::Tanh</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d03/classmarian_1_1rnn_1_1GRU">marian::rnn::GRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/df5/classmarian_1_1rnn_1_1FastLSTM">marian::rnn::FastLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/da0/classmarian_1_1rnn_1_1Multiplicative">marian::rnn::Multiplicative</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/ddd/classmarian_1_1rnn_1_1SlowLSTM">marian::rnn::SlowLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d30/classmarian_1_1rnn_1_1TestLSTM">marian::rnn::TestLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d18/namespacemarian_1_1rnn">marian::rnn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file cells.h</para>
+    </simplesect>
+</section>

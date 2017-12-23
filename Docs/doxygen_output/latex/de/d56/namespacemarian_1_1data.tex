@@ -1,0 +1,111 @@
+\hypertarget{namespacemarian_1_1data}{}\section{marian\+:\+:data Namespace Reference}
+\label{namespacemarian_1_1data}\index{marian\+::data@{marian\+::data}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1data_1_1Batch}{Batch}
+\item 
+class \hyperlink{classmarian_1_1data_1_1BatchGenerator}{Batch\+Generator}
+\item 
+class \hyperlink{classmarian_1_1data_1_1BatchStats}{Batch\+Stats}
+\item 
+class \hyperlink{classmarian_1_1data_1_1Corpus}{Corpus}
+\item 
+class \hyperlink{classmarian_1_1data_1_1CorpusBatch}{Corpus\+Batch}
+\item 
+class \hyperlink{classmarian_1_1data_1_1CorpusIterator}{Corpus\+Iterator}
+\item 
+class \hyperlink{classmarian_1_1data_1_1DataBatch}{Data\+Batch}
+\item 
+class \hyperlink{classmarian_1_1data_1_1Dataset}{Dataset}
+\item 
+class \hyperlink{classmarian_1_1data_1_1DatasetBase}{Dataset\+Base}
+\item 
+class \hyperlink{classmarian_1_1data_1_1Input}{Input}
+\item 
+class \hyperlink{classmarian_1_1data_1_1MNIST}{M\+N\+I\+ST}
+\item 
+class \hyperlink{classmarian_1_1data_1_1SentenceTuple}{Sentence\+Tuple}
+\item 
+class \hyperlink{classmarian_1_1data_1_1SubBatch}{Sub\+Batch}
+\item 
+class \hyperlink{classmarian_1_1data_1_1WordAlignment}{Word\+Alignment}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ size\+\_\+t $>$ \hyperlink{namespacemarian_1_1data_ad793aa92c2dc86a1151c32a94f5ed957}{Word\+Batch}
+\item 
+typedef std\+::vector$<$ float $>$ \hyperlink{namespacemarian_1_1data_a0cdbf7ceb1b0dd97d13828c95ccd76d4}{Mask\+Batch}
+\item 
+typedef std\+::pair$<$ \hyperlink{namespacemarian_1_1data_ad793aa92c2dc86a1151c32a94f5ed957}{Word\+Batch}, \hyperlink{namespacemarian_1_1data_a0cdbf7ceb1b0dd97d13828c95ccd76d4}{Mask\+Batch} $>$ \hyperlink{namespacemarian_1_1data_a34e6120fb1a0a79aff632179a04be607}{Word\+Mask}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespacemarian_1_1data_a34e6120fb1a0a79aff632179a04be607}{Word\+Mask} $>$ \hyperlink{namespacemarian_1_1data_a85884cce1df2778cb81e08c80c0cd7fe}{Sent\+Batch}
+\item 
+typedef std\+::vector$<$ float $>$ \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} $>$ \hyperlink{namespacemarian_1_1data_a901337b17eea9c054bbf11a10254bd7b}{Example}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespacemarian_1_1data_a901337b17eea9c054bbf11a10254bd7b}{Example} $>$ \hyperlink{namespacemarian_1_1data_a39201a9c7e3f08ea31141ec770b60868}{Examples}
+\item 
+typedef Examples\+::const\+\_\+iterator \hyperlink{namespacemarian_1_1data_a45ade1945852d979da7433e0d4456bff}{Example\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{marian\+::data@{marian\+::data}!Data@{Data}}
+\index{Data@{Data}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Data}{Data}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$float$>$ {\bf marian\+::data\+::\+Data}}\hypertarget{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{}\label{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}
+
+
+Definition at line 34 of file data/dataset.\+h.
+
+\index{marian\+::data@{marian\+::data}!Example@{Example}}
+\index{Example@{Example}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Example}{Example}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Data}$>$ {\bf marian\+::data\+::\+Example}}\hypertarget{namespacemarian_1_1data_a901337b17eea9c054bbf11a10254bd7b}{}\label{namespacemarian_1_1data_a901337b17eea9c054bbf11a10254bd7b}
+
+
+Definition at line 35 of file data/dataset.\+h.
+
+\index{marian\+::data@{marian\+::data}!Example\+Iterator@{Example\+Iterator}}
+\index{Example\+Iterator@{Example\+Iterator}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Example\+Iterator}{ExampleIterator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef Examples\+::const\+\_\+iterator {\bf marian\+::data\+::\+Example\+Iterator}}\hypertarget{namespacemarian_1_1data_a45ade1945852d979da7433e0d4456bff}{}\label{namespacemarian_1_1data_a45ade1945852d979da7433e0d4456bff}
+
+
+Definition at line 38 of file data/dataset.\+h.
+
+\index{marian\+::data@{marian\+::data}!Examples@{Examples}}
+\index{Examples@{Examples}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Examples}{Examples}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Example}$>$ {\bf marian\+::data\+::\+Examples}}\hypertarget{namespacemarian_1_1data_a39201a9c7e3f08ea31141ec770b60868}{}\label{namespacemarian_1_1data_a39201a9c7e3f08ea31141ec770b60868}
+
+
+Definition at line 36 of file data/dataset.\+h.
+
+\index{marian\+::data@{marian\+::data}!Mask\+Batch@{Mask\+Batch}}
+\index{Mask\+Batch@{Mask\+Batch}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Mask\+Batch}{MaskBatch}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$float$>$ {\bf marian\+::data\+::\+Mask\+Batch}}\hypertarget{namespacemarian_1_1data_a0cdbf7ceb1b0dd97d13828c95ccd76d4}{}\label{namespacemarian_1_1data_a0cdbf7ceb1b0dd97d13828c95ccd76d4}
+
+
+Definition at line 9 of file corpus.\+cpp.
+
+\index{marian\+::data@{marian\+::data}!Sent\+Batch@{Sent\+Batch}}
+\index{Sent\+Batch@{Sent\+Batch}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Sent\+Batch}{SentBatch}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Word\+Mask}$>$ {\bf marian\+::data\+::\+Sent\+Batch}}\hypertarget{namespacemarian_1_1data_a85884cce1df2778cb81e08c80c0cd7fe}{}\label{namespacemarian_1_1data_a85884cce1df2778cb81e08c80c0cd7fe}
+
+
+Definition at line 11 of file corpus.\+cpp.
+
+\index{marian\+::data@{marian\+::data}!Word\+Batch@{Word\+Batch}}
+\index{Word\+Batch@{Word\+Batch}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Word\+Batch}{WordBatch}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$size\+\_\+t$>$ {\bf marian\+::data\+::\+Word\+Batch}}\hypertarget{namespacemarian_1_1data_ad793aa92c2dc86a1151c32a94f5ed957}{}\label{namespacemarian_1_1data_ad793aa92c2dc86a1151c32a94f5ed957}
+
+
+Definition at line 8 of file corpus.\+cpp.
+
+\index{marian\+::data@{marian\+::data}!Word\+Mask@{Word\+Mask}}
+\index{Word\+Mask@{Word\+Mask}!marian\+::data@{marian\+::data}}
+\subsubsection[{\texorpdfstring{Word\+Mask}{WordMask}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<${\bf Word\+Batch}, {\bf Mask\+Batch}$>$ {\bf marian\+::data\+::\+Word\+Mask}}\hypertarget{namespacemarian_1_1data_a34e6120fb1a0a79aff632179a04be607}{}\label{namespacemarian_1_1data_a34e6120fb1a0a79aff632179a04be607}
+
+
+Definition at line 10 of file corpus.\+cpp.
+

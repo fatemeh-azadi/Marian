@@ -1,0 +1,174 @@
+\hypertarget{classamunmt_1_1BestHypsBase}{}\section{amunmt\+:\+:Best\+Hyps\+Base Class Reference}
+\label{classamunmt_1_1BestHypsBase}\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+
+
+{\ttfamily \#include $<$base\+\_\+best\+\_\+hyps.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:Best\+Hyps\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{de/d84/classamunmt_1_1BestHypsBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:Best\+Hyps\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/db1/classamunmt_1_1BestHypsBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1BestHypsBase_a3e4050cb487c3632a94e30548aabb21b}{Best\+Hyps\+Base} (const \hyperlink{classamunmt_1_1God}{God} \&god, bool forbid\+U\+NK, bool is\+Input\+Filtered, bool return\+Attention\+Weights, const std\+::map$<$ std\+::string, float $>$ \&weights)
+\item 
+\hyperlink{classamunmt_1_1BestHypsBase_af1d0f69c5403b2d2c4107fd8ea7e8f93}{Best\+Hyps\+Base} (const \hyperlink{classamunmt_1_1BestHypsBase}{Best\+Hyps\+Base} \&)=delete
+\item 
+virtual void \hyperlink{classamunmt_1_1BestHypsBase_aa96754b7043e0214480b5010f11676eb}{Calc\+Beam} (const \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&prev\+Hyps, const std\+::vector$<$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr} $>$ \&scorers, const \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \&filter\+Indices, std\+::vector$<$ \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} $>$ \&beams, std\+::vector$<$ uint $>$ \&beam\+Sizes)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classamunmt_1_1God}{God} \& \hyperlink{classamunmt_1_1BestHypsBase_ab61b0c276c75cdb08dfb054893084ccd}{god\+\_\+}
+\item 
+const bool \hyperlink{classamunmt_1_1BestHypsBase_a9592ecfcb2ccd15751b8694525412648}{forbid\+U\+N\+K\+\_\+}
+\item 
+const bool \hyperlink{classamunmt_1_1BestHypsBase_a6906a24bd40784c66ba1772a314b826e}{is\+Input\+Filtered\+\_\+}
+\item 
+const bool \hyperlink{classamunmt_1_1BestHypsBase_a5c7d967963222a1a8cd64950830da217}{return\+Attention\+Weights\+\_\+}
+\item 
+const std\+::map$<$ std\+::string, float $>$ \hyperlink{classamunmt_1_1BestHypsBase_aea7067ab791aa3e86dbc925e7b8eca9b}{weights\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file base\+\_\+best\+\_\+hyps.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!Best\+Hyps\+Base@{Best\+Hyps\+Base}}
+\index{Best\+Hyps\+Base@{Best\+Hyps\+Base}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{Best\+Hyps\+Base(const God \&god, bool forbid\+U\+N\+K, bool is\+Input\+Filtered, bool return\+Attention\+Weights, const std\+::map$<$ std\+::string, float $>$ \&weights)}{BestHypsBase(const God &god, bool forbidUNK, bool isInputFiltered, bool returnAttentionWeights, const std::map< std::string, float > &weights)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Best\+Hyps\+Base\+::\+Best\+Hyps\+Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{bool}]{forbid\+U\+NK, }
+\item[{bool}]{is\+Input\+Filtered, }
+\item[{bool}]{return\+Attention\+Weights, }
+\item[{const std\+::map$<$ std\+::string, float $>$ \&}]{weights}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1BestHypsBase_a3e4050cb487c3632a94e30548aabb21b}{}\label{classamunmt_1_1BestHypsBase_a3e4050cb487c3632a94e30548aabb21b}
+
+
+Definition at line 17 of file base\+\_\+best\+\_\+hyps.\+h.
+
+
+\begin{DoxyCode}
+23     : \hyperlink{classamunmt_1_1BestHypsBase_ab61b0c276c75cdb08dfb054893084ccd}{god\_}(god),
+24       \hyperlink{classamunmt_1_1BestHypsBase_a9592ecfcb2ccd15751b8694525412648}{forbidUNK\_}(forbidUNK),
+25       \hyperlink{classamunmt_1_1BestHypsBase_a6906a24bd40784c66ba1772a314b826e}{isInputFiltered\_}(isInputFiltered),
+26       \hyperlink{classamunmt_1_1BestHypsBase_a5c7d967963222a1a8cd64950830da217}{returnAttentionWeights\_}(returnAttentionWeights),
+27       \hyperlink{classamunmt_1_1BestHypsBase_aea7067ab791aa3e86dbc925e7b8eca9b}{weights\_}(weights)
+28     \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d94/classamunmt_1_1BestHypsBase_a3e4050cb487c3632a94e30548aabb21b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!Best\+Hyps\+Base@{Best\+Hyps\+Base}}
+\index{Best\+Hyps\+Base@{Best\+Hyps\+Base}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{Best\+Hyps\+Base(const Best\+Hyps\+Base \&)=delete}{BestHypsBase(const BestHypsBase &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Best\+Hyps\+Base\+::\+Best\+Hyps\+Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf Best\+Hyps\+Base} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classamunmt_1_1BestHypsBase_af1d0f69c5403b2d2c4107fd8ea7e8f93}{}\label{classamunmt_1_1BestHypsBase_af1d0f69c5403b2d2c4107fd8ea7e8f93}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!Calc\+Beam@{Calc\+Beam}}
+\index{Calc\+Beam@{Calc\+Beam}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{Calc\+Beam(const Beam \&prev\+Hyps, const std\+::vector$<$ Scorer\+Ptr $>$ \&scorers, const Words \&filter\+Indices, std\+::vector$<$ Beam $>$ \&beams, std\+::vector$<$ uint $>$ \&beam\+Sizes)=0}{CalcBeam(const Beam &prevHyps, const std::vector< ScorerPtr > &scorers, const Words &filterIndices, std::vector< Beam > &beams, std::vector< uint > &beamSizes)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+Best\+Hyps\+Base\+::\+Calc\+Beam (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{prev\+Hyps, }
+\item[{const std\+::vector$<$ {\bf Scorer\+Ptr} $>$ \&}]{scorers, }
+\item[{const {\bf Words} \&}]{filter\+Indices, }
+\item[{std\+::vector$<$ {\bf Beam} $>$ \&}]{beams, }
+\item[{std\+::vector$<$ uint $>$ \&}]{beam\+Sizes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classamunmt_1_1BestHypsBase_aa96754b7043e0214480b5010f11676eb}{}\label{classamunmt_1_1BestHypsBase_aa96754b7043e0214480b5010f11676eb}
+
+
+Implemented in \hyperlink{classamunmt_1_1GPU_1_1BestHyps_aada8fcf38e61fd1ce649432cb45376d9}{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d94/classamunmt_1_1BestHypsBase_aa96754b7043e0214480b5010f11676eb_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!forbid\+U\+N\+K\+\_\+@{forbid\+U\+N\+K\+\_\+}}
+\index{forbid\+U\+N\+K\+\_\+@{forbid\+U\+N\+K\+\_\+}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{forbid\+U\+N\+K\+\_\+}{forbidUNK_}}]{\setlength{\rightskip}{0pt plus 5cm}const bool amunmt\+::\+Best\+Hyps\+Base\+::forbid\+U\+N\+K\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1BestHypsBase_a9592ecfcb2ccd15751b8694525412648}{}\label{classamunmt_1_1BestHypsBase_a9592ecfcb2ccd15751b8694525412648}
+
+
+Definition at line 41 of file base\+\_\+best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!god\+\_\+@{god\+\_\+}}
+\index{god\+\_\+@{god\+\_\+}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{god\+\_\+}{god_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf God}\& amunmt\+::\+Best\+Hyps\+Base\+::god\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1BestHypsBase_ab61b0c276c75cdb08dfb054893084ccd}{}\label{classamunmt_1_1BestHypsBase_ab61b0c276c75cdb08dfb054893084ccd}
+
+
+Definition at line 40 of file base\+\_\+best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!is\+Input\+Filtered\+\_\+@{is\+Input\+Filtered\+\_\+}}
+\index{is\+Input\+Filtered\+\_\+@{is\+Input\+Filtered\+\_\+}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{is\+Input\+Filtered\+\_\+}{isInputFiltered_}}]{\setlength{\rightskip}{0pt plus 5cm}const bool amunmt\+::\+Best\+Hyps\+Base\+::is\+Input\+Filtered\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1BestHypsBase_a6906a24bd40784c66ba1772a314b826e}{}\label{classamunmt_1_1BestHypsBase_a6906a24bd40784c66ba1772a314b826e}
+
+
+Definition at line 42 of file base\+\_\+best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!return\+Attention\+Weights\+\_\+@{return\+Attention\+Weights\+\_\+}}
+\index{return\+Attention\+Weights\+\_\+@{return\+Attention\+Weights\+\_\+}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{return\+Attention\+Weights\+\_\+}{returnAttentionWeights_}}]{\setlength{\rightskip}{0pt plus 5cm}const bool amunmt\+::\+Best\+Hyps\+Base\+::return\+Attention\+Weights\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1BestHypsBase_a5c7d967963222a1a8cd64950830da217}{}\label{classamunmt_1_1BestHypsBase_a5c7d967963222a1a8cd64950830da217}
+
+
+Definition at line 43 of file base\+\_\+best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}!weights\+\_\+@{weights\+\_\+}}
+\index{weights\+\_\+@{weights\+\_\+}!amunmt\+::\+Best\+Hyps\+Base@{amunmt\+::\+Best\+Hyps\+Base}}
+\subsubsection[{\texorpdfstring{weights\+\_\+}{weights_}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$std\+::string, float$>$ amunmt\+::\+Best\+Hyps\+Base\+::weights\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1BestHypsBase_aea7067ab791aa3e86dbc925e7b8eca9b}{}\label{classamunmt_1_1BestHypsBase_aea7067ab791aa3e86dbc925e7b8eca9b}
+
+
+Definition at line 44 of file base\+\_\+best\+\_\+hyps.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{base__best__hyps_8h}{base\+\_\+best\+\_\+hyps.\+h}\end{DoxyCompactItemize}

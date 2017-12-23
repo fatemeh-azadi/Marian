@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de9/classmarian_1_1Hypothesis">
+<title>marian::Hypothesis class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d54/marian_2src_2translator_2hypothesis_8h">&lt;hypothesis.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Hypothesis</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d38/classmarian_1_1Hypothesis__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Hypothesis</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/daa/classmarian_1_1Hypothesis__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Ptr&lt; Hypothesis &gt; prevHyp_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t prevIndex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t word_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const float cost_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; costBreakdown_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/de9/classmarian_1_1Hypothesis_1adcdc27d5062750a588b9f909b4d7a8b9">Hypothesis</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/de9/classmarian_1_1Hypothesis_1a1ee83c959e3fa7e8e76d7ca234477e80">Hypothesis</link> (
+const <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/de9/classmarian_1_1Hypothesis">Hypothesis</link> &gt; prevHyp, size_t word, size_t prevIndex, float cost)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/de9/classmarian_1_1Hypothesis">Hypothesis</link> &gt; <link linkend="de/de9/classmarian_1_1Hypothesis_1ab502e9a71c3f82598ce244720cafd5d1">GetPrevHyp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="de/de9/classmarian_1_1Hypothesis_1a9d1318d435dc2202447c06630efac473">GetWord</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="de/de9/classmarian_1_1Hypothesis_1a8b073015c20d5a76c286640977fad91e">GetPrevStateIndex</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="de/de9/classmarian_1_1Hypothesis_1a9c7a517dfecb9aab1fed4471658a3af7">GetCost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; &amp; <link linkend="de/de9/classmarian_1_1Hypothesis_1a50cf986260d0b079a52bb6efbcdba762">GetCostBreakdown</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1adcdc27d5062750a588b9f909b4d7a8b9">
+                <title>marian::Hypothesis::Hypothesis ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1a1ee83c959e3fa7e8e76d7ca234477e80">
+                <title>marian::Hypothesis::Hypothesis (const Ptr&lt; Hypothesis &gt; prevHyp, size_t word, size_t prevIndex, float cost)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1ab502e9a71c3f82598ce244720cafd5d1">
+                <title>const Ptr&lt;Hypothesis&gt; marian::Hypothesis::GetPrevHyp () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1a9d1318d435dc2202447c06630efac473">
+                <title>size_t marian::Hypothesis::GetWord () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1a8b073015c20d5a76c286640977fad91e">
+                <title>size_t marian::Hypothesis::GetPrevStateIndex () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1a9c7a517dfecb9aab1fed4471658a3af7">
+                <title>float marian::Hypothesis::GetCost () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/de9/classmarian_1_1Hypothesis_1a50cf986260d0b079a52bb6efbcdba762">
+                <title>std::vector&lt;float&gt;&amp; marian::Hypothesis::GetCostBreakdown ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

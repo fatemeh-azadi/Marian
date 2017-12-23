@@ -1,0 +1,271 @@
+\hypertarget{structmarian_1_1SumNodeOp}{}\section{marian\+:\+:Sum\+Node\+Op Struct Reference}
+\label{structmarian_1_1SumNodeOp}\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Sum\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d29/structmarian_1_1SumNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Sum\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d86/structmarian_1_1SumNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1SumNodeOp_aa9ae98f12fcf38f3026c9cb19a168b08}{Sum\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1SumNodeOp_aefc02387c6ddad9a5825e204a511d9be}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1SumNodeOp_a705a3304de7f9aad90b7ead6736a8e46}{backward\+Ops} ()
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1SumNodeOp_a217ee895f48f464dbe0ce55c685b927a}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+const std\+::string \hyperlink{structmarian_1_1SumNodeOp_aefe4aa2ebd3ff63972c8550bfc9d4fb4}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1SumNodeOp_ae2985b156380c467fa272cc38233074a}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmarian_1_1SumNodeOp_a3c4f67bef93557eb69f683587251eb4d}{ax\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 239 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!Sum\+Node\+Op@{Sum\+Node\+Op}}
+\index{Sum\+Node\+Op@{Sum\+Node\+Op}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Sum\+Node\+Op(\+Expr a, Args...\+args)}{SumNodeOp(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Sum\+Node\+Op\+::\+Sum\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1SumNodeOp_aa9ae98f12fcf38f3026c9cb19a168b08}{}\label{structmarian_1_1SumNodeOp_aa9ae98f12fcf38f3026c9cb19a168b08}
+
+
+Definition at line 243 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+244       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1SumNodeOp_a217ee895f48f464dbe0ce55c685b927a}{newShape}(a, args...), args...),
+245         \hyperlink{structmarian_1_1SumNodeOp_a3c4f67bef93557eb69f683587251eb4d}{ax\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, -1, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Sum\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SumNodeOp_a705a3304de7f9aad90b7ead6736a8e46}{}\label{structmarian_1_1SumNodeOp_a705a3304de7f9aad90b7ead6736a8e46}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 249 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+249 \{ \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}))\}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d7a/structmarian_1_1SumNodeOp_a705a3304de7f9aad90b7ead6736a8e46_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Sum\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SumNodeOp_ae2985b156380c467fa272cc38233074a}{}\label{structmarian_1_1SumNodeOp_ae2985b156380c467fa272cc38233074a}
+
+
+Reimplemented from \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}.
+
+
+
+Definition at line 268 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+268 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"orange"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Sum\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SumNodeOp_aefc02387c6ddad9a5825e204a511d9be}{}\label{structmarian_1_1SumNodeOp_aefc02387c6ddad9a5825e204a511d9be}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 247 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+247 \{ \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_ad1f1697aac9247a78d2242921d538402}{Reduce}(\_1, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d7a/structmarian_1_1SumNodeOp_aefc02387c6ddad9a5825e204a511d9be_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Sum\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17}{}\label{structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 270 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+270                         \{
+271     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+272       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+273       \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}, \hyperlink{structmarian_1_1SumNodeOp_a3c4f67bef93557eb69f683587251eb4d}{ax\_});
+274     \}
+275     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+276   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d7a/structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a, Args...\+args)}{newShape(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ {\bf Shape} marian\+::\+Sum\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1SumNodeOp_a217ee895f48f464dbe0ce55c685b927a}{}\label{structmarian_1_1SumNodeOp_a217ee895f48f464dbe0ce55c685b927a}
+
+
+Definition at line 252 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+252                                        \{
+253     \textcolor{keywordtype}{int} ax = \hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, -1, args...);
+254     Shape \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape} = a->shape();
+255     \textcolor{keywordflow}{if}(ax != -1) \{
+256       shape.\hyperlink{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}{set}(ax, 1);
+257     \} \textcolor{keywordflow}{else} \{
+258       shape.set(0, 1);
+259       shape.set(1, 1);
+260       shape.set(2, 1);
+261       shape.set(3, 1);
+262     \}
+263     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape};
+264   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d7a/structmarian_1_1SumNodeOp_a217ee895f48f464dbe0ce55c685b927a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Sum\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SumNodeOp_aefe4aa2ebd3ff63972c8550bfc9d4fb4}{}\label{structmarian_1_1SumNodeOp_aefe4aa2ebd3ff63972c8550bfc9d4fb4}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 266 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+266 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"sum"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}!ax\+\_\+@{ax\+\_\+}}
+\index{ax\+\_\+@{ax\+\_\+}!marian\+::\+Sum\+Node\+Op@{marian\+::\+Sum\+Node\+Op}}
+\subsubsection[{\texorpdfstring{ax\+\_\+}{ax_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Sum\+Node\+Op\+::ax\+\_\+}\hypertarget{structmarian_1_1SumNodeOp_a3c4f67bef93557eb69f683587251eb4d}{}\label{structmarian_1_1SumNodeOp_a3c4f67bef93557eb69f683587251eb4d}
+
+
+Definition at line 240 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

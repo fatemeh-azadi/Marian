@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d93/classOutputFileStream">
+<title>OutputFileStream class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d18/marian_2src_2common_2file__stream_8h">&lt;file_stream.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for OutputFileStream</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d8f/classOutputFileStream__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for OutputFileStream</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d30/classOutputFileStream__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::filesystem::path file_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::filesystem::ofstream ofstream_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>io::file_descriptor_sink fds_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>io::filtering_ostream ostream_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d93/classOutputFileStream_1ac54b17b58f6e5b0d4c7501653509cd72">OutputFileStream</link> (
+const std::string &amp; file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d93/classOutputFileStream_1a0c7bcfd4249febd21db08260c03c24d2">OutputFileStream</link> (
+<link linkend="d5/dec/classTemporaryFile">TemporaryFile</link> &amp; tempfile)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d93/classOutputFileStream_1a36f879a33f90ac39d6cacfd2da3903fd">OutputFileStream</link> (
+std::ostream &amp; strm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d93/classOutputFileStream_1ac2db8a549eba8c5889a676d35cd5cb8d">operator bool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d1/d93/classOutputFileStream_1a81370262d005a6f9fe9174c1ed2b6ea2">path</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d93/classOutputFileStream_1ac54b17b58f6e5b0d4c7501653509cd72">
+                <title>OutputFileStream::OutputFileStream (const std::string &amp;file)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d93/classOutputFileStream_1a0c7bcfd4249febd21db08260c03c24d2">
+                <title>OutputFileStream::OutputFileStream (TemporaryFile &amp;tempfile)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d93/classOutputFileStream_1a36f879a33f90ac39d6cacfd2da3903fd">
+                <title>OutputFileStream::OutputFileStream (std::ostream &amp;strm)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d93/classOutputFileStream_1ac2db8a549eba8c5889a676d35cd5cb8d">
+                <title>OutputFileStream::operator bool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d93/classOutputFileStream_1a81370262d005a6f9fe9174c1ed2b6ea2">
+                <title>std::string OutputFileStream::path ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

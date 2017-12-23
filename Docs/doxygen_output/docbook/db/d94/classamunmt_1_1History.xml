@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d94/classamunmt_1_1History">
+<title>amunmt::History class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/dc1/amun_2common_2history_8h">&lt;history.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::History</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d04/classamunmt_1_1History__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::History</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d62/classamunmt_1_1History__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/dcf/structamunmt_1_1History_1_1HypothesisCoord">amunmt::History::HypothesisCoord</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Beam &gt; history_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::priority_queue&lt; HypothesisCoord &gt; topHyps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool normalize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t lineNo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t maxLength_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d94/classamunmt_1_1History_1ac5f3e4be93bcf4709ec53313868af48d">History</link> (
+const <link linkend="db/d94/classamunmt_1_1History">History</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d94/classamunmt_1_1History_1a9fd2660a9cb09d6659382d7a440f8c11">History</link> (
+size_t lineNo, bool normalizeScore, size_t maxLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d94/classamunmt_1_1History_1a2b05a26f7874eb4e85f66e27458b18c1">Add</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; beam)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/d94/classamunmt_1_1History_1af2af49a16004f49ddb5b1eacc9abe43f">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; <link linkend="db/d94/classamunmt_1_1History_1a2067358d635e512d2c1262288cbdae5d">front</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a4ad8f6c25b18c8675040456c6e95e0f6">NBestList</link> <link linkend="db/d94/classamunmt_1_1History_1af982104b58a4d8cf3893d39724a120c4">NBest</link> (
+size_t n)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1af12bd731cf50f363bdcbec0f435bafb1">Result</link> <link linkend="db/d94/classamunmt_1_1History_1a1ba4f3d97546a08e25a9c0de1ef02e50">Top</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/d94/classamunmt_1_1History_1aab6c98bebac14e388e23ea849b0bba8b">GetLineNum</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1ac5f3e4be93bcf4709ec53313868af48d">
+                <title>amunmt::History::History (const History &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1a9fd2660a9cb09d6659382d7a440f8c11">
+                <title>amunmt::History::History (size_t lineNo, bool normalizeScore, size_t maxLength)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1a2b05a26f7874eb4e85f66e27458b18c1">
+                <title>void amunmt::History::Add (const Beam &amp;beam)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1af2af49a16004f49ddb5b1eacc9abe43f">
+                <title>size_t amunmt::History::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1a2067358d635e512d2c1262288cbdae5d">
+                <title>Beam&amp; amunmt::History::front ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1af982104b58a4d8cf3893d39724a120c4">
+                <title>NBestList amunmt::History::NBest (size_t n) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1a1ba4f3d97546a08e25a9c0de1ef02e50">
+                <title>Result amunmt::History::Top () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d94/classamunmt_1_1History_1aab6c98bebac14e388e23ea849b0bba8b">
+                <title>size_t amunmt::History::GetLineNum () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

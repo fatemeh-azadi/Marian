@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d97/classmarian_1_1MemoryPiece">
+<title>marian::MemoryPiece class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/d0b/memory__piece_8h">&lt;memory_piece.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MemoryPiece</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/db8/classmarian_1_1MemoryPiece__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MemoryPiece</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/de0/classmarian_1_1MemoryPiece__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d97/classmarian_1_1MemoryPiece_1a5818fa412d174b204a258b112a937e80">MemoryPiece</link> (
+uint8_t * data, size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d4/d97/classmarian_1_1MemoryPiece_1a9ba0f524772deb22d35bb85c8ca454c7">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d4/d97/classmarian_1_1MemoryPiece_1a461a9514e360280b05c673b636a9a520">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d4/d97/classmarian_1_1MemoryPiece_1a2d4943aea13728e650fc2a2e0f719661">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d97/classmarian_1_1MemoryPiece_1ad6c2de9229ec366096095f1e0d815a14">set</link> (
+uint8_t * data, size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d97/classmarian_1_1MemoryPiece_1af604e9210fb8472d86e0a69deaf75280">setPtr</link> (
+uint8_t * data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1a5818fa412d174b204a258b112a937e80">
+                <title>marian::MemoryPiece::MemoryPiece (uint8_t *data, size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1a9ba0f524772deb22d35bb85c8ca454c7">
+                <title>uint8_t* marian::MemoryPiece::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1a461a9514e360280b05c673b636a9a520">
+                <title>uint8_t* marian::MemoryPiece::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1a2d4943aea13728e650fc2a2e0f719661">
+                <title>size_t marian::MemoryPiece::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1ad6c2de9229ec366096095f1e0d815a14">
+                <title>void marian::MemoryPiece::set (uint8_t *data, size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d97/classmarian_1_1MemoryPiece_1af604e9210fb8472d86e0a69deaf75280">
+                <title>void marian::MemoryPiece::setPtr (uint8_t *data)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

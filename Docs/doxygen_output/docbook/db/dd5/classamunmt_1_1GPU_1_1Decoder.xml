@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder">
+<title>amunmt::GPU::Decoder class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d72/decoder_8h">&lt;decoder.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Decoder</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d62/classamunmt_1_1GPU_1_1Decoder__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Decoder</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d4f/classamunmt_1_1GPU_1_1Decoder__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment">amunmt::GPU::Decoder::Alignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings">amunmt::GPU::Decoder::Embeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal">amunmt::GPU::Decoder::RNNFinal</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden">amunmt::GPU::Decoder::RNNHidden</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d4d/classamunmt_1_1GPU_1_1Decoder_1_1Softmax">amunmt::GPU::Decoder::Softmax</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CellState HiddenState_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix AlignedSourceContext_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Probs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Embeddings&lt; Weights::DecEmbeddings &gt; embeddings_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RNNHidden&lt; Weights::DecInit &gt; rnn1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RNNFinal rnn2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Alignment&lt; Weights::DecAlignment &gt; alignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Softmax&lt; Weights::DecSoftmax &gt; softmax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; NthOutBatch &gt; nBest_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; mblas::Matrix &gt; b4_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a6fdd75e6878128ef9c3ccd4a6313b3d4">Decoder</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a3a59e5ae48026807d3e95e8957bdd601">Decode</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embeddings, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths, const std::vector&lt; uint &gt; &amp; beamSizes, bool useFusedSoftmax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a1db9e3d47adbe7d0bc6cb001062f6d69">GetProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aceca6923fb01b145c82e21c35675c54e">EmptyState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext, size_t batchSize, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a801f2d13ee6d1b130ea4b46be0ba3ee3">EmptyEmbedding</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embedding, size_t batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a19ecfd6581dd0d568791eb1560b39fdb">Lookup</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embedding, const std::vector&lt; uint &gt; &amp; w)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aa5fb939d73d55e711b1f8887861fb1b0">Filter</link> (
+const std::vector&lt; uint &gt; &amp; ids)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1af7046cb6445534d3342b508e74b70cdd">GetAttention</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Attention)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aa5d8596316bbebb71b2588982c64edcd">GetVocabSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a096372e529ad4bb64ba8a93ca5e6f884">GetAttention</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &gt; &amp; <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a9b8ac4767d8ba8cd238f6f68df9abea6">GetNBest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> * <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a075d00afe91247c36279eaa364386ce7">GetBias</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a947db89d51295ae98c8f36769747faeb">GetHiddenState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; HiddenState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; PrevState, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embedding)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ad11a95e0d1519604bf1d14a8b33970ca">GetAlignedSourceContext</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; AlignedSourceContext, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; HiddenState, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths, const std::vector&lt; uint &gt; &amp; beamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ab3d25eba9931b504c882cf7b3299ae78">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; HiddenState, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; AlignedSourceContext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a159b5073f45c09063805970c1e959ed8">GetProbs</link> (
+const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embedding, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; AlignedSourceContext, bool useFusedSoftmax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">Cell</link> &gt; <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ab8aad68c5ae192b1b196494541377374">InitHiddenCell</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">Cell</link> &gt; <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1afab573b85077912f4ab758c5655db8de">InitFinalCell</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a472b5f38702e1a9a63211c3252c3bc32">Decoder</link> (
+const <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder">Decoder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a6fdd75e6878128ef9c3ccd4a6313b3d4">
+                <title>amunmt::GPU::Decoder::Decoder (const God &amp;god, const Weights &amp;model, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a3a59e5ae48026807d3e95e8957bdd601">
+                <title>void amunmt::GPU::Decoder::Decode (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Embeddings, const mblas::Matrix &amp;SourceContext, const mblas::IMatrix &amp;sentenceLengths, const std::vector&lt; uint &gt; &amp;beamSizes, bool useFusedSoftmax)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a1db9e3d47adbe7d0bc6cb001062f6d69">
+                <title>mblas::Matrix&amp; amunmt::GPU::Decoder::GetProbs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aceca6923fb01b145c82e21c35675c54e">
+                <title>void amunmt::GPU::Decoder::EmptyState (CellState &amp;State, const mblas::Matrix &amp;SourceContext, size_t batchSize, const mblas::IMatrix &amp;sentenceLengths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a801f2d13ee6d1b130ea4b46be0ba3ee3">
+                <title>void amunmt::GPU::Decoder::EmptyEmbedding (mblas::Matrix &amp;Embedding, size_t batchSize=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a19ecfd6581dd0d568791eb1560b39fdb">
+                <title>void amunmt::GPU::Decoder::Lookup (mblas::Matrix &amp;Embedding, const std::vector&lt; uint &gt; &amp;w)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aa5fb939d73d55e711b1f8887861fb1b0">
+                <title>void amunmt::GPU::Decoder::Filter (const std::vector&lt; uint &gt; &amp;ids)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1af7046cb6445534d3342b508e74b70cdd">
+                <title>void amunmt::GPU::Decoder::GetAttention (mblas::Matrix &amp;Attention)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1aa5d8596316bbebb71b2588982c64edcd">
+                <title>size_t amunmt::GPU::Decoder::GetVocabSize () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a096372e529ad4bb64ba8a93ca5e6f884">
+                <title>mblas::Matrix&amp; amunmt::GPU::Decoder::GetAttention ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a9b8ac4767d8ba8cd238f6f68df9abea6">
+                <title>mblas::Array&lt;NthOutBatch&gt;&amp; amunmt::GPU::Decoder::GetNBest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a075d00afe91247c36279eaa364386ce7">
+                <title>const mblas::Matrix* amunmt::GPU::Decoder::GetBias () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a947db89d51295ae98c8f36769747faeb">
+                <title>void amunmt::GPU::Decoder::GetHiddenState (CellState &amp;HiddenState, const CellState &amp;PrevState, const mblas::Matrix &amp;Embedding)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ad11a95e0d1519604bf1d14a8b33970ca">
+                <title>void amunmt::GPU::Decoder::GetAlignedSourceContext (mblas::Matrix &amp;AlignedSourceContext, const CellState &amp;HiddenState, const mblas::Matrix &amp;SourceContext, const mblas::IMatrix &amp;sentenceLengths, const std::vector&lt; uint &gt; &amp;beamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ab3d25eba9931b504c882cf7b3299ae78">
+                <title>void amunmt::GPU::Decoder::GetNextState (CellState &amp;State, const CellState &amp;HiddenState, const mblas::Matrix &amp;AlignedSourceContext)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a159b5073f45c09063805970c1e959ed8">
+                <title>void amunmt::GPU::Decoder::GetProbs (const CellState &amp;State, const mblas::Matrix &amp;Embedding, const mblas::Matrix &amp;AlignedSourceContext, bool useFusedSoftmax)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1ab8aad68c5ae192b1b196494541377374">
+                <title>std::unique_ptr&lt;Cell&gt; amunmt::GPU::Decoder::InitHiddenCell (const Weights &amp;model, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1afab573b85077912f4ab758c5655db8de">
+                <title>std::unique_ptr&lt;Cell&gt; amunmt::GPU::Decoder::InitFinalCell (const Weights &amp;model, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/classamunmt_1_1GPU_1_1Decoder_1a472b5f38702e1a9a63211c3252c3bc32">
+                <title>amunmt::GPU::Decoder::Decoder (const Decoder &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

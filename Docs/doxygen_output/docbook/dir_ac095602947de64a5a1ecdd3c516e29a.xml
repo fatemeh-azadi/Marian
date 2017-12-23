@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_ac095602947de64a5a1ecdd3c516e29a">
+    <title>kernels Directory Reference</title>
+<para>Directory dependency diagram for kernels</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_ac095602947de64a5a1ecdd3c516e29a_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d3/d88/cuda__helpers_8h">cuda_helpers.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d6/d03/dropout_8h">dropout.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d6/d29/shape__gpu_8h">shape_gpu.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d1/dd7/sparse_8h">sparse.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/d07/tensor__operators_8h">tensor_operators.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dd/dde/marian_2src_2kernels_2thrust__functions_8h">marian/src/kernels/thrust_functions.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/marian/src/kernels/</para>
+    </simplesect>
+</section>

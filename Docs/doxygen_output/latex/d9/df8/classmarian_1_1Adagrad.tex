@@ -1,0 +1,129 @@
+\hypertarget{classmarian_1_1Adagrad}{}\section{marian\+:\+:Adagrad Class Reference}
+\label{classmarian_1_1Adagrad}\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+
+
+{\ttfamily \#include $<$optimizers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Adagrad\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{dd/d68/classmarian_1_1Adagrad__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Adagrad\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d1/d96/classmarian_1_1Adagrad__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1Adagrad_a18d472eea3cd57eb64573b8bab76874c}{Adagrad} (float eta, Args...\+args)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1Adagrad_abba8d5d6bb96ff15f4f956f185c7887a}{update\+Impl} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grads)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classmarian_1_1Adagrad_a1892a60789f7ef407f40222669ca22f7}{eps\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ \hyperlink{classmarian_1_1Adagrad_a753dac5d7bf487e8894d82d4c1564f19}{alloc\+\_\+}
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1Adagrad_a0e809e1fd59eb3033b5a04c7c3122b14}{gt\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file optimizers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}!Adagrad@{Adagrad}}
+\index{Adagrad@{Adagrad}!marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+\subsubsection[{\texorpdfstring{Adagrad(float eta, Args...\+args)}{Adagrad(float eta, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Adagrad\+::\+Adagrad (
+\begin{DoxyParamCaption}
+\item[{float}]{eta, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Adagrad_a18d472eea3cd57eb64573b8bab76874c}{}\label{classmarian_1_1Adagrad_a18d472eea3cd57eb64573b8bab76874c}
+
+
+Definition at line 62 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+63       : \hyperlink{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}{OptimizerBase}(\hyperlink{namespacemarian_1_1keywords_af8a81aa00fe33fd2eea3287b1bff35be}{eta}, args...), \hyperlink{classmarian_1_1Adagrad_a1892a60789f7ef407f40222669ca22f7}{eps\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(
+      \hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{keywords::eps}, 1e-8, args...)) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df8/classmarian_1_1Adagrad_a18d472eea3cd57eb64573b8bab76874c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+\subsubsection[{\texorpdfstring{update\+Impl(\+Tensor params, Tensor grads)}{updateImpl(Tensor params, Tensor grads)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Adagrad\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params, }
+\item[{{\bf Tensor}}]{grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Adagrad_abba8d5d6bb96ff15f4f956f185c7887a}{}\label{classmarian_1_1Adagrad_abba8d5d6bb96ff15f4f956f185c7887a}
+
+
+Implements \hyperlink{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{marian\+::\+Optimizer\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}!alloc\+\_\+@{alloc\+\_\+}}
+\index{alloc\+\_\+@{alloc\+\_\+}!marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+\subsubsection[{\texorpdfstring{alloc\+\_\+}{alloc_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Tensor\+Allocator}$>$ marian\+::\+Adagrad\+::alloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adagrad_a753dac5d7bf487e8894d82d4c1564f19}{}\label{classmarian_1_1Adagrad_a753dac5d7bf487e8894d82d4c1564f19}
+
+
+Definition at line 69 of file optimizers.\+h.
+
+\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}!eps\+\_\+@{eps\+\_\+}}
+\index{eps\+\_\+@{eps\+\_\+}!marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+\subsubsection[{\texorpdfstring{eps\+\_\+}{eps_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Adagrad\+::eps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adagrad_a1892a60789f7ef407f40222669ca22f7}{}\label{classmarian_1_1Adagrad_a1892a60789f7ef407f40222669ca22f7}
+
+
+Definition at line 68 of file optimizers.\+h.
+
+\index{marian\+::\+Adagrad@{marian\+::\+Adagrad}!gt\+\_\+@{gt\+\_\+}}
+\index{gt\+\_\+@{gt\+\_\+}!marian\+::\+Adagrad@{marian\+::\+Adagrad}}
+\subsubsection[{\texorpdfstring{gt\+\_\+}{gt_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Adagrad\+::gt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adagrad_a0e809e1fd59eb3033b5a04c7c3122b14}{}\label{classmarian_1_1Adagrad_a0e809e1fd59eb3033b5a04c7c3122b14}
+
+
+Definition at line 70 of file optimizers.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{optimizers_8h}{optimizers.\+h}\end{DoxyCompactItemize}

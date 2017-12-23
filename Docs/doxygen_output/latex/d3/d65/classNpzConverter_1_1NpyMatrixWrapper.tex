@@ -1,0 +1,275 @@
+\hypertarget{classNpzConverter_1_1NpyMatrixWrapper}{}\section{Npz\+Converter\+:\+:Npy\+Matrix\+Wrapper Class Reference}
+\label{classNpzConverter_1_1NpyMatrixWrapper}\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+
+
+Collaboration diagram for Npz\+Converter\+:\+:Npy\+Matrix\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{d8/dcd/classNpzConverter_1_1NpyMatrixWrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a12589425c3fa4565316a0ff9ceea6456}{Npy\+Matrix\+Wrapper} (const cnpy\+::\+Npy\+Array \&npy)
+\item 
+size\+\_\+t \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a245093ae856204f1c9da73cb97ab1672}{size} () const 
+\item 
+float $\ast$ \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a1bb6c63b0182eef3d5938b696101d4f8}{data} () const 
+\item 
+float \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a9f118068f570b5a013bca27ca993d00f}{operator()} (size\+\_\+t i, size\+\_\+t j) const 
+\item 
+size\+\_\+t \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a41f3130d4d75c67a50f886264f5fddc1}{size1} () const 
+\item 
+size\+\_\+t \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a}{size2} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const cnpy\+::\+Npy\+Array \& \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps npy data such that the underlying matrix shape and matrix data are made accessible. 
+
+Definition at line 42 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!Npy\+Matrix\+Wrapper@{Npy\+Matrix\+Wrapper}}
+\index{Npy\+Matrix\+Wrapper@{Npy\+Matrix\+Wrapper}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Npy\+Matrix\+Wrapper(const cnpy\+::\+Npy\+Array \&npy)}{NpyMatrixWrapper(const cnpy::NpyArray &npy)}}]{\setlength{\rightskip}{0pt plus 5cm}Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::\+Npy\+Matrix\+Wrapper (
+\begin{DoxyParamCaption}
+\item[{const cnpy\+::\+Npy\+Array \&}]{npy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a12589425c3fa4565316a0ff9ceea6456}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a12589425c3fa4565316a0ff9ceea6456}
+Constructs a wrapper around an underlying npy data structure, enabling the underlying data to be accessed as a matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em npy} & the underlying data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+50 : \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}(npy) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!data@{data}}
+\index{data@{data}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a1bb6c63b0182eef3d5938b696101d4f8}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a1bb6c63b0182eef3d5938b696101d4f8}
+Returns a pointer to the raw data that underlies the matrix.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the raw data that underlies the matrix 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+64 \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float}*)\hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}.data; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a1bb6c63b0182eef3d5938b696101d4f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!operator()@{operator()}}
+\index{operator()@{operator()}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator()(size\+\_\+t i, size\+\_\+t j) const }{operator()(size_t i, size_t j) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::operator() (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i, }
+\item[{size\+\_\+t}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a9f118068f570b5a013bca27ca993d00f}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a9f118068f570b5a013bca27ca993d00f}
+Given the index (i, j) of a matrix element, this operator returns the float value from the underlying npz data that is stored in the matrix.
+
+X\+XX\+: Marcin, is the following correct? Or do I have the row/column labels swapped?
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of a column in the matrix \\
+\hline
+{\em j} & Index of a row in the matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the float value stored at column i, row j of the matrix 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+79                                                \{
+80       \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{float}*)\hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}.data)[i * \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a}{size2}() + j];
+81     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a9f118068f570b5a013bca27ca993d00f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size@{size}}
+\index{size@{size}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a245093ae856204f1c9da73cb97ab1672}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a245093ae856204f1c9da73cb97ab1672}
+Returns the total number of elements in the underlying matrix.
+
+\begin{DoxyReturn}{Returns}
+the total number of elements in the underlying matrix 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+57 \{ \textcolor{keywordflow}{return} \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a41f3130d4d75c67a50f886264f5fddc1}{size1}() * \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a}{size2}(); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a245093ae856204f1c9da73cb97ab1672_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a245093ae856204f1c9da73cb97ab1672_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size1@{size1}}
+\index{size1@{size1}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size1() const }{size1() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a41f3130d4d75c67a50f886264f5fddc1}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a41f3130d4d75c67a50f886264f5fddc1}
+Returns the number of columns in the matrix.
+
+X\+XX\+: Marcin, is this following correct? Or do I have the row/column labels swapped?
+
+\begin{DoxyReturn}{Returns}
+the number of columns in the matrix 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+91 \{ \textcolor{keywordflow}{return} \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}.shape[0]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a41f3130d4d75c67a50f886264f5fddc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!size2@{size2}}
+\index{size2@{size2}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size2() const }{size2() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::size2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a}
+Returns the number of rows in the matrix.
+
+X\+XX\+: Marcin, is this following correct? Or do I have the row/column labels swapped?
+
+\begin{DoxyReturn}{Returns}
+the number of rows in the matrix 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+101                          \{
+102       \textcolor{keywordflow}{if}(\hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}.shape.size() == 1)
+103         \textcolor{keywordflow}{return} 1;
+104       \textcolor{keywordflow}{else}
+105         \textcolor{keywordflow}{return} \hyperlink{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{npy\_}.shape[1];
+106     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d65/classNpzConverter_1_1NpyMatrixWrapper_a90bcb80b9724c796dafba354a181b71a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}!npy\+\_\+@{npy\+\_\+}}
+\index{npy\+\_\+@{npy\+\_\+}!Npz\+Converter\+::\+Npy\+Matrix\+Wrapper@{Npz\+Converter\+::\+Npy\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{npy\+\_\+}{npy_}}]{\setlength{\rightskip}{0pt plus 5cm}const cnpy\+::\+Npy\+Array\& Npz\+Converter\+::\+Npy\+Matrix\+Wrapper\+::npy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}{}\label{classNpzConverter_1_1NpyMatrixWrapper_a4a32de31f6410ae49105b9d719de028b}
+Instance of the underlying (3rd party) data structure. 
+
+Definition at line 110 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2data_2npz__converter_8h}{marian/src/data/npz\+\_\+converter.\+h}\end{DoxyCompactItemize}

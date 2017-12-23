@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d2a/marian_2src_2common_2config_8cpp">
+    <title>marian/src/common/config.cpp File Reference</title>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;boost/algorithm/string.hpp&gt;</programlisting>
+    <programlisting>#include &lt;set&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &quot;3rd_party/cnpy/cnpy.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+    <programlisting>#include &quot;common/logging.h&quot;</programlisting>
+<para>Include dependency diagram for marian/src/common/config.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d0b/marian_2src_2common_2config_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/common/config.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/de2/marian_2src_2common_2config_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file config.cpp</para>
+    </simplesect>
+</section>

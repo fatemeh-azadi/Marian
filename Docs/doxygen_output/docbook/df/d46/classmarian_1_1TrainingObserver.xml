@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d46/classmarian_1_1TrainingObserver">
+<title>marian::TrainingObserver class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/df4/training__state_8h">&lt;training_state.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TrainingObserver</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d9f/classmarian_1_1TrainingObserver__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TrainingObserver</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d99/classmarian_1_1TrainingObserver__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="df/d46/classmarian_1_1TrainingObserver_1a518893407fa20fc4b7ab892154de238d">actAfterEpoch</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="df/d46/classmarian_1_1TrainingObserver_1a941ffcde6aaa5f3b48b48826897829a4">actAfterBatches</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="df/d46/classmarian_1_1TrainingObserver_1ac9ae3ce0bb0f3f9d48d6198087161bfc">actAfterStalled</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="df/d46/classmarian_1_1TrainingObserver_1a518893407fa20fc4b7ab892154de238d">
+                <title>virtual void marian::TrainingObserver::actAfterEpoch (TrainingState &amp;state)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d46/classmarian_1_1TrainingObserver_1a941ffcde6aaa5f3b48b48826897829a4">
+                <title>virtual void marian::TrainingObserver::actAfterBatches (TrainingState &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d46/classmarian_1_1TrainingObserver_1ac9ae3ce0bb0f3f9d48d6198087161bfc">
+                <title>virtual void marian::TrainingObserver::actAfterStalled (TrainingState &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

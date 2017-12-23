@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/db9/classamunmt_1_1Preprocessor">
+<title>amunmt::Preprocessor class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d99/processor_8h">&lt;processor.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Preprocessor</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d98/classamunmt_1_1Preprocessor__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Preprocessor</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d05/classamunmt_1_1Preprocessor__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; std::string &gt; <link linkend="d1/db9/classamunmt_1_1Preprocessor_1a9b65510af5c66a793f4651d2caa8e67a">Preprocess</link> (
+const std::vector&lt; std::string &gt; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d1/db9/classamunmt_1_1Preprocessor_1a88c99ac6d5f9865a6c2b3817d2cc603c">~Preprocessor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/db9/classamunmt_1_1Preprocessor_1a9b65510af5c66a793f4651d2caa8e67a">
+                <title>virtual std::vector&lt;std::string&gt; amunmt::Preprocessor::Preprocess (const std::vector&lt; std::string &gt; input) const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/db9/classamunmt_1_1Preprocessor_1a88c99ac6d5f9865a6c2b3817d2cc603c">
+                <title>virtual amunmt::Preprocessor::~Preprocessor ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

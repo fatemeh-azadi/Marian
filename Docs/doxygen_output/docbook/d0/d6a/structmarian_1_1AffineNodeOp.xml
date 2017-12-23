@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d6a/structmarian_1_1AffineNodeOp">
+<title>marian::AffineNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::AffineNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/daf/structmarian_1_1AffineNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::AffineNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d0f/structmarian_1_1AffineNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d6a/structmarian_1_1AffineNodeOp_1a922e5094edaa7e7a84aa2e130d60a1b3">AffineNodeOp</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d0/d6a/structmarian_1_1AffineNodeOp_1a6a802543c6b3aeb37753ba775ac09c23">newShape</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d0/d6a/structmarian_1_1AffineNodeOp_1a56e7eeac215b8dbbd1e138559f2dc10f">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d0/d6a/structmarian_1_1AffineNodeOp_1a277f706113217219266122ccbd44679b">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d0/d6a/structmarian_1_1AffineNodeOp_1a455fa5b662dc84146f17058a50de2982">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d0/d6a/structmarian_1_1AffineNodeOp_1a922e5094edaa7e7a84aa2e130d60a1b3">
+                <title>marian::AffineNodeOp::AffineNodeOp (const std::vector&lt; Expr &gt; &amp;nodes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d6a/structmarian_1_1AffineNodeOp_1a6a802543c6b3aeb37753ba775ac09c23">
+                <title>Shape marian::AffineNodeOp::newShape (const std::vector&lt; Expr &gt; &amp;nodes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d6a/structmarian_1_1AffineNodeOp_1a56e7eeac215b8dbbd1e138559f2dc10f">
+                <title>NodeOps marian::AffineNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d6a/structmarian_1_1AffineNodeOp_1a277f706113217219266122ccbd44679b">
+                <title>NodeOps marian::AffineNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d6a/structmarian_1_1AffineNodeOp_1a455fa5b662dc84146f17058a50de2982">
+                <title>const std::string marian::AffineNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

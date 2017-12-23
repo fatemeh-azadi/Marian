@@ -1,0 +1,48 @@
+\hypertarget{optimizers_8h}{}\section{optimizers.\+h File Reference}
+\label{optimizers_8h}\index{optimizers.\+h@{optimizers.\+h}}
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}optimizers/clippers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tensors/tensor.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}training/training\+\_\+state.\+h\char`\"{}}\\*
+Include dependency graph for optimizers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dec/optimizers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2e/optimizers_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1OptimizerBase}{marian\+::\+Optimizer\+Base}
+\item 
+class \hyperlink{classmarian_1_1Sgd}{marian\+::\+Sgd}
+\item 
+class \hyperlink{classmarian_1_1Adagrad}{marian\+::\+Adagrad}
+\item 
+class \hyperlink{classmarian_1_1Adam}{marian\+::\+Adam}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Algorithm , typename... Args$>$ }\\Ptr$<$ Optimizer\+Base $>$ \hyperlink{namespacemarian_adcc0fde2e522c9f55abdca1186c9a6db}{marian\+::\+Optimizer} (float eta, Args \&\&...args)
+\item 
+Ptr$<$ Optimizer\+Base $>$ \hyperlink{namespacemarian_a38852784082dcc4b8e892b0751a04257}{marian\+::\+Optimizer} (Ptr$<$ Config $>$ options)
+\end{DoxyCompactItemize}

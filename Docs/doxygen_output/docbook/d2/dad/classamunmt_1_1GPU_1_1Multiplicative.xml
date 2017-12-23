@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dad/classamunmt_1_1GPU_1_1Multiplicative">
+<title>amunmt::GPU::Multiplicative class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d81/multiplicative_8h">&lt;multiplicative.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Multiplicative</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dfa/classamunmt_1_1GPU_1_1Multiplicative__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Multiplicative</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d5a/classamunmt_1_1GPU_1_1Multiplicative__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>template&lt; class &gt; class</type>
+        <declname>CellType</declname>
+        <defname>CellType</defname>
+      </param>
+      <param>
+        <type>class InnerWeights</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CellType&lt; InnerWeights &gt; innerCell_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights::MultWeights&lt; InnerWeights &gt; &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix x_mult_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CellState tempState_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a33fc8271a8fe73ce73216c5748ee1cc4">Multiplicative</link> (
+const <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights">Weights::MultWeights</link>&lt; InnerWeights &gt; &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a1f485aad0d4da73469d58f61fc121341">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a5be06555bcb9b8415ae9558109aa2699">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a33fc8271a8fe73ce73216c5748ee1cc4">
+                <title>amunmt::GPU::Multiplicative&lt; CellType, InnerWeights &gt;::Multiplicative (const Weights::MultWeights&lt; InnerWeights &gt; &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a1f485aad0d4da73469d58f61fc121341">
+                <title>virtual void amunmt::GPU::Multiplicative&lt; CellType, InnerWeights &gt;::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dad/classamunmt_1_1GPU_1_1Multiplicative_1a5be06555bcb9b8415ae9558109aa2699">
+                <title>virtual CellLength amunmt::GPU::Multiplicative&lt; CellType, InnerWeights &gt;::GetStateLength () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

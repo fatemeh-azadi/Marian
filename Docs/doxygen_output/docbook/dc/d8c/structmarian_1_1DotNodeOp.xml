@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d8c/structmarian_1_1DotNodeOp">
+<title>marian::DotNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DotNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d46/structmarian_1_1DotNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DotNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/ddc/structmarian_1_1DotNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1a66d1926cfedd0f890967b6d0fc618ab8">DotNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1ad897baac4270ce0d87fd90d340609e52">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1a72a5f5125f26d022b23630dc90ea5c2d">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1a015697830536478b4b8226c7e963dd3a">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1a26ba9e725a0220dd11201529bb8edbfb">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d8c/structmarian_1_1DotNodeOp_1aab065629807f2abbe28a61fa1f800c63">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1a66d1926cfedd0f890967b6d0fc618ab8">
+                <title>marian::DotNodeOp::DotNodeOp (Expr a, Expr b, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1ad897baac4270ce0d87fd90d340609e52">
+                <title>Shape marian::DotNodeOp::newShape (Expr a, Expr b)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1a72a5f5125f26d022b23630dc90ea5c2d">
+                <title>NodeOps marian::DotNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1a015697830536478b4b8226c7e963dd3a">
+                <title>NodeOps marian::DotNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1a26ba9e725a0220dd11201529bb8edbfb">
+                <title>const std::string marian::DotNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d8c/structmarian_1_1DotNodeOp_1aab065629807f2abbe28a61fa1f800c63">
+                <title>const std::string marian::DotNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

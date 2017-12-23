@@ -1,0 +1,274 @@
+\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax}{}\section{amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Softmax$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax}\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax$<$ Weights $>$}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Softmax$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d6f/classamunmt_1_1GPU_1_1Decoder_1_1Softmax__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae08709c146cc9e747fa98acc657433e7}{Softmax} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae19befc1a70b3a1762ac0e4dcfb67714}{Get\+Probs} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Probs, std\+::shared\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \&b4, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Embedding, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Aligned\+Source\+Context, bool use\+Fused\+Softmax)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a61d7923502de96f87992e54001e523aa}{Filter} (const std\+::vector$<$ uint $>$ \&ids)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_aa6e256139e9e8f81f50f155b05b63b0c}{Softmax} (const \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax}{Softmax} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}{filtered\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}{Filtered\+W4\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}{Filtered\+B4\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_af6d96b67f2e1a18b692fc5a0f016e0d0}{Temp\+W4}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a7e627e54910acdb3b0f02c08e7671d9a}{Temp\+B4}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax$<$ Weights $>$}
+
+
+
+Definition at line 250 of file decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Softmax@{Softmax}}
+\index{Softmax@{Softmax}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Softmax(const Weights \&model)}{Softmax(const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::{\bf Softmax} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae08709c146cc9e747fa98acc657433e7}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae08709c146cc9e747fa98acc657433e7}
+
+
+Definition at line 252 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+253         : \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}(model), \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}{filtered\_}(\textcolor{keyword}{false})
+254         \{
+255           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{mblas::Transpose}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_af6d96b67f2e1a18b692fc5a0f016e0d0}{TempW4}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.W4\_);
+256           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{mblas::Transpose}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a7e627e54910acdb3b0f02c08e7671d9a}{TempB4}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B4\_);
+257         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Softmax@{Softmax}}
+\index{Softmax@{Softmax}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Softmax(const Softmax \&)=delete}{Softmax(const Softmax &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::{\bf Softmax} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Softmax}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_aa6e256139e9e8f81f50f155b05b63b0c}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_aa6e256139e9e8f81f50f155b05b63b0c}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Filter@{Filter}}
+\index{Filter@{Filter}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Filter(const std\+::vector$<$ uint $>$ \&ids)}{Filter(const std::vector< uint > &ids)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::{\bf Filter} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{ids}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a61d7923502de96f87992e54001e523aa}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a61d7923502de96f87992e54001e523aa}
+
+
+Definition at line 336 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+336                                                 \{
+337           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}{filtered\_} = \textcolor{keyword}{true};
+338           \textcolor{keyword}{using namespace }mblas;
+339 
+340           mblas::Array<uint> d\_ids(ids);
+341           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{Assemble}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}{FilteredW4\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_af6d96b67f2e1a18b692fc5a0f016e0d0}{TempW4}, d\_ids);
+342           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{Assemble}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}{FilteredB4\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a7e627e54910acdb3b0f02c08e7671d9a}{TempB4}, d\_ids);
+343 
+344           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}{FilteredW4\_});
+345           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}{FilteredB4\_});
+346         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Get\+Probs@{Get\+Probs}}
+\index{Get\+Probs@{Get\+Probs}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Get\+Probs(mblas\+::\+Matrix \&\+Probs, std\+::shared\+\_\+ptr$<$ mblas\+::\+Matrix $>$ \&b4, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Embedding, const mblas\+::\+Matrix \&\+Aligned\+Source\+Context, bool use\+Fused\+Softmax)}{GetProbs(mblas::Matrix &Probs, std::shared_ptr< mblas::Matrix > &b4, const CellState &State, const mblas::Matrix &Embedding, const mblas::Matrix &AlignedSourceContext, bool useFusedSoftmax)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::Get\+Probs (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Probs, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf mblas\+::\+Matrix} $>$ \&}]{b4, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Embedding, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Aligned\+Source\+Context, }
+\item[{bool}]{use\+Fused\+Softmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae19befc1a70b3a1762ac0e4dcfb67714}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae19befc1a70b3a1762ac0e4dcfb67714}
+
+
+Definition at line 259 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+265         \{
+266           \textcolor{keyword}{using namespace }mblas;
+267 
+268           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Prod");}
+269           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\textcolor{comment}{/*h\_[0],*/} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, *(State.output), *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.W1\_);
+270           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Prod");}
+271 
+272           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Normalization/BroadcastVec");}
+273           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_1\_->size()) \{
+274             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_1\_, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B1\_, 1e-9);
+275           \} \textcolor{keywordflow}{else} \{
+276             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B1\_ \textcolor{comment}{/*,s\_[0]*/});
+277           \}
+278           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Normalization/BroadcastVec");}
+279 
+280           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Prod2");}
+281           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\textcolor{comment}{/*h\_[1],*/} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\_}, Embedding, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.W2\_);
+282           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Prod2");}
+283 
+284           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Normalization/BroadcastVec2");}
+285           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_0\_->size()) \{
+286             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_0\_, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B2\_, 1e-9);
+287           \} \textcolor{keywordflow}{else} \{
+288             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B2\_ \textcolor{comment}{/*,s\_[1]*/});
+289           \}
+290           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Normalization/BroadcastVec2");}
+291 
+292           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Prod3");}
+293           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\textcolor{comment}{/*h\_[2],*/} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\_}, AlignedSourceContext, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.W3\_);
+294           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Prod3");}
+295 
+296           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Normalization/BroadcastVec3");}
+297           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_2\_->size()) \{
+298             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.Gamma\_2\_, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B3\_, 1e-9);
+299           \} \textcolor{keywordflow}{else} \{
+300             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B3\_ \textcolor{comment}{/*,s\_[2]*/});
+301           \}
+302           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Normalization/BroadcastVec3");}
+303 
+304           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.Element");}
+305           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1 + \_2 + \_3), \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{T2\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{T3\_});
+306           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.Element");}
+307 
+308           std::shared\_ptr<mblas::Matrix> w4;
+309           \textcolor{keywordflow}{if}(!\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}{filtered\_}) \{
+310             w4 = \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.W4\_;
+311             b4 = \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{w\_}.B4\_;
+312           \} \textcolor{keywordflow}{else} \{
+313             w4.reset(&\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}{FilteredW4\_});
+314             b4.reset(&\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}{FilteredB4\_});
+315           \}
+316 
+317           \textcolor{comment}{//BEGIN\_TIMER("GetProbs.NewSize");}
+318           Probs.NewSize(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{dim}(0), w4->dim(1));
+319           \textcolor{comment}{//PAUSE\_TIMER("GetProbs.NewSize");}
+320 
+321           \hyperlink{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}{BEGIN\_TIMER}(\textcolor{stringliteral}{"GetProbs.Prod4"});
+322           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(Probs, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{T1\_}, *w4);
+323           \hyperlink{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}{PAUSE\_TIMER}(\textcolor{stringliteral}{"GetProbs.Prod4"});
+324 
+325           \textcolor{keywordflow}{if} (!useFusedSoftmax) \{
+326             \hyperlink{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}{BEGIN\_TIMER}(\textcolor{stringliteral}{"GetProbs.BroadcastVec"});
+327             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, Probs, *b4);
+328             \hyperlink{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}{PAUSE\_TIMER}(\textcolor{stringliteral}{"GetProbs.BroadcastVec"});
+329 
+330             \hyperlink{types-gpu_8h_a5ac3df3e0b737334da2bdc07aa8093dc}{BEGIN\_TIMER}(\textcolor{stringliteral}{"GetProbs.LogSoftMax"});
+331             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77}{mblas::LogSoftmax}(Probs);
+332             \hyperlink{types-gpu_8h_a75141a93e26693d16bb3f3cfab03e6d6}{PAUSE\_TIMER}(\textcolor{stringliteral}{"GetProbs.LogSoftMax"});
+333           \}
+334         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!filtered\+\_\+@{filtered\+\_\+}}
+\index{filtered\+\_\+@{filtered\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{filtered\+\_\+}{filtered_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ bool {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::filtered\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a302f14f7a0af6f6f16618ee924f7c30a}
+
+
+Definition at line 351 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Filtered\+B4\+\_\+@{Filtered\+B4\+\_\+}}
+\index{Filtered\+B4\+\_\+@{Filtered\+B4\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Filtered\+B4\+\_\+}{FilteredB4_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::Filtered\+B4\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a88f462fb02369b2aea533ba0bb36d526}
+
+
+Definition at line 353 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Filtered\+W4\+\_\+@{Filtered\+W4\+\_\+}}
+\index{Filtered\+W4\+\_\+@{Filtered\+W4\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Filtered\+W4\+\_\+}{FilteredW4_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::Filtered\+W4\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a149cffb41ddd8f888ff26145712f4c7f}
+
+
+Definition at line 352 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!T1\+\_\+@{T1\+\_\+}}
+\index{T1\+\_\+@{T1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{T1\+\_\+}{T1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::T1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a8a139447e51633e488a436440b21ffe9}
+
+
+Definition at line 355 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!T2\+\_\+@{T2\+\_\+}}
+\index{T2\+\_\+@{T2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{T2\+\_\+}{T2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::T2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a81f4a316db17da624e59deaf9bf72951}
+
+
+Definition at line 356 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!T3\+\_\+@{T3\+\_\+}}
+\index{T3\+\_\+@{T3\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{T3\+\_\+}{T3_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::T3\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a21a82df071c85202f529b7c87b5b597c}
+
+
+Definition at line 357 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Temp\+B4@{Temp\+B4}}
+\index{Temp\+B4@{Temp\+B4}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Temp\+B4}{TempB4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::Temp\+B4\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a7e627e54910acdb3b0f02c08e7671d9a}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_a7e627e54910acdb3b0f02c08e7671d9a}
+
+
+Definition at line 360 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!Temp\+W4@{Temp\+W4}}
+\index{Temp\+W4@{Temp\+W4}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{Temp\+W4}{TempW4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::Temp\+W4\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_af6d96b67f2e1a18b692fc5a0f016e0d0}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_af6d96b67f2e1a18b692fc5a0f016e0d0}
+
+
+Definition at line 359 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Softmax}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Softmax_ae2e313f9d4f7b068c99ae73e97f91c41}
+
+
+Definition at line 349 of file decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8h}{decoder.\+h}\end{DoxyCompactItemize}

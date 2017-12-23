@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d05/graph__tests_8cpp">
+    <title>graph_tests.cpp File Reference</title>
+    <programlisting>#include &quot;catch.hpp&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+<para>Include dependency diagram for graph_tests.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d86/graph__tests_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for graph_tests.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d07/graph__tests_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d05/graph__tests_8cpp_1abe3c8f721d3cdd233070b209b493833c">TEST_CASE</link> (
+&quot;Graph device is <link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a59d4487ba23386d5b73310f034357598">set</link>&quot; , &quot;&quot; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d05/graph__tests_8cpp_1a6cf89c595ea58fa3333caaf0696f14b8">TEST_CASE</link> (
+&quot;Expression graph can be initialized with constant values&quot; , &quot;&quot; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file graph_tests.cpp</para>
+    </simplesect>
+</section>

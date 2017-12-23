@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d1e/classmarian_1_1MultiEncoder">
+<title>marian::MultiEncoder class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/dde/multi__s2s_8h">&lt;multi_s2s.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultiEncoder</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d3b/classmarian_1_1MultiEncoder__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultiEncoder</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d77/classmarian_1_1MultiEncoder__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Encoder1</type>
+      </param>
+      <param>
+        <type>class Encoder2</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Encoder1 &gt; encoder1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Encoder2 &gt; encoder2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d1e/classmarian_1_1MultiEncoder_1a801e9b9aee52ce4018c93aae91a783f2">MultiEncoder</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; <link linkend="d3/d1e/classmarian_1_1MultiEncoder_1af841e028f2034309a7e13a31ea0700ea">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, size_t batchIdx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d1e/classmarian_1_1MultiEncoder_1a801e9b9aee52ce4018c93aae91a783f2">
+                <title>marian::MultiEncoder&lt; Encoder1, Encoder2 &gt;::MultiEncoder (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1e/classmarian_1_1MultiEncoder_1af841e028f2034309a7e13a31ea0700ea">
+                <title>Ptr&lt;EncoderState&gt; marian::MultiEncoder&lt; Encoder1, Encoder2 &gt;::build (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch, size_t batchIdx=0)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

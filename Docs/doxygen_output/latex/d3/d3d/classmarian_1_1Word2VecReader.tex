@@ -1,0 +1,178 @@
+\hypertarget{classmarian_1_1Word2VecReader}{}\section{marian\+:\+:Word2\+Vec\+Reader Class Reference}
+\label{classmarian_1_1Word2VecReader}\index{marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}}
+
+
+{\ttfamily \#include $<$word2vec\+\_\+reader.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Word2\+Vec\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{d6/d5a/classmarian_1_1Word2VecReader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Word2VecReader_aef7b9914f85e9e9736fe96d254f0704b}{Word2\+Vec\+Reader} ()
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmarian_1_1Word2VecReader_a32bb815f947b31ad52de05042982fa93}{read} (const std\+::string \&file\+Name, int dim\+Voc, int dim\+Emb)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmarian_1_1Word2VecReader_a4af907a4ff8a6c48d61dd9cb770ffe1b}{random\+Embeddings} (int dim\+Voc, int dim\+Emb)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file word2vec\+\_\+reader.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}!Word2\+Vec\+Reader@{Word2\+Vec\+Reader}}
+\index{Word2\+Vec\+Reader@{Word2\+Vec\+Reader}!marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}}
+\subsubsection[{\texorpdfstring{Word2\+Vec\+Reader()}{Word2VecReader()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Word2\+Vec\+Reader\+::\+Word2\+Vec\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Word2VecReader_aef7b9914f85e9e9736fe96d254f0704b}{}\label{classmarian_1_1Word2VecReader_aef7b9914f85e9e9736fe96d254f0704b}
+
+
+Definition at line 18 of file word2vec\+\_\+reader.\+h.
+
+
+\begin{DoxyCode}
+18 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}!random\+Embeddings@{random\+Embeddings}}
+\index{random\+Embeddings@{random\+Embeddings}!marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}}
+\subsubsection[{\texorpdfstring{random\+Embeddings(int dim\+Voc, int dim\+Emb)}{randomEmbeddings(int dimVoc, int dimEmb)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ marian\+::\+Word2\+Vec\+Reader\+::random\+Embeddings (
+\begin{DoxyParamCaption}
+\item[{int}]{dim\+Voc, }
+\item[{int}]{dim\+Emb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1Word2VecReader_a4af907a4ff8a6c48d61dd9cb770ffe1b}{}\label{classmarian_1_1Word2VecReader_a4af907a4ff8a6c48d61dd9cb770ffe1b}
+
+
+Definition at line 76 of file word2vec\+\_\+reader.\+h.
+
+
+\begin{DoxyCode}
+76                                                             \{
+77     std::vector<float> values;
+78     values.reserve(dimEmb);
+79     \textcolor{comment}{// Glorot numal distribution}
+80     \textcolor{keywordtype}{float} scale = sqrtf(2.0f / (dimVoc + dimEmb));
+81     inits::distribution<std::normal\_distribution<float>>(values, 0, scale);
+82     \textcolor{keywordflow}{return} values;
+83   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d3d/classmarian_1_1Word2VecReader_a4af907a4ff8a6c48d61dd9cb770ffe1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}!read@{read}}
+\index{read@{read}!marian\+::\+Word2\+Vec\+Reader@{marian\+::\+Word2\+Vec\+Reader}}
+\subsubsection[{\texorpdfstring{read(const std\+::string \&file\+Name, int dim\+Voc, int dim\+Emb)}{read(const std::string &fileName, int dimVoc, int dimEmb)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ marian\+::\+Word2\+Vec\+Reader\+::read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name, }
+\item[{int}]{dim\+Voc, }
+\item[{int}]{dim\+Emb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Word2VecReader_a32bb815f947b31ad52de05042982fa93}{}\label{classmarian_1_1Word2VecReader_a32bb815f947b31ad52de05042982fa93}
+
+
+Definition at line 20 of file word2vec\+\_\+reader.\+h.
+
+
+\begin{DoxyCode}
+20                                                                            \{
+21     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Loading embedding vectors from \{\}"}, fileName);
+22 
+23     std::ifstream embFile(fileName);
+24     UTIL\_THROW\_IF2(!embFile.is\_open(),
+25                    \textcolor{stringliteral}{"Unable to open file with embeddings: "} + fileName);
+26 
+27     std::string line;
+28     std::vector<std::string> values;
+29     values.reserve(dimEmb);
+30 
+31     \textcolor{comment}{// The first line contains two values: the number of words in the}
+32     \textcolor{comment}{// vocabulary and the length of embedding vectors}
+33     std::getline(embFile, line);
+34     \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, values);
+35     UTIL\_THROW\_IF2(values.size() != 2,
+36                    \textcolor{stringliteral}{"Unexpected format of the first line in embedding file"});
+37     UTIL\_THROW\_IF2(stoi(values[1]) != dimEmb,
+38                    \textcolor{stringliteral}{"Unexpected length of embedding vectors"});
+39 
+40     \textcolor{comment}{// Read embedding vectors into a map}
+41     std::unordered\_map<Word, std::vector<float>> word2vec;
+42     \textcolor{keywordflow}{while}(std::getline(embFile, line)) \{
+43       values.clear();
+44       \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, values);
+45 
+46       \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} word = std::stoi(values.front());
+47       \textcolor{keywordflow}{if}(word >= (\textcolor{keywordtype}{size\_t})dimVoc)
+48         \textcolor{keywordflow}{continue};
+49 
+50       word2vec[word].reserve(dimEmb);
+51       std::transform(values.begin() + 1,
+52                      values.end(),
+53                      std::back\_inserter(word2vec[word]),
+54                      [](\textcolor{keyword}{const} std::string& s) \{ \textcolor{keywordflow}{return} std::stof(s); \});
+55     \}
+56 
+57     \textcolor{comment}{// Initialize final flat vector for embeddings}
+58     std::vector<float> embs;
+59     embs.reserve(dimVoc * dimEmb);
+60 
+61     \textcolor{comment}{// Populate output vector with embedding}
+62     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} word = 0; word < (size\_t)dimVoc; ++word) \{
+63       \textcolor{comment}{// For words not occuring in the file use uniform distribution}
+64       \textcolor{keywordflow}{if}(word2vec.find(word) == word2vec.end()) \{
+65         \textcolor{keyword}{auto} randVals = \hyperlink{classmarian_1_1Word2VecReader_a4af907a4ff8a6c48d61dd9cb770ffe1b}{randomEmbeddings}(dimVoc, dimEmb);
+66         embs.insert(embs.end(), randVals.begin(), randVals.end());
+67       \} \textcolor{keywordflow}{else} \{
+68         embs.insert(embs.end(), word2vec[word].begin(), word2vec[word].end());
+69       \}
+70     \}
+71 
+72     \textcolor{keywordflow}{return} embs;
+73   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d3d/classmarian_1_1Word2VecReader_a32bb815f947b31ad52de05042982fa93_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{word2vec__reader_8h}{word2vec\+\_\+reader.\+h}\end{DoxyCompactItemize}

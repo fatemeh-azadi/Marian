@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dc0/classmarian_1_1Accumulator">
+<title>marian::Accumulator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d06/factory_8h">&lt;factory.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Accumulator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d16/classmarian_1_1Accumulator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Accumulator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d50/classmarian_1_1Accumulator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Factory</declname>
+        <defname>Factory</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/dc0/classmarian_1_1Accumulator_1adaea1333c529910642e9d2152d6b0252">Accumulator</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/dc0/classmarian_1_1Accumulator_1a345fa63687817aa7c1bb04d4fb9674f5">Accumulator</link> (
+const <link linkend="d5/d28/classmarian_1_1Factory">Factory</link> &amp; factory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/dc0/classmarian_1_1Accumulator_1a128ddface8764c47e00df51000cf3b97">Accumulator</link> (
+const <link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/dc0/classmarian_1_1Accumulator_1a3177fd1f47daac50ff52f589fde27736">Accumulator</link> (
+<link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link> &amp;&amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link> &amp; <link linkend="d3/dc0/classmarian_1_1Accumulator_1a4b8b5ce9f86b9eb95bab24f9d3280082">operator()</link> (
+const std::string &amp; key, T value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link> &amp; <link linkend="d3/dc0/classmarian_1_1Accumulator_1a4a2a61b1d4c808e171f388f5500c3fdb">operator()</link> (
+const std::string &amp; yaml)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link> &amp; <link linkend="d3/dc0/classmarian_1_1Accumulator_1a1e484c1642629556356cd7d50a4c34db">operator()</link> (
+YAML::Node yaml)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="d5/d28/classmarian_1_1Factory">Factory</link> &gt; <link linkend="d3/dc0/classmarian_1_1Accumulator_1a0e5b3dc96102bd31d11cd0158f6f9189">clone</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1adaea1333c529910642e9d2152d6b0252">
+                <title>marian::Accumulator&lt; Factory &gt;::Accumulator (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a345fa63687817aa7c1bb04d4fb9674f5">
+                <title>marian::Accumulator&lt; Factory &gt;::Accumulator (const Factory &amp;factory)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a128ddface8764c47e00df51000cf3b97">
+                <title>marian::Accumulator&lt; Factory &gt;::Accumulator (const Accumulator &amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a3177fd1f47daac50ff52f589fde27736">
+                <title>marian::Accumulator&lt; Factory &gt;::Accumulator (Accumulator &amp;&amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a4b8b5ce9f86b9eb95bab24f9d3280082">
+                <title>Accumulator&amp; marian::Accumulator&lt; Factory &gt;::operator() (const std::string &amp;key, T value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a4a2a61b1d4c808e171f388f5500c3fdb">
+                <title>Accumulator&amp; marian::Accumulator&lt; Factory &gt;::operator() (const std::string &amp;yaml)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a1e484c1642629556356cd7d50a4c34db">
+                <title>Accumulator&amp; marian::Accumulator&lt; Factory &gt;::operator() (YAML::Node yaml)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/dc0/classmarian_1_1Accumulator_1a0e5b3dc96102bd31d11cd0158f6f9189">
+                <title>Accumulator&lt;Factory&gt; marian::Accumulator&lt; Factory &gt;::clone ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,47 @@
+\hypertarget{sparse__tensor_8h}{}\section{sparse\+\_\+tensor.\+h File Reference}
+\label{sparse__tensor_8h}\index{sparse\+\_\+tensor.\+h@{sparse\+\_\+tensor.\+h}}
+{\ttfamily \#include $<$curand.\+h$>$}\\*
+{\ttfamily \#include $<$curand\+\_\+kernel.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/device\+\_\+ptr.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/sort.\+h$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include \char`\"{}kernels/cuda\+\_\+helpers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kernels/tensor\+\_\+operators.\+h\char`\"{}}\\*
+Include dependency graph for sparse\+\_\+tensor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dee/sparse__tensor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d6/d33/sparse__tensor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1SparseTensorBase}{marian\+::\+Sparse\+Tensor\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ Sparse\+Tensor\+Base $>$ \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{marian\+::\+Sparse\+Tensor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_adc3c4f8758198c5bc99f8ed1513592a8}{marian\+::g\+Scatter\+Add} (float $\ast$dense\+Data, float $\ast$sparse\+Data, int $\ast$sparse\+Indices, int dense\+Size, int sparse\+Size, int offset)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_ad5d3e80a51721c2ad517fa4b1b85f0a3}{marian\+::g\+Find\+Subtensor} (int $\ast$indices, int size, int target\+Start, int target\+End, int $\ast$result\+Start, int $\ast$result\+End)
+\end{DoxyCompactItemize}

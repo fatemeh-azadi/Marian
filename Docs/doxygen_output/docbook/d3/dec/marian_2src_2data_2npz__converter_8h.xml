@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dec/marian_2src_2data_2npz__converter_8h">
+    <title>marian/src/data/npz_converter.h File Reference</title>
+    <programlisting>#include &quot;cnpy/cnpy.h&quot;</programlisting>
+    <programlisting>#include &quot;tensor.h&quot;</programlisting>
+<para>Include dependency diagram for marian/src/data/npz_converter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d79/marian_2src_2data_2npz__converter_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/data/npz_converter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d20/marian_2src_2data_2npz__converter_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/deb/classNpzConverter">NpzConverter</link></para>
+<para><emphasis>Loads model data stored in a npz file.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper">NpzConverter::NpyMatrixWrapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file npz_converter.h</para>
+    </simplesect>
+</section>

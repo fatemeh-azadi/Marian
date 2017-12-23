@@ -1,0 +1,281 @@
+\hypertarget{structmarian_1_1MeanNodeOp}{}\section{marian\+:\+:Mean\+Node\+Op Struct Reference}
+\label{structmarian_1_1MeanNodeOp}\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Mean\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d0b/structmarian_1_1MeanNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Mean\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ded/structmarian_1_1MeanNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1MeanNodeOp_ad07d3567d7f72f2feb462a60c5881abd}{Mean\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1MeanNodeOp_a381e225665df25b105acaab9c60818d3}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1MeanNodeOp_a6ea05faab13f92bf40430274016db0f6}{backward\+Ops} ()
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1MeanNodeOp_a21514a578bd7952b2d863cd164279baf}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+const std\+::string \hyperlink{structmarian_1_1MeanNodeOp_a4d61e4573be915e1d0bbeb463aab54d6}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1MeanNodeOp_a695658ac77c947c09a49e8520f8879b3}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmarian_1_1MeanNodeOp_ad13bf2fe5226515ff69604464968e14f}{ax\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 279 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!Mean\+Node\+Op@{Mean\+Node\+Op}}
+\index{Mean\+Node\+Op@{Mean\+Node\+Op}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Mean\+Node\+Op(\+Expr a, Args...\+args)}{MeanNodeOp(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Mean\+Node\+Op\+::\+Mean\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1MeanNodeOp_ad07d3567d7f72f2feb462a60c5881abd}{}\label{structmarian_1_1MeanNodeOp_ad07d3567d7f72f2feb462a60c5881abd}
+
+
+Definition at line 283 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+284       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1MeanNodeOp_a21514a578bd7952b2d863cd164279baf}{newShape}(a, args...), args...),
+285         \hyperlink{structmarian_1_1MeanNodeOp_ad13bf2fe5226515ff69604464968e14f}{ax\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, -1, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Mean\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1MeanNodeOp_a6ea05faab13f92bf40430274016db0f6}{}\label{structmarian_1_1MeanNodeOp_a6ea05faab13f92bf40430274016db0f6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 294 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+294                         \{
+295     \textcolor{keywordtype}{int} left = \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->shape().elements() / \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}->shape().elements();
+296     \textcolor{keywordtype}{float} scale = 1.f / left;
+297 
+298     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, scale))\};
+299   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dfa/structmarian_1_1MeanNodeOp_a6ea05faab13f92bf40430274016db0f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Mean\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1MeanNodeOp_a695658ac77c947c09a49e8520f8879b3}{}\label{structmarian_1_1MeanNodeOp_a695658ac77c947c09a49e8520f8879b3}
+
+
+Reimplemented from \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}.
+
+
+
+Definition at line 318 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+318 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"orange"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Mean\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1MeanNodeOp_a381e225665df25b105acaab9c60818d3}{}\label{structmarian_1_1MeanNodeOp_a381e225665df25b105acaab9c60818d3}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 287 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+287                        \{
+288     \textcolor{keywordtype}{int} left = \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->shape().elements() / \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}->shape().elements();
+289     \textcolor{keywordtype}{float} scale = 1.f / left;
+290 
+291     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_ad1f1697aac9247a78d2242921d538402}{Reduce}(\_1, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), scale))\};
+292   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dfa/structmarian_1_1MeanNodeOp_a381e225665df25b105acaab9c60818d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Mean\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb}{}\label{structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 320 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+320                         \{
+321     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+322       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+323       \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}, \hyperlink{structmarian_1_1MeanNodeOp_ad13bf2fe5226515ff69604464968e14f}{ax\_});
+324     \}
+325     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+326   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dfa/structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a, Args...\+args)}{newShape(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ {\bf Shape} marian\+::\+Mean\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1MeanNodeOp_a21514a578bd7952b2d863cd164279baf}{}\label{structmarian_1_1MeanNodeOp_a21514a578bd7952b2d863cd164279baf}
+
+
+Definition at line 302 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+302                                        \{
+303     \textcolor{keywordtype}{int} ax = \hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, -1, args...);
+304     Shape \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape} = a->shape();
+305     \textcolor{keywordflow}{if}(ax != -1) \{
+306       shape.\hyperlink{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}{set}(ax, 1);
+307     \} \textcolor{keywordflow}{else} \{
+308       shape.set(0, 1);
+309       shape.set(1, 1);
+310       shape.set(2, 1);
+311       shape.set(3, 1);
+312     \}
+313     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape};
+314   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dfa/structmarian_1_1MeanNodeOp_a21514a578bd7952b2d863cd164279baf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Mean\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1MeanNodeOp_a4d61e4573be915e1d0bbeb463aab54d6}{}\label{structmarian_1_1MeanNodeOp_a4d61e4573be915e1d0bbeb463aab54d6}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 316 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+316 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"mean"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}!ax\+\_\+@{ax\+\_\+}}
+\index{ax\+\_\+@{ax\+\_\+}!marian\+::\+Mean\+Node\+Op@{marian\+::\+Mean\+Node\+Op}}
+\subsubsection[{\texorpdfstring{ax\+\_\+}{ax_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Mean\+Node\+Op\+::ax\+\_\+}\hypertarget{structmarian_1_1MeanNodeOp_ad13bf2fe5226515ff69604464968e14f}{}\label{structmarian_1_1MeanNodeOp_ad13bf2fe5226515ff69604464968e14f}
+
+
+Definition at line 280 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

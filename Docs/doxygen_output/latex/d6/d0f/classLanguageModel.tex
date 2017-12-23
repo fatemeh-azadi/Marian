@@ -1,0 +1,135 @@
+\hypertarget{classLanguageModel}{}\section{Language\+Model Class Reference}
+\label{classLanguageModel}\index{Language\+Model@{Language\+Model}}
+
+
+{\ttfamily \#include $<$language\+\_\+model.\+h$>$}
+
+
+
+Inheritance diagram for Language\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d1/d3a/classLanguageModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Language\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d58/classLanguageModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLanguageModel_ae49d1d4f89ed5d16c727772fcbb9f886}{Language\+Model} (const \hyperlink{classLM}{LM} \&lm)
+\item 
+virtual void \hyperlink{classLanguageModel_aaab17275191d2a9080e248282be355be}{Score} (const State \&in, Prob \&prob, State \&out)
+\item 
+virtual State $\ast$ \hyperlink{classLanguageModel_acf23ce2df7ca1a9f4a0fc951418dbb7f}{New\+State} ()
+\item 
+virtual void \hyperlink{classLanguageModel_a1344b4e834417a380e2f79137ff6391f}{Begin\+Sentence\+State} (State \&state)
+\item 
+virtual void \hyperlink{classLanguageModel_a01e4a01d056783dd433c88a968ec04df}{Assemble\+Beam\+State} (const State \&in, const Beam \&beam, State \&out)
+\item 
+virtual size\+\_\+t \hyperlink{classLanguageModel_afe5aa1473c87082b942a853ce20e9919}{Get\+Vocab\+Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLanguageModelState}{Language\+Model\+State} \hyperlink{classLanguageModel_a528d925f7fa4fcc1da9bc4fb0906f938}{L\+M\+State}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classLM}{LM} \& \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file language\+\_\+model.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Language\+Model@{Language\+Model}!L\+M\+State@{L\+M\+State}}
+\index{L\+M\+State@{L\+M\+State}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{L\+M\+State}{LMState}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Language\+Model\+State} {\bf Language\+Model\+::\+L\+M\+State}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLanguageModel_a528d925f7fa4fcc1da9bc4fb0906f938}{}\label{classLanguageModel_a528d925f7fa4fcc1da9bc4fb0906f938}
+
+
+Definition at line 28 of file language\+\_\+model.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Language\+Model@{Language\+Model}!Language\+Model@{Language\+Model}}
+\index{Language\+Model@{Language\+Model}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{Language\+Model(const L\+M \&lm)}{LanguageModel(const LM &lm)}}]{\setlength{\rightskip}{0pt plus 5cm}Language\+Model\+::\+Language\+Model (
+\begin{DoxyParamCaption}
+\item[{const {\bf LM} \&}]{lm}
+\end{DoxyParamCaption}
+)}\hypertarget{classLanguageModel_ae49d1d4f89ed5d16c727772fcbb9f886}{}\label{classLanguageModel_ae49d1d4f89ed5d16c727772fcbb9f886}
+
+
+\subsection{Member Function Documentation}
+\index{Language\+Model@{Language\+Model}!Assemble\+Beam\+State@{Assemble\+Beam\+State}}
+\index{Assemble\+Beam\+State@{Assemble\+Beam\+State}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{Assemble\+Beam\+State(const State \&in, const Beam \&beam, State \&out)}{AssembleBeamState(const State &in, const Beam &beam, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Language\+Model\+::\+Assemble\+Beam\+State (
+\begin{DoxyParamCaption}
+\item[{const State \&}]{in, }
+\item[{const Beam \&}]{beam, }
+\item[{State \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLanguageModel_a01e4a01d056783dd433c88a968ec04df}{}\label{classLanguageModel_a01e4a01d056783dd433c88a968ec04df}
+\index{Language\+Model@{Language\+Model}!Begin\+Sentence\+State@{Begin\+Sentence\+State}}
+\index{Begin\+Sentence\+State@{Begin\+Sentence\+State}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{Begin\+Sentence\+State(\+State \&state)}{BeginSentenceState(State &state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Language\+Model\+::\+Begin\+Sentence\+State (
+\begin{DoxyParamCaption}
+\item[{State \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLanguageModel_a1344b4e834417a380e2f79137ff6391f}{}\label{classLanguageModel_a1344b4e834417a380e2f79137ff6391f}
+\index{Language\+Model@{Language\+Model}!Get\+Vocab\+Size@{Get\+Vocab\+Size}}
+\index{Get\+Vocab\+Size@{Get\+Vocab\+Size}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Vocab\+Size() const }{GetVocabSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t Language\+Model\+::\+Get\+Vocab\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLanguageModel_afe5aa1473c87082b942a853ce20e9919}{}\label{classLanguageModel_afe5aa1473c87082b942a853ce20e9919}
+\index{Language\+Model@{Language\+Model}!New\+State@{New\+State}}
+\index{New\+State@{New\+State}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{New\+State()}{NewState()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual State$\ast$ Language\+Model\+::\+New\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLanguageModel_acf23ce2df7ca1a9f4a0fc951418dbb7f}{}\label{classLanguageModel_acf23ce2df7ca1a9f4a0fc951418dbb7f}
+\index{Language\+Model@{Language\+Model}!Score@{Score}}
+\index{Score@{Score}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{Score(const State \&in, Prob \&prob, State \&out)}{Score(const State &in, Prob &prob, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Language\+Model\+::\+Score (
+\begin{DoxyParamCaption}
+\item[{const State \&}]{in, }
+\item[{Prob \&}]{prob, }
+\item[{State \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLanguageModel_aaab17275191d2a9080e248282be355be}{}\label{classLanguageModel_aaab17275191d2a9080e248282be355be}
+
+
+\subsection{Member Data Documentation}
+\index{Language\+Model@{Language\+Model}!lm\+\_\+@{lm\+\_\+}}
+\index{lm\+\_\+@{lm\+\_\+}!Language\+Model@{Language\+Model}}
+\subsubsection[{\texorpdfstring{lm\+\_\+}{lm_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf LM}\& Language\+Model\+::lm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{}\label{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}
+
+
+Definition at line 48 of file language\+\_\+model.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{language__model_8h}{language\+\_\+model.\+h}\end{DoxyCompactItemize}

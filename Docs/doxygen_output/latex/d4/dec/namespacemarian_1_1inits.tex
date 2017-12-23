@@ -1,0 +1,383 @@
+\hypertarget{namespacemarian_1_1inits}{}\section{marian\+:\+:inits Namespace Reference}
+\label{namespacemarian_1_1inits}\index{marian\+::inits@{marian\+::inits}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{namespacemarian_1_1inits_a0b3a55d11c2c9df0b982c3d7ebeb3361}{xor128} ()
+\item 
+void \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{zeros} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{ones} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{from\+\_\+value} (float v)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_a41ba9c52b4ff5938b68c85042bbd8fb6}{diag} (float val)
+\item 
+{\footnotesize template$<$class Distribution $>$ }\\void \hyperlink{namespacemarian_1_1inits_abae13bbee70d5a54e5aff0e07dc51e10}{distribution} (std\+::vector$<$ float $>$ \&vals, float a, float b)
+\item 
+{\footnotesize template$<$class Distribution $>$ }\\void \hyperlink{namespacemarian_1_1inits_a4d7520676277911627cd1d73ac2380c6}{distribution} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t, float a, float b)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_ab7e64c6e535adbc8b3ace787a9027de5}{normal} (float scale=0.\+1, bool \hyperlink{namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1}{ortho}=true)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{uniform} (float scale=0.\+1)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1}{ortho} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{glorot\+\_\+uniform} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_a8b5e30d897124066180a5d55ce811ee0}{xorshift} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+void \hyperlink{namespacemarian_1_1inits_aa41bfdd6abbcc4567bad71f7a76b50da}{glorot\+\_\+normal} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{from\+\_\+vector} (const std\+::vector$<$ float $>$ \&v)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_af5f6f0108b5161e1596151ded5953a71}{from\+\_\+vector} (const std\+::vector$<$ size\+\_\+t $>$ \&v)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_aa01b0ccf77ec55218396670f8c49e191}{from\+\_\+sparse\+\_\+vector} (std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&v)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200}{from\+\_\+numpy} (const cnpy\+::\+Npy\+Array \&np)
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756}{from\+\_\+word2vec} (const std\+::string \&file, int dim\+Voc, int dim\+Emb, bool normalize=false)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{marian\+::inits@{marian\+::inits}!diag@{diag}}
+\index{diag@{diag}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{diag(float val)}{diag(float val)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::diag (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a41ba9c52b4ff5938b68c85042bbd8fb6}{}\label{namespacemarian_1_1inits_a41ba9c52b4ff5938b68c85042bbd8fb6}
+\index{marian\+::inits@{marian\+::inits}!distribution@{distribution}}
+\index{distribution@{distribution}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{distribution(std\+::vector$<$ float $>$ \&vals, float a, float b)}{distribution(std::vector< float > &vals, float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Distribution $>$ void marian\+::inits\+::distribution (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{vals, }
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_abae13bbee70d5a54e5aff0e07dc51e10}{}\label{namespacemarian_1_1inits_abae13bbee70d5a54e5aff0e07dc51e10}
+
+
+Definition at line 28 of file param\+\_\+initializers.\+h.
+
+
+\begin{DoxyCode}
+28                                                             \{
+29   std::default\_random\_engine engine(Config::seed++);
+30   Distribution \hyperlink{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}{dist}(a, b);
+31   \textcolor{keyword}{auto} gen = std::bind(\hyperlink{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}{dist}, engine);
+32   std::generate(begin(vals), end(vals), gen);
+33 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dec/namespacemarian_1_1inits_abae13bbee70d5a54e5aff0e07dc51e10_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!distribution@{distribution}}
+\index{distribution@{distribution}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{distribution(\+Tensor t, float a, float b)}{distribution(Tensor t, float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Distribution $>$ void marian\+::inits\+::distribution (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t, }
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a4d7520676277911627cd1d73ac2380c6}{}\label{namespacemarian_1_1inits_a4d7520676277911627cd1d73ac2380c6}
+
+
+Definition at line 36 of file param\+\_\+initializers.\+h.
+
+
+\begin{DoxyCode}
+36                                               \{
+37   std::vector<float> vals(t->size());
+38   distribution<Distribution>(vals, a, b);
+39   t << vals;
+40 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{d4/dec/namespacemarian_1_1inits_a4d7520676277911627cd1d73ac2380c6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+numpy@{from\+\_\+numpy}}
+\index{from\+\_\+numpy@{from\+\_\+numpy}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+numpy(const cnpy\+::\+Npy\+Array \&np)}{from_numpy(const cnpy::NpyArray &np)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+numpy (
+\begin{DoxyParamCaption}
+\item[{const cnpy\+::\+Npy\+Array \&}]{np}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200}{}\label{namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d4/dec/namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+sparse\+\_\+vector@{from\+\_\+sparse\+\_\+vector}}
+\index{from\+\_\+sparse\+\_\+vector@{from\+\_\+sparse\+\_\+vector}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+sparse\+\_\+vector(std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&v)}{from_sparse_vector(std::pair< std::vector< size_t >, std::vector< float >> &v)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+sparse\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_aa01b0ccf77ec55218396670f8c49e191}{}\label{namespacemarian_1_1inits_aa01b0ccf77ec55218396670f8c49e191}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d4/dec/namespacemarian_1_1inits_aa01b0ccf77ec55218396670f8c49e191_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+value@{from\+\_\+value}}
+\index{from\+\_\+value@{from\+\_\+value}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+value(float v)}{from_value(float v)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{float}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{}\label{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d4/dec/namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+vector@{from\+\_\+vector}}
+\index{from\+\_\+vector@{from\+\_\+vector}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+vector(const std\+::vector$<$ float $>$ \&v)}{from_vector(const std::vector< float > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{}\label{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dec/namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+vector@{from\+\_\+vector}}
+\index{from\+\_\+vector@{from\+\_\+vector}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+vector(const std\+::vector$<$ size\+\_\+t $>$ \&v)}{from_vector(const std::vector< size_t > &v)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_af5f6f0108b5161e1596151ded5953a71}{}\label{namespacemarian_1_1inits_af5f6f0108b5161e1596151ded5953a71}
+\index{marian\+::inits@{marian\+::inits}!from\+\_\+word2vec@{from\+\_\+word2vec}}
+\index{from\+\_\+word2vec@{from\+\_\+word2vec}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{from\+\_\+word2vec(const std\+::string \&file, int dim\+Voc, int dim\+Emb, bool normalize=false)}{from_word2vec(const std::string &file, int dimVoc, int dimEmb, bool normalize=false)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::from\+\_\+word2vec (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file, }
+\item[{int}]{dim\+Voc, }
+\item[{int}]{dim\+Emb, }
+\item[{bool}]{normalize = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756}{}\label{namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{d4/dec/namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!glorot\+\_\+normal@{glorot\+\_\+normal}}
+\index{glorot\+\_\+normal@{glorot\+\_\+normal}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{glorot\+\_\+normal(\+Tensor t)}{glorot_normal(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::glorot\+\_\+normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_aa41bfdd6abbcc4567bad71f7a76b50da}{}\label{namespacemarian_1_1inits_aa41bfdd6abbcc4567bad71f7a76b50da}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d4/dec/namespacemarian_1_1inits_aa41bfdd6abbcc4567bad71f7a76b50da_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!glorot\+\_\+uniform@{glorot\+\_\+uniform}}
+\index{glorot\+\_\+uniform@{glorot\+\_\+uniform}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{glorot\+\_\+uniform(\+Tensor t)}{glorot_uniform(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::glorot\+\_\+uniform (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{}\label{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/dec/namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!normal@{normal}}
+\index{normal@{normal}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{normal(float scale=0.\+1, bool ortho=true)}{normal(float scale=0.1, bool ortho=true)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::normal (
+\begin{DoxyParamCaption}
+\item[{float}]{scale = {\ttfamily 0.1}, }
+\item[{bool}]{ortho = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_ab7e64c6e535adbc8b3ace787a9027de5}{}\label{namespacemarian_1_1inits_ab7e64c6e535adbc8b3ace787a9027de5}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d4/dec/namespacemarian_1_1inits_ab7e64c6e535adbc8b3ace787a9027de5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!ones@{ones}}
+\index{ones@{ones}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{ones(\+Tensor t)}{ones(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::ones (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{}\label{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d4/dec/namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!ortho@{ortho}}
+\index{ortho@{ortho}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{ortho(\+Tensor t)}{ortho(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::ortho (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1}{}\label{namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d4/dec/namespacemarian_1_1inits_a808daef275cdf015fae319efe2a5b6e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!uniform@{uniform}}
+\index{uniform@{uniform}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{uniform(float scale=0.\+1)}{uniform(float scale=0.1)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::inits\+::uniform (
+\begin{DoxyParamCaption}
+\item[{float}]{scale = {\ttfamily 0.1}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{}\label{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dec/namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!xor128@{xor128}}
+\index{xor128@{xor128}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{xor128()}{xor128()}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::inits\+::xor128 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a0b3a55d11c2c9df0b982c3d7ebeb3361}{}\label{namespacemarian_1_1inits_a0b3a55d11c2c9df0b982c3d7ebeb3361}
+\index{marian\+::inits@{marian\+::inits}!xorshift@{xorshift}}
+\index{xorshift@{xorshift}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{xorshift(\+Tensor t)}{xorshift(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::xorshift (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a8b5e30d897124066180a5d55ce811ee0}{}\label{namespacemarian_1_1inits_a8b5e30d897124066180a5d55ce811ee0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{d4/dec/namespacemarian_1_1inits_a8b5e30d897124066180a5d55ce811ee0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::inits@{marian\+::inits}!zeros@{zeros}}
+\index{zeros@{zeros}!marian\+::inits@{marian\+::inits}}
+\subsubsection[{\texorpdfstring{zeros(\+Tensor t)}{zeros(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::inits\+::zeros (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{}\label{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/dec/namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359_icgraph}
+\end{center}
+\end{figure}
+
+

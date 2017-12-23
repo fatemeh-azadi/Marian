@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S">
+<title>marian::MultiDecoderS2S class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/dde/multi__s2s_8h">&lt;multi_s2s.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultiDecoderS2S</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d59/classmarian_1_1MultiDecoderS2S__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultiDecoderS2S</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/ddf/classmarian_1_1MultiDecoderS2S__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; rnn::RNN &gt; rnn_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr tiedOutputWeights_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; rnn::RNN &gt; <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S_1a9f48a07e49a8b2608eadc93138cde75c">constructDecoderRNN</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S_1a68eed32b91e7a057d3311669c15b91d2">MultiDecoderS2S</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S_1a3facd6e243c6fd8d656b49dedbba4948">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; encState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S_1a6f0421ce42840c6198f3d450b3d55bfb">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S_1a9d82178076ee276d1f83ac4e040d959b">getAlignments</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S_1a9f48a07e49a8b2608eadc93138cde75c">
+                <title>Ptr&lt;rnn::RNN&gt; marian::MultiDecoderS2S::constructDecoderRNN (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S_1a68eed32b91e7a057d3311669c15b91d2">
+                <title>marian::MultiDecoderS2S::MultiDecoderS2S (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S_1a3facd6e243c6fd8d656b49dedbba4948">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::MultiDecoderS2S::startState (Ptr&lt; EncoderState &gt; encState)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S_1a6f0421ce42840c6198f3d450b3d55bfb">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::MultiDecoderS2S::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3b/classmarian_1_1MultiDecoderS2S_1a9d82178076ee276d1f83ac4e040d959b">
+                <title>virtual const std::vector&lt;Expr&gt; marian::MultiDecoderS2S::getAlignments ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

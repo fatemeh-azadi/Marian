@@ -1,0 +1,201 @@
+\hypertarget{classmarian_1_1TrainingState}{}\section{marian\+:\+:Training\+State Class Reference}
+\label{classmarian_1_1TrainingState}\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+
+
+{\ttfamily \#include $<$training\+\_\+state.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Training\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d3/d19/classmarian_1_1TrainingState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1TrainingState_a779eb7a4b5a0d5f014ac097cf63d5160}{Training\+State} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1TrainingState_a6babf2034b20e5287a7eab8db27195c8}{register\+Observer} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TrainingObserver}{Training\+Observer} $>$ observer)
+\item 
+void \hyperlink{classmarian_1_1TrainingState_a2bb562c6092063a3135d3320ae8c3590}{new\+Epoch} (int num)
+\item 
+void \hyperlink{classmarian_1_1TrainingState_a7ffdee69043609288065ab193112abfb}{new\+Batches} (int num)
+\item 
+void \hyperlink{classmarian_1_1TrainingState_aab523ccb0a9285fb6f713d293befcbdd}{new\+Stalled} (int num)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmarian_1_1TrainingState_af5401310c2dc5aa0dad01d36efd0d508}{epochs} \{1\}
+\item 
+int \hyperlink{classmarian_1_1TrainingState_ab2d469b72278e47d92a82cd6b24f93c7}{batches} \{0\}
+\item 
+int \hyperlink{classmarian_1_1TrainingState_a8e007320f3eb4860aa19af20ce18c13d}{stalled} \{0\}
+\item 
+int \hyperlink{classmarian_1_1TrainingState_a7ff30779aa3ac9b66118a64211cab7fd}{max\+Stalled} \{0\}
+\item 
+float \hyperlink{classmarian_1_1TrainingState_ae8adecdd9040fc08d1fe0dfdc27aabbe}{eta}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TrainingObserver}{Training\+Observer} $>$ $>$ \hyperlink{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{observers\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file training\+\_\+state.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!Training\+State@{Training\+State}}
+\index{Training\+State@{Training\+State}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{Training\+State(\+Ptr$<$ Config $>$ options)}{TrainingState(Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Training\+State\+::\+Training\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainingState_a779eb7a4b5a0d5f014ac097cf63d5160}{}\label{classmarian_1_1TrainingState_a779eb7a4b5a0d5f014ac097cf63d5160}
+
+
+Definition at line 27 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+27 : \hyperlink{classmarian_1_1TrainingState_ae8adecdd9040fc08d1fe0dfdc27aabbe}{eta}(options->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"learn-rate"})) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!new\+Batches@{new\+Batches}}
+\index{new\+Batches@{new\+Batches}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{new\+Batches(int num)}{newBatches(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Training\+State\+::new\+Batches (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainingState_a7ffdee69043609288065ab193112abfb}{}\label{classmarian_1_1TrainingState_a7ffdee69043609288065ab193112abfb}
+
+
+Definition at line 39 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+39                            \{
+40     \hyperlink{classmarian_1_1TrainingState_ab2d469b72278e47d92a82cd6b24f93c7}{batches} = num;
+41     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} observer : \hyperlink{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{observers\_})
+42       observer->actAfterBatches(*\textcolor{keyword}{this});
+43   \}
+\end{DoxyCode}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!new\+Epoch@{new\+Epoch}}
+\index{new\+Epoch@{new\+Epoch}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{new\+Epoch(int num)}{newEpoch(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Training\+State\+::new\+Epoch (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainingState_a2bb562c6092063a3135d3320ae8c3590}{}\label{classmarian_1_1TrainingState_a2bb562c6092063a3135d3320ae8c3590}
+
+
+Definition at line 33 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+33                          \{
+34     \hyperlink{classmarian_1_1TrainingState_af5401310c2dc5aa0dad01d36efd0d508}{epochs} = num;
+35     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} observer : \hyperlink{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{observers\_})
+36       observer->actAfterEpoch(*\textcolor{keyword}{this});
+37   \}
+\end{DoxyCode}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!new\+Stalled@{new\+Stalled}}
+\index{new\+Stalled@{new\+Stalled}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{new\+Stalled(int num)}{newStalled(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Training\+State\+::new\+Stalled (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainingState_aab523ccb0a9285fb6f713d293befcbdd}{}\label{classmarian_1_1TrainingState_aab523ccb0a9285fb6f713d293befcbdd}
+
+
+Definition at line 45 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+45                            \{
+46     \hyperlink{classmarian_1_1TrainingState_a8e007320f3eb4860aa19af20ce18c13d}{stalled} = num;
+47     \textcolor{keywordflow}{if}(num > \hyperlink{classmarian_1_1TrainingState_a7ff30779aa3ac9b66118a64211cab7fd}{maxStalled})
+48       ++\hyperlink{classmarian_1_1TrainingState_a7ff30779aa3ac9b66118a64211cab7fd}{maxStalled};
+49     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} observer : \hyperlink{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{observers\_})
+50       observer->actAfterStalled(*\textcolor{keyword}{this});
+51   \}
+\end{DoxyCode}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!register\+Observer@{register\+Observer}}
+\index{register\+Observer@{register\+Observer}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{register\+Observer(\+Ptr$<$ Training\+Observer $>$ observer)}{registerObserver(Ptr< TrainingObserver > observer)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Training\+State\+::register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Training\+Observer} $>$}]{observer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainingState_a6babf2034b20e5287a7eab8db27195c8}{}\label{classmarian_1_1TrainingState_a6babf2034b20e5287a7eab8db27195c8}
+
+
+Definition at line 29 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+29                                                         \{
+30     \hyperlink{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{observers\_}.push\_back(observer);
+31   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!batches@{batches}}
+\index{batches@{batches}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{batches}{batches}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Training\+State\+::batches \{0\}}\hypertarget{classmarian_1_1TrainingState_ab2d469b72278e47d92a82cd6b24f93c7}{}\label{classmarian_1_1TrainingState_ab2d469b72278e47d92a82cd6b24f93c7}
+
+
+Definition at line 22 of file training\+\_\+state.\+h.
+
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!epochs@{epochs}}
+\index{epochs@{epochs}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{epochs}{epochs}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Training\+State\+::epochs \{1\}}\hypertarget{classmarian_1_1TrainingState_af5401310c2dc5aa0dad01d36efd0d508}{}\label{classmarian_1_1TrainingState_af5401310c2dc5aa0dad01d36efd0d508}
+
+
+Definition at line 21 of file training\+\_\+state.\+h.
+
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!eta@{eta}}
+\index{eta@{eta}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{eta}{eta}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Training\+State\+::eta}\hypertarget{classmarian_1_1TrainingState_ae8adecdd9040fc08d1fe0dfdc27aabbe}{}\label{classmarian_1_1TrainingState_ae8adecdd9040fc08d1fe0dfdc27aabbe}
+
+
+Definition at line 25 of file training\+\_\+state.\+h.
+
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!max\+Stalled@{max\+Stalled}}
+\index{max\+Stalled@{max\+Stalled}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{max\+Stalled}{maxStalled}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Training\+State\+::max\+Stalled \{0\}}\hypertarget{classmarian_1_1TrainingState_a7ff30779aa3ac9b66118a64211cab7fd}{}\label{classmarian_1_1TrainingState_a7ff30779aa3ac9b66118a64211cab7fd}
+
+
+Definition at line 24 of file training\+\_\+state.\+h.
+
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!observers\+\_\+@{observers\+\_\+}}
+\index{observers\+\_\+@{observers\+\_\+}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{observers\+\_\+}{observers_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Training\+Observer}$>$ $>$ marian\+::\+Training\+State\+::observers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}{}\label{classmarian_1_1TrainingState_a2ed373fb68e74a5c1889b5f7dcccfa2e}
+
+
+Definition at line 54 of file training\+\_\+state.\+h.
+
+\index{marian\+::\+Training\+State@{marian\+::\+Training\+State}!stalled@{stalled}}
+\index{stalled@{stalled}!marian\+::\+Training\+State@{marian\+::\+Training\+State}}
+\subsubsection[{\texorpdfstring{stalled}{stalled}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Training\+State\+::stalled \{0\}}\hypertarget{classmarian_1_1TrainingState_a8e007320f3eb4860aa19af20ce18c13d}{}\label{classmarian_1_1TrainingState_a8e007320f3eb4860aa19af20ce18c13d}
+
+
+Definition at line 23 of file training\+\_\+state.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{training__state_8h}{training\+\_\+state.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d30/classmarian_1_1rnn_1_1TestLSTM">
+<title>marian::rnn::TestLSTM class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/de1/cells_8h">&lt;cells.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::TestLSTM</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dc5/classmarian_1_1rnn_1_1TestLSTM__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::TestLSTM</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d10/classmarian_1_1rnn_1_1TestLSTM__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr U_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr W_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr b_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1afd996ed5e9ee36a15247187e3f67fd78">TestLSTM</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1a1e2524b853677d43eb4425d3e0bf9d97">apply</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1ac09c1e1826106361719f05b47ed5fb9f">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1ac19a0a1f05d7eb0510af4436dfdd40ae">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; xWs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1afd996ed5e9ee36a15247187e3f67fd78">
+                <title>marian::rnn::TestLSTM::TestLSTM (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1a1e2524b853677d43eb4425d3e0bf9d97">
+                <title>State marian::rnn::TestLSTM::apply (std::vector&lt; Expr &gt; inputs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1ac09c1e1826106361719f05b47ed5fb9f">
+                <title>std::vector&lt;Expr&gt; marian::rnn::TestLSTM::applyInput (std::vector&lt; Expr &gt; inputs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1rnn_1_1TestLSTM_1ac19a0a1f05d7eb0510af4436dfdd40ae">
+                <title>State marian::rnn::TestLSTM::applyState (std::vector&lt; Expr &gt; xWs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

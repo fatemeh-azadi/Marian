@@ -1,0 +1,310 @@
+\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder}{}\section{amunmt\+:\+:G\+PU\+:\+:Encoder\+Decoder Class Reference}
+\label{classamunmt_1_1GPU_1_1EncoderDecoder}\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+
+
+{\ttfamily \#include $<$encoder\+\_\+decoder.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Encoder\+Decoder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/de3/classamunmt_1_1GPU_1_1EncoderDecoder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Encoder\+Decoder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/ded/classamunmt_1_1GPU_1_1EncoderDecoder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a651723011354bc2f6cd3b97ffffdf799}{Encoder\+Decoder} (const \hyperlink{classamunmt_1_1God}{God} \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t tab, const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+virtual \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a8445580b7f4368c725576a85294d156a}{$\sim$\+Encoder\+Decoder} ()
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a38b3304df3924adce09572d1bfeaeeb9}{Decode} (const \hyperlink{classamunmt_1_1State}{State} \&in, \hyperlink{classamunmt_1_1State}{State} \&out, const std\+::vector$<$ uint $>$ \&beam\+Sizes)
+\item 
+virtual \hyperlink{classamunmt_1_1State}{State} $\ast$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_ad9db448ea4d611f9ebe01c3c6940f0d5}{New\+State} () const 
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a126f5eab05e71a8b379ddd7eb8f0c75d}{Begin\+Sentence\+State} (\hyperlink{classamunmt_1_1State}{State} \&state, size\+\_\+t batch\+Size=1)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_ab58288661c243eefa5d7659e5d67bf14}{Encode} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&source)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a68e25bd3b886b3cbf4331358668dde80}{Assemble\+Beam\+State} (const \hyperlink{classamunmt_1_1State}{State} \&in, const \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&beam, \hyperlink{classamunmt_1_1State}{State} \&out)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a131827ae9f2a8512beb981f97ec3f565}{Get\+Attention} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Attention)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \& \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a7aceb128a918b03ff2117b377289dd55}{Get\+Attention} ()
+\item 
+virtual \hyperlink{classamunmt_1_1BaseMatrix}{Base\+Matrix} \& \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_aeb1b4060912c9388a1709f524bd63edd}{Get\+Probs} ()
+\item 
+virtual void $\ast$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a1c0f253dc60177dd329097939c2205ba}{Get\+N\+Best} ()
+\item 
+virtual const \hyperlink{classamunmt_1_1BaseMatrix}{Base\+Matrix} $\ast$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a98409af8232092003aff6d1bf0e22ce8}{Get\+Bias} () const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_af89773296b4a04108e0d2999ca34bf5e}{Get\+Vocab\+Size} () const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_ab3e30630d71c914eace68236da36fb44}{Filter} (const std\+::vector$<$ uint $>$ \&filter\+Ids)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoderState}{Encoder\+Decoder\+State} \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a27acf1f919cac82e29403b5d600e4700}{E\+D\+State}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a774ab57865bb75d3eff942603a0bef50}{Encoder\+Decoder} (const \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder}{Encoder\+Decoder} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_add8e2bd2813773ed4a065bcd3f61ed53}{model\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Encoder}{Encoder} $>$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a82f39e1636ccb055a0fefef34714240d}{encoder\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Decoder}{Decoder} $>$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_aa4b1f9d9dd63fa77d117d2925ec835ab}{decoder\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_ac073876fdd7353241f52941d7b7d0351}{indices\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_aa136ecd71d9211ee3fc9c04c22930e02}{sentence\+Lengths\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder_a14a3d24c5ddf7916a3c1e853eae929ff}{Source\+Context\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file encoder\+\_\+decoder.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!E\+D\+State@{E\+D\+State}}
+\index{E\+D\+State@{E\+D\+State}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{E\+D\+State}{EDState}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Encoder\+Decoder\+State} {\bf amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+E\+D\+State}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a27acf1f919cac82e29403b5d600e4700}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a27acf1f919cac82e29403b5d600e4700}
+
+
+Definition at line 26 of file encoder\+\_\+decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Encoder\+Decoder@{Encoder\+Decoder}}
+\index{Encoder\+Decoder@{Encoder\+Decoder}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder(const God \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t tab, const Weights \&model)}{EncoderDecoder(const God &god, const std::string &name, const YAML::Node &config, size_t tab, const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Encoder\+Decoder (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{size\+\_\+t}]{tab, }
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a651723011354bc2f6cd3b97ffffdf799}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a651723011354bc2f6cd3b97ffffdf799}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!````~Encoder\+Decoder@{$\sim$\+Encoder\+Decoder}}
+\index{````~Encoder\+Decoder@{$\sim$\+Encoder\+Decoder}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{$\sim$\+Encoder\+Decoder()}{~EncoderDecoder()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::$\sim$\+Encoder\+Decoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a8445580b7f4368c725576a85294d156a}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a8445580b7f4368c725576a85294d156a}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Encoder\+Decoder@{Encoder\+Decoder}}
+\index{Encoder\+Decoder@{Encoder\+Decoder}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder(const Encoder\+Decoder \&)=delete}{EncoderDecoder(const EncoderDecoder &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Encoder\+Decoder (
+\begin{DoxyParamCaption}
+\item[{const {\bf Encoder\+Decoder} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a774ab57865bb75d3eff942603a0bef50}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a774ab57865bb75d3eff942603a0bef50}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Assemble\+Beam\+State@{Assemble\+Beam\+State}}
+\index{Assemble\+Beam\+State@{Assemble\+Beam\+State}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Assemble\+Beam\+State(const State \&in, const Beam \&beam, State \&out)}{AssembleBeamState(const State &in, const Beam &beam, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Assemble\+Beam\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf State} \&}]{in, }
+\item[{const {\bf Beam} \&}]{beam, }
+\item[{{\bf State} \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a68e25bd3b886b3cbf4331358668dde80}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a68e25bd3b886b3cbf4331358668dde80}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a0abbbc1cd9459db14528acc5877a447b}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Begin\+Sentence\+State@{Begin\+Sentence\+State}}
+\index{Begin\+Sentence\+State@{Begin\+Sentence\+State}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Begin\+Sentence\+State(\+State \&state, size\+\_\+t batch\+Size=1)}{BeginSentenceState(State &state, size_t batchSize=1)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Begin\+Sentence\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf State} \&}]{state, }
+\item[{size\+\_\+t}]{batch\+Size = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a126f5eab05e71a8b379ddd7eb8f0c75d}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a126f5eab05e71a8b379ddd7eb8f0c75d}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a9382a0c256f2475c6bba73854598278d}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Decode@{Decode}}
+\index{Decode@{Decode}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Decode(const State \&in, State \&out, const std\+::vector$<$ uint $>$ \&beam\+Sizes)}{Decode(const State &in, State &out, const std::vector< uint > &beamSizes)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Decode (
+\begin{DoxyParamCaption}
+\item[{const {\bf State} \&}]{in, }
+\item[{{\bf State} \&}]{out, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a38b3304df3924adce09572d1bfeaeeb9}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a38b3304df3924adce09572d1bfeaeeb9}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a88b745f94adaf68095fc5a46874b06fa}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Encode@{Encode}}
+\index{Encode@{Encode}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Encode(const Sentences \&source)}{Encode(const Sentences &source)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_ab58288661c243eefa5d7659e5d67bf14}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_ab58288661c243eefa5d7659e5d67bf14}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_aa994ffba9d0e3a6db1adff566a8f3d9b}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Filter@{Filter}}
+\index{Filter@{Filter}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Filter(const std\+::vector$<$ uint $>$ \&filter\+Ids)}{Filter(const std::vector< uint > &filterIds)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Filter (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{filter\+Ids}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_ab3e30630d71c914eace68236da36fb44}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_ab3e30630d71c914eace68236da36fb44}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a70b9b4e8c0841db60a97134568e19bb0}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+Attention@{Get\+Attention}}
+\index{Get\+Attention@{Get\+Attention}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+Attention(mblas\+::\+Matrix \&\+Attention)}{GetAttention(mblas::Matrix &Attention)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+Attention (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Attention}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a131827ae9f2a8512beb981f97ec3f565}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a131827ae9f2a8512beb981f97ec3f565}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+Attention@{Get\+Attention}}
+\index{Get\+Attention@{Get\+Attention}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+Attention()}{GetAttention()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+Matrix}\& amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+Attention (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a7aceb128a918b03ff2117b377289dd55}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a7aceb128a918b03ff2117b377289dd55}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+Bias@{Get\+Bias}}
+\index{Get\+Bias@{Get\+Bias}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+Bias() const }{GetBias() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Base\+Matrix}$\ast$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+Bias (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a98409af8232092003aff6d1bf0e22ce8}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a98409af8232092003aff6d1bf0e22ce8}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a7e210d41ecf3f65bd4d1fb0ce0f4df7d}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+N\+Best@{Get\+N\+Best}}
+\index{Get\+N\+Best@{Get\+N\+Best}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+N\+Best()}{GetNBest()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+N\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a1c0f253dc60177dd329097939c2205ba}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a1c0f253dc60177dd329097939c2205ba}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a3493e68fa3a10f815fe6e6a7595586ac}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+Probs@{Get\+Probs}}
+\index{Get\+Probs@{Get\+Probs}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+Probs()}{GetProbs()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Base\+Matrix}\& amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_aeb1b4060912c9388a1709f524bd63edd}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_aeb1b4060912c9388a1709f524bd63edd}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a3d1fff5b4712cda5f1e89049ab401e7d}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Get\+Vocab\+Size@{Get\+Vocab\+Size}}
+\index{Get\+Vocab\+Size@{Get\+Vocab\+Size}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Get\+Vocab\+Size() const }{GetVocabSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Get\+Vocab\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_af89773296b4a04108e0d2999ca34bf5e}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_af89773296b4a04108e0d2999ca34bf5e}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a2c05a34baf59b86a116553c3928f9282}{amunmt\+::\+Scorer}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!New\+State@{New\+State}}
+\index{New\+State@{New\+State}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{New\+State() const }{NewState() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf State}$\ast$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+New\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_ad9db448ea4d611f9ebe01c3c6940f0d5}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_ad9db448ea4d611f9ebe01c3c6940f0d5}
+
+
+Implements \hyperlink{classamunmt_1_1Scorer_a519af19de323970484c7f0eeb8c91428}{amunmt\+::\+Scorer}.
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!decoder\+\_\+@{decoder\+\_\+}}
+\index{decoder\+\_\+@{decoder\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{decoder\+\_\+}{decoder_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Decoder}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::decoder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_aa4b1f9d9dd63fa77d117d2925ec835ab}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_aa4b1f9d9dd63fa77d117d2925ec835ab}
+
+
+Definition at line 64 of file encoder\+\_\+decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!encoder\+\_\+@{encoder\+\_\+}}
+\index{encoder\+\_\+@{encoder\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{encoder\+\_\+}{encoder_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Encoder}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::encoder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a82f39e1636ccb055a0fefef34714240d}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a82f39e1636ccb055a0fefef34714240d}
+
+
+Definition at line 63 of file encoder\+\_\+decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!indices\+\_\+@{indices\+\_\+}}
+\index{indices\+\_\+@{indices\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{indices\+\_\+}{indices_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+Array}$<$uint$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_ac073876fdd7353241f52941d7b7d0351}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_ac073876fdd7353241f52941d7b7d0351}
+
+
+Definition at line 65 of file encoder\+\_\+decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!model\+\_\+@{model\+\_\+}}
+\index{model\+\_\+@{model\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{model\+\_\+}{model_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Weights}\& amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_add8e2bd2813773ed4a065bcd3f61ed53}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_add8e2bd2813773ed4a065bcd3f61ed53}
+
+
+Definition at line 62 of file encoder\+\_\+decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!sentence\+Lengths\+\_\+@{sentence\+Lengths\+\_\+}}
+\index{sentence\+Lengths\+\_\+@{sentence\+Lengths\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{sentence\+Lengths\+\_\+}{sentenceLengths_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+I\+Matrix} amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::sentence\+Lengths\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_aa136ecd71d9211ee3fc9c04c22930e02}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_aa136ecd71d9211ee3fc9c04c22930e02}
+
+
+Definition at line 66 of file encoder\+\_\+decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}!Source\+Context\+\_\+@{Source\+Context\+\_\+}}
+\index{Source\+Context\+\_\+@{Source\+Context\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder@{amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Source\+Context\+\_\+}{SourceContext_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+Decoder\+::\+Source\+Context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1EncoderDecoder_a14a3d24c5ddf7916a3c1e853eae929ff}{}\label{classamunmt_1_1GPU_1_1EncoderDecoder_a14a3d24c5ddf7916a3c1e853eae929ff}
+
+
+Definition at line 69 of file encoder\+\_\+decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encoder__decoder_8h}{encoder\+\_\+decoder.\+h}\end{DoxyCompactItemize}

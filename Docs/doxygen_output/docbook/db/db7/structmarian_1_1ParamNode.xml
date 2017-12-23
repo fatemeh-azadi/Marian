@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/db7/structmarian_1_1ParamNode">
+<title>marian::ParamNode struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/dd0/node__operators_8h">&lt;node_operators.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ParamNode</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d60/structmarian_1_1ParamNode__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ParamNode</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d7c/structmarian_1_1ParamNode__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(Tensor &amp;)&gt; init_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool initialized_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/db7/structmarian_1_1ParamNode_1aa452140f55ba4ede7b98f36bfd772c04">ParamNode</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/db7/structmarian_1_1ParamNode_1a330a050f63c33ca3b0efa8bd16d7f969">~ParamNode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="db/db7/structmarian_1_1ParamNode_1a3b95c7c7a19f6ae26b0001b15e9cffe6">allocate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/db7/structmarian_1_1ParamNode_1a3d6c140ce46f6c97912fa4de460752cc">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/db7/structmarian_1_1ParamNode_1aecb590c68e3996b385779f896639036e">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/db7/structmarian_1_1ParamNode_1a8ed000b20face6bd31bdb9af750c56b0">form</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/db7/structmarian_1_1ParamNode_1aead6b45314b0b5a53c998acf994db204">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="db/db7/structmarian_1_1ParamNode_1a851c5d3d18a4fbde8e84c2a2f758e200">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1aa452140f55ba4ede7b98f36bfd772c04">
+                <title>marian::ParamNode::ParamNode (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1a330a050f63c33ca3b0efa8bd16d7f969">
+                <title>marian::ParamNode::~ParamNode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1a3b95c7c7a19f6ae26b0001b15e9cffe6">
+                <title>virtual size_t marian::ParamNode::allocate ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1a3d6c140ce46f6c97912fa4de460752cc">
+                <title>virtual void marian::ParamNode::init ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1aecb590c68e3996b385779f896639036e">
+                <title>const std::string marian::ParamNode::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1a8ed000b20face6bd31bdb9af750c56b0">
+                <title>const std::string marian::ParamNode::form ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1aead6b45314b0b5a53c998acf994db204">
+                <title>const std::string marian::ParamNode::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db7/structmarian_1_1ParamNode_1a851c5d3d18a4fbde8e84c2a2f758e200">
+                <title>virtual size_t marian::ParamNode::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d6d/nmt_8h">
+    <title>nmt.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;set&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &quot;common/god.h&quot;</programlisting>
+    <programlisting>#include &quot;common/scorer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentence.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/decoder/encoder_decoder.h&quot;</programlisting>
+    <programlisting>#include &quot;neural_phrase.h&quot;</programlisting>
+    <programlisting>#include &quot;hypo_info.h&quot;</programlisting>
+<para>Include dependency diagram for nmt.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dde/nmt_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for nmt.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d38/nmt_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/dc8/classamunmt_1_1MosesPlugin">amunmt::MosesPlugin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file nmt.h</para>
+    </simplesect>
+</section>

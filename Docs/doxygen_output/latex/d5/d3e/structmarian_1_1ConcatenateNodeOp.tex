@@ -1,0 +1,261 @@
+\hypertarget{structmarian_1_1ConcatenateNodeOp}{}\section{marian\+:\+:Concatenate\+Node\+Op Struct Reference}
+\label{structmarian_1_1ConcatenateNodeOp}\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+binary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Concatenate\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d27/structmarian_1_1ConcatenateNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Concatenate\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d9d/structmarian_1_1ConcatenateNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1ConcatenateNodeOp_a04e7182f5fbee8312008a4fdfec98c35}{Concatenate\+Node\+Op} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes, Args...\+args)
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1ConcatenateNodeOp_a7e9ce31c059ea7f61e778c16fbb62e2c}{new\+Shape} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes, int ax)
+\item 
+void \hyperlink{structmarian_1_1ConcatenateNodeOp_abf66689ce65575ad5593ba1f68db74c3}{forward} ()
+\item 
+void \hyperlink{structmarian_1_1ConcatenateNodeOp_a256bf52a8e098dddcdeddacb39e55929}{backward} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280}{hash} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ConcatenateNodeOp_ac1d53d75ef0fa4c851ea58cec367db18}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{ax\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 237 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!Concatenate\+Node\+Op@{Concatenate\+Node\+Op}}
+\index{Concatenate\+Node\+Op@{Concatenate\+Node\+Op}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Concatenate\+Node\+Op(const std\+::vector$<$ Expr $>$ \&nodes, Args...\+args)}{ConcatenateNodeOp(const std::vector< Expr > &nodes, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Concatenate\+Node\+Op\+::\+Concatenate\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_a04e7182f5fbee8312008a4fdfec98c35}{}\label{structmarian_1_1ConcatenateNodeOp_a04e7182f5fbee8312008a4fdfec98c35}
+
+
+Definition at line 239 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+240       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(nodes,
+241                    \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape}
+242                    = \hyperlink{structmarian_1_1ConcatenateNodeOp_a7e9ce31c059ea7f61e778c16fbb62e2c}{newShape}(nodes, \hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, 0, args...)),
+243                    args...),
+244         \hyperlink{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{ax\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}, 0, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!backward@{backward}}
+\index{backward@{backward}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward()}{backward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Concatenate\+Node\+Op\+::backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_a256bf52a8e098dddcdeddacb39e55929}{}\label{structmarian_1_1ConcatenateNodeOp_a256bf52a8e098dddcdeddacb39e55929}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a4710c71a35130cf0e382bb0a430725d3}{marian\+::\+Node}.
+
+
+
+Definition at line 262 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+262                   \{
+263     std::vector<Tensor> deconcatenees;
+264     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size(); ++i) \{
+265       \textcolor{keyword}{auto} childPtr = \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(i);
+266       childPtr
+267           ->set\_zero\_adjoint();  \textcolor{comment}{// @TODO: this is a hotfix, do this properly}
+268       deconcatenees.push\_back(childPtr->grad());
+269     \}
+270     \hyperlink{namespacemarian_a09b0dc48a7ac0f9ed26bb50045d7cf1c}{Deconcatenate}(deconcatenees, \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, \hyperlink{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{ax\_});
+271   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d3e/structmarian_1_1ConcatenateNodeOp_a256bf52a8e098dddcdeddacb39e55929_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!forward@{forward}}
+\index{forward@{forward}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward()}{forward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Concatenate\+Node\+Op\+::forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_abf66689ce65575ad5593ba1f68db74c3}{}\label{structmarian_1_1ConcatenateNodeOp_abf66689ce65575ad5593ba1f68db74c3}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a0ace1579b496977ac75fadfffc41416b}{marian\+::\+Node}.
+
+
+
+Definition at line 255 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+255                  \{
+256     std::vector<Tensor> concatenees;
+257     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size(); ++i)
+258       concatenees.push\_back(\hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(i)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}());
+259     \hyperlink{namespacemarian_a680fee5f243683d820950c554db89df7}{Concatenate}(\hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, concatenees, \hyperlink{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{ax\_});
+260   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d3e/structmarian_1_1ConcatenateNodeOp_abf66689ce65575ad5593ba1f68db74c3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Concatenate\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280}{}\label{structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 273 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+273                         \{
+274     \textcolor{keywordtype}{size\_t} seed = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+275     \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, \hyperlink{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{ax\_});
+276     \textcolor{keywordflow}{return} seed;
+277   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d3e/structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(const std\+::vector$<$ Expr $>$ \&nodes, int ax)}{newShape(const std::vector< Expr > &nodes, int ax)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Concatenate\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes, }
+\item[{int}]{ax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_a7e9ce31c059ea7f61e778c16fbb62e2c}{}\label{structmarian_1_1ConcatenateNodeOp_a7e9ce31c059ea7f61e778c16fbb62e2c}
+
+
+Definition at line 246 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+246                                                        \{
+247     Shape \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape} = nodes.back()->shape();
+248     shape.set(ax, 0);
+249     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child} : nodes)
+250       shape.set(ax, shape[ax] + \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}->shape()[ax]);
+251     \textcolor{comment}{// std::cerr << ax << " : " << shape[0] << " " << shape[1] << std::endl;}
+252     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape};
+253   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d3e/structmarian_1_1ConcatenateNodeOp_a7e9ce31c059ea7f61e778c16fbb62e2c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Concatenate\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConcatenateNodeOp_ac1d53d75ef0fa4c851ea58cec367db18}{}\label{structmarian_1_1ConcatenateNodeOp_ac1d53d75ef0fa4c851ea58cec367db18}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 279 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+279 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"concat"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}!ax\+\_\+@{ax\+\_\+}}
+\index{ax\+\_\+@{ax\+\_\+}!marian\+::\+Concatenate\+Node\+Op@{marian\+::\+Concatenate\+Node\+Op}}
+\subsubsection[{\texorpdfstring{ax\+\_\+}{ax_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Concatenate\+Node\+Op\+::ax\+\_\+}\hypertarget{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}{}\label{structmarian_1_1ConcatenateNodeOp_ae25e23fb614e6fa6aed4c4b3281b6912}
+
+
+Definition at line 281 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__binary_8h}{node\+\_\+operators\+\_\+binary.\+h}\end{DoxyCompactItemize}

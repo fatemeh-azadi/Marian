@@ -1,0 +1,212 @@
+\hypertarget{classmarian_1_1data_1_1SubBatch}{}\section{marian\+:\+:data\+:\+:Sub\+Batch Class Reference}
+\label{classmarian_1_1data_1_1SubBatch}\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+
+
+{\ttfamily \#include $<$corpus.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Sub\+Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d2/d8b/classmarian_1_1data_1_1SubBatch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1SubBatch_a63503b18510aa3519f6d28d7e9f0bacf}{Sub\+Batch} (int size, int width)
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \& \hyperlink{classmarian_1_1data_1_1SubBatch_a5da7bbc559373641e9fd829e85cb3b76}{indices} ()
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{classmarian_1_1data_1_1SubBatch_ab247d3f0cf9cfd721fe34aaf4eb7a762}{mask} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_ada99fc6fbcac283c8cdbb866cb4a261e}{batch\+Size} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_af7f936fc9f96a1135ce68c07f0b890da}{batch\+Width} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_a35a3232497a209161a61c3cd8e9e9952}{batch\+Words} ()
+\item 
+void \hyperlink{classmarian_1_1data_1_1SubBatch_a143906c1d19aaa6f431bd13e74c88be5}{set\+Words} (size\+\_\+t words)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \hyperlink{classmarian_1_1data_1_1SubBatch_ab8aef8d1311a4e44c65f208f91974f60}{indices\+\_\+}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmarian_1_1data_1_1SubBatch_a49a225fe3d34fd4f8b0213b4bc1ceb74}{mask\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_ac5110a7be3c18484944dd0691f81aaeb}{size\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_a9def32712ced6b5851fdb45b711fb208}{width\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}{words\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 49 of file corpus.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!Sub\+Batch@{Sub\+Batch}}
+\index{Sub\+Batch@{Sub\+Batch}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{Sub\+Batch(int size, int width)}{SubBatch(int size, int width)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Sub\+Batch\+::\+Sub\+Batch (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a63503b18510aa3519f6d28d7e9f0bacf}{}\label{classmarian_1_1data_1_1SubBatch_a63503b18510aa3519f6d28d7e9f0bacf}
+
+
+Definition at line 59 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+60       : \hyperlink{classmarian_1_1data_1_1SubBatch_ab8aef8d1311a4e44c65f208f91974f60}{indices\_}(size * width, 0),
+61         \hyperlink{classmarian_1_1data_1_1SubBatch_a49a225fe3d34fd4f8b0213b4bc1ceb74}{mask\_}(size * width, 0),
+62         \hyperlink{classmarian_1_1data_1_1SubBatch_ac5110a7be3c18484944dd0691f81aaeb}{size\_}(size),
+63         \hyperlink{classmarian_1_1data_1_1SubBatch_a9def32712ced6b5851fdb45b711fb208}{width\_}(width),
+64         \hyperlink{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}{words\_}(0) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!batch\+Size@{batch\+Size}}
+\index{batch\+Size@{batch\+Size}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{batch\+Size()}{batchSize()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::batch\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_ada99fc6fbcac283c8cdbb866cb4a261e}{}\label{classmarian_1_1data_1_1SubBatch_ada99fc6fbcac283c8cdbb866cb4a261e}
+
+
+Definition at line 69 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+69 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SubBatch_ac5110a7be3c18484944dd0691f81aaeb}{size\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!batch\+Width@{batch\+Width}}
+\index{batch\+Width@{batch\+Width}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{batch\+Width()}{batchWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::batch\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_af7f936fc9f96a1135ce68c07f0b890da}{}\label{classmarian_1_1data_1_1SubBatch_af7f936fc9f96a1135ce68c07f0b890da}
+
+
+Definition at line 70 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+70 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SubBatch_a9def32712ced6b5851fdb45b711fb208}{width\_}; \};
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!batch\+Words@{batch\+Words}}
+\index{batch\+Words@{batch\+Words}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{batch\+Words()}{batchWords()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::batch\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a35a3232497a209161a61c3cd8e9e9952}{}\label{classmarian_1_1data_1_1SubBatch_a35a3232497a209161a61c3cd8e9e9952}
+
+
+Definition at line 71 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+71 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}{words\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!indices@{indices}}
+\index{indices@{indices}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{indices()}{indices()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$\& marian\+::data\+::\+Sub\+Batch\+::indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a5da7bbc559373641e9fd829e85cb3b76}{}\label{classmarian_1_1data_1_1SubBatch_a5da7bbc559373641e9fd829e85cb3b76}
+
+
+Definition at line 66 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+66 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SubBatch_ab8aef8d1311a4e44c65f208f91974f60}{indices\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!mask@{mask}}
+\index{mask@{mask}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{mask()}{mask()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$\& marian\+::data\+::\+Sub\+Batch\+::mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_ab247d3f0cf9cfd721fe34aaf4eb7a762}{}\label{classmarian_1_1data_1_1SubBatch_ab247d3f0cf9cfd721fe34aaf4eb7a762}
+
+
+Definition at line 67 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+67 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SubBatch_a49a225fe3d34fd4f8b0213b4bc1ceb74}{mask\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!set\+Words@{set\+Words}}
+\index{set\+Words@{set\+Words}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{set\+Words(size\+\_\+t words)}{setWords(size_t words)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Sub\+Batch\+::set\+Words (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{words}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a143906c1d19aaa6f431bd13e74c88be5}{}\label{classmarian_1_1data_1_1SubBatch_a143906c1d19aaa6f431bd13e74c88be5}
+
+
+Definition at line 73 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+73 \{ \hyperlink{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}{words\_} = words; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!indices\+\_\+@{indices\+\_\+}}
+\index{indices\+\_\+@{indices\+\_\+}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{indices\+\_\+}{indices_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$ marian\+::data\+::\+Sub\+Batch\+::indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SubBatch_ab8aef8d1311a4e44c65f208f91974f60}{}\label{classmarian_1_1data_1_1SubBatch_ab8aef8d1311a4e44c65f208f91974f60}
+
+
+Definition at line 51 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!mask\+\_\+@{mask\+\_\+}}
+\index{mask\+\_\+@{mask\+\_\+}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{mask\+\_\+}{mask_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ marian\+::data\+::\+Sub\+Batch\+::mask\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a49a225fe3d34fd4f8b0213b4bc1ceb74}{}\label{classmarian_1_1data_1_1SubBatch_a49a225fe3d34fd4f8b0213b4bc1ceb74}
+
+
+Definition at line 52 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SubBatch_ac5110a7be3c18484944dd0691f81aaeb}{}\label{classmarian_1_1data_1_1SubBatch_ac5110a7be3c18484944dd0691f81aaeb}
+
+
+Definition at line 54 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{width\+\_\+}{width_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::width\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a9def32712ced6b5851fdb45b711fb208}{}\label{classmarian_1_1data_1_1SubBatch_a9def32712ced6b5851fdb45b711fb208}
+
+
+Definition at line 55 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}!words\+\_\+@{words\+\_\+}}
+\index{words\+\_\+@{words\+\_\+}!marian\+::data\+::\+Sub\+Batch@{marian\+::data\+::\+Sub\+Batch}}
+\subsubsection[{\texorpdfstring{words\+\_\+}{words_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sub\+Batch\+::words\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}{}\label{classmarian_1_1data_1_1SubBatch_a5c09bc4b07b770af975ea841f0bc98ee}
+
+
+Definition at line 56 of file corpus.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corpus_8h}{corpus.\+h}\end{DoxyCompactItemize}

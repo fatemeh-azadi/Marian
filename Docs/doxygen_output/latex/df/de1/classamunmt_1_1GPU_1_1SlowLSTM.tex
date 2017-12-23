@@ -1,0 +1,265 @@
+\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM}{}\section{amunmt\+:\+:G\+PU\+:\+:Slow\+L\+S\+TM$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1SlowLSTM}\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+T\+M$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+T\+M$<$ Weights $>$}}
+
+
+{\ttfamily \#include $<$lstm.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Slow\+L\+S\+TM$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{d7/d46/classamunmt_1_1GPU_1_1SlowLSTM__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Slow\+L\+S\+TM$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d37/classamunmt_1_1GPU_1_1SlowLSTM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a63203f4c1e9fbc4d85945aca374db8c9}{Slow\+L\+S\+TM} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a445547f2b64a36f61c0a62dc682364f3}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context) const 
+\item 
+virtual \hyperlink{structamunmt_1_1GPU_1_1CellLength}{Cell\+Length} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b}{Get\+State\+Length} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a91b93e0bbd407c7042e4322e5a44cd9b}{Slow\+L\+S\+TM} (const \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM}{Slow\+L\+S\+TM} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{F\+I\+O\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_abe8f110d7c7d770c0e80ceb720a81750}{F\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ab35898fc2b68a55fe0f1e0ab0d88424e}{I\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}{O\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a7f4c6738987f74b5e9149f1d7fe0252d}{Temp1\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a3a29c35d0a5a19dcf9111445f1708d11}{Temp2\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+T\+M$<$ Weights $>$}
+
+
+
+Definition at line 13 of file lstm.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Slow\+L\+S\+TM@{Slow\+L\+S\+TM}}
+\index{Slow\+L\+S\+TM@{Slow\+L\+S\+TM}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Slow\+L\+S\+T\+M(const Weights \&model)}{SlowLSTM(const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::{\bf Slow\+L\+S\+TM} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a63203f4c1e9fbc4d85945aca374db8c9}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a63203f4c1e9fbc4d85945aca374db8c9}
+
+
+Definition at line 15 of file lstm.\+h.
+
+
+\begin{DoxyCode}
+16     : \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}(model) \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Slow\+L\+S\+TM@{Slow\+L\+S\+TM}}
+\index{Slow\+L\+S\+TM@{Slow\+L\+S\+TM}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Slow\+L\+S\+T\+M(const Slow\+L\+S\+T\+M \&)=delete}{SlowLSTM(const SlowLSTM &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::{\bf Slow\+L\+S\+TM} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Slow\+L\+S\+TM}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a91b93e0bbd407c7042e4322e5a44cd9b}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a91b93e0bbd407c7042e4322e5a44cd9b}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context) const }{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ virtual void {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a445547f2b64a36f61c0a62dc682364f3}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a445547f2b64a36f61c0a62dc682364f3}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 18 of file lstm.\+h.
+
+
+\begin{DoxyCode}
+20                                                         \{
+21       \textcolor{keyword}{using namespace }mblas;
+22 
+23       \textcolor{comment}{/* HANDLE\_ERROR( cudaStreamSynchronize(mblas::CudaStreamHandler::GetStream())); */}
+24       \textcolor{comment}{/* std::cerr << "SlowLSTM::GetNextState1" << std::endl; */}
+25 
+26       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b}{GetStateLength}().\hyperlink{structamunmt_1_1GPU_1_1CellLength_af6478b361445f8c7d5b2d45ebc8fd5a6}{output};
+27 
+28       \textcolor{comment}{// transform context for use with gates}
+29       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, Context, *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.W\_);
+30       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.B\_); \textcolor{comment}{// Broadcasting row-wise}
+31       \textcolor{comment}{// transform context for use with computing the input}
+32       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\_},  Context, *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.Wx\_);
+33       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\_}, *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.Bx\_); \textcolor{comment}{// Broadcasting row-wise}
+34 
+35       \textcolor{comment}{// transform previous output for use with gates}
+36       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a7f4c6738987f74b5e9149f1d7fe0252d}{Temp1\_}, *(State.output), *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.U\_);
+37       \textcolor{comment}{// transform previous output for use with computing the input}
+38       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a3a29c35d0a5a19dcf9111445f1708d11}{Temp2\_}, *(State.output), *\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.Ux\_);
+39 
+40       \textcolor{comment}{// compute the gates}
+41       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\hyperlink{namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3}{Logit}(\_1 + \_2), \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a7f4c6738987f74b5e9149f1d7fe0252d}{Temp1\_});
+42       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{Slice}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_abe8f110d7c7d770c0e80ceb720a81750}{F\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, 0, cols);
+43       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{Slice}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ab35898fc2b68a55fe0f1e0ab0d88424e}{I\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, 1, cols);
+44       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{Slice}(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}{O\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{FIO\_}, 2, cols);
+45       \textcolor{comment}{// compute the input}
+46       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1 + \_2), \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a3a29c35d0a5a19dcf9111445f1708d11}{Temp2\_});
+47 
+48       \textcolor{comment}{// apply the forget gate}
+49       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{Copy}(*NextState.cell, *State.cell);
+50       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\_1 * \_2, *NextState.cell, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_abe8f110d7c7d770c0e80ceb720a81750}{F\_});
+51       \textcolor{comment}{// apply the input gate}
+52       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\_1 * \_2, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\_}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ab35898fc2b68a55fe0f1e0ab0d88424e}{I\_});
+53       \textcolor{comment}{// update the cell state with the input}
+54       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\_1 + \_2, *NextState.cell, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{H\_});
+55       \textcolor{comment}{// apply the output gate}
+56       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\_1 * \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_2), \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}{O\_}, *NextState.cell);
+57       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}{Swap}(*(NextState.output), \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}{O\_});
+58     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/de1/classamunmt_1_1GPU_1_1SlowLSTM_a445547f2b64a36f61c0a62dc682364f3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Get\+State\+Length@{Get\+State\+Length}}
+\index{Get\+State\+Length@{Get\+State\+Length}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Get\+State\+Length() const }{GetStateLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ virtual {\bf Cell\+Length} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::Get\+State\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 60 of file lstm.\+h.
+
+
+\begin{DoxyCode}
+60                                               \{
+61       \textcolor{keywordflow}{return} CellLength(\hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.U\_->dim(0), \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{w\_}.U\_->dim(0));
+62     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/de1/classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!F\+\_\+@{F\+\_\+}}
+\index{F\+\_\+@{F\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{F\+\_\+}{F_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::F\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_abe8f110d7c7d770c0e80ceb720a81750}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_abe8f110d7c7d770c0e80ceb720a81750}
+
+
+Definition at line 70 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!F\+I\+O\+\_\+@{F\+I\+O\+\_\+}}
+\index{F\+I\+O\+\_\+@{F\+I\+O\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{F\+I\+O\+\_\+}{FIO_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::F\+I\+O\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_aa80d0bb5090fbe2a89b7117f89433b57}
+
+
+Definition at line 69 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!H\+\_\+@{H\+\_\+}}
+\index{H\+\_\+@{H\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{H\+\_\+}{H_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::H\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_ad43e82ae91c4f3968ebb44110865d8b6}
+
+
+Definition at line 73 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!I\+\_\+@{I\+\_\+}}
+\index{I\+\_\+@{I\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{I\+\_\+}{I_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::I\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_ab35898fc2b68a55fe0f1e0ab0d88424e}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_ab35898fc2b68a55fe0f1e0ab0d88424e}
+
+
+Definition at line 71 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!O\+\_\+@{O\+\_\+}}
+\index{O\+\_\+@{O\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{O\+\_\+}{O_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::O\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a8cfd9b003eef67eccad0d0b65425005e}
+
+
+Definition at line 72 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Temp1\+\_\+@{Temp1\+\_\+}}
+\index{Temp1\+\_\+@{Temp1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Temp1\+\_\+}{Temp1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::Temp1\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a7f4c6738987f74b5e9149f1d7fe0252d}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a7f4c6738987f74b5e9149f1d7fe0252d}
+
+
+Definition at line 74 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!Temp2\+\_\+@{Temp2\+\_\+}}
+\index{Temp2\+\_\+@{Temp2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{Temp2\+\_\+}{Temp2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::Temp2\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a3a29c35d0a5a19dcf9111445f1708d11}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a3a29c35d0a5a19dcf9111445f1708d11}
+
+
+Definition at line 75 of file lstm.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM@{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+TM}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}{}\label{classamunmt_1_1GPU_1_1SlowLSTM_a200f343f4c27af61742a106f78f6d564}
+
+
+Definition at line 66 of file lstm.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lstm_8h}{lstm.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{backend__gpu_8h}{}\section{backend\+\_\+gpu.\+h File Reference}
+\label{backend__gpu_8h}\index{backend\+\_\+gpu.\+h@{backend\+\_\+gpu.\+h}}
+{\ttfamily \#include $<$cublas\+\_\+v2.\+h$>$}\\*
+{\ttfamily \#include $<$cuda.\+h$>$}\\*
+{\ttfamily \#include $<$curand.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/backend.\+h\char`\"{}}\\*
+Include dependency graph for backend\+\_\+gpu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/db1/backend__gpu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d1/d7c/backend__gpu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1BackendGPU}{marian\+::\+Backend\+G\+PU}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{backend__gpu_8h_a02680eff1ab25683ec230fc4f4c41268}{C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL}(x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{backend\+\_\+gpu.\+h@{backend\+\_\+gpu.\+h}!C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL@{C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL}}
+\index{C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL@{C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL}!backend\+\_\+gpu.\+h@{backend\+\_\+gpu.\+h}}
+\subsubsection[{\texorpdfstring{C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL}{CURAND_CALL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+U\+R\+A\+N\+D\+\_\+\+C\+A\+LL(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{backend__gpu_8h_a02680eff1ab25683ec230fc4f4c41268}{}\label{backend__gpu_8h_a02680eff1ab25683ec230fc4f4c41268}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                \(\backslash\)
+    if((x) != CURAND\_STATUS\_SUCCESS) \{                \(\backslash\)
+      printf(\textcolor{stringliteral}{"Error at %s:%d\(\backslash\)n"}, \_\_FILE\_\_, \_\_LINE\_\_); \(\backslash\)
+      exit(1);                                        \(\backslash\)
+    \}                                                 \(\backslash\)
+  \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 10 of file backend\+\_\+gpu.\+h.
+

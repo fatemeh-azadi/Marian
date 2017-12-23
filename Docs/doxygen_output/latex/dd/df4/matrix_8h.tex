@@ -1,0 +1,54 @@
+\hypertarget{matrix_8h}{}\section{matrix.\+h File Reference}
+\label{matrix_8h}\index{matrix.\+h@{matrix.\+h}}
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$thrust/execution\+\_\+policy.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/functional.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}common/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/base\+\_\+matrix.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpu/types-\/gpu.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}handles.\+h\char`\"{}}\\*
+Include dependency graph for matrix.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dd7/matrix_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d78/matrix_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU}{amunmt\+::\+G\+PU}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas}{amunmt\+::\+G\+P\+U\+::mblas}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef T\+Matrix$<$ float $>$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix}
+\item 
+typedef T\+Matrix$<$ uint $>$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{amunmt\+::\+G\+P\+U\+::mblas\+::\+I\+Matrix}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6d3fc25d9092bb620ee6cf18bf08466a}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Sum} (const T $\ast$data, size\+\_\+t count, T \&ret)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Sum} (const T $\ast$data, size\+\_\+t count)
+\end{DoxyCompactItemize}

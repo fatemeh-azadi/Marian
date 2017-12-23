@@ -1,0 +1,198 @@
+\hypertarget{definitions_8h}{}\section{definitions.\+h File Reference}
+\label{definitions_8h}\index{definitions.\+h@{definitions.\+h}}
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}common/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}shape.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}keywords.\+h\char`\"{}}\\*
+Include dependency graph for definitions.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d18/definitions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dea/definitions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{classmarian_1_1Chainable}{marian\+::\+Chainable$<$ Data\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Abstraction of an element in a computation graph for which a derivative can be calculated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\item 
+ \hyperlink{namespacemarian_1_1keywords}{marian\+::keywords}
+\begin{DoxyCompactList}\small\item\em Defines a set of keywords. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{definitions_8h_a67d986fe20c72043e476836c564341b3}{T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD}(body)~std\+::thread(\mbox{[}\&\mbox{]}() \{ body; \}).join()
+\item 
+\#define \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{Node\+Op}(op)~\mbox{[}=\mbox{]}() \{ op; \}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{marian\+::\+Ptr} = std\+::shared\+\_\+ptr$<$ T $>$
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacemarian_aef1c1bbe14b70285b1e8f7653f134cb1}{marian\+::\+U\+Ptr} = std\+::unique\+\_\+ptr$<$ T $>$
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacemarian_acde6307b95538fbf82548c2e1108ccf4}{marian\+::\+Weak} = std\+::weak\+\_\+ptr$<$ T $>$
+\item 
+typedef Ptr$<$ Tensor\+Base $>$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{marian\+::\+Tensor}
+\item 
+typedef Ptr$<$ Chainable$<$ Tensor $>$ $>$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{marian\+::\+Expr}
+\begin{DoxyCompactList}\small\item\em Defines a convenience type to represent a shared pointer to a \hyperlink{classmarian_1_1Chainable}{Chainable$<$\+Tensor$>$} object. \end{DoxyCompactList}\item 
+typedef Ptr$<$ Optimizer\+Base $>$ \hyperlink{namespacemarian_a63563426eab459d09fa044eb645c71e1}{marian\+::\+Optimizer\+Base\+Ptr}
+\item 
+typedef Ptr$<$ Clipper\+Base $>$ \hyperlink{namespacemarian_ae7082987f4bcf1b02bf5b23e1ebebacb}{marian\+::\+Clipper\+Base\+Ptr}
+\item 
+typedef Ptr$<$ Run\+Base $>$ \hyperlink{namespacemarian_a0b57f584ee553f4bbacf654ce953f1a5}{marian\+::\+Run\+Base\+Ptr}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}axis\char`\"{})-\/2 $>$\char`\"{}axis\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), int $>$ \hyperlink{namespacemarian_1_1keywords_a10b8b729f40b2bc6f4b9d1f4486d03a4}{marian\+::keywords\+::axis\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}shape\char`\"{})-\/2 $>$\char`\"{}shape\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Shape $>$ \hyperlink{namespacemarian_1_1keywords_ac7bfe8a14a8b8ae619bab1dbc8ccdb54}{marian\+::keywords\+::shape\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}value\char`\"{})-\/2 $>$\char`\"{}value\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_a1ad46beee725aee3d84c27fd6e75886d}{marian\+::keywords\+::value\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}fixed\char`\"{})-\/2 $>$\char`\"{}fixed\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_ad5baa099c8c1e66e037234d2cfd33fdb}{marian\+::keywords\+::fixed\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}prefix\char`\"{})-\/2 $>$\char`\"{}prefix\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), std\+::string $>$ \hyperlink{namespacemarian_1_1keywords_a03f95871357599bf366571e00e22bd06}{marian\+::keywords\+::prefix\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}final\char`\"{})-\/2 $>$\char`\"{}final\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_a6416d66a33fc4d5ed5137bb91d826468}{marian\+::keywords\+::final\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}output\+\_\+last\char`\"{})-\/2 $>$\char`\"{}output\+\_\+last\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_afaaf278d8f77b3c17f0cf76af88bea1e}{marian\+::keywords\+::output\+\_\+last\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}mask\char`\"{})-\/2 $>$\char`\"{}mask\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Expr $>$ \hyperlink{namespacemarian_1_1keywords_a4fed5db0f88a6137048eda92fb776eb3}{marian\+::keywords\+::mask\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}dropout\+\_\+prob\char`\"{})-\/2 $>$\char`\"{}dropout\+\_\+prob\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_ae28ddaf0d8f158549fa260ef510ec27d}{marian\+::keywords\+::dropout\+\_\+prob\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}init\char`\"{})-\/2 $>$\char`\"{}\hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init}\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), std\+::function$<$ void(\+Tensor)$>$ $>$ \hyperlink{namespacemarian_1_1keywords_a4fd3849e3b95e8aac7ab3ee9df8f517d}{marian\+::keywords\+::init\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}eta\char`\"{})-\/2 $>$\char`\"{}eta\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_a434be77c98bf73e98aecaf646e223289}{marian\+::keywords\+::eta\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}beta1\char`\"{})-\/2 $>$\char`\"{}beta1\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_a1305f7d1623cc0bdc776760b61ead5c0}{marian\+::keywords\+::beta1\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}beta2\char`\"{})-\/2 $>$\char`\"{}beta2\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_a8c433988725a968d8f443937345116ff}{marian\+::keywords\+::beta2\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}eps\char`\"{})-\/2 $>$\char`\"{}eps\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), float $>$ \hyperlink{namespacemarian_1_1keywords_a5f02b3d29c552bc4052504dc4d09c512}{marian\+::keywords\+::eps\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}optimizer\char`\"{})-\/2 $>$\char`\"{}optimizer\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Ptr$<$ Optimizer\+Base $>$ $>$ \hyperlink{namespacemarian_1_1keywords_a1ab9bde7cf138c91b907dcdd052dfa6b}{marian\+::keywords\+::optimizer\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}clip\char`\"{})-\/2 $>$\char`\"{}clip\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Ptr$<$ Clipper\+Base $>$ $>$ \hyperlink{namespacemarian_1_1keywords_a06bef77d1eaa2a3939d9bf156f7e3736}{marian\+::keywords\+::clip\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}batch\+\_\+size\char`\"{})-\/2 $>$\char`\"{}batch\+\_\+size\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), int $>$ \hyperlink{namespacemarian_1_1keywords_acc29b3bc2c61d954c306fca0cf7113e5}{marian\+::keywords\+::batch\+\_\+size\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}normalize\char`\"{})-\/2 $>$\char`\"{}normalize\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_a2d4daed65d80e72c0e922a6e7359f31d}{marian\+::keywords\+::normalize\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}inference\char`\"{})-\/2 $>$\char`\"{}inference\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_a70c1df66249f109b61873988973ed61b}{marian\+::keywords\+::inference\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}skip\char`\"{})-\/2 $>$\char`\"{}skip\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_ab3f25f4b72577d35dabc1a79a86b75fe}{marian\+::keywords\+::skip\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}skip\+\_\+first\char`\"{})-\/2 $>$\char`\"{}skip\+\_\+first\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), bool $>$ \hyperlink{namespacemarian_1_1keywords_ad98b44f9f1590b98af7150b6b1dded7c}{marian\+::keywords\+::skip\+\_\+first\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}coverage\char`\"{})-\/2 $>$\char`\"{}coverage\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Expr $>$ \hyperlink{namespacemarian_1_1keywords_a458a9fc8abba425be0189dfc25c927e5}{marian\+::keywords\+::coverage\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}max\+\_\+epochs\char`\"{})-\/2 $>$\char`\"{}max\+\_\+epochs\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), int $>$ \hyperlink{namespacemarian_1_1keywords_a6ed8bd5dbf10318dcdac1c1920b342a9}{marian\+::keywords\+::max\+\_\+epochs\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}valid\char`\"{})-\/2 $>$\char`\"{}valid\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Ptr$<$ Run\+Base $>$ $>$ \hyperlink{namespacemarian_1_1keywords_a330887765a1db7226363fd20201d8322}{marian\+::keywords\+::valid\+\_\+k}
+\item 
+typedef const Keyword$<$(\hyperlink{compile__time__crc32_8h_afb8250edaa6a10de4050142c2361fbce}{crc32}$<$ sizeof(\char`\"{}lex\+\_\+probs\char`\"{})-\/2 $>$\char`\"{}lex\+\_\+probs\char`\"{})$^\wedge$0x\+F\+F\+F\+F\+F\+F\+F\+F), Ptr$<$ Lex\+Probs $>$ $>$ \hyperlink{namespacemarian_1_1keywords_a54f72752fae434951210362068ef4317}{marian\+::keywords\+::lex\+\_\+probs\+\_\+k}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T , typename... Args$>$ }\\Ptr$<$ T $>$ \hyperlink{namespacemarian_afe55543784336e96f224f9d88206d1fb}{marian\+::\+New} (Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em Creates shared\+\_\+ptr of any type, passes all arguments to any available constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\Ptr$<$ T $>$ \hyperlink{namespacemarian_a8b5635e6b01553e78bfab781201e5d12}{marian\+::\+New} (Ptr$<$ T $>$ p)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+axis\+\_\+k \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{marian\+::keywords\+::axis}
+\item 
+shape\+\_\+k \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{marian\+::keywords\+::shape}
+\item 
+value\+\_\+k \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{marian\+::keywords\+::value}
+\item 
+fixed\+\_\+k \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{marian\+::keywords\+::fixed}
+\item 
+prefix\+\_\+k \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{marian\+::keywords\+::prefix}
+\item 
+final\+\_\+k \hyperlink{namespacemarian_1_1keywords_a9b8967da2700e334a8af43c39e209cd1}{marian\+::keywords\+::final}
+\item 
+output\+\_\+last\+\_\+k \hyperlink{namespacemarian_1_1keywords_ac5ea87324c60b3d734549deaa16cce9d}{marian\+::keywords\+::output\+\_\+last}
+\item 
+mask\+\_\+k \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{marian\+::keywords\+::mask}
+\item 
+dropout\+\_\+prob\+\_\+k \hyperlink{namespacemarian_1_1keywords_aeb1a41f81a79487b23aa2f8769a205bf}{marian\+::keywords\+::dropout\+\_\+prob}
+\item 
+init\+\_\+k \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{marian\+::keywords\+::init}
+\item 
+eta\+\_\+k \hyperlink{namespacemarian_1_1keywords_af8a81aa00fe33fd2eea3287b1bff35be}{marian\+::keywords\+::eta}
+\item 
+beta1\+\_\+k \hyperlink{namespacemarian_1_1keywords_aceaa175e141154e5fece90ab49f2c5aa}{marian\+::keywords\+::beta1}
+\item 
+beta2\+\_\+k \hyperlink{namespacemarian_1_1keywords_a2b99ef30dc7e4dc7780b29dc3059486f}{marian\+::keywords\+::beta2}
+\item 
+eps\+\_\+k \hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{marian\+::keywords\+::eps}
+\item 
+optimizer\+\_\+k \hyperlink{namespacemarian_1_1keywords_a80ff29066a595f1c7e2dd6858b048397}{marian\+::keywords\+::optimizer}
+\item 
+clip\+\_\+k \hyperlink{namespacemarian_1_1keywords_a1ce7910671af4bcc0573570988101938}{marian\+::keywords\+::clip}
+\item 
+batch\+\_\+size\+\_\+k \hyperlink{namespacemarian_1_1keywords_a4b1f0356184ca2853fdb084cafa3ffba}{marian\+::keywords\+::batch\+\_\+size}
+\item 
+normalize\+\_\+k \hyperlink{namespacemarian_1_1keywords_a0865ee916b32905390a7c6e6bdfd8a9f}{marian\+::keywords\+::normalize}
+\item 
+inference\+\_\+k \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{marian\+::keywords\+::inference}
+\item 
+skip\+\_\+k \hyperlink{namespacemarian_1_1keywords_afbbd32f06a85a40050d9fd36a50d8ea4}{marian\+::keywords\+::skip}
+\item 
+skip\+\_\+first\+\_\+k \hyperlink{namespacemarian_1_1keywords_a2a9cd87979dc05ce7c893dd1d47e24b0}{marian\+::keywords\+::skip\+\_\+first}
+\item 
+coverage\+\_\+k \hyperlink{namespacemarian_1_1keywords_a3e4ed89478e91951088b10fd39c1866d}{marian\+::keywords\+::coverage}
+\item 
+max\+\_\+epochs\+\_\+k \hyperlink{namespacemarian_1_1keywords_a688a940c47329752f0dc8a56cde3093d}{marian\+::keywords\+::max\+\_\+epochs}
+\item 
+valid\+\_\+k \hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{marian\+::keywords\+::valid}
+\item 
+lex\+\_\+probs\+\_\+k \hyperlink{namespacemarian_1_1keywords_a6cd9f87e937485444e78cd8e8126e727}{marian\+::keywords\+::lex\+\_\+probs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{definitions.\+h@{definitions.\+h}!Node\+Op@{Node\+Op}}
+\index{Node\+Op@{Node\+Op}!definitions.\+h@{definitions.\+h}}
+\subsubsection[{\texorpdfstring{Node\+Op}{NodeOp}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Node\+Op(
+\begin{DoxyParamCaption}
+\item[{}]{op}
+\end{DoxyParamCaption}
+)~\mbox{[}=\mbox{]}() \{ op; \}}\hypertarget{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{}\label{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}
+
+
+Definition at line 12 of file definitions.\+h.
+
+\index{definitions.\+h@{definitions.\+h}!T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD@{T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD}}
+\index{T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD@{T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD}!definitions.\+h@{definitions.\+h}}
+\subsubsection[{\texorpdfstring{T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD}{THREAD_GUARD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+E\+A\+D\+\_\+\+G\+U\+A\+RD(
+\begin{DoxyParamCaption}
+\item[{}]{body}
+\end{DoxyParamCaption}
+)~std\+::thread(\mbox{[}\&\mbox{]}() \{ body; \}).join()}\hypertarget{definitions_8h_a67d986fe20c72043e476836c564341b3}{}\label{definitions_8h_a67d986fe20c72043e476836c564341b3}
+
+
+Definition at line 11 of file definitions.\+h.
+

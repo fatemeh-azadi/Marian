@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/db0/classGPU_1_1ApePenaltyLoader">
+<title>GPU::ApePenaltyLoader class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d0c/ape__penalty_8h">&lt;ape_penalty.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for GPU::ApePenaltyLoader</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d19/classGPU_1_1ApePenaltyLoader__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for GPU::ApePenaltyLoader</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dfc/classGPU_1_1ApePenaltyLoader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SrcTrgMap srcTrgMap_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Penalties penalties_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/db0/classGPU_1_1ApePenaltyLoader_1a52d521f7266ad349fc424454071a49a6">ApePenaltyLoader</link> (
+const std::string &amp; name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/db0/classGPU_1_1ApePenaltyLoader_1a199d28a5d22439454cd82eee0e8760b9">Load</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual ScorerPtr <link linkend="db/db0/classGPU_1_1ApePenaltyLoader_1a50bb804a177ac1080f02e545748a16ca">NewScorer</link> (
+God &amp; god, size_t taskId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual BestHypsBase * <link linkend="db/db0/classGPU_1_1ApePenaltyLoader_1a1a611c765715a3e2196d4021e0fd87b4">GetBestHyps</link> (
+God &amp; god)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/db0/classGPU_1_1ApePenaltyLoader_1a52d521f7266ad349fc424454071a49a6">
+                <title>GPU::ApePenaltyLoader::ApePenaltyLoader (const std::string &amp;name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db0/classGPU_1_1ApePenaltyLoader_1a199d28a5d22439454cd82eee0e8760b9">
+                <title>virtual void GPU::ApePenaltyLoader::Load ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db0/classGPU_1_1ApePenaltyLoader_1a50bb804a177ac1080f02e545748a16ca">
+                <title>virtual ScorerPtr GPU::ApePenaltyLoader::NewScorer (God &amp;god, size_t taskId)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/db0/classGPU_1_1ApePenaltyLoader_1a1a611c765715a3e2196d4021e0fd87b4">
+                <title>virtual BestHypsBase* GPU::ApePenaltyLoader::GetBestHyps (God &amp;god)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

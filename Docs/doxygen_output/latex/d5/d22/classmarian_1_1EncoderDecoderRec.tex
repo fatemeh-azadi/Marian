@@ -1,0 +1,386 @@
+\hypertarget{classmarian_1_1EncoderDecoderRec}{}\section{marian\+:\+:Encoder\+Decoder\+Rec Class Reference}
+\label{classmarian_1_1EncoderDecoderRec}\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+
+
+{\ttfamily \#include $<$s2s\+\_\+rec.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Decoder\+Rec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/dd0/classmarian_1_1EncoderDecoderRec__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Decoder\+Rec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d21/classmarian_1_1EncoderDecoderRec__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderDecoderRec_ac541f4c3e2d0ae1882bd3f515cb5273e}{Encoder\+Decoder\+Rec} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual std\+::tuple$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe}{reconstructor\+Ground\+Truth} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4}{reconstructor\+Step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, bool clear\+Graph=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Global\+Attention $>$ \hyperlink{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}{attention\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ R\+NN$<$ C\+G\+RU $>$ $>$ \hyperlink{classmarian_1_1EncoderDecoderRec_ad0d471b436beab644c14a8b692a4d53f}{rnn\+L1}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file s2s\+\_\+rec.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!Encoder\+Decoder\+Rec@{Encoder\+Decoder\+Rec}}
+\index{Encoder\+Decoder\+Rec@{Encoder\+Decoder\+Rec}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder\+Rec(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderDecoderRec(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Encoder\+Decoder\+Rec\+::\+Encoder\+Decoder\+Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoderRec_ac541f4c3e2d0ae1882bd3f515cb5273e}{}\label{classmarian_1_1EncoderDecoderRec_ac541f4c3e2d0ae1882bd3f515cb5273e}
+
+
+Definition at line 14 of file s2s\+\_\+rec.\+h.
+
+
+\begin{DoxyCode}
+15       : \hyperlink{classmarian_1_1EncoderDecoder_ac08c9c6cf3847fd500b4d2bdf3470382}{EncoderDecoder}(options, args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, bool clear\+Graph=true)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, bool clearGraph=true)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+Decoder\+Rec\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2}{}\label{classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}.
+
+
+
+Definition at line 118 of file s2s\+\_\+rec.\+h.
+
+
+\begin{DoxyCode}
+120                                              \{
+121     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+122 
+123     \textcolor{keywordflow}{if}(clearGraph)
+124       \hyperlink{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}{clear}(graph);
+125 
+126     \textcolor{keyword}{auto} decState = \hyperlink{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}{startState}(graph, batch);
+127 
+128     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} trgMask, trgIdx;
+129     std::tie(trgMask, trgIdx)
+130         = \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->groundTruth(decState, graph, batch, \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batchIndices\_}.back());
+131 
+132     \textcolor{keyword}{auto} nextDecState = \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step}(decState);
+133 
+134     \textcolor{keyword}{auto} cost = CrossEntropyCost(\textcolor{stringliteral}{"cost"})(
+135         nextDecState->getProbs(), trgIdx, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = trgMask);
+136 
+137     \textcolor{keyword}{auto} stateS2S = std::dynamic\_pointer\_cast<DecoderStateS2S>(nextDecState);
+138     \textcolor{keyword}{auto} recContext = stateS2S->getStates().back();
+139     \textcolor{keyword}{auto} meanContext = \hyperlink{namespacemarian_a8ccb9507a69a32ecd48410fd1557f209}{weighted\_average}(recContext, trgMask, 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2);
+140 
+141     \textcolor{keywordtype}{bool} layerNorm = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"layer-normalization"});
+142     \textcolor{keyword}{auto} start = Dense(\textcolor{stringliteral}{"ff\_state\_rec"},
+143                        \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-rnn"}),
+144                        activation = \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{act::tanh},
+145                        \hyperlink{namespacemarian_1_1keywords_a0865ee916b32905390a7c6e6bdfd8a9f}{normalize} = layerNorm)(meanContext);
+146     std::vector<Expr> startStates(1, start);
+147 
+148     \textcolor{keyword}{auto} recState = New<DecoderStateS2S>(
+149         startStates, \textcolor{keyword}{nullptr}, New<EncoderStateS2S>(recContext, trgMask, batch));
+150     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} srcMask, srcIdx;
+151     std::tie(srcMask, srcIdx)
+152         = \hyperlink{classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe}{reconstructorGroundTruth}(recState, graph, batch);
+153 
+154     \textcolor{keyword}{auto} nextRecState = \hyperlink{classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4}{reconstructorStep}(recState);
+155 
+156     \textcolor{keyword}{auto} recCost = CrossEntropyCost(\textcolor{stringliteral}{"recScore"})(
+157         nextRecState->getProbs(), srcIdx, mask = srcMask);
+158 
+159     \textcolor{keyword}{auto} srcA = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(
+160         std::dynamic\_pointer\_cast<DecoderS2S>(\hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_})->getAlignments(),
+161         \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 3);
+162     \textcolor{keyword}{auto} trgA = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\hyperlink{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}{attention\_}->getAlignments(), 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 3);
+163 
+164     \textcolor{keywordtype}{int} dimBatch = srcA->shape()[0];
+165     \textcolor{keywordtype}{int} dimSrc = srcA->shape()[2];
+166     \textcolor{keywordtype}{int} dimTrg = srcA->shape()[3];
+167     \textcolor{keywordtype}{int} dimSrcTrg = dimSrc * dimTrg;
+168 
+169     std::vector<size\_t> reorder;
+170     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < dimTrg; ++j)
+171       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < dimSrc; ++i)
+172         reorder.push\_back(i * dimTrg + j);
+173 
+174     \textcolor{comment}{// if(dimBatch == 1) \{}
+175     \textcolor{comment}{//  srcA = reshape(srcA, \{dimTrg, dimSrc\});}
+176     \textcolor{comment}{//  trgA = reshape(trgA, \{dimSrc, dimTrg\});}
+177     \textcolor{comment}{//\}}
+178     \textcolor{comment}{// else \{}
+179     \textcolor{comment}{//  srcA = reshape(srcA, \{dimSrc, dimBatch, dimTrg\});}
+180     \textcolor{comment}{//  trgA = reshape(trgA, \{dimTrg, dimBatch, dimSrc\});}
+181     \textcolor{comment}{//\}}
+182     \textcolor{comment}{// debug(srcA, "srcA");}
+183     \textcolor{comment}{// debug(trgA, "trgA");}
+184 
+185     trgA = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(\hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimSrcTrg, dimBatch\}), reorder);
+186 
+187     \textcolor{comment}{// if(dimBatch == 1)}
+188     \textcolor{comment}{//  trgA = reshape(trgA, \{dimTrg, dimSrc\});}
+189     \textcolor{comment}{// else}
+190     \textcolor{comment}{//  trgA = reshape(trgA, \{dimSrc, dimBatch, dimTrg\});}
+191     \textcolor{comment}{//}
+192     \textcolor{comment}{// debug(trgA, "reordered");}
+193 
+194     \textcolor{keyword}{auto} symmetricAlignment
+195         = \hyperlink{namespacemarian_a15ec9743709e47180378db974ddbf116}{mean}(\hyperlink{namespacemarian_a7bed97354565d7b751bed999c6c203e3}{scalar\_product}(\hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(srcA, \{dimBatch, 1, dimSrcTrg\}),
+196                               \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimBatch, 1, dimSrcTrg\}),
+197                               \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2),
+198                \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 0);
+199     \textcolor{comment}{//      return cost + recCost - debug(symmetricAlignment, "trace");}
+200     \textcolor{keywordtype}{float} gamma = 0.5;
+201     \textcolor{keywordflow}{return} cost + recCost - gamma * symmetricAlignment;
+202   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d22/classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!reconstructor\+Ground\+Truth@{reconstructor\+Ground\+Truth}}
+\index{reconstructor\+Ground\+Truth@{reconstructor\+Ground\+Truth}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{reconstructor\+Ground\+Truth(\+Ptr$<$ Decoder\+State $>$ state, Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{reconstructorGroundTruth(Ptr< DecoderState > state, Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::tuple$<${\bf Expr}, {\bf Expr}$>$ marian\+::\+Encoder\+Decoder\+Rec\+::reconstructor\+Ground\+Truth (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state, }
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe}{}\label{classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe}
+
+
+Definition at line 17 of file s2s\+\_\+rec.\+h.
+
+
+\begin{DoxyCode}
+20                                   \{
+21     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+22 
+23     \textcolor{keywordtype}{int} dimVoc = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"}).front();
+24     \textcolor{keywordtype}{int} dimEmb = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-emb"});
+25     \textcolor{keywordtype}{int} dimPos = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-pos"});
+26 
+27     \textcolor{keyword}{auto} rEmb = Embedding(\textcolor{stringliteral}{"encoder\_Wemb"}, dimVoc, dimEmb)(graph);
+28 
+29     \textcolor{keyword}{auto} subBatch = batch->front();
+30     \textcolor{keywordtype}{int} dimBatch = subBatch->batchSize();
+31     \textcolor{keywordtype}{int} dimWords = subBatch->batchWidth();
+32 
+33     \textcolor{keyword}{auto} chosenEmbeddings = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(rEmb, subBatch->indeces());
+34 
+35     \textcolor{keyword}{auto} r = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(chosenEmbeddings, \{dimBatch, dimEmb, dimWords\});
+36 
+37     \textcolor{keyword}{auto} rMask = graph->constant(\{dimBatch, 1, dimWords\},
+38                                  \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(subBatch->mask()));
+39 
+40     \textcolor{keyword}{auto} rIdx = graph->constant(\{(int)subBatch->indeces().size(), 1\},
+41                                 init = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(subBatch->indeces()));
+42 
+43     \textcolor{keyword}{auto} rShifted = \hyperlink{namespacemarian_a763e5e9b5d5a329d2420fe9bab95476d}{shift}(r, \{0, 0, 1, 0\});
+44 
+45     state->setTargetEmbeddings(rShifted);
+46 
+47     \textcolor{keywordflow}{return} std::make\_tuple(rMask, rIdx);
+48   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d22/classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d22/classmarian_1_1EncoderDecoderRec_a470e9aaddae95fc1a1d5ecaabf06a1fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!reconstructor\+Step@{reconstructor\+Step}}
+\index{reconstructor\+Step@{reconstructor\+Step}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{reconstructor\+Step(\+Ptr$<$ Decoder\+State $>$ state)}{reconstructorStep(Ptr< DecoderState > state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Encoder\+Decoder\+Rec\+::reconstructor\+Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4}{}\label{classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4}
+
+
+Definition at line 50 of file s2s\+\_\+rec.\+h.
+
+
+\begin{DoxyCode}
+50                                                                        \{
+51     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+52 
+53     \textcolor{keywordtype}{int} dimTrgVoc = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"}).front();
+54 
+55     \textcolor{keywordtype}{int} dimTrgEmb = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-emb"});
+56 
+57     \textcolor{keywordtype}{int} dimDecState = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-rnn"});
+58     \textcolor{keywordtype}{bool} layerNorm = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"layer-normalization"});
+59 
+60     \textcolor{keywordtype}{float} dropoutRnn = \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_} ? 0 : \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"dropout-rnn"});
+61     \textcolor{keywordtype}{float} dropoutSrc = \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_} ? 0 : \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"dropout-trg"});
+62 
+63     \textcolor{keyword}{auto} stateS2S = std::dynamic\_pointer\_cast<DecoderStateS2S>(state);
+64 
+65     \textcolor{keyword}{auto} embeddings = stateS2S->getTargetEmbeddings();
+66     \textcolor{keyword}{auto} graph = embeddings->graph();
+67 
+68     \textcolor{keywordflow}{if}(dropoutSrc) \{
+69       \textcolor{keywordtype}{int} dimBatch = embeddings->shape()[0];
+70       \textcolor{keywordtype}{int} srcWords = embeddings->shape()[2];
+71       \textcolor{keyword}{auto} srcWordDrop = graph->dropout(dropoutSrc, \{dimBatch, 1, srcWords\});
+72       embeddings = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(embeddings, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = srcWordDrop);
+73     \}
+74 
+75     \textcolor{keyword}{auto} context = state->getEncoderState()->getContext();
+76 
+77     \textcolor{comment}{// std::cerr << "T:" << attention\_ << std::endl;}
+78     \textcolor{comment}{// @TODO: proper clearing}
+79     \textcolor{comment}{// if(!attention\_)}
+80     \hyperlink{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}{attention\_} = New<GlobalAttention>(\textcolor{stringliteral}{"decoder\_rec"},
+81                                       state->getEncoderState(),
+82                                       dimDecState,
+83                                       \hyperlink{namespacemarian_1_1keywords_aeb1a41f81a79487b23aa2f8769a205bf}{dropout\_prob} = dropoutRnn,
+84                                       \hyperlink{namespacemarian_1_1keywords_a0865ee916b32905390a7c6e6bdfd8a9f}{normalize} = layerNorm);
+85 
+86     \textcolor{comment}{// std::cerr << "T:" << attention\_ << std::endl;}
+87     \textcolor{comment}{// if(!rnnL1)}
+88     \hyperlink{classmarian_1_1EncoderDecoderRec_ad0d471b436beab644c14a8b692a4d53f}{rnnL1} = New<RNN<CGRU>>(graph,
+89                            \textcolor{stringliteral}{"decoder\_rec"},
+90                            dimTrgEmb,
+91                            dimDecState,
+92                            \hyperlink{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}{attention\_},
+93                            dropout\_prob = dropoutRnn,
+94                            normalize = layerNorm);
+95     \textcolor{keyword}{auto} stateL1 = (*rnnL1)(embeddings, stateS2S->getStates()[0]);
+96 
+97     \textcolor{keywordtype}{bool} single = stateS2S->doSingleStep();
+98     \textcolor{keyword}{auto} alignedContext = single ? rnnL1->getCell()->getLastContext() :
+99                                    rnnL1->getCell()->getContexts();
+100 
+101     std::vector<Expr> statesOut;
+102     statesOut.push\_back(stateL1);
+103 
+104     \textcolor{keyword}{auto} outputLn = stateL1;
+105 
+107     \textcolor{keyword}{auto} logitsL1
+108         = Dense(\textcolor{stringliteral}{"ff\_logit\_l1\_rec"},
+109                 dimTrgEmb,
+110                 activation = \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{act::tanh},
+111                 normalize = layerNorm)(embeddings, outputLn, alignedContext);
+112 
+113     \textcolor{keyword}{auto} logitsOut = Dense(\textcolor{stringliteral}{"ff\_logit\_l2\_rec"}, dimTrgVoc)(logitsL1);
+114 
+115     \textcolor{keywordflow}{return} New<DecoderStateS2S>(statesOut, logitsOut, state->getEncoderState());
+116   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d22/classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d22/classmarian_1_1EncoderDecoderRec_ac3a359e69278e31f475f4e6b6acf88e4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!attention\+\_\+@{attention\+\_\+}}
+\index{attention\+\_\+@{attention\+\_\+}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{attention\+\_\+}{attention_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$Global\+Attention$>$ marian\+::\+Encoder\+Decoder\+Rec\+::attention\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}{}\label{classmarian_1_1EncoderDecoderRec_ad4768d4a33e83b3fc280f666df286269}
+
+
+Definition at line 9 of file s2s\+\_\+rec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}!rnn\+L1@{rnn\+L1}}
+\index{rnn\+L1@{rnn\+L1}!marian\+::\+Encoder\+Decoder\+Rec@{marian\+::\+Encoder\+Decoder\+Rec}}
+\subsubsection[{\texorpdfstring{rnn\+L1}{rnnL1}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$R\+NN$<$C\+G\+RU$>$ $>$ marian\+::\+Encoder\+Decoder\+Rec\+::rnn\+L1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderDecoderRec_ad0d471b436beab644c14a8b692a4d53f}{}\label{classmarian_1_1EncoderDecoderRec_ad0d471b436beab644c14a8b692a4d53f}
+
+
+Definition at line 10 of file s2s\+\_\+rec.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{s2s__rec_8h}{s2s\+\_\+rec.\+h}\end{DoxyCompactItemize}

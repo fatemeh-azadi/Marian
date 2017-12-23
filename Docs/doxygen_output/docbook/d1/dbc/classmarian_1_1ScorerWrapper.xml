@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dbc/classmarian_1_1ScorerWrapper">
+<title>marian::ScorerWrapper class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d00/scorers_8h">&lt;scorers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ScorerWrapper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d4f/classmarian_1_1ScorerWrapper__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ScorerWrapper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d77/classmarian_1_1ScorerWrapper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">EncoderDecoder</link></type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; EncoderDecoder &gt; encdec_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string fname_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1ab34eddb938c270883278d22326e4bece">ScorerWrapper</link> (
+const std::string &amp; name, float weight, const std::string &amp; fname, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1a5acee4f1d49e12f72859523fa4f36355">ScorerWrapper</link> (
+const std::string &amp; name, float weight, const std::string &amp; fname, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, const std::vector&lt; size_t &gt; &amp; batchIndices, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1a60c96b84ad4453d1776a03471cf32ae2">init</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1a74899e2039404d2cf249bd6c7a61bc13">clear</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1a27b72b8c2c42265eb95b8e0600f11eb3">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; <link linkend="d1/dbc/classmarian_1_1ScorerWrapper_1aa3009ac5556282e55bf1d28ac474c0c7">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d9/dcc/classmarian_1_1ScorerState">ScorerState</link> &gt; state, const std::vector&lt; size_t &gt; &amp; hypIndices, const std::vector&lt; size_t &gt; &amp; embIndices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1ab34eddb938c270883278d22326e4bece">
+                <title>marian::ScorerWrapper&lt; EncoderDecoder &gt;::ScorerWrapper (const std::string &amp;name, float weight, const std::string &amp;fname, Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1a5acee4f1d49e12f72859523fa4f36355">
+                <title>marian::ScorerWrapper&lt; EncoderDecoder &gt;::ScorerWrapper (const std::string &amp;name, float weight, const std::string &amp;fname, Ptr&lt; Config &gt; options, const std::vector&lt; size_t &gt; &amp;batchIndices, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1a60c96b84ad4453d1776a03471cf32ae2">
+                <title>virtual void marian::ScorerWrapper&lt; EncoderDecoder &gt;::init (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1a74899e2039404d2cf249bd6c7a61bc13">
+                <title>virtual void marian::ScorerWrapper&lt; EncoderDecoder &gt;::clear (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1a27b72b8c2c42265eb95b8e0600f11eb3">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::ScorerWrapper&lt; EncoderDecoder &gt;::startState (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dbc/classmarian_1_1ScorerWrapper_1aa3009ac5556282e55bf1d28ac474c0c7">
+                <title>virtual Ptr&lt;ScorerState&gt; marian::ScorerWrapper&lt; EncoderDecoder &gt;::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; ScorerState &gt; state, const std::vector&lt; size_t &gt; &amp;hypIndices, const std::vector&lt; size_t &gt; &amp;embIndices)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

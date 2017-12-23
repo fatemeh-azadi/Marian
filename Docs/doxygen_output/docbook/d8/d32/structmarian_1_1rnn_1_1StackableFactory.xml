@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory">
+<title>marian::rnn::StackableFactory struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d3a/rnn_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::StackableFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/df0/structmarian_1_1rnn_1_1StackableFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::StackableFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/da8/structmarian_1_1rnn_1_1StackableFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a8d89897e89e02ea87c725a63bb8e3bd0">StackableFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a64f3bd14a015299c3f69ceb7c55cc968">StackableFactory</link> (
+const <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory">StackableFactory</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a147ead23b692d792c73a8d23a60a9616">StackableFactory</link> (
+<link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory">StackableFactory</link> &amp;&amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1aab16e813fc068d8bc139065b448d53d6">~StackableFactory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; Cast &gt; <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1aa0d1b7976911c502c498baa17d02282a">as</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a0cc371e4ed326a31006658140f9a9f51">is</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a8d89897e89e02ea87c725a63bb8e3bd0">
+                <title>marian::rnn::StackableFactory::StackableFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a64f3bd14a015299c3f69ceb7c55cc968">
+                <title>marian::rnn::StackableFactory::StackableFactory (const StackableFactory &amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a147ead23b692d792c73a8d23a60a9616">
+                <title>marian::rnn::StackableFactory::StackableFactory (StackableFactory &amp;&amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1aab16e813fc068d8bc139065b448d53d6">
+                <title>virtual marian::rnn::StackableFactory::~StackableFactory ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1aa0d1b7976911c502c498baa17d02282a">
+                <title>Ptr&lt;Cast&gt; marian::rnn::StackableFactory::as ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d32/structmarian_1_1rnn_1_1StackableFactory_1a0cc371e4ed326a31006658140f9a9f51">
+                <title>bool marian::rnn::StackableFactory::is ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

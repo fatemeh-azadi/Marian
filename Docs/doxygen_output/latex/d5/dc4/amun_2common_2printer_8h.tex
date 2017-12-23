@@ -1,0 +1,47 @@
+\hypertarget{amun_2common_2printer_8h}{}\section{printer.\+h File Reference}
+\label{amun_2common_2printer_8h}\index{printer.\+h@{printer.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include \char`\"{}common/god.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/history.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/utils.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/vocab.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/soft\+\_\+alignment.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentence.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentences.\+h\char`\"{}}\\*
+Include dependency graph for amun/common/printer.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d46/amun_2common_2printer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dc5/amun_2common_2printer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}{amunmt\+::\+Get\+Alignment} (const Hypothesis\+Ptr \&hypothesis)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}{amunmt\+::\+Get\+Alignment\+String} (const std\+::vector$<$ size\+\_\+t $>$ \&alignment)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52}{amunmt\+::\+Get\+Soft\+Alignment\+String} (const Hypothesis\+Ptr \&hypothesis)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a589013f9c66aae2070326dc22d2b547d}{amunmt\+::\+Get\+Nematus\+Alignment\+String} (const Hypothesis\+Ptr \&hypothesis, std\+::string best, std\+::string source, size\+\_\+t linenum)
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\void \hyperlink{namespaceamunmt_aef108281493b0c3b669c537192eace34}{amunmt\+::\+Printer} (const God \&god, const History \&history, O\+Stream \&out, const Sentence \&sentence)
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\void \hyperlink{namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2}{amunmt\+::\+Printer} (const God \&god, const Histories \&histories, O\+Stream \&out, const Sentence \&sentence)
+\end{DoxyCompactItemize}

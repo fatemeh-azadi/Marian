@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper">
+<title>amunmt::GPU::NpzConverter::NpyMatrixWrapper class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::NpzConverter::NpyMatrixWrapper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d5e/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::NpzConverter::NpyMatrixWrapper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d21/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const cnpy::NpyArray &amp; npy_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a34e7df7be8aa7f118d8e9b00b42f9f7e">NpyMatrixWrapper</link> (
+const cnpy::NpyArray &amp; npy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a000c809949a76b3d46a95d1945c4f431">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a0d8bf20456bf15f3dddfd0663a57e3b0">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a78ebad93add1ed2586e70126917ed887">operator()</link> (
+size_t i, size_t j)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1ac8c242dc2da5e984e7b18f64e5931ed4">size1</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a7152ffabd4b46c9ece7321cacf39eaf6">size2</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a34e7df7be8aa7f118d8e9b00b42f9f7e">
+                <title>amunmt::GPU::NpzConverter::NpyMatrixWrapper::NpyMatrixWrapper (const cnpy::NpyArray &amp;npy)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a000c809949a76b3d46a95d1945c4f431">
+                <title>size_t amunmt::GPU::NpzConverter::NpyMatrixWrapper::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a0d8bf20456bf15f3dddfd0663a57e3b0">
+                <title>float* amunmt::GPU::NpzConverter::NpyMatrixWrapper::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a78ebad93add1ed2586e70126917ed887">
+                <title>float amunmt::GPU::NpzConverter::NpyMatrixWrapper::operator() (size_t i, size_t j) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1ac8c242dc2da5e984e7b18f64e5931ed4">
+                <title>size_t amunmt::GPU::NpzConverter::NpyMatrixWrapper::size1 () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper_1a7152ffabd4b46c9ece7321cacf39eaf6">
+                <title>size_t amunmt::GPU::NpzConverter::NpyMatrixWrapper::size2 () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

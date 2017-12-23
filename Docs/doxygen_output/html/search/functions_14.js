@@ -1,0 +1,15 @@
+var searchData=
+[
+  ['val',['val',['../de/dff/classmarian_1_1Chainable.html#a5b4abc3fddef0cc1dea251820bf98d95',1,'marian::Chainable::val()'],['../d0/d7a/classmarian_1_1Node.html#a0df86f2ff4a169111d6ba0865e6fd935',1,'marian::Node::val()'],['../d0/d2d/classmarian_1_1ReshapeNodeOp.html#a61262825805f0d2ab311d7ad36fed515',1,'marian::ReshapeNodeOp::val()'],['../d8/d75/classmarian_1_1TimestepNodeOp.html#a9d16e5a4d7b7359c4b4e230500a45343',1,'marian::TimestepNodeOp::val()']]],
+  ['validate',['validate',['../d2/dab/classmarian_1_1Scheduler.html#abbd43aacb8b92dd94ffb0f5a104f6c59',1,'marian::Scheduler::validate()'],['../de/da1/classmarian_1_1Validator.html#a30afe5c990329fdb37133cad5e323c31',1,'marian::Validator::validate()'],['../d7/d8c/classmarian_1_1ScriptValidator.html#a883bb9df22252e25ca4be306713f034d',1,'marian::ScriptValidator::validate()'],['../da/d85/classmarian_1_1S2SValidator.html#aef728e7e102607d2d69d96aa4906d128',1,'marian::S2SValidator::validate()'],['../d7/dd3/namespaceamunmt.html#ad51b66163a1437dc0ffd4aedbb0bd067',1,'amunmt::Validate()']]],
+  ['validatebg',['validateBG',['../d2/d02/classmarian_1_1AccuracyValidator.html#a8e46df95f018d71172720c38e8b179b4',1,'marian::AccuracyValidator::validateBG()'],['../de/da1/classmarian_1_1Validator.html#a62416349540dc2b628b70b4f401c4a49',1,'marian::Validator::validateBG()'],['../d9/dde/classmarian_1_1CrossEntropyValidator.html#a2b49c37174062b22629073328997dd6c',1,'marian::CrossEntropyValidator::validateBG()'],['../df/d9a/classmarian_1_1PerplexityValidator.html#a30a9da5e5a20b5f7f90643eb1ae85dac',1,'marian::PerplexityValidator::validateBG()'],['../d7/d8c/classmarian_1_1ScriptValidator.html#a0dabd973630921103e7b3a8121a12961',1,'marian::ScriptValidator::validateBG()'],['../da/d85/classmarian_1_1S2SValidator.html#a4b6ef1beacf57dce676851f740700573',1,'marian::S2SValidator::validateBG()']]],
+  ['validateoptions',['validateOptions',['../d6/d38/classmarian_1_1ConfigParser.html#abbe3a863f0c0599f1aab53e446291b02',1,'marian::ConfigParser']]],
+  ['validating',['validating',['../d2/dab/classmarian_1_1Scheduler.html#afcc419dc5a3e63ea527a5736cd74c20a',1,'marian::Scheduler']]],
+  ['validator',['Validator',['../de/da1/classmarian_1_1Validator.html#a438455be8ec5c8e0158ad4d8586b6d51',1,'marian::Validator']]],
+  ['validators',['Validators',['../da/d22/namespacemarian.html#a691f0c637b8713ff7972cdd276f2e099',1,'marian']]],
+  ['vals',['vals',['../dc/d36/classmarian_1_1Parameters.html#aabd1c44b5f667c5aee05b13a7ac7e17d',1,'marian::Parameters']]],
+  ['values',['values',['../d1/d62/classmarian_1_1sparse_1_1CSR.html#af3d51ccd7e843d03db235cc5ec81d366',1,'marian::sparse::CSR']]],
+  ['vocab',['Vocab',['../d4/d9e/classamunmt_1_1Vocab.html#afba1a9cfd5441b9a4455bb69cc656e93',1,'amunmt::Vocab::Vocab()'],['../db/dd1/classmarian_1_1Vocab.html#a0e99d044198e23cd5187d09883e326ca',1,'marian::Vocab::Vocab()']]],
+  ['vocabfreqorderer',['VocabFreqOrderer',['../d3/d3d/classmarian_1_1Vocab_1_1VocabFreqOrderer.html#abeb53dd639a6f40bb0d7c134a6b844e2',1,'marian::Vocab::VocabFreqOrderer']]],
+  ['vocabgetter',['VocabGetter',['../d3/d59/classVocabGetter.html#a9e505a1f22a2e90792f2f68ec87c3be3',1,'VocabGetter']]]
+];

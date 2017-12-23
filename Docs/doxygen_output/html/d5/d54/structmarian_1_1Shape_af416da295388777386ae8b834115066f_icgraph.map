@@ -1,0 +1,24 @@
+<map id="marian::Shape::dim" name="marian::Shape::dim">
+<area shape="rect" id="node2" href="$d5/d54/structmarian_1_1Shape.html#a2849bb218aa2214bbab47256a9452caf" title="marian::Shape::set" alt="" coords="207,456,339,483"/>
+<area shape="rect" id="node22" href="$d5/d54/structmarian_1_1Shape.html#aca204099494ae601fddeb4be4bc3f189" title="Gets the size of the ith dimension represented by this object. " alt="" coords="205,507,340,533"/>
+<area shape="rect" id="node23" href="$d5/d54/structmarian_1_1Shape.html#a08ec40e4c6a6236f8392d3328a40c8cc" title="Gets a reference to the int representing the size of the ith dimension represented by this object..." alt="" coords="188,557,357,584"/>
+<area shape="rect" id="node3" href="$d6/d14/classmarian_1_1Amun.html#a0e8ed942ad3b414f43f29dbb6e9081eb" title="marian::Amun::load" alt="" coords="433,5,568,32"/>
+<area shape="rect" id="node4" href="$da/db9/classmarian_1_1ExpressionGraph.html#a67747b40ca80d7dc5b5dbd3d45793cce" title="marian::ExpressionGraph\l::load" alt="" coords="416,57,585,98"/>
+<area shape="rect" id="node5" href="$dc/d8c/structmarian_1_1DotNodeOp.html#ad897baac4270ce0d87fd90d340609e52" title="marian::DotNodeOp::\lnewShape" alt="" coords="427,122,574,163"/>
+<area shape="rect" id="node10" href="$d9/dbf/structmarian_1_1ScalarProductNodeOp.html#ae050799808ccec985a488ab6849944fe" title="marian::ScalarProductNode\lOp::newShape" alt="" coords="409,187,592,229"/>
+<area shape="rect" id="node11" href="$d1/dff/structmarian_1_1ElementBinaryNodeOp.html#ab19f15ffa616cc629569f88755c9c725" title="marian::ElementBinaryNode\lOp::newShape" alt="" coords="408,253,593,294"/>
+<area shape="rect" id="node12" href="$da/d72/structmarian_1_1CrossEntropyNodeOp.html#a1e72292a14569fda92abc806dbc79acb" title="marian::CrossEntropyNode\lOp::newShape" alt="" coords="411,318,591,359"/>
+<area shape="rect" id="node13" href="$d5/d3e/structmarian_1_1ConcatenateNodeOp.html#a7e9ce31c059ea7f61e778c16fbb62e2c" title="marian::ConcatenateNodeOp\l::newShape" alt="" coords="405,383,596,425"/>
+<area shape="rect" id="node14" href="$d0/d6a/structmarian_1_1AffineNodeOp.html#a6a802543c6b3aeb37753ba775ac09c23" title="marian::AffineNodeOp\l::newShape" alt="" coords="425,449,576,490"/>
+<area shape="rect" id="node15" href="$d9/d8a/structmarian_1_1TanhNodeOp.html#a09f244867abe44271e2138204eaff0d2" title="marian::TanhNodeOp\l::newShape" alt="" coords="427,514,574,555"/>
+<area shape="rect" id="node16" href="$dc/d7a/structmarian_1_1SumNodeOp.html#a217ee895f48f464dbe0ce55c685b927a" title="marian::SumNodeOp::\lnewShape" alt="" coords="425,579,577,621"/>
+<area shape="rect" id="node17" href="$de/dfa/structmarian_1_1MeanNodeOp.html#a21514a578bd7952b2d863cd164279baf" title="marian::MeanNodeOp\l::newShape" alt="" coords="426,645,575,686"/>
+<area shape="rect" id="node18" href="$db/dfd/structmarian_1_1RowsNodeOp.html#ae973282fa06756d61cd0827136138dad" title="marian::RowsNodeOp\l::newShape" alt="" coords="425,710,576,751"/>
+<area shape="rect" id="node19" href="$d7/d70/structmarian_1_1ColsNodeOp.html#a22553cfaa20952f20581670d433bad5b" title="marian::ColsNodeOp\l::newShape" alt="" coords="429,775,573,817"/>
+<area shape="rect" id="node20" href="$d7/dc5/structmarian_1_1TransposeNodeOp.html#a673f354b5892c9f835f470a297f4f22c" title="marian::TransposeNodeOp\l::newShape" alt="" coords="411,841,590,882"/>
+<area shape="rect" id="node21" href="$d8/d75/classmarian_1_1TimestepNodeOp.html#af59462293088e6859217d6436b929bd3" title="marian::TimestepNodeOp\l::newShape" alt="" coords="415,906,586,947"/>
+<area shape="rect" id="node6" href="$dc/d8c/structmarian_1_1DotNodeOp.html#a66d1926cfedd0f890967b6d0fc618ab8" title="marian::DotNodeOp::\lDotNodeOp" alt="" coords="663,25,810,66"/>
+<area shape="rect" id="node7" href="$d9/dbf/structmarian_1_1ScalarProductNodeOp.html#ab5e665a3dc2a9c6601182f7b9f3b4c39" title="marian::ScalarProductNode\lOp::ScalarProductNodeOp" alt="" coords="645,90,828,131"/>
+<area shape="rect" id="node8" href="$d1/dff/structmarian_1_1ElementBinaryNodeOp.html#ae36592112f9c11758c2d56b9aab0440c" title="marian::ElementBinaryNode\lOp::ElementBinaryNodeOp" alt="" coords="644,155,829,197"/>
+<area shape="rect" id="node9" href="$da/d72/structmarian_1_1CrossEntropyNodeOp.html#ac48a140d97cbf643601b2d16cdc674e0" title="marian::CrossEntropyNode\lOp::CrossEntropyNodeOp" alt="" coords="647,221,827,262"/>
+</map>

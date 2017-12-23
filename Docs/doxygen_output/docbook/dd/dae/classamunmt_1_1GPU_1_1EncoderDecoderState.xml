@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState">
+<title>amunmt::GPU::EncoderDecoderState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d1e/encoder__decoder__state_8h">&lt;encoder_decoder_state.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::EncoderDecoderState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/df1/classamunmt_1_1GPU_1_1EncoderDecoderState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::EncoderDecoderState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dd4/classamunmt_1_1GPU_1_1EncoderDecoderState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CellState states_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix embeddings_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a39e80f702f6a7d1637035e69e488cd93">EncoderDecoderState</link> (
+const <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState">EncoderDecoderState</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a957d5c5780a22dee5a63d81c2cce3cce">EncoderDecoderState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1abeda49382f75853e64b2085a29f7aba7">Debug</link> (
+size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a6fa32359597fa1c3275c0a7db1ddccd4">GetStates</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1ab08242f46ad02f63ac5442d6ce589af5">GetEmbeddings</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1aa22bedc6b2783410cc27fb948ad2abd5">GetStates</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1aac6d9832a63050423c573e2dbae9a24e">GetEmbeddings</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a39e80f702f6a7d1637035e69e488cd93">
+                <title>amunmt::GPU::EncoderDecoderState::EncoderDecoderState (const EncoderDecoderState &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a957d5c5780a22dee5a63d81c2cce3cce">
+                <title>amunmt::GPU::EncoderDecoderState::EncoderDecoderState ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1abeda49382f75853e64b2085a29f7aba7">
+                <title>virtual std::string amunmt::GPU::EncoderDecoderState::Debug (size_t verbosity=1) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1a6fa32359597fa1c3275c0a7db1ddccd4">
+                <title>CellState&amp; amunmt::GPU::EncoderDecoderState::GetStates ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1ab08242f46ad02f63ac5442d6ce589af5">
+                <title>mblas::Matrix&amp; amunmt::GPU::EncoderDecoderState::GetEmbeddings ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1aa22bedc6b2783410cc27fb948ad2abd5">
+                <title>const CellState&amp; amunmt::GPU::EncoderDecoderState::GetStates () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState_1aac6d9832a63050423c573e2dbae9a24e">
+                <title>const mblas::Matrix&amp; amunmt::GPU::EncoderDecoderState::GetEmbeddings () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

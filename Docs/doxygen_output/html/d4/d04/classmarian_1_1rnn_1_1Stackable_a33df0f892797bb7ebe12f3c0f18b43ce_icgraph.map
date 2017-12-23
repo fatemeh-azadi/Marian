@@ -1,0 +1,10 @@
+<map id="marian::rnn::Stackable::as" name="marian::rnn::Stackable::as">
+<area shape="rect" id="node2" href="$de/d21/classmarian_1_1DecoderHardSoftAtt.html#aa3331fae45271298ce86ad6f6a5c9cf5" title="marian::DecoderHardSoftAtt\l::step" alt="" coords="228,5,415,47"/>
+<area shape="rect" id="node3" href="$de/d21/classmarian_1_1DecoderHardSoftAtt.html#a39c270be364b3e37f3834f6fc867ac34" title="marian::DecoderHardSoftAtt\l::getAlignments" alt="" coords="228,71,415,112"/>
+<area shape="rect" id="node4" href="$d7/d30/classmarian_1_1MultiDecoderHardSoftAtt.html#a9dc01206082f6b287300c2ee6460d3ba" title="marian::MultiDecoderHard\lSoftAtt::step" alt="" coords="234,136,409,177"/>
+<area shape="rect" id="node5" href="$d7/d30/classmarian_1_1MultiDecoderHardSoftAtt.html#a5663940ea8e359b7af4ebb16380fe01e" title="marian::MultiDecoderHard\lSoftAtt::getAlignments" alt="" coords="234,201,409,243"/>
+<area shape="rect" id="node6" href="$d3/d3b/classmarian_1_1MultiDecoderS2S.html#a6f0421ce42840c6198f3d450b3d55bfb" title="marian::MultiDecoderS2S\l::step" alt="" coords="236,267,407,308"/>
+<area shape="rect" id="node7" href="$d3/d3b/classmarian_1_1MultiDecoderS2S.html#a9d82178076ee276d1f83ac4e040d959b" title="marian::MultiDecoderS2S\l::getAlignments" alt="" coords="236,332,407,373"/>
+<area shape="rect" id="node8" href="$d3/d4b/classmarian_1_1DecoderS2S.html#a786a6f2e325d86a8335cc5fc25170518" title="marian::DecoderS2S\l::step" alt="" coords="250,397,393,439"/>
+<area shape="rect" id="node9" href="$d3/d4b/classmarian_1_1DecoderS2S.html#a4da86da8904d9f2fb1eedf44709d225d" title="marian::DecoderS2S\l::getAlignments" alt="" coords="250,463,393,504"/>
+</map>

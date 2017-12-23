@@ -1,0 +1,140 @@
+\hypertarget{classamunmt_1_1GPU_1_1Encoder}{}\section{amunmt\+:\+:G\+PU\+:\+:Encoder Class Reference}
+\label{classamunmt_1_1GPU_1_1Encoder}\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+
+
+{\ttfamily \#include $<$encoder.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Encoder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/db3/classamunmt_1_1GPU_1_1Encoder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings}{Embeddings}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1RNN}{R\+NN}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_ae57279e908b3e254c30838cda0901edc}{Encoder} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model, const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Encoder_a0d2c13c77b678ab60a137572ba6f6494}{Encode} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&words, size\+\_\+t tab, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&context, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ \hyperlink{classamunmt_1_1GPU_1_1Encoder_a0ee54ff7a53a4b877c7fcdd7e2615d6b}{Init\+Forward\+Cell} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model, const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ \hyperlink{classamunmt_1_1GPU_1_1Encoder_aa697a25b5da8b77d76a26db8e6c480c7}{Init\+Backward\+Cell} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model, const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_a5914793404e83167c533d4501741505c}{Encoder} (const \hyperlink{classamunmt_1_1GPU_1_1Encoder}{Encoder} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1Embeddings}{Embeddings}$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncEmbeddings}{Weights\+::\+Enc\+Embeddings} $>$ \hyperlink{classamunmt_1_1GPU_1_1Encoder_ab7565ccf2c9dc78964a14cf8d89e1f9b}{embeddings\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1RNN}{R\+NN} \hyperlink{classamunmt_1_1GPU_1_1Encoder_a7969e9427ccd69602c343a18f5e135ae}{forward\+Rnn\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Encoder_1_1RNN}{R\+NN} \hyperlink{classamunmt_1_1GPU_1_1Encoder_a75b56c6fa2294c037bcb6f056f92151e}{backward\+Rnn\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{classamunmt_1_1GPU_1_1Encoder_aaa3992abb2dad6ae985fad5734354f76}{embedded\+Words\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file encoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!Encoder@{Encoder}}
+\index{Encoder@{Encoder}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Encoder(const Weights \&model, const Y\+A\+M\+L\+::\+Node \&config)}{Encoder(const Weights &model, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Encoder (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1Encoder_ae57279e908b3e254c30838cda0901edc}{}\label{classamunmt_1_1GPU_1_1Encoder_ae57279e908b3e254c30838cda0901edc}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!Encoder@{Encoder}}
+\index{Encoder@{Encoder}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Encoder(const Encoder \&)=delete}{Encoder(const Encoder &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Encoder (
+\begin{DoxyParamCaption}
+\item[{const {\bf Encoder} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_a5914793404e83167c533d4501741505c}{}\label{classamunmt_1_1GPU_1_1Encoder_a5914793404e83167c533d4501741505c}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!Encode@{Encode}}
+\index{Encode@{Encode}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Encode(const Sentences \&words, size\+\_\+t tab, mblas\+::\+Matrix \&context, mblas\+::\+I\+Matrix \&sentence\+Lengths)}{Encode(const Sentences &words, size_t tab, mblas::Matrix &context, mblas::IMatrix &sentenceLengths)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{words, }
+\item[{size\+\_\+t}]{tab, }
+\item[{{\bf mblas\+::\+Matrix} \&}]{context, }
+\item[{{\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1Encoder_a0d2c13c77b678ab60a137572ba6f6494}{}\label{classamunmt_1_1GPU_1_1Encoder_a0d2c13c77b678ab60a137572ba6f6494}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!Init\+Backward\+Cell@{Init\+Backward\+Cell}}
+\index{Init\+Backward\+Cell@{Init\+Backward\+Cell}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Init\+Backward\+Cell(const Weights \&model, const Y\+A\+M\+L\+::\+Node \&config)}{InitBackwardCell(const Weights &model, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Cell}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Init\+Backward\+Cell (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_aa697a25b5da8b77d76a26db8e6c480c7}{}\label{classamunmt_1_1GPU_1_1Encoder_aa697a25b5da8b77d76a26db8e6c480c7}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!Init\+Forward\+Cell@{Init\+Forward\+Cell}}
+\index{Init\+Forward\+Cell@{Init\+Forward\+Cell}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Init\+Forward\+Cell(const Weights \&model, const Y\+A\+M\+L\+::\+Node \&config)}{InitForwardCell(const Weights &model, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Cell}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+::\+Init\+Forward\+Cell (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_a0ee54ff7a53a4b877c7fcdd7e2615d6b}{}\label{classamunmt_1_1GPU_1_1Encoder_a0ee54ff7a53a4b877c7fcdd7e2615d6b}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!backward\+Rnn\+\_\+@{backward\+Rnn\+\_\+}}
+\index{backward\+Rnn\+\_\+@{backward\+Rnn\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{backward\+Rnn\+\_\+}{backwardRnn_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+NN} amunmt\+::\+G\+P\+U\+::\+Encoder\+::backward\+Rnn\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_a75b56c6fa2294c037bcb6f056f92151e}{}\label{classamunmt_1_1GPU_1_1Encoder_a75b56c6fa2294c037bcb6f056f92151e}
+
+
+Definition at line 140 of file encoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!embedded\+Words\+\_\+@{embedded\+Words\+\_\+}}
+\index{embedded\+Words\+\_\+@{embedded\+Words\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{embedded\+Words\+\_\+}{embeddedWords_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+::embedded\+Words\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_aaa3992abb2dad6ae985fad5734354f76}{}\label{classamunmt_1_1GPU_1_1Encoder_aaa3992abb2dad6ae985fad5734354f76}
+
+
+Definition at line 143 of file encoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!embeddings\+\_\+@{embeddings\+\_\+}}
+\index{embeddings\+\_\+@{embeddings\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{embeddings\+\_\+}{embeddings_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Embeddings}$<${\bf Weights\+::\+Enc\+Embeddings}$>$ amunmt\+::\+G\+P\+U\+::\+Encoder\+::embeddings\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_ab7565ccf2c9dc78964a14cf8d89e1f9b}{}\label{classamunmt_1_1GPU_1_1Encoder_ab7565ccf2c9dc78964a14cf8d89e1f9b}
+
+
+Definition at line 138 of file encoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}!forward\+Rnn\+\_\+@{forward\+Rnn\+\_\+}}
+\index{forward\+Rnn\+\_\+@{forward\+Rnn\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Encoder@{amunmt\+::\+G\+P\+U\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{forward\+Rnn\+\_\+}{forwardRnn_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+NN} amunmt\+::\+G\+P\+U\+::\+Encoder\+::forward\+Rnn\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Encoder_a7969e9427ccd69602c343a18f5e135ae}{}\label{classamunmt_1_1GPU_1_1Encoder_a7969e9427ccd69602c343a18f5e135ae}
+
+
+Definition at line 139 of file encoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encoder_8h}{encoder.\+h}\end{DoxyCompactItemize}

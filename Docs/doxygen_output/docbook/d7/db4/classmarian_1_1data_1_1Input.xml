@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/db4/classmarian_1_1data_1_1Input">
+<title>marian::data::Input class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/daf/data_2dataset_8h">&lt;dataset.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::Input</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d23/classmarian_1_1data_1_1Input__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::Input</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dc2/classmarian_1_1data_1_1Input__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Data::iterator  <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a94a106c4c6881b4e3ad3796dbddfded2">iterator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Data::const_iterator  <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a3b3281863ff04a0d9f5af5e96ee42bb6">const_iterator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shape shape_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Data &gt; data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/db4/classmarian_1_1data_1_1Input_1afe8ea48efed6b608c6ba3fcbe6b98111">Input</link> (
+const <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> &amp; shape)<para><emphasis>Constructs a new Input object with the specified Shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Data::iterator <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a7fe7b6ad7903bb7bc82572ff42627cfd">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Data::iterator <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a9dd6844703031ebe5a021d3b3362bd30">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Data::const_iterator <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a5cc55ae3f354855e74e375bb259370b1">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Data::const_iterator <link linkend="d7/db4/classmarian_1_1data_1_1Input_1abe996d8b0e1d2db673b5e15ced03abdd">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="de/d56/namespacemarian_1_1data_1a5801e80ecb76ee38a5ac080f08d9646c">Data</link> &amp; <link linkend="d7/db4/classmarian_1_1data_1_1Input_1a4ab2dc585e463b4dab0e822b2108b977">data</link> (
+)<para><emphasis>Returns a reference to this object&apos;s underlying ::Data.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d7/db4/classmarian_1_1data_1_1Input_1acd8a1b8df6caa0bbfb13a524277852e3">shape</link> (
+)<para><emphasis>Gets this object&apos;s underlying Shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d7/db4/classmarian_1_1data_1_1Input_1aef48296cf6749c641f229568a95bd4ee">size</link> (
+)<para><emphasis>Returns the number underlying values in this object&apos;s ::Data.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a94a106c4c6881b4e3ad3796dbddfded2">
+                <title>typedef Data::iterator marian::data::Input::iterator</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a3b3281863ff04a0d9f5af5e96ee42bb6">
+                <title>typedef Data::const_iterator marian::data::Input::const_iterator</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1afe8ea48efed6b608c6ba3fcbe6b98111">
+                <title>marian::data::Input::Input (const Shape &amp;shape)</title> <emphasis>Constructs a new Input object with the specified Shape.</emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a7fe7b6ad7903bb7bc82572ff42627cfd">
+                <title>Data::iterator marian::data::Input::begin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a9dd6844703031ebe5a021d3b3362bd30">
+                <title>Data::iterator marian::data::Input::end ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a5cc55ae3f354855e74e375bb259370b1">
+                <title>Data::const_iterator marian::data::Input::begin () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1abe996d8b0e1d2db673b5e15ced03abdd">
+                <title>Data::const_iterator marian::data::Input::end () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1a4ab2dc585e463b4dab0e822b2108b977">
+                <title>Data&amp; marian::data::Input::data ()</title> <emphasis>Returns a reference to this object&apos;s underlying ::Data.</emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1acd8a1b8df6caa0bbfb13a524277852e3">
+                <title>Shape marian::data::Input::shape () const </title> <emphasis>Gets this object&apos;s underlying Shape.</emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classmarian_1_1data_1_1Input_1aef48296cf6749c641f229568a95bd4ee">
+                <title>size_t marian::data::Input::size () const </title> <emphasis>Returns the number underlying values in this object&apos;s ::Data.</emphasis>
+                
+            </section>
+</section>

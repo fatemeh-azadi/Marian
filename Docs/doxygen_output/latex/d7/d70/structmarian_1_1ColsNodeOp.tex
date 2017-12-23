@@ -1,0 +1,274 @@
+\hypertarget{structmarian_1_1ColsNodeOp}{}\section{marian\+:\+:Cols\+Node\+Op Struct Reference}
+\label{structmarian_1_1ColsNodeOp}\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Cols\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d3e/structmarian_1_1ColsNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Cols\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d39/structmarian_1_1ColsNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1ColsNodeOp_ac2903df4ca1bab6bd607f72b7261bb27}{Cols\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, const std\+::vector$<$ size\+\_\+t $>$ \&indeces, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1ColsNodeOp_aa896f8391cb93021b9bd375dc5e2764f}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1ColsNodeOp_ab5711eb131212a41924e7da36d2e396c}{backward\+Ops} ()
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1ColsNodeOp_a22553cfaa20952f20581670d433bad5b}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)
+\item 
+const std\+::string \hyperlink{structmarian_1_1ColsNodeOp_a80be0674db468899b33ab96ee859d4f6}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ColsNodeOp_a7a05f997b241c0f524c125e111096218}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{indeces\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 458 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!Cols\+Node\+Op@{Cols\+Node\+Op}}
+\index{Cols\+Node\+Op@{Cols\+Node\+Op}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Cols\+Node\+Op(\+Expr a, const std\+::vector$<$ size\+\_\+t $>$ \&indeces, Args...\+args)}{ColsNodeOp(Expr a, const std::vector< size_t > &indeces, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Cols\+Node\+Op\+::\+Cols\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{indeces, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ColsNodeOp_ac2903df4ca1bab6bd607f72b7261bb27}{}\label{structmarian_1_1ColsNodeOp_ac2903df4ca1bab6bd607f72b7261bb27}
+
+
+Definition at line 460 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+461       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1ColsNodeOp_a22553cfaa20952f20581670d433bad5b}{newShape}(a, indeces), args...),
+462         \hyperlink{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{indeces\_}(indeces) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Cols\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ColsNodeOp_ab5711eb131212a41924e7da36d2e396c}{}\label{structmarian_1_1ColsNodeOp_ab5711eb131212a41924e7da36d2e396c}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 470 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+470                         \{
+471     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_afd1a77f3d0ba7b8b2f1e8daf788159d1}{PasteCols}(\hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, 
+      \hyperlink{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{indeces\_}))\};
+472   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d70/structmarian_1_1ColsNodeOp_ab5711eb131212a41924e7da36d2e396c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Cols\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ColsNodeOp_a7a05f997b241c0f524c125e111096218}{}\label{structmarian_1_1ColsNodeOp_a7a05f997b241c0f524c125e111096218}
+
+
+Reimplemented from \hyperlink{structmarian_1_1UnaryNodeOp_a826c7c1d74e47f70040cd1884b8ab984}{marian\+::\+Unary\+Node\+Op}.
+
+
+
+Definition at line 483 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+483 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"orange"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Cols\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ColsNodeOp_aa896f8391cb93021b9bd375dc5e2764f}{}\label{structmarian_1_1ColsNodeOp_aa896f8391cb93021b9bd375dc5e2764f}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 464 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+464                        \{
+465     \textcolor{comment}{// @TODO: solve this with a tensor!}
+466 
+467     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a7b1294cb49c42d55331bccbf1def82ba}{CopyCols}(\hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), 
+      \hyperlink{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{indeces\_}))\};
+468   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d70/structmarian_1_1ColsNodeOp_aa896f8391cb93021b9bd375dc5e2764f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Cols\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d}{}\label{structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 485 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+485                         \{
+486     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+487       \textcolor{keywordtype}{size\_t} seed = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+488       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : \hyperlink{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{indeces\_})
+489         \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, i);
+490       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = seed;
+491     \}
+492     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+493   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d70/structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)}{newShape(Expr a, const std::vector< size_t > &indeces)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ {\bf Shape} marian\+::\+Cols\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{indeces}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ColsNodeOp_a22553cfaa20952f20581670d433bad5b}{}\label{structmarian_1_1ColsNodeOp_a22553cfaa20952f20581670d433bad5b}
+
+
+Definition at line 475 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+475                                                            \{
+476     Shape \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape} = a->shape();
+477     shape.\hyperlink{structmarian_1_1Shape_a2849bb218aa2214bbab47256a9452caf}{set}(1, indeces.size());
+478     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape};
+479   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d70/structmarian_1_1ColsNodeOp_a22553cfaa20952f20581670d433bad5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Cols\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ColsNodeOp_a80be0674db468899b33ab96ee859d4f6}{}\label{structmarian_1_1ColsNodeOp_a80be0674db468899b33ab96ee859d4f6}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 481 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+481 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"cols"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}!indeces\+\_\+@{indeces\+\_\+}}
+\index{indeces\+\_\+@{indeces\+\_\+}!marian\+::\+Cols\+Node\+Op@{marian\+::\+Cols\+Node\+Op}}
+\subsubsection[{\texorpdfstring{indeces\+\_\+}{indeces_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ marian\+::\+Cols\+Node\+Op\+::indeces\+\_\+}\hypertarget{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}{}\label{structmarian_1_1ColsNodeOp_a9c99c0784351045f1d0e61dbf922ea72}
+
+
+Definition at line 495 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

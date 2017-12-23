@@ -1,0 +1,9 @@
+<map id="amunmt::SourceIndependentScorer" name="amunmt::SourceIndependentScorer">
+<area shape="rect" id="node2" href="$db/d52/classamunmt_1_1Scorer.html" title="{amunmt::Scorer\n|# config_\l# tab_\l|+ Scorer()\l+ ~Scorer()\l+ Decode()\l+ BeginSentenceState()\l+ AssembleBeamState()\l+ Encode()\l+ Filter()\l+ NewState()\l+ GetVocabSize()\l+ CleanUpAfterSentence()\l+ GetName()\l+ GetProbs()\l+ GetNBest()\l+ GetBias()\l}" alt="" coords="1536,1216,1712,1499"/>
+<area shape="rect" id="node3" href="$d7/d4e/classamunmt_1_1God.html" title="{amunmt::God\n|&#45; filter_\l&#45; info_\l&#45; progress_\l&#45; threadIncr_\l&#45; accessLock_\l&#45; returnNBestList_\l&#45; useFusedSoftmax_\l|+ God()\l+ ~God()\l+ Init()\l+ Init()\l+ Cleanup()\l+ Has()\l+ Get()\l+ Get()\l+ GetSourceVocab()\l+ GetTargetVocab()\land 16 more...\l&#45; LoadScorers()\l&#45; LoadFiltering()\l&#45; LoadPrePostProcessing()\l}" alt="" coords="923,797,1101,1153"/>
+<area shape="rect" id="node9" href="$dd/d77/classamunmt_1_1OutputCollector.html" title="{amunmt::OutputCollector\n|# mutex_\l# nextId_\l|+ OutputCollector()\l+ OutputCollector()\l+ Write()\l}" alt="" coords="747,569,915,691"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="865,407,959,485"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="862,5,962,83"/>
+<area shape="rect" id="node18" href="$da/d4e/classamunmt_1_1Config.html" title="{amunmt::Config\n|&#45; config_\l|+ Has()\l+ Get()\l+ Get()\l+ Get()\l+ AddOptions()\l+ LogOptions()\l}" alt="" coords="1696,555,1811,705"/>
+<area shape="rect" id="node19" title="STL class. " alt="" coords="1763,407,1843,485"/>
+</map>

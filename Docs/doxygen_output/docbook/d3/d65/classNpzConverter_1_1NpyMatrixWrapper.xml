@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper">
+<title>NpzConverter::NpyMatrixWrapper class Reference</title>
+<para>Inheritance diagram for NpzConverter::NpyMatrixWrapper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d1f/classNpzConverter_1_1NpyMatrixWrapper__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for NpzConverter::NpyMatrixWrapper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dcd/classNpzConverter_1_1NpyMatrixWrapper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const cnpy::NpyArray &amp; npy_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a12589425c3fa4565316a0ff9ceea6456">NpyMatrixWrapper</link> (
+const cnpy::NpyArray &amp; npy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a245093ae856204f1c9da73cb97ab1672">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a1bb6c63b0182eef3d5938b696101d4f8">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a9f118068f570b5a013bca27ca993d00f">operator()</link> (
+size_t i, size_t j)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a41f3130d4d75c67a50f886264f5fddc1">size1</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a90bcb80b9724c796dafba354a181b71a">size2</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Wraps npy data such that the underlying matrix shape and matrix data are made accessible. </para>
+                <para>Definition at line 42 of file npz_converter.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>npz_converter.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>const cnpy::NpyArray&amp; NpzConverter::NpyMatrixWrapper::npy_</title>                
+<para>Instance of the underlying (3rd party) data structure. </para>
+
+                <para>Definition at line 110 of file npz_converter.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>npz_converter.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a12589425c3fa4565316a0ff9ceea6456">
+                <title>NpzConverter::NpyMatrixWrapper::NpyMatrixWrapper (const cnpy::NpyArray &amp;npy)</title> <emphasis></emphasis>
+                
+<para>Constructs a wrapper around an underlying npy data structure, enabling the underlying data to be accessed as a matrix.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>npy</entry>
+                                <entry>
+<para>the underlying data </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a245093ae856204f1c9da73cb97ab1672">
+                <title>size_t NpzConverter::NpyMatrixWrapper::size () const </title> <emphasis></emphasis>
+                
+<para>Returns the total number of elements in the underlying matrix.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>the total number of elements in the underlying matrix </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a1bb6c63b0182eef3d5938b696101d4f8">
+                <title>float* NpzConverter::NpyMatrixWrapper::data () const </title> <emphasis></emphasis>
+                
+<para>Returns a pointer to the raw data that underlies the matrix.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>a pointer to the raw data that underlies the matrix </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a9f118068f570b5a013bca27ca993d00f">
+                <title>float NpzConverter::NpyMatrixWrapper::operator() (size_t i, size_t j) const </title> <emphasis></emphasis>
+                
+<para>Given the index (i, j) of a matrix element, this operator returns the float value from the underlying npz data that is stored in the matrix.</para>
+
+<para>XXX: Marcin, is the following correct? Or do I have the row/column labels swapped?</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para>Index of a column in the matrix </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>j</entry>
+                                <entry>
+<para>Index of a row in the matrix</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>the float value stored at column i, row j of the matrix </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a41f3130d4d75c67a50f886264f5fddc1">
+                <title>size_t NpzConverter::NpyMatrixWrapper::size1 () const </title> <emphasis></emphasis>
+                
+<para>Returns the number of columns in the matrix.</para>
+
+<para>XXX: Marcin, is this following correct? Or do I have the row/column labels swapped?</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>the number of columns in the matrix </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d65/classNpzConverter_1_1NpyMatrixWrapper_1a90bcb80b9724c796dafba354a181b71a">
+                <title>size_t NpzConverter::NpyMatrixWrapper::size2 () const </title> <emphasis></emphasis>
+                
+<para>Returns the number of rows in the matrix.</para>
+
+<para>XXX: Marcin, is this following correct? Or do I have the row/column labels swapped?</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>the number of rows in the matrix </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

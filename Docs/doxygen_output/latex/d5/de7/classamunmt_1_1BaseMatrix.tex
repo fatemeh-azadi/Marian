@@ -1,0 +1,277 @@
+\hypertarget{classamunmt_1_1BaseMatrix}{}\section{amunmt\+:\+:Base\+Matrix Class Reference}
+\label{classamunmt_1_1BaseMatrix}\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+
+
+{\ttfamily \#include $<$base\+\_\+matrix.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:Base\+Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d6c/classamunmt_1_1BaseMatrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:Base\+Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{da/d49/classamunmt_1_1BaseMatrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1BaseMatrix_a4be3ab768df6a7039efbb14d43463a2c}{Base\+Matrix} ()
+\item 
+virtual \hyperlink{classamunmt_1_1BaseMatrix_afb3ba3f074a7464fbb991cb467c7e84d}{$\sim$\+Base\+Matrix} ()
+\item 
+virtual size\+\_\+t \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim} (size\+\_\+t i) const =0
+\item 
+virtual size\+\_\+t \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size} () const 
+\item 
+bool \hyperlink{classamunmt_1_1BaseMatrix_a340cbf16c47ba57d32cab301705f7776}{empty} () const 
+\item 
+virtual void \hyperlink{classamunmt_1_1BaseMatrix_a4cb69cec51d0849c2e9126131265a044}{Resize} (size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)=0
+\item 
+virtual std\+::string \hyperlink{classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd}{Debug} (size\+\_\+t verbosity=1) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file base\+\_\+matrix.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!Base\+Matrix@{Base\+Matrix}}
+\index{Base\+Matrix@{Base\+Matrix}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{Base\+Matrix()}{BaseMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Base\+Matrix\+::\+Base\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1BaseMatrix_a4be3ab768df6a7039efbb14d43463a2c}{}\label{classamunmt_1_1BaseMatrix_a4be3ab768df6a7039efbb14d43463a2c}
+
+
+Definition at line 21 of file base\+\_\+matrix.\+h.
+
+
+\begin{DoxyCode}
+21 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!````~Base\+Matrix@{$\sim$\+Base\+Matrix}}
+\index{````~Base\+Matrix@{$\sim$\+Base\+Matrix}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{$\sim$\+Base\+Matrix()}{~BaseMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual amunmt\+::\+Base\+Matrix\+::$\sim$\+Base\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BaseMatrix_afb3ba3f074a7464fbb991cb467c7e84d}{}\label{classamunmt_1_1BaseMatrix_afb3ba3f074a7464fbb991cb467c7e84d}
+
+
+Definition at line 22 of file base\+\_\+matrix.\+h.
+
+
+\begin{DoxyCode}
+22 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_afb3ba3f074a7464fbb991cb467c7e84d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{Debug(size\+\_\+t verbosity=1) const }{Debug(size_t verbosity=1) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Base\+Matrix\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{verbosity = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd}{}\label{classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd}
+
+
+Reimplemented in \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ float $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ amunmt\+::\+G\+P\+U\+::\+Nth\+Out $>$}, and \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ uint $>$}.
+
+
+
+Definition at line 15 of file base\+\_\+matrix.\+cpp.
+
+
+\begin{DoxyCode}
+16 \{
+17   std::stringstream strm;
+18   strm << \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(0) << \textcolor{stringliteral}{"x"} << \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(1) << \textcolor{stringliteral}{"x"} << \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(2) << \textcolor{stringliteral}{"x"} << \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(3) << \textcolor{stringliteral}{"="} << 
+      \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}();
+19   strm << \textcolor{stringliteral}{" "} << \textcolor{keyword}{this};
+20   \textcolor{keywordflow}{return} strm.str();
+21 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{d5/de7/classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!dim@{dim}}
+\index{dim@{dim}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{dim(size\+\_\+t i) const =0}{dim(size_t i) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t amunmt\+::\+Base\+Matrix\+::dim (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{}\label{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}
+
+
+Implemented in \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ float $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ amunmt\+::\+G\+P\+U\+::\+Nth\+Out $>$}, and \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ uint $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!empty@{empty}}
+\index{empty@{empty}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{empty() const }{empty() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Base\+Matrix\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1BaseMatrix_a340cbf16c47ba57d32cab301705f7776}{}\label{classamunmt_1_1BaseMatrix_a340cbf16c47ba57d32cab301705f7776}
+
+
+Definition at line 28 of file base\+\_\+matrix.\+h.
+
+
+\begin{DoxyCode}
+28                        \{
+29       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}() == 0;
+30     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_a340cbf16c47ba57d32cab301705f7776_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!Resize@{Resize}}
+\index{Resize@{Resize}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{Resize(size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)=0}{Resize(size_t rows, size_t cols, size_t beam=1, size_t batches=1)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+Base\+Matrix\+::\+Resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{cols, }
+\item[{size\+\_\+t}]{beam = {\ttfamily 1}, }
+\item[{size\+\_\+t}]{batches = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classamunmt_1_1BaseMatrix_a4cb69cec51d0849c2e9126131265a044}{}\label{classamunmt_1_1BaseMatrix_a4cb69cec51d0849c2e9126131265a044}
+
+
+Implemented in \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ float $>$}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ amunmt\+::\+G\+P\+U\+::\+Nth\+Out $>$}, and \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ uint $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d5/de7/classamunmt_1_1BaseMatrix_a4cb69cec51d0849c2e9126131265a044_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}!size@{size}}
+\index{size@{size}!amunmt\+::\+Base\+Matrix@{amunmt\+::\+Base\+Matrix}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Base\+Matrix\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{}\label{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}
+
+
+Definition at line 6 of file base\+\_\+matrix.\+cpp.
+
+
+\begin{DoxyCode}
+6                               \{
+7   \textcolor{keywordtype}{size\_t} ret = \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(0);
+8   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < \hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{SHAPE\_SIZE}; ++i) \{
+9     ret *= \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{dim}(i);
+10   \}
+11 
+12   \textcolor{keywordflow}{return} ret;
+13 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de7/classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{base__matrix_8h}{base\+\_\+matrix.\+h}\item 
+\hyperlink{base__matrix_8cpp}{base\+\_\+matrix.\+cpp}\end{DoxyCompactItemize}

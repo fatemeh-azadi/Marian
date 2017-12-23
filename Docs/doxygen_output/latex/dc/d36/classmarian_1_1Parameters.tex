@@ -1,0 +1,432 @@
+\hypertarget{classmarian_1_1Parameters}{}\section{marian\+:\+:Parameters Class Reference}
+\label{classmarian_1_1Parameters}\index{marian\+::\+Parameters@{marian\+::\+Parameters}}
+
+
+{\ttfamily \#include $<$parameters.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Parameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{db/d6d/classmarian_1_1Parameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1Parameters_a764b6a9878d9384a57d8999ac6858473}{init} (size\+\_\+t device)
+\item 
+auto \hyperlink{classmarian_1_1Parameters_aa4455a5d1f52b116da7612db0d0cff22}{begin} () -\/$>$ decltype(params\+\_\+.\+begin())
+\item 
+auto \hyperlink{classmarian_1_1Parameters_a0da2b76e9b36fc6d4f26320bf09fef96}{end} () -\/$>$ decltype(params\+\_\+.\+begin())
+\item 
+auto \hyperlink{classmarian_1_1Parameters_ac057d264e9eea0d345ad8f6a62f3fe69}{get\+Map} () -\/$>$ decltype(\hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\+\_\+})\&
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1Parameters_a08bd38120ba9a14fa2d66fcee53cda76}{get} (const std\+::string \&name)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Parameters_a3f99cdf63455697019da8da8d038a896}{size} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d}{total\+Capacity} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ alloc)
+\item 
+void \hyperlink{classmarian_1_1Parameters_a9970eb31a8871d95030e1430a253f010}{add} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} p, const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1Parameters_a9603af4faeb75926c9a0efd7ad3189ca}{allocate\+Forward} ()
+\item 
+void \hyperlink{classmarian_1_1Parameters_a350f3682c45b13d7a59a61e6cad14f57}{allocate\+Backward} ()
+\item 
+void \hyperlink{classmarian_1_1Parameters_ae99e7884529b5c8e63b151ffc2e863c8}{set\+\_\+zero\+\_\+adjoint} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1Parameters_aabd1c44b5f667c5aee05b13a7ac7e17d}{vals} ()
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1Parameters_a90ec020dc180bca8c6176fc77be33c8d}{grads} ()
+\item 
+void \hyperlink{classmarian_1_1Parameters_a1eaa70607c906a3fc88361e81366735d}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\+\_\+}
+\begin{DoxyCompactList}\small\item\em List of all parameter nodes of this expression graph. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file parameters.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!add@{add}}
+\index{add@{add}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{add(\+Expr p, const std\+::string \&name)}{add(Expr p, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{p, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a9970eb31a8871d95030e1430a253f010}{}\label{classmarian_1_1Parameters_a9970eb31a8871d95030e1430a253f010}
+
+
+Definition at line 52 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+52                                           \{
+53     \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}.push\_back(p);
+54     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}.count(name),
+55                    \textcolor{stringliteral}{"Parameter "} << name << \textcolor{stringliteral}{"already exists"});
+56     \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}[name] = p;
+57   \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!allocate\+Backward@{allocate\+Backward}}
+\index{allocate\+Backward@{allocate\+Backward}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{allocate\+Backward()}{allocateBackward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::allocate\+Backward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a350f3682c45b13d7a59a61e6cad14f57}{}\label{classmarian_1_1Parameters_a350f3682c45b13d7a59a61e6cad14f57}
+
+
+Definition at line 68 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+68                           \{
+69     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}->size() == 0) \{
+70       \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}->reserveExact(\hyperlink{classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d}{totalCapacity}(\hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}));
+71       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_})
+72         \textcolor{keywordflow}{if}(!p->grad())
+73           \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}->allocate(p->grad(), p->shape());
+74     \}
+75   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d36/classmarian_1_1Parameters_a350f3682c45b13d7a59a61e6cad14f57_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!allocate\+Forward@{allocate\+Forward}}
+\index{allocate\+Forward@{allocate\+Forward}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{allocate\+Forward()}{allocateForward()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::allocate\+Forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a9603af4faeb75926c9a0efd7ad3189ca}{}\label{classmarian_1_1Parameters_a9603af4faeb75926c9a0efd7ad3189ca}
+
+
+Definition at line 59 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+59                          \{
+60     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}->size() == 0) \{
+61       \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}->reserveExact(\hyperlink{classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d}{totalCapacity}(\hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}));
+62       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_})
+63         \textcolor{keywordflow}{if}(!p->val())
+64           \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}->allocate(p->val(), p->shape());
+65     \}
+66   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d36/classmarian_1_1Parameters_a9603af4faeb75926c9a0efd7ad3189ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!begin@{begin}}
+\index{begin@{begin}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{begin() -\/$>$ decltype(params\+\_\+.\+begin())}{begin() -> decltype(params_.begin())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::\+Parameters\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(params\+\_\+.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_aa4455a5d1f52b116da7612db0d0cff22}{}\label{classmarian_1_1Parameters_aa4455a5d1f52b116da7612db0d0cff22}
+
+
+Definition at line 27 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+27 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}.begin(); \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a1eaa70607c906a3fc88361e81366735d}{}\label{classmarian_1_1Parameters_a1eaa70607c906a3fc88361e81366735d}
+
+
+Definition at line 83 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+83                \{
+84     \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}.clear();
+85     \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}.clear();
+86 
+87     \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}->clear();
+88     \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}->clear();
+89   \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!end@{end}}
+\index{end@{end}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{end() -\/$>$ decltype(params\+\_\+.\+begin())}{end() -> decltype(params_.begin())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::\+Parameters\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(params\+\_\+.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a0da2b76e9b36fc6d4f26320bf09fef96}{}\label{classmarian_1_1Parameters_a0da2b76e9b36fc6d4f26320bf09fef96}
+
+
+Definition at line 29 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}.end(); \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!get@{get}}
+\index{get@{get}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&name)}{get(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Parameters\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a08bd38120ba9a14fa2d66fcee53cda76}{}\label{classmarian_1_1Parameters_a08bd38120ba9a14fa2d66fcee53cda76}
+
+
+Definition at line 33 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+33                                   \{
+34     \textcolor{keyword}{auto} it = \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}.find(name);
+35     \textcolor{keywordflow}{if}(it != \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}.end()) \{
+36       \textcolor{keywordflow}{return} it->second;
+37     \} \textcolor{keywordflow}{else} \{
+38       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}();
+39     \}
+40   \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{get\+Map() -\/$>$ decltype(named\+\_\+)\&}{getMap() -> decltype(named_)&}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::\+Parameters\+::get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype({\bf named\+\_\+})\& \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_ac057d264e9eea0d345ad8f6a62f3fe69}{}\label{classmarian_1_1Parameters_ac057d264e9eea0d345ad8f6a62f3fe69}
+
+
+Definition at line 31 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{named\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!grads@{grads}}
+\index{grads@{grads}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{grads()}{grads()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Parameters\+::grads (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a90ec020dc180bca8c6176fc77be33c8d}{}\label{classmarian_1_1Parameters_a90ec020dc180bca8c6176fc77be33c8d}
+
+
+Definition at line 81 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+81 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_}->asTensor(); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{dc/d36/classmarian_1_1Parameters_a90ec020dc180bca8c6176fc77be33c8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!init@{init}}
+\index{init@{init}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{init(size\+\_\+t device)}{init(size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::init (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a764b6a9878d9384a57d8999ac6858473}{}\label{classmarian_1_1Parameters_a764b6a9878d9384a57d8999ac6858473}
+
+
+Definition at line 22 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+22                            \{
+23     \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_} = New<TensorAllocator>(device);
+24     \hyperlink{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{grads\_} = New<TensorAllocator>(device);
+25   \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}}
+\index{set\+\_\+zero\+\_\+adjoint@{set\+\_\+zero\+\_\+adjoint}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{set\+\_\+zero\+\_\+adjoint()}{set_zero_adjoint()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Parameters\+::set\+\_\+zero\+\_\+adjoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_ae99e7884529b5c8e63b151ffc2e863c8}{}\label{classmarian_1_1Parameters_ae99e7884529b5c8e63b151ffc2e863c8}
+
+
+Definition at line 77 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+77 \{ \hyperlink{classmarian_1_1Parameters_a90ec020dc180bca8c6176fc77be33c8d}{grads}()->set(0); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{dc/d36/classmarian_1_1Parameters_ae99e7884529b5c8e63b151ffc2e863c8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!size@{size}}
+\index{size@{size}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Parameters\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a3f99cdf63455697019da8da8d038a896}{}\label{classmarian_1_1Parameters_a3f99cdf63455697019da8da8d038a896}
+
+
+Definition at line 42 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+42 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}.size(); \}
+\end{DoxyCode}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!total\+Capacity@{total\+Capacity}}
+\index{total\+Capacity@{total\+Capacity}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{total\+Capacity(\+Ptr$<$ Tensor\+Allocator $>$ alloc)}{totalCapacity(Ptr< TensorAllocator > alloc)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Parameters\+::total\+Capacity (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Tensor\+Allocator} $>$}]{alloc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d}{}\label{classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d}
+
+
+Definition at line 44 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+44                                                    \{
+45     \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = 0;
+46     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : \hyperlink{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{params\_}) \{
+47       sum += alloc->capacity(p->shape());
+48     \}
+49     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+50   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{dc/d36/classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{dc/d36/classmarian_1_1Parameters_a7fb3719a18566cf659baa929fcbfcc5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!vals@{vals}}
+\index{vals@{vals}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{vals()}{vals()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Parameters\+::vals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Parameters_aabd1c44b5f667c5aee05b13a7ac7e17d}{}\label{classmarian_1_1Parameters_aabd1c44b5f667c5aee05b13a7ac7e17d}
+
+
+Definition at line 79 of file parameters.\+h.
+
+
+\begin{DoxyCode}
+79 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{vals\_}->asTensor(); \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!grads\+\_\+@{grads\+\_\+}}
+\index{grads\+\_\+@{grads\+\_\+}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{grads\+\_\+}{grads_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Tensor\+Allocator}$>$ marian\+::\+Parameters\+::grads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}{}\label{classmarian_1_1Parameters_a256de80bb8acefc81edc634897cd44ed}
+
+
+Definition at line 19 of file parameters.\+h.
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!named\+\_\+@{named\+\_\+}}
+\index{named\+\_\+@{named\+\_\+}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{named\+\_\+}{named_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, {\bf Expr}$>$ marian\+::\+Parameters\+::named\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}{}\label{classmarian_1_1Parameters_a2581f2bfa392634516ee2cfad9bbed73}
+
+
+Definition at line 16 of file parameters.\+h.
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!params\+\_\+@{params\+\_\+}}
+\index{params\+\_\+@{params\+\_\+}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{params\+\_\+}{params_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$ marian\+::\+Parameters\+::params\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}{}\label{classmarian_1_1Parameters_a78220ff4b967b397c7cf5799cd37c4af}
+
+
+List of all parameter nodes of this expression graph. 
+
+
+
+Definition at line 15 of file parameters.\+h.
+
+\index{marian\+::\+Parameters@{marian\+::\+Parameters}!vals\+\_\+@{vals\+\_\+}}
+\index{vals\+\_\+@{vals\+\_\+}!marian\+::\+Parameters@{marian\+::\+Parameters}}
+\subsubsection[{\texorpdfstring{vals\+\_\+}{vals_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Tensor\+Allocator}$>$ marian\+::\+Parameters\+::vals\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}{}\label{classmarian_1_1Parameters_ab4322d7d784c527dd738f256a6731a16}
+
+
+Definition at line 18 of file parameters.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{parameters_8h}{parameters.\+h}\end{DoxyCompactItemize}

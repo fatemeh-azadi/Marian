@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple">
+<title>marian::data::SentenceTuple class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/d8f/corpus_8h">&lt;corpus.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::SentenceTuple</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d51/classmarian_1_1data_1_1SentenceTuple__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::SentenceTuple</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d7a/classmarian_1_1data_1_1SentenceTuple__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t id_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Words &gt; tuple_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a53dba33c13ccbcc8b3e05bf2a0e4fe06">SentenceTuple</link> (
+size_t id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1ac361a79106e555ff199ac6db1d1f321b">~SentenceTuple</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a749e5acf8c894f139153f03abafc5ccb">push_back</link> (
+const <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a9b37c6147029e8c2f1f1c595a2a586bf">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1aca744f3dd385b7dfd4d227e5f8bc069e">operator[]</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1af3d4f7ca49cf6d7b50c452cf540a1ef3">back</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1aa9ac44b432ebb3a219f7d7fbfbed5c0a">back</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a93d5b03fa677c1ce7bfdccfa009d5ab5">operator[]</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a8a06101b2aa23aa9c93f414c93f1e618">empty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>auto <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1ad7fd707bbf2eadcbe8c665b334ec0c38">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>auto <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a5556b2b70f347a64af8dc31c9d677636">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a3ddb9241a86b88d8461a83bce1727f34">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a53dba33c13ccbcc8b3e05bf2a0e4fe06">
+                <title>marian::data::SentenceTuple::SentenceTuple (size_t id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1ac361a79106e555ff199ac6db1d1f321b">
+                <title>marian::data::SentenceTuple::~SentenceTuple ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a749e5acf8c894f139153f03abafc5ccb">
+                <title>void marian::data::SentenceTuple::push_back (const Words &amp;words)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a9b37c6147029e8c2f1f1c595a2a586bf">
+                <title>size_t marian::data::SentenceTuple::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1aca744f3dd385b7dfd4d227e5f8bc069e">
+                <title>Words&amp; marian::data::SentenceTuple::operator[] (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1af3d4f7ca49cf6d7b50c452cf540a1ef3">
+                <title>Words&amp; marian::data::SentenceTuple::back ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1aa9ac44b432ebb3a219f7d7fbfbed5c0a">
+                <title>const Words&amp; marian::data::SentenceTuple::back () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a93d5b03fa677c1ce7bfdccfa009d5ab5">
+                <title>const Words&amp; marian::data::SentenceTuple::operator[] (size_t i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a8a06101b2aa23aa9c93f414c93f1e618">
+                <title>bool marian::data::SentenceTuple::empty () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1ad7fd707bbf2eadcbe8c665b334ec0c38">
+                <title>auto marian::data::SentenceTuple::begin () -&gt; decltype(tuple_.begin())</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a5556b2b70f347a64af8dc31c9d677636">
+                <title>auto marian::data::SentenceTuple::end () -&gt; decltype(tuple_.end())</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d05/classmarian_1_1data_1_1SentenceTuple_1a3ddb9241a86b88d8461a83bce1727f34">
+                <title>size_t marian::data::SentenceTuple::getId () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

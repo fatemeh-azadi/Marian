@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/db8/classmarian_1_1Options">
+<title>marian::Options class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d5b/options_8h">&lt;options.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Options</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dff/classmarian_1_1Options__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Options</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d7c/classmarian_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node &amp; <link linkend="d6/db8/classmarian_1_1Options_1afc681ad69bdc226f838bbfd39c77afd9">getOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/db8/classmarian_1_1Options_1a40aac40f3a04fe3b9c3f8ed05df5bcda">parse</link> (
+const std::string &amp; yaml)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/db8/classmarian_1_1Options_1aa8a98efcde6b45326a4dfc2804d6affa">merge</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/db8/classmarian_1_1Options_1a93bdef116f5adfab155e25c5de8859d2">merge</link> (
+YAML::Node &amp; node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d6/db8/classmarian_1_1Options_1a04a75b2d9f04f5bd55e5aa290a088b6e">str</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/db8/classmarian_1_1Options_1a5f051d6a378d6a51388be2e684216ffb">set</link> (
+const std::string &amp; key, T value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d6/db8/classmarian_1_1Options_1a01eb84ff527e7869fc1290b62736d884">get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d6/db8/classmarian_1_1Options_1a9e4b05cf6ce7d43121c4e5a4f07e2c5d">get</link> (
+const std::string &amp; key, T defaultValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/db8/classmarian_1_1Options_1aab78c7ac72cfe00d18970429b86fb514">has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1afc681ad69bdc226f838bbfd39c77afd9">
+                <title>YAML::Node&amp; marian::Options::getOptions ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a40aac40f3a04fe3b9c3f8ed05df5bcda">
+                <title>void marian::Options::parse (const std::string &amp;yaml)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1aa8a98efcde6b45326a4dfc2804d6affa">
+                <title>void marian::Options::merge (Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a93bdef116f5adfab155e25c5de8859d2">
+                <title>void marian::Options::merge (YAML::Node &amp;node)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a04a75b2d9f04f5bd55e5aa290a088b6e">
+                <title>std::string marian::Options::str ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a5f051d6a378d6a51388be2e684216ffb">
+                <title>void marian::Options::set (const std::string &amp;key, T value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a01eb84ff527e7869fc1290b62736d884">
+                <title>T marian::Options::get (const std::string &amp;key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1a9e4b05cf6ce7d43121c4e5a4f07e2c5d">
+                <title>T marian::Options::get (const std::string &amp;key, T defaultValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/db8/classmarian_1_1Options_1aab78c7ac72cfe00d18970429b86fb514">
+                <title>bool marian::Options::has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

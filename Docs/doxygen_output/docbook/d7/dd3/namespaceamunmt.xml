@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dd3/namespaceamunmt">
+<title>amunmt</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/df4/structamunmt_1_1AmunInput">amunmt::AmunInput</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/de7/classamunmt_1_1BaseMatrix">amunmt::BaseMatrix</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d94/classamunmt_1_1BestHypsBase">amunmt::BestHypsBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d75/classamunmt_1_1BPE">amunmt::BPE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d4e/classamunmt_1_1Config">amunmt::Config</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d1f/structamunmt_1_1DeviceInfo">amunmt::DeviceInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d0e/classamunmt_1_1Filter">amunmt::Filter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d4e/classamunmt_1_1God">amunmt::God</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d0b/classamunmt_1_1Histories">amunmt::Histories</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d94/classamunmt_1_1History">amunmt::History</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d4b/structamunmt_1_1HypoState">amunmt::HypoState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d7d/classamunmt_1_1Hypothesis">amunmt::Hypothesis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d33/classamunmt_1_1InputFileStream">amunmt::InputFileStream</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dbf/classamunmt_1_1LengthOrderer">amunmt::LengthOrderer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/da9/classamunmt_1_1LineNumOrderer">amunmt::LineNumOrderer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d6b/classamunmt_1_1Loader">amunmt::Loader</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/df9/classamunmt_1_1LoaderFactory">amunmt::LoaderFactory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/dc8/classamunmt_1_1MosesPlugin">amunmt::MosesPlugin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d3e/classamunmt_1_1NeuralPhrase">amunmt::NeuralPhrase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d77/classamunmt_1_1OutputCollector">amunmt::OutputCollector</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dbc/classamunmt_1_1Postprocessor">amunmt::Postprocessor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/db9/classamunmt_1_1Preprocessor">amunmt::Preprocessor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/db0/classamunmt_1_1Processor">amunmt::Processor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d52/classamunmt_1_1Scorer">amunmt::Scorer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d92/classamunmt_1_1Search">amunmt::Search</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/db4/classamunmt_1_1Sentence">amunmt::Sentence</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/ded/classamunmt_1_1Sentences">amunmt::Sentences</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/da8/classamunmt_1_1SourceIndependentScorer">amunmt::SourceIndependentScorer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d39/classamunmt_1_1State">amunmt::State</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/de5/classamunmt_1_1ThreadPool">amunmt::ThreadPool</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d9e/classamunmt_1_1Vocab">amunmt::Vocab</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d59/namespaceamunmt_1_1util">amunmt::util</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d7/dd3/namespaceamunmt_1a0f0dad0deb73c5a4c574d8c63833ab17">DeviceType</link> {
+<link linkend="d7/dd3/namespaceamunmt_1a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a">CPUDevice</link>= 7,
+<link linkend="d7/dd3/namespaceamunmt_1a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f">GPUDevice</link>= 11,
+<link linkend="d7/dd3/namespaceamunmt_1a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc">FPGADevice</link>= 13
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="df/d94/classamunmt_1_1BestHypsBase">BestHypsBase</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a4a9522da34de52554ec07cedc30361b8">BestHypsBasePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="dc/d7d/classamunmt_1_1Hypothesis">Hypothesis</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="db/d52/classamunmt_1_1Scorer">Scorer</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; <link linkend="d6/d0e/classamunmt_1_1Filter">Filter</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a03c308343fcd4b59ebe53d562257e483">FilterPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a90a1b353bc62cb90bc8e8da7edc3edc0">Beams</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link>, <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1af12bd731cf50f363bdcbec0f435bafb1">Result</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1af12bd731cf50f363bdcbec0f435bafb1">Result</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a4ad8f6c25b18c8675040456c6e95e0f6">NBestList</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; <link linkend="dd/d6b/classamunmt_1_1Loader">Loader</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a7907c3626488deed31e31452d178d78e">LoaderPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; <link linkend="d1/db9/classamunmt_1_1Preprocessor">Preprocessor</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a01f8e038a68167c344d9e40146064712">PreprocessorPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; <link linkend="d1/dbc/classamunmt_1_1Postprocessor">Postprocessor</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a93da118427da6be237f0407643816798">PostprocessorPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; <link linkend="d1/db0/classamunmt_1_1Processor">Processor</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a2ff87af5187af8bbedac18dd10c48162">ProcessorPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="da/d39/classamunmt_1_1State">State</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a1ea9a0b24d777d2c8dc94c4189c6c359">StatePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a1ea9a0b24d777d2c8dc94c4189c6c359">StatePtr</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a4fe2912e208820f8217fbcf229ebacf7">States</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="d7/db4/classamunmt_1_1Sentence">Sentence</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a79f0566b0c1ac270d350b2912a3be4a4">SentencePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a06c5762b84aba68e6c69fb409e57829e">SentencesPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef uint  <link linkend="d7/dd3/namespaceamunmt_1a07c85682e789f72cc2fbbc3caf7d3800">Word</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a07c85682e789f72cc2fbbc3caf7d3800">Word</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d9/d4b/structamunmt_1_1HypoState">HypoState</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1acca30714a48f384cccf36370d6869b40">HypoStates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d1/df4/structamunmt_1_1AmunInput">AmunInput</link> &gt;  <link linkend="d7/dd3/namespaceamunmt_1a5a9307eef76c887cbe1a67e780437eae">AmunInputs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t <link linkend="d7/dd3/namespaceamunmt_1a0c4d3d7c0b1b52dbe7a658b3dc026409">SHAPE_SIZE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d7/dd3/namespaceamunmt_1a07c85682e789f72cc2fbbc3caf7d3800">Word</link> <link linkend="d7/dd3/namespaceamunmt_1a89f3b34944649f2108f2b8935e5f46dd">EOS_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d7/dd3/namespaceamunmt_1a07c85682e789f72cc2fbbc3caf7d3800">Word</link> <link linkend="d7/dd3/namespaceamunmt_1a7904fd3bd044d608e81e54933a771ec9">UNK_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d7/dd3/namespaceamunmt_1a396941d367e0babddc9fa87260a805f7">EOS_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d7/dd3/namespaceamunmt_1aff26c2cbd5a97e90ecdc5e0dbba13516">UNK_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1aa294dffea2547350d8ba90401bbe85d1">ProcessPaths</link> (
+YAML::Node &amp; node, const boost::filesystem::path &amp; configPath, bool isPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a223f2f561452f574093618cd336c43de">OverwriteModels</link> (
+YAML::Node &amp; config, std::vector&lt; std::string &gt; &amp; modelPaths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a343a63d53ad92c670141e5740f3eab7a">OverwriteSourceVocabs</link> (
+YAML::Node &amp; config, std::vector&lt; std::string &gt; &amp; sourceVocabPaths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a1b4b3e3a5cfcb79de4fd92c34e3fa4e3">OverwriteTargetVocab</link> (
+YAML::Node &amp; config, std::string &amp; targetVocabPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a3d7f2e636dd3e33b80855722d08f9a18">OverwriteBPE</link> (
+YAML::Node &amp; config, std::vector&lt; std::string &gt; &amp; bpePaths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1ad51b66163a1437dc0ffd4aedbb0bd067">Validate</link> (
+const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1aef479ee5514fb431474e91580190fd39">OutputRec</link> (
+const YAML::Node node, YAML::Emitter &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a18aa660f48877e9279fb9e91dee85ce2">LoadWeights</link> (
+YAML::Node &amp; config, const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a807aed7e91d9c04595d8e32c1157ca4e">Debug</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; vec, size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a6e2a280e85c7e0845ed2c3bb793a86af">Debug</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a90a1b353bc62cb90bc8e8da7edc3edc0">Beams</link> &amp; vec, size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a14c0b46e2e86d44662d37f953788043c">set_loglevel</link> (
+spdlog::logger &amp; logger, std::string const level)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; <link linkend="d7/dd3/namespaceamunmt_1acf078c1279ce98077a069ba41811faa6">GetAlignment</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> &amp; hypothesis)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a33109e5a2b2adf93a3e60ef4197a85f9">GetAlignmentString</link> (
+const std::vector&lt; size_t &gt; &amp; alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a2cb8f571957aa136afe5b74340ecec52">GetSoftAlignmentString</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> &amp; hypothesis)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a589013f9c66aae2070326dc22d2b547d">GetNematusAlignmentString</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a9dd9d255e51649b0af19d0e895d52d2f">HypothesisPtr</link> &amp; hypothesis, std::string best, std::string source, size_t linenum)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1aef108281493b0c3b669c537192eace34">Printer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="db/d94/classamunmt_1_1History">History</link> &amp; history, OStream &amp; out, const <link linkend="d7/db4/classamunmt_1_1Sentence">Sentence</link> &amp; sentence)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a10b27c18333dd8e5b6652acfea64d7d2">Printer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="d2/d0b/classamunmt_1_1Histories">Histories</link> &amp; histories, OStream &amp; out, const <link linkend="d7/db4/classamunmt_1_1Sentence">Sentence</link> &amp; sentence)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1aac616d7d6dd75bad96a6dcf3afe74e85">TranslationTaskAndOutput</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, std::shared_ptr&lt; <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &gt; sentences)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="d2/d0b/classamunmt_1_1Histories">Histories</link> &gt; <link linkend="d7/dd3/namespaceamunmt_1a54e0c0c0dd1caecba5c17e45d023fd5e">TranslationTask</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, std::shared_ptr&lt; <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &gt; sentences)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; <link linkend="d7/dd3/namespaceamunmt_1aa685f28fda5503ea31605ee8812e9f86">operator&lt;&lt;</link> (
+std::ostream &amp; out, const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a4578e863aaec8293556404432d7e8d04">Trim</link> (
+std::string &amp; s)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dd3/namespaceamunmt_1a10b7486d36b130609c77e8356218c0a7">Split</link> (
+const std::string &amp; line, std::vector&lt; std::string &gt; &amp; pieces, const std::string del)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a24dbaa0ef7dc1f1fcaa131a0f0eacb43">Join</link> (
+const std::vector&lt; std::string &gt; &amp; words, const std::string del)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1ab250df7f6ac3d2ec5365cceea1056aff">Join</link> (
+const std::vector&lt; std::string &gt; &amp; words, const std::vector&lt; size_t &gt; &amp; align, const std::string del)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/dd3/namespaceamunmt_1a7dbfb9dca5a82c17500ab26efe71623e">Debug</link> (
+const std::vector&lt; T &gt; &amp; vec, size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

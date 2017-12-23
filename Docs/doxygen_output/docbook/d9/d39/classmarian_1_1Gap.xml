@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d39/classmarian_1_1Gap">
+<title>marian::Gap class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/da9/allocator_8h">&lt;allocator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Gap</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d0e/classmarian_1_1Gap__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Gap</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d09/classmarian_1_1Gap__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d39/classmarian_1_1Gap_1aa476965d468f8b9104bb3dcb7c7c6aa2">Gap</link> (
+uint8_t * data, size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d9/d39/classmarian_1_1Gap_1acbc9a4d43af0bbd860c4dddd01fa6bca">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d9/d39/classmarian_1_1Gap_1ad70e63fa5e2cf687ff882cdfc9a78f7a">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d9/d39/classmarian_1_1Gap_1a7f8a530a91cd2b24a39d54eb18e05d19">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d39/classmarian_1_1Gap_1a796dcbf92563af49784a37248a6af154">operator&lt;</link> (
+const <link linkend="d9/d39/classmarian_1_1Gap">Gap</link> &amp; mp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d39/classmarian_1_1Gap_1ad906f99514af8651c33410f283e834a0">operator==</link> (
+const <link linkend="d9/d39/classmarian_1_1Gap">Gap</link> &amp; mp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d39/classmarian_1_1Gap_1a29b456bc20296682ab77f16b185acbd3">adjacent</link> (
+const <link linkend="d9/d39/classmarian_1_1Gap">Gap</link> &amp; mp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d9/d39/classmarian_1_1Gap">Gap</link> <link linkend="d9/d39/classmarian_1_1Gap_1abf7f297ffce3fb79405d73f98a26daf9">combine</link> (
+const <link linkend="d9/d39/classmarian_1_1Gap">Gap</link> &amp; mp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d9/d39/classmarian_1_1Gap">Gap</link> <link linkend="d9/d39/classmarian_1_1Gap_1ab765bb25e76baf4988394892b2610327">rest</link> (
+size_t offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1aa476965d468f8b9104bb3dcb7c7c6aa2">
+                <title>marian::Gap::Gap (uint8_t *data, size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1acbc9a4d43af0bbd860c4dddd01fa6bca">
+                <title>uint8_t* marian::Gap::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1ad70e63fa5e2cf687ff882cdfc9a78f7a">
+                <title>uint8_t* marian::Gap::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1a7f8a530a91cd2b24a39d54eb18e05d19">
+                <title>size_t marian::Gap::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1a796dcbf92563af49784a37248a6af154">
+                <title>bool marian::Gap::operator&lt; (const Gap &amp;mp) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1ad906f99514af8651c33410f283e834a0">
+                <title>bool marian::Gap::operator== (const Gap &amp;mp) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1a29b456bc20296682ab77f16b185acbd3">
+                <title>bool marian::Gap::adjacent (const Gap &amp;mp) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1abf7f297ffce3fb79405d73f98a26daf9">
+                <title>Gap marian::Gap::combine (const Gap &amp;mp) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d39/classmarian_1_1Gap_1ab765bb25e76baf4988394892b2610327">
+                <title>Gap marian::Gap::rest (size_t offset) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

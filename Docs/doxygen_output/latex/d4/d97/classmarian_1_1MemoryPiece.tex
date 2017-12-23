@@ -1,0 +1,246 @@
+\hypertarget{classmarian_1_1MemoryPiece}{}\section{marian\+:\+:Memory\+Piece Class Reference}
+\label{classmarian_1_1MemoryPiece}\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+
+
+{\ttfamily \#include $<$memory\+\_\+piece.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Memory\+Piece\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d5/de0/classmarian_1_1MemoryPiece__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1MemoryPiece_a5818fa412d174b204a258b112a937e80}{Memory\+Piece} (uint8\+\_\+t $\ast$\hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data}, size\+\_\+t \hyperlink{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{size})
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data} () const 
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1MemoryPiece_a461a9514e360280b05c673b636a9a520}{data} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{size} () const 
+\item 
+void \hyperlink{classmarian_1_1MemoryPiece_ad6c2de9229ec366096095f1e0d815a14}{set} (uint8\+\_\+t $\ast$\hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data}, size\+\_\+t \hyperlink{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{size})
+\item 
+void \hyperlink{classmarian_1_1MemoryPiece_af604e9210fb8472d86e0a69deaf75280}{set\+Ptr} (uint8\+\_\+t $\ast$\hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}{size\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classmarian_1_1MemoryPiece_a7e471c8646d94ead440a78e87769b284}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classmarian_1_1MemoryPiece}{Memory\+Piece} mp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file memory\+\_\+piece.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!Memory\+Piece@{Memory\+Piece}}
+\index{Memory\+Piece@{Memory\+Piece}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{Memory\+Piece(uint8\+\_\+t $\ast$data, size\+\_\+t size)}{MemoryPiece(uint8_t *data, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Memory\+Piece\+::\+Memory\+Piece (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_a5818fa412d174b204a258b112a937e80}{}\label{classmarian_1_1MemoryPiece_a5818fa412d174b204a258b112a937e80}
+
+
+Definition at line 11 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+12       : \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\_}(\hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data}), \hyperlink{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}{size\_}(\hyperlink{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{size}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!data@{data}}
+\index{data@{data}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Memory\+Piece\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{}\label{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}
+
+
+Definition at line 14 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+14 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d97/classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!data@{data}}
+\index{data@{data}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Memory\+Piece\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_a461a9514e360280b05c673b636a9a520}{}\label{classmarian_1_1MemoryPiece_a461a9514e360280b05c673b636a9a520}
+
+
+Definition at line 15 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+15 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!set@{set}}
+\index{set@{set}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{set(uint8\+\_\+t $\ast$data, size\+\_\+t size)}{set(uint8_t *data, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Memory\+Piece\+::set (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_ad6c2de9229ec366096095f1e0d815a14}{}\label{classmarian_1_1MemoryPiece_ad6c2de9229ec366096095f1e0d815a14}
+
+
+Definition at line 18 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+18                                          \{
+19       \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\_} = \hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data};
+20       \hyperlink{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}{size\_} = \hyperlink{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{size};
+21     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d97/classmarian_1_1MemoryPiece_ad6c2de9229ec366096095f1e0d815a14_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!set\+Ptr@{set\+Ptr}}
+\index{set\+Ptr@{set\+Ptr}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{set\+Ptr(uint8\+\_\+t $\ast$data)}{setPtr(uint8_t *data)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Memory\+Piece\+::set\+Ptr (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_af604e9210fb8472d86e0a69deaf75280}{}\label{classmarian_1_1MemoryPiece_af604e9210fb8472d86e0a69deaf75280}
+
+
+Definition at line 23 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+23                                \{
+24       \hyperlink{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{data\_} = \hyperlink{classmarian_1_1MemoryPiece_a9ba0f524772deb22d35bb85c8ca454c7}{data};
+25     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d4/d97/classmarian_1_1MemoryPiece_af604e9210fb8472d86e0a69deaf75280_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!size@{size}}
+\index{size@{size}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Memory\+Piece\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}{}\label{classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661}
+
+
+Definition at line 16 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+16 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}{size\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d97/classmarian_1_1MemoryPiece_a2d4943aea13728e650fc2a2e0f719661_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Memory\+Piece}}]{mp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classmarian_1_1MemoryPiece_a7e471c8646d94ead440a78e87769b284}{}\label{classmarian_1_1MemoryPiece_a7e471c8646d94ead440a78e87769b284}
+
+
+Definition at line 27 of file memory\+\_\+piece.\+h.
+
+
+\begin{DoxyCode}
+27                                                                          \{
+28       out << \textcolor{stringliteral}{"MemoryPiece - ptr: "} << std::hex << (size\_t)mp.data()
+29         << std::dec << \textcolor{stringliteral}{" size: "} << mp.size();
+30       \textcolor{keywordflow}{return} out;
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Memory\+Piece\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}{}\label{classmarian_1_1MemoryPiece_a0188dc58e2d25a29d98fa40d4ebaabe2}
+
+
+Definition at line 7 of file memory\+\_\+piece.\+h.
+
+\index{marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!marian\+::\+Memory\+Piece@{marian\+::\+Memory\+Piece}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Memory\+Piece\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}{}\label{classmarian_1_1MemoryPiece_ae7822b5a7f733156ccab1a40de674831}
+
+
+Definition at line 8 of file memory\+\_\+piece.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{memory__piece_8h}{memory\+\_\+piece.\+h}\end{DoxyCompactItemize}

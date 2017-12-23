@@ -1,0 +1,135 @@
+\hypertarget{classmarian_1_1TrainMNIST}{}\section{marian\+:\+:Train\+M\+N\+I\+ST$<$ Model $>$ Class Template Reference}
+\label{classmarian_1_1TrainMNIST}\index{marian\+::\+Train\+M\+N\+I\+S\+T$<$ Model $>$@{marian\+::\+Train\+M\+N\+I\+S\+T$<$ Model $>$}}
+
+
+{\ttfamily \#include $<$training.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Train\+M\+N\+I\+ST$<$ Model $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d1/dd4/classmarian_1_1TrainMNIST__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Train\+M\+N\+I\+ST$<$ Model $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d7/da5/classmarian_1_1TrainMNIST__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1TrainMNIST_a7b7baf3f95481ce2d3a5ccaeea5c167e}{Train\+M\+N\+I\+ST} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1TrainMNIST_a5dbea84161b6257b405b6c18a081989d}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Model$>$\\*
+class marian\+::\+Train\+M\+N\+I\+S\+T$<$ Model $>$}
+
+
+
+Definition at line 13 of file examples/mnist/training.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}!Train\+M\+N\+I\+ST@{Train\+M\+N\+I\+ST}}
+\index{Train\+M\+N\+I\+ST@{Train\+M\+N\+I\+ST}!marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{Train\+M\+N\+I\+S\+T(\+Ptr$<$ Config $>$ options)}{TrainMNIST(Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf marian\+::\+Train\+M\+N\+I\+ST}$<$ Model $>$\+::{\bf Train\+M\+N\+I\+ST} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1TrainMNIST_a7b7baf3f95481ce2d3a5ccaeea5c167e}{}\label{classmarian_1_1TrainMNIST_a7b7baf3f95481ce2d3a5ccaeea5c167e}
+
+
+Definition at line 18 of file examples/mnist/training.\+h.
+
+
+\begin{DoxyCode}
+18 : \hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_}(options) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}!run@{run}}
+\index{run@{run}!marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ void {\bf marian\+::\+Train\+M\+N\+I\+ST}$<$ Model $>$\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TrainMNIST_a5dbea84161b6257b405b6c18a081989d}{}\label{classmarian_1_1TrainMNIST_a5dbea84161b6257b405b6c18a081989d}
+
+
+Implements \hyperlink{structmarian_1_1ModelTask_a2f4fddd0f227555bf792e3c3d4bfdb0d}{marian\+::\+Model\+Task}.
+
+
+
+Definition at line 20 of file examples/mnist/training.\+h.
+
+
+\begin{DoxyCode}
+20              \{
+21     \textcolor{keyword}{using namespace }data;
+22 
+23     \textcolor{comment}{// Prepare data set}
+24     \textcolor{keyword}{auto} paths = \hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"});
+25     \textcolor{keyword}{auto} dataset = New<typename Model::dataset\_type>(paths);
+26     \textcolor{keyword}{auto} batchGenerator
+27         = New<BatchGenerator<data::MNIST>>(dataset, \hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_}, \textcolor{keyword}{nullptr});
+28 
+29     \textcolor{comment}{// Prepare scheduler with validators}
+30     \textcolor{keyword}{auto} trainState = New<TrainingState>(\hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_});
+31     \textcolor{keyword}{auto} scheduler = New<Scheduler<typename Model::dataset\_type>>(\hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_}, trainState);
+32     \textcolor{keyword}{auto} validator
+33         = New<AccuracyValidator<typename Model::builder\_type>>(\hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_});
+34     scheduler->addValidator(validator);
+35 
+36     \textcolor{comment}{// Prepare model}
+37     \textcolor{keyword}{auto} model = New<Model>(\hyperlink{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{options\_});
+38     model->setScheduler(scheduler);
+39     model->load();
+40 
+41     \textcolor{comment}{// Run training}
+42     \textcolor{keywordflow}{while}(scheduler->keepGoing()) \{
+43       batchGenerator->prepare(!options\_->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"no-shuffle"}));
+44       \textcolor{keywordflow}{while}(*batchGenerator && scheduler->keepGoing()) \{
+45         \textcolor{keyword}{auto} batch = batchGenerator->next();
+46         model->update(batch);
+47       \}
+48       \textcolor{keywordflow}{if}(scheduler->keepGoing())
+49         scheduler->increaseEpoch();
+50     \}
+51     scheduler->finished();
+52   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Train\+M\+N\+I\+ST@{marian\+::\+Train\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Train\+M\+N\+I\+ST}$<$ Model $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}{}\label{classmarian_1_1TrainMNIST_ae36f7408da78a03ee64f6f8eb807e6e8}
+
+
+Definition at line 15 of file examples/mnist/training.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{examples_2mnist_2training_8h}{examples/mnist/training.\+h}\end{DoxyCompactItemize}

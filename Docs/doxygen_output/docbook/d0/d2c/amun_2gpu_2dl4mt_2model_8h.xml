@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d2c/amun_2gpu_2dl4mt_2model_8h">
+    <title>amun/gpu/dl4mt/model.h File Reference</title>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;yaml-cpp/yaml.h&gt;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/npz_converter.h&quot;</programlisting>
+<para>Include dependency diagram for amun/gpu/dl4mt/model.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d1d/amun_2gpu_2dl4mt_2model_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for amun/gpu/dl4mt/model.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/ddc/amun_2gpu_2dl4mt_2model_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">amunmt::GPU::Weights</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d6b/structamunmt_1_1GPU_1_1Weights_1_1EncEmbeddings">amunmt::GPU::Weights::EncEmbeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dd6/structamunmt_1_1GPU_1_1Weights_1_1EncForwardGRU">amunmt::GPU::Weights::EncForwardGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d57/structamunmt_1_1GPU_1_1Weights_1_1EncBackwardGRU">amunmt::GPU::Weights::EncBackwardGRU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/db2/structamunmt_1_1GPU_1_1Weights_1_1EncForwardLSTM">amunmt::GPU::Weights::EncForwardLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d39/structamunmt_1_1GPU_1_1Weights_1_1EncBackwardLSTM">amunmt::GPU::Weights::EncBackwardLSTM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings">amunmt::GPU::Weights::DecEmbeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db1/structamunmt_1_1GPU_1_1Weights_1_1DecInit">amunmt::GPU::Weights::DecInit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d47/structamunmt_1_1GPU_1_1Weights_1_1DecGRU1">amunmt::GPU::Weights::DecGRU1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/df4/structamunmt_1_1GPU_1_1Weights_1_1DecGRU2">amunmt::GPU::Weights::DecGRU2</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/dbb/structamunmt_1_1GPU_1_1Weights_1_1DecLSTM1">amunmt::GPU::Weights::DecLSTM1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dac/structamunmt_1_1GPU_1_1Weights_1_1DecLSTM2">amunmt::GPU::Weights::DecLSTM2</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights">amunmt::GPU::Weights::MultWeights</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment">amunmt::GPU::Weights::DecAlignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d14/structamunmt_1_1GPU_1_1Weights_1_1DecSoftmax">amunmt::GPU::Weights::DecSoftmax</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file model.h</para>
+    </simplesect>
+</section>

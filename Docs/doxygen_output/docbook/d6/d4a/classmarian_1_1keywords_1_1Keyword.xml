@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword">
+<title>marian::keywords::Keyword class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/db7/keywords_8h">&lt;keywords.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::keywords::Keyword</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d00/classmarian_1_1keywords_1_1Keyword__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::keywords::Keyword</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d85/classmarian_1_1keywords_1_1Keyword__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>unsigned</type>
+        <declname>key</declname>
+        <defname>key</defname>
+      </param>
+      <param>
+        <type>typename Value</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Value  <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a698b7031d0c11fd5cfb783edb8f6d480">value_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Value value_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a6e345b92a10a857f9adee5358b7f03f4">Keyword</link> (
+Value value)<para><emphasis>Constructs a &lt;code&gt;Keyword&lt;/code&gt; which will store the specified
+value.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a24b569bb22e4321e5f66929d6ed30f92">Keyword</link> (
+)<para><emphasis>Constructs a &lt;code&gt;Keyword&lt;/code&gt; with no specified value.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword">Keyword</link>&lt; key, Value &gt; <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a1aa0c6e53e5c529b85389b2a66f200c9">operator=</link> (
+Value value)<para><emphasis>Constructs and returns a new &lt;code&gt;Keyword&lt;/code&gt; object containing
+the specified value.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Value &amp; <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a26d1f37932f8c8022684008752e2ece1">operator()</link> (
+)<para><emphasis>Gets a const reference to the value stored in this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a5216afbffb3db4b7c7b536f94cf44c25">id</link> (
+)<para><emphasis>Gets the hashed integer identifier associated with this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Represents a named keyword capable of storing a single value. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class is used to emulate <link xlink:href="https://en.wikipedia.org/wiki/Named_parameter">keyword arguments to functions</link>, such as those <link xlink:href="https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments">found in Python</link>.</para>
+
+<para>It is expected that users of this class will not explicitly create instances of this class.</para>
+
+<para>Rather, it is expected that users will use the <link linkend="d2/db7/keywords_8h_1ad6c9fa5917736eee3d55706caf21469d">KEY(name, value_type)</link> macro.</para>
+
+<para>For example, the invocation <computeroutput><link linkend="d2/db7/keywords_8h_1ad6c9fa5917736eee3d55706caf21469d">KEY(batch_size, int)</link></computeroutput> will construct a new instance of this class called <computeroutput>batch_size</computeroutput> whose <computeroutput>value_type</computeroutput> is <computeroutput>int</computeroutput>.</para>
+
+<para>Now assume a function called <computeroutput>foo()</computeroutput> that requires a single <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword">Keyword</link> as its parameter.</para>
+
+<para><computeroutput>foo(batch_size=200)</computeroutput></para>
+
+<para>This code fragment causes an invocation of this class&apos;s operator= method, which returns a new instance of the <link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword">Keyword</link> class. This new instance will have a value of 200. </para>
+                <para>Definition at line 64 of file keywords.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>keywords.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a698b7031d0c11fd5cfb783edb8f6d480">
+                <title>typedef Value marian::keywords::Keyword&lt; key, Value &gt;::value_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a6e345b92a10a857f9adee5358b7f03f4">
+                <title>marian::keywords::Keyword&lt; key, Value &gt;::Keyword (Value value)</title> <emphasis>Constructs a &lt;code&gt;Keyword&lt;/code&gt; which will store the specified
+value.</emphasis>
+                
+<para><itemizedlist>
+<listitem>
+<para>value The value to store in this object </para>
+</listitem>
+</itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a24b569bb22e4321e5f66929d6ed30f92">
+                <title>marian::keywords::Keyword&lt; key, Value &gt;::Keyword ()</title> <emphasis>Constructs a &lt;code&gt;Keyword&lt;/code&gt; with no specified value.</emphasis>
+                
+<para>The value stored in the resulting object will be constructed using that Value&apos;s default constructor. </para>
+
+            </section>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a1aa0c6e53e5c529b85389b2a66f200c9">
+                <title>Keyword&lt;key, Value&gt; marian::keywords::Keyword&lt; key, Value &gt;::operator= (Value value) const </title> <emphasis>Constructs and returns a new &lt;code&gt;Keyword&lt;/code&gt; object containing
+the specified value.</emphasis>
+                
+<para>Note: despite the conventional semantics of operator=, this method <emphasis>does not modify</emphasis> the current object.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>a new <computeroutput><link linkend="d6/d4a/classmarian_1_1keywords_1_1Keyword">Keyword</link></computeroutput> object containing the specified value </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a26d1f37932f8c8022684008752e2ece1">
+                <title>const Value&amp; marian::keywords::Keyword&lt; key, Value &gt;::operator() () const </title> <emphasis>Gets a const reference to the value stored in this object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>a const reference to the value stored in this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/d4a/classmarian_1_1keywords_1_1Keyword_1a5216afbffb3db4b7c7b536f94cf44c25">
+                <title>unsigned marian::keywords::Keyword&lt; key, Value &gt;::id () const </title> <emphasis>Gets the hashed integer identifier associated with this object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the hashed integer identifier associated with this object </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

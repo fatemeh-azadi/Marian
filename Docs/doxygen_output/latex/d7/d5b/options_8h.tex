@@ -1,0 +1,70 @@
+\hypertarget{options_8h}{}\section{options.\+h File Reference}
+\label{options_8h}\index{options.\+h@{options.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}common/definitions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/yaml-\/cpp/yaml.\+h\char`\"{}}\\*
+Include dependency graph for options.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d2c/options_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d25/options_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1Options}{marian\+::\+Options}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{options_8h_a45814e723c9ae75407159b5ff5f5c4d6}{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}(registered,  type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{options.\+h@{options.\+h}!Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}!options.\+h@{options.\+h}}
+\subsubsection[{\texorpdfstring{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}{YAML_REGISTER_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE(
+\begin{DoxyParamCaption}
+\item[{}]{registered, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{options_8h_a45814e723c9ae75407159b5ff5f5c4d6}{}\label{options_8h_a45814e723c9ae75407159b5ff5f5c4d6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }YAML \{\(\backslash\)
+template<>\(\backslash\)
+struct convert<registered> \{\(\backslash\)
+  static Node encode(\textcolor{keyword}{const} registered& rhs) \{\(\backslash\)
+    type \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value} = \textcolor{keyword}{static\_cast<}type\textcolor{keyword}{>}(rhs);\(\backslash\)
+    return Node(value);\(\backslash\)
+  \}\(\backslash\)
+  static \textcolor{keywordtype}{bool} decode(\textcolor{keyword}{const} Node& node, registered& rhs) \{\(\backslash\)
+    type \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value} = node.as<type>();\(\backslash\)
+    rhs = \textcolor{keyword}{static\_cast<}registered\textcolor{keyword}{>}(\hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value});\(\backslash\)
+    return \textcolor{keyword}{true};\(\backslash\)
+  \}\(\backslash\)
+\};\(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definition at line 9 of file options.\+h.
+

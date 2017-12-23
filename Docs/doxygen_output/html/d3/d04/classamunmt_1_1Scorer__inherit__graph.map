@@ -1,0 +1,4 @@
+<map id="amunmt::Scorer" name="amunmt::Scorer">
+<area shape="rect" id="node2" href="$d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder.html" title="{amunmt::GPU::EncoderDecoder\n|&#45; model_\l&#45; encoder_\l&#45; decoder_\l&#45; indices_\l&#45; sentenceLengths_\l&#45; SourceContext_\l|+ EncoderDecoder()\l+ ~EncoderDecoder()\l+ Decode()\l+ NewState()\l+ BeginSentenceState()\l+ Encode()\l+ AssembleBeamState()\l+ GetAttention()\l+ GetAttention()\l+ GetProbs()\l+ GetNBest()\l+ GetBias()\l+ GetVocabSize()\l+ Filter()\l&#45; EncoderDecoder()\l}" alt="" coords="5,365,216,721"/>
+<area shape="rect" id="node3" href="$dc/da8/classamunmt_1_1SourceIndependentScorer.html" title="{amunmt::SourceIndependent\lScorer\n||+ SourceIndependentScorer()\l+ ~SourceIndependentScorer()\l+ SetSource()\l}" alt="" coords="240,483,440,604"/>
+</map>

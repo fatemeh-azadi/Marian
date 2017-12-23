@@ -1,0 +1,182 @@
+\hypertarget{classamunmt_1_1GPU_1_1Multiplicative}{}\section{amunmt\+:\+:G\+PU\+:\+:Multiplicative$<$ Cell\+Type, Inner\+Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Multiplicative}\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative$<$ Cell\+Type, Inner\+Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Multiplicative$<$ Cell\+Type, Inner\+Weights $>$}}
+
+
+{\ttfamily \#include $<$multiplicative.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Multiplicative$<$ Cell\+Type, Inner\+Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d4/dfa/classamunmt_1_1GPU_1_1Multiplicative__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Multiplicative$<$ Cell\+Type, Inner\+Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d5a/classamunmt_1_1GPU_1_1Multiplicative__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a33fc8271a8fe73ce73216c5748ee1cc4}{Multiplicative} (const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Weights\+::\+Mult\+Weights}$<$ Inner\+Weights $>$ \&model)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a1f485aad0d4da73469d58f61fc121341}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context) const 
+\item 
+virtual \hyperlink{structamunmt_1_1GPU_1_1CellLength}{Cell\+Length} \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a5be06555bcb9b8415ae9558109aa2699}{Get\+State\+Length} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cell\+Type$<$ Inner\+Weights $>$ \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}{inner\+Cell\+\_\+}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Weights\+::\+Mult\+Weights}$<$ Inner\+Weights $>$ \& \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}{x\+\_\+mult\+\_\+}
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{temp\+State\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Multiplicative$<$ Cell\+Type, Inner\+Weights $>$}
+
+
+
+Definition at line 15 of file multiplicative.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!Multiplicative@{Multiplicative}}
+\index{Multiplicative@{Multiplicative}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Multiplicative(const Weights\+::\+Mult\+Weights$<$ Inner\+Weights $>$ \&model)}{Multiplicative(const Weights::MultWeights< InnerWeights > &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::{\bf Multiplicative} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights\+::\+Mult\+Weights}$<$ Inner\+Weights $>$ \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_a33fc8271a8fe73ce73216c5748ee1cc4}{}\label{classamunmt_1_1GPU_1_1Multiplicative_a33fc8271a8fe73ce73216c5748ee1cc4}
+
+
+Definition at line 17 of file multiplicative.\+h.
+
+
+\begin{DoxyCode}
+18       : \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}{innerCell\_}(model), \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\_}(model)
+19     \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context) const }{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ virtual void {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_a1f485aad0d4da73469d58f61fc121341}{}\label{classamunmt_1_1GPU_1_1Multiplicative_a1f485aad0d4da73469d58f61fc121341}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 20 of file multiplicative.\+h.
+
+
+\begin{DoxyCode}
+22                                                                 \{
+23       \textcolor{keyword}{using namespace }mblas;
+24       \textcolor{comment}{// TODO: the weight matrix naming probably is inconsistent}
+25       \textcolor{comment}{/* HANDLE\_ERROR( cudaStreamSynchronize(mblas::CudaStreamHandler::GetStream())); */}
+26       \textcolor{comment}{/* std::cerr << "Multipliative::GetNextState1" << std::endl; */}
+27 
+28       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{Copy}(*\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{tempState\_}.\hyperlink{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{cell}, *State.cell);
+29       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(*\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{tempState\_}.\hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output}, *State.output, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\_}.\hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights_ad23eb3a99e7b4c7461d74c0ec153c172}{Um\_});
+30       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{tempState\_}.\hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output}, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\_}.
+      \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights_a923bcc07d5054634f8c7f82040cf743d}{Bmu\_});
+31       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}{x\_mult\_}, Context, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\_}.\hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights_aa780446079a7cfa9b2cf4144ff3b8333}{Wm\_});
+32       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}{x\_mult\_}, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{w\_}.\hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights_af0a85a328836ed039c475d90e71decab}{Bm\_});
+33       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{Element}(\_1 * \_2, *\hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{tempState\_}.\hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output}, \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}{x\_mult\_});
+34       \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}{innerCell\_}.GetNextState(NextState, \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{tempState\_}, Context);
+35     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dad/classamunmt_1_1GPU_1_1Multiplicative_a1f485aad0d4da73469d58f61fc121341_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!Get\+State\+Length@{Get\+State\+Length}}
+\index{Get\+State\+Length@{Get\+State\+Length}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Get\+State\+Length() const }{GetStateLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ virtual {\bf Cell\+Length} {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::Get\+State\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_a5be06555bcb9b8415ae9558109aa2699}{}\label{classamunmt_1_1GPU_1_1Multiplicative_a5be06555bcb9b8415ae9558109aa2699}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 36 of file multiplicative.\+h.
+
+
+\begin{DoxyCode}
+36                                               \{
+37       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}{innerCell\_}.GetStateLength();
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!inner\+Cell\+\_\+@{inner\+Cell\+\_\+}}
+\index{inner\+Cell\+\_\+@{inner\+Cell\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{inner\+Cell\+\_\+}{innerCell_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ Cell\+Type$<$Inner\+Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::inner\+Cell\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}{}\label{classamunmt_1_1GPU_1_1Multiplicative_a365c31555dc63bc9008f39ddd3c3026a}
+
+
+Definition at line 40 of file multiplicative.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!temp\+State\+\_\+@{temp\+State\+\_\+}}
+\index{temp\+State\+\_\+@{temp\+State\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{temp\+State\+\_\+}{tempState_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ {\bf Cell\+State} {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::temp\+State\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}{}\label{classamunmt_1_1GPU_1_1Multiplicative_ae583681af41e0a7ec9671f14b68b56b8}
+
+
+Definition at line 43 of file multiplicative.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ const {\bf Weights\+::\+Mult\+Weights}$<$Inner\+Weights$>$\& {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}{}\label{classamunmt_1_1GPU_1_1Multiplicative_a32dbf949fdc0b61708b5db19e3416b93}
+
+
+Definition at line 41 of file multiplicative.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}!x\+\_\+mult\+\_\+@{x\+\_\+mult\+\_\+}}
+\index{x\+\_\+mult\+\_\+@{x\+\_\+mult\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Multiplicative@{amunmt\+::\+G\+P\+U\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{x\+\_\+mult\+\_\+}{x_mult_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ class $>$ class Cell\+Type, class Inner\+Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Multiplicative}$<$ Cell\+Type, Inner\+Weights $>$\+::x\+\_\+mult\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}{}\label{classamunmt_1_1GPU_1_1Multiplicative_ac7fc2a007d833891d9be392e4cd79204}
+
+
+Definition at line 42 of file multiplicative.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{multiplicative_8h}{multiplicative.\+h}\end{DoxyCompactItemize}

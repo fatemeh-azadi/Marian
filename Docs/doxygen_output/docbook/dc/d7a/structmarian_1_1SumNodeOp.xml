@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d7a/structmarian_1_1SumNodeOp">
+<title>marian::SumNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::SumNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d29/structmarian_1_1SumNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::SumNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d86/structmarian_1_1SumNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1aa9ae98f12fcf38f3026c9cb19a168b08">SumNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1aefc02387c6ddad9a5825e204a511d9be">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1a705a3304de7f9aad90b7ead6736a8e46">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1a217ee895f48f464dbe0ce55c685b927a">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1aefe4aa2ebd3ff63972c8550bfc9d4fb4">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1ae2985b156380c467fa272cc38233074a">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="dc/d7a/structmarian_1_1SumNodeOp_1ab58aedc0c1c6929f45e7fc7a4ad3ab17">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1aa9ae98f12fcf38f3026c9cb19a168b08">
+                <title>marian::SumNodeOp::SumNodeOp (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1aefc02387c6ddad9a5825e204a511d9be">
+                <title>NodeOps marian::SumNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1a705a3304de7f9aad90b7ead6736a8e46">
+                <title>NodeOps marian::SumNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1a217ee895f48f464dbe0ce55c685b927a">
+                <title>Shape marian::SumNodeOp::newShape (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1aefe4aa2ebd3ff63972c8550bfc9d4fb4">
+                <title>const std::string marian::SumNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1ae2985b156380c467fa272cc38233074a">
+                <title>const std::string marian::SumNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d7a/structmarian_1_1SumNodeOp_1ab58aedc0c1c6929f45e7fc7a4ad3ab17">
+                <title>virtual size_t marian::SumNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

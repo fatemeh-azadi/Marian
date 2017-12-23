@@ -1,0 +1,6 @@
+<map id="marian::TransposeNodeOp::backwardOps" name="marian::TransposeNodeOp::backwardOps">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#a170142cc4ea06bbb5f76a15a8da4487c" title="marian::Transpose" alt="" coords="234,5,365,32"/>
+<area shape="rect" id="node3" href="$d0/d7a/classmarian_1_1Node.html#a4aa5aa482c70595fa5d43c1fbabf5c18" title="marian::Node::getBackend" alt="" coords="415,81,592,108"/>
+<area shape="rect" id="node4" href="$d0/d7a/classmarian_1_1Node.html#a71a9c8ad6ba12d421fa97222d74a90b9" title="marian::Node::child" alt="" coords="232,107,367,133"/>
+<area shape="rect" id="node5" href="$d0/d7a/classmarian_1_1Node.html#a0497d2c3515385212b1086f8b8502826" title="marian::Node::grad" alt="" coords="233,157,366,184"/>
+</map>

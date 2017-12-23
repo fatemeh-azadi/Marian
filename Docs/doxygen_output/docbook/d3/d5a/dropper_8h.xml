@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d5a/dropper_8h">
+    <title>dropper.h File Reference</title>
+    <programlisting>#include &lt;curand.h&gt;</programlisting>
+    <programlisting>#include &lt;curand_kernel.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/device_ptr.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/sort.h&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &quot;kernels/cuda_helpers.h&quot;</programlisting>
+    <programlisting>#include &quot;kernels/tensor_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;training/sparse_tensor.h&quot;</programlisting>
+<para>Include dependency diagram for dropper.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d5d/dropper_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for dropper.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d70/dropper_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dc4/classmarian_1_1GradientDropBase">marian::GradientDropBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file dropper.h</para>
+    </simplesect>
+</section>

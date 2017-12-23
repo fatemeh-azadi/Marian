@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -fPIC -O3 -Ofast -m64 -march=native -funroll-loops -ffinite-math-only -Wno-unused-result -Wno-deprecated -pthread -DNDEBUG -Wall -std=c++11 -O3 -g -fopenmp   CMakeFiles/fast_align.dir/src/fast_align.cc.o CMakeFiles/fast_align.dir/src/ttables.cc.o  -o ../../../../fast_align -rdynamic 

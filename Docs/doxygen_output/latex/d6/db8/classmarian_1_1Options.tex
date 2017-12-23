@@ -1,0 +1,268 @@
+\hypertarget{classmarian_1_1Options}{}\section{marian\+:\+:Options Class Reference}
+\label{classmarian_1_1Options}\index{marian\+::\+Options@{marian\+::\+Options}}
+
+
+{\ttfamily \#include $<$options.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Options\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{d1/d7c/classmarian_1_1Options__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Y\+A\+M\+L\+::\+Node \& \hyperlink{classmarian_1_1Options_afc681ad69bdc226f838bbfd39c77afd9}{get\+Options} ()
+\item 
+void \hyperlink{classmarian_1_1Options_a40aac40f3a04fe3b9c3f8ed05df5bcda}{parse} (const std\+::string \&yaml)
+\item 
+void \hyperlink{classmarian_1_1Options_aa8a98efcde6b45326a4dfc2804d6affa}{merge} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1Options_a93bdef116f5adfab155e25c5de8859d2}{merge} (Y\+A\+M\+L\+::\+Node \&node)
+\item 
+std\+::string \hyperlink{classmarian_1_1Options_a04a75b2d9f04f5bd55e5aa290a088b6e}{str} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classmarian_1_1Options_a5f051d6a378d6a51388be2e684216ffb}{set} (const std\+::string \&key, T value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1Options_a01eb84ff527e7869fc1290b62736d884}{get} (const std\+::string \&key)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1Options_a9e4b05cf6ce7d43121c4e5a4f07e2c5d}{get} (const std\+::string \&key, T default\+Value)
+\item 
+bool \hyperlink{classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514}{has} (const std\+::string \&key) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file options.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Options@{marian\+::\+Options}!get@{get}}
+\index{get@{get}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key)}{get(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Options\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a01eb84ff527e7869fc1290b62736d884}{}\label{classmarian_1_1Options_a01eb84ff527e7869fc1290b62736d884}
+
+
+Definition at line 64 of file options.\+h.
+
+
+\begin{DoxyCode}
+64                                 \{
+65       UTIL\_THROW\_IF2(!\hyperlink{classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514}{has}(key), \textcolor{stringliteral}{"Required option \(\backslash\)""} << key << \textcolor{stringliteral}{"\(\backslash\)" has not been set"});
+66       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[key].as<T>();
+67     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d6/db8/classmarian_1_1Options_a01eb84ff527e7869fc1290b62736d884_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Options@{marian\+::\+Options}!get@{get}}
+\index{get@{get}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key, T default\+Value)}{get(const std::string &key, T defaultValue)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Options\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{T}]{default\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a9e4b05cf6ce7d43121c4e5a4f07e2c5d}{}\label{classmarian_1_1Options_a9e4b05cf6ce7d43121c4e5a4f07e2c5d}
+
+
+Definition at line 70 of file options.\+h.
+
+
+\begin{DoxyCode}
+70                                                 \{
+71       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514}{has}(key))
+72         \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[key].as<T>();
+73       \textcolor{keywordflow}{else}
+74         \textcolor{keywordflow}{return} defaultValue;
+75     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d6/db8/classmarian_1_1Options_a9e4b05cf6ce7d43121c4e5a4f07e2c5d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Options@{marian\+::\+Options}!get\+Options@{get\+Options}}
+\index{get\+Options@{get\+Options}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{get\+Options()}{getOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node\& marian\+::\+Options\+::get\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_afc681ad69bdc226f838bbfd39c77afd9}{}\label{classmarian_1_1Options_afc681ad69bdc226f838bbfd39c77afd9}
+
+
+Definition at line 32 of file options.\+h.
+
+
+\begin{DoxyCode}
+32                            \{
+33       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_};
+34     \}
+\end{DoxyCode}
+\index{marian\+::\+Options@{marian\+::\+Options}!has@{has}}
+\index{has@{has}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{has(const std\+::string \&key) const }{has(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Options\+::has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514}{}\label{classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514}
+
+
+Definition at line 77 of file options.\+h.
+
+
+\begin{DoxyCode}
+77                                          \{
+78       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[key];
+79     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d6/db8/classmarian_1_1Options_aab78c7ac72cfe00d18970429b86fb514_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Options@{marian\+::\+Options}!merge@{merge}}
+\index{merge@{merge}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{merge(\+Ptr$<$ Options $>$ options)}{merge(Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Options\+::merge (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_aa8a98efcde6b45326a4dfc2804d6affa}{}\label{classmarian_1_1Options_aa8a98efcde6b45326a4dfc2804d6affa}
+
+
+Definition at line 42 of file options.\+h.
+
+
+\begin{DoxyCode}
+42                                      \{
+43       \hyperlink{classmarian_1_1Options_aa8a98efcde6b45326a4dfc2804d6affa}{merge}(options->getOptions());
+44     \}
+\end{DoxyCode}
+\index{marian\+::\+Options@{marian\+::\+Options}!merge@{merge}}
+\index{merge@{merge}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{merge(\+Y\+A\+M\+L\+::\+Node \&node)}{merge(YAML::Node &node)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Options\+::merge (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a93bdef116f5adfab155e25c5de8859d2}{}\label{classmarian_1_1Options_a93bdef116f5adfab155e25c5de8859d2}
+
+
+Definition at line 46 of file options.\+h.
+
+
+\begin{DoxyCode}
+46                                \{
+47       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : node)
+48         \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[it.first.as<std::string>()])
+49           \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[it.first.as<std::string>()] = YAML::Clone(it.second);
+50     \}
+\end{DoxyCode}
+\index{marian\+::\+Options@{marian\+::\+Options}!parse@{parse}}
+\index{parse@{parse}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{parse(const std\+::string \&yaml)}{parse(const std::string &yaml)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Options\+::parse (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{yaml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a40aac40f3a04fe3b9c3f8ed05df5bcda}{}\label{classmarian_1_1Options_a40aac40f3a04fe3b9c3f8ed05df5bcda}
+
+
+Definition at line 36 of file options.\+h.
+
+
+\begin{DoxyCode}
+36                                       \{
+37       \textcolor{keyword}{auto} node = YAML::Load(yaml);
+38       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : node)
+39         \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[it.first.as<std::string>()] = YAML::Clone(it.second);
+40     \}
+\end{DoxyCode}
+\index{marian\+::\+Options@{marian\+::\+Options}!set@{set}}
+\index{set@{set}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{set(const std\+::string \&key, T value)}{set(const std::string &key, T value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void marian\+::\+Options\+::set (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a5f051d6a378d6a51388be2e684216ffb}{}\label{classmarian_1_1Options_a5f051d6a378d6a51388be2e684216ffb}
+
+
+Definition at line 59 of file options.\+h.
+
+
+\begin{DoxyCode}
+59                                             \{
+60       \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_}[key] = \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value};
+61     \}
+\end{DoxyCode}
+\index{marian\+::\+Options@{marian\+::\+Options}!str@{str}}
+\index{str@{str}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{str()}{str()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::\+Options\+::str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Options_a04a75b2d9f04f5bd55e5aa290a088b6e}{}\label{classmarian_1_1Options_a04a75b2d9f04f5bd55e5aa290a088b6e}
+
+
+Definition at line 52 of file options.\+h.
+
+
+\begin{DoxyCode}
+52                     \{
+53       std::stringstream ss;
+54       ss << \hyperlink{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{options\_};
+55       \textcolor{keywordflow}{return} ss.str();
+56     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Options@{marian\+::\+Options}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Options@{marian\+::\+Options}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Options\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}{}\label{classmarian_1_1Options_afdab53c6d9565337d54ade773fb999bc}
+
+
+Definition at line 29 of file options.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{options_8h}{options.\+h}\end{DoxyCompactItemize}

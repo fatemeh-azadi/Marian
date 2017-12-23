@@ -1,0 +1,11 @@
+<map id="amunmt::GPU::BestHyps" name="amunmt::GPU::BestHyps">
+<area shape="rect" id="node2" href="$df/d94/classamunmt_1_1BestHypsBase.html" title="{amunmt::BestHypsBase\n|# forbidUNK_\l# isInputFiltered_\l# returnAttentionWeights_\l|+ BestHypsBase()\l+ BestHypsBase()\l+ CalcBeam()\l}" alt="" coords="1295,1282,1469,1418"/>
+<area shape="rect" id="node3" href="$d7/d4e/classamunmt_1_1God.html" title="{amunmt::God\n|&#45; filter_\l&#45; info_\l&#45; progress_\l&#45; threadIncr_\l&#45; accessLock_\l&#45; returnNBestList_\l&#45; useFusedSoftmax_\l|+ God()\l+ ~God()\l+ Init()\l+ Init()\l+ Cleanup()\l+ Has()\l+ Get()\l+ Get()\l+ GetSourceVocab()\l+ GetTargetVocab()\land 16 more...\l&#45; LoadScorers()\l&#45; LoadFiltering()\l&#45; LoadPrePostProcessing()\l}" alt="" coords="965,797,1143,1153"/>
+<area shape="rect" id="node9" href="$dd/d77/classamunmt_1_1OutputCollector.html" title="{amunmt::OutputCollector\n|# mutex_\l# nextId_\l|+ OutputCollector()\l+ OutputCollector()\l+ Write()\l}" alt="" coords="393,569,561,691"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="339,407,433,485"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="336,5,436,83"/>
+<area shape="rect" id="node18" href="$da/d4e/classamunmt_1_1Config.html" title="{amunmt::Config\n|&#45; config_\l|+ Has()\l+ Get()\l+ Get()\l+ Get()\l+ AddOptions()\l+ LogOptions()\l}" alt="" coords="1698,555,1813,705"/>
+<area shape="rect" id="node19" title="STL class. " alt="" coords="1715,407,1795,485"/>
+<area shape="rect" id="node21" href="$d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array.html" title="{amunmt::GPU::mblas\l::Array\&lt; float \&gt;\n|# m_size\l# m_maxSize\l# m_arr\l|+ Array()\l+ Array()\l+ Array()\l+ Array()\l+ ~Array()\l+ size()\l+ data()\l+ data()\l+ resize()\l+ reserve()\l+ clear()\l}" alt="" coords="1493,1216,1642,1484"/>
+<area shape="rect" id="node22" href="$d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array.html" title="{amunmt::GPU::mblas\l::Array\&lt; unsigned \&gt;\n|# m_size\l# m_maxSize\l# m_arr\l|+ Array()\l+ Array()\l+ Array()\l+ Array()\l+ ~Array()\l+ size()\l+ data()\l+ data()\l+ resize()\l+ reserve()\l+ clear()\l}" alt="" coords="1666,1216,1815,1484"/>
+</map>

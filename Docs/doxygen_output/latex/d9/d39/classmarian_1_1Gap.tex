@@ -1,0 +1,385 @@
+\hypertarget{classmarian_1_1Gap}{}\section{marian\+:\+:Gap Class Reference}
+\label{classmarian_1_1Gap}\index{marian\+::\+Gap@{marian\+::\+Gap}}
+
+
+{\ttfamily \#include $<$allocator.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Gap\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{d5/d09/classmarian_1_1Gap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Gap_aa476965d468f8b9104bb3dcb7c7c6aa2}{Gap} (uint8\+\_\+t $\ast$\hyperlink{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}{data}, size\+\_\+t \hyperlink{classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19}{size})
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}{data} () const 
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1Gap_ad70e63fa5e2cf687ff882cdfc9a78f7a}{data} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19}{size} () const 
+\item 
+bool \hyperlink{classmarian_1_1Gap_a796dcbf92563af49784a37248a6af154}{operator$<$} (const \hyperlink{classmarian_1_1Gap}{Gap} \&mp) const 
+\item 
+bool \hyperlink{classmarian_1_1Gap_ad906f99514af8651c33410f283e834a0}{operator==} (const \hyperlink{classmarian_1_1Gap}{Gap} \&mp) const 
+\item 
+bool \hyperlink{classmarian_1_1Gap_a29b456bc20296682ab77f16b185acbd3}{adjacent} (const \hyperlink{classmarian_1_1Gap}{Gap} \&mp) const 
+\item 
+\hyperlink{classmarian_1_1Gap}{Gap} \hyperlink{classmarian_1_1Gap_abf7f297ffce3fb79405d73f98a26daf9}{combine} (const \hyperlink{classmarian_1_1Gap}{Gap} \&mp) const 
+\item 
+\hyperlink{classmarian_1_1Gap}{Gap} \hyperlink{classmarian_1_1Gap_ab765bb25e76baf4988394892b2610327}{rest} (size\+\_\+t offset) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Gap}{Gap} \hyperlink{classmarian_1_1Gap_aaff6818d6039b1c0d30eb4fb4c526f63}{operator+} (const \hyperlink{classmarian_1_1Gap}{Gap} \&mp1, const \hyperlink{classmarian_1_1Gap}{Gap} \&mp2)
+\item 
+std\+::ostream \& \hyperlink{classmarian_1_1Gap_a9c39d53e22232e18f3755ae1bb0436e5}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classmarian_1_1Gap}{Gap} \&gap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file allocator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!Gap@{Gap}}
+\index{Gap@{Gap}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{Gap(uint8\+\_\+t $\ast$data, size\+\_\+t size)}{Gap(uint8_t *data, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Gap\+::\+Gap (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_aa476965d468f8b9104bb3dcb7c7c6aa2}{}\label{classmarian_1_1Gap_aa476965d468f8b9104bb3dcb7c7c6aa2}
+
+
+Definition at line 29 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+30       : \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_}(\hyperlink{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}{data}), \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_}(\hyperlink{classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19}{size}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!adjacent@{adjacent}}
+\index{adjacent@{adjacent}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{adjacent(const Gap \&mp) const }{adjacent(const Gap &mp) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Gap\+::adjacent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Gap} \&}]{mp}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_a29b456bc20296682ab77f16b185acbd3}{}\label{classmarian_1_1Gap_a29b456bc20296682ab77f16b185acbd3}
+
+
+Definition at line 45 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+45                                        \{
+46       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_} + \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_} == mp.data() || mp.data() + mp.size() == 
+      \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_};
+47     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/d39/classmarian_1_1Gap_a29b456bc20296682ab77f16b185acbd3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{d9/d39/classmarian_1_1Gap_a29b456bc20296682ab77f16b185acbd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!combine@{combine}}
+\index{combine@{combine}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{combine(const Gap \&mp) const }{combine(const Gap &mp) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gap} marian\+::\+Gap\+::combine (
+\begin{DoxyParamCaption}
+\item[{const {\bf Gap} \&}]{mp}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_abf7f297ffce3fb79405d73f98a26daf9}{}\label{classmarian_1_1Gap_abf7f297ffce3fb79405d73f98a26daf9}
+
+
+Definition at line 59 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+59                                      \{
+60       \textcolor{keywordflow}{if}(mp.data() < this->\hyperlink{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}{data}())
+61         \textcolor{keywordflow}{return} mp + *\textcolor{keyword}{this};
+62       \textcolor{keywordflow}{else}
+63         \textcolor{keywordflow}{return} *\textcolor{keyword}{this} + mp;
+64     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d9/d39/classmarian_1_1Gap_abf7f297ffce3fb79405d73f98a26daf9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{d9/d39/classmarian_1_1Gap_abf7f297ffce3fb79405d73f98a26daf9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!data@{data}}
+\index{data@{data}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Gap\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}{}\label{classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca}
+
+
+Definition at line 32 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+32 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d39/classmarian_1_1Gap_acbc9a4d43af0bbd860c4dddd01fa6bca_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!data@{data}}
+\index{data@{data}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Gap\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_ad70e63fa5e2cf687ff882cdfc9a78f7a}{}\label{classmarian_1_1Gap_ad70e63fa5e2cf687ff882cdfc9a78f7a}
+
+
+Definition at line 33 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+33 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{operator$<$(const Gap \&mp) const }{operator<(const Gap &mp) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Gap\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Gap} \&}]{mp}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_a796dcbf92563af49784a37248a6af154}{}\label{classmarian_1_1Gap_a796dcbf92563af49784a37248a6af154}
+
+
+Definition at line 37 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+37                                         \{
+38       \textcolor{keywordflow}{return} (\hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_} < mp.size()) || (\hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_} == mp.size() && \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_} < mp.data());
+39     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d9/d39/classmarian_1_1Gap_a796dcbf92563af49784a37248a6af154_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!operator==@{operator==}}
+\index{operator==@{operator==}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{operator==(const Gap \&mp) const }{operator==(const Gap &mp) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Gap\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Gap} \&}]{mp}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_ad906f99514af8651c33410f283e834a0}{}\label{classmarian_1_1Gap_ad906f99514af8651c33410f283e834a0}
+
+
+Definition at line 41 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+41                                          \{
+42       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_} == mp.data() && \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_} == mp.size();
+43     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d9/d39/classmarian_1_1Gap_ad906f99514af8651c33410f283e834a0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!rest@{rest}}
+\index{rest@{rest}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{rest(size\+\_\+t offset) const }{rest(size_t offset) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gap} marian\+::\+Gap\+::rest (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_ab765bb25e76baf4988394892b2610327}{}\label{classmarian_1_1Gap_ab765bb25e76baf4988394892b2610327}
+
+
+Definition at line 66 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+66                                   \{
+67       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_aa476965d468f8b9104bb3dcb7c7c6aa2}{Gap}(\hyperlink{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{data\_} + offset, \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_} - offset);
+68     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d9/d39/classmarian_1_1Gap_ab765bb25e76baf4988394892b2610327_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!size@{size}}
+\index{size@{size}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Gap\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19}{}\label{classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19}
+
+
+Definition at line 35 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+35 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{size\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d39/classmarian_1_1Gap_a7f8a530a91cd2b24a39d54eb18e05d19_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!operator+@{operator+}}
+\index{operator+@{operator+}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gap} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Gap} \&}]{mp1, }
+\item[{const {\bf Gap} \&}]{mp2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classmarian_1_1Gap_aaff6818d6039b1c0d30eb4fb4c526f63}{}\label{classmarian_1_1Gap_aaff6818d6039b1c0d30eb4fb4c526f63}
+
+
+Definition at line 49 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+49                                                          \{
+50       \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Gap_aa476965d468f8b9104bb3dcb7c7c6aa2}{Gap}(mp1.data(), mp1.size() + mp2.size());
+51     \}
+\end{DoxyCode}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Gap} \&}]{gap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classmarian_1_1Gap_a9c39d53e22232e18f3755ae1bb0436e5}{}\label{classmarian_1_1Gap_a9c39d53e22232e18f3755ae1bb0436e5}
+
+
+Definition at line 53 of file allocator.\+h.
+
+
+\begin{DoxyCode}
+53                                                                    \{
+54       out << \textcolor{stringliteral}{"gap - ptr: "} << std::hex << (size\_t)gap.data()
+55         << std::dec << \textcolor{stringliteral}{" size: "} << gap.size();
+56       \textcolor{keywordflow}{return} out;
+57     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Gap@{marian\+::\+Gap}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Gap\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}{}\label{classmarian_1_1Gap_a795a5d35ff4fbfad865cd18403fdc6fb}
+
+
+Definition at line 25 of file allocator.\+h.
+
+\index{marian\+::\+Gap@{marian\+::\+Gap}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!marian\+::\+Gap@{marian\+::\+Gap}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Gap\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}{}\label{classmarian_1_1Gap_a6917be0d1c206f3a06094e2ef16d3f26}
+
+
+Definition at line 26 of file allocator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{allocator_8h}{allocator.\+h}\end{DoxyCompactItemize}

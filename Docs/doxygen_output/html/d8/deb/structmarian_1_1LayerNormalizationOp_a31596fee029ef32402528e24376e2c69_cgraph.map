@@ -1,0 +1,6 @@
+<map id="marian::LayerNormalizationOp::backwardOps" name="marian::LayerNormalizationOp::backwardOps">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#a1c8cfe7e5243790c154153cd5e048b50" title="marian::LayerNormalizationGrad" alt="" coords="235,5,444,32"/>
+<area shape="rect" id="node3" href="$d0/d7a/classmarian_1_1Node.html#a71a9c8ad6ba12d421fa97222d74a90b9" title="marian::Node::child" alt="" coords="272,56,407,83"/>
+<area shape="rect" id="node5" href="$d0/d7a/classmarian_1_1Node.html#a0497d2c3515385212b1086f8b8502826" title="marian::Node::grad" alt="" coords="273,107,406,133"/>
+<area shape="rect" id="node4" href="$d0/d7a/classmarian_1_1Node.html#a4aa5aa482c70595fa5d43c1fbabf5c18" title="marian::Node::getBackend" alt="" coords="492,56,669,83"/>
+</map>

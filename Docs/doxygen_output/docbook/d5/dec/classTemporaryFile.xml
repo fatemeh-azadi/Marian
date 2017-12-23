@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dec/classTemporaryFile">
+<title>TemporaryFile class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d18/marian_2src_2common_2file__stream_8h">&lt;file_stream.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for TemporaryFile</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d9c/classTemporaryFile__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for TemporaryFile</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d45/classTemporaryFile__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int fd_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d5/dec/classTemporaryFile_1a31644f6b89b246deb1ccaa1dbc8f0e40">mkstemp_and_unlink</link> (
+char * tmpl)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d5/dec/classTemporaryFile_1a29753c39509ccada57e78c7c89141f06">MakeTemp</link> (
+const std::string &amp; base)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dec/classTemporaryFile_1a97edc170c91b8a4b3fe49aab861ad5d4">NormalizeTempPrefix</link> (
+std::string &amp; base)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/dec/classTemporaryFile_1ae277398c5952b6ad8f1884a9a529a5cd">TemporaryFile</link> (
+const std::string base)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/dec/classTemporaryFile_1a7a0f828343c95d3a7e81d6d3587ad116">~TemporaryFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d5/dec/classTemporaryFile_1a072b404ac82e2fe98d9c78ed93fc4e19">getFileDescriptor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/dec/classTemporaryFile_1a31644f6b89b246deb1ccaa1dbc8f0e40">
+                <title>int TemporaryFile::mkstemp_and_unlink (char *tmpl)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dec/classTemporaryFile_1a29753c39509ccada57e78c7c89141f06">
+                <title>int TemporaryFile::MakeTemp (const std::string &amp;base)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dec/classTemporaryFile_1a97edc170c91b8a4b3fe49aab861ad5d4">
+                <title>void TemporaryFile::NormalizeTempPrefix (std::string &amp;base)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dec/classTemporaryFile_1ae277398c5952b6ad8f1884a9a529a5cd">
+                <title>TemporaryFile::TemporaryFile (const std::string base=&quot;/tmp/&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dec/classTemporaryFile_1a7a0f828343c95d3a7e81d6d3587ad116">
+                <title>TemporaryFile::~TemporaryFile ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dec/classTemporaryFile_1a072b404ac82e2fe98d9c78ed93fc4e19">
+                <title>int TemporaryFile::getFileDescriptor ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/de7/classLM">
+<title>LM class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d81/kenlm_8h">&lt;kenlm.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for LM</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d23/classLM__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for LM</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d08/classLM__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef lm::ngram::ProbingModel  <link linkend="d8/de7/classLM_1adb71040d1b5532d2dcd258815f6f28b7">KenlmModel</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; KenlmModel &gt; lm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WordPairs vm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/de7/classLM_1a20c282226e69a993c382f33d2d73b06d">LM</link> (
+const std::string &amp; path, const Vocab &amp; vocab)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/de7/classLM_1a48d4c54484feb8ae313ed1914c768f68">LM</link> (
+<link linkend="d8/de7/classLM">LM</link> &amp;&amp; lm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/de7/classLM_1ae515b0598a8be38144f5c031488b4c82">~LM</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d8/de7/classLM_1aefaa618805be0cdcfe1a358f5d6ed486">Score</link> (
+const <link linkend="d9/d81/kenlm_8h_1ac0671733f284e84250e464637645ade4">KenlmState</link> &amp; in, <link linkend="d9/d41/namespacelm_1aea554f766016a7141535a9f8f648766a">lm::WordIndex</link> index, <link linkend="d9/d81/kenlm_8h_1ac0671733f284e84250e464637645ade4">KenlmState</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d9/d81/kenlm_8h_1ac0671733f284e84250e464637645ade4">KenlmState</link> &amp; <link linkend="d8/de7/classLM_1aa9ddd84b61f439c6369f8daaff0f0244">BeginSentenceState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WordPairs::const_iterator <link linkend="d8/de7/classLM_1a04fc742595c0ac2642e3b700d329af83">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WordPairs::const_iterator <link linkend="d8/de7/classLM_1af4d8e463e48d56919efa04eb2a9dbc40">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d8/de7/classLM_1adee9e7617ec788bcf48ca57555aac428">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/de7/classLM_1adb71040d1b5532d2dcd258815f6f28b7">
+                <title>typedef lm::ngram::ProbingModel LM::KenlmModel</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/de7/classLM_1a20c282226e69a993c382f33d2d73b06d">
+                <title>LM::LM (const std::string &amp;path, const Vocab &amp;vocab)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1a48d4c54484feb8ae313ed1914c768f68">
+                <title>LM::LM (LM &amp;&amp;lm)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1ae515b0598a8be38144f5c031488b4c82">
+                <title>LM::~LM ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1aefaa618805be0cdcfe1a358f5d6ed486">
+                <title>float LM::Score (const KenlmState &amp;in, lm::WordIndex index, KenlmState &amp;out) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1aa9ddd84b61f439c6369f8daaff0f0244">
+                <title>const KenlmState &amp; LM::BeginSentenceState () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1a04fc742595c0ac2642e3b700d329af83">
+                <title>WordPairs::const_iterator LM::begin () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1af4d8e463e48d56919efa04eb2a9dbc40">
+                <title>WordPairs::const_iterator LM::end () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de7/classLM_1adee9e7617ec788bcf48ca57555aac428">
+                <title>size_t LM::size () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

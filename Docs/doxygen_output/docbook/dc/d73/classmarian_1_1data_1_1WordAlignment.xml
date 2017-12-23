@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment">
+<title>marian::data::WordAlignment class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/d8f/corpus_8h">&lt;corpus.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::WordAlignment</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d2e/classmarian_1_1data_1_1WordAlignment__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::WordAlignment</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d6c/classmarian_1_1data_1_1WordAlignment__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; int, int &gt;  <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1aeb672afb1cec0627e27447d9afb50357">Point</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1aeb672afb1cec0627e27447d9afb50357">Point</link> &gt;  <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1a30535cd052cdd3d686d53917d8be5259">Alignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Alignment &gt; data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1abfedf789cab3e70b085e977d8638f2dc">WordAlignment</link> (
+const std::string &amp; fname)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1a9bd45b6d1d88ebacef9fbd40b9a36556">split</link> (
+const std::string &amp; input, const std::string &amp; chars)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment_1a30dc39303000417c226304523114c6f4">guidedAlignment</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment_1aeb672afb1cec0627e27447d9afb50357">
+                <title>typedef std::pair&lt;int, int&gt; marian::data::WordAlignment::Point</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment_1a30535cd052cdd3d686d53917d8be5259">
+                <title>typedef std::vector&lt;Point&gt; marian::data::WordAlignment::Alignment</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment_1abfedf789cab3e70b085e977d8638f2dc">
+                <title>marian::data::WordAlignment::WordAlignment (const std::string &amp;fname)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment_1a9bd45b6d1d88ebacef9fbd40b9a36556">
+                <title>std::vector&lt;std::string&gt; marian::data::WordAlignment::split (const std::string &amp;input, const std::string &amp;chars)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d73/classmarian_1_1data_1_1WordAlignment_1a30dc39303000417c226304523114c6f4">
+                <title>void marian::data::WordAlignment::guidedAlignment (Ptr&lt; CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d40/threadpool_8h">
+    <title>threadpool.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;queue&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &lt;mutex&gt;</programlisting>
+    <programlisting>#include &lt;condition_variable&gt;</programlisting>
+    <programlisting>#include &lt;future&gt;</programlisting>
+    <programlisting>#include &lt;functional&gt;</programlisting>
+    <programlisting>#include &lt;stdexcept&gt;</programlisting>
+<para>Include dependency diagram for threadpool.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/db8/threadpool_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for threadpool.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d59/threadpool_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/de5/classamunmt_1_1ThreadPool">amunmt::ThreadPool</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file threadpool.h</para>
+    </simplesect>
+</section>

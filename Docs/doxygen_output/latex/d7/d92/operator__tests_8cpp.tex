@@ -1,0 +1,89 @@
+\hypertarget{operator__tests_8cpp}{}\section{operator\+\_\+tests.\+cpp File Reference}
+\label{operator__tests_8cpp}\index{operator\+\_\+tests.\+cpp@{operator\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}catch.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+operators.\+h\char`\"{}}\\*
+Include dependency graph for operator\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d0e/operator__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{operator__tests_8cpp_ae6f91e43d8f9d5c9a8a79466ca1f13b9}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Expression graph supports basic math operations\char`\"{},\char`\"{}\mbox{[}operator\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{operator\+\_\+tests.\+cpp@{operator\+\_\+tests.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!operator\+\_\+tests.\+cpp@{operator\+\_\+tests.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E(""Expression graph supports basic math operations"",""[operator]"")}{TEST_CASE("Expression graph supports basic math operations","[operator]")}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+\+C\+A\+SE (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Expression graph supports basic math operations\char`\"{}}]{, }
+\item[{\char`\"{}\char`\"{}}]{\mbox{[}operator\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{operator__tests_8cpp_ae6f91e43d8f9d5c9a8a79466ca1f13b9}{}\label{operator__tests_8cpp_ae6f91e43d8f9d5c9a8a79466ca1f13b9}
+
+
+Definition at line 7 of file operator\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}
+7                                                                            \{
+8   \textcolor{keyword}{auto} graph = New<ExpressionGraph>();
+9   graph->setDevice(0);
+10   graph->reserveWorkspaceMB(16);
+11 
+12   std::vector<float> vA(\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\});
+13   std::vector<float> vB(\{1, 2, 3, 4, 5, 6\});
+14   std::vector<float> values;
+15 
+16   SECTION(\textcolor{stringliteral}{"dot product"}) \{
+17     graph->clear();
+18     values.clear();
+19     std::vector<float> vC(\{22, 28, 49, 64, 76, 100, 103, 136\});
+20 
+21     \textcolor{keyword}{auto} A = graph->param(\textcolor{stringliteral}{"A"}, \{4, 3\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(vA));
+22     \textcolor{keyword}{auto} B = graph->param(\textcolor{stringliteral}{"B"}, \{3, 2\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(vB));
+23     \textcolor{keyword}{auto} C = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(A, B);
+24     graph->forward();
+25 
+26     REQUIRE(C->shape() == \hyperlink{structmarian_1_1Shape}{Shape}(\{4, 2\}));
+27     C->val()->get(values);
+28     REQUIRE(values == vC);
+29   \}
+30 
+31   SECTION(\textcolor{stringliteral}{"scalar multiplication"}) \{
+32     graph->clear();
+33     values.clear();
+34     std::vector<float> vB2(\{2, 4, 6, 8, 10, 12\});
+35 
+36     \textcolor{keyword}{auto} B = graph->param(\textcolor{stringliteral}{"B"}, \{3, 2\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(vB));
+37     \textcolor{keyword}{auto} B2 = B * 2.0f;
+38     graph->forward();
+39 
+40     REQUIRE(B2->shape() == \hyperlink{structmarian_1_1Shape}{Shape}(\{3, 2\}));
+41     B2->val()->get(values);
+42     REQUIRE(values == vB2);
+43   \}
+44 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d7/d92/operator__tests_8cpp_ae6f91e43d8f9d5c9a8a79466ca1f13b9_cgraph}
+\end{center}
+\end{figure}
+
+

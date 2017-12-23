@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d6a/structmarian_1_1rnn_1_1State">
+<title>marian::rnn::State struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::State</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d5f/structmarian_1_1rnn_1_1State__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::State</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d4a/structmarian_1_1rnn_1_1State__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr output</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr cell</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="dc/d6a/structmarian_1_1rnn_1_1State_1a8ec95a2be079d859761e58cb46c4d6c8">select</link> (
+const std::vector&lt; size_t &gt; &amp; indices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d6a/structmarian_1_1rnn_1_1State_1a8ec95a2be079d859761e58cb46c4d6c8">
+                <title>State marian::rnn::State::select (const std::vector&lt; size_t &gt; &amp;indices)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

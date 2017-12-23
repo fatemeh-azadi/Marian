@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords">
+<title>marian::keywords::Keywords class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/db7/keywords_8h">&lt;keywords.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::keywords::Keywords</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dc1/classmarian_1_1keywords_1_1Keywords__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::keywords::Keywords</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d3f/classmarian_1_1keywords_1_1Keywords__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; unsigned, boost::any &gt; storage_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a7efdbf15c7e2c424fa442b1069a3b4d2">add</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1aa7c4e2fb5f3a9b4c63590a2504a1b238">add</link> (
+Head head)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a339ac5598ed95cb7c36d56029c0f7def">add</link> (
+Head head, Tail... tail)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a7a0535a25f392cf82e3419dce9eb52db">Keywords</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a09055f1903a6dcfe6a34e154df99a21d">Has</link> (
+Match key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Match::value_type <link linkend="d4/d9b/classmarian_1_1keywords_1_1Keywords_1ab9d8d0291a01f46f182d35c1b97bffe5">Get</link> (
+Match key, typename Match::value_type dflt)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a7efdbf15c7e2c424fa442b1069a3b4d2">
+                <title>void marian::keywords::Keywords::add ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1aa7c4e2fb5f3a9b4c63590a2504a1b238">
+                <title>void marian::keywords::Keywords::add (Head head)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a339ac5598ed95cb7c36d56029c0f7def">
+                <title>void marian::keywords::Keywords::add (Head head, Tail...tail)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a7a0535a25f392cf82e3419dce9eb52db">
+                <title>marian::keywords::Keywords::Keywords (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1a09055f1903a6dcfe6a34e154df99a21d">
+                <title>bool marian::keywords::Keywords::Has (Match key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d9b/classmarian_1_1keywords_1_1Keywords_1ab9d8d0291a01f46f182d35c1b97bffe5">
+                <title>Match::value_type marian::keywords::Keywords::Get (Match key, typename Match::value_type dflt)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d3d/classmarian_1_1Word2VecReader">
+<title>marian::Word2VecReader class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/dce/word2vec__reader_8h">&lt;word2vec_reader.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Word2VecReader</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d7b/classmarian_1_1Word2VecReader__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Word2VecReader</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d5a/classmarian_1_1Word2VecReader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d3d/classmarian_1_1Word2VecReader_1aef7b9914f85e9e9736fe96d254f0704b">Word2VecReader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; <link linkend="d3/d3d/classmarian_1_1Word2VecReader_1a32bb815f947b31ad52de05042982fa93">read</link> (
+const std::string &amp; fileName, int dimVoc, int dimEmb)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; <link linkend="d3/d3d/classmarian_1_1Word2VecReader_1a4af907a4ff8a6c48d61dd9cb770ffe1b">randomEmbeddings</link> (
+int dimVoc, int dimEmb)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d3/d3d/classmarian_1_1Word2VecReader_1aef7b9914f85e9e9736fe96d254f0704b">
+                <title>marian::Word2VecReader::Word2VecReader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3d/classmarian_1_1Word2VecReader_1a32bb815f947b31ad52de05042982fa93">
+                <title>std::vector&lt;float&gt; marian::Word2VecReader::read (const std::string &amp;fileName, int dimVoc, int dimEmb)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3d/classmarian_1_1Word2VecReader_1a4af907a4ff8a6c48d61dd9cb770ffe1b">
+                <title>std::vector&lt;float&gt; marian::Word2VecReader::randomEmbeddings (int dimVoc, int dimEmb)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

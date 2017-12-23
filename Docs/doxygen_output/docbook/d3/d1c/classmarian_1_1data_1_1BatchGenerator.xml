@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator">
+<title>marian::data::BatchGenerator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d4/d4d/batch__generator_8h">&lt;batch_generator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::BatchGenerator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d80/classmarian_1_1data_1_1BatchGenerator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::BatchGenerator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d14/classmarian_1_1data_1_1BatchGenerator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>DataSet</declname>
+        <defname>DataSet</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef DataSet::batch_ptr  <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1ae876f1ada46b7e7e3a4ea0ad45e9ee39">BatchPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef DataSet::sample  <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a6c7a80f1880a4ff6bfd3c99cef335855">sample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a6c7a80f1880a4ff6bfd3c99cef335855">sample</link> &gt;  <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a38341de40649315f70f444529f4ec98e">samples</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; DataSet &gt; data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; BatchStats &gt; stats_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool forceBatchSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int batchSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>DataSet::iterator current_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t maxiBatchSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::deque&lt; BatchPtr &gt; bufferedBatches_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BatchPtr currentBatch_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::mt19937 g_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a88adc2d51793dffe06348c1d41b795a6">fillBatches</link> (
+bool shuffle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a26c6e2741b06916d4a42735cb66967fc">BatchGenerator</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; DataSet &gt; data, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">BatchStats</link> &gt; stats)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a5ca9defe946185233011e58f144771dd">operator bool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1ae876f1ada46b7e7e3a4ea0ad45e9ee39">BatchPtr</link> <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a315e970451e563b5ef4d113bdff16e7f">next</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a071d0145d57e1cdf25cedb151eb5a874">forceBatchSize</link> (
+int batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1ad465fd5b81c4914e0301a7df72281179">prepare</link> (
+bool shuffle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1ae876f1ada46b7e7e3a4ea0ad45e9ee39">
+                <title>typedef DataSet::batch_ptr marian::data::BatchGenerator&lt; DataSet &gt;::BatchPtr</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a6c7a80f1880a4ff6bfd3c99cef335855">
+                <title>typedef DataSet::sample marian::data::BatchGenerator&lt; DataSet &gt;::sample</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a38341de40649315f70f444529f4ec98e">
+                <title>typedef std::vector&lt;sample&gt; marian::data::BatchGenerator&lt; DataSet &gt;::samples</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a88adc2d51793dffe06348c1d41b795a6">
+                <title>void marian::data::BatchGenerator&lt; DataSet &gt;::fillBatches (bool shuffle=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a26c6e2741b06916d4a42735cb66967fc">
+                <title>marian::data::BatchGenerator&lt; DataSet &gt;::BatchGenerator (Ptr&lt; DataSet &gt; data, Ptr&lt; Config &gt; options, Ptr&lt; BatchStats &gt; stats=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a5ca9defe946185233011e58f144771dd">
+                <title>marian::data::BatchGenerator&lt; DataSet &gt;::operator bool () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a315e970451e563b5ef4d113bdff16e7f">
+                <title>BatchPtr marian::data::BatchGenerator&lt; DataSet &gt;::next ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1a071d0145d57e1cdf25cedb151eb5a874">
+                <title>void marian::data::BatchGenerator&lt; DataSet &gt;::forceBatchSize (int batchSize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d1c/classmarian_1_1data_1_1BatchGenerator_1ad465fd5b81c4914e0301a7df72281179">
+                <title>void marian::data::BatchGenerator&lt; DataSet &gt;::prepare (bool shuffle=true)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,11 @@
+<map id="marian::Node::trainable" name="marian::Node::trainable">
+<area shape="rect" id="node2" href="$d0/d7a/classmarian_1_1Node.html#a7738def79b94994bd20cf8762ff2fd0c" title="marian::Node::runBackward" alt="" coords="211,43,395,69"/>
+<area shape="rect" id="node4" href="$d0/d7a/classmarian_1_1Node.html#a04b5aa3633d6a01b074f59fd93d7fb15" title="marian::Node::setTrainable" alt="" coords="213,129,392,156"/>
+<area shape="rect" id="node9" href="$d0/d7a/classmarian_1_1Node.html#aa29cd2fb7c4e0b81387e70b318b8f001" title="marian::Node::label" alt="" coords="235,216,370,243"/>
+<area shape="rect" id="node3" href="$d0/d7a/classmarian_1_1Node.html#a4710c71a35130cf0e382bb0a430725d3" title="marian::Node::backward" alt="" coords="443,5,607,32"/>
+<area shape="rect" id="node5" href="$d0/da7/structmarian_1_1NaryNodeOp.html#aed8f74da7153fd55707ea8cd1456058b" title="marian::NaryNodeOp\l::NaryNodeOp" alt="" coords="452,57,597,98"/>
+<area shape="rect" id="node7" href="$d1/d86/structmarian_1_1ConstantNode.html#a4e5ecee829c85dde0820e1d7b01820c6" title="marian::ConstantNode\l::ConstantNode" alt="" coords="448,122,601,163"/>
+<area shape="rect" id="node8" href="$db/db7/structmarian_1_1ParamNode.html#aa452140f55ba4ede7b98f36bfd772c04" title="marian::ParamNode::\lParamNode" alt="" coords="451,187,598,229"/>
+<area shape="rect" id="node6" href="$d8/deb/structmarian_1_1LayerNormalizationOp.html#a4181e34fd584d36ffb6397feb1c2ef51" title="marian::LayerNormalization\lOp::type" alt="" coords="655,57,836,98"/>
+<area shape="rect" id="node10" href="$d0/d7a/classmarian_1_1Node.html#af2a1cdef73f50b9dd16d3c363cc12222" title="marian::Node::graphviz" alt="" coords="446,253,603,280"/>
+</map>

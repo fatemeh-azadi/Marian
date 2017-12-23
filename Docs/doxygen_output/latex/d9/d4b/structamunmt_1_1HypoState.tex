@@ -1,0 +1,152 @@
+\hypertarget{structamunmt_1_1HypoState}{}\section{amunmt\+:\+:Hypo\+State Struct Reference}
+\label{structamunmt_1_1HypoState}\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+
+
+{\ttfamily \#include $<$hypo\+\_\+info.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:Hypo\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d3/d54/structamunmt_1_1HypoState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:Hypo\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/dd8/structamunmt_1_1HypoState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structamunmt_1_1HypoState_aca74e0b25cec0f3c771ffca70600742e}{Hypo\+State} ()
+\item 
+\hyperlink{structamunmt_1_1HypoState_aab6f4f189b148ff9cad6b68c08f9bf5c}{$\sim$\+Hypo\+State} ()
+\item 
+std\+::string \hyperlink{structamunmt_1_1HypoState_a896dd4663ba4656199bbde6fc0b081c9}{Debug} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States} \hyperlink{structamunmt_1_1HypoState_aaf08886f1ee6a0723bb9e9cad5737a9d}{states}
+\item 
+\hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \hyperlink{structamunmt_1_1HypoState_aaf4149cac6aad8872d493bca36953b48}{prev\+Hyps}
+\item 
+float \hyperlink{structamunmt_1_1HypoState_a2ae5a8d48d818badc61ed4b2e367ed8a}{score}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Sentences}{Sentences} $>$ \hyperlink{structamunmt_1_1HypoState_aef7182ec23fafad9872aecde19805822}{sentences}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file hypo\+\_\+info.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!Hypo\+State@{Hypo\+State}}
+\index{Hypo\+State@{Hypo\+State}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{Hypo\+State()}{HypoState()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Hypo\+State\+::\+Hypo\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structamunmt_1_1HypoState_aca74e0b25cec0f3c771ffca70600742e}{}\label{structamunmt_1_1HypoState_aca74e0b25cec0f3c771ffca70600742e}
+
+
+Definition at line 8 of file hypo\+\_\+info.\+cpp.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!````~Hypo\+State@{$\sim$\+Hypo\+State}}
+\index{````~Hypo\+State@{$\sim$\+Hypo\+State}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{$\sim$\+Hypo\+State()}{~HypoState()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Hypo\+State\+::$\sim$\+Hypo\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structamunmt_1_1HypoState_aab6f4f189b148ff9cad6b68c08f9bf5c}{}\label{structamunmt_1_1HypoState_aab6f4f189b148ff9cad6b68c08f9bf5c}
+
+
+Definition at line 11 of file hypo\+\_\+info.\+cpp.
+
+
+\begin{DoxyCode}
+12 \{
+13 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{Debug() const }{Debug() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Hypo\+State\+::\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{structamunmt_1_1HypoState_a896dd4663ba4656199bbde6fc0b081c9}{}\label{structamunmt_1_1HypoState_a896dd4663ba4656199bbde6fc0b081c9}
+
+
+Definition at line 15 of file hypo\+\_\+info.\+cpp.
+
+
+\begin{DoxyCode}
+16 \{
+17   stringstream strm;
+18  \textcolor{comment}{/*}
+19 \textcolor{comment}{  strm << " words=" << words.size()}
+20 \textcolor{comment}{      << " lastWord=" << lastWord}
+21 \textcolor{comment}{      << " prevStates=" << prevStates.size()}
+22 \textcolor{comment}{      << " nextStates=" << nextStates.size()}
+23 \textcolor{comment}{      << " score=" << score;}
+24 \textcolor{comment}{ */}
+25   \textcolor{keywordflow}{return} strm.str();
+26 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!prev\+Hyps@{prev\+Hyps}}
+\index{prev\+Hyps@{prev\+Hyps}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{prev\+Hyps}{prevHyps}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beam} amunmt\+::\+Hypo\+State\+::prev\+Hyps}\hypertarget{structamunmt_1_1HypoState_aaf4149cac6aad8872d493bca36953b48}{}\label{structamunmt_1_1HypoState_aaf4149cac6aad8872d493bca36953b48}
+
+
+Definition at line 16 of file hypo\+\_\+info.\+h.
+
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!score@{score}}
+\index{score@{score}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{score}{score}}]{\setlength{\rightskip}{0pt plus 5cm}float amunmt\+::\+Hypo\+State\+::score}\hypertarget{structamunmt_1_1HypoState_a2ae5a8d48d818badc61ed4b2e367ed8a}{}\label{structamunmt_1_1HypoState_a2ae5a8d48d818badc61ed4b2e367ed8a}
+
+
+Definition at line 18 of file hypo\+\_\+info.\+h.
+
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!sentences@{sentences}}
+\index{sentences@{sentences}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{sentences}{sentences}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Sentences}$>$ amunmt\+::\+Hypo\+State\+::sentences}\hypertarget{structamunmt_1_1HypoState_aef7182ec23fafad9872aecde19805822}{}\label{structamunmt_1_1HypoState_aef7182ec23fafad9872aecde19805822}
+
+
+Definition at line 20 of file hypo\+\_\+info.\+h.
+
+\index{amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}!states@{states}}
+\index{states@{states}!amunmt\+::\+Hypo\+State@{amunmt\+::\+Hypo\+State}}
+\subsubsection[{\texorpdfstring{states}{states}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf States} amunmt\+::\+Hypo\+State\+::states}\hypertarget{structamunmt_1_1HypoState_aaf08886f1ee6a0723bb9e9cad5737a9d}{}\label{structamunmt_1_1HypoState_aaf08886f1ee6a0723bb9e9cad5737a9d}
+
+
+Definition at line 15 of file hypo\+\_\+info.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hypo__info_8h}{hypo\+\_\+info.\+h}\item 
+\hyperlink{hypo__info_8cpp}{hypo\+\_\+info.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dd1/model__task_8h">
+    <title>model_task.h File Reference</title>
+    <programlisting>#include &quot;models/s2s.h&quot;</programlisting>
+    <programlisting>#include &quot;models/amun.h&quot;</programlisting>
+    <programlisting>#include &quot;models/hardatt.h&quot;</programlisting>
+    <programlisting>#include &quot;models/multi_s2s.h&quot;</programlisting>
+<para>Include dependency diagram for model_task.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dae/model__task_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for model_task.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d29/model__task_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d2d/structmarian_1_1ModelTask">marian::ModelTask</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dd1/model__task_8h_1a46ac159fb83f111b7dd1408a3aa18432">REGISTER_MODEL</link> do { \
+  if(type == name) \
+    return New&lt;TaskName&lt;Wrapper&lt;model&gt;&gt;&gt;(options); \
+} while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file model_task.h</para>
+    </simplesect>
+</section>

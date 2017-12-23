@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['s2s',['S2S',['../da/d22/namespacemarian.html#a83eeb152f60aff415a60e0bde62fcb85',1,'marian']]],
+  ['sample',['sample',['../d3/d1c/classmarian_1_1data_1_1BatchGenerator.html#a6c7a80f1880a4ff6bfd3c99cef335855',1,'marian::data::BatchGenerator::sample()'],['../db/deb/classmarian_1_1data_1_1DatasetBase.html#afc6678b770b6da1edabe3ed6d29b4bdd',1,'marian::data::DatasetBase::sample()']]],
+  ['samples',['samples',['../d3/d1c/classmarian_1_1data_1_1BatchGenerator.html#a38341de40649315f70f444529f4ec98e',1,'marian::data::BatchGenerator']]],
+  ['scorerptr',['ScorerPtr',['../d7/dd3/namespaceamunmt.html#a703e88438d533fef1db5cc95060b36f0',1,'amunmt']]],
+  ['sentbatch',['SentBatch',['../de/d56/namespacemarian_1_1data.html#a85884cce1df2778cb81e08c80c0cd7fe',1,'marian::data']]],
+  ['sentenceptr',['SentencePtr',['../d7/dd3/namespaceamunmt.html#a79f0566b0c1ac270d350b2912a3be4a4',1,'amunmt']]],
+  ['sentencesptr',['SentencesPtr',['../d7/dd3/namespaceamunmt.html#a06c5762b84aba68e6c69fb409e57829e',1,'amunmt']]],
+  ['shape_5fk',['shape_k',['../d4/d04/namespacemarian_1_1keywords.html#ac7bfe8a14a8b8ae619bab1dbc8ccdb54',1,'marian::keywords']]],
+  ['skip_5ffirst_5fk',['skip_first_k',['../d4/d04/namespacemarian_1_1keywords.html#ad98b44f9f1590b98af7150b6b1dded7c',1,'marian::keywords']]],
+  ['skip_5fk',['skip_k',['../d4/d04/namespacemarian_1_1keywords.html#ab3f25f4b72577d35dabc1a79a86b75fe',1,'marian::keywords']]],
+  ['softalignment',['SoftAlignment',['../d3/d59/soft__alignment_8h.html#a7801e8048aef45ea5150e99bca91a2da',1,'soft_alignment.h']]],
+  ['softalignmentptr',['SoftAlignmentPtr',['../d3/d59/soft__alignment_8h.html#a875ec1de0fda25e65d972952540246ff',1,'soft_alignment.h']]],
+  ['sparsetensor',['SparseTensor',['../da/d22/namespacemarian.html#a5484064f1fce2661d0b27a5c02a9392b',1,'marian']]],
+  ['srctrgmap',['SrcTrgMap',['../da/d27/namespaceGPU.html#af00d3987455a7200ce4556e53eb3d228',1,'GPU']]],
+  ['stacked_5fcell',['stacked_cell',['../dd/d18/namespacemarian_1_1rnn.html#a55385034d5ad19187245bb2b564cb7eb',1,'marian::rnn']]],
+  ['stateptr',['StatePtr',['../d7/dd3/namespaceamunmt.html#a1ea9a0b24d777d2c8dc94c4189c6c359',1,'amunmt']]],
+  ['states',['States',['../d7/dd3/namespaceamunmt.html#a4fe2912e208820f8217fbcf229ebacf7',1,'amunmt']]],
+  ['str2id',['Str2Id',['../d4/d9e/classamunmt_1_1Vocab.html#aa5df0ddc7a061269c9d22892fa07e060',1,'amunmt::Vocab::Str2Id()'],['../db/dd1/classmarian_1_1Vocab.html#a3ff740ce19200167d306de3643bd49e3',1,'marian::Vocab::Str2Id()']]],
+  ['symmetrics2s',['SymmetricS2S',['../da/d22/namespacemarian.html#a48b010253fa71c5bcb6f5016662d5ff6',1,'marian']]]
+];

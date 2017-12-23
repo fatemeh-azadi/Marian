@@ -1,0 +1,4 @@
+<map id="marian::data::Batch" name="marian::data::Batch">
+<area shape="rect" id="node2" href="$df/d0c/classmarian_1_1data_1_1CorpusBatch.html" title="{marian::data::CorpusBatch\n|&#45; batches_\l&#45; sentenceIds_\l&#45; guidedAlignment_\l|+ CorpusBatch()\l+ operator[]()\l+ front()\l+ back()\l+ debug()\l+ size()\l+ words()\l+ sets()\l+ getGuidedAlignment()\l+ setGuidedAlignment()\l+ fakeBatch()\l}" alt="" coords="5,175,184,428"/>
+<area shape="rect" id="node3" href="$d3/da9/classmarian_1_1data_1_1DataBatch.html" title="{marian::data::DataBatch\n|&#45; inputs_\l|+ inputs()\l+ inputs()\l+ push_back()\l+ features()\l+ labels()\l+ size()\l}" alt="" coords="209,226,373,377"/>
+</map>

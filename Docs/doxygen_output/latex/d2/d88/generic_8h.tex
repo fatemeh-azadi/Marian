@@ -1,0 +1,279 @@
+\hypertarget{generic_8h}{}\section{generic.\+h File Reference}
+\label{generic_8h}\index{generic.\+h@{generic.\+h}}
+{\ttfamily \#include \char`\"{}common/definitions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/options.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+operators.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}layers/factory.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}layers/param\+\_\+initializers.\+h\char`\"{}}\\*
+Include dependency graph for generic.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dfc/generic_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dd2/generic_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\item 
+ \hyperlink{namespacemarian_1_1mlp}{marian\+::mlp}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}{marian\+::mlp\+::act} \+: int \{ \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa}{marian\+::mlp\+::act\+::linear}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}{marian\+::mlp\+::act\+::tanh}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a79130f0e17bb058f015320f691eeb3dc}{marian\+::mlp\+::act\+::logit}, 
+\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72add10d919fa85cf27fc78c0e06fe0b378}{marian\+::mlp\+::act\+::\+Re\+LU}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{generic_8h_a2c61aac8c1ec585882b5b11755204516}{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE} (\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}{marian\+::mlp\+::act}, int) namespace marian
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{generic.\+h@{generic.\+h}!Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE@{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE}!generic.\+h@{generic.\+h}}
+\subsubsection[{\texorpdfstring{Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+P\+E(marian\+::mlp\+::act, int) namespace marian}{YAML_REGISTER_TYPE(marian::mlp::act, int) namespace marian}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+PE (
+\begin{DoxyParamCaption}
+\item[{{\bf marian\+::mlp\+::act}}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{generic_8h_a2c61aac8c1ec585882b5b11755204516}{}\label{generic_8h_a2c61aac8c1ec585882b5b11755204516}
+
+
+Definition at line 16 of file generic.\+h.
+
+
+\begin{DoxyCode}
+18                  \{
+19 \textcolor{keyword}{namespace }\hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp} \{
+20 
+21 \textcolor{keyword}{class }Layer \{
+22 \textcolor{keyword}{protected}:
+23   Ptr<ExpressionGraph> graph\_;
+24   Ptr<Options> options\_;
+25 
+26 \textcolor{keyword}{public}:
+27   Layer(Ptr<ExpressionGraph> graph, Ptr<Options> options)
+28    : graph\_(graph), options\_(options)
+29   \{\}
+30 
+31   \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>
+32   T \hyperlink{namespacemarian_1_1keywords_a31f73834fdcad7442a99340b90e54910}{opt}(\textcolor{keyword}{const} std::string key) \{
+33     \textcolor{keywordflow}{return} options\_->get<T>(key);
+34   \}
+35 
+36   \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>
+37   T \hyperlink{namespacemarian_1_1keywords_a31f73834fdcad7442a99340b90e54910}{opt}(\textcolor{keyword}{const} std::string key, T defaultValue) \{
+38     \textcolor{keywordflow}{return} options\_->get<T>(key, defaultValue);
+39   \}
+40 
+41   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} apply(\textcolor{keyword}{const} std::vector<Expr>&) = 0;
+42   \textcolor{keyword}{virtual} \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} apply(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}) = 0;
+43 \};
+44 
+45 \textcolor{keyword}{class }Dense : \textcolor{keyword}{public} Layer \{
+46 \textcolor{keyword}{private}:
+47   std::vector<Expr> params\_;
+48   std::map<std::string, Expr> tiedParams\_;
+49 
+50 \textcolor{keyword}{public}:
+51   Dense(Ptr<ExpressionGraph> graph, Ptr<Options> options)
+52    : Layer(graph, options) \{\}
+53 
+54   \textcolor{keywordtype}{void} tie(\textcolor{keyword}{const} std::string& param, \textcolor{keyword}{const} std::string& tied) \{
+55     tiedParams\_[param] = graph\_->get(tied);
+56   \}
+57 
+58   \textcolor{keywordtype}{void} tie\_transposed(\textcolor{keyword}{const} std::string& param, \textcolor{keyword}{const} std::string& tied) \{
+59     tiedParams\_[param] = \hyperlink{namespacemarian_a00669690ef16ce9b1bde5ee9d1b77ac6}{transpose}(graph\_->get(tied));
+60   \}
+61 
+62   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} apply(\textcolor{keyword}{const} std::vector<Expr>& inputs) \{
+63     UTIL\_THROW\_IF2(inputs.empty(), \textcolor{stringliteral}{"No inputs"});
+64 
+65     \textcolor{keywordflow}{if}(inputs.size() == 1)
+66       \textcolor{keywordflow}{return} apply(inputs[0]);
+67 
+68     \textcolor{keyword}{auto} name = opt<std::string>(\textcolor{stringliteral}{"prefix"});
+69     \textcolor{keyword}{auto} dim  = opt<int>(\textcolor{stringliteral}{"dim"});
+70 
+71     \textcolor{keyword}{auto} layerNorm = opt<bool>(\textcolor{stringliteral}{"layer-normalization"}, \textcolor{keyword}{false});
+72     \textcolor{keyword}{auto} activation = opt<act>(\textcolor{stringliteral}{"activation"}, act::linear);
+73 
+74     \textcolor{keyword}{auto} g = graph\_;
+75 
+76     params\_ = \{\};
+77     std::vector<Expr> outputs;
+78     \textcolor{keywordtype}{size\_t} i = 0;
+79     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& in : inputs) \{
+80       \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} W;
+81       std::string nameW = \textcolor{stringliteral}{"W"} + std::to\_string(i);
+82       \textcolor{keywordflow}{if}(tiedParams\_.count(nameW))
+83         W = tiedParams\_[nameW];
+84       \textcolor{keywordflow}{else}
+85         W = g->param(name + \textcolor{stringliteral}{"\_"} + nameW,
+86                      \{in->shape()[1], dim\},
+87                      \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+88 
+89       \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} b;
+90       std::string nameB = \textcolor{stringliteral}{"b"} + std::to\_string(i);
+91       \textcolor{keywordflow}{if}(tiedParams\_.count(nameB))
+92         b = tiedParams\_[nameB];
+93       \textcolor{keywordflow}{else}
+94         b = g->param(name + \textcolor{stringliteral}{"\_"} + nameB,
+95                      \{1, dim\},
+96                      keywords::init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+97 
+98       params\_.push\_back(W);
+99       params\_.push\_back(b);
+100 
+101       \textcolor{keywordflow}{if}(layerNorm) \{
+102         \textcolor{keyword}{auto} gamma = g->param(name + \textcolor{stringliteral}{"\_gamma"} + std::to\_string(i),
+103                               \{1, dim\},
+104                               keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.0));
+105 
+106         params\_.push\_back(gamma);
+107         outputs.push\_back(\hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(\hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(in, W), gamma, b));
+108       \} \textcolor{keywordflow}{else} \{
+109         outputs.push\_back(\hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(in, W, b));
+110       \}
+111       i++;
+112     \}
+113 
+114     \textcolor{keywordflow}{switch}(activation) \{
+115       \textcolor{keywordflow}{case} act::linear: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a857d82a0343a47a1d864deac823a5f3e}{plus}(outputs);
+116       \textcolor{keywordflow}{case} \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{act::tanh}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{tanh}(outputs);
+117       \textcolor{keywordflow}{case} \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{act::logit}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{logit}(outputs);
+118       \textcolor{keywordflow}{case} \hyperlink{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}{act::ReLU}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a6228f7e46aeed337e3886df6446b7840}{relu}(outputs);
+119       \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a857d82a0343a47a1d864deac823a5f3e}{plus}(outputs);
+120     \}
+121   \};
+122 
+123   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} apply(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input) \{
+124     \textcolor{keyword}{auto} g = graph\_;
+125 
+126     \textcolor{keyword}{auto} name = options\_->get<std::string>(\textcolor{stringliteral}{"prefix"});
+127     \textcolor{keyword}{auto} dim  = options\_->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim"});
+128 
+129     \textcolor{keyword}{auto} layerNorm = options\_->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"layer-normalization"}, \textcolor{keyword}{false});
+130     \textcolor{keyword}{auto} activation = options\_->get<\hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72}{act}>(\textcolor{stringliteral}{"activation"}, act::linear);
+131 
+132     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} W;
+133     std::string nameW = \textcolor{stringliteral}{"W"};
+134     \textcolor{keywordflow}{if}(tiedParams\_.count(nameW))
+135       W = tiedParams\_[nameW];
+136     \textcolor{keywordflow}{else}
+137       W = g->param(name + \textcolor{stringliteral}{"\_"} + nameW,
+138                    \{input->shape()[1], dim\},
+139                    keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+140 
+141     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} b;
+142     std::string nameB = \textcolor{stringliteral}{"b"};
+143     \textcolor{keywordflow}{if}(tiedParams\_.count(nameB))
+144       b = tiedParams\_[nameB];
+145     \textcolor{keywordflow}{else}
+146       b = g->param(name + \textcolor{stringliteral}{"\_"} + nameB,
+147                    \{1, dim\},
+148                    keywords::init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+149 
+150     params\_ = \{W, b\};
+151 
+152     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} out;
+153     \textcolor{keywordflow}{if}(layerNorm) \{
+154       \textcolor{keyword}{auto} gamma = g->param(name + \textcolor{stringliteral}{"\_gamma"},
+155                             \{1, dim\},
+156                             keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.0));
+157 
+158       params\_.push\_back(gamma);
+159       out = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(\hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(input, W), gamma, b);
+160     \} \textcolor{keywordflow}{else} \{
+161       out = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(input, W, b);
+162     \}
+163 
+164     \textcolor{keywordflow}{switch}(activation) \{
+165       \textcolor{keywordflow}{case} act::linear: \textcolor{keywordflow}{return} out;
+166       \textcolor{keywordflow}{case} \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{act::tanh}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{tanh}(out);
+167       \textcolor{keywordflow}{case} \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{act::logit}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a72a6c5cedeadde602b3621a3450dbebe}{logit}(out);
+168       \textcolor{keywordflow}{case} \hyperlink{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}{act::ReLU}: \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a6228f7e46aeed337e3886df6446b7840}{relu}(out);
+169       \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} out;
+170     \}
+171   \}
+172 \};
+173 
+174 \} \textcolor{comment}{// namespace mlp}
+175 
+176 \textcolor{keyword}{struct }EmbeddingFactory : \textcolor{keyword}{public} Factory \{
+177   EmbeddingFactory(Ptr<ExpressionGraph> graph) : Factory(graph) \{\}
+178 
+179   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} construct() \{
+180     std::string name = opt<std::string>(\textcolor{stringliteral}{"prefix"});
+181     \textcolor{keywordtype}{int} dimVoc = opt<int>(\textcolor{stringliteral}{"dimVocab"});
+182     \textcolor{keywordtype}{int} dimEmb = opt<int>(\textcolor{stringliteral}{"dimEmb"});
+183 
+184     \textcolor{keywordtype}{bool} \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{fixed} = opt<bool>(\textcolor{stringliteral}{"fixed"}, \textcolor{keyword}{false});
+185 
+186     std::function<void(Tensor)> initFunc = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform};
+187     \textcolor{keywordflow}{if}(options\_->has(\textcolor{stringliteral}{"embFile"})) \{
+188       std::string file = opt<std::string>(\textcolor{stringliteral}{"embFile"});
+189       \textcolor{keywordflow}{if}(!file.empty()) \{
+190         \textcolor{keywordtype}{bool} norm = opt<bool>(\textcolor{stringliteral}{"normalization"}, \textcolor{keyword}{false});
+191         initFunc = \hyperlink{namespacemarian_1_1inits_a26fad07f2ceb3649cf0d5da09c03b756}{inits::from\_word2vec}(file, dimVoc, dimEmb, norm);
+192       \}
+193     \}
+194 
+195     \textcolor{keywordflow}{return} graph\_->param(name, \{dimVoc, dimEmb\},
+196                          keywords::init = initFunc,
+197                          \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{keywords::fixed} = \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{fixed});
+198   \}
+199 \};
+200 
+201 \textcolor{keyword}{typedef} Accumulator<EmbeddingFactory> embedding;
+202 
+203 \textcolor{keyword}{class }CrossEntropyCost \{
+204 \textcolor{keyword}{public}:
+205   CrossEntropyCost(\textcolor{keyword}{const} std::string name) \{\}
+206 
+207   \textcolor{keyword}{template} <\textcolor{keyword}{typename}... Args>
+208   \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} operator()(\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} in, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} picks, Args... args) \{
+209     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = \hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{keywords::mask}, \textcolor{keyword}{nullptr}, args...);
+210 
+211     \textcolor{keyword}{auto} ce = \hyperlink{namespacemarian_a37652ca2a00f3c36816fe5fec28104a0}{cross\_entropy}(in, picks);
+212 
+213     \textcolor{keywordflow}{if}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask})
+214       ce = ce * \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask};
+215 
+216     \textcolor{keyword}{auto} cost = \hyperlink{namespacemarian_a15ec9743709e47180378db974ddbf116}{mean}(\hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum}(ce, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 2), 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 0);
+217     \textcolor{keywordflow}{return} cost;
+218   \}
+219 \};
+220 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d88/generic_8h_a2c61aac8c1ec585882b5b11755204516_cgraph}
+\end{center}
+\end{figure}
+
+

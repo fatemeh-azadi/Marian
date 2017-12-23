@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d02/classmarian_1_1AccuracyValidator">
+<title>marian::AccuracyValidator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d8c/examples_2mnist_2validator_8h">&lt;validator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::AccuracyValidator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d7a/classmarian_1_1AccuracyValidator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::AccuracyValidator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d49/classmarian_1_1AccuracyValidator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Builder</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Builder &gt; builder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1a0b7a0fcb1137626593d5b063148591e5">AccuracyValidator</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1a163ff7773c7cab8b92e83aaffdb50c4d">keepBest</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1a4e4275b89312ca08185d5479bcbb74b0">lowerIsBetter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1ab941197460ea6175025ff32c4fff178c">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1a8e46df95f018d71172720c38e8b179b4">validateBG</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator">data::BatchGenerator</link>&lt; <link linkend="d7/d07/classmarian_1_1data_1_1MNIST">data::MNIST</link> &gt;&gt; batchGenerator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d2/d02/classmarian_1_1AccuracyValidator_1a8d6ee9daf8781fabfdb72daaaecff191">countCorrect</link> (
+const std::vector&lt; float &gt; &amp; probs, const std::vector&lt; float &gt; &amp; labels)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1a0b7a0fcb1137626593d5b063148591e5">
+                <title>marian::AccuracyValidator&lt; Builder &gt;::AccuracyValidator (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1a163ff7773c7cab8b92e83aaffdb50c4d">
+                <title>virtual void marian::AccuracyValidator&lt; Builder &gt;::keepBest (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1a4e4275b89312ca08185d5479bcbb74b0">
+                <title>bool marian::AccuracyValidator&lt; Builder &gt;::lowerIsBetter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1ab941197460ea6175025ff32c4fff178c">
+                <title>std::string marian::AccuracyValidator&lt; Builder &gt;::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1a8e46df95f018d71172720c38e8b179b4">
+                <title>virtual float marian::AccuracyValidator&lt; Builder &gt;::validateBG (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::BatchGenerator&lt; data::MNIST &gt;&gt; batchGenerator)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d02/classmarian_1_1AccuracyValidator_1a8d6ee9daf8781fabfdb72daaaecff191">
+                <title>float marian::AccuracyValidator&lt; Builder &gt;::countCorrect (const std::vector&lt; float &gt; &amp;probs, const std::vector&lt; float &gt; &amp;labels)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

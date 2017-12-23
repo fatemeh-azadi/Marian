@@ -1,0 +1,6 @@
+<map id="marian::ExpressionGraph::fits" name="marian::ExpressionGraph::fits">
+<area shape="rect" id="node2" href="$da/db9/classmarian_1_1ExpressionGraph.html#aac6f1862944bd673e6874662d9d4b465" title="Performs backpropogation on this expression graph. " alt="" coords="223,39,392,80"/>
+<area shape="rect" id="node3" href="$da/db9/classmarian_1_1ExpressionGraph.html#aa7596e34cc2895cf374ce06d9d5ee370" title="Perform the forward pass of algorithmic differentiation (AD) on this graph. " alt="" coords="440,5,609,47"/>
+<area shape="rect" id="node5" href="$da/db9/classmarian_1_1ExpressionGraph.html#ae4be44e38a47b0964a24880078eb16c3" title="Perform the backward pass of algorithmic differentiation (AD) on this graph. " alt="" coords="440,71,609,112"/>
+<area shape="rect" id="node4" href="$da/db9/classmarian_1_1ExpressionGraph.html#a41337743d6e030cf6b8e2b2e4d39a908" title="marian::ExpressionGraph\l::forwardNext" alt="" coords="657,5,827,47"/>
+</map>

@@ -1,0 +1,195 @@
+\hypertarget{classNpzConverter}{}\section{Npz\+Converter Class Reference}
+\label{classNpzConverter}\index{Npz\+Converter@{Npz\+Converter}}
+
+
+Loads model data stored in a npz file.  
+
+
+
+
+{\ttfamily \#include $<$npz\+\_\+converter.\+h$>$}
+
+
+
+Collaboration diagram for Npz\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{dc/d55/classNpzConverter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNpzConverter_1_1NpyMatrixWrapper}{Npy\+Matrix\+Wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNpzConverter_a8f9abbb8916c2e7853887ffa7b8f8b4f}{Npz\+Converter} (const std\+::string \&file)
+\item 
+\hyperlink{classNpzConverter_a73ef09375f8c238ae68b8c026e68128c}{$\sim$\+Npz\+Converter} ()
+\item 
+void \hyperlink{classNpzConverter_a5546c446fba3083e22e1741a1f08d80f}{Destruct} ()
+\item 
+void \hyperlink{classNpzConverter_aa996e7f76b03e6501f65a311a9dcd319}{Load} (const std\+::string \&key, std\+::vector$<$ float $>$ \&data, \hyperlink{structmarian_1_1Shape}{marian\+::\+Shape} \&shape) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cnpy\+::npz\+\_\+t \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\+\_\+}
+\item 
+bool \hyperlink{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}{destructed\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads model data stored in a npz file. 
+
+Use of this class enables such data to later be stored in standard Marian data structures.
+
+Note\+: this class makes use of the 3rd-\/party class {\ttfamily npy}. 
+
+Definition at line 35 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Npz\+Converter@{Npz\+Converter}!Npz\+Converter@{Npz\+Converter}}
+\index{Npz\+Converter@{Npz\+Converter}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{Npz\+Converter(const std\+::string \&file)}{NpzConverter(const std::string &file)}}]{\setlength{\rightskip}{0pt plus 5cm}Npz\+Converter\+::\+Npz\+Converter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_a8f9abbb8916c2e7853887ffa7b8f8b4f}{}\label{classNpzConverter_a8f9abbb8916c2e7853887ffa7b8f8b4f}
+Constructs an object that reads npz data from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Path to file containing npz data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+122       : \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\_}(cnpy::npz\_load(file)), \hyperlink{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}{destructed\_}(\textcolor{keyword}{false}) \{\}
+\end{DoxyCode}
+\index{Npz\+Converter@{Npz\+Converter}!````~Npz\+Converter@{$\sim$\+Npz\+Converter}}
+\index{````~Npz\+Converter@{$\sim$\+Npz\+Converter}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Npz\+Converter()}{~NpzConverter()}}]{\setlength{\rightskip}{0pt plus 5cm}Npz\+Converter\+::$\sim$\+Npz\+Converter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_a73ef09375f8c238ae68b8c026e68128c}{}\label{classNpzConverter_a73ef09375f8c238ae68b8c026e68128c}
+Destructs the model that underlies this \hyperlink{classNpzConverter}{Npz\+Converter} object, if that data has not already been destructed. 
+
+Definition at line 128 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+128                   \{
+129     \textcolor{keywordflow}{if}(!\hyperlink{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}{destructed\_})
+130       \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\_}.destruct();
+131   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Npz\+Converter@{Npz\+Converter}!Destruct@{Destruct}}
+\index{Destruct@{Destruct}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{Destruct()}{Destruct()}}]{\setlength{\rightskip}{0pt plus 5cm}void Npz\+Converter\+::\+Destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_a5546c446fba3083e22e1741a1f08d80f}{}\label{classNpzConverter_a5546c446fba3083e22e1741a1f08d80f}
+Destructs the model that underlies this \hyperlink{classNpzConverter}{Npz\+Converter} object, and marks that data as having been destructed. 
+
+Definition at line 137 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+137                   \{
+138     \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\_}.destruct();
+139     \hyperlink{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}{destructed\_} = \textcolor{keyword}{true};
+140   \}
+\end{DoxyCode}
+\index{Npz\+Converter@{Npz\+Converter}!Load@{Load}}
+\index{Load@{Load}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{Load(const std\+::string \&key, std\+::vector$<$ float $>$ \&data, marian\+::\+Shape \&shape) const }{Load(const std::string &key, std::vector< float > &data, marian::Shape &shape) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Npz\+Converter\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{std\+::vector$<$ float $>$ \&}]{data, }
+\item[{{\bf marian\+::\+Shape} \&}]{shape}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNpzConverter_aa996e7f76b03e6501f65a311a9dcd319}{}\label{classNpzConverter_aa996e7f76b03e6501f65a311a9dcd319}
+Loads data corresponding to a search key into the provided vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Search key X\+XX Marcin, what type of thing is \char`\"{}key\char`\"{}? What are we searching for here? \\
+\hline
+{\em data} & Container into which data will be loaded X\+XX Lane, is there a way in Doxygen to mark and inout variable? \\
+\hline
+{\em shape} & Shape object into which the number of rows and columns of the vectors will be stored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+\begin{DoxyCode}
+154                                       \{
+155     \textcolor{keyword}{auto} it = \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\_}.find(key);
+156     \textcolor{keywordflow}{if}(it != \hyperlink{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{model\_}.end()) \{
+157       NpyMatrixWrapper np(it->second);
+158       data.clear();
+159       data.resize(np.size());
+160       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{std::copy}(np.data(), np.data() + np.size(), data.begin());
+161 
+162       shape = \{(int)np.size1(), (int)np.size2()\};
+163 
+164     \} \textcolor{keywordflow}{else} \{
+165       std::cerr << \textcolor{stringliteral}{"Missing "} << key << std::endl;
+166     \}
+167   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/deb/classNpzConverter_aa996e7f76b03e6501f65a311a9dcd319_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Npz\+Converter@{Npz\+Converter}!destructed\+\_\+@{destructed\+\_\+}}
+\index{destructed\+\_\+@{destructed\+\_\+}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{destructed\+\_\+}{destructed_}}]{\setlength{\rightskip}{0pt plus 5cm}bool Npz\+Converter\+::destructed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}{}\label{classNpzConverter_a579f761f6926685004bd0a24f7d69ce8}
+Indicates whether the underlying data has been destructed. 
+
+Definition at line 175 of file marian/src/data/npz\+\_\+converter.\+h.
+
+\index{Npz\+Converter@{Npz\+Converter}!model\+\_\+@{model\+\_\+}}
+\index{model\+\_\+@{model\+\_\+}!Npz\+Converter@{Npz\+Converter}}
+\subsubsection[{\texorpdfstring{model\+\_\+}{model_}}]{\setlength{\rightskip}{0pt plus 5cm}cnpy\+::npz\+\_\+t Npz\+Converter\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}{}\label{classNpzConverter_a467a3df0a9b628e8eaec59bf455749b6}
+Underlying npz data 
+
+Definition at line 172 of file marian/src/data/npz\+\_\+converter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2data_2npz__converter_8h}{marian/src/data/npz\+\_\+converter.\+h}\item 
+\hyperlink{npz__converter_8cpp}{npz\+\_\+converter.\+cpp}\end{DoxyCompactItemize}

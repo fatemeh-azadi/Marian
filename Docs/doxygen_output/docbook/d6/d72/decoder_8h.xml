@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d72/decoder_8h">
+    <title>decoder.h File Reference</title>
+    <programlisting>#include &lt;yaml-cpp/yaml.h&gt;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/array.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix_functions.h&quot;</programlisting>
+    <programlisting>#include &quot;model.h&quot;</programlisting>
+    <programlisting>#include &quot;gru.h&quot;</programlisting>
+    <programlisting>#include &quot;lstm.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/types-gpu.h&quot;</programlisting>
+    <programlisting>#include &quot;common/god.h&quot;</programlisting>
+    <programlisting>#include &quot;cell.h&quot;</programlisting>
+    <programlisting>#include &quot;cellstate.h&quot;</programlisting>
+<para>Include dependency diagram for decoder.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d4d/decoder_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for decoder.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d10/decoder_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd5/classamunmt_1_1GPU_1_1Decoder">amunmt::GPU::Decoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d05/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings">amunmt::GPU::Decoder::Embeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden">amunmt::GPU::Decoder::RNNHidden</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal">amunmt::GPU::Decoder::RNNFinal</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d32/classamunmt_1_1GPU_1_1Decoder_1_1Alignment">amunmt::GPU::Decoder::Alignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d4d/classamunmt_1_1GPU_1_1Decoder_1_1Softmax">amunmt::GPU::Decoder::Softmax</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file decoder.h</para>
+    </simplesect>
+</section>

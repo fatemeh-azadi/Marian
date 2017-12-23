@@ -1,0 +1,680 @@
+\hypertarget{classmarian_1_1Config}{}\section{marian\+:\+:Config Class Reference}
+\label{classmarian_1_1Config}\index{marian\+::\+Config@{marian\+::\+Config}}
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{d3/db9/classmarian_1_1Config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Config_aa953cca7c4650e7e0538f00388d9f385}{Config} (int argc, char $\ast$$\ast$argv, \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9}{Config\+Mode} mode=\hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{Config\+Mode\+::training}, bool validate=true)
+\item 
+\hyperlink{classmarian_1_1Config_a13774d365b7b891e2f14078832032aff}{Config} (const \hyperlink{classmarian_1_1Config}{Config} \&other)
+\item 
+bool \hyperlink{classmarian_1_1Config_ab3058530188cfb4eae1bbabfcf4d6bee}{has} (const std\+::string \&key) const 
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Config_a4a765930cfec40c60b48266ed7693109}{get} (const std\+::string \&key) const 
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Config_a955142b802b95bcac26014985e5509f7}{operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1Config_aab37767c3fe86331e91ac0a26a8c50f2}{get} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classmarian_1_1Config_a024ad20b2fa0be8112bb29aeef448d29}{set} (const std\+::string \&key, const T \&value)
+\item 
+const Y\+A\+M\+L\+::\+Node \& \hyperlink{classmarian_1_1Config_aba3e2758003d471e90fe9eac082a0a56}{get} () const 
+\item 
+Y\+A\+M\+L\+::\+Node \& \hyperlink{classmarian_1_1Config_aa42a57837e2d0cdeaa236e1cebd72b72}{get} ()
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Config_a8bb35987743e02b1752b4598337510e4}{get\+Model\+Parameters} ()
+\item 
+void \hyperlink{classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b}{load\+Model\+Parameters} (const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1Config_a34c944633d8c66e513bf50da4469de39}{save\+Model\+Parameters} (const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1Config_ad02ea584a6a4d2caf2743b50dcb9e9f1}{save} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{seed} = (size\+\_\+t)time(0)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1Config_a2e2137806bbb54f3e8aab100680d62f0}{Get\+Yaml\+From\+Npz} (Y\+A\+M\+L\+::\+Node \&, const std\+::string \&, const std\+::string \&)
+\item 
+void \hyperlink{classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a}{Add\+Yaml\+To\+Npz} (const Y\+A\+M\+L\+::\+Node \&, const std\+::string \&, const std\+::string \&)
+\item 
+void \hyperlink{classmarian_1_1Config_a187242dd22d9d6d18aca5417f5cc7f51}{override} (const Y\+A\+M\+L\+::\+Node \&params)
+\item 
+void \hyperlink{classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0}{log} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\+\_\+}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}{model\+Features\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\O\+Stream \& \hyperlink{classmarian_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}{operator$<$$<$} (O\+Stream \&out, const \hyperlink{classmarian_1_1Config}{Config} \&config)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file marian/src/common/config.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Config@{marian\+::\+Config}!Config@{Config}}
+\index{Config@{Config}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{Config(int argc, char $\ast$$\ast$argv, Config\+Mode mode=\+Config\+Mode\+::training, bool validate=true)}{Config(int argc, char **argv, ConfigMode mode=ConfigMode::training, bool validate=true)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Config\+::\+Config (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{{\bf Config\+Mode}}]{mode = {\ttfamily {\bf Config\+Mode\+::training}}, }
+\item[{bool}]{validate = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_aa953cca7c4650e7e0538f00388d9f385}{}\label{classmarian_1_1Config_aa953cca7c4650e7e0538f00388d9f385}
+
+
+Definition at line 18 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+21                                \{
+22 
+23     \textcolor{keyword}{auto} parser = ConfigParser(argc, argv, mode, validate);
+24     \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_} = parser.getConfig();
+25     \hyperlink{marian_2src_2common_2logging_8cpp_ac797ff0d4f04d8deeb12d6abef63d12d}{createLoggers}(\textcolor{keyword}{this});
+26 
+27     \hyperlink{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}{modelFeatures\_} = \{
+28         \textcolor{stringliteral}{"type"},
+29         \textcolor{stringliteral}{"dim-vocabs"},
+30         \textcolor{stringliteral}{"dim-emb"},
+31         \textcolor{stringliteral}{"dim-rnn"},
+32         \textcolor{stringliteral}{"enc-cell"},
+33         \textcolor{stringliteral}{"enc-type"},
+34         \textcolor{stringliteral}{"enc-cell-depth"},
+35         \textcolor{stringliteral}{"enc-depth"},
+36         \textcolor{stringliteral}{"dec-depth"},
+37         \textcolor{stringliteral}{"dec-cell"},
+38         \textcolor{stringliteral}{"dec-cell-base-depth"},
+39         \textcolor{stringliteral}{"dec-cell-high-depth"},
+40         \textcolor{comment}{//"dec-high-context",}
+41         \textcolor{stringliteral}{"skip"},
+42         \textcolor{stringliteral}{"layer-normalization"},
+43         \textcolor{stringliteral}{"special-vocab"},
+44         \textcolor{stringliteral}{"tied-embeddings"}
+45         \textcolor{comment}{/*"lexical-table", "vocabs"*/}
+46     \};
+47 
+48     \textcolor{keywordflow}{if}(get<size\_t>(\textcolor{stringliteral}{"seed"}) == 0)
+49       \hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{seed} = (size\_t)time(0);
+50     \textcolor{keywordflow}{else}
+51       \hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{seed} = get<size\_t>(\textcolor{stringliteral}{"seed"});
+52 
+53     \textcolor{keywordflow}{if}(mode != \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}) \{
+54       \textcolor{keywordflow}{if}(boost::filesystem::exists(get<std::string>(\textcolor{stringliteral}{"model"}))
+55          && !get<bool>(\textcolor{stringliteral}{"no-reload"})) \{
+56         \textcolor{keywordflow}{try} \{
+57           \hyperlink{classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b}{loadModelParameters}(get<std::string>(\textcolor{stringliteral}{"model"}));
+58         \} \textcolor{keywordflow}{catch}(std::runtime\_error& e) \{
+59           \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"No model settings found in model file"});
+60         \}
+61       \}
+62     \} \textcolor{keywordflow}{else} \{
+63       \textcolor{keyword}{auto} model = get<std::vector<std::string>>(\textcolor{stringliteral}{"models"})[0];
+64       \textcolor{keywordflow}{try} \{
+65         \hyperlink{classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b}{loadModelParameters}(model);
+66       \} \textcolor{keywordflow}{catch}(std::runtime\_error& e) \{
+67         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"No model settings found in model file"});
+68       \}
+69     \}
+70     \hyperlink{classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0}{log}();
+71   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_aa953cca7c4650e7e0538f00388d9f385_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!Config@{Config}}
+\index{Config@{Config}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{Config(const Config \&other)}{Config(const Config &other)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Config\+::\+Config (
+\begin{DoxyParamCaption}
+\item[{const {\bf Config} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_a13774d365b7b891e2f14078832032aff}{}\label{classmarian_1_1Config_a13774d365b7b891e2f14078832032aff}
+
+
+Definition at line 73 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+74       : \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}(YAML::Clone(other.config\_)),
+75         \hyperlink{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}{modelFeatures\_}(other.modelFeatures\_) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d6/dba/classmarian_1_1Config_a13774d365b7b891e2f14078832032aff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Config@{marian\+::\+Config}!Add\+Yaml\+To\+Npz@{Add\+Yaml\+To\+Npz}}
+\index{Add\+Yaml\+To\+Npz@{Add\+Yaml\+To\+Npz}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{Add\+Yaml\+To\+Npz(const Y\+A\+M\+L\+::\+Node \&, const std\+::string \&, const std\+::string \&)}{AddYamlToNpz(const YAML::Node &, const std::string &, const std::string &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::\+Add\+Yaml\+To\+Npz (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{yaml, }
+\item[{const std\+::string \&}]{var\+Name, }
+\item[{const std\+::string \&}]{f\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a}{}\label{classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a}
+
+
+Definition at line 71 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+73                                                   \{
+74   YAML::Emitter out;
+75   \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{OutputYaml}(yaml, out);
+76   \textcolor{keywordtype}{unsigned} \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape} = out.size() + 1;
+77   cnpy::npz\_save(fName, varName, out.c\_str(), &\hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}, 1, \textcolor{stringliteral}{"a"});
+78 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!get@{get}}
+\index{get@{get}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key) const }{get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Config_a4a765930cfec40c60b48266ed7693109}{}\label{classmarian_1_1Config_a4a765930cfec40c60b48266ed7693109}
+
+
+Definition at line 19 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+19                                                \{
+20   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[key];
+21 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a4a765930cfec40c60b48266ed7693109_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!get@{get}}
+\index{get@{get}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key) const }{get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Config\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_aab37767c3fe86331e91ac0a26a8c50f2}{}\label{classmarian_1_1Config_aab37767c3fe86331e91ac0a26a8c50f2}
+
+
+Definition at line 83 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+83                                     \{
+84     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[key].as<T>();
+85   \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!get@{get}}
+\index{get@{get}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{get() const }{get() const }}]{\setlength{\rightskip}{0pt plus 5cm}const Y\+A\+M\+L\+::\+Node \& marian\+::\+Config\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Config_aba3e2758003d471e90fe9eac082a0a56}{}\label{classmarian_1_1Config_aba3e2758003d471e90fe9eac082a0a56}
+
+
+Definition at line 23 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+23                                   \{
+24   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_};
+25 \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!get@{get}}
+\index{get@{get}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node \& marian\+::\+Config\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Config_aa42a57837e2d0cdeaa236e1cebd72b72}{}\label{classmarian_1_1Config_aa42a57837e2d0cdeaa236e1cebd72b72}
+
+
+Definition at line 27 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+27                       \{
+28   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_};
+29 \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!get\+Model\+Parameters@{get\+Model\+Parameters}}
+\index{get\+Model\+Parameters@{get\+Model\+Parameters}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Model\+Parameters()}{getModelParameters()}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+::get\+Model\+Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Config_a8bb35987743e02b1752b4598337510e4}{}\label{classmarian_1_1Config_a8bb35987743e02b1752b4598337510e4}
+
+
+Definition at line 48 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+48                                     \{
+49   YAML::Node modelParams;
+50   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& key : \hyperlink{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}{modelFeatures\_})
+51     modelParams[key] = \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[key];
+52   \textcolor{keywordflow}{return} modelParams;
+53 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a8bb35987743e02b1752b4598337510e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!Get\+Yaml\+From\+Npz@{Get\+Yaml\+From\+Npz}}
+\index{Get\+Yaml\+From\+Npz@{Get\+Yaml\+From\+Npz}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{Get\+Yaml\+From\+Npz(\+Y\+A\+M\+L\+::\+Node \&, const std\+::string \&, const std\+::string \&)}{GetYamlFromNpz(YAML::Node &, const std::string &, const std::string &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::\+Get\+Yaml\+From\+Npz (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{yaml, }
+\item[{const std\+::string \&}]{var\+Name, }
+\item[{const std\+::string \&}]{f\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_a2e2137806bbb54f3e8aab100680d62f0}{}\label{classmarian_1_1Config_a2e2137806bbb54f3e8aab100680d62f0}
+
+
+Definition at line 61 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+63                                                     \{
+64   yaml = YAML::Load(cnpy::npz\_load(fName, varName).data);
+65 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a2e2137806bbb54f3e8aab100680d62f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!has@{has}}
+\index{has@{has}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{has(const std\+::string \&key) const }{has(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Config\+::has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Config_ab3058530188cfb4eae1bbabfcf4d6bee}{}\label{classmarian_1_1Config_ab3058530188cfb4eae1bbabfcf4d6bee}
+
+
+Definition at line 15 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+15                                            \{
+16   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[key];
+17 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_ab3058530188cfb4eae1bbabfcf4d6bee_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!load\+Model\+Parameters@{load\+Model\+Parameters}}
+\index{load\+Model\+Parameters@{load\+Model\+Parameters}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{load\+Model\+Parameters(const std\+::string \&name)}{loadModelParameters(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::load\+Model\+Parameters (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b}{}\label{classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b}
+
+
+Definition at line 55 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+55                                                       \{
+56   YAML::Node config;
+57   \hyperlink{classmarian_1_1Config_a2e2137806bbb54f3e8aab100680d62f0}{GetYamlFromNpz}(config, \textcolor{stringliteral}{"special:model.yml"}, name);
+58   \textcolor{keyword}{override}(config);
+59 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a88b17725ec749ce6fa43e8722dbe0f7b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!log@{log}}
+\index{log@{log}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{log()}{log()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0}{}\label{classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0}
+
+
+Definition at line 31 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+31                  \{
+32   YAML::Emitter out;
+33   \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{OutputYaml}(\hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}, out);
+34   std::string configString = out.c\_str();
+35 
+36   std::vector<std::string> results;
+37   \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{boost::algorithm::split}(results, configString, boost::is\_any\_of(\textcolor{stringliteral}{"\(\backslash\)n"}));
+38   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& r : results)
+39     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(config)->info(r);
+40 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d6/dba/classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d6/dba/classmarian_1_1Config_a04803eb8aac3297bc9da7d697cd07ba0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{operator[](const std\+::string \&key) const }{operator[](const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_a955142b802b95bcac26014985e5509f7}{}\label{classmarian_1_1Config_a955142b802b95bcac26014985e5509f7}
+
+
+Definition at line 80 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+80 \{ \textcolor{keywordflow}{return} \textcolor{keyword}{get}(key); \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!override@{override}}
+\index{override@{override}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{override(const Y\+A\+M\+L\+::\+Node \&params)}{override(const YAML::Node &params)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::override (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_a187242dd22d9d6d18aca5417f5cc7f51}{}\label{classmarian_1_1Config_a187242dd22d9d6d18aca5417f5cc7f51}
+
+
+Definition at line 42 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+42                                             \{
+43   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& it : params) \{
+44     \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[it.first.as<std::string>()] = it.second;
+45   \}
+46 \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!save@{save}}
+\index{save@{save}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{save(const std\+::string \&name)}{save(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::save (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_ad02ea584a6a4d2caf2743b50dcb9e9f1}{}\label{classmarian_1_1Config_ad02ea584a6a4d2caf2743b50dcb9e9f1}
+
+
+Definition at line 99 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+99                                    \{
+100     \hyperlink{classOutputFileStream}{OutputFileStream} out(name);
+101     (std::ostream&)out << *\textcolor{keyword}{this};
+102   \}
+\end{DoxyCode}
+\index{marian\+::\+Config@{marian\+::\+Config}!save\+Model\+Parameters@{save\+Model\+Parameters}}
+\index{save\+Model\+Parameters@{save\+Model\+Parameters}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{save\+Model\+Parameters(const std\+::string \&name)}{saveModelParameters(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+::save\+Model\+Parameters (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Config_a34c944633d8c66e513bf50da4469de39}{}\label{classmarian_1_1Config_a34c944633d8c66e513bf50da4469de39}
+
+
+Definition at line 67 of file marian/src/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+67                                                       \{
+68   \hyperlink{classmarian_1_1Config_a1dd63c638735224839b6faa7050c7f7a}{AddYamlToNpz}(\hyperlink{classmarian_1_1Config_a8bb35987743e02b1752b4598337510e4}{getModelParameters}(), \textcolor{stringliteral}{"special:model.yml"}, name);
+69 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a34c944633d8c66e513bf50da4469de39_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a34c944633d8c66e513bf50da4469de39_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config@{marian\+::\+Config}!set@{set}}
+\index{set@{set}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{set(const std\+::string \&key, const T \&value)}{set(const std::string &key, const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void marian\+::\+Config\+::set (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Config_a024ad20b2fa0be8112bb29aeef448d29}{}\label{classmarian_1_1Config_a024ad20b2fa0be8112bb29aeef448d29}
+
+
+Definition at line 88 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+88                                                  \{
+89     \hyperlink{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{config\_}[key] = \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value};
+90   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dba/classmarian_1_1Config_a024ad20b2fa0be8112bb29aeef448d29_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{marian\+::\+Config@{marian\+::\+Config}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O\+Stream $>$ O\+Stream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{O\+Stream \&}]{out, }
+\item[{const {\bf Config} \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classmarian_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}{}\label{classmarian_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}
+
+
+Definition at line 105 of file marian/src/common/config.\+h.
+
+
+\begin{DoxyCode}
+105                                                                  \{
+106     YAML::Emitter outYaml;
+107     \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{OutputYaml}(config.get(), outYaml);
+108     out << outYaml.c\_str();
+109     \textcolor{keywordflow}{return} out;
+110   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Config@{marian\+::\+Config}!config\+\_\+@{config\+\_\+}}
+\index{config\+\_\+@{config\+\_\+}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{config\+\_\+}{config_}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}{}\label{classmarian_1_1Config_acbe4dfabd18c2c561be60fa5adc28c3b}
+
+
+Definition at line 113 of file marian/src/common/config.\+h.
+
+\index{marian\+::\+Config@{marian\+::\+Config}!model\+Features\+\_\+@{model\+Features\+\_\+}}
+\index{model\+Features\+\_\+@{model\+Features\+\_\+}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{model\+Features\+\_\+}{modelFeatures_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ marian\+::\+Config\+::model\+Features\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}{}\label{classmarian_1_1Config_a63b2b2a9be247234930b5e2e55d97e11}
+
+
+Definition at line 114 of file marian/src/common/config.\+h.
+
+\index{marian\+::\+Config@{marian\+::\+Config}!seed@{seed}}
+\index{seed@{seed}!marian\+::\+Config@{marian\+::\+Config}}
+\subsubsection[{\texorpdfstring{seed}{seed}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Config\+::seed = (size\+\_\+t)time(0)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{}\label{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}
+
+
+Definition at line 16 of file marian/src/common/config.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2common_2config_8h}{marian/src/common/config.\+h}\item 
+\hyperlink{marian_2src_2common_2config_8cpp}{marian/src/common/config.\+cpp}\end{DoxyCompactItemize}

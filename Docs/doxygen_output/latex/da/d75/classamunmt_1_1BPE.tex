@@ -1,0 +1,709 @@
+\hypertarget{classamunmt_1_1BPE}{}\section{amunmt\+:\+:B\+PE Class Reference}
+\label{classamunmt_1_1BPE}\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+
+
+{\ttfamily \#include $<$bpe.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:B\+PE\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{d4/d14/classamunmt_1_1BPE__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:B\+PE\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d56/classamunmt_1_1BPE__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1BPE_a53dcd415e0e191be7cc8eb151ad6f17f}{B\+PE} ()
+\item 
+\hyperlink{classamunmt_1_1BPE_a973584c4eff31587d0cbbe3ccd9fc2a8}{B\+PE} (std\+::ifstream \&\&file, const std\+::string sep=\char`\"{}@@\char`\"{})
+\item 
+\hyperlink{classamunmt_1_1BPE_aed88644889fcbac579c7fb60b667f1f8}{B\+PE} (const std\+::string \&path, const std\+::string sep=\char`\"{}@@\char`\"{})
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1BPE_a747e84ef0632faa5cb75994a09e64819}{Segment} (const std\+::string \&sentence)
+\item 
+void \hyperlink{classamunmt_1_1BPE_ad00d419cc8a541b8aad84501ab053db8}{Print\+Segment} (const std\+::string \&sentence)
+\item 
+std\+::vector$<$ std\+::string $>$ \& \hyperlink{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{Encode} (const std\+::string \&word) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1BPE_adb07fcf335a9fd4caf8a21b413d8c17f}{Encode} (const std\+::vector$<$ std\+::string $>$ \&words) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1BPE_ae394375a674cfeee1c36b56cb918f015}{Preprocess} (const std\+::vector$<$ std\+::string $>$ input) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1BPE_a219913023dc7826e0a5a731b0e26acc0}{Postprocess} (const std\+::vector$<$ std\+::string $>$ input) const 
+\item 
+virtual \hyperlink{classamunmt_1_1BPE_acf567c8b17acc29f0f9aaebe1652ba5b}{$\sim$\+B\+PE} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{B\+P\+E\+Pair} = std\+::pair$<$ std\+::string, std\+::string $>$
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{std\+::set}$<$ \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{B\+P\+E\+Pair} $>$ \hyperlink{classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3}{Get\+Pairs} (const std\+::vector$<$ std\+::string $>$ \&word) const 
+\item 
+const \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{B\+P\+E\+Pair} $\ast$ \hyperlink{classamunmt_1_1BPE_ab1ad9af2c5806b7e2ee2bf91bd38d80b}{Find\+Best\+Bigram} (const \hyperlink{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{std\+::set}$<$ \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{B\+P\+E\+Pair} $>$ \&pairs) const 
+\item 
+bool \hyperlink{classamunmt_1_1BPE_a7840a80bf09596f2b3415070f3324b4b}{Is\+Cached} (const std\+::string \&word) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1BPE_a6089b76990dd5e462f8bcc7249fcb912}{Split\+Word\+Into\+Letters} (const std\+::string \&word) const 
+\item 
+bool \hyperlink{classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2}{Ends\+With} (const std\+::string \&full\+String, const std\+::string suffix) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{B\+P\+E\+Pair}, size\+\_\+t $>$ \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpe\+Codes\+\_\+}
+\item 
+const std\+::string \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\+\_\+}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file bpe.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!B\+P\+E\+Pair@{B\+P\+E\+Pair}}
+\index{B\+P\+E\+Pair@{B\+P\+E\+Pair}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{B\+P\+E\+Pair}{BPEPair}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+B\+P\+E\+::\+B\+P\+E\+Pair} =  std\+::pair$<$std\+::string, std\+::string$>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{}\label{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}
+
+
+Definition at line 37 of file bpe.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!B\+PE@{B\+PE}}
+\index{B\+PE@{B\+PE}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{B\+P\+E()}{BPE()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+B\+P\+E\+::\+B\+PE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1BPE_a53dcd415e0e191be7cc8eb151ad6f17f}{}\label{classamunmt_1_1BPE_a53dcd415e0e191be7cc8eb151ad6f17f}
+
+
+Definition at line 37 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+38   : \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\_}(\textcolor{stringliteral}{"@@"}) \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!B\+PE@{B\+PE}}
+\index{B\+PE@{B\+PE}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{B\+P\+E(std\+::ifstream \&\&file, const std\+::string sep="""@"@"")}{BPE(std::ifstream &&file, const std::string sep="@@")}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+B\+P\+E\+::\+B\+PE (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&\&}]{file, }
+\item[{const std\+::string}]{sep = {\ttfamily \char`\"{}@@\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1BPE_a973584c4eff31587d0cbbe3ccd9fc2a8}{}\label{classamunmt_1_1BPE_a973584c4eff31587d0cbbe3ccd9fc2a8}
+
+
+Definition at line 40 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+41   : \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\_}(sep) \{
+42   std::string inputLine;
+43   \textcolor{keywordtype}{size\_t} index = 0;
+44   \textcolor{keywordtype}{bool} firstLine = \textcolor{keyword}{true};
+45   \textcolor{keywordflow}{while} (std::getline(file, inputLine)) \{
+46     \textcolor{keywordflow}{if} (firstLine) \{
+47       firstLine = \textcolor{keyword}{false};
+48       \textcolor{keywordflow}{if} (inputLine.find(\textcolor{stringliteral}{"#version: 0.2"}) != std::string::npos) \{
+49         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->warn(\textcolor{stringliteral}{"WARNING! BPE VERSION 0.2 IS NOT SUPPORTED!"});
+50       \}
+51     \}
+52     std::vector<std::string> code;
+53     \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(inputLine, code);
+54     \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}[make\_pair(code[0], code[1])] = index++;
+55   \}
+56 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{da/d75/classamunmt_1_1BPE_a973584c4eff31587d0cbbe3ccd9fc2a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!B\+PE@{B\+PE}}
+\index{B\+PE@{B\+PE}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{B\+P\+E(const std\+::string \&path, const std\+::string sep="""@"@"")}{BPE(const std::string &path, const std::string sep="@@")}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+B\+P\+E\+::\+B\+PE (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{const std\+::string}]{sep = {\ttfamily \char`\"{}@@\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1BPE_aed88644889fcbac579c7fb60b667f1f8}{}\label{classamunmt_1_1BPE_aed88644889fcbac579c7fb60b667f1f8}
+
+
+Definition at line 58 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+59   : \hyperlink{classamunmt_1_1BPE_a53dcd415e0e191be7cc8eb151ad6f17f}{BPE}(std::ifstream(path), sep) \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!````~B\+PE@{$\sim$\+B\+PE}}
+\index{````~B\+PE@{$\sim$\+B\+PE}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{$\sim$\+B\+P\+E()}{~BPE()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual amunmt\+::\+B\+P\+E\+::$\sim$\+B\+PE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BPE_acf567c8b17acc29f0f9aaebe1652ba5b}{}\label{classamunmt_1_1BPE_acf567c8b17acc29f0f9aaebe1652ba5b}
+
+
+Definition at line 56 of file bpe.\+h.
+
+
+\begin{DoxyCode}
+56 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Encode@{Encode}}
+\index{Encode@{Encode}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Encode(const std\+::string \&word) const }{Encode(const std::string &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ \& amunmt\+::\+B\+P\+E\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{word}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{}\label{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}
+
+
+Definition at line 126 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+126                                                              \{
+127   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1BPE_a7840a80bf09596f2b3415070f3324b4b}{IsCached}(word)) \{
+128     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\_}[word];
+129   \}
+130 
+131   std::vector<std::string> vWord = \hyperlink{classamunmt_1_1BPE_a6089b76990dd5e462f8bcc7249fcb912}{SplitWordIntoLetters}(word);
+132   vWord.push\_back(\textcolor{stringliteral}{"</w>"});
+133 
+134   \textcolor{keyword}{auto} pairs = \hyperlink{classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3}{GetPairs}(vWord);
+135 
+136   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+137     \textcolor{keyword}{const} \hyperlink{classamunmt_1_1BPE_a3c38d7a027b9574c2b0baf3cd17f8e9c}{BPEPair}* bigram = \hyperlink{classamunmt_1_1BPE_ab1ad9af2c5806b7e2ee2bf91bd38d80b}{FindBestBigram}(pairs);
+138     \textcolor{keywordflow}{if} (bigram == \textcolor{keyword}{nullptr}) \{
+139       \textcolor{keywordflow}{break};
+140     \}
+141 
+142     std::vector<std::string> newWord;
+143 
+144     \textcolor{keyword}{auto} it = vWord.begin();
+145     \textcolor{keywordflow}{while} (it != vWord.end()) \{
+146       \textcolor{keyword}{auto} jt = std::find(it, vWord.end(), bigram->first);
+147       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = it; i != jt; ++i) \{
+148         newWord.push\_back(*i);
+149       \}
+150 
+151       \textcolor{keywordflow}{if} (jt == vWord.end()) \{
+152         \textcolor{keywordflow}{break};
+153       \}
+154       it = jt;
+155 
+156       \textcolor{keywordflow}{if} (*it == bigram->first && (it+1) != vWord.end() && *(it+1) == bigram->second) \{
+157         newWord.emplace\_back(bigram->first + bigram->second);
+158         it += 2;
+159       \} \textcolor{keywordflow}{else} \{
+160         newWord.push\_back(*it);
+161         it += 1;
+162       \}
+163     \}
+164     std::swap(vWord, newWord);
+165     \textcolor{keywordflow}{if} (newWord.size() == 1) \{
+166       \textcolor{keywordflow}{break};
+167     \} \textcolor{keywordflow}{else} \{
+168       pairs = \hyperlink{classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3}{GetPairs}(vWord);
+169     \}
+170   \}
+171 
+172   \textcolor{keywordflow}{if} (vWord.back() == \textcolor{stringliteral}{"</w>"}) \{
+173     vWord.pop\_back();
+174   \}
+175 
+176   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2}{EndsWith}(vWord.back(), \textcolor{stringliteral}{"</w>"})) \{
+177     vWord.back().resize(vWord.back().size() - 4);
+178   \}
+179 
+180   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0;  i < vWord.size() - 1; ++i) \{
+181     vWord[i] = vWord[i] + \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\_};
+182   \}
+183 
+184   std::mutex mtx;
+185   mtx.lock();
+186   \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\_}[word] = vWord;
+187   mtx.unlock();
+188 
+189   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\_}[word];
+190 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Encode@{Encode}}
+\index{Encode@{Encode}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Encode(const std\+::vector$<$ std\+::string $>$ \&words) const }{Encode(const std::vector< std::string > &words) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+B\+P\+E\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{words}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1BPE_adb07fcf335a9fd4caf8a21b413d8c17f}{}\label{classamunmt_1_1BPE_adb07fcf335a9fd4caf8a21b413d8c17f}
+
+
+Definition at line 192 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+192                                                                         \{
+193   std::vector<std::string> \hyperlink{namespacetest2_a05591d1f1584c3b3d1490fc9ac7519a6}{result};
+194   \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& word : words) \{
+195     \textcolor{keyword}{auto}& encoded = \hyperlink{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{Encode}(word);
+196     result.insert(result.end(), encoded.begin(), encoded.end());
+197   \}
+198   \textcolor{comment}{// std::cerr << "BPE: ";}
+199   \textcolor{comment}{// for (auto& code: result) std::cerr << code << " " ;}
+200   \textcolor{comment}{// std::cerr << std::endl;}
+201   \textcolor{keywordflow}{return} \hyperlink{namespacetest2_a05591d1f1584c3b3d1490fc9ac7519a6}{result};
+202 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_adb07fcf335a9fd4caf8a21b413d8c17f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Ends\+With@{Ends\+With}}
+\index{Ends\+With@{Ends\+With}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Ends\+With(const std\+::string \&full\+String, const std\+::string suffix) const }{EndsWith(const std::string &fullString, const std::string suffix) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+B\+P\+E\+::\+Ends\+With (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+String, }
+\item[{const std\+::string}]{suffix}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2}{}\label{classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2}
+
+
+Definition at line 225 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+225                                                                             \{
+226   \textcolor{keywordflow}{if} (fullString.length() >= suffix.length()) \{
+227     \textcolor{keywordflow}{return} (0 == fullString.compare(fullString.length() - suffix.length(), suffix.length(), suffix));
+228   \} \textcolor{keywordflow}{else} \{
+229     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+230   \}
+231 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Find\+Best\+Bigram@{Find\+Best\+Bigram}}
+\index{Find\+Best\+Bigram@{Find\+Best\+Bigram}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Find\+Best\+Bigram(const std\+::set$<$ B\+P\+E\+Pair $>$ \&pairs) const }{FindBestBigram(const std::set< BPEPair > &pairs) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf B\+P\+E\+::\+B\+P\+E\+Pair} $\ast$ amunmt\+::\+B\+P\+E\+::\+Find\+Best\+Bigram (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::set}$<$ {\bf B\+P\+E\+Pair} $>$ \&}]{pairs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_ab1ad9af2c5806b7e2ee2bf91bd38d80b}{}\label{classamunmt_1_1BPE_ab1ad9af2c5806b7e2ee2bf91bd38d80b}
+
+
+Definition at line 104 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+104                                                                         \{
+105   \textcolor{keywordtype}{size\_t} minDist = \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}.size();
+106   \textcolor{keyword}{auto} best = \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}.begin();
+107 
+108   \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& pair : pairs) \{
+109     \textcolor{keyword}{auto} it = \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}.find(pair);
+110     \textcolor{keywordflow}{if} (it == \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}.end()) \{
+111       \textcolor{keywordflow}{continue};
+112     \}
+113     \textcolor{keywordflow}{if} (it->second < minDist) \{
+114       minDist = it->second;
+115       best = it;
+116     \}
+117   \}
+118   \textcolor{keywordflow}{if} (minDist == \hyperlink{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{bpeCodes\_}.size()) \{
+119     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+120   \}
+121   \textcolor{keywordflow}{else} \{
+122   \textcolor{keywordflow}{return} &(best->first);
+123   \}
+124 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_ab1ad9af2c5806b7e2ee2bf91bd38d80b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Get\+Pairs@{Get\+Pairs}}
+\index{Get\+Pairs@{Get\+Pairs}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Get\+Pairs(const std\+::vector$<$ std\+::string $>$ \&word) const }{GetPairs(const std::vector< std::string > &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::set}$<$ {\bf B\+P\+E\+::\+B\+P\+E\+Pair} $>$ amunmt\+::\+B\+P\+E\+::\+Get\+Pairs (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{word}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3}{}\label{classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3}
+
+
+Definition at line 96 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+96                                                                        \{
+97   std::set<BPE::BPEPair> pairSet;
+98   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < word.size(); ++i) \{
+99     pairSet.emplace(word[i-1], word[i]);
+100   \}
+101   \textcolor{keywordflow}{return} pairSet;
+102 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a98b27329dd9a9146202d2bd732ce4ba3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Is\+Cached@{Is\+Cached}}
+\index{Is\+Cached@{Is\+Cached}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Is\+Cached(const std\+::string \&word) const }{IsCached(const std::string &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+B\+P\+E\+::\+Is\+Cached (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{word}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a7840a80bf09596f2b3415070f3324b4b}{}\label{classamunmt_1_1BPE_a7840a80bf09596f2b3415070f3324b4b}
+
+
+Definition at line 205 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+205                                               \{
+206   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\_}.find(word) != \hyperlink{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{cache\_}.end();
+207 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a7840a80bf09596f2b3415070f3324b4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Postprocess@{Postprocess}}
+\index{Postprocess@{Postprocess}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Postprocess(const std\+::vector$<$ std\+::string $>$ input) const }{Postprocess(const std::vector< std::string > input) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+B\+P\+E\+::\+Postprocess (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BPE_a219913023dc7826e0a5a731b0e26acc0}{}\label{classamunmt_1_1BPE_a219913023dc7826e0a5a731b0e26acc0}
+
+
+Implements \hyperlink{classamunmt_1_1Postprocessor_acf21db55b198bed6440f8f45e200ca24}{amunmt\+::\+Postprocessor}.
+
+
+
+Definition at line 17 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+17                                                                             \{
+18   std::vector<std::string> debped;
+19   std::stringstream currWord;
+20   \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& word : input) \{
+21     \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1BPE_a21b9fe0b9cd1782985a5917bed7eb5f2}{EndsWith}(word, \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\_})) \{
+22       currWord << word.substr(0, word.size() - \hyperlink{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{sep\_}.size());
+23     \} \textcolor{keywordflow}{else} \{
+24       currWord << word;
+25       debped.push\_back(currWord.str());
+26       currWord.str(\textcolor{stringliteral}{""});
+27       currWord.clear();
+28     \}
+29   \}
+30   std::string tailWord = currWord.str();
+31   \textcolor{keywordflow}{if} (tailWord.size() != 0) \{
+32       debped.push\_back(tailWord);
+33   \}
+34   \textcolor{keywordflow}{return} debped;
+35 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a219913023dc7826e0a5a731b0e26acc0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Preprocess@{Preprocess}}
+\index{Preprocess@{Preprocess}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Preprocess(const std\+::vector$<$ std\+::string $>$ input) const }{Preprocess(const std::vector< std::string > input) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+B\+P\+E\+::\+Preprocess (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1BPE_ae394375a674cfeee1c36b56cb918f015}{}\label{classamunmt_1_1BPE_ae394375a674cfeee1c36b56cb918f015}
+
+
+Implements \hyperlink{classamunmt_1_1Preprocessor_a9b65510af5c66a793f4651d2caa8e67a}{amunmt\+::\+Preprocessor}.
+
+
+
+Definition at line 13 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+13                                                                            \{
+14   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{Encode}(input);
+15 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_ae394375a674cfeee1c36b56cb918f015_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Print\+Segment@{Print\+Segment}}
+\index{Print\+Segment@{Print\+Segment}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Print\+Segment(const std\+::string \&sentence)}{PrintSegment(const std::string &sentence)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+B\+P\+E\+::\+Print\+Segment (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{sentence}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1BPE_ad00d419cc8a541b8aad84501ab053db8}{}\label{classamunmt_1_1BPE_ad00d419cc8a541b8aad84501ab053db8}
+
+
+Definition at line 76 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+76                                                 \{
+77   std::vector<std::string> words, tokens;
+78   \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(sentence, words);
+79 
+80   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} wi = 0; wi < words.size(); ++wi) \{
+81     \textcolor{keywordflow}{if} (words[wi].empty()) \textcolor{keywordflow}{continue};
+82     \textcolor{keyword}{auto} codes = \hyperlink{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{Encode}(words[wi]);
+83 
+84     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < codes.size() - 1; ++i) \{
+85       std::cout << codes[i] << \textcolor{stringliteral}{" "};
+86     \}
+87     std::cout << codes.back();
+88     \textcolor{keywordflow}{if} (wi == words.size() - 1) \{
+89       std::cout << std::endl;
+90     \} \textcolor{keywordflow}{else} \{
+91       std::cout << \textcolor{stringliteral}{" "};
+92     \}
+93   \}
+94 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_ad00d419cc8a541b8aad84501ab053db8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Segment@{Segment}}
+\index{Segment@{Segment}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Segment(const std\+::string \&sentence)}{Segment(const std::string &sentence)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+B\+P\+E\+::\+Segment (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{sentence}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1BPE_a747e84ef0632faa5cb75994a09e64819}{}\label{classamunmt_1_1BPE_a747e84ef0632faa5cb75994a09e64819}
+
+
+Definition at line 61 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+61                                                            \{
+62   std::vector<std::string> words, tokens;
+63   \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(sentence, words);
+64 
+65   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& word : words) \{
+66     \textcolor{keywordflow}{if} (word.empty()) \textcolor{keywordflow}{continue};
+67     \textcolor{keyword}{auto} codes = \hyperlink{classamunmt_1_1BPE_a31bddda15c8e822540612885885e3a3a}{Encode}(word);
+68     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < codes.size() - 1; ++i) \{
+69       tokens.emplace\_back(codes[i]);
+70     \}
+71     tokens.push\_back(codes.back());
+72   \}
+73   \textcolor{keywordflow}{return} tokens;
+74 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a747e84ef0632faa5cb75994a09e64819_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!Split\+Word\+Into\+Letters@{Split\+Word\+Into\+Letters}}
+\index{Split\+Word\+Into\+Letters@{Split\+Word\+Into\+Letters}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{Split\+Word\+Into\+Letters(const std\+::string \&word) const }{SplitWordIntoLetters(const std::string &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+B\+P\+E\+::\+Split\+Word\+Into\+Letters (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{word}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a6089b76990dd5e462f8bcc7249fcb912}{}\label{classamunmt_1_1BPE_a6089b76990dd5e462f8bcc7249fcb912}
+
+
+Definition at line 209 of file bpe.\+cpp.
+
+
+\begin{DoxyCode}
+209                                                                           \{
+210   \textcolor{keywordtype}{char}* charWord = (\textcolor{keywordtype}{char}*)word.c\_str();
+211   \textcolor{keyword}{auto} b = charWord;
+212   \textcolor{keyword}{auto} e = charWord + strlen(charWord);
+213 
+214   std::vector<std::string> letters;
+215   \textcolor{keywordtype}{int} prevBegin = 0;
+216   \textcolor{keywordflow}{while} (b != e) \{
+217     \textcolor{keywordtype}{int} end = utf8::next(b, e);
+218     std::vector<unsigned char> utf8result;
+219     utf8::utf32to8(&end,&end + 1, std::back\_inserter(utf8result));
+220     letters.emplace\_back(utf8result.begin(), utf8result.end());
+221   \}
+222   \textcolor{keywordflow}{return} letters;
+223 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/classamunmt_1_1BPE_a6089b76990dd5e462f8bcc7249fcb912_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!bpe\+Codes\+\_\+@{bpe\+Codes\+\_\+}}
+\index{bpe\+Codes\+\_\+@{bpe\+Codes\+\_\+}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{bpe\+Codes\+\_\+}{bpeCodes_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<${\bf B\+P\+E\+Pair}, size\+\_\+t$>$ amunmt\+::\+B\+P\+E\+::bpe\+Codes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}{}\label{classamunmt_1_1BPE_a4f76078a35e375984a320271f4f40fa5}
+
+
+Definition at line 68 of file bpe.\+h.
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!cache\+\_\+@{cache\+\_\+}}
+\index{cache\+\_\+@{cache\+\_\+}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{cache\+\_\+}{cache_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ amunmt\+::\+B\+P\+E\+::cache\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}{}\label{classamunmt_1_1BPE_a13eb53ebc158d710ac9ce969ce6b3b71}
+
+
+Definition at line 70 of file bpe.\+h.
+
+\index{amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}!sep\+\_\+@{sep\+\_\+}}
+\index{sep\+\_\+@{sep\+\_\+}!amunmt\+::\+B\+PE@{amunmt\+::\+B\+PE}}
+\subsubsection[{\texorpdfstring{sep\+\_\+}{sep_}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string amunmt\+::\+B\+P\+E\+::sep\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}{}\label{classamunmt_1_1BPE_a172a55b6b2190b1b8ad206ee4cf81c45}
+
+
+Definition at line 69 of file bpe.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bpe_8h}{bpe.\+h}\item 
+\hyperlink{bpe_8cpp}{bpe.\+cpp}\end{DoxyCompactItemize}

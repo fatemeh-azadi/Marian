@@ -1,0 +1,52 @@
+\hypertarget{training_2validator_8h}{}\section{validator.\+h File Reference}
+\label{training_2validator_8h}\index{validator.\+h@{validator.\+h}}
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}data/batch\+\_\+generator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}data/corpus.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}translator/beam\+\_\+search.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}translator/history.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}translator/output\+\_\+collector.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}translator/printer.\+h\char`\"{}}\\*
+Include dependency graph for training/validator.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d4e/training_2validator_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{d2/dc2/training_2validator_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1Validator}{marian\+::\+Validator$<$ Data\+Set $>$}
+\item 
+class \hyperlink{classmarian_1_1CrossEntropyValidator}{marian\+::\+Cross\+Entropy\+Validator$<$ Builder $>$}
+\item 
+class \hyperlink{classmarian_1_1PerplexityValidator}{marian\+::\+Perplexity\+Validator$<$ Builder $>$}
+\item 
+class \hyperlink{classmarian_1_1ScriptValidator}{marian\+::\+Script\+Validator$<$ Builder $>$}
+\item 
+class \hyperlink{classmarian_1_1S2SValidator}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Builder , class... Args$>$ }\\std\+::vector$<$ Ptr$<$ Validator$<$ data\+::\+Corpus $>$ $>$ $>$ \hyperlink{namespacemarian_a691f0c637b8713ff7972cdd276f2e099}{marian\+::\+Validators} (std\+::vector$<$ Ptr$<$ Vocab $>$$>$ vocabs, Ptr$<$ Config $>$ options, Args...\+args)
+\end{DoxyCompactItemize}

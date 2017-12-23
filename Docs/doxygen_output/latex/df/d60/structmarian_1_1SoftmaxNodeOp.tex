@@ -1,0 +1,246 @@
+\hypertarget{structmarian_1_1SoftmaxNodeOp}{}\section{marian\+:\+:Softmax\+Node\+Op Struct Reference}
+\label{structmarian_1_1SoftmaxNodeOp}\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Softmax\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d4c/structmarian_1_1SoftmaxNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Softmax\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db2/structmarian_1_1SoftmaxNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1SoftmaxNodeOp_a1eae47fdce259a30afc6aff84c3566ae}{Softmax\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, Args...\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1SoftmaxNodeOp_ad61d27e7c9d9b2782b0cf1f0e910fef4}{Softmax\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1SoftmaxNodeOp_ac840d869fb28c00f91bab78b04012e42}{forward\+Ops} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1}{hash} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1SoftmaxNodeOp_a60b215754e045ea3442cb8bb1ba26465}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1SoftmaxNodeOp_aa6282d5e41f36d4de1144db398308723}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 179 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!Softmax\+Node\+Op@{Softmax\+Node\+Op}}
+\index{Softmax\+Node\+Op@{Softmax\+Node\+Op}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Softmax\+Node\+Op(\+Expr a, Args...\+args)}{SoftmaxNodeOp(Expr a, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Softmax\+Node\+Op\+::\+Softmax\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_a1eae47fdce259a30afc6aff84c3566ae}{}\label{structmarian_1_1SoftmaxNodeOp_a1eae47fdce259a30afc6aff84c3566ae}
+
+
+Definition at line 181 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+182       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(a, args...), \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_}(\textcolor{keyword}{nullptr}) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!Softmax\+Node\+Op@{Softmax\+Node\+Op}}
+\index{Softmax\+Node\+Op@{Softmax\+Node\+Op}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Softmax\+Node\+Op(\+Expr a, Expr mask, Args...\+args)}{SoftmaxNodeOp(Expr a, Expr mask, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Softmax\+Node\+Op\+::\+Softmax\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{{\bf Expr}}]{mask, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_ad61d27e7c9d9b2782b0cf1f0e910fef4}{}\label{structmarian_1_1SoftmaxNodeOp_ad61d27e7c9d9b2782b0cf1f0e910fef4}
+
+
+Definition at line 185 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+186       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(\{a, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}\}, args...), \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Softmax\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_a60b215754e045ea3442cb8bb1ba26465}{}\label{structmarian_1_1SoftmaxNodeOp_a60b215754e045ea3442cb8bb1ba26465}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 204 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+204                         \{
+205     \textcolor{comment}{// For each row, the Jacobian times vector is given by:}
+206     \textcolor{comment}{// J * dy = p .* (dy - avg*1)}
+207     \textcolor{comment}{// where avg = p'*dy and p is the softmax output (probabilities).}
+208     \textcolor{comment}{//}
+209     \textcolor{comment}{// For more information, see sec. 2.5 of the following reference:}
+210     \textcolor{comment}{// André F. T. Martins and Ramon Astudillo.}
+211     \textcolor{comment}{// "From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label}
+212     \textcolor{comment}{// Classification." ICML 2016.}
+213     \textcolor{comment}{// http://jmlr.org/proceedings/papers/v48/martins16.pdf}
+214 
+215     \textcolor{comment}{// val\_ is already masked if there is a mask, so no need to apply here.}
+216 
+217     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a7da9b69aeeeb493a8c19c3e07b831a92}{SoftmaxGrad}(\hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, 
+      \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}))\};
+218   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d60/structmarian_1_1SoftmaxNodeOp_a60b215754e045ea3442cb8bb1ba26465_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Softmax\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_ac840d869fb28c00f91bab78b04012e42}{}\label{structmarian_1_1SoftmaxNodeOp_ac840d869fb28c00f91bab78b04012e42}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 190 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+190                        \{
+191     \textcolor{keywordflow}{return} \{
+192         \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a01a45889e366b16c79c2cc067f534021}{Softmax}(\hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_} ? 
+      \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_}->val() : \textcolor{keyword}{nullptr}))\};
+193   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d60/structmarian_1_1SoftmaxNodeOp_ac840d869fb28c00f91bab78b04012e42_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Softmax\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1}{}\label{structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1}
+
+
+Reimplemented from \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{marian\+::\+Nary\+Node\+Op}.
+
+
+
+Definition at line 195 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+195                         \{
+196     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+197       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{NaryNodeOp::hash}();
+198       \textcolor{keywordflow}{if}(\hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_})
+199         \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}, \hyperlink{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{mask\_}->hash());
+200     \}
+201     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+202   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d60/structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Softmax\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1SoftmaxNodeOp_aa6282d5e41f36d4de1144db398308723}{}\label{structmarian_1_1SoftmaxNodeOp_aa6282d5e41f36d4de1144db398308723}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 220 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+220 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"softmax"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}!mask\+\_\+@{mask\+\_\+}}
+\index{mask\+\_\+@{mask\+\_\+}!marian\+::\+Softmax\+Node\+Op@{marian\+::\+Softmax\+Node\+Op}}
+\subsubsection[{\texorpdfstring{mask\+\_\+}{mask_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Softmax\+Node\+Op\+::mask\+\_\+}\hypertarget{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}{}\label{structmarian_1_1SoftmaxNodeOp_a7870175f2ecadbb4ec71de714f3c6519}
+
+
+Definition at line 188 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

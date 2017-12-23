@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/df6/classmarian_1_1DeviceGPU">
+<title>marian::DeviceGPU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/de3/device__gpu_8h">&lt;device_gpu.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DeviceGPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db2/classmarian_1_1DeviceGPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DeviceGPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/db0/classmarian_1_1DeviceGPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t alignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/df6/classmarian_1_1DeviceGPU_1a85b4d01e6012a14c738eb20c9d065aaa">align</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/df6/classmarian_1_1DeviceGPU_1aa73bbc00ebdf588045570fed6450eb35">DeviceGPU</link> (
+size_t device, size_t alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/df6/classmarian_1_1DeviceGPU_1adb73cacb9f5cc5db6f150cd0de8e8598">~DeviceGPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/df6/classmarian_1_1DeviceGPU_1ae11155ac0eb07f883ce502557d7ff324">reserve</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d2/df6/classmarian_1_1DeviceGPU_1a84dc43cc2d44dd8571ce92f7e29dca93">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/df6/classmarian_1_1DeviceGPU_1ae1eb5f0991b659f725a4973bf09c87b0">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/df6/classmarian_1_1DeviceGPU_1a8cf848d6d40bfcdffb34057e266c9a86">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1a85b4d01e6012a14c738eb20c9d065aaa">
+                <title>size_t marian::DeviceGPU::align (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1aa73bbc00ebdf588045570fed6450eb35">
+                <title>marian::DeviceGPU::DeviceGPU (size_t device, size_t alignment=256)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1adb73cacb9f5cc5db6f150cd0de8e8598">
+                <title>marian::DeviceGPU::~DeviceGPU ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1ae11155ac0eb07f883ce502557d7ff324">
+                <title>void marian::DeviceGPU::reserve (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1a84dc43cc2d44dd8571ce92f7e29dca93">
+                <title>uint8_t* marian::DeviceGPU::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1ae1eb5f0991b659f725a4973bf09c87b0">
+                <title>size_t marian::DeviceGPU::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df6/classmarian_1_1DeviceGPU_1a8cf848d6d40bfcdffb34057e266c9a86">
+                <title>size_t marian::DeviceGPU::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

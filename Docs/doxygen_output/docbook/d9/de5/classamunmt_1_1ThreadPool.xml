@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/de5/classamunmt_1_1ThreadPool">
+<title>amunmt::ThreadPool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d40/threadpool_8h">&lt;threadpool.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::ThreadPool</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d2a/classamunmt_1_1ThreadPool__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::ThreadPool</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d4e/classamunmt_1_1ThreadPool__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::thread &gt; workers</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::queue&lt; std::function&lt; void()&gt; &gt; tasks</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::mutex queue_mutex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::condition_variable condition</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::size_t bound</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::condition_variable bounded_condition</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool stop</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/de5/classamunmt_1_1ThreadPool_1a3bc1ace57ef28ce5c78ee1672ae9c382">ThreadPool</link> (
+size_t threads, size_t bound)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>auto <link linkend="d9/de5/classamunmt_1_1ThreadPool_1a1bb89599cb11af51958c771c437aff22">enqueue</link> (
+F &amp;&amp; f, Args &amp;&amp;... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/de5/classamunmt_1_1ThreadPool_1a03f83dd78a39dbe485326a50497d6906">~ThreadPool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d9/de5/classamunmt_1_1ThreadPool_1a56f770af85865ea1eb35f3d2ade28043">getNumTasks</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/de5/classamunmt_1_1ThreadPool_1a3bc1ace57ef28ce5c78ee1672ae9c382">
+                <title>amunmt::ThreadPool::ThreadPool (size_t threads, size_t bound=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de5/classamunmt_1_1ThreadPool_1a1bb89599cb11af51958c771c437aff22">
+                <title>auto amunmt::ThreadPool::enqueue (F &amp;&amp;f, Args &amp;&amp;...args) -&gt; std::future&lt; typename std::result_of&lt; F(Args...)&gt;::type &gt;</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de5/classamunmt_1_1ThreadPool_1a03f83dd78a39dbe485326a50497d6906">
+                <title>amunmt::ThreadPool::~ThreadPool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de5/classamunmt_1_1ThreadPool_1a56f770af85865ea1eb35f3d2ade28043">
+                <title>size_t amunmt::ThreadPool::getNumTasks () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

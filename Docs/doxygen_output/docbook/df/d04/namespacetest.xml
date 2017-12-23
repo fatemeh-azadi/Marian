@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d04/namespacetest">
+<title>test</title>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>list <link linkend="df/d04/namespacetest_1adcc587f95c6a5c19245b161284ca9e0e">sentences</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d04/namespacetest_1a07b64f21658cf1faa97a31563ac979d2">output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

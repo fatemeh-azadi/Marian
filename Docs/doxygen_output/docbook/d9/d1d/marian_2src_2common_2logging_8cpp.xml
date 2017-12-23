@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d1d/marian_2src_2common_2logging_8cpp">
+    <title>marian/src/common/logging.cpp File Reference</title>
+    <programlisting>#include &quot;logging.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;spdlog/sinks/null_sink.h&quot;</programlisting>
+<para>Include dependency diagram for marian/src/common/logging.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d87/marian_2src_2common_2logging_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/common/logging.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d36/marian_2src_2common_2logging_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; spdlog::logger &gt; <link linkend="d9/d1d/marian_2src_2common_2logging_8cpp_1a10c1e66ee3fa438b4ace092d78dfe859">stderrLogger</link> (
+const std::string &amp; name, const std::string &amp; pattern, const std::vector&lt; std::string &gt; &amp; files)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d1d/marian_2src_2common_2logging_8cpp_1af2dc599148e697fad3ad660d2b8cab9b">set_loglevel</link> (
+spdlog::logger &amp; logger, std::string const level)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d2/d47/marian_2src_2common_2logging_8h_1a20ad7ba13c23d0b9f03f5079ec2c9bf8">Logger</link> <link linkend="d9/d1d/marian_2src_2common_2logging_8cpp_1aec78c161e85dcf893e152bee3c76d82d">checkedLog</link> (
+std::string logger)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d1d/marian_2src_2common_2logging_8cpp_1ac797ff0d4f04d8deeb12d6abef63d12d">createLoggers</link> (
+const <link linkend="d6/dba/classmarian_1_1Config">marian::Config</link> * options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file logging.cpp</para>
+    </simplesect>
+</section>

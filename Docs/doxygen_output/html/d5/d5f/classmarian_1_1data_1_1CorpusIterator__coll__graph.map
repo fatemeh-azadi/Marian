@@ -1,0 +1,5 @@
+<map id="marian::data::CorpusIterator" name="marian::data::CorpusIterator">
+<area shape="rect" id="node3" href="$d8/d05/classmarian_1_1data_1_1SentenceTuple.html" title="{marian::data::SentenceTuple\n|&#45; id_\l|+ SentenceTuple()\l+ ~SentenceTuple()\l+ push_back()\l+ size()\l+ operator[]()\l+ back()\l+ back()\l+ operator[]()\l+ empty()\l+ begin()\l+ end()\l+ getId()\l}" alt="" coords="272,447,461,685"/>
+<area shape="rect" id="node5" href="$d9/daf/classmarian_1_1data_1_1Corpus.html" title="{marian::data::Corpus\n|&#45; options_\l&#45; maxLength_\l&#45; g_\l&#45; pos_\l&#45; wordAlignment_\l|+ Corpus()\l+ Corpus()\l+ next()\l+ shuffle()\l+ reset()\l+ begin()\l+ end()\l+ getVocabs()\l+ toBatch()\l+ prepare()\l&#45; shuffleFiles()\l&#45; setWordAlignment()\l}" alt="" coords="639,417,785,715"/>
+<area shape="rect" id="node6" href="$db/deb/classmarian_1_1data_1_1DatasetBase.html" title="{marian::data::DatasetBase\l\&lt; SentenceTuple, CorpusIterator,\l CorpusBatch \&gt;\n||+ DatasetBase()\l+ DatasetBase()\l+ begin()\l+ end()\l+ shuffle()\l+ toBatch()\l+ reset()\l+ prepare()\l}" alt="" coords="311,145,527,355"/>
+</map>

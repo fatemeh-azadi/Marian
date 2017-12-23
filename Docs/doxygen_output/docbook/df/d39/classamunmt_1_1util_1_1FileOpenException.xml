@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d39/classamunmt_1_1util_1_1FileOpenException">
+<title>amunmt::util::FileOpenException class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/d2d/exception_8h">&lt;exception.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::util::FileOpenException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d86/classamunmt_1_1util_1_1FileOpenException__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::util::FileOpenException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d24/classamunmt_1_1util_1_1FileOpenException__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d39/classamunmt_1_1util_1_1FileOpenException_1af42dbe62d8a394be50c0c49338738649">FileOpenException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d39/classamunmt_1_1util_1_1FileOpenException_1a147314afb6a34f80a520e85b80072934">~FileOpenException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="df/d39/classamunmt_1_1util_1_1FileOpenException_1af42dbe62d8a394be50c0c49338738649">
+                <title>amunmt::util::FileOpenException::FileOpenException ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d39/classamunmt_1_1util_1_1FileOpenException_1a147314afb6a34f80a520e85b80072934">
+                <title>amunmt::util::FileOpenException::~FileOpenException ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

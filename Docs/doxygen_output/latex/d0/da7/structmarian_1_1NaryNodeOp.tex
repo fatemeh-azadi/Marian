@@ -1,0 +1,221 @@
+\hypertarget{structmarian_1_1NaryNodeOp}{}\section{marian\+:\+:Nary\+Node\+Op Struct Reference}
+\label{structmarian_1_1NaryNodeOp}\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Nary\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d19/structmarian_1_1NaryNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Nary\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/structmarian_1_1NaryNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{Nary\+Node\+Op} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes, Args...\+args)
+\item 
+virtual \hyperlink{structmarian_1_1NaryNodeOp_a91a3a2f5e7e91d4966698b7bc443d63b}{$\sim$\+Nary\+Node\+Op} ()
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \& \hyperlink{structmarian_1_1NaryNodeOp_a594b5e543321e738a365eecab5db0638}{children} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{hash} ()
+\item 
+void \hyperlink{structmarian_1_1NaryNodeOp_ae01b13621696a89e290a6e6c7e5c668a}{remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\+\_\+} \{0\}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 142 of file node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!Nary\+Node\+Op@{Nary\+Node\+Op}}
+\index{Nary\+Node\+Op@{Nary\+Node\+Op}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Nary\+Node\+Op(const std\+::vector$<$ Expr $>$ \&nodes, Args...\+args)}{NaryNodeOp(const std::vector< Expr > &nodes, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Nary\+Node\+Op\+::\+Nary\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{}\label{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}
+
+
+Definition at line 146 of file node.\+h.
+
+
+\begin{DoxyCode}
+147       : \hyperlink{classmarian_1_1Node_ab2576bb59c9c4d52bb2f676bb848ebc5}{Node}(nodes.front()->graph(),
+148              \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape}
+149              = \hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{keywords::Get}(\hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape}, nodes.front()->shape(), args...),
+150              args...) \{
+151     \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.resize(nodes.size());
+152     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < nodes.size(); ++i)
+153       \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}[i] = nodes[i];
+154 
+155     \hyperlink{classmarian_1_1Node_a04b5aa3633d6a01b074f59fd93d7fb15}{setTrainable}(std::any\_of(
+156         nodes.begin(), nodes.end(), [](\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a) \{ \textcolor{keywordflow}{return} a->trainable(); \}));
+157     \hyperlink{structmarian_1_1NaryNodeOp_ae01b13621696a89e290a6e6c7e5c668a}{remove\_children\_from\_top\_nodes}();
+158   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!````~Nary\+Node\+Op@{$\sim$\+Nary\+Node\+Op}}
+\index{````~Nary\+Node\+Op@{$\sim$\+Nary\+Node\+Op}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{$\sim$\+Nary\+Node\+Op()}{~NaryNodeOp()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual marian\+::\+Nary\+Node\+Op\+::$\sim$\+Nary\+Node\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1NaryNodeOp_a91a3a2f5e7e91d4966698b7bc443d63b}{}\label{structmarian_1_1NaryNodeOp_a91a3a2f5e7e91d4966698b7bc443d63b}
+
+
+Definition at line 160 of file node.\+h.
+
+
+\begin{DoxyCode}
+160 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!children@{children}}
+\index{children@{children}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{children()}{children()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$\& marian\+::\+Nary\+Node\+Op\+::children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1NaryNodeOp_a594b5e543321e738a365eecab5db0638}{}\label{structmarian_1_1NaryNodeOp_a594b5e543321e738a365eecab5db0638}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a72e48d89624de0ea4ee98c39e60b3ecb}{marian\+::\+Node}.
+
+
+
+Definition at line 162 of file node.\+h.
+
+
+\begin{DoxyCode}
+162 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Nary\+Node\+Op\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}{}\label{structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Reimplemented in \hyperlink{structmarian_1_1LexicalProbNodeOp_af637f59c3fcdf6f2804685818661b1ca}{marian\+::\+Lexical\+Prob\+Node\+Op}, \hyperlink{structmarian_1_1ShiftNodeOp_a687a08ebcb58fc58deca832b226fe2dd}{marian\+::\+Shift\+Node\+Op}, \hyperlink{classmarian_1_1TimestepNodeOp_a43f50885f973fe1e849f1c940eeb2107}{marian\+::\+Timestep\+Node\+Op}, \hyperlink{classmarian_1_1ReshapeNodeOp_a629e7d06a0a137b9b6dd9343619ac860}{marian\+::\+Reshape\+Node\+Op}, \hyperlink{structmarian_1_1ColsNodeOp_a4ca2bfb0920d3b4e3d2439445c1bc75d}{marian\+::\+Cols\+Node\+Op}, \hyperlink{structmarian_1_1RowsNodeOp_ab673a759e07f33c57da2bb4e02082b25}{marian\+::\+Rows\+Node\+Op}, \hyperlink{structmarian_1_1SqrtNodeOp_a83836f4ce180733221a17b5af8e2db58}{marian\+::\+Sqrt\+Node\+Op}, \hyperlink{structmarian_1_1MeanNodeOp_a9cffc1e5e7ccf48c08cba8ec8432bebb}{marian\+::\+Mean\+Node\+Op}, \hyperlink{structmarian_1_1ConcatenateNodeOp_ade186966864e82498336129c608ab280}{marian\+::\+Concatenate\+Node\+Op}, \hyperlink{structmarian_1_1SumNodeOp_ab58aedc0c1c6929f45e7fc7a4ad3ab17}{marian\+::\+Sum\+Node\+Op}, and \hyperlink{structmarian_1_1SoftmaxNodeOp_a97692b03bf740a4759f906303bbfd2e1}{marian\+::\+Softmax\+Node\+Op}.
+
+
+
+Definition at line 164 of file node.\+h.
+
+
+\begin{DoxyCode}
+164                         \{
+165     \textcolor{keywordflow}{if}(!\hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_}) \{
+166       std::size\_t seed = boost::hash<std::string>()(\hyperlink{classmarian_1_1Node_ad5437ac41eaa8316791698db9ad46ab0}{name}());
+167       \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{type}());
+168       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size(); ++i)
+169         \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{boost::hash\_combine}(seed, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(i)->hash());
+170       \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_} = seed;
+171     \}
+172     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{hash\_};
+173   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/da7/structmarian_1_1NaryNodeOp_ab1b6a692080382203afe5ceaf0c4279d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes@{remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes}}
+\index{remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes@{remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes()}{remove_children_from_top_nodes()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Nary\+Node\+Op\+::remove\+\_\+children\+\_\+from\+\_\+top\+\_\+nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structmarian_1_1NaryNodeOp_ae01b13621696a89e290a6e6c7e5c668a}{}\label{structmarian_1_1NaryNodeOp_ae01b13621696a89e290a6e6c7e5c668a}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}!hash\+\_\+@{hash\+\_\+}}
+\index{hash\+\_\+@{hash\+\_\+}!marian\+::\+Nary\+Node\+Op@{marian\+::\+Nary\+Node\+Op}}
+\subsubsection[{\texorpdfstring{hash\+\_\+}{hash_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Nary\+Node\+Op\+::hash\+\_\+ \{0\}}\hypertarget{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}{}\label{structmarian_1_1NaryNodeOp_a12df8e3c447151b8169926de5076ae7c}
+
+
+Definition at line 143 of file node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node_8h}{node.\+h}\end{DoxyCompactItemize}

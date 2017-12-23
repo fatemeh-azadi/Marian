@@ -1,0 +1,359 @@
+\hypertarget{classmarian_1_1data_1_1MNIST}{}\section{marian\+:\+:data\+:\+:M\+N\+I\+ST Class Reference}
+\label{classmarian_1_1data_1_1MNIST}\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+
+
+{\ttfamily \#include $<$dataset.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:M\+N\+I\+ST\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d9/d66/classmarian_1_1data_1_1MNIST__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:M\+N\+I\+ST\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d5a/classmarian_1_1data_1_1MNIST__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1MNIST_ac7ec3b31cd427f5dab9b5f2e207c3dd7}{M\+N\+I\+ST} (std\+::vector$<$ std\+::string $>$ paths, std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$$>$ vocabs=\{\}, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options=nullptr)
+\item 
+void \hyperlink{classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173}{load\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{classmarian_1_1data_1_1MNIST_a101b7fe6b6df1c8da1e8880ea9e177e6}{uchar}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverse\+Int} (int i)
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} $>$ \hyperlink{classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137}{Read\+Images} (const std\+::string \&full\+\_\+path)
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} $>$ \hyperlink{classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62}{Read\+Labels} (const std\+::string \&full\+\_\+path)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classmarian_1_1data_1_1MNIST_ad57aae96aaef230ede91eadb4d2cbbb7}{I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}
+\item 
+const int \hyperlink{classmarian_1_1data_1_1MNIST_a6c03087f0ab278cfdf5168985497135d}{L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file examples/mnist/dataset.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!uchar@{uchar}}
+\index{uchar@{uchar}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{uchar}{uchar}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf marian\+::data\+::\+M\+N\+I\+S\+T\+::uchar}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_a101b7fe6b6df1c8da1e8880ea9e177e6}{}\label{classmarian_1_1data_1_1MNIST_a101b7fe6b6df1c8da1e8880ea9e177e6}
+
+
+Definition at line 49 of file examples/mnist/dataset.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!M\+N\+I\+ST@{M\+N\+I\+ST}}
+\index{M\+N\+I\+ST@{M\+N\+I\+ST}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{M\+N\+I\+S\+T(std\+::vector$<$ std\+::string $>$ paths, std\+::vector$<$ Ptr$<$ Vocab $>$$>$ vocabs=\lcurly{}\rcurly{}, Ptr$<$ Config $>$ options=nullptr)}{MNIST(std::vector< std::string > paths, std::vector< Ptr< Vocab >> vocabs=\{\}, Ptr< Config > options=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+M\+N\+I\+S\+T\+::\+M\+N\+I\+ST (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{paths, }
+\item[{std\+::vector$<$ {\bf Ptr}$<$ {\bf Vocab} $>$$>$}]{vocabs = {\ttfamily \{\}}, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1MNIST_ac7ec3b31cd427f5dab9b5f2e207c3dd7}{}\label{classmarian_1_1data_1_1MNIST_ac7ec3b31cd427f5dab9b5f2e207c3dd7}
+
+
+Definition at line 26 of file examples/mnist/dataset.\+h.
+
+
+\begin{DoxyCode}
+27                                        \{\},
+28         Ptr<Config> options = \textcolor{keyword}{nullptr})
+29       : \hyperlink{classmarian_1_1data_1_1Dataset_a6db460dbb984620b13700ac6069f9925}{Dataset}(paths), \hyperlink{classmarian_1_1data_1_1MNIST_ad57aae96aaef230ede91eadb4d2cbbb7}{IMAGE\_MAGIC\_NUMBER}(2051), 
+      \hyperlink{classmarian_1_1data_1_1MNIST_a6c03087f0ab278cfdf5168985497135d}{LABEL\_MAGIC\_NUMBER}(2049) \{
+30     \hyperlink{classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173}{loadData}();
+31   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d07/classmarian_1_1data_1_1MNIST_ac7ec3b31cd427f5dab9b5f2e207c3dd7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{load\+Data()}{loadData()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+M\+N\+I\+S\+T\+::load\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173}{}\label{classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1Dataset_ae999d10fb3509203d694639582e438a6}{marian\+::data\+::\+Dataset}.
+
+
+
+Definition at line 33 of file examples/mnist/dataset.\+h.
+
+
+\begin{DoxyCode}
+33                   \{
+34     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}.size() != 2,
+35                    \textcolor{stringliteral}{"Paths to MNIST data files are not specified"});
+36 
+37     \textcolor{keyword}{auto} features = \hyperlink{classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137}{ReadImages}(\hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}[0]);
+38     \textcolor{keyword}{auto} labels = \hyperlink{classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62}{ReadLabels}(\hyperlink{classmarian_1_1data_1_1DatasetBase_ac00940207a65687f7ea491333aedc1c1}{paths\_}[1]);
+39     UTIL\_THROW\_IF2(features.size() != labels.size(),
+40                    \textcolor{stringliteral}{"Features do not match labels"});
+41 
+42     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < features.size(); ++i) \{
+43       \hyperlink{namespacemarian_1_1data_a901337b17eea9c054bbf11a10254bd7b}{Example} ex = \{features[i], labels[i]\};
+44       \hyperlink{classmarian_1_1data_1_1Dataset_a6d4b73b53b23369c49225d3d913a499a}{examples\_}.emplace\_back(ex);
+45     \}
+46   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d07/classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d7/d07/classmarian_1_1data_1_1MNIST_a5e3526d45ba1bac24092e77e293a7173_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!Read\+Images@{Read\+Images}}
+\index{Read\+Images@{Read\+Images}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{Read\+Images(const std\+::string \&full\+\_\+path)}{ReadImages(const std::string &full_path)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Data}$>$ marian\+::data\+::\+M\+N\+I\+S\+T\+::\+Read\+Images (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+\_\+path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137}{}\label{classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137}
+
+
+Definition at line 58 of file examples/mnist/dataset.\+h.
+
+
+\begin{DoxyCode}
+58                                                          \{
+59     std::ifstream file(full\_path);
+60     UTIL\_THROW\_IF2(!file.is\_open(), \textcolor{stringliteral}{"Cannot open file `"} + full\_path + \textcolor{stringliteral}{"`!"});
+61 
+62     \textcolor{keywordtype}{int} magic\_number = 0;
+63     file.read((\textcolor{keywordtype}{char} *)&magic\_number, \textcolor{keyword}{sizeof}(magic\_number));
+64     magic\_number = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(magic\_number);
+65 
+66     UTIL\_THROW\_IF2(magic\_number != \hyperlink{classmarian_1_1data_1_1MNIST_ad57aae96aaef230ede91eadb4d2cbbb7}{IMAGE\_MAGIC\_NUMBER},
+67                    \textcolor{stringliteral}{"Invalid MNIST image file!"});
+68 
+69     \textcolor{keywordtype}{int} number\_of\_images;
+70     \textcolor{keywordtype}{int} n\_rows = 0;
+71     \textcolor{keywordtype}{int} n\_cols = 0;
+72 
+73     file.read((\textcolor{keywordtype}{char} *)&number\_of\_images, \textcolor{keyword}{sizeof}(number\_of\_images));
+74     number\_of\_images = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(number\_of\_images);
+75     file.read((\textcolor{keywordtype}{char} *)&n\_rows, \textcolor{keyword}{sizeof}(n\_rows));
+76     n\_rows = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(n\_rows);
+77     file.read((\textcolor{keywordtype}{char} *)&n\_cols, \textcolor{keyword}{sizeof}(n\_cols));
+78     n\_cols = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(n\_cols);
+79 
+80     \textcolor{keywordtype}{int} imgSize = n\_rows * n\_cols;
+81     std::vector<Data> dataset(number\_of\_images);
+82     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < number\_of\_images; ++i) \{
+83       dataset[i] = \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data}(imgSize, 0);
+84       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imgSize; j++) \{
+85         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} pixel = 0;
+86         file.read((\textcolor{keywordtype}{char} *)&pixel, \textcolor{keyword}{sizeof}(pixel));
+87         dataset[i][j] = pixel / 255.0f;
+88       \}
+89     \}
+90     \textcolor{keywordflow}{return} dataset;
+91   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d7/d07/classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d07/classmarian_1_1data_1_1MNIST_a632c9c300ce5389d27ce97e326571137_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!Read\+Labels@{Read\+Labels}}
+\index{Read\+Labels@{Read\+Labels}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{Read\+Labels(const std\+::string \&full\+\_\+path)}{ReadLabels(const std::string &full_path)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Data}$>$ marian\+::data\+::\+M\+N\+I\+S\+T\+::\+Read\+Labels (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+\_\+path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62}{}\label{classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62}
+
+
+Definition at line 93 of file examples/mnist/dataset.\+h.
+
+
+\begin{DoxyCode}
+93                                                          \{
+94     std::ifstream file(full\_path);
+95 
+96     \textcolor{keywordflow}{if}(!file.is\_open())
+97       \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"Cannot open file `"} + full\_path + \textcolor{stringliteral}{"`!"});
+98 
+99     \textcolor{keywordtype}{int} magic\_number = 0;
+100     file.read((\textcolor{keywordtype}{char} *)&magic\_number, \textcolor{keyword}{sizeof}(magic\_number));
+101     magic\_number = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(magic\_number);
+102 
+103     \textcolor{keywordflow}{if}(magic\_number != \hyperlink{classmarian_1_1data_1_1MNIST_a6c03087f0ab278cfdf5168985497135d}{LABEL\_MAGIC\_NUMBER})
+104       \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"Invalid MNIST label file!"});
+105 
+106     \textcolor{keywordtype}{int} number\_of\_labels;
+107     file.read((\textcolor{keywordtype}{char} *)&number\_of\_labels, \textcolor{keyword}{sizeof}(number\_of\_labels));
+108     number\_of\_labels = \hyperlink{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{reverseInt}(number\_of\_labels);
+109 
+110     std::vector<Data> dataset(number\_of\_labels);
+111     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < number\_of\_labels; i++) \{
+112       dataset[i] = \hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data}(1, 0.0f);
+113       \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} label;
+114       file.read((\textcolor{keywordtype}{char} *)&label, 1);
+115       dataset[i][0] = label;
+116     \}
+117 
+118     \textcolor{keywordflow}{return} dataset;
+119   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d7/d07/classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d07/classmarian_1_1data_1_1MNIST_a81c2e2ce98c2b3cfbe3f772900a74c62_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!reverse\+Int@{reverse\+Int}}
+\index{reverse\+Int@{reverse\+Int}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{reverse\+Int(int i)}{reverseInt(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::data\+::\+M\+N\+I\+S\+T\+::reverse\+Int (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}{}\label{classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88}
+
+
+Definition at line 51 of file examples/mnist/dataset.\+h.
+
+
+\begin{DoxyCode}
+51                         \{
+52     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} c1, c2, c3, c4;
+53     c1 = i & 255, c2 = (i >> 8) & 255, c3 = (i >> 16) & 255,
+54     c4 = (i >> 24) & 255;
+55     \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})c1 << 24) + ((\textcolor{keywordtype}{int})c2 << 16) + ((\textcolor{keywordtype}{int})c3 << 8) + c4;
+56   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d07/classmarian_1_1data_1_1MNIST_a631d1fd994e50776b4daf8c9853c0f88_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER@{I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}}
+\index{I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER@{I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}{IMAGE_MAGIC_NUMBER}}]{\setlength{\rightskip}{0pt plus 5cm}const int marian\+::data\+::\+M\+N\+I\+S\+T\+::\+I\+M\+A\+G\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_ad57aae96aaef230ede91eadb4d2cbbb7}{}\label{classmarian_1_1data_1_1MNIST_ad57aae96aaef230ede91eadb4d2cbbb7}
+
+
+Definition at line 22 of file examples/mnist/dataset.\+h.
+
+\index{marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}!L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER@{L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}}
+\index{L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER@{L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}!marian\+::data\+::\+M\+N\+I\+ST@{marian\+::data\+::\+M\+N\+I\+ST}}
+\subsubsection[{\texorpdfstring{L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER}{LABEL_MAGIC_NUMBER}}]{\setlength{\rightskip}{0pt plus 5cm}const int marian\+::data\+::\+M\+N\+I\+S\+T\+::\+L\+A\+B\+E\+L\+\_\+\+M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+ER\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1MNIST_a6c03087f0ab278cfdf5168985497135d}{}\label{classmarian_1_1data_1_1MNIST_a6c03087f0ab278cfdf5168985497135d}
+
+
+Definition at line 23 of file examples/mnist/dataset.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{examples_2mnist_2dataset_8h}{examples/mnist/dataset.\+h}\end{DoxyCompactItemize}

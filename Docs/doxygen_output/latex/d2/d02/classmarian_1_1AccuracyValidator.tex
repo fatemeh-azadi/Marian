@@ -1,0 +1,287 @@
+\hypertarget{classmarian_1_1AccuracyValidator}{}\section{marian\+:\+:Accuracy\+Validator$<$ Builder $>$ Class Template Reference}
+\label{classmarian_1_1AccuracyValidator}\index{marian\+::\+Accuracy\+Validator$<$ Builder $>$@{marian\+::\+Accuracy\+Validator$<$ Builder $>$}}
+
+
+{\ttfamily \#include $<$validator.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Accuracy\+Validator$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{de/d7a/classmarian_1_1AccuracyValidator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Accuracy\+Validator$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d1/d49/classmarian_1_1AccuracyValidator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1AccuracyValidator_a0b7a0fcb1137626593d5b063148591e5}{Accuracy\+Validator} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual void \hyperlink{classmarian_1_1AccuracyValidator_a163ff7773c7cab8b92e83aaffdb50c4d}{keep\+Best} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+bool \hyperlink{classmarian_1_1AccuracyValidator_a4e4275b89312ca08185d5479bcbb74b0}{lower\+Is\+Better} ()
+\item 
+std\+::string \hyperlink{classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \hyperlink{classmarian_1_1AccuracyValidator_a8e46df95f018d71172720c38e8b179b4}{validate\+BG} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchGenerator}{data\+::\+Batch\+Generator}$<$ \hyperlink{classmarian_1_1data_1_1MNIST}{data\+::\+M\+N\+I\+ST} $>$$>$ batch\+Generator)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classmarian_1_1AccuracyValidator_a8d6ee9daf8781fabfdb72daaaecff191}{count\+Correct} (const std\+::vector$<$ float $>$ \&probs, const std\+::vector$<$ float $>$ \&labels)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Builder $>$ \hyperlink{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}{builder\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Builder$>$\\*
+class marian\+::\+Accuracy\+Validator$<$ Builder $>$}
+
+
+
+Definition at line 15 of file examples/mnist/validator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!Accuracy\+Validator@{Accuracy\+Validator}}
+\index{Accuracy\+Validator@{Accuracy\+Validator}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{Accuracy\+Validator(\+Ptr$<$ Config $>$ options, Args...\+args)}{AccuracyValidator(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ template$<$class... Args$>$ {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::{\bf Accuracy\+Validator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1AccuracyValidator_a0b7a0fcb1137626593d5b063148591e5}{}\label{classmarian_1_1AccuracyValidator_a0b7a0fcb1137626593d5b063148591e5}
+
+
+Definition at line 21 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+22       : \hyperlink{classmarian_1_1Validator_a438455be8ec5c8e0158ad4d8586b6d51}{Validator}(std::vector<\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr<Vocab>}>(), options),
+23         \hyperlink{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}{builder\_}(New<Builder>(options, \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \textcolor{keyword}{true}, args...)) \{
+24     \hyperlink{classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f}{initLastBest}();
+25   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d02/classmarian_1_1AccuracyValidator_a0b7a0fcb1137626593d5b063148591e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!count\+Correct@{count\+Correct}}
+\index{count\+Correct@{count\+Correct}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{count\+Correct(const std\+::vector$<$ float $>$ \&probs, const std\+::vector$<$ float $>$ \&labels)}{countCorrect(const std::vector< float > &probs, const std::vector< float > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ float {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::count\+Correct (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$ \&}]{probs, }
+\item[{const std\+::vector$<$ float $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AccuracyValidator_a8d6ee9daf8781fabfdb72daaaecff191}{}\label{classmarian_1_1AccuracyValidator_a8d6ee9daf8781fabfdb72daaaecff191}
+
+
+Definition at line 59 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+60                                                      \{
+61     \textcolor{keywordtype}{size\_t} numLabels = probs.size() / labels.size();
+62     \textcolor{keywordtype}{float} numCorrect = 0;
+63     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < probs.size(); i += numLabels) \{
+64       \textcolor{keyword}{auto} pred = std::distance(
+65           probs.begin() + i,
+66           std::max\_element(probs.begin() + i, probs.begin() + i + numLabels));
+67       \textcolor{keywordflow}{if}(pred == labels[i / numLabels])
+68         ++numCorrect;
+69     \}
+70     \textcolor{keywordflow}{return} numCorrect;
+71   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d02/classmarian_1_1AccuracyValidator_a8d6ee9daf8781fabfdb72daaaecff191_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!keep\+Best@{keep\+Best}}
+\index{keep\+Best@{keep\+Best}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{keep\+Best(\+Ptr$<$ Expression\+Graph $>$ graph)}{keepBest(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual void {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::keep\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AccuracyValidator_a163ff7773c7cab8b92e83aaffdb50c4d}{}\label{classmarian_1_1AccuracyValidator_a163ff7773c7cab8b92e83aaffdb50c4d}
+
+
+Implements \hyperlink{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}{marian\+::\+Validator$<$ data\+::\+M\+N\+I\+S\+T $>$}.
+
+
+
+Definition at line 27 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+27                                                     \{
+28     \textcolor{keyword}{auto} model = \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+29     \hyperlink{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}{builder\_}->save(graph, model + \textcolor{stringliteral}{".best-"} + \hyperlink{classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c}{type}() + \textcolor{stringliteral}{".npz"}, \textcolor{keyword}{true});
+30   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d02/classmarian_1_1AccuracyValidator_a163ff7773c7cab8b92e83aaffdb50c4d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!lower\+Is\+Better@{lower\+Is\+Better}}
+\index{lower\+Is\+Better@{lower\+Is\+Better}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{lower\+Is\+Better()}{lowerIsBetter()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ bool {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::lower\+Is\+Better (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AccuracyValidator_a4e4275b89312ca08185d5479bcbb74b0}{}\label{classmarian_1_1AccuracyValidator_a4e4275b89312ca08185d5479bcbb74b0}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{marian\+::\+Validator$<$ data\+::\+M\+N\+I\+S\+T $>$}.
+
+
+
+Definition at line 32 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+32 \{ \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!type@{type}}
+\index{type@{type}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::string {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c}{}\label{classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c}
+
+
+Implements \hyperlink{classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0}{marian\+::\+Validator$<$ data\+::\+M\+N\+I\+S\+T $>$}.
+
+
+
+Definition at line 34 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+34 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"accuracy"}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d02/classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!validate\+BG@{validate\+BG}}
+\index{validate\+BG@{validate\+BG}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{validate\+B\+G(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Batch\+Generator$<$ data\+::\+M\+N\+I\+S\+T $>$$>$ batch\+Generator)}{validateBG(Ptr< ExpressionGraph > graph, Ptr< data::BatchGenerator< data::MNIST >> batchGenerator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual float {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::validate\+BG (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch\+Generator}$<$ {\bf data\+::\+M\+N\+I\+ST} $>$$>$}]{batch\+Generator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AccuracyValidator_a8e46df95f018d71172720c38e8b179b4}{}\label{classmarian_1_1AccuracyValidator_a8e46df95f018d71172720c38e8b179b4}
+
+
+Implements \hyperlink{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}{marian\+::\+Validator$<$ data\+::\+M\+N\+I\+S\+T $>$}.
+
+
+
+Definition at line 37 of file examples/mnist/validator.\+h.
+
+
+\begin{DoxyCode}
+39                                                          \{
+40     \textcolor{keywordtype}{float} correct = 0;
+41     \textcolor{keywordtype}{size\_t} samples = 0;
+42 
+43     \textcolor{keywordflow}{while}(*batchGenerator) \{
+44       \textcolor{keyword}{auto} batch = batchGenerator->next();
+45       \textcolor{keyword}{auto} probs = \hyperlink{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}{builder\_}->build(graph, batch);
+46       graph->forward();
+47 
+48       std::vector<float> scores;
+49       probs->val()->get(scores);
+50 
+51       correct += \hyperlink{classmarian_1_1AccuracyValidator_a8d6ee9daf8781fabfdb72daaaecff191}{countCorrect}(scores, batch->labels());
+52       samples += batch->size();
+53     \}
+54 
+55     \textcolor{keywordflow}{return} correct / float(samples);
+56   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d02/classmarian_1_1AccuracyValidator_a8e46df95f018d71172720c38e8b179b4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}!builder\+\_\+@{builder\+\_\+}}
+\index{builder\+\_\+@{builder\+\_\+}!marian\+::\+Accuracy\+Validator@{marian\+::\+Accuracy\+Validator}}
+\subsubsection[{\texorpdfstring{builder\+\_\+}{builder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<$Builder$>$ {\bf marian\+::\+Accuracy\+Validator}$<$ Builder $>$\+::builder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}{}\label{classmarian_1_1AccuracyValidator_a59e125240f227510422cb36e315d242c}
+
+
+Definition at line 17 of file examples/mnist/validator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{examples_2mnist_2validator_8h}{examples/mnist/validator.\+h}\end{DoxyCompactItemize}

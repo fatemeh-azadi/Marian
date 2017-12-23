@@ -1,0 +1,202 @@
+\hypertarget{classmarian_1_1EncoderState}{}\section{marian\+:\+:Encoder\+State Class Reference}
+\label{classmarian_1_1EncoderState}\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+
+
+{\ttfamily \#include $<$states.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dad/classmarian_1_1EncoderState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{d6/d82/classmarian_1_1EncoderState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1EncoderState_ac0886e5123196f081f05b4b56ec2c609}{Encoder\+State} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} context, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+\hyperlink{classmarian_1_1EncoderState_a2ec499c3eb57a47ad2f951e5ea4621b9}{Encoder\+State} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderState_a35888943fb53059c7b524b3b011d7a0c}{get\+Context} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderState_a00f8d237ecedfae174695526969e590a}{get\+Attended} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderState_a5ae25950692389c47b4035ebcae4725e}{get\+Mask} ()
+\item 
+virtual const std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{classmarian_1_1EncoderState_a21e65549359c321ee7874e56ca04405b}{get\+Source\+Words} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}{context\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderState_ade7acc9bb0a4f60b298fc93d0c786abb}{mask\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ \hyperlink{classmarian_1_1EncoderState_a3b4d9affb9f1a1c4aab541276784fc81}{batch\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file states.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!Encoder\+State@{Encoder\+State}}
+\index{Encoder\+State@{Encoder\+State}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{Encoder\+State(\+Expr context, Expr mask, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{EncoderState(Expr context, Expr mask, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Encoder\+State\+::\+Encoder\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{context, }
+\item[{{\bf Expr}}]{mask, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderState_ac0886e5123196f081f05b4b56ec2c609}{}\label{classmarian_1_1EncoderState_ac0886e5123196f081f05b4b56ec2c609}
+
+
+Definition at line 17 of file states.\+h.
+
+
+\begin{DoxyCode}
+18       : \hyperlink{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}{context\_}(context), \hyperlink{classmarian_1_1EncoderState_ade7acc9bb0a4f60b298fc93d0c786abb}{mask\_}(\hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}), \hyperlink{classmarian_1_1EncoderState_a3b4d9affb9f1a1c4aab541276784fc81}{batch\_}(batch) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!Encoder\+State@{Encoder\+State}}
+\index{Encoder\+State@{Encoder\+State}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{Encoder\+State()}{EncoderState()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Encoder\+State\+::\+Encoder\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderState_a2ec499c3eb57a47ad2f951e5ea4621b9}{}\label{classmarian_1_1EncoderState_a2ec499c3eb57a47ad2f951e5ea4621b9}
+
+
+Definition at line 20 of file states.\+h.
+
+
+\begin{DoxyCode}
+20 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!get\+Attended@{get\+Attended}}
+\index{get\+Attended@{get\+Attended}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Attended()}{getAttended()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+::get\+Attended (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderState_a00f8d237ecedfae174695526969e590a}{}\label{classmarian_1_1EncoderState_a00f8d237ecedfae174695526969e590a}
+
+
+Reimplemented in \hyperlink{classmarian_1_1EncoderStatePooling_aac79a7a0a281bd88b50cafd278802a22}{marian\+::\+Encoder\+State\+Pooling}.
+
+
+
+Definition at line 23 of file states.\+h.
+
+
+\begin{DoxyCode}
+23 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}{context\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!get\+Context@{get\+Context}}
+\index{get\+Context@{get\+Context}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Context()}{getContext()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+::get\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderState_a35888943fb53059c7b524b3b011d7a0c}{}\label{classmarian_1_1EncoderState_a35888943fb53059c7b524b3b011d7a0c}
+
+
+Reimplemented in \hyperlink{classmarian_1_1EncoderStatePooling_ab870704b9a38d6917a1e8b365978e36e}{marian\+::\+Encoder\+State\+Pooling}, and \hyperlink{structmarian_1_1EncoderStateMultiS2S_a933874098a2871c61fc8cacff4227cd5}{marian\+::\+Encoder\+State\+Multi\+S2S}.
+
+
+
+Definition at line 22 of file states.\+h.
+
+
+\begin{DoxyCode}
+22 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}{context\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!get\+Mask@{get\+Mask}}
+\index{get\+Mask@{get\+Mask}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Mask()}{getMask()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+::get\+Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderState_a5ae25950692389c47b4035ebcae4725e}{}\label{classmarian_1_1EncoderState_a5ae25950692389c47b4035ebcae4725e}
+
+
+Reimplemented in \hyperlink{classmarian_1_1EncoderStatePooling_ace601efa11aebfbd545a094d1fb222e9}{marian\+::\+Encoder\+State\+Pooling}, and \hyperlink{structmarian_1_1EncoderStateMultiS2S_aa7285285787ab6c8893a1a21697472e7}{marian\+::\+Encoder\+State\+Multi\+S2S}.
+
+
+
+Definition at line 24 of file states.\+h.
+
+
+\begin{DoxyCode}
+24 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderState_ade7acc9bb0a4f60b298fc93d0c786abb}{mask\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!get\+Source\+Words@{get\+Source\+Words}}
+\index{get\+Source\+Words@{get\+Source\+Words}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{get\+Source\+Words()}{getSourceWords()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::vector$<$size\+\_\+t$>$\& marian\+::\+Encoder\+State\+::get\+Source\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderState_a21e65549359c321ee7874e56ca04405b}{}\label{classmarian_1_1EncoderState_a21e65549359c321ee7874e56ca04405b}
+
+
+Reimplemented in \hyperlink{classmarian_1_1EncoderStatePooling_abf81ac7384016df3846fb56d12c0ec05}{marian\+::\+Encoder\+State\+Pooling}, and \hyperlink{structmarian_1_1EncoderStateMultiS2S_aef6388ca4d0187cc586d0198d136c618}{marian\+::\+Encoder\+State\+Multi\+S2S}.
+
+
+
+Definition at line 26 of file states.\+h.
+
+
+\begin{DoxyCode}
+26                                                     \{
+27     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderState_a3b4d9affb9f1a1c4aab541276784fc81}{batch\_}->front()->indices();
+28   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!batch\+\_\+@{batch\+\_\+}}
+\index{batch\+\_\+@{batch\+\_\+}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{batch\+\_\+}{batch_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf data\+::\+Corpus\+Batch}$>$ marian\+::\+Encoder\+State\+::batch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderState_a3b4d9affb9f1a1c4aab541276784fc81}{}\label{classmarian_1_1EncoderState_a3b4d9affb9f1a1c4aab541276784fc81}
+
+
+Definition at line 14 of file states.\+h.
+
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!context\+\_\+@{context\+\_\+}}
+\index{context\+\_\+@{context\+\_\+}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{context\+\_\+}{context_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+State\+::context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}{}\label{classmarian_1_1EncoderState_a90dbe742e85a1a406d26a4fd5ebac856}
+
+
+Definition at line 12 of file states.\+h.
+
+\index{marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}!mask\+\_\+@{mask\+\_\+}}
+\index{mask\+\_\+@{mask\+\_\+}!marian\+::\+Encoder\+State@{marian\+::\+Encoder\+State}}
+\subsubsection[{\texorpdfstring{mask\+\_\+}{mask_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+State\+::mask\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderState_ade7acc9bb0a4f60b298fc93d0c786abb}{}\label{classmarian_1_1EncoderState_ade7acc9bb0a4f60b298fc93d0c786abb}
+
+
+Definition at line 13 of file states.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{states_8h}{states.\+h}\end{DoxyCompactItemize}

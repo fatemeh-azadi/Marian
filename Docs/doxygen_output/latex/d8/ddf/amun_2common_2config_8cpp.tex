@@ -1,0 +1,85 @@
+\hypertarget{amun_2common_2config_8cpp}{}\section{config.\+cpp File Reference}
+\label{amun_2common_2config_8cpp}\index{config.\+cpp@{config.\+cpp}}
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/file\+\_\+stream.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/git\+\_\+version.\+h\char`\"{}}\\*
+Include dependency graph for amun/common/config.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dc0/amun_2common_2config_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}(key,  type)
+\item 
+\#define \hyperlink{amun_2common_2config_8cpp_a662e89992591378e43abcff938a17669}{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}(key,  type)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{amunmt\+::\+Process\+Paths} (Y\+A\+M\+L\+::\+Node \&node, const boost\+::filesystem\+::path \&config\+Path, bool is\+Path)
+\item 
+void \hyperlink{namespaceamunmt_a223f2f561452f574093618cd336c43de}{amunmt\+::\+Overwrite\+Models} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&model\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a}{amunmt\+::\+Overwrite\+Source\+Vocabs} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&source\+Vocab\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3}{amunmt\+::\+Overwrite\+Target\+Vocab} (Y\+A\+M\+L\+::\+Node \&config, std\+::string \&target\+Vocab\+Path)
+\item 
+void \hyperlink{namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18}{amunmt\+::\+Overwrite\+B\+PE} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&bpe\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067}{amunmt\+::\+Validate} (const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+void \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{amunmt\+::\+Output\+Rec} (const Y\+A\+M\+L\+::\+Node node, Y\+A\+M\+L\+::\+Emitter \&out)
+\item 
+void \hyperlink{namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2}{amunmt\+::\+Load\+Weights} (Y\+A\+M\+L\+::\+Node \&config, const std\+::string \&path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{amun/common/config.\+cpp@{amun/common/config.\+cpp}!S\+E\+T\+\_\+\+O\+P\+T\+I\+ON@{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}}
+\index{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON@{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}!amun/common/config.\+cpp@{amun/common/config.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}{SET_OPTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+O\+P\+T\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{key, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{}\label{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \textcolor{keywordflow}{if}(!vm\_[key].defaulted() || !config\_[key]) \{ \(\backslash\)
+  config\_[key] = vm\_[key].as<type>(); \(\backslash\)
+\}\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 10 of file amun/common/config.\+cpp.
+
+\index{amun/common/config.\+cpp@{amun/common/config.\+cpp}!S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT@{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}}
+\index{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT@{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}!amun/common/config.\+cpp@{amun/common/config.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}{SET_OPTION_NONDEFAULT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT(
+\begin{DoxyParamCaption}
+\item[{}]{key, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{amun_2common_2config_8cpp_a662e89992591378e43abcff938a17669}{}\label{amun_2common_2config_8cpp_a662e89992591378e43abcff938a17669}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \textcolor{keywordflow}{if}(vm\_.count(key) > 0) \{ \(\backslash\)
+  config\_[key] = vm\_[key].as<type>(); \(\backslash\)
+\}\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 15 of file amun/common/config.\+cpp.
+

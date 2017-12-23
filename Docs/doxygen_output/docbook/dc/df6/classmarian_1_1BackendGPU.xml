@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/df6/classmarian_1_1BackendGPU">
+<title>marian::BackendGPU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/da6/backend__gpu_8h">&lt;backend_gpu.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::BackendGPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d53/classmarian_1_1BackendGPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::BackendGPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d23/classmarian_1_1BackendGPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cublasHandle_t cublasHandle_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>curandGenerator_t curandGenerator_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/df6/classmarian_1_1BackendGPU_1adf0609049c6b7cea424fee23f789bc52">setDevice</link> (
+size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/df6/classmarian_1_1BackendGPU_1a2cdac5f8db383a13f1dadd92739362d9">setHandles</link> (
+size_t device, size_t seed)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cublasHandle_t <link linkend="dc/df6/classmarian_1_1BackendGPU_1a49fb5580e176ef2e794772d1904458f9">getCublasHandle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>curandGenerator_t <link linkend="dc/df6/classmarian_1_1BackendGPU_1a0070cdc52a18b15942a911a2f774bd04">getCurandGenerator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>curandGenerator_t <link linkend="dc/df6/classmarian_1_1BackendGPU_1a47ba8ab67609328e2ac7239f96776c52">createCurandGenerator</link> (
+size_t device, size_t seed)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cublasHandle_t <link linkend="dc/df6/classmarian_1_1BackendGPU_1a48b75aa1fb526adafaaad99281518d08">create_handle</link> (
+size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1adf0609049c6b7cea424fee23f789bc52">
+                <title>void marian::BackendGPU::setDevice (size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1a2cdac5f8db383a13f1dadd92739362d9">
+                <title>void marian::BackendGPU::setHandles (size_t device, size_t seed)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1a49fb5580e176ef2e794772d1904458f9">
+                <title>cublasHandle_t marian::BackendGPU::getCublasHandle ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1a0070cdc52a18b15942a911a2f774bd04">
+                <title>curandGenerator_t marian::BackendGPU::getCurandGenerator ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1a47ba8ab67609328e2ac7239f96776c52">
+                <title>curandGenerator_t marian::BackendGPU::createCurandGenerator (size_t device, size_t seed)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/df6/classmarian_1_1BackendGPU_1a48b75aa1fb526adafaaad99281518d08">
+                <title>cublasHandle_t marian::BackendGPU::create_handle (size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

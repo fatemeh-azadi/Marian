@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/de4/namespacemarian_1_1mlp">
+<title>marian::mlp</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory">marian::mlp::DenseFactory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory">marian::mlp::LayerFactory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d36/classmarian_1_1mlp_1_1MLP">marian::mlp::MLP</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory">marian::mlp::MLPFactory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72">act</link> {
+<link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72a9a932b3cb396238423eb2f33ec17d6aa">linear</link>,
+<link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4">tanh</link>,
+<link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72a79130f0e17bb058f015320f691eeb3dc">logit</link>,
+<link linkend="dd/de4/namespacemarian_1_1mlp_1ac16d27a877d16d7394f2057aee439d72add10d919fa85cf27fc78c0e06fe0b378">ReLU</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory">DenseFactory</link> &gt;  <link linkend="dd/de4/namespacemarian_1_1mlp_1a8c25b1e343bf78e66cd9e33e607efeb5">dense</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="d7/d3a/classmarian_1_1mlp_1_1MLPFactory">MLPFactory</link> &gt;  <link linkend="dd/de4/namespacemarian_1_1mlp_1a4d0fe240d31bdc33bcbdb5401de49e27">mlp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

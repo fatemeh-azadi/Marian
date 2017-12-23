@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d14/classmarian_1_1MultiHardSoftAtt">
+<title>marian::MultiHardSoftAtt class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d82/hardatt_8h">&lt;hardatt.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultiHardSoftAtt</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d3b/classmarian_1_1MultiHardSoftAtt__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultiHardSoftAtt</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d7b/classmarian_1_1MultiHardSoftAtt__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d14/classmarian_1_1MultiHardSoftAtt_1a167619c33071c8a8fd556f63775605c5">MultiHardSoftAtt</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/d14/classmarian_1_1MultiHardSoftAtt_1a167619c33071c8a8fd556f63775605c5">
+                <title>marian::MultiHardSoftAtt::MultiHardSoftAtt (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

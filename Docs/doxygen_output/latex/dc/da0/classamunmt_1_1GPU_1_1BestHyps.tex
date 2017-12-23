@@ -1,0 +1,199 @@
+\hypertarget{classamunmt_1_1GPU_1_1BestHyps}{}\section{amunmt\+:\+:G\+PU\+:\+:Best\+Hyps Class Reference}
+\label{classamunmt_1_1GPU_1_1BestHyps}\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+
+
+{\ttfamily \#include $<$best\+\_\+hyps.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Best\+Hyps\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{de/d4b/classamunmt_1_1GPU_1_1BestHyps__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Best\+Hyps\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da8/classamunmt_1_1GPU_1_1BestHyps__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1BestHyps_a87d08291596f0ae319fb600db3cd4638}{Best\+Hyps} (const \hyperlink{classamunmt_1_1GPU_1_1BestHyps}{Best\+Hyps} \&copy)=delete
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1BestHyps_a04e8f72a3150817f37d892b2d760e53a}{Best\+Hyps} (const \hyperlink{classamunmt_1_1God}{God} \&god)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a91cb3ebd6db26f6bc705f4cc360497bf}{Dis\+Allow\+U\+NK} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Prob)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a90f017291d4cd694bd9d55e3392f390c}{Find\+Bests} (const std\+::vector$<$ uint $>$ \&beam\+Sizes, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First)
+\item 
+std\+::vector$<$ \hyperlink{soft__alignment_8h_a875ec1de0fda25e65d972952540246ff}{Soft\+Alignment\+Ptr} $>$ \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a2675e6f24c466b304a16f6d945d68e40}{Get\+Alignments} (const std\+::vector$<$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr} $>$ \&scorers, size\+\_\+t hyp\+Index)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_aada8fcf38e61fd1ce649432cb45376d9}{Calc\+Beam} (const \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&prev\+Hyps, const std\+::vector$<$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr} $>$ \&scorers, const \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \&filter\+Indices, std\+::vector$<$ \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} $>$ \&beams, std\+::vector$<$ uint $>$ \&beam\+Sizes)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a5da6d49b0626b8935bafcd8666f5f9c0}{Find\+Bests} (const std\+::vector$<$ uint $>$ \&beam\+Sizes, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Probs, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} $>$ \&n\+Best, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a9faea39d64a777b66e524190e8dc57ae}{get\+N\+Best\+List} (const std\+::vector$<$ uint $>$ \&beam\+Sizes, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Probs, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} $>$ \&n\+Best, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ uint $>$ \&out\+Keys, const bool is\+First=false) const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a19a16e9b1c3bb808eed3014058e2bad8}{Get\+Pairs} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} $>$ \&n\+Best, std\+::vector$<$ uint $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1NthElement}{Nth\+Element} $>$ \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a995703d0b8ddcbf445d59c6b20b794b7}{nth\+Element\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ unsigned $>$ \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a0208d7c0fa0130e0466f4180c6a691e8}{keys\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ float $>$ \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a6e995c778cdfdd7fcec7ed83fa66e0f7}{costs\+\_\+}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1BestHyps_a76edd802101677a575af499aab958722}{max\+Beam\+Size\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file best\+\_\+hyps.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Best\+Hyps@{Best\+Hyps}}
+\index{Best\+Hyps@{Best\+Hyps}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Best\+Hyps(const Best\+Hyps \&copy)=delete}{BestHyps(const BestHyps &copy)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Best\+Hyps (
+\begin{DoxyParamCaption}
+\item[{const {\bf Best\+Hyps} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a87d08291596f0ae319fb600db3cd4638}{}\label{classamunmt_1_1GPU_1_1BestHyps_a87d08291596f0ae319fb600db3cd4638}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Best\+Hyps@{Best\+Hyps}}
+\index{Best\+Hyps@{Best\+Hyps}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Best\+Hyps(const God \&god)}{BestHyps(const God &god)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Best\+Hyps (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a04e8f72a3150817f37d892b2d760e53a}{}\label{classamunmt_1_1GPU_1_1BestHyps_a04e8f72a3150817f37d892b2d760e53a}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Calc\+Beam@{Calc\+Beam}}
+\index{Calc\+Beam@{Calc\+Beam}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Calc\+Beam(const Beam \&prev\+Hyps, const std\+::vector$<$ Scorer\+Ptr $>$ \&scorers, const Words \&filter\+Indices, std\+::vector$<$ Beam $>$ \&beams, std\+::vector$<$ uint $>$ \&beam\+Sizes)}{CalcBeam(const Beam &prevHyps, const std::vector< ScorerPtr > &scorers, const Words &filterIndices, std::vector< Beam > &beams, std::vector< uint > &beamSizes)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Calc\+Beam (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{prev\+Hyps, }
+\item[{const std\+::vector$<$ {\bf Scorer\+Ptr} $>$ \&}]{scorers, }
+\item[{const {\bf Words} \&}]{filter\+Indices, }
+\item[{std\+::vector$<$ {\bf Beam} $>$ \&}]{beams, }
+\item[{std\+::vector$<$ uint $>$ \&}]{beam\+Sizes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_aada8fcf38e61fd1ce649432cb45376d9}{}\label{classamunmt_1_1GPU_1_1BestHyps_aada8fcf38e61fd1ce649432cb45376d9}
+
+
+Implements \hyperlink{classamunmt_1_1BestHypsBase_aa96754b7043e0214480b5010f11676eb}{amunmt\+::\+Best\+Hyps\+Base}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Dis\+Allow\+U\+NK@{Dis\+Allow\+U\+NK}}
+\index{Dis\+Allow\+U\+NK@{Dis\+Allow\+U\+NK}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Dis\+Allow\+U\+N\+K(mblas\+::\+Matrix \&\+Prob)}{DisAllowUNK(mblas::Matrix &Prob)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Dis\+Allow\+U\+NK (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Prob}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a91cb3ebd6db26f6bc705f4cc360497bf}{}\label{classamunmt_1_1GPU_1_1BestHyps_a91cb3ebd6db26f6bc705f4cc360497bf}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Find\+Bests@{Find\+Bests}}
+\index{Find\+Bests@{Find\+Bests}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Find\+Bests(const std\+::vector$<$ uint $>$ \&beam\+Sizes, mblas\+::\+Matrix \&\+Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First)}{FindBests(const std::vector< uint > &beamSizes, mblas::Matrix &Probs, std::vector< float > &outCosts, std::vector< unsigned > &outKeys, const bool isFirst)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Find\+Bests (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{{\bf mblas\+::\+Matrix} \&}]{Probs, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Costs, }
+\item[{std\+::vector$<$ unsigned $>$ \&}]{out\+Keys, }
+\item[{const bool}]{is\+First}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a90f017291d4cd694bd9d55e3392f390c}{}\label{classamunmt_1_1GPU_1_1BestHyps_a90f017291d4cd694bd9d55e3392f390c}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Find\+Bests@{Find\+Bests}}
+\index{Find\+Bests@{Find\+Bests}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Find\+Bests(const std\+::vector$<$ uint $>$ \&beam\+Sizes, mblas\+::\+Matrix \&\+Probs, mblas\+::\+Array$<$ Nth\+Out\+Batch $>$ \&n\+Best, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First)}{FindBests(const std::vector< uint > &beamSizes, mblas::Matrix &Probs, mblas::Array< NthOutBatch > &nBest, std::vector< float > &outCosts, std::vector< unsigned > &outKeys, const bool isFirst)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Find\+Bests (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{{\bf mblas\+::\+Matrix} \&}]{Probs, }
+\item[{{\bf mblas\+::\+Array}$<$ {\bf Nth\+Out\+Batch} $>$ \&}]{n\+Best, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Costs, }
+\item[{std\+::vector$<$ unsigned $>$ \&}]{out\+Keys, }
+\item[{const bool}]{is\+First}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a5da6d49b0626b8935bafcd8666f5f9c0}{}\label{classamunmt_1_1GPU_1_1BestHyps_a5da6d49b0626b8935bafcd8666f5f9c0}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Get\+Alignments@{Get\+Alignments}}
+\index{Get\+Alignments@{Get\+Alignments}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Get\+Alignments(const std\+::vector$<$ Scorer\+Ptr $>$ \&scorers, size\+\_\+t hyp\+Index)}{GetAlignments(const std::vector< ScorerPtr > &scorers, size_t hypIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Soft\+Alignment\+Ptr}$>$ amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Get\+Alignments (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Scorer\+Ptr} $>$ \&}]{scorers, }
+\item[{size\+\_\+t}]{hyp\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a2675e6f24c466b304a16f6d945d68e40}{}\label{classamunmt_1_1GPU_1_1BestHyps_a2675e6f24c466b304a16f6d945d68e40}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!get\+N\+Best\+List@{get\+N\+Best\+List}}
+\index{get\+N\+Best\+List@{get\+N\+Best\+List}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{get\+N\+Best\+List(const std\+::vector$<$ uint $>$ \&beam\+Sizes, mblas\+::\+Matrix \&\+Probs, mblas\+::\+Array$<$ Nth\+Out\+Batch $>$ \&n\+Best, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ uint $>$ \&out\+Keys, const bool is\+First=false) const }{getNBestList(const std::vector< uint > &beamSizes, mblas::Matrix &Probs, mblas::Array< NthOutBatch > &nBest, std::vector< float > &outCosts, std::vector< uint > &outKeys, const bool isFirst=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::get\+N\+Best\+List (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{{\bf mblas\+::\+Matrix} \&}]{Probs, }
+\item[{{\bf mblas\+::\+Array}$<$ {\bf Nth\+Out\+Batch} $>$ \&}]{n\+Best, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Costs, }
+\item[{std\+::vector$<$ uint $>$ \&}]{out\+Keys, }
+\item[{const bool}]{is\+First = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a9faea39d64a777b66e524190e8dc57ae}{}\label{classamunmt_1_1GPU_1_1BestHyps_a9faea39d64a777b66e524190e8dc57ae}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!Get\+Pairs@{Get\+Pairs}}
+\index{Get\+Pairs@{Get\+Pairs}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{Get\+Pairs(mblas\+::\+Array$<$ Nth\+Out\+Batch $>$ \&n\+Best, std\+::vector$<$ uint $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values) const }{GetPairs(mblas::Array< NthOutBatch > &nBest, std::vector< uint > &outKeys, std::vector< float > &outValues) const }}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::\+Get\+Pairs (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Array}$<$ {\bf Nth\+Out\+Batch} $>$ \&}]{n\+Best, }
+\item[{std\+::vector$<$ uint $>$ \&}]{out\+Keys, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Values}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a19a16e9b1c3bb808eed3014058e2bad8}{}\label{classamunmt_1_1GPU_1_1BestHyps_a19a16e9b1c3bb808eed3014058e2bad8}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!costs\+\_\+@{costs\+\_\+}}
+\index{costs\+\_\+@{costs\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{costs\+\_\+}{costs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+Array}$<$float$>$ amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::costs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a6e995c778cdfdd7fcec7ed83fa66e0f7}{}\label{classamunmt_1_1GPU_1_1BestHyps_a6e995c778cdfdd7fcec7ed83fa66e0f7}
+
+
+Definition at line 47 of file best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!keys\+\_\+@{keys\+\_\+}}
+\index{keys\+\_\+@{keys\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{keys\+\_\+}{keys_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+Array}$<$unsigned$>$ amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::keys\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a0208d7c0fa0130e0466f4180c6a691e8}{}\label{classamunmt_1_1GPU_1_1BestHyps_a0208d7c0fa0130e0466f4180c6a691e8}
+
+
+Definition at line 46 of file best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}}
+\index{max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{max\+Beam\+Size\+\_\+}{maxBeamSize_}}]{\setlength{\rightskip}{0pt plus 5cm}uint amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::max\+Beam\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a76edd802101677a575af499aab958722}{}\label{classamunmt_1_1GPU_1_1BestHyps_a76edd802101677a575af499aab958722}
+
+
+Definition at line 48 of file best\+\_\+hyps.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}!nth\+Element\+\_\+@{nth\+Element\+\_\+}}
+\index{nth\+Element\+\_\+@{nth\+Element\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Best\+Hyps@{amunmt\+::\+G\+P\+U\+::\+Best\+Hyps}}
+\subsubsection[{\texorpdfstring{nth\+Element\+\_\+}{nthElement_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Nth\+Element}$>$ amunmt\+::\+G\+P\+U\+::\+Best\+Hyps\+::nth\+Element\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1BestHyps_a995703d0b8ddcbf445d59c6b20b794b7}{}\label{classamunmt_1_1GPU_1_1BestHyps_a995703d0b8ddcbf445d59c6b20b794b7}
+
+
+Definition at line 45 of file best\+\_\+hyps.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{best__hyps_8h}{best\+\_\+hyps.\+h}\end{DoxyCompactItemize}

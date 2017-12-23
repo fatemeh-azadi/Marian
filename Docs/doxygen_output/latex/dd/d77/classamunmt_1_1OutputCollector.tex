@@ -1,0 +1,193 @@
+\hypertarget{classamunmt_1_1OutputCollector}{}\section{amunmt\+:\+:Output\+Collector Class Reference}
+\label{classamunmt_1_1OutputCollector}\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+
+
+{\ttfamily \#include $<$output\+\_\+collector.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Output\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/dbd/classamunmt_1_1OutputCollector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1OutputCollector_aff8aab7c57db78cb5163ed7d0ddd0665}{Output\+Collector} ()
+\item 
+\hyperlink{classamunmt_1_1OutputCollector_a2466ebd7eca86fbe9ae073f2d7f45d98}{Output\+Collector} (const \hyperlink{classamunmt_1_1OutputCollector}{Output\+Collector} \&)=delete
+\item 
+void \hyperlink{classamunmt_1_1OutputCollector_a29dd85f80126c091b4a476ad1ab5751b}{Write} (long source\+Id, const std\+::string \&output)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ long, std\+::string $>$ \hyperlink{classamunmt_1_1OutputCollector_af13847c6e59173dcc7365b525b72ddf7}{Outputs}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream $\ast$ \hyperlink{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}{out\+Strm\+\_\+}
+\item 
+boost\+::mutex \hyperlink{classamunmt_1_1OutputCollector_a817d2d503109791aec798ea340d0dcbe}{mutex\+\_\+}
+\item 
+long \hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{next\+Id\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1OutputCollector_af13847c6e59173dcc7365b525b72ddf7}{Outputs} \hyperlink{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{outputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file amun/common/output\+\_\+collector.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!Outputs@{Outputs}}
+\index{Outputs@{Outputs}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Outputs}{Outputs}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$long, std\+::string$>$ {\bf amunmt\+::\+Output\+Collector\+::\+Outputs}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1OutputCollector_af13847c6e59173dcc7365b525b72ddf7}{}\label{classamunmt_1_1OutputCollector_af13847c6e59173dcc7365b525b72ddf7}
+
+
+Definition at line 22 of file amun/common/output\+\_\+collector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!Output\+Collector@{Output\+Collector}}
+\index{Output\+Collector@{Output\+Collector}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Output\+Collector()}{OutputCollector()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Output\+Collector\+::\+Output\+Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1OutputCollector_aff8aab7c57db78cb5163ed7d0ddd0665}{}\label{classamunmt_1_1OutputCollector_aff8aab7c57db78cb5163ed7d0ddd0665}
+
+
+Definition at line 9 of file amun/common/output\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+10  : \hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_}(0),
+11   \hyperlink{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}{outStrm\_}(&std::cout)
+12 \{
+13 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!Output\+Collector@{Output\+Collector}}
+\index{Output\+Collector@{Output\+Collector}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Output\+Collector(const Output\+Collector \&)=delete}{OutputCollector(const OutputCollector &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Output\+Collector\+::\+Output\+Collector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Output\+Collector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classamunmt_1_1OutputCollector_a2466ebd7eca86fbe9ae073f2d7f45d98}{}\label{classamunmt_1_1OutputCollector_a2466ebd7eca86fbe9ae073f2d7f45d98}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!Write@{Write}}
+\index{Write@{Write}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Write(long source\+Id, const std\+::string \&output)}{Write(long sourceId, const std::string &output)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Output\+Collector\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{long}]{source\+Id, }
+\item[{const std\+::string \&}]{output}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1OutputCollector_a29dd85f80126c091b4a476ad1ab5751b}{}\label{classamunmt_1_1OutputCollector_a29dd85f80126c091b4a476ad1ab5751b}
+
+
+Definition at line 15 of file amun/common/output\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+16 \{
+17   boost::mutex::scoped\_lock lock(\hyperlink{classamunmt_1_1OutputCollector_a817d2d503109791aec798ea340d0dcbe}{mutex\_});
+18   \textcolor{keywordflow}{if} (sourceId == \hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_}) \{
+19     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(progress)->info(\textcolor{stringliteral}{"Best translation \{\} : \{\}"}, sourceId, \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output});
+20     *\hyperlink{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}{outStrm\_} << \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output} << std::endl;
+21     
+22     ++\hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_};
+23 
+24     Outputs::const\_iterator iter, iterNext;
+25     iter = \hyperlink{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{outputs\_}.begin();
+26     \textcolor{keywordflow}{while} (iter != \hyperlink{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{outputs\_}.end()) \{
+27       \textcolor{keywordtype}{long} currId = iter->first;
+28 
+29       \textcolor{keywordflow}{if} (currId == \hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_}) \{
+30         \textcolor{comment}{// 1st element in the map is the next}
+31         \textcolor{keyword}{const} \textcolor{keywordtype}{string} &currOutput = iter->second;
+32         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(progress)->info(\textcolor{stringliteral}{"Best translation \{\} : \{\}"}, currId, currOutput);
+33         *\hyperlink{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}{outStrm\_} << currOutput << std::endl;
+34 
+35         ++\hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_};
+36 
+37         \textcolor{comment}{// delete current record, move iter on 1}
+38         iterNext = iter;
+39         ++iterNext;
+40         \hyperlink{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{outputs\_}.erase(iter);
+41         iter = iterNext;
+42       \}
+43       \textcolor{keywordflow}{else} \{
+44         \textcolor{comment}{// not the next. stop iterating}
+45         assert(\hyperlink{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{nextId\_} < currId);
+46         \textcolor{keywordflow}{break};
+47       \}
+48     \}
+49 
+50   \}
+51   \textcolor{keywordflow}{else} \{
+52     \textcolor{comment}{// save for later}
+53     \hyperlink{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{outputs\_}[sourceId] = \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+54   \}
+55 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d77/classamunmt_1_1OutputCollector_a29dd85f80126c091b4a476ad1ab5751b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{mutex\+\_\+}{mutex_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::mutex amunmt\+::\+Output\+Collector\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1OutputCollector_a817d2d503109791aec798ea340d0dcbe}{}\label{classamunmt_1_1OutputCollector_a817d2d503109791aec798ea340d0dcbe}
+
+
+Definition at line 19 of file amun/common/output\+\_\+collector.\+h.
+
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!next\+Id\+\_\+@{next\+Id\+\_\+}}
+\index{next\+Id\+\_\+@{next\+Id\+\_\+}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{next\+Id\+\_\+}{nextId_}}]{\setlength{\rightskip}{0pt plus 5cm}long amunmt\+::\+Output\+Collector\+::next\+Id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}{}\label{classamunmt_1_1OutputCollector_a32c7f6ee98058aa27f17e1816364fc2e}
+
+
+Definition at line 20 of file amun/common/output\+\_\+collector.\+h.
+
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!outputs\+\_\+@{outputs\+\_\+}}
+\index{outputs\+\_\+@{outputs\+\_\+}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{outputs\+\_\+}{outputs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Outputs} amunmt\+::\+Output\+Collector\+::outputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}{}\label{classamunmt_1_1OutputCollector_ac945f2d433081e2fc89f2915d46d1c20}
+
+
+Definition at line 23 of file amun/common/output\+\_\+collector.\+h.
+
+\index{amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}!out\+Strm\+\_\+@{out\+Strm\+\_\+}}
+\index{out\+Strm\+\_\+@{out\+Strm\+\_\+}!amunmt\+::\+Output\+Collector@{amunmt\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{out\+Strm\+\_\+}{outStrm_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream$\ast$ amunmt\+::\+Output\+Collector\+::out\+Strm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}{}\label{classamunmt_1_1OutputCollector_a77a2c3b366592e7bcebcdd167fccf28b}
+
+
+Definition at line 18 of file amun/common/output\+\_\+collector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2output__collector_8h}{amun/common/output\+\_\+collector.\+h}\item 
+\hyperlink{amun_2common_2output__collector_8cpp}{amun/common/output\+\_\+collector.\+cpp}\end{DoxyCompactItemize}

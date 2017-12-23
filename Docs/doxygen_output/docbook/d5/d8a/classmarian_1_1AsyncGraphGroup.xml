@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup">
+<title>marian::AsyncGraphGroup class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d9d/graph__group_8h">&lt;graph_group.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::AsyncGraphGroup</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dbc/classmarian_1_1AsyncGraphGroup__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::AsyncGraphGroup</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d26/classmarian_1_1AsyncGraphGroup__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Builder</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Builder  <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a1e7d2c68e66fd37bde89d5cf340ccc7a">builder_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Builder::dataset_type  <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a94dd3794d340f8912f60a2c921a0dbf7">dataset_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool first_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; Builder &gt; &gt; builders_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; ExpressionGraph &gt; &gt; graphs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; devices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Scheduler&lt; dataset_type &gt; &gt; scheduler_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::mutex sync_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::mutex &gt; shardSync_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::shared_mutex schedulerMutex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SparseTensor &gt; localSparseGrads_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SparseTensor &gt; sparseGrads_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SparseTensor &gt; tmpSparseDelta</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; SparseTensor &gt; &gt; localSparseDelta</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; globalVersionNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; int &gt; &gt; localVersionNumbers</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; GradientDrop &gt; &gt; fetchDropper</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Tensor &gt; tmpTensor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; Tensor &gt; &gt; params_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; TensorAllocator &gt; &gt; paramsAlloc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Tensor &gt; grads_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; TensorAllocator &gt; &gt; gradsAlloc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; OptimizerBase &gt; &gt; shardOpt_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int shardSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int tau_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Tensor &gt; paramsAvg_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; TensorAllocator &gt; &gt; paramsAllocAvg_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool movingAvg_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float mvDecay_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ThreadPool pool_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double drop_rate_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int history_size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; TensorAllocator &gt; &gt; allocators</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a484f82af7b76c33d6b48b5b9f168979f">setScheduler</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d2/dab/classmarian_1_1Scheduler">Scheduler</link>&lt; <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a94dd3794d340f8912f60a2c921a0dbf7">dataset_type</link> &gt;&gt; scheduler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a722544018387106b41110a8a66f76053">AsyncGraphGroup</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a0a5075263b8f643c4c87401cd3baf893">update</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1aa67a42e3de3f05cacc19971605cb95ba">load</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1ac4f28a3b7e1f131ecb0975c3633833a9">save</link> (
+bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a3793b99886964cbd1c8adae3c6067092">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">data::BatchStats</link> &gt; <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1af06826971306ef236a0e4ff13e7b2e74">collectStats</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a27115f020b674e27202748d6ab513144">newTensor</link> (
+int size, int device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1aeec1695ae7d7ac0f819242ad0c8af55d">fetchParams</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> oldParams, const std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; &amp; params)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1ae25b4b064f6c327fd957db0583ea7796">pushGradients</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> newGrads)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1af104a4373fad7cc8f274423107c58d17">sparseFetchParams</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> oldParams, int worker_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a043878c3c7c2873ae802b5914b3cd73d">sparsePush</link> (
+<link linkend="da/d22/namespacemarian_1a5484064f1fce2661d0b27a5c02a9392b">SparseTensor</link> newGrads)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1abce2624a961b51f5502efd78c8f3fc82">updateMovingAverage</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> paramsAvg, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> params, size_t batches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup_1a84479793dfa70a6a4ee0de1e910e8104">execute</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a1e7d2c68e66fd37bde89d5cf340ccc7a">
+                <title>typedef Builder marian::AsyncGraphGroup&lt; Builder &gt;::builder_type</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a94dd3794d340f8912f60a2c921a0dbf7">
+                <title>typedef Builder::dataset_type marian::AsyncGraphGroup&lt; Builder &gt;::dataset_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a484f82af7b76c33d6b48b5b9f168979f">
+                <title>virtual void marian::AsyncGraphGroup&lt; Builder &gt;::setScheduler (Ptr&lt; Scheduler&lt; dataset_type &gt;&gt; scheduler)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a722544018387106b41110a8a66f76053">
+                <title>marian::AsyncGraphGroup&lt; Builder &gt;::AsyncGraphGroup (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a0a5075263b8f643c4c87401cd3baf893">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::update (Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1aa67a42e3de3f05cacc19971605cb95ba">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::load ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1ac4f28a3b7e1f131ecb0975c3633833a9">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::save (bool final=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a3793b99886964cbd1c8adae3c6067092">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::save (Ptr&lt; ExpressionGraph &gt; graph, bool final=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1af06826971306ef236a0e4ff13e7b2e74">
+                <title>Ptr&lt;data::BatchStats&gt; marian::AsyncGraphGroup&lt; Builder &gt;::collectStats ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a27115f020b674e27202748d6ab513144">
+                <title>Tensor marian::AsyncGraphGroup&lt; Builder &gt;::newTensor (int size, int device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1aeec1695ae7d7ac0f819242ad0c8af55d">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::fetchParams (Tensor oldParams, const std::vector&lt; Tensor &gt; &amp;params)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1ae25b4b064f6c327fd957db0583ea7796">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::pushGradients (Tensor newGrads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1af104a4373fad7cc8f274423107c58d17">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::sparseFetchParams (Tensor oldParams, int worker_id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a043878c3c7c2873ae802b5914b3cd73d">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::sparsePush (SparseTensor newGrads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1abce2624a961b51f5502efd78c8f3fc82">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::updateMovingAverage (Tensor paramsAvg, Tensor params, size_t batches)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d8a/classmarian_1_1AsyncGraphGroup_1a84479793dfa70a6a4ee0de1e910e8104">
+                <title>void marian::AsyncGraphGroup&lt; Builder &gt;::execute (Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

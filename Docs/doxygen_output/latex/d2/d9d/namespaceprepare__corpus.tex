@@ -1,0 +1,239 @@
+\hypertarget{namespaceprepare__corpus}{}\section{prepare\+\_\+corpus Namespace Reference}
+\label{namespaceprepare__corpus}\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2}{main} ()
+\item 
+def \hyperlink{namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3}{replace\+\_\+unks} (l, voc)
+\item 
+def \hyperlink{namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b}{load\+\_\+yaml} (lines)
+\item 
+def \hyperlink{namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9}{parse\+\_\+user\+\_\+args} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceprepare__corpus_a3a77493842e1a07de99c534afdef4e4d}{U\+NK} = \textquotesingle{}$<$unk$>$\textquotesingle{}
+\item 
+string \hyperlink{namespaceprepare__corpus_a0ba757facf41222f76e6596363b348c4}{E\+OS} = \textquotesingle{}$<$/s$>$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!load\+\_\+yaml@{load\+\_\+yaml}}
+\index{load\+\_\+yaml@{load\+\_\+yaml}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{load\+\_\+yaml(lines)}{load_yaml(lines)}}]{\setlength{\rightskip}{0pt plus 5cm}def prepare\+\_\+corpus.\+load\+\_\+yaml (
+\begin{DoxyParamCaption}
+\item[{}]{lines}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b}{}\label{namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b}
+
+
+Definition at line 47 of file prepare\+\_\+corpus.\+py.
+
+
+\begin{DoxyCode}
+47 \textcolor{keyword}{def }\hyperlink{namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b}{load\_yaml}(lines):
+48     vocab = \{\}
+49     \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} lines:
+50         \textcolor{comment}{# all values are integers, so splitting by ':' from right should be safe}
+51         word, idx = line.strip().rsplit(\textcolor{stringliteral}{':'}, 1)
+52         vocab[word.strip(\textcolor{stringliteral}{'"'})] = int(idx.strip())
+53     \textcolor{keywordflow}{return} vocab
+54 
+55 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9d/namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!main@{main}}
+\index{main@{main}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def prepare\+\_\+corpus.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2}{}\label{namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2}
+
+
+Definition at line 16 of file prepare\+\_\+corpus.\+py.
+
+
+\begin{DoxyCode}
+16 \textcolor{keyword}{def }\hyperlink{namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2}{main}():
+17     args = \hyperlink{namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9}{parse\_user\_args}()
+18 
+19     print(\textcolor{stringliteral}{"Loading vocabulary"})
+20     ext = os.path.splitext(args.vocab)[1]
+21     \textcolor{keywordflow}{if} ext == \textcolor{stringliteral}{".json"}:
+22         with open(args.vocab) \textcolor{keyword}{as} vocab\_file:
+23             vocab = json.load(vocab\_file)
+24     \textcolor{keywordflow}{elif} ext == \textcolor{stringliteral}{".yaml"} \textcolor{keywordflow}{or} ext == \textcolor{stringliteral}{".yml"}:
+25         with open(args.vocab) \textcolor{keyword}{as} vocab\_file:
+26             \textcolor{comment}{# custom YAML loader as PyYAML skips some entries}
+27             vocab = \hyperlink{namespaceprepare__corpus_a41cd95c2147ad4e9b6486dbb66b6b87b}{load\_yaml}(vocab\_file)
+28     \textcolor{keywordflow}{else}:
+29         sys.stderr.write(\textcolor{stringliteral}{"Error: extension of vocabulary not recognized\(\backslash\)n"})
+30         exit(1)
+31 
+32     lines = \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum}(1 \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} open(args.vocab))
+33     sys.stderr.write(\textcolor{stringliteral}{"  entries: \{\}\(\backslash\)n"}.format(len(vocab)))
+34 
+35     \textcolor{keywordflow}{if} args.dim\_voc \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+36         vocab = \{w: v \textcolor{keywordflow}{for} w, v \textcolor{keywordflow}{in} vocab.items() \textcolor{keywordflow}{if} v < args.dim\_voc\}
+37         sys.stderr.write(\textcolor{stringliteral}{"  loaded: \{\}\(\backslash\)n"}.format(len(vocab)))
+38 
+39     sys.stderr.write(\textcolor{stringliteral}{"Adding <unk> and </s> tokens to the corpus\(\backslash\)n"})
+40     \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} sys.stdin:
+41         sys.stdout.write(\hyperlink{namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3}{replace\_unks}(line, vocab) + \textcolor{stringliteral}{" "} + EOS + \textcolor{stringliteral}{"\(\backslash\)n"})
+42 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9d/namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d2/d9d/namespaceprepare__corpus_aa70e0cc7eb57e827cc406e421ee340d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!parse\+\_\+user\+\_\+args@{parse\+\_\+user\+\_\+args}}
+\index{parse\+\_\+user\+\_\+args@{parse\+\_\+user\+\_\+args}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{parse\+\_\+user\+\_\+args()}{parse_user_args()}}]{\setlength{\rightskip}{0pt plus 5cm}def prepare\+\_\+corpus.\+parse\+\_\+user\+\_\+args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9}{}\label{namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9}
+
+
+Definition at line 56 of file prepare\+\_\+corpus.\+py.
+
+
+\begin{DoxyCode}
+56 \textcolor{keyword}{def }\hyperlink{namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9}{parse\_user\_args}():
+57     desc = \textcolor{stringliteral}{"""Prepare corpus w.r.t to vocabulary, i.e. add <unk> and </s>."""}
+58     note = \textcolor{stringliteral}{"""Examples:}
+59 \textcolor{stringliteral}{  \{0\} -v vocab.yml -i corpus.txt -o output.txt -w path/to/word2vec}
+60 \textcolor{stringliteral}{  \{0\} -v vocab.yml -i vectors.txt -o output.txt"""}
+61     note = note.format(os.path.basename(\_\_file\_\_))
+62 
+63     parser = argparse.ArgumentParser(
+64         formatter\_class=argparse.RawDescriptionHelpFormatter,
+65         description=desc,
+66         epilog=note)
+67     parser.add\_argument(\textcolor{stringliteral}{"-v"}, \textcolor{stringliteral}{"--vocab"}, help=\textcolor{stringliteral}{"path to vocabulary in JSON or YAML format"}, required=\textcolor{keyword}{True})
+68     parser.add\_argument(\textcolor{stringliteral}{"--dim-voc"}, help= \textcolor{stringliteral}{"maximum number of words from vocabulary to be used, default: no
+       limit"}, type=int)
+69     parser.add\_argument(\textcolor{stringliteral}{"--quiet"}, help=\textcolor{stringliteral}{"skip printing warnings"}, action=\textcolor{stringliteral}{'store\_true'})
+70     \textcolor{keywordflow}{return} parser.parse\_args()
+71 
+72 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9d/namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d2/d9d/namespaceprepare__corpus_a8cd0e0b6ee5199bd8838a625ef5803b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!replace\+\_\+unks@{replace\+\_\+unks}}
+\index{replace\+\_\+unks@{replace\+\_\+unks}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{replace\+\_\+unks(l, voc)}{replace_unks(l, voc)}}]{\setlength{\rightskip}{0pt plus 5cm}def prepare\+\_\+corpus.\+replace\+\_\+unks (
+\begin{DoxyParamCaption}
+\item[{}]{l, }
+\item[{}]{voc}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3}{}\label{namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3}
+
+
+Definition at line 43 of file prepare\+\_\+corpus.\+py.
+
+
+\begin{DoxyCode}
+43 \textcolor{keyword}{def }\hyperlink{namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3}{replace\_unks}(l, voc):
+44     \textcolor{keywordflow}{return} \textcolor{stringliteral}{" "}.join([w \textcolor{keywordflow}{if} w \textcolor{keywordflow}{in} voc \textcolor{keywordflow}{else} UNK \textcolor{keywordflow}{for} w \textcolor{keywordflow}{in} l.strip().\hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}()])
+45 
+46 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{d2/d9d/namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9d/namespaceprepare__corpus_a94500e5ed125979793ade8632786b6c3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!E\+OS@{E\+OS}}
+\index{E\+OS@{E\+OS}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{E\+OS}{EOS}}]{\setlength{\rightskip}{0pt plus 5cm}string prepare\+\_\+corpus.\+E\+OS = \textquotesingle{}$<$/s$>$\textquotesingle{}}\hypertarget{namespaceprepare__corpus_a0ba757facf41222f76e6596363b348c4}{}\label{namespaceprepare__corpus_a0ba757facf41222f76e6596363b348c4}
+
+
+Definition at line 13 of file prepare\+\_\+corpus.\+py.
+
+\index{prepare\+\_\+corpus@{prepare\+\_\+corpus}!U\+NK@{U\+NK}}
+\index{U\+NK@{U\+NK}!prepare\+\_\+corpus@{prepare\+\_\+corpus}}
+\subsubsection[{\texorpdfstring{U\+NK}{UNK}}]{\setlength{\rightskip}{0pt plus 5cm}string prepare\+\_\+corpus.\+U\+NK = \textquotesingle{}$<$unk$>$\textquotesingle{}}\hypertarget{namespaceprepare__corpus_a3a77493842e1a07de99c534afdef4e4d}{}\label{namespaceprepare__corpus_a3a77493842e1a07de99c534afdef4e4d}
+
+
+Definition at line 12 of file prepare\+\_\+corpus.\+py.
+

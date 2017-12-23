@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/db4/classamunmt_1_1Sentence">
+<title>amunmt::Sentence class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/df4/sentence_8h">&lt;sentence.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Sentence</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/df4/classamunmt_1_1Sentence__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Sentence</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dc5/classamunmt_1_1Sentence__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Words &gt; words_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t lineNum_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/db4/classamunmt_1_1Sentence_1aa0f7259a5e6f30f4b50e71dc44c83a2e">Sentence</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, size_t vLineNum, const std::string &amp; line)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/db4/classamunmt_1_1Sentence_1a571bf14105075f95c2d58562fcc86018">Sentence</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, size_t vLineNum, const std::vector&lt; std::string &gt; &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/db4/classamunmt_1_1Sentence_1a855d515a6973ef61ed2f5a9c469dfb75">Sentence</link> (
+<link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, size_t lineNum, const std::vector&lt; uint &gt; &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> &amp; <link linkend="d7/db4/classamunmt_1_1Sentence_1a929bbcefc70b6bc280bbdadb3be00ec9">GetWords</link> (
+size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d7/db4/classamunmt_1_1Sentence_1a9f6ee04c9dd03b9933d8fbee4eadc259">size</link> (
+size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d7/db4/classamunmt_1_1Sentence_1a4166fdc6aacb417cb7e21334f57a1e34">GetLineNum</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/db4/classamunmt_1_1Sentence_1a18cc0ecedde9d644f895f3ce70ac5afb">Sentence</link> (
+const <link linkend="d7/db4/classamunmt_1_1Sentence">Sentence</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1aa0f7259a5e6f30f4b50e71dc44c83a2e">
+                <title>amunmt::Sentence::Sentence (const God &amp;god, size_t vLineNum, const std::string &amp;line)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a571bf14105075f95c2d58562fcc86018">
+                <title>amunmt::Sentence::Sentence (const God &amp;god, size_t vLineNum, const std::vector&lt; std::string &gt; &amp;words)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a855d515a6973ef61ed2f5a9c469dfb75">
+                <title>amunmt::Sentence::Sentence (God &amp;god, size_t lineNum, const std::vector&lt; uint &gt; &amp;words)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a929bbcefc70b6bc280bbdadb3be00ec9">
+                <title>const Words &amp; amunmt::Sentence::GetWords (size_t index=0) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a9f6ee04c9dd03b9933d8fbee4eadc259">
+                <title>size_t amunmt::Sentence::size (size_t index=0) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a4166fdc6aacb417cb7e21334f57a1e34">
+                <title>size_t amunmt::Sentence::GetLineNum () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db4/classamunmt_1_1Sentence_1a18cc0ecedde9d644f895f3ce70ac5afb">
+                <title>amunmt::Sentence::Sentence (const Sentence &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

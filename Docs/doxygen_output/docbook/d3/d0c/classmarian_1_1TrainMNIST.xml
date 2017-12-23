@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d0c/classmarian_1_1TrainMNIST">
+<title>marian::TrainMNIST class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d10/examples_2mnist_2training_8h">&lt;training.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TrainMNIST</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dd4/classmarian_1_1TrainMNIST__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TrainMNIST</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/da5/classmarian_1_1TrainMNIST__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Model</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d0c/classmarian_1_1TrainMNIST_1a7b7baf3f95481ce2d3a5ccaeea5c167e">TrainMNIST</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d0c/classmarian_1_1TrainMNIST_1a5dbea84161b6257b405b6c18a081989d">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d0c/classmarian_1_1TrainMNIST_1a7b7baf3f95481ce2d3a5ccaeea5c167e">
+                <title>marian::TrainMNIST&lt; Model &gt;::TrainMNIST (Ptr&lt; Config &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d0c/classmarian_1_1TrainMNIST_1a5dbea84161b6257b405b6c18a081989d">
+                <title>void marian::TrainMNIST&lt; Model &gt;::run ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

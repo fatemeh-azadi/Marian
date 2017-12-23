@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d28/classNBest">
+<title>NBest class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d35/nbest_8h">&lt;nbest.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for NBest</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d0c/classNBest__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for NBest</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/dbb/classNBest__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; std::string &gt; &gt; data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; srcSentences_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; Vocab &gt; srcVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; Vocab &gt; trgVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; indexes_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t maxBatchSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d28/classNBest_1a6814af86036fd1dfe88fc8639c639e6f">NBest</link> (
+const std::string &amp; srcPath, const std::string &amp; nbestPath, const std::shared_ptr&lt; Vocab &gt; srcVocab, const std::shared_ptr&lt; Vocab &gt; trgVocab, const size_t maxBatchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d28/classNBest_1a4f7be459bdb936d76d60afc47eded253">NBest</link> (
+const std::shared_ptr&lt; Vocab &gt; srcVocab, const std::shared_ptr&lt; Vocab &gt; trgVocab, const std::vector&lt; std::string &gt; &amp; nBestList, const size_t maxBatchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> &gt; <link linkend="df/d28/classNBest_1ad66c17c11f48f88e6ea1a55e200efdaa">GetBatches</link> (
+const size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="df/d28/classNBest_1a0e3c5f0a2e750a4e03fe684d93da216d">GetIndex</link> (
+const size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="df/d28/classNBest_1ae9cb5e867610b333f991f07981279ec2">operator[]</link> (
+size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="df/d28/classNBest_1a7c0e484c776c65e44e65034cf5127234">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="df/d28/classNBest_1a8f4ea909cf3d0083c058ffb4d315c4f0">GetSentence</link> (
+const size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="df/d28/classNBest_1a655136ec5cf258b827ad7113adba62d3">GetTokens</link> (
+const size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; <link linkend="df/d28/classNBest_1a3d5b1d94acb0f6f23ff754c35e1d5a17">GetEncodedTokens</link> (
+const size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> &gt; <link linkend="df/d28/classNBest_1a4f9908d927e5312228e65eaeee451ec3">DivideNBestListIntoBatches</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d28/classNBest_1aab4853101e05435c3df0a4380d260c8c">Parse_</link> (
+const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; std::string &gt; &gt; <link linkend="df/d28/classNBest_1ad73a4cae337bf293c451dbebc329ddca">SplitBatch</link> (
+std::vector&lt; std::string &gt; &amp; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d28/classNBest_1a2215cf0548472839f871608bbd28aad7">ParseInputFile</link> (
+const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> <link linkend="df/d28/classNBest_1a233054c9107f4f6d65afb09365f32f34">EncodeBatch</link> (
+const std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> <link linkend="df/d28/classNBest_1aacbc43e7c51dda0483afa71532f05986">MaskAndTransposeBatch</link> (
+const <link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> &amp; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> <link linkend="df/d28/classNBest_1ae5410268f7e233ae0eafd6b4514cd559">ProcessBatch</link> (
+std::vector&lt; std::string &gt; &amp; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d35/nbest_8h_1acb6b6f07cf7c4a3fe5820acf1a965584">NBestBatch</link> <link linkend="df/d28/classNBest_1aeca5858d89c32f38009f339a29547433">ProcessBatch</link> (
+std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d28/classNBest_1a6814af86036fd1dfe88fc8639c639e6f">
+                <title>NBest::NBest (const std::string &amp;srcPath, const std::string &amp;nbestPath, const std::shared_ptr&lt; Vocab &gt; srcVocab, const std::shared_ptr&lt; Vocab &gt; trgVocab, const size_t maxBatchSize=64)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a4f7be459bdb936d76d60afc47eded253">
+                <title>NBest::NBest (const std::shared_ptr&lt; Vocab &gt; srcVocab, const std::shared_ptr&lt; Vocab &gt; trgVocab, const std::vector&lt; std::string &gt; &amp;nBestList, const size_t maxBatchSize=64)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1ad66c17c11f48f88e6ea1a55e200efdaa">
+                <title>std::vector&lt;NBestBatch&gt; NBest::GetBatches (const size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a0e3c5f0a2e750a4e03fe684d93da216d">
+                <title>size_t NBest::GetIndex (const size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1ae9cb5e867610b333f991f07981279ec2">
+                <title>std::vector&lt;std::string&gt; NBest::operator[] (size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a7c0e484c776c65e44e65034cf5127234">
+                <title>size_t NBest::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a8f4ea909cf3d0083c058ffb4d315c4f0">
+                <title>std::string NBest::GetSentence (const size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a655136ec5cf258b827ad7113adba62d3">
+                <title>std::vector&lt;std::string&gt; NBest::GetTokens (const size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a3d5b1d94acb0f6f23ff754c35e1d5a17">
+                <title>std::vector&lt;size_t&gt; NBest::GetEncodedTokens (const size_t index) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a4f9908d927e5312228e65eaeee451ec3">
+                <title>std::vector&lt;NBestBatch&gt; NBest::DivideNBestListIntoBatches () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1aab4853101e05435c3df0a4380d260c8c">
+                <title>void NBest::Parse_ (const std::string &amp;path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1ad73a4cae337bf293c451dbebc329ddca">
+                <title>std::vector&lt;std::vector&lt;std::string&gt; &gt; NBest::SplitBatch (std::vector&lt; std::string &gt; &amp;batch) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a2215cf0548472839f871608bbd28aad7">
+                <title>void NBest::ParseInputFile (const std::string &amp;path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1a233054c9107f4f6d65afb09365f32f34">
+                <title>NBestBatch NBest::EncodeBatch (const std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp;batch) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1aacbc43e7c51dda0483afa71532f05986">
+                <title>NBestBatch NBest::MaskAndTransposeBatch (const NBestBatch &amp;batch) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1ae5410268f7e233ae0eafd6b4514cd559">
+                <title>NBestBatch NBest::ProcessBatch (std::vector&lt; std::string &gt; &amp;batch) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d28/classNBest_1aeca5858d89c32f38009f339a29547433">
+                <title>NBestBatch NBest::ProcessBatch (std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp;batch) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

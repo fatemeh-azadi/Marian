@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dec/namespacemarian_1_1inits">
+<title>marian::inits</title>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d4/dec/namespacemarian_1_1inits_1a0b3a55d11c2c9df0b982c3d7ebeb3361">xor128</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1a1bd34fd256e3df7bb1e27955a7f2b359">zeros</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1ae2baa2cb7116abb19c235fbe5ed0de9c">ones</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1a03723a199ab72a38a13b2b8644e8e1c2">from_value</link> (
+float v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1a41ba9c52b4ff5938b68c85042bbd8fb6">diag</link> (
+float val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1abae13bbee70d5a54e5aff0e07dc51e10">distribution</link> (
+std::vector&lt; float &gt; &amp; vals, float a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1a4d7520676277911627cd1d73ac2380c6">distribution</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, float a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1ab7e64c6e535adbc8b3ace787a9027de5">normal</link> (
+float scale, bool ortho)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1a835dcbebcc1ee135e5637b2225eaf9d1">uniform</link> (
+float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1a808daef275cdf015fae319efe2a5b6e1">ortho</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1a8838c47537f434b855491cd3ed97ccd1">glorot_uniform</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1a8b5e30d897124066180a5d55ce811ee0">xorshift</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/namespacemarian_1_1inits_1aa41bfdd6abbcc4567bad71f7a76b50da">glorot_normal</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1ab9566318ddbacd376c74cdbdfac091e4">from_vector</link> (
+const std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1af5f6f0108b5161e1596151ded5953a71">from_vector</link> (
+const std::vector&lt; size_t &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1aa01b0ccf77ec55218396670f8c49e191">from_sparse_vector</link> (
+std::pair&lt; std::vector&lt; size_t &gt;, std::vector&lt; float &gt;&gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1a466e51fe497018f864f0fb9c0dd05200">from_numpy</link> (
+const cnpy::NpyArray &amp; np)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link>)&gt; <link linkend="d4/dec/namespacemarian_1_1inits_1a26fad07f2ceb3649cf0d5da09c03b756">from_word2vec</link> (
+const std::string &amp; file, int dimVoc, int dimEmb, bool normalize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

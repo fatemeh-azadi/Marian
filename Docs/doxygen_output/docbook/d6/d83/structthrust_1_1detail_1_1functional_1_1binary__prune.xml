@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d83/structthrust_1_1detail_1_1functional_1_1binary__prune">
+<title>thrust::detail::functional::binary_prune struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dde/marian_2src_2kernels_2thrust__functions_8h">&lt;thrust_functions.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for thrust::detail::functional::binary_prune</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d2e/structthrust_1_1detail_1_1functional_1_1binary__prune__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for thrust::detail::functional::binary_prune</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d4c/structthrust_1_1detail_1_1functional_1_1binary__prune__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ T <link linkend="d6/d83/structthrust_1_1detail_1_1functional_1_1binary__prune_1a721994995b68481a8729281e2166a128">operator()</link> (
+const T &amp; x, const T &amp; eps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d6/d83/structthrust_1_1detail_1_1functional_1_1binary__prune_1a721994995b68481a8729281e2166a128">
+                <title>__host__ __device__ T thrust::detail::functional::binary_prune&lt; T &gt;::operator() (const T &amp;x, const T &amp;eps) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,194 @@
+\hypertarget{classmarian_1_1Factory}{}\section{marian\+:\+:Factory Class Reference}
+\label{classmarian_1_1Factory}\index{marian\+::\+Factory@{marian\+::\+Factory}}
+
+
+{\ttfamily \#include $<$factory.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4c/classmarian_1_1Factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{d8/d83/classmarian_1_1Factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{classmarian_1_1Factory_a88d85aadc4ff96b0f691ae2c2a738ba1}{$\sim$\+Factory} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ \hyperlink{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}{get\+Options} ()
+\item 
+std\+::string \hyperlink{classmarian_1_1Factory_a9b2a922c487a8798ebbbf1a9bffd5ef2}{str} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1Factory_abc51a49edfa544441e7b187a0176d107}{opt} (const std\+::string \&key)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1Factory_af818963ee25402cc6ef601d6ed711d19}{opt} (const std\+::string \&key, T default\+Value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!Factory@{Factory}}
+\index{Factory@{Factory}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{Factory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Factory\+::\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{}\label{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}
+
+
+Definition at line 14 of file factory.\+h.
+
+
+\begin{DoxyCode}
+15   : \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}(New<Options>()), \hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}(graph) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!````~Factory@{$\sim$\+Factory}}
+\index{````~Factory@{$\sim$\+Factory}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Factory()}{~Factory()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual marian\+::\+Factory\+::$\sim$\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Factory_a88d85aadc4ff96b0f691ae2c2a738ba1}{}\label{classmarian_1_1Factory_a88d85aadc4ff96b0f691ae2c2a738ba1}
+
+
+Definition at line 17 of file factory.\+h.
+
+
+\begin{DoxyCode}
+17 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!get\+Options@{get\+Options}}
+\index{get\+Options@{get\+Options}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{get\+Options()}{getOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Options}$>$ marian\+::\+Factory\+::get\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}{}\label{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}
+
+
+Definition at line 19 of file factory.\+h.
+
+
+\begin{DoxyCode}
+19                             \{
+20     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_};
+21   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d28/classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Factory@{marian\+::\+Factory}!opt@{opt}}
+\index{opt@{opt}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{opt(const std\+::string \&key)}{opt(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Factory\+::opt (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Factory_abc51a49edfa544441e7b187a0176d107}{}\label{classmarian_1_1Factory_abc51a49edfa544441e7b187a0176d107}
+
+
+Definition at line 28 of file factory.\+h.
+
+
+\begin{DoxyCode}
+28                               \{
+29     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}->get<T>(key);
+30   \}
+\end{DoxyCode}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!opt@{opt}}
+\index{opt@{opt}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{opt(const std\+::string \&key, T default\+Value)}{opt(const std::string &key, T defaultValue)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Factory\+::opt (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{T}]{default\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Factory_af818963ee25402cc6ef601d6ed711d19}{}\label{classmarian_1_1Factory_af818963ee25402cc6ef601d6ed711d19}
+
+
+Definition at line 33 of file factory.\+h.
+
+
+\begin{DoxyCode}
+33                                               \{
+34     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}->get<T>(key, defaultValue);
+35   \}
+\end{DoxyCode}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!str@{str}}
+\index{str@{str}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{str()}{str()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::\+Factory\+::str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Factory_a9b2a922c487a8798ebbbf1a9bffd5ef2}{}\label{classmarian_1_1Factory_a9b2a922c487a8798ebbbf1a9bffd5ef2}
+
+
+Definition at line 23 of file factory.\+h.
+
+
+\begin{DoxyCode}
+23                   \{
+24     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}->str();
+25   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Factory@{marian\+::\+Factory}!graph\+\_\+@{graph\+\_\+}}
+\index{graph\+\_\+@{graph\+\_\+}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{graph\+\_\+}{graph_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Expression\+Graph}$>$ marian\+::\+Factory\+::graph\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{}\label{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}
+
+
+Definition at line 11 of file factory.\+h.
+
+\index{marian\+::\+Factory@{marian\+::\+Factory}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Factory@{marian\+::\+Factory}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Options}$>$ marian\+::\+Factory\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{}\label{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}
+
+
+Definition at line 10 of file factory.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{factory_8h}{factory.\+h}\end{DoxyCompactItemize}

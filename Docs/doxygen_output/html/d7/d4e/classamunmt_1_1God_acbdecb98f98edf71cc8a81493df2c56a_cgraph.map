@@ -1,0 +1,18 @@
+<map id="amunmt::God::Get" name="amunmt::God::Get">
+<area shape="rect" id="node2" href="$da/d4e/classamunmt_1_1Config.html#a5257f41272d06c35bebe8130b5897d23" title="amunmt::Config::Get" alt="" coords="223,5,367,32"/>
+<area shape="rect" id="node3" href="$d7/d4e/classamunmt_1_1God.html#a032b43755a3050ee9fb97ad27a91a63b" title="amunmt::God::GetSourceVocab" alt="" coords="191,56,399,83"/>
+<area shape="rect" id="node4" href="$d7/d4e/classamunmt_1_1God.html#aabd3caa5eb93346428948ce6639dc931" title="amunmt::God::GetTargetVocab" alt="" coords="193,107,397,133"/>
+<area shape="rect" id="node5" href="$d7/d4e/classamunmt_1_1God.html#aa118cbeda9e332f518135b027aff3ac2" title="amunmt::God::GetInputStream" alt="" coords="194,157,395,184"/>
+<area shape="rect" id="node6" href="$d7/d4e/classamunmt_1_1God.html#ab8af5f6cc4352c053f42f4e707a281f9" title="amunmt::God::GetOutputCollector" alt="" coords="184,208,405,235"/>
+<area shape="rect" id="node7" href="$d7/d4e/classamunmt_1_1God.html#a0ebdb327d0eb53de76824ba967a0b1b6" title="amunmt::God::GetFilter" alt="" coords="215,259,374,285"/>
+<area shape="rect" id="node8" href="$d7/d4e/classamunmt_1_1God.html#aa482b0ccfa13656701b3f03c8c869fea" title="amunmt::God::GetBestHyps" alt="" coords="201,309,389,336"/>
+<area shape="rect" id="node9" href="$d7/d4e/classamunmt_1_1God.html#ae3fcd8b1f31d85bda0887e1ef50cf282" title="amunmt::God::GetScorers" alt="" coords="207,360,382,387"/>
+<area shape="rect" id="node10" href="$d7/d4e/classamunmt_1_1God.html#a75cb5ca765042d1df858a6eeed330bb7" title="amunmt::God::GetScorerNames" alt="" coords="189,411,400,437"/>
+<area shape="rect" id="node11" href="$d7/d4e/classamunmt_1_1God.html#a7dbd89cd4c2b921d821d9ddb1c76fabf" title="amunmt::God::GetScorerWeights" alt="" coords="187,461,403,488"/>
+<area shape="rect" id="node12" href="$d7/d4e/classamunmt_1_1God.html#a98a2f57d4f28a7e7d58f3b68680dbdb1" title="amunmt::God::Preprocess" alt="" coords="207,512,382,539"/>
+<area shape="rect" id="node13" href="$d7/d4e/classamunmt_1_1God.html#a1e2a81202f36d8c2c10e5ee35c3b44ae" title="amunmt::God::Postprocess" alt="" coords="203,563,386,589"/>
+<area shape="rect" id="node14" href="$d7/d4e/classamunmt_1_1God.html#a33ef746e9d56529017f77d2ed5cab80f" title="amunmt::God::LoadWeights" alt="" coords="202,613,387,640"/>
+<area shape="rect" id="node15" href="$d7/d4e/classamunmt_1_1God.html#ab9fdce5683a6fc47cdab2dd2da263fd5" title="amunmt::God::GetNextDevice" alt="" coords="195,664,394,691"/>
+<area shape="rect" id="node16" href="$d7/d4e/classamunmt_1_1God.html#a38e952b706c978ecb2b8ad2ab7f7828f" title="amunmt::God::GetSearch" alt="" coords="209,715,380,741"/>
+<area shape="rect" id="node17" href="$d7/d4e/classamunmt_1_1God.html#ac1fe1740097a86cded1e88937d538a97" title="amunmt::God::GetTotalThreads" alt="" coords="191,765,398,792"/>
+</map>

@@ -1,0 +1,124 @@
+\hypertarget{classVocabGetter}{}\section{Vocab\+Getter Class Reference}
+\label{classVocabGetter}\index{Vocab\+Getter@{Vocab\+Getter}}
+
+
+Inheritance diagram for Vocab\+Getter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{d0/d13/classVocabGetter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vocab\+Getter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{db/de6/classVocabGetter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVocabGetter_a9e505a1f22a2e90792f2f68ec87c3be3}{Vocab\+Getter} (\hyperlink{kenlm_8h_ad28b93df55f44c282bedd86c1e041041}{Word\+Pairs} \&vm, const Vocab \&vocab)
+\item 
+void \hyperlink{classVocabGetter_aba275446f6729cd1d38571dc7fd6f796}{Add} (\hyperlink{namespacelm_aea554f766016a7141535a9f8f648766a}{lm\+::\+Word\+Index} index, const String\+Piece \&str)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{kenlm_8h_ad28b93df55f44c282bedd86c1e041041}{Word\+Pairs} \& \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\+\_\+}
+\item 
+const Vocab \& \hyperlink{classVocabGetter_ae296f6ed2ee0ae8a6ddc8f5d079e4d0b}{vocab\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file kenlm.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vocab\+Getter@{Vocab\+Getter}!Vocab\+Getter@{Vocab\+Getter}}
+\index{Vocab\+Getter@{Vocab\+Getter}!Vocab\+Getter@{Vocab\+Getter}}
+\subsubsection[{\texorpdfstring{Vocab\+Getter(\+Word\+Pairs \&vm, const Vocab \&vocab)}{VocabGetter(WordPairs &vm, const Vocab &vocab)}}]{\setlength{\rightskip}{0pt plus 5cm}Vocab\+Getter\+::\+Vocab\+Getter (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\+Pairs} \&}]{vm, }
+\item[{const Vocab \&}]{vocab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVocabGetter_a9e505a1f22a2e90792f2f68ec87c3be3}{}\label{classVocabGetter_a9e505a1f22a2e90792f2f68ec87c3be3}
+
+
+Definition at line 6 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+7     : \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\_}(vm), \hyperlink{classVocabGetter_ae296f6ed2ee0ae8a6ddc8f5d079e4d0b}{vocab\_}(vocab)
+8     \{
+9       \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\_}.emplace\_back(2, \hyperlink{namespaceprepare__corpus_a0ba757facf41222f76e6596363b348c4}{EOS}); \textcolor{comment}{// is there a constant for "</s>" = 2?}
+10       \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\_}.emplace\_back(1, \hyperlink{namespaceprepare__corpus_a3a77493842e1a07de99c534afdef4e4d}{UNK}); \textcolor{comment}{// is there a constant for "<s>" = 1?}
+11       \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\_}.emplace\_back(lm::kUNK, \hyperlink{namespaceprepare__corpus_a3a77493842e1a07de99c534afdef4e4d}{UNK});
+12     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d3/d59/classVocabGetter_a9e505a1f22a2e90792f2f68ec87c3be3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Vocab\+Getter@{Vocab\+Getter}!Add@{Add}}
+\index{Add@{Add}!Vocab\+Getter@{Vocab\+Getter}}
+\subsubsection[{\texorpdfstring{Add(lm\+::\+Word\+Index index, const String\+Piece \&str)}{Add(lm::WordIndex index, const StringPiece &str)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vocab\+Getter\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf lm\+::\+Word\+Index}}]{index, }
+\item[{const String\+Piece \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVocabGetter_aba275446f6729cd1d38571dc7fd6f796}{}\label{classVocabGetter_aba275446f6729cd1d38571dc7fd6f796}
+
+
+Definition at line 14 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+14                                                         \{
+15       \textcolor{keywordtype}{size\_t} word = \hyperlink{classVocabGetter_ae296f6ed2ee0ae8a6ddc8f5d079e4d0b}{vocab\_}[str.as\_string()];
+16       \textcolor{keywordflow}{if}(word > 2)
+17         \hyperlink{classVocabGetter_a828337702247740d4802c9712523706d}{vm\_}.emplace\_back(index, word);
+18     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Vocab\+Getter@{Vocab\+Getter}!vm\+\_\+@{vm\+\_\+}}
+\index{vm\+\_\+@{vm\+\_\+}!Vocab\+Getter@{Vocab\+Getter}}
+\subsubsection[{\texorpdfstring{vm\+\_\+}{vm_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Word\+Pairs}\& Vocab\+Getter\+::vm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classVocabGetter_a828337702247740d4802c9712523706d}{}\label{classVocabGetter_a828337702247740d4802c9712523706d}
+
+
+Definition at line 21 of file kenlm.\+cpp.
+
+\index{Vocab\+Getter@{Vocab\+Getter}!vocab\+\_\+@{vocab\+\_\+}}
+\index{vocab\+\_\+@{vocab\+\_\+}!Vocab\+Getter@{Vocab\+Getter}}
+\subsubsection[{\texorpdfstring{vocab\+\_\+}{vocab_}}]{\setlength{\rightskip}{0pt plus 5cm}const Vocab\& Vocab\+Getter\+::vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classVocabGetter_ae296f6ed2ee0ae8a6ddc8f5d079e4d0b}{}\label{classVocabGetter_ae296f6ed2ee0ae8a6ddc8f5d079e4d0b}
+
+
+Definition at line 22 of file kenlm.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{kenlm_8cpp}{kenlm.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d56/namespacemarian_1_1data">
+<title>marian::data</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/db1/classmarian_1_1data_1_1Batch">marian::data::Batch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator">marian::data::BatchGenerator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">marian::data::BatchStats</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/daf/classmarian_1_1data_1_1Corpus">marian::data::Corpus</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">marian::data::CorpusBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator">marian::data::CorpusIterator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch">marian::data::DataBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset">marian::data::Dataset</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/deb/classmarian_1_1data_1_1DatasetBase">marian::data::DatasetBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/db4/classmarian_1_1data_1_1Input">marian::data::Input</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d07/classmarian_1_1data_1_1MNIST">marian::data::MNIST</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple">marian::data::SentenceTuple</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch">marian::data::SubBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d73/classmarian_1_1data_1_1WordAlignment">marian::data::WordAlignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; size_t &gt;  <link linkend="de/d56/namespacemarian_1_1data_1ad793aa92c2dc86a1151c32a94f5ed957">WordBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; float &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a0cdbf7ceb1b0dd97d13828c95ccd76d4">MaskBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; <link linkend="de/d56/namespacemarian_1_1data_1ad793aa92c2dc86a1151c32a94f5ed957">WordBatch</link>, <link linkend="de/d56/namespacemarian_1_1data_1a0cdbf7ceb1b0dd97d13828c95ccd76d4">MaskBatch</link> &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a34e6120fb1a0a79aff632179a04be607">WordMask</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="de/d56/namespacemarian_1_1data_1a34e6120fb1a0a79aff632179a04be607">WordMask</link> &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a85884cce1df2778cb81e08c80c0cd7fe">SentBatch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; float &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a5801e80ecb76ee38a5ac080f08d9646c">Data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="de/d56/namespacemarian_1_1data_1a5801e80ecb76ee38a5ac080f08d9646c">Data</link> &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a901337b17eea9c054bbf11a10254bd7b">Example</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="de/d56/namespacemarian_1_1data_1a901337b17eea9c054bbf11a10254bd7b">Example</link> &gt;  <link linkend="de/d56/namespacemarian_1_1data_1a39201a9c7e3f08ea31141ec770b60868">Examples</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef Examples::const_iterator  <link linkend="de/d56/namespacemarian_1_1data_1a45ade1945852d979da7433e0d4456bff">ExampleIterator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

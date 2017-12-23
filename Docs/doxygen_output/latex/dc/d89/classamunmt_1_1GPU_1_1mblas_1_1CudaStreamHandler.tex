@@ -1,0 +1,146 @@
+\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Cuda\+Stream\+Handler Class Reference}
+\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler}\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+
+
+{\ttfamily \#include $<$handles.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Cuda\+Stream\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{df/dca/classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const cuda\+Stream\+\_\+t \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{Get\+Stream} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a27bc1fd24f116d0dee6840c218fdd69c}{Cuda\+Stream\+Handler} ()
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a35466f2927509a833982499241f502f2}{Cuda\+Stream\+Handler} (const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler}{Cuda\+Stream\+Handler} \&)=delete
+\item 
+virtual \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a41b033b921d17ea1bdbf8e67bc438272}{$\sim$\+Cuda\+Stream\+Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cuda\+Stream\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}{stream\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static thread\+\_\+local \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler}{Cuda\+Stream\+Handler} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a03f35f53a1eb19f8d0ae17b0bced364c}{instance\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file handles.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!Cuda\+Stream\+Handler@{Cuda\+Stream\+Handler}}
+\index{Cuda\+Stream\+Handler@{Cuda\+Stream\+Handler}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{Cuda\+Stream\+Handler()}{CudaStreamHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::\+Cuda\+Stream\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a27bc1fd24f116d0dee6840c218fdd69c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a27bc1fd24f116d0dee6840c218fdd69c}
+
+
+Definition at line 21 of file handles.\+h.
+
+
+\begin{DoxyCode}
+22     \{
+23       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaStreamCreate(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}{stream\_}));
+24       \textcolor{comment}{// cudaStreamCreateWithFlags(stream\_.get(), cudaStreamNonBlocking);}
+25     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!Cuda\+Stream\+Handler@{Cuda\+Stream\+Handler}}
+\index{Cuda\+Stream\+Handler@{Cuda\+Stream\+Handler}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{Cuda\+Stream\+Handler(const Cuda\+Stream\+Handler \&)=delete}{CudaStreamHandler(const CudaStreamHandler &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::\+Cuda\+Stream\+Handler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cuda\+Stream\+Handler} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a35466f2927509a833982499241f502f2}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a35466f2927509a833982499241f502f2}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!````~Cuda\+Stream\+Handler@{$\sim$\+Cuda\+Stream\+Handler}}
+\index{````~Cuda\+Stream\+Handler@{$\sim$\+Cuda\+Stream\+Handler}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cuda\+Stream\+Handler()}{~CudaStreamHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::$\sim$\+Cuda\+Stream\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a41b033b921d17ea1bdbf8e67bc438272}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a41b033b921d17ea1bdbf8e67bc438272}
+
+
+Definition at line 29 of file handles.\+h.
+
+
+\begin{DoxyCode}
+29                                  \{
+30       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaStreamDestroy(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}{stream\_}));
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!Get\+Stream@{Get\+Stream}}
+\index{Get\+Stream@{Get\+Stream}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{Get\+Stream()}{GetStream()}}]{\setlength{\rightskip}{0pt plus 5cm}static const cuda\+Stream\+\_\+t\& amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::\+Get\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}
+
+
+Definition at line 13 of file handles.\+h.
+
+
+\begin{DoxyCode}
+13                                          \{
+14     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a03f35f53a1eb19f8d0ae17b0bced364c}{instance\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}{stream\_};
+15   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d89/classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!instance\+\_\+@{instance\+\_\+}}
+\index{instance\+\_\+@{instance\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{instance\+\_\+}{instance_}}]{\setlength{\rightskip}{0pt plus 5cm}thread\+\_\+local {\bf Cuda\+Stream\+Handler} amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::instance\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a03f35f53a1eb19f8d0ae17b0bced364c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_a03f35f53a1eb19f8d0ae17b0bced364c}
+
+
+Definition at line 18 of file handles.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}!stream\+\_\+@{stream\+\_\+}}
+\index{stream\+\_\+@{stream\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler}}
+\subsubsection[{\texorpdfstring{stream\+\_\+}{stream_}}]{\setlength{\rightskip}{0pt plus 5cm}cuda\+Stream\+\_\+t amunmt\+::\+G\+P\+U\+::mblas\+::\+Cuda\+Stream\+Handler\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}{}\label{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aa819c74e84246a768d62788d9be77ed0}
+
+
+Definition at line 19 of file handles.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{handles_8h}{handles.\+h}\end{DoxyCompactItemize}

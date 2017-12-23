@@ -1,0 +1,111 @@
+\hypertarget{classmarian_1_1LexicalBias}{}\section{marian\+:\+:Lexical\+Bias Class Reference}
+\label{classmarian_1_1LexicalBias}\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+
+
+{\ttfamily \#include $<$lex\+\_\+probs.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Lexical\+Bias\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{dd/d0a/classmarian_1_1LexicalBias__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1LexicalBias_a2a1c2b9a00a85ee6620f80a5c8c40534}{Lexical\+Bias} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ sent\+Lex\+Probs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Global\+Attention $>$ attention, float eps, bool single)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1LexicalBias_ab5d432af32715db16e5a51b29c36aed9}{operator()} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} logits)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{classmarian_1_1LexicalBias_a88bd39c6ff99b3f8414ae93ca12ac520}{sent\+Lex\+Probs\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Global\+Attention $>$ \hyperlink{classmarian_1_1LexicalBias_a4f114151f82741483009c37e250eed2a}{attention\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1LexicalBias_a326493e5dcc773e702d9f29d0da0c0e5}{eps\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1LexicalBias_aff01be8467b5f74284af2f620dfefac5}{single\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 127 of file lex\+\_\+probs.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!Lexical\+Bias@{Lexical\+Bias}}
+\index{Lexical\+Bias@{Lexical\+Bias}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{Lexical\+Bias(\+Ptr$<$ sparse\+::\+C\+S\+R $>$ sent\+Lex\+Probs, Ptr$<$ Global\+Attention $>$ attention, float eps, bool single)}{LexicalBias(Ptr< sparse::CSR > sentLexProbs, Ptr< GlobalAttention > attention, float eps, bool single)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Lexical\+Bias\+::\+Lexical\+Bias (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf sparse\+::\+C\+SR} $>$}]{sent\+Lex\+Probs, }
+\item[{{\bf Ptr}$<$ Global\+Attention $>$}]{attention, }
+\item[{float}]{eps, }
+\item[{bool}]{single}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexicalBias_a2a1c2b9a00a85ee6620f80a5c8c40534}{}\label{classmarian_1_1LexicalBias_a2a1c2b9a00a85ee6620f80a5c8c40534}
+
+
+Definition at line 135 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+139       : \hyperlink{classmarian_1_1LexicalBias_a88bd39c6ff99b3f8414ae93ca12ac520}{sentLexProbs\_}(sentLexProbs),
+140         \hyperlink{classmarian_1_1LexicalBias_a4f114151f82741483009c37e250eed2a}{attention\_}(\hyperlink{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}{attention}),
+141         \hyperlink{classmarian_1_1LexicalBias_a326493e5dcc773e702d9f29d0da0c0e5}{eps\_}(\hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{eps}),
+142         \hyperlink{classmarian_1_1LexicalBias_aff01be8467b5f74284af2f620dfefac5}{single\_}(single) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{operator()(\+Expr logits)}{operator()(Expr logits)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Lexical\+Bias\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{logits}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1LexicalBias_ab5d432af32715db16e5a51b29c36aed9}{}\label{classmarian_1_1LexicalBias_ab5d432af32715db16e5a51b29c36aed9}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!attention\+\_\+@{attention\+\_\+}}
+\index{attention\+\_\+@{attention\+\_\+}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{attention\+\_\+}{attention_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$Global\+Attention$>$ marian\+::\+Lexical\+Bias\+::attention\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexicalBias_a4f114151f82741483009c37e250eed2a}{}\label{classmarian_1_1LexicalBias_a4f114151f82741483009c37e250eed2a}
+
+
+Definition at line 130 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!eps\+\_\+@{eps\+\_\+}}
+\index{eps\+\_\+@{eps\+\_\+}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{eps\+\_\+}{eps_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Lexical\+Bias\+::eps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexicalBias_a326493e5dcc773e702d9f29d0da0c0e5}{}\label{classmarian_1_1LexicalBias_a326493e5dcc773e702d9f29d0da0c0e5}
+
+
+Definition at line 131 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!sent\+Lex\+Probs\+\_\+@{sent\+Lex\+Probs\+\_\+}}
+\index{sent\+Lex\+Probs\+\_\+@{sent\+Lex\+Probs\+\_\+}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{sent\+Lex\+Probs\+\_\+}{sentLexProbs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lexical\+Bias\+::sent\+Lex\+Probs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexicalBias_a88bd39c6ff99b3f8414ae93ca12ac520}{}\label{classmarian_1_1LexicalBias_a88bd39c6ff99b3f8414ae93ca12ac520}
+
+
+Definition at line 129 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}!single\+\_\+@{single\+\_\+}}
+\index{single\+\_\+@{single\+\_\+}!marian\+::\+Lexical\+Bias@{marian\+::\+Lexical\+Bias}}
+\subsubsection[{\texorpdfstring{single\+\_\+}{single_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Lexical\+Bias\+::single\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexicalBias_aff01be8467b5f74284af2f620dfefac5}{}\label{classmarian_1_1LexicalBias_aff01be8467b5f74284af2f620dfefac5}
+
+
+Definition at line 132 of file lex\+\_\+probs.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lex__probs_8h}{lex\+\_\+probs.\+h}\end{DoxyCompactItemize}

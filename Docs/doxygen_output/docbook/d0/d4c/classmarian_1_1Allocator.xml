@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d4c/classmarian_1_1Allocator">
+<title>marian::Allocator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/da9/allocator_8h">&lt;allocator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Allocator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d35/classmarian_1_1Allocator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Allocator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d69/classmarian_1_1Allocator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Device</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Device device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t available_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t step_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t alignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool throw_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::set&lt; Gap &gt; gaps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unordered_map&lt; uint8_t *, Ptr&lt; MemoryPiece &gt; &gt; allocated_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d4c/classmarian_1_1Allocator_1ad35f239037c6bdd96370d04a54812a9b">align</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4c/classmarian_1_1Allocator_1a019a57dc40f12b739fa2cc1a7fbbe9f2">grow</link> (
+size_t add)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d9/d39/classmarian_1_1Gap">Gap</link> <link linkend="d0/d4c/classmarian_1_1Allocator_1af67c8e9dd2c1cee26a1c064bf2c1f352">getGap</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4c/classmarian_1_1Allocator_1a29dec83519003c94b5ef7520a8235f5b">insertGap</link> (
+<link linkend="d9/d39/classmarian_1_1Gap">Gap</link> gap, bool consolidate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d4c/classmarian_1_1Allocator_1ae2f62305efe8dacd88646dcc682cf456">Allocator</link> (
+size_t deviceNo, size_t bytes, size_t step, size_t alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4c/classmarian_1_1Allocator_1a7481723a5cde8f7c10e56733fc5b9fcc">throwAtReallocation</link> (
+bool throwRealloc)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4c/classmarian_1_1Allocator_1afdac64600119b40b07cb12626f343d6a">reserve</link> (
+size_t bytes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d4c/classmarian_1_1Allocator_1a17a7469579d224e54ba0740d72db3f80">capacity</link> (
+size_t num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; <link linkend="d0/d4c/classmarian_1_1Allocator_1aeddab9eeed82b8702c22d91a105d644b">alloc</link> (
+size_t num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; <link linkend="d0/d4c/classmarian_1_1Allocator_1a7deb1124f98c6f1befd7455326478e7c">alloc</link> (
+size_t bytes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d0/d4c/classmarian_1_1Allocator_1a26b71806d3b207af1a2f983c4979487d">free</link> (
+uint8_t * ptr, size_t bytes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d0/d4c/classmarian_1_1Allocator_1a63bea58b067fce5cdb99365b00075887">free</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; mp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4c/classmarian_1_1Allocator_1a8f6497f24fdf8509c29a73b76667a66a">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; <link linkend="d0/d4c/classmarian_1_1Allocator_1a0d674662cfae11d3e221dbf1f764a49b">memory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d4c/classmarian_1_1Allocator_1a93bed619eb9ee33bea60953aae2451bb">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d4c/classmarian_1_1Allocator_1a557ffeb3d6563ac533e5e9a7e334f8bd">available</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d4c/classmarian_1_1Allocator_1ab9cde5e32bc9d9bf836540f58a697103">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1ad35f239037c6bdd96370d04a54812a9b">
+                <title>size_t marian::Allocator&lt; Device &gt;::align (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a019a57dc40f12b739fa2cc1a7fbbe9f2">
+                <title>void marian::Allocator&lt; Device &gt;::grow (size_t add)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1af67c8e9dd2c1cee26a1c064bf2c1f352">
+                <title>Gap marian::Allocator&lt; Device &gt;::getGap (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a29dec83519003c94b5ef7520a8235f5b">
+                <title>void marian::Allocator&lt; Device &gt;::insertGap (Gap gap, bool consolidate=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1ae2f62305efe8dacd88646dcc682cf456">
+                <title>marian::Allocator&lt; Device &gt;::Allocator (size_t deviceNo, size_t bytes, size_t step, size_t alignment=256)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a7481723a5cde8f7c10e56733fc5b9fcc">
+                <title>void marian::Allocator&lt; Device &gt;::throwAtReallocation (bool throwRealloc)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1afdac64600119b40b07cb12626f343d6a">
+                <title>void marian::Allocator&lt; Device &gt;::reserve (size_t bytes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a17a7469579d224e54ba0740d72db3f80">
+                <title>size_t marian::Allocator&lt; Device &gt;::capacity (size_t num)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1aeddab9eeed82b8702c22d91a105d644b">
+                <title>Ptr&lt;MemoryPiece&gt; marian::Allocator&lt; Device &gt;::alloc (size_t num)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a7deb1124f98c6f1befd7455326478e7c">
+                <title>Ptr&lt;MemoryPiece&gt; marian::Allocator&lt; Device &gt;::alloc (size_t bytes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a26b71806d3b207af1a2f983c4979487d">
+                <title>bool marian::Allocator&lt; Device &gt;::free (uint8_t *ptr, size_t bytes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a63bea58b067fce5cdb99365b00075887">
+                <title>bool marian::Allocator&lt; Device &gt;::free (Ptr&lt; MemoryPiece &gt; mp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a8f6497f24fdf8509c29a73b76667a66a">
+                <title>void marian::Allocator&lt; Device &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a0d674662cfae11d3e221dbf1f764a49b">
+                <title>Ptr&lt;MemoryPiece&gt; marian::Allocator&lt; Device &gt;::memory ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a93bed619eb9ee33bea60953aae2451bb">
+                <title>size_t marian::Allocator&lt; Device &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1a557ffeb3d6563ac533e5e9a7e334f8bd">
+                <title>size_t marian::Allocator&lt; Device &gt;::available ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d4c/classmarian_1_1Allocator_1ab9cde5e32bc9d9bf836540f58a697103">
+                <title>size_t marian::Allocator&lt; Device &gt;::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

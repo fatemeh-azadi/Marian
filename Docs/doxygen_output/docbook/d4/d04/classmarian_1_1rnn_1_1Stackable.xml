@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable">
+<title>marian::rnn::Stackable class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::Stackable</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d57/classmarian_1_1rnn_1_1Stackable__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::Stackable</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d73/classmarian_1_1rnn_1_1Stackable__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Options &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a0aded6af5da3482e4e16bdb54d00c4b3">Stackable</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a4b3546406036bcb8706c477b48d92da4">~Stackable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; Cast &gt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a33df0f892797bb7ebe12f3c0f18b43ce">as</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1ad4f5316be17590c467cd8c28b67279b3">is</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a7504c0066b552a5d31b81334d6b488e5">getOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a48fdd87d8af9edf44eec0a2dbde06b2c">opt</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a0e6bde0a208b299d6da5c305858c0569">opt</link> (
+const std::string &amp; key, T defaultValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable_1a322f402f6edc55cee4d1368df35bae8b">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a0aded6af5da3482e4e16bdb54d00c4b3">
+                <title>marian::rnn::Stackable::Stackable (Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a4b3546406036bcb8706c477b48d92da4">
+                <title>virtual marian::rnn::Stackable::~Stackable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a33df0f892797bb7ebe12f3c0f18b43ce">
+                <title>Ptr&lt;Cast&gt; marian::rnn::Stackable::as ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1ad4f5316be17590c467cd8c28b67279b3">
+                <title>bool marian::rnn::Stackable::is ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a7504c0066b552a5d31b81334d6b488e5">
+                <title>Ptr&lt;Options&gt; marian::rnn::Stackable::getOptions ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a48fdd87d8af9edf44eec0a2dbde06b2c">
+                <title>T marian::rnn::Stackable::opt (const std::string &amp;key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a0e6bde0a208b299d6da5c305858c0569">
+                <title>T marian::rnn::Stackable::opt (const std::string &amp;key, T defaultValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d04/classmarian_1_1rnn_1_1Stackable_1a322f402f6edc55cee4d1368df35bae8b">
+                <title>virtual void marian::rnn::Stackable::clear ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

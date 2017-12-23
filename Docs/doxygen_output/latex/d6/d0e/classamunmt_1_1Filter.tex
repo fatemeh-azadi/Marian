@@ -1,0 +1,313 @@
+\hypertarget{classamunmt_1_1Filter}{}\section{amunmt\+:\+:Filter Class Reference}
+\label{classamunmt_1_1Filter}\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+
+
+{\ttfamily \#include $<$filter.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{d4/d50/classamunmt_1_1Filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Filter_a2f1930edcf77b0e457dee551bec9bfde}{Filter} (const size\+\_\+t num\+First\+Words=10000)
+\item 
+\hyperlink{classamunmt_1_1Filter_a876cd1873c845ac085771497bbe7f628}{Filter} (const \hyperlink{classamunmt_1_1Vocab}{Vocab} \&src\+Vocab, const \hyperlink{classamunmt_1_1Vocab}{Vocab} \&trg\+Vocab, const std\+::string \&path, const size\+\_\+t num\+First\+Words=10000, const size\+\_\+t max\+Num\+Translation=1000)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \hyperlink{classamunmt_1_1Filter_a2590b529fb636d351730f2fae05a78e9}{Get\+Filtered\+Vocab} (const T \&src\+Words, const size\+\_\+t max\+Vocab\+Size) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Filter_a8b4e8daccd3d04c498574647b3493ace}{Get\+Num\+First\+Words} () const 
+\item 
+void \hyperlink{classamunmt_1_1Filter_afa06c9b88b2a63f4868ce2e5317011d3}{Set\+Num\+First\+Words} (size\+\_\+t num\+First\+Words)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} $>$ \hyperlink{classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc}{Parse\+Alignment\+File} (const \hyperlink{classamunmt_1_1Vocab}{Vocab} \&src\+Vocab, const \hyperlink{classamunmt_1_1Vocab}{Vocab} \&trg\+Vocab, const std\+::string \&path, const size\+\_\+t max\+Num\+Translation, const size\+\_\+t num\+N\+First)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{num\+First\+Words\+\_\+}
+\item 
+const std\+::vector$<$ \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} $>$ \hyperlink{classamunmt_1_1Filter_a52d077db831125a814563951868d3e16}{mapper\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file amun/common/filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Filter(const size\+\_\+t num\+First\+Words=10000)}{Filter(const size_t numFirstWords=10000)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Filter\+::\+Filter (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{num\+First\+Words = {\ttfamily 10000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Filter_a2f1930edcf77b0e457dee551bec9bfde}{}\label{classamunmt_1_1Filter_a2f1930edcf77b0e457dee551bec9bfde}
+
+
+Definition at line 19 of file filter.\+cpp.
+
+
+\begin{DoxyCode}
+19 : \hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{numFirstWords\_}(numFirstWords) \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Filter(const Vocab \&src\+Vocab, const Vocab \&trg\+Vocab, const std\+::string \&path, const size\+\_\+t num\+First\+Words=10000, const size\+\_\+t max\+Num\+Translation=1000)}{Filter(const Vocab &srcVocab, const Vocab &trgVocab, const std::string &path, const size_t numFirstWords=10000, const size_t maxNumTranslation=1000)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Filter\+::\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vocab} \&}]{src\+Vocab, }
+\item[{const {\bf Vocab} \&}]{trg\+Vocab, }
+\item[{const std\+::string \&}]{path, }
+\item[{const size\+\_\+t}]{num\+First\+Words = {\ttfamily 10000}, }
+\item[{const size\+\_\+t}]{max\+Num\+Translation = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Filter_a876cd1873c845ac085771497bbe7f628}{}\label{classamunmt_1_1Filter_a876cd1873c845ac085771497bbe7f628}
+
+
+Definition at line 21 of file filter.\+cpp.
+
+
+\begin{DoxyCode}
+26   : \hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{numFirstWords\_}(numFirstWords),
+27     \hyperlink{classamunmt_1_1Filter_a52d077db831125a814563951868d3e16}{mapper\_}(\hyperlink{classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc}{ParseAlignmentFile}(srcVocab,
+28                                trgVocab,
+29                                path,
+30                                maxNumTranslation,
+31                                numFirstWords)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Get\+Filtered\+Vocab@{Get\+Filtered\+Vocab}}
+\index{Get\+Filtered\+Vocab@{Get\+Filtered\+Vocab}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Get\+Filtered\+Vocab(const T \&src\+Words, const size\+\_\+t max\+Vocab\+Size) const }{GetFilteredVocab(const T &srcWords, const size_t maxVocabSize) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Words} amunmt\+::\+Filter\+::\+Get\+Filtered\+Vocab (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{src\+Words, }
+\item[{const size\+\_\+t}]{max\+Vocab\+Size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Filter_a2590b529fb636d351730f2fae05a78e9}{}\label{classamunmt_1_1Filter_a2590b529fb636d351730f2fae05a78e9}
+
+
+Definition at line 25 of file amun/common/filter.\+h.
+
+
+\begin{DoxyCode}
+25                                                                                \{
+26       std::set<Word> filtered;
+27 
+28       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < std::min(\hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{numFirstWords\_}, maxVocabSize); ++i) \{
+29         filtered.insert(i);
+30       \}
+31 
+32       \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& srcWord : srcWords) \{
+33         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& trgWord : \hyperlink{classamunmt_1_1Filter_a52d077db831125a814563951868d3e16}{mapper\_}[srcWord]) \{
+34           \textcolor{keywordflow}{if} (trgWord < maxVocabSize) \{
+35             filtered.insert(trgWord);
+36           \}
+37         \}
+38       \}
+39 
+40       \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output}(filtered.begin(), filtered.end());
+41 
+42       \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+43     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0e/classamunmt_1_1Filter_a2590b529fb636d351730f2fae05a78e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Get\+Num\+First\+Words@{Get\+Num\+First\+Words}}
+\index{Get\+Num\+First\+Words@{Get\+Num\+First\+Words}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Get\+Num\+First\+Words() const }{GetNumFirstWords() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Filter\+::\+Get\+Num\+First\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Filter_a8b4e8daccd3d04c498574647b3493ace}{}\label{classamunmt_1_1Filter_a8b4e8daccd3d04c498574647b3493ace}
+
+
+Definition at line 115 of file filter.\+cpp.
+
+
+\begin{DoxyCode}
+115                                       \{
+116   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{numFirstWords\_};
+117 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0e/classamunmt_1_1Filter_a8b4e8daccd3d04c498574647b3493ace_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Parse\+Alignment\+File@{Parse\+Alignment\+File}}
+\index{Parse\+Alignment\+File@{Parse\+Alignment\+File}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Parse\+Alignment\+File(const Vocab \&src\+Vocab, const Vocab \&trg\+Vocab, const std\+::string \&path, const size\+\_\+t max\+Num\+Translation, const size\+\_\+t num\+N\+First)}{ParseAlignmentFile(const Vocab &srcVocab, const Vocab &trgVocab, const std::string &path, const size_t maxNumTranslation, const size_t numNFirst)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Words} $>$ amunmt\+::\+Filter\+::\+Parse\+Alignment\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vocab} \&}]{src\+Vocab, }
+\item[{const {\bf Vocab} \&}]{trg\+Vocab, }
+\item[{const std\+::string \&}]{path, }
+\item[{const size\+\_\+t}]{max\+Num\+Translation, }
+\item[{const size\+\_\+t}]{num\+N\+First}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc}{}\label{classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc}
+
+
+Definition at line 33 of file filter.\+cpp.
+
+
+\begin{DoxyCode}
+37                                                                       \{
+38   std::map<Word, std::vector<std::pair<Word, float>>> mapper;
+39   std::ifstream filterFile(path);
+40   std::string line;
+41   std::string delimiter = \textcolor{stringliteral}{""};
+42   \textcolor{keywordtype}{size\_t} srcIndex, trgIndex;
+43   \textcolor{keywordflow}{while} (std::getline(filterFile, line)) \{
+44     \textcolor{keywordflow}{if} (delimiter ==  \textcolor{stringliteral}{""}) \{
+45        \textcolor{keywordflow}{if} (line.find(\textcolor{stringliteral}{"\(\backslash\)t"}, 0) != std::string::npos) \{
+46          delimiter = \textcolor{stringliteral}{"\(\backslash\)t"};
+47          srcIndex = 0;
+48          trgIndex = 1;
+49        \} \textcolor{keywordflow}{else}  \{
+50          delimiter = \textcolor{stringliteral}{" "};
+51          srcIndex = 1;
+52          trgIndex = 0;
+53        \}
+54     \}
+55     \hyperlink{namespaceamunmt_a4578e863aaec8293556404432d7e8d04}{Trim}(line);
+56     \textcolor{keywordflow}{if} (line.size() == 0) \{
+57       \textcolor{keywordflow}{continue};
+58     \}
+59     std::vector<std::string> tokens;
+60     \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, tokens, delimiter);
+61     \textcolor{keywordflow}{if} (tokens.size() != 3) \{
+62       \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Filter: broken line: \{\}"}, line);
+63       \textcolor{keywordflow}{continue};
+64     \}
+65     \textcolor{keywordflow}{if} (trgVocab[tokens[trgIndex]] != 1 && srcVocab[tokens[srcIndex]] != 1) \{
+66       mapper[srcVocab[tokens[1]]].push\_back(std::make\_pair(trgVocab[tokens[trgIndex]],
+67                                                            std::stof(tokens[2])));
+68     \}
+69   \}
+70   std::vector<Words> vecMapper(srcVocab.size());
+71   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < srcVocab.size(); ++i) \{
+72     \textcolor{keywordflow}{if} (mapper.find(i) != mapper.end()) \{
+73       std::sort(mapper[i].begin(), mapper[i].end(),
+74           [](\textcolor{keyword}{const} std::pair<Word, float>& left,
+75             \textcolor{keyword}{const} std::pair<Word, float>& right) \{
+76             \textcolor{keywordflow}{return} left.second > right.second; \});
+77       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < std::min(mapper[i].size(), maxNumTranslation); ++j) \{
+78         \textcolor{keywordflow}{if} (mapper[i][j].first >= numNFirst) \{
+79           vecMapper[i].push\_back(mapper[i][j].first);
+80         \}
+81       \}
+82       \textcolor{comment}{// std::cerr << "MAP :" << i  << " " << srcVocab[i] << " " << vecMapper[i].size()}
+83                 \textcolor{comment}{// <<  " " << mapper[i].size() << std::endl;}
+84     \}
+85   \}
+86   \textcolor{keywordflow}{return} vecMapper;
+87 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0e/classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0e/classamunmt_1_1Filter_a8577454f5c8aa797f92c53c51d7791bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!Set\+Num\+First\+Words@{Set\+Num\+First\+Words}}
+\index{Set\+Num\+First\+Words@{Set\+Num\+First\+Words}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{Set\+Num\+First\+Words(size\+\_\+t num\+First\+Words)}{SetNumFirstWords(size_t numFirstWords)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Filter\+::\+Set\+Num\+First\+Words (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+First\+Words}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Filter_afa06c9b88b2a63f4868ce2e5317011d3}{}\label{classamunmt_1_1Filter_afa06c9b88b2a63f4868ce2e5317011d3}
+
+
+Definition at line 119 of file filter.\+cpp.
+
+
+\begin{DoxyCode}
+119                                                         \{
+120   \hyperlink{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{numFirstWords\_} = numFirstWords;
+121 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0e/classamunmt_1_1Filter_afa06c9b88b2a63f4868ce2e5317011d3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!mapper\+\_\+@{mapper\+\_\+}}
+\index{mapper\+\_\+@{mapper\+\_\+}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{mapper\+\_\+}{mapper_}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf Words}$>$ amunmt\+::\+Filter\+::mapper\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Filter_a52d077db831125a814563951868d3e16}{}\label{classamunmt_1_1Filter_a52d077db831125a814563951868d3e16}
+
+
+Definition at line 57 of file amun/common/filter.\+h.
+
+\index{amunmt\+::\+Filter@{amunmt\+::\+Filter}!num\+First\+Words\+\_\+@{num\+First\+Words\+\_\+}}
+\index{num\+First\+Words\+\_\+@{num\+First\+Words\+\_\+}!amunmt\+::\+Filter@{amunmt\+::\+Filter}}
+\subsubsection[{\texorpdfstring{num\+First\+Words\+\_\+}{numFirstWords_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Filter\+::num\+First\+Words\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}{}\label{classamunmt_1_1Filter_a1c4086583ea962edbfc4d9d6e9291424}
+
+
+Definition at line 56 of file amun/common/filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2filter_8h}{amun/common/filter.\+h}\item 
+\hyperlink{filter_8cpp}{filter.\+cpp}\end{DoxyCompactItemize}

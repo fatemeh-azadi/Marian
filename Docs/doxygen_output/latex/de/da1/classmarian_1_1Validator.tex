@@ -1,0 +1,307 @@
+\hypertarget{classmarian_1_1Validator}{}\section{marian\+:\+:Validator$<$ Data\+Set $>$ Class Template Reference}
+\label{classmarian_1_1Validator}\index{marian\+::\+Validator$<$ Data\+Set $>$@{marian\+::\+Validator$<$ Data\+Set $>$}}
+
+
+{\ttfamily \#include $<$validator.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Validator$<$ Data\+Set $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d0/d9c/classmarian_1_1Validator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Validator_a438455be8ec5c8e0158ad4d8586b6d51}{Validator} (std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$$>$ vocabs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+virtual std\+::string \hyperlink{classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0}{type} ()=0
+\item 
+virtual void \hyperlink{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}{keep\+Best} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)=0
+\item 
+virtual bool \hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{lower\+Is\+Better} ()
+\item 
+virtual void \hyperlink{classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f}{init\+Last\+Best} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Validator_aa72a8e064f655802123c7c18e6bc229e}{stalled} ()
+\item 
+virtual float \hyperlink{classmarian_1_1Validator_a30afe5c990329fdb37133cad5e323c31}{validate} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \hyperlink{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}{validate\+BG} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchGenerator}{data\+::\+Batch\+Generator}$<$ Data\+Set $>$$>$)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ $>$ \hyperlink{classmarian_1_1Validator_ae6afb9838529db124fcc1aa8f0cb1fc9}{vocabs\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{last\+Best\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}{stalled\+\_\+} \{0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Set$>$\\*
+class marian\+::\+Validator$<$ Data\+Set $>$}
+
+
+
+Definition at line 19 of file training/validator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Validator@{marian\+::\+Validator}!Validator@{Validator}}
+\index{Validator@{Validator}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{Validator(std\+::vector$<$ Ptr$<$ Vocab $>$$>$ vocabs, Ptr$<$ Config $>$ options)}{Validator(std::vector< Ptr< Vocab >> vocabs, Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::{\bf Validator} (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Ptr}$<$ {\bf Vocab} $>$$>$}]{vocabs, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Validator_a438455be8ec5c8e0158ad4d8586b6d51}{}\label{classmarian_1_1Validator_a438455be8ec5c8e0158ad4d8586b6d51}
+
+
+Definition at line 27 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+28       : \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}(options),
+29         \hyperlink{classmarian_1_1Validator_ae6afb9838529db124fcc1aa8f0cb1fc9}{vocabs\_}(vocabs),
+30         \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{lastBest\_}\{\hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{lowerIsBetter}() ? std::numeric\_limits<float>::max() :
+31                                     \hyperlink{namespacestd}{std}::numeric\_limits<float>::lowest()\} \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Validator@{marian\+::\+Validator}!init\+Last\+Best@{init\+Last\+Best}}
+\index{init\+Last\+Best@{init\+Last\+Best}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{init\+Last\+Best()}{initLastBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual void {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::init\+Last\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f}{}\label{classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f}
+
+
+Definition at line 39 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+39                               \{
+40     \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{lastBest\_} = \hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{lowerIsBetter}() ? std::numeric\_limits<float>::max() :
+41                                   \hyperlink{namespacestd}{std}::numeric\_limits<float>::lowest();
+42   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/da1/classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!keep\+Best@{keep\+Best}}
+\index{keep\+Best@{keep\+Best}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{keep\+Best(\+Ptr$<$ Expression\+Graph $>$ graph)=0}{keepBest(Ptr< ExpressionGraph > graph)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual void {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::keep\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}{}\label{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}
+
+
+Implemented in \hyperlink{classmarian_1_1S2SValidator_ae5a8f8799039bdac36790ef06158249e}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1ScriptValidator_a3c0cbf95838821af29430eb5d8de3d5a}{marian\+::\+Script\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1PerplexityValidator_ab276447aa46c5f00fb3e559b2010a00c}{marian\+::\+Perplexity\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1CrossEntropyValidator_a18a18f95bfd4fc63653c06ed03ea612e}{marian\+::\+Cross\+Entropy\+Validator$<$ Builder $>$}, and \hyperlink{classmarian_1_1AccuracyValidator_a163ff7773c7cab8b92e83aaffdb50c4d}{marian\+::\+Accuracy\+Validator$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{de/da1/classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!lower\+Is\+Better@{lower\+Is\+Better}}
+\index{lower\+Is\+Better@{lower\+Is\+Better}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{lower\+Is\+Better()}{lowerIsBetter()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual bool {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::lower\+Is\+Better (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{}\label{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}
+
+
+Reimplemented in \hyperlink{classmarian_1_1S2SValidator_aea688081d232cfd12523c54b4869148a}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1ScriptValidator_aef28332c0e50f4d123f7851af2568eee}{marian\+::\+Script\+Validator$<$ Builder $>$}, and \hyperlink{classmarian_1_1AccuracyValidator_a4e4275b89312ca08185d5479bcbb74b0}{marian\+::\+Accuracy\+Validator$<$ Builder $>$}.
+
+
+
+Definition at line 37 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+37 \{ \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/da1/classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!stalled@{stalled}}
+\index{stalled@{stalled}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{stalled()}{stalled()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ size\+\_\+t {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::stalled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Validator_aa72a8e064f655802123c7c18e6bc229e}{}\label{classmarian_1_1Validator_aa72a8e064f655802123c7c18e6bc229e}
+
+
+Definition at line 44 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+44 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}{stalled\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Validator@{marian\+::\+Validator}!type@{type}}
+\index{type@{type}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{type()=0}{type()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual std\+::string {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0}{}\label{classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0}
+
+
+Implemented in \hyperlink{classmarian_1_1S2SValidator_a66b288aad453a7bf669b3542cd35f564}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1ScriptValidator_aba332ac1dc054aa9901cec6cc9282087}{marian\+::\+Script\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1PerplexityValidator_a1df91365d8eef33c49bbd487de8e244e}{marian\+::\+Perplexity\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1CrossEntropyValidator_a268534ff39447d8c5f95fba5bc18d458}{marian\+::\+Cross\+Entropy\+Validator$<$ Builder $>$}, and \hyperlink{classmarian_1_1AccuracyValidator_ab941197460ea6175025ff32c4fff178c}{marian\+::\+Accuracy\+Validator$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/da1/classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!validate@{validate}}
+\index{validate@{validate}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{validate(\+Ptr$<$ Expression\+Graph $>$ graph)}{validate(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual float {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::validate (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Validator_a30afe5c990329fdb37133cad5e323c31}{}\label{classmarian_1_1Validator_a30afe5c990329fdb37133cad5e323c31}
+
+
+Reimplemented in \hyperlink{classmarian_1_1S2SValidator_aef728e7e102607d2d69d96aa4906d128}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}, and \hyperlink{classmarian_1_1ScriptValidator_a883bb9df22252e25ca4be306713f034d}{marian\+::\+Script\+Validator$<$ Builder $>$}.
+
+
+
+Definition at line 46 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+46                                                      \{
+47     \textcolor{keyword}{using namespace }data;
+48     \textcolor{keyword}{auto} validPaths = \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"valid-sets"});
+49     \textcolor{keyword}{auto} corpus = New<DataSet>(validPaths, \hyperlink{classmarian_1_1Validator_ae6afb9838529db124fcc1aa8f0cb1fc9}{vocabs\_}, \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_});
+50     Ptr<BatchGenerator<DataSet>> batchGenerator
+51         = New<BatchGenerator<DataSet>>(corpus, \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_});
+52     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->has(\textcolor{stringliteral}{"valid-mini-batch"}))
+53       batchGenerator->forceBatchSize(\hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"valid-mini-batch"}));
+54     batchGenerator->prepare(\textcolor{keyword}{false});
+55 
+56     \textcolor{keywordtype}{float} val = \hyperlink{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}{validateBG}(graph, batchGenerator);
+57 
+58     \textcolor{keywordflow}{if}((\hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{lowerIsBetter}() && \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{lastBest\_} > val)
+59        || (!\hyperlink{classmarian_1_1Validator_a48b6583b7452642638e3fe463b27c9bb}{lowerIsBetter}() && \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{lastBest\_} < val)) \{
+60       \hyperlink{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}{stalled\_} = 0;
+61       \hyperlink{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{lastBest\_} = val;
+62       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"keep-best"}))
+63         \hyperlink{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}{keepBest}(graph);
+64     \} \textcolor{keywordflow}{else} \{
+65       \hyperlink{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}{stalled\_}++;
+66     \}
+67     \textcolor{keywordflow}{return} val;
+68   \};
+\end{DoxyCode}
+\index{marian\+::\+Validator@{marian\+::\+Validator}!validate\+BG@{validate\+BG}}
+\index{validate\+BG@{validate\+BG}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{validate\+B\+G(\+Ptr$<$ Expression\+Graph $>$, Ptr$<$ data\+::\+Batch\+Generator$<$ Data\+Set $>$$>$)=0}{validateBG(Ptr< ExpressionGraph >, Ptr< data::BatchGenerator< DataSet >>)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ virtual float {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::validate\+BG (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch\+Generator}$<$ Data\+Set $>$$>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}{}\label{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}
+
+
+Implemented in \hyperlink{classmarian_1_1S2SValidator_a4b6ef1beacf57dce676851f740700573}{marian\+::\+S2\+S\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1ScriptValidator_a0dabd973630921103e7b3a8121a12961}{marian\+::\+Script\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1PerplexityValidator_a30a9da5e5a20b5f7f90643eb1ae85dac}{marian\+::\+Perplexity\+Validator$<$ Builder $>$}, \hyperlink{classmarian_1_1CrossEntropyValidator_a2b49c37174062b22629073328997dd6c}{marian\+::\+Cross\+Entropy\+Validator$<$ Builder $>$}, and \hyperlink{classmarian_1_1AccuracyValidator_a8e46df95f018d71172720c38e8b179b4}{marian\+::\+Accuracy\+Validator$<$ Builder $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{de/da1/classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Validator@{marian\+::\+Validator}!last\+Best\+\_\+@{last\+Best\+\_\+}}
+\index{last\+Best\+\_\+@{last\+Best\+\_\+}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{last\+Best\+\_\+}{lastBest_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ float {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::last\+Best\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}{}\label{classmarian_1_1Validator_a6fbe055b2a8c2341172091b2bbde0a59}
+
+
+Definition at line 23 of file training/validator.\+h.
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{}\label{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}
+
+
+Definition at line 21 of file training/validator.\+h.
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!stalled\+\_\+@{stalled\+\_\+}}
+\index{stalled\+\_\+@{stalled\+\_\+}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{stalled\+\_\+}{stalled_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ size\+\_\+t {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::stalled\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}{}\label{classmarian_1_1Validator_a9fe2c3f4b9b5f38d1a2db2a9ba8704e8}
+
+
+Definition at line 24 of file training/validator.\+h.
+
+\index{marian\+::\+Validator@{marian\+::\+Validator}!vocabs\+\_\+@{vocabs\+\_\+}}
+\index{vocabs\+\_\+@{vocabs\+\_\+}!marian\+::\+Validator@{marian\+::\+Validator}}
+\subsubsection[{\texorpdfstring{vocabs\+\_\+}{vocabs_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ std\+::vector$<${\bf Ptr}$<${\bf Vocab}$>$ $>$ {\bf marian\+::\+Validator}$<$ Data\+Set $>$\+::vocabs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1Validator_ae6afb9838529db124fcc1aa8f0cb1fc9}{}\label{classmarian_1_1Validator_ae6afb9838529db124fcc1aa8f0cb1fc9}
+
+
+Definition at line 22 of file training/validator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{training_2validator_8h}{training/validator.\+h}\end{DoxyCompactItemize}

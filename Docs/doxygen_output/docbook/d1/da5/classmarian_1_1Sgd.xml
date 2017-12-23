@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/da5/classmarian_1_1Sgd">
+<title>marian::Sgd class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d89/optimizers_8h">&lt;optimizers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Sgd</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dbb/classmarian_1_1Sgd__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Sgd</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d51/classmarian_1_1Sgd__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/da5/classmarian_1_1Sgd_1a52cb732a0651ad0ecd39cd1829b6938e">Sgd</link> (
+float eta, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/da5/classmarian_1_1Sgd_1a8a74cc7115e1aafcb67d013b37c8f1ec">updateImpl</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> params, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grads)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/da5/classmarian_1_1Sgd_1a52cb732a0651ad0ecd39cd1829b6938e">
+                <title>marian::Sgd::Sgd (float eta, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/da5/classmarian_1_1Sgd_1a8a74cc7115e1aafcb67d013b37c8f1ec">
+                <title>void marian::Sgd::updateImpl (Tensor params, Tensor grads)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

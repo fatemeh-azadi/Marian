@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/da9/classmarian_1_1data_1_1DataBatch">
+<title>marian::data::DataBatch class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/daf/data_2dataset_8h">&lt;dataset.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::DataBatch</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d9f/classmarian_1_1data_1_1DataBatch__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::DataBatch</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dd0/classmarian_1_1data_1_1DataBatch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Input &gt; inputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d7/db4/classmarian_1_1data_1_1Input">Input</link> &gt; &amp; <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1a3d6ace52303ab3f26fc351ca4f098040">inputs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; <link linkend="d7/db4/classmarian_1_1data_1_1Input">Input</link> &gt; &amp; <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1a2c28ac6dec880560e37798296e472692">inputs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1ad6232318601d04de84a86587499e84aa">push_back</link> (
+<link linkend="d7/db4/classmarian_1_1data_1_1Input">Input</link> input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="de/d56/namespacemarian_1_1data_1a5801e80ecb76ee38a5ac080f08d9646c">Data</link> &amp; <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1af3ab2b78b7692a716a319006c35ca5ca">features</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="de/d56/namespacemarian_1_1data_1a5801e80ecb76ee38a5ac080f08d9646c">Data</link> &amp; <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1a63cef28fe2f2a697abe429b10cdf1269">labels</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d3/da9/classmarian_1_1data_1_1DataBatch_1a19021abc5f6e1aeed56c3b68d49a4a4a">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1a3d6ace52303ab3f26fc351ca4f098040">
+                <title>std::vector&lt;Input&gt;&amp; marian::data::DataBatch::inputs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1a2c28ac6dec880560e37798296e472692">
+                <title>const std::vector&lt;Input&gt;&amp; marian::data::DataBatch::inputs () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1ad6232318601d04de84a86587499e84aa">
+                <title>void marian::data::DataBatch::push_back (Input input)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1af3ab2b78b7692a716a319006c35ca5ca">
+                <title>Data&amp; marian::data::DataBatch::features ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1a63cef28fe2f2a697abe429b10cdf1269">
+                <title>Data&amp; marian::data::DataBatch::labels ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/da9/classmarian_1_1data_1_1DataBatch_1a19021abc5f6e1aeed56c3b68d49a4a4a">
+                <title>size_t marian::data::DataBatch::size () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

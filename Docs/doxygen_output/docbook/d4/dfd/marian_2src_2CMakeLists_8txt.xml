@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dfd/marian_2src_2CMakeLists_8txt">
+    <title>marian/src/CMakeLists.txt File Reference</title>
+<para>Include dependency diagram for marian/src/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d5a/marian_2src_2CMakeLists_8txt__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d94/marian_2src_2CMakeLists_8txt__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file CMakeLists.txt</para>
+    </simplesect>
+</section>

@@ -1,0 +1,64 @@
+\hypertarget{loader__factory_8h}{}\section{loader\+\_\+factory.\+h File Reference}
+\label{loader__factory_8h}\index{loader\+\_\+factory.\+h@{loader\+\_\+factory.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$yaml-\/cpp/yaml.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}common/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/loader.\+h\char`\"{}}\\*
+Include dependency graph for loader\+\_\+factory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/df4/loader__factory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{d2/da2/loader__factory_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1LoaderFactory}{amunmt\+::\+Loader\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{loader__factory_8h_aa8a2d91e339a9855a8ce38a54d6ad325}{I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN}(god,  type\+Var,  type\+Str,  Loader\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{loader\+\_\+factory.\+h@{loader\+\_\+factory.\+h}!I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN@{I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN}}
+\index{I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN@{I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN}!loader\+\_\+factory.\+h@{loader\+\_\+factory.\+h}}
+\subsubsection[{\texorpdfstring{I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN}{IF_MATCH_RETURN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+F\+\_\+\+M\+A\+T\+C\+H\+\_\+\+R\+E\+T\+U\+RN(
+\begin{DoxyParamCaption}
+\item[{}]{god, }
+\item[{}]{type\+Var, }
+\item[{}]{type\+Str, }
+\item[{}]{Loader\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{loader__factory_8h_aa8a2d91e339a9855a8ce38a54d6ad325}{}\label{loader__factory_8h_aa8a2d91e339a9855a8ce38a54d6ad325}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+  if(typeVar == typeStr) \{ \(\backslash\)
+    Loader *loader = \textcolor{keyword}{new} LoaderType(name, config); \(\backslash\)
+    loader->Load(god); \(\backslash\)
+    return loader; \(\backslash\)
+  \} \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 11 of file loader\+\_\+factory.\+h.
+

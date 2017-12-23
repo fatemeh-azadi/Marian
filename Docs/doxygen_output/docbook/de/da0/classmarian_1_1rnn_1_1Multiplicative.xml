@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/da0/classmarian_1_1rnn_1_1Multiplicative">
+<title>marian::rnn::Multiplicative class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/de1/cells_8h">&lt;cells.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::Multiplicative</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/da8/classmarian_1_1rnn_1_1Multiplicative__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::Multiplicative</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dea/classmarian_1_1rnn_1_1Multiplicative__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class CellType</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Um_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr Wm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr bm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr gamma1m_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr gamma2m_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a0e9039699e77cdb7275ee0cd8dfc6f3b">Multiplicative</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a8d4602eb7c00be9413f304824661138c">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a0430765759edad7fc7181ef921d3118b">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; xWs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a0e9039699e77cdb7275ee0cd8dfc6f3b">
+                <title>marian::rnn::Multiplicative&lt; CellType &gt;::Multiplicative (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a8d4602eb7c00be9413f304824661138c">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::Multiplicative&lt; CellType &gt;::applyInput (std::vector&lt; Expr &gt; inputs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/da0/classmarian_1_1rnn_1_1Multiplicative_1a0430765759edad7fc7181ef921d3118b">
+                <title>virtual State marian::rnn::Multiplicative&lt; CellType &gt;::applyState (std::vector&lt; Expr &gt; xWs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

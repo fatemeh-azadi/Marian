@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_6bb08b3d78c7c6163fd8d6712b34c26f">
+    <title>scripts Directory Reference</title>
+<para>Directory dependency diagram for scripts</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_6bb08b3d78c7c6163fd8d6712b34c26f_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Directories </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_bdce86520e0c0986467863f1b6422748">contrib</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_e3459107287aa5d0e229690a1a55d0c5">embeddings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /home/azadi/Desktop/Tools/marian/src/marian/scripts/</para>
+    </simplesect>
+</section>

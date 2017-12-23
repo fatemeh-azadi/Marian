@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/deb/classNpzConverter">
+<title>NpzConverter class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/dec/marian_2src_2data_2npz__converter_8h">&lt;npz_converter.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for NpzConverter</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d51/classNpzConverter__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for NpzConverter</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d55/classNpzConverter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d65/classNpzConverter_1_1NpyMatrixWrapper">NpzConverter::NpyMatrixWrapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cnpy::npz_t model_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool destructed_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/deb/classNpzConverter_1a8f9abbb8916c2e7853887ffa7b8f8b4f">NpzConverter</link> (
+const std::string &amp; file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/deb/classNpzConverter_1a73ef09375f8c238ae68b8c026e68128c">~NpzConverter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/deb/classNpzConverter_1a5546c446fba3083e22e1741a1f08d80f">Destruct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/deb/classNpzConverter_1aa996e7f76b03e6501f65a311a9dcd319">Load</link> (
+const std::string &amp; key, std::vector&lt; float &gt; &amp; data, <link linkend="d5/d54/structmarian_1_1Shape">marian::Shape</link> &amp; shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Loads model data stored in a npz file. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Use of this class enables such data to later be stored in standard Marian data structures.</para>
+
+<para>Note: this class makes use of the 3rd-party class <computeroutput>npy</computeroutput>. </para>
+                <para>Definition at line 35 of file npz_converter.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>npz_converter.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>cnpy::npz_t NpzConverter::model_</title>                
+<para>Underlying npz data </para>
+
+                <para>Definition at line 172 of file npz_converter.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>npz_converter.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool NpzConverter::destructed_</title>                
+<para>Indicates whether the underlying data has been destructed. </para>
+
+                <para>Definition at line 175 of file npz_converter.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>npz_converter.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="d4/deb/classNpzConverter_1a8f9abbb8916c2e7853887ffa7b8f8b4f">
+                <title>NpzConverter::NpzConverter (const std::string &amp;file)</title> <emphasis></emphasis>
+                
+<para>Constructs an object that reads npz data from a file.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>Path to file containing npz data </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/deb/classNpzConverter_1a73ef09375f8c238ae68b8c026e68128c">
+                <title>NpzConverter::~NpzConverter ()</title> <emphasis></emphasis>
+                
+<para>Destructs the model that underlies this <link linkend="d4/deb/classNpzConverter">NpzConverter</link> object, if that data has not already been destructed. </para>
+
+            </section>
+            <section xml:id="d4/deb/classNpzConverter_1a5546c446fba3083e22e1741a1f08d80f">
+                <title>void NpzConverter::Destruct ()</title> <emphasis></emphasis>
+                
+<para>Destructs the model that underlies this <link linkend="d4/deb/classNpzConverter">NpzConverter</link> object, and marks that data as having been destructed. </para>
+
+            </section>
+            <section xml:id="d4/deb/classNpzConverter_1aa996e7f76b03e6501f65a311a9dcd319">
+                <title>void NpzConverter::Load (const std::string &amp;key, std::vector&lt; float &gt; &amp;data, marian::Shape &amp;shape) const </title> <emphasis></emphasis>
+                
+<para>Loads data corresponding to a search key into the provided vector.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>Search key XXX Marcin, what type of thing is &quot;key&quot;? What are we searching for here? </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>Container into which data will be loaded XXX Lane, is there a way in Doxygen to mark and inout variable? </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>shape</entry>
+                                <entry>
+<para>Shape object into which the number of rows and columns of the vectors will be stored </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

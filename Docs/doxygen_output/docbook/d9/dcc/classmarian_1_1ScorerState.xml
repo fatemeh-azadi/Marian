@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dcc/classmarian_1_1ScorerState">
+<title>marian::ScorerState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d00/scorers_8h">&lt;scorers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ScorerState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dbd/classmarian_1_1ScorerState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ScorerState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d87/classmarian_1_1ScorerState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d9/dcc/classmarian_1_1ScorerState_1a438e0327d2913a70bbebe80765e04395">getProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="d9/dcc/classmarian_1_1ScorerState_1a3318dc52892b0f22efd4e3d6fd93bd97">breakDown</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/dcc/classmarian_1_1ScorerState_1a81f5db49f9528f950a633771136b768f">blacklist</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> totalCosts, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/dcc/classmarian_1_1ScorerState_1a438e0327d2913a70bbebe80765e04395">
+                <title>virtual Expr marian::ScorerState::getProbs ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dcc/classmarian_1_1ScorerState_1a3318dc52892b0f22efd4e3d6fd93bd97">
+                <title>virtual float marian::ScorerState::breakDown (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dcc/classmarian_1_1ScorerState_1a81f5db49f9528f950a633771136b768f">
+                <title>virtual void marian::ScorerState::blacklist (Expr totalCosts, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

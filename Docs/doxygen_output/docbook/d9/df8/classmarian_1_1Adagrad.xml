@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/df8/classmarian_1_1Adagrad">
+<title>marian::Adagrad class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d89/optimizers_8h">&lt;optimizers.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Adagrad</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d68/classmarian_1_1Adagrad__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Adagrad</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d96/classmarian_1_1Adagrad__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float eps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; TensorAllocator &gt; alloc_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Tensor gt_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df8/classmarian_1_1Adagrad_1a18d472eea3cd57eb64573b8bab76874c">Adagrad</link> (
+float eta, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/df8/classmarian_1_1Adagrad_1abba8d5d6bb96ff15f4f956f185c7887a">updateImpl</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> params, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grads)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/df8/classmarian_1_1Adagrad_1a18d472eea3cd57eb64573b8bab76874c">
+                <title>marian::Adagrad::Adagrad (float eta, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/df8/classmarian_1_1Adagrad_1abba8d5d6bb96ff15f4f956f185c7887a">
+                <title>void marian::Adagrad::updateImpl (Tensor params, Tensor grads)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

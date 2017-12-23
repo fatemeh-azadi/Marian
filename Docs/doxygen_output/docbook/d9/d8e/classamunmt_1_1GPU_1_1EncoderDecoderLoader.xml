@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader">
+<title>amunmt::GPU::EncoderDecoderLoader class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d6b/encoder__decoder__loader_8h">&lt;encoder_decoder_loader.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::EncoderDecoderLoader</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d9e/classamunmt_1_1GPU_1_1EncoderDecoderLoader__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::EncoderDecoderLoader</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d77/classamunmt_1_1GPU_1_1EncoderDecoderLoader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::unique_ptr&lt; Weights &gt; &gt; weights_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ae76e1a60df4b709ddec5027089d45a78">EncoderDecoderLoader</link> (
+const <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader">EncoderDecoderLoader</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ae44ecf946eff763eb7d5b200831806be">EncoderDecoderLoader</link> (
+const std::string name, const YAML::Node &amp; config)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ad635f6c9f1dd9baa2ce67251fd717236">~EncoderDecoderLoader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a4f04240f2c79ce1d0e674a3b90c256e5">Load</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link> <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a05b20df78aad262d9ef37c994f3c12eb">NewScorer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/dd3/namespaceamunmt_1a4a9522da34de52554ec07cedc30361b8">BestHypsBasePtr</link> <link linkend="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a7436adba88a7f89f96d5c6ebf5ee8fe3">GetBestHyps</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ae76e1a60df4b709ddec5027089d45a78">
+                <title>amunmt::GPU::EncoderDecoderLoader::EncoderDecoderLoader (const EncoderDecoderLoader &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ae44ecf946eff763eb7d5b200831806be">
+                <title>amunmt::GPU::EncoderDecoderLoader::EncoderDecoderLoader (const std::string name, const YAML::Node &amp;config)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1ad635f6c9f1dd9baa2ce67251fd717236">
+                <title>virtual amunmt::GPU::EncoderDecoderLoader::~EncoderDecoderLoader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a4f04240f2c79ce1d0e674a3b90c256e5">
+                <title>virtual void amunmt::GPU::EncoderDecoderLoader::Load (const God &amp;god)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a05b20df78aad262d9ef37c994f3c12eb">
+                <title>virtual ScorerPtr amunmt::GPU::EncoderDecoderLoader::NewScorer (const God &amp;god, const DeviceInfo &amp;deviceInfo) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8e/classamunmt_1_1GPU_1_1EncoderDecoderLoader_1a7436adba88a7f89f96d5c6ebf5ee8fe3">
+                <title>virtual BestHypsBasePtr amunmt::GPU::EncoderDecoderLoader::GetBestHyps (const God &amp;god, const DeviceInfo &amp;deviceInfo) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

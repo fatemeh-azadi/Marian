@@ -1,0 +1,3 @@
+<map id="marian::DecoderStateHardAtt" name="marian::DecoderStateHardAtt">
+<area shape="rect" id="node2" href="$da/d12/classmarian_1_1DecoderState.html" title="{marian::DecoderState\n|# encState_\l# targetEmbeddings_\l# probs_\l# singleStep_\l# states_\l|+ DecoderState()\l+ getEncoderState()\l+ getProbs()\l+ setProbs()\l+ select()\l+ getStates()\l+ getTargetEmbeddings()\l+ setTargetEmbeddings()\l+ doSingleStep()\l+ setSingleStep()\l+ getSourceWords()\l+ blacklist()\l}" alt="" coords="18,5,187,303"/>
+</map>

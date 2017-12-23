@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d69/classmarian_1_1AllocationException">
+<title>marian::AllocationException class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/da9/allocator_8h">&lt;allocator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::AllocationException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d1b/classmarian_1_1AllocationException__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::AllocationException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dec/classmarian_1_1AllocationException__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="d8/d69/classmarian_1_1AllocationException_1a2cf89eff1c158a74b7d34f5ca4a74d7a">what</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/d69/classmarian_1_1AllocationException_1a2cf89eff1c158a74b7d34f5ca4a74d7a">
+                <title>virtual const char* marian::AllocationException::what () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

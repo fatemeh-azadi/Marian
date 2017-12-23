@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d81/kenlm_8h">
+    <title>kenlm.h File Reference</title>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &quot;vocab.h&quot;</programlisting>
+    <programlisting>#include &quot;lm/state.hh&quot;</programlisting>
+<para>Include dependency diagram for kenlm.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d5a/kenlm_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for kenlm.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d34/kenlm_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/de7/classLM">LM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d41/namespacelm">lm</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da2/namespacelm_1_1ngram">lm::ngram</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef lm::ngram::State  <link linkend="d9/d81/kenlm_8h_1ac0671733f284e84250e464637645ade4">KenlmState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; <link linkend="d9/d41/namespacelm_1aea554f766016a7141535a9f8f648766a">lm::WordIndex</link>, Word &gt;  <link linkend="d9/d81/kenlm_8h_1a7955887e1dcb4736e5a641ed9d97e3ca">WordPair</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d9/d81/kenlm_8h_1a7955887e1dcb4736e5a641ed9d97e3ca">WordPair</link> &gt;  <link linkend="d9/d81/kenlm_8h_1ad28b93df55f44c282bedd86c1e041041">WordPairs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file kenlm.h</para>
+    </simplesect>
+</section>

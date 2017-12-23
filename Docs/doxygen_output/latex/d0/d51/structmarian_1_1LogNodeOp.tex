@@ -1,0 +1,159 @@
+\hypertarget{structmarian_1_1LogNodeOp}{}\section{marian\+:\+:Log\+Node\+Op Struct Reference}
+\label{structmarian_1_1LogNodeOp}\index{marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Log\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/df7/structmarian_1_1LogNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Log\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/de9/structmarian_1_1LogNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1LogNodeOp_adf90f3beccf4c501a8574f710d3a1dcd}{Log\+Node\+Op} (Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1LogNodeOp_a0ad5ecdd99694a41ddd443700f03b52b}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1LogNodeOp_a739a39b083f5995aee9badd4b528de03}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1LogNodeOp_adc780bb152e730c3e4414e37f6814442}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 329 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}!Log\+Node\+Op@{Log\+Node\+Op}}
+\index{Log\+Node\+Op@{Log\+Node\+Op}!marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Log\+Node\+Op(\+Args...\+args)}{LogNodeOp(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Log\+Node\+Op\+::\+Log\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1LogNodeOp_adf90f3beccf4c501a8574f710d3a1dcd}{}\label{structmarian_1_1LogNodeOp_adf90f3beccf4c501a8574f710d3a1dcd}
+
+
+Definition at line 331 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+331 : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Log\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LogNodeOp_a739a39b083f5995aee9badd4b528de03}{}\label{structmarian_1_1LogNodeOp_a739a39b083f5995aee9badd4b528de03}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 337 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+337                         \{
+338     \textcolor{keywordflow}{return} \{
+339         \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1 * (1.f / \_2), \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, 
+      \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+340   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d51/structmarian_1_1LogNodeOp_a739a39b083f5995aee9badd4b528de03_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Log\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LogNodeOp_a0ad5ecdd99694a41ddd443700f03b52b}{}\label{structmarian_1_1LogNodeOp_a0ad5ecdd99694a41ddd443700f03b52b}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 333 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+333                        \{
+334     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \hyperlink{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}{Log}(\_2), \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+335   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d51/structmarian_1_1LogNodeOp_a0ad5ecdd99694a41ddd443700f03b52b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Log\+Node\+Op@{marian\+::\+Log\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Log\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1LogNodeOp_adc780bb152e730c3e4414e37f6814442}{}\label{structmarian_1_1LogNodeOp_adc780bb152e730c3e4414e37f6814442}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 342 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+342 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"log"}; \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,230 @@
+\hypertarget{amunmt_8cpp}{}\section{amunmt.\+cpp File Reference}
+\label{amunmt_8cpp}\index{amunmt.\+cpp@{amunmt.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$boost/timer/timer.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/thread/tss.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/python.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}common/god.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/threadpool.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/search.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/printer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentence.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentences.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/translation\+\_\+task.\+h\char`\"{}}\\*
+Include dependency graph for amunmt.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d73/amunmt_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} (const std\+::string \&options)
+\item 
+boost\+::python\+::list \hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate} (boost\+::python\+::list \&in)
+\item 
+\hyperlink{amunmt_8cpp_a1fa5ce5d158455cf2d152ebcbcdf29d0}{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE} (libamunmt)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1God}{God} \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{amunmt.\+cpp@{amunmt.\+cpp}!B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}!amunmt.\+cpp@{amunmt.\+cpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(libamunmt)}{BOOST_PYTHON_MODULE(libamunmt)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE (
+\begin{DoxyParamCaption}
+\item[{libamunmt}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{amunmt_8cpp_a1fa5ce5d158455cf2d152ebcbcdf29d0}{}\label{amunmt_8cpp_a1fa5ce5d158455cf2d152ebcbcdf29d0}
+
+
+Definition at line 99 of file amunmt.\+cpp.
+
+
+\begin{DoxyCode}
+100 \{
+101   boost::python::def(\textcolor{stringliteral}{"init"}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init});
+102   boost::python::def(\textcolor{stringliteral}{"translate"}, \hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate});
+103 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d49/amunmt_8cpp_a1fa5ce5d158455cf2d152ebcbcdf29d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt.\+cpp@{amunmt.\+cpp}!init@{init}}
+\index{init@{init}!amunmt.\+cpp@{amunmt.\+cpp}}
+\subsubsection[{\texorpdfstring{init(const std\+::string \&options)}{init(const std::string &options)}}]{\setlength{\rightskip}{0pt plus 5cm}void init (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{options}
+\end{DoxyParamCaption}
+)}\hypertarget{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{}\label{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}
+
+
+Definition at line 23 of file amunmt.\+cpp.
+
+
+\begin{DoxyCode}
+23                                     \{
+24   \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}{Init}(options);
+25 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d5/d49/amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d49/amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt.\+cpp@{amunmt.\+cpp}!translate@{translate}}
+\index{translate@{translate}!amunmt.\+cpp@{amunmt.\+cpp}}
+\subsubsection[{\texorpdfstring{translate(boost\+::python\+::list \&in)}{translate(boost::python::list &in)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::python\+::list translate (
+\begin{DoxyParamCaption}
+\item[{boost\+::python\+::list \&}]{in}
+\end{DoxyParamCaption}
+)}\hypertarget{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{}\label{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}
+
+
+Definition at line 28 of file amunmt.\+cpp.
+
+
+\begin{DoxyCode}
+29 \{
+30   \textcolor{keywordtype}{size\_t} miniSize = \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"mini-batch"});
+31   \textcolor{keywordtype}{size\_t} maxiSize = \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"maxi-batch"});
+32   \textcolor{keywordtype}{int} miniWords = \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"mini-batch-words"});
+33 
+34   std::vector<std::future< std::shared\_ptr<Histories> >> results;
+35   \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} maxiBatch(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences}{Sentences}());
+36   \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} maxiBatchCopy(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences}{Sentences}());
+37 
+38   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} lineNum = 0; lineNum < boost::python::len(in); ++lineNum) \{
+39     std::string line = boost::python::extract<std::string>(boost::python::object(in[lineNum]));
+40     \textcolor{comment}{//cerr << "line=" << line << endl;}
+41 
+42     maxiBatch->push\_back(\hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{SentencePtr}(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentence}{Sentence}(\hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}, lineNum, line)));
+43 
+44     \textcolor{keywordflow}{if} (maxiBatch->size() >= maxiSize) \{
+45 
+46       maxiBatch->SortByLength();
+47       \textcolor{keywordflow}{while} (maxiBatch->size()) \{
+48         \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} miniBatch = maxiBatch->NextMiniBatch(miniSize, miniWords);
+49         maxiBatchCopy->push\_back(miniBatch->at(0));
+50 
+51         results.emplace\_back(
+52           \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{GetThreadPool}().\hyperlink{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{enqueue}(
+53               [miniBatch]\{ \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}{TranslationTask}(::\hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}, miniBatch); \}
+54               )
+55         );
+56       \}
+57 
+58       maxiBatch.reset(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences}{Sentences}());
+59     \}
+60   \}
+61 
+62   \textcolor{comment}{// last batch}
+63   \textcolor{keywordflow}{if} (maxiBatch->size()) \{
+64     maxiBatch->SortByLength();
+65     \textcolor{keywordflow}{while} (maxiBatch->size()) \{
+66       \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} miniBatch = maxiBatch->NextMiniBatch(miniSize, miniWords);
+67       maxiBatchCopy->push\_back(miniBatch->at(0));
+68       results.emplace\_back(
+69         \hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}.\hyperlink{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{GetThreadPool}().\hyperlink{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{enqueue}(
+70             [miniBatch]\{ \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}{TranslationTask}(::\hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}, miniBatch); \}
+71             )
+72       );
+73     \}
+74   \}
+75 
+76   \textcolor{comment}{// resort batch into line number order}
+77   \hyperlink{classamunmt_1_1Histories}{Histories} allHistories;
+78   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& \hyperlink{namespacetest2_a05591d1f1584c3b3d1490fc9ac7519a6}{result} : results) \{
+79     std::shared\_ptr<Histories> histories = \hyperlink{namespacetest2_a05591d1f1584c3b3d1490fc9ac7519a6}{result}.get();
+80     allHistories.\hyperlink{classamunmt_1_1Histories_ac2fc201d1dcfc3a689b71f3da4769bd3}{Append}(*histories);
+81   \}
+82   allHistories.\hyperlink{classamunmt_1_1Histories_a1cd0e1d06d2ebea1e026f03592f0e492}{SortByLineNum}();
+83 
+84   \textcolor{comment}{// output}
+85   boost::python::list \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+86   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < allHistories.\hyperlink{classamunmt_1_1Histories_afa810d825474a48115d2b0691d014bd5}{size}(); ++i) \{
+87     \textcolor{keyword}{const} \hyperlink{classamunmt_1_1History}{History}& history = *allHistories.\hyperlink{classamunmt_1_1Histories_a757045db713628fa453bdebd8a35be29}{at}(i).get();
+88     \textcolor{keyword}{const} \hyperlink{classamunmt_1_1Sentence}{Sentence}& sentence = *maxiBatchCopy->at(i).get();
+89     std::stringstream ss;
+90     \hyperlink{namespaceamunmt_aef108281493b0c3b669c537192eace34}{Printer}(\hyperlink{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{god\_}, history, ss, sentence);
+91     \textcolor{keywordtype}{string} str = ss.str();
+92 
+93     output.append(str);
+94   \}
+95 
+96   \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+97 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d49/amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d49/amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{amunmt.\+cpp@{amunmt.\+cpp}!god\+\_\+@{god\+\_\+}}
+\index{god\+\_\+@{god\+\_\+}!amunmt.\+cpp@{amunmt.\+cpp}}
+\subsubsection[{\texorpdfstring{god\+\_\+}{god_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf God} god\+\_\+}\hypertarget{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}{}\label{amunmt_8cpp_a68e183ea40ac13ec04c8df483d3eeb9c}
+
+
+Definition at line 21 of file amunmt.\+cpp.
+

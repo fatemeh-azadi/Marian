@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d07/tensor__operators_8h">
+    <title>tensor_operators.h File Reference</title>
+    <programlisting>#include &lt;cublas_v2.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/device_vector.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/functional.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/host_vector.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/pair.h&gt;</programlisting>
+    <programlisting>#include &quot;kernels/shape_gpu.h&quot;</programlisting>
+    <programlisting>#include &quot;tensors/tensor.h&quot;</programlisting>
+<para>Include dependency diagram for tensor_operators.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d8f/tensor__operators_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for tensor_operators.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/da6/tensor__operators_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file tensor_operators.h</para>
+    </simplesect>
+</section>

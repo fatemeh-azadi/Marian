@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/df0/marian_2src_2translator_2output__collector_8h">
+    <title>marian/src/translator/output_collector.h File Reference</title>
+    <programlisting>#include &lt;boost/thread/mutex.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/unordered_map.hpp&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+<para>Include dependency diagram for marian/src/translator/output_collector.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d70/marian_2src_2translator_2output__collector_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/translator/output_collector.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d4b/marian_2src_2translator_2output__collector_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/de8/classmarian_1_1OutputCollector">marian::OutputCollector</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file output_collector.h</para>
+    </simplesect>
+</section>

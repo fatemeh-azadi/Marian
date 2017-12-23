@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d60/structmarian_1_1SoftmaxNodeOp">
+<title>marian::SoftmaxNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::SoftmaxNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d4c/structmarian_1_1SoftmaxNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::SoftmaxNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/db2/structmarian_1_1SoftmaxNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr mask_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1a1eae47fdce259a30afc6aff84c3566ae">SoftmaxNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1ad61d27e7c9d9b2782b0cf1f0e910fef4">SoftmaxNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1ac840d869fb28c00f91bab78b04012e42">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1a97692b03bf740a4759f906303bbfd2e1">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1a60b215754e045ea3442cb8bb1ba26465">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp_1aa6282d5e41f36d4de1144db398308723">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1a1eae47fdce259a30afc6aff84c3566ae">
+                <title>marian::SoftmaxNodeOp::SoftmaxNodeOp (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1ad61d27e7c9d9b2782b0cf1f0e910fef4">
+                <title>marian::SoftmaxNodeOp::SoftmaxNodeOp (Expr a, Expr mask, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1ac840d869fb28c00f91bab78b04012e42">
+                <title>NodeOps marian::SoftmaxNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1a97692b03bf740a4759f906303bbfd2e1">
+                <title>virtual size_t marian::SoftmaxNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1a60b215754e045ea3442cb8bb1ba26465">
+                <title>NodeOps marian::SoftmaxNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d60/structmarian_1_1SoftmaxNodeOp_1aa6282d5e41f36d4de1144db398308723">
+                <title>const std::string marian::SoftmaxNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

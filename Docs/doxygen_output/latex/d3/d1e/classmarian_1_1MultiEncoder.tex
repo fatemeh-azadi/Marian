@@ -1,0 +1,125 @@
+\hypertarget{classmarian_1_1MultiEncoder}{}\section{marian\+:\+:Multi\+Encoder$<$ Encoder1, Encoder2 $>$ Class Template Reference}
+\label{classmarian_1_1MultiEncoder}\index{marian\+::\+Multi\+Encoder$<$ Encoder1, Encoder2 $>$@{marian\+::\+Multi\+Encoder$<$ Encoder1, Encoder2 $>$}}
+
+
+{\ttfamily \#include $<$multi\+\_\+s2s.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Multi\+Encoder$<$ Encoder1, Encoder2 $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d5/d3b/classmarian_1_1MultiEncoder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Multi\+Encoder$<$ Encoder1, Encoder2 $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d5/d77/classmarian_1_1MultiEncoder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1MultiEncoder_a801e9b9aee52ce4018c93aae91a783f2}{Multi\+Encoder} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1MultiEncoder_af841e028f2034309a7e13a31ea0700ea}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, size\+\_\+t batch\+Idx=0)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Encoder1 $>$ \hyperlink{classmarian_1_1MultiEncoder_a7c808bb36621b72f765ef2f8d35871be}{encoder1\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Encoder2 $>$ \hyperlink{classmarian_1_1MultiEncoder_a7061cdd3f7b5c46d4519937a177a2878}{encoder2\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Encoder1, class Encoder2$>$\\*
+class marian\+::\+Multi\+Encoder$<$ Encoder1, Encoder2 $>$}
+
+
+
+Definition at line 26 of file multi\+\_\+s2s.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}!Multi\+Encoder@{Multi\+Encoder}}
+\index{Multi\+Encoder@{Multi\+Encoder}!marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}}
+\subsubsection[{\texorpdfstring{Multi\+Encoder(\+Ptr$<$ Config $>$ options, Args...\+args)}{MultiEncoder(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder1 , class Encoder2 $>$ template$<$class... Args$>$ {\bf marian\+::\+Multi\+Encoder}$<$ Encoder1, Encoder2 $>$\+::{\bf Multi\+Encoder} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MultiEncoder_a801e9b9aee52ce4018c93aae91a783f2}{}\label{classmarian_1_1MultiEncoder_a801e9b9aee52ce4018c93aae91a783f2}
+
+
+Definition at line 33 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+34       : \hyperlink{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}{EncoderBase}(options, args...),
+35         \hyperlink{classmarian_1_1MultiEncoder_a7c808bb36621b72f765ef2f8d35871be}{encoder1\_}(
+36             New<Encoder1>(options, \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \textcolor{stringliteral}{"encoder1"}, args...)),
+37         \hyperlink{classmarian_1_1MultiEncoder_a7061cdd3f7b5c46d4519937a177a2878}{encoder2\_}(
+38             New<Encoder2>(options, \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \textcolor{stringliteral}{"encoder2"}, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}!build@{build}}
+\index{build@{build}!marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, size\+\_\+t batch\+Idx=0)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, size_t batchIdx=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder1 , class Encoder2 $>$ {\bf Ptr}$<${\bf Encoder\+State}$>$ {\bf marian\+::\+Multi\+Encoder}$<$ Encoder1, Encoder2 $>$\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{size\+\_\+t}]{batch\+Idx = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1MultiEncoder_af841e028f2034309a7e13a31ea0700ea}{}\label{classmarian_1_1MultiEncoder_af841e028f2034309a7e13a31ea0700ea}
+
+
+Implements \hyperlink{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}{marian\+::\+Encoder\+Base}.
+
+
+
+Definition at line 40 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+42                                                \{
+43     \textcolor{keyword}{auto} encState1 = \hyperlink{classmarian_1_1MultiEncoder_a7c808bb36621b72f765ef2f8d35871be}{encoder1\_}->build(graph, batch, 0);
+44     \textcolor{keyword}{auto} encState2 = \hyperlink{classmarian_1_1MultiEncoder_a7061cdd3f7b5c46d4519937a177a2878}{encoder2\_}->build(graph, batch, 1);
+45 
+46     \textcolor{keywordflow}{return} New<EncoderStateMultiS2S>(encState1, encState2);
+47   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}!encoder1\+\_\+@{encoder1\+\_\+}}
+\index{encoder1\+\_\+@{encoder1\+\_\+}!marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}}
+\subsubsection[{\texorpdfstring{encoder1\+\_\+}{encoder1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder1 , class Encoder2 $>$ {\bf Ptr}$<$Encoder1$>$ {\bf marian\+::\+Multi\+Encoder}$<$ Encoder1, Encoder2 $>$\+::encoder1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MultiEncoder_a7c808bb36621b72f765ef2f8d35871be}{}\label{classmarian_1_1MultiEncoder_a7c808bb36621b72f765ef2f8d35871be}
+
+
+Definition at line 28 of file multi\+\_\+s2s.\+h.
+
+\index{marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}!encoder2\+\_\+@{encoder2\+\_\+}}
+\index{encoder2\+\_\+@{encoder2\+\_\+}!marian\+::\+Multi\+Encoder@{marian\+::\+Multi\+Encoder}}
+\subsubsection[{\texorpdfstring{encoder2\+\_\+}{encoder2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder1 , class Encoder2 $>$ {\bf Ptr}$<$Encoder2$>$ {\bf marian\+::\+Multi\+Encoder}$<$ Encoder1, Encoder2 $>$\+::encoder2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MultiEncoder_a7061cdd3f7b5c46d4519937a177a2878}{}\label{classmarian_1_1MultiEncoder_a7061cdd3f7b5c46d4519937a177a2878}
+
+
+Definition at line 29 of file multi\+\_\+s2s.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{multi__s2s_8h}{multi\+\_\+s2s.\+h}\end{DoxyCompactItemize}

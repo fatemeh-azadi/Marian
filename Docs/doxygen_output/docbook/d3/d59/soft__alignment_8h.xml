@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d59/soft__alignment_8h">
+    <title>soft_alignment.h File Reference</title>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+<para>Include dependency diagram for soft_alignment.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/de5/soft__alignment_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for soft_alignment.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dc7/soft__alignment_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; float &gt;  <link linkend="d3/d59/soft__alignment_8h_1a7801e8048aef45ea5150e99bca91a2da">SoftAlignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="d3/d59/soft__alignment_8h_1a7801e8048aef45ea5150e99bca91a2da">SoftAlignment</link> &gt;  <link linkend="d3/d59/soft__alignment_8h_1a875ec1de0fda25e65d972952540246ff">SoftAlignmentPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file soft_alignment.h</para>
+    </simplesect>
+</section>

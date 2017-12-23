@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights">
+<title>amunmt::GPU::Weights::MultWeights struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d2c/amun_2gpu_2dl4mt_2model_8h">&lt;model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Weights::MultWeights</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d2c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Weights::MultWeights</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d5a/structamunmt_1_1GPU_1_1Weights_1_1MultWeights__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>BaseWeights</declname>
+        <defname>BaseWeights</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Wm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Bm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Um_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Bmu_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1ad21c7d327b55229e3ddb8b09f355079c">MultWeights</link> (
+const <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights">MultWeights</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1a3a442b747e6a1c3e66bf53adea329f3b">MultWeights</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model, const std::string &amp; prefix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1a2e18faba26c8c8e28487fd8db47a7680">p</link> (
+std::string prefix, std::string sufix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1ad21c7d327b55229e3ddb8b09f355079c">
+                <title>amunmt::GPU::Weights::MultWeights&lt; BaseWeights &gt;::MultWeights (const MultWeights &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1a3a442b747e6a1c3e66bf53adea329f3b">
+                <title>amunmt::GPU::Weights::MultWeights&lt; BaseWeights &gt;::MultWeights (const NpzConverter &amp;model, const std::string &amp;prefix)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d3c/structamunmt_1_1GPU_1_1Weights_1_1MultWeights_1a2e18faba26c8c8e28487fd8db47a7680">
+                <title>std::string amunmt::GPU::Weights::MultWeights&lt; BaseWeights &gt;::p (std::string prefix, std::string sufix)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

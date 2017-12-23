@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal">
+<title>amunmt::GPU::Decoder::RNNFinal class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Decoder::RNNFinal</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d52/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Decoder::RNNFinal</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/df8/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; Cell &gt; gru_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1a1d99985b912cc2eee9d837d2bac30799">RNNFinal</link> (
+std::unique_ptr&lt; <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">Cell</link> &gt; cell)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1a1b0db5fb40335eeb2acdd098220cbb32">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1ae7163a490feab5420d5e0f3e64e50d49">RNNFinal</link> (
+const <link linkend="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal">RNNFinal</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1a1d99985b912cc2eee9d837d2bac30799">
+                <title>amunmt::GPU::Decoder::RNNFinal::RNNFinal (std::unique_ptr&lt; Cell &gt; cell)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1a1b0db5fb40335eeb2acdd098220cbb32">
+                <title>void amunmt::GPU::Decoder::RNNFinal::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_1ae7163a490feab5420d5e0f3e64e50d49">
+                <title>amunmt::GPU::Decoder::RNNFinal::RNNFinal (const RNNFinal &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

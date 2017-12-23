@@ -1,0 +1,319 @@
+\hypertarget{align2steps_8cpp}{}\section{align2steps.\+cpp File Reference}
+\label{align2steps_8cpp}\index{align2steps.\+cpp@{align2steps.\+cpp}}
+{\ttfamily \#include $<$boost/config.\+hpp$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$regex$>$}\\*
+{\ttfamily \#include $<$boost/graph/adjacency\+\_\+list.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/graph/dijkstra\+\_\+shortest\+\_\+paths.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/graph/graph\+\_\+traits.\+hpp$>$}\\*
+Include dependency graph for align2steps.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d19/align2steps_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef adjacency\+\_\+list$<$ listS, vecS, directedS, no\+\_\+property, property$<$ edge\+\_\+weight\+\_\+t, int $>$ $>$ \hyperlink{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}{graph\+\_\+t}
+\item 
+typedef graph\+\_\+traits$<$ \hyperlink{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}{graph\+\_\+t} $>$\+::\hyperlink{align2steps_8cpp_afa6f4d2a0df3032981edfd867902469e}{vertex\+\_\+descriptor} \hyperlink{align2steps_8cpp_afa6f4d2a0df3032981edfd867902469e}{vertex\+\_\+descriptor}
+\item 
+typedef graph\+\_\+traits$<$ \hyperlink{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}{graph\+\_\+t} $>$\+::\hyperlink{align2steps_8cpp_a0bc7107d61e7eb3d0a501a64f27ee814}{edge\+\_\+descriptor} \hyperlink{align2steps_8cpp_a0bc7107d61e7eb3d0a501a64f27ee814}{edge\+\_\+descriptor}
+\item 
+typedef std\+::pair$<$ int, int $>$ \hyperlink{align2steps_8cpp_acac1200ac774ce3fecdc270358e4a6b4}{Edge}
+\item 
+typedef std\+::pair$<$ int, int $>$ \hyperlink{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}{Point}
+\item 
+typedef std\+::vector$<$ \hyperlink{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}{Point} $>$ \hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split} (const std\+::string \&input, const std\+::string \&regex)
+\item 
+float \hyperlink{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}{dist} (\hyperlink{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}{Point} a, \hyperlink{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}{Point} b)
+\item 
+\hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment} \hyperlink{align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12}{shortest\+Path} (const \hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment} \&a)
+\item 
+int \hyperlink{align2steps_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{align2steps.\+cpp@{align2steps.\+cpp}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{Alignment}{Alignment}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Point}$>$ {\bf Alignment}}\hypertarget{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{}\label{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}
+
+
+Definition at line 24 of file align2steps.\+cpp.
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!Edge@{Edge}}
+\index{Edge@{Edge}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{Edge}{Edge}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$int, int$>$ {\bf Edge}}\hypertarget{align2steps_8cpp_acac1200ac774ce3fecdc270358e4a6b4}{}\label{align2steps_8cpp_acac1200ac774ce3fecdc270358e4a6b4}
+
+
+Definition at line 21 of file align2steps.\+cpp.
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!edge\+\_\+descriptor@{edge\+\_\+descriptor}}
+\index{edge\+\_\+descriptor@{edge\+\_\+descriptor}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{edge\+\_\+descriptor}{edge_descriptor}}]{\setlength{\rightskip}{0pt plus 5cm}typedef graph\+\_\+traits$<${\bf graph\+\_\+t}$>$\+::{\bf edge\+\_\+descriptor} {\bf edge\+\_\+descriptor}}\hypertarget{align2steps_8cpp_a0bc7107d61e7eb3d0a501a64f27ee814}{}\label{align2steps_8cpp_a0bc7107d61e7eb3d0a501a64f27ee814}
+
+
+Definition at line 19 of file align2steps.\+cpp.
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!graph\+\_\+t@{graph\+\_\+t}}
+\index{graph\+\_\+t@{graph\+\_\+t}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{graph\+\_\+t}{graph_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef adjacency\+\_\+list$<$listS, vecS, directedS, no\+\_\+property, property$<$edge\+\_\+weight\+\_\+t, int$>$ $>$ {\bf graph\+\_\+t}}\hypertarget{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}{}\label{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}
+
+
+Definition at line 17 of file align2steps.\+cpp.
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!Point@{Point}}
+\index{Point@{Point}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{Point}{Point}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$int, int$>$ {\bf Point}}\hypertarget{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}{}\label{align2steps_8cpp_a9b04a99487f06c20fec48cab9a5df383}
+
+
+Definition at line 23 of file align2steps.\+cpp.
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!vertex\+\_\+descriptor@{vertex\+\_\+descriptor}}
+\index{vertex\+\_\+descriptor@{vertex\+\_\+descriptor}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{vertex\+\_\+descriptor}{vertex_descriptor}}]{\setlength{\rightskip}{0pt plus 5cm}typedef graph\+\_\+traits$<${\bf graph\+\_\+t}$>$\+::{\bf vertex\+\_\+descriptor} {\bf vertex\+\_\+descriptor}}\hypertarget{align2steps_8cpp_afa6f4d2a0df3032981edfd867902469e}{}\label{align2steps_8cpp_afa6f4d2a0df3032981edfd867902469e}
+
+
+Definition at line 18 of file align2steps.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{align2steps.\+cpp@{align2steps.\+cpp}!dist@{dist}}
+\index{dist@{dist}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{dist(\+Point a, Point b)}{dist(Point a, Point b)}}]{\setlength{\rightskip}{0pt plus 5cm}float dist (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{a, }
+\item[{{\bf Point}}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}{}\label{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}
+
+
+Definition at line 33 of file align2steps.\+cpp.
+
+
+\begin{DoxyCode}
+33                              \{
+34   \textcolor{keywordflow}{return} \hyperlink{namespacemarian_ac5f147047403fcdab5481c89dc1d8212}{sqrt}(pow(b.first - a.first, 2) + pow(b.second - a.second, 2)) - 1;
+35 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{df/d5c/align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{df/d5c/align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!main@{main}}
+\index{main@{main}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{align2steps_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{align2steps_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 78 of file align2steps.\+cpp.
+
+
+\begin{DoxyCode}
+78                                 \{
+79   \textcolor{keywordflow}{if}(argc != 4) \{
+80     std::cerr << \textcolor{stringliteral}{"Usage: ./align2steps source target alignment"} << std::endl;
+81     exit(1);
+82   \}
+83 
+84   std::ifstream srcStrm, trgStrm, alnStrm;
+85   srcStrm.open(argv[1]);
+86   trgStrm.open(argv[2]);
+87   alnStrm.open(argv[3]);
+88 
+89   \textcolor{keywordtype}{int} i = 0;
+90   std::string source, target, alignment;
+91   \textcolor{keywordflow}{while}(std::getline(srcStrm, source) && std::getline(trgStrm, target)
+92         && std::getline(alnStrm, alignment)) \{
+93     \textcolor{keyword}{auto} srcToks = \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}(source, R\textcolor{stringliteral}{"(\(\backslash\)s)");}
+94 \textcolor{stringliteral}{    }\textcolor{keyword}{auto} trgToks = \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}(target, R\textcolor{stringliteral}{"(\(\backslash\)s)");}
+95 \textcolor{stringliteral}{    }\textcolor{keyword}{auto} alnToks = \hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}(alignment, R\textcolor{stringliteral}{"(\(\backslash\)s|-)");}
+96 \textcolor{stringliteral}{}
+97 \textcolor{stringliteral}{    \hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment} alignment;}
+98 \textcolor{stringliteral}{    }\textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < alnToks.size(); i += 2)
+99       alignment.emplace\_back(std::stoi(alnToks[i + 1]), std::stoi(alnToks[i]));
+100 
+101     \textcolor{comment}{// add end}
+102     alignment.emplace\_back(trgToks.size(), srcToks.size());
+103 
+104     \textcolor{keyword}{auto} shortest = \hyperlink{align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12}{shortestPath}(alignment);
+105 
+106     \textcolor{keywordtype}{int} cTrg = 0, cSrc = 0;
+107     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& p : shortest) \{
+108       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = cTrg; i < p.first; ++i)
+109         std::cout << trgToks[i] << \textcolor{stringliteral}{" "};
+110 
+111       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = cSrc; i < p.second; ++i)
+112         std::cout << \textcolor{stringliteral}{"<step> "};
+113 
+114       cTrg = p.first;
+115       cSrc = p.second;
+116     \}
+117 
+118     std::cout << std::endl;
+119     i++;
+120     \textcolor{keywordflow}{if}(i % 10000 == 0)
+121       std::cerr << i << \textcolor{stringliteral}{" "};
+122   \}
+123   std::cerr << std::endl;
+124 
+125   \textcolor{keywordflow}{return} 0;
+126 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d5c/align2steps_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!shortest\+Path@{shortest\+Path}}
+\index{shortest\+Path@{shortest\+Path}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{shortest\+Path(const Alignment \&a)}{shortestPath(const Alignment &a)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alignment} shortest\+Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Alignment} \&}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12}{}\label{align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12}
+
+
+Definition at line 37 of file align2steps.\+cpp.
+
+
+\begin{DoxyCode}
+37                                            \{
+38   \hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment} shortest;
+39 
+40   std::vector<Edge> edges;
+41   std::vector<int> weights;
+42 
+43   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < a.size(); ++i) \{
+44     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < a.size(); ++j) \{
+45       \textcolor{keywordflow}{if}(a[i] != a[j] && a[j].first - a[i].first >= 0
+46          && a[j].second - a[i].second >= 0) \{
+47         edges.push\_back(\hyperlink{align2steps_8cpp_acac1200ac774ce3fecdc270358e4a6b4}{Edge}(i, j));
+48         weights.push\_back(\hyperlink{align2steps_8cpp_ab3610a12b4c9b6836049e7470f37825b}{dist}(a[i], a[j]));
+49       \}
+50     \}
+51   \}
+52 
+53   \hyperlink{align2steps_8cpp_afb76f542ba6bb0f8b7431a36b4d41e56}{graph\_t} g(edges.begin(), edges.end(), weights.data(), a.size());
+54   property\_map<graph\_t, edge\_weight\_t>::type weightmap = \textcolor{keyword}{get}(edge\_weight, g);
+55 
+56   std::vector<vertex\_descriptor> p(num\_vertices(g));
+57   std::vector<int> \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}(num\_vertices(g));
+58   \hyperlink{align2steps_8cpp_afa6f4d2a0df3032981edfd867902469e}{vertex\_descriptor} s = vertex(0, g);
+59 
+60   dijkstra\_shortest\_paths(g, s, predecessor\_map(&p[0]).distance\_map(&\hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d}[0]));
+61 
+62   \textcolor{keywordtype}{int} v = a.size() - 1;
+63   \textcolor{keywordflow}{while}(v != 0) \{
+64     shortest.push\_back(a[v]);
+65     v = p[v];
+66   \}
+67   shortest.push\_back(a[v]);
+68   std::sort(shortest.begin(), shortest.end());
+69 
+70   \hyperlink{align2steps_8cpp_a1e73ae03915084e88b1c87a31196c2ef}{Alignment} shortestU;
+71   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : shortest)
+72     \textcolor{keywordflow}{if}(shortestU.empty() || shortestU.back().first != p.first)
+73       shortestU.push\_back(p);
+74 
+75   \textcolor{keywordflow}{return} shortestU;
+76 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{df/d5c/align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{df/d5c/align2steps_8cpp_a2478456c39204bac5afcf5e6f5856e12_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{align2steps.\+cpp@{align2steps.\+cpp}!split@{split}}
+\index{split@{split}!align2steps.\+cpp@{align2steps.\+cpp}}
+\subsubsection[{\texorpdfstring{split(const std\+::string \&input, const std\+::string \&regex)}{split(const std::string &input, const std::string &regex)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ split (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input, }
+\item[{const std\+::string \&}]{regex}
+\end{DoxyParamCaption}
+)}\hypertarget{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{}\label{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}
+
+
+Definition at line 26 of file align2steps.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                        \{
+28   std::regex re(regex);
+29   std::sregex\_token\_iterator first\{input.begin(), input.end(), re, -1\}, last;
+30   \textcolor{keywordflow}{return} \{first, last\};
+31 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d5c/align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3_icgraph}
+\end{center}
+\end{figure}
+
+

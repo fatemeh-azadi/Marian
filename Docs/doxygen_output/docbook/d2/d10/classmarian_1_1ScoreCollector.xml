@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d10/classmarian_1_1ScoreCollector">
+<title>marian::ScoreCollector class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d61/score__collector_8h">&lt;score_collector.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ScoreCollector</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d7b/classmarian_1_1ScoreCollector__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ScoreCollector</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/df6/classmarian_1_1ScoreCollector__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; long, float &gt;  <link linkend="d2/d10/classmarian_1_1ScoreCollector_1a0f23001507924b1866c1f6a370a2b369">Outputs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long nextId_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>UPtr&lt; OutputFileStream &gt; outStrm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::mutex mutex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Outputs outputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d10/classmarian_1_1ScoreCollector_1ae444055c2489000c304e015516a2c914">ScoreCollector</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d10/classmarian_1_1ScoreCollector_1a489f30078c9076f4c5e96079b2452aab">ScoreCollector</link> (
+const <link linkend="d2/d10/classmarian_1_1ScoreCollector">ScoreCollector</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d10/classmarian_1_1ScoreCollector_1aea5e72c3f74aec169fbb8df344c49fff">Write</link> (
+long id, float score)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d2/d10/classmarian_1_1ScoreCollector_1a0f23001507924b1866c1f6a370a2b369">
+                <title>typedef std::map&lt;long, float&gt; marian::ScoreCollector::Outputs</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d10/classmarian_1_1ScoreCollector_1ae444055c2489000c304e015516a2c914">
+                <title>marian::ScoreCollector::ScoreCollector ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d10/classmarian_1_1ScoreCollector_1a489f30078c9076f4c5e96079b2452aab">
+                <title>marian::ScoreCollector::ScoreCollector (const ScoreCollector &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d10/classmarian_1_1ScoreCollector_1aea5e72c3f74aec169fbb8df344c49fff">
+                <title>void marian::ScoreCollector::Write (long id, float score)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

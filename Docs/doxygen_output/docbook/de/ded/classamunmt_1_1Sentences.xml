@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/ded/classamunmt_1_1Sentences">
+<title>amunmt::Sentences class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/ddf/sentences_8h">&lt;sentences.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Sentences</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/db8/classamunmt_1_1Sentences__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Sentences</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d84/classamunmt_1_1Sentences__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SentencePtr &gt; coll_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t maxLength_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/ded/classamunmt_1_1Sentences_1ae8e09eee2812b30969440999118b84d4">Sentences</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/ded/classamunmt_1_1Sentences_1a2cd447b9da2c51aa1534d76937f04792">~Sentences</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/ded/classamunmt_1_1Sentences_1a65e915e68559978f479af22b1173f3c6">push_back</link> (
+<link linkend="d7/dd3/namespaceamunmt_1a79f0566b0c1ac270d350b2912a3be4a4">SentencePtr</link> sentence)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a79f0566b0c1ac270d350b2912a3be4a4">SentencePtr</link> <link linkend="de/ded/classamunmt_1_1Sentences_1afe33dd6de1f3dfbcff4003c32bdd1f4b">at</link> (
+size_t id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="de/ded/classamunmt_1_1Sentences_1accf70916436eb80cd7f4df9645fd1da8">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="de/ded/classamunmt_1_1Sentences_1a02f0688d10222abd36ef037121a85e72">GetMaxLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/ded/classamunmt_1_1Sentences_1ada175aa31a779a503afec2441efac300">SortByLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a06c5762b84aba68e6c69fb409e57829e">SentencesPtr</link> <link linkend="de/ded/classamunmt_1_1Sentences_1ada8019dbcd4db342747d425044468b5e">NextMiniBatch</link> (
+size_t batchsize, int batchWords)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/ded/classamunmt_1_1Sentences_1ace55e7b61f3c77f73cd91fb50e430775">Sentences</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1ae8e09eee2812b30969440999118b84d4">
+                <title>amunmt::Sentences::Sentences ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1a2cd447b9da2c51aa1534d76937f04792">
+                <title>amunmt::Sentences::~Sentences ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1a65e915e68559978f479af22b1173f3c6">
+                <title>void amunmt::Sentences::push_back (SentencePtr sentence)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1afe33dd6de1f3dfbcff4003c32bdd1f4b">
+                <title>SentencePtr amunmt::Sentences::at (size_t id) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1accf70916436eb80cd7f4df9645fd1da8">
+                <title>size_t amunmt::Sentences::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1a02f0688d10222abd36ef037121a85e72">
+                <title>size_t amunmt::Sentences::GetMaxLength () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1ada175aa31a779a503afec2441efac300">
+                <title>void amunmt::Sentences::SortByLength ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1ada8019dbcd4db342747d425044468b5e">
+                <title>SentencesPtr amunmt::Sentences::NextMiniBatch (size_t batchsize, int batchWords)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/ded/classamunmt_1_1Sentences_1ace55e7b61f3c77f73cd91fb50e430775">
+                <title>amunmt::Sentences::Sentences (const Sentences &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

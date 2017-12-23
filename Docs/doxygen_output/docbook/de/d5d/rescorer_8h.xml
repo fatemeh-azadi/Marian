@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d5d/rescorer_8h">
+    <title>rescorer.h File Reference</title>
+    <programlisting>#include &quot;marian.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;data/batch_generator.h&quot;</programlisting>
+    <programlisting>#include &quot;data/corpus.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;models/amun.h&quot;</programlisting>
+    <programlisting>#include &quot;models/model_task.h&quot;</programlisting>
+    <programlisting>#include &quot;models/s2s.h&quot;</programlisting>
+    <programlisting>#include &quot;rescorer/score_collector.h&quot;</programlisting>
+<para>Include dependency diagram for rescorer.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d11/rescorer_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for rescorer.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d16/rescorer_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d6f/classmarian_1_1Rescorer">marian::Rescorer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbf/classmarian_1_1Rescore">marian::Rescore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file rescorer.h</para>
+    </simplesect>
+</section>

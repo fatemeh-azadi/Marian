@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d89/dl4mt_8h">
+    <title>dl4mt.h File Reference</title>
+    <programlisting>#include &quot;model.h&quot;</programlisting>
+    <programlisting>#include &quot;encoder.h&quot;</programlisting>
+    <programlisting>#include &quot;decoder.h&quot;</programlisting>
+<para>Include dependency diagram for dl4mt.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/da8/dl4mt_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for dl4mt.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d2e/dl4mt_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file dl4mt.h</para>
+    </simplesect>
+</section>

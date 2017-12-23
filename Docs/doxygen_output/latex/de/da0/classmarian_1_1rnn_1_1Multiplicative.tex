@@ -1,0 +1,239 @@
+\hypertarget{classmarian_1_1rnn_1_1Multiplicative}{}\section{marian\+:\+:rnn\+:\+:Multiplicative$<$ Cell\+Type $>$ Class Template Reference}
+\label{classmarian_1_1rnn_1_1Multiplicative}\index{marian\+::rnn\+::\+Multiplicative$<$ Cell\+Type $>$@{marian\+::rnn\+::\+Multiplicative$<$ Cell\+Type $>$}}
+
+
+{\ttfamily \#include $<$cells.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Multiplicative$<$ Cell\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{d4/da8/classmarian_1_1rnn_1_1Multiplicative__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Multiplicative$<$ Cell\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{d9/dea/classmarian_1_1rnn_1_1Multiplicative__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1Multiplicative_a0e9039699e77cdb7275ee0cd8dfc6f3b}{Multiplicative} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a8d4602eb7c00be9413f304824661138c}{apply\+Input} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs)
+\item 
+virtual \hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a0430765759edad7fc7181ef921d3118b}{apply\+State} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ x\+Ws, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a5048c83eb0045b7a85304e3557727e07}{Um\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_acea0bc134660ffa076fad2536207fedb}{Wm\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a26cdb5d0561b1958105dbdb56c4ee13f}{bm\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a3708c56833f8a2c5a2a44fea9571ffd7}{gamma1m\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a1984a6776106c31887279d6c60e3874c}{gamma2m\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Cell\+Type$>$\\*
+class marian\+::rnn\+::\+Multiplicative$<$ Cell\+Type $>$}
+
+
+
+Definition at line 395 of file cells.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!Multiplicative@{Multiplicative}}
+\index{Multiplicative@{Multiplicative}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Multiplicative(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Options $>$ options)}{Multiplicative(Ptr< ExpressionGraph > graph, Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::{\bf Multiplicative} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a0e9039699e77cdb7275ee0cd8dfc6f3b}{}\label{classmarian_1_1rnn_1_1Multiplicative_a0e9039699e77cdb7275ee0cd8dfc6f3b}
+
+
+Definition at line 401 of file cells.\+h.
+
+
+\begin{DoxyCode}
+403       : CellType(graph, options) \{
+404 
+405       \textcolor{keywordtype}{int} dimInput = options->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimInput"});
+406       \textcolor{keywordtype}{int} dimState = options->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimState"});
+407       std::string \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{prefix} = options->get<std::string>(\textcolor{stringliteral}{"prefix"});
+408 
+409       \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a5048c83eb0045b7a85304e3557727e07}{Um\_} = graph->param(prefix + \textcolor{stringliteral}{"\_Um"}, \{dimState, dimState\},
+410                          \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init}=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+411       \hyperlink{classmarian_1_1rnn_1_1Multiplicative_acea0bc134660ffa076fad2536207fedb}{Wm\_} = graph->param(prefix + \textcolor{stringliteral}{"\_Wm"}, \{dimInput, dimState\},
+412                          keywords::init=\hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+413       \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a26cdb5d0561b1958105dbdb56c4ee13f}{bm\_} = graph->param(prefix + \textcolor{stringliteral}{"\_bm"}, \{1, dimState\},
+414                          keywords::init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+415 
+416       \textcolor{keywordflow}{if}(CellType::layerNorm\_) \{
+417         \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a3708c56833f8a2c5a2a44fea9571ffd7}{gamma1m\_} = graph->param(prefix + \textcolor{stringliteral}{"\_gamma1m"},
+418                                 \{1, dimState\},
+419                                 keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.f));
+420         \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a1984a6776106c31887279d6c60e3874c}{gamma2m\_} = graph->param(prefix + \textcolor{stringliteral}{"\_gamma2m"},
+421                                 \{1, dimState\},
+422                                 keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.f));
+423       \}
+424     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{de/da0/classmarian_1_1rnn_1_1Multiplicative_a0e9039699e77cdb7275ee0cd8dfc6f3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!apply\+Input@{apply\+Input}}
+\index{apply\+Input@{apply\+Input}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{apply\+Input(std\+::vector$<$ Expr $>$ inputs)}{applyInput(std::vector< Expr > inputs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ virtual std\+::vector$<${\bf Expr}$>$ {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::apply\+Input (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a8d4602eb7c00be9413f304824661138c}{}\label{classmarian_1_1rnn_1_1Multiplicative_a8d4602eb7c00be9413f304824661138c}
+
+
+Definition at line 426 of file cells.\+h.
+
+
+\begin{DoxyCode}
+426                                                              \{
+427     UTIL\_THROW\_IF2(inputs.empty(), \textcolor{stringliteral}{"Multiplicative LSTM expects input"});
+428 
+429     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input;
+430     \textcolor{keywordflow}{if}(inputs.size() > 1)
+431       input = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(inputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+432     \textcolor{keywordflow}{else}
+433       input = inputs.front();
+434 
+435     \textcolor{keyword}{auto} xWs = CellType::applyInput(\{input\});
+436     \textcolor{keyword}{auto} xWm = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(input, \hyperlink{classmarian_1_1rnn_1_1Multiplicative_acea0bc134660ffa076fad2536207fedb}{Wm\_});
+437     \textcolor{keywordflow}{if}(CellType::layerNorm\_)
+438       xWm = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(xWm, \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a3708c56833f8a2c5a2a44fea9571ffd7}{gamma1m\_});
+439 
+440     xWs.push\_back(xWm);
+441     \textcolor{keywordflow}{return} xWs;
+442   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{de/da0/classmarian_1_1rnn_1_1Multiplicative_a8d4602eb7c00be9413f304824661138c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!apply\+State@{apply\+State}}
+\index{apply\+State@{apply\+State}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{apply\+State(std\+::vector$<$ Expr $>$ x\+Ws, State state, Expr mask=nullptr)}{applyState(std::vector< Expr > xWs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ virtual {\bf State} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::apply\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{x\+Ws, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a0430765759edad7fc7181ef921d3118b}{}\label{classmarian_1_1rnn_1_1Multiplicative_a0430765759edad7fc7181ef921d3118b}
+
+
+Definition at line 444 of file cells.\+h.
+
+
+\begin{DoxyCode}
+446                                                    \{
+447     \textcolor{keyword}{auto} xWm = xWs.back();
+448     xWs.pop\_back();
+449 
+450     \textcolor{keyword}{auto} sUm = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(state.output, \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a5048c83eb0045b7a85304e3557727e07}{Um\_}, \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a26cdb5d0561b1958105dbdb56c4ee13f}{bm\_});
+451     \textcolor{keywordflow}{if}(CellType::layerNorm\_)
+452       sUm = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(sUm, \hyperlink{classmarian_1_1rnn_1_1Multiplicative_a1984a6776106c31887279d6c60e3874c}{gamma2m\_});
+453 
+454     \textcolor{keyword}{auto} mstate = xWm * sUm;
+455 
+456     \textcolor{keywordflow}{return} CellType::applyState(xWs, State(\{mstate, state.cell\}), \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+457   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{de/da0/classmarian_1_1rnn_1_1Multiplicative_a0430765759edad7fc7181ef921d3118b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!bm\+\_\+@{bm\+\_\+}}
+\index{bm\+\_\+@{bm\+\_\+}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{bm\+\_\+}{bm_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf Expr} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::bm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a26cdb5d0561b1958105dbdb56c4ee13f}{}\label{classmarian_1_1rnn_1_1Multiplicative_a26cdb5d0561b1958105dbdb56c4ee13f}
+
+
+Definition at line 397 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!gamma1m\+\_\+@{gamma1m\+\_\+}}
+\index{gamma1m\+\_\+@{gamma1m\+\_\+}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{gamma1m\+\_\+}{gamma1m_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf Expr} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::gamma1m\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a3708c56833f8a2c5a2a44fea9571ffd7}{}\label{classmarian_1_1rnn_1_1Multiplicative_a3708c56833f8a2c5a2a44fea9571ffd7}
+
+
+Definition at line 398 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!gamma2m\+\_\+@{gamma2m\+\_\+}}
+\index{gamma2m\+\_\+@{gamma2m\+\_\+}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{gamma2m\+\_\+}{gamma2m_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf Expr} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::gamma2m\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a1984a6776106c31887279d6c60e3874c}{}\label{classmarian_1_1rnn_1_1Multiplicative_a1984a6776106c31887279d6c60e3874c}
+
+
+Definition at line 398 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!Um\+\_\+@{Um\+\_\+}}
+\index{Um\+\_\+@{Um\+\_\+}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Um\+\_\+}{Um_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf Expr} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::Um\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_a5048c83eb0045b7a85304e3557727e07}{}\label{classmarian_1_1rnn_1_1Multiplicative_a5048c83eb0045b7a85304e3557727e07}
+
+
+Definition at line 397 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}!Wm\+\_\+@{Wm\+\_\+}}
+\index{Wm\+\_\+@{Wm\+\_\+}!marian\+::rnn\+::\+Multiplicative@{marian\+::rnn\+::\+Multiplicative}}
+\subsubsection[{\texorpdfstring{Wm\+\_\+}{Wm_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Cell\+Type $>$ {\bf Expr} {\bf marian\+::rnn\+::\+Multiplicative}$<$ Cell\+Type $>$\+::Wm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1Multiplicative_acea0bc134660ffa076fad2536207fedb}{}\label{classmarian_1_1rnn_1_1Multiplicative_acea0bc134660ffa076fad2536207fedb}
+
+
+Definition at line 397 of file cells.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cells_8h}{cells.\+h}\end{DoxyCompactItemize}

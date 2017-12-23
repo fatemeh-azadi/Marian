@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch">
+<title>marian::data::SubBatch class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/d8f/corpus_8h">&lt;corpus.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::SubBatch</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dd6/classmarian_1_1data_1_1SubBatch__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::SubBatch</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d8b/classmarian_1_1data_1_1SubBatch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Word &gt; indices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; mask_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t width_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t words_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1a63503b18510aa3519f6d28d7e9f0bacf">SubBatch</link> (
+int size, int width)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> &gt; &amp; <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1a5da7bbc559373641e9fd829e85cb3b76">indices</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; &amp; <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1ab247d3f0cf9cfd721fe34aaf4eb7a762">mask</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1ada99fc6fbcac283c8cdbb866cb4a261e">batchSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1af7f936fc9f96a1135ce68c07f0b890da">batchWidth</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1a35a3232497a209161a61c3cd8e9e9952">batchWords</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch_1a143906c1d19aaa6f431bd13e74c88be5">setWords</link> (
+size_t words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1a63503b18510aa3519f6d28d7e9f0bacf">
+                <title>marian::data::SubBatch::SubBatch (int size, int width)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1a5da7bbc559373641e9fd829e85cb3b76">
+                <title>std::vector&lt;Word&gt;&amp; marian::data::SubBatch::indices ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1ab247d3f0cf9cfd721fe34aaf4eb7a762">
+                <title>std::vector&lt;float&gt;&amp; marian::data::SubBatch::mask ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1ada99fc6fbcac283c8cdbb866cb4a261e">
+                <title>size_t marian::data::SubBatch::batchSize ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1af7f936fc9f96a1135ce68c07f0b890da">
+                <title>size_t marian::data::SubBatch::batchWidth ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1a35a3232497a209161a61c3cd8e9e9952">
+                <title>size_t marian::data::SubBatch::batchWords ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dd0/classmarian_1_1data_1_1SubBatch_1a143906c1d19aaa6f431bd13e74c88be5">
+                <title>void marian::data::SubBatch::setWords (size_t words)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d37/_8ycm__extra__conf_8py">
+    <title>.ycm_extra_conf.py File Reference</title>
+<para>Include dependency diagram for .ycm_extra_conf.py</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d6a/_8ycm__extra__conf_8py__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for .ycm_extra_conf.py</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dfd/_8ycm__extra__conf_8py__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>list <link linkend="d3/d37/_8ycm__extra__conf_8py_1abd73d8e4551f1a637280b3876d1ae2e3">flags</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d3/d37/_8ycm__extra__conf_8py_1a6a4d7e96c7bc9093b406af626b7936a2">compilation_database_folder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d37/_8ycm__extra__conf_8py_1a64dbaa3229ec575b68ec333442e10cee">database</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>list <link linkend="d3/d37/_8ycm__extra__conf_8py_1a47014996e1e517071cd0412a22adb123">SOURCE_EXTENSIONS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d3/d37/_8ycm__extra__conf_8py_1aab283cdb607efa6a1a7aaa3f089c63f1">DirectoryOfThisScript</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d3/d37/_8ycm__extra__conf_8py_1aa20d30f8cc08fc0ab076b4cf458e0d3d">MakeRelativePathsInFlagsAbsolute</link> (
+<link linkend="d3/d37/_8ycm__extra__conf_8py_1abd73d8e4551f1a637280b3876d1ae2e3">flags</link> , working_directory )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d3/d37/_8ycm__extra__conf_8py_1a6bb59f541be0dcbde53eba606d48ddf8">IsHeaderFile</link> (
+filename )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d3/d37/_8ycm__extra__conf_8py_1a42a14573593ce75cd6e385a85326111f">GetCompilationInfoForFile</link> (
+filename )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d3/d37/_8ycm__extra__conf_8py_1a51f8bcdc9a3b791e6a88d798e6c786b3">FlagsForFile</link> (
+filename , kwargs )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file .ycm_extra_conf.py</para>
+    </simplesect>
+</section>

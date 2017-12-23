@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d16/classDeviceCPU">
+<title>DeviceCPU class Reference</title>
+<para>Inheritance diagram for DeviceCPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d53/classDeviceCPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for DeviceCPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d96/classDeviceCPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t alignment_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d16/classDeviceCPU_1acc3a2e8a88179459a4a46d0372deb4b4">DeviceCPU</link> (
+size_t device, size_t alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d16/classDeviceCPU_1a19924f8ccde58531dd6e2e1b2c63948c">~DeviceCPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/d16/classDeviceCPU_1a645be50c4147bf92c0f3bb3b1f5dc19e">align</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d16/classDeviceCPU_1ad86a817a1e6d8e56ce39ceaf0c61ba27">reserve</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t * <link linkend="d2/d16/classDeviceCPU_1a403496227a13cdd58b4ecbb4b11cc802">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/d16/classDeviceCPU_1a7d0c88aa549974bb767c40d21b990167">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/d16/classDeviceCPU_1a7b66f203a6bef405b888ec808381d41f">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d16/classDeviceCPU_1acc3a2e8a88179459a4a46d0372deb4b4">
+                <title>DeviceCPU::DeviceCPU (size_t device, size_t alignment=256)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1a19924f8ccde58531dd6e2e1b2c63948c">
+                <title>DeviceCPU::~DeviceCPU ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1a645be50c4147bf92c0f3bb3b1f5dc19e">
+                <title>size_t DeviceCPU::align (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1ad86a817a1e6d8e56ce39ceaf0c61ba27">
+                <title>void DeviceCPU::reserve (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1a403496227a13cdd58b4ecbb4b11cc802">
+                <title>uint8_t* DeviceCPU::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1a7d0c88aa549974bb767c40d21b990167">
+                <title>size_t DeviceCPU::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d16/classDeviceCPU_1a7b66f203a6bef405b888ec808381d41f">
+                <title>size_t DeviceCPU::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

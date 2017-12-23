@@ -1,0 +1,522 @@
+\hypertarget{classamunmt_1_1Config}{}\section{amunmt\+:\+:Config Class Reference}
+\label{classamunmt_1_1Config}\index{amunmt\+::\+Config@{amunmt\+::\+Config}}
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{d8/df0/classamunmt_1_1Config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1}{Has} (const std\+::string \&key) const 
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classamunmt_1_1Config_aa7e531efa35245ae0dd6ccbe02e98006}{Get} (const std\+::string \&key) const 
+\item 
+const Y\+A\+M\+L\+::\+Node \& \hyperlink{classamunmt_1_1Config_a76c3003096368571fd19e3621691e734}{Get} () const 
+\item 
+void \hyperlink{classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568}{Add\+Options} (size\+\_\+t argc, char $\ast$$\ast$argv)
+\item 
+void \hyperlink{classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059}{Log\+Options} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classamunmt_1_1Config_a3e3069f6b6637092d6cfe202f1e57b25}{input\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\O\+Stream \& \hyperlink{classamunmt_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}{operator$<$$<$} (O\+Stream \&out, const \hyperlink{classamunmt_1_1Config}{Config} \&config)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file amun/common/config.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Add\+Options@{Add\+Options}}
+\index{Add\+Options@{Add\+Options}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Add\+Options(size\+\_\+t argc, char $\ast$$\ast$argv)}{AddOptions(size_t argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Config\+::\+Add\+Options (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568}{}\label{classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568}
+
+
+Definition at line 166 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+166                                                 \{
+167   \textcolor{keyword}{namespace }po = boost::program\_options;
+168   po::options\_description general(\textcolor{stringliteral}{"General options"});
+169 
+170   std::string configPath;
+171   std::vector<std::string> modelPaths;
+172   std::vector<std::string> sourceVocabPaths;
+173   std::string targetVocabPath;
+174   std::vector<std::string> bpePaths;
+175   \textcolor{keywordtype}{bool} debpe;
+176 
+177   std::vector<size\_t> devices, fpgaDevices;
+178 
+179   general.add\_options()
+180     (\textcolor{stringliteral}{"config,c"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&configPath),
+181      \textcolor{stringliteral}{"Configuration file"})
+182     (\textcolor{stringliteral}{"input-file,i"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&\hyperlink{classamunmt_1_1Config_a3e3069f6b6637092d6cfe202f1e57b25}{inputPath}),
+183       \textcolor{stringliteral}{"Take input from a file instead of stdin"})
+184     (\textcolor{stringliteral}{"model,m"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&modelPaths)->multitoken(),
+185      \textcolor{stringliteral}{"Overwrite scorer section in config file with these models. "}
+186      \textcolor{stringliteral}{"Assumes models of type Nematus and assigns model names F0, F1, ..."})
+187     (\textcolor{stringliteral}{"source-vocab,s"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&sourceVocabPaths)->multitoken(),
+188      \textcolor{stringliteral}{"Overwrite source vocab section in config file with vocab file."})
+189     (\textcolor{stringliteral}{"target-vocab,t"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&targetVocabPath),
+190      \textcolor{stringliteral}{"Overwrite target vocab section in config file with vocab file."})
+191     (\textcolor{stringliteral}{"bpe"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&bpePaths)->multitoken(),
+192      \textcolor{stringliteral}{"Overwrite bpe section in config with bpe code file."})
+193     (\textcolor{stringliteral}{"no-debpe"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&debpe)->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+194      \textcolor{stringliteral}{"Providing bpe is on, turn off deBPE of the output."})
+195 #ifdef CUDA
+196     (\textcolor{stringliteral}{"devices,d"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&devices)->multitoken()->default\_value(std::vector<size\_t>(1, 0), \textcolor{stringliteral}{"0"})
+      ,
+197      \textcolor{stringliteral}{"CUDA device(s) to use, set to 0 by default, "}
+198      \textcolor{stringliteral}{"e.g. set to 0 1 to use gpu0 and gpu1. "}
+199      \textcolor{stringliteral}{"Implicitly sets minimal number of threads to number of devices."})
+200     (\textcolor{stringliteral}{"gpu-threads"}, po::value<size\_t>()->default\_value(1),
+201      \textcolor{stringliteral}{"Number of threads on a single GPU."})
+202 #endif
+203 
+204 #ifdef HAS\_CPU
+205   #ifdef CUDA
+206     (\textcolor{stringliteral}{"cpu-threads"}, po::value<size\_t>()->default\_value(0),
+207      \textcolor{stringliteral}{"Number of threads on the CPU."})
+208   #\textcolor{keywordflow}{else}
+209      (\textcolor{stringliteral}{"cpu-threads"}, po::value<size\_t>()->default\_value(1),
+210       \textcolor{stringliteral}{"Number of threads on the CPU."})
+211   #endif
+212 #endif
+213 
+214 #ifdef HAS\_FPGA
+215     (\textcolor{stringliteral}{"fpga-threads"}, po::value<size\_t>()->default\_value(0),
+216      \textcolor{stringliteral}{"Number of threads on the FPGA."})
+217     (\textcolor{stringliteral}{"fpga-devices"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}(&fpgaDevices)->multitoken()->default\_value(std::vector<size\_t>(1, 0
+      ), \textcolor{stringliteral}{"0"}),
+218      \textcolor{stringliteral}{"FPGA device(s) to use, set to 0 by default, "}
+219         \textcolor{stringliteral}{"e.g. set to 0 1 to use fpga0 and fpga1. "}
+220         \textcolor{stringliteral}{"Implicitly sets minimal number of threads to number of devices."})
+221 #endif
+222 
+223     (\textcolor{stringliteral}{"mini-batch"}, po::value<size\_t>()->default\_value(1),
+224      \textcolor{stringliteral}{"Number of sentences in mini batch."})
+225     (\textcolor{stringliteral}{"maxi-batch"}, po::value<size\_t>()->default\_value(1),
+226       \textcolor{stringliteral}{"Number of sentences in maxi batch."})
+227     (\textcolor{stringliteral}{"mini-batch-words"}, po::value<int>()->default\_value(0),
+228       \textcolor{stringliteral}{"Set mini-batch size based on words instead of sentences."})
+229     (\textcolor{stringliteral}{"show-weights"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+230      \textcolor{stringliteral}{"Output used weights to stdout and exit"})
+231     (\textcolor{stringliteral}{"load-weights"}, po::value<std::string>(),
+232      \textcolor{stringliteral}{"Load scorer weights from this file"})
+233     (\textcolor{stringliteral}{"wipo"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+234      \textcolor{stringliteral}{"Use WIPO specific n-best-list format and non-buffering single-threading"})
+235     (\textcolor{stringliteral}{"return-alignment"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+236      \textcolor{stringliteral}{"If true, return alignment."})
+237     (\textcolor{stringliteral}{"return-soft-alignment"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+238      \textcolor{stringliteral}{"If true, return soft alignment."})
+239     (\textcolor{stringliteral}{"return-nematus-alignment"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+240      \textcolor{stringliteral}{"If true, return Nematus style soft alignment."})
+241     (\textcolor{stringliteral}{"max-length"}, po::value<size\_t>()->default\_value(500),
+242       \textcolor{stringliteral}{"Maximum length of input sentences. Anything above this is truncated. 0=no max length"})
+243     (\textcolor{stringliteral}{"version,v"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+244      \textcolor{stringliteral}{"Print version."})
+245     (\textcolor{stringliteral}{"help,h"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+246      \textcolor{stringliteral}{"Print this help message and exit"})
+247     (\textcolor{stringliteral}{"log-progress"},po::value<std::string>()->default\_value(\textcolor{stringliteral}{"info"})->implicit\_value(\textcolor{stringliteral}{"info"}),
+248      \textcolor{stringliteral}{"Log level for progress logging to stderr (trace - debug - info - warn - err(or) - critical - off)."})
+249     (\textcolor{stringliteral}{"log-info"},po::value<std::string>()->default\_value(\textcolor{stringliteral}{"info"})->implicit\_value(\textcolor{stringliteral}{"info"}),
+250      \textcolor{stringliteral}{"Log level for informative messages to stderr (trace - debug - info - warn - err(or) - critical -
+       off)."})
+251   ;
+252 
+253   po::options\_description search(\textcolor{stringliteral}{"Search options"});
+254   search.add\_options()
+255     (\textcolor{stringliteral}{"beam-size,b"}, po::value<size\_t>()->default\_value(12),
+256      \textcolor{stringliteral}{"Decoding beam-size"})
+257     (\textcolor{stringliteral}{"normalize,n"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+258      \textcolor{stringliteral}{"Normalize scores by translation length after decoding"})
+259     (\textcolor{stringliteral}{"softmax-filter,f"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken()->default\_value(
+      std::vector<std::string>(0), \textcolor{stringliteral}{""}),
+260      \textcolor{stringliteral}{"Filter final softmax: path to file with alignment [N first words]"})
+261     (\textcolor{stringliteral}{"allow-unk,u"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+262      \textcolor{stringliteral}{"Allow generation of UNK"})
+263     (\textcolor{stringliteral}{"n-best"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+264      \textcolor{stringliteral}{"Output n-best list with n = beam-size"})
+265   ;
+266 
+267   po::options\_description configuration(\textcolor{stringliteral}{"Configuration meta options"});
+268   configuration.add\_options()
+269     (\textcolor{stringliteral}{"relative-paths"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+270      \textcolor{stringliteral}{"All paths are relative to the config file location"})
+271     (\textcolor{stringliteral}{"dump-config"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+272      \textcolor{stringliteral}{"Dump current (modified) configuration to stdout and exit"})
+273   ;
+274 
+275   po::options\_description cmdline\_options(\textcolor{stringliteral}{"Allowed options"});
+276   cmdline\_options.add(general);
+277   cmdline\_options.add(search);
+278   cmdline\_options.add(configuration);
+279 
+280   po::variables\_map vm\_;
+281   \textcolor{keywordflow}{try} \{
+282     po::store(po::command\_line\_parser(argc,argv)
+283               .options(cmdline\_options).run(), vm\_);
+284     po::notify(vm\_);
+285   \}
+286   \textcolor{keywordflow}{catch} (std::exception& e) \{
+287     std::cerr << \textcolor{stringliteral}{"Error: "} << e.what() << std::endl << std::endl;
+288 
+289     std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) +  \textcolor{stringliteral}{" [options]"} << std::endl;
+290     std::cerr << cmdline\_options << std::endl;
+291     exit(1);
+292   \}
+293 
+294   \textcolor{keywordflow}{if} (vm\_[\textcolor{stringliteral}{"help"}].as<bool>()) \{
+295     std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) +  \textcolor{stringliteral}{" [options]"} << std::endl;
+296     std::cerr << cmdline\_options << std::endl;
+297     exit(0);
+298   \}
+299 
+300   \textcolor{keywordflow}{if} (vm\_[\textcolor{stringliteral}{"version"}].as<bool>()) \{
+301     std::cerr << \hyperlink{git__version_8h_a36077360d3992cc6c1d9a992ba2e559c}{AMUNMT\_GIT\_VERION} << std::endl;
+302     exit(0);
+303   \}
+304 
+305   \textcolor{keywordflow}{if}(configPath.size())
+306     \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_} = YAML::Load(\hyperlink{classInputFileStream}{InputFileStream}(configPath));
+307 
+308   \textcolor{comment}{// Simple overwrites}
+309   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"n-best"}, \textcolor{keywordtype}{bool});
+310   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"normalize"}, \textcolor{keywordtype}{bool});
+311   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"wipo"}, \textcolor{keywordtype}{bool});
+312   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"return-alignment"}, \textcolor{keywordtype}{bool});
+313   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"return-soft-alignment"}, \textcolor{keywordtype}{bool});
+314   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"return-nematus-alignment"}, \textcolor{keywordtype}{bool});
+315   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"softmax-filter"}, std::vector<std::string>);
+316   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"allow-unk"}, \textcolor{keywordtype}{bool});
+317   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"no-debpe"}, \textcolor{keywordtype}{bool});
+318   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"beam-size"}, \textcolor{keywordtype}{size\_t});
+319   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"mini-batch"}, \textcolor{keywordtype}{size\_t});
+320   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"maxi-batch"}, \textcolor{keywordtype}{size\_t});
+321   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"mini-batch-words"}, \textcolor{keywordtype}{int});
+322   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"max-length"}, \textcolor{keywordtype}{size\_t});
+323 \textcolor{preprocessor}{#ifdef CUDA}
+324   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"gpu-threads"}, \textcolor{keywordtype}{size\_t});
+325   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"devices"}, std::vector<size\_t>);
+326 \textcolor{preprocessor}{#endif}
+327 \textcolor{preprocessor}{#ifdef HAS\_CPU}
+328   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"cpu-threads"}, \textcolor{keywordtype}{size\_t});
+329 \textcolor{preprocessor}{#endif}
+330 \textcolor{preprocessor}{#ifdef HAS\_FPGA}
+331   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"fpga-threads"}, \textcolor{keywordtype}{size\_t});
+332   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"fpga-devices"}, std::vector<size\_t>);
+333 \textcolor{preprocessor}{#endif}
+334   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"show-weights"}, \textcolor{keywordtype}{bool});
+335   \hyperlink{amun_2common_2config_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"load-weights"}, std::string);
+336   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"relative-paths"}, \textcolor{keywordtype}{bool});
+337   \hyperlink{amun_2common_2config_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"input-file"}, std::string);
+338   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"log-progress"}, std::string);
+339   \hyperlink{amun_2common_2config_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"log-info"}, std::string);
+340   \textcolor{comment}{// @TODO: Apply complex overwrites}
+341 
+342   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1}{Has}(\textcolor{stringliteral}{"load-weights"})) \{
+343     \hyperlink{namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2}{LoadWeights}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, Get<std::string>(\textcolor{stringliteral}{"load-weights"}));
+344   \}
+345 
+346   \textcolor{keywordflow}{if} (modelPaths.size()) \{
+347     \hyperlink{namespaceamunmt_a223f2f561452f574093618cd336c43de}{OverwriteModels}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, modelPaths);
+348   \}
+349 
+350   \textcolor{keywordflow}{if} (sourceVocabPaths.size()) \{
+351     \hyperlink{namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a}{OverwriteSourceVocabs}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, sourceVocabPaths);
+352   \}
+353 
+354   \textcolor{keywordflow}{if} (targetVocabPath.size()) \{
+355     \hyperlink{namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3}{OverwriteTargetVocab}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, targetVocabPath);
+356   \}
+357 
+358   \textcolor{keywordflow}{if} (bpePaths.size()) \{
+359     \hyperlink{namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18}{OverwriteBPE}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, bpePaths);
+360   \}
+361 
+362   \textcolor{keywordflow}{if} (Get<bool>(\textcolor{stringliteral}{"relative-paths"}) && !vm\_[\textcolor{stringliteral}{"dump-config"}].as<bool>())
+363     \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{ProcessPaths}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, boost::filesystem::path\{configPath\}.parent\_path(), \textcolor{keyword}{false});
+364 
+365   \textcolor{keywordflow}{try} \{
+366     \hyperlink{namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067}{Validate}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_});
+367   \}
+368   \textcolor{keywordflow}{catch}(util::Exception& e) \{
+369     std::cerr << \textcolor{stringliteral}{"Error: "} << e.what() << std::endl << std::endl;
+370 
+371     std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) +  \textcolor{stringliteral}{" [options]"} << std::endl;
+372     std::cerr << cmdline\_options << std::endl;
+373     exit(1);
+374   \}
+375 
+376   \textcolor{keywordflow}{if}(vm\_[\textcolor{stringliteral}{"dump-config"}].as<bool>()) \{
+377     YAML::Emitter emit;
+378     \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{OutputRec}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, emit);
+379     std::cout << emit.c\_str() << std::endl;
+380     exit(0);
+381   \}
+382 
+383 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Get@{Get}}
+\index{Get@{Get}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&key) const }{Get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node amunmt\+::\+Config\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{}\label{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}
+
+
+Definition at line 24 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+24                                                \{
+25   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}[key];
+26 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Get@{Get}}
+\index{Get@{Get}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&key) const }{Get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T amunmt\+::\+Config\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1Config_aa7e531efa35245ae0dd6ccbe02e98006}{}\label{classamunmt_1_1Config_aa7e531efa35245ae0dd6ccbe02e98006}
+
+
+Definition at line 22 of file amun/common/config.\+h.
+
+
+\begin{DoxyCode}
+22                                       \{
+23       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}[key].as<T>();
+24     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_aa7e531efa35245ae0dd6ccbe02e98006_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Get@{Get}}
+\index{Get@{Get}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Get() const }{Get() const }}]{\setlength{\rightskip}{0pt plus 5cm}const Y\+A\+M\+L\+::\+Node \& amunmt\+::\+Config\+::\+Get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Config_a76c3003096368571fd19e3621691e734}{}\label{classamunmt_1_1Config_a76c3003096368571fd19e3621691e734}
+
+
+Definition at line 28 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+28                                   \{
+29   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_};
+30 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{da/d4e/classamunmt_1_1Config_a76c3003096368571fd19e3621691e734_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Has@{Has}}
+\index{Has@{Has}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Has(const std\+::string \&key) const }{Has(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Config\+::\+Has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1}{}\label{classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1}
+
+
+Definition at line 20 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+20                                            \{
+21   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}[key];
+22 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!Log\+Options@{Log\+Options}}
+\index{Log\+Options@{Log\+Options}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{Log\+Options()}{LogOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Config\+::\+Log\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059}{}\label{classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059}
+
+
+Definition at line 385 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+385                         \{
+386   std::stringstream ss;
+387   YAML::Emitter out;
+388   \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{OutputRec}(\hyperlink{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{config\_}, out);
+389   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Options: \{\}\(\backslash\)n"}, out.c\_str());
+390 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4e/classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O\+Stream $>$ O\+Stream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{O\+Stream \&}]{out, }
+\item[{const {\bf Config} \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classamunmt_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}{}\label{classamunmt_1_1Config_a12edc9cd675b196fa52930d9058c1ad2}
+
+
+Definition at line 31 of file amun/common/config.\+h.
+
+
+\begin{DoxyCode}
+31                                                                    \{
+32       out << config.config\_;
+33       \textcolor{keywordflow}{return} out;
+34     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!config\+\_\+@{config\+\_\+}}
+\index{config\+\_\+@{config\+\_\+}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{config\+\_\+}{config_}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node amunmt\+::\+Config\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}{}\label{classamunmt_1_1Config_a82fa4e3a8aa7d62c2d1a568d71392ce8}
+
+
+Definition at line 12 of file amun/common/config.\+h.
+
+\index{amunmt\+::\+Config@{amunmt\+::\+Config}!input\+Path@{input\+Path}}
+\index{input\+Path@{input\+Path}!amunmt\+::\+Config@{amunmt\+::\+Config}}
+\subsubsection[{\texorpdfstring{input\+Path}{inputPath}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Config\+::input\+Path}\hypertarget{classamunmt_1_1Config_a3e3069f6b6637092d6cfe202f1e57b25}{}\label{classamunmt_1_1Config_a3e3069f6b6637092d6cfe202f1e57b25}
+
+
+Definition at line 15 of file amun/common/config.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2config_8h}{amun/common/config.\+h}\item 
+\hyperlink{amun_2common_2config_8cpp}{amun/common/config.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{classmarian_1_1mlp_1_1MLP}{}\section{marian\+:\+:mlp\+:\+:M\+LP Class Reference}
+\label{classmarian_1_1mlp_1_1MLP}\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:mlp\+:\+:M\+LP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{d4/da7/classmarian_1_1mlp_1_1MLP__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1mlp_1_1MLP_a40be5a4c5ed64d560e9c302998b0244b}{M\+LP} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1mlp_1_1MLP_a3c88c0c6c68738404792e801e3ea8e6d}{apply} (Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1mlp_1_1MLP_a1da6e347d966206915a401dc76bbdf50}{push\+\_\+back} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Layer $>$ layer)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1mlp_1_1MLP_a61b6155380706d5c2afdbeeaa0994008}{graph\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ \hyperlink{classmarian_1_1mlp_1_1MLP_acd5930ecb6a6da66a793244071b10b5c}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Layer $>$ $>$ \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file layers/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!M\+LP@{M\+LP}}
+\index{M\+LP@{M\+LP}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{M\+L\+P(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Options $>$ options)}{MLP(Ptr< ExpressionGraph > graph, Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+M\+L\+P\+::\+M\+LP (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLP_a40be5a4c5ed64d560e9c302998b0244b}{}\label{classmarian_1_1mlp_1_1MLP_a40be5a4c5ed64d560e9c302998b0244b}
+
+
+Definition at line 67 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+68    : \hyperlink{classmarian_1_1mlp_1_1MLP_a61b6155380706d5c2afdbeeaa0994008}{graph\_}(graph), \hyperlink{classmarian_1_1mlp_1_1MLP_acd5930ecb6a6da66a793244071b10b5c}{options\_}(options)
+69   \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!apply@{apply}}
+\index{apply@{apply}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{apply(\+Args...\+args)}{apply(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ {\bf Expr} marian\+::mlp\+::\+M\+L\+P\+::apply (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLP_a3c88c0c6c68738404792e801e3ea8e6d}{}\label{classmarian_1_1mlp_1_1MLP_a3c88c0c6c68738404792e801e3ea8e6d}
+
+
+Definition at line 72 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+72                            \{
+73     std::vector<Expr> av = \{args...\};
+74 
+75     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+76     \textcolor{keywordflow}{if}(av.size() == 1)
+77       output = \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\_}[0]->\hyperlink{classmarian_1_1mlp_1_1MLP_a3c88c0c6c68738404792e801e3ea8e6d}{apply}(av[0]);
+78     \textcolor{keywordflow}{else}
+79       output = \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\_}[0]->apply(av);
+80 
+81     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i < \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\_}.size(); ++i)
+82       output = \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\_}[i]->\hyperlink{classmarian_1_1mlp_1_1MLP_a3c88c0c6c68738404792e801e3ea8e6d}{apply}(output);
+83 
+84     \textcolor{keywordflow}{return} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output};
+85   \}
+\end{DoxyCode}
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(\+Ptr$<$ Layer $>$ layer)}{push_back(Ptr< Layer > layer)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::mlp\+::\+M\+L\+P\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ Layer $>$}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLP_a1da6e347d966206915a401dc76bbdf50}{}\label{classmarian_1_1mlp_1_1MLP_a1da6e347d966206915a401dc76bbdf50}
+
+
+Definition at line 87 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+87                                    \{
+88     \hyperlink{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{layers\_}.push\_back(layer);
+89   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!graph\+\_\+@{graph\+\_\+}}
+\index{graph\+\_\+@{graph\+\_\+}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{graph\+\_\+}{graph_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Expression\+Graph}$>$ marian\+::mlp\+::\+M\+L\+P\+::graph\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1mlp_1_1MLP_a61b6155380706d5c2afdbeeaa0994008}{}\label{classmarian_1_1mlp_1_1MLP_a61b6155380706d5c2afdbeeaa0994008}
+
+
+Definition at line 61 of file layers/constructors.\+h.
+
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!layers\+\_\+@{layers\+\_\+}}
+\index{layers\+\_\+@{layers\+\_\+}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{layers\+\_\+}{layers_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<$Layer$>$ $>$ marian\+::mlp\+::\+M\+L\+P\+::layers\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}{}\label{classmarian_1_1mlp_1_1MLP_a79aa502c44a04f6eea99a6b304bd01e9}
+
+
+Definition at line 64 of file layers/constructors.\+h.
+
+\index{marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::mlp\+::\+M\+LP@{marian\+::mlp\+::\+M\+LP}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Options}$>$ marian\+::mlp\+::\+M\+L\+P\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1mlp_1_1MLP_acd5930ecb6a6da66a793244071b10b5c}{}\label{classmarian_1_1mlp_1_1MLP_acd5930ecb6a6da66a793244071b10b5c}
+
+
+Definition at line 62 of file layers/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layers_2constructors_8h}{layers/constructors.\+h}\end{DoxyCompactItemize}

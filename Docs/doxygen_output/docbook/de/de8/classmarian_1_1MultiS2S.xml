@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de8/classmarian_1_1MultiS2S">
+<title>marian::MultiS2S class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/dde/multi__s2s_8h">&lt;multi_s2s.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultiS2S</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d78/classmarian_1_1MultiS2S__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultiS2S</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/da6/classmarian_1_1MultiS2S__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/de8/classmarian_1_1MultiS2S_1ac4beeeeb151cc8da4b238826faa2079a">MultiS2S</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="de/de8/classmarian_1_1MultiS2S_1ac4beeeeb151cc8da4b238826faa2079a">
+                <title>marian::MultiS2S::MultiS2S (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

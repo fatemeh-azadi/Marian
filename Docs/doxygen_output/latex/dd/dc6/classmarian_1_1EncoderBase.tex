@@ -1,0 +1,221 @@
+\hypertarget{classmarian_1_1EncoderBase}{}\section{marian\+:\+:Encoder\+Base Class Reference}
+\label{classmarian_1_1EncoderBase}\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+
+
+{\ttfamily \#include $<$encdec.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d76/classmarian_1_1EncoderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{dd/d31/classmarian_1_1EncoderBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}{Encoder\+Base} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$, size\+\_\+t)=0
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1EncoderBase_aff87b618b2754b99eaf961e95739366d}{opt} (const std\+::string \&key)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::tuple$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6}{lookup} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} src\+Embeddings, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, size\+\_\+t index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\+\_\+}
+\item 
+std\+::string \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\+\_\+} \{\char`\"{}encoder\char`\"{}\}
+\item 
+bool \hyperlink{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{inference\+\_\+} \{false\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file encdec.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!Encoder\+Base@{Encoder\+Base}}
+\index{Encoder\+Base@{Encoder\+Base}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{Encoder\+Base(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderBase(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Encoder\+Base\+::\+Encoder\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}{}\label{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}
+
+
+Definition at line 36 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+37       : \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}(options),
+38         \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix}, \textcolor{stringliteral}{"encoder"}, args...)),
+39         \hyperlink{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{inference\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference}, \textcolor{keyword}{false}, args...)) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{dd/dc6/classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$, Ptr$<$ data\+::\+Corpus\+Batch $>$, size\+\_\+t)=0}{build(Ptr< ExpressionGraph >, Ptr< data::CorpusBatch >, size_t)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Encoder\+Base\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{, }
+\item[{size\+\_\+t}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}{}\label{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderS2S_ac7066b7a2aabebd2efce08215a1c00c7}{marian\+::\+Encoder\+S2S}, \hyperlink{classmarian_1_1EncoderPooling_a676142ec672b7e9e84d8dc539039c57a}{marian\+::\+Encoder\+Pooling}, and \hyperlink{classmarian_1_1MultiEncoder_af841e028f2034309a7e13a31ea0700ea}{marian\+::\+Multi\+Encoder$<$ Encoder1, Encoder2 $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dc6/classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!lookup@{lookup}}
+\index{lookup@{lookup}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{lookup(\+Expr src\+Embeddings, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, size\+\_\+t index)}{lookup(Expr srcEmbeddings, Ptr< data::CorpusBatch > batch, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::tuple$<${\bf Expr}, {\bf Expr}$>$ marian\+::\+Encoder\+Base\+::lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{src\+Embeddings, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6}{}\label{classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6}
+
+
+Definition at line 13 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+15                                                       \{
+16     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+17 
+18     \textcolor{keyword}{auto} subBatch = (*batch)[index];
+19 
+20     \textcolor{keywordtype}{int} dimBatch = subBatch->batchSize();
+21     \textcolor{keywordtype}{int} dimEmb = srcEmbeddings->shape()[1];
+22     \textcolor{keywordtype}{int} dimWords = subBatch->batchWidth();
+23 
+24     \textcolor{keyword}{auto} graph = srcEmbeddings->graph();
+25     \textcolor{keyword}{auto} chosenEmbeddings = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(srcEmbeddings, subBatch->indices());
+26 
+27     \textcolor{keyword}{auto} batchEmbeddings = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(chosenEmbeddings, \{dimBatch, dimEmb, dimWords\});
+28     \textcolor{keyword}{auto} batchMask = graph->constant(\{dimBatch, 1, dimWords\},
+29                                      \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(subBatch->mask()));
+30 
+31     \textcolor{keywordflow}{return} std::make\_tuple(batchEmbeddings, batchMask);
+32   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dc6/classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{dd/dc6/classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!opt@{opt}}
+\index{opt@{opt}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{opt(const std\+::string \&key)}{opt(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Encoder\+Base\+::opt (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderBase_aff87b618b2754b99eaf961e95739366d}{}\label{classmarian_1_1EncoderBase_aff87b618b2754b99eaf961e95739366d}
+
+
+Definition at line 46 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+46                               \{
+47     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->get<T>(key);
+48   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!inference\+\_\+@{inference\+\_\+}}
+\index{inference\+\_\+@{inference\+\_\+}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{inference\+\_\+}{inference_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Encoder\+Base\+::inference\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{}\label{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}
+
+
+Definition at line 11 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::\+Encoder\+Base\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{}\label{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}
+
+
+Definition at line 9 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}!prefix\+\_\+@{prefix\+\_\+}}
+\index{prefix\+\_\+@{prefix\+\_\+}!marian\+::\+Encoder\+Base@{marian\+::\+Encoder\+Base}}
+\subsubsection[{\texorpdfstring{prefix\+\_\+}{prefix_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::\+Encoder\+Base\+::prefix\+\_\+ \{\char`\"{}encoder\char`\"{}\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{}\label{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}
+
+
+Definition at line 10 of file encdec.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encdec_8h}{encdec.\+h}\end{DoxyCompactItemize}

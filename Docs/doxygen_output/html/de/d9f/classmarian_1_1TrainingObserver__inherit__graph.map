@@ -1,0 +1,7 @@
+<map id="marian::TrainingObserver" name="marian::TrainingObserver">
+<area shape="rect" id="node2" href="$d8/d6e/classmarian_1_1OptimizerBase.html" title="{marian::OptimizerBase\n|# clipper_\l# eta_\l|+ OptimizerBase()\l+ update()\l+ update()\l+ actAfterEpoch()\l+ actAfterBatches()\l+ actAfterStalled()\l# updateImpl()\l}" alt="" coords="123,263,277,443"/>
+<area shape="rect" id="node6" href="$d2/dab/classmarian_1_1Scheduler.html" title="{marian::Scheduler\&lt;\l DataSet \&gt;\n|&#45; progress\l&#45; options_\l&#45; validators_\l&#45; costSum\l&#45; epochs\l&#45; samples\l&#45; samplesDisp\l&#45; wordsDisp\l&#45; batches\l&#45; trainState_\l&#45; timer\l|+ Scheduler()\l+ keepGoing()\l+ increaseEpoch()\l+ started()\l+ finished()\l+ addValidator()\l+ validating()\l+ saving()\l+ validate()\l+ stalled()\land 8 more...\l}" alt="" coords="302,160,437,545"/>
+<area shape="rect" id="node3" href="$d9/df8/classmarian_1_1Adagrad.html" title="{marian::Adagrad\n|&#45; eps_\l&#45; alloc_\l&#45; gt_\l|+ Adagrad()\l&#45; updateImpl()\l}" alt="" coords="5,630,123,751"/>
+<area shape="rect" id="node4" href="$d5/d1e/classmarian_1_1Adam.html" title="{marian::Adam\n|&#45; beta1_\l&#45; beta2_\l&#45; eps_\l&#45; t_\l&#45; mtAlloc_\l&#45; mt_\l&#45; vtAlloc_\l&#45; vt_\l|+ Adam()\l+ updateImpl()\l}" alt="" coords="147,593,253,788"/>
+<area shape="rect" id="node5" href="$d1/da5/classmarian_1_1Sgd.html" title="{marian::Sgd\n||+ Sgd()\l&#45; updateImpl()\l}" alt="" coords="278,645,381,737"/>
+</map>

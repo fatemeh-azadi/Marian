@@ -1,0 +1,49 @@
+warning: source ../out/include is not a readable file or directory... skipping.
+/home/azadi/Desktop/Tools/marian/src/marian/src/data/npz_converter.cpp:38: warning: no uniquely matching class member found for 
+  mblas::Matrix NpzConverter::operator[](const std::string &key) const
+
+/home/azadi/Desktop/Tools/marian/src/marian/src/data/npz_converter.cpp:53: warning: no uniquely matching class member found for 
+  mblas::Matrix NpzConverter::operator()(const std::string &key, bool transpose) const
+
+/home/azadi/Desktop/Tools/marian/src/marian/contrib/README.md:19: warning: Unsupported xml/html tag <path_to_file> found
+/home/azadi/Desktop/Tools/marian/src/marian/README.md:4: warning: Unexpected html tag <img> found within <a href=...> context
+/home/azadi/Desktop/Tools/marian/src/marian/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
+/home/azadi/Desktop/Tools/marian/src/marian/src/graph/expression_graph.h:253: warning: The following parameters of marian::ExpressionGraph::param(std::string name, Shape shape, Args...args) are not documented:
+  parameter 'name'
+  parameter 'shape'
+/home/azadi/Desktop/Tools/marian/src/marian/src/common/shape.h:33: warning: argument 'i' of command @param is not found in the argument list of marian::Shape::Shape(std::initializer_list< int > il)
+/home/azadi/Desktop/Tools/marian/src/marian/src/common/shape.h:37: warning: The following parameters of marian::Shape::Shape(std::initializer_list< int > il) are not documented:
+  parameter 'il'
+/home/azadi/Desktop/Tools/marian/src/marian/src/kernels/shape_gpu.h:31: warning: argument 'i' of command @param is not found in the argument list of marian::ShapeGPU::ShapeGPU(std::initializer_list< int > il)
+/home/azadi/Desktop/Tools/marian/src/marian/src/kernels/shape_gpu.h:35: warning: The following parameters of marian::ShapeGPU::ShapeGPU(std::initializer_list< int > il) are not documented:
+  parameter 'il'
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/lenet_mnist.h:54: warning: argument 'training' of command @param is not found in the argument list of marian::models::LeNetModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false)
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/lenet_mnist.h:63: warning: The following parameters of marian::models::LeNetModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false) are not documented:
+  parameter 'g'
+  parameter 'inference'
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/model.h:53: warning: argument 'training' of command @param is not found in the argument list of marian::models::MNISTModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false)
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/model.h:62: warning: The following parameters of marian::models::MNISTModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false) are not documented:
+  parameter 'g'
+  parameter 'inference'
+error: Problems running latex. Check your installation or look for typos in _formulas.tex and check _formulas.log!
+error: Problems running dvips. Check your installation!
+/home/azadi/Desktop/Tools/marian/src/marian/contrib/README.md:19: warning: Unsupported xml/html tag <path_to_file> found
+/home/azadi/Desktop/Tools/marian/src/marian/README.md:4: warning: Unexpected html tag <img> found within <a href=...> context
+/home/azadi/Desktop/Tools/marian/src/marian/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
+/home/azadi/Desktop/Tools/marian/src/marian/src/graph/expression_graph.h:253: warning: The following parameters of marian::ExpressionGraph::param(std::string name, Shape shape, Args...args) are not documented:
+  parameter 'name'
+  parameter 'shape'
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/lenet_mnist.h:54: warning: argument 'training' of command @param is not found in the argument list of marian::models::LeNetModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false)
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/lenet_mnist.h:63: warning: The following parameters of marian::models::LeNetModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false) are not documented:
+  parameter 'g'
+  parameter 'inference'
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/model.h:53: warning: argument 'training' of command @param is not found in the argument list of marian::models::MNISTModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false)
+/home/azadi/Desktop/Tools/marian/src/marian/src/examples/mnist/model.h:62: warning: The following parameters of marian::models::MNISTModel::FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false) are not documented:
+  parameter 'g'
+  parameter 'inference'
+/home/azadi/Desktop/Tools/marian/src/marian/src/common/shape.h:33: warning: argument 'i' of command @param is not found in the argument list of marian::Shape::Shape(std::initializer_list< int > il)
+/home/azadi/Desktop/Tools/marian/src/marian/src/common/shape.h:37: warning: The following parameters of marian::Shape::Shape(std::initializer_list< int > il) are not documented:
+  parameter 'il'
+/home/azadi/Desktop/Tools/marian/src/marian/src/kernels/shape_gpu.h:31: warning: argument 'i' of command @param is not found in the argument list of marian::ShapeGPU::ShapeGPU(std::initializer_list< int > il)
+/home/azadi/Desktop/Tools/marian/src/marian/src/kernels/shape_gpu.h:35: warning: The following parameters of marian::ShapeGPU::ShapeGPU(std::initializer_list< int > il) are not documented:
+  parameter 'il'

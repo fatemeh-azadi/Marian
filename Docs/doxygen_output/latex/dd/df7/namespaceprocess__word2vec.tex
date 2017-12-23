@@ -1,0 +1,299 @@
+\hypertarget{namespaceprocess__word2vec}{}\section{process\+\_\+word2vec Namespace Reference}
+\label{namespaceprocess__word2vec}\index{process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce}{main} ()
+\item 
+def \hyperlink{namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980}{replace\+\_\+unks} (l, voc)
+\item 
+def \hyperlink{namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f}{load\+\_\+yaml} (lines)
+\item 
+def \hyperlink{namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407}{parse\+\_\+user\+\_\+args} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceprocess__word2vec_a56790e0ff66512140343a1430a181340}{W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS} = \textquotesingle{}-\/cbow 0 -\/window 5 -\/negative -\/hs 1 -\/sample 1e-\/3 -\/binary 0\textquotesingle{}
+\item 
+string \hyperlink{namespaceprocess__word2vec_a416fec5596d37bdd6ace89870779feec}{U\+NK} = \textquotesingle{}$<$unk$>$\textquotesingle{}
+\item 
+string \hyperlink{namespaceprocess__word2vec_a3bd8d79e8af7445e67a587bdbdb78778}{E\+OS} = \textquotesingle{}$<$/s$>$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!load\+\_\+yaml@{load\+\_\+yaml}}
+\index{load\+\_\+yaml@{load\+\_\+yaml}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{load\+\_\+yaml(lines)}{load_yaml(lines)}}]{\setlength{\rightskip}{0pt plus 5cm}def process\+\_\+word2vec.\+load\+\_\+yaml (
+\begin{DoxyParamCaption}
+\item[{}]{lines}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f}{}\label{namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f}
+
+
+Definition at line 94 of file process\+\_\+word2vec.\+py.
+
+
+\begin{DoxyCode}
+94 \textcolor{keyword}{def }\hyperlink{namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f}{load\_yaml}(lines):
+95     vocab = \{\}
+96     \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} lines:
+97         \textcolor{comment}{# all values are integers, so splitting by ':' from right should be safe}
+98         word, idx = line.strip().rsplit(\textcolor{stringliteral}{':'}, 1)
+99         vocab[word.strip(\textcolor{stringliteral}{'"'})] = int(idx.strip())
+100     \textcolor{keywordflow}{return} vocab
+101 
+102 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!main@{main}}
+\index{main@{main}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def process\+\_\+word2vec.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce}{}\label{namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce}
+
+
+Definition at line 18 of file process\+\_\+word2vec.\+py.
+
+
+\begin{DoxyCode}
+18 \textcolor{keyword}{def }\hyperlink{namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce}{main}():
+19     args = \hyperlink{namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407}{parse\_user\_args}()
+20 
+21     print(\textcolor{stringliteral}{"Loading vocabulary"})
+22     ext = os.path.splitext(args.vocab)[1]
+23     \textcolor{keywordflow}{if} ext == \textcolor{stringliteral}{".json"}:
+24         with open(args.vocab) \textcolor{keyword}{as} vocab\_file:
+25             vocab = json.load(vocab\_file)
+26     \textcolor{keywordflow}{elif} ext == \textcolor{stringliteral}{".yaml"} \textcolor{keywordflow}{or} ext == \textcolor{stringliteral}{".yml"}:
+27         with open(args.vocab) \textcolor{keyword}{as} vocab\_file:
+28             \textcolor{comment}{# custom YAML loader as PyYAML skips some entries}
+29             vocab = \hyperlink{namespaceprocess__word2vec_a6e39a5dbf33a1c2bb0d4c2354051203f}{load\_yaml}(vocab\_file)
+30     \textcolor{keywordflow}{else}:
+31         print(\textcolor{stringliteral}{"Error: extension of vocabulary not recognized"})
+32         exit(1)
+33 
+34     lines = \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum}(1 \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} open(args.vocab))
+35     print(\textcolor{stringliteral}{"  lines: \{\}"}.format(lines))
+36     print(\textcolor{stringliteral}{"  entries: \{\}"}.format(len(vocab)))
+37 
+38     \textcolor{keywordflow}{if} args.dim\_voc \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+39         vocab = \{w: v \textcolor{keywordflow}{for} w, v \textcolor{keywordflow}{in} vocab.items() \textcolor{keywordflow}{if} v < args.dim\_voc\}
+40         print(\textcolor{stringliteral}{"  loaded: \{\}"}.format(len(vocab)))
+41 
+42     \textcolor{keywordflow}{if} args.word2vec:
+43         print(\textcolor{stringliteral}{"Adding <unk> and </s> tokens to the corpus"})
+44         prep\_corpus = args.input + \textcolor{stringliteral}{'.prep'}
+45         with open(args.input) \textcolor{keyword}{as} cin, open(prep\_corpus, \textcolor{stringliteral}{'w+'}) \textcolor{keyword}{as} cout:
+46             \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} cin:
+47                 cout.write(\hyperlink{namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980}{replace\_unks}(line, vocab) + \textcolor{stringliteral}{" "} + EOS + \textcolor{stringliteral}{"\(\backslash\)n"})
+48 
+49         print(\textcolor{stringliteral}{"Training word2vec"})
+50         orig\_vectors = args.output + \textcolor{stringliteral}{'.orig'}
+51         cmd = \textcolor{stringliteral}{"\{w2v\} \{opts\} -train \{i\} -output \{o\} -size \{s\} -threads \{t\}"} \(\backslash\)
+52             .format(w2v=args.word2vec, opts=WORD2VEC\_OPTIONS,
+53                     i=prep\_corpus, o=orig\_vectors, s=args.dim\_emb, t=args.threads)
+54         print(\textcolor{stringliteral}{"  with command: \{\}"}.format(cmd))
+55 
+56         proc = subprocess.Popen(cmd, shell=\textcolor{keyword}{True})
+57         proc.wait()
+58     \textcolor{keywordflow}{else}:
+59         print(\textcolor{stringliteral}{"No training"})
+60         orig\_vectors = args.input
+61 
+62     print(\textcolor{stringliteral}{"Replacing words with IDs in vector file"})
+63     n = 0
+64     embs = []
+65     dim\_emb = \textcolor{keywordtype}{None}
+66     with open(orig\_vectors) \textcolor{keyword}{as} cin:
+67         \textcolor{keywordflow}{for} i, line \textcolor{keywordflow}{in} enumerate(cin):
+68             \textcolor{keywordflow}{if} i == 0:
+69                 dim\_emb = line.strip().\hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}(\textcolor{stringliteral}{' '})[-1]
+70                 \textcolor{keywordflow}{continue}
+71             word, tail = line.split(\textcolor{stringliteral}{' '}, 1)
+72             \textcolor{keywordflow}{if} word \textcolor{keywordflow}{in} vocab:
+73                 embs.append(\textcolor{stringliteral}{"\{\} \{\}"}.format(vocab[word], tail))
+74                 n += 1
+75             \textcolor{keywordflow}{else}:
+76                 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} args.quiet:
+77                     print(\textcolor{stringliteral}{"  no word '\{\}' in vocabulary, line \{\}"}.format(
+78                         word, i + 1))
+79 
+80     print(\textcolor{stringliteral}{"  words: \{\}"}.format(n))
+81 
+82     with open(args.output, \textcolor{stringliteral}{'w'}) \textcolor{keyword}{as} cout:
+83         cout.write(\textcolor{stringliteral}{"\{\} \{\}\(\backslash\)n"}.format(n, dim\_emb))
+84         \textcolor{keywordflow}{for} emb \textcolor{keywordflow}{in} embs:
+85             cout.write(emb)
+86 
+87     print(\textcolor{stringliteral}{"Finished"})
+88 
+89 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_ab3d9c1343a892a23ca1e60230b030dce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!parse\+\_\+user\+\_\+args@{parse\+\_\+user\+\_\+args}}
+\index{parse\+\_\+user\+\_\+args@{parse\+\_\+user\+\_\+args}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{parse\+\_\+user\+\_\+args()}{parse_user_args()}}]{\setlength{\rightskip}{0pt plus 5cm}def process\+\_\+word2vec.\+parse\+\_\+user\+\_\+args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407}{}\label{namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407}
+
+
+Definition at line 103 of file process\+\_\+word2vec.\+py.
+
+
+\begin{DoxyCode}
+103 \textcolor{keyword}{def }\hyperlink{namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407}{parse\_user\_args}():
+104     desc = \textcolor{stringliteral}{"""Process embeddings (in text format) trained with word2vec or train new}
+105 \textcolor{stringliteral}{embedding vectors with regard to the word vocabulary."""}
+106     note = \textcolor{stringliteral}{"""Examples:}
+107 \textcolor{stringliteral}{  \{0\} -v vocab.yml -i corpus.txt -o output.txt -w path/to/word2vec}
+108 \textcolor{stringliteral}{  \{0\} -v vocab.yml -i vectors.txt -o output.txt"""}
+109     note = note.format(os.path.basename(\_\_file\_\_))
+110 
+111     parser = argparse.ArgumentParser(
+112         formatter\_class=argparse.RawDescriptionHelpFormatter,
+113         description=desc,
+114         epilog=note)
+115     parser.add\_argument(\textcolor{stringliteral}{"-i"}, \textcolor{stringliteral}{"--input"}, help=\textcolor{stringliteral}{"embedding vectors or corpus for word2vec"}, required=\textcolor{keyword}{True})
+116     parser.add\_argument(\textcolor{stringliteral}{"-o"}, \textcolor{stringliteral}{"--output"}, help=\textcolor{stringliteral}{"output embedding vectors"}, required=\textcolor{keyword}{True})
+117     parser.add\_argument(\textcolor{stringliteral}{"-v"}, \textcolor{stringliteral}{"--vocab"}, help=\textcolor{stringliteral}{"path to vocabulary in JSON or YAML format"}, required=\textcolor{keyword}{True})
+118     parser.add\_argument(\textcolor{stringliteral}{"-w"}, \textcolor{stringliteral}{"--word2vec"}, help=\textcolor{stringliteral}{"path to word2vec, assumes text corpus on input"})
+119     parser.add\_argument(\textcolor{stringliteral}{"--dim-emb"}, help=\textcolor{stringliteral}{"size of embedding vector, only for training"}, default=512)
+120     parser.add\_argument(\textcolor{stringliteral}{"--dim-voc"}, help= \textcolor{stringliteral}{"maximum number of words from vocabulary to be used, default: no
+       limit"}, type=int)
+121     parser.add\_argument(\textcolor{stringliteral}{"-t"}, \textcolor{stringliteral}{"--threads"}, help=\textcolor{stringliteral}{"number of threads"}, default=16)
+122     parser.add\_argument(\textcolor{stringliteral}{"--quiet"}, help=\textcolor{stringliteral}{"skip printing warnings"}, action=\textcolor{stringliteral}{'store\_true'})
+123     \textcolor{keywordflow}{return} parser.parse\_args()
+124 
+125 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_a104f2b1f7f16fe4bb005d75d662b5407_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!replace\+\_\+unks@{replace\+\_\+unks}}
+\index{replace\+\_\+unks@{replace\+\_\+unks}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{replace\+\_\+unks(l, voc)}{replace_unks(l, voc)}}]{\setlength{\rightskip}{0pt plus 5cm}def process\+\_\+word2vec.\+replace\+\_\+unks (
+\begin{DoxyParamCaption}
+\item[{}]{l, }
+\item[{}]{voc}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980}{}\label{namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980}
+
+
+Definition at line 90 of file process\+\_\+word2vec.\+py.
+
+
+\begin{DoxyCode}
+90 \textcolor{keyword}{def }\hyperlink{namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980}{replace\_unks}(l, voc):
+91     \textcolor{keywordflow}{return} \textcolor{stringliteral}{" "}.join([w \textcolor{keywordflow}{if} w \textcolor{keywordflow}{in} voc \textcolor{keywordflow}{else} UNK \textcolor{keywordflow}{for} w \textcolor{keywordflow}{in} l.strip().\hyperlink{align2steps_8cpp_acc994bdb70df3b28bc0f94aede3731c3}{split}()])
+92 
+93 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{dd/df7/namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df7/namespaceprocess__word2vec_a0c9fc4391f1004542a2cd02996445980_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!E\+OS@{E\+OS}}
+\index{E\+OS@{E\+OS}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{E\+OS}{EOS}}]{\setlength{\rightskip}{0pt plus 5cm}string process\+\_\+word2vec.\+E\+OS = \textquotesingle{}$<$/s$>$\textquotesingle{}}\hypertarget{namespaceprocess__word2vec_a3bd8d79e8af7445e67a587bdbdb78778}{}\label{namespaceprocess__word2vec_a3bd8d79e8af7445e67a587bdbdb78778}
+
+
+Definition at line 15 of file process\+\_\+word2vec.\+py.
+
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!U\+NK@{U\+NK}}
+\index{U\+NK@{U\+NK}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{U\+NK}{UNK}}]{\setlength{\rightskip}{0pt plus 5cm}string process\+\_\+word2vec.\+U\+NK = \textquotesingle{}$<$unk$>$\textquotesingle{}}\hypertarget{namespaceprocess__word2vec_a416fec5596d37bdd6ace89870779feec}{}\label{namespaceprocess__word2vec_a416fec5596d37bdd6ace89870779feec}
+
+
+Definition at line 14 of file process\+\_\+word2vec.\+py.
+
+\index{process\+\_\+word2vec@{process\+\_\+word2vec}!W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS@{W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS}}
+\index{W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS@{W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS}!process\+\_\+word2vec@{process\+\_\+word2vec}}
+\subsubsection[{\texorpdfstring{W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS}{WORD2VEC_OPTIONS}}]{\setlength{\rightskip}{0pt plus 5cm}string process\+\_\+word2vec.\+W\+O\+R\+D2\+V\+E\+C\+\_\+\+O\+P\+T\+I\+O\+NS = \textquotesingle{}-\/cbow 0 -\/window 5 -\/negative -\/hs 1 -\/sample 1e-\/3 -\/binary 0\textquotesingle{}}\hypertarget{namespaceprocess__word2vec_a56790e0ff66512140343a1430a181340}{}\label{namespaceprocess__word2vec_a56790e0ff66512140343a1430a181340}
+
+
+Definition at line 12 of file process\+\_\+word2vec.\+py.
+

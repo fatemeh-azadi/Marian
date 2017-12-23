@@ -1,0 +1,5 @@
+<map id="marian::rnn::StackedCellFactory" name="marian::rnn::StackedCellFactory">
+<area shape="rect" id="node2" href="$d5/d41/classmarian_1_1rnn_1_1CellFactory.html" title="{marian::rnn::CellFactory\n|# inputs_\l|+ CellFactory()\l+ construct()\l+ clone()\l+ add_input()\l+ add_input()\l}" alt="" coords="23,557,185,693"/>
+<area shape="rect" id="node3" href="$d8/d32/structmarian_1_1rnn_1_1StackableFactory.html" title="{marian::rnn::StackableFactory\n||+ StackableFactory()\l+ StackableFactory()\l+ StackableFactory()\l+ ~StackableFactory()\l+ as()\l+ is()\l}" alt="" coords="5,359,203,509"/>
+<area shape="rect" id="node4" href="$d5/d28/classmarian_1_1Factory.html" title="{marian::Factory\n|# options_\l# graph_\l|+ Factory()\l+ ~Factory()\l+ getOptions()\l+ str()\l+ opt()\l+ opt()\l}" alt="" coords="47,145,161,311"/>
+</map>

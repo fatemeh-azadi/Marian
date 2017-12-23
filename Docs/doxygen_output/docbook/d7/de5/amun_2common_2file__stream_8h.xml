@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/de5/amun_2common_2file__stream_8h">
+    <title>amun/common/file_stream.h File Reference</title>
+    <programlisting>#include &lt;boost/filesystem.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/filesystem/fstream.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/iostreams/filtering_stream.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/iostreams/filter/gzip.hpp&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;exception.h&quot;</programlisting>
+<para>Include dependency diagram for amun/common/file_stream.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/db0/amun_2common_2file__stream_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for amun/common/file_stream.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/df5/amun_2common_2file__stream_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d33/classamunmt_1_1InputFileStream">amunmt::InputFileStream</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file file_stream.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/da9/classamunmt_1_1LineNumOrderer">
+<title>amunmt::LineNumOrderer class Reference</title>
+<para>Inheritance diagram for amunmt::LineNumOrderer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/de9/classamunmt_1_1LineNumOrderer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::LineNumOrderer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d8c/classamunmt_1_1LineNumOrderer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da9/classamunmt_1_1LineNumOrderer_1ad97c6e97efb55628c8018d0f9f039f75">operator()</link> (
+const std::shared_ptr&lt; <link linkend="db/d94/classamunmt_1_1History">History</link> &gt; &amp; a, const std::shared_ptr&lt; <link linkend="db/d94/classamunmt_1_1History">History</link> &gt; &amp; b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/da9/classamunmt_1_1LineNumOrderer_1ad97c6e97efb55628c8018d0f9f039f75">
+                <title>bool amunmt::LineNumOrderer::operator() (const std::shared_ptr&lt; History &gt; &amp;a, const std::shared_ptr&lt; History &gt; &amp;b) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

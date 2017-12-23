@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['name_5f',['name_',['../dd/d6b/classamunmt_1_1Loader.html#a145c060bd39a44483a9d417808d07bd6',1,'amunmt::Loader::name_()'],['../db/d52/classamunmt_1_1Scorer.html#a2a39ede273658e478ba0d703a50b268a',1,'amunmt::Scorer::name_()'],['../d0/d7a/classmarian_1_1Node.html#ad09fba82157b376108163b8575971d09',1,'marian::Node::name_()'],['../d8/d2c/classmarian_1_1Convolution.html#adf629c3e64cd0bd05a742543144512d5',1,'marian::Convolution::name_()'],['../de/dce/classmarian_1_1MaxPooling.html#aa39f6708157a3a169ae70c74aa61f611',1,'marian::MaxPooling::name_()'],['../dd/dbc/classmarian_1_1Scorer.html#ae335e429e353988826978741f41e3c3b',1,'marian::Scorer::name_()']]],
+  ['named_5f',['named_',['../dc/d36/classmarian_1_1Parameters.html#a2581f2bfa392634516ee2cfad9bbed73',1,'marian::Parameters']]],
+  ['namespace_5f',['namespace_',['../da/db9/classmarian_1_1ExpressionGraph.html#a62c31bfad16a2939bced2f37b45dd8d7',1,'marian::ExpressionGraph']]],
+  ['nbest_5f',['nBest_',['../db/dd5/classamunmt_1_1GPU_1_1Decoder.html#a2c9298f8ba8046fcca15ff07be843cef',1,'amunmt::GPU::Decoder']]],
+  ['nextid_5f',['nextId_',['../dd/d77/classamunmt_1_1OutputCollector.html#a32c7f6ee98058aa27f17e1816364fc2e',1,'amunmt::OutputCollector::nextId_()'],['../d2/d10/classmarian_1_1ScoreCollector.html#a68bf9186c90c33a7c44d263e58610f3b',1,'marian::ScoreCollector::nextId_()'],['../db/de8/classmarian_1_1OutputCollector.html#a0d936e88142afee4f490f6f39a66b792',1,'marian::OutputCollector::nextId_()']]],
+  ['nnz_5f',['nnz_',['../d1/d62/classmarian_1_1sparse_1_1CSR.html#a567e83de09f28445aa97c6374477b8fa',1,'marian::sparse::CSR']]],
+  ['nodesbackward_5f',['nodesBackward_',['../da/db9/classmarian_1_1ExpressionGraph.html#a8fa57dfedd51284cf51b1ba25401b646',1,'marian::ExpressionGraph']]],
+  ['nodesforward_5f',['nodesForward_',['../da/db9/classmarian_1_1ExpressionGraph.html#a10819abcacf6b7ea924a895f90059473',1,'marian::ExpressionGraph']]],
+  ['normalize',['normalize',['../d4/d04/namespacemarian_1_1keywords.html#a0865ee916b32905390a7c6e6bdfd8a9f',1,'marian::keywords']]],
+  ['normalize_5f',['normalize_',['../db/d94/classamunmt_1_1History.html#ad43884859a97646dc7f1c8abbf9b50c4',1,'amunmt::History::normalize_()'],['../d5/dc6/classmarian_1_1History.html#a1cf4e26623038e022a05a4be96fcd2fc',1,'marian::History::normalize_()']]],
+  ['normalizescore_5f',['normalizeScore_',['../d7/d92/classamunmt_1_1Search.html#a5eecaafd5f951a216e0a4e1873c0b392',1,'amunmt::Search']]],
+  ['npy_5f',['npy_',['../db/dae/classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper.html#aa2c8adb7f7950ccdbb0f7fe9144dd757',1,'amunmt::GPU::NpzConverter::NpyMatrixWrapper::npy_()'],['../d3/d65/classNpzConverter_1_1NpyMatrixWrapper.html#a4a32de31f6410ae49105b9d719de028b',1,'NpzConverter::NpyMatrixWrapper::npy_()']]],
+  ['nthelement_5f',['nthElement_',['../dc/da0/classamunmt_1_1GPU_1_1BestHyps.html#a995703d0b8ddcbf445d59c6b20b794b7',1,'amunmt::GPU::BestHyps']]],
+  ['num_5fblocks',['NUM_BLOCKS',['../d3/d36/classmarian_1_1NthElement.html#a813081a72cbe6e9d25e2cf8a964d23be',1,'marian::NthElement']]],
+  ['num_5ffeatures',['NUM_FEATURES',['../d4/dec/helper_8cpp.html#a39d9d0ea3381086077a6903a316d1990',1,'helper.cpp']]],
+  ['num_5flabels',['NUM_LABELS',['../d4/dec/helper_8cpp.html#a4308aa5ca15a84e929b69f44e78ae00a',1,'helper.cpp']]],
+  ['numfirstwords_5f',['numFirstWords_',['../d6/d0e/classamunmt_1_1Filter.html#a1c4086583ea962edbfc4d9d6e9291424',1,'amunmt::Filter']]]
+];

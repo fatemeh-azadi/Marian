@@ -1,0 +1,233 @@
+\hypertarget{classmarian_1_1NthElement}{}\section{marian\+:\+:Nth\+Element Class Reference}
+\label{classmarian_1_1NthElement}\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+
+
+{\ttfamily \#include $<$nth\+\_\+element.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Nth\+Element\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{df/d2d/classmarian_1_1NthElement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1NthElement_a75796b4374692eafd5c0da6b26325aec}{Nth\+Element} ()=delete
+\item 
+\hyperlink{classmarian_1_1NthElement_ae4bf1b02013a04ef25c215bdfbdfbd65}{Nth\+Element} (const \hyperlink{classmarian_1_1NthElement}{Nth\+Element} \&copy)=delete
+\item 
+\hyperlink{classmarian_1_1NthElement_a86a2229456a3288b0fa7878b2e3a66b2}{Nth\+Element} (size\+\_\+t max\+Beam\+Size, size\+\_\+t max\+Batch\+Size)
+\item 
+virtual \hyperlink{classmarian_1_1NthElement_a612b995014b8931dbcc5dbb9752c470b}{$\sim$\+Nth\+Element} ()
+\item 
+void \hyperlink{classmarian_1_1NthElement_a7ad21a736b9c1c4d632bca89b8168a6e}{get\+N\+Best\+List} (float $\ast$probs, const std\+::vector$<$ int $>$ \&batch\+First\+Element\+Idxs, const std\+::vector$<$ int $>$ \&cummulated\+Beam\+Sizes)
+\item 
+void \hyperlink{classmarian_1_1NthElement_ace2d94f2aadaedde5dbdc6673366c15a}{get\+N\+Best\+List} (const std\+::vector$<$ size\+\_\+t $>$ \&beam\+Sizes, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First=false)
+\item 
+void \hyperlink{classmarian_1_1NthElement_ac31cf171a8bcfb2bb7c6dd4635878c4f}{Get\+Pairs} (size\+\_\+t number, std\+::vector$<$ unsigned $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values)
+\item 
+void \hyperlink{classmarian_1_1NthElement_af24fa08a8abc7b41e21abc8504ef10eb}{get\+Value\+By\+Key} (std\+::vector$<$ float $>$ \&out, float $\ast$d\+\_\+in)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classmarian_1_1NthElement_a5ec55b57889be6ddb715b94eb4c59dae}{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE} = 512
+\item 
+const int \hyperlink{classmarian_1_1NthElement_a813081a72cbe6e9d25e2cf8a964d23be}{N\+U\+M\+\_\+\+B\+L\+O\+C\+KS}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1NthElement_a2b139afaa92c3639701ff110b6a826c5}{d\+\_\+ind}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1NthElement_af19e2b5ded5b809af4cd3d7ae5fabd76}{d\+\_\+out}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1NthElement_a902de96295f9d6d6af55b4a3a30fe713}{d\+\_\+res\+\_\+idx}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1NthElement_abac41ccdf9479bde12bf6d801e89e704}{d\+\_\+res}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1NthElement_acb9fa9a306f3e380e7832f8e8206fa31}{h\+\_\+res\+\_\+idx}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1NthElement_ae1dbf516946343df761ebabd1185bf60}{h\+\_\+res}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1NthElement_aa92fceb2668bbd60cd7a913c1df6a3ae}{d\+\_\+breakdown}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1NthElement_a54af0de1bc7a4d62c0a5ce7fb7523a64}{d\+\_\+batch\+Position}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1NthElement_ad8715fa3b2b2b3de6a9949ac84de52df}{d\+\_\+cum\+Beam\+Sizes}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1NthElement_a6a57bd79e06383c8e1a078d4acf76b8f}{lastN}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file marian/src/translator/nth\+\_\+element.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element()=delete}{NthElement()=delete}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classmarian_1_1NthElement_a75796b4374692eafd5c0da6b26325aec}{}\label{classmarian_1_1NthElement_a75796b4374692eafd5c0da6b26325aec}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element(const Nth\+Element \&copy)=delete}{NthElement(const NthElement &copy)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Nth\+Element} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classmarian_1_1NthElement_ae4bf1b02013a04ef25c215bdfbdfbd65}{}\label{classmarian_1_1NthElement_ae4bf1b02013a04ef25c215bdfbdfbd65}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element(size\+\_\+t max\+Beam\+Size, size\+\_\+t max\+Batch\+Size)}{NthElement(size_t maxBeamSize, size_t maxBatchSize)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Beam\+Size, }
+\item[{size\+\_\+t}]{max\+Batch\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1NthElement_a86a2229456a3288b0fa7878b2e3a66b2}{}\label{classmarian_1_1NthElement_a86a2229456a3288b0fa7878b2e3a66b2}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!````~Nth\+Element@{$\sim$\+Nth\+Element}}
+\index{````~Nth\+Element@{$\sim$\+Nth\+Element}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{$\sim$\+Nth\+Element()}{~NthElement()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual marian\+::\+Nth\+Element\+::$\sim$\+Nth\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmarian_1_1NthElement_a612b995014b8931dbcc5dbb9752c470b}{}\label{classmarian_1_1NthElement_a612b995014b8931dbcc5dbb9752c470b}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!get\+N\+Best\+List@{get\+N\+Best\+List}}
+\index{get\+N\+Best\+List@{get\+N\+Best\+List}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+N\+Best\+List(float $\ast$probs, const std\+::vector$<$ int $>$ \&batch\+First\+Element\+Idxs, const std\+::vector$<$ int $>$ \&cummulated\+Beam\+Sizes)}{getNBestList(float *probs, const std::vector< int > &batchFirstElementIdxs, const std::vector< int > &cummulatedBeamSizes)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Nth\+Element\+::get\+N\+Best\+List (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{probs, }
+\item[{const std\+::vector$<$ int $>$ \&}]{batch\+First\+Element\+Idxs, }
+\item[{const std\+::vector$<$ int $>$ \&}]{cummulated\+Beam\+Sizes}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1NthElement_a7ad21a736b9c1c4d632bca89b8168a6e}{}\label{classmarian_1_1NthElement_a7ad21a736b9c1c4d632bca89b8168a6e}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!get\+N\+Best\+List@{get\+N\+Best\+List}}
+\index{get\+N\+Best\+List@{get\+N\+Best\+List}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+N\+Best\+List(const std\+::vector$<$ size\+\_\+t $>$ \&beam\+Sizes, Tensor Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ unsigned $>$ \&out\+Keys, const bool is\+First=false)}{getNBestList(const std::vector< size_t > &beamSizes, Tensor Probs, std::vector< float > &outCosts, std::vector< unsigned > &outKeys, const bool isFirst=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Nth\+Element\+::get\+N\+Best\+List (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{beam\+Sizes, }
+\item[{{\bf Tensor}}]{Probs, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Costs, }
+\item[{std\+::vector$<$ unsigned $>$ \&}]{out\+Keys, }
+\item[{const bool}]{is\+First = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1NthElement_ace2d94f2aadaedde5dbdc6673366c15a}{}\label{classmarian_1_1NthElement_ace2d94f2aadaedde5dbdc6673366c15a}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!Get\+Pairs@{Get\+Pairs}}
+\index{Get\+Pairs@{Get\+Pairs}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Get\+Pairs(size\+\_\+t number, std\+::vector$<$ unsigned $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values)}{GetPairs(size_t number, std::vector< unsigned > &outKeys, std::vector< float > &outValues)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Nth\+Element\+::\+Get\+Pairs (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number, }
+\item[{std\+::vector$<$ unsigned $>$ \&}]{out\+Keys, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Values}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1NthElement_ac31cf171a8bcfb2bb7c6dd4635878c4f}{}\label{classmarian_1_1NthElement_ac31cf171a8bcfb2bb7c6dd4635878c4f}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!get\+Value\+By\+Key@{get\+Value\+By\+Key}}
+\index{get\+Value\+By\+Key@{get\+Value\+By\+Key}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+Value\+By\+Key(std\+::vector$<$ float $>$ \&out, float $\ast$d\+\_\+in)}{getValueByKey(std::vector< float > &out, float *d_in)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Nth\+Element\+::get\+Value\+By\+Key (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{out, }
+\item[{float $\ast$}]{d\+\_\+in}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1NthElement_af24fa08a8abc7b41e21abc8504ef10eb}{}\label{classmarian_1_1NthElement_af24fa08a8abc7b41e21abc8504ef10eb}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}{BLOCK_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}const int marian\+::\+Nth\+Element\+::\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE = 512\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a5ec55b57889be6ddb715b94eb4c59dae}{}\label{classmarian_1_1NthElement_a5ec55b57889be6ddb715b94eb4c59dae}
+
+
+Definition at line 35 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+batch\+Position@{d\+\_\+batch\+Position}}
+\index{d\+\_\+batch\+Position@{d\+\_\+batch\+Position}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+batch\+Position}{d_batchPosition}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+batch\+Position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a54af0de1bc7a4d62c0a5ce7fb7523a64}{}\label{classmarian_1_1NthElement_a54af0de1bc7a4d62c0a5ce7fb7523a64}
+
+
+Definition at line 49 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+breakdown@{d\+\_\+breakdown}}
+\index{d\+\_\+breakdown@{d\+\_\+breakdown}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+breakdown}{d_breakdown}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+breakdown\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_aa92fceb2668bbd60cd7a913c1df6a3ae}{}\label{classmarian_1_1NthElement_aa92fceb2668bbd60cd7a913c1df6a3ae}
+
+
+Definition at line 48 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+cum\+Beam\+Sizes@{d\+\_\+cum\+Beam\+Sizes}}
+\index{d\+\_\+cum\+Beam\+Sizes@{d\+\_\+cum\+Beam\+Sizes}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+cum\+Beam\+Sizes}{d_cumBeamSizes}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+cum\+Beam\+Sizes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_ad8715fa3b2b2b3de6a9949ac84de52df}{}\label{classmarian_1_1NthElement_ad8715fa3b2b2b3de6a9949ac84de52df}
+
+
+Definition at line 50 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+ind@{d\+\_\+ind}}
+\index{d\+\_\+ind@{d\+\_\+ind}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+ind}{d_ind}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+ind\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a2b139afaa92c3639701ff110b6a826c5}{}\label{classmarian_1_1NthElement_a2b139afaa92c3639701ff110b6a826c5}
+
+
+Definition at line 38 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+out@{d\+\_\+out}}
+\index{d\+\_\+out@{d\+\_\+out}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+out}{d_out}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_af19e2b5ded5b809af4cd3d7ae5fabd76}{}\label{classmarian_1_1NthElement_af19e2b5ded5b809af4cd3d7ae5fabd76}
+
+
+Definition at line 40 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+res@{d\+\_\+res}}
+\index{d\+\_\+res@{d\+\_\+res}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+res}{d_res}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+res\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_abac41ccdf9479bde12bf6d801e89e704}{}\label{classmarian_1_1NthElement_abac41ccdf9479bde12bf6d801e89e704}
+
+
+Definition at line 43 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!d\+\_\+res\+\_\+idx@{d\+\_\+res\+\_\+idx}}
+\index{d\+\_\+res\+\_\+idx@{d\+\_\+res\+\_\+idx}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+res\+\_\+idx}{d_res_idx}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Nth\+Element\+::d\+\_\+res\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a902de96295f9d6d6af55b4a3a30fe713}{}\label{classmarian_1_1NthElement_a902de96295f9d6d6af55b4a3a30fe713}
+
+
+Definition at line 42 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!h\+\_\+res@{h\+\_\+res}}
+\index{h\+\_\+res@{h\+\_\+res}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{h\+\_\+res}{h_res}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Nth\+Element\+::h\+\_\+res\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_ae1dbf516946343df761ebabd1185bf60}{}\label{classmarian_1_1NthElement_ae1dbf516946343df761ebabd1185bf60}
+
+
+Definition at line 46 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!h\+\_\+res\+\_\+idx@{h\+\_\+res\+\_\+idx}}
+\index{h\+\_\+res\+\_\+idx@{h\+\_\+res\+\_\+idx}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{h\+\_\+res\+\_\+idx}{h_res_idx}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Nth\+Element\+::h\+\_\+res\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_acb9fa9a306f3e380e7832f8e8206fa31}{}\label{classmarian_1_1NthElement_acb9fa9a306f3e380e7832f8e8206fa31}
+
+
+Definition at line 45 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!lastN@{lastN}}
+\index{lastN@{lastN}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{lastN}{lastN}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Nth\+Element\+::lastN\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a6a57bd79e06383c8e1a078d4acf76b8f}{}\label{classmarian_1_1NthElement_a6a57bd79e06383c8e1a078d4acf76b8f}
+
+
+Definition at line 51 of file marian/src/translator/nth\+\_\+element.\+h.
+
+\index{marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}!N\+U\+M\+\_\+\+B\+L\+O\+C\+KS@{N\+U\+M\+\_\+\+B\+L\+O\+C\+KS}}
+\index{N\+U\+M\+\_\+\+B\+L\+O\+C\+KS@{N\+U\+M\+\_\+\+B\+L\+O\+C\+KS}!marian\+::\+Nth\+Element@{marian\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{N\+U\+M\+\_\+\+B\+L\+O\+C\+KS}{NUM_BLOCKS}}]{\setlength{\rightskip}{0pt plus 5cm}const int marian\+::\+Nth\+Element\+::\+N\+U\+M\+\_\+\+B\+L\+O\+C\+KS\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1NthElement_a813081a72cbe6e9d25e2cf8a964d23be}{}\label{classmarian_1_1NthElement_a813081a72cbe6e9d25e2cf8a964d23be}
+
+
+Definition at line 36 of file marian/src/translator/nth\+\_\+element.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2translator_2nth__element_8h}{marian/src/translator/nth\+\_\+element.\+h}\end{DoxyCompactItemize}

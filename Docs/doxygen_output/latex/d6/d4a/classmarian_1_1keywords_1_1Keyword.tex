@@ -1,0 +1,209 @@
+\hypertarget{classmarian_1_1keywords_1_1Keyword}{}\section{marian\+:\+:keywords\+:\+:Keyword$<$ key, Value $>$ Class Template Reference}
+\label{classmarian_1_1keywords_1_1Keyword}\index{marian\+::keywords\+::\+Keyword$<$ key, Value $>$@{marian\+::keywords\+::\+Keyword$<$ key, Value $>$}}
+
+
+Represents a named keyword capable of storing a single value.  
+
+
+
+
+{\ttfamily \#include $<$keywords.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:keywords\+:\+:Keyword$<$ key, Value $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{df/d85/classmarian_1_1keywords_1_1Keyword__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Value \hyperlink{classmarian_1_1keywords_1_1Keyword_a698b7031d0c11fd5cfb783edb8f6d480}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1keywords_1_1Keyword_a6e345b92a10a857f9adee5358b7f03f4}{Keyword} (Value \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} which will store the specified value. \end{DoxyCompactList}\item 
+\hyperlink{classmarian_1_1keywords_1_1Keyword_a24b569bb22e4321e5f66929d6ed30f92}{Keyword} ()
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} with no specified value. \end{DoxyCompactList}\item 
+\hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}$<$ key, Value $>$ \hyperlink{classmarian_1_1keywords_1_1Keyword_a1aa0c6e53e5c529b85389b2a66f200c9}{operator=} (Value \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value}) const 
+\begin{DoxyCompactList}\small\item\em Constructs and returns a new {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} object containing the specified value. \end{DoxyCompactList}\item 
+const Value \& \hyperlink{classmarian_1_1keywords_1_1Keyword_a26d1f37932f8c8022684008752e2ece1}{operator()} () const 
+\begin{DoxyCompactList}\small\item\em Gets a const reference to the value stored in this object. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classmarian_1_1keywords_1_1Keyword_a5216afbffb3db4b7c7b536f94cf44c25}{id} () const 
+\begin{DoxyCompactList}\small\item\em Gets the hashed integer identifier associated with this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Value \hyperlink{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}{value\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned key, typename Value$>$\\*
+class marian\+::keywords\+::\+Keyword$<$ key, Value $>$}
+
+Represents a named keyword capable of storing a single value. 
+
+This class is used to emulate \href{https://en.wikipedia.org/wiki/Named_parameter}{\tt keyword arguments to functions}, such as those \href{https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments}{\tt found in Python}.
+
+It is expected that users of this class will not explicitly create instances of this class.
+
+Rather, it is expected that users will use the \hyperlink{keywords_8h_ad6c9fa5917736eee3d55706caf21469d}{K\+E\+Y(name, value\+\_\+type)} macro.
+
+For example, the invocation {\ttfamily \hyperlink{keywords_8h_ad6c9fa5917736eee3d55706caf21469d}{K\+E\+Y(batch\+\_\+size, int)}} will construct a new instance of this class called {\ttfamily batch\+\_\+size} whose {\ttfamily value\+\_\+type} is {\ttfamily int}.
+
+Now assume a function called {\ttfamily foo()} that requires a single \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword} as its parameter.
+
+{\ttfamily foo(batch\+\_\+size=200)}
+
+This code fragment causes an invocation of this class\textquotesingle{}s operator= method, which returns a new instance of the \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword} class. This new instance will have a value of 200. 
+
+Definition at line 64 of file keywords.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ typedef Value {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::{\bf value\+\_\+type}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a698b7031d0c11fd5cfb783edb8f6d480}{}\label{classmarian_1_1keywords_1_1Keyword_a698b7031d0c11fd5cfb783edb8f6d480}
+
+
+Definition at line 66 of file keywords.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!Keyword@{Keyword}}
+\index{Keyword@{Keyword}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{Keyword(\+Value value)}{Keyword(Value value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::{\bf Keyword} (
+\begin{DoxyParamCaption}
+\item[{Value}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a6e345b92a10a857f9adee5358b7f03f4}{}\label{classmarian_1_1keywords_1_1Keyword_a6e345b92a10a857f9adee5358b7f03f4}
+
+
+Constructs a {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} which will store the specified value. 
+
+\begin{DoxyItemize}
+\item value The value to store in this object \end{DoxyItemize}
+
+
+Definition at line 74 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+74 : \hyperlink{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}{value\_}(\hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value}) \{\}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!Keyword@{Keyword}}
+\index{Keyword@{Keyword}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{Keyword()}{Keyword()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::{\bf Keyword} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a24b569bb22e4321e5f66929d6ed30f92}{}\label{classmarian_1_1keywords_1_1Keyword_a24b569bb22e4321e5f66929d6ed30f92}
+
+
+Constructs a {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} with no specified value. 
+
+The value stored in the resulting object will be constructed using that Value\textquotesingle{}s default constructor. 
+
+Definition at line 82 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+82 : \hyperlink{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}{value\_}() \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!id@{id}}
+\index{id@{id}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{id() const }{id() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ unsigned {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a5216afbffb3db4b7c7b536f94cf44c25}{}\label{classmarian_1_1keywords_1_1Keyword_a5216afbffb3db4b7c7b536f94cf44c25}
+
+
+Gets the hashed integer identifier associated with this object. 
+
+\begin{DoxyReturn}{Returns}
+the hashed integer identifier associated with this object 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+109 \{ \textcolor{keywordflow}{return} key; \}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{operator()() const }{operator()() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ const Value\& {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a26d1f37932f8c8022684008752e2ece1}{}\label{classmarian_1_1keywords_1_1Keyword_a26d1f37932f8c8022684008752e2ece1}
+
+
+Gets a const reference to the value stored in this object. 
+
+\begin{DoxyReturn}{Returns}
+a const reference to the value stored in this object 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+102 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}{value\_}; \}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!operator=@{operator=}}
+\index{operator=@{operator=}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{operator=(\+Value value) const }{operator=(Value value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ {\bf Keyword}$<$key, Value$>$ {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{Value}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_a1aa0c6e53e5c529b85389b2a66f200c9}{}\label{classmarian_1_1keywords_1_1Keyword_a1aa0c6e53e5c529b85389b2a66f200c9}
+
+
+Constructs and returns a new {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} object containing the specified value. 
+
+Note\+: despite the conventional semantics of operator=, this method {\itshape does not modify} the current object.
+
+\begin{DoxyReturn}{Returns}
+a new {\ttfamily \hyperlink{classmarian_1_1keywords_1_1Keyword}{Keyword}} object containing the specified value 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+93                                                    \{
+94     \textcolor{keywordflow}{return} Keyword<key, Value>(\hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value});
+95   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}!value\+\_\+@{value\+\_\+}}
+\index{value\+\_\+@{value\+\_\+}!marian\+::keywords\+::\+Keyword@{marian\+::keywords\+::\+Keyword}}
+\subsubsection[{\texorpdfstring{value\+\_\+}{value_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned key, typename Value $>$ const Value {\bf marian\+::keywords\+::\+Keyword}$<$ key, Value $>$\+::value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}{}\label{classmarian_1_1keywords_1_1Keyword_ab27c78201de04f55b9fd7be52d5b6d05}
+
+
+Definition at line 112 of file keywords.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{keywords_8h}{keywords.\+h}\end{DoxyCompactItemize}

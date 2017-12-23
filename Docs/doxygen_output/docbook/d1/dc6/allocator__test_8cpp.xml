@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dc6/allocator__test_8cpp">
+    <title>allocator_test.cpp File Reference</title>
+    <programlisting>#include &lt;boost/timer/timer.hpp&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;cmath&gt;</programlisting>
+    <programlisting>#include &quot;3rd_party/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;tensors/allocator.h&quot;</programlisting>
+    <programlisting>#include &quot;tensors/device_gpu.h&quot;</programlisting>
+<para>Include dependency diagram for allocator_test.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dff/allocator__test_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for allocator_test.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d91/allocator__test_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d16/classDeviceCPU">DeviceCPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/dc6/allocator__test_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file allocator_test.cpp</para>
+    </simplesect>
+</section>

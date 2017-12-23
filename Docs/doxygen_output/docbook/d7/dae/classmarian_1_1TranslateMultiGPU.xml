@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dae/classmarian_1_1TranslateMultiGPU">
+<title>marian::TranslateMultiGPU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/df1/translator_8h">&lt;translator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TranslateMultiGPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d99/classmarian_1_1TranslateMultiGPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TranslateMultiGPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d7e/classmarian_1_1TranslateMultiGPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Search</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; ExpressionGraph &gt; &gt; graphs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; Ptr&lt; Scorer &gt; &gt; &gt; scorers_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; data::Corpus &gt; corpus_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Vocab &gt; trgVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dae/classmarian_1_1TranslateMultiGPU_1a4a15c6991ead6ec7515441a726cc2009">TranslateMultiGPU</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/dae/classmarian_1_1TranslateMultiGPU_1a6d0b7f15fe6870b772cc9aa03d361840">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/dae/classmarian_1_1TranslateMultiGPU_1a4a15c6991ead6ec7515441a726cc2009">
+                <title>marian::TranslateMultiGPU&lt; Search &gt;::TranslateMultiGPU (Ptr&lt; Config &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dae/classmarian_1_1TranslateMultiGPU_1a6d0b7f15fe6870b772cc9aa03d361840">
+                <title>void marian::TranslateMultiGPU&lt; Search &gt;::run ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

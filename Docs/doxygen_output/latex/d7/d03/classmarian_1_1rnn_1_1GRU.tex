@@ -1,0 +1,396 @@
+\hypertarget{classmarian_1_1rnn_1_1GRU}{}\section{marian\+:\+:rnn\+:\+:G\+RU Class Reference}
+\label{classmarian_1_1rnn_1_1GRU}\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+
+
+{\ttfamily \#include $<$cells.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:G\+RU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d00/classmarian_1_1rnn_1_1GRU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:G\+RU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d7e/classmarian_1_1rnn_1_1GRU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1GRU_a3f47434b08986222608a2a31f776c334}{G\+RU} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options)
+\item 
+virtual \hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1GRU_af8c554f9e899a74dfd897de082ef893e}{apply} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\item 
+virtual std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc}{apply\+Input} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ inputs)
+\item 
+virtual \hyperlink{structmarian_1_1rnn_1_1State}{State} \hyperlink{classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d}{apply\+State} (std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ x\+Ws, \hyperlink{structmarian_1_1rnn_1_1State}{State} state, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmarian_1_1rnn_1_1GRU_a55a1c802bb9f2c757ba99c50390def07}{prefix\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a3e2ad5f403491468b529e60a95be47d2}{U\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_ab1d7208cfab36cde27cf922b197a6314}{W\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}{b\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a3902f55b7d37e9a57600508206ce95a3}{gamma1\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a24fd026dbc09e0367d4c05a6cae91a3e}{gamma2\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}{final\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}{layer\+Norm\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1rnn_1_1GRU_ad5dec297676453431349eb1509a215cf}{dropout\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}{drop\+Mask\+X\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}{drop\+Mask\+S\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GRU_a36b23aff77b532d5fcb63fce62f8d9f5}{fake\+Input\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 129 of file cells.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!G\+RU@{G\+RU}}
+\index{G\+RU@{G\+RU}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{G\+R\+U(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Options $>$ options)}{GRU(Ptr< ExpressionGraph > graph, Ptr< Options > options)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+G\+R\+U\+::\+G\+RU (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a3f47434b08986222608a2a31f776c334}{}\label{classmarian_1_1rnn_1_1GRU_a3f47434b08986222608a2a31f776c334}
+
+
+Definition at line 147 of file cells.\+h.
+
+
+\begin{DoxyCode}
+149       : \hyperlink{classmarian_1_1rnn_1_1Cell_acc392c8adfb002c17993f02e6d3085a6}{Cell}(options) \{
+150 
+151     \textcolor{keywordtype}{int} dimInput = opt<int>(\textcolor{stringliteral}{"dimInput"});
+152     \textcolor{keywordtype}{int} dimState = opt<int>(\textcolor{stringliteral}{"dimState"});
+153     std::string \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{prefix} = opt<std::string>(\textcolor{stringliteral}{"prefix"});
+154 
+155     \hyperlink{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}{layerNorm\_} = opt<bool>(\textcolor{stringliteral}{"layer-normalization"}, \textcolor{keyword}{false});
+156     \hyperlink{classmarian_1_1rnn_1_1GRU_ad5dec297676453431349eb1509a215cf}{dropout\_} = opt<float>(\textcolor{stringliteral}{"dropout"}, 0);
+157     \hyperlink{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}{final\_} = opt<bool>(\textcolor{stringliteral}{"final"}, \textcolor{keyword}{false});
+158 
+159     \textcolor{keyword}{auto} U = graph->param(prefix + \textcolor{stringliteral}{"\_U"},
+160                           \{dimState, 2 * dimState\},
+161                           \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init} = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+162     \textcolor{keyword}{auto} Ux = graph->param(prefix + \textcolor{stringliteral}{"\_Ux"},
+163                            \{dimState, dimState\},
+164                            keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+165     \hyperlink{classmarian_1_1rnn_1_1GRU_a3e2ad5f403491468b529e60a95be47d2}{U\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{U, Ux\}, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+166 
+167 
+168     \textcolor{keywordflow}{if}(dimInput > 0) \{
+169       \textcolor{keyword}{auto} W = graph->param(prefix + \textcolor{stringliteral}{"\_W"},
+170                             \{dimInput, 2 * dimState\},
+171                             keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+172       \textcolor{keyword}{auto} Wx = graph->param(prefix + \textcolor{stringliteral}{"\_Wx"},
+173                              \{dimInput, dimState\},
+174                              keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+175       \hyperlink{classmarian_1_1rnn_1_1GRU_ab1d7208cfab36cde27cf922b197a6314}{W\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{W, Wx\}, keywords::axis = 1);
+176     \}
+177 
+178     \textcolor{keyword}{auto} b = graph->param(
+179         prefix + \textcolor{stringliteral}{"\_b"}, \{1, 2 * dimState\}, keywords::init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+180     \textcolor{keyword}{auto} bx = graph->param(
+181         prefix + \textcolor{stringliteral}{"\_bx"}, \{1, dimState\}, keywords::init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+182     \hyperlink{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}{b\_} = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{b, bx\}, keywords::axis = 1);
+183 
+184     \textcolor{comment}{// @TODO use this and adjust Amun model type saving and loading}
+185     \textcolor{comment}{// U\_ = graph->param(prefix + "\_U", \{dimState, 3 * dimState\},}
+186     \textcolor{comment}{//                  keywords::init=inits::glorot\_uniform);}
+187     \textcolor{comment}{// W\_ = graph->param(prefix + "\_W", \{dimInput, 3 * dimState\},}
+188     \textcolor{comment}{//                  keywords::init=inits::glorot\_uniform);}
+189     \textcolor{comment}{// b\_ = graph->param(prefix + "\_b", \{1, 3 * dimState\},}
+190     \textcolor{comment}{//                  keywords::init=inits::zeros);}
+191 
+192     \textcolor{keywordflow}{if}(dropout\_ > 0.0f) \{
+193       \textcolor{keywordflow}{if}(dimInput)
+194         \hyperlink{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}{dropMaskX\_} = graph->dropout(dropout\_, \{1, dimInput\});
+195       \hyperlink{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}{dropMaskS\_} = graph->dropout(dropout\_, \{1, dimState\});
+196     \}
+197 
+198     \textcolor{keywordflow}{if}(layerNorm\_) \{
+199       \textcolor{keywordflow}{if}(dimInput)
+200         \hyperlink{classmarian_1_1rnn_1_1GRU_a3902f55b7d37e9a57600508206ce95a3}{gamma1\_} = graph->param(prefix + \textcolor{stringliteral}{"\_gamma1"},
+201                                \{1, 3 * dimState\},
+202                                keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.f));
+203       \hyperlink{classmarian_1_1rnn_1_1GRU_a24fd026dbc09e0367d4c05a6cae91a3e}{gamma2\_} = graph->param(prefix + \textcolor{stringliteral}{"\_gamma2"},
+204                              \{1, 3 * dimState\},
+205                              keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.f));
+206     \}
+207   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{d7/d03/classmarian_1_1rnn_1_1GRU_a3f47434b08986222608a2a31f776c334_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!apply@{apply}}
+\index{apply@{apply}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{apply(std\+::vector$<$ Expr $>$ inputs, State state, Expr mask=nullptr)}{apply(std::vector< Expr > inputs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf State} marian\+::rnn\+::\+G\+R\+U\+::apply (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GRU_af8c554f9e899a74dfd897de082ef893e}{}\label{classmarian_1_1rnn_1_1GRU_af8c554f9e899a74dfd897de082ef893e}
+
+
+Definition at line 209 of file cells.\+h.
+
+
+\begin{DoxyCode}
+211                                            \{
+212     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d}{applyState}(\hyperlink{classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc}{applyInput}(inputs), state, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask});
+213   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d03/classmarian_1_1rnn_1_1GRU_af8c554f9e899a74dfd897de082ef893e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!apply\+Input@{apply\+Input}}
+\index{apply\+Input@{apply\+Input}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{apply\+Input(std\+::vector$<$ Expr $>$ inputs)}{applyInput(std::vector< Expr > inputs)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+G\+R\+U\+::apply\+Input (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{inputs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc}{}\label{classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Cell_a8e02cc3d239bc9947cd3200ff2995a01}{marian\+::rnn\+::\+Cell}.
+
+
+
+Definition at line 215 of file cells.\+h.
+
+
+\begin{DoxyCode}
+215                                                              \{
+216     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input;
+217     \textcolor{keywordflow}{if}(inputs.size() == 0)
+218       \textcolor{keywordflow}{return} \{\};
+219     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(inputs.size() > 1)
+220       input = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(inputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 1);
+221     \textcolor{keywordflow}{else}
+222       input = inputs[0];
+223 
+224     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}{dropMaskX\_})
+225       input = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(input, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{keywords::mask} = \hyperlink{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}{dropMaskX\_});
+226 
+227     \textcolor{keyword}{auto} xW = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(input, \hyperlink{classmarian_1_1rnn_1_1GRU_ab1d7208cfab36cde27cf922b197a6314}{W\_});
+228 
+229     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}{layerNorm\_})
+230       xW = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(xW, \hyperlink{classmarian_1_1rnn_1_1GRU_a3902f55b7d37e9a57600508206ce95a3}{gamma1\_});
+231     \textcolor{keywordflow}{return} \{xW\};
+232   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d03/classmarian_1_1rnn_1_1GRU_a1e68f7a3e40ee5fefa954096e3eb2bdc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!apply\+State@{apply\+State}}
+\index{apply\+State@{apply\+State}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{apply\+State(std\+::vector$<$ Expr $>$ x\+Ws, State state, Expr mask=nullptr)}{applyState(std::vector< Expr > xWs, State state, Expr mask=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf State} marian\+::rnn\+::\+G\+R\+U\+::apply\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Expr} $>$}]{x\+Ws, }
+\item[{{\bf State}}]{state, }
+\item[{{\bf Expr}}]{mask = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d}{}\label{classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Cell_a4bd1bce7cf42fcc48387488e218af257}{marian\+::rnn\+::\+Cell}.
+
+
+
+Definition at line 234 of file cells.\+h.
+
+
+\begin{DoxyCode}
+236                                                 \{
+237 
+238     \textcolor{keyword}{auto} stateOrig = state.output;
+239     \textcolor{keyword}{auto} stateDropped = stateOrig;
+240     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}{dropMaskS\_})
+241       stateDropped = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(stateOrig, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{keywords::mask} = 
+      \hyperlink{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}{dropMaskS\_});
+242 
+243     \textcolor{keyword}{auto} sU = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(stateDropped, \hyperlink{classmarian_1_1rnn_1_1GRU_a3e2ad5f403491468b529e60a95be47d2}{U\_});
+244 
+245     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}{layerNorm\_})
+246       sU = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(sU, \hyperlink{classmarian_1_1rnn_1_1GRU_a24fd026dbc09e0367d4c05a6cae91a3e}{gamma2\_});
+247 
+248     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} xW;
+249     \textcolor{keywordflow}{if}(xWs.empty()) \{
+250       \textcolor{keywordflow}{if}(not \hyperlink{classmarian_1_1rnn_1_1GRU_a36b23aff77b532d5fcb63fce62f8d9f5}{fakeInput\_})
+251         fakeInput\_ = sU->graph()->constant(sU->shape(), \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init}=
+      \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+252       xW = \hyperlink{classmarian_1_1rnn_1_1GRU_a36b23aff77b532d5fcb63fce62f8d9f5}{fakeInput\_};
+253     \}
+254     \textcolor{keywordflow}{else} \{
+255       xW = xWs.front();
+256     \}
+257 
+258     \textcolor{keyword}{auto} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output} = \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} ? \hyperlink{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}{gruOps}(\{stateOrig, xW, sU, \hyperlink{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}{b\_}, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}\}, 
+      \hyperlink{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}{final\_}) :
+259                          \hyperlink{namespacemarian_1_1rnn_aebb005fe050e8538752175401598a47a}{gruOps}(\{stateOrig, xW, sU, \hyperlink{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}{b\_}\}, \hyperlink{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}{final\_});
+260 
+261     \textcolor{keywordflow}{return} \{ \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output}, state.cell \}; \textcolor{comment}{// no cell state, hence copy}
+262   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d03/classmarian_1_1rnn_1_1GRU_a80e15118ba400b0e393a4b2eb9fcf23d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!b\+\_\+@{b\+\_\+}}
+\index{b\+\_\+@{b\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{b\+\_\+}{b_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::b\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}{}\label{classmarian_1_1rnn_1_1GRU_a6dc536e4a1f4803a83114a91c26dd8e4}
+
+
+Definition at line 133 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!drop\+Mask\+S\+\_\+@{drop\+Mask\+S\+\_\+}}
+\index{drop\+Mask\+S\+\_\+@{drop\+Mask\+S\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{drop\+Mask\+S\+\_\+}{dropMaskS_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::drop\+Mask\+S\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}{}\label{classmarian_1_1rnn_1_1GRU_a8ccd8c5d684a9010dca0f38701dcc9fd}
+
+
+Definition at line 142 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!drop\+Mask\+X\+\_\+@{drop\+Mask\+X\+\_\+}}
+\index{drop\+Mask\+X\+\_\+@{drop\+Mask\+X\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{drop\+Mask\+X\+\_\+}{dropMaskX_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::drop\+Mask\+X\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}{}\label{classmarian_1_1rnn_1_1GRU_a383afe82e0b8032f88bb27f192b6340c}
+
+
+Definition at line 141 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!dropout\+\_\+@{dropout\+\_\+}}
+\index{dropout\+\_\+@{dropout\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{dropout\+\_\+}{dropout_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::rnn\+::\+G\+R\+U\+::dropout\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_ad5dec297676453431349eb1509a215cf}{}\label{classmarian_1_1rnn_1_1GRU_ad5dec297676453431349eb1509a215cf}
+
+
+Definition at line 139 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!fake\+Input\+\_\+@{fake\+Input\+\_\+}}
+\index{fake\+Input\+\_\+@{fake\+Input\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{fake\+Input\+\_\+}{fakeInput_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::fake\+Input\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a36b23aff77b532d5fcb63fce62f8d9f5}{}\label{classmarian_1_1rnn_1_1GRU_a36b23aff77b532d5fcb63fce62f8d9f5}
+
+
+Definition at line 144 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!final\+\_\+@{final\+\_\+}}
+\index{final\+\_\+@{final\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{final\+\_\+}{final_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::rnn\+::\+G\+R\+U\+::final\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}{}\label{classmarian_1_1rnn_1_1GRU_ac67ae752da2dac75c13d462dffff70ba}
+
+
+Definition at line 137 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!gamma1\+\_\+@{gamma1\+\_\+}}
+\index{gamma1\+\_\+@{gamma1\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{gamma1\+\_\+}{gamma1_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::gamma1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a3902f55b7d37e9a57600508206ce95a3}{}\label{classmarian_1_1rnn_1_1GRU_a3902f55b7d37e9a57600508206ce95a3}
+
+
+Definition at line 134 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!gamma2\+\_\+@{gamma2\+\_\+}}
+\index{gamma2\+\_\+@{gamma2\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{gamma2\+\_\+}{gamma2_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::gamma2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a24fd026dbc09e0367d4c05a6cae91a3e}{}\label{classmarian_1_1rnn_1_1GRU_a24fd026dbc09e0367d4c05a6cae91a3e}
+
+
+Definition at line 135 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!layer\+Norm\+\_\+@{layer\+Norm\+\_\+}}
+\index{layer\+Norm\+\_\+@{layer\+Norm\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{layer\+Norm\+\_\+}{layerNorm_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::rnn\+::\+G\+R\+U\+::layer\+Norm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}{}\label{classmarian_1_1rnn_1_1GRU_af4559f4e35983ef5c4b228ca251f544c}
+
+
+Definition at line 138 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!prefix\+\_\+@{prefix\+\_\+}}
+\index{prefix\+\_\+@{prefix\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{prefix\+\_\+}{prefix_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::rnn\+::\+G\+R\+U\+::prefix\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a55a1c802bb9f2c757ba99c50390def07}{}\label{classmarian_1_1rnn_1_1GRU_a55a1c802bb9f2c757ba99c50390def07}
+
+
+Definition at line 131 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!U\+\_\+@{U\+\_\+}}
+\index{U\+\_\+@{U\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{U\+\_\+}{U_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::\+U\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_a3e2ad5f403491468b529e60a95be47d2}{}\label{classmarian_1_1rnn_1_1GRU_a3e2ad5f403491468b529e60a95be47d2}
+
+
+Definition at line 133 of file cells.\+h.
+
+\index{marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}!W\+\_\+@{W\+\_\+}}
+\index{W\+\_\+@{W\+\_\+}!marian\+::rnn\+::\+G\+RU@{marian\+::rnn\+::\+G\+RU}}
+\subsubsection[{\texorpdfstring{W\+\_\+}{W_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+G\+R\+U\+::\+W\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1GRU_ab1d7208cfab36cde27cf922b197a6314}{}\label{classmarian_1_1rnn_1_1GRU_ab1d7208cfab36cde27cf922b197a6314}
+
+
+Definition at line 133 of file cells.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cells_8h}{cells.\+h}\end{DoxyCompactItemize}

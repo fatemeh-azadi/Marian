@@ -1,0 +1,232 @@
+\hypertarget{classmarian_1_1DecoderStateHardAtt}{}\section{marian\+:\+:Decoder\+State\+Hard\+Att Class Reference}
+\label{classmarian_1_1DecoderStateHardAtt}\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+
+
+{\ttfamily \#include $<$hardatt.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Decoder\+State\+Hard\+Att\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{de/dc6/classmarian_1_1DecoderStateHardAtt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Decoder\+State\+Hard\+Att\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d1b/classmarian_1_1DecoderStateHardAtt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1DecoderStateHardAtt_a882378ac0b86757013b44582049d3823}{Decoder\+State\+Hard\+Att} (const \hyperlink{classmarian_1_1rnn_1_1States}{rnn\+::\+States} \&states, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} probs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ enc\+State, const std\+::vector$<$ size\+\_\+t $>$ \&attention\+Indices)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1DecoderStateHardAtt_adc303898f195c6db90b67dab9444f4f1}{select} (const std\+::vector$<$ size\+\_\+t $>$ \&sel\+Idx)
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderStateHardAtt_afcc7783d427f92534005f363967db1f2}{set\+Attention\+Indices} (const std\+::vector$<$ size\+\_\+t $>$ \&attention\+Indices)
+\item 
+virtual std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{classmarian_1_1DecoderStateHardAtt_a777750790cb5c41c3d429ef46e01f1ad}{get\+Attention\+Indices} ()
+\item 
+virtual void \hyperlink{classmarian_1_1DecoderStateHardAtt_a467625af0dfe9d6f08ce69484d4e1799}{blacklist} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} total\+Costs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attention\+Indices\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file hardatt.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!Decoder\+State\+Hard\+Att@{Decoder\+State\+Hard\+Att}}
+\index{Decoder\+State\+Hard\+Att@{Decoder\+State\+Hard\+Att}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{Decoder\+State\+Hard\+Att(const rnn\+::\+States \&states, Expr probs, Ptr$<$ Encoder\+State $>$ enc\+State, const std\+::vector$<$ size\+\_\+t $>$ \&attention\+Indices)}{DecoderStateHardAtt(const rnn::States &states, Expr probs, Ptr< EncoderState > encState, const std::vector< size_t > &attentionIndices)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Decoder\+State\+Hard\+Att\+::\+Decoder\+State\+Hard\+Att (
+\begin{DoxyParamCaption}
+\item[{const {\bf rnn\+::\+States} \&}]{states, }
+\item[{{\bf Expr}}]{probs, }
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{enc\+State, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{attention\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_a882378ac0b86757013b44582049d3823}{}\label{classmarian_1_1DecoderStateHardAtt_a882378ac0b86757013b44582049d3823}
+
+
+Definition at line 13 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+17       : \hyperlink{classmarian_1_1DecoderState_a4b2139b187e040ba2b910310ad5eb136}{DecoderState}(states, probs, encState),
+18         \hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attentionIndices\_}(attentionIndices) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!blacklist@{blacklist}}
+\index{blacklist@{blacklist}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{blacklist(\+Expr total\+Costs, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{blacklist(Expr totalCosts, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+Hard\+Att\+::blacklist (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{total\+Costs, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_a467625af0dfe9d6f08ce69484d4e1799}{}\label{classmarian_1_1DecoderStateHardAtt_a467625af0dfe9d6f08ce69484d4e1799}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderState_abc513554a6dec21e221b18def05297cb}{marian\+::\+Decoder\+State}.
+
+
+
+Definition at line 39 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+39                                                                       \{
+40     \textcolor{keyword}{auto} attentionIdx = \hyperlink{classmarian_1_1DecoderStateHardAtt_a777750790cb5c41c3d429ef46e01f1ad}{getAttentionIndices}();
+41     \textcolor{keywordtype}{int} dimVoc = totalCosts->shape()[1];
+42     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < attentionIdx.size(); i++) \{
+43       \textcolor{keywordflow}{if}(batch->front()->indices()[attentionIdx[i]] != 0) \{
+44         totalCosts->val()->set(i * dimVoc + \hyperlink{namespacemarian_a58eb44c6e8969831f40ee27feeed33ed}{EOS\_ID},
+45                                std::numeric\_limits<float>::lowest());
+46       \} \textcolor{keywordflow}{else} \{
+47         totalCosts->val()->set(i * dimVoc + \hyperlink{namespacemarian_a5a9abba7ca69af7bf465e68f8f7169c5}{STP\_ID},
+48                                std::numeric\_limits<float>::lowest());
+49       \}
+50     \}
+51   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d78/classmarian_1_1DecoderStateHardAtt_a467625af0dfe9d6f08ce69484d4e1799_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!get\+Attention\+Indices@{get\+Attention\+Indices}}
+\index{get\+Attention\+Indices@{get\+Attention\+Indices}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{get\+Attention\+Indices()}{getAttentionIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<$size\+\_\+t$>$\& marian\+::\+Decoder\+State\+Hard\+Att\+::get\+Attention\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_a777750790cb5c41c3d429ef46e01f1ad}{}\label{classmarian_1_1DecoderStateHardAtt_a777750790cb5c41c3d429ef46e01f1ad}
+
+
+Definition at line 34 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+34                                                    \{
+35     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attentionIndices\_}.empty(), \textcolor{stringliteral}{"Empty attention indices"});
+36     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attentionIndices\_};
+37   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d78/classmarian_1_1DecoderStateHardAtt_a777750790cb5c41c3d429ef46e01f1ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!select@{select}}
+\index{select@{select}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{select(const std\+::vector$<$ size\+\_\+t $>$ \&sel\+Idx)}{select(const std::vector< size_t > &selIdx)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Decoder\+State\+Hard\+Att\+::select (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{sel\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_adc303898f195c6db90b67dab9444f4f1}{}\label{classmarian_1_1DecoderStateHardAtt_adc303898f195c6db90b67dab9444f4f1}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderState_af0f090185bd8f34b53b6a3cf79d7eea3}{marian\+::\+Decoder\+State}.
+
+
+
+Definition at line 20 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+20                                                                     \{
+21     std::vector<size\_t> selectedAttentionIndices;
+22     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : selIdx)
+23       selectedAttentionIndices.push\_back(\hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attentionIndices\_}[i]);
+24 
+25     \textcolor{keywordflow}{return} New<DecoderStateHardAtt>(
+26         \hyperlink{classmarian_1_1DecoderState_a999eed11d80cfd9cb80fc63550633062}{states\_}.\hyperlink{classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584}{select}(selIdx), \hyperlink{classmarian_1_1DecoderState_afc5b2e6aebe1b64a37997344f4be5678}{probs\_}, \hyperlink{classmarian_1_1DecoderState_a7e38898678452096207028a0d82c888d}{encState\_}, selectedAttentionIndices);
+27   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d78/classmarian_1_1DecoderStateHardAtt_adc303898f195c6db90b67dab9444f4f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!set\+Attention\+Indices@{set\+Attention\+Indices}}
+\index{set\+Attention\+Indices@{set\+Attention\+Indices}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{set\+Attention\+Indices(const std\+::vector$<$ size\+\_\+t $>$ \&attention\+Indices)}{setAttentionIndices(const std::vector< size_t > &attentionIndices)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Decoder\+State\+Hard\+Att\+::set\+Attention\+Indices (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{attention\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_afcc7783d427f92534005f363967db1f2}{}\label{classmarian_1_1DecoderStateHardAtt_afcc7783d427f92534005f363967db1f2}
+
+
+Definition at line 29 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+30                                                  \{
+31     \hyperlink{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{attentionIndices\_} = attentionIndices;
+32   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d78/classmarian_1_1DecoderStateHardAtt_afcc7783d427f92534005f363967db1f2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}!attention\+Indices\+\_\+@{attention\+Indices\+\_\+}}
+\index{attention\+Indices\+\_\+@{attention\+Indices\+\_\+}!marian\+::\+Decoder\+State\+Hard\+Att@{marian\+::\+Decoder\+State\+Hard\+Att}}
+\subsubsection[{\texorpdfstring{attention\+Indices\+\_\+}{attentionIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ marian\+::\+Decoder\+State\+Hard\+Att\+::attention\+Indices\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}{}\label{classmarian_1_1DecoderStateHardAtt_a186190d2399d9182b076420fc7a98649}
+
+
+Definition at line 10 of file hardatt.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hardatt_8h}{hardatt.\+h}\end{DoxyCompactItemize}

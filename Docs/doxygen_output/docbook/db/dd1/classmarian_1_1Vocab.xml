@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd1/classmarian_1_1Vocab">
+<title>marian::Vocab class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/db3/marian_2src_2data_2vocab_8h">&lt;vocab.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Vocab</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dcd/classmarian_1_1Vocab__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Vocab</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dc2/classmarian_1_1Vocab__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d3d/classmarian_1_1Vocab_1_1VocabFreqOrderer">marian::Vocab::VocabFreqOrderer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; std::string, size_t &gt;  <link linkend="db/dd1/classmarian_1_1Vocab_1a3ff740ce19200167d306de3643bd49e3">Str2Id</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; std::string &gt;  <link linkend="db/dd1/classmarian_1_1Vocab_1a9208af73b752aeed1ce03ae5c429d897">Id2Str</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Str2Id str2id_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Id2Str id2str_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd1/classmarian_1_1Vocab_1a0e99d044198e23cd5187d09883e326ca">Vocab</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dd1/classmarian_1_1Vocab_1aac39bcbded54b4a3d173a8db4c37d5fe">operator[]</link> (
+const std::string &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> <link linkend="db/dd1/classmarian_1_1Vocab_1a2d83592871711da3b20c7a582be4b743">operator()</link> (
+const std::vector&lt; std::string &gt; &amp; lineTokens, bool addEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> <link linkend="db/dd1/classmarian_1_1Vocab_1adf744607f7b211cf64541d00d0fd9ab6">operator()</link> (
+const std::string &amp; line, bool addEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="db/dd1/classmarian_1_1Vocab_1a7e70e0e9345e36e8cf8960595e86d409">operator()</link> (
+const <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link> &amp; sentence, bool ignoreEOS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string &amp; <link linkend="db/dd1/classmarian_1_1Vocab_1a3e12519d40e2f1193741a86303b842e0">operator[]</link> (
+size_t id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dd1/classmarian_1_1Vocab_1a459153ecfdd0c3ad6b256752adda0e84">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd1/classmarian_1_1Vocab_1a68171b2369e02232e4e24b04934256a9">loadOrCreate</link> (
+const std::string &amp; vocabPath, const std::string &amp; textPath, int max)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd1/classmarian_1_1Vocab_1a8387e1e9b7923b9d84c0b4defd25bd76">load</link> (
+const std::string &amp; vocabPath, int max)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dd1/classmarian_1_1Vocab_1aeb5be1eaae536e408eac5ab06f50d9c1">create</link> (
+const std::string &amp; vocabPath, int max, const std::string &amp; trainPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a3ff740ce19200167d306de3643bd49e3">
+                <title>typedef std::map&lt;std::string, size_t&gt; marian::Vocab::Str2Id</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a9208af73b752aeed1ce03ae5c429d897">
+                <title>typedef std::vector&lt;std::string&gt; marian::Vocab::Id2Str</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a0e99d044198e23cd5187d09883e326ca">
+                <title>marian::Vocab::Vocab ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1aac39bcbded54b4a3d173a8db4c37d5fe">
+                <title>size_t marian::Vocab::operator[] (const std::string &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a2d83592871711da3b20c7a582be4b743">
+                <title>Words marian::Vocab::operator() (const std::vector&lt; std::string &gt; &amp;lineTokens, bool addEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1adf744607f7b211cf64541d00d0fd9ab6">
+                <title>Words marian::Vocab::operator() (const std::string &amp;line, bool addEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a7e70e0e9345e36e8cf8960595e86d409">
+                <title>std::vector&lt; std::string &gt; marian::Vocab::operator() (const Words &amp;sentence, bool ignoreEOS=true) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a3e12519d40e2f1193741a86303b842e0">
+                <title>const std::string &amp; marian::Vocab::operator[] (size_t id) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a459153ecfdd0c3ad6b256752adda0e84">
+                <title>size_t marian::Vocab::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a68171b2369e02232e4e24b04934256a9">
+                <title>void marian::Vocab::loadOrCreate (const std::string &amp;vocabPath, const std::string &amp;textPath, int max=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1a8387e1e9b7923b9d84c0b4defd25bd76">
+                <title>void marian::Vocab::load (const std::string &amp;vocabPath, int max=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd1/classmarian_1_1Vocab_1aeb5be1eaae536e408eac5ab06f50d9c1">
+                <title>void marian::Vocab::create (const std::string &amp;vocabPath, int max, const std::string &amp;trainPath)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

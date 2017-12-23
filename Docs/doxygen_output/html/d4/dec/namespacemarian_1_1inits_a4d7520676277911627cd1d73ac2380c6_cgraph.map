@@ -1,0 +1,12 @@
+<map id="marian::inits::distribution" name="marian::inits::distribution">
+<area shape="rect" id="node2" href="$d4/dec/namespacemarian_1_1inits.html#ab7e64c6e535adbc8b3ace787a9027de5" title="marian::inits::normal" alt="" coords="219,5,359,32"/>
+<area shape="rect" id="node3" href="$d4/dec/namespacemarian_1_1inits.html#a808daef275cdf015fae319efe2a5b6e1" title="marian::inits::ortho" alt="" coords="224,56,355,83"/>
+<area shape="rect" id="node4" href="$d4/dec/namespacemarian_1_1inits.html#a835dcbebcc1ee135e5637b2225eaf9d1" title="marian::inits::uniform" alt="" coords="217,107,361,133"/>
+<area shape="rect" id="node5" href="$d4/dec/namespacemarian_1_1inits.html#a8838c47537f434b855491cd3ed97ccd1" title="marian::inits::glorot\l_uniform" alt="" coords="223,158,356,199"/>
+<area shape="rect" id="node6" href="$d4/dec/namespacemarian_1_1inits.html#a8b5e30d897124066180a5d55ce811ee0" title="marian::inits::xorshift" alt="" coords="217,224,361,251"/>
+<area shape="rect" id="node7" href="$d4/dec/namespacemarian_1_1inits.html#aa41bfdd6abbcc4567bad71f7a76b50da" title="marian::inits::glorot\l_normal" alt="" coords="223,275,356,317"/>
+<area shape="rect" id="node8" href="$d4/dec/namespacemarian_1_1inits.html#ab9566318ddbacd376c74cdbdfac091e4" title="marian::inits::from\l_vector" alt="" coords="226,341,353,382"/>
+<area shape="rect" id="node9" href="$d4/dec/namespacemarian_1_1inits.html#aa01b0ccf77ec55218396670f8c49e191" title="marian::inits::from\l_sparse_vector" alt="" coords="226,406,353,447"/>
+<area shape="rect" id="node10" href="$d4/dec/namespacemarian_1_1inits.html#a466e51fe497018f864f0fb9c0dd05200" title="marian::inits::from\l_numpy" alt="" coords="226,471,353,513"/>
+<area shape="rect" id="node11" href="$d4/dec/namespacemarian_1_1inits.html#a26fad07f2ceb3649cf0d5da09c03b756" title="marian::inits::from\l_word2vec" alt="" coords="226,537,353,578"/>
+</map>

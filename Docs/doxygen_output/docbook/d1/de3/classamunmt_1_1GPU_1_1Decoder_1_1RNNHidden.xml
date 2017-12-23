@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden">
+<title>amunmt::GPU::Decoder::RNNHidden class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Decoder::RNNHidden</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d35/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Decoder::RNNHidden</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dff/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Weights</declname>
+        <defname>Weights</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; Cell &gt; gru_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a50a8e946df49d61acc5061c4f169cdfa">RNNHidden</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a42705cd0728dbd79b755908f480b4824">RNNHidden</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; initModel, std::unique_ptr&lt; <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">Cell</link> &gt; cell)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a4e603e53eb86acbacce1a348e2be20f4">InitializeState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; SourceContext, const size_t batchSize, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a88bef032a7281492b4045e78ec2a7c3d">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a4ea4b32b4268f35782f0d72972e8c804">RNNHidden</link> (
+const <link linkend="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden">RNNHidden</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a50a8e946df49d61acc5061c4f169cdfa">
+                <title>amunmt::GPU::Decoder::RNNHidden&lt; Weights &gt;::RNNHidden ()=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a42705cd0728dbd79b755908f480b4824">
+                <title>amunmt::GPU::Decoder::RNNHidden&lt; Weights &gt;::RNNHidden (const Weights &amp;initModel, std::unique_ptr&lt; Cell &gt; cell)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a4e603e53eb86acbacce1a348e2be20f4">
+                <title>void amunmt::GPU::Decoder::RNNHidden&lt; Weights &gt;::InitializeState (CellState &amp;State, const mblas::Matrix &amp;SourceContext, const size_t batchSize, const mblas::IMatrix &amp;sentenceLengths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a88bef032a7281492b4045e78ec2a7c3d">
+                <title>void amunmt::GPU::Decoder::RNNHidden&lt; Weights &gt;::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/de3/classamunmt_1_1GPU_1_1Decoder_1_1RNNHidden_1a4ea4b32b4268f35782f0d72972e8c804">
+                <title>amunmt::GPU::Decoder::RNNHidden&lt; Weights &gt;::RNNHidden (const RNNHidden &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

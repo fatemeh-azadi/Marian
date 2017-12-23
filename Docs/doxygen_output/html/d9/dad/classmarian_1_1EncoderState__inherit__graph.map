@@ -1,0 +1,4 @@
+<map id="marian::EncoderState" name="marian::EncoderState">
+<area shape="rect" id="node2" href="$d8/dce/structmarian_1_1EncoderStateMultiS2S.html" title="{marian::EncoderStateMultiS2S\n|+ enc1\l+ enc2\l|+ EncoderStateMultiS2S()\l+ getContext()\l+ getMask()\l+ getSourceWords()\l}" alt="" coords="5,255,207,391"/>
+<area shape="rect" id="node3" href="$da/d65/classmarian_1_1EncoderStatePooling.html" title="{marian::EncoderStatePooling\n|&#45; context_\l&#45; attended_\l&#45; mask_\l&#45; batch_\l|+ EncoderStatePooling()\l+ getContext()\l+ getAttended()\l+ getMask()\l+ getSourceWords()\l}" alt="" coords="231,233,421,413"/>
+</map>

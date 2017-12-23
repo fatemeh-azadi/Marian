@@ -1,0 +1,320 @@
+\hypertarget{classmarian_1_1models_1_1MNISTModel}{}\section{marian\+:\+:models\+:\+:M\+N\+I\+S\+T\+Model Class Reference}
+\label{classmarian_1_1models_1_1MNISTModel}\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:models\+:\+:M\+N\+I\+S\+T\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{d3/d72/classmarian_1_1models_1_1MNISTModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmarian_1_1data_1_1MNIST}{data\+::\+M\+N\+I\+ST} \hyperlink{classmarian_1_1models_1_1MNISTModel_a51d3bba55e9fb1f82f7cf18987f22c01}{dataset\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1models_1_1MNISTModel_a018d81eab7abfb2e97de6712a04a9f8a}{M\+N\+I\+S\+T\+Model} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1models_1_1MNISTModel_aacea07dc6d02c753955564f36df0959c}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\item 
+void \hyperlink{classmarian_1_1models_1_1MNISTModel_a2e46784797746aabdfe65fea058720ef}{load} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1models_1_1MNISTModel_a6aa8f9f5efe1b9ed5e84438c91f7bb0c}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name, bool foo=true)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{data\+::\+Batch\+Stats} $>$ \hyperlink{classmarian_1_1models_1_1MNISTModel_aacfb206fb5bda4dafde8a72ad1f059a5}{collect\+Stats} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121}{Feedforward\+Classifier} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ g, const std\+::vector$<$ int $>$ \&dims, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch, bool inference=false)
+\begin{DoxyCompactList}\small\item\em Constructs an expression graph representing a feed-\/forward classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1models_1_1MNISTModel_a89534bc9dc7dfea0acb2292be4037252}{options\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1models_1_1MNISTModel_af7d608f3d2ebb6f2dfb1d37eaaa4152a}{inference\+\_\+} \{false\}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classmarian_1_1models_1_1MNISTModel_a2fff9a2599bb88f2d59ca9a2f062b491}{dims\+\_\+} \{784, 2048, 2048, 10\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file marian/src/examples/mnist/model.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!dataset\+\_\+type@{dataset\+\_\+type}}
+\index{dataset\+\_\+type@{dataset\+\_\+type}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{dataset\+\_\+type}{dataset_type}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf data\+::\+M\+N\+I\+ST} {\bf marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::dataset\+\_\+type}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a51d3bba55e9fb1f82f7cf18987f22c01}{}\label{classmarian_1_1models_1_1MNISTModel_a51d3bba55e9fb1f82f7cf18987f22c01}
+
+
+Definition at line 25 of file marian/src/examples/mnist/model.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!M\+N\+I\+S\+T\+Model@{M\+N\+I\+S\+T\+Model}}
+\index{M\+N\+I\+S\+T\+Model@{M\+N\+I\+S\+T\+Model}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{M\+N\+I\+S\+T\+Model(\+Ptr$<$ Config $>$ options, Args...\+args)}{MNISTModel(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::\+M\+N\+I\+S\+T\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a018d81eab7abfb2e97de6712a04a9f8a}{}\label{classmarian_1_1models_1_1MNISTModel_a018d81eab7abfb2e97de6712a04a9f8a}
+
+
+Definition at line 28 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+29       : \hyperlink{classmarian_1_1models_1_1MNISTModel_a89534bc9dc7dfea0acb2292be4037252}{options\_}(options),
+30         \hyperlink{classmarian_1_1models_1_1MNISTModel_af7d608f3d2ebb6f2dfb1d37eaaa4152a}{inference\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference}, \textcolor{keyword}{false}, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!build@{build}}
+\index{build@{build}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Batch $>$ batch)}{build(Ptr< ExpressionGraph > graph, Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_aacea07dc6d02c753955564f36df0959c}{}\label{classmarian_1_1models_1_1MNISTModel_aacea07dc6d02c753955564f36df0959c}
+
+
+Definition at line 32 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+32                                                                \{
+33     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121}{FeedforwardClassifier}(graph, \hyperlink{classmarian_1_1models_1_1MNISTModel_a2fff9a2599bb88f2d59ca9a2f062b491}{dims\_}, batch, 
+      \hyperlink{classmarian_1_1models_1_1MNISTModel_af7d608f3d2ebb6f2dfb1d37eaaa4152a}{inference\_});
+34   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d10/classmarian_1_1models_1_1MNISTModel_aacea07dc6d02c753955564f36df0959c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!collect\+Stats@{collect\+Stats}}
+\index{collect\+Stats@{collect\+Stats}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{collect\+Stats(\+Ptr$<$ Expression\+Graph $>$ graph)}{collectStats(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf data\+::\+Batch\+Stats}$>$ marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::collect\+Stats (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_aacfb206fb5bda4dafde8a72ad1f059a5}{}\label{classmarian_1_1models_1_1MNISTModel_aacfb206fb5bda4dafde8a72ad1f059a5}
+
+
+Definition at line 46 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+46                                                                \{
+47     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->critical(\textcolor{stringliteral}{"Collecting stats in MNIST model is not supported"});
+48     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+49   \}
+\end{DoxyCode}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!Feedforward\+Classifier@{Feedforward\+Classifier}}
+\index{Feedforward\+Classifier@{Feedforward\+Classifier}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{Feedforward\+Classifier(\+Ptr$<$ Expression\+Graph $>$ g, const std\+::vector$<$ int $>$ \&dims, Ptr$<$ data\+::\+Batch $>$ batch, bool inference=false)}{FeedforwardClassifier(Ptr< ExpressionGraph > g, const std::vector< int > &dims, Ptr< data::Batch > batch, bool inference=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::\+Feedforward\+Classifier (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{g, }
+\item[{const std\+::vector$<$ int $>$ \&}]{dims, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch, }
+\item[{bool}]{inference = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121}{}\label{classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121}
+
+
+Constructs an expression graph representing a feed-\/forward classifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dims} & number of nodes in each layer of the feed-\/forward classifier \\
+\hline
+{\em batch} & a batch of training or testing examples \\
+\hline
+{\em training} & create a classifier for training or for inference only\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to the newly constructed expression graph 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+65                                                      \{
+66     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+67 
+68     \textcolor{comment}{// Start with an empty expression graph}
+69     g->clear();
+70 
+71     \textcolor{comment}{// Create an input layer of shape batchSize x numFeatures and populate it}
+72     \textcolor{comment}{// with training features}
+73     \textcolor{keyword}{auto} features
+74         = std::static\_pointer\_cast<data::DataBatch>(batch)->features();
+75     \textcolor{keyword}{auto} x = g->constant(\{(int)batch->size(), dims[0]\},
+76                          \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(features));
+77 
+78     \textcolor{comment}{// Construct hidden layers}
+79     std::vector<Expr> layers, weights, biases;
+80 
+81     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < dims.size() - 1; ++i) \{
+82       \textcolor{keywordtype}{int} in = dims[i];
+83       \textcolor{keywordtype}{int} out = dims[i + 1];
+84 
+85       \textcolor{keywordflow}{if}(i == 0) \{
+86         \textcolor{comment}{// Create a dropout node as the parent of x,}
+87         \textcolor{comment}{//   and place that dropout node as the value of layers[0]}
+88         layers.emplace\_back(\hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(x, \hyperlink{namespacemarian_1_1keywords_aeb1a41f81a79487b23aa2f8769a205bf}{dropout\_prob} = 0.2));
+89       \} \textcolor{keywordflow}{else} \{
+90         \textcolor{comment}{// Multiply the matrix in layers[i-1] by the matrix in weights[i-1]}
+91         \textcolor{comment}{// Take the result, and perform matrix addition on biases[i-1].}
+92         \textcolor{comment}{// Wrap the result in rectified linear activation function,}
+93         \textcolor{comment}{// and finally wrap that in a dropout node}
+94         layers.emplace\_back(
+95             \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(\hyperlink{namespacemarian_a6228f7e46aeed337e3886df6446b7840}{relu}(\hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(layers.back(), weights.back(), biases.back())),
+96                     \hyperlink{namespacemarian_1_1keywords_aeb1a41f81a79487b23aa2f8769a205bf}{dropout\_prob} = 0.5));
+97       \}
+98 
+99       \textcolor{comment}{// Construct a weight node for the outgoing connections from layer i}
+100       weights.emplace\_back(g->param(
+101           \textcolor{stringliteral}{"W"} + std::to\_string(i), \{in, out\}, init = \hyperlink{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{inits::uniform}()));
+102 
+103       \textcolor{comment}{// Construct a bias node. These weights are initialized to zero}
+104       biases.emplace\_back(
+105           g->param(\textcolor{stringliteral}{"b"} + std::to\_string(i), \{1, out\}, init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros}));
+106     \}
+107 
+108     \textcolor{comment}{// Perform matrix multiplication and addition for the last layer}
+109     \textcolor{keyword}{auto} last = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(layers.back(), weights.back(), biases.back());
+110 
+111     \textcolor{keywordflow}{if}(!\hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{inference}) \{
+112       \textcolor{comment}{// Create an output layer of shape batchSize x 1 and populate it with}
+113       \textcolor{comment}{// labels}
+114       \textcolor{keyword}{auto} labels = std::static\_pointer\_cast<data::DataBatch>(batch)->labels();
+115       \textcolor{keyword}{auto} y = g->constant(\{(int)batch->size(), 1\},
+116                            init = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(labels));
+117 
+118       \textcolor{comment}{// Define a top-level node for training}
+119       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a15ec9743709e47180378db974ddbf116}{mean}(\hyperlink{namespacemarian_a37652ca2a00f3c36816fe5fec28104a0}{cross\_entropy}(last, y), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 0);
+120     \} \textcolor{keywordflow}{else} \{
+121       \textcolor{comment}{// Define a top-level node for inference}
+122       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a471a2cbd15b4094528a1643abc814bb6}{logsoftmax}(last);
+123     \}
+124   \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d10/classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d10/classmarian_1_1models_1_1MNISTModel_ad6f17d5d5db7302dd4a9daec556ed121_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!load@{load}}
+\index{load@{load}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{load(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name)}{load(Ptr< ExpressionGraph > graph, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::load (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a2e46784797746aabdfe65fea058720ef}{}\label{classmarian_1_1models_1_1MNISTModel_a2e46784797746aabdfe65fea058720ef}
+
+
+Definition at line 36 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+36                                                                \{
+37     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->critical(\textcolor{stringliteral}{"Loading MNIST model is not supported"});
+38   \}
+\end{DoxyCode}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!save@{save}}
+\index{save@{save}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name, bool foo=true)}{save(Ptr< ExpressionGraph > graph, const std::string &name, bool foo=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name, }
+\item[{bool}]{foo = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a6aa8f9f5efe1b9ed5e84438c91f7bb0c}{}\label{classmarian_1_1models_1_1MNISTModel_a6aa8f9f5efe1b9ed5e84438c91f7bb0c}
+
+
+Definition at line 40 of file marian/src/examples/mnist/model.\+h.
+
+
+\begin{DoxyCode}
+42                              \{
+43     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->critical(\textcolor{stringliteral}{"Saving MNIST model is not supported"});
+44   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!dims\+\_\+@{dims\+\_\+}}
+\index{dims\+\_\+@{dims\+\_\+}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{dims\+\_\+}{dims_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::dims\+\_\+ \{784, 2048, 2048, 10\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a2fff9a2599bb88f2d59ca9a2f062b491}{}\label{classmarian_1_1models_1_1MNISTModel_a2fff9a2599bb88f2d59ca9a2f062b491}
+
+
+Definition at line 22 of file marian/src/examples/mnist/model.\+h.
+
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!inference\+\_\+@{inference\+\_\+}}
+\index{inference\+\_\+@{inference\+\_\+}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{inference\+\_\+}{inference_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::inference\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_af7d608f3d2ebb6f2dfb1d37eaaa4152a}{}\label{classmarian_1_1models_1_1MNISTModel_af7d608f3d2ebb6f2dfb1d37eaaa4152a}
+
+
+Definition at line 21 of file marian/src/examples/mnist/model.\+h.
+
+\index{marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::models\+::\+M\+N\+I\+S\+T\+Model@{marian\+::models\+::\+M\+N\+I\+S\+T\+Model}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::models\+::\+M\+N\+I\+S\+T\+Model\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1models_1_1MNISTModel_a89534bc9dc7dfea0acb2292be4037252}{}\label{classmarian_1_1models_1_1MNISTModel_a89534bc9dc7dfea0acb2292be4037252}
+
+
+Definition at line 20 of file marian/src/examples/mnist/model.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2examples_2mnist_2model_8h}{marian/src/examples/mnist/model.\+h}\end{DoxyCompactItemize}

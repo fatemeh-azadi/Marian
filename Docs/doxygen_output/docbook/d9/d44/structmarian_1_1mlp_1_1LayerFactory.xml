@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory">
+<title>marian::mlp::LayerFactory struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dc3/layers_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::mlp::LayerFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d86/structmarian_1_1mlp_1_1LayerFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::mlp::LayerFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d22/structmarian_1_1mlp_1_1LayerFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1aa191841467f48299dc2a96039972d3f8">LayerFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a5abd59b38025090b212d846add90dc31">LayerFactory</link> (
+const <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory">LayerFactory</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a2759e7b5d53bcad1b2a4dc0c26145921">LayerFactory</link> (
+<link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory">LayerFactory</link> &amp;&amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1aa28e52b10ff8ccebcbca6fc7684bc536">~LayerFactory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; Cast &gt; <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a955c3bcab08efb7c186eaa350ca85893">as</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1ac5072d88c0406e5e4f4e769d554f07e5">is</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; Layer &gt; <link linkend="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1adf4c58df3dd15cd1904cdd66bf45c7b9">construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1aa191841467f48299dc2a96039972d3f8">
+                <title>marian::mlp::LayerFactory::LayerFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a5abd59b38025090b212d846add90dc31">
+                <title>marian::mlp::LayerFactory::LayerFactory (const LayerFactory &amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a2759e7b5d53bcad1b2a4dc0c26145921">
+                <title>marian::mlp::LayerFactory::LayerFactory (LayerFactory &amp;&amp;)=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1aa28e52b10ff8ccebcbca6fc7684bc536">
+                <title>virtual marian::mlp::LayerFactory::~LayerFactory ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1a955c3bcab08efb7c186eaa350ca85893">
+                <title>Ptr&lt;Cast&gt; marian::mlp::LayerFactory::as ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1ac5072d88c0406e5e4f4e769d554f07e5">
+                <title>bool marian::mlp::LayerFactory::is ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d44/structmarian_1_1mlp_1_1LayerFactory_1adf4c58df3dd15cd1904cdd66bf45c7b9">
+                <title>virtual Ptr&lt;Layer&gt; marian::mlp::LayerFactory::construct ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d75/classamunmt_1_1BPE">
+<title>amunmt::BPE class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/d80/bpe_8h">&lt;bpe.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::BPE</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d14/classamunmt_1_1BPE__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::BPE</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d56/classamunmt_1_1BPE__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; std::string, std::string &gt;  <link linkend="da/d75/classamunmt_1_1BPE_1a3c38d7a027b9574c2b0baf3cd17f8e9c">BPEPair</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unordered_map&lt; BPEPair, size_t &gt; bpeCodes_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string sep_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; cache_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d75/classamunmt_1_1BPE_1a53dcd415e0e191be7cc8eb151ad6f17f">BPE</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d75/classamunmt_1_1BPE_1a973584c4eff31587d0cbbe3ccd9fc2a8">BPE</link> (
+std::ifstream &amp;&amp; file, const std::string sep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d75/classamunmt_1_1BPE_1aed88644889fcbac579c7fb60b667f1f8">BPE</link> (
+const std::string &amp; path, const std::string sep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="da/d75/classamunmt_1_1BPE_1a747e84ef0632faa5cb75994a09e64819">Segment</link> (
+const std::string &amp; sentence)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d75/classamunmt_1_1BPE_1ad00d419cc8a541b8aad84501ab053db8">PrintSegment</link> (
+const std::string &amp; sentence)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; &amp; <link linkend="da/d75/classamunmt_1_1BPE_1a31bddda15c8e822540612885885e3a3a">Encode</link> (
+const std::string &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="da/d75/classamunmt_1_1BPE_1adb07fcf335a9fd4caf8a21b413d8c17f">Encode</link> (
+const std::vector&lt; std::string &gt; &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="da/d75/classamunmt_1_1BPE_1ae394375a674cfeee1c36b56cb918f015">Preprocess</link> (
+const std::vector&lt; std::string &gt; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="da/d75/classamunmt_1_1BPE_1a219913023dc7826e0a5a731b0e26acc0">Postprocess</link> (
+const std::vector&lt; std::string &gt; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d75/classamunmt_1_1BPE_1acf567c8b17acc29f0f9aaebe1652ba5b">~BPE</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a59d4487ba23386d5b73310f034357598">std::set</link>&lt; <link linkend="da/d75/classamunmt_1_1BPE_1a3c38d7a027b9574c2b0baf3cd17f8e9c">BPEPair</link> &gt; <link linkend="da/d75/classamunmt_1_1BPE_1a98b27329dd9a9146202d2bd732ce4ba3">GetPairs</link> (
+const std::vector&lt; std::string &gt; &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d75/classamunmt_1_1BPE_1a3c38d7a027b9574c2b0baf3cd17f8e9c">BPEPair</link> * <link linkend="da/d75/classamunmt_1_1BPE_1ab1ad9af2c5806b7e2ee2bf91bd38d80b">FindBestBigram</link> (
+const <link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a59d4487ba23386d5b73310f034357598">std::set</link>&lt; <link linkend="da/d75/classamunmt_1_1BPE_1a3c38d7a027b9574c2b0baf3cd17f8e9c">BPEPair</link> &gt; &amp; pairs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="da/d75/classamunmt_1_1BPE_1a7840a80bf09596f2b3415070f3324b4b">IsCached</link> (
+const std::string &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="da/d75/classamunmt_1_1BPE_1a6089b76990dd5e462f8bcc7249fcb912">SplitWordIntoLetters</link> (
+const std::string &amp; word)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="da/d75/classamunmt_1_1BPE_1a21b9fe0b9cd1782985a5917bed7eb5f2">EndsWith</link> (
+const std::string &amp; fullString, const std::string suffix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a3c38d7a027b9574c2b0baf3cd17f8e9c">
+                <title>using amunmt::BPE::BPEPair =  std::pair&lt;std::string, std::string&gt;</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a53dcd415e0e191be7cc8eb151ad6f17f">
+                <title>amunmt::BPE::BPE ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a973584c4eff31587d0cbbe3ccd9fc2a8">
+                <title>amunmt::BPE::BPE (std::ifstream &amp;&amp;file, const std::string sep=&quot;@@&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1aed88644889fcbac579c7fb60b667f1f8">
+                <title>amunmt::BPE::BPE (const std::string &amp;path, const std::string sep=&quot;@@&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a747e84ef0632faa5cb75994a09e64819">
+                <title>std::vector&lt; std::string &gt; amunmt::BPE::Segment (const std::string &amp;sentence)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1ad00d419cc8a541b8aad84501ab053db8">
+                <title>void amunmt::BPE::PrintSegment (const std::string &amp;sentence)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a31bddda15c8e822540612885885e3a3a">
+                <title>std::vector&lt; std::string &gt; &amp; amunmt::BPE::Encode (const std::string &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1adb07fcf335a9fd4caf8a21b413d8c17f">
+                <title>std::vector&lt; std::string &gt; amunmt::BPE::Encode (const std::vector&lt; std::string &gt; &amp;words) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1ae394375a674cfeee1c36b56cb918f015">
+                <title>std::vector&lt; std::string &gt; amunmt::BPE::Preprocess (const std::vector&lt; std::string &gt; input) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a219913023dc7826e0a5a731b0e26acc0">
+                <title>std::vector&lt; std::string &gt; amunmt::BPE::Postprocess (const std::vector&lt; std::string &gt; input) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1acf567c8b17acc29f0f9aaebe1652ba5b">
+                <title>virtual amunmt::BPE::~BPE ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a98b27329dd9a9146202d2bd732ce4ba3">
+                <title>std::set&lt; BPE::BPEPair &gt; amunmt::BPE::GetPairs (const std::vector&lt; std::string &gt; &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1ab1ad9af2c5806b7e2ee2bf91bd38d80b">
+                <title>const BPE::BPEPair * amunmt::BPE::FindBestBigram (const std::set&lt; BPEPair &gt; &amp;pairs) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a7840a80bf09596f2b3415070f3324b4b">
+                <title>bool amunmt::BPE::IsCached (const std::string &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a6089b76990dd5e462f8bcc7249fcb912">
+                <title>std::vector&lt; std::string &gt; amunmt::BPE::SplitWordIntoLetters (const std::string &amp;word) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d75/classamunmt_1_1BPE_1a21b9fe0b9cd1782985a5917bed7eb5f2">
+                <title>bool amunmt::BPE::EndsWith (const std::string &amp;fullString, const std::string suffix) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d55/namespacemarian_1_1sparse">
+<title>marian::sparse</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">marian::sparse::CSR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d55/namespacemarian_1_1sparse_1ad5213500007ccc462473804a1374c1ff">multiply</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">CSR</link> &gt; , const <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">CSR</link> &gt; , const <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">CSR</link> &gt; , bool , bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d55/namespacemarian_1_1sparse_1ac9a85dbc1c93bd5cf582d9f298203d55">LfaForward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> logits, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> att, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">CSR</link> &gt; sparseLf)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d55/namespacemarian_1_1sparse_1ae51a1c2f9f89106dde6193dcf00a7b76">LfaBackward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grad, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">CSR</link> &gt; sparseLf)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d2b/loader__factory_8h">
+    <title>loader_factory.h File Reference</title>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;yaml-cpp/yaml.h&gt;</programlisting>
+    <programlisting>#include &quot;common/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;common/loader.h&quot;</programlisting>
+<para>Include dependency diagram for loader_factory.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/df4/loader__factory_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for loader_factory.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/da2/loader__factory_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/df9/classamunmt_1_1LoaderFactory">amunmt::LoaderFactory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d2b/loader__factory_8h_1aa8a2d91e339a9855a8ce38a54d6ad325">IF_MATCH_RETURN</link> do { \
+  if(typeVar == typeStr) { \
+    Loader *loader = new LoaderType(name, config); \
+    loader-&gt;Load(god); \
+    return loader; \
+  } \
+} while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file loader_factory.h</para>
+    </simplesect>
+</section>

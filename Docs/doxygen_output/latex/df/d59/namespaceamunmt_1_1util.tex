@@ -1,0 +1,100 @@
+\hypertarget{namespaceamunmt_1_1util}{}\section{amunmt\+:\+:util Namespace Reference}
+\label{namespaceamunmt_1_1util}\index{amunmt\+::util@{amunmt\+::util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1ErrnoException}{Errno\+Exception}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1Exception}{Exception}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1FileOpenException}{File\+Open\+Exception}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1OverflowException}{Overflow\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Except , class Data $>$ }\\Except\+::template Exception\+Tag$<$ Except \& $>$\+::Identity \hyperlink{namespaceamunmt_1_1util_ad11a5ac29536e2a368b1eae6d5bdf229}{operator$<$$<$} (Except \&e, const Data \&data)
+\item 
+{\footnotesize template$<$unsigned len$>$ }\\std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a6b045ed350fadf8a2a9d7bd567b5c546}{Check\+Overflow\+Internal} (uint64\+\_\+t value)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a4ab09a7fed571a65813b862e6a2cbd58}{Check\+Overflow\+Internal$<$ 8 $>$} (uint64\+\_\+t value)
+\item 
+std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a50f412a2b0340540782aef99cc9f2734}{Check\+Overflow} (uint64\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{amunmt\+::util@{amunmt\+::util}!Check\+Overflow@{Check\+Overflow}}
+\index{Check\+Overflow@{Check\+Overflow}!amunmt\+::util@{amunmt\+::util}}
+\subsubsection[{\texorpdfstring{Check\+Overflow(uint64\+\_\+t value)}{CheckOverflow(uint64_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t amunmt\+::util\+::\+Check\+Overflow (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1util_a50f412a2b0340540782aef99cc9f2734}{}\label{namespaceamunmt_1_1util_a50f412a2b0340540782aef99cc9f2734}
+
+
+Definition at line 160 of file exception.\+h.
+
+
+\begin{DoxyCode}
+160                                                \{
+161   \textcolor{keywordflow}{return} CheckOverflowInternal<sizeof(std::size\_t)>(\hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value});
+162 \}
+\end{DoxyCode}
+\index{amunmt\+::util@{amunmt\+::util}!Check\+Overflow\+Internal@{Check\+Overflow\+Internal}}
+\index{Check\+Overflow\+Internal@{Check\+Overflow\+Internal}!amunmt\+::util@{amunmt\+::util}}
+\subsubsection[{\texorpdfstring{Check\+Overflow\+Internal(uint64\+\_\+t value)}{CheckOverflowInternal(uint64_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned len$>$ std\+::size\+\_\+t amunmt\+::util\+::\+Check\+Overflow\+Internal (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1util_a6b045ed350fadf8a2a9d7bd567b5c546}{}\label{namespaceamunmt_1_1util_a6b045ed350fadf8a2a9d7bd567b5c546}
+
+
+Definition at line 151 of file exception.\+h.
+
+
+\begin{DoxyCode}
+151                                                                                \{
+152   \hyperlink{exception_8h_aeb8c2ad3f9ccb2e20e6f74fd75bd23ce}{UTIL\_THROW\_IF}(\hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value} > static\_cast<uint64\_t>(std::numeric\_limits<std::size\_t>::max()), 
+      OverflowException, \textcolor{stringliteral}{"Integer overflow detected.  This model is too big for 32-bit code."});
+153   \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value};
+154 \}
+\end{DoxyCode}
+\index{amunmt\+::util@{amunmt\+::util}!Check\+Overflow\+Internal$<$ 8 $>$@{Check\+Overflow\+Internal$<$ 8 $>$}}
+\index{Check\+Overflow\+Internal$<$ 8 $>$@{Check\+Overflow\+Internal$<$ 8 $>$}!amunmt\+::util@{amunmt\+::util}}
+\subsubsection[{\texorpdfstring{Check\+Overflow\+Internal$<$ 8 $>$(uint64\+\_\+t value)}{CheckOverflowInternal< 8 >(uint64_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ std\+::size\+\_\+t {\bf amunmt\+::util\+::\+Check\+Overflow\+Internal}$<$ 8 $>$ (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1util_a4ab09a7fed571a65813b862e6a2cbd58}{}\label{namespaceamunmt_1_1util_a4ab09a7fed571a65813b862e6a2cbd58}
+
+
+Definition at line 156 of file exception.\+h.
+
+
+\begin{DoxyCode}
+156                                                                       \{
+157   \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value};
+158 \}
+\end{DoxyCode}
+\index{amunmt\+::util@{amunmt\+::util}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt\+::util@{amunmt\+::util}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(\+Except \&e, const Data \&data)}{operator<<(Except &e, const Data &data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Except , class Data $>$ Except\+::template Exception\+Tag$<$ Except \& $>$\+::Identity amunmt\+::util\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Except \&}]{e, }
+\item[{const Data \&}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1util_ad11a5ac29536e2a368b1eae6d5bdf229}{}\label{namespaceamunmt_1_1util_ad11a5ac29536e2a368b1eae6d5bdf229}
+
+
+Definition at line 60 of file exception.\+h.
+
+
+\begin{DoxyCode}
+60                                                                                                            
+                             \{
+61   e.Append(data);
+62   \textcolor{keywordflow}{return} e;
+63 \}
+\end{DoxyCode}

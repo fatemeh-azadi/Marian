@@ -1,0 +1,172 @@
+\hypertarget{structmarian_1_1ScalarAddNodeOp}{}\section{marian\+:\+:Scalar\+Add\+Node\+Op Struct Reference}
+\label{structmarian_1_1ScalarAddNodeOp}\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Scalar\+Add\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d80/structmarian_1_1ScalarAddNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Scalar\+Add\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dfc/structmarian_1_1ScalarAddNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1ScalarAddNodeOp_a0572ed21618014ece5b8b2b645eb3d61}{Scalar\+Add\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, float \hyperlink{classmarian_1_1Node_a078122f6a9c2df448139780a1e3a323b}{scalar}, Args...\+args)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1ScalarAddNodeOp_a539179a95c828073b865e721140223f6}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1ScalarAddNodeOp_a9507deac5ac29d8b07fc950a1e7b3aff}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ScalarAddNodeOp_aea481e268815b105bd769b22d796af1d}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structmarian_1_1ScalarAddNodeOp_a57f5dd8c7cc7757fc13924f0d97a22c3}{scalar\+\_\+} \{0\}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}!Scalar\+Add\+Node\+Op@{Scalar\+Add\+Node\+Op}}
+\index{Scalar\+Add\+Node\+Op@{Scalar\+Add\+Node\+Op}!marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Scalar\+Add\+Node\+Op(\+Expr a, float scalar, Args...\+args)}{ScalarAddNodeOp(Expr a, float scalar, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Scalar\+Add\+Node\+Op\+::\+Scalar\+Add\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{float}]{scalar, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ScalarAddNodeOp_a0572ed21618014ece5b8b2b645eb3d61}{}\label{structmarian_1_1ScalarAddNodeOp_a0572ed21618014ece5b8b2b645eb3d61}
+
+
+Definition at line 40 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+41       : \hyperlink{structmarian_1_1UnaryNodeOp_af4481274a5a2cf72328c7cdffeb5f571}{UnaryNodeOp}(a, args...), \hyperlink{structmarian_1_1ScalarAddNodeOp_a57f5dd8c7cc7757fc13924f0d97a22c3}{scalar\_}\{\hyperlink{classmarian_1_1Node_a078122f6a9c2df448139780a1e3a323b}{scalar}\} \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Scalar\+Add\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ScalarAddNodeOp_a9507deac5ac29d8b07fc950a1e7b3aff}{}\label{structmarian_1_1ScalarAddNodeOp_a9507deac5ac29d8b07fc950a1e7b3aff}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 47 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+47 \{ \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}))\}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/df0/structmarian_1_1ScalarAddNodeOp_a9507deac5ac29d8b07fc950a1e7b3aff_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Scalar\+Add\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ScalarAddNodeOp_a539179a95c828073b865e721140223f6}{}\label{structmarian_1_1ScalarAddNodeOp_a539179a95c828073b865e721140223f6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 43 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+43                        \{
+44     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \_2 + \hyperlink{structmarian_1_1ScalarAddNodeOp_a57f5dd8c7cc7757fc13924f0d97a22c3}{scalar\_}, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, 
+      \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+45   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/df0/structmarian_1_1ScalarAddNodeOp_a539179a95c828073b865e721140223f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Scalar\+Add\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ScalarAddNodeOp_aea481e268815b105bd769b22d796af1d}{}\label{structmarian_1_1ScalarAddNodeOp_aea481e268815b105bd769b22d796af1d}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 49 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+49 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"scalar\_add"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}!scalar\+\_\+@{scalar\+\_\+}}
+\index{scalar\+\_\+@{scalar\+\_\+}!marian\+::\+Scalar\+Add\+Node\+Op@{marian\+::\+Scalar\+Add\+Node\+Op}}
+\subsubsection[{\texorpdfstring{scalar\+\_\+}{scalar_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Scalar\+Add\+Node\+Op\+::scalar\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structmarian_1_1ScalarAddNodeOp_a57f5dd8c7cc7757fc13924f0d97a22c3}{}\label{structmarian_1_1ScalarAddNodeOp_a57f5dd8c7cc7757fc13924f0d97a22c3}
+
+
+Definition at line 36 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

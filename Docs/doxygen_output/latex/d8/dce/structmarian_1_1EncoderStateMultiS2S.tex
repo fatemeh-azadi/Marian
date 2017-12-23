@@ -1,0 +1,154 @@
+\hypertarget{structmarian_1_1EncoderStateMultiS2S}{}\section{marian\+:\+:Encoder\+State\+Multi\+S2S Struct Reference}
+\label{structmarian_1_1EncoderStateMultiS2S}\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+
+
+{\ttfamily \#include $<$multi\+\_\+s2s.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+State\+Multi\+S2S\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{d3/dcb/structmarian_1_1EncoderStateMultiS2S__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+State\+Multi\+S2S\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{db/d8a/structmarian_1_1EncoderStateMultiS2S__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1EncoderStateMultiS2S_a097df41a4ed9bc22d1f7c4b0ab2866a4}{Encoder\+State\+Multi\+S2S} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ e1, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ e2)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{structmarian_1_1EncoderStateMultiS2S_a933874098a2871c61fc8cacff4227cd5}{get\+Context} ()
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{structmarian_1_1EncoderStateMultiS2S_aa7285285787ab6c8893a1a21697472e7}{get\+Mask} ()
+\item 
+virtual const std\+::vector$<$ size\+\_\+t $>$ \& \hyperlink{structmarian_1_1EncoderStateMultiS2S_aef6388ca4d0187cc586d0198d136c618}{get\+Source\+Words} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}{enc1}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{structmarian_1_1EncoderStateMultiS2S_aca65075e1fc8e73943a414af6ea63ee3}{enc2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file multi\+\_\+s2s.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!Encoder\+State\+Multi\+S2S@{Encoder\+State\+Multi\+S2S}}
+\index{Encoder\+State\+Multi\+S2S@{Encoder\+State\+Multi\+S2S}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{Encoder\+State\+Multi\+S2\+S(\+Ptr$<$ Encoder\+State $>$ e1, Ptr$<$ Encoder\+State $>$ e2)}{EncoderStateMultiS2S(Ptr< EncoderState > e1, Ptr< EncoderState > e2)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Encoder\+State\+Multi\+S2\+S\+::\+Encoder\+State\+Multi\+S2S (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{e1, }
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{e2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1EncoderStateMultiS2S_a097df41a4ed9bc22d1f7c4b0ab2866a4}{}\label{structmarian_1_1EncoderStateMultiS2S_a097df41a4ed9bc22d1f7c4b0ab2866a4}
+
+
+Definition at line 9 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+10       : \hyperlink{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}{enc1}(e1), \hyperlink{structmarian_1_1EncoderStateMultiS2S_aca65075e1fc8e73943a414af6ea63ee3}{enc2}(e2) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!get\+Context@{get\+Context}}
+\index{get\+Context@{get\+Context}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{get\+Context()}{getContext()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+Multi\+S2\+S\+::get\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1EncoderStateMultiS2S_a933874098a2871c61fc8cacff4227cd5}{}\label{structmarian_1_1EncoderStateMultiS2S_a933874098a2871c61fc8cacff4227cd5}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a35888943fb53059c7b524b3b011d7a0c}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 12 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+12 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}{enc1}->getContext(); \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!get\+Mask@{get\+Mask}}
+\index{get\+Mask@{get\+Mask}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{get\+Mask()}{getMask()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+State\+Multi\+S2\+S\+::get\+Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1EncoderStateMultiS2S_aa7285285787ab6c8893a1a21697472e7}{}\label{structmarian_1_1EncoderStateMultiS2S_aa7285285787ab6c8893a1a21697472e7}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a5ae25950692389c47b4035ebcae4725e}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 13 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+13 \{ \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1EncoderStateMultiS2S_aca65075e1fc8e73943a414af6ea63ee3}{enc2}->getMask(); \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!get\+Source\+Words@{get\+Source\+Words}}
+\index{get\+Source\+Words@{get\+Source\+Words}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{get\+Source\+Words()}{getSourceWords()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::vector$<$size\+\_\+t$>$\& marian\+::\+Encoder\+State\+Multi\+S2\+S\+::get\+Source\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1EncoderStateMultiS2S_aef6388ca4d0187cc586d0198d136c618}{}\label{structmarian_1_1EncoderStateMultiS2S_aef6388ca4d0187cc586d0198d136c618}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderState_a21e65549359c321ee7874e56ca04405b}{marian\+::\+Encoder\+State}.
+
+
+
+Definition at line 18 of file multi\+\_\+s2s.\+h.
+
+
+\begin{DoxyCode}
+18                                                     \{
+19     \textcolor{keywordflow}{return} \hyperlink{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}{enc1}->getSourceWords();
+20   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!enc1@{enc1}}
+\index{enc1@{enc1}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{enc1}{enc1}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Encoder\+State\+Multi\+S2\+S\+::enc1}\hypertarget{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}{}\label{structmarian_1_1EncoderStateMultiS2S_a3c2b80012a02a8f306950a7dcd40a145}
+
+
+Definition at line 15 of file multi\+\_\+s2s.\+h.
+
+\index{marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}!enc2@{enc2}}
+\index{enc2@{enc2}!marian\+::\+Encoder\+State\+Multi\+S2S@{marian\+::\+Encoder\+State\+Multi\+S2S}}
+\subsubsection[{\texorpdfstring{enc2}{enc2}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Encoder\+State\+Multi\+S2\+S\+::enc2}\hypertarget{structmarian_1_1EncoderStateMultiS2S_aca65075e1fc8e73943a414af6ea63ee3}{}\label{structmarian_1_1EncoderStateMultiS2S_aca65075e1fc8e73943a414af6ea63ee3}
+
+
+Definition at line 16 of file multi\+\_\+s2s.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{multi__s2s_8h}{multi\+\_\+s2s.\+h}\end{DoxyCompactItemize}

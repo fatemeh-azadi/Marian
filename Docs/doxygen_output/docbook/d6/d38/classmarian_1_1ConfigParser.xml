@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d38/classmarian_1_1ConfigParser">
+<title>marian::ConfigParser class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/d2b/config__parser_8h">&lt;config_parser.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ConfigParser</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/db9/classmarian_1_1ConfigParser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ConfigParser</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d9f/classmarian_1_1ConfigParser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ConfigMode mode_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::program_options::options_description cmdline_options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d38/classmarian_1_1ConfigParser_1a49dfb61d0168ee1d126946f777c355ae">ConfigParser</link> (
+int argc, char ** argv, <link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9">ConfigMode</link> mode, bool validate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1a538eb5f3c97b6a25a2fc0c7a8f015425">parseOptions</link> (
+int argc, char ** argv, bool validate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="d6/d38/classmarian_1_1ConfigParser_1adccbbc01f03e141aa80dd3baf94eae58">getConfig</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/d38/classmarian_1_1ConfigParser_1a667e86d91936eb1d19044891b060e987">has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d6/d38/classmarian_1_1ConfigParser_1a26aabf7e2d79ed5ec4fa1a1c8d46c719">get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1ae77d0dbd400ca620dbf5b053278f4141">addOptionsCommon</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1aa2556e888231001b9f4d02cd742939ba">addOptionsModel</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1aed7318279a0412b11ff0a9e23363c12e">addOptionsTraining</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1aedbe49f4f858e12c403268b365b46865">addOptionsRescore</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d">addOptionsValid</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1a07165d2c1c885c858d8127eb09f00e71">addOptionsTranslate</link> (
+boost::program_options::options_description &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d38/classmarian_1_1ConfigParser_1abbe3a863f0c0599f1aab53e446291b02">validateOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a49dfb61d0168ee1d126946f777c355ae">
+                <title>marian::ConfigParser::ConfigParser (int argc, char **argv, ConfigMode mode, bool validate=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a538eb5f3c97b6a25a2fc0c7a8f015425">
+                <title>void marian::ConfigParser::parseOptions (int argc, char **argv, bool validate)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1adccbbc01f03e141aa80dd3baf94eae58">
+                <title>YAML::Node marian::ConfigParser::getConfig () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a667e86d91936eb1d19044891b060e987">
+                <title>bool marian::ConfigParser::has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a26aabf7e2d79ed5ec4fa1a1c8d46c719">
+                <title>T marian::ConfigParser::get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1ae77d0dbd400ca620dbf5b053278f4141">
+                <title>void marian::ConfigParser::addOptionsCommon (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1aa2556e888231001b9f4d02cd742939ba">
+                <title>void marian::ConfigParser::addOptionsModel (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1aed7318279a0412b11ff0a9e23363c12e">
+                <title>void marian::ConfigParser::addOptionsTraining (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1aedbe49f4f858e12c403268b365b46865">
+                <title>void marian::ConfigParser::addOptionsRescore (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d">
+                <title>void marian::ConfigParser::addOptionsValid (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1a07165d2c1c885c858d8127eb09f00e71">
+                <title>void marian::ConfigParser::addOptionsTranslate (boost::program_options::options_description &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d38/classmarian_1_1ConfigParser_1abbe3a863f0c0599f1aab53e446291b02">
+                <title>void marian::ConfigParser::validateOptions () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

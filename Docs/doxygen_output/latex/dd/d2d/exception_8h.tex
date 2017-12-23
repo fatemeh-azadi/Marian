@@ -1,0 +1,246 @@
+\hypertarget{exception_8h}{}\section{exception.\+h File Reference}
+\label{exception_8h}\index{exception.\+h@{exception.\+h}}
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+Include dependency graph for exception.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d15/exception_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/ddd/exception_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1Exception}{amunmt\+::util\+::\+Exception}
+\item 
+struct \hyperlink{classamunmt_1_1util_1_1Exception_dd/dc0/structamunmt_1_1util_1_1Exception_1_1ExceptionTag}{amunmt\+::util\+::\+Exception\+::\+Exception\+Tag$<$ T $>$}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1ErrnoException}{amunmt\+::util\+::\+Errno\+Exception}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1FileOpenException}{amunmt\+::util\+::\+File\+Open\+Exception}
+\item 
+class \hyperlink{classamunmt_1_1util_1_1OverflowException}{amunmt\+::util\+::\+Overflow\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\item 
+ \hyperlink{namespaceamunmt_1_1util}{amunmt\+::util}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{exception_8h_a2b91e3495cdcf55a65c694187c41b0fa}{U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME}~N\+U\+LL
+\item 
+\#define \hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(Condition,  Exception,  Arg,  Modify)
+\item 
+\#define \hyperlink{exception_8h_a34483ecd6933b58806a1c9e739f0586b}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG}(Exception,  Arg,  Modify)~\hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, Exception, Arg, Modify)
+\item 
+\#define \hyperlink{exception_8h_a38091a5eb7c24c5126eecbdb9f838995}{U\+T\+I\+L\+\_\+\+T\+H\+R\+OW}(Exception,  Modify)~\hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, Exception, , Modify);
+\item 
+\#define \hyperlink{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2}(Modify)~\hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, \hyperlink{classamunmt_1_1util_1_1Exception}{amunmt\+::util\+::\+Exception}, , Modify);
+\item 
+\#define \hyperlink{exception_8h_a41cea4b22d5d60c5b80dcbbabf1f47a6}{U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY}(x)~(x)
+\item 
+\#define \hyperlink{exception_8h_a88f70ef68524264d98ff48104713b309}{U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY}(x)~(x)
+\item 
+\#define \hyperlink{exception_8h_a05876778d738770527a358b87c721871}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}(Condition,  Exception,  Arg,  Modify)
+\item 
+\#define \hyperlink{exception_8h_aeb8c2ad3f9ccb2e20e6f74fd75bd23ce}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF}(Condition,  Exception,  Modify)~\hyperlink{exception_8h_a05876778d738770527a358b87c721871}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}(Condition, Exception, , Modify)
+\item 
+\#define \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2}(Condition,  Modify)~\hyperlink{exception_8h_a05876778d738770527a358b87c721871}{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}(Condition, \hyperlink{classamunmt_1_1util_1_1Exception}{amunmt\+::util\+::\+Exception}, , Modify)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Except , class Data $>$ }\\Except\+::template Exception\+Tag$<$ Except \& $>$\+::Identity \hyperlink{namespaceamunmt_1_1util_ad11a5ac29536e2a368b1eae6d5bdf229}{amunmt\+::util\+::operator$<$$<$} (Except \&e, const Data \&data)
+\item 
+{\footnotesize template$<$unsigned len$>$ }\\std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a6b045ed350fadf8a2a9d7bd567b5c546}{amunmt\+::util\+::\+Check\+Overflow\+Internal} (uint64\+\_\+t value)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a4ab09a7fed571a65813b862e6a2cbd58}{amunmt\+::util\+::\+Check\+Overflow\+Internal$<$ 8 $>$} (uint64\+\_\+t value)
+\item 
+std\+::size\+\_\+t \hyperlink{namespaceamunmt_1_1util_a50f412a2b0340540782aef99cc9f2734}{amunmt\+::util\+::\+Check\+Overflow} (uint64\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Class Documentation}
+\index{amunmt\+::util\+::\+Exception\+::\+Exception\+Tag@{amunmt\+::util\+::\+Exception\+::\+Exception\+Tag}}\label{structamunmt_1_1util_1_1Exception_1_1ExceptionTag}
+\hypertarget{classamunmt_1_1util_1_1Exception_structamunmt_1_1util_1_1Exception_1_1ExceptionTag}{}
+\subsubsection{struct amunmt\+:\+:util\+:\+:Exception\+:\+:Exception\+Tag}
+\subsubsection*{template$<$class T$>$\\*
+struct amunmt\+::util\+::\+Exception\+::\+Exception\+Tag$<$ T $>$}
+
+
+
+Definition at line 34 of file exception.\+h.
+
+
+
+Collaboration diagram for amunmt\+:\+:util\+:\+:Exception\+:\+:Exception\+Tag$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{d0/dec/structamunmt_1_1util_1_1Exception_1_1ExceptionTag__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Class Members}
+typedef T\hypertarget{classamunmt_1_1util_1_1Exception_a522c96bc678aff4fc469bf9b75296f26}{}\label{classamunmt_1_1util_1_1Exception_a522c96bc678aff4fc469bf9b75296f26}
+&
+Identity&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Macro Definition Documentation}
+\index{exception.\+h@{exception.\+h}!amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2@{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2}}
+\index{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2@{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2}{amunmt_UTIL_THROW2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W2(
+\begin{DoxyParamCaption}
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)~{\bf U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, {\bf amunmt\+::util\+::\+Exception}, , Modify);}\hypertarget{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{}\label{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}
+
+
+Definition at line 97 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2@{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2}}
+\index{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2@{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2}{amunmt_UTIL_THROW_IF2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define amunmt\+\_\+\+U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F2(
+\begin{DoxyParamCaption}
+\item[{}]{Condition, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)~{\bf U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}(Condition, {\bf amunmt\+::util\+::\+Exception}, , Modify)}\hypertarget{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{}\label{exception_8h_a361c5b6ab6490fc4572337346f390fb1}
+
+
+Definition at line 121 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME@{U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME}}
+\index{U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME@{U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME}{UTIL_FUNC_NAME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+F\+U\+N\+C\+\_\+\+N\+A\+ME~N\+U\+LL}\hypertarget{exception_8h_a2b91e3495cdcf55a65c694187c41b0fa}{}\label{exception_8h_a2b91e3495cdcf55a65c694187c41b0fa}
+
+
+Definition at line 72 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY@{U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY}}
+\index{U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY@{U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY}{UTIL_LIKELY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+L\+I\+K\+E\+LY(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(x)}\hypertarget{exception_8h_a88f70ef68524264d98ff48104713b309}{}\label{exception_8h_a88f70ef68524264d98ff48104713b309}
+
+
+Definition at line 109 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+T\+H\+R\+OW@{U\+T\+I\+L\+\_\+\+T\+H\+R\+OW}}
+\index{U\+T\+I\+L\+\_\+\+T\+H\+R\+OW@{U\+T\+I\+L\+\_\+\+T\+H\+R\+OW}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+T\+H\+R\+OW}{UTIL_THROW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+T\+H\+R\+OW(
+\begin{DoxyParamCaption}
+\item[{}]{Exception, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)~{\bf U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, Exception, , Modify);}\hypertarget{exception_8h_a38091a5eb7c24c5126eecbdb9f838995}{}\label{exception_8h_a38091a5eb7c24c5126eecbdb9f838995}
+
+
+Definition at line 94 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG}}
+\index{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG}{UTIL_THROW_ARG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+A\+RG(
+\begin{DoxyParamCaption}
+\item[{}]{Exception, }
+\item[{}]{Arg, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)~{\bf U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}(N\+U\+LL, Exception, Arg, Modify)}\hypertarget{exception_8h_a34483ecd6933b58806a1c9e739f0586b}{}\label{exception_8h_a34483ecd6933b58806a1c9e739f0586b}
+
+
+Definition at line 91 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}}
+\index{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND}{UTIL_THROW_BACKEND}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+B\+A\+C\+K\+E\+ND(
+\begin{DoxyParamCaption}
+\item[{}]{Condition, }
+\item[{}]{Exception, }
+\item[{}]{Arg, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)}\hypertarget{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{}\label{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+  Exception UTIL\_e Arg; \(\backslash\)
+  UTIL\_e.SetLocation(\_\_FILE\_\_, \_\_LINE\_\_, \hyperlink{exception_8h_a2b91e3495cdcf55a65c694187c41b0fa}{UTIL\_FUNC\_NAME}, #Exception, Condition); \(\backslash\)
+  UTIL\_e << Modify; \(\backslash\)
+  throw UTIL\_e; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+Definition at line 84 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF}}
+\index{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF}{UTIL_THROW_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{Condition, }
+\item[{}]{Exception, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)~{\bf U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}(Condition, Exception, , Modify)}\hypertarget{exception_8h_aeb8c2ad3f9ccb2e20e6f74fd75bd23ce}{}\label{exception_8h_aeb8c2ad3f9ccb2e20e6f74fd75bd23ce}
+
+
+Definition at line 118 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}}
+\index{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG@{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG}{UTIL_THROW_IF_ARG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+I\+F\+\_\+\+A\+RG(
+\begin{DoxyParamCaption}
+\item[{}]{Condition, }
+\item[{}]{Exception, }
+\item[{}]{Arg, }
+\item[{}]{Modify}
+\end{DoxyParamCaption}
+)}\hypertarget{exception_8h_a05876778d738770527a358b87c721871}{}\label{exception_8h_a05876778d738770527a358b87c721871}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+  if (\hyperlink{exception_8h_a41cea4b22d5d60c5b80dcbbabf1f47a6}{UTIL\_UNLIKELY}(Condition)) \{ \hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{\(\backslash\)}
+\hyperlink{exception_8h_a1b57ce5161b0c78b87aea8e689198a65}{    UTIL\_THROW\_BACKEND}(#Condition, Exception, Arg, Modify); \(\backslash\)
+  \} \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+Definition at line 112 of file exception.\+h.
+
+\index{exception.\+h@{exception.\+h}!U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY@{U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY}}
+\index{U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY@{U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY}!exception.\+h@{exception.\+h}}
+\subsubsection[{\texorpdfstring{U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY}{UTIL_UNLIKELY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+T\+I\+L\+\_\+\+U\+N\+L\+I\+K\+E\+LY(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(x)}\hypertarget{exception_8h_a41cea4b22d5d60c5b80dcbbabf1f47a6}{}\label{exception_8h_a41cea4b22d5d60c5b80dcbbabf1f47a6}
+
+
+Definition at line 103 of file exception.\+h.
+

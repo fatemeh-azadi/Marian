@@ -1,0 +1,463 @@
+\hypertarget{classmarian_1_1SingletonGraph}{}\section{marian\+:\+:Singleton\+Graph$<$ Builder $>$ Class Template Reference}
+\label{classmarian_1_1SingletonGraph}\index{marian\+::\+Singleton\+Graph$<$ Builder $>$@{marian\+::\+Singleton\+Graph$<$ Builder $>$}}
+
+
+{\ttfamily \#include $<$graph\+\_\+group.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Singleton\+Graph$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{db/d1e/classmarian_1_1SingletonGraph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Singleton\+Graph$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d7/de9/classmarian_1_1SingletonGraph__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Builder \hyperlink{classmarian_1_1SingletonGraph_aa1976dc1eff06ae05814084160b1cd3e}{builder\+\_\+type}
+\item 
+typedef Builder\+::dataset\+\_\+type \hyperlink{classmarian_1_1SingletonGraph_a6bb5603e1b8641cd65bd7b032cbecefd}{dataset\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmarian_1_1SingletonGraph_a5d46b2cbb40e334e4885ce507fb2019b}{set\+Scheduler} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scheduler}{Scheduler}$<$ \hyperlink{classmarian_1_1SingletonGraph_a6bb5603e1b8641cd65bd7b032cbecefd}{dataset\+\_\+type} $>$$>$ scheduler)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1SingletonGraph_a64ed90859cc12969682365c9dff9c8ae}{Singleton\+Graph} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_a4fdb7d93ca5e9d4b219a4dc8f761be0b}{update} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_a0cd71fba2f6c9b6d41f043d3000270a7}{load} ()
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}{save} (bool final=false)
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_a6c6c46e945ae75e779253a3623237b3b}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, bool final=false)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{data\+::\+Batch\+Stats} $>$ \hyperlink{classmarian_1_1SingletonGraph_a1a06f75eecc4c6548bbdc55538c53f2c}{collect\+Stats} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_a4d30a0f1e811e89be524666e3a197dac}{update\+Moving\+Average} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} mv\+Avg\+Params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, size\+\_\+t batches)
+\item 
+void \hyperlink{classmarian_1_1SingletonGraph_a857b38654fac79ce8a8b584deaf7525c}{execute} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Builder $>$ \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scheduler}{Scheduler}$<$ \hyperlink{classmarian_1_1SingletonGraph_a6bb5603e1b8641cd65bd7b032cbecefd}{dataset\+\_\+type} $>$ $>$ \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mv\+Avg\+Graph\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{mv\+Avg\+\_\+} \{false\}
+\item 
+float \hyperlink{classmarian_1_1SingletonGraph_aa594adad6639933f26d5e50ef8bdb0f5}{mv\+Decay\+\_\+} \{0.\+9999\}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Builder$>$\\*
+class marian\+::\+Singleton\+Graph$<$ Builder $>$}
+
+
+
+Definition at line 43 of file graph\+\_\+group.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!builder\+\_\+type@{builder\+\_\+type}}
+\index{builder\+\_\+type@{builder\+\_\+type}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{builder\+\_\+type}{builder_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ typedef Builder {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::{\bf builder\+\_\+type}}\hypertarget{classmarian_1_1SingletonGraph_aa1976dc1eff06ae05814084160b1cd3e}{}\label{classmarian_1_1SingletonGraph_aa1976dc1eff06ae05814084160b1cd3e}
+
+
+Definition at line 45 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!dataset\+\_\+type@{dataset\+\_\+type}}
+\index{dataset\+\_\+type@{dataset\+\_\+type}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{dataset\+\_\+type}{dataset_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ typedef Builder\+::dataset\+\_\+type {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::{\bf dataset\+\_\+type}}\hypertarget{classmarian_1_1SingletonGraph_a6bb5603e1b8641cd65bd7b032cbecefd}{}\label{classmarian_1_1SingletonGraph_a6bb5603e1b8641cd65bd7b032cbecefd}
+
+
+Definition at line 46 of file graph\+\_\+group.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!Singleton\+Graph@{Singleton\+Graph}}
+\index{Singleton\+Graph@{Singleton\+Graph}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{Singleton\+Graph(\+Ptr$<$ Config $>$ options, Args...\+args)}{SingletonGraph(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ template$<$class... Args$>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::{\bf Singleton\+Graph} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SingletonGraph_a64ed90859cc12969682365c9dff9c8ae}{}\label{classmarian_1_1SingletonGraph_a64ed90859cc12969682365c9dff9c8ae}
+
+
+Definition at line 117 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+118       : \hyperlink{classmarian_1_1GraphGroup_a5d421471110114cb3c6816eb444043df}{GraphGroup}(options),
+119         \hyperlink{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{mvAvg\_}\{\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"moving-average"})\},
+120         \hyperlink{classmarian_1_1SingletonGraph_aa594adad6639933f26d5e50ef8bdb0f5}{mvDecay\_}\{(float)\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"moving-decay"})\} \{
+121     \textcolor{keywordtype}{size\_t} device = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"})[0];
+122 
+123     \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_} = New<ExpressionGraph>();
+124     graph\_->setDevice(device);
+125     graph\_->reserveWorkspaceMB(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"workspace"}));
+126     \hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_} = \hyperlink{namespacemarian_adcc0fde2e522c9f55abdca1186c9a6db}{Optimizer}(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_});
+127 
+128     \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_} = New<Builder>(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}, args...);
+129   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d5/da9/classmarian_1_1SingletonGraph_a64ed90859cc12969682365c9dff9c8ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!collect\+Stats@{collect\+Stats}}
+\index{collect\+Stats@{collect\+Stats}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{collect\+Stats()}{collectStats()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf data\+::\+Batch\+Stats}$>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::collect\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1SingletonGraph_a1a06f75eecc4c6548bbdc55538c53f2c}{}\label{classmarian_1_1SingletonGraph_a1a06f75eecc4c6548bbdc55538c53f2c}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 179 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+179                                      \{
+180     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->collectStats(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_});
+181   \}
+\end{DoxyCode}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!execute@{execute}}
+\index{execute@{execute}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{execute(\+Ptr$<$ data\+::\+Batch $>$ batch)}{execute(Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_a857b38654fac79ce8a8b584deaf7525c}{}\label{classmarian_1_1SingletonGraph_a857b38654fac79ce8a8b584deaf7525c}
+
+
+Definition at line 70 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+70                                      \{
+71     \textcolor{keyword}{auto} costNode = \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->build(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}, batch);
+72 
+73     \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}->forward();
+74     \textcolor{keywordtype}{float} cost = costNode->scalar();
+75     \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}->backward();
+76 
+77     \hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_}->update(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_});
+78 
+79     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{mvAvg\_}) \{
+80       \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_}) \{
+81         \hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_} = New<ExpressionGraph>();
+82         \hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_}->setDevice(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}->getDevice());
+83         \hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_}->copyParams(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_});
+84       \} \textcolor{keywordflow}{else} \{
+85         \hyperlink{classmarian_1_1SingletonGraph_a4d30a0f1e811e89be524666e3a197dac}{updateMovingAverage}(\hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_}->params()->vals(),
+86                             \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}->params()->vals(),
+87                             \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->numberOfBatches());
+88       \}
+89     \}
+90 
+91     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}) \{
+92       \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->update(cost, batch);
+93 
+94       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->saving())
+95         this->\hyperlink{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}{save}();
+96 
+97       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->validating()) \{
+98         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{mvAvg\_})
+99           \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->validate(\hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_});
+100         \textcolor{keywordflow}{else}
+101           \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->validate(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_});
+102       \}
+103 
+104       \textcolor{comment}{/*if(mvAvg\_) \{}
+105 \textcolor{comment}{        size\_t injectFreq = options\_->get<size\_t>("moving-inject-freq");}
+106 \textcolor{comment}{        if(injectFreq && scheduler\_->numberOfBatches() % injectFreq == 0) \{}
+107 \textcolor{comment}{          LOG(info)->info("\{\} : Injecting moving average into training parameters",}
+108 \textcolor{comment}{                          scheduler\_->numberOfBatches());}
+109 \textcolor{comment}{          graph\_->params()->vals()->copyFrom(mvAvgGraph\_->params()->vals());}
+110 \textcolor{comment}{        \}}
+111 \textcolor{comment}{      \}*/}
+112     \}
+113   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d5/da9/classmarian_1_1SingletonGraph_a857b38654fac79ce8a8b584deaf7525c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!load@{load}}
+\index{load@{load}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1SingletonGraph_a0cd71fba2f6c9b6d41f043d3000270a7}{}\label{classmarian_1_1SingletonGraph_a0cd71fba2f6c9b6d41f043d3000270a7}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 133 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+133               \{
+134     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"no-reload"})) \{
+135       std::string name = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+136 
+137       \textcolor{keywordflow}{if}(boost::filesystem::exists(name)) \{
+138         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_})
+139           \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->load(name);
+140         \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->load(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}, name);
+141       \}
+142     \}
+143   \}
+\end{DoxyCode}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!save@{save}}
+\index{save@{save}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{save(bool final=false)}{save(bool final=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{bool}]{final = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}{}\label{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 145 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+145                                 \{
+146     \textcolor{keyword}{auto} saveGraph = \hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_};
+147     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{mvAvg\_})
+148       saveGraph = \hyperlink{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{mvAvgGraph\_};
+149 
+150     \hyperlink{classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0}{save}(saveGraph, \textcolor{keyword}{final});
+151   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d5/da9/classmarian_1_1SingletonGraph_ae1b4d1afb1be47551f76e9f7b75eb3d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!save@{save}}
+\index{save@{save}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, bool final=false)}{save(Ptr< ExpressionGraph > graph, bool final=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{bool}]{final = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SingletonGraph_a6c6c46e945ae75e779253a3623237b3b}{}\label{classmarian_1_1SingletonGraph_a6c6c46e945ae75e779253a3623237b3b}
+
+
+Definition at line 153 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+153                                                             \{
+154     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"overwrite"})) \{
+155       std::string name = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+156 
+157       \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->save(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}, name, \textcolor{keyword}{true});
+158       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_})
+159         \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->save(name);
+160     \} \textcolor{keywordflow}{else} \{
+161       std::string name = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+162 
+163       \textcolor{keywordflow}{if}(!\textcolor{keyword}{final}) \{
+164         std::string numberOfBatches
+165             = \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_} ? std::to\_string(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->numberOfBatches()) :
+166                            \textcolor{stringliteral}{"unknown"};
+167         std::string nameOverwrite = name;
+168         nameOverwrite.replace(
+169             name.size() - 4, 4, \textcolor{stringliteral}{".iter"} + numberOfBatches + \textcolor{stringliteral}{".npz"});
+170         \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->save(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}, nameOverwrite);
+171       \}
+172 
+173       \hyperlink{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{builder\_}->save(\hyperlink{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{graph\_}, name, \textcolor{keyword}{true});
+174       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_})
+175         \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->save(name);
+176     \}
+177   \}
+\end{DoxyCode}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!set\+Scheduler@{set\+Scheduler}}
+\index{set\+Scheduler@{set\+Scheduler}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{set\+Scheduler(\+Ptr$<$ Scheduler$<$ dataset\+\_\+type $>$$>$ scheduler)}{setScheduler(Ptr< Scheduler< dataset_type >> scheduler)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::set\+Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Scheduler}$<$ {\bf dataset\+\_\+type} $>$$>$}]{scheduler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1SingletonGraph_a5d46b2cbb40e334e4885ce507fb2019b}{}\label{classmarian_1_1SingletonGraph_a5d46b2cbb40e334e4885ce507fb2019b}
+
+
+Definition at line 48 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+48                                                                     \{
+49     \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_} = scheduler;
+50     \textcolor{comment}{// optimizer has to be registered last to see a change of learning rate}
+51     \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->registerTrainingObserver(\hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_});
+52     \hyperlink{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{scheduler\_}->registerTrainingObserver(\hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_});
+53   \}
+\end{DoxyCode}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!update@{update}}
+\index{update@{update}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{update(\+Ptr$<$ data\+::\+Batch $>$ batch)}{update(Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1SingletonGraph_a4fdb7d93ca5e9d4b219a4dc8f761be0b}{}\label{classmarian_1_1SingletonGraph_a4fdb7d93ca5e9d4b219a4dc8f761be0b}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 131 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+131 \{ \hyperlink{classmarian_1_1SingletonGraph_a857b38654fac79ce8a8b584deaf7525c}{execute}(batch); \}
+\end{DoxyCode}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!update\+Moving\+Average@{update\+Moving\+Average}}
+\index{update\+Moving\+Average@{update\+Moving\+Average}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{update\+Moving\+Average(\+Tensor mv\+Avg\+Params, Tensor params, size\+\_\+t batches)}{updateMovingAverage(Tensor mvAvgParams, Tensor params, size_t batches)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::update\+Moving\+Average (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{mv\+Avg\+Params, }
+\item[{{\bf Tensor}}]{params, }
+\item[{size\+\_\+t}]{batches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_a4d30a0f1e811e89be524666e3a197dac}{}\label{classmarian_1_1SingletonGraph_a4d30a0f1e811e89be524666e3a197dac}
+
+
+Definition at line 65 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+65                                                                               \{
+66     \textcolor{keywordtype}{float} decay = min(\hyperlink{classmarian_1_1SingletonGraph_aa594adad6639933f26d5e50ef8bdb0f5}{mvDecay\_}, (\textcolor{keywordtype}{float})(batches + 1) / (\textcolor{keywordtype}{float})(batches + 10));
+67     \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = (decay * \_1) + ((1.f - decay) * \_2), mvAvgParams, params);
+68   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{d5/da9/classmarian_1_1SingletonGraph_a4d30a0f1e811e89be524666e3a197dac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!builder\+\_\+@{builder\+\_\+}}
+\index{builder\+\_\+@{builder\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{builder\+\_\+}{builder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<$Builder$>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::builder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}{}\label{classmarian_1_1SingletonGraph_ab7a764885f417a8b40b406dde8eddd4f}
+
+
+Definition at line 56 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!graph\+\_\+@{graph\+\_\+}}
+\index{graph\+\_\+@{graph\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{graph\+\_\+}{graph_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf Expression\+Graph}$>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::graph\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}{}\label{classmarian_1_1SingletonGraph_af928149755ed8695c3628e3f9299da59}
+
+
+Definition at line 57 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!mv\+Avg\+\_\+@{mv\+Avg\+\_\+}}
+\index{mv\+Avg\+\_\+@{mv\+Avg\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{mv\+Avg\+\_\+}{mvAvg_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ bool {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::mv\+Avg\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}{}\label{classmarian_1_1SingletonGraph_a0042dd92280399263ed59814f6ddc888}
+
+
+Definition at line 62 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!mv\+Avg\+Graph\+\_\+@{mv\+Avg\+Graph\+\_\+}}
+\index{mv\+Avg\+Graph\+\_\+@{mv\+Avg\+Graph\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{mv\+Avg\+Graph\+\_\+}{mvAvgGraph_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf Expression\+Graph}$>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::mv\+Avg\+Graph\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}{}\label{classmarian_1_1SingletonGraph_a758bb5163433f420a53bcaa36702e19b}
+
+
+Definition at line 61 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!mv\+Decay\+\_\+@{mv\+Decay\+\_\+}}
+\index{mv\+Decay\+\_\+@{mv\+Decay\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{mv\+Decay\+\_\+}{mvDecay_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ float {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::mv\+Decay\+\_\+ \{0.\+9999\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_aa594adad6639933f26d5e50ef8bdb0f5}{}\label{classmarian_1_1SingletonGraph_aa594adad6639933f26d5e50ef8bdb0f5}
+
+
+Definition at line 63 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}!scheduler\+\_\+@{scheduler\+\_\+}}
+\index{scheduler\+\_\+@{scheduler\+\_\+}!marian\+::\+Singleton\+Graph@{marian\+::\+Singleton\+Graph}}
+\subsubsection[{\texorpdfstring{scheduler\+\_\+}{scheduler_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf Scheduler}$<${\bf dataset\+\_\+type}$>$ $>$ {\bf marian\+::\+Singleton\+Graph}$<$ Builder $>$\+::scheduler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}{}\label{classmarian_1_1SingletonGraph_a5ed8cebe3408e9a412c201503a24cffe}
+
+
+Definition at line 59 of file graph\+\_\+group.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graph__group_8h}{graph\+\_\+group.\+h}\end{DoxyCompactItemize}

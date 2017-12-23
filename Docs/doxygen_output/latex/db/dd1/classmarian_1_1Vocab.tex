@@ -1,0 +1,463 @@
+\hypertarget{classmarian_1_1Vocab}{}\section{marian\+:\+:Vocab Class Reference}
+\label{classmarian_1_1Vocab}\index{marian\+::\+Vocab@{marian\+::\+Vocab}}
+
+
+{\ttfamily \#include $<$vocab.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Vocab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d8/dc2/classmarian_1_1Vocab__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1Vocab_1_1VocabFreqOrderer}{Vocab\+Freq\+Orderer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Vocab_a0e99d044198e23cd5187d09883e326ca}{Vocab} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Vocab_aac39bcbded54b4a3d173a8db4c37d5fe}{operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&word) const 
+\item 
+\hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \hyperlink{classmarian_1_1Vocab_a2d83592871711da3b20c7a582be4b743}{operator()} (const std\+::vector$<$ std\+::string $>$ \&line\+Tokens, bool add\+E\+OS=true) const 
+\item 
+\hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \hyperlink{classmarian_1_1Vocab_adf744607f7b211cf64541d00d0fd9ab6}{operator()} (const std\+::string \&line, bool add\+E\+OS=true) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmarian_1_1Vocab_a7e70e0e9345e36e8cf8960595e86d409}{operator()} (const \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \&sentence, bool ignore\+E\+OS=true) const 
+\item 
+const std\+::string \& \hyperlink{classmarian_1_1Vocab_a3e12519d40e2f1193741a86303b842e0}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t id) const 
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Vocab_a459153ecfdd0c3ad6b256752adda0e84}{size} () const 
+\item 
+void \hyperlink{classmarian_1_1Vocab_a68171b2369e02232e4e24b04934256a9}{load\+Or\+Create} (const std\+::string \&vocab\+Path, const std\+::string \&text\+Path, int max=0)
+\item 
+void \hyperlink{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{load} (const std\+::string \&vocab\+Path, int max=0)
+\item 
+void \hyperlink{classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1}{create} (const std\+::string \&vocab\+Path, int max, const std\+::string \&train\+Path)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, size\+\_\+t $>$ \hyperlink{classmarian_1_1Vocab_a3ff740ce19200167d306de3643bd49e3}{Str2\+Id}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \hyperlink{classmarian_1_1Vocab_a9208af73b752aeed1ce03ae5c429d897}{Id2\+Str}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Vocab_a3ff740ce19200167d306de3643bd49e3}{Str2\+Id} \hyperlink{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}{str2id\+\_\+}
+\item 
+\hyperlink{classmarian_1_1Vocab_a9208af73b752aeed1ce03ae5c429d897}{Id2\+Str} \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file marian/src/data/vocab.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!Id2\+Str@{Id2\+Str}}
+\index{Id2\+Str@{Id2\+Str}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Id2\+Str}{Id2Str}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$std\+::string$>$ {\bf marian\+::\+Vocab\+::\+Id2\+Str}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Vocab_a9208af73b752aeed1ce03ae5c429d897}{}\label{classmarian_1_1Vocab_a9208af73b752aeed1ce03ae5c429d897}
+
+
+Definition at line 41 of file marian/src/data/vocab.\+h.
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!Str2\+Id@{Str2\+Id}}
+\index{Str2\+Id@{Str2\+Id}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Str2\+Id}{Str2Id}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, size\+\_\+t$>$ {\bf marian\+::\+Vocab\+::\+Str2\+Id}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Vocab_a3ff740ce19200167d306de3643bd49e3}{}\label{classmarian_1_1Vocab_a3ff740ce19200167d306de3643bd49e3}
+
+
+Definition at line 38 of file marian/src/data/vocab.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!Vocab@{Vocab}}
+\index{Vocab@{Vocab}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Vocab()}{Vocab()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Vocab\+::\+Vocab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Vocab_a0e99d044198e23cd5187d09883e326ca}{}\label{classmarian_1_1Vocab_a0e99d044198e23cd5187d09883e326ca}
+
+
+Definition at line 15 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!create@{create}}
+\index{create@{create}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{create(const std\+::string \&vocab\+Path, int max, const std\+::string \&train\+Path)}{create(const std::string &vocabPath, int max, const std::string &trainPath)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Vocab\+::create (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{vocab\+Path, }
+\item[{int}]{max, }
+\item[{const std\+::string \&}]{train\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1}{}\label{classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1}
+
+
+Definition at line 126 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+128                                                \{
+129   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)
+130       ->info(\textcolor{stringliteral}{"Creating vocabulary \{\} from \{\} (max: \{\})"},
+131              vocabPath,
+132              trainPath,
+133              max);
+134 
+135   UTIL\_THROW\_IF2(boost::filesystem::exists(vocabPath),
+136                  \textcolor{stringliteral}{"Vocab file "} << vocabPath << \textcolor{stringliteral}{" exists. Not overwriting"});
+137 
+138   \hyperlink{classInputFileStream}{InputFileStream} trainStrm(trainPath);
+139 
+140   std::string line;
+141   std::unordered\_map<std::string, size\_t> counter;
+142 
+143   std::unordered\_set<Word> seenSpecial;
+144 
+145   \textcolor{keywordflow}{while}(getline((std::istream&)trainStrm, line)) \{
+146     std::vector<std::string> toks;
+147     \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, toks);
+148 
+149     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} std::string& tok : toks) \{
+150       \textcolor{keywordflow}{if}(\hyperlink{namespacemarian_a53db7e8e290296787decc0fd95948535}{SPEC2SYM}.count(tok)) \{
+151         seenSpecial.insert(\hyperlink{namespacemarian_a53db7e8e290296787decc0fd95948535}{SPEC2SYM}.at(tok));
+152         \textcolor{keywordflow}{continue};
+153       \}
+154 
+155       \textcolor{keyword}{auto} iter = counter.find(tok);
+156       \textcolor{keywordflow}{if}(iter == counter.end())
+157         counter[tok] = 1;
+158       \textcolor{keywordflow}{else}
+159         iter->second++;
+160     \}
+161   \}
+162 
+163   std::vector<std::string> vocabVec;
+164   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& p : counter)
+165     vocabVec.push\_back(p.first);
+166 
+167   std::sort(vocabVec.begin(), vocabVec.end(), VocabFreqOrderer(counter));
+168 
+169   YAML::Node vocabYaml;
+170   vocabYaml.force\_insert(\hyperlink{namespacemarian_ae9a4ff3b7d4df0a6ea4a710810c5b6f6}{EOS\_STR}, \hyperlink{namespacemarian_a58eb44c6e8969831f40ee27feeed33ed}{EOS\_ID});
+171   vocabYaml.force\_insert(\hyperlink{namespacemarian_a85fabda4ef9ec625d0c992f81292dc92}{UNK\_STR}, \hyperlink{namespacemarian_abe23e32294ac45b7fe50b5ee8d7da9ba}{UNK\_ID});
+172 
+173   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} word : seenSpecial)
+174     vocabYaml.force\_insert(\hyperlink{namespacemarian_a70398af3e3d1cc14ff372edcdc1a2595}{SYM2SPEC}.at(word), word);
+175 
+176   \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} maxSpec = 1;
+177   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : seenSpecial)
+178     \textcolor{keywordflow}{if}(i > maxSpec)
+179       maxSpec = i;
+180 
+181   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < vocabVec.size(); ++i)
+182     vocabYaml.force\_insert(vocabVec[i], i + maxSpec + 1);
+183 
+184   \hyperlink{classOutputFileStream}{OutputFileStream} vocabStrm(vocabPath);
+185   (std::ostream&)vocabStrm << vocabYaml;
+186 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{db/dd1/classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dd1/classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!load@{load}}
+\index{load@{load}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{load(const std\+::string \&vocab\+Path, int max=0)}{load(const std::string &vocabPath, int max=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Vocab\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{vocab\+Path, }
+\item[{int}]{max = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{}\label{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}
+
+
+Definition at line 84 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+84                                                     \{
+85   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(data)->info(\textcolor{stringliteral}{"Loading vocabulary from \{\}"}, vocabPath);
+86   YAML::Node vocab = YAML::Load(\hyperlink{classInputFileStream}{InputFileStream}(vocabPath));
+87 
+88   std::unordered\_set<Word> seenSpecial;
+89 
+90   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& pair : vocab) \{
+91     \textcolor{keyword}{auto} str = pair.first.as<std::string>();
+92     \textcolor{keyword}{auto} \textcolor{keywordtype}{id} = pair.second.as<\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word}>();
+93 
+94     \textcolor{keywordflow}{if}(\hyperlink{namespacemarian_a53db7e8e290296787decc0fd95948535}{SPEC2SYM}.count(str)) \{
+95       seenSpecial.insert(\textcolor{keywordtype}{id});
+96     \}
+97 
+98     \textcolor{keywordflow}{if}(!max || \textcolor{keywordtype}{id} < (\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word})max) \{
+99       \hyperlink{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}{str2id\_}[str] = id;
+100       \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id} >= \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}.size())
+101         \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}.resize(\textcolor{keywordtype}{id} + 1);
+102       \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}[id] = str;
+103     \}
+104   \}
+105   UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}.empty(), \textcolor{stringliteral}{"Empty vocabulary "} << vocabPath);
+106 
+107   \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}[\hyperlink{namespacemarian_a58eb44c6e8969831f40ee27feeed33ed}{EOS\_ID}] = \hyperlink{namespacemarian_ae9a4ff3b7d4df0a6ea4a710810c5b6f6}{EOS\_STR};
+108   id2str\_[\hyperlink{namespacemarian_abe23e32294ac45b7fe50b5ee8d7da9ba}{UNK\_ID}] = \hyperlink{namespacemarian_a85fabda4ef9ec625d0c992f81292dc92}{UNK\_STR};
+109   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} \textcolor{keywordtype}{id} : seenSpecial)
+110     id2str\_[id] = \hyperlink{namespacemarian_a70398af3e3d1cc14ff372edcdc1a2595}{SYM2SPEC}.at(\textcolor{keywordtype}{id});
+111 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dd1/classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!load\+Or\+Create@{load\+Or\+Create}}
+\index{load\+Or\+Create@{load\+Or\+Create}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{load\+Or\+Create(const std\+::string \&vocab\+Path, const std\+::string \&text\+Path, int max=0)}{loadOrCreate(const std::string &vocabPath, const std::string &textPath, int max=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Vocab\+::load\+Or\+Create (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{vocab\+Path, }
+\item[{const std\+::string \&}]{text\+Path, }
+\item[{int}]{max = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1Vocab_a68171b2369e02232e4e24b04934256a9}{}\label{classmarian_1_1Vocab_a68171b2369e02232e4e24b04934256a9}
+
+
+Definition at line 63 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+65                                   \{
+66   \textcolor{keywordflow}{if}(vocabPath.empty()) \{
+67     \textcolor{keywordflow}{if}(boost::filesystem::exists(trainPath + \textcolor{stringliteral}{".json"})) \{
+68       \hyperlink{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{load}(trainPath + \textcolor{stringliteral}{".json"}, max);
+69       \textcolor{keywordflow}{return};
+70     \}
+71     \textcolor{keywordflow}{if}(boost::filesystem::exists(trainPath + \textcolor{stringliteral}{".yml"})) \{
+72       \hyperlink{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{load}(trainPath + \textcolor{stringliteral}{".yml"}, max);
+73       \textcolor{keywordflow}{return};
+74     \}
+75     \hyperlink{classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1}{create}(trainPath + \textcolor{stringliteral}{".yml"}, max, trainPath);
+76     \hyperlink{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{load}(trainPath + \textcolor{stringliteral}{".yml"}, max);
+77   \} \textcolor{keywordflow}{else} \{
+78     \textcolor{keywordflow}{if}(!boost::filesystem::exists(vocabPath))
+79       \hyperlink{classmarian_1_1Vocab_aeb5be1eaae536e408eac5ab06f50d9c1}{create}(vocabPath, max, trainPath);
+80     \hyperlink{classmarian_1_1Vocab_a8387e1e9b7923b9d84c0b4defd25bd76}{load}(vocabPath, max);
+81   \}
+82 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dd1/classmarian_1_1Vocab_a68171b2369e02232e4e24b04934256a9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::vector$<$ std\+::string $>$ \&line\+Tokens, bool add\+E\+O\+S=true) const }{operator()(const std::vector< std::string > &lineTokens, bool addEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words} marian\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{line\+Tokens, }
+\item[{bool}]{add\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_a2d83592871711da3b20c7a582be4b743}{}\label{classmarian_1_1Vocab_a2d83592871711da3b20c7a582be4b743}
+
+
+Definition at line 25 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+26                                            \{
+27   \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} words(lineTokens.size());
+28   std::transform(lineTokens.begin(),
+29                  lineTokens.end(),
+30                  words.begin(),
+31                  [&](\textcolor{keyword}{const} std::string& w) \{ \textcolor{keywordflow}{return} (*\textcolor{keyword}{this})[w]; \});
+32   \textcolor{keywordflow}{if}(addEOS)
+33     words.push\_back(\hyperlink{namespacemarian_a58eb44c6e8969831f40ee27feeed33ed}{EOS\_ID});
+34   \textcolor{keywordflow}{return} words;
+35 \}
+\end{DoxyCode}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&line, bool add\+E\+O\+S=true) const }{operator()(const std::string &line, bool addEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words} marian\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line, }
+\item[{bool}]{add\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_adf744607f7b211cf64541d00d0fd9ab6}{}\label{classmarian_1_1Vocab_adf744607f7b211cf64541d00d0fd9ab6}
+
+
+Definition at line 37 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+37                                                                 \{
+38   std::vector<std::string> lineTokens;
+39   \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, lineTokens, \textcolor{stringliteral}{" "});
+40   \textcolor{keywordflow}{return} (*\textcolor{keyword}{this})(lineTokens, addEOS);
+41 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{db/dd1/classmarian_1_1Vocab_adf744607f7b211cf64541d00d0fd9ab6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const Words \&sentence, bool ignore\+E\+O\+S=true) const }{operator()(const Words &sentence, bool ignoreEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ marian\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Words} \&}]{sentence, }
+\item[{bool}]{ignore\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_a7e70e0e9345e36e8cf8960595e86d409}{}\label{classmarian_1_1Vocab_a7e70e0e9345e36e8cf8960595e86d409}
+
+
+Definition at line 43 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+44                                                                  \{
+45   std::vector<std::string> decoded;
+46   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < sentence.size(); ++i) \{
+47     \textcolor{keywordflow}{if}((sentence[i] != \hyperlink{namespacemarian_a58eb44c6e8969831f40ee27feeed33ed}{EOS\_ID} || !ignoreEOS)) \{
+48       decoded.push\_back((*\textcolor{keyword}{this})[sentence[i]]);
+49     \}
+50   \}
+51   \textcolor{keywordflow}{return} decoded;
+52 \}
+\end{DoxyCode}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator[](const std\+::string \&word) const }{operator[](const std::string &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Vocab\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{word}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_aac39bcbded54b4a3d173a8db4c37d5fe}{}\label{classmarian_1_1Vocab_aac39bcbded54b4a3d173a8db4c37d5fe}
+
+
+Definition at line 17 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+17                                                     \{
+18   \textcolor{keyword}{auto} it = \hyperlink{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}{str2id\_}.find(word);
+19   \textcolor{keywordflow}{if}(it != \hyperlink{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}{str2id\_}.end())
+20     \textcolor{keywordflow}{return} it->second;
+21   \textcolor{keywordflow}{else}
+22     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_abe23e32294ac45b7fe50b5ee8d7da9ba}{UNK\_ID};
+23 \}
+\end{DoxyCode}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t id) const }{operator[](size_t id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& marian\+::\+Vocab\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_a3e12519d40e2f1193741a86303b842e0}{}\label{classmarian_1_1Vocab_a3e12519d40e2f1193741a86303b842e0}
+
+
+Definition at line 54 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+54                                                   \{
+55   UTIL\_THROW\_IF2(\textcolor{keywordtype}{id} >= \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}.size(), \textcolor{stringliteral}{"Unknown word id: "} << id);
+56   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}[id];
+57 \}
+\end{DoxyCode}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!size@{size}}
+\index{size@{size}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Vocab\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1Vocab_a459153ecfdd0c3ad6b256752adda0e84}{}\label{classmarian_1_1Vocab_a459153ecfdd0c3ad6b256752adda0e84}
+
+
+Definition at line 59 of file marian/src/data/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+59                          \{
+60   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{id2str\_}.size();
+61 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!id2str\+\_\+@{id2str\+\_\+}}
+\index{id2str\+\_\+@{id2str\+\_\+}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{id2str\+\_\+}{id2str_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id2\+Str} marian\+::\+Vocab\+::id2str\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}{}\label{classmarian_1_1Vocab_a9ec3e11b136d7d75d8647471c28a5fac}
+
+
+Definition at line 42 of file marian/src/data/vocab.\+h.
+
+\index{marian\+::\+Vocab@{marian\+::\+Vocab}!str2id\+\_\+@{str2id\+\_\+}}
+\index{str2id\+\_\+@{str2id\+\_\+}!marian\+::\+Vocab@{marian\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{str2id\+\_\+}{str2id_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Str2\+Id} marian\+::\+Vocab\+::str2id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}{}\label{classmarian_1_1Vocab_ab79ee07a9432b1273fc4c92ea7390739}
+
+
+Definition at line 39 of file marian/src/data/vocab.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2data_2vocab_8h}{marian/src/data/vocab.\+h}\item 
+\hyperlink{marian_2src_2data_2vocab_8cpp}{marian/src/data/vocab.\+cpp}\end{DoxyCompactItemize}

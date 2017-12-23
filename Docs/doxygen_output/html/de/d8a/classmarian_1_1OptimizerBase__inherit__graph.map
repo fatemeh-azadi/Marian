@@ -1,0 +1,6 @@
+<map id="marian::OptimizerBase" name="marian::OptimizerBase">
+<area shape="rect" id="node3" href="$d9/df8/classmarian_1_1Adagrad.html" title="{marian::Adagrad\n|&#45; eps_\l&#45; alloc_\l&#45; gt_\l|+ Adagrad()\l&#45; updateImpl()\l}" alt="" coords="5,425,123,546"/>
+<area shape="rect" id="node4" href="$d5/d1e/classmarian_1_1Adam.html" title="{marian::Adam\n|&#45; beta1_\l&#45; beta2_\l&#45; eps_\l&#45; t_\l&#45; mtAlloc_\l&#45; mt_\l&#45; vtAlloc_\l&#45; vt_\l|+ Adam()\l+ updateImpl()\l}" alt="" coords="147,388,253,583"/>
+<area shape="rect" id="node5" href="$d1/da5/classmarian_1_1Sgd.html" title="{marian::Sgd\n||+ Sgd()\l&#45; updateImpl()\l}" alt="" coords="278,439,381,531"/>
+<area shape="rect" id="node2" href="$df/d46/classmarian_1_1TrainingObserver.html" title="{marian::TrainingObserver\n||+ actAfterEpoch()\l+ actAfterBatches()\l+ actAfterStalled()\l}" alt="" coords="116,5,284,112"/>
+</map>

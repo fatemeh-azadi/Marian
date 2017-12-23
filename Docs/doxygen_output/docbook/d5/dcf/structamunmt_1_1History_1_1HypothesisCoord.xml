@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dcf/structamunmt_1_1History_1_1HypothesisCoord">
+<title>amunmt::History::HypothesisCoord struct Reference</title>
+<para>Inheritance diagram for amunmt::History::HypothesisCoord</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d74/structamunmt_1_1History_1_1HypothesisCoord__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::History::HypothesisCoord</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d52/structamunmt_1_1History_1_1HypothesisCoord__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t i</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t j</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float cost</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/dcf/structamunmt_1_1History_1_1HypothesisCoord_1a7b812c07f56397096277c3258f609d88">operator&lt;</link> (
+const <link linkend="d5/dcf/structamunmt_1_1History_1_1HypothesisCoord">HypothesisCoord</link> &amp; hc)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/dcf/structamunmt_1_1History_1_1HypothesisCoord_1a7b812c07f56397096277c3258f609d88">
+                <title>bool amunmt::History::HypothesisCoord::operator&lt; (const HypothesisCoord &amp;hc) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

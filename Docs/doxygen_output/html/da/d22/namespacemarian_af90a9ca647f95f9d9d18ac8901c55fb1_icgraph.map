@@ -1,0 +1,21 @@
+<map id="marian::Element" name="marian::Element">
+<area shape="rect" id="node2" href="$d5/da9/classmarian_1_1SingletonGraph.html#a4d30a0f1e811e89be524666e3a197dac" title="marian::SingletonGraph\l::updateMovingAverage" alt="" coords="184,5,343,47"/>
+<area shape="rect" id="node3" href="$d5/d8a/classmarian_1_1AsyncGraphGroup.html#af104a4373fad7cc8f274423107c58d17" title="marian::AsyncGraphGroup\l::sparseFetchParams" alt="" coords="175,71,351,112"/>
+<area shape="rect" id="node4" href="$d5/d8a/classmarian_1_1AsyncGraphGroup.html#abce2624a961b51f5502efd78c8f3fc82" title="marian::AsyncGraphGroup\l::updateMovingAverage" alt="" coords="175,136,351,177"/>
+<area shape="rect" id="node5" href="$dd/d8b/structmarian_1_1PlusNodeOp.html#a53ac7e34d662a37cea8b27e1fed496dc" title="marian::PlusNodeOp\l::forwardOps" alt="" coords="192,201,335,243"/>
+<area shape="rect" id="node6" href="$d1/de6/structmarian_1_1MinusNodeOp.html#aea7d65faca82ef791bb618a6b7de5467" title="marian::MinusNodeOp\l::forwardOps" alt="" coords="187,267,339,308"/>
+<area shape="rect" id="node7" href="$dc/d98/structmarian_1_1MultNodeOp.html#a659fc65e22c0921a06bd167b0b1c2102" title="marian::MultNodeOp\l::forwardOps" alt="" coords="192,332,335,373"/>
+<area shape="rect" id="node8" href="$df/de1/structmarian_1_1DivNodeOp.html#aa55dcc191fb80a22cbcc60eb08b36b05" title="marian::DivNodeOp::\lforwardOps" alt="" coords="191,397,336,439"/>
+<area shape="rect" id="node9" href="$d1/df0/structmarian_1_1ScalarAddNodeOp.html#a539179a95c828073b865e721140223f6" title="marian::ScalarAddNodeOp\l::forwardOps" alt="" coords="175,463,352,504"/>
+<area shape="rect" id="node10" href="$d2/d6d/structmarian_1_1ScalarMultNodeOp.html#aea3d4960c02b19c9c1ce9a82a0612bed" title="marian::ScalarMultNodeOp\l::forwardOps" alt="" coords="174,528,353,569"/>
+<area shape="rect" id="node11" href="$dc/d06/structmarian_1_1LogitNodeOp.html#a01cdefe75c98513764cdbcdc8999b5ef" title="marian::LogitNodeOp\l::forwardOps" alt="" coords="191,593,336,635"/>
+<area shape="rect" id="node12" href="$d9/d8a/structmarian_1_1TanhNodeOp.html#a96a8cfc7646b2b73b421a099cabdb579" title="marian::TanhNodeOp\l::forwardOps" alt="" coords="190,659,337,700"/>
+<area shape="rect" id="node13" href="$d6/daf/structmarian_1_1ReLUNodeOp.html#aa38a8dc93b07420cf7a1dcae7a23dce9" title="marian::ReLUNodeOp\l::forwardOps" alt="" coords="188,724,339,765"/>
+<area shape="rect" id="node14" href="$d0/d51/structmarian_1_1LogNodeOp.html#a0ad5ecdd99694a41ddd443700f03b52b" title="marian::LogNodeOp::\lforwardOps" alt="" coords="190,789,337,831"/>
+<area shape="rect" id="node15" href="$d5/dc7/structmarian_1_1ExpNodeOp.html#af16da957d7201c081c7ccac9e2122a2e" title="marian::ExpNodeOp::\lforwardOps" alt="" coords="189,855,337,896"/>
+<area shape="rect" id="node16" href="$d3/d71/structmarian_1_1SqrtNodeOp.html#aeefdf4eab958bdab2b4f8a70dcbc6c15" title="marian::SqrtNodeOp\l::forwardOps" alt="" coords="193,920,334,961"/>
+<area shape="rect" id="node17" href="$db/dd5/structmarian_1_1SquareNodeOp.html#a9830637ea6eb13dfbadf8478e585049b" title="marian::SquareNodeOp\l::forwardOps" alt="" coords="184,985,343,1027"/>
+<area shape="rect" id="node18" href="$d4/d57/structmarian_1_1NegNodeOp.html#a13e2bb54f68b3d7d42cc21dcbfdb0b26" title="marian::NegNodeOp::\lforwardOps" alt="" coords="189,1051,338,1092"/>
+<area shape="rect" id="node19" href="$df/da9/structmarian_1_1LexicalProbNodeOp.html#aaa0bb6a2dd3d270abfabc505bffedb50" title="marian::LexicalProbNodeOp\l::forward" alt="" coords="171,1116,356,1157"/>
+<area shape="rect" id="node20" href="$df/da9/structmarian_1_1LexicalProbNodeOp.html#a494a1751a4a92064d0b6f88672e67e69" title="marian::LexicalProbNodeOp\l::backward" alt="" coords="171,1181,356,1223"/>
+</map>

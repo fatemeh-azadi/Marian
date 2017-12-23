@@ -1,0 +1,144 @@
+\hypertarget{matrix__functions_8h}{}\section{matrix\+\_\+functions.\+h File Reference}
+\label{matrix__functions_8h}\index{matrix\+\_\+functions.\+h@{matrix\+\_\+functions.\+h}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$cublas\+\_\+v2.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/execution\+\_\+policy.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/functional.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}gpu/mblas/thrust\+\_\+functions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpu/mblas/matrix.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpu/mblas/matrix\+\_\+wrapper.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpu/mblas/handles.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpu/mblas/nth\+\_\+element\+\_\+kernels.\+h\char`\"{}}\\*
+Include dependency graph for matrix\+\_\+functions.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d13/matrix__functions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc0/matrix__functions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU}{amunmt\+::\+G\+PU}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas}{amunmt\+::\+G\+P\+U\+::mblas}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS}~512
+\item 
+\#define \hyperlink{matrix__functions_8h_aba7f789f3266685ad8840806656e3692}{M\+A\+X\+\_\+\+B\+L\+O\+C\+KS}~65535
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class M $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_acd328e19f90abba621b306ccfa9ac0a5}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug} (const M \&m, size\+\_\+t pos=0, size\+\_\+t l=8)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aabb52352b84ff8df12e584cc48f0c150}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug} (const mblas\+::\+Array$<$ T $>$ \&vec, size\+\_\+t verbosity=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a0da5f0038d776f323a166d9deecac270}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Debug} (const std\+::vector$<$ T $>$ \&vec, size\+\_\+t verbosity=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{amunmt\+::\+G\+P\+U\+::mblas\+::copy} (const T $\ast$in, size\+\_\+t count, T $\ast$out, cuda\+Memcpy\+Kind kind)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aae3149752683fc6c3d719c495c161cbc}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Fill} (Matrix \&In, float value=0.\+0f)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Swap} (Matrix \&Out, Matrix \&In)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae4b56d534b95189bf183d6008e2d7e45}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Mean} (Matrix \&Out, const Matrix \&In, const mblas\+::\+I\+Matrix \&sentence\+Lengths)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Weighted\+Mean} (Matrix \&Out, const Matrix \&Weights, const Matrix \&In, const mblas\+::\+Array$<$ uint $>$ \&mapping)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Transpose} (Matrix \&Out, const Matrix \&In)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a671f08d54e14b86a354517acc8d457e2}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Transpose} (Matrix \&Out)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy} (Matrix \&Out, const Matrix \&In)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aff338966a337172d52673594c7a31474}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Paste\+Row} (Matrix \&Out, const Matrix \&In, const size\+\_\+t r=0, const size\+\_\+t c=0)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aea9adf68efb5a26cb9bca66189c1786c}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Paste\+Rows} (Matrix \&Out, const Matrix \&In, const size\+\_\+t row\+No, size\+\_\+t col\+No=0)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a4cbcf6af0265debf12e8348d2eea6daa}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy\+Row} (Matrix \&Out, const Matrix \&In, const size\+\_\+t r=0, const size\+\_\+t c=0)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Concat} (Matrix \&Out, const Matrix \&In)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac4634f9a58b95ccdd997393c75a9fc69}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Map\+Matrix} (Matrix \&state, const mblas\+::\+I\+Matrix \&sentence\+Lengths, size\+\_\+t i)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab9e2664595a60723ce6158c22f2ed527}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Copy\+Rows} (Matrix \&Out, const Matrix \&In, const mblas\+::\+Array$<$ uint $>$ \&indices)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Assemble} (Matrix \&Out, const Matrix \&In, const mblas\+::\+Array$<$ uint $>$ \&indices)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aacbc57fa7bf5c1fac6abbd44a9832c8d}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Slice} (Matrix \&Out, const Matrix \&In, size\+\_\+t n, size\+\_\+t dim)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Prod} (Matrix \&C, const Matrix \&A, const Matrix \&B, bool transA=false, bool transB=false)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Softmax} (Matrix \&Out, const mblas\+::\+Array$<$ uint $>$ \&batch\+Ids, const mblas\+::\+I\+Matrix \&sentence\+Lengths, size\+\_\+t batch\+Size)
+\item 
+Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a25593e31e47b2518b1fc922e3b0a1a77}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Log\+Softmax} (Matrix \&Out)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a60fe9588f1af65f7b3f39b69aadebe9c}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in1\+Wrap, const Matrix\+Wrapper$<$ float $>$ in2\+Wrap, const Matrix\+Wrapper$<$ uint $>$ batch\+Mapping\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast} (Functor functor, Matrix \&out, const Matrix \&in1, const Matrix \&in2, const mblas\+::\+Array$<$ uint $>$ \&batch\+Mapping, size\+\_\+t src\+Size)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_abb917582af813cef1c2292204dbf327b}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast\+Vec\+Column} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a468e534364a213f40977fad2c8ce6024}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast\+Vec\+Column} (Functor functor, Matrix \&Out, const mblas\+::\+Array$<$ float $>$ \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac798f85afe19741e1c3bc34d516d6545}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Broadcast\+Vec} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Broadcast\+Vec} (Functor functor, Matrix \&Out, const Matrix \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a2af92dc8b21ca5e91d449759338b8c2c}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_adc0a1bee5e001b28e10bff88e940b284}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Element} (Functor functor, Matrix \&Out)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a0712a4ff2aa70bb93b88666856ff3f13}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a138142180375dfb251db78a6a377d8fe}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Element} (Functor functor, Matrix \&Out, const Matrix \&In)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aa6fb358a30ce9510db093cfce4aa4f7f}{amunmt\+::\+G\+P\+U\+::mblas\+::g\+Element} (Functor functor, Matrix\+Wrapper$<$ float $>$ out\+Wrap, const Matrix\+Wrapper$<$ float $>$ in1\+Wrap, const Matrix\+Wrapper$<$ float $>$ in2\+Wrap)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\Matrix \& \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac9aba8feb376d85497281715e31ef4ae}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Element} (Functor functor, Matrix \&Out, const Matrix \&In1, const Matrix \&In2)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_acc42d3fa7b4113baf1824863975336eb}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Set\+Column} (Matrix \&In, int no\+Column, float value)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Normalization} (Matrix \&out, const Matrix \&in, const Matrix \&alpha, const Matrix \&beta, float eps)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae1115239ef99415332b16c92bb64ca2d}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Normalization} (Matrix \&out, const Matrix \&in, const Matrix \&alpha, float eps)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ac32bfddb0814404f44facd8cf8b9a810}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Log\+Softmax\+And\+N\+Best} (mblas\+::\+Array$<$ Nth\+Out\+Batch $>$ \&n\+Best, const Matrix \&in, const Matrix \&b4, const mblas\+::\+Array$<$ float $>$ \&costs, bool forbid\+U\+NK, uint max\+Beam\+Size, const std\+::vector$<$ uint $>$ \&beam\+Sizes, uint beam\+Size\+Sum, bool is\+First)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab76a2b350282de9a3eaea50aab7dc329}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Test\+Mem\+Cpy} (size\+\_\+t size, const T $\ast$data1)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_aaef53311a23d2ea53d71d0ae0cfe73d0}{amunmt\+::\+G\+P\+U\+::mblas\+::\+Test\+Mem\+Cpy} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{matrix\+\_\+functions.\+h@{matrix\+\_\+functions.\+h}!M\+A\+X\+\_\+\+B\+L\+O\+C\+KS@{M\+A\+X\+\_\+\+B\+L\+O\+C\+KS}}
+\index{M\+A\+X\+\_\+\+B\+L\+O\+C\+KS@{M\+A\+X\+\_\+\+B\+L\+O\+C\+KS}!matrix\+\_\+functions.\+h@{matrix\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+B\+L\+O\+C\+KS}{MAX_BLOCKS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+B\+L\+O\+C\+KS~65535}\hypertarget{matrix__functions_8h_aba7f789f3266685ad8840806656e3692}{}\label{matrix__functions_8h_aba7f789f3266685ad8840806656e3692}
+
+
+Definition at line 4 of file matrix\+\_\+functions.\+h.
+
+\index{matrix\+\_\+functions.\+h@{matrix\+\_\+functions.\+h}!M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS@{M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS}}
+\index{M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS@{M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS}!matrix\+\_\+functions.\+h@{matrix\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS}{MAX_THREADS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS~512}\hypertarget{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{}\label{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}
+
+
+Definition at line 3 of file matrix\+\_\+functions.\+h.
+

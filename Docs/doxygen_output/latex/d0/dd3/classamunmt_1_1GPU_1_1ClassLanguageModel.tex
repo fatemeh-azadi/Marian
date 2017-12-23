@@ -1,0 +1,166 @@
+\hypertarget{classamunmt_1_1GPU_1_1ClassLanguageModel}{}\section{amunmt\+:\+:G\+PU\+:\+:Class\+Language\+Model Class Reference}
+\label{classamunmt_1_1GPU_1_1ClassLanguageModel}\index{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}}
+
+
+{\ttfamily \#include $<$class\+\_\+language\+\_\+model.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Class\+Language\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d6/df4/classamunmt_1_1GPU_1_1ClassLanguageModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Class\+Language\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d87/classamunmt_1_1GPU_1_1ClassLanguageModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_aaaee32c80317f443104914d0079410d7}{Class\+Language\+Model} (const \hyperlink{classLM}{LM} \&lm, const std\+::string \&class\+Path)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_a0cbf0d5fec22724b1e8e33e4aa6f779c}{Score} (const \hyperlink{classamunmt_1_1God}{God} \&god, const \hyperlink{classamunmt_1_1State}{State} \&in, Prob \&prob, \hyperlink{classamunmt_1_1State}{State} \&out)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLanguageModelState}{Language\+Model\+State} \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{L\+M\+State}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word} $>$ $>$ \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ad0a4765e122ba062501ef2112bcce7c0}{classes\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file class\+\_\+language\+\_\+model.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}!L\+M\+State@{L\+M\+State}}
+\index{L\+M\+State@{L\+M\+State}!amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}}
+\subsubsection[{\texorpdfstring{L\+M\+State}{LMState}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Language\+Model\+State} {\bf amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model\+::\+L\+M\+State}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{}\label{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}
+
+
+Definition at line 12 of file class\+\_\+language\+\_\+model.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}!Class\+Language\+Model@{Class\+Language\+Model}}
+\index{Class\+Language\+Model@{Class\+Language\+Model}!amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}}
+\subsubsection[{\texorpdfstring{Class\+Language\+Model(const L\+M \&lm, const std\+::string \&class\+Path)}{ClassLanguageModel(const LM &lm, const std::string &classPath)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model\+::\+Class\+Language\+Model (
+\begin{DoxyParamCaption}
+\item[{const {\bf LM} \&}]{lm, }
+\item[{const std\+::string \&}]{class\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1ClassLanguageModel_aaaee32c80317f443104914d0079410d7}{}\label{classamunmt_1_1GPU_1_1ClassLanguageModel_aaaee32c80317f443104914d0079410d7}
+
+
+Definition at line 16 of file class\+\_\+language\+\_\+model.\+h.
+
+
+\begin{DoxyCode}
+18     : \hyperlink{classLanguageModel_ae49d1d4f89ed5d16c727772fcbb9f886}{LanguageModel}(lm),
+19       \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ad0a4765e122ba062501ef2112bcce7c0}{classes\_}(LoadClasses(classPath))
+20     \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}!Score@{Score}}
+\index{Score@{Score}!amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}}
+\subsubsection[{\texorpdfstring{Score(const God \&god, const State \&in, Prob \&prob, State \&out)}{Score(const God &god, const State &in, Prob &prob, State &out)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model\+::\+Score (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const {\bf State} \&}]{in, }
+\item[{Prob \&}]{prob, }
+\item[{{\bf State} \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1ClassLanguageModel_a0cbf0d5fec22724b1e8e33e4aa6f779c}{}\label{classamunmt_1_1GPU_1_1ClassLanguageModel_a0cbf0d5fec22724b1e8e33e4aa6f779c}
+
+
+Definition at line 22 of file class\+\_\+language\+\_\+model.\+h.
+
+
+\begin{DoxyCode}
+24                                    \{
+25       
+26       \textcolor{keyword}{const} \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{LMState}& lmIn = in.get<\hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{LMState}>();
+27       \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{LMState}& lmOut = out.get<\hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel_ae3570f0dd0a320300e83f2d282865640}{LMState}>();
+28       
+29       \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} = prob.dim(0);
+30       \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = prob.Cols();
+31       
+32       std::vector<float> costs(rows * cols);
+33       \textcolor{keyword}{const} std::vector<KenlmState>& inStates = lmIn.GetStates();
+34       std::vector<KenlmState>& outStates = lmOut.GetStates();
+35       outStates.resize(rows * cols);
+36     
+37       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < inStates.size(); i++) \{
+38           \hyperlink{kenlm_8h_ac0671733f284e84250e464637645ade4}{KenlmState} stateUnk;
+39           \textcolor{keywordtype}{float} costUnk = \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_aefaa618805be0cdcfe1a358f5d6ed486}{Score}(inStates[i], 0, stateUnk);
+40           std::fill(costs.begin() + i * \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}, costs.begin() + i * cols + 
+      \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}, costUnk);
+41           std::fill(outStates.begin() + i * \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}, outStates.begin() + i * cols + 
+      \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}, stateUnk);
+42       \}
+43       
+44       \{  
+45         ThreadPool pool(god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"kenlm-batch-threads"}));
+46         \textcolor{keywordtype}{size\_t} batchSize = god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"kenlm-batch-size"});
+47         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} batchStart = 0; batchStart < \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_adee9e7617ec788bcf48ca57555aac428}{size}(); batchStart += batchSize) \{
+48           \textcolor{keyword}{auto} call = [batchStart, batchSize, \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols}, \textcolor{keyword}{this}, &costs, &inStates, &outStates] \{
+49             \textcolor{keywordtype}{size\_t} batchEnd = min(batchStart + batchSize, \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_adee9e7617ec788bcf48ca57555aac428}{size}());
+50             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_a04fc742595c0ac2642e3b700d329af83}{begin}() + batchStart; it != \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_a04fc742595c0ac2642e3b700d329af83}{begin}() + batchEnd; ++it)
+51               \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < inStates.size(); i++)
+52                 costs[i * cols + it->second] = \hyperlink{classLanguageModel_a16259871203adfacf8617ecd5e29f6de}{lm\_}.\hyperlink{classLM_aefaa618805be0cdcfe1a358f5d6ed486}{Score}(inStates[i], it->first, outStates[i * cols
+       + it->second]);
+53           \};
+54           pool.enqueue(call);
+55         \}
+56       \}
+57       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{algo::copy}(costs.begin(), costs.end(), prob.begin());
+58     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dd3/classamunmt_1_1GPU_1_1ClassLanguageModel_a0cbf0d5fec22724b1e8e33e4aa6f779c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}!classes\+\_\+@{classes\+\_\+}}
+\index{classes\+\_\+@{classes\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model@{amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model}}
+\subsubsection[{\texorpdfstring{classes\+\_\+}{classes_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf Word}$>$ $>$ amunmt\+::\+G\+P\+U\+::\+Class\+Language\+Model\+::classes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1ClassLanguageModel_ad0a4765e122ba062501ef2112bcce7c0}{}\label{classamunmt_1_1GPU_1_1ClassLanguageModel_ad0a4765e122ba062501ef2112bcce7c0}
+
+
+Definition at line 61 of file class\+\_\+language\+\_\+model.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class__language__model_8h}{class\+\_\+language\+\_\+model.\+h}\end{DoxyCompactItemize}

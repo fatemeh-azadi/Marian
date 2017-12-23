@@ -1,0 +1,214 @@
+\hypertarget{classmarian_1_1rnn_1_1RNNFactory}{}\section{marian\+:\+:rnn\+:\+:R\+N\+N\+Factory Class Reference}
+\label{classmarian_1_1rnn_1_1RNNFactory}\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:R\+N\+N\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d5/dcb/classmarian_1_1rnn_1_1RNNFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:R\+N\+N\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{dd/d4f/classmarian_1_1rnn_1_1RNNFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1RNNFactory_a32d3269b5b22dea0df81cbafe5837afc}{R\+N\+N\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ R\+NN $>$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a91f14f73bcd34cbb89a8c4312ab0856f}{construct} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ R\+NN $>$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory_ae647cee723e7f64426034148056eb97e}{operator-\/$>$} ()
+\item 
+{\footnotesize template$<$class F $>$ }\\\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory}{R\+N\+N\+Factory} $>$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a9e63249dba7f6dc38f7cfc99429ae0c4}{push\+\_\+back} (const F \&f)
+\item 
+\hyperlink{classmarian_1_1rnn_1_1RNNFactory}{R\+N\+N\+Factory} \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a3d879b73cb33a440604b610f21dd823a}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1CellFactory}{Cell\+Factory} $>$ $>$ \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layer\+Factories\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 158 of file rnn/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!R\+N\+N\+Factory@{R\+N\+N\+Factory}}
+\index{R\+N\+N\+Factory@{R\+N\+N\+Factory}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{RNNFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+R\+N\+N\+Factory\+::\+R\+N\+N\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_a32d3269b5b22dea0df81cbafe5837afc}{}\label{classmarian_1_1rnn_1_1RNNFactory_a32d3269b5b22dea0df81cbafe5837afc}
+
+
+Definition at line 163 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+163 : \hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!clone@{clone}}
+\index{clone@{clone}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{clone()}{clone()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+N\+N\+Factory} marian\+::rnn\+::\+R\+N\+N\+Factory\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_a3d879b73cb33a440604b610f21dd823a}{}\label{classmarian_1_1rnn_1_1RNNFactory_a3d879b73cb33a440604b610f21dd823a}
+
+
+Definition at line 207 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+207                      \{
+208     \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a32d3269b5b22dea0df81cbafe5837afc}{RNNFactory} aClone(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_});
+209     aClone.options\_->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+210     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} lf : \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layerFactories\_})
+211       aClone.push\_back(lf->clone());
+212     \textcolor{keywordflow}{return} aClone;
+213   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d7b/classmarian_1_1rnn_1_1RNNFactory_a3d879b73cb33a440604b610f21dd823a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$R\+NN$>$ marian\+::rnn\+::\+R\+N\+N\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_a91f14f73bcd34cbb89a8c4312ab0856f}{}\label{classmarian_1_1rnn_1_1RNNFactory_a91f14f73bcd34cbb89a8c4312ab0856f}
+
+
+Definition at line 165 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+165                        \{
+166     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn} = New<RNN>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+167     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layerFactories\_}.size(); ++i) \{
+168       \textcolor{keyword}{auto} lf = \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layerFactories\_}[i];
+169 
+170       lf->getOptions()->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+171       \textcolor{keywordflow}{if}(i > 0) \{
+172         \textcolor{keywordtype}{int} dimInput = \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layerFactories\_}[i - 1]->getOptions()->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimState"})
+173           + lf->getOptions()->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimInputExtra"}, 0);
+174 
+175         lf->getOptions()->set(\textcolor{stringliteral}{"dimInput"}, dimInput);
+176       \}
+177 
+178       \textcolor{keywordflow}{if}(opt<rnn::dir>(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{rnn::dir::forward}) == 
+      \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{rnn::dir::alternating\_forward}) \{
+179         \textcolor{keywordflow}{if}(i % 2 == 0)
+180           lf->getOptions()->set(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{rnn::dir::forward});
+181         \textcolor{keywordflow}{else}
+182           lf->getOptions()->set(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{rnn::dir::backward});
+183       \}
+184 
+185       \textcolor{keywordflow}{if}(opt<rnn::dir>(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{rnn::dir::forward}) == 
+      \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{rnn::dir::alternating\_backward}) \{
+186         \textcolor{keywordflow}{if}(i % 2 == 1)
+187           lf->getOptions()->set(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{rnn::dir::forward});
+188         \textcolor{keywordflow}{else}
+189           lf->getOptions()->set(\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{rnn::dir::backward});
+190       \}
+191 
+192       \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}->push\_back(lf->construct());
+193     \}
+194     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn};
+195   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$R\+NN$>$ marian\+::rnn\+::\+R\+N\+N\+Factory\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_ae647cee723e7f64426034148056eb97e}{}\label{classmarian_1_1rnn_1_1RNNFactory_ae647cee723e7f64426034148056eb97e}
+
+
+Definition at line 197 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+197                         \{
+198     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a91f14f73bcd34cbb89a8c4312ab0856f}{construct}();
+199   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const F \&f)}{push_back(const F &f)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ {\bf Accumulator}$<${\bf R\+N\+N\+Factory}$>$ marian\+::rnn\+::\+R\+N\+N\+Factory\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const F \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_a9e63249dba7f6dc38f7cfc99429ae0c4}{}\label{classmarian_1_1rnn_1_1RNNFactory_a9e63249dba7f6dc38f7cfc99429ae0c4}
+
+
+Definition at line 202 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+202                                                 \{
+203     \hyperlink{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{layerFactories\_}.push\_back(New<F>(f));
+204     \textcolor{keywordflow}{return} Accumulator<RNNFactory>(*this);
+205   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d7b/classmarian_1_1rnn_1_1RNNFactory_a9e63249dba7f6dc38f7cfc99429ae0c4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}!layer\+Factories\+\_\+@{layer\+Factories\+\_\+}}
+\index{layer\+Factories\+\_\+@{layer\+Factories\+\_\+}!marian\+::rnn\+::\+R\+N\+N\+Factory@{marian\+::rnn\+::\+R\+N\+N\+Factory}}
+\subsubsection[{\texorpdfstring{layer\+Factories\+\_\+}{layerFactories_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Cell\+Factory}$>$ $>$ marian\+::rnn\+::\+R\+N\+N\+Factory\+::layer\+Factories\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}{}\label{classmarian_1_1rnn_1_1RNNFactory_a48cd0925e2073689e4c4b4a8260a4f31}
+
+
+Definition at line 160 of file rnn/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rnn_2constructors_8h}{rnn/constructors.\+h}\end{DoxyCompactItemize}

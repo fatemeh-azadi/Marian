@@ -1,0 +1,23 @@
+<map id="init" name="init">
+<area shape="rect" id="node2" href="$d6/d14/classmarian_1_1Amun.html#a0e8ed942ad3b414f43f29dbb6e9081eb" title="marian::Amun::load" alt="" coords="123,5,257,32"/>
+<area shape="rect" id="node3" href="$d5/d49/amunmt_8cpp.html#a1fa5ce5d158455cf2d152ebcbcdf29d0" title="BOOST_PYTHON_MODULE" alt="" coords="93,56,287,83"/>
+<area shape="rect" id="node4" href="$dd/dc6/classmarian_1_1EncoderBase.html#a02e1594dfe8b093081c24f1aea1a35d6" title="marian::EncoderBase\l::lookup" alt="" coords="117,107,263,149"/>
+<area shape="rect" id="node6" href="$db/d04/classmarian_1_1DecoderBase.html#a6b202f7578740e5f6045e15883bcd1ac" title="marian::DecoderBase\l::groundTruth" alt="" coords="116,173,264,214"/>
+<area shape="rect" id="node8" href="$db/d04/classmarian_1_1DecoderBase.html#aedde227a468dd3d8aa9e94c558d4bd2f" title="marian::DecoderBase\l::selectEmbeddings" alt="" coords="116,238,264,279"/>
+<area shape="rect" id="node11" href="$da/db9/classmarian_1_1ExpressionGraph.html#a67747b40ca80d7dc5b5dbd3d45793cce" title="marian::ExpressionGraph\l::load" alt="" coords="105,303,275,345"/>
+<area shape="rect" id="node12" href="$d5/d8a/classmarian_1_1AsyncGraphGroup.html#aa67a42e3de3f05cacc19971605cb95ba" title="marian::AsyncGraphGroup\l::load" alt="" coords="102,369,278,410"/>
+<area shape="rect" id="node13" href="$dc/df8/iris_8cpp.html#a229b50266006068cfc6cb91a88fec7bf" title="buildIrisClassifier" alt="" coords="129,435,251,461"/>
+<area shape="rect" id="node15" href="$d3/d26/classmarian_1_1models_1_1LeNetModel.html#a7477e8409c126d83dae223d5cbd88f4c" title="Constructs an expression graph representing a feed&#45;forward classifier. " alt="" coords="95,486,285,527"/>
+<area shape="rect" id="node17" href="$dc/d10/classmarian_1_1models_1_1MNISTModel.html#ad6f17d5d5db7302dd4a9daec556ed121" title="Constructs an expression graph representing a feed&#45;forward classifier. " alt="" coords="92,551,288,593"/>
+<area shape="rect" id="node19" href="$da/d22/namespacemarian.html#ae5b4088136fa6f7ebc01aed5a2d65c5c" title="marian::ConvolutionInTime" alt="" coords="101,617,279,644"/>
+<area shape="rect" id="node20" href="$dd/d8d/classmarian_1_1EncoderPooling.html#a676142ec672b7e9e84d8dc539039c57a" title="marian::EncoderPooling\l::build" alt="" coords="354,635,514,677"/>
+<area shape="rect" id="node21" href="$d5/d22/classmarian_1_1EncoderDecoderRec.html#a470e9aaddae95fc1a1d5ecaabf06a1fe" title="marian::EncoderDecoderRec\l::reconstructorGroundTruth" alt="" coords="95,719,285,761"/>
+<area shape="rect" id="node5" href="$d3/dbc/classmarian_1_1EncoderS2S.html#ac7066b7a2aabebd2efce08215a1c00c7" title="marian::EncoderS2S\l::build" alt="" coords="363,107,505,149"/>
+<area shape="rect" id="node7" href="$d1/dcc/classmarian_1_1DecoderHardAtt.html#a20c5fc9460ee067576498a4e1c653706" title="marian::DecoderHardAtt\l::groundTruth" alt="" coords="353,173,515,214"/>
+<area shape="rect" id="node9" href="$d1/dcc/classmarian_1_1DecoderHardAtt.html#a7da3e691169734a9c952c6402e13f379" title="marian::DecoderHardAtt\l::selectEmbeddings" alt="" coords="353,238,515,279"/>
+<area shape="rect" id="node10" href="$d7/d30/classmarian_1_1MultiDecoderHardSoftAtt.html#a2c0c368e276e2db20c116b20497b1bb6" title="marian::MultiDecoderHard\lSoftAtt::selectEmbeddings" alt="" coords="345,303,523,345"/>
+<area shape="rect" id="node14" href="$dc/df8/iris_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="409,435,459,461"/>
+<area shape="rect" id="node16" href="$d3/d26/classmarian_1_1models_1_1LeNetModel.html#a3c8a71b2d5258f947e2745ab4acc706f" title="marian::models::LeNetModel\l::build" alt="" coords="339,486,529,527"/>
+<area shape="rect" id="node18" href="$dc/d10/classmarian_1_1models_1_1MNISTModel.html#aacea07dc6d02c753955564f36df0959c" title="marian::models::MNISTModel\l::build" alt="" coords="336,551,532,593"/>
+<area shape="rect" id="node22" href="$d5/d22/classmarian_1_1EncoderDecoderRec.html#a5d7be4c554cdd6752a8ee5964ff116c2" title="marian::EncoderDecoderRec\l::build" alt="" coords="339,719,529,761"/>
+</map>

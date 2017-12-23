@@ -1,0 +1,206 @@
+\hypertarget{iris_8cpp}{}\section{iris.\+cpp File Reference}
+\label{iris_8cpp}\index{iris.\+cpp@{iris.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}examples/iris/helper.\+cpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}marian.\+h\char`\"{}}\\*
+Include dependency graph for iris.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d97/iris_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{iris_8cpp_a229b50266006068cfc6cb91a88fec7bf}{build\+Iris\+Classifier} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, std\+::vector$<$ float $>$ input\+Data, std\+::vector$<$ float $>$ output\+Data=\{\}, bool train=false)
+\item 
+int \hyperlink{iris_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \hyperlink{iris_8cpp_aeb0c40269f45d0cf1bcac900c955ceb5}{M\+A\+X\+\_\+\+E\+P\+O\+C\+HS} = 200
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{iris.\+cpp@{iris.\+cpp}!build\+Iris\+Classifier@{build\+Iris\+Classifier}}
+\index{build\+Iris\+Classifier@{build\+Iris\+Classifier}!iris.\+cpp@{iris.\+cpp}}
+\subsubsection[{\texorpdfstring{build\+Iris\+Classifier(\+Ptr$<$ Expression\+Graph $>$ graph, std\+::vector$<$ float $>$ input\+Data, std\+::vector$<$ float $>$ output\+Data=\lcurly{}\rcurly{}, bool train=false)}{buildIrisClassifier(Ptr< ExpressionGraph > graph, std::vector< float > inputData, std::vector< float > outputData=\{\}, bool train=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} build\+Iris\+Classifier (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{std\+::vector$<$ float $>$}]{input\+Data, }
+\item[{std\+::vector$<$ float $>$}]{output\+Data = {\ttfamily \{\}}, }
+\item[{bool}]{train = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{iris_8cpp_a229b50266006068cfc6cb91a88fec7bf}{}\label{iris_8cpp_a229b50266006068cfc6cb91a88fec7bf}
+
+
+Definition at line 14 of file iris.\+cpp.
+
+
+\begin{DoxyCode}
+16                                                        \{\},
+17                          \textcolor{keywordtype}{bool} train = \textcolor{keyword}{false}) \{
+18   \textcolor{comment}{// The number of input data}
+19   \textcolor{keywordtype}{int} N = inputData.size() / \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES};
+20 
+21   graph->clear();
+22 
+23   \textcolor{comment}{// Define the input layer}
+24   \textcolor{keyword}{auto} x = graph->constant(\{N, \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES}\},
+25                            \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(inputData));
+26 
+27   \textcolor{comment}{// Define the hidden layer}
+28   \textcolor{keyword}{auto} W1 = graph->param(\textcolor{stringliteral}{"W1"}, \{\hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES}, 5\}, init = 
+      \hyperlink{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{inits::uniform}());
+29   \textcolor{keyword}{auto} b1 = graph->param(\textcolor{stringliteral}{"b1"}, \{1, 5\}, init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+30   \textcolor{keyword}{auto} h = \hyperlink{namespacemarian_ab84fcdb2b1fa95f89e3921aea4027957}{tanh}(\hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(x, W1, b1));
+31 
+32   \textcolor{comment}{// Define the output layer}
+33   \textcolor{keyword}{auto} W2 = graph->param(\textcolor{stringliteral}{"W2"}, \{5, \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{NUM\_LABELS}\}, init = \hyperlink{namespacemarian_1_1inits_a835dcbebcc1ee135e5637b2225eaf9d1}{inits::uniform}());
+34   \textcolor{keyword}{auto} b2 = graph->param(\textcolor{stringliteral}{"b2"}, \{1, \hyperlink{helper_8cpp_a4308aa5ca15a84e929b69f44e78ae00a}{NUM\_LABELS}\}, init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+35   \textcolor{keyword}{auto} o = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(h, W2, b2);
+36 
+37   \textcolor{keywordflow}{if}(train) \{
+38     \textcolor{keyword}{auto} y = graph->constant(\{N\}, init = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(outputData));
+39     \textcolor{comment}{/* Define cross entropy cost on the output layer.}
+40 \textcolor{comment}{     * It can be also defined directly as:}
+41 \textcolor{comment}{     *   -mean(sum(logsoftmax(o) * y, axis=1), axis=0)}
+42 \textcolor{comment}{     * But then `y` requires to be a one-hot-vector, i.e. [0,1,0, 1,0,0, 0,0,1,}
+43 \textcolor{comment}{     * ...] instead of [1, 0, 2, ...].}
+44 \textcolor{comment}{     */}
+45     \textcolor{keyword}{auto} cost = \hyperlink{namespacemarian_a15ec9743709e47180378db974ddbf116}{mean}(\hyperlink{namespacemarian_a37652ca2a00f3c36816fe5fec28104a0}{cross\_entropy}(o, y), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 0);
+46     \textcolor{keywordflow}{return} cost;
+47   \} \textcolor{keywordflow}{else} \{
+48     \textcolor{keyword}{auto} preds = \hyperlink{namespacemarian_a471a2cbd15b4094528a1643abc814bb6}{logsoftmax}(o);
+49     \textcolor{keywordflow}{return} preds;
+50   \}
+51 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/df8/iris_8cpp_a229b50266006068cfc6cb91a88fec7bf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{dc/df8/iris_8cpp_a229b50266006068cfc6cb91a88fec7bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{iris.\+cpp@{iris.\+cpp}!main@{main}}
+\index{main@{main}!iris.\+cpp@{iris.\+cpp}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{iris_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{iris_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definition at line 53 of file iris.\+cpp.
+
+
+\begin{DoxyCode}
+53            \{
+54   \textcolor{comment}{// Initialize global settings}
+55   \hyperlink{marian_2src_2common_2logging_8cpp_ac797ff0d4f04d8deeb12d6abef63d12d}{createLoggers}();
+56 
+57   \textcolor{comment}{// Read data set (all 150 examples)}
+58   std::vector<float> trainX;
+59   std::vector<float> trainY;
+60   \hyperlink{helper_8cpp_a48e064c32fa6ac4d4333cc00f9d158da}{readIrisData}(\textcolor{stringliteral}{"../src/examples/iris/iris.data"}, trainX, trainY);
+61 
+62   \textcolor{comment}{// Split shuffled data into training data (120 examples) and test data (rest}
+63   \textcolor{comment}{// 30 examples)}
+64   \hyperlink{helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0}{shuffleData}(trainX, trainY);
+65   std::vector<float> testX(trainX.end() - 30 * \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES}, trainX.end());
+66   trainX.resize(120 * \hyperlink{helper_8cpp_a39d9d0ea3381086077a6903a316d1990}{NUM\_FEATURES});
+67   std::vector<float> testY(trainY.end() - 30, trainY.end());
+68   trainY.resize(120);
+69 
+70   \{
+71     \textcolor{comment}{// Create network graph}
+72     \textcolor{keyword}{auto} graph = New<ExpressionGraph>();
+73 
+74     \textcolor{comment}{// Set general options}
+75     graph->setDevice(0);
+76     graph->reserveWorkspaceMB(128);
+77 
+78     \textcolor{comment}{// Choose optimizer (Sgd, Adagrad, Adam) and initial learning rate}
+79     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1keywords_a31f73834fdcad7442a99340b90e54910}{opt} = Optimizer<Adam>(0.005);
+80 
+81     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} epoch = 1; epoch <= \hyperlink{iris_8cpp_aeb0c40269f45d0cf1bcac900c955ceb5}{MAX\_EPOCHS}; ++epoch) \{
+82       \textcolor{comment}{// Shuffle data in each epochs}
+83       \hyperlink{helper_8cpp_a2bcad979b966dc26403a8f4e4e9012e0}{shuffleData}(trainX, trainY);
+84 
+85       \textcolor{comment}{// Build classifier}
+86       \textcolor{keyword}{auto} cost = \hyperlink{iris_8cpp_a229b50266006068cfc6cb91a88fec7bf}{buildIrisClassifier}(graph, trainX, trainY, \textcolor{keyword}{true});
+87       
+88       \textcolor{comment}{// Train classifier and update weights}
+89       graph->forward();
+90       graph->backward();
+91       \hyperlink{namespacemarian_1_1keywords_a31f73834fdcad7442a99340b90e54910}{opt}->update(graph);
+92 
+93       \textcolor{keywordflow}{if}(epoch % 10 == 0)
+94         std::cout << \textcolor{stringliteral}{"Epoch: "} << epoch << \textcolor{stringliteral}{" Cost: "} << cost->scalar()
+95                   << std::endl;
+96     \}
+97 
+98     \textcolor{comment}{// Build classifier with test data}
+99     \textcolor{keyword}{auto} probs = \hyperlink{iris_8cpp_a229b50266006068cfc6cb91a88fec7bf}{buildIrisClassifier}(graph, testX);
+100 
+101     \textcolor{comment}{// Print probabilities for debugging. The `debug` function has to be called}
+102     \textcolor{comment}{// prior to computations in the network.}
+103     \textcolor{comment}{// debug(probs, "Classifier probabilities")}
+104 
+105     \textcolor{comment}{// Run classifier}
+106     graph->forward();
+107 
+108     \textcolor{comment}{// Extract predictions}
+109     std::vector<float> preds(testY.size());
+110     probs->val()->get(preds);
+111 
+112     std::cout << \textcolor{stringliteral}{"Accuracy: "} << \hyperlink{helper_8cpp_adf5c5e47905ba030c0798c4f55fa87ad}{calculateAccuracy}(preds, testY) << std::endl;
+113   \}
+114 
+115   \textcolor{keywordflow}{return} 0;
+116 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/df8/iris_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{iris.\+cpp@{iris.\+cpp}!M\+A\+X\+\_\+\+E\+P\+O\+C\+HS@{M\+A\+X\+\_\+\+E\+P\+O\+C\+HS}}
+\index{M\+A\+X\+\_\+\+E\+P\+O\+C\+HS@{M\+A\+X\+\_\+\+E\+P\+O\+C\+HS}!iris.\+cpp@{iris.\+cpp}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+E\+P\+O\+C\+HS}{MAX_EPOCHS}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t M\+A\+X\+\_\+\+E\+P\+O\+C\+HS = 200}\hypertarget{iris_8cpp_aeb0c40269f45d0cf1bcac900c955ceb5}{}\label{iris_8cpp_aeb0c40269f45d0cf1bcac900c955ceb5}
+
+
+Definition at line 11 of file iris.\+cpp.
+

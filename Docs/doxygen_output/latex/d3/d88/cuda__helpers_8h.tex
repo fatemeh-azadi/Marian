@@ -1,0 +1,95 @@
+\hypertarget{cuda__helpers_8h}{}\section{cuda\+\_\+helpers.\+h File Reference}
+\label{cuda__helpers_8h}\index{cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}}
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/exception.\+h\char`\"{}}\\*
+Include dependency graph for cuda\+\_\+helpers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d9/df0/cuda__helpers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/df0/cuda__helpers_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{C\+U\+D\+A\+\_\+\+C\+H\+E\+CK}(ans)~\{ \hyperlink{cuda__helpers_8h_ab3e90881a2476fd461eb2bcfcaa7cf63}{gpu\+Assert}((ans), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}
+\item 
+\#define \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK}(x)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cuda__helpers_8h_ab3e90881a2476fd461eb2bcfcaa7cf63}{gpu\+Assert} (cuda\+Error\+\_\+t code, const char $\ast$file, int line, bool abort=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}!C\+U\+D\+A\+\_\+\+C\+H\+E\+CK@{C\+U\+D\+A\+\_\+\+C\+H\+E\+CK}}
+\index{C\+U\+D\+A\+\_\+\+C\+H\+E\+CK@{C\+U\+D\+A\+\_\+\+C\+H\+E\+CK}!cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}}
+\subsubsection[{\texorpdfstring{C\+U\+D\+A\+\_\+\+C\+H\+E\+CK}{CUDA_CHECK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+U\+D\+A\+\_\+\+C\+H\+E\+CK(
+\begin{DoxyParamCaption}
+\item[{}]{ans}
+\end{DoxyParamCaption}
+)~\{ {\bf gpu\+Assert}((ans), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}}\hypertarget{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{}\label{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}
+
+
+Definition at line 4 of file cuda\+\_\+helpers.\+h.
+
+\index{cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}!C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK@{C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK}}
+\index{C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK@{C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK}!cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}}
+\subsubsection[{\texorpdfstring{C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK}{CUSPARSE_CHECK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+U\+S\+P\+A\+R\+S\+E\+\_\+\+C\+H\+E\+CK(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{}\label{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                     \(\backslash\)
+    cusparseStatus\_t \_c = x;                            \(\backslash\)
+    if(\_c != CUSPARSE\_STATUS\_SUCCESS) \{                 \(\backslash\)
+      printf(\textcolor{stringliteral}{"cusparse fail: %d, file: %s, line: %d\(\backslash\)n"}, \(\backslash\)
+             (\textcolor{keywordtype}{int})\_c,                                   \(\backslash\)
+             \_\_FILE\_\_,                                  \(\backslash\)
+             \_\_LINE\_\_);                                 \(\backslash\)
+      exit(-1);                                         \(\backslash\)
+    \}                                                   \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+Definition at line 17 of file cuda\+\_\+helpers.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}!gpu\+Assert@{gpu\+Assert}}
+\index{gpu\+Assert@{gpu\+Assert}!cuda\+\_\+helpers.\+h@{cuda\+\_\+helpers.\+h}}
+\subsubsection[{\texorpdfstring{gpu\+Assert(cuda\+Error\+\_\+t code, const char $\ast$file, int line, bool abort=true)}{gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void gpu\+Assert (
+\begin{DoxyParamCaption}
+\item[{cuda\+Error\+\_\+t}]{code, }
+\item[{const char $\ast$}]{file, }
+\item[{int}]{line, }
+\item[{bool}]{abort = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{cuda__helpers_8h_ab3e90881a2476fd461eb2bcfcaa7cf63}{}\label{cuda__helpers_8h_ab3e90881a2476fd461eb2bcfcaa7cf63}
+
+
+Definition at line 7 of file cuda\+\_\+helpers.\+h.
+
+
+\begin{DoxyCode}
+10                                          \{
+11   \textcolor{keywordflow}{if}(code != cudaSuccess) \{
+12     UTIL\_THROW2(\textcolor{stringliteral}{"GPUassert: "} << cudaGetErrorString(code) << \textcolor{stringliteral}{" "} << file << \textcolor{stringliteral}{" "}
+13                               << line);
+14   \}
+15 \}
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d9d/structamunmt_1_1GPU_1_1CellLength">
+<title>amunmt::GPU::CellLength struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/ddd/cell_8h">&lt;cell.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::CellLength</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/da1/structamunmt_1_1GPU_1_1CellLength__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::CellLength</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d38/structamunmt_1_1GPU_1_1CellLength__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t output</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t cell</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength_1a2b6806ade4381743d2db8d040ca40345">CellLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength_1a904a9e1eda40461d02f28e8692bb61f3">CellLength</link> (
+size_t cell, size_t output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d9d/structamunmt_1_1GPU_1_1CellLength_1a2b6806ade4381743d2db8d040ca40345">
+                <title>amunmt::GPU::CellLength::CellLength ()=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d9d/structamunmt_1_1GPU_1_1CellLength_1a904a9e1eda40461d02f28e8692bb61f3">
+                <title>amunmt::GPU::CellLength::CellLength (size_t cell, size_t output)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

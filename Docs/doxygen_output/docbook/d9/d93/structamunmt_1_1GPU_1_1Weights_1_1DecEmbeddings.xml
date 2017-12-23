@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings">
+<title>amunmt::GPU::Weights::DecEmbeddings struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d2c/amun_2gpu_2dl4mt_2model_8h">&lt;model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Weights::DecEmbeddings</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d30/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Weights::DecEmbeddings</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d52/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; E_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings_1a86badfe37964f548f5265e93e6b38628">DecEmbeddings</link> (
+const <link linkend="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings">DecEmbeddings</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings_1a3628f64b014e8738a40f4c7abf2f7462">DecEmbeddings</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings_1a86badfe37964f548f5265e93e6b38628">
+                <title>amunmt::GPU::Weights::DecEmbeddings::DecEmbeddings (const DecEmbeddings &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d93/structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings_1a3628f64b014e8738a40f4c7abf2f7462">
+                <title>amunmt::GPU::Weights::DecEmbeddings::DecEmbeddings (const NpzConverter &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dff/structmarian_1_1ElementBinaryNodeOp">
+<title>marian::ElementBinaryNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ElementBinaryNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d8f/structmarian_1_1ElementBinaryNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ElementBinaryNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d46/structmarian_1_1ElementBinaryNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/dff/structmarian_1_1ElementBinaryNodeOp_1ae36592112f9c11758c2d56b9aab0440c">ElementBinaryNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d1/dff/structmarian_1_1ElementBinaryNodeOp_1ab19f15ffa616cc629569f88755c9c725">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d1/dff/structmarian_1_1ElementBinaryNodeOp_1a89eb88dac250c1d77a701579ce1eb23e">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/dff/structmarian_1_1ElementBinaryNodeOp_1ae36592112f9c11758c2d56b9aab0440c">
+                <title>marian::ElementBinaryNodeOp::ElementBinaryNodeOp (Expr a, Expr b, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dff/structmarian_1_1ElementBinaryNodeOp_1ab19f15ffa616cc629569f88755c9c725">
+                <title>Shape marian::ElementBinaryNodeOp::newShape (Expr a, Expr b)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dff/structmarian_1_1ElementBinaryNodeOp_1a89eb88dac250c1d77a701579ce1eb23e">
+                <title>const std::string marian::ElementBinaryNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

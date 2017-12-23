@@ -1,0 +1,126 @@
+\hypertarget{classamunmt_1_1util_1_1ErrnoException}{}\section{amunmt\+:\+:util\+:\+:Errno\+Exception Class Reference}
+\label{classamunmt_1_1util_1_1ErrnoException}\index{amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}}
+
+
+{\ttfamily \#include $<$exception.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:util\+:\+:Errno\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d8/d94/classamunmt_1_1util_1_1ErrnoException__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:util\+:\+:Errno\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d4/d01/classamunmt_1_1util_1_1ErrnoException__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1util_1_1ErrnoException_a13d12b1e827d068b47b08000e07a4b3b}{Errno\+Exception} ()  throw ()
+\item 
+virtual \hyperlink{classamunmt_1_1util_1_1ErrnoException_a8e8d1e0f707481b26abf77af91342e18}{$\sim$\+Errno\+Exception} ()  throw ()
+\item 
+int \hyperlink{classamunmt_1_1util_1_1ErrnoException_adf255b9695a52bf9c24bed5f5413d9e5}{Error} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classamunmt_1_1util_1_1ErrnoException_a865d5044fe0783940c1121c46ea4762b}{errno\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 125 of file exception.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}!Errno\+Exception@{Errno\+Exception}}
+\index{Errno\+Exception@{Errno\+Exception}!amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}}
+\subsubsection[{\texorpdfstring{Errno\+Exception()}{ErrnoException()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::util\+::\+Errno\+Exception\+::\+Errno\+Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classamunmt_1_1util_1_1ErrnoException_a13d12b1e827d068b47b08000e07a4b3b}{}\label{classamunmt_1_1util_1_1ErrnoException_a13d12b1e827d068b47b08000e07a4b3b}
+
+
+Definition at line 77 of file exception.\+cpp.
+
+
+\begin{DoxyCode}
+77                                        : \hyperlink{classamunmt_1_1util_1_1ErrnoException_a865d5044fe0783940c1121c46ea4762b}{errno\_}(errno) \{
+78   \textcolor{keywordtype}{char} buf[200];
+79   buf[0] = 0;
+80 \textcolor{preprocessor}{#if defined(sun) || defined(\_WIN32) || defined(\_WIN64)}
+81   \textcolor{keyword}{const} \textcolor{keywordtype}{char} *add = strerror(errno);
+82 \textcolor{preprocessor}{#else}
+83   \textcolor{keyword}{const} \textcolor{keywordtype}{char} *add = HandleStrerror(strerror\_r(errno, buf, 200), buf);
+84 \textcolor{preprocessor}{#endif}
+85 
+86   \textcolor{keywordflow}{if} (add) \{
+87     *\textcolor{keyword}{this} << add << \textcolor{charliteral}{' '};
+88   \}
+89 \}
+\end{DoxyCode}
+\index{amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}!````~Errno\+Exception@{$\sim$\+Errno\+Exception}}
+\index{````~Errno\+Exception@{$\sim$\+Errno\+Exception}!amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}}
+\subsubsection[{\texorpdfstring{$\sim$\+Errno\+Exception()}{~ErrnoException()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::util\+::\+Errno\+Exception\+::$\sim$\+Errno\+Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1util_1_1ErrnoException_a8e8d1e0f707481b26abf77af91342e18}{}\label{classamunmt_1_1util_1_1ErrnoException_a8e8d1e0f707481b26abf77af91342e18}
+
+
+Definition at line 91 of file exception.\+cpp.
+
+
+\begin{DoxyCode}
+91 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}!Error@{Error}}
+\index{Error@{Error}!amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}}
+\subsubsection[{\texorpdfstring{Error() const }{Error() const }}]{\setlength{\rightskip}{0pt plus 5cm}int amunmt\+::util\+::\+Errno\+Exception\+::\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1util_1_1ErrnoException_adf255b9695a52bf9c24bed5f5413d9e5}{}\label{classamunmt_1_1util_1_1ErrnoException_adf255b9695a52bf9c24bed5f5413d9e5}
+
+
+Definition at line 131 of file exception.\+h.
+
+
+\begin{DoxyCode}
+131 \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1util_1_1ErrnoException_a865d5044fe0783940c1121c46ea4762b}{errno\_}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}!errno\+\_\+@{errno\+\_\+}}
+\index{errno\+\_\+@{errno\+\_\+}!amunmt\+::util\+::\+Errno\+Exception@{amunmt\+::util\+::\+Errno\+Exception}}
+\subsubsection[{\texorpdfstring{errno\+\_\+}{errno_}}]{\setlength{\rightskip}{0pt plus 5cm}int amunmt\+::util\+::\+Errno\+Exception\+::errno\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1util_1_1ErrnoException_a865d5044fe0783940c1121c46ea4762b}{}\label{classamunmt_1_1util_1_1ErrnoException_a865d5044fe0783940c1121c46ea4762b}
+
+
+Definition at line 134 of file exception.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{exception_8h}{exception.\+h}\item 
+\hyperlink{exception_8cpp}{exception.\+cpp}\end{DoxyCompactItemize}

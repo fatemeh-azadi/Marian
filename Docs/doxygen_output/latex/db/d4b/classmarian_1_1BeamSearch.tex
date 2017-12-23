@@ -1,0 +1,296 @@
+\hypertarget{classmarian_1_1BeamSearch}{}\section{marian\+:\+:Beam\+Search Class Reference}
+\label{classmarian_1_1BeamSearch}\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+
+
+{\ttfamily \#include $<$beam\+\_\+search.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Beam\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d4/d6d/classmarian_1_1BeamSearch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1BeamSearch_a282d9a309dd3d7b55856d79e31e36d70}{Beam\+Search} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, const std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scorer}{Scorer} $>$$>$ \&scorers, Args...\+args)
+\item 
+\hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} \hyperlink{classmarian_1_1BeamSearch_af828b92dcf04511ea9cf2816ec9c2ee7}{to\+Hyps} (const std\+::vector$<$ uint $>$ keys, const std\+::vector$<$ float $>$ costs, size\+\_\+t vocab\+Size, const \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} \&beam, std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$$>$ \&states)
+\item 
+\hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} \hyperlink{classmarian_1_1BeamSearch_a416d9f03a6bd3f869e2dcbd1fd091390}{prune\+Beam} (const \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} \&beam)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1History}{History} $>$ \hyperlink{classmarian_1_1BeamSearch_a6ee0fce9e694269a4c59f6afe48a4075}{search} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, size\+\_\+t sentence\+Id=0)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{options\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scorer}{Scorer} $>$ $>$ \hyperlink{classmarian_1_1BeamSearch_a1253640d2177b832316cb1343bb4db03}{scorers\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}{beam\+Size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file beam\+\_\+search.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!Beam\+Search@{Beam\+Search}}
+\index{Beam\+Search@{Beam\+Search}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{Beam\+Search(\+Ptr$<$ Config $>$ options, const std\+::vector$<$ Ptr$<$ Scorer $>$$>$ \&scorers, Args...\+args)}{BeamSearch(Ptr< Config > options, const std::vector< Ptr< Scorer >> &scorers, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Beam\+Search\+::\+Beam\+Search (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{const std\+::vector$<$ {\bf Ptr}$<$ {\bf Scorer} $>$$>$ \&}]{scorers, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BeamSearch_a282d9a309dd3d7b55856d79e31e36d70}{}\label{classmarian_1_1BeamSearch_a282d9a309dd3d7b55856d79e31e36d70}
+
+
+Definition at line 20 of file beam\+\_\+search.\+h.
+
+
+\begin{DoxyCode}
+23       : \hyperlink{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{options\_}(options),
+24         \hyperlink{classmarian_1_1BeamSearch_a1253640d2177b832316cb1343bb4db03}{scorers\_}(scorers),
+25         \hyperlink{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}{beamSize\_}(\hyperlink{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"beam-size"})) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!prune\+Beam@{prune\+Beam}}
+\index{prune\+Beam@{prune\+Beam}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{prune\+Beam(const Beam \&beam)}{pruneBeam(const Beam &beam)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beam} marian\+::\+Beam\+Search\+::prune\+Beam (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{beam}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BeamSearch_a416d9f03a6bd3f869e2dcbd1fd091390}{}\label{classmarian_1_1BeamSearch_a416d9f03a6bd3f869e2dcbd1fd091390}
+
+
+Definition at line 52 of file beam\+\_\+search.\+h.
+
+
+\begin{DoxyCode}
+52                                    \{
+53     \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} newBeam;
+54     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} hyp : beam) \{
+55       \textcolor{keywordflow}{if}(hyp->GetWord() > 0) \{
+56         newBeam.push\_back(hyp);
+57       \}
+58     \}
+59     \textcolor{keywordflow}{return} newBeam;
+60   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{db/d4b/classmarian_1_1BeamSearch_a416d9f03a6bd3f869e2dcbd1fd091390_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!search@{search}}
+\index{search@{search}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{search(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, size\+\_\+t sentence\+Id=0)}{search(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, size_t sentenceId=0)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf History}$>$ marian\+::\+Beam\+Search\+::search (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{size\+\_\+t}]{sentence\+Id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BeamSearch_a6ee0fce9e694269a4c59f6afe48a4075}{}\label{classmarian_1_1BeamSearch_a6ee0fce9e694269a4c59f6afe48a4075}
+
+
+Definition at line 62 of file beam\+\_\+search.\+h.
+
+
+\begin{DoxyCode}
+64                                              \{
+65     \textcolor{keyword}{auto} history = New<History>(sentenceId, \hyperlink{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"normalize"}));
+66     \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} beam(1, New<Hypothesis>());
+67     \textcolor{keywordtype}{bool} first = \textcolor{keyword}{true};
+68     \textcolor{keywordtype}{bool} \textcolor{keyword}{final} = \textcolor{keyword}{false};
+69     std::vector<size\_t> beamSizes(1, \hyperlink{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}{beamSize\_});
+70     \textcolor{keyword}{auto} nth = New<NthElement>(\hyperlink{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}{beamSize\_}, batch->size());
+71     history->Add(beam);
+72 
+73     std::vector<Ptr<ScorerState>> states;
+74 
+75     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} scorer : \hyperlink{classmarian_1_1BeamSearch_a1253640d2177b832316cb1343bb4db03}{scorers\_}) \{
+76       scorer->clear(graph);
+77     \}
+78 
+79     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} scorer : scorers\_) \{
+80       states.push\_back(scorer->startState(graph, batch));
+81     \}
+82 
+83     \textcolor{keywordflow}{do} \{
+84       \textcolor{comment}{//**********************************************************************}
+85       \textcolor{comment}{// create constant containing previous costs for current beam}
+86       std::vector<size\_t> hypIndices;
+87       std::vector<size\_t> embIndices;
+88       \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} prevCosts;
+89       \textcolor{keywordflow}{if}(first) \{
+90         \textcolor{comment}{// no cost}
+91         prevCosts = graph->constant(\{1, 1, 1, 1\},
+92                                     \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(0));
+93       \} \textcolor{keywordflow}{else} \{
+94         std::vector<float> beamCosts;
+95         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} hyp : beam) \{
+96           hypIndices.push\_back(hyp->GetPrevStateIndex());
+97           embIndices.push\_back(hyp->GetWord());
+98           beamCosts.push\_back(hyp->GetCost());
+99         \}
+100         prevCosts
+101             = graph->constant(\{1, 1, 1, (int)beamCosts.size()\},
+102                               \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init} = \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(beamCosts
+      ));
+103       \}
+104 
+105       \textcolor{comment}{//**********************************************************************}
+106       \textcolor{comment}{// prepare costs for beam search}
+107       \textcolor{keyword}{auto} totalCosts = prevCosts;
+108 
+109       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < scorers\_.size(); ++i) \{
+110         states[i] = scorers\_[i]->step(graph, states[i], hypIndices, embIndices);
+111         totalCosts
+112             = totalCosts + scorers\_[i]->getWeight() * states[i]->getProbs();
+113       \}
+114 
+115       \textcolor{keywordflow}{if}(first)
+116         graph->forward();
+117       \textcolor{keywordflow}{else}
+118         graph->forwardNext();
+119 
+120       \textcolor{comment}{//**********************************************************************}
+121       \textcolor{comment}{// suppress specific symbols if not at right positions}
+122       \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"allow-unk"}))
+123         \hyperlink{namespacemarian_a1a6a78f80709472d63948acfbce75000}{suppressUnk}(totalCosts);
+124       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} state : states)
+125         state->blacklist(totalCosts, batch);
+126 
+127       \textcolor{comment}{//**********************************************************************}
+128       \textcolor{comment}{// perform beam search and pruning}
+129       std::vector<unsigned> outKeys;
+130       std::vector<float> outCosts;
+131 
+132       beamSizes[0] = first ? beamSize\_ : beam.size();
+133       nth->getNBestList(beamSizes, totalCosts->val(), outCosts, outKeys, first);
+134 
+135       \textcolor{keywordtype}{int} dimTrgVoc = totalCosts->shape()[1];
+136       beam = \hyperlink{classmarian_1_1BeamSearch_af828b92dcf04511ea9cf2816ec9c2ee7}{toHyps}(outKeys, outCosts, dimTrgVoc, beam, states);
+137 
+138       \textcolor{keyword}{final} = history->size() >= 3 * batch->words();
+139       history->Add(beam, \textcolor{keyword}{final});
+140       beam = \hyperlink{classmarian_1_1BeamSearch_a416d9f03a6bd3f869e2dcbd1fd091390}{pruneBeam}(beam);
+141 
+142       first = \textcolor{keyword}{false};
+143 
+144     \} \textcolor{keywordflow}{while}(!beam.empty() && !\textcolor{keyword}{final});
+145 
+146     \textcolor{keywordflow}{return} history;
+147   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{db/d4b/classmarian_1_1BeamSearch_a6ee0fce9e694269a4c59f6afe48a4075_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!to\+Hyps@{to\+Hyps}}
+\index{to\+Hyps@{to\+Hyps}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{to\+Hyps(const std\+::vector$<$ uint $>$ keys, const std\+::vector$<$ float $>$ costs, size\+\_\+t vocab\+Size, const Beam \&beam, std\+::vector$<$ Ptr$<$ Scorer\+State $>$$>$ \&states)}{toHyps(const std::vector< uint > keys, const std::vector< float > costs, size_t vocabSize, const Beam &beam, std::vector< Ptr< ScorerState >> &states)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beam} marian\+::\+Beam\+Search\+::to\+Hyps (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$}]{keys, }
+\item[{const std\+::vector$<$ float $>$}]{costs, }
+\item[{size\+\_\+t}]{vocab\+Size, }
+\item[{const {\bf Beam} \&}]{beam, }
+\item[{std\+::vector$<$ {\bf Ptr}$<$ {\bf Scorer\+State} $>$$>$ \&}]{states}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1BeamSearch_af828b92dcf04511ea9cf2816ec9c2ee7}{}\label{classmarian_1_1BeamSearch_af828b92dcf04511ea9cf2816ec9c2ee7}
+
+
+Definition at line 27 of file beam\+\_\+search.\+h.
+
+
+\begin{DoxyCode}
+31                                                    \{
+32     \hyperlink{namespacemarian_aebdf5ddcd9e7774939696be6e1ceb8f0}{Beam} newBeam;
+33     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < keys.size(); ++i) \{
+34       \textcolor{keywordtype}{int} embIdx = keys[i] % vocabSize;
+35       \textcolor{keywordtype}{int} hypIdx = keys[i] / vocabSize;
+36       \textcolor{keywordtype}{float} cost = costs[i];
+37 
+38       std::vector<float> breakDown(states.size(), 0);
+39       beam[hypIdx]->GetCostBreakdown().resize(states.size(), 0);
+40 
+41       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < states.size(); ++j)
+42         breakDown[j] = states[j]->breakDown(keys[i])
+43                        + beam[hypIdx]->GetCostBreakdown()[j];
+44 
+45       \textcolor{keyword}{auto} hyp = New<Hypothesis>(beam[hypIdx], embIdx, hypIdx, cost);
+46       hyp->GetCostBreakdown() = breakDown;
+47       newBeam.push\_back(hyp);
+48     \}
+49     \textcolor{keywordflow}{return} newBeam;
+50   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{db/d4b/classmarian_1_1BeamSearch_af828b92dcf04511ea9cf2816ec9c2ee7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!beam\+Size\+\_\+@{beam\+Size\+\_\+}}
+\index{beam\+Size\+\_\+@{beam\+Size\+\_\+}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{beam\+Size\+\_\+}{beamSize_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Beam\+Search\+::beam\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}{}\label{classmarian_1_1BeamSearch_ad8c2a3f3b25c4a40d3e79f242e11e963}
+
+
+Definition at line 16 of file beam\+\_\+search.\+h.
+
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Config}$>$ marian\+::\+Beam\+Search\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}{}\label{classmarian_1_1BeamSearch_a10153afbb751f39572a14bafb141225c}
+
+
+Definition at line 14 of file beam\+\_\+search.\+h.
+
+\index{marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}!scorers\+\_\+@{scorers\+\_\+}}
+\index{scorers\+\_\+@{scorers\+\_\+}!marian\+::\+Beam\+Search@{marian\+::\+Beam\+Search}}
+\subsubsection[{\texorpdfstring{scorers\+\_\+}{scorers_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Scorer}$>$ $>$ marian\+::\+Beam\+Search\+::scorers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1BeamSearch_a1253640d2177b832316cb1343bb4db03}{}\label{classmarian_1_1BeamSearch_a1253640d2177b832316cb1343bb4db03}
+
+
+Definition at line 15 of file beam\+\_\+search.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{beam__search_8h}{beam\+\_\+search.\+h}\end{DoxyCompactItemize}

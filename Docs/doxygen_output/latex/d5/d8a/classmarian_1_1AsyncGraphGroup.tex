@@ -1,0 +1,1156 @@
+\hypertarget{classmarian_1_1AsyncGraphGroup}{}\section{marian\+:\+:Async\+Graph\+Group$<$ Builder $>$ Class Template Reference}
+\label{classmarian_1_1AsyncGraphGroup}\index{marian\+::\+Async\+Graph\+Group$<$ Builder $>$@{marian\+::\+Async\+Graph\+Group$<$ Builder $>$}}
+
+
+{\ttfamily \#include $<$graph\+\_\+group.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Async\+Graph\+Group$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/dbc/classmarian_1_1AsyncGraphGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Async\+Graph\+Group$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d26/classmarian_1_1AsyncGraphGroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Builder \hyperlink{classmarian_1_1AsyncGraphGroup_a1e7d2c68e66fd37bde89d5cf340ccc7a}{builder\+\_\+type}
+\item 
+typedef Builder\+::dataset\+\_\+type \hyperlink{classmarian_1_1AsyncGraphGroup_a94dd3794d340f8912f60a2c921a0dbf7}{dataset\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmarian_1_1AsyncGraphGroup_a484f82af7b76c33d6b48b5b9f168979f}{set\+Scheduler} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scheduler}{Scheduler}$<$ \hyperlink{classmarian_1_1AsyncGraphGroup_a94dd3794d340f8912f60a2c921a0dbf7}{dataset\+\_\+type} $>$$>$ scheduler)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1AsyncGraphGroup_a722544018387106b41110a8a66f76053}{Async\+Graph\+Group} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_a0a5075263b8f643c4c87401cd3baf893}{update} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_aa67a42e3de3f05cacc19971605cb95ba}{load} ()
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}{save} (bool final=false)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_a3793b99886964cbd1c8adae3c6067092}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, bool final=false)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{data\+::\+Batch\+Stats} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_af06826971306ef236a0e4ff13e7b2e74}{collect\+Stats} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1AsyncGraphGroup_a27115f020b674e27202748d6ab513144}{new\+Tensor} (int size, int device)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}{fetch\+Params} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} old\+Params, const std\+::vector$<$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} $>$ \&params)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_ae25b4b064f6c327fd957db0583ea7796}{push\+Gradients} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} new\+Grads)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_af104a4373fad7cc8f274423107c58d17}{sparse\+Fetch\+Params} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} old\+Params, int worker\+\_\+id)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_a043878c3c7c2873ae802b5914b3cd73d}{sparse\+Push} (\hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} new\+Grads)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82}{update\+Moving\+Average} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params\+Avg, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, size\+\_\+t batches)
+\item 
+void \hyperlink{classmarian_1_1AsyncGraphGroup_a84479793dfa70a6a4ee0de1e910e8104}{execute} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}{first\+\_\+} \{true\}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Builder $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\+\_\+}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Scheduler}{Scheduler}$<$ \hyperlink{classmarian_1_1AsyncGraphGroup_a94dd3794d340f8912f60a2c921a0dbf7}{dataset\+\_\+type} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\+\_\+}
+\item 
+std\+::mutex \hyperlink{classmarian_1_1AsyncGraphGroup_a7951c0c9d8da435a148b509ff9694d0f}{sync\+\_\+}
+\item 
+std\+::vector$<$ std\+::mutex $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shard\+Sync\+\_\+}
+\item 
+boost\+::shared\+\_\+mutex \hyperlink{classmarian_1_1AsyncGraphGroup_a0592c560087d3adae51f637a383e1511}{scheduler\+Mutex\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}{local\+Sparse\+Grads\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}{sparse\+Grads\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}{tmp\+Sparse\+Delta}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{Sparse\+Tensor} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}{local\+Sparse\+Delta}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{global\+Version\+Number}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{local\+Version\+Numbers}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespacemarian_a000da7078105881168a3f17ce1b148bb}{Gradient\+Drop} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a67f02023b00ba1a67e1f8894dbb7123a}{fetch\+Dropper}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}{tmp\+Tensor}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_ab881a69415a65b21d9741b6afa2d9f6f}{params\+Alloc\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a0701944b0307c81dd518f57e452f2de6}{grads\+Alloc\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1OptimizerBase}{Optimizer\+Base} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}{shard\+Opt\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shard\+Size\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1AsyncGraphGroup_a1024a5bc27269a0ab98a2c9b6b991f71}{tau\+\_\+} \{1\}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{params\+Avg\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_af6fd0e5be552825e8190fcb17fe63671}{params\+Alloc\+Avg\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{moving\+Avg\+\_\+} \{false\}
+\item 
+float \hyperlink{classmarian_1_1AsyncGraphGroup_a63554b987fc4b0dcb408cf3987758d29}{mv\+Decay\+\_\+} \{0.\+9999\}
+\item 
+Thread\+Pool \hyperlink{classmarian_1_1AsyncGraphGroup_a1e7cb229894520315af6d9036daeb957}{pool\+\_\+}
+\item 
+double \hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\+\_\+rate\+\_\+} \{0\}
+\item 
+int \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\+\_\+size\+\_\+} \{1\}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ $>$ \hyperlink{classmarian_1_1AsyncGraphGroup_a0ea898056bf8730db2389efbfc0eda89}{allocators}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Builder$>$\\*
+class marian\+::\+Async\+Graph\+Group$<$ Builder $>$}
+
+
+
+Definition at line 185 of file graph\+\_\+group.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!builder\+\_\+type@{builder\+\_\+type}}
+\index{builder\+\_\+type@{builder\+\_\+type}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{builder\+\_\+type}{builder_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ typedef Builder {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::{\bf builder\+\_\+type}}\hypertarget{classmarian_1_1AsyncGraphGroup_a1e7d2c68e66fd37bde89d5cf340ccc7a}{}\label{classmarian_1_1AsyncGraphGroup_a1e7d2c68e66fd37bde89d5cf340ccc7a}
+
+
+Definition at line 187 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!dataset\+\_\+type@{dataset\+\_\+type}}
+\index{dataset\+\_\+type@{dataset\+\_\+type}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{dataset\+\_\+type}{dataset_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ typedef Builder\+::dataset\+\_\+type {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::{\bf dataset\+\_\+type}}\hypertarget{classmarian_1_1AsyncGraphGroup_a94dd3794d340f8912f60a2c921a0dbf7}{}\label{classmarian_1_1AsyncGraphGroup_a94dd3794d340f8912f60a2c921a0dbf7}
+
+
+Definition at line 188 of file graph\+\_\+group.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!Async\+Graph\+Group@{Async\+Graph\+Group}}
+\index{Async\+Graph\+Group@{Async\+Graph\+Group}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{Async\+Graph\+Group(\+Ptr$<$ Config $>$ options, Args...\+args)}{AsyncGraphGroup(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ template$<$class... Args$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::{\bf Async\+Graph\+Group} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a722544018387106b41110a8a66f76053}{}\label{classmarian_1_1AsyncGraphGroup_a722544018387106b41110a8a66f76053}
+
+
+Definition at line 626 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+627       : \hyperlink{classmarian_1_1GraphGroup_a5d421471110114cb3c6816eb444043df}{GraphGroup}(options),
+628         \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}\{\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"})\},
+629         \hyperlink{classmarian_1_1AsyncGraphGroup_a1e7cb229894520315af6d9036daeb957}{pool\_}\{\hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size(), \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size()\},
+630         \hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shardSync\_}\{\hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size()\},
+631         \hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_}\{\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"moving-average"})\},
+632         \hyperlink{classmarian_1_1AsyncGraphGroup_a63554b987fc4b0dcb408cf3987758d29}{mvDecay\_}\{(float)\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"moving-decay"})\},
+633         \hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_}\{\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"drop-rate"})\} \{
+634     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_} > 0.0) \{
+635       \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_} = \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size() * 1.5;
+636     \}
+637     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_}; i++)
+638       \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}.push\_back(std::vector<Tensor>());
+639     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} device : \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}) \{
+640       \textcolor{keyword}{auto} graph = New<ExpressionGraph>();
+641       graph->setDevice(device);
+642       graph->reserveWorkspaceMB(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"workspace"}));
+643       \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.push\_back(graph);
+644       \hyperlink{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}{shardOpt\_}.push\_back(\hyperlink{namespacemarian_adcc0fde2e522c9f55abdca1186c9a6db}{Optimizer}(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}));
+645       \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}.push\_back(New<Builder>(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}, args...));
+646     \}
+647   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_a722544018387106b41110a8a66f76053_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!collect\+Stats@{collect\+Stats}}
+\index{collect\+Stats@{collect\+Stats}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{collect\+Stats()}{collectStats()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf data\+::\+Batch\+Stats}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::collect\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AsyncGraphGroup_af06826971306ef236a0e4ff13e7b2e74}{}\label{classmarian_1_1AsyncGraphGroup_af06826971306ef236a0e4ff13e7b2e74}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_a2654e63f6a13457056c99b1bcb903198}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 700 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+700                                      \{
+701     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[0]->collectStats(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]);
+702   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!execute@{execute}}
+\index{execute@{execute}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{execute(\+Ptr$<$ data\+::\+Batch $>$ batch)}{execute(Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a84479793dfa70a6a4ee0de1e910e8104}{}\label{classmarian_1_1AsyncGraphGroup_a84479793dfa70a6a4ee0de1e910e8104}
+
+
+Definition at line 434 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+434                                      \{
+435     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}{first\_}) \{
+436       \textcolor{comment}{// initialize the parameters}
+437       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.size(); ++i) \{
+438         \textcolor{comment}{// takes care of thead\_local stuff}
+439         \hyperlink{definitions_8h_a67d986fe20c72043e476836c564341b3}{THREAD\_GUARD}(\hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[i]->build(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[i], batch);
+440                      \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[i]->forward(););
+441 
+442         \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}.push\_back(0);
+443         std::vector<int> localVersion;
+444         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.size(); j++)
+445           localVersion.push\_back(0);
+446 
+447         \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{localVersionNumbers}.push\_back(localVersion);
+448       \}
+449 
+450       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[0].size() == 0) \{
+451         \textcolor{keywordtype}{int} totalSize = \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]->params()->vals()->size();
+452         \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_} = ceil(totalSize / \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size());
+453 
+454         \textcolor{keywordtype}{int} pos = 0;
+455         \textcolor{comment}{// parameter sharding}
+456         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} device : \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}) \{
+457           \textcolor{keywordtype}{int} \_\_size\_\_ = min(\hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_}, totalSize);
+458           totalSize -= \_\_size\_\_;
+459 
+460           \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} h\_id = 0; h\_id < \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_}; h\_id++) \{
+461             \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} param;
+462             Ptr<TensorAllocator> allocator = New<TensorAllocator>(device);
+463             allocator->reserveExact(\_\_size\_\_ * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}));
+464             allocator->allocate(param, \{1, \_\_size\_\_\});
+465             \hyperlink{classmarian_1_1AsyncGraphGroup_ab881a69415a65b21d9741b6afa2d9f6f}{paramsAlloc\_}.push\_back(allocator);
+466 
+467             param->copyFrom(
+468                 \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]->params()->vals()->subtensor(pos, \_\_size\_\_));
+469             \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[h\_id].push\_back(param);
+470           \}
+471 
+472           \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_})
+473             \hyperlink{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}{tmpTensor}.push\_back(\hyperlink{classmarian_1_1AsyncGraphGroup_a27115f020b674e27202748d6ab513144}{newTensor}(\_\_size\_\_, device));
+474           pos += \_\_size\_\_;
+475         \}
+476       \}
+477       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}.size() == 0) \{
+478         \textcolor{keywordtype}{int} totalSize = \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]->params()->vals()->size();
+479 
+480         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} device : devices\_) \{
+481           \textcolor{keywordtype}{int} \_\_size\_\_ = min(\hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_}, totalSize);
+482           totalSize -= \_\_size\_\_;
+483           \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grad\_;
+484           Ptr<TensorAllocator> allocator\_ = New<TensorAllocator>(device);
+485 
+486           allocator\_->reserveExact(\_\_size\_\_ * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}));
+487           allocator\_->allocate(grad\_, \{1, \_\_size\_\_\});
+488           \hyperlink{classmarian_1_1AsyncGraphGroup_a0701944b0307c81dd518f57e452f2de6}{gradsAlloc\_}.push\_back(allocator\_);
+489           \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}.push\_back(grad\_);
+490         \}
+491       \}
+492       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_}) \{
+493         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_}.size() == 0) \{
+494           \textcolor{keywordtype}{int} totalSize = \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]->params()->vals()->size();
+495 
+496           \textcolor{keywordtype}{int} i = 0;
+497           \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} device : devices\_) \{
+498             \textcolor{keywordtype}{int} \_\_size\_\_ = min(\hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_}, totalSize);
+499             totalSize -= \_\_size\_\_;
+500             \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} paramAvg;
+501             Ptr<TensorAllocator> allocator = New<TensorAllocator>(device);
+502 
+503             allocator->reserveExact(\_\_size\_\_ * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}));
+504             allocator->allocate(paramAvg, \{1, \_\_size\_\_\});
+505 
+506             paramAvg->copyFrom(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[0][i++]);
+507 
+508             \hyperlink{classmarian_1_1AsyncGraphGroup_af6fd0e5be552825e8190fcb17fe63671}{paramsAllocAvg\_}.push\_back(allocator);
+509             \hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_}.push\_back(paramAvg);
+510           \}
+511         \}
+512       \}
+513 
+514       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_} && \hyperlink{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}{first\_}) \{
+515         \textcolor{keywordtype}{int} totalSize = \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]->params()->vals()->size();
+516         \textcolor{keywordtype}{int} sparseCap = totalSize * 1.2 * (1.0 - \hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_});
+517         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} device : devices\_) \{
+518           \hyperlink{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}{sparseGrads\_}.push\_back(
+519               \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{SparseTensor}(\textcolor{keyword}{new} SparseTensorBase(sparseCap, device)));
+520           \hyperlink{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}{localSparseGrads\_}.push\_back(
+521               \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{SparseTensor}(\textcolor{keyword}{new} SparseTensorBase(sparseCap, device)));
+522           \hyperlink{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}{tmpSparseDelta}.push\_back(\hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{SparseTensor}(
+523               \textcolor{keyword}{new} SparseTensorBase(sparseCap / devices\_.size(), device)));
+524           std::vector<SparseTensor> tmp;
+525           \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < devices\_.size(); i++)
+526             tmp.push\_back(\hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{SparseTensor}(
+527                 \textcolor{keyword}{new} SparseTensorBase(sparseCap / devices\_.size(), device)));
+528           \hyperlink{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}{localSparseDelta}.push\_back(tmp);
+529         \}
+530       \}
+531 
+532       \hyperlink{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}{first\_} = \textcolor{keyword}{false};
+533     \}
+534 
+535     \textcolor{keyword}{auto} task = [\textcolor{keyword}{this}](Ptr<data::Batch> batch) \{
+536       \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t} i = 0;
+537       thread\_local Ptr<ExpressionGraph> graph;
+538       thread\_local Ptr<Builder> builder;
+539       thread\_local \textcolor{keywordtype}{size\_t} t = 0;
+540 
+541       \textcolor{comment}{// gradient drop purpose}
+542       thread\_local \hyperlink{namespacemarian_a000da7078105881168a3f17ce1b148bb}{GradientDrop} dropper;
+543 
+544       thread\_local \textcolor{keywordtype}{size\_t} my\_id = 0;
+545 
+546       \textcolor{keywordflow}{if}(!graph) \{
+547         std::lock\_guard<std::mutex> lock(\hyperlink{classmarian_1_1AsyncGraphGroup_a7951c0c9d8da435a148b509ff9694d0f}{sync\_});
+548         my\_id = i;
+549         graph = \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[i];
+550         builder = \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[i++];
+551       \}
+552 
+553       \textcolor{keywordflow}{if}(!dropper) \{
+554         std::lock\_guard<std::mutex> lock(\hyperlink{classmarian_1_1AsyncGraphGroup_a7951c0c9d8da435a148b509ff9694d0f}{sync\_});
+555         dropper = \hyperlink{namespacemarian_a000da7078105881168a3f17ce1b148bb}{GradientDrop}(\textcolor{keyword}{new} GradientDropBase());
+556         std::vector<GradientDrop> tmp;
+557         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < devices\_.size(); i++)
+558           tmp.push\_back(\hyperlink{namespacemarian_a000da7078105881168a3f17ce1b148bb}{GradientDrop}(\textcolor{keyword}{new} GradientDropBase()));
+559         \hyperlink{classmarian_1_1AsyncGraphGroup_a67f02023b00ba1a67e1f8894dbb7123a}{fetchDropper}.push\_back(tmp);
+560       \}
+561 
+562       \textcolor{keyword}{auto} costNode = builder->build(graph, batch);
+563 
+564       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_} && t > 0)
+565         \hyperlink{classmarian_1_1AsyncGraphGroup_af104a4373fad7cc8f274423107c58d17}{sparseFetchParams}(graph->params()->vals(), my\_id);
+566       \textcolor{keywordflow}{else}
+567         \hyperlink{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}{fetchParams}(graph->params()->vals(),
+568                     \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[\hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[my\_id] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_}]);
+569 
+570       graph->forward();
+571       \textcolor{keywordtype}{float} cost = costNode->scalar();
+572       graph->backward();
+573 
+574       t++;
+575 
+576       cudaStreamSynchronize(0);
+577       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_}) \{
+578         dropper->dropGraph(
+579             graph->params()->grads(), \hyperlink{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}{localSparseGrads\_}[my\_id], 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_});
+580         \hyperlink{classmarian_1_1AsyncGraphGroup_a043878c3c7c2873ae802b5914b3cd73d}{sparsePush}(\hyperlink{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}{localSparseGrads\_}[my\_id]);
+581       \} \textcolor{keywordflow}{else}
+582         \hyperlink{classmarian_1_1AsyncGraphGroup_ae25b4b064f6c327fd957db0583ea7796}{pushGradients}(graph->params()->grads());
+583 
+584       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}) \{
+585         boost::upgrade\_lock<boost::shared\_mutex> lock(\hyperlink{classmarian_1_1AsyncGraphGroup_a0592c560087d3adae51f637a383e1511}{schedulerMutex\_});
+586         \{
+587           boost::upgrade\_to\_unique\_lock<boost::shared\_mutex> uniqueLock(lock);
+588           \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->update(cost, batch);
+589         \}
+590 
+591         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->saving()) \{
+592           boost::upgrade\_to\_unique\_lock<boost::shared\_mutex> uniqueLock(lock);
+593           \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_})
+594             \hyperlink{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}{fetchParams}(graph->params()->vals(), \hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_});
+595           this->\hyperlink{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}{save}(graph);
+596         \}
+597 
+598         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->validating()) \{
+599           boost::upgrade\_to\_unique\_lock<boost::shared\_mutex> uniqueLock(lock);
+600           \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_})
+601             \hyperlink{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}{fetchParams}(graph->params()->vals(), \hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_});
+602           \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->validate(graph);
+603         \}
+604 
+605         \textcolor{comment}{/*if(movingAvg\_) \{}
+606 \textcolor{comment}{          size\_t injectFreq = options\_->get<size\_t>("moving-inject-freq");}
+607 \textcolor{comment}{          if(injectFreq && scheduler\_->numberOfBatches() % injectFreq == 0) \{}
+608 \textcolor{comment}{            boost::upgrade\_to\_unique\_lock<boost::shared\_mutex> uniqueLock(lock);}
+609 \textcolor{comment}{}
+610 \textcolor{comment}{            LOG(info)->info("\{\} : Injecting moving average into training parameters",}
+611 \textcolor{comment}{                            scheduler\_->numberOfBatches());}
+612 \textcolor{comment}{            for(int idx = 0; idx < paramsAvg\_.size(); idx++) \{}
+613 \textcolor{comment}{              std::lock\_guard<std::mutex> guard(shardSync\_[idx]);}
+614 \textcolor{comment}{              params\_[my\_id][idx]->copyFrom(paramsAvg\_[idx]);}
+615 \textcolor{comment}{            \}}
+616 \textcolor{comment}{          \}}
+617 \textcolor{comment}{        \}*/}
+618       \}
+619     \};
+620 
+621     \hyperlink{classmarian_1_1AsyncGraphGroup_a1e7cb229894520315af6d9036daeb957}{pool\_}.enqueue(task, batch);
+622   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_a84479793dfa70a6a4ee0de1e910e8104_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!fetch\+Params@{fetch\+Params}}
+\index{fetch\+Params@{fetch\+Params}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{fetch\+Params(\+Tensor old\+Params, const std\+::vector$<$ Tensor $>$ \&params)}{fetchParams(Tensor oldParams, const std::vector< Tensor > &params)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::fetch\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{old\+Params, }
+\item[{const std\+::vector$<$ {\bf Tensor} $>$ \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}{}\label{classmarian_1_1AsyncGraphGroup_aeec1695ae7d7ac0f819242ad0c8af55d}
+
+
+Definition at line 258 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+258                                                                       \{
+259     \textcolor{comment}{// @TODO read guard on parameters}
+260     \textcolor{keywordtype}{int} pos = 0;
+261 
+262     std::vector<std::thread> threads;
+263     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} idx = 0; idx < \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size(); idx++) \{
+264       threads.emplace\_back(std::thread(
+265           [=](\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{int} pos) \{
+266             \textcolor{comment}{// individual mutex per-shard}
+267             std::lock\_guard<std::mutex> guard(\hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shardSync\_}[idx]);
+268             oldParams->subtensor(pos, params[idx]->size())
+269                 ->copyFrom(params[idx]);
+270           \},
+271           idx,
+272           pos));
+273 
+274       pos += \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_};
+275     \}
+276     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& t : threads) \{
+277       t.join();
+278     \}
+279   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!load@{load}}
+\index{load@{load}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AsyncGraphGroup_aa67a42e3de3f05cacc19971605cb95ba}{}\label{classmarian_1_1AsyncGraphGroup_aa67a42e3de3f05cacc19971605cb95ba}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_ac663af7f403dcf97832afbb4cf07a565}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 651 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+651               \{
+652     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"no-reload"})) \{
+653       std::string \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+654       \textcolor{keywordflow}{if}(boost::filesystem::exists(init)) \{
+655         \textcolor{keywordtype}{size\_t} i = 0;
+656         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_})
+657           \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->load(init);
+658         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} graph : \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_})
+659           \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[i++]->load(graph, init);
+660       \}
+661     \}
+662   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_aa67a42e3de3f05cacc19971605cb95ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!new\+Tensor@{new\+Tensor}}
+\index{new\+Tensor@{new\+Tensor}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{new\+Tensor(int size, int device)}{newTensor(int size, int device)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Tensor} {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::new\+Tensor (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a27115f020b674e27202748d6ab513144}{}\label{classmarian_1_1AsyncGraphGroup_a27115f020b674e27202748d6ab513144}
+
+
+Definition at line 248 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+248                                          \{
+249     \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t;
+250     Ptr<TensorAllocator> allocator\_ = New<TensorAllocator>(device);
+251     allocator\_->reserveExact(size * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}));
+252     allocator\_->allocate(t, \{1, size\});
+253     \hyperlink{classmarian_1_1AsyncGraphGroup_a0ea898056bf8730db2389efbfc0eda89}{allocators}.push\_back(allocator\_);
+254 
+255     \textcolor{keywordflow}{return} t;
+256   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!push\+Gradients@{push\+Gradients}}
+\index{push\+Gradients@{push\+Gradients}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{push\+Gradients(\+Tensor new\+Grads)}{pushGradients(Tensor newGrads)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::push\+Gradients (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{new\+Grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_ae25b4b064f6c327fd957db0583ea7796}{}\label{classmarian_1_1AsyncGraphGroup_ae25b4b064f6c327fd957db0583ea7796}
+
+
+Definition at line 281 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+281                                       \{
+282     \textcolor{comment}{// add instead of copy?}
+283     std::vector<std::thread> threads;
+284     \textcolor{keywordtype}{int} pos = 0;
+285     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} idx = 0; idx < \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size(); idx++) \{
+286       threads.emplace\_back(std::thread(
+287           [=](\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{int} pos) \{
+288             \textcolor{comment}{// individual mutex per-shard}
+289             std::lock\_guard<std::mutex> guard(\hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shardSync\_}[idx]);
+290             \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]->copyFrom(
+291                 newGrads->subtensor(pos, \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]->size()));
+292 
+293             \textcolor{comment}{// apply and increment your version number, if history is enabled}
+294             \textcolor{keywordtype}{int} latestVersion = 0;
+295 
+296             \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_} > 1) \{
+297               \textcolor{keywordtype}{int} pastVersion = \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+298               latestVersion = ++\hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+299               \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx]->copyFrom(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[pastVersion][idx]);
+300             \}
+301 
+302             \hyperlink{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}{shardOpt\_}[idx]->update(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx], 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]);
+303 
+304             \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_})
+305               \hyperlink{classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82}{updateMovingAverage}(\hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_}[idx], 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx],
+306                                   \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->numberOfBatches());
+307 
+308             cudaStreamSynchronize(0);
+309           \},
+310           idx,
+311           pos));
+312 
+313       pos += \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_};
+314     \}
+315     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& t : threads)
+316       t.join();
+317   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!save@{save}}
+\index{save@{save}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{save(bool final=false)}{save(bool final=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{bool}]{final = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}{}\label{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_ade2dd39ba30033ca9ed48b0ac7be039b}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 664 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+664 \{ \hyperlink{classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9}{save}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0], \textcolor{keyword}{final}); \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_ac4f28a3b7e1f131ecb0975c3633833a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!save@{save}}
+\index{save@{save}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, bool final=false)}{save(Ptr< ExpressionGraph > graph, bool final=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{bool}]{final = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a3793b99886964cbd1c8adae3c6067092}{}\label{classmarian_1_1AsyncGraphGroup_a3793b99886964cbd1c8adae3c6067092}
+
+
+Definition at line 666 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+666                                                             \{
+667     \textcolor{keywordtype}{int} idx = 0;
+668     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.size(); ++i) \{
+669       \textcolor{keywordflow}{if}(graph == \hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[i]) \{
+670         idx = i;
+671         \textcolor{keywordflow}{break};
+672       \}
+673     \}
+674 
+675     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"overwrite"})) \{
+676       std::string name = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+677 
+678       \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[idx]->save(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[idx], name, \textcolor{keyword}{true});
+679       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_})
+680         \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->save(name);
+681     \} \textcolor{keywordflow}{else} \{
+682       std::string name = \hyperlink{classmarian_1_1GraphGroup_ac0b64371074b8a5654bfae72449c9064}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+683 
+684       \textcolor{keywordflow}{if}(!\textcolor{keyword}{final}) \{
+685         std::string numberOfBatches
+686             = \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_} ? std::to\_string(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->numberOfBatches()) :
+687                            \textcolor{stringliteral}{"unknown"};
+688         std::string nameOverwrite = name;
+689         nameOverwrite.replace(
+690             name.size() - 4, 4, \textcolor{stringliteral}{".iter"} + numberOfBatches + \textcolor{stringliteral}{".npz"});
+691         \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[idx]->save(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[idx], nameOverwrite);
+692       \}
+693 
+694       \hyperlink{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{builders\_}[idx]->save(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[idx], name, \textcolor{keyword}{true});
+695       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_})
+696         \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->save(name);
+697     \}
+698   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!set\+Scheduler@{set\+Scheduler}}
+\index{set\+Scheduler@{set\+Scheduler}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{set\+Scheduler(\+Ptr$<$ Scheduler$<$ dataset\+\_\+type $>$$>$ scheduler)}{setScheduler(Ptr< Scheduler< dataset_type >> scheduler)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::set\+Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Scheduler}$<$ {\bf dataset\+\_\+type} $>$$>$}]{scheduler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a484f82af7b76c33d6b48b5b9f168979f}{}\label{classmarian_1_1AsyncGraphGroup_a484f82af7b76c33d6b48b5b9f168979f}
+
+
+Definition at line 190 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+190                                                                     \{
+191     \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_} = scheduler;
+192     \textcolor{comment}{// optimizer has to be registered last to see a change of learning rate}
+193     \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->registerTrainingObserver(\hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_});
+194     \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->registerTrainingObserver(\hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_});
+195   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!sparse\+Fetch\+Params@{sparse\+Fetch\+Params}}
+\index{sparse\+Fetch\+Params@{sparse\+Fetch\+Params}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{sparse\+Fetch\+Params(\+Tensor old\+Params, int worker\+\_\+id)}{sparseFetchParams(Tensor oldParams, int worker_id)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::sparse\+Fetch\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{old\+Params, }
+\item[{int}]{worker\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_af104a4373fad7cc8f274423107c58d17}{}\label{classmarian_1_1AsyncGraphGroup_af104a4373fad7cc8f274423107c58d17}
+
+
+Definition at line 319 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+319                                                           \{
+320     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.size() < 2)
+321       \textcolor{keywordflow}{return};
+322 
+323     \textcolor{comment}{// @TODO read guard on parameters}
+324     \textcolor{keywordtype}{int} p = 0;
+325 
+326     std::vector<std::thread> threads;
+327     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size(); i++) \{
+328       threads.emplace\_back(std::thread(
+329           [=](\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{int} pos) \{
+330             \textcolor{comment}{// individual mutex per-shard}
+331             std::lock\_guard<std::mutex> guard(\hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shardSync\_}[idx]);
+332             \textcolor{comment}{// obtain the delta}
+333             \textcolor{keywordtype}{int} latestVersion = \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+334             \textcolor{keywordtype}{int} currVersion
+335                 = \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{localVersionNumbers}[worker\_id][idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+336 
+337             \textcolor{comment}{// check if the current version is too old}
+338             \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] - \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{localVersionNumbers}[
+      worker\_id][idx]
+339                >= \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_})
+340               currVersion = (1 + \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx])
+341                             % \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};  \textcolor{comment}{// if so, pick the best you can do}
+342 
+343             \textcolor{comment}{// if already latest}
+344             \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] == 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{localVersionNumbers}[worker\_id][idx])
+345               \textcolor{keywordflow}{return};
+346 
+347             \textcolor{comment}{// get delta : param latest version - current param (locally)}
+348             \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \_2 - \_3,
+349                     \hyperlink{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}{tmpTensor}[idx],
+350                     \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx],
+351                     \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[currVersion][idx]);
+352             cudaStreamSynchronize(0);
+353 
+354             \textcolor{comment}{// get sparse delta}
+355             \hyperlink{classmarian_1_1AsyncGraphGroup_a67f02023b00ba1a67e1f8894dbb7123a}{fetchDropper}[worker\_id][idx]->dropGraph(
+356                 \hyperlink{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}{tmpTensor}[idx], \hyperlink{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}{tmpSparseDelta}[idx], 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{drop\_rate\_});
+357             cudaStreamSynchronize(0);
+358 
+359             \textcolor{comment}{// move sparse delta}
+360             \hyperlink{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}{localSparseDelta}[worker\_id][idx]->copyFrom(
+      \hyperlink{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}{tmpSparseDelta}[idx]);
+361             cudaStreamSynchronize(0);
+362 
+363             \hyperlink{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}{localSparseDelta}[worker\_id][idx]->scatterAdd(
+364                 oldParams->subtensor(pos, \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]->size()));
+365             cudaStreamSynchronize(0);
+366 
+367             \hyperlink{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{localVersionNumbers}[worker\_id][idx] = 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx];
+368 
+369           \},
+370           i,
+371           p));
+372 
+373       p += \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_};
+374     \}
+375     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& t : threads) \{
+376       t.join();
+377     \}
+378   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_af104a4373fad7cc8f274423107c58d17_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!sparse\+Push@{sparse\+Push}}
+\index{sparse\+Push@{sparse\+Push}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{sparse\+Push(\+Sparse\+Tensor new\+Grads)}{sparsePush(SparseTensor newGrads)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::sparse\+Push (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\+Tensor}}]{new\+Grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a043878c3c7c2873ae802b5914b3cd73d}{}\label{classmarian_1_1AsyncGraphGroup_a043878c3c7c2873ae802b5914b3cd73d}
+
+
+Definition at line 380 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+380                                          \{
+381     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}.size() < 2) \{
+382       \hyperlink{classmarian_1_1GraphGroup_acc7e9b90d489d561de842e5b64ec751a}{opt\_}->update(\hyperlink{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{graphs\_}[0]);
+383     \} \textcolor{keywordflow}{else} \{
+384       \textcolor{comment}{// add instead of copy?}
+385       std::vector<std::thread> threads;
+386       \textcolor{keywordtype}{int} pos = 0;
+387       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} idx = 0; idx < \hyperlink{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{devices\_}.size(); idx++) \{
+388         threads.emplace\_back(std::thread(
+389             [=](\textcolor{keywordtype}{int} idx, \textcolor{keywordtype}{int} pos) \{
+390               \textcolor{comment}{// individual mutex per-shard}
+391               std::lock\_guard<std::mutex> guard(\hyperlink{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{shardSync\_}[idx]);
+392 
+393               \textcolor{comment}{// split to shard}
+394               \hyperlink{namespacemarian_a5484064f1fce2661d0b27a5c02a9392b}{SparseTensor} subGrad
+395                   = newGrads->subtensor(pos, \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]->size(), idx);
+396               cudaStreamSynchronize(0);
+397 
+398               \textcolor{comment}{// sent}
+399               \hyperlink{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}{sparseGrads\_}[idx]->copyFrom(subGrad);
+400               cudaStreamSynchronize(0);
+401 
+402               \textcolor{comment}{// convert back to dense, with index offset of -pos}
+403               \hyperlink{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}{sparseGrads\_}[idx]->toDense(\hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx], -pos);
+404               cudaStreamSynchronize(0);
+405 
+406               \textcolor{comment}{// apply and increment your version number}
+407               \textcolor{keywordtype}{int} pastVersion = \hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+408               \textcolor{keywordtype}{int} latestVersion = ++\hyperlink{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{globalVersionNumber}[idx] % 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{history\_size\_};
+409               \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx]->copyFrom(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[pastVersion][idx]);
+410               \hyperlink{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}{shardOpt\_}[idx]->update(\hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx], 
+      \hyperlink{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{grads\_}[idx]);
+411 
+412               \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{movingAvg\_})
+413                 \hyperlink{classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82}{updateMovingAverage}(\hyperlink{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{paramsAvg\_}[idx],
+414                                     \hyperlink{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{params\_}[latestVersion][idx],
+415                                     \hyperlink{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{scheduler\_}->numberOfBatches());
+416 
+417               cudaStreamSynchronize(0);
+418             \},
+419             idx,
+420             pos));
+421 
+422         pos += \hyperlink{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{shardSize\_};
+423       \}
+424       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& t : threads)
+425         t.join();
+426     \}
+427   \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!update@{update}}
+\index{update@{update}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{update(\+Ptr$<$ data\+::\+Batch $>$ batch)}{update(Ptr< data::Batch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a0a5075263b8f643c4c87401cd3baf893}{}\label{classmarian_1_1AsyncGraphGroup_a0a5075263b8f643c4c87401cd3baf893}
+
+
+Implements \hyperlink{classmarian_1_1GraphGroup_afbb46b2bd868ade2d6f50eff791b6cbc}{marian\+::\+Graph\+Group}.
+
+
+
+Definition at line 649 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+649 \{ \hyperlink{classmarian_1_1AsyncGraphGroup_a84479793dfa70a6a4ee0de1e910e8104}{execute}(batch); \}
+\end{DoxyCode}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!update\+Moving\+Average@{update\+Moving\+Average}}
+\index{update\+Moving\+Average@{update\+Moving\+Average}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{update\+Moving\+Average(\+Tensor params\+Avg, Tensor params, size\+\_\+t batches)}{updateMovingAverage(Tensor paramsAvg, Tensor params, size_t batches)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::update\+Moving\+Average (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params\+Avg, }
+\item[{{\bf Tensor}}]{params, }
+\item[{size\+\_\+t}]{batches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82}{}\label{classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82}
+
+
+Definition at line 429 of file graph\+\_\+group.\+h.
+
+
+\begin{DoxyCode}
+429                                                                             \{
+430     \textcolor{keywordtype}{float} decay = min(\hyperlink{classmarian_1_1AsyncGraphGroup_a63554b987fc4b0dcb408cf3987758d29}{mvDecay\_}, (\textcolor{keywordtype}{float})(batches + 1) / (\textcolor{keywordtype}{float})(batches + 10));
+431     \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = (decay * \_1) + ((1.f - decay) * \_2), paramsAvg, params);
+432   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{d5/d8a/classmarian_1_1AsyncGraphGroup_abce2624a961b51f5502efd78c8f3fc82_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!allocators@{allocators}}
+\index{allocators@{allocators}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{allocators}{allocators}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Tensor\+Allocator}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::allocators\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a0ea898056bf8730db2389efbfc0eda89}{}\label{classmarian_1_1AsyncGraphGroup_a0ea898056bf8730db2389efbfc0eda89}
+
+
+Definition at line 246 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!builders\+\_\+@{builders\+\_\+}}
+\index{builders\+\_\+@{builders\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{builders\+\_\+}{builders_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<$Builder$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::builders\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}{}\label{classmarian_1_1AsyncGraphGroup_a61b13f7dea620b83b33958d0b8970601}
+
+
+Definition at line 200 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!devices\+\_\+@{devices\+\_\+}}
+\index{devices\+\_\+@{devices\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{devices\+\_\+}{devices_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$size\+\_\+t$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::devices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}{}\label{classmarian_1_1AsyncGraphGroup_a9fcc6fe896fe0c623a1cde656c6e123e}
+
+
+Definition at line 202 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!drop\+\_\+rate\+\_\+@{drop\+\_\+rate\+\_\+}}
+\index{drop\+\_\+rate\+\_\+@{drop\+\_\+rate\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{drop\+\_\+rate\+\_\+}{drop_rate_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ double {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::drop\+\_\+rate\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}{}\label{classmarian_1_1AsyncGraphGroup_a774969ba69bab8fbd48e6454bbe7e54c}
+
+
+Definition at line 243 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!fetch\+Dropper@{fetch\+Dropper}}
+\index{fetch\+Dropper@{fetch\+Dropper}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{fetch\+Dropper}{fetchDropper}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$std\+::vector$<${\bf Gradient\+Drop}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::fetch\+Dropper\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a67f02023b00ba1a67e1f8894dbb7123a}{}\label{classmarian_1_1AsyncGraphGroup_a67f02023b00ba1a67e1f8894dbb7123a}
+
+
+Definition at line 222 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!first\+\_\+@{first\+\_\+}}
+\index{first\+\_\+@{first\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{first\+\_\+}{first_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ bool {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::first\+\_\+ \{true\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}{}\label{classmarian_1_1AsyncGraphGroup_af89976e48b8e21119bbf66ea7bc23d96}
+
+
+Definition at line 198 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!global\+Version\+Number@{global\+Version\+Number}}
+\index{global\+Version\+Number@{global\+Version\+Number}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{global\+Version\+Number}{globalVersionNumber}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$int$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::global\+Version\+Number\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}{}\label{classmarian_1_1AsyncGraphGroup_a75884703e6fe8efb3c75293eb912bce4}
+
+
+Definition at line 217 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!grads\+\_\+@{grads\+\_\+}}
+\index{grads\+\_\+@{grads\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{grads\+\_\+}{grads_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::grads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}{}\label{classmarian_1_1AsyncGraphGroup_ad2f8bc6900976be4426acc4631d07145}
+
+
+Definition at line 228 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!grads\+Alloc\+\_\+@{grads\+Alloc\+\_\+}}
+\index{grads\+Alloc\+\_\+@{grads\+Alloc\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{grads\+Alloc\+\_\+}{gradsAlloc_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Tensor\+Allocator}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::grads\+Alloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a0701944b0307c81dd518f57e452f2de6}{}\label{classmarian_1_1AsyncGraphGroup_a0701944b0307c81dd518f57e452f2de6}
+
+
+Definition at line 229 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!graphs\+\_\+@{graphs\+\_\+}}
+\index{graphs\+\_\+@{graphs\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{graphs\+\_\+}{graphs_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Expression\+Graph}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::graphs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}{}\label{classmarian_1_1AsyncGraphGroup_a3fbad41763c988a5723a39c2220287d8}
+
+
+Definition at line 201 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!history\+\_\+size\+\_\+@{history\+\_\+size\+\_\+}}
+\index{history\+\_\+size\+\_\+@{history\+\_\+size\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{history\+\_\+size\+\_\+}{history_size_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ int {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::history\+\_\+size\+\_\+ \{1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}{}\label{classmarian_1_1AsyncGraphGroup_a0958c1384fc7486dd4f739d69c9ac636}
+
+
+Definition at line 244 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!local\+Sparse\+Delta@{local\+Sparse\+Delta}}
+\index{local\+Sparse\+Delta@{local\+Sparse\+Delta}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{local\+Sparse\+Delta}{localSparseDelta}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$std\+::vector$<${\bf Sparse\+Tensor}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::local\+Sparse\+Delta\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}{}\label{classmarian_1_1AsyncGraphGroup_aa29abae307772ca69402a19729b2b49d}
+
+
+Definition at line 214 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!local\+Sparse\+Grads\+\_\+@{local\+Sparse\+Grads\+\_\+}}
+\index{local\+Sparse\+Grads\+\_\+@{local\+Sparse\+Grads\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{local\+Sparse\+Grads\+\_\+}{localSparseGrads_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Sparse\+Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::local\+Sparse\+Grads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}{}\label{classmarian_1_1AsyncGraphGroup_a29422f1a8b9a8e2cc732101a34557b61}
+
+
+Definition at line 211 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!local\+Version\+Numbers@{local\+Version\+Numbers}}
+\index{local\+Version\+Numbers@{local\+Version\+Numbers}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{local\+Version\+Numbers}{localVersionNumbers}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$std\+::vector$<$int$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::local\+Version\+Numbers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}{}\label{classmarian_1_1AsyncGraphGroup_a51752a96c753b4c3b34a4c8c3eec86ba}
+
+
+Definition at line 220 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!moving\+Avg\+\_\+@{moving\+Avg\+\_\+}}
+\index{moving\+Avg\+\_\+@{moving\+Avg\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{moving\+Avg\+\_\+}{movingAvg_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ bool {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::moving\+Avg\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}{}\label{classmarian_1_1AsyncGraphGroup_a96d6309b1924939d4b77ef1ed3a119d7}
+
+
+Definition at line 238 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!mv\+Decay\+\_\+@{mv\+Decay\+\_\+}}
+\index{mv\+Decay\+\_\+@{mv\+Decay\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{mv\+Decay\+\_\+}{mvDecay_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ float {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::mv\+Decay\+\_\+ \{0.\+9999\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a63554b987fc4b0dcb408cf3987758d29}{}\label{classmarian_1_1AsyncGraphGroup_a63554b987fc4b0dcb408cf3987758d29}
+
+
+Definition at line 239 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!params\+\_\+@{params\+\_\+}}
+\index{params\+\_\+@{params\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{params\+\_\+}{params_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$std\+::vector$<${\bf Tensor}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::params\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}{}\label{classmarian_1_1AsyncGraphGroup_ad1bf15e55cc12b90d39012303b14767b}
+
+
+Definition at line 225 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!params\+Alloc\+\_\+@{params\+Alloc\+\_\+}}
+\index{params\+Alloc\+\_\+@{params\+Alloc\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{params\+Alloc\+\_\+}{paramsAlloc_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Tensor\+Allocator}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::params\+Alloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_ab881a69415a65b21d9741b6afa2d9f6f}{}\label{classmarian_1_1AsyncGraphGroup_ab881a69415a65b21d9741b6afa2d9f6f}
+
+
+Definition at line 226 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!params\+Alloc\+Avg\+\_\+@{params\+Alloc\+Avg\+\_\+}}
+\index{params\+Alloc\+Avg\+\_\+@{params\+Alloc\+Avg\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{params\+Alloc\+Avg\+\_\+}{paramsAllocAvg_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Tensor\+Allocator}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::params\+Alloc\+Avg\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_af6fd0e5be552825e8190fcb17fe63671}{}\label{classmarian_1_1AsyncGraphGroup_af6fd0e5be552825e8190fcb17fe63671}
+
+
+Definition at line 237 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!params\+Avg\+\_\+@{params\+Avg\+\_\+}}
+\index{params\+Avg\+\_\+@{params\+Avg\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{params\+Avg\+\_\+}{paramsAvg_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::params\+Avg\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}{}\label{classmarian_1_1AsyncGraphGroup_a203413621a666e7e5c9394a3a02498f4}
+
+
+Definition at line 236 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!pool\+\_\+@{pool\+\_\+}}
+\index{pool\+\_\+@{pool\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{pool\+\_\+}{pool_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ Thread\+Pool {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::pool\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a1e7cb229894520315af6d9036daeb957}{}\label{classmarian_1_1AsyncGraphGroup_a1e7cb229894520315af6d9036daeb957}
+
+
+Definition at line 241 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!scheduler\+\_\+@{scheduler\+\_\+}}
+\index{scheduler\+\_\+@{scheduler\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{scheduler\+\_\+}{scheduler_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<${\bf Scheduler}$<${\bf dataset\+\_\+type}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::scheduler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}{}\label{classmarian_1_1AsyncGraphGroup_a3847200bdb1e584e006457113f3aafd1}
+
+
+Definition at line 204 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!scheduler\+Mutex\+\_\+@{scheduler\+Mutex\+\_\+}}
+\index{scheduler\+Mutex\+\_\+@{scheduler\+Mutex\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{scheduler\+Mutex\+\_\+}{schedulerMutex_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ boost\+::shared\+\_\+mutex {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::scheduler\+Mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a0592c560087d3adae51f637a383e1511}{}\label{classmarian_1_1AsyncGraphGroup_a0592c560087d3adae51f637a383e1511}
+
+
+Definition at line 209 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!shard\+Opt\+\_\+@{shard\+Opt\+\_\+}}
+\index{shard\+Opt\+\_\+@{shard\+Opt\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{shard\+Opt\+\_\+}{shardOpt_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Ptr}$<${\bf Optimizer\+Base}$>$ $>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::shard\+Opt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}{}\label{classmarian_1_1AsyncGraphGroup_a6a9bb34a29290c20f17e3ed25e08eff3}
+
+
+Definition at line 231 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!shard\+Size\+\_\+@{shard\+Size\+\_\+}}
+\index{shard\+Size\+\_\+@{shard\+Size\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{shard\+Size\+\_\+}{shardSize_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ int {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::shard\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}{}\label{classmarian_1_1AsyncGraphGroup_a3af39dcadc6a7f84a4a906f2048fd420}
+
+
+Definition at line 233 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!shard\+Sync\+\_\+@{shard\+Sync\+\_\+}}
+\index{shard\+Sync\+\_\+@{shard\+Sync\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{shard\+Sync\+\_\+}{shardSync_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<$std\+::mutex$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::shard\+Sync\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}{}\label{classmarian_1_1AsyncGraphGroup_a5bf268b84c19070341c67f9c8617b1b2}
+
+
+Definition at line 207 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!sparse\+Grads\+\_\+@{sparse\+Grads\+\_\+}}
+\index{sparse\+Grads\+\_\+@{sparse\+Grads\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{sparse\+Grads\+\_\+}{sparseGrads_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Sparse\+Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::sparse\+Grads\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}{}\label{classmarian_1_1AsyncGraphGroup_a8270ea17d3e0ad0288686ecf8680b761}
+
+
+Definition at line 212 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!sync\+\_\+@{sync\+\_\+}}
+\index{sync\+\_\+@{sync\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{sync\+\_\+}{sync_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::mutex {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::sync\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a7951c0c9d8da435a148b509ff9694d0f}{}\label{classmarian_1_1AsyncGraphGroup_a7951c0c9d8da435a148b509ff9694d0f}
+
+
+Definition at line 206 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!tau\+\_\+@{tau\+\_\+}}
+\index{tau\+\_\+@{tau\+\_\+}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{tau\+\_\+}{tau_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ int {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::tau\+\_\+ \{1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a1024a5bc27269a0ab98a2c9b6b991f71}{}\label{classmarian_1_1AsyncGraphGroup_a1024a5bc27269a0ab98a2c9b6b991f71}
+
+
+Definition at line 234 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!tmp\+Sparse\+Delta@{tmp\+Sparse\+Delta}}
+\index{tmp\+Sparse\+Delta@{tmp\+Sparse\+Delta}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{tmp\+Sparse\+Delta}{tmpSparseDelta}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Sparse\+Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::tmp\+Sparse\+Delta\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}{}\label{classmarian_1_1AsyncGraphGroup_aac1e70623a858adb914f6ed6a491c3a8}
+
+
+Definition at line 213 of file graph\+\_\+group.\+h.
+
+\index{marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}!tmp\+Tensor@{tmp\+Tensor}}
+\index{tmp\+Tensor@{tmp\+Tensor}!marian\+::\+Async\+Graph\+Group@{marian\+::\+Async\+Graph\+Group}}
+\subsubsection[{\texorpdfstring{tmp\+Tensor}{tmpTensor}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::vector$<${\bf Tensor}$>$ {\bf marian\+::\+Async\+Graph\+Group}$<$ Builder $>$\+::tmp\+Tensor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}{}\label{classmarian_1_1AsyncGraphGroup_a5ae977ce219101bcf4166f123bbb8216}
+
+
+Definition at line 223 of file graph\+\_\+group.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graph__group_8h}{graph\+\_\+group.\+h}\end{DoxyCompactItemize}

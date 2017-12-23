@@ -1,0 +1,146 @@
+\hypertarget{marian_2src_2common_2utils_8h}{}\section{utils.\+h File Reference}
+\label{marian_2src_2common_2utils_8h}\index{utils.\+h@{utils.\+h}}
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for marian/src/common/utils.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{d2/df7/marian_2src_2common_2utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/db4/marian_2src_2common_2utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{marian_2src_2common_2utils_8h_af066c0093a155a73560a38f1b35cf396}{Trim} (std\+::string \&s)
+\item 
+void \hyperlink{marian_2src_2common_2utils_8h_a169468fdbf07ac9a072c597fd685ddb5}{Split} (const std\+::string \&line, std\+::vector$<$ std\+::string $>$ \&pieces, const std\+::string del=\char`\"{} \char`\"{})
+\item 
+std\+::string \hyperlink{marian_2src_2common_2utils_8h_a80844f7d0c93577104b9a6a5a88d052a}{Join} (const std\+::vector$<$ std\+::string $>$ \&words, const std\+::string del=\char`\"{} \char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{marian/src/common/utils.\+h@{marian/src/common/utils.\+h}!Join@{Join}}
+\index{Join@{Join}!marian/src/common/utils.\+h@{marian/src/common/utils.\+h}}
+\subsubsection[{\texorpdfstring{Join(const std\+::vector$<$ std\+::string $>$ \&words, const std\+::string del="" "")}{Join(const std::vector< std::string > &words, const std::string del=" ")}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Join (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{words, }
+\item[{const std\+::string}]{del = {\ttfamily \char`\"{}~\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2common_2utils_8h_a80844f7d0c93577104b9a6a5a88d052a}{}\label{marian_2src_2common_2utils_8h_a80844f7d0c93577104b9a6a5a88d052a}
+
+
+Definition at line 30 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+30                                                                        \{
+31   std::stringstream ss;
+32   \textcolor{keywordflow}{if} (words.empty()) \{
+33     \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+34   \}
+35   ss << words[0];
+36   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < words.size(); ++i) \{
+37     ss << del << words[i];
+38   \}
+39   \textcolor{keywordflow}{return} ss.str();
+40 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/da1/marian_2src_2common_2utils_8h_a80844f7d0c93577104b9a6a5a88d052a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian/src/common/utils.\+h@{marian/src/common/utils.\+h}!Split@{Split}}
+\index{Split@{Split}!marian/src/common/utils.\+h@{marian/src/common/utils.\+h}}
+\subsubsection[{\texorpdfstring{Split(const std\+::string \&line, std\+::vector$<$ std\+::string $>$ \&pieces, const std\+::string del="" "")}{Split(const std::string &line, std::vector< std::string > &pieces, const std::string del=" ")}}]{\setlength{\rightskip}{0pt plus 5cm}void Split (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{pieces, }
+\item[{const std\+::string}]{del = {\ttfamily \char`\"{}~\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2common_2utils_8h_a169468fdbf07ac9a072c597fd685ddb5}{}\label{marian_2src_2common_2utils_8h_a169468fdbf07ac9a072c597fd685ddb5}
+
+
+Definition at line 11 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+11                                                                                      \{
+12   \textcolor{keywordtype}{size\_t} begin = 0;
+13   \textcolor{keywordtype}{size\_t} pos = 0;
+14   std::string token;
+15   \textcolor{keywordflow}{while} ((pos = line.find(del, begin)) != std::string::npos) \{
+16     \textcolor{keywordflow}{if} (pos > begin) \{
+17       token = line.substr(begin, pos - begin);
+18       \textcolor{keywordflow}{if}(token.size() > 0)
+19         pieces.push\_back(token);
+20     \}
+21     begin = pos + del.size();
+22   \}
+23   \textcolor{keywordflow}{if} (pos > begin) \{
+24     token = line.substr(begin, pos - begin);
+25   \}
+26   \textcolor{keywordflow}{if}(token.size() > 0)
+27     pieces.push\_back(token);
+28 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/da1/marian_2src_2common_2utils_8h_a169468fdbf07ac9a072c597fd685ddb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian/src/common/utils.\+h@{marian/src/common/utils.\+h}!Trim@{Trim}}
+\index{Trim@{Trim}!marian/src/common/utils.\+h@{marian/src/common/utils.\+h}}
+\subsubsection[{\texorpdfstring{Trim(std\+::string \&s)}{Trim(std::string &s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trim (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2common_2utils_8h_af066c0093a155a73560a38f1b35cf396}{}\label{marian_2src_2common_2utils_8h_af066c0093a155a73560a38f1b35cf396}
+
+
+Definition at line 7 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+7                         \{
+8   boost::trim\_if(s, boost::is\_any\_of(\textcolor{stringliteral}{" \(\backslash\)t\(\backslash\)n"}));
+9 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/da1/marian_2src_2common_2utils_8h_af066c0093a155a73560a38f1b35cf396_icgraph}
+\end{center}
+\end{figure}
+
+

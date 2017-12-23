@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/db0/classamunmt_1_1Processor">
+<title>amunmt::Processor class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d99/processor_8h">&lt;processor.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Processor</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d86/classamunmt_1_1Processor__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Processor</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dbf/classamunmt_1_1Processor__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d1/db0/classamunmt_1_1Processor_1a3985680694ae60db18527d2bc722932d">~Processor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/db0/classamunmt_1_1Processor_1a3985680694ae60db18527d2bc722932d">
+                <title>virtual amunmt::Processor::~Processor ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

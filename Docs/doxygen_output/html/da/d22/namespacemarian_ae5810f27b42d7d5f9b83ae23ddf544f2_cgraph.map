@@ -1,0 +1,27 @@
+<map id="marian::tanh" name="marian::tanh">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#ab84fcdb2b1fa95f89e3921aea4027957" title="marian::tanh" alt="" coords="188,5,283,32"/>
+<area shape="rect" id="node3" href="$da/d22/namespacemarian.html#a6228f7e46aeed337e3886df6446b7840" title="marian::relu" alt="" coords="190,56,281,83"/>
+<area shape="rect" id="node4" href="$da/d22/namespacemarian.html#a0f3132fbaaaf9a5f2c1cbf6e3ad8f5f5" title="marian::log" alt="" coords="192,107,279,133"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a4d47fe908c56b6de5c71209339461321" title="marian::exp" alt="" coords="190,157,281,184"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#ae39f821d2f92647251cfb015fe07f4db" title="marian::operator&#45;" alt="" coords="175,208,295,235"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#a4634bf0330cd2ba9cdfcdc868aff5f31" title="marian::operator+" alt="" coords="173,259,297,285"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#a6aaf9b9fe6f3717c4319e926330f2c22" title="marian::operator*" alt="" coords="175,309,296,336"/>
+<area shape="rect" id="node9" href="$da/d22/namespacemarian.html#a1b719c7a542512dbc5a589f92114be62" title="marian::operator/" alt="" coords="175,360,295,387"/>
+<area shape="rect" id="node10" href="$da/d22/namespacemarian.html#ad7fbf1ba8e2e04ffdc7d5e4841b5e691" title="marian::dot" alt="" coords="192,411,279,437"/>
+<area shape="rect" id="node11" href="$da/d22/namespacemarian.html#a00669690ef16ce9b1bde5ee9d1b77ac6" title="marian::transpose" alt="" coords="172,461,299,488"/>
+<area shape="rect" id="node12" href="$da/d22/namespacemarian.html#a2791a2c8f79a938f5cb22ae613680675" title="marian::concatenate" alt="" coords="165,512,305,539"/>
+<area shape="rect" id="node13" href="$da/d22/namespacemarian.html#acd984f43188d0ae23c2a6ef13ae5293f" title="marian::reshape" alt="" coords="178,563,293,589"/>
+<area shape="rect" id="node14" href="$da/d22/namespacemarian.html#aea8d2acadf0d96f6e455addd57cba80d" title="marian::flatten" alt="" coords="183,613,288,640"/>
+<area shape="rect" id="node15" href="$da/d22/namespacemarian.html#a460460a6de63beebc5d968b44d49d11b" title="marian::sum" alt="" coords="188,664,283,691"/>
+<area shape="rect" id="node16" href="$da/d22/namespacemarian.html#a3c08107d509be52ee2c17eb6d54c7ebc" title="marian::softmax" alt="" coords="177,715,293,741"/>
+<area shape="rect" id="node17" href="$da/d22/namespacemarian.html#a471a2cbd15b4094528a1643abc814bb6" title="marian::logsoftmax" alt="" coords="169,765,302,792"/>
+<area shape="rect" id="node18" href="$da/d22/namespacemarian.html#a15ec9743709e47180378db974ddbf116" title="marian::mean" alt="" coords="185,816,286,843"/>
+<area shape="rect" id="node19" href="$da/d22/namespacemarian.html#a37652ca2a00f3c36816fe5fec28104a0" title="marian::cross_entropy" alt="" coords="160,867,311,893"/>
+<area shape="rect" id="node20" href="$da/d22/namespacemarian.html#aefe65d738dc9a0536f3a1f9346b8d47b" title="marian::affine" alt="" coords="185,917,286,944"/>
+<area shape="rect" id="node21" href="$da/d22/namespacemarian.html#a7bed97354565d7b751bed999c6c203e3" title="marian::scalar_product" alt="" coords="158,968,313,995"/>
+<area shape="rect" id="node22" href="$da/d22/namespacemarian.html#a8ccb9507a69a32ecd48410fd1557f209" title="marian::weighted_average" alt="" coords="148,1019,323,1045"/>
+<area shape="rect" id="node23" href="$da/d22/namespacemarian.html#a2e7193e67292a4c3347f296f5e669581" title="marian::step" alt="" coords="188,1069,283,1096"/>
+<area shape="rect" id="node24" href="$da/d22/namespacemarian.html#ac5f147047403fcdab5481c89dc1d8212" title="marian::sqrt" alt="" coords="190,1120,281,1147"/>
+<area shape="rect" id="node25" href="$da/d22/namespacemarian.html#a953e6df1fb209a142e066a2546d88c8a" title="marian::square" alt="" coords="181,1171,289,1197"/>
+<area shape="rect" id="node26" href="$da/d22/namespacemarian.html#a6202278a9da8ca8a281a6a96e75082f6" title="marian::layer_norm" alt="" coords="169,1221,302,1248"/>
+</map>

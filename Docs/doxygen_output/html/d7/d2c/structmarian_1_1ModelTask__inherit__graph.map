@@ -1,0 +1,6 @@
+<map id="marian::ModelTask" name="marian::ModelTask">
+<area shape="rect" id="node2" href="$d9/dbf/classmarian_1_1Rescore.html" title="{marian::Rescore\&lt; Model \&gt;\n|&#45; options_\l&#45; corpus_\l&#45; graph_\l&#45; model_\l|+ Rescore()\l+ run()\l}" alt="" coords="5,145,183,281"/>
+<area shape="rect" id="node3" href="$dc/d14/classmarian_1_1Train.html" title="{marian::Train\&lt; Model \&gt;\n|&#45; options_\l|+ Train()\l+ run()\l}" alt="" coords="207,167,365,259"/>
+<area shape="rect" id="node4" href="$d3/d0c/classmarian_1_1TrainMNIST.html" title="{marian::TrainMNIST\l\&lt; Model \&gt;\n|&#45; options_\l|+ TrainMNIST()\l+ run()\l}" alt="" coords="389,160,529,267"/>
+<area shape="rect" id="node5" href="$d7/dae/classmarian_1_1TranslateMultiGPU.html" title="{marian::TranslateMultiGPU\l\&lt; Search \&gt;\n|&#45; options_\l&#45; graphs_\l&#45; scorers_\l&#45; corpus_\l&#45; trgVocab_\l|+ TranslateMultiGPU()\l+ run()\l}" alt="" coords="553,131,733,296"/>
+</map>

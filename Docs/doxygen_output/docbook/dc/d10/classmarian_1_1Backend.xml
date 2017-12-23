@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d10/classmarian_1_1Backend">
+<title>marian::Backend class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d34/backend_8h">&lt;backend.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Backend</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d9e/classmarian_1_1Backend__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Backend</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d61/classmarian_1_1Backend__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dc/d10/classmarian_1_1Backend_1a63e2684ba7296f57312e89769b01038d">setDevice</link> (
+size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d10/classmarian_1_1Backend_1a63e2684ba7296f57312e89769b01038d">
+                <title>virtual void marian::Backend::setDevice (size_t device)=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

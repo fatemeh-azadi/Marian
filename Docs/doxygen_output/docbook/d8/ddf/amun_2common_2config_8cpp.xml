@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/ddf/amun_2common_2config_8cpp">
+    <title>amun/common/config.cpp File Reference</title>
+    <programlisting>#include &lt;set&gt;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/file_stream.h&quot;</programlisting>
+    <programlisting>#include &quot;common/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;common/git_version.h&quot;</programlisting>
+<para>Include dependency diagram for amun/common/config.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dc0/amun_2common_2config_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for amun/common/config.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d90/amun_2common_2config_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/ddf/amun_2common_2config_8cpp_1affc23be689aba6d401f64257177c293c">SET_OPTION</link> do { if(!vm_[key].defaulted() || !config_[key]) { \
+  config_[key] = vm_[key].as&lt;type&gt;(); \
+}} while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/ddf/amun_2common_2config_8cpp_1a662e89992591378e43abcff938a17669">SET_OPTION_NONDEFAULT</link> do { if(vm_.count(key) &gt; 0) { \
+  config_[key] = vm_[key].as&lt;type&gt;(); \
+}} while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file config.cpp</para>
+    </simplesect>
+</section>

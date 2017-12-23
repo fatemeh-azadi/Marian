@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d5c/align2steps_8cpp">
+    <title>align2steps.cpp File Reference</title>
+    <programlisting>#include &lt;boost/config.hpp&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;regex&gt;</programlisting>
+    <programlisting>#include &lt;boost/graph/adjacency_list.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/graph/dijkstra_shortest_paths.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/graph/graph_traits.hpp&gt;</programlisting>
+<para>Include dependency diagram for align2steps.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d19/align2steps_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for align2steps.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d32/align2steps_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/da9/namespaceboost">boost</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef adjacency_list&lt; listS, vecS, directedS, no_property, property&lt; edge_weight_t, int &gt; &gt;  <link linkend="df/d5c/align2steps_8cpp_1afb76f542ba6bb0f8b7431a36b4d41e56">graph_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef graph_traits&lt; <link linkend="df/d5c/align2steps_8cpp_1afb76f542ba6bb0f8b7431a36b4d41e56">graph_t</link> &gt;::<link linkend="df/d5c/align2steps_8cpp_1afa6f4d2a0df3032981edfd867902469e">vertex_descriptor</link>  <link linkend="df/d5c/align2steps_8cpp_1afa6f4d2a0df3032981edfd867902469e">vertex_descriptor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef graph_traits&lt; <link linkend="df/d5c/align2steps_8cpp_1afb76f542ba6bb0f8b7431a36b4d41e56">graph_t</link> &gt;::<link linkend="df/d5c/align2steps_8cpp_1a0bc7107d61e7eb3d0a501a64f27ee814">edge_descriptor</link>  <link linkend="df/d5c/align2steps_8cpp_1a0bc7107d61e7eb3d0a501a64f27ee814">edge_descriptor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; int, int &gt;  <link linkend="df/d5c/align2steps_8cpp_1acac1200ac774ce3fecdc270358e4a6b4">Edge</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; int, int &gt;  <link linkend="df/d5c/align2steps_8cpp_1a9b04a99487f06c20fec48cab9a5df383">Point</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="df/d5c/align2steps_8cpp_1a9b04a99487f06c20fec48cab9a5df383">Point</link> &gt;  <link linkend="df/d5c/align2steps_8cpp_1a1e73ae03915084e88b1c87a31196c2ef">Alignment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="df/d5c/align2steps_8cpp_1acc994bdb70df3b28bc0f94aede3731c3">split</link> (
+const std::string &amp; input, const std::string &amp; regex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="df/d5c/align2steps_8cpp_1ab3610a12b4c9b6836049e7470f37825b">dist</link> (
+<link linkend="df/d5c/align2steps_8cpp_1a9b04a99487f06c20fec48cab9a5df383">Point</link> a, <link linkend="df/d5c/align2steps_8cpp_1a9b04a99487f06c20fec48cab9a5df383">Point</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="df/d5c/align2steps_8cpp_1a1e73ae03915084e88b1c87a31196c2ef">Alignment</link> <link linkend="df/d5c/align2steps_8cpp_1a2478456c39204bac5afcf5e6f5856e12">shortestPath</link> (
+const <link linkend="df/d5c/align2steps_8cpp_1a1e73ae03915084e88b1c87a31196c2ef">Alignment</link> &amp; a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="df/d5c/align2steps_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file align2steps.cpp</para>
+    </simplesect>
+</section>

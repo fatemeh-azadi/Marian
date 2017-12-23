@@ -1,0 +1,503 @@
+\hypertarget{structamunmt_1_1GPU_1_1Weights}{}\section{amunmt\+:\+:G\+PU\+:\+:Weights Struct Reference}
+\label{structamunmt_1_1GPU_1_1Weights}\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Weights\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dcd/structamunmt_1_1GPU_1_1Weights__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecAlignment}{Dec\+Alignment}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings}{Dec\+Embeddings}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecGRU1}{Dec\+G\+R\+U1}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecGRU2}{Dec\+G\+R\+U2}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecInit}{Dec\+Init}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM1}{Dec\+L\+S\+T\+M1}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM2}{Dec\+L\+S\+T\+M2}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecSoftmax}{Dec\+Softmax}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncBackwardGRU}{Enc\+Backward\+G\+RU}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncBackwardLSTM}{Enc\+Backward\+L\+S\+TM}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncEmbeddings}{Enc\+Embeddings}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncForwardGRU}{Enc\+Forward\+G\+RU}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncForwardLSTM}{Enc\+Forward\+L\+S\+TM}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Mult\+Weights}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1Weights_a360340474fc01e6f9e0f1eb5e97dce77}{Weights} (const std\+::string \&npz\+File, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t device)
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1Weights_a17cf38fe88d08d6b5fbae781a722f33c}{Weights} (const \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter} \&model, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t device)
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1Weights_a99568f81de9438196644923b9b0403b4}{Weights} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&)=delete
+\item 
+size\+\_\+t \hyperlink{structamunmt_1_1GPU_1_1Weights_abfe1c75646d906c8297a7dd8b7cd89a8}{Get\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncEmbeddings}{Enc\+Embeddings} \hyperlink{structamunmt_1_1GPU_1_1Weights_aa829b8f4fe98e626cec7943d544eeb8a}{enc\+Embeddings\+\_\+}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecEmbeddings}{Dec\+Embeddings} \hyperlink{structamunmt_1_1GPU_1_1Weights_ad38dafd4e5728942b6cda10bacefdf90}{dec\+Embeddings\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncForwardGRU}{Enc\+Forward\+G\+RU} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_ae3e981d85902d35f02e4ab44074cb4f6}{enc\+Forward\+G\+R\+U\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncBackwardGRU}{Enc\+Backward\+G\+RU} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_abbf3ec77d064c218b7c4cb0262232a5d}{enc\+Backward\+G\+R\+U\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncForwardLSTM}{Enc\+Forward\+L\+S\+TM} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a60e76f883e60cff698cc5894c52a5610}{enc\+Forward\+L\+S\+T\+M\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncBackwardLSTM}{Enc\+Backward\+L\+S\+TM} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a10f4a480601758e649528fcfa51427d0}{enc\+Backward\+L\+S\+T\+M\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Mult\+Weights}$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncForwardLSTM}{Enc\+Forward\+L\+S\+TM} $>$ $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a647b55f2d86d7006c0af82d44c2081f7}{enc\+Forward\+M\+L\+S\+T\+M\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Mult\+Weights}$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1EncBackwardLSTM}{Enc\+Backward\+L\+S\+TM} $>$ $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_ac64f6043d8c81c154a0d751c2a95e9bf}{enc\+Backward\+M\+L\+S\+T\+M\+\_\+}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecInit}{Dec\+Init} \hyperlink{structamunmt_1_1GPU_1_1Weights_a5b9ce1181f97a74b6cfaaf8885b14de7}{dec\+Init\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecGRU1}{Dec\+G\+R\+U1} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_ac3c477a5126a38078a9f824cce574ae2}{dec\+Gru1\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecGRU2}{Dec\+G\+R\+U2} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a6f333b8ce7efa26bdb44acf4902b651e}{dec\+Gru2\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM1}{Dec\+L\+S\+T\+M1} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a9d6a84a46778f44da098e09deabd1434}{dec\+L\+S\+T\+M1\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM2}{Dec\+L\+S\+T\+M2} $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a680cf6d59125ef2b8eeac1fd29679984}{dec\+L\+S\+T\+M2\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Mult\+Weights}$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM1}{Dec\+L\+S\+T\+M1} $>$ $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_a267b4f3b1fbc7c224a4a3fa9aa126658}{dec\+M\+L\+S\+T\+M1\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1MultWeights}{Mult\+Weights}$<$ \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecLSTM2}{Dec\+L\+S\+T\+M2} $>$ $>$ \hyperlink{structamunmt_1_1GPU_1_1Weights_ac2efb526e19d690a736aca4f952703f2}{dec\+M\+L\+S\+T\+M2\+\_\+}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecAlignment}{Dec\+Alignment} \hyperlink{structamunmt_1_1GPU_1_1Weights_ae42172415ad97ecd7f25f4038ee1e7ec}{dec\+Alignment\+\_\+}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights_1_1DecSoftmax}{Dec\+Softmax} \hyperlink{structamunmt_1_1GPU_1_1Weights_aaebd4d22c9dcebd7e000ecad3b154c38}{dec\+Softmax\+\_\+}
+\item 
+const size\+\_\+t \hyperlink{structamunmt_1_1GPU_1_1Weights_ac3a0d691e36aafe2377ccbd9270aa642}{device\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structamunmt_1_1GPU_1_1Weights_a0c173121920f426f51efddb518f92650}{init\+Enc\+Forward} (const \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter} \&model, std\+::string celltype)
+\item 
+void \hyperlink{structamunmt_1_1GPU_1_1Weights_adfb2ca7faf26debdbbad12e2b5957bd4}{init\+Enc\+Backward} (const \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter} \&model, std\+::string celltype)
+\item 
+void \hyperlink{structamunmt_1_1GPU_1_1Weights_aa83a05e029a0f893b62dd3854474e144}{init\+Dec1} (const \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter} \&model, std\+::string celltype)
+\item 
+void \hyperlink{structamunmt_1_1GPU_1_1Weights_ae0137c30edfe7541a35a09907ecbb76a}{init\+Dec2} (const \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter} \&model, std\+::string celltype)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file amun/gpu/dl4mt/model.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!Weights@{Weights}}
+\index{Weights@{Weights}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{Weights(const std\+::string \&npz\+File, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t device)}{Weights(const std::string &npzFile, const YAML::Node &config, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Weights\+::\+Weights (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{npz\+File, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_a360340474fc01e6f9e0f1eb5e97dce77}{}\label{structamunmt_1_1GPU_1_1Weights_a360340474fc01e6f9e0f1eb5e97dce77}
+
+
+Definition at line 329 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+330   : \hyperlink{structamunmt_1_1GPU_1_1Weights_a360340474fc01e6f9e0f1eb5e97dce77}{Weights}(\hyperlink{classNpzConverter}{NpzConverter}(npzFile), config, device)
+331   \{\}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_a360340474fc01e6f9e0f1eb5e97dce77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!Weights@{Weights}}
+\index{Weights@{Weights}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{Weights(const Npz\+Converter \&model, const Y\+A\+M\+L\+::\+Node \&config, size\+\_\+t device)}{Weights(const NpzConverter &model, const YAML::Node &config, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Weights\+::\+Weights (
+\begin{DoxyParamCaption}
+\item[{const {\bf Npz\+Converter} \&}]{model, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_a17cf38fe88d08d6b5fbae781a722f33c}{}\label{structamunmt_1_1GPU_1_1Weights_a17cf38fe88d08d6b5fbae781a722f33c}
+
+
+Definition at line 333 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+334   : \hyperlink{structamunmt_1_1GPU_1_1Weights_aa829b8f4fe98e626cec7943d544eeb8a}{encEmbeddings\_}(model),
+335     \hyperlink{structamunmt_1_1GPU_1_1Weights_ad38dafd4e5728942b6cda10bacefdf90}{decEmbeddings\_}(model),
+336     \hyperlink{structamunmt_1_1GPU_1_1Weights_a5b9ce1181f97a74b6cfaaf8885b14de7}{decInit\_}(model),
+337     \hyperlink{structamunmt_1_1GPU_1_1Weights_ae42172415ad97ecd7f25f4038ee1e7ec}{decAlignment\_}(model),
+338     \hyperlink{structamunmt_1_1GPU_1_1Weights_aaebd4d22c9dcebd7e000ecad3b154c38}{decSoftmax\_}(model),
+339     \hyperlink{structamunmt_1_1GPU_1_1Weights_ac3a0d691e36aafe2377ccbd9270aa642}{device\_}(device)
+340     \{
+341 
+342       std::string encCell = config[\textcolor{stringliteral}{"enc-cell"}] ? config[\textcolor{stringliteral}{"enc-cell"}].as<std::string>() : \textcolor{stringliteral}{"gru"};
+343       std::string encCell\_r = config[\textcolor{stringliteral}{"enc-cell-r"}] ? config[\textcolor{stringliteral}{"enc-cell-r"}].as<std::string>() : encCell;
+344       \hyperlink{structamunmt_1_1GPU_1_1Weights_a0c173121920f426f51efddb518f92650}{initEncForward}(model, encCell);
+345       \hyperlink{structamunmt_1_1GPU_1_1Weights_adfb2ca7faf26debdbbad12e2b5957bd4}{initEncBackward}(model, encCell\_r);
+346 
+347       std::string decCell = config[\textcolor{stringliteral}{"dec-cell"}] ? config[\textcolor{stringliteral}{"dec-cell"}].as<std::string>() : \textcolor{stringliteral}{"gru"};
+348       std::string decCell2 = config[\textcolor{stringliteral}{"dec-cell-2"}] ? config[\textcolor{stringliteral}{"dec-cell-2"}].as<std::string>() : decCell;
+349       \hyperlink{structamunmt_1_1GPU_1_1Weights_aa83a05e029a0f893b62dd3854474e144}{initDec1}(model, decCell);
+350       \hyperlink{structamunmt_1_1GPU_1_1Weights_ae0137c30edfe7541a35a09907ecbb76a}{initDec2}(model, decCell2);
+351     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_a17cf38fe88d08d6b5fbae781a722f33c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!Weights@{Weights}}
+\index{Weights@{Weights}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{Weights(const Weights \&)=delete}{Weights(const Weights &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Weights\+::\+Weights (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_a99568f81de9438196644923b9b0403b4}{}\label{structamunmt_1_1GPU_1_1Weights_a99568f81de9438196644923b9b0403b4}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{Get\+Device()}{GetDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Weights\+::\+Get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_abfe1c75646d906c8297a7dd8b7cd89a8}{}\label{structamunmt_1_1GPU_1_1Weights_abfe1c75646d906c8297a7dd8b7cd89a8}
+
+
+Definition at line 355 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+355                      \{
+356     \textcolor{keywordflow}{return} \hyperlink{structamunmt_1_1GPU_1_1Weights_ac3a0d691e36aafe2377ccbd9270aa642}{device\_};
+357   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!init\+Dec1@{init\+Dec1}}
+\index{init\+Dec1@{init\+Dec1}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{init\+Dec1(const Npz\+Converter \&model, std\+::string celltype)}{initDec1(const NpzConverter &model, std::string celltype)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Weights\+::init\+Dec1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Npz\+Converter} \&}]{model, }
+\item[{std\+::string}]{celltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_aa83a05e029a0f893b62dd3854474e144}{}\label{structamunmt_1_1GPU_1_1Weights_aa83a05e029a0f893b62dd3854474e144}
+
+
+Definition at line 380 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+380                                                              \{
+381     \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"lstm"})\{
+382       \hyperlink{structamunmt_1_1GPU_1_1Weights_a9d6a84a46778f44da098e09deabd1434}{decLSTM1\_} = std::shared\_ptr<DecLSTM1>(\textcolor{keyword}{new} DecLSTM1(model));
+383     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"mlstm"}) \{
+384       \hyperlink{structamunmt_1_1GPU_1_1Weights_a267b4f3b1fbc7c224a4a3fa9aa126658}{decMLSTM1\_} = std::shared\_ptr<MultWeights<DecLSTM1>>(\textcolor{keyword}{new} MultWeights<DecLSTM1>(model, \textcolor{stringliteral}{"
+      decoder"}));
+385     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"gru"}) \{
+386       \hyperlink{structamunmt_1_1GPU_1_1Weights_ac3c477a5126a38078a9f824cce574ae2}{decGru1\_} = std::shared\_ptr<DecGRU1>(\textcolor{keyword}{new} DecGRU1(model));
+387     \}
+388   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_aa83a05e029a0f893b62dd3854474e144_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!init\+Dec2@{init\+Dec2}}
+\index{init\+Dec2@{init\+Dec2}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{init\+Dec2(const Npz\+Converter \&model, std\+::string celltype)}{initDec2(const NpzConverter &model, std::string celltype)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Weights\+::init\+Dec2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Npz\+Converter} \&}]{model, }
+\item[{std\+::string}]{celltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_ae0137c30edfe7541a35a09907ecbb76a}{}\label{structamunmt_1_1GPU_1_1Weights_ae0137c30edfe7541a35a09907ecbb76a}
+
+
+Definition at line 389 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+389                                                              \{
+390     \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"lstm"})\{
+391       \hyperlink{structamunmt_1_1GPU_1_1Weights_a680cf6d59125ef2b8eeac1fd29679984}{decLSTM2\_} = std::shared\_ptr<DecLSTM2>(\textcolor{keyword}{new} DecLSTM2(model));
+392     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"mlstm"}) \{
+393       \hyperlink{structamunmt_1_1GPU_1_1Weights_ac2efb526e19d690a736aca4f952703f2}{decMLSTM2\_} = std::shared\_ptr<MultWeights<DecLSTM2>>(\textcolor{keyword}{new} MultWeights<DecLSTM2>(model, \textcolor{stringliteral}{"
+      decoder\_2"}));
+394     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"gru"}) \{
+395       \hyperlink{structamunmt_1_1GPU_1_1Weights_a6f333b8ce7efa26bdb44acf4902b651e}{decGru2\_} = std::shared\_ptr<DecGRU2>(\textcolor{keyword}{new} DecGRU2(model));
+396     \}
+397   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_ae0137c30edfe7541a35a09907ecbb76a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!init\+Enc\+Backward@{init\+Enc\+Backward}}
+\index{init\+Enc\+Backward@{init\+Enc\+Backward}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{init\+Enc\+Backward(const Npz\+Converter \&model, std\+::string celltype)}{initEncBackward(const NpzConverter &model, std::string celltype)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Weights\+::init\+Enc\+Backward (
+\begin{DoxyParamCaption}
+\item[{const {\bf Npz\+Converter} \&}]{model, }
+\item[{std\+::string}]{celltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_adfb2ca7faf26debdbbad12e2b5957bd4}{}\label{structamunmt_1_1GPU_1_1Weights_adfb2ca7faf26debdbbad12e2b5957bd4}
+
+
+Definition at line 370 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+370                                                                      \{
+371     \textcolor{keywordflow}{if}(celltype == \textcolor{stringliteral}{"lstm"})\{
+372       \hyperlink{structamunmt_1_1GPU_1_1Weights_a10f4a480601758e649528fcfa51427d0}{encBackwardLSTM\_} = std::shared\_ptr<EncBackwardLSTM>(\textcolor{keyword}{new} EncBackwardLSTM(model));
+373     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"mlstm"}) \{
+374       \hyperlink{structamunmt_1_1GPU_1_1Weights_ac64f6043d8c81c154a0d751c2a95e9bf}{encBackwardMLSTM\_} = std::shared\_ptr<MultWeights<EncBackwardLSTM>>
+375         (\textcolor{keyword}{new} MultWeights<EncBackwardLSTM>(model, \textcolor{stringliteral}{"encoder\_r"}));
+376     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"gru"})\{
+377       \hyperlink{structamunmt_1_1GPU_1_1Weights_abbf3ec77d064c218b7c4cb0262232a5d}{encBackwardGRU\_} = std::shared\_ptr<EncBackwardGRU>(\textcolor{keyword}{new} EncBackwardGRU(model));
+378     \}
+379   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_adfb2ca7faf26debdbbad12e2b5957bd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!init\+Enc\+Forward@{init\+Enc\+Forward}}
+\index{init\+Enc\+Forward@{init\+Enc\+Forward}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{init\+Enc\+Forward(const Npz\+Converter \&model, std\+::string celltype)}{initEncForward(const NpzConverter &model, std::string celltype)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Weights\+::init\+Enc\+Forward (
+\begin{DoxyParamCaption}
+\item[{const {\bf Npz\+Converter} \&}]{model, }
+\item[{std\+::string}]{celltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{structamunmt_1_1GPU_1_1Weights_a0c173121920f426f51efddb518f92650}{}\label{structamunmt_1_1GPU_1_1Weights_a0c173121920f426f51efddb518f92650}
+
+
+Definition at line 360 of file amun/gpu/dl4mt/model.\+h.
+
+
+\begin{DoxyCode}
+360                                                                    \{
+361     \textcolor{keywordflow}{if}(celltype == \textcolor{stringliteral}{"lstm"})\{
+362       \hyperlink{structamunmt_1_1GPU_1_1Weights_a60e76f883e60cff698cc5894c52a5610}{encForwardLSTM\_} = std::shared\_ptr<EncForwardLSTM>(\textcolor{keyword}{new} EncForwardLSTM(model));
+363     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"mlstm"}) \{
+364       \hyperlink{structamunmt_1_1GPU_1_1Weights_a647b55f2d86d7006c0af82d44c2081f7}{encForwardMLSTM\_} = std::shared\_ptr<MultWeights<EncForwardLSTM>>
+365         (\textcolor{keyword}{new} MultWeights<EncForwardLSTM>(model, \textcolor{stringliteral}{"encoder"}));
+366     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (celltype == \textcolor{stringliteral}{"gru"})\{
+367       \hyperlink{structamunmt_1_1GPU_1_1Weights_ae3e981d85902d35f02e4ab44074cb4f6}{encForwardGRU\_} = std::shared\_ptr<EncForwardGRU>(\textcolor{keyword}{new} EncForwardGRU(model));
+368     \}
+369   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/structamunmt_1_1GPU_1_1Weights_a0c173121920f426f51efddb518f92650_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Alignment\+\_\+@{dec\+Alignment\+\_\+}}
+\index{dec\+Alignment\+\_\+@{dec\+Alignment\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Alignment\+\_\+}{decAlignment_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Dec\+Alignment} amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Alignment\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ae42172415ad97ecd7f25f4038ee1e7ec}{}\label{structamunmt_1_1GPU_1_1Weights_ae42172415ad97ecd7f25f4038ee1e7ec}
+
+
+Definition at line 417 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Embeddings\+\_\+@{dec\+Embeddings\+\_\+}}
+\index{dec\+Embeddings\+\_\+@{dec\+Embeddings\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Embeddings\+\_\+}{decEmbeddings_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Dec\+Embeddings} amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Embeddings\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ad38dafd4e5728942b6cda10bacefdf90}{}\label{structamunmt_1_1GPU_1_1Weights_ad38dafd4e5728942b6cda10bacefdf90}
+
+
+Definition at line 401 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Gru1\+\_\+@{dec\+Gru1\+\_\+}}
+\index{dec\+Gru1\+\_\+@{dec\+Gru1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Gru1\+\_\+}{decGru1_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Dec\+G\+R\+U1}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Gru1\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ac3c477a5126a38078a9f824cce574ae2}{}\label{structamunmt_1_1GPU_1_1Weights_ac3c477a5126a38078a9f824cce574ae2}
+
+
+Definition at line 411 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Gru2\+\_\+@{dec\+Gru2\+\_\+}}
+\index{dec\+Gru2\+\_\+@{dec\+Gru2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Gru2\+\_\+}{decGru2_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Dec\+G\+R\+U2}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Gru2\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a6f333b8ce7efa26bdb44acf4902b651e}{}\label{structamunmt_1_1GPU_1_1Weights_a6f333b8ce7efa26bdb44acf4902b651e}
+
+
+Definition at line 412 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Init\+\_\+@{dec\+Init\+\_\+}}
+\index{dec\+Init\+\_\+@{dec\+Init\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Init\+\_\+}{decInit_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Dec\+Init} amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Init\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a5b9ce1181f97a74b6cfaaf8885b14de7}{}\label{structamunmt_1_1GPU_1_1Weights_a5b9ce1181f97a74b6cfaaf8885b14de7}
+
+
+Definition at line 409 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+L\+S\+T\+M1\+\_\+@{dec\+L\+S\+T\+M1\+\_\+}}
+\index{dec\+L\+S\+T\+M1\+\_\+@{dec\+L\+S\+T\+M1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+L\+S\+T\+M1\+\_\+}{decLSTM1_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Dec\+L\+S\+T\+M1}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+L\+S\+T\+M1\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a9d6a84a46778f44da098e09deabd1434}{}\label{structamunmt_1_1GPU_1_1Weights_a9d6a84a46778f44da098e09deabd1434}
+
+
+Definition at line 413 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+L\+S\+T\+M2\+\_\+@{dec\+L\+S\+T\+M2\+\_\+}}
+\index{dec\+L\+S\+T\+M2\+\_\+@{dec\+L\+S\+T\+M2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+L\+S\+T\+M2\+\_\+}{decLSTM2_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Dec\+L\+S\+T\+M2}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+L\+S\+T\+M2\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a680cf6d59125ef2b8eeac1fd29679984}{}\label{structamunmt_1_1GPU_1_1Weights_a680cf6d59125ef2b8eeac1fd29679984}
+
+
+Definition at line 414 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+M\+L\+S\+T\+M1\+\_\+@{dec\+M\+L\+S\+T\+M1\+\_\+}}
+\index{dec\+M\+L\+S\+T\+M1\+\_\+@{dec\+M\+L\+S\+T\+M1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+M\+L\+S\+T\+M1\+\_\+}{decMLSTM1_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Mult\+Weights}$<${\bf Dec\+L\+S\+T\+M1}$>$ $>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+M\+L\+S\+T\+M1\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a267b4f3b1fbc7c224a4a3fa9aa126658}{}\label{structamunmt_1_1GPU_1_1Weights_a267b4f3b1fbc7c224a4a3fa9aa126658}
+
+
+Definition at line 415 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+M\+L\+S\+T\+M2\+\_\+@{dec\+M\+L\+S\+T\+M2\+\_\+}}
+\index{dec\+M\+L\+S\+T\+M2\+\_\+@{dec\+M\+L\+S\+T\+M2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+M\+L\+S\+T\+M2\+\_\+}{decMLSTM2_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Mult\+Weights}$<${\bf Dec\+L\+S\+T\+M2}$>$ $>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+M\+L\+S\+T\+M2\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ac2efb526e19d690a736aca4f952703f2}{}\label{structamunmt_1_1GPU_1_1Weights_ac2efb526e19d690a736aca4f952703f2}
+
+
+Definition at line 416 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!dec\+Softmax\+\_\+@{dec\+Softmax\+\_\+}}
+\index{dec\+Softmax\+\_\+@{dec\+Softmax\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{dec\+Softmax\+\_\+}{decSoftmax_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Dec\+Softmax} amunmt\+::\+G\+P\+U\+::\+Weights\+::dec\+Softmax\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_aaebd4d22c9dcebd7e000ecad3b154c38}{}\label{structamunmt_1_1GPU_1_1Weights_aaebd4d22c9dcebd7e000ecad3b154c38}
+
+
+Definition at line 418 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t amunmt\+::\+G\+P\+U\+::\+Weights\+::device\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ac3a0d691e36aafe2377ccbd9270aa642}{}\label{structamunmt_1_1GPU_1_1Weights_ac3a0d691e36aafe2377ccbd9270aa642}
+
+
+Definition at line 420 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Backward\+G\+R\+U\+\_\+@{enc\+Backward\+G\+R\+U\+\_\+}}
+\index{enc\+Backward\+G\+R\+U\+\_\+@{enc\+Backward\+G\+R\+U\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Backward\+G\+R\+U\+\_\+}{encBackwardGRU_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Enc\+Backward\+G\+RU}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Backward\+G\+R\+U\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_abbf3ec77d064c218b7c4cb0262232a5d}{}\label{structamunmt_1_1GPU_1_1Weights_abbf3ec77d064c218b7c4cb0262232a5d}
+
+
+Definition at line 404 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Backward\+L\+S\+T\+M\+\_\+@{enc\+Backward\+L\+S\+T\+M\+\_\+}}
+\index{enc\+Backward\+L\+S\+T\+M\+\_\+@{enc\+Backward\+L\+S\+T\+M\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Backward\+L\+S\+T\+M\+\_\+}{encBackwardLSTM_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Enc\+Backward\+L\+S\+TM}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Backward\+L\+S\+T\+M\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a10f4a480601758e649528fcfa51427d0}{}\label{structamunmt_1_1GPU_1_1Weights_a10f4a480601758e649528fcfa51427d0}
+
+
+Definition at line 406 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Backward\+M\+L\+S\+T\+M\+\_\+@{enc\+Backward\+M\+L\+S\+T\+M\+\_\+}}
+\index{enc\+Backward\+M\+L\+S\+T\+M\+\_\+@{enc\+Backward\+M\+L\+S\+T\+M\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Backward\+M\+L\+S\+T\+M\+\_\+}{encBackwardMLSTM_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Mult\+Weights}$<${\bf Enc\+Backward\+L\+S\+TM}$>$ $>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Backward\+M\+L\+S\+T\+M\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ac64f6043d8c81c154a0d751c2a95e9bf}{}\label{structamunmt_1_1GPU_1_1Weights_ac64f6043d8c81c154a0d751c2a95e9bf}
+
+
+Definition at line 408 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Embeddings\+\_\+@{enc\+Embeddings\+\_\+}}
+\index{enc\+Embeddings\+\_\+@{enc\+Embeddings\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Embeddings\+\_\+}{encEmbeddings_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Enc\+Embeddings} amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Embeddings\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_aa829b8f4fe98e626cec7943d544eeb8a}{}\label{structamunmt_1_1GPU_1_1Weights_aa829b8f4fe98e626cec7943d544eeb8a}
+
+
+Definition at line 400 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Forward\+G\+R\+U\+\_\+@{enc\+Forward\+G\+R\+U\+\_\+}}
+\index{enc\+Forward\+G\+R\+U\+\_\+@{enc\+Forward\+G\+R\+U\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Forward\+G\+R\+U\+\_\+}{encForwardGRU_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Enc\+Forward\+G\+RU}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Forward\+G\+R\+U\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_ae3e981d85902d35f02e4ab44074cb4f6}{}\label{structamunmt_1_1GPU_1_1Weights_ae3e981d85902d35f02e4ab44074cb4f6}
+
+
+Definition at line 403 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Forward\+L\+S\+T\+M\+\_\+@{enc\+Forward\+L\+S\+T\+M\+\_\+}}
+\index{enc\+Forward\+L\+S\+T\+M\+\_\+@{enc\+Forward\+L\+S\+T\+M\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Forward\+L\+S\+T\+M\+\_\+}{encForwardLSTM_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Enc\+Forward\+L\+S\+TM}$>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Forward\+L\+S\+T\+M\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a60e76f883e60cff698cc5894c52a5610}{}\label{structamunmt_1_1GPU_1_1Weights_a60e76f883e60cff698cc5894c52a5610}
+
+
+Definition at line 405 of file amun/gpu/dl4mt/model.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}!enc\+Forward\+M\+L\+S\+T\+M\+\_\+@{enc\+Forward\+M\+L\+S\+T\+M\+\_\+}}
+\index{enc\+Forward\+M\+L\+S\+T\+M\+\_\+@{enc\+Forward\+M\+L\+S\+T\+M\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Weights@{amunmt\+::\+G\+P\+U\+::\+Weights}}
+\subsubsection[{\texorpdfstring{enc\+Forward\+M\+L\+S\+T\+M\+\_\+}{encForwardMLSTM_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Mult\+Weights}$<${\bf Enc\+Forward\+L\+S\+TM}$>$ $>$ amunmt\+::\+G\+P\+U\+::\+Weights\+::enc\+Forward\+M\+L\+S\+T\+M\+\_\+}\hypertarget{structamunmt_1_1GPU_1_1Weights_a647b55f2d86d7006c0af82d44c2081f7}{}\label{structamunmt_1_1GPU_1_1Weights_a647b55f2d86d7006c0af82d44c2081f7}
+
+
+Definition at line 407 of file amun/gpu/dl4mt/model.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2gpu_2dl4mt_2model_8h}{amun/gpu/dl4mt/model.\+h}\end{DoxyCompactItemize}

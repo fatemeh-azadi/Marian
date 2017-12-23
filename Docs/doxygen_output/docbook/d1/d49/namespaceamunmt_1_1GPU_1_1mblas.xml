@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d49/namespaceamunmt_1_1GPU_1_1mblas">
+<title>amunmt::GPU::mblas</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">amunmt::GPU::mblas::Array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler">amunmt::GPU::mblas::CublasHandler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d89/classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler">amunmt::GPU::mblas::CudaStreamHandler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">amunmt::GPU::mblas::MatrixWrapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">amunmt::GPU::mblas::TMatrix</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link>&lt; float &gt;  <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link>&lt; uint &gt;  <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">IMatrix</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a6d3fc25d9092bb620ee6cf18bf08466a">gSum</link> (
+const T * data, size_t count, T &amp; ret)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a9ef50bea247d2ef942fbb6d73e3ccaa7">Sum</link> (
+const T * data, size_t count)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1acd328e19f90abba621b306ccfa9ac0a5">Debug</link> (
+const M &amp; m, size_t pos, size_t l)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aabb52352b84ff8df12e584cc48f0c150">Debug</link> (
+const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; T &gt; &amp; vec, size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a0da5f0038d776f323a166d9deecac270">Debug</link> (
+const std::vector&lt; T &gt; &amp; vec, size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a6531a040aa422fcd149f89b92f6d2585">copy</link> (
+const T * in, size_t count, T * out, cudaMemcpyKind kind)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aae3149752683fc6c3d719c495c161cbc">Fill</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a88b723882ca7b614a20e6e9edb5c214b">Swap</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ae4b56d534b95189bf183d6008e2d7e45">Mean</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a90a5cec147d44d6774e5de8e9e0d696e">WeightedMean</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Weights, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; uint &gt; &amp; mapping)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a5b1f45cb5c05d5a9fbedab3e74553e73">Transpose</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a671f08d54e14b86a354517acc8d457e2">Transpose</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a6359878c47a6c3703d7d8b6e9db1d87e">Copy</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aff338966a337172d52673594c7a31474">PasteRow</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const size_t r, const size_t c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aea9adf68efb5a26cb9bca66189c1786c">PasteRows</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const size_t rowNo, size_t colNo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a4cbcf6af0265debf12e8348d2eea6daa">CopyRow</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const size_t r, const size_t c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1af345694ea7f81e67d44c906d2a24b4a9">Concat</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ac4634f9a58b95ccdd997393c75a9fc69">MapMatrix</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; state, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths, size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab9e2664595a60723ce6158c22f2ed527">CopyRows</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; uint &gt; &amp; indices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a45e67b812840551fae28c4f7cca2b562">Assemble</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; uint &gt; &amp; indices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aacbc57fa7bf5c1fac6abbd44a9832c8d">Slice</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, size_t n, size_t dim)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a463b2de180e8ab66bae53d1f8c5bc011">Prod</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; C, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; A, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; B, bool transA, bool transB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad21070cb29f8c33c03f76e31ef902dfe">Softmax</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; uint &gt; &amp; batchIds, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> &amp; sentenceLengths, size_t batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a25593e31e47b2518b1fc922e3b0a1a77">LogSoftmax</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a60fe9588f1af65f7b3f39b69aadebe9c">gBroadcast</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; in1Wrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; in2Wrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; uint &gt; batchMappingWrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1afba17f6f1ebd7b942ed07d760259d143">Broadcast</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; in1, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; in2, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; uint &gt; &amp; batchMapping, size_t srcSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1abb917582af813cef1c2292204dbf327b">gBroadcastVecColumn</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; inWrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a468e534364a213f40977fad2c8ce6024">BroadcastVecColumn</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; float &gt; &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ac798f85afe19741e1c3bc34d516d6545">gBroadcastVec</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; inWrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ace73de50c8241f219ad490d64513829f">BroadcastVec</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a2af92dc8b21ca5e91d449759338b8c2c">gElement</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1adc0a1bee5e001b28e10bff88e940b284">Element</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a0712a4ff2aa70bb93b88666856ff3f13">gElement</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; inWrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a138142180375dfb251db78a6a377d8fe">Element</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aa6fb358a30ce9510db093cfce4aa4f7f">gElement</link> (
+Functor functor, <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; outWrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; in1Wrap, const <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">MatrixWrapper</link>&lt; float &gt; in2Wrap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ac9aba8feb376d85497281715e31ef4ae">Element</link> (
+Functor functor, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; Out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In1, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1acc42d3fa7b4113baf1824863975336eb">SetColumn</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; In, int noColumn, float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ae50f34596c0fcc0aa93e717edcd66379">Normalization</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; in, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; alpha, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; beta, float eps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ae1115239ef99415332b16c92bb64ca2d">Normalization</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; out, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; in, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; alpha, float eps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ac32bfddb0814404f44facd8cf8b9a810">LogSoftmaxAndNBest</link> (
+<link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &gt; &amp; nBest, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; in, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">Matrix</link> &amp; b4, const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; float &gt; &amp; costs, bool forbidUNK, uint maxBeamSize, const std::vector&lt; uint &gt; &amp; beamSizes, uint beamSizeSum, bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab76a2b350282de9a3eaea50aab7dc329">TestMemCpy</link> (
+size_t size, const T * data1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1aaef53311a23d2ea53d71d0ae0cfe73d0">TestMemCpy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1a0c789c549a804f74120e5e6fd546a58f">testidToMatrixInd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

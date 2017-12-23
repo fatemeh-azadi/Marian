@@ -1,0 +1,166 @@
+\hypertarget{classmarian_1_1data_1_1DataBatch}{}\section{marian\+:\+:data\+:\+:Data\+Batch Class Reference}
+\label{classmarian_1_1data_1_1DataBatch}\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+
+
+{\ttfamily \#include $<$dataset.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:data\+:\+:Data\+Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d0/d9f/classmarian_1_1data_1_1DataBatch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Data\+Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d5/dd0/classmarian_1_1data_1_1DataBatch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1Input}{Input} $>$ \& \hyperlink{classmarian_1_1data_1_1DataBatch_a3d6ace52303ab3f26fc351ca4f098040}{inputs} ()
+\item 
+const std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1Input}{Input} $>$ \& \hyperlink{classmarian_1_1data_1_1DataBatch_a2c28ac6dec880560e37798296e472692}{inputs} () const 
+\item 
+void \hyperlink{classmarian_1_1data_1_1DataBatch_ad6232318601d04de84a86587499e84aa}{push\+\_\+back} (\hyperlink{classmarian_1_1data_1_1Input}{Input} input)
+\item 
+\hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} \& \hyperlink{classmarian_1_1data_1_1DataBatch_af3ab2b78b7692a716a319006c35ca5ca}{features} ()
+\item 
+\hyperlink{namespacemarian_1_1data_a5801e80ecb76ee38a5ac080f08d9646c}{Data} \& \hyperlink{classmarian_1_1data_1_1DataBatch_a63cef28fe2f2a697abe429b10cdf1269}{labels} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1DataBatch_a19021abc5f6e1aeed56c3b68d49a4a4a}{size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1Input}{Input} $>$ \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 69 of file data/dataset.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!features@{features}}
+\index{features@{features}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{features()}{features()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data}\& marian\+::data\+::\+Data\+Batch\+::features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1DataBatch_af3ab2b78b7692a716a319006c35ca5ca}{}\label{classmarian_1_1data_1_1DataBatch_af3ab2b78b7692a716a319006c35ca5ca}
+
+
+Definition at line 80 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+80 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}[0].data(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!inputs@{inputs}}
+\index{inputs@{inputs}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{inputs()}{inputs()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Input}$>$\& marian\+::data\+::\+Data\+Batch\+::inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1DataBatch_a3d6ace52303ab3f26fc351ca4f098040}{}\label{classmarian_1_1data_1_1DataBatch_a3d6ace52303ab3f26fc351ca4f098040}
+
+
+Definition at line 74 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+74 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!inputs@{inputs}}
+\index{inputs@{inputs}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{inputs() const }{inputs() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf Input}$>$\& marian\+::data\+::\+Data\+Batch\+::inputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1DataBatch_a2c28ac6dec880560e37798296e472692}{}\label{classmarian_1_1data_1_1DataBatch_a2c28ac6dec880560e37798296e472692}
+
+
+Definition at line 76 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+76 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!labels@{labels}}
+\index{labels@{labels}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{labels()}{labels()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data}\& marian\+::data\+::\+Data\+Batch\+::labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1DataBatch_a63cef28fe2f2a697abe429b10cdf1269}{}\label{classmarian_1_1data_1_1DataBatch_a63cef28fe2f2a697abe429b10cdf1269}
+
+
+Definition at line 82 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+82 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}.back().data(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(\+Input input)}{push_back(Input input)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Data\+Batch\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Input}}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1DataBatch_ad6232318601d04de84a86587499e84aa}{}\label{classmarian_1_1data_1_1DataBatch_ad6232318601d04de84a86587499e84aa}
+
+
+Definition at line 78 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+78 \{ \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}.push\_back(input); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!size@{size}}
+\index{size@{size}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Data\+Batch\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1data_1_1DataBatch_a19021abc5f6e1aeed56c3b68d49a4a4a}{}\label{classmarian_1_1data_1_1DataBatch_a19021abc5f6e1aeed56c3b68d49a4a4a}
+
+
+Implements \hyperlink{classmarian_1_1data_1_1Batch_a94c7526a079220adb07575e302c670c4}{marian\+::data\+::\+Batch}.
+
+
+
+Definition at line 84 of file data/dataset.\+h.
+
+
+\begin{DoxyCode}
+84 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{inputs\_}.front().shape()[0]; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}!inputs\+\_\+@{inputs\+\_\+}}
+\index{inputs\+\_\+@{inputs\+\_\+}!marian\+::data\+::\+Data\+Batch@{marian\+::data\+::\+Data\+Batch}}
+\subsubsection[{\texorpdfstring{inputs\+\_\+}{inputs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Input}$>$ marian\+::data\+::\+Data\+Batch\+::inputs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}{}\label{classmarian_1_1data_1_1DataBatch_a9cb518e76d76f64176f6f73ed1476115}
+
+
+Definition at line 71 of file data/dataset.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_2dataset_8h}{data/dataset.\+h}\end{DoxyCompactItemize}

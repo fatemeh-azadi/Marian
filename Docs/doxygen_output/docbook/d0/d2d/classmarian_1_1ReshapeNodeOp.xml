@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp">
+<title>marian::ReshapeNodeOp class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ReshapeNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d6a/classmarian_1_1ReshapeNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ReshapeNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d52/classmarian_1_1ReshapeNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr reshapee_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a5e7f049300ccff3d578f3e4c67b258f1">ReshapeNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1ae314c869db74529cd4b114e2a677b891">~ReshapeNodeOp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a243a36a9cd6424ebefb74d025309f560">allocate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a91830ea5e627891025195ded73877bcb">free</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a8f9ca94013f3465349e43d3c2353b6ac">forward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1ac9699ea9bb2347584e26d9b4e7460a81">backward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a989d96bc6466ecb0bc3fc46b9cc8674d">init_dependent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a201cb6e0e0095a314b3cb72b38bc5a1d">set_zero_adjoint</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a61262825805f0d2ab311d7ad36fed515">val</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a74f6cd342abd616d2b8f8a89948e45ea">grad</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a55763fba7127dae91e3cc878f5617edd">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1af2273386eb99822cd20bce1b9e877f49">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp_1a629e7d06a0a137b9b6dd9343619ac860">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a5e7f049300ccff3d578f3e4c67b258f1">
+                <title>marian::ReshapeNodeOp::ReshapeNodeOp (Expr a, Shape shape, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1ae314c869db74529cd4b114e2a677b891">
+                <title>marian::ReshapeNodeOp::~ReshapeNodeOp ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a243a36a9cd6424ebefb74d025309f560">
+                <title>size_t marian::ReshapeNodeOp::allocate ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a91830ea5e627891025195ded73877bcb">
+                <title>void marian::ReshapeNodeOp::free ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a8f9ca94013f3465349e43d3c2353b6ac">
+                <title>void marian::ReshapeNodeOp::forward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1ac9699ea9bb2347584e26d9b4e7460a81">
+                <title>void marian::ReshapeNodeOp::backward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a989d96bc6466ecb0bc3fc46b9cc8674d">
+                <title>void marian::ReshapeNodeOp::init_dependent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a201cb6e0e0095a314b3cb72b38bc5a1d">
+                <title>void marian::ReshapeNodeOp::set_zero_adjoint ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a61262825805f0d2ab311d7ad36fed515">
+                <title>Tensor&amp; marian::ReshapeNodeOp::val ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a74f6cd342abd616d2b8f8a89948e45ea">
+                <title>Tensor&amp; marian::ReshapeNodeOp::grad ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a55763fba7127dae91e3cc878f5617edd">
+                <title>const std::string marian::ReshapeNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1af2273386eb99822cd20bce1b9e877f49">
+                <title>const std::string marian::ReshapeNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d2d/classmarian_1_1ReshapeNodeOp_1a629e7d06a0a137b9b6dd9343619ac860">
+                <title>virtual size_t marian::ReshapeNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

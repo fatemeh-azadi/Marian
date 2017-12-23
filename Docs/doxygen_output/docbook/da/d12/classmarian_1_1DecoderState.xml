@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d12/classmarian_1_1DecoderState">
+<title>marian::DecoderState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/ddb/states_8h">&lt;states.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::DecoderState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/daf/classmarian_1_1DecoderState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::DecoderState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d76/classmarian_1_1DecoderState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; EncoderState &gt; encState_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr targetEmbeddings_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr probs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool singleStep_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>rnn::States states_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d12/classmarian_1_1DecoderState_1a4b2139b187e040ba2b910310ad5eb136">DecoderState</link> (
+const <link linkend="dc/d39/classmarian_1_1rnn_1_1States">rnn::States</link> &amp; states, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> probs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; encState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; <link linkend="da/d12/classmarian_1_1DecoderState_1a1e32dbe1d2757e890cce367911cdf819">getEncoderState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d12/classmarian_1_1DecoderState_1af761b699d78e9545987adc743bc579b8">getProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="da/d12/classmarian_1_1DecoderState_1a7d99dcec147de0654c049736314e0792">setProbs</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> probs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="da/d12/classmarian_1_1DecoderState_1af0f090185bd8f34b53b6a3cf79d7eea3">select</link> (
+const std::vector&lt; size_t &gt; &amp; selIdx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="dc/d39/classmarian_1_1rnn_1_1States">rnn::States</link> &amp; <link linkend="da/d12/classmarian_1_1DecoderState_1a7ba0022e125c8392b43423107af33f5b">getStates</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d12/classmarian_1_1DecoderState_1a93f6000b711e4f710f46268e0781eed4">getTargetEmbeddings</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="da/d12/classmarian_1_1DecoderState_1a9ba5f20385a0b96e5306dd81bba2a203">setTargetEmbeddings</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> targetEmbeddings)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="da/d12/classmarian_1_1DecoderState_1aa05a373b7a8e423af70829189e96fea5">doSingleStep</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="da/d12/classmarian_1_1DecoderState_1a670f20d329fe47a6e9a483619bb0c115">setSingleStep</link> (
+bool singleStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::vector&lt; size_t &gt; &amp; <link linkend="da/d12/classmarian_1_1DecoderState_1a9ab2da41ff8e8565476f83c7870ad46b">getSourceWords</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="da/d12/classmarian_1_1DecoderState_1abc513554a6dec21e221b18def05297cb">blacklist</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> totalCosts, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a4b2139b187e040ba2b910310ad5eb136">
+                <title>marian::DecoderState::DecoderState (const rnn::States &amp;states, Expr probs, Ptr&lt; EncoderState &gt; encState)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a1e32dbe1d2757e890cce367911cdf819">
+                <title>virtual Ptr&lt;EncoderState&gt; marian::DecoderState::getEncoderState ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1af761b699d78e9545987adc743bc579b8">
+                <title>virtual Expr marian::DecoderState::getProbs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a7d99dcec147de0654c049736314e0792">
+                <title>virtual void marian::DecoderState::setProbs (Expr probs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1af0f090185bd8f34b53b6a3cf79d7eea3">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::DecoderState::select (const std::vector&lt; size_t &gt; &amp;selIdx)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a7ba0022e125c8392b43423107af33f5b">
+                <title>virtual const rnn::States&amp; marian::DecoderState::getStates ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a93f6000b711e4f710f46268e0781eed4">
+                <title>virtual Expr marian::DecoderState::getTargetEmbeddings ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a9ba5f20385a0b96e5306dd81bba2a203">
+                <title>virtual void marian::DecoderState::setTargetEmbeddings (Expr targetEmbeddings)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1aa05a373b7a8e423af70829189e96fea5">
+                <title>virtual bool marian::DecoderState::doSingleStep ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a670f20d329fe47a6e9a483619bb0c115">
+                <title>virtual void marian::DecoderState::setSingleStep (bool singleStep=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1a9ab2da41ff8e8565476f83c7870ad46b">
+                <title>virtual const std::vector&lt;size_t&gt;&amp; marian::DecoderState::getSourceWords ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d12/classmarian_1_1DecoderState_1abc513554a6dec21e221b18def05297cb">
+                <title>virtual void marian::DecoderState::blacklist (Expr totalCosts, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

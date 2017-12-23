@@ -1,0 +1,110 @@
+\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal}{}\section{amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:R\+N\+N\+Final Class Reference}
+\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal}\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:R\+N\+N\+Final\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{de/df8/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1d99985b912cc2eee9d837d2bac30799}{R\+N\+N\+Final} (std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ cell)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1b0db5fb40335eeb2acdd098220cbb32}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ae7163a490feab5420d5e0f3e64e50d49}{R\+N\+N\+Final} (const \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal}{R\+N\+N\+Final} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell} $>$ \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ac68edc629676f353c6c206b6ebc5b15d}{gru\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 121 of file decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}!R\+N\+N\+Final@{R\+N\+N\+Final}}
+\index{R\+N\+N\+Final@{R\+N\+N\+Final}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Final(std\+::unique\+\_\+ptr$<$ Cell $>$ cell)}{RNNFinal(std::unique_ptr< Cell > cell)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final\+::\+R\+N\+N\+Final (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Cell} $>$}]{cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1d99985b912cc2eee9d837d2bac30799}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1d99985b912cc2eee9d837d2bac30799}
+
+
+Definition at line 123 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+124           : \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ac68edc629676f353c6c206b6ebc5b15d}{gru\_}(std::move(cell)) \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}!R\+N\+N\+Final@{R\+N\+N\+Final}}
+\index{R\+N\+N\+Final@{R\+N\+N\+Final}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}}
+\subsubsection[{\texorpdfstring{R\+N\+N\+Final(const R\+N\+N\+Final \&)=delete}{RNNFinal(const RNNFinal &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final\+::\+R\+N\+N\+Final (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\+N\+N\+Final} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ae7163a490feab5420d5e0f3e64e50d49}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ae7163a490feab5420d5e0f3e64e50d49}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context)}{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final\+::\+Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1b0db5fb40335eeb2acdd098220cbb32}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1b0db5fb40335eeb2acdd098220cbb32}
+
+
+Definition at line 126 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+128                                                       \{
+129           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ac68edc629676f353c6c206b6ebc5b15d}{gru\_}->GetNextState(NextState, State, Context);
+130         \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d5c/classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_a1b0db5fb40335eeb2acdd098220cbb32_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}!gru\+\_\+@{gru\+\_\+}}
+\index{gru\+\_\+@{gru\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final}}
+\subsubsection[{\texorpdfstring{gru\+\_\+}{gru_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Cell}$>$ amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+R\+N\+N\+Final\+::gru\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ac68edc629676f353c6c206b6ebc5b15d}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1RNNFinal_ac68edc629676f353c6c206b6ebc5b15d}
+
+
+Definition at line 133 of file decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8h}{decoder.\+h}\end{DoxyCompactItemize}

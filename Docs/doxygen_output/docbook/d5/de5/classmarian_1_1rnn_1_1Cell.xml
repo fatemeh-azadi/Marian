@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/de5/classmarian_1_1rnn_1_1Cell">
+<title>marian::rnn::Cell class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::Cell</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d25/classmarian_1_1rnn_1_1Cell__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::Cell</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d59/classmarian_1_1rnn_1_1Cell__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::function&lt; Expr(Ptr&lt; rnn::RNN &gt;)&gt; &gt; lazyInputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1acc392c8adfb002c17993f02e6d3085a6">Cell</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a88c852cfe707ab973aa30780bd8e66bc">apply</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a982be20556f9ba25eb76714ef264efeb">getLazyInputs</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; rnn::RNN &gt; parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a3561734479d2121025c5e3f834ce2397">setLazyInputs</link> (
+std::vector&lt; std::function&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link>(<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; rnn::RNN &gt;)&gt;&gt; lazy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a8e02cc3d239bc9947cd3200ff2995a01">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a4bd1bce7cf42fcc48387488e218af257">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; , <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> , <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/de5/classmarian_1_1rnn_1_1Cell_1a115c5d440c516f7ed7982bc08e66d87d">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1acc392c8adfb002c17993f02e6d3085a6">
+                <title>marian::rnn::Cell::Cell (Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a88c852cfe707ab973aa30780bd8e66bc">
+                <title>State marian::rnn::Cell::apply (std::vector&lt; Expr &gt; inputs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a982be20556f9ba25eb76714ef264efeb">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::Cell::getLazyInputs (Ptr&lt; rnn::RNN &gt; parent)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a3561734479d2121025c5e3f834ce2397">
+                <title>virtual void marian::rnn::Cell::setLazyInputs (std::vector&lt; std::function&lt; Expr(Ptr&lt; rnn::RNN &gt;)&gt;&gt; lazy)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a8e02cc3d239bc9947cd3200ff2995a01">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::Cell::applyInput (std::vector&lt; Expr &gt; inputs)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a4bd1bce7cf42fcc48387488e218af257">
+                <title>virtual State marian::rnn::Cell::applyState (std::vector&lt; Expr &gt;, State, Expr=nullptr)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/de5/classmarian_1_1rnn_1_1Cell_1a115c5d440c516f7ed7982bc08e66d87d">
+                <title>virtual void marian::rnn::Cell::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

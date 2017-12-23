@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6a/classGPU_1_1ApePenaltyState">
+<title>GPU::ApePenaltyState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d0c/ape__penalty_8h">&lt;ape_penalty.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for GPU::ApePenaltyState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d6f/classGPU_1_1ApePenaltyState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for GPU::ApePenaltyState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/de7/classGPU_1_1ApePenaltyState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="d9/d6a/classGPU_1_1ApePenaltyState_1a67100edd4d354aacb582bb5ebec34165">Debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/d6a/classGPU_1_1ApePenaltyState_1a67100edd4d354aacb582bb5ebec34165">
+                <title>virtual std::string GPU::ApePenaltyState::Debug () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

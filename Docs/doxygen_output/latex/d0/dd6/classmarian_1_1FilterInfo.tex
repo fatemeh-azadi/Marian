@@ -1,0 +1,194 @@
+\hypertarget{classmarian_1_1FilterInfo}{}\section{marian\+:\+:Filter\+Info Class Reference}
+\label{classmarian_1_1FilterInfo}\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+
+
+{\ttfamily \#include $<$filter.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Filter\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d2/dea/classmarian_1_1FilterInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1FilterInfo_af23c09dfff5d64cbc6650f1dddd33fb8}{Filter\+Info} (const std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \&\hyperlink{classmarian_1_1FilterInfo_a3c1418d7da057c05e4f4de7550cafc61}{indeces}, const std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \&\hyperlink{classmarian_1_1FilterInfo_a4fca6ec9c8444f4fe99600d97785ce7f}{mapped\+Indeces}, const std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \&\hyperlink{classmarian_1_1FilterInfo_a160eaa660126b9c443a3f4797d8a663e}{reverse\+Map}, const std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&\hyperlink{classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888}{probs})
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \& \hyperlink{classmarian_1_1FilterInfo_a3c1418d7da057c05e4f4de7550cafc61}{indeces} ()
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \& \hyperlink{classmarian_1_1FilterInfo_a4fca6ec9c8444f4fe99600d97785ce7f}{mapped\+Indeces} ()
+\item 
+\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} \hyperlink{classmarian_1_1FilterInfo_a160eaa660126b9c443a3f4797d8a663e}{reverse\+Map} (\hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} idx)
+\item 
+std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$ $>$ \& \hyperlink{classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888}{probs} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \hyperlink{classmarian_1_1FilterInfo_aa1adbd7e9344e1183b61db98c368ee66}{indeces\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \hyperlink{classmarian_1_1FilterInfo_a231ddfb90ed57402c6f20fa4e8eb3afd}{mapped\+Indeces\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5db8bee455c97a62d6a525dc48efe4c2}{Word} $>$ \hyperlink{classmarian_1_1FilterInfo_a18e06a5f0cb4ae6ab7e1505a47c6f4a0}{reverse\+Map\+\_\+}
+\item 
+std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$ $>$ \hyperlink{classmarian_1_1FilterInfo_a1050c89fb3c2ce4eaf2928979b20288d}{probs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file marian/src/data/filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!Filter\+Info@{Filter\+Info}}
+\index{Filter\+Info@{Filter\+Info}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{Filter\+Info(const std\+::vector$<$ Word $>$ \&indeces, const std\+::vector$<$ Word $>$ \&mapped\+Indeces, const std\+::vector$<$ Word $>$ \&reverse\+Map, const std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&probs)}{FilterInfo(const std::vector< Word > &indeces, const std::vector< Word > &mappedIndeces, const std::vector< Word > &reverseMap, const std::pair< std::vector< size_t >, std::vector< float >> &probs)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Filter\+Info\+::\+Filter\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Word} $>$ \&}]{indeces, }
+\item[{const std\+::vector$<$ {\bf Word} $>$ \&}]{mapped\+Indeces, }
+\item[{const std\+::vector$<$ {\bf Word} $>$ \&}]{reverse\+Map, }
+\item[{const std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ float $>$$>$ \&}]{probs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1FilterInfo_af23c09dfff5d64cbc6650f1dddd33fb8}{}\label{classmarian_1_1FilterInfo_af23c09dfff5d64cbc6650f1dddd33fb8}
+
+
+Definition at line 20 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+24       : \hyperlink{classmarian_1_1FilterInfo_aa1adbd7e9344e1183b61db98c368ee66}{indeces\_}(indeces),
+25         \hyperlink{classmarian_1_1FilterInfo_a231ddfb90ed57402c6f20fa4e8eb3afd}{mappedIndeces\_}(mappedIndeces),
+26         \hyperlink{classmarian_1_1FilterInfo_a18e06a5f0cb4ae6ab7e1505a47c6f4a0}{reverseMap\_}(reverseMap),
+27         \hyperlink{classmarian_1_1FilterInfo_a1050c89fb3c2ce4eaf2928979b20288d}{probs\_}(\hyperlink{classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888}{probs}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!indeces@{indeces}}
+\index{indeces@{indeces}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{indeces()}{indeces()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$\& marian\+::\+Filter\+Info\+::indeces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1FilterInfo_a3c1418d7da057c05e4f4de7550cafc61}{}\label{classmarian_1_1FilterInfo_a3c1418d7da057c05e4f4de7550cafc61}
+
+
+Definition at line 29 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1FilterInfo_aa1adbd7e9344e1183b61db98c368ee66}{indeces\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!mapped\+Indeces@{mapped\+Indeces}}
+\index{mapped\+Indeces@{mapped\+Indeces}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{mapped\+Indeces()}{mappedIndeces()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$\& marian\+::\+Filter\+Info\+::mapped\+Indeces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1FilterInfo_a4fca6ec9c8444f4fe99600d97785ce7f}{}\label{classmarian_1_1FilterInfo_a4fca6ec9c8444f4fe99600d97785ce7f}
+
+
+Definition at line 30 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+30 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1FilterInfo_a231ddfb90ed57402c6f20fa4e8eb3afd}{mappedIndeces\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!probs@{probs}}
+\index{probs@{probs}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{probs()}{probs()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$std\+::vector$<$size\+\_\+t$>$, std\+::vector$<$float$>$ $>$\& marian\+::\+Filter\+Info\+::probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888}{}\label{classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888}
+
+
+Definition at line 32 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+32 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1FilterInfo_a1050c89fb3c2ce4eaf2928979b20288d}{probs\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d0/dd6/classmarian_1_1FilterInfo_aaa0bce506c3f314cb8f3a968fde0f888_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!reverse\+Map@{reverse\+Map}}
+\index{reverse\+Map@{reverse\+Map}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{reverse\+Map(\+Word idx)}{reverseMap(Word idx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Word} marian\+::\+Filter\+Info\+::reverse\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Word}}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1FilterInfo_a160eaa660126b9c443a3f4797d8a663e}{}\label{classmarian_1_1FilterInfo_a160eaa660126b9c443a3f4797d8a663e}
+
+
+Definition at line 31 of file marian/src/data/filter.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1FilterInfo_a18e06a5f0cb4ae6ab7e1505a47c6f4a0}{reverseMap\_}[idx]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d0/dd6/classmarian_1_1FilterInfo_a160eaa660126b9c443a3f4797d8a663e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!indeces\+\_\+@{indeces\+\_\+}}
+\index{indeces\+\_\+@{indeces\+\_\+}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{indeces\+\_\+}{indeces_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$ marian\+::\+Filter\+Info\+::indeces\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1FilterInfo_aa1adbd7e9344e1183b61db98c368ee66}{}\label{classmarian_1_1FilterInfo_aa1adbd7e9344e1183b61db98c368ee66}
+
+
+Definition at line 14 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!mapped\+Indeces\+\_\+@{mapped\+Indeces\+\_\+}}
+\index{mapped\+Indeces\+\_\+@{mapped\+Indeces\+\_\+}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{mapped\+Indeces\+\_\+}{mappedIndeces_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$ marian\+::\+Filter\+Info\+::mapped\+Indeces\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1FilterInfo_a231ddfb90ed57402c6f20fa4e8eb3afd}{}\label{classmarian_1_1FilterInfo_a231ddfb90ed57402c6f20fa4e8eb3afd}
+
+
+Definition at line 15 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!probs\+\_\+@{probs\+\_\+}}
+\index{probs\+\_\+@{probs\+\_\+}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{probs\+\_\+}{probs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$std\+::vector$<$size\+\_\+t$>$, std\+::vector$<$float$>$ $>$ marian\+::\+Filter\+Info\+::probs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1FilterInfo_a1050c89fb3c2ce4eaf2928979b20288d}{}\label{classmarian_1_1FilterInfo_a1050c89fb3c2ce4eaf2928979b20288d}
+
+
+Definition at line 17 of file marian/src/data/filter.\+h.
+
+\index{marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}!reverse\+Map\+\_\+@{reverse\+Map\+\_\+}}
+\index{reverse\+Map\+\_\+@{reverse\+Map\+\_\+}!marian\+::\+Filter\+Info@{marian\+::\+Filter\+Info}}
+\subsubsection[{\texorpdfstring{reverse\+Map\+\_\+}{reverseMap_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Word}$>$ marian\+::\+Filter\+Info\+::reverse\+Map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1FilterInfo_a18e06a5f0cb4ae6ab7e1505a47c6f4a0}{}\label{classmarian_1_1FilterInfo_a18e06a5f0cb4ae6ab7e1505a47c6f4a0}
+
+
+Definition at line 16 of file marian/src/data/filter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2data_2filter_8h}{marian/src/data/filter.\+h}\end{DoxyCompactItemize}

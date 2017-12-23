@@ -1,0 +1,181 @@
+\hypertarget{classmarian_1_1WordPenalty}{}\section{marian\+:\+:Word\+Penalty Class Reference}
+\label{classmarian_1_1WordPenalty}\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+
+
+{\ttfamily \#include $<$scorers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Word\+Penalty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{d2/da5/classmarian_1_1WordPenalty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Word\+Penalty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d0f/classmarian_1_1WordPenalty__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1WordPenalty_ad726e60c0143a2507da845fd8b061df8}{Word\+Penalty} (const std\+::string \&name, float weight, int dim\+Vocab)
+\item 
+virtual void \hyperlink{classmarian_1_1WordPenalty_a96cc0adc40604d1b3be2c2f638397192}{clear} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ \hyperlink{classmarian_1_1WordPenalty_a1569dc5b0d385a1cc86d230e1aeda263}{start\+State} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ \hyperlink{classmarian_1_1WordPenalty_accc25c25b2d7b7138fe15cefad40da23}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{dim\+Vocab\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1WordPenalty_a6e9da9f4df99aea84ce07fa74fdb922a}{penalties\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 138 of file scorers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!Word\+Penalty@{Word\+Penalty}}
+\index{Word\+Penalty@{Word\+Penalty}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{Word\+Penalty(const std\+::string \&name, float weight, int dim\+Vocab)}{WordPenalty(const std::string &name, float weight, int dimVocab)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Word\+Penalty\+::\+Word\+Penalty (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{float}]{weight, }
+\item[{int}]{dim\+Vocab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1WordPenalty_ad726e60c0143a2507da845fd8b061df8}{}\label{classmarian_1_1WordPenalty_ad726e60c0143a2507da845fd8b061df8}
+
+
+Definition at line 144 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+145       : \hyperlink{classmarian_1_1Scorer_a70f41d372a9989811cd83852f3283c32}{Scorer}(name, weight), \hyperlink{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{dimVocab\_}(dimVocab) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{clear(\+Ptr$<$ Expression\+Graph $>$ graph)}{clear(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Word\+Penalty\+::clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1WordPenalty_a96cc0adc40604d1b3be2c2f638397192}{}\label{classmarian_1_1WordPenalty_a96cc0adc40604d1b3be2c2f638397192}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_a303fd84dab071186dee77891c8351e55}{marian\+::\+Scorer}.
+
+
+
+Definition at line 147 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+147 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!start\+State@{start\+State}}
+\index{start\+State@{start\+State}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{start\+State(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{startState(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Scorer\+State}$>$ marian\+::\+Word\+Penalty\+::start\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1WordPenalty_a1569dc5b0d385a1cc86d230e1aeda263}{}\label{classmarian_1_1WordPenalty_a1569dc5b0d385a1cc86d230e1aeda263}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_aaefbe7744d015a273344eea6729b0bed}{marian\+::\+Scorer}.
+
+
+
+Definition at line 149 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+150                                                                   \{
+151     std::vector<float> p(\hyperlink{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{dimVocab\_}, 1);
+152     p[0] = 0;
+153     p[2] = 0;
+154 
+155     \hyperlink{classmarian_1_1WordPenalty_a6e9da9f4df99aea84ce07fa74fdb922a}{penalties\_} = graph->constant(\{1, \hyperlink{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{dimVocab\_}\},
+156                                  \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(p));
+157     \textcolor{keywordflow}{return} New<WordPenaltyState>(\hyperlink{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{dimVocab\_}, \hyperlink{classmarian_1_1WordPenalty_a6e9da9f4df99aea84ce07fa74fdb922a}{penalties\_});
+158   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{da/d63/classmarian_1_1WordPenalty_a1569dc5b0d385a1cc86d230e1aeda263_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!step@{step}}
+\index{step@{step}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Scorer\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)}{step(Ptr< ExpressionGraph > graph, Ptr< ScorerState > state, const std::vector< size_t > &hypIndices, const std::vector< size_t > &embIndices)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Scorer\+State}$>$ marian\+::\+Word\+Penalty\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Scorer\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{hyp\+Indices, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{emb\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1WordPenalty_accc25c25b2d7b7138fe15cefad40da23}{}\label{classmarian_1_1WordPenalty_accc25c25b2d7b7138fe15cefad40da23}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_a377f003fbab702227d0aa895af54a94a}{marian\+::\+Scorer}.
+
+
+
+Definition at line 160 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+163                                                                      \{
+164     \textcolor{keywordflow}{return} state;
+165   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!dim\+Vocab\+\_\+@{dim\+Vocab\+\_\+}}
+\index{dim\+Vocab\+\_\+@{dim\+Vocab\+\_\+}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{dim\+Vocab\+\_\+}{dimVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Word\+Penalty\+::dim\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}{}\label{classmarian_1_1WordPenalty_ac3c89ea288afeb1a53b09c471dba52ae}
+
+
+Definition at line 140 of file scorers.\+h.
+
+\index{marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}!penalties\+\_\+@{penalties\+\_\+}}
+\index{penalties\+\_\+@{penalties\+\_\+}!marian\+::\+Word\+Penalty@{marian\+::\+Word\+Penalty}}
+\subsubsection[{\texorpdfstring{penalties\+\_\+}{penalties_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Word\+Penalty\+::penalties\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1WordPenalty_a6e9da9f4df99aea84ce07fa74fdb922a}{}\label{classmarian_1_1WordPenalty_a6e9da9f4df99aea84ce07fa74fdb922a}
+
+
+Definition at line 141 of file scorers.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scorers_8h}{scorers.\+h}\end{DoxyCompactItemize}

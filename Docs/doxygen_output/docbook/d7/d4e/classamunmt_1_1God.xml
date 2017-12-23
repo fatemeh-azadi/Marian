@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d4e/classamunmt_1_1God">
+<title>amunmt::God class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d4/d57/god_8h">&lt;god.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::God</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d32/classamunmt_1_1God__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::God</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/db9/classamunmt_1_1God__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; std::string, <link linkend="d7/dd3/namespaceamunmt_1a7907c3626488deed31e31452d178d78e">LoaderPtr</link> &gt;  <link linkend="d7/d4e/classamunmt_1_1God_1abe005048d71d1ac78750395d4ac8a531">Loaders</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Config config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::unique_ptr&lt; Vocab &gt; &gt; sourceVocabs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; Vocab &gt; targetVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; const Filter &gt; filter_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::vector&lt; PreprocessorPtr &gt; &gt; preprocessors_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; PostprocessorPtr &gt; postprocessors_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Loaders cpuLoaders_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Loaders gpuLoaders_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Loaders fpgaLoaders_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, float &gt; weights_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; spdlog::logger &gt; info_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; spdlog::logger &gt; progress_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; InputFileStream &gt; inputStream_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>OutputCollector outputCollector_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t threadIncr_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::shared_mutex accessLock_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; ThreadPool &gt; pool_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool returnNBestList_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool useFusedSoftmax_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d4e/classamunmt_1_1God_1acef51eae6aed7d1b6883b6f198cf92d4">God</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d4e/classamunmt_1_1God_1a05b83810590c957aed395391590c0cf7">~God</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1add49c80e570f5be5b2802565458f1c36">Init</link> (
+const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1a7a424275f1192499979b2f58ac250559">Init</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/classamunmt_1_1God_1a5a2cd8055526b5da47e255a7f75ea6cd">Cleanup</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/d4e/classamunmt_1_1God_1a5c284bd5bdde636f02dbb86af55744ae">Has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d7/d4e/classamunmt_1_1God_1ad0d3efbdf165ba0bc4de9052a826f7b6">Get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="d7/d4e/classamunmt_1_1God_1acbdecb98f98edf71cc8a81493df2c56a">Get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1a032b43755a3050ee9fb97ad27a91a63b">GetSourceVocab</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1aabd3caa5eb93346428948ce6639dc931">GetTargetVocab</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::istream &amp; <link linkend="d7/d4e/classamunmt_1_1God_1aa118cbeda9e332f518135b027aff3ac2">GetInputStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dd/d77/classamunmt_1_1OutputCollector">OutputCollector</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1ab8af5f6cc4352c053f42f4e707a281f9">GetOutputCollector</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; const <link linkend="d6/d0e/classamunmt_1_1Filter">Filter</link> &gt; <link linkend="d7/d4e/classamunmt_1_1God_1a0ebdb327d0eb53de76824ba967a0b1b6">GetFilter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a4a9522da34de52554ec07cedc30361b8">BestHypsBasePtr</link> <link linkend="d7/d4e/classamunmt_1_1God_1aa482b0ccfa13656701b3f03c8c869fea">GetBestHyps</link> (
+const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link> &gt; <link linkend="d7/d4e/classamunmt_1_1God_1ae3fcd8b1f31d85bda0887e1ef50cf282">GetScorers</link> (
+const <link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> &amp; deviceInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="d7/d4e/classamunmt_1_1God_1a75cb5ca765042d1df858a6eeed330bb7">GetScorerNames</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::map&lt; std::string, float &gt; &amp; <link linkend="d7/d4e/classamunmt_1_1God_1a7dbd89cd4c2b921d821d9ddb1c76fabf">GetScorerWeights</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="d7/d4e/classamunmt_1_1God_1a98a2f57d4f28a7e7d58f3b68680dbdb1">Preprocess</link> (
+size_t i, const std::vector&lt; std::string &gt; &amp; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="d7/d4e/classamunmt_1_1God_1a1e2a81202f36d8c2c10e5ee35c3b44ae">Postprocess</link> (
+const std::vector&lt; std::string &gt; &amp; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/classamunmt_1_1God_1a33ef746e9d56529017f77d2ed5cab80f">LoadWeights</link> (
+const std::string &amp; path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d1f/structamunmt_1_1DeviceInfo">DeviceInfo</link> <link linkend="d7/d4e/classamunmt_1_1God_1ab9fdce5683a6fc47cdab2dd2da263fd5">GetNextDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d92/classamunmt_1_1Search">Search</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1a38e952b706c978ecb2b8ad2ab7f7828f">GetSearch</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d7/d4e/classamunmt_1_1God_1ac1fe1740097a86cded1e88937d538a97">GetTotalThreads</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d9/de5/classamunmt_1_1ThreadPool">ThreadPool</link> &amp; <link linkend="d7/d4e/classamunmt_1_1God_1adad806b2183b4dbf8c27c6078effb9b5">GetThreadPool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/d4e/classamunmt_1_1God_1ace871e61162c362f7ae8eb8162ba6b66">ReturnNBestList</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/d4e/classamunmt_1_1God_1a84dbb75205f93a9a769d05f51e4b9f26">UseFusedSoftmax</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/classamunmt_1_1God_1a6ce7fae6876a5e4d39451a0de1691105">LoadScorers</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/classamunmt_1_1God_1a112ca45757470e5bca5ec924538b5b80">LoadFiltering</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/classamunmt_1_1God_1a9fd4b0bf9cb28b74651640055f488484">LoadPrePostProcessing</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1abe005048d71d1ac78750395d4ac8a531">
+                <title>typedef std::map&lt;std::string, LoaderPtr&gt; amunmt::God::Loaders</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1acef51eae6aed7d1b6883b6f198cf92d4">
+                <title>amunmt::God::God ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a05b83810590c957aed395391590c0cf7">
+                <title>amunmt::God::~God ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1add49c80e570f5be5b2802565458f1c36">
+                <title>God &amp; amunmt::God::Init (const std::string &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a7a424275f1192499979b2f58ac250559">
+                <title>God &amp; amunmt::God::Init (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a5a2cd8055526b5da47e255a7f75ea6cd">
+                <title>void amunmt::God::Cleanup ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a5c284bd5bdde636f02dbb86af55744ae">
+                <title>bool amunmt::God::Has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ad0d3efbdf165ba0bc4de9052a826f7b6">
+                <title>T amunmt::God::Get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1acbdecb98f98edf71cc8a81493df2c56a">
+                <title>YAML::Node amunmt::God::Get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a032b43755a3050ee9fb97ad27a91a63b">
+                <title>Vocab &amp; amunmt::God::GetSourceVocab (size_t i=0) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1aabd3caa5eb93346428948ce6639dc931">
+                <title>Vocab &amp; amunmt::God::GetTargetVocab () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1aa118cbeda9e332f518135b027aff3ac2">
+                <title>std::istream &amp; amunmt::God::GetInputStream () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ab8af5f6cc4352c053f42f4e707a281f9">
+                <title>OutputCollector &amp; amunmt::God::GetOutputCollector () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a0ebdb327d0eb53de76824ba967a0b1b6">
+                <title>std::shared_ptr&lt; const Filter &gt; amunmt::God::GetFilter () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1aa482b0ccfa13656701b3f03c8c869fea">
+                <title>BestHypsBasePtr amunmt::God::GetBestHyps (const DeviceInfo &amp;deviceInfo) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ae3fcd8b1f31d85bda0887e1ef50cf282">
+                <title>std::vector&lt; ScorerPtr &gt; amunmt::God::GetScorers (const DeviceInfo &amp;deviceInfo) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a75cb5ca765042d1df858a6eeed330bb7">
+                <title>std::vector&lt; std::string &gt; amunmt::God::GetScorerNames () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a7dbd89cd4c2b921d821d9ddb1c76fabf">
+                <title>const std::map&lt; std::string, float &gt; &amp; amunmt::God::GetScorerWeights () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a98a2f57d4f28a7e7d58f3b68680dbdb1">
+                <title>std::vector&lt; std::string &gt; amunmt::God::Preprocess (size_t i, const std::vector&lt; std::string &gt; &amp;input) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a1e2a81202f36d8c2c10e5ee35c3b44ae">
+                <title>std::vector&lt; std::string &gt; amunmt::God::Postprocess (const std::vector&lt; std::string &gt; &amp;input) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a33ef746e9d56529017f77d2ed5cab80f">
+                <title>void amunmt::God::LoadWeights (const std::string &amp;path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ab9fdce5683a6fc47cdab2dd2da263fd5">
+                <title>DeviceInfo amunmt::God::GetNextDevice () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a38e952b706c978ecb2b8ad2ab7f7828f">
+                <title>Search &amp; amunmt::God::GetSearch () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ac1fe1740097a86cded1e88937d538a97">
+                <title>size_t amunmt::God::GetTotalThreads () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1adad806b2183b4dbf8c27c6078effb9b5">
+                <title>ThreadPool&amp; amunmt::God::GetThreadPool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1ace871e61162c362f7ae8eb8162ba6b66">
+                <title>bool amunmt::God::ReturnNBestList () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a84dbb75205f93a9a769d05f51e4b9f26">
+                <title>bool amunmt::God::UseFusedSoftmax () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a6ce7fae6876a5e4d39451a0de1691105">
+                <title>void amunmt::God::LoadScorers ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a112ca45757470e5bca5ec924538b5b80">
+                <title>void amunmt::God::LoadFiltering ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d4e/classamunmt_1_1God_1a9fd4b0bf9cb28b74651640055f488484">
+                <title>void amunmt::God::LoadPrePostProcessing ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

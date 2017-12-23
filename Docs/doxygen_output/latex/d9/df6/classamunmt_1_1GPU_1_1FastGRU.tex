@@ -1,0 +1,337 @@
+\hypertarget{classamunmt_1_1GPU_1_1FastGRU}{}\section{amunmt\+:\+:G\+PU\+:\+:Fast\+G\+RU$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1FastGRU}\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+R\+U$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+R\+U$<$ Weights $>$}}
+
+
+{\ttfamily \#include $<$gru.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Fast\+G\+RU$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{d2/d93/classamunmt_1_1GPU_1_1FastGRU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Fast\+G\+RU$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d53/classamunmt_1_1GPU_1_1FastGRU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1FastGRU_ad194ae3cba0565a97dbf16b74308d49a}{Fast\+G\+RU} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a80dfed3a6e61b1ee726085adb714deb0}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context) const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1FastGRU_add49af38ef2aa9a37b3b4da08bb03eae}{Elementwise\+Ops} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Next\+State, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&R\+UH, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Temp) const 
+\item 
+virtual \hyperlink{structamunmt_1_1GPU_1_1CellLength}{Cell\+Length} \hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae99ea776f3f65eb593621f733feffeb0}{Get\+State\+Length} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1FastGRU_affbc095bb02e7ee6e50995d5dbdd12a0}{Fast\+G\+RU} (const \hyperlink{classamunmt_1_1GPU_1_1FastGRU}{Fast\+G\+RU} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{W\+Wx\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{U\+Ux\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{R\+U\+H\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{Temp\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Fast\+G\+R\+U$<$ Weights $>$}
+
+
+
+Definition at line 114 of file gru.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Fast\+G\+RU@{Fast\+G\+RU}}
+\index{Fast\+G\+RU@{Fast\+G\+RU}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Fast\+G\+R\+U(const Weights \&model)}{FastGRU(const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::{\bf Fast\+G\+RU} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_ad194ae3cba0565a97dbf16b74308d49a}{}\label{classamunmt_1_1GPU_1_1FastGRU_ad194ae3cba0565a97dbf16b74308d49a}
+
+
+Definition at line 117 of file gru.\+h.
+
+
+\begin{DoxyCode}
+118     : \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}(model)
+119     \{
+120       \textcolor{comment}{/*for(int i = 0; i < 4; ++i) \{}
+121 \textcolor{comment}{        cudaStreamCreate(&s\_[i]);}
+122 \textcolor{comment}{        cublasCreate(&h\_[i]);}
+123 \textcolor{comment}{        cublasSetStream(h\_[i], s\_[i]);}
+124 \textcolor{comment}{      \}*/}
+125 
+126       \textcolor{keyword}{using namespace }mblas;
+127       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{WWx\_}, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.W\_);
+128       \textcolor{comment}{//std::cerr << std::endl;}
+129       \textcolor{comment}{//std::cerr << "w\_.W\_=" << w\_.W\_.Debug(1) << std::endl;}
+130       \textcolor{comment}{//std::cerr << "1WWx\_=" << WWx\_.Debug(1) << std::endl;}
+131 
+132       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} WxT;
+133       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(WxT, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Wx\_);
+134       \textcolor{comment}{//std::cerr << "w\_.Wx\_=" << w\_.Wx\_.Debug(1) << std::endl;}
+135       \textcolor{comment}{//std::cerr << "WxT=" << WxT.Debug(1) << std::endl;}
+136 
+137       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}{Concat}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{WWx\_}, WxT);
+138       \textcolor{comment}{//std::cerr << "2WWx\_=" << WWx\_.Debug(1) << std::endl;}
+139 
+140       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{WWx\_});
+141       \textcolor{comment}{//std::cerr << "3WWx\_=" << WWx\_.Debug(1) << std::endl;}
+142 
+143       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{UUx\_}, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.U\_);
+144       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{Matrix} UxT;
+145       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(UxT, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Ux\_);
+146       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_af345694ea7f81e67d44c906d2a24b4a9}{Concat}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{UUx\_}, UxT);
+147       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a5b1f45cb5c05d5a9fbedab3e74553e73}{Transpose}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{UUx\_});
+148 
+149       \textcolor{comment}{//std::cerr << std::endl;}
+150     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df6/classamunmt_1_1GPU_1_1FastGRU_ad194ae3cba0565a97dbf16b74308d49a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Fast\+G\+RU@{Fast\+G\+RU}}
+\index{Fast\+G\+RU@{Fast\+G\+RU}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Fast\+G\+R\+U(const Fast\+G\+R\+U \&)=delete}{FastGRU(const FastGRU &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::{\bf Fast\+G\+RU} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fast\+G\+RU}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_affbc095bb02e7ee6e50995d5dbdd12a0}{}\label{classamunmt_1_1GPU_1_1FastGRU_affbc095bb02e7ee6e50995d5dbdd12a0}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Elementwise\+Ops@{Elementwise\+Ops}}
+\index{Elementwise\+Ops@{Elementwise\+Ops}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Elementwise\+Ops(mblas\+::\+Matrix \&\+Next\+State, const mblas\+::\+Matrix \&\+State, const mblas\+::\+Matrix \&\+R\+U\+H, const mblas\+::\+Matrix \&\+Temp) const }{ElementwiseOps(mblas::Matrix &NextState, const mblas::Matrix &State, const mblas::Matrix &RUH, const mblas::Matrix &Temp) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::Elementwise\+Ops (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Next\+State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{R\+UH, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Temp}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_add49af38ef2aa9a37b3b4da08bb03eae}{}\label{classamunmt_1_1GPU_1_1FastGRU_add49af38ef2aa9a37b3b4da08bb03eae}
+
+
+Definition at line 186 of file gru.\+h.
+
+
+\begin{DoxyCode}
+190     \{
+191       \textcolor{comment}{//BEGIN\_TIMER("ElementwiseOps");}
+192 
+193       assert(State.dim(2) == 1);
+194       assert(State.dim(3) == 1);
+195       assert(RUH.dim(2) == 1);
+196       assert(RUH.dim(3) == 1);
+197       assert(Temp.dim(2) == 1);
+198       assert(Temp.dim(3) == 1);
+199 
+200       NextState.NewSize(State.dim(0), State.dim(1), 1, 1);
+201       \textcolor{comment}{//std::cerr << "NextState=" << NextState.Debug() << std::endl;}
+202 
+203       mblas::MatrixWrapper<float> nextWrap(NextState);
+204       \textcolor{keyword}{const} mblas::MatrixWrapper<float> stateWrap(State);
+205       \textcolor{keyword}{const} mblas::MatrixWrapper<float> ruhWrap(RUH);
+206       \textcolor{keyword}{const} mblas::MatrixWrapper<float> tempWrap(Temp);
+207       \textcolor{keyword}{const} mblas::MatrixWrapper<float> bWrap(*\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.B\_);
+208       \textcolor{keyword}{const} mblas::MatrixWrapper<float> bx1Wrap(*\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Bx1\_);
+209       \textcolor{keyword}{const} mblas::MatrixWrapper<float> bx2Wrap(*\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Bx2\_);
+210 
+211       \textcolor{comment}{/*}
+212 \textcolor{comment}{      std::cerr << "nextWrap=" << nextWrap.Debug() << std::endl;}
+213 \textcolor{comment}{      std::cerr << "stateWrap=" << stateWrap.Debug() << std::endl;}
+214 \textcolor{comment}{      std::cerr << "ruhWrap=" << ruhWrap.Debug() << std::endl;}
+215 \textcolor{comment}{      std::cerr << "tempWrap=" << tempWrap.Debug() << std::endl;}
+216 \textcolor{comment}{      std::cerr << "bWrap=" << bWrap.Debug() << std::endl;}
+217 \textcolor{comment}{      std::cerr << "bx1Wrap=" << bx1Wrap.Debug() << std::endl;}
+218 \textcolor{comment}{      std::cerr << "bx2Wrap=" << bx2Wrap.Debug() << std::endl;}
+219 \textcolor{comment}{      std::cerr << "\(\backslash\)n";}
+220 \textcolor{comment}{      */}
+221       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} = State.dim(1);
+222       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} = State.dim(0);
+223 
+224       \textcolor{keywordtype}{int} threads = std::min(\hyperlink{matrix__functions_8h_a8b5173357adb02a86c027316e0acdfa0}{MAX\_THREADS}, (\textcolor{keywordtype}{int})cols);
+225       \textcolor{keywordtype}{int} blocks  = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows};
+226 
+227       gElementwiseOps<<<blocks, threads, 0, mblas::CudaStreamHandler::GetStream()>>>
+228         (nextWrap, stateWrap, ruhWrap, tempWrap,
+229             bWrap, bx1Wrap, bx2Wrap);
+230 
+231       \textcolor{comment}{//PAUSE\_TIMER("ElementwiseOps");}
+232 
+233     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df6/classamunmt_1_1GPU_1_1FastGRU_add49af38ef2aa9a37b3b4da08bb03eae_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context) const }{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ virtual void {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_a80dfed3a6e61b1ee726085adb714deb0}{}\label{classamunmt_1_1GPU_1_1FastGRU_a80dfed3a6e61b1ee726085adb714deb0}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 152 of file gru.\+h.
+
+
+\begin{DoxyCode}
+154                                                         \{
+155       \textcolor{keyword}{using namespace }mblas;
+156 
+157       \textcolor{comment}{//std::cerr << std::endl;}
+158       \textcolor{comment}{//std::cerr << "1RUH\_=" << RUH\_.Debug(1) << std::endl;}
+159       \textcolor{comment}{//std::cerr << "Context=" << Context.Debug(1) << std::endl;}
+160       \textcolor{comment}{//std::cerr << "WWx\_" << WWx\_.Debug(1) << std::endl;}
+161 
+162       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{RUH\_}, Context, \hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{WWx\_});
+163 
+164       \textcolor{comment}{//std::cerr << "2RUH\_=" << RUH\_.Debug(1) << std::endl;}
+165 
+166       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Gamma\_1\_->size()) \{
+167         \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{RUH\_}, \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{RUH\_}, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Gamma\_1\_, 1e-9);
+168       \}
+169 
+170       \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{Temp\_}, *(State.output), \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{UUx\_});
+171       \textcolor{comment}{//std::cerr << "State=" << State.Debug(1) << std::endl;}
+172       \textcolor{comment}{//std::cerr << "UUx\_" << UUx\_.Debug(1) << std::endl;}
+173       \textcolor{comment}{//std::cerr << "Temp\_=" << Temp\_.Debug(1) << std::endl;}
+174 
+175       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Gamma\_2\_->size()) \{
+176         \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{Temp\_}, \hyperlink{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{Temp\_}, *\hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.Gamma\_2\_, 1e-9);
+177       \}
+178 
+179       \hyperlink{classamunmt_1_1GPU_1_1FastGRU_add49af38ef2aa9a37b3b4da08bb03eae}{ElementwiseOps}(*(NextState.output), *(State.output), \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{RUH\_}, 
+      \hyperlink{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{Temp\_});
+180       \textcolor{keywordflow}{if}(State.cell->size() > 0) \{
+181         \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a88b723882ca7b614a20e6e9edb5c214b}{Swap}(*(NextState.cell), *(State.cell));
+182       \}
+183     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df6/classamunmt_1_1GPU_1_1FastGRU_a80dfed3a6e61b1ee726085adb714deb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Get\+State\+Length@{Get\+State\+Length}}
+\index{Get\+State\+Length@{Get\+State\+Length}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Get\+State\+Length() const }{GetStateLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ virtual {\bf Cell\+Length} {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::Get\+State\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_ae99ea776f3f65eb593621f733feffeb0}{}\label{classamunmt_1_1GPU_1_1FastGRU_ae99ea776f3f65eb593621f733feffeb0}
+
+
+Implements \hyperlink{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}{amunmt\+::\+G\+P\+U\+::\+Cell}.
+
+
+
+Definition at line 235 of file gru.\+h.
+
+
+\begin{DoxyCode}
+235                                               \{
+236       \textcolor{keywordflow}{return} CellLength(0, \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{w\_}.U\_->dim(0));
+237     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!R\+U\+H\+\_\+@{R\+U\+H\+\_\+}}
+\index{R\+U\+H\+\_\+@{R\+U\+H\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{R\+U\+H\+\_\+}{RUH_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::R\+U\+H\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}{}\label{classamunmt_1_1GPU_1_1FastGRU_a859346068a908bdf3226a12c759c45e8}
+
+
+Definition at line 248 of file gru.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!Temp\+\_\+@{Temp\+\_\+}}
+\index{Temp\+\_\+@{Temp\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{Temp\+\_\+}{Temp_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::Temp\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}{}\label{classamunmt_1_1GPU_1_1FastGRU_adb34d91baba03402316d2475efefb1ec}
+
+
+Definition at line 249 of file gru.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!U\+Ux\+\_\+@{U\+Ux\+\_\+}}
+\index{U\+Ux\+\_\+@{U\+Ux\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{U\+Ux\+\_\+}{UUx_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::U\+Ux\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}{}\label{classamunmt_1_1GPU_1_1FastGRU_a59f623c97d07e31cf4714655acb724d7}
+
+
+Definition at line 246 of file gru.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}{}\label{classamunmt_1_1GPU_1_1FastGRU_a299bff28c9a4fb76e3fdf423137e24a2}
+
+
+Definition at line 242 of file gru.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}!W\+Wx\+\_\+@{W\+Wx\+\_\+}}
+\index{W\+Wx\+\_\+@{W\+Wx\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU@{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}}
+\subsubsection[{\texorpdfstring{W\+Wx\+\_\+}{WWx_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights $>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Fast\+G\+RU}$<$ {\bf Weights} $>$\+::W\+Wx\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}{}\label{classamunmt_1_1GPU_1_1FastGRU_ae7d4a31966763ba9c724d6c5668f672b}
+
+
+Definition at line 245 of file gru.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gru_8h}{gru.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dab/classmarian_1_1Scheduler">
+<title>marian::Scheduler class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/dd8/scheduler_8h">&lt;scheduler.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Scheduler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dc6/classmarian_1_1Scheduler__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Scheduler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d8f/classmarian_1_1Scheduler__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class DataSet</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node progress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; Validator&lt; DataSet &gt; &gt; &gt; validators_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float costSum</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t epochs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t samples</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t samplesDisp</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t wordsDisp</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t batches</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; TrainingState &gt; trainState_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::timer::cpu_timer timer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dab/classmarian_1_1Scheduler_1a359fad66eecaa3154e59376cad3678dd">Scheduler</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/dab/classmarian_1_1Scheduler_1a2e95b34dd1986da820bde25d789a4731">keepGoing</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a0ee8d27640f833b0affbd97c533f5c41">increaseEpoch</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1af07b9207caf41976becdd83b6db0ba1b">started</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a8413088ceeec0a34377ab494040bc63d">finished</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a7be0ff053576c291ee6ae67f643b99b6">addValidator</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/da1/classmarian_1_1Validator">Validator</link>&lt; DataSet &gt;&gt; validator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/dab/classmarian_1_1Scheduler_1afcc419dc5a3e63ea527a5736cd74c20a">validating</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/dab/classmarian_1_1Scheduler_1aca8964e80c6841115d315eb32c8bc82f">saving</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1abbd43aacb8b92dd94ffb0f5a104f6c59">validate</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/dab/classmarian_1_1Scheduler_1a4cf4975987ba59c33d01d4d29d2f3dbd">stalled</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a597f3c74e486631a95ea94d892e80c4c">update</link> (
+float cost, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a3ff42a5102d69aa8858c0dad4aebfa65">load</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a642cb71f2c550c9a91e3551f66dd8942">save</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d2/dab/classmarian_1_1Scheduler_1ab6fb552ba76bf2a0981b232792911383">numberOfBatches</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a43f6d5da10c7110e6f566b3e9b50a1d7">registerTrainingObserver</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d46/classmarian_1_1TrainingObserver">TrainingObserver</link> &gt; observer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a2dc5ce5d6188cd5dc46781952159179d">actAfterEpoch</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1a60bfc4c438a7dbc758a1890057f20d88">actAfterBatches</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dab/classmarian_1_1Scheduler_1aabac3f0247038406f6a55ac8e086790f">actAfterStalled</link> (
+<link linkend="d8/dbf/classmarian_1_1TrainingState">TrainingState</link> &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a359fad66eecaa3154e59376cad3678dd">
+                <title>marian::Scheduler&lt; DataSet &gt;::Scheduler (Ptr&lt; Config &gt; options, Ptr&lt; TrainingState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a2e95b34dd1986da820bde25d789a4731">
+                <title>bool marian::Scheduler&lt; DataSet &gt;::keepGoing ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a0ee8d27640f833b0affbd97c533f5c41">
+                <title>void marian::Scheduler&lt; DataSet &gt;::increaseEpoch ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1af07b9207caf41976becdd83b6db0ba1b">
+                <title>void marian::Scheduler&lt; DataSet &gt;::started ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a8413088ceeec0a34377ab494040bc63d">
+                <title>void marian::Scheduler&lt; DataSet &gt;::finished ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a7be0ff053576c291ee6ae67f643b99b6">
+                <title>void marian::Scheduler&lt; DataSet &gt;::addValidator (Ptr&lt; Validator&lt; DataSet &gt;&gt; validator)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1afcc419dc5a3e63ea527a5736cd74c20a">
+                <title>bool marian::Scheduler&lt; DataSet &gt;::validating ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1aca8964e80c6841115d315eb32c8bc82f">
+                <title>bool marian::Scheduler&lt; DataSet &gt;::saving ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1abbd43aacb8b92dd94ffb0f5a104f6c59">
+                <title>void marian::Scheduler&lt; DataSet &gt;::validate (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a4cf4975987ba59c33d01d4d29d2f3dbd">
+                <title>size_t marian::Scheduler&lt; DataSet &gt;::stalled ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a597f3c74e486631a95ea94d892e80c4c">
+                <title>void marian::Scheduler&lt; DataSet &gt;::update (float cost, Ptr&lt; data::Batch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a3ff42a5102d69aa8858c0dad4aebfa65">
+                <title>void marian::Scheduler&lt; DataSet &gt;::load (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a642cb71f2c550c9a91e3551f66dd8942">
+                <title>void marian::Scheduler&lt; DataSet &gt;::save (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1ab6fb552ba76bf2a0981b232792911383">
+                <title>size_t marian::Scheduler&lt; DataSet &gt;::numberOfBatches ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a43f6d5da10c7110e6f566b3e9b50a1d7">
+                <title>void marian::Scheduler&lt; DataSet &gt;::registerTrainingObserver (Ptr&lt; TrainingObserver &gt; observer)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a2dc5ce5d6188cd5dc46781952159179d">
+                <title>void marian::Scheduler&lt; DataSet &gt;::actAfterEpoch (TrainingState &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1a60bfc4c438a7dbc758a1890057f20d88">
+                <title>void marian::Scheduler&lt; DataSet &gt;::actAfterBatches (TrainingState &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dab/classmarian_1_1Scheduler_1aabac3f0247038406f6a55ac8e086790f">
+                <title>void marian::Scheduler&lt; DataSet &gt;::actAfterStalled (TrainingState &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,9 @@
+<map id="marian::weighted_average" name="marian::weighted_average">
+<area shape="rect" id="node2" href="$d7/db4/classmarian_1_1rnn_1_1GlobalAttention.html#a7f1781d0f0c94222a2b0343cb55915ca" title="marian::rnn::GlobalAttention\l::apply" alt="" coords="231,5,415,47"/>
+<area shape="rect" id="node3" href="$da/d22/namespacemarian.html#ae5810f27b42d7d5f9b83ae23ddf544f2" title="marian::tanh" alt="" coords="276,71,371,98"/>
+<area shape="rect" id="node4" href="$d1/dcc/classmarian_1_1DecoderHardAtt.html#a242961c2a50950ca158b5f4965df4ef7" title="marian::DecoderHardAtt\l::startState" alt="" coords="242,123,405,164"/>
+<area shape="rect" id="node5" href="$d7/d30/classmarian_1_1MultiDecoderHardSoftAtt.html#a82443e3da9466ff952ac9deeb0a77df6" title="marian::MultiDecoderHard\lSoftAtt::startState" alt="" coords="236,188,411,229"/>
+<area shape="rect" id="node6" href="$d3/d3b/classmarian_1_1MultiDecoderS2S.html#a3facd6e243c6fd8d656b49dedbba4948" title="marian::MultiDecoderS2S\l::startState" alt="" coords="238,253,409,295"/>
+<area shape="rect" id="node7" href="$d3/d4b/classmarian_1_1DecoderS2S.html#a7a96b3617137d832395542405c903b1e" title="marian::DecoderS2S\l::startState" alt="" coords="252,319,395,360"/>
+<area shape="rect" id="node8" href="$d5/d22/classmarian_1_1EncoderDecoderRec.html#a5d7be4c554cdd6752a8ee5964ff116c2" title="marian::EncoderDecoderRec\l::build" alt="" coords="228,384,419,425"/>
+</map>

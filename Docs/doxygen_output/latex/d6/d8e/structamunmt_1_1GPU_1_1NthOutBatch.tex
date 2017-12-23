@@ -1,0 +1,172 @@
+\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch}{}\section{amunmt\+:\+:G\+PU\+:\+:Nth\+Out\+Batch Struct Reference}
+\label{structamunmt_1_1GPU_1_1NthOutBatch}\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+
+
+{\ttfamily \#include $<$nth\+\_\+element\+\_\+kernels.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Nth\+Out\+Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d8/d2f/structamunmt_1_1GPU_1_1NthOutBatch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aeaaf09393da0594788eb8086c3fa03a1}{Nth\+Out\+Batch} (const float \&rhs)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_a6ff60defd3ccdb31907291d2a629af92}{Nth\+Out\+Batch} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_abf6f0225fbd69c46dab56778e2759272}{Nth\+Out\+Batch} (uint v\+Ind, float v\+Score, uint v\+Hypo\+Ind, uint v\+Vocab\+Ind)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} \& \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_a58422699357c6645acd86c1e17cab703}{operator=} (const \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} \&rhs)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} \& \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_a67b5fd207727caada80b31cbb8424b12}{operator+=} (const \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{ind}
+\item 
+float \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{score}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!Nth\+Out\+Batch@{Nth\+Out\+Batch}}
+\index{Nth\+Out\+Batch@{Nth\+Out\+Batch}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{Nth\+Out\+Batch(const float \&rhs)}{NthOutBatch(const float &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::\+Nth\+Out\+Batch (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_aeaaf09393da0594788eb8086c3fa03a1}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_aeaaf09393da0594788eb8086c3fa03a1}
+
+
+Definition at line 47 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+48   \{
+49     \textcolor{comment}{// only to be used to init variable in matrix.h gSum}
+50     assert(rhs == 0.0f);
+51     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{ind} = rhs;
+52     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{score} = rhs;
+53     \textcolor{comment}{//hypoInd = rhs;}
+54     \textcolor{comment}{//vocabInd = rhs;}
+55   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!Nth\+Out\+Batch@{Nth\+Out\+Batch}}
+\index{Nth\+Out\+Batch@{Nth\+Out\+Batch}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{Nth\+Out\+Batch()}{NthOutBatch()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::\+Nth\+Out\+Batch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_a6ff60defd3ccdb31907291d2a629af92}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_a6ff60defd3ccdb31907291d2a629af92}
+
+
+Definition at line 58 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+58 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!Nth\+Out\+Batch@{Nth\+Out\+Batch}}
+\index{Nth\+Out\+Batch@{Nth\+Out\+Batch}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{Nth\+Out\+Batch(uint v\+Ind, float v\+Score, uint v\+Hypo\+Ind, uint v\+Vocab\+Ind)}{NthOutBatch(uint vInd, float vScore, uint vHypoInd, uint vVocabInd)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::\+Nth\+Out\+Batch (
+\begin{DoxyParamCaption}
+\item[{uint}]{v\+Ind, }
+\item[{float}]{v\+Score, }
+\item[{uint}]{v\+Hypo\+Ind, }
+\item[{uint}]{v\+Vocab\+Ind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_abf6f0225fbd69c46dab56778e2759272}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_abf6f0225fbd69c46dab56778e2759272}
+
+
+Definition at line 61 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+62   :\hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{ind}(vInd)
+63   ,\hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{score}(vScore)
+64   \textcolor{comment}{//,hypoInd(vHypoInd)}
+65   \textcolor{comment}{//,vocabInd(vVocabInd)}
+66   \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{operator+=(const Nth\+Out\+Batch \&rhs)}{operator+=(const NthOutBatch &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ {\bf Nth\+Out\+Batch}\& amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Nth\+Out\+Batch} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_a67b5fd207727caada80b31cbb8424b12}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_a67b5fd207727caada80b31cbb8424b12}
+
+
+Definition at line 79 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+80   \{
+81     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{ind} += rhs.ind;
+82     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{score} += rhs.score;
+83     \textcolor{comment}{//hypoInd += rhs.hypoInd;}
+84     \textcolor{comment}{//vocabInd += rhs.vocabInd;}
+85     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+86   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!operator=@{operator=}}
+\index{operator=@{operator=}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{operator=(const Nth\+Out\+Batch \&rhs)}{operator=(const NthOutBatch &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ {\bf Nth\+Out\+Batch}\& amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Nth\+Out\+Batch} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_a58422699357c6645acd86c1e17cab703}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_a58422699357c6645acd86c1e17cab703}
+
+
+Definition at line 69 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+70   \{
+71     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{ind} = rhs.ind;
+72     \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{score} = rhs.score;
+73     \textcolor{comment}{//hypoInd = rhs.hypoInd;}
+74     \textcolor{comment}{//vocabInd = rhs.vocabInd;}
+75     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+76   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!ind@{ind}}
+\index{ind@{ind}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{ind}{ind}}]{\setlength{\rightskip}{0pt plus 5cm}uint amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::ind}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_aa792e473d4d680f6a156771ce0045de6}
+
+
+Definition at line 41 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}!score@{score}}
+\index{score@{score}!amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch@{amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch}}
+\subsubsection[{\texorpdfstring{score}{score}}]{\setlength{\rightskip}{0pt plus 5cm}float amunmt\+::\+G\+P\+U\+::\+Nth\+Out\+Batch\+::score}\hypertarget{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}{}\label{structamunmt_1_1GPU_1_1NthOutBatch_ad06596d1cdfd717be7e29e2e5732aad8}
+
+
+Definition at line 42 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nth__element__kernels_8h}{nth\+\_\+element\+\_\+kernels.\+h}\end{DoxyCompactItemize}

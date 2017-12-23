@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d07/namespacethrust_1_1detail_1_1functional">
+<title>thrust::detail::functional</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dec/structthrust_1_1detail_1_1functional_1_1binary__clip">thrust::detail::functional::binary_clip</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dbd/structthrust_1_1detail_1_1functional_1_1binary__pow">thrust::detail::functional::binary_pow</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d83/structthrust_1_1detail_1_1functional_1_1binary__prune">thrust::detail::functional::binary_prune</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d9b/structthrust_1_1detail_1_1functional_1_1unary__exp">thrust::detail::functional::unary_exp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d35/structthrust_1_1detail_1_1functional_1_1unary__log">thrust::detail::functional::unary_log</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit">thrust::detail::functional::unary_logit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dd8/structthrust_1_1detail_1_1functional_1_1unary__relu">thrust::detail::functional::unary_relu</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d9b/structthrust_1_1detail_1_1functional_1_1unary__reluback">thrust::detail::functional::unary_reluback</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d03/structthrust_1_1detail_1_1functional_1_1unary__sigma">thrust::detail::functional::unary_sigma</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/df1/structthrust_1_1detail_1_1functional_1_1unary__sqrt">thrust::detail::functional::unary_sqrt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d69/structthrust_1_1detail_1_1functional_1_1unary__tanh">thrust::detail::functional::unary_tanh</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="dc/d9b/structthrust_1_1detail_1_1functional_1_1unary__exp">unary_exp</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a7ea3d852a4a359ba9c87ce76ea3fcbb2">Exp</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="d9/d35/structthrust_1_1detail_1_1functional_1_1unary__log">unary_log</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1ac56289767601dbca61bebee343b4fc89">Log</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit">unary_logit</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1ab1596ca6efb2753919fc577c76541fd3">Logit</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="dd/d69/structthrust_1_1detail_1_1functional_1_1unary__tanh">unary_tanh</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a565a36ed831a74fec50b00c921f669ba">Tanh</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; binary_operator&lt;thrust::maximum &gt;, actor&lt; T1 &gt;, actor&lt; T2 &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a2249ce1e61c19c18fed1d15a9ee5cffb">Max</link> (
+const actor&lt; T1 &gt; &amp; _1, const actor&lt; T2 &gt; &amp; _2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="d5/d03/structthrust_1_1detail_1_1functional_1_1unary__sigma">unary_sigma</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1aa947e17014d1d891812df6265b94a8bb">Sigma</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="da/df1/structthrust_1_1detail_1_1functional_1_1unary__sqrt">unary_sqrt</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a4312d4fbc25873ae875a6986a86cef23">Sqrt</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="de/dd8/structthrust_1_1detail_1_1functional_1_1unary__relu">unary_relu</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a98a54b55473395eabc5424da89281e02">ReLU</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; unary_operator&lt;<link linkend="db/d9b/structthrust_1_1detail_1_1functional_1_1unary__reluback">unary_reluback</link> &gt;, actor&lt; Eval &gt; &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a2c1a5d581fb286f11d8ae4d9351074f1">ReLUback</link> (
+const actor&lt; Eval &gt; &amp; _1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a340839a77ee36e3897fe8a8a53365ed0">sgn</link> (
+T val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; binary_operator&lt;<link linkend="dc/dec/structthrust_1_1detail_1_1functional_1_1binary__clip">binary_clip</link> &gt;, actor&lt; T1 &gt;, typename as_actor&lt; T2 &gt;::type &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a978d42540ab63fe9fd4920518458dc05">Clip</link> (
+const actor&lt; T1 &gt; &amp; _1, const T2 &amp; _2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; binary_operator&lt;<link linkend="d6/d83/structthrust_1_1detail_1_1functional_1_1binary__prune">binary_prune</link> &gt;, actor&lt; T1 &gt;, typename as_actor&lt; T2 &gt;::type &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1ad3ccd036bd9aac246a3daed0990b385d">Prune</link> (
+const actor&lt; T1 &gt; &amp; _1, const T2 &amp; _2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ actor&lt; composite&lt; binary_operator&lt;<link linkend="dd/dbd/structthrust_1_1detail_1_1functional_1_1binary__pow">binary_pow</link> &gt;, actor&lt; T1 &gt;, typename as_actor&lt; T2 &gt;::type &gt; &gt; <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional_1a067af5a805df6f752ad69cf922c5aa44">Pow</link> (
+const actor&lt; T1 &gt; &amp; _1, const T2 &amp; _2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

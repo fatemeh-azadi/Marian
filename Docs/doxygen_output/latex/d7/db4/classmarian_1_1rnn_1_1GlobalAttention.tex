@@ -1,0 +1,499 @@
+\hypertarget{classmarian_1_1rnn_1_1GlobalAttention}{}\section{marian\+:\+:rnn\+:\+:Global\+Attention Class Reference}
+\label{classmarian_1_1rnn_1_1GlobalAttention}\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+
+
+{\ttfamily \#include $<$attention.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Global\+Attention\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/dcd/classmarian_1_1rnn_1_1GlobalAttention__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Global\+Attention\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d0d/classmarian_1_1rnn_1_1GlobalAttention__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ab5e4f0df89d2569d44a28696de3ace0f}{Global\+Attention} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Options}{Options} $>$ options, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ enc\+State)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a7f1781d0f0c94222a2b0343cb55915ca}{apply} (\hyperlink{structmarian_1_1rnn_1_1State}{State} state)
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \& \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_abeae4a963a85ca1642c387d241cec5ad}{get\+Contexts} ()
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b}{get\+Context} ()
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \& \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a7fab38ad7965922a7e8eb26f0d4906af}{get\+Alignments} ()
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a3666babca6435bc45280836e58ef7ac2}{clear} ()
+\item 
+int \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ae7b20fd78fdd9e5f72eee775de24cf7b}{dim\+Output} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a084709a27aef6e0309431502ab74f0c5}{Wa\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}{ba\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}{Ua\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_abe451398726539e115ff20ed79be82cd}{va\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a6616011b10e275bb43ca2a66a9817d7e}{gamma\+Context\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a0cc5579e721541be79d19491d21d4848}{beta\+Context\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aa934fc65efbfb2b16427f02c135ccb69}{gamma\+State\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a23be758011e81bfe2f4baf379911b279}{beta\+State\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{enc\+State\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a10695339c62a5255c51ade9b35dac607}{softmax\+Mask\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}{mapped\+Context\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{contexts\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}{alignments\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a30abb68765a3b8d6a1b88f471b9f3c6b}{layer\+Norm\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a54448ebcd15a874630f8988e99c77919}{dropout\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{context\+Dropped\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}{drop\+Mask\+Context\+\_\+}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}{drop\+Mask\+State\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file attention.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!Global\+Attention@{Global\+Attention}}
+\index{Global\+Attention@{Global\+Attention}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{Global\+Attention(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Options $>$ options, Ptr$<$ Encoder\+State $>$ enc\+State)}{GlobalAttention(Ptr< ExpressionGraph > graph, Ptr< Options > options, Ptr< EncoderState > encState)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Global\+Attention\+::\+Global\+Attention (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Options} $>$}]{options, }
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{enc\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_ab5e4f0df89d2569d44a28696de3ace0f}{}\label{classmarian_1_1rnn_1_1GlobalAttention_ab5e4f0df89d2569d44a28696de3ace0f}
+
+
+Definition at line 36 of file attention.\+h.
+
+
+\begin{DoxyCode}
+39       : \hyperlink{classmarian_1_1rnn_1_1CellInput_a05e62c038ab45237fcf5866a4e4ad75f}{CellInput}(options),
+40         \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{encState\_}(encState),
+41         \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}(encState->getContext()) \{
+42 
+43     \textcolor{keywordtype}{int} dimDecState = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimState"});
+44     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a54448ebcd15a874630f8988e99c77919}{dropout\_} = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"dropout"});
+45     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a30abb68765a3b8d6a1b88f471b9f3c6b}{layerNorm\_} = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"layer-normalization"});
+46     std::string \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{prefix} = \hyperlink{classmarian_1_1rnn_1_1Stackable_a8d4661b0e78935359f7a1bb764f44dec}{options\_}->get<std::string>(\textcolor{stringliteral}{"prefix"});
+47 
+48     \textcolor{keywordtype}{int} dimEncState = \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{encState\_}->getContext()->shape()[1];
+49 
+50     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a084709a27aef6e0309431502ab74f0c5}{Wa\_} = graph->param(prefix + \textcolor{stringliteral}{"\_W\_comb\_att"},
+51                        \{dimDecState, dimEncState\},
+52                        \hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init} = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+53     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}{Ua\_} = graph->param(prefix + \textcolor{stringliteral}{"\_Wc\_att"},
+54                        \{dimEncState, dimEncState\},
+55                        keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+56     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_abe451398726539e115ff20ed79be82cd}{va\_} = graph->param(prefix + \textcolor{stringliteral}{"\_U\_att"},
+57                        \{dimEncState, 1\},
+58                        keywords::init = \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+59     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}{ba\_} = graph->param(
+60         prefix + \textcolor{stringliteral}{"\_b\_att"}, \{1, dimEncState\}, keywords::init = \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+61 
+62     \textcolor{keywordflow}{if}(dropout\_ > 0.0f) \{
+63       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}{dropMaskContext\_} = graph->dropout(dropout\_, \{1, dimEncState\});
+64       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}{dropMaskState\_} = graph->dropout(dropout\_, \{1, dimDecState\});
+65     \}
+66 
+67     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}{dropMaskContext\_})
+68       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}
+69           = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{keywords::mask} = 
+      \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}{dropMaskContext\_});
+70 
+71     \textcolor{keywordflow}{if}(layerNorm\_) \{
+72       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a6616011b10e275bb43ca2a66a9817d7e}{gammaContext\_} = graph->param(prefix + \textcolor{stringliteral}{"\_att\_gamma1"},
+73                                    \{1, dimEncState\},
+74                                    keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.0));
+75       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aa934fc65efbfb2b16427f02c135ccb69}{gammaState\_} = graph->param(prefix + \textcolor{stringliteral}{"\_att\_gamma2"},
+76                                  \{1, dimEncState\},
+77                                  keywords::init = \hyperlink{namespacemarian_1_1inits_a03723a199ab72a38a13b2b8644e8e1c2}{inits::from\_value}(1.0));
+78 
+79       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}{mappedContext\_}
+80           = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(\hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}{Ua\_}), 
+      \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a6616011b10e275bb43ca2a66a9817d7e}{gammaContext\_}, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}{ba\_});
+81     \} \textcolor{keywordflow}{else} \{
+82       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}{mappedContext\_} = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}, 
+      \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}{Ua\_}, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}{ba\_});
+83     \}
+84 
+85     \textcolor{keyword}{auto} softmaxMask = \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{encState\_}->getMask();
+86     \textcolor{keywordflow}{if}(softmaxMask) \{
+87       Shape \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape} = \{softmaxMask->shape()[2], softmaxMask->shape()[0]\};
+88       \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a10695339c62a5255c51ade9b35dac607}{softmaxMask\_} = \hyperlink{namespacemarian_a00669690ef16ce9b1bde5ee9d1b77ac6}{transpose}(\hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(softmaxMask, shape));
+89     \}
+90   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classmarian_1_1rnn_1_1GlobalAttention_ab5e4f0df89d2569d44a28696de3ace0f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!apply@{apply}}
+\index{apply@{apply}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{apply(\+State state)}{apply(State state)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a7f1781d0f0c94222a2b0343cb55915ca}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a7f1781d0f0c94222a2b0343cb55915ca}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1CellInput_afecfcb2679941468cf4dbab6dba4617e}{marian\+::rnn\+::\+Cell\+Input}.
+
+
+
+Definition at line 92 of file attention.\+h.
+
+
+\begin{DoxyCode}
+92                           \{
+93     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+94     \textcolor{keyword}{auto} recState = state.output;
+95 
+96     \textcolor{keywordtype}{int} dimBatch = \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}->shape()[0];
+97     \textcolor{keywordtype}{int} srcWords = \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{contextDropped\_}->shape()[2];
+98     \textcolor{keywordtype}{int} dimBeam = recState->shape()[3];
+99 
+100 
+101     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}{dropMaskState\_})
+102       recState = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(recState, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{keywords::mask} = 
+      \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}{dropMaskState\_});
+103 
+104     \textcolor{keyword}{auto} mappedState = \hyperlink{namespacemarian_ad7fbf1ba8e2e04ffdc7d5e4841b5e691}{dot}(recState, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a084709a27aef6e0309431502ab74f0c5}{Wa\_});
+105     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a30abb68765a3b8d6a1b88f471b9f3c6b}{layerNorm\_})
+106       mappedState = \hyperlink{namespacemarian_a6202278a9da8ca8a281a6a96e75082f6}{layer\_norm}(mappedState, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aa934fc65efbfb2b16427f02c135ccb69}{gammaState\_});
+107 
+108     \textcolor{keyword}{auto} attReduce = \hyperlink{namespacemarian_1_1rnn_a7dd35a8b53e7515e0d3bd91c7be32fe3}{attOps}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_abe451398726539e115ff20ed79be82cd}{va\_}, \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}{mappedContext\_}, mappedState);
+109 
+110     \textcolor{comment}{// @TODO: horrible ->}
+111     \textcolor{keyword}{auto} e = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(\hyperlink{namespacemarian_a00669690ef16ce9b1bde5ee9d1b77ac6}{transpose}(\hyperlink{namespacemarian_a3c08107d509be52ee2c17eb6d54c7ebc}{softmax}(\hyperlink{namespacemarian_a00669690ef16ce9b1bde5ee9d1b77ac6}{transpose}(attReduce), 
+      \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a10695339c62a5255c51ade9b35dac607}{softmaxMask\_})),
+112                      \{dimBatch, 1, srcWords, dimBeam\});
+113     \textcolor{comment}{// <- horrible}
+114 
+115     \textcolor{keyword}{auto} alignedSource = \hyperlink{namespacemarian_a8ccb9507a69a32ecd48410fd1557f209}{weighted\_average}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{encState\_}->getAttended(), e, 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2);
+116 
+117     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{contexts\_}.push\_back(alignedSource);
+118     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}{alignments\_}.push\_back(e);
+119     \textcolor{keywordflow}{return} alignedSource;
+120   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classmarian_1_1rnn_1_1GlobalAttention_a7f1781d0f0c94222a2b0343cb55915ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!clear@{clear}}
+\index{clear@{clear}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Global\+Attention\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a3666babca6435bc45280836e58ef7ac2}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a3666babca6435bc45280836e58ef7ac2}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1Stackable_a322f402f6edc55cee4d1368df35bae8b}{marian\+::rnn\+::\+Stackable}.
+
+
+
+Definition at line 130 of file attention.\+h.
+
+
+\begin{DoxyCode}
+130                        \{
+131     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{contexts\_}.clear();
+132     \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}{alignments\_}.clear();
+133   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!dim\+Output@{dim\+Output}}
+\index{dim\+Output@{dim\+Output}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{dim\+Output()}{dimOutput()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::rnn\+::\+Global\+Attention\+::dim\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_ae7b20fd78fdd9e5f72eee775de24cf7b}{}\label{classmarian_1_1rnn_1_1GlobalAttention_ae7b20fd78fdd9e5f72eee775de24cf7b}
+
+
+Implements \hyperlink{classmarian_1_1rnn_1_1CellInput_a824402c4abc7e7197f32e7d5fcb7ce0c}{marian\+::rnn\+::\+Cell\+Input}.
+
+
+
+Definition at line 135 of file attention.\+h.
+
+
+\begin{DoxyCode}
+135 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{encState\_}->getContext()->shape()[1]; \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!get\+Alignments@{get\+Alignments}}
+\index{get\+Alignments@{get\+Alignments}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{get\+Alignments()}{getAlignments()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$\& marian\+::rnn\+::\+Global\+Attention\+::get\+Alignments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a7fab38ad7965922a7e8eb26f0d4906af}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a7fab38ad7965922a7e8eb26f0d4906af}
+
+
+Definition at line 128 of file attention.\+h.
+
+
+\begin{DoxyCode}
+128 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}{alignments\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classmarian_1_1rnn_1_1GlobalAttention_a7fab38ad7965922a7e8eb26f0d4906af_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!get\+Context@{get\+Context}}
+\index{get\+Context@{get\+Context}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{get\+Context()}{getContext()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::get\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b}{}\label{classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b}
+
+
+Definition at line 124 of file attention.\+h.
+
+
+\begin{DoxyCode}
+124                     \{
+125     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{contexts\_}, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis}=2);
+126   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db4/classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!get\+Contexts@{get\+Contexts}}
+\index{get\+Contexts@{get\+Contexts}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{get\+Contexts()}{getContexts()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$\& marian\+::rnn\+::\+Global\+Attention\+::get\+Contexts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_abeae4a963a85ca1642c387d241cec5ad}{}\label{classmarian_1_1rnn_1_1GlobalAttention_abeae4a963a85ca1642c387d241cec5ad}
+
+
+Definition at line 122 of file attention.\+h.
+
+
+\begin{DoxyCode}
+122 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{contexts\_}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!alignments\+\_\+@{alignments\+\_\+}}
+\index{alignments\+\_\+@{alignments\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{alignments\+\_\+}{alignments_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+Global\+Attention\+::alignments\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}{}\label{classmarian_1_1rnn_1_1GlobalAttention_ad1d83af6ac1cf4c054fc38451cf49e46}
+
+
+Definition at line 27 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!ba\+\_\+@{ba\+\_\+}}
+\index{ba\+\_\+@{ba\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{ba\+\_\+}{ba_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::ba\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a421becf09eba9ecddcb39a9c41a27a8c}
+
+
+Definition at line 18 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!beta\+Context\+\_\+@{beta\+Context\+\_\+}}
+\index{beta\+Context\+\_\+@{beta\+Context\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{beta\+Context\+\_\+}{betaContext_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::beta\+Context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a0cc5579e721541be79d19491d21d4848}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a0cc5579e721541be79d19491d21d4848}
+
+
+Definition at line 20 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!beta\+State\+\_\+@{beta\+State\+\_\+}}
+\index{beta\+State\+\_\+@{beta\+State\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{beta\+State\+\_\+}{betaState_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::beta\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a23be758011e81bfe2f4baf379911b279}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a23be758011e81bfe2f4baf379911b279}
+
+
+Definition at line 21 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!context\+Dropped\+\_\+@{context\+Dropped\+\_\+}}
+\index{context\+Dropped\+\_\+@{context\+Dropped\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{context\+Dropped\+\_\+}{contextDropped_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::context\+Dropped\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}{}\label{classmarian_1_1rnn_1_1GlobalAttention_af2d8e79f08edb6846b5e645928ddf60d}
+
+
+Definition at line 31 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!contexts\+\_\+@{contexts\+\_\+}}
+\index{contexts\+\_\+@{contexts\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{contexts\+\_\+}{contexts_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$ marian\+::rnn\+::\+Global\+Attention\+::contexts\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}{}\label{classmarian_1_1rnn_1_1GlobalAttention_ad5499538c0b64f796c0b815f6a8654e5}
+
+
+Definition at line 26 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!drop\+Mask\+Context\+\_\+@{drop\+Mask\+Context\+\_\+}}
+\index{drop\+Mask\+Context\+\_\+@{drop\+Mask\+Context\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{drop\+Mask\+Context\+\_\+}{dropMaskContext_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::drop\+Mask\+Context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}{}\label{classmarian_1_1rnn_1_1GlobalAttention_aeebe2fffa0a2305bef2a26ff292201f4}
+
+
+Definition at line 32 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!drop\+Mask\+State\+\_\+@{drop\+Mask\+State\+\_\+}}
+\index{drop\+Mask\+State\+\_\+@{drop\+Mask\+State\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{drop\+Mask\+State\+\_\+}{dropMaskState_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::drop\+Mask\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a0278e2cbabd73c51991d391e8d736aac}
+
+
+Definition at line 33 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!dropout\+\_\+@{dropout\+\_\+}}
+\index{dropout\+\_\+@{dropout\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{dropout\+\_\+}{dropout_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::rnn\+::\+Global\+Attention\+::dropout\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a54448ebcd15a874630f8988e99c77919}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a54448ebcd15a874630f8988e99c77919}
+
+
+Definition at line 29 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!enc\+State\+\_\+@{enc\+State\+\_\+}}
+\index{enc\+State\+\_\+@{enc\+State\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{enc\+State\+\_\+}{encState_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::rnn\+::\+Global\+Attention\+::enc\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a937128ef746a33a6d5033e3dc0bb1424}
+
+
+Definition at line 23 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!gamma\+Context\+\_\+@{gamma\+Context\+\_\+}}
+\index{gamma\+Context\+\_\+@{gamma\+Context\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{gamma\+Context\+\_\+}{gammaContext_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::gamma\+Context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a6616011b10e275bb43ca2a66a9817d7e}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a6616011b10e275bb43ca2a66a9817d7e}
+
+
+Definition at line 20 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!gamma\+State\+\_\+@{gamma\+State\+\_\+}}
+\index{gamma\+State\+\_\+@{gamma\+State\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{gamma\+State\+\_\+}{gammaState_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::gamma\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_aa934fc65efbfb2b16427f02c135ccb69}{}\label{classmarian_1_1rnn_1_1GlobalAttention_aa934fc65efbfb2b16427f02c135ccb69}
+
+
+Definition at line 21 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!layer\+Norm\+\_\+@{layer\+Norm\+\_\+}}
+\index{layer\+Norm\+\_\+@{layer\+Norm\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{layer\+Norm\+\_\+}{layerNorm_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::rnn\+::\+Global\+Attention\+::layer\+Norm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a30abb68765a3b8d6a1b88f471b9f3c6b}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a30abb68765a3b8d6a1b88f471b9f3c6b}
+
+
+Definition at line 28 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!mapped\+Context\+\_\+@{mapped\+Context\+\_\+}}
+\index{mapped\+Context\+\_\+@{mapped\+Context\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{mapped\+Context\+\_\+}{mappedContext_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::mapped\+Context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}{}\label{classmarian_1_1rnn_1_1GlobalAttention_aef1ab40f3c2a411f7734cd07388c0a23}
+
+
+Definition at line 25 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!softmax\+Mask\+\_\+@{softmax\+Mask\+\_\+}}
+\index{softmax\+Mask\+\_\+@{softmax\+Mask\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{softmax\+Mask\+\_\+}{softmaxMask_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::softmax\+Mask\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a10695339c62a5255c51ade9b35dac607}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a10695339c62a5255c51ade9b35dac607}
+
+
+Definition at line 24 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!Ua\+\_\+@{Ua\+\_\+}}
+\index{Ua\+\_\+@{Ua\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{Ua\+\_\+}{Ua_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::\+Ua\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a9d757c0f590f8a9fa8a94cca6e67e853}
+
+
+Definition at line 18 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!va\+\_\+@{va\+\_\+}}
+\index{va\+\_\+@{va\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{va\+\_\+}{va_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::va\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_abe451398726539e115ff20ed79be82cd}{}\label{classmarian_1_1rnn_1_1GlobalAttention_abe451398726539e115ff20ed79be82cd}
+
+
+Definition at line 18 of file attention.\+h.
+
+\index{marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}!Wa\+\_\+@{Wa\+\_\+}}
+\index{Wa\+\_\+@{Wa\+\_\+}!marian\+::rnn\+::\+Global\+Attention@{marian\+::rnn\+::\+Global\+Attention}}
+\subsubsection[{\texorpdfstring{Wa\+\_\+}{Wa_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+Global\+Attention\+::\+Wa\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1GlobalAttention_a084709a27aef6e0309431502ab74f0c5}{}\label{classmarian_1_1rnn_1_1GlobalAttention_a084709a27aef6e0309431502ab74f0c5}
+
+
+Definition at line 18 of file attention.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{attention_8h}{attention.\+h}\end{DoxyCompactItemize}

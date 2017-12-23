@@ -1,0 +1,408 @@
+\hypertarget{namespacethrust_1_1detail_1_1functional}{}\section{thrust\+:\+:detail\+:\+:functional Namespace Reference}
+\label{namespacethrust_1_1detail_1_1functional}\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__clip}{binary\+\_\+clip}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__pow}{binary\+\_\+pow}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__prune}{binary\+\_\+prune}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__exp}{unary\+\_\+exp}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__log}{unary\+\_\+log}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__logit}{unary\+\_\+logit}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__relu}{unary\+\_\+relu}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__reluback}{unary\+\_\+reluback}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__sigma}{unary\+\_\+sigma}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__sqrt}{unary\+\_\+sqrt}
+\item 
+struct \hyperlink{structthrust_1_1detail_1_1functional_1_1unary__tanh}{unary\+\_\+tanh}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__exp}{unary\+\_\+exp} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2}{Exp} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__log}{unary\+\_\+log} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}{Log} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__logit}{unary\+\_\+logit} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3}{Logit} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__tanh}{unary\+\_\+tanh} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$thrust\+::maximum $>$, actor$<$ T1 $>$, actor$<$ T2 $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a2249ce1e61c19c18fed1d15a9ee5cffb}{Max} (const actor$<$ T1 $>$ \&\+\_\+1, const actor$<$ T2 $>$ \&\+\_\+2)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__sigma}{unary\+\_\+sigma} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_aa947e17014d1d891812df6265b94a8bb}{Sigma} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__sqrt}{unary\+\_\+sqrt} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a4312d4fbc25873ae875a6986a86cef23}{Sqrt} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__relu}{unary\+\_\+relu} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}{Re\+LU} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename Eval $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1unary__reluback}{unary\+\_\+reluback} $>$, actor$<$ Eval $>$ $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a2c1a5d581fb286f11d8ae4d9351074f1}{Re\+L\+Uback} (const actor$<$ Eval $>$ \&\+\_\+1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int \hyperlink{namespacethrust_1_1detail_1_1functional_a340839a77ee36e3897fe8a8a53365ed0}{sgn} (T val)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1binary__clip}{binary\+\_\+clip} $>$, actor$<$ T1 $>$, typename as\+\_\+actor$<$ T2 $>$\+::type $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a978d42540ab63fe9fd4920518458dc05}{Clip} (const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1binary__prune}{binary\+\_\+prune} $>$, actor$<$ T1 $>$, typename as\+\_\+actor$<$ T2 $>$\+::type $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_ad3ccd036bd9aac246a3daed0990b385d}{Prune} (const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$\hyperlink{structthrust_1_1detail_1_1functional_1_1binary__pow}{binary\+\_\+pow} $>$, actor$<$ T1 $>$, typename as\+\_\+actor$<$ T2 $>$\+::type $>$ $>$ \hyperlink{namespacethrust_1_1detail_1_1functional_a067af5a805df6f752ad69cf922c5aa44}{Pow} (const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Clip@{Clip}}
+\index{Clip@{Clip}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Clip(const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)}{Clip(const actor< T1 > &_1, const T2 &_2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$binary\+\_\+operator$<${\bf binary\+\_\+clip}$>$, actor$<$T1$>$, typename as\+\_\+actor$<$T2$>$\+::type$>$ $>$ thrust\+::detail\+::functional\+::\+Clip (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ T1 $>$ \&}]{\+\_\+1, }
+\item[{const T2 \&}]{\+\_\+2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a978d42540ab63fe9fd4920518458dc05}{}\label{namespacethrust_1_1detail_1_1functional_a978d42540ab63fe9fd4920518458dc05}
+
+
+Definition at line 120 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+120                                         \{
+121   \textcolor{keywordflow}{return} compose(
+122       binary\_operator<binary\_clip>(), make\_actor(\_1), make\_actor(\_2));
+123 \}
+\end{DoxyCode}
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Exp@{Exp}}
+\index{Exp@{Exp}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Exp(const actor$<$ Eval $>$ \&\+\_\+1)}{Exp(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<${\bf unary\+\_\+exp} $>$, actor$<$ Eval $>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Exp (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2}{}\label{namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2}
+
+
+Definition at line 25 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+25                                  \{
+26         \textcolor{keywordflow}{return} compose(unary\_operator<unary\_exp>(), \_1);
+27       \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a7ea3d852a4a359ba9c87ce76ea3fcbb2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Log@{Log}}
+\index{Log@{Log}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Log(const actor$<$ Eval $>$ \&\+\_\+1)}{Log(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<${\bf unary\+\_\+log} $>$, actor$<$ Eval $>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Log (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}{}\label{namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89}
+
+
+Definition at line 38 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+38                                  \{
+39         \textcolor{keywordflow}{return} compose(unary\_operator<unary\_log>(), \_1);
+40       \} 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_ac56289767601dbca61bebee343b4fc89_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Logit@{Logit}}
+\index{Logit@{Logit}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Logit(const actor$<$ Eval $>$ \&\+\_\+1)}{Logit(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$unary\+\_\+operator$<${\bf unary\+\_\+logit}$>$, actor$<$Eval$>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Logit (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3}{}\label{namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3}
+
+
+Definition at line 51 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+51                                    \{
+52         \textcolor{keywordflow}{return} compose(unary\_operator<unary\_logit>(), \_1);
+53       \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_ab1596ca6efb2753919fc577c76541fd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Max@{Max}}
+\index{Max@{Max}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Max(const actor$<$ T1 $>$ \&\+\_\+1, const actor$<$ T2 $>$ \&\+\_\+2)}{Max(const actor< T1 > &_1, const actor< T2 > &_2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ binary\+\_\+operator$<$thrust\+::maximum $>$, actor$<$ T1 $>$, actor$<$ T2 $>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Max (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ T1 $>$ \&}]{\+\_\+1, }
+\item[{const actor$<$ T2 $>$ \&}]{\+\_\+2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a2249ce1e61c19c18fed1d15a9ee5cffb}{}\label{namespacethrust_1_1detail_1_1functional_a2249ce1e61c19c18fed1d15a9ee5cffb}
+
+
+Definition at line 71 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+71                                                     \{
+72         \textcolor{keywordflow}{return} compose(binary\_operator<thrust::maximum>(),
+73                        make\_actor(\_1),
+74                        make\_actor(\_2));
+75       \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a2249ce1e61c19c18fed1d15a9ee5cffb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Pow@{Pow}}
+\index{Pow@{Pow}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Pow(const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)}{Pow(const actor< T1 > &_1, const T2 &_2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$binary\+\_\+operator$<${\bf binary\+\_\+pow}$>$, actor$<$T1$>$, typename as\+\_\+actor$<$T2$>$\+::type$>$ $>$ thrust\+::detail\+::functional\+::\+Pow (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ T1 $>$ \&}]{\+\_\+1, }
+\item[{const T2 \&}]{\+\_\+2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a067af5a805df6f752ad69cf922c5aa44}{}\label{namespacethrust_1_1detail_1_1functional_a067af5a805df6f752ad69cf922c5aa44}
+
+
+Definition at line 155 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+155                                        \{
+156   \textcolor{keywordflow}{return} compose(binary\_operator<binary\_pow>(), make\_actor(\_1), make\_actor(\_2));
+157 \}
+\end{DoxyCode}
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Prune@{Prune}}
+\index{Prune@{Prune}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Prune(const actor$<$ T1 $>$ \&\+\_\+1, const T2 \&\+\_\+2)}{Prune(const actor< T1 > &_1, const T2 &_2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$binary\+\_\+operator$<${\bf binary\+\_\+prune}$>$, actor$<$T1$>$, typename as\+\_\+actor$<$T2$>$\+::type$>$ $>$ thrust\+::detail\+::functional\+::\+Prune (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ T1 $>$ \&}]{\+\_\+1, }
+\item[{const T2 \&}]{\+\_\+2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_ad3ccd036bd9aac246a3daed0990b385d}{}\label{namespacethrust_1_1detail_1_1functional_ad3ccd036bd9aac246a3daed0990b385d}
+
+
+Definition at line 136 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+136                                          \{
+137   \textcolor{keywordflow}{return} compose(
+138       binary\_operator<binary\_prune>(), make\_actor(\_1), make\_actor(\_2));
+139 \}
+\end{DoxyCode}
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Re\+LU@{Re\+LU}}
+\index{Re\+LU@{Re\+LU}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Re\+L\+U(const actor$<$ Eval $>$ \&\+\_\+1)}{ReLU(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$unary\+\_\+operator$<${\bf unary\+\_\+relu}$>$, actor$<$Eval$>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Re\+LU (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}{}\label{namespacethrust_1_1detail_1_1functional_a98a54b55473395eabc5424da89281e02}
+
+
+Definition at line 86 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+86                             \{
+87   \textcolor{keywordflow}{return} compose(unary\_operator<unary\_relu>(), \_1);
+88 \}
+\end{DoxyCode}
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Re\+L\+Uback@{Re\+L\+Uback}}
+\index{Re\+L\+Uback@{Re\+L\+Uback}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Re\+L\+Uback(const actor$<$ Eval $>$ \&\+\_\+1)}{ReLUback(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$unary\+\_\+operator$<${\bf unary\+\_\+reluback}$>$, actor$<$Eval$>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Re\+L\+Uback (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a2c1a5d581fb286f11d8ae4d9351074f1}{}\label{namespacethrust_1_1detail_1_1functional_a2c1a5d581fb286f11d8ae4d9351074f1}
+
+
+Definition at line 100 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+100                                     \{
+101   \textcolor{keywordflow}{return} compose(unary\_operator<unary\_reluback>(), \_1);
+102 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a2c1a5d581fb286f11d8ae4d9351074f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!sgn@{sgn}}
+\index{sgn@{sgn}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{sgn(\+T val)}{sgn(T val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ int thrust\+::detail\+::functional\+::sgn (
+\begin{DoxyParamCaption}
+\item[{T}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a340839a77ee36e3897fe8a8a53365ed0}{}\label{namespacethrust_1_1detail_1_1functional_a340839a77ee36e3897fe8a8a53365ed0}
+
+
+Definition at line 105 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+105                                    \{
+106   \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float}(0) < val) - (val < float(0));
+107 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a340839a77ee36e3897fe8a8a53365ed0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Sigma@{Sigma}}
+\index{Sigma@{Sigma}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Sigma(const actor$<$ Eval $>$ \&\+\_\+1)}{Sigma(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$unary\+\_\+operator$<${\bf unary\+\_\+sigma}$>$, actor$<$Eval$>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Sigma (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_aa947e17014d1d891812df6265b94a8bb}{}\label{namespacethrust_1_1detail_1_1functional_aa947e17014d1d891812df6265b94a8bb}
+
+
+Definition at line 43 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+43                              \{
+44   \textcolor{keywordflow}{return} compose(unary\_operator<unary\_sigma>(), \_1);
+45 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d3/d07/namespacethrust_1_1detail_1_1functional_aa947e17014d1d891812df6265b94a8bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Sqrt(const actor$<$ Eval $>$ \&\+\_\+1)}{Sqrt(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$composite$<$unary\+\_\+operator$<${\bf unary\+\_\+sqrt}$>$, actor$<$Eval$>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Sqrt (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a4312d4fbc25873ae875a6986a86cef23}{}\label{namespacethrust_1_1detail_1_1functional_a4312d4fbc25873ae875a6986a86cef23}
+
+
+Definition at line 65 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+65                             \{
+66   \textcolor{keywordflow}{return} compose(unary\_operator<unary\_sqrt>(), \_1);
+67 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a4312d4fbc25873ae875a6986a86cef23_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a4312d4fbc25873ae875a6986a86cef23_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{thrust\+::detail\+::functional@{thrust\+::detail\+::functional}!Tanh@{Tanh}}
+\index{Tanh@{Tanh}!thrust\+::detail\+::functional@{thrust\+::detail\+::functional}}
+\subsubsection[{\texorpdfstring{Tanh(const actor$<$ Eval $>$ \&\+\_\+1)}{Tanh(const actor< Eval > &_1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Eval $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ actor$<$ composite$<$ unary\+\_\+operator$<${\bf unary\+\_\+tanh} $>$, actor$<$ Eval $>$ $>$ $>$ thrust\+::detail\+::functional\+::\+Tanh (
+\begin{DoxyParamCaption}
+\item[{const actor$<$ Eval $>$ \&}]{\+\_\+1}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{}\label{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}
+
+
+Definition at line 64 of file amun/gpu/mblas/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+64                                   \{
+65         \textcolor{keywordflow}{return} compose(unary\_operator<unary\_tanh>(), \_1);
+66       \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d07/namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba_icgraph}
+\end{center}
+\end{figure}
+
+

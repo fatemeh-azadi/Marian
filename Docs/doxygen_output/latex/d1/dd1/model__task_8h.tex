@@ -1,0 +1,64 @@
+\hypertarget{model__task_8h}{}\section{model\+\_\+task.\+h File Reference}
+\label{model__task_8h}\index{model\+\_\+task.\+h@{model\+\_\+task.\+h}}
+{\ttfamily \#include \char`\"{}models/s2s.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/amun.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/hardatt.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/multi\+\_\+s2s.\+h\char`\"{}}\\*
+Include dependency graph for model\+\_\+task.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dae/model__task_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d29/model__task_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmarian_1_1ModelTask}{marian\+::\+Model\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{model__task_8h_a46ac159fb83f111b7dd1408a3aa18432}{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL}(name,  model)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$template$<$ class $>$ class Task\+Name, template$<$ class $>$ class Wrapper$>$ }\\Ptr$<$ Model\+Task $>$ \hyperlink{namespacemarian_ac15754f657b81a6e5edbd835b6d6aead}{marian\+::\+Wrap\+Model\+Type} (Ptr$<$ Config $>$ options)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{model\+\_\+task.\+h@{model\+\_\+task.\+h}!R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL@{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL}}
+\index{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL@{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL}!model\+\_\+task.\+h@{model\+\_\+task.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL}{REGISTER_MODEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+O\+D\+EL(
+\begin{DoxyParamCaption}
+\item[{}]{name, }
+\item[{}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{model__task_8h_a46ac159fb83f111b7dd1408a3aa18432}{}\label{model__task_8h_a46ac159fb83f111b7dd1408a3aa18432}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+  if(type == name) \(\backslash\)
+    return New<TaskName<Wrapper<model>>>(options); \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 14 of file model\+\_\+task.\+h.
+

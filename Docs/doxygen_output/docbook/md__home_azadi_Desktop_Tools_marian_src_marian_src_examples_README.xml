@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Marian examples</title>
+
+<para>Examples are enabled with CMake option <computeroutput>-DCOMPILE_EXAMPLES=ON</computeroutput>.</para>
+
+<para><formalpara><title>MNIST</title></formalpara>
+</para>
+
+<para>You will need MNIST data for training and testing. Download them with the script <computeroutput>src/examples/mnist/download.sh</computeroutput> or provide paths to the files with <computeroutput>--train-sets</computeroutput> and <computeroutput>--valid-sets</computeroutput> options. </para>
+
+</chapter>

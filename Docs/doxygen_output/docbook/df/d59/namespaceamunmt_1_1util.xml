@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d59/namespaceamunmt_1_1util">
+<title>amunmt::util</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/df9/classamunmt_1_1util_1_1ErrnoException">amunmt::util::ErrnoException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d08/classamunmt_1_1util_1_1Exception">amunmt::util::Exception</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d39/classamunmt_1_1util_1_1FileOpenException">amunmt::util::FileOpenException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd9/classamunmt_1_1util_1_1OverflowException">amunmt::util::OverflowException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Except::template ExceptionTag&lt; Except &amp; &gt;::Identity <link linkend="df/d59/namespaceamunmt_1_1util_1ad11a5ac29536e2a368b1eae6d5bdf229">operator&lt;&lt;</link> (
+Except &amp; e, const Data &amp; data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::size_t <link linkend="df/d59/namespaceamunmt_1_1util_1a6b045ed350fadf8a2a9d7bd567b5c546">CheckOverflowInternal</link> (
+uint64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::size_t <link linkend="df/d59/namespaceamunmt_1_1util_1a4ab09a7fed571a65813b862e6a2cbd58">CheckOverflowInternal&lt; 8 &gt;</link> (
+uint64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::size_t <link linkend="df/d59/namespaceamunmt_1_1util_1a50f412a2b0340540782aef99cc9f2734">CheckOverflow</link> (
+uint64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

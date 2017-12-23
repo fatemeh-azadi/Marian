@@ -1,0 +1,85 @@
+\hypertarget{marian_2src_2tests_2CMakeLists_8txt}{}\section{C\+Make\+Lists.\+txt File Reference}
+\label{marian_2src_2tests_2CMakeLists_8txt}\index{C\+Make\+Lists.\+txt@{C\+Make\+Lists.\+txt}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{set} (T\+E\+S\+T\+\_\+\+S\+O\+U\+R\+C\+ES graph\+\_\+tests.\+cpp operator\+\_\+tests.\+cpp) \hyperlink{marian_2src_2examples_2CMakeLists_8txt_a5ee868a598e11939db5f1237cb57056d}{add\+\_\+executable}(run\+\_\+tests run\+\_\+tests.\+cpp \$
+\item 
+\hyperlink{marian_2src_2tests_2CMakeLists_8txt_a8105126e55165fd0260f9d9bc4a786ce}{target\+\_\+link\+\_\+libraries} (run\+\_\+tests marian \$\{E\+X\+T\+\_\+\+L\+I\+BS\}Catch) cuda\+\_\+add\+\_\+cublas\+\_\+to\+\_\+target(run\+\_\+tests) set\+\_\+target\+\_\+properties(run\+\_\+tests P\+R\+O\+P\+E\+R\+T\+I\+ES R\+U\+N\+T\+I\+M\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY\char`\"{}\$
+\item 
+\hyperlink{marian_2src_2tests_2CMakeLists_8txt_a9e2512925448bacc3b1d70b334a2487a}{add\+\_\+test} (N\+A\+ME Graph\+Test C\+O\+M\+M\+A\+ND run\+\_\+tests) \hyperlink{marian_2src_2examples_2CMakeLists_8txt_a5ee868a598e11939db5f1237cb57056d}{add\+\_\+executable}(logger\+\_\+test logger\+\_\+test.\+cpp) cuda\+\_\+add\+\_\+executable(pooling\+\_\+test pooling\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(dropout\+\_\+test dropout\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(marian\+\_\+test marian\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(tensor\+\_\+test tensor\+\_\+test.\+cu) foreach(exec logger\+\_\+test dropout\+\_\+test pooling\+\_\+test marian\+\_\+test tensor\+\_\+test) \hyperlink{marian_2src_2tests_2CMakeLists_8txt_a8105126e55165fd0260f9d9bc4a786ce}{target\+\_\+link\+\_\+libraries}(\$
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}!add\+\_\+test@{add\+\_\+test}}
+\index{add\+\_\+test@{add\+\_\+test}!marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}}
+\subsubsection[{\texorpdfstring{add\+\_\+test(\+N\+A\+M\+E Graph\+Test C\+O\+M\+M\+A\+N\+D run\+\_\+tests) add\+\_\+executable(logger\+\_\+test logger\+\_\+test.\+cpp) cuda\+\_\+add\+\_\+executable(pooling\+\_\+test pooling\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(dropout\+\_\+test dropout\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(marian\+\_\+test marian\+\_\+test.\+cu) cuda\+\_\+add\+\_\+executable(tensor\+\_\+test tensor\+\_\+test.\+cu) foreach(exec logger\+\_\+test dropout\+\_\+test pooling\+\_\+test marian\+\_\+test tensor\+\_\+test) target\+\_\+link\+\_\+libraries(\$}{add_test(NAME GraphTest COMMAND run_tests) add_executable(logger_test logger_test.cpp) cuda_add_executable(pooling_test pooling_test.cu) cuda_add_executable(dropout_test dropout_test.cu) cuda_add_executable(marian_test marian_test.cu) cuda_add_executable(tensor_test tensor_test.cu) foreach(exec logger_test dropout_test pooling_test marian_test tensor_test) target_link_libraries($}}]{\setlength{\rightskip}{0pt plus 5cm}add\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{N\+A\+ME Graph\+Test C\+O\+M\+M\+A\+ND}]{run\+\_\+tests}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2tests_2CMakeLists_8txt_a9e2512925448bacc3b1d70b334a2487a}{}\label{marian_2src_2tests_2CMakeLists_8txt_a9e2512925448bacc3b1d70b334a2487a}
+
+
+Definition at line 12 of file marian/src/tests/\+C\+Make\+Lists.\+txt.
+
+
+\begin{DoxyCode}
+31                            \{exec\} \hyperlink{namespacemarian}{marian} $\{EXT\_LIBS\})
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d2/d2a/marian_2src_2tests_2CMakeLists_8txt_a9e2512925448bacc3b1d70b334a2487a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}!set@{set}}
+\index{set@{set}!marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}}
+\subsubsection[{\texorpdfstring{set(\+T\+E\+S\+T\+\_\+\+S\+O\+U\+R\+C\+E\+S graph\+\_\+tests.\+cpp operator\+\_\+tests.\+cpp) add\+\_\+executable(run\+\_\+tests run\+\_\+tests.\+cpp \$}{set(TEST_SOURCES graph_tests.cpp operator_tests.cpp) add_executable(run_tests run_tests.cpp $}}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{T\+E\+S\+T\+\_\+\+S\+O\+U\+R\+C\+ES graph\+\_\+tests.\+cpp operator\+\_\+tests.}]{cpp}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{}\label{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}
+
+
+Definition at line 2 of file marian/src/tests/\+C\+Make\+Lists.\+txt.
+
+
+\begin{DoxyCode}
+7                                         \{TEST\_SOURCES\})
+\end{DoxyCode}
+\index{marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}!target\+\_\+link\+\_\+libraries@{target\+\_\+link\+\_\+libraries}}
+\index{target\+\_\+link\+\_\+libraries@{target\+\_\+link\+\_\+libraries}!marian/src/tests/\+C\+Make\+Lists.\+txt@{marian/src/tests/\+C\+Make\+Lists.\+txt}}
+\subsubsection[{\texorpdfstring{target\+\_\+link\+\_\+libraries(run\+\_\+tests marian \$\lcurly{}E\+X\+T\+\_\+\+L\+I\+BS\rcurly{}Catch) cuda\+\_\+add\+\_\+cublas\+\_\+to\+\_\+target(run\+\_\+tests) set\+\_\+target\+\_\+properties(run\+\_\+tests P\+R\+O\+P\+E\+R\+T\+I\+E\+S R\+U\+N\+T\+I\+M\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY""\$}{target_link_libraries(run_tests marian $\{EXT_LIBS\}Catch) cuda_add_cublas_to_target(run_tests) set_target_properties(run_tests PROPERTIES RUNTIME_OUTPUT_DIRECTORY"$}}]{\setlength{\rightskip}{0pt plus 5cm}target\+\_\+link\+\_\+libraries (
+\begin{DoxyParamCaption}
+\item[{run\+\_\+tests marian \$\{E\+X\+T\+\_\+\+L\+I\+BS\}}]{Catch}
+\end{DoxyParamCaption}
+)}\hypertarget{marian_2src_2tests_2CMakeLists_8txt_a8105126e55165fd0260f9d9bc4a786ce}{}\label{marian_2src_2tests_2CMakeLists_8txt_a8105126e55165fd0260f9d9bc4a786ce}
+
+
+Definition at line 8 of file marian/src/tests/\+C\+Make\+Lists.\+txt.
+
+
+\begin{DoxyCode}
+8                                         \{EXT\_LIBS\} Catch)
+9 cuda\_add\_cublas\_to\_target(run\_tests)
+10 set\_target\_properties(run\_tests PROPERTIES RUNTIME\_OUTPUT\_DIRECTORY \textcolor{stringliteral}{"$\{CMAKE\_BINARY\_DIR\}"})
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d2/d2a/marian_2src_2tests_2CMakeLists_8txt_a8105126e55165fd0260f9d9bc4a786ce_icgraph}
+\end{center}
+\end{figure}
+
+

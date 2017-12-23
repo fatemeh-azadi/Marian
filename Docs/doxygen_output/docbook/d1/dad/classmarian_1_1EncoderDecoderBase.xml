@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dad/classmarian_1_1EncoderDecoderBase">
+<title>marian::EncoderDecoderBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d95/encdec_8h">&lt;encdec.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::EncoderDecoderBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d09/classmarian_1_1EncoderDecoderBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::EncoderDecoderBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d39/classmarian_1_1EncoderDecoderBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1aed4f5b4c03698b66ab47827866e67947">load</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a38bf117cbdc25c25357dd1922cfd2a2d">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a2bad3e7fc27ea8b139f5a11a1fabe508">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , const std::string &amp; , bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a7613ff13f2fe0f11571d21e2235f7514">selectEmbeddings</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state, const std::vector&lt; size_t &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a87b83c44031999f47ee3bad03ababc9a">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; , const std::vector&lt; size_t &gt; &amp; , const std::vector&lt; size_t &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a6007e315951e619751aff381020174ea">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1ad64d35743ba11ca947d25d985fedcdd3">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, bool clearGraph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/dc6/classmarian_1_1EncoderBase">EncoderBase</link> &gt; <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a6b9540f9c2a80a5ae1b7feaa0ecf17bd">getEncoder</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/d04/classmarian_1_1DecoderBase">DecoderBase</link> &gt; <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase_1a202af6f0ef3a39914b57f1df797047c5">getDecoder</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1aed4f5b4c03698b66ab47827866e67947">
+                <title>virtual void marian::EncoderDecoderBase::load (Ptr&lt; ExpressionGraph &gt;, const std::string &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a38bf117cbdc25c25357dd1922cfd2a2d">
+                <title>virtual void marian::EncoderDecoderBase::save (Ptr&lt; ExpressionGraph &gt;, const std::string &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a2bad3e7fc27ea8b139f5a11a1fabe508">
+                <title>virtual void marian::EncoderDecoderBase::save (Ptr&lt; ExpressionGraph &gt;, const std::string &amp;, bool)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a7613ff13f2fe0f11571d21e2235f7514">
+                <title>virtual void marian::EncoderDecoderBase::selectEmbeddings (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state, const std::vector&lt; size_t &gt; &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a87b83c44031999f47ee3bad03ababc9a">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::EncoderDecoderBase::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt;, const std::vector&lt; size_t &gt; &amp;, const std::vector&lt; size_t &gt; &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a6007e315951e619751aff381020174ea">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::EncoderDecoderBase::step (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; DecoderState &gt;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1ad64d35743ba11ca947d25d985fedcdd3">
+                <title>virtual Expr marian::EncoderDecoderBase::build (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch, bool clearGraph=true)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a6b9540f9c2a80a5ae1b7feaa0ecf17bd">
+                <title>virtual Ptr&lt;EncoderBase&gt; marian::EncoderDecoderBase::getEncoder ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/dad/classmarian_1_1EncoderDecoderBase_1a202af6f0ef3a39914b57f1df797047c5">
+                <title>virtual Ptr&lt;DecoderBase&gt; marian::EncoderDecoderBase::getDecoder ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

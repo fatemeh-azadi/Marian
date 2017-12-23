@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dcf/sparse__tensor_8h">
+    <title>sparse_tensor.h File Reference</title>
+    <programlisting>#include &lt;curand.h&gt;</programlisting>
+    <programlisting>#include &lt;curand_kernel.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/device_ptr.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/sort.h&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &quot;kernels/cuda_helpers.h&quot;</programlisting>
+    <programlisting>#include &quot;kernels/tensor_operators.h&quot;</programlisting>
+<para>Include dependency diagram for sparse_tensor.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dee/sparse__tensor_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for sparse_tensor.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d33/sparse__tensor_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db9/classmarian_1_1SparseTensorBase">marian::SparseTensorBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file sparse_tensor.h</para>
+    </simplesect>
+</section>

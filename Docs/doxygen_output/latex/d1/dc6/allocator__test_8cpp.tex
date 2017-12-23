@@ -1,0 +1,70 @@
+\hypertarget{allocator__test_8cpp}{}\section{allocator\+\_\+test.\+cpp File Reference}
+\label{allocator__test_8cpp}\index{allocator\+\_\+test.\+cpp@{allocator\+\_\+test.\+cpp}}
+{\ttfamily \#include $<$boost/timer/timer.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tensors/allocator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tensors/device\+\_\+gpu.\+h\char`\"{}}\\*
+Include dependency graph for allocator\+\_\+test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dff/allocator__test_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDeviceCPU}{Device\+C\+PU}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{allocator__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{allocator\+\_\+test.\+cpp@{allocator\+\_\+test.\+cpp}!main@{main}}
+\index{main@{main}!allocator\+\_\+test.\+cpp@{allocator\+\_\+test.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{allocator__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{allocator__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 53 of file allocator\+\_\+test.\+cpp.
+
+
+\begin{DoxyCode}
+53                                 \{
+54   \textcolor{keyword}{using namespace }\hyperlink{namespacemarian}{marian};
+55 
+56   \textcolor{keyword}{auto} a = New<Allocator<DeviceGPU>>(0, 0, 30000, 256);
+57   std::cerr << \textcolor{stringliteral}{"Size: "} << a->size() << std::endl;
+58 
+59   \textcolor{keyword}{auto} mem1 = a->alloc<\textcolor{keywordtype}{int}>(100000);
+60   std::cerr << \textcolor{stringliteral}{"Size: "} << a->size() << std::endl;
+61   std::cerr << \textcolor{stringliteral}{"mem1: "} << *mem1 << std::endl;
+62 
+63   \textcolor{comment}{//a->throwAtReallocation(true);}
+64 
+65   \textcolor{keyword}{auto} mem2 = a->alloc(1000000);
+66   std::cerr << \textcolor{stringliteral}{"Size: "} << a->size() << std::endl;
+67   std::cerr << \textcolor{stringliteral}{"mem2: "} << *mem2 << std::endl;
+68 
+69   a->free(mem1);
+70 
+71   \textcolor{keyword}{auto} mem3 = a->alloc(100000);
+72   std::cerr << \textcolor{stringliteral}{"mem2: "} << *mem2 << std::endl;
+73   std::cerr << \textcolor{stringliteral}{"mem3: "} << *mem3 << std::endl;
+74   std::cerr << \textcolor{stringliteral}{"Size: "} << a->size() << std::endl;
+75 
+76   \textcolor{keywordflow}{return} 0;
+77 \}
+\end{DoxyCode}

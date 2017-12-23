@@ -1,0 +1,33 @@
+<map id="generic.h" name="generic.h">
+<area shape="rect" id="node2" href="$d6/dc2/definitions_8h.html" title="common/definitions.h" alt="" coords="1233,849,1380,875"/>
+<area shape="rect" id="node17" href="$d7/d5b/options_8h.html" title="common/options.h" alt="" coords="223,759,353,786"/>
+<area shape="rect" id="node21" href="$d7/d4f/expression__graph_8h.html" title="graph/expression_graph.h" alt="" coords="1888,453,2059,480"/>
+<area shape="rect" id="node58" href="$da/df9/param__initializers_8h.html" title="layers/param_initializers.h" alt="" coords="3225,677,3399,704"/>
+<area shape="rect" id="node60" href="$de/d83/expression__operators_8h.html" title="graph/expression_operators.h" alt="" coords="1877,304,2070,331"/>
+<area shape="rect" id="node61" href="$de/d06/factory_8h.html" title="layers/factory.h" alt="" coords="1415,80,1527,107"/>
+<area shape="rect" id="node8" href="$da/d18/shape_8h.html" title="shape.h" alt="" coords="1085,931,1153,957"/>
+<area shape="rect" id="node11" href="$d2/db7/keywords_8h.html" title="keywords.h" alt="" coords="223,931,313,957"/>
+<area shape="rect" id="node16" href="$d3/de0/compile__time__crc32_8h.html" title="compile_time_crc32.h" alt="" coords="193,1005,343,1032"/>
+<area shape="rect" id="node27" href="$d4/d4d/batch__generator_8h.html" title="data/batch_generator.h" alt="" coords="2363,528,2517,555"/>
+<area shape="rect" id="node43" href="$de/d34/backend_8h.html" title="graph/backend.h" alt="" coords="658,759,777,786"/>
+<area shape="rect" id="node44" href="$db/dcc/chainable_8h.html" title="graph/chainable.h" alt="" coords="377,759,501,786"/>
+<area shape="rect" id="node46" href="$de/dd0/node__operators_8h.html" title="graph/node_operators.h" alt="" coords="669,603,827,629"/>
+<area shape="rect" id="node52" href="$d6/d3b/parameters_8h.html" title="graph/parameters.h" alt="" coords="3043,603,3178,629"/>
+<area shape="rect" id="node53" href="$d7/d6c/tensor__allocator_8h.html" title="tensors/tensor_allocator.h" alt="" coords="2735,677,2907,704"/>
+<area shape="rect" id="node31" href="$d7/df5/batch__stats_8h.html" title="data/batch_stats.h" alt="" coords="2265,603,2396,629"/>
+<area shape="rect" id="node39" href="$d8/db3/marian_2src_2data_2vocab_8h.html" title="data/vocab.h" alt="" coords="2431,849,2529,875"/>
+<area shape="rect" id="node32" href="$dc/d8f/corpus_8h.html" title="data/corpus.h" alt="" coords="2100,677,2201,704"/>
+<area shape="rect" id="node37" href="$d9/d9b/batch_8h.html" title="data/batch.h" alt="" coords="2183,849,2278,875"/>
+<area shape="rect" id="node38" href="$de/daf/data_2dataset_8h.html" title="data/dataset.h" alt="" coords="2337,759,2442,786"/>
+<area shape="rect" id="node40" href="$d0/d16/marian_2src_2data_2types_8h.html" title="data/types.h" alt="" coords="2691,931,2786,957"/>
+<area shape="rect" id="node47" href="$d1/d77/node_8h.html" title="graph/node.h" alt="" coords="669,677,766,704"/>
+<area shape="rect" id="node49" href="$d2/d3d/tensor_8h.html" title="tensors/tensor.h" alt="" coords="801,759,917,786"/>
+<area shape="rect" id="node51" href="$d5/d0b/memory__piece_8h.html" title="tensors/memory_piece.h" alt="" coords="1663,849,1828,875"/>
+<area shape="rect" id="node55" href="$da/da9/allocator_8h.html" title="tensors/allocator.h" alt="" coords="2771,759,2901,786"/>
+<area shape="rect" id="node56" href="$d2/de3/device__gpu_8h.html" title="tensors/device_gpu.h" alt="" coords="3309,759,3456,786"/>
+<area shape="rect" id="node62" href="$de/d60/rnn_8h.html" title="rnn/rnn.h" alt="" coords="1437,155,1510,181"/>
+<area shape="rect" id="node66" href="$db/d51/marian_2src_2rnn_2types_8h.html" title="rnn/types.h" alt="" coords="1005,379,1091,405"/>
+<area shape="rect" id="node67" href="$dd/dc0/attention_8h.html" title="rnn/attention.h" alt="" coords="1215,229,1321,256"/>
+<area shape="rect" id="node69" href="$d9/de1/cells_8h.html" title="rnn/cells.h" alt="" coords="1573,229,1656,256"/>
+<area shape="rect" id="node68" href="$db/ddb/states_8h.html" title="models/states.h" alt="" coords="1167,304,1281,331"/>
+</map>

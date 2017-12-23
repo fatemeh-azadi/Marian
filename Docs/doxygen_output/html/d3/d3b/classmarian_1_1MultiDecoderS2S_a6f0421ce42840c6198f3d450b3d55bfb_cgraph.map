@@ -1,0 +1,11 @@
+<map id="marian::MultiDecoderS2S::step" name="marian::MultiDecoderS2S::step">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#a268400392f22176821c7c4a36733b178" title="marian::dropout" alt="" coords="260,107,372,133"/>
+<area shape="rect" id="node8" href="$d4/d04/classmarian_1_1rnn_1_1Stackable.html#a33df0f892797bb7ebe12f3c0f18b43ce" title="marian::rnn::Stackable::as" alt="" coords="229,157,403,184"/>
+<area shape="rect" id="node9" href="$d7/db4/classmarian_1_1rnn_1_1GlobalAttention.html#ad518e4c82f56b8f95393dffa2df2288b" title="marian::rnn::GlobalAttention\l::getContext" alt="" coords="224,209,408,250"/>
+<area shape="rect" id="node10" href="$da/d22/namespacemarian.html#a2791a2c8f79a938f5cb22ae613680675" title="marian::concatenate" alt="" coords="463,267,603,293"/>
+<area shape="rect" id="node3" href="$d4/d04/namespacemarian_1_1keywords.html#a74d7a2502faafdd421ef3dff629e284f" title="marian::keywords::Get" alt="" coords="456,5,611,32"/>
+<area shape="rect" id="node4" href="$da/d22/namespacemarian.html#a763e5e9b5d5a329d2420fe9bab95476d" title="marian::shift" alt="" coords="486,56,581,83"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a3dbe8b5eb203876cd08cf3fe75a1c6bc" title="marian::convolution" alt="" coords="466,107,601,133"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#a8ee119d3ee4867a3c826de62ea1de4f5" title="marian::avg_pooling" alt="" coords="464,157,603,184"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#abfe3b8c37f479da0a31a1e843d8bdedf" title="marian::max_pooling" alt="" coords="462,208,605,235"/>
+</map>

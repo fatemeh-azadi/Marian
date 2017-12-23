@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc4/classmarian_1_1GradientDropBase">
+<title>marian::GradientDropBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d5a/dropper_8h">&lt;dropper.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::GradientDropBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d98/classmarian_1_1GradientDropBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::GradientDropBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d0b/classmarian_1_1GradientDropBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * feedback</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * temp_d</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float cut_off</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int step</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _device</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dc4/classmarian_1_1GradientDropBase_1af88d41a0e4f999745653b61276426d8a">grad_drop_do</link> (
+float * data, float * errors, float * tmp, int len, float rate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dc4/classmarian_1_1GradientDropBase_1aff9094cc995db83c07424ceba9592028">dropGraph</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, <link linkend="da/d22/namespacemarian_1a5484064f1fce2661d0b27a5c02a9392b">SparseTensor</link> destination, double rate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/dc4/classmarian_1_1GradientDropBase_1af88d41a0e4f999745653b61276426d8a">
+                <title>void marian::GradientDropBase::grad_drop_do (float *data, float *errors, float *tmp, int len, float rate)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dc4/classmarian_1_1GradientDropBase_1aff9094cc995db83c07424ceba9592028">
+                <title>void marian::GradientDropBase::dropGraph (Tensor t, SparseTensor destination, double rate=0.99)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,175 @@
+\hypertarget{structmarian_1_1mlp_1_1LayerFactory}{}\section{marian\+:\+:mlp\+:\+:Layer\+Factory Struct Reference}
+\label{structmarian_1_1mlp_1_1LayerFactory}\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:mlp\+:\+:Layer\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d86/structmarian_1_1mlp_1_1LayerFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:mlp\+:\+:Layer\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{df/d22/structmarian_1_1mlp_1_1LayerFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1mlp_1_1LayerFactory_aa191841467f48299dc2a96039972d3f8}{Layer\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{structmarian_1_1mlp_1_1LayerFactory_a5abd59b38025090b212d846add90dc31}{Layer\+Factory} (const \hyperlink{structmarian_1_1mlp_1_1LayerFactory}{Layer\+Factory} \&)=default
+\item 
+\hyperlink{structmarian_1_1mlp_1_1LayerFactory_a2759e7b5d53bcad1b2a4dc0c26145921}{Layer\+Factory} (\hyperlink{structmarian_1_1mlp_1_1LayerFactory}{Layer\+Factory} \&\&)=default
+\item 
+virtual \hyperlink{structmarian_1_1mlp_1_1LayerFactory_aa28e52b10ff8ccebcbca6fc7684bc536}{$\sim$\+Layer\+Factory} ()
+\item 
+{\footnotesize template$<$typename Cast $>$ }\\\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Cast $>$ \hyperlink{structmarian_1_1mlp_1_1LayerFactory_a955c3bcab08efb7c186eaa350ca85893}{as} ()
+\item 
+{\footnotesize template$<$typename Cast $>$ }\\bool \hyperlink{structmarian_1_1mlp_1_1LayerFactory_ac5072d88c0406e5e4f4e769d554f07e5}{is} ()
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Layer $>$ \hyperlink{structmarian_1_1mlp_1_1LayerFactory_adf4c58df3dd15cd1904cdd66bf45c7b9}{construct} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file layers/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!Layer\+Factory@{Layer\+Factory}}
+\index{Layer\+Factory@{Layer\+Factory}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{Layer\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{LayerFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+Layer\+Factory\+::\+Layer\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_aa191841467f48299dc2a96039972d3f8}{}\label{structmarian_1_1mlp_1_1LayerFactory_aa191841467f48299dc2a96039972d3f8}
+
+
+Definition at line 10 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+10 : \hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory}(graph) \{\}
+\end{DoxyCode}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!Layer\+Factory@{Layer\+Factory}}
+\index{Layer\+Factory@{Layer\+Factory}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{Layer\+Factory(const Layer\+Factory \&)=default}{LayerFactory(const LayerFactory &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+Layer\+Factory\+::\+Layer\+Factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layer\+Factory} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_a5abd59b38025090b212d846add90dc31}{}\label{structmarian_1_1mlp_1_1LayerFactory_a5abd59b38025090b212d846add90dc31}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!Layer\+Factory@{Layer\+Factory}}
+\index{Layer\+Factory@{Layer\+Factory}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{Layer\+Factory(\+Layer\+Factory \&\&)=default}{LayerFactory(LayerFactory &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+Layer\+Factory\+::\+Layer\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Layer\+Factory} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_a2759e7b5d53bcad1b2a4dc0c26145921}{}\label{structmarian_1_1mlp_1_1LayerFactory_a2759e7b5d53bcad1b2a4dc0c26145921}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!````~Layer\+Factory@{$\sim$\+Layer\+Factory}}
+\index{````~Layer\+Factory@{$\sim$\+Layer\+Factory}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Layer\+Factory()}{~LayerFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual marian\+::mlp\+::\+Layer\+Factory\+::$\sim$\+Layer\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_aa28e52b10ff8ccebcbca6fc7684bc536}{}\label{structmarian_1_1mlp_1_1LayerFactory_aa28e52b10ff8ccebcbca6fc7684bc536}
+
+
+Definition at line 14 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+14 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!as@{as}}
+\index{as@{as}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{as()}{as()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Cast $>$ {\bf Ptr}$<$Cast$>$ marian\+::mlp\+::\+Layer\+Factory\+::as (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_a955c3bcab08efb7c186eaa350ca85893}{}\label{structmarian_1_1mlp_1_1LayerFactory_a955c3bcab08efb7c186eaa350ca85893}
+
+
+Definition at line 17 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+17                         \{
+18     \textcolor{keywordflow}{return} std::dynamic\_pointer\_cast<Cast>(shared\_from\_this());
+19   \}
+\end{DoxyCode}
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{construct()=0}{construct()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<$Layer$>$ marian\+::mlp\+::\+Layer\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_adf4c58df3dd15cd1904cdd66bf45c7b9}{}\label{structmarian_1_1mlp_1_1LayerFactory_adf4c58df3dd15cd1904cdd66bf45c7b9}
+
+
+Implemented in \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a8f8ed567ae10a6fc455667b7f180378f}{marian\+::mlp\+::\+Dense\+Factory}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d44/structmarian_1_1mlp_1_1LayerFactory_adf4c58df3dd15cd1904cdd66bf45c7b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}!is@{is}}
+\index{is@{is}!marian\+::mlp\+::\+Layer\+Factory@{marian\+::mlp\+::\+Layer\+Factory}}
+\subsubsection[{\texorpdfstring{is()}{is()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Cast $>$ bool marian\+::mlp\+::\+Layer\+Factory\+::is (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1mlp_1_1LayerFactory_ac5072d88c0406e5e4f4e769d554f07e5}{}\label{structmarian_1_1mlp_1_1LayerFactory_ac5072d88c0406e5e4f4e769d554f07e5}
+
+
+Definition at line 22 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+22                    \{
+23     \textcolor{keywordflow}{return} as<Cast>() != \textcolor{keyword}{nullptr};
+24   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d44/structmarian_1_1mlp_1_1LayerFactory_ac5072d88c0406e5e4f4e769d554f07e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layers_2constructors_8h}{layers/constructors.\+h}\end{DoxyCompactItemize}

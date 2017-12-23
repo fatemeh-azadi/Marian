@@ -1,0 +1,424 @@
+\hypertarget{classNBest}{}\section{N\+Best Class Reference}
+\label{classNBest}\index{N\+Best@{N\+Best}}
+
+
+{\ttfamily \#include $<$nbest.\+h$>$}
+
+
+
+Collaboration diagram for N\+Best\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dbb/classNBest__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNBest_a6814af86036fd1dfe88fc8639c639e6f}{N\+Best} (const std\+::string \&src\+Path, const std\+::string \&nbest\+Path, const std\+::shared\+\_\+ptr$<$ Vocab $>$ src\+Vocab, const std\+::shared\+\_\+ptr$<$ Vocab $>$ trg\+Vocab, const size\+\_\+t max\+Batch\+Size=64)
+\item 
+\hyperlink{classNBest_a4f7be459bdb936d76d60afc47eded253}{N\+Best} (const std\+::shared\+\_\+ptr$<$ Vocab $>$ src\+Vocab, const std\+::shared\+\_\+ptr$<$ Vocab $>$ trg\+Vocab, const std\+::vector$<$ std\+::string $>$ \&n\+Best\+List, const size\+\_\+t max\+Batch\+Size=64)
+\item 
+std\+::vector$<$ \hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} $>$ \hyperlink{classNBest_ad66c17c11f48f88e6ea1a55e200efdaa}{Get\+Batches} (const size\+\_\+t index) const 
+\item 
+size\+\_\+t \hyperlink{classNBest_a0e3c5f0a2e750a4e03fe684d93da216d}{Get\+Index} (const size\+\_\+t index) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classNBest_ae9cb5e867610b333f991f07981279ec2}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const 
+\item 
+size\+\_\+t \hyperlink{classNBest_a7c0e484c776c65e44e65034cf5127234}{size} () const 
+\item 
+std\+::string \hyperlink{classNBest_a8f4ea909cf3d0083c058ffb4d315c4f0}{Get\+Sentence} (const size\+\_\+t index) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classNBest_a655136ec5cf258b827ad7113adba62d3}{Get\+Tokens} (const size\+\_\+t index) const 
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classNBest_a3d5b1d94acb0f6f23ff754c35e1d5a17}{Get\+Encoded\+Tokens} (const size\+\_\+t index) const 
+\item 
+std\+::vector$<$ \hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} $>$ \hyperlink{classNBest_a4f9908d927e5312228e65eaeee451ec3}{Divide\+N\+Best\+List\+Into\+Batches} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNBest_aab4853101e05435c3df0a4380d260c8c}{Parse\+\_\+} (const std\+::string \&path)
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classNBest_ad73a4cae337bf293c451dbebc329ddca}{Split\+Batch} (std\+::vector$<$ std\+::string $>$ \&batch) const 
+\item 
+void \hyperlink{classNBest_a2215cf0548472839f871608bbd28aad7}{Parse\+Input\+File} (const std\+::string \&path)
+\item 
+\hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} \hyperlink{classNBest_a233054c9107f4f6d65afb09365f32f34}{Encode\+Batch} (const std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&batch) const 
+\item 
+\hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} \hyperlink{classNBest_aacbc43e7c51dda0483afa71532f05986}{Mask\+And\+Transpose\+Batch} (const \hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} \&batch) const 
+\item 
+\hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} \hyperlink{classNBest_ae5410268f7e233ae0eafd6b4514cd559}{Process\+Batch} (std\+::vector$<$ std\+::string $>$ \&batch) const 
+\item 
+\hyperlink{nbest_8h_acb6b6f07cf7c4a3fe5820acf1a965584}{N\+Best\+Batch} \hyperlink{classNBest_aeca5858d89c32f38009f339a29547433}{Process\+Batch} (std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&batch) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classNBest_a9e529e61d4f4c35ae7c299f367a43476}{data\+\_\+}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classNBest_a40c6af9a533bd2a7bb440d0aae299021}{src\+Sentences\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ Vocab $>$ \hyperlink{classNBest_a224740f4ca49e8e7afedac7bef6e4e1e}{src\+Vocab\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ Vocab $>$ \hyperlink{classNBest_acdbc9f2515ebc4c7b05b4955895e1392}{trg\+Vocab\+\_\+}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classNBest_abfdeb2e459761468c673161c5a9377a4}{indexes\+\_\+}
+\item 
+const size\+\_\+t \hyperlink{classNBest_ab2110b8e8664578b3b4c4857c9a58cca}{max\+Batch\+Size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file nbest.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{N\+Best@{N\+Best}!N\+Best@{N\+Best}}
+\index{N\+Best@{N\+Best}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{N\+Best(const std\+::string \&src\+Path, const std\+::string \&nbest\+Path, const std\+::shared\+\_\+ptr$<$ Vocab $>$ src\+Vocab, const std\+::shared\+\_\+ptr$<$ Vocab $>$ trg\+Vocab, const size\+\_\+t max\+Batch\+Size=64)}{NBest(const std::string &srcPath, const std::string &nbestPath, const std::shared_ptr< Vocab > srcVocab, const std::shared_ptr< Vocab > trgVocab, const size_t maxBatchSize=64)}}]{\setlength{\rightskip}{0pt plus 5cm}N\+Best\+::\+N\+Best (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{src\+Path, }
+\item[{const std\+::string \&}]{nbest\+Path, }
+\item[{const std\+::shared\+\_\+ptr$<$ Vocab $>$}]{src\+Vocab, }
+\item[{const std\+::shared\+\_\+ptr$<$ Vocab $>$}]{trg\+Vocab, }
+\item[{const size\+\_\+t}]{max\+Batch\+Size = {\ttfamily 64}}
+\end{DoxyParamCaption}
+)}\hypertarget{classNBest_a6814af86036fd1dfe88fc8639c639e6f}{}\label{classNBest_a6814af86036fd1dfe88fc8639c639e6f}
+\index{N\+Best@{N\+Best}!N\+Best@{N\+Best}}
+\index{N\+Best@{N\+Best}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{N\+Best(const std\+::shared\+\_\+ptr$<$ Vocab $>$ src\+Vocab, const std\+::shared\+\_\+ptr$<$ Vocab $>$ trg\+Vocab, const std\+::vector$<$ std\+::string $>$ \&n\+Best\+List, const size\+\_\+t max\+Batch\+Size=64)}{NBest(const std::shared_ptr< Vocab > srcVocab, const std::shared_ptr< Vocab > trgVocab, const std::vector< std::string > &nBestList, const size_t maxBatchSize=64)}}]{\setlength{\rightskip}{0pt plus 5cm}N\+Best\+::\+N\+Best (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ Vocab $>$}]{src\+Vocab, }
+\item[{const std\+::shared\+\_\+ptr$<$ Vocab $>$}]{trg\+Vocab, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{n\+Best\+List, }
+\item[{const size\+\_\+t}]{max\+Batch\+Size = {\ttfamily 64}}
+\end{DoxyParamCaption}
+)}\hypertarget{classNBest_a4f7be459bdb936d76d60afc47eded253}{}\label{classNBest_a4f7be459bdb936d76d60afc47eded253}
+
+
+\subsection{Member Function Documentation}
+\index{N\+Best@{N\+Best}!Divide\+N\+Best\+List\+Into\+Batches@{Divide\+N\+Best\+List\+Into\+Batches}}
+\index{Divide\+N\+Best\+List\+Into\+Batches@{Divide\+N\+Best\+List\+Into\+Batches}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Divide\+N\+Best\+List\+Into\+Batches() const }{DivideNBestListIntoBatches() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+Best\+Batch}$>$ N\+Best\+::\+Divide\+N\+Best\+List\+Into\+Batches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_a4f9908d927e5312228e65eaeee451ec3}{}\label{classNBest_a4f9908d927e5312228e65eaeee451ec3}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{df/d28/classNBest_a4f9908d927e5312228e65eaeee451ec3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Encode\+Batch@{Encode\+Batch}}
+\index{Encode\+Batch@{Encode\+Batch}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Encode\+Batch(const std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&batch) const }{EncodeBatch(const std::vector< std::vector< std::string > > &batch) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+Batch} N\+Best\+::\+Encode\+Batch (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_a233054c9107f4f6d65afb09365f32f34}{}\label{classNBest_a233054c9107f4f6d65afb09365f32f34}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{df/d28/classNBest_a233054c9107f4f6d65afb09365f32f34_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Get\+Batches@{Get\+Batches}}
+\index{Get\+Batches@{Get\+Batches}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Get\+Batches(const size\+\_\+t index) const }{GetBatches(const size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+Best\+Batch}$>$ N\+Best\+::\+Get\+Batches (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_ad66c17c11f48f88e6ea1a55e200efdaa}{}\label{classNBest_ad66c17c11f48f88e6ea1a55e200efdaa}
+\index{N\+Best@{N\+Best}!Get\+Encoded\+Tokens@{Get\+Encoded\+Tokens}}
+\index{Get\+Encoded\+Tokens@{Get\+Encoded\+Tokens}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Get\+Encoded\+Tokens(const size\+\_\+t index) const }{GetEncodedTokens(const size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ N\+Best\+::\+Get\+Encoded\+Tokens (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_a3d5b1d94acb0f6f23ff754c35e1d5a17}{}\label{classNBest_a3d5b1d94acb0f6f23ff754c35e1d5a17}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{df/d28/classNBest_a3d5b1d94acb0f6f23ff754c35e1d5a17_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Get\+Index(const size\+\_\+t index) const }{GetIndex(const size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+Best\+::\+Get\+Index (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNBest_a0e3c5f0a2e750a4e03fe684d93da216d}{}\label{classNBest_a0e3c5f0a2e750a4e03fe684d93da216d}
+
+
+Definition at line 28 of file nbest.\+h.
+
+
+\begin{DoxyCode}
+28                                               \{
+29       \textcolor{keywordflow}{return} \hyperlink{classNBest_abfdeb2e459761468c673161c5a9377a4}{indexes\_}[index];
+30     \}
+\end{DoxyCode}
+\index{N\+Best@{N\+Best}!Get\+Sentence@{Get\+Sentence}}
+\index{Get\+Sentence@{Get\+Sentence}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Get\+Sentence(const size\+\_\+t index) const }{GetSentence(const size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string N\+Best\+::\+Get\+Sentence (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_a8f4ea909cf3d0083c058ffb4d315c4f0}{}\label{classNBest_a8f4ea909cf3d0083c058ffb4d315c4f0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{df/d28/classNBest_a8f4ea909cf3d0083c058ffb4d315c4f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Get\+Tokens@{Get\+Tokens}}
+\index{Get\+Tokens@{Get\+Tokens}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Get\+Tokens(const size\+\_\+t index) const }{GetTokens(const size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ N\+Best\+::\+Get\+Tokens (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_a655136ec5cf258b827ad7113adba62d3}{}\label{classNBest_a655136ec5cf258b827ad7113adba62d3}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{df/d28/classNBest_a655136ec5cf258b827ad7113adba62d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Mask\+And\+Transpose\+Batch@{Mask\+And\+Transpose\+Batch}}
+\index{Mask\+And\+Transpose\+Batch@{Mask\+And\+Transpose\+Batch}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Mask\+And\+Transpose\+Batch(const N\+Best\+Batch \&batch) const }{MaskAndTransposeBatch(const NBestBatch &batch) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+Batch} N\+Best\+::\+Mask\+And\+Transpose\+Batch (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\+Best\+Batch} \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_aacbc43e7c51dda0483afa71532f05986}{}\label{classNBest_aacbc43e7c51dda0483afa71532f05986}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d28/classNBest_aacbc43e7c51dda0483afa71532f05986_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t index) const }{operator[](size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ N\+Best\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNBest_ae9cb5e867610b333f991f07981279ec2}{}\label{classNBest_ae9cb5e867610b333f991f07981279ec2}
+
+
+Definition at line 32 of file nbest.\+h.
+
+
+\begin{DoxyCode}
+32                                                         \{
+33       \textcolor{keywordflow}{return} \hyperlink{classNBest_a9e529e61d4f4c35ae7c299f367a43476}{data\_}[index];
+34     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d28/classNBest_ae9cb5e867610b333f991f07981279ec2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Parse\+\_\+@{Parse\+\_\+}}
+\index{Parse\+\_\+@{Parse\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Parse\+\_\+(const std\+::string \&path)}{Parse_(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void N\+Best\+::\+Parse\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_aab4853101e05435c3df0a4380d260c8c}{}\label{classNBest_aab4853101e05435c3df0a4380d260c8c}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{df/d28/classNBest_aab4853101e05435c3df0a4380d260c8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Parse\+Input\+File@{Parse\+Input\+File}}
+\index{Parse\+Input\+File@{Parse\+Input\+File}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Parse\+Input\+File(const std\+::string \&path)}{ParseInputFile(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void N\+Best\+::\+Parse\+Input\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_a2215cf0548472839f871608bbd28aad7}{}\label{classNBest_a2215cf0548472839f871608bbd28aad7}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{df/d28/classNBest_a2215cf0548472839f871608bbd28aad7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Process\+Batch@{Process\+Batch}}
+\index{Process\+Batch@{Process\+Batch}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Process\+Batch(std\+::vector$<$ std\+::string $>$ \&batch) const }{ProcessBatch(std::vector< std::string > &batch) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+Batch} N\+Best\+::\+Process\+Batch (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_ae5410268f7e233ae0eafd6b4514cd559}{}\label{classNBest_ae5410268f7e233ae0eafd6b4514cd559}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{df/d28/classNBest_ae5410268f7e233ae0eafd6b4514cd559_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Process\+Batch@{Process\+Batch}}
+\index{Process\+Batch@{Process\+Batch}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Process\+Batch(std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&batch) const }{ProcessBatch(std::vector< std::vector< std::string > > &batch) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Best\+Batch} N\+Best\+::\+Process\+Batch (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_aeca5858d89c32f38009f339a29547433}{}\label{classNBest_aeca5858d89c32f38009f339a29547433}
+\index{N\+Best@{N\+Best}!size@{size}}
+\index{size@{size}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+Best\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classNBest_a7c0e484c776c65e44e65034cf5127234}{}\label{classNBest_a7c0e484c776c65e44e65034cf5127234}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{df/d28/classNBest_a7c0e484c776c65e44e65034cf5127234_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\+Best@{N\+Best}!Split\+Batch@{Split\+Batch}}
+\index{Split\+Batch@{Split\+Batch}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{Split\+Batch(std\+::vector$<$ std\+::string $>$ \&batch) const }{SplitBatch(std::vector< std::string > &batch) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$std\+::string$>$ $>$ N\+Best\+::\+Split\+Batch (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_ad73a4cae337bf293c451dbebc329ddca}{}\label{classNBest_ad73a4cae337bf293c451dbebc329ddca}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{df/d28/classNBest_ad73a4cae337bf293c451dbebc329ddca_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{N\+Best@{N\+Best}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$std\+::string$>$ $>$ N\+Best\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_a9e529e61d4f4c35ae7c299f367a43476}{}\label{classNBest_a9e529e61d4f4c35ae7c299f367a43476}
+
+
+Definition at line 57 of file nbest.\+h.
+
+\index{N\+Best@{N\+Best}!indexes\+\_\+@{indexes\+\_\+}}
+\index{indexes\+\_\+@{indexes\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{indexes\+\_\+}{indexes_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$size\+\_\+t$>$ N\+Best\+::indexes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_abfdeb2e459761468c673161c5a9377a4}{}\label{classNBest_abfdeb2e459761468c673161c5a9377a4}
+
+
+Definition at line 61 of file nbest.\+h.
+
+\index{N\+Best@{N\+Best}!max\+Batch\+Size\+\_\+@{max\+Batch\+Size\+\_\+}}
+\index{max\+Batch\+Size\+\_\+@{max\+Batch\+Size\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{max\+Batch\+Size\+\_\+}{maxBatchSize_}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t N\+Best\+::max\+Batch\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_ab2110b8e8664578b3b4c4857c9a58cca}{}\label{classNBest_ab2110b8e8664578b3b4c4857c9a58cca}
+
+
+Definition at line 62 of file nbest.\+h.
+
+\index{N\+Best@{N\+Best}!src\+Sentences\+\_\+@{src\+Sentences\+\_\+}}
+\index{src\+Sentences\+\_\+@{src\+Sentences\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{src\+Sentences\+\_\+}{srcSentences_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ N\+Best\+::src\+Sentences\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_a40c6af9a533bd2a7bb440d0aae299021}{}\label{classNBest_a40c6af9a533bd2a7bb440d0aae299021}
+
+
+Definition at line 58 of file nbest.\+h.
+
+\index{N\+Best@{N\+Best}!src\+Vocab\+\_\+@{src\+Vocab\+\_\+}}
+\index{src\+Vocab\+\_\+@{src\+Vocab\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{src\+Vocab\+\_\+}{srcVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$Vocab$>$ N\+Best\+::src\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_a224740f4ca49e8e7afedac7bef6e4e1e}{}\label{classNBest_a224740f4ca49e8e7afedac7bef6e4e1e}
+
+
+Definition at line 59 of file nbest.\+h.
+
+\index{N\+Best@{N\+Best}!trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}}
+\index{trg\+Vocab\+\_\+@{trg\+Vocab\+\_\+}!N\+Best@{N\+Best}}
+\subsubsection[{\texorpdfstring{trg\+Vocab\+\_\+}{trgVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$Vocab$>$ N\+Best\+::trg\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNBest_acdbc9f2515ebc4c7b05b4955895e1392}{}\label{classNBest_acdbc9f2515ebc4c7b05b4955895e1392}
+
+
+Definition at line 60 of file nbest.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nbest_8h}{nbest.\+h}\end{DoxyCompactItemize}

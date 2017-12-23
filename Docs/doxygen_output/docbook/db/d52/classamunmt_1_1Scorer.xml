@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d52/classamunmt_1_1Scorer">
+<title>amunmt::Scorer class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d3b/scorer_8h">&lt;scorer.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Scorer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d04/classamunmt_1_1Scorer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Scorer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d5e/classamunmt_1_1Scorer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const God &amp; god_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string &amp; name_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const YAML::Node &amp; config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t tab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d52/classamunmt_1_1Scorer_1adb6cfebdf0b6f597d58033a81f96e12b">Scorer</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config, size_t tab)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="db/d52/classamunmt_1_1Scorer_1ad6c6ab62efe12e34ff53dcce9ea3aadc">~Scorer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1a88b745f94adaf68095fc5a46874b06fa">Decode</link> (
+const <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; in, <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; out, const std::vector&lt; uint &gt; &amp; beamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1a9382a0c256f2475c6bba73854598278d">BeginSentenceState</link> (
+<link linkend="da/d39/classamunmt_1_1State">State</link> &amp; state, size_t batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1a0abbbc1cd9459db14528acc5877a447b">AssembleBeamState</link> (
+const <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; in, const <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; beam, <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1aa994ffba9d0e3a6db1adff566a8f3d9b">Encode</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; sources)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1a70b9b4e8c0841db60a97134568e19bb0">Filter</link> (
+const std::vector&lt; uint &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d39/classamunmt_1_1State">State</link> * <link linkend="db/d52/classamunmt_1_1Scorer_1a519af19de323970484c7f0eeb8c91428">NewState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="db/d52/classamunmt_1_1Scorer_1a2c05a34baf59b86a116553c3928f9282">GetVocabSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="db/d52/classamunmt_1_1Scorer_1ae2b91e31d6170a5d836ef41acb54cb92">CleanUpAfterSentence</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string &amp; <link linkend="db/d52/classamunmt_1_1Scorer_1a8fdd81726003c3af514bcc6c47d6653b">GetName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d5/de7/classamunmt_1_1BaseMatrix">BaseMatrix</link> &amp; <link linkend="db/d52/classamunmt_1_1Scorer_1a3d1fff5b4712cda5f1e89049ab401e7d">GetProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void * <link linkend="db/d52/classamunmt_1_1Scorer_1a3493e68fa3a10f815fe6e6a7595586ac">GetNBest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="d5/de7/classamunmt_1_1BaseMatrix">BaseMatrix</link> * <link linkend="db/d52/classamunmt_1_1Scorer_1a7e210d41ecf3f65bd4d1fb0ce0f4df7d">GetBias</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1adb6cfebdf0b6f597d58033a81f96e12b">
+                <title>Scorer::Scorer (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config, size_t tab)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1ad6c6ab62efe12e34ff53dcce9ea3aadc">
+                <title>virtual amunmt::Scorer::~Scorer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a88b745f94adaf68095fc5a46874b06fa">
+                <title>virtual void amunmt::Scorer::Decode (const State &amp;in, State &amp;out, const std::vector&lt; uint &gt; &amp;beamSizes)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a9382a0c256f2475c6bba73854598278d">
+                <title>virtual void amunmt::Scorer::BeginSentenceState (State &amp;state, size_t batchSize=1)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a0abbbc1cd9459db14528acc5877a447b">
+                <title>virtual void amunmt::Scorer::AssembleBeamState (const State &amp;in, const Beam &amp;beam, State &amp;out)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1aa994ffba9d0e3a6db1adff566a8f3d9b">
+                <title>virtual void amunmt::Scorer::Encode (const Sentences &amp;sources)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a70b9b4e8c0841db60a97134568e19bb0">
+                <title>virtual void amunmt::Scorer::Filter (const std::vector&lt; uint &gt; &amp;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a519af19de323970484c7f0eeb8c91428">
+                <title>virtual State* amunmt::Scorer::NewState () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a2c05a34baf59b86a116553c3928f9282">
+                <title>virtual size_t amunmt::Scorer::GetVocabSize () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1ae2b91e31d6170a5d836ef41acb54cb92">
+                <title>virtual void amunmt::Scorer::CleanUpAfterSentence ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a8fdd81726003c3af514bcc6c47d6653b">
+                <title>virtual const std::string&amp; amunmt::Scorer::GetName () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a3d1fff5b4712cda5f1e89049ab401e7d">
+                <title>virtual BaseMatrix&amp; amunmt::Scorer::GetProbs ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a3493e68fa3a10f815fe6e6a7595586ac">
+                <title>virtual void* amunmt::Scorer::GetNBest ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d52/classamunmt_1_1Scorer_1a7e210d41ecf3f65bd4d1fb0ce0f4df7d">
+                <title>virtual const BaseMatrix* amunmt::Scorer::GetBias () const =0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

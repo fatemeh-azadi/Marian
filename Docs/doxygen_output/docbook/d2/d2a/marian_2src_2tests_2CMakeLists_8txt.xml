@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d2a/marian_2src_2tests_2CMakeLists_8txt">
+    <title>marian/src/tests/CMakeLists.txt File Reference</title>
+<para>Include dependency diagram for marian/src/tests/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d42/marian_2src_2tests_2CMakeLists_8txt__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/tests/CMakeLists.txt</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dea/marian_2src_2tests_2CMakeLists_8txt__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a59d4487ba23386d5b73310f034357598">set</link> (
+TEST_SOURCES graph_tests.cpp operator_tests. cpp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a8105126e55165fd0260f9d9bc4a786ce">target_link_libraries</link> (
+run_tests marian ${EXT_LIBS} Catch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d2a/marian_2src_2tests_2CMakeLists_8txt_1a9e2512925448bacc3b1d70b334a2487a">add_test</link> (
+NAME GraphTest COMMAND run_tests)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file CMakeLists.txt</para>
+    </simplesect>
+</section>

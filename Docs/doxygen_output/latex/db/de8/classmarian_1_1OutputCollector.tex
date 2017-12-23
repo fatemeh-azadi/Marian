@@ -1,0 +1,250 @@
+\hypertarget{classmarian_1_1OutputCollector}{}\section{marian\+:\+:Output\+Collector Class Reference}
+\label{classmarian_1_1OutputCollector}\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+
+
+{\ttfamily \#include $<$output\+\_\+collector.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Output\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d3/de7/classmarian_1_1OutputCollector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1OutputCollector_aaf5f787d896df8489817047ae50b69f0}{Output\+Collector} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classmarian_1_1OutputCollector_a6b877d0629db1fe8d5f5c920025cc859}{Output\+Collector} (T \&\&arg)
+\item 
+\hyperlink{classmarian_1_1OutputCollector_ac0401cb81937a4b38102ead335cf03d9}{Output\+Collector} (const \hyperlink{classmarian_1_1OutputCollector}{Output\+Collector} \&)=delete
+\item 
+void \hyperlink{classmarian_1_1OutputCollector_aac7fb8a5e89ce5a9bac56a6a414e7fe5}{Write} (long source\+Id, const std\+::string \&best1, const std\+::string \&bestn, bool nbest)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ long, std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \hyperlink{classmarian_1_1OutputCollector_a63097e38c39a83640b903e546aa3cbb8}{Outputs}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_aef1c1bbe14b70285b1e8f7653f134cb1}{U\+Ptr}$<$ \hyperlink{classOutputFileStream}{Output\+File\+Stream} $>$ \hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{out\+Strm\+\_\+}
+\item 
+boost\+::mutex \hyperlink{classmarian_1_1OutputCollector_acded8bfaafbb69d10e32a4b38263e08b}{mutex\+\_\+}
+\item 
+long \hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{next\+Id\+\_\+}
+\item 
+\hyperlink{classmarian_1_1OutputCollector_a63097e38c39a83640b903e546aa3cbb8}{Outputs} \hyperlink{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{outputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file marian/src/translator/output\+\_\+collector.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!Outputs@{Outputs}}
+\index{Outputs@{Outputs}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Outputs}{Outputs}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$long, std\+::pair$<$std\+::string, std\+::string$>$ $>$ {\bf marian\+::\+Output\+Collector\+::\+Outputs}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OutputCollector_a63097e38c39a83640b903e546aa3cbb8}{}\label{classmarian_1_1OutputCollector_a63097e38c39a83640b903e546aa3cbb8}
+
+
+Definition at line 32 of file marian/src/translator/output\+\_\+collector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!Output\+Collector@{Output\+Collector}}
+\index{Output\+Collector@{Output\+Collector}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Output\+Collector()}{OutputCollector()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Output\+Collector\+::\+Output\+Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1OutputCollector_aaf5f787d896df8489817047ae50b69f0}{}\label{classmarian_1_1OutputCollector_aaf5f787d896df8489817047ae50b69f0}
+
+
+Definition at line 8 of file marian/src/translator/output\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+9     : \hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_}(0), \hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{outStrm\_}(\textcolor{keyword}{new} \hyperlink{classOutputFileStream}{OutputFileStream}(std::cout)) \{\}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de8/classmarian_1_1OutputCollector_aaf5f787d896df8489817047ae50b69f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!Output\+Collector@{Output\+Collector}}
+\index{Output\+Collector@{Output\+Collector}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Output\+Collector(\+T \&\&arg)}{OutputCollector(T &&arg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ marian\+::\+Output\+Collector\+::\+Output\+Collector (
+\begin{DoxyParamCaption}
+\item[{T \&\&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1OutputCollector_a6b877d0629db1fe8d5f5c920025cc859}{}\label{classmarian_1_1OutputCollector_a6b877d0629db1fe8d5f5c920025cc859}
+
+
+Definition at line 18 of file marian/src/translator/output\+\_\+collector.\+h.
+
+
+\begin{DoxyCode}
+18 : \hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_}(0), \hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{outStrm\_}(\textcolor{keyword}{new} \hyperlink{classOutputFileStream}{OutputFileStream}(arg)) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de8/classmarian_1_1OutputCollector_a6b877d0629db1fe8d5f5c920025cc859_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!Output\+Collector@{Output\+Collector}}
+\index{Output\+Collector@{Output\+Collector}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Output\+Collector(const Output\+Collector \&)=delete}{OutputCollector(const OutputCollector &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Output\+Collector\+::\+Output\+Collector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Output\+Collector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classmarian_1_1OutputCollector_ac0401cb81937a4b38102ead335cf03d9}{}\label{classmarian_1_1OutputCollector_ac0401cb81937a4b38102ead335cf03d9}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!Write@{Write}}
+\index{Write@{Write}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{Write(long source\+Id, const std\+::string \&best1, const std\+::string \&bestn, bool nbest)}{Write(long sourceId, const std::string &best1, const std::string &bestn, bool nbest)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Output\+Collector\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{long}]{source\+Id, }
+\item[{const std\+::string \&}]{best1, }
+\item[{const std\+::string \&}]{bestn, }
+\item[{bool}]{nbest}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1OutputCollector_aac7fb8a5e89ce5a9bac56a6a414e7fe5}{}\label{classmarian_1_1OutputCollector_aac7fb8a5e89ce5a9bac56a6a414e7fe5}
+
+
+Definition at line 11 of file marian/src/translator/output\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+14                                         \{
+15   boost::mutex::scoped\_lock lock(\hyperlink{classmarian_1_1OutputCollector_acded8bfaafbb69d10e32a4b38263e08b}{mutex\_});
+16   \textcolor{keywordflow}{if}(sourceId == \hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_}) \{
+17     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate})->info(\textcolor{stringliteral}{"Best translation \{\} : \{\}"}, sourceId, best1);
+18 
+19     \textcolor{keywordflow}{if}(nbest)
+20       ((std::ostream&)*\hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{outStrm\_}) << bestn << std::endl;
+21     \textcolor{keywordflow}{else}
+22       ((std::ostream&)*\hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{outStrm\_}) << best1 << std::endl;
+23 
+24     ++\hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_};
+25 
+26     Outputs::const\_iterator iter, iterNext;
+27     iter = \hyperlink{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{outputs\_}.begin();
+28     \textcolor{keywordflow}{while}(iter != \hyperlink{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{outputs\_}.end()) \{
+29       \textcolor{keywordtype}{long} currId = iter->first;
+30 
+31       \textcolor{keywordflow}{if}(currId == \hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_}) \{
+32         \textcolor{comment}{// 1st element in the map is the next}
+33         \textcolor{keyword}{const} \textcolor{keyword}{auto}& currOutput = iter->second;
+34         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate})->info(\textcolor{stringliteral}{"Best translation \{\} : \{\}"}, currId, currOutput.first);
+35         \textcolor{keywordflow}{if}(nbest)
+36           ((std::ostream&)*outStrm\_) << currOutput.second << std::endl;
+37         \textcolor{keywordflow}{else}
+38           ((std::ostream&)*\hyperlink{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{outStrm\_}) << currOutput.first << std::endl;
+39 
+40         ++\hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_};
+41 
+42         \textcolor{comment}{// delete current record, move iter on 1}
+43         iterNext = iter;
+44         ++iterNext;
+45         \hyperlink{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{outputs\_}.erase(iter);
+46         iter = iterNext;
+47       \} \textcolor{keywordflow}{else} \{
+48         \textcolor{comment}{// not the next. stop iterating}
+49         assert(\hyperlink{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{nextId\_} < currId);
+50         \textcolor{keywordflow}{break};
+51       \}
+52     \}
+53 
+54   \} \textcolor{keywordflow}{else} \{
+55     \textcolor{comment}{// save for later}
+56     \hyperlink{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{outputs\_}[sourceId] = std::make\_pair(best1, bestn);
+57   \}
+58 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de8/classmarian_1_1OutputCollector_aac7fb8a5e89ce5a9bac56a6a414e7fe5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de8/classmarian_1_1OutputCollector_aac7fb8a5e89ce5a9bac56a6a414e7fe5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{mutex\+\_\+}{mutex_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::mutex marian\+::\+Output\+Collector\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OutputCollector_acded8bfaafbb69d10e32a4b38263e08b}{}\label{classmarian_1_1OutputCollector_acded8bfaafbb69d10e32a4b38263e08b}
+
+
+Definition at line 29 of file marian/src/translator/output\+\_\+collector.\+h.
+
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!next\+Id\+\_\+@{next\+Id\+\_\+}}
+\index{next\+Id\+\_\+@{next\+Id\+\_\+}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{next\+Id\+\_\+}{nextId_}}]{\setlength{\rightskip}{0pt plus 5cm}long marian\+::\+Output\+Collector\+::next\+Id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}{}\label{classmarian_1_1OutputCollector_a0d936e88142afee4f490f6f39a66b792}
+
+
+Definition at line 30 of file marian/src/translator/output\+\_\+collector.\+h.
+
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!outputs\+\_\+@{outputs\+\_\+}}
+\index{outputs\+\_\+@{outputs\+\_\+}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{outputs\+\_\+}{outputs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Outputs} marian\+::\+Output\+Collector\+::outputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}{}\label{classmarian_1_1OutputCollector_a58dc9b7a62760be77669cd7ad612668e}
+
+
+Definition at line 33 of file marian/src/translator/output\+\_\+collector.\+h.
+
+\index{marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}!out\+Strm\+\_\+@{out\+Strm\+\_\+}}
+\index{out\+Strm\+\_\+@{out\+Strm\+\_\+}!marian\+::\+Output\+Collector@{marian\+::\+Output\+Collector}}
+\subsubsection[{\texorpdfstring{out\+Strm\+\_\+}{outStrm_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+Ptr}$<${\bf Output\+File\+Stream}$>$ marian\+::\+Output\+Collector\+::out\+Strm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}{}\label{classmarian_1_1OutputCollector_a09fede155203845f26bf55be5d38e009}
+
+
+Definition at line 28 of file marian/src/translator/output\+\_\+collector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2translator_2output__collector_8h}{marian/src/translator/output\+\_\+collector.\+h}\item 
+\hyperlink{marian_2src_2translator_2output__collector_8cpp}{marian/src/translator/output\+\_\+collector.\+cpp}\end{DoxyCompactItemize}

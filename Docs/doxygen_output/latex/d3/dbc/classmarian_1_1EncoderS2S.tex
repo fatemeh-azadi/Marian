@@ -1,0 +1,299 @@
+\hypertarget{classmarian_1_1EncoderS2S}{}\section{marian\+:\+:Encoder\+S2S Class Reference}
+\label{classmarian_1_1EncoderS2S}\index{marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}}
+
+
+{\ttfamily \#include $<$s2s.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+S2S\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{df/da6/classmarian_1_1EncoderS2S__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+S2S\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{d9/d77/classmarian_1_1EncoderS2S__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01}{apply\+Encoder\+R\+NN} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} embeddings, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} mask, std\+::string type)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderS2S_ad9075c849041e923ca7b92f5e96fa7bd}{Encoder\+S2S} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1EncoderS2S_ac7066b7a2aabebd2efce08215a1c00c7}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, size\+\_\+t encoder\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file s2s.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}!Encoder\+S2S@{Encoder\+S2S}}
+\index{Encoder\+S2S@{Encoder\+S2S}!marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}}
+\subsubsection[{\texorpdfstring{Encoder\+S2\+S(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderS2S(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Encoder\+S2\+S\+::\+Encoder\+S2S (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderS2S_ad9075c849041e923ca7b92f5e96fa7bd}{}\label{classmarian_1_1EncoderS2S_ad9075c849041e923ca7b92f5e96fa7bd}
+
+
+Definition at line 116 of file s2s.\+h.
+
+
+\begin{DoxyCode}
+117       : \hyperlink{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}{EncoderBase}(options, args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}!apply\+Encoder\+R\+NN@{apply\+Encoder\+R\+NN}}
+\index{apply\+Encoder\+R\+NN@{apply\+Encoder\+R\+NN}!marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}}
+\subsubsection[{\texorpdfstring{apply\+Encoder\+R\+N\+N(\+Ptr$<$ Expression\+Graph $>$ graph, Expr embeddings, Expr mask, std\+::string type)}{applyEncoderRNN(Ptr< ExpressionGraph > graph, Expr embeddings, Expr mask, std::string type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Encoder\+S2\+S\+::apply\+Encoder\+R\+NN (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Expr}}]{embeddings, }
+\item[{{\bf Expr}}]{mask, }
+\item[{std\+::string}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01}{}\label{classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01}
+
+
+Definition at line 10 of file s2s.\+h.
+
+
+\begin{DoxyCode}
+12                                        \{
+13 
+14     \textcolor{keywordtype}{int} first, second;
+15     \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"bidirectional"} || type == \textcolor{stringliteral}{"alternating"}) \{
+16       \textcolor{comment}{// build two separate stacks, concatenate top output}
+17       first = opt<int>(\textcolor{stringliteral}{"enc-depth"});
+18       second = 0;
+19     \}
+20     \textcolor{keywordflow}{else} \{
+21       \textcolor{comment}{// build 1-layer bidirectional stack, concatenate,}
+22       \textcolor{comment}{// build n-1 layer unidirectional stack}
+23       first = 1;
+24       second = opt<int>(\textcolor{stringliteral}{"enc-depth"}) - first;
+25     \}
+26 
+27     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{forward} = type == \textcolor{stringliteral}{"alternating"} ?
+28       \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caad6b112d6a37f8db13390a2126c6062db}{rnn::dir::alternating\_forward} : 
+      \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa965dbaac085fc891bfbbd4f9d145bbc8}{rnn::dir::forward};
+29 
+30     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{backward} = type == \textcolor{stringliteral}{"alternating"} ?
+31       \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa1ed5c7d56d5fcbea1a3d07070a447bbd}{rnn::dir::alternating\_backward} : 
+      \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{rnn::dir::backward};
+32 
+33     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+34     \textcolor{keywordtype}{float} dropoutRnn = \hyperlink{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{inference\_} ? 0 : opt<float>(\textcolor{stringliteral}{"dropout-rnn"});
+35 
+36     \textcolor{keyword}{auto} rnnFw = \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn::rnn}(graph)
+37                  (\textcolor{stringliteral}{"type"}, opt<std::string>(\textcolor{stringliteral}{"enc-cell"}))
+38                  (\textcolor{stringliteral}{"direction"}, forward)
+39                  (\textcolor{stringliteral}{"dimInput"}, opt<int>(\textcolor{stringliteral}{"dim-emb"}))
+40                  (\textcolor{stringliteral}{"dimState"}, opt<int>(\textcolor{stringliteral}{"dim-rnn"}))
+41                  (\textcolor{stringliteral}{"dropout"}, dropoutRnn)
+42                  (\textcolor{stringliteral}{"layer-normalization"}, opt<bool>(\textcolor{stringliteral}{"layer-normalization"}))
+43                  (\textcolor{stringliteral}{"skip"}, opt<bool>(\textcolor{stringliteral}{"skip"}));
+44 
+45     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i <= first; ++i) \{
+46       \textcolor{keyword}{auto} stacked = \hyperlink{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{rnn::stacked\_cell}(graph);
+47       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 1; j <= opt<int>(\textcolor{stringliteral}{"enc-cell-depth"}); ++j) \{
+48         std::string paramPrefix = \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_bi"};
+49         \textcolor{keywordflow}{if}(i > 1)
+50           paramPrefix += \textcolor{stringliteral}{"\_l"} + std::to\_string(i);
+51         \textcolor{keywordflow}{if}(i > 1 || j > 1)
+52           paramPrefix += \textcolor{stringliteral}{"\_cell"} + std::to\_string(j);
+53         stacked.push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+54                           (\textcolor{stringliteral}{"prefix"}, paramPrefix));
+55       \}
+56       rnnFw.push\_back(stacked);
+57     \}
+58 
+59     \textcolor{keyword}{auto} rnnBw = \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn::rnn}(graph)
+60                  (\textcolor{stringliteral}{"type"}, opt<std::string>(\textcolor{stringliteral}{"enc-cell"}))
+61                  (\textcolor{stringliteral}{"direction"}, \hyperlink{namespacemarian_1_1rnn_acba2ce4446fe9654f1fd2c69793e34caa195fe59b6f103787a914aead0f3db502}{backward})
+62                  (\textcolor{stringliteral}{"dimInput"}, opt<int>(\textcolor{stringliteral}{"dim-emb"}))
+63                  (\textcolor{stringliteral}{"dimState"}, opt<int>(\textcolor{stringliteral}{"dim-rnn"}))
+64                  (\textcolor{stringliteral}{"dropout"}, dropoutRnn)
+65                  (\textcolor{stringliteral}{"layer-normalization"}, opt<bool>(\textcolor{stringliteral}{"layer-normalization"}))
+66                  (\textcolor{stringliteral}{"skip"}, opt<bool>(\textcolor{stringliteral}{"skip"}));
+67 
+68     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i <= first; ++i) \{
+69       \textcolor{keyword}{auto} stacked = \hyperlink{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{rnn::stacked\_cell}(graph);
+70       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 1; j <= opt<int>(\textcolor{stringliteral}{"enc-cell-depth"}); ++j) \{
+71         std::string paramPrefix = \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_bi\_r"};
+72         \textcolor{keywordflow}{if}(i > 1)
+73           paramPrefix += \textcolor{stringliteral}{"\_l"} + std::to\_string(i);
+74         \textcolor{keywordflow}{if}(i > 1 || j > 1)
+75           paramPrefix += \textcolor{stringliteral}{"\_cell"} + std::to\_string(j);
+76         stacked.push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+77                           (\textcolor{stringliteral}{"prefix"}, paramPrefix));
+78       \}
+79       rnnBw.push\_back(stacked);
+80     \}
+81 
+82     \textcolor{keyword}{auto} context = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{rnnFw->transduce(embeddings, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask}),
+83                                 rnnBw->transduce(embeddings, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask})\},
+84                                 \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis}=1);
+85 
+86     \textcolor{keywordflow}{if}(second > 0) \{
+87       \textcolor{comment}{// add more layers (unidirectional) by transducing the output of the}
+88       \textcolor{comment}{// previous bidirectional RNN through multiple layers}
+89 
+90       \textcolor{comment}{// construct RNN first}
+91       \textcolor{keyword}{auto} rnnUni = \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn::rnn}(graph)
+92                     (\textcolor{stringliteral}{"type"}, opt<std::string>(\textcolor{stringliteral}{"enc-cell"}))
+93                     (\textcolor{stringliteral}{"dimInput"}, 2 * opt<int>(\textcolor{stringliteral}{"dim-rnn"}))
+94                     (\textcolor{stringliteral}{"dimState"}, opt<int>(\textcolor{stringliteral}{"dim-rnn"}))
+95                     (\textcolor{stringliteral}{"dropout"}, dropoutRnn)
+96                     (\textcolor{stringliteral}{"layer-normalization"}, opt<bool>(\textcolor{stringliteral}{"layer-normalization"}))
+97                     (\textcolor{stringliteral}{"skip"}, opt<bool>(\textcolor{stringliteral}{"skip"}));
+98 
+99       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = first + 1; i <= second + first; ++i) \{
+100         \textcolor{keyword}{auto} stacked = \hyperlink{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{rnn::stacked\_cell}(graph);
+101         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 1; j <= opt<int>(\textcolor{stringliteral}{"enc-cell-depth"}); ++j) \{
+102           std::string paramPrefix = \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_l"} + std::to\_string(i) + \textcolor{stringliteral}{"\_cell"} + std::to\_string(j)
+      ;
+103           stacked.push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+104                             (\textcolor{stringliteral}{"prefix"}, paramPrefix));
+105         \}
+106         rnnUni.push\_back(stacked);
+107       \}
+108 
+109       \textcolor{comment}{// transduce context to new context}
+110       context = rnnUni->transduce(context);
+111     \}
+112     \textcolor{keywordflow}{return} context;
+113   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d3/dbc/classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d3/dbc/classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+S2S@{marian\+::\+Encoder\+S2S}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, size\+\_\+t encoder\+Index)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, size_t encoderIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Encoder\+S2\+S\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{size\+\_\+t}]{encoder\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderS2S_ac7066b7a2aabebd2efce08215a1c00c7}{}\label{classmarian_1_1EncoderS2S_ac7066b7a2aabebd2efce08215a1c00c7}
+
+
+Implements \hyperlink{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}{marian\+::\+Encoder\+Base}.
+
+
+
+Definition at line 119 of file s2s.\+h.
+
+
+\begin{DoxyCode}
+121                                                \{
+122     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+123 
+124     \textcolor{comment}{// create source embeddings}
+125     \textcolor{keywordtype}{int} dimVoc = opt<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"})[encoderIndex];
+126     \textcolor{keywordtype}{int} dimEmb = opt<int>(\textcolor{stringliteral}{"dim-emb"});
+127 
+128     \textcolor{keyword}{auto} embFactory = embedding(graph)
+129                       (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_Wemb"})
+130                       (\textcolor{stringliteral}{"dimVocab"}, dimVoc)
+131                       (\textcolor{stringliteral}{"dimEmb"}, dimEmb);
+132 
+133     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->has(\textcolor{stringliteral}{"embedding-fix-src"}))
+134       embFactory
+135         (\textcolor{stringliteral}{"fixed"}, opt<bool>(\textcolor{stringliteral}{"embedding-fix-src"}));
+136 
+137     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->has(\textcolor{stringliteral}{"embedding-vectors"})) \{
+138       \textcolor{keyword}{auto} embFiles = opt<std::vector<std::string>>(\textcolor{stringliteral}{"embedding-vectors"});
+139       embFactory
+140         (\textcolor{stringliteral}{"embFile"}, embFiles[encoderIndex])
+141         (\textcolor{stringliteral}{"normalization"}, opt<bool>(\textcolor{stringliteral}{"embedding-normalization"}));
+142     \}
+143 
+144     \textcolor{keyword}{auto} embeddings = embFactory.construct();
+145 
+146     \textcolor{comment}{// select embeddings that occur in the batch}
+147     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} batchEmbeddings, batchMask;
+148     std::tie(batchEmbeddings, batchMask)
+149       = \hyperlink{classmarian_1_1EncoderBase_a02e1594dfe8b093081c24f1aea1a35d6}{EncoderBase::lookup}(embeddings, batch, encoderIndex);
+150 
+151     \textcolor{comment}{// apply dropout over source words}
+152     \textcolor{keywordtype}{float} dropProb = \hyperlink{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{inference\_} ? 0 : opt<float>(\textcolor{stringliteral}{"dropout-src"});
+153     \textcolor{keywordflow}{if}(dropProb) \{
+154       \textcolor{keywordtype}{int} srcWords = batchEmbeddings->shape()[2];
+155       \textcolor{keyword}{auto} dropMask = graph->dropout(dropProb, \{1, 1, srcWords\});
+156       batchEmbeddings = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(batchEmbeddings, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = dropMask);
+157     \}
+158 
+159     \textcolor{keywordtype}{float} noiseStddev = \hyperlink{classmarian_1_1EncoderBase_a3543e255f5547f556c6ba30220ee2f2c}{inference\_} ? 0 : opt<float>(\textcolor{stringliteral}{"noise-src"});
+160     \textcolor{keywordflow}{if}(noiseStddev) \{
+161       \textcolor{keywordtype}{int} dimRnn = batchEmbeddings->shape()[1];
+162       \textcolor{keywordtype}{int} srcWords = batchEmbeddings->shape()[2];
+163       \textcolor{keyword}{auto} noiseMask = graph->gaussian(0.f, noiseStddev, \{1, dimRnn, srcWords\});
+164       batchEmbeddings = batchEmbeddings + noiseMask;
+165     \}
+166 
+167     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} context = \hyperlink{classmarian_1_1EncoderS2S_a4c184957715cc7cfa910be04396b3f01}{applyEncoderRNN}(graph, batchEmbeddings, batchMask,
+168                                    opt<std::string>(\textcolor{stringliteral}{"enc-type"}));
+169 
+170     \textcolor{keywordflow}{return} New<EncoderState>(context, batchMask, batch);
+171   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dbc/classmarian_1_1EncoderS2S_ac7066b7a2aabebd2efce08215a1c00c7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{s2s_8h}{s2s.\+h}\end{DoxyCompactItemize}

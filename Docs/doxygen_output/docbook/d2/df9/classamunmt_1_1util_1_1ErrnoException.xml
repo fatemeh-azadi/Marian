@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/df9/classamunmt_1_1util_1_1ErrnoException">
+<title>amunmt::util::ErrnoException class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/d2d/exception_8h">&lt;exception.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::util::ErrnoException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d94/classamunmt_1_1util_1_1ErrnoException__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::util::ErrnoException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d01/classamunmt_1_1util_1_1ErrnoException__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int errno_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/df9/classamunmt_1_1util_1_1ErrnoException_1a13d12b1e827d068b47b08000e07a4b3b">ErrnoException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d2/df9/classamunmt_1_1util_1_1ErrnoException_1a8e8d1e0f707481b26abf77af91342e18">~ErrnoException</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d2/df9/classamunmt_1_1util_1_1ErrnoException_1adf255b9695a52bf9c24bed5f5413d9e5">Error</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/df9/classamunmt_1_1util_1_1ErrnoException_1a13d12b1e827d068b47b08000e07a4b3b">
+                <title>amunmt::util::ErrnoException::ErrnoException ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df9/classamunmt_1_1util_1_1ErrnoException_1a8e8d1e0f707481b26abf77af91342e18">
+                <title>amunmt::util::ErrnoException::~ErrnoException ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df9/classamunmt_1_1util_1_1ErrnoException_1adf255b9695a52bf9c24bed5f5413d9e5">
+                <title>int amunmt::util::ErrnoException::Error () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

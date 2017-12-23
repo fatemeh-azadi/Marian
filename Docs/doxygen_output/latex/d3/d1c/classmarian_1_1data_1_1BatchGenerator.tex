@@ -1,0 +1,454 @@
+\hypertarget{classmarian_1_1data_1_1BatchGenerator}{}\section{marian\+:\+:data\+:\+:Batch\+Generator$<$ Data\+Set $>$ Class Template Reference}
+\label{classmarian_1_1data_1_1BatchGenerator}\index{marian\+::data\+::\+Batch\+Generator$<$ Data\+Set $>$@{marian\+::data\+::\+Batch\+Generator$<$ Data\+Set $>$}}
+
+
+{\ttfamily \#include $<$batch\+\_\+generator.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Batch\+Generator$<$ Data\+Set $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d5/d14/classmarian_1_1data_1_1BatchGenerator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Data\+Set\+::batch\+\_\+ptr \hyperlink{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}{Batch\+Ptr}
+\item 
+typedef Data\+Set\+::sample \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}
+\item 
+typedef std\+::vector$<$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample} $>$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_a38341de40649315f70f444529f4ec98e}{samples}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1BatchGenerator_a26c6e2741b06916d4a42735cb66967fc}{Batch\+Generator} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Data\+Set $>$ data, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{Batch\+Stats} $>$ stats=nullptr)
+\item 
+\hyperlink{classmarian_1_1data_1_1BatchGenerator_a5ca9defe946185233011e58f144771dd}{operator bool} () const 
+\item 
+\hyperlink{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}{Batch\+Ptr} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a315e970451e563b5ef4d113bdff16e7f}{next} ()
+\item 
+void \hyperlink{classmarian_1_1data_1_1BatchGenerator_a071d0145d57e1cdf25cedb151eb5a874}{force\+Batch\+Size} (int batch\+Size)
+\item 
+void \hyperlink{classmarian_1_1data_1_1BatchGenerator_ad465fd5b81c4914e0301a7df72281179}{prepare} (bool shuffle=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6}{fill\+Batches} (bool shuffle=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Data\+Set $>$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{Batch\+Stats} $>$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}{stats\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{force\+Batch\+Size\+\_\+} \{false\}
+\item 
+int \hyperlink{classmarian_1_1data_1_1BatchGenerator_ae71699877e61295dbf3c4f544a1a73ea}{batch\+Size\+\_\+} \{1\}
+\item 
+Data\+Set\+::iterator \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1BatchGenerator_a17267c3eaeaae25b4ac0c02a4308f9f8}{maxi\+Batch\+Size\+\_\+}
+\item 
+std\+::deque$<$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}{Batch\+Ptr} $>$ \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{buffered\+Batches\+\_\+}
+\item 
+\hyperlink{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}{Batch\+Ptr} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a95d479771ef65874586e409599043711}{current\+Batch\+\_\+}
+\item 
+std\+::mt19937 \hyperlink{classmarian_1_1data_1_1BatchGenerator_a08b191a4be23424df9c45712f0410a32}{g\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Set$>$\\*
+class marian\+::data\+::\+Batch\+Generator$<$ Data\+Set $>$}
+
+
+
+Definition at line 18 of file batch\+\_\+generator.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!Batch\+Ptr@{Batch\+Ptr}}
+\index{Batch\+Ptr@{Batch\+Ptr}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{Batch\+Ptr}{BatchPtr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ typedef Data\+Set\+::batch\+\_\+ptr {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::{\bf Batch\+Ptr}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}{}\label{classmarian_1_1data_1_1BatchGenerator_ae876f1ada46b7e7e3a4ea0ad45e9ee39}
+
+
+Definition at line 20 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!sample@{sample}}
+\index{sample@{sample}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{sample}{sample}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ typedef Data\+Set\+::sample {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::{\bf sample}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{}\label{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}
+
+
+Definition at line 22 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!samples@{samples}}
+\index{samples@{samples}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{samples}{samples}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ typedef std\+::vector$<${\bf sample}$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::{\bf samples}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a38341de40649315f70f444529f4ec98e}{}\label{classmarian_1_1data_1_1BatchGenerator_a38341de40649315f70f444529f4ec98e}
+
+
+Definition at line 23 of file batch\+\_\+generator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!Batch\+Generator@{Batch\+Generator}}
+\index{Batch\+Generator@{Batch\+Generator}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{Batch\+Generator(\+Ptr$<$ Data\+Set $>$ data, Ptr$<$ Config $>$ options, Ptr$<$ Batch\+Stats $>$ stats=nullptr)}{BatchGenerator(Ptr< DataSet > data, Ptr< Config > options, Ptr< BatchStats > stats=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::{\bf Batch\+Generator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ Data\+Set $>$}]{data, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{{\bf Ptr}$<$ {\bf Batch\+Stats} $>$}]{stats = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a26c6e2741b06916d4a42735cb66967fc}{}\label{classmarian_1_1data_1_1BatchGenerator_a26c6e2741b06916d4a42735cb66967fc}
+
+
+Definition at line 141 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+144       : \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}(data), \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}(options), \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}{stats\_}(stats), \hyperlink{classmarian_1_1data_1_1BatchGenerator_a08b191a4be23424df9c45712f0410a32}{g\_}(
+      \hyperlink{classmarian_1_1Config_a5261277034b2e2268225bfbc32682cb4}{Config::seed}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!fill\+Batches@{fill\+Batches}}
+\index{fill\+Batches@{fill\+Batches}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{fill\+Batches(bool shuffle=true)}{fillBatches(bool shuffle=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ void {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::fill\+Batches (
+\begin{DoxyParamCaption}
+\item[{bool}]{shuffle = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6}{}\label{classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6}
+
+
+Definition at line 42 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+42                                         \{
+43     \textcolor{keyword}{auto} cmpSrc = [](\textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& a, \textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& b) \{
+44       \textcolor{keywordflow}{return} a[0].size() < b[0].size();
+45     \};
+46 
+47     \textcolor{keyword}{auto} cmpTrg = [](\textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& a, \textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& b) \{
+48       \textcolor{keywordflow}{return} a.back().size() < b.back().size();
+49     \};
+50 
+51     \textcolor{keyword}{auto} cmpNone = [](\textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& a, \textcolor{keyword}{const} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a6c7a80f1880a4ff6bfd3c99cef335855}{sample}& b) \{
+52       \textcolor{keywordflow}{return} &a < &b;
+53     \};
+54 
+55     \textcolor{keyword}{typedef} std::function<bool(const sample&, const sample&)> cmp\_type;
+56     \textcolor{keyword}{typedef} std::priority\_queue<sample, samples, cmp\_type> sample\_queue;
+57 
+58     std::unique\_ptr<sample\_queue> maxiBatch;
+59 
+60     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->has(\textcolor{stringliteral}{"maxi-batch-sort"})) \{
+61       \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<std::string>(\textcolor{stringliteral}{"maxi-batch-sort"}) == \textcolor{stringliteral}{"src"})
+62         maxiBatch.reset(\textcolor{keyword}{new} sample\_queue(cmpSrc));
+63       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<std::string>(\textcolor{stringliteral}{"maxi-batch-sort"}) == \textcolor{stringliteral}{"none"})
+64         maxiBatch.reset(\textcolor{keyword}{new} sample\_queue(cmpNone));
+65       \textcolor{keywordflow}{else}
+66         maxiBatch.reset(\textcolor{keyword}{new} sample\_queue(cmpTrg));
+67     \}
+68     \textcolor{keywordflow}{else} \{
+69       maxiBatch.reset(\textcolor{keyword}{new} sample\_queue(cmpNone));
+70     \}
+71 
+72     \textcolor{keywordtype}{int} maxBatchSize = \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"mini-batch"});
+73     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{forceBatchSize\_})
+74       maxBatchSize = \hyperlink{classmarian_1_1data_1_1BatchGenerator_ae71699877e61295dbf3c4f544a1a73ea}{batchSize\_};
+75 
+76     \textcolor{keywordtype}{int} maxSize = maxBatchSize * \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"maxi-batch"});
+77 
+78     \textcolor{keywordtype}{size\_t} sets = 0;
+79     \textcolor{keywordflow}{while}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\_} != \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->end() && maxiBatch->size() < maxSize) \{
+80       maxiBatch->push(*\hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\_});
+81       sets = \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\_}->size();
+82       \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\_}++;
+83     \}
+84 
+85     \hyperlink{classmarian_1_1data_1_1BatchGenerator_a38341de40649315f70f444529f4ec98e}{samples} batchVector;
+86     \textcolor{keywordtype}{int} currentWords = 0;
+87     std::vector<size\_t> lengths(sets, 0);
+88 
+89     \textcolor{keywordflow}{while}(!maxiBatch->empty()) \{
+90       batchVector.push\_back(maxiBatch->top());
+91       currentWords += batchVector.back()[0].size();
+92       maxiBatch->pop();
+93 
+94       \textcolor{comment}{// Batch size based on sentences}
+95       \textcolor{keywordtype}{bool} makeBatch = batchVector.size() == maxBatchSize;
+96 
+97       \textcolor{comment}{// Batch size based on words}
+98       \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{forceBatchSize\_} && \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->has(\textcolor{stringliteral}{"mini-batch-words"})) \{
+99         \textcolor{keywordtype}{int} mbWords = \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"mini-batch-words"});
+100         \textcolor{keywordflow}{if}(mbWords > 0)
+101           makeBatch = currentWords > mbWords;
+102       \}
+103 
+104       \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{forceBatchSize\_} && \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->has(\textcolor{stringliteral}{"dynamic-batching"})) \{
+105         \textcolor{comment}{// Dynamic batching}
+106         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}{stats\_} && \hyperlink{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"dynamic-batching"})) \{
+107           \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < sets; ++i)
+108             \textcolor{keywordflow}{if}(batchVector.back()[i].size() > lengths[i])
+109               lengths[i] = batchVector.back()[i].size();
+110 
+111           maxBatchSize = \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}{stats\_}->getBatchSize(lengths);
+112 
+113           \textcolor{keywordflow}{if}(batchVector.size() > maxBatchSize) \{
+114             maxiBatch->push(batchVector.back());
+115             batchVector.pop\_back();
+116             makeBatch = \textcolor{keyword}{true};
+117           \} \textcolor{keywordflow}{else} \{
+118             makeBatch = batchVector.size() == maxBatchSize;
+119           \}
+120         \}
+121       \}
+122 
+123       \textcolor{keywordflow}{if}(makeBatch) \{
+124         \textcolor{comment}{// std::cerr << "Creating batch" << std::endl;}
+125         \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.push\_back(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->toBatch(batchVector));
+126         batchVector.clear();
+127         currentWords = 0;
+128         lengths.clear();
+129         lengths.resize(sets, 0);
+130       \}
+131     \}
+132     \textcolor{keywordflow}{if}(!batchVector.empty())
+133       \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.push\_back(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->toBatch(batchVector));
+134 
+135     \textcolor{keywordflow}{if}(shuffle) \{
+136       std::shuffle(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.begin(), \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.end(), 
+      \hyperlink{classmarian_1_1data_1_1BatchGenerator_a08b191a4be23424df9c45712f0410a32}{g\_});
+137     \}
+138   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1c/classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!force\+Batch\+Size@{force\+Batch\+Size}}
+\index{force\+Batch\+Size@{force\+Batch\+Size}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{force\+Batch\+Size(int batch\+Size)}{forceBatchSize(int batchSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ void {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::force\+Batch\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{batch\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a071d0145d57e1cdf25cedb151eb5a874}{}\label{classmarian_1_1data_1_1BatchGenerator_a071d0145d57e1cdf25cedb151eb5a874}
+
+
+Definition at line 160 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+160                                      \{
+161     \hyperlink{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{forceBatchSize\_} = \textcolor{keyword}{true};
+162     \hyperlink{classmarian_1_1data_1_1BatchGenerator_ae71699877e61295dbf3c4f544a1a73ea}{batchSize\_} = batchSize;
+163   \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!next@{next}}
+\index{next@{next}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Batch\+Ptr} {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a315e970451e563b5ef4d113bdff16e7f}{}\label{classmarian_1_1data_1_1BatchGenerator_a315e970451e563b5ef4d113bdff16e7f}
+
+
+Definition at line 148 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+148                   \{
+149     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.empty(),
+150                    \textcolor{stringliteral}{"No batches to fetch, run prepare()"});
+151     \hyperlink{classmarian_1_1data_1_1BatchGenerator_a95d479771ef65874586e409599043711}{currentBatch\_} = \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.front();
+152     \hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.pop\_front();
+153 
+154     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.empty())
+155       \hyperlink{classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6}{fillBatches}();
+156 
+157     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1BatchGenerator_a95d479771ef65874586e409599043711}{currentBatch\_};
+158   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1c/classmarian_1_1data_1_1BatchGenerator_a315e970451e563b5ef4d113bdff16e7f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1c/classmarian_1_1data_1_1BatchGenerator_a315e970451e563b5ef4d113bdff16e7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{operator bool() const }{operator bool() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::operator bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a5ca9defe946185233011e58f144771dd}{}\label{classmarian_1_1data_1_1BatchGenerator_a5ca9defe946185233011e58f144771dd}
+
+
+Definition at line 146 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+146 \{ \textcolor{keywordflow}{return} !\hyperlink{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{bufferedBatches\_}.empty(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!prepare@{prepare}}
+\index{prepare@{prepare}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{prepare(bool shuffle=true)}{prepare(bool shuffle=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ void {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::prepare (
+\begin{DoxyParamCaption}
+\item[{bool}]{shuffle = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_ad465fd5b81c4914e0301a7df72281179}{}\label{classmarian_1_1data_1_1BatchGenerator_ad465fd5b81c4914e0301a7df72281179}
+
+
+Definition at line 165 of file batch\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+165                                     \{
+166     \textcolor{keywordflow}{if}(shuffle)
+167       \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->shuffle();
+168     \textcolor{keywordflow}{else}
+169       \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->reset();
+170     \hyperlink{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{current\_} = \hyperlink{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{data\_}->begin();
+171     \hyperlink{classmarian_1_1data_1_1BatchGenerator_a88adc2d51793dffe06348c1d41b795a6}{fillBatches}(shuffle);
+172   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1c/classmarian_1_1data_1_1BatchGenerator_ad465fd5b81c4914e0301a7df72281179_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1c/classmarian_1_1data_1_1BatchGenerator_ad465fd5b81c4914e0301a7df72281179_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!batch\+Size\+\_\+@{batch\+Size\+\_\+}}
+\index{batch\+Size\+\_\+@{batch\+Size\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{batch\+Size\+\_\+}{batchSize_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ int {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::batch\+Size\+\_\+ \{1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_ae71699877e61295dbf3c4f544a1a73ea}{}\label{classmarian_1_1data_1_1BatchGenerator_ae71699877e61295dbf3c4f544a1a73ea}
+
+
+Definition at line 31 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!buffered\+Batches\+\_\+@{buffered\+Batches\+\_\+}}
+\index{buffered\+Batches\+\_\+@{buffered\+Batches\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{buffered\+Batches\+\_\+}{bufferedBatches_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ std\+::deque$<${\bf Batch\+Ptr}$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::buffered\+Batches\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}{}\label{classmarian_1_1data_1_1BatchGenerator_a9e04fb7830ea05e42c0505d4f2077d70}
+
+
+Definition at line 37 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!current\+\_\+@{current\+\_\+}}
+\index{current\+\_\+@{current\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{current\+\_\+}{current_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ Data\+Set\+::iterator {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}{}\label{classmarian_1_1data_1_1BatchGenerator_ac6a705063c91ae12d09e8d40206c3dcf}
+
+
+Definition at line 33 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!current\+Batch\+\_\+@{current\+Batch\+\_\+}}
+\index{current\+Batch\+\_\+@{current\+Batch\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{current\+Batch\+\_\+}{currentBatch_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Batch\+Ptr} {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::current\+Batch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a95d479771ef65874586e409599043711}{}\label{classmarian_1_1data_1_1BatchGenerator_a95d479771ef65874586e409599043711}
+
+
+Definition at line 38 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Ptr}$<$Data\+Set$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}{}\label{classmarian_1_1data_1_1BatchGenerator_a1605c2a706f55cf89272cd19e2f98cf0}
+
+
+Definition at line 26 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!force\+Batch\+Size\+\_\+@{force\+Batch\+Size\+\_\+}}
+\index{force\+Batch\+Size\+\_\+@{force\+Batch\+Size\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{force\+Batch\+Size\+\_\+}{forceBatchSize_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ bool {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::force\+Batch\+Size\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}{}\label{classmarian_1_1data_1_1BatchGenerator_afde953e133498a8edcc993611299b135}
+
+
+Definition at line 30 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!g\+\_\+@{g\+\_\+}}
+\index{g\+\_\+@{g\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{g\+\_\+}{g_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ std\+::mt19937 {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::g\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a08b191a4be23424df9c45712f0410a32}{}\label{classmarian_1_1data_1_1BatchGenerator_a08b191a4be23424df9c45712f0410a32}
+
+
+Definition at line 40 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!maxi\+Batch\+Size\+\_\+@{maxi\+Batch\+Size\+\_\+}}
+\index{maxi\+Batch\+Size\+\_\+@{maxi\+Batch\+Size\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{maxi\+Batch\+Size\+\_\+}{maxiBatchSize_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ size\+\_\+t {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::maxi\+Batch\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a17267c3eaeaae25b4ac0c02a4308f9f8}{}\label{classmarian_1_1data_1_1BatchGenerator_a17267c3eaeaae25b4ac0c02a4308f9f8}
+
+
+Definition at line 35 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}{}\label{classmarian_1_1data_1_1BatchGenerator_a8569748b3bca0d5f30e6e2f4def1b535}
+
+
+Definition at line 27 of file batch\+\_\+generator.\+h.
+
+\index{marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}!stats\+\_\+@{stats\+\_\+}}
+\index{stats\+\_\+@{stats\+\_\+}!marian\+::data\+::\+Batch\+Generator@{marian\+::data\+::\+Batch\+Generator}}
+\subsubsection[{\texorpdfstring{stats\+\_\+}{stats_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Data\+Set$>$ {\bf Ptr}$<${\bf Batch\+Stats}$>$ {\bf marian\+::data\+::\+Batch\+Generator}$<$ Data\+Set $>$\+::stats\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}{}\label{classmarian_1_1data_1_1BatchGenerator_ac951bf49ac81aa01d834391dc1579096}
+
+
+Definition at line 28 of file batch\+\_\+generator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batch__generator_8h}{batch\+\_\+generator.\+h}\end{DoxyCompactItemize}

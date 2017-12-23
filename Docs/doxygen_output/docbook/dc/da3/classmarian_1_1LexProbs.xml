@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da3/classmarian_1_1LexProbs">
+<title>marian::LexProbs class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc2/lex__probs_8h">&lt;lex_probs.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::LexProbs</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dfa/classmarian_1_1LexProbs__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::LexProbs</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d8f/classmarian_1_1LexProbs__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static thread_local Ptr&lt; sparse::CSR &gt; lexProbs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static thread_local Ptr&lt; sparse::CSR &gt; lf_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t srcDim_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t trgDim_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; float &gt; values_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; rowIndices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; colIndices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/da3/classmarian_1_1LexProbs_1a3e3cf041f4c478e6bc3b82018070302f">LexProbs</link> (
+const std::string &amp; fname, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; srcVocab, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; trgVocab, size_t srcDim, size_t trgDim)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/da3/classmarian_1_1LexProbs_1aeb1ccb2cc1b340733bbcb3fe082b66fc">LexProbs</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; srcVocab, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; trgVocab)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da3/classmarian_1_1LexProbs_1aace10e92c706a3ddc6706fc8bb91b97b">buildProbs</link> (
+size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da3/classmarian_1_1LexProbs_1a4d958aee140ae2db31f96dd82cc22137">resetLf</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">sparse::CSR</link> &gt; <link linkend="dc/da3/classmarian_1_1LexProbs_1a02856f8d11871c723acafeab1d8ecde5">getProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">sparse::CSR</link> &gt; <link linkend="dc/da3/classmarian_1_1LexProbs_1a890317e54a6416a4a4afe8d906dd2a92">getLf</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1a3e3cf041f4c478e6bc3b82018070302f">
+                <title>marian::LexProbs::LexProbs (const std::string &amp;fname, Ptr&lt; Vocab &gt; srcVocab, Ptr&lt; Vocab &gt; trgVocab, size_t srcDim, size_t trgDim)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1aeb1ccb2cc1b340733bbcb3fe082b66fc">
+                <title>marian::LexProbs::LexProbs (Ptr&lt; Config &gt; options, Ptr&lt; Vocab &gt; srcVocab, Ptr&lt; Vocab &gt; trgVocab)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1aace10e92c706a3ddc6706fc8bb91b97b">
+                <title>void marian::LexProbs::buildProbs (size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1a4d958aee140ae2db31f96dd82cc22137">
+                <title>void marian::LexProbs::resetLf (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1a02856f8d11871c723acafeab1d8ecde5">
+                <title>Ptr&lt;sparse::CSR&gt; marian::LexProbs::getProbs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da3/classmarian_1_1LexProbs_1a890317e54a6416a4a4afe8d906dd2a92">
+                <title>Ptr&lt;sparse::CSR&gt; marian::LexProbs::getLf ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

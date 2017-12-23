@@ -1,0 +1,349 @@
+\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Array$<$ T $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1mblas_1_1Array}\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array$<$ T $>$@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array$<$ T $>$}}
+
+
+{\ttfamily \#include $<$array.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Array$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d2/dc0/classamunmt_1_1GPU_1_1mblas_1_1Array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a501b947b592228c9245db2de1b888e7c}{Array} ()
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac45fd24a2490f07d91407cfb75534f14}{Array} (size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{size})
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a40ec3bfface5916ccba7d197f5451873}{Array} (size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{size}, const T \&val)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_af41e6ca82ec8fe42e11c3a59f7b13464}{Array} (const std\+::vector$<$ T $>$ \&vec)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a74ca79cbf8d528450cece797953a14ff}{$\sim$\+Array} ()
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{size} () const 
+\item 
+T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861}{data} ()
+\item 
+const T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a4dfaf4ea712df2f99a07261da03b6810}{data} () const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize} (size\+\_\+t new\+Size)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a82a366e0d0ea82a50ab46497edf112e1}{reserve} (size\+\_\+t new\+Size)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ab5dba7376988356cae89a636e462da24}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\+\_\+size}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\+\_\+max\+Size}
+\item 
+T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\+\_\+arr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class amunmt\+::\+G\+P\+U\+::mblas\+::\+Array$<$ T $>$}
+
+
+
+Definition at line 17 of file array.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array()}{Array()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a501b947b592228c9245db2de1b888e7c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a501b947b592228c9245db2de1b888e7c}
+
+
+Definition at line 20 of file array.\+h.
+
+
+\begin{DoxyCode}
+21   :\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\_size}(0)
+22   ,\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}(0)
+23   ,\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}(\textcolor{keyword}{nullptr})
+24   \{
+25   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(size\+\_\+t size)}{Array(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_ac45fd24a2490f07d91407cfb75534f14}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_ac45fd24a2490f07d91407cfb75534f14}
+
+
+Definition at line 27 of file array.\+h.
+
+
+\begin{DoxyCode}
+28   :\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}(0)
+29   \{
+30     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize}(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{size});
+31   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(size\+\_\+t size, const T \&val)}{Array(size_t size, const T &val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size, }
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a40ec3bfface5916ccba7d197f5451873}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a40ec3bfface5916ccba7d197f5451873}
+
+
+Definition at line 33 of file array.\+h.
+
+
+\begin{DoxyCode}
+34   :\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}(0)
+35   \{
+36     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize}(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{size});
+37 
+38     \textcolor{keywordflow}{if} (val) \{
+39       abort();
+40     \}
+41     \textcolor{keywordflow}{else} \{
+42       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaMemsetAsync(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}, 0, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\_size} * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}), 
+      \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}()));
+43     \}
+44   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(const std\+::vector$<$ T $>$ \&vec)}{Array(const std::vector< T > &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_af41e6ca82ec8fe42e11c3a59f7b13464}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_af41e6ca82ec8fe42e11c3a59f7b13464}
+
+
+Definition at line 46 of file array.\+h.
+
+
+\begin{DoxyCode}
+47   :\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}(0)
+48   \{
+49     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize}(vec.size());
+50     \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}, vec.data(), vec.size() * \textcolor{keyword}{sizeof}(T), 
+      cudaMemcpyHostToDevice, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}()) );
+51   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!````~Array@{$\sim$\+Array}}
+\index{````~Array@{$\sim$\+Array}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{$\sim$\+Array()}{~Array()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::$\sim${\bf Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a74ca79cbf8d528450cece797953a14ff}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a74ca79cbf8d528450cece797953a14ff}
+
+
+Definition at line 53 of file array.\+h.
+
+
+\begin{DoxyCode}
+54   \{
+55   cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr});
+56   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!clear@{clear}}
+\index{clear@{clear}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_ab5dba7376988356cae89a636e462da24}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_ab5dba7376988356cae89a636e462da24}
+
+
+Definition at line 86 of file array.\+h.
+
+
+\begin{DoxyCode}
+87   \{
+88     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\_size} = 0;
+89   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861}
+
+
+Definition at line 61 of file array.\+h.
+
+
+\begin{DoxyCode}
+62   \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a4dfaf4ea712df2f99a07261da03b6810}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a4dfaf4ea712df2f99a07261da03b6810}
+
+
+Definition at line 64 of file array.\+h.
+
+
+\begin{DoxyCode}
+65   \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}; \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!reserve@{reserve}}
+\index{reserve@{reserve}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t new\+Size)}{reserve(size_t newSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{new\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a82a366e0d0ea82a50ab46497edf112e1}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a82a366e0d0ea82a50ab46497edf112e1}
+
+
+Definition at line 73 of file array.\+h.
+
+
+\begin{DoxyCode}
+74   \{
+75     \textcolor{keywordflow}{if} (newSize > \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}) \{
+76       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize}) \{
+77         \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}));
+78       \}
+79 
+80       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{m\_arr}, newSize * \textcolor{keyword}{sizeof}(T)) );
+81 
+82       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{m\_maxSize} = newSize;
+83     \}
+84   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_a82a366e0d0ea82a50ab46497edf112e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!resize@{resize}}
+\index{resize@{resize}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{resize(size\+\_\+t new\+Size)}{resize(size_t newSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{new\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}
+
+
+Definition at line 67 of file array.\+h.
+
+
+\begin{DoxyCode}
+68   \{
+69     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a82a366e0d0ea82a50ab46497edf112e1}{reserve}(newSize);
+70     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\_size} = newSize;
+71   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!size@{size}}
+\index{size@{size}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38}
+
+
+Definition at line 58 of file array.\+h.
+
+
+\begin{DoxyCode}
+59   \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{m\_size}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array_a904061864a097bb4e00227c00216fb38_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!m\+\_\+arr@{m\+\_\+arr}}
+\index{m\+\_\+arr@{m\+\_\+arr}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{m\+\_\+arr}{m_arr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::m\+\_\+arr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a7a39c49fc1d3ab24dcc5351331e39d80}
+
+
+Definition at line 93 of file array.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!m\+\_\+max\+Size@{m\+\_\+max\+Size}}
+\index{m\+\_\+max\+Size@{m\+\_\+max\+Size}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{m\+\_\+max\+Size}{m_maxSize}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::m\+\_\+max\+Size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_a7772744da8b22a846d993f8a7dd42b50}
+
+
+Definition at line 92 of file array.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}!m\+\_\+size@{m\+\_\+size}}
+\index{m\+\_\+size@{m\+\_\+size}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Array@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}}
+\subsubsection[{\texorpdfstring{m\+\_\+size}{m_size}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Array}$<$ T $>$\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}{}\label{classamunmt_1_1GPU_1_1mblas_1_1Array_aa90aef4140b4b8b7a280a12cfb5d18be}
+
+
+Definition at line 92 of file array.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{array_8h}{array.\+h}\end{DoxyCompactItemize}

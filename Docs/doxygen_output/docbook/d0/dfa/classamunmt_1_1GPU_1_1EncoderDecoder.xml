@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder">
+<title>amunmt::GPU::EncoderDecoder class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d86/encoder__decoder_8h">&lt;encoder_decoder.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::EncoderDecoder</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/de3/classamunmt_1_1GPU_1_1EncoderDecoder__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::EncoderDecoder</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/ded/classamunmt_1_1GPU_1_1EncoderDecoder__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="dd/dae/classamunmt_1_1GPU_1_1EncoderDecoderState">EncoderDecoderState</link>  <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a27acf1f919cac82e29403b5d600e4700">EDState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; model_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; Encoder &gt; encoder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; Decoder &gt; decoder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; uint &gt; indices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::IMatrix sentenceLengths_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; mblas::Matrix &gt; SourceContext_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a651723011354bc2f6cd3b97ffffdf799">EncoderDecoder</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god, const std::string &amp; name, const YAML::Node &amp; config, size_t tab, const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a8445580b7f4368c725576a85294d156a">~EncoderDecoder</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a38b3304df3924adce09572d1bfeaeeb9">Decode</link> (
+const <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; in, <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; out, const std::vector&lt; uint &gt; &amp; beamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d39/classamunmt_1_1State">State</link> * <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ad9db448ea4d611f9ebe01c3c6940f0d5">NewState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a126f5eab05e71a8b379ddd7eb8f0c75d">BeginSentenceState</link> (
+<link linkend="da/d39/classamunmt_1_1State">State</link> &amp; state, size_t batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ab58288661c243eefa5d7659e5d67bf14">Encode</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; source)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a68e25bd3b886b3cbf4331358668dde80">AssembleBeamState</link> (
+const <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; in, const <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; beam, <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a131827ae9f2a8512beb981f97ec3f565">GetAttention</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Attention)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a7aceb128a918b03ff2117b377289dd55">GetAttention</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d5/de7/classamunmt_1_1BaseMatrix">BaseMatrix</link> &amp; <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1aeb1b4060912c9388a1709f524bd63edd">GetProbs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void * <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a1c0f253dc60177dd329097939c2205ba">GetNBest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="d5/de7/classamunmt_1_1BaseMatrix">BaseMatrix</link> * <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a98409af8232092003aff6d1bf0e22ce8">GetBias</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1af89773296b4a04108e0d2999ca34bf5e">GetVocabSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ab3e30630d71c914eace68236da36fb44">Filter</link> (
+const std::vector&lt; uint &gt; &amp; filterIds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a774ab57865bb75d3eff942603a0bef50">EncoderDecoder</link> (
+const <link linkend="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder">EncoderDecoder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a27acf1f919cac82e29403b5d600e4700">
+                <title>typedef EncoderDecoderState amunmt::GPU::EncoderDecoder::EDState</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a651723011354bc2f6cd3b97ffffdf799">
+                <title>amunmt::GPU::EncoderDecoder::EncoderDecoder (const God &amp;god, const std::string &amp;name, const YAML::Node &amp;config, size_t tab, const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a8445580b7f4368c725576a85294d156a">
+                <title>virtual amunmt::GPU::EncoderDecoder::~EncoderDecoder ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a38b3304df3924adce09572d1bfeaeeb9">
+                <title>virtual void amunmt::GPU::EncoderDecoder::Decode (const State &amp;in, State &amp;out, const std::vector&lt; uint &gt; &amp;beamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ad9db448ea4d611f9ebe01c3c6940f0d5">
+                <title>virtual State* amunmt::GPU::EncoderDecoder::NewState () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a126f5eab05e71a8b379ddd7eb8f0c75d">
+                <title>virtual void amunmt::GPU::EncoderDecoder::BeginSentenceState (State &amp;state, size_t batchSize=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ab58288661c243eefa5d7659e5d67bf14">
+                <title>virtual void amunmt::GPU::EncoderDecoder::Encode (const Sentences &amp;source)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a68e25bd3b886b3cbf4331358668dde80">
+                <title>virtual void amunmt::GPU::EncoderDecoder::AssembleBeamState (const State &amp;in, const Beam &amp;beam, State &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a131827ae9f2a8512beb981f97ec3f565">
+                <title>void amunmt::GPU::EncoderDecoder::GetAttention (mblas::Matrix &amp;Attention)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a7aceb128a918b03ff2117b377289dd55">
+                <title>mblas::Matrix&amp; amunmt::GPU::EncoderDecoder::GetAttention ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1aeb1b4060912c9388a1709f524bd63edd">
+                <title>virtual BaseMatrix&amp; amunmt::GPU::EncoderDecoder::GetProbs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a1c0f253dc60177dd329097939c2205ba">
+                <title>virtual void* amunmt::GPU::EncoderDecoder::GetNBest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a98409af8232092003aff6d1bf0e22ce8">
+                <title>virtual const BaseMatrix* amunmt::GPU::EncoderDecoder::GetBias () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1af89773296b4a04108e0d2999ca34bf5e">
+                <title>size_t amunmt::GPU::EncoderDecoder::GetVocabSize () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1ab3e30630d71c914eace68236da36fb44">
+                <title>void amunmt::GPU::EncoderDecoder::Filter (const std::vector&lt; uint &gt; &amp;filterIds)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dfa/classamunmt_1_1GPU_1_1EncoderDecoder_1a774ab57865bb75d3eff942603a0bef50">
+                <title>amunmt::GPU::EncoderDecoder::EncoderDecoder (const EncoderDecoder &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

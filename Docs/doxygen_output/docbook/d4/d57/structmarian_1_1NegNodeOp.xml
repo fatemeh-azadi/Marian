@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d57/structmarian_1_1NegNodeOp">
+<title>marian::NegNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::NegNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d46/structmarian_1_1NegNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::NegNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/daf/structmarian_1_1NegNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d57/structmarian_1_1NegNodeOp_1ab41dc50b949d1a678dd1b31d57fd40bf">NegNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d4/d57/structmarian_1_1NegNodeOp_1a13e2bb54f68b3d7d42cc21dcbfdb0b26">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d4/d57/structmarian_1_1NegNodeOp_1ab7f6421e5106374dae28e016b48280fd">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d4/d57/structmarian_1_1NegNodeOp_1afa43ad1f4e1b5e77063d2dfbe8b9bd29">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d4/d57/structmarian_1_1NegNodeOp_1ab41dc50b949d1a678dd1b31d57fd40bf">
+                <title>marian::NegNodeOp::NegNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d57/structmarian_1_1NegNodeOp_1a13e2bb54f68b3d7d42cc21dcbfdb0b26">
+                <title>NodeOps marian::NegNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d57/structmarian_1_1NegNodeOp_1ab7f6421e5106374dae28e016b48280fd">
+                <title>NodeOps marian::NegNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d57/structmarian_1_1NegNodeOp_1afa43ad1f4e1b5e77063d2dfbe8b9bd29">
+                <title>const std::string marian::NegNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

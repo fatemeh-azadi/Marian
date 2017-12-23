@@ -1,0 +1,178 @@
+\hypertarget{classamunmt_1_1LoaderFactory}{}\section{amunmt\+:\+:Loader\+Factory Class Reference}
+\label{classamunmt_1_1LoaderFactory}\index{amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}}
+
+
+{\ttfamily \#include $<$loader\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Loader\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{d2/da1/classamunmt_1_1LoaderFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespaceamunmt_a7907c3626488deed31e31452d178d78e}{Loader\+Ptr} \hyperlink{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}{Create} (const \hyperlink{classamunmt_1_1God}{God} \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, const \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17}{Device\+Type} device\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classamunmt_1_1Loader}{Loader} $\ast$ \hyperlink{classamunmt_1_1LoaderFactory_a78832d75891d43a96d36c1e61c6940b4}{Create\+C\+PU} (const \hyperlink{classamunmt_1_1God}{God} \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+static \hyperlink{classamunmt_1_1Loader}{Loader} $\ast$ \hyperlink{classamunmt_1_1LoaderFactory_a78af7437386e23443b9d02bb4f8be24b}{Create\+G\+PU} (const \hyperlink{classamunmt_1_1God}{God} \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+static \hyperlink{classamunmt_1_1Loader}{Loader} $\ast$ \hyperlink{classamunmt_1_1LoaderFactory_a167b89f68880a90da333d3a61458472b}{Create\+F\+P\+GA} (const \hyperlink{classamunmt_1_1God}{God} \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file loader\+\_\+factory.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}!Create@{Create}}
+\index{Create@{Create}!amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}}
+\subsubsection[{\texorpdfstring{Create(const God \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config, const Device\+Type device\+Type)}{Create(const God &god, const std::string &name, const YAML::Node &config, const DeviceType deviceType)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Loader\+Ptr} amunmt\+::\+Loader\+Factory\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{const {\bf Device\+Type}}]{device\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}{}\label{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}
+
+
+Definition at line 26 of file loader\+\_\+factory.\+cpp.
+
+
+\begin{DoxyCode}
+30                                  \{
+31   Loader *loader = \textcolor{keyword}{nullptr};
+32 
+33 \textcolor{preprocessor}{#ifdef CUDA}
+34   \textcolor{keywordflow}{if} (deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice}) \{
+35     loader = \hyperlink{classamunmt_1_1LoaderFactory_a78af7437386e23443b9d02bb4f8be24b}{CreateGPU}(god, name, config);
+36   \}
+37 \textcolor{preprocessor}{#endif}
+38 
+39 \textcolor{preprocessor}{#ifdef HAS\_CPU}
+40   \textcolor{keywordflow}{if} (deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice}) \{
+41     loader = \hyperlink{classamunmt_1_1LoaderFactory_a78832d75891d43a96d36c1e61c6940b4}{CreateCPU}(god, name, config);
+42   \}
+43 \textcolor{preprocessor}{#endif}
+44 
+45 \textcolor{preprocessor}{#ifdef HAS\_FPGA}
+46   \textcolor{keywordflow}{if} (deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice}) \{
+47     loader = \hyperlink{classamunmt_1_1LoaderFactory_a167b89f68880a90da333d3a61458472b}{CreateFPGA}(god, name, config);
+48   \}
+49 \textcolor{preprocessor}{#endif}
+50 
+51   \textcolor{keywordflow}{if} (loader) \{
+52     \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_a7907c3626488deed31e31452d178d78e}{LoaderPtr}(loader);
+53   \}
+54 
+55   std::string type = config[\textcolor{stringliteral}{"type"}].as<std::string>();
+56   \hyperlink{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{amunmt\_UTIL\_THROW2}(\textcolor{stringliteral}{"Unknown scorer in config file: "} << type);
+57 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df9/classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df9/classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}!Create\+C\+PU@{Create\+C\+PU}}
+\index{Create\+C\+PU@{Create\+C\+PU}!amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}}
+\subsubsection[{\texorpdfstring{Create\+C\+P\+U(const God \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)}{CreateCPU(const God &god, const std::string &name, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Loader}$\ast$ amunmt\+::\+Loader\+Factory\+::\+Create\+C\+PU (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classamunmt_1_1LoaderFactory_a78832d75891d43a96d36c1e61c6940b4}{}\label{classamunmt_1_1LoaderFactory_a78832d75891d43a96d36c1e61c6940b4}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df9/classamunmt_1_1LoaderFactory_a78832d75891d43a96d36c1e61c6940b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}!Create\+F\+P\+GA@{Create\+F\+P\+GA}}
+\index{Create\+F\+P\+GA@{Create\+F\+P\+GA}!amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}}
+\subsubsection[{\texorpdfstring{Create\+F\+P\+G\+A(const God \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)}{CreateFPGA(const God &god, const std::string &name, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Loader}$\ast$ amunmt\+::\+Loader\+Factory\+::\+Create\+F\+P\+GA (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classamunmt_1_1LoaderFactory_a167b89f68880a90da333d3a61458472b}{}\label{classamunmt_1_1LoaderFactory_a167b89f68880a90da333d3a61458472b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df9/classamunmt_1_1LoaderFactory_a167b89f68880a90da333d3a61458472b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}!Create\+G\+PU@{Create\+G\+PU}}
+\index{Create\+G\+PU@{Create\+G\+PU}!amunmt\+::\+Loader\+Factory@{amunmt\+::\+Loader\+Factory}}
+\subsubsection[{\texorpdfstring{Create\+G\+P\+U(const God \&god, const std\+::string \&name, const Y\+A\+M\+L\+::\+Node \&config)}{CreateGPU(const God &god, const std::string &name, const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Loader}$\ast$ amunmt\+::\+Loader\+Factory\+::\+Create\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const std\+::string \&}]{name, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classamunmt_1_1LoaderFactory_a78af7437386e23443b9d02bb4f8be24b}{}\label{classamunmt_1_1LoaderFactory_a78af7437386e23443b9d02bb4f8be24b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df9/classamunmt_1_1LoaderFactory_a78af7437386e23443b9d02bb4f8be24b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{loader__factory_8h}{loader\+\_\+factory.\+h}\item 
+\hyperlink{loader__factory_8cpp}{loader\+\_\+factory.\+cpp}\end{DoxyCompactItemize}

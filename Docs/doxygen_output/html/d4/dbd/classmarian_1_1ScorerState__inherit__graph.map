@@ -1,0 +1,4 @@
+<map id="marian::ScorerState" name="marian::ScorerState">
+<area shape="rect" id="node2" href="$d6/dfb/classmarian_1_1ScorerWrapperState.html" title="{marian::ScorerWrapperState\n|# state_\l|+ ScorerWrapperState()\l+ getState()\l+ getProbs()\l+ blacklist()\l}" alt="" coords="5,160,192,281"/>
+<area shape="rect" id="node3" href="$d2/d0c/classmarian_1_1WordPenaltyState.html" title="{marian::WordPenaltyState\n|&#45; dimVocab_\l&#45; penalties_\l|+ WordPenaltyState()\l+ getProbs()\l+ breakDown()\l}" alt="" coords="217,160,391,281"/>
+</map>

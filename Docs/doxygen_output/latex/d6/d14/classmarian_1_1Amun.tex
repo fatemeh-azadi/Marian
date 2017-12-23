@@ -1,0 +1,353 @@
+\hypertarget{classmarian_1_1Amun}{}\section{marian\+:\+:Amun Class Reference}
+\label{classmarian_1_1Amun}\index{marian\+::\+Amun@{marian\+::\+Amun}}
+
+
+{\ttfamily \#include $<$amun.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Amun\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d4f/classmarian_1_1Amun__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Amun\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d0e/classmarian_1_1Amun__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1Amun_abcf8225ac2c7895bfc41b9df02ed46c9}{Amun} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb}{load} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name)
+\item 
+void \hyperlink{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name, bool save\+Translator\+Config)
+\item 
+void \hyperlink{classmarian_1_1Amun_a2ac35e1d3b74293cad107512005b2b17}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file amun.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Amun@{marian\+::\+Amun}!Amun@{Amun}}
+\index{Amun@{Amun}!marian\+::\+Amun@{marian\+::\+Amun}}
+\subsubsection[{\texorpdfstring{Amun(\+Ptr$<$ Config $>$ options, Args...\+args)}{Amun(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Amun\+::\+Amun (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Amun_abcf8225ac2c7895bfc41b9df02ed46c9}{}\label{classmarian_1_1Amun_abcf8225ac2c7895bfc41b9df02ed46c9}
+
+
+Definition at line 12 of file amun.\+h.
+
+
+\begin{DoxyCode}
+12                                           : \hyperlink{namespacemarian_a83eeb152f60aff415a60e0bde62fcb85}{S2S}(options, args...) \{
+13 
+14     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"enc-depth"}) > 1,
+15                    \textcolor{stringliteral}{"--type amun does not currently support multiple encoder "}
+16                    \textcolor{stringliteral}{"layers, use --type s2s"});
+17     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"enc-cell-depth"}) > 1,
+18                    \textcolor{stringliteral}{"--type amun does not currently support stacked encoder "}
+19                    \textcolor{stringliteral}{"cells, use --type s2s"});
+20     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"skip"}),
+21                    \textcolor{stringliteral}{"--type amun does not currently support skip connections, "}
+22                    \textcolor{stringliteral}{"use --type s2s"});
+23     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dec-depth"}) > 1,
+24                    \textcolor{stringliteral}{"--type amun does not currently support multiple decoder "}
+25                    \textcolor{stringliteral}{"layers, use --type s2s"});
+26     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dec-cell-base-depth"}) != 2,
+27                    \textcolor{stringliteral}{"--type amun does not currently support multiple decoder "}
+28                    \textcolor{stringliteral}{"base cells, use --type s2s"});
+29     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dec-cell-high-depth"}) > 1,
+30                    \textcolor{stringliteral}{"--type amun does not currently support multiple decoder "}
+31                    \textcolor{stringliteral}{"high cells, use --type s2s"});
+32     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::string>(\textcolor{stringliteral}{"enc-cell"}) != \textcolor{stringliteral}{"gru"},
+33                    \textcolor{stringliteral}{"--type amun does not currently support other rnn cells than gru, "}
+34                    \textcolor{stringliteral}{"use --type s2s"});
+35     UTIL\_THROW\_IF2(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::string>(\textcolor{stringliteral}{"dec-cell"}) != \textcolor{stringliteral}{"gru"},
+36                    \textcolor{stringliteral}{"--type amun does not currently support other rnn cells than gru, "}
+37                    \textcolor{stringliteral}{"use --type s2s"});
+38 
+39   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Amun@{marian\+::\+Amun}!load@{load}}
+\index{load@{load}!marian\+::\+Amun@{marian\+::\+Amun}}
+\subsubsection[{\texorpdfstring{load(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name)}{load(Ptr< ExpressionGraph > graph, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Amun\+::load (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb}{}\label{classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}.
+
+
+
+Definition at line 41 of file amun.\+h.
+
+
+\begin{DoxyCode}
+41                                                                \{
+42     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+43 
+44     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Loading model from \{\}"}, name);
+45 
+46     \textcolor{keyword}{auto} numpy = cnpy::npz\_load(name);
+47 
+48     std::map<std::string, std::string> nameMap
+49         = \{\{\textcolor{stringliteral}{"decoder\_U"}, \textcolor{stringliteral}{"decoder\_cell1\_U"}\},
+50            \{\textcolor{stringliteral}{"decoder\_Ux"}, \textcolor{stringliteral}{"decoder\_cell1\_Ux"}\},
+51            \{\textcolor{stringliteral}{"decoder\_W"}, \textcolor{stringliteral}{"decoder\_cell1\_W"}\},
+52            \{\textcolor{stringliteral}{"decoder\_Wx"}, \textcolor{stringliteral}{"decoder\_cell1\_Wx"}\},
+53            \{\textcolor{stringliteral}{"decoder\_b"}, \textcolor{stringliteral}{"decoder\_cell1\_b"}\},
+54            \{\textcolor{stringliteral}{"decoder\_bx"}, \textcolor{stringliteral}{"decoder\_cell1\_bx"}\},
+55            \{\textcolor{stringliteral}{"decoder\_cell1\_gamma1"}, \textcolor{stringliteral}{"decoder\_cell1\_gamma1"}\},
+56            \{\textcolor{stringliteral}{"decoder\_cell1\_gamma2"}, \textcolor{stringliteral}{"decoder\_cell1\_gamma2"}\},
+57            \{\textcolor{stringliteral}{"decoder\_U\_nl"}, \textcolor{stringliteral}{"decoder\_cell2\_U"}\},
+58            \{\textcolor{stringliteral}{"decoder\_Ux\_nl"}, \textcolor{stringliteral}{"decoder\_cell2\_Ux"}\},
+59            \{\textcolor{stringliteral}{"decoder\_Wc"}, \textcolor{stringliteral}{"decoder\_cell2\_W"}\},
+60            \{\textcolor{stringliteral}{"decoder\_Wcx"}, \textcolor{stringliteral}{"decoder\_cell2\_Wx"}\},
+61            \{\textcolor{stringliteral}{"decoder\_b\_nl"}, \textcolor{stringliteral}{"decoder\_cell2\_b"}\},
+62            \{\textcolor{stringliteral}{"decoder\_bx\_nl"}, \textcolor{stringliteral}{"decoder\_cell2\_bx"}\},
+63            \{\textcolor{stringliteral}{"ff\_logit\_prev\_W"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W0"}\},
+64            \{\textcolor{stringliteral}{"ff\_logit\_lstm\_W"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W1"}\},
+65            \{\textcolor{stringliteral}{"ff\_logit\_ctx\_W"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W2"}\},
+66            \{\textcolor{stringliteral}{"ff\_logit\_prev\_b"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b0"}\},
+67            \{\textcolor{stringliteral}{"ff\_logit\_lstm\_b"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b1"}\},
+68            \{\textcolor{stringliteral}{"ff\_logit\_ctx\_b"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b2"}\},
+69            \{\textcolor{stringliteral}{"ff\_logit\_l1\_gamma0"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma0"}\},
+70            \{\textcolor{stringliteral}{"ff\_logit\_l1\_gamma1"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma1"}\},
+71            \{\textcolor{stringliteral}{"ff\_logit\_l1\_gamma2"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma2"}\},
+72            \{\textcolor{stringliteral}{"ff\_logit\_W"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l2\_W"}\},
+73            \{\textcolor{stringliteral}{"ff\_logit\_b"}, \textcolor{stringliteral}{"decoder\_ff\_logit\_l2\_b"}\},
+74            \{\textcolor{stringliteral}{"ff\_state\_W"}, \textcolor{stringliteral}{"decoder\_ff\_state\_W"}\},
+75            \{\textcolor{stringliteral}{"ff\_state\_b"}, \textcolor{stringliteral}{"decoder\_ff\_state\_b"}\},
+76            \{\textcolor{stringliteral}{"ff\_state\_gamma"}, \textcolor{stringliteral}{"decoder\_ff\_state\_gamma"}\},
+77            \{\textcolor{stringliteral}{"Wemb\_dec"}, \textcolor{stringliteral}{"decoder\_Wemb"}\},
+78            \{\textcolor{stringliteral}{"Wemb"}, \textcolor{stringliteral}{"encoder\_Wemb"}\},
+79            \{\textcolor{stringliteral}{"encoder\_U"}, \textcolor{stringliteral}{"encoder\_bi\_U"}\},
+80            \{\textcolor{stringliteral}{"encoder\_Ux"}, \textcolor{stringliteral}{"encoder\_bi\_Ux"}\},
+81            \{\textcolor{stringliteral}{"encoder\_W"}, \textcolor{stringliteral}{"encoder\_bi\_W"}\},
+82            \{\textcolor{stringliteral}{"encoder\_Wx"}, \textcolor{stringliteral}{"encoder\_bi\_Wx"}\},
+83            \{\textcolor{stringliteral}{"encoder\_b"}, \textcolor{stringliteral}{"encoder\_bi\_b"}\},
+84            \{\textcolor{stringliteral}{"encoder\_bx"}, \textcolor{stringliteral}{"encoder\_bi\_bx"}\},
+85            \{\textcolor{stringliteral}{"encoder\_gamma1"}, \textcolor{stringliteral}{"encoder\_bi\_gamma1"}\},
+86            \{\textcolor{stringliteral}{"encoder\_gamma2"}, \textcolor{stringliteral}{"encoder\_bi\_gamma2"}\},
+87            \{\textcolor{stringliteral}{"encoder\_r\_U"}, \textcolor{stringliteral}{"encoder\_bi\_r\_U"}\},
+88            \{\textcolor{stringliteral}{"encoder\_r\_Ux"}, \textcolor{stringliteral}{"encoder\_bi\_r\_Ux"}\},
+89            \{\textcolor{stringliteral}{"encoder\_r\_W"}, \textcolor{stringliteral}{"encoder\_bi\_r\_W"}\},
+90            \{\textcolor{stringliteral}{"encoder\_r\_Wx"}, \textcolor{stringliteral}{"encoder\_bi\_r\_Wx"}\},
+91            \{\textcolor{stringliteral}{"encoder\_r\_b"}, \textcolor{stringliteral}{"encoder\_bi\_r\_b"}\},
+92            \{\textcolor{stringliteral}{"encoder\_r\_bx"}, \textcolor{stringliteral}{"encoder\_bi\_r\_bx"}\},
+93            \{\textcolor{stringliteral}{"encoder\_r\_gamma1"}, \textcolor{stringliteral}{"encoder\_bi\_r\_gamma1"}\},
+94            \{\textcolor{stringliteral}{"encoder\_r\_gamma2"}, \textcolor{stringliteral}{"encoder\_bi\_r\_gamma2"}\}\};
+95 
+96     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : numpy) \{
+97       \textcolor{keyword}{auto} name = it.first;
+98 
+99       \textcolor{keywordflow}{if}(name == \textcolor{stringliteral}{"decoder\_c\_tt"})
+100         \textcolor{keywordflow}{continue};
+101       \textcolor{keywordflow}{if}(name.substr(0, 8) == \textcolor{stringliteral}{"special:"})
+102         \textcolor{keywordflow}{continue};
+103 
+104       Shape \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape};
+105       \textcolor{keywordflow}{if}(numpy[name].shape.size() == 2) \{
+106         shape.set(0, numpy[name].shape[0]);
+107         shape.set(1, numpy[name].shape[1]);
+108       \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(numpy[name].shape.size() == 1) \{
+109         shape.set(0, 1);
+110         shape.set(1, numpy[name].shape[0]);
+111       \}
+112 
+113       std::string pName = name;
+114       \textcolor{keywordflow}{if}(nameMap.count(name))
+115         pName = nameMap[name];
+116 
+117       graph->param(pName, shape, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init} = \hyperlink{namespacemarian_1_1inits_a466e51fe497018f864f0fb9c0dd05200}{inits::from\_numpy}(numpy[name]));
+118     \}
+119 
+120     graph->setReloaded(\textcolor{keyword}{true});
+121   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d14/classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Amun@{marian\+::\+Amun}!save@{save}}
+\index{save@{save}!marian\+::\+Amun@{marian\+::\+Amun}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name, bool save\+Translator\+Config)}{save(Ptr< ExpressionGraph > graph, const std::string &name, bool saveTranslatorConfig)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Amun\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name, }
+\item[{bool}]{save\+Translator\+Config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}{}\label{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}.
+
+
+
+Definition at line 123 of file amun.\+h.
+
+
+\begin{DoxyCode}
+125                                        \{
+126     \hyperlink{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}{save}(graph, name);
+127 
+128     \textcolor{keywordflow}{if}(saveTranslatorConfig) \{
+129       YAML::Node amun;
+130       \textcolor{keyword}{auto} vocabs = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::vector<std::string>>(\textcolor{stringliteral}{"vocabs"});
+131       amun[\textcolor{stringliteral}{"source-vocab"}] = vocabs[0];
+132       amun[\textcolor{stringliteral}{"target-vocab"}] = vocabs[1];
+133       amun[\textcolor{stringliteral}{"devices"}] = \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"devices"});
+134       amun[\textcolor{stringliteral}{"normalize"}] = \textcolor{keyword}{true};
+135       amun[\textcolor{stringliteral}{"beam-size"}] = 12;
+136       amun[\textcolor{stringliteral}{"relative-paths"}] = \textcolor{keyword}{false};
+137 
+138       amun[\textcolor{stringliteral}{"scorers"}][\textcolor{stringliteral}{"F0"}][\textcolor{stringliteral}{"path"}] = name;
+139       amun[\textcolor{stringliteral}{"scorers"}][\textcolor{stringliteral}{"F0"}][\textcolor{stringliteral}{"type"}] = \textcolor{stringliteral}{"Nematus"};
+140       amun[\textcolor{stringliteral}{"weights"}][\textcolor{stringliteral}{"F0"}] = 1.0f;
+141 
+142       \hyperlink{classOutputFileStream}{OutputFileStream} out(name + \textcolor{stringliteral}{".amun.yml"});
+143       (std::ostream&)out << amun;
+144     \}
+145   \}
+\end{DoxyCode}
+\index{marian\+::\+Amun@{marian\+::\+Amun}!save@{save}}
+\index{save@{save}!marian\+::\+Amun@{marian\+::\+Amun}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name)}{save(Ptr< ExpressionGraph > graph, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Amun\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Amun_a2ac35e1d3b74293cad107512005b2b17}{}\label{classmarian_1_1Amun_a2ac35e1d3b74293cad107512005b2b17}
+
+
+Reimplemented from \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}.
+
+
+
+Definition at line 147 of file amun.\+h.
+
+
+\begin{DoxyCode}
+147                                                                \{
+148     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Saving model to \{\}"}, name);
+149 
+150     \textcolor{keywordtype}{unsigned} \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}[2];
+151     std::string mode = \textcolor{stringliteral}{"w"};
+152 
+153     std::map<std::string, std::string> nameMap
+154         = \{\{\textcolor{stringliteral}{"decoder\_cell1\_U"}, \textcolor{stringliteral}{"decoder\_U"}\},
+155            \{\textcolor{stringliteral}{"decoder\_cell1\_Ux"}, \textcolor{stringliteral}{"decoder\_Ux"}\},
+156            \{\textcolor{stringliteral}{"decoder\_cell1\_W"}, \textcolor{stringliteral}{"decoder\_W"}\},
+157            \{\textcolor{stringliteral}{"decoder\_cell1\_Wx"}, \textcolor{stringliteral}{"decoder\_Wx"}\},
+158            \{\textcolor{stringliteral}{"decoder\_cell1\_b"}, \textcolor{stringliteral}{"decoder\_b"}\},
+159            \{\textcolor{stringliteral}{"decoder\_cell1\_bx"}, \textcolor{stringliteral}{"decoder\_bx"}\},
+160            \{\textcolor{stringliteral}{"decoder\_cell2\_U"}, \textcolor{stringliteral}{"decoder\_U\_nl"}\},
+161            \{\textcolor{stringliteral}{"decoder\_cell2\_Ux"}, \textcolor{stringliteral}{"decoder\_Ux\_nl"}\},
+162            \{\textcolor{stringliteral}{"decoder\_cell2\_W"}, \textcolor{stringliteral}{"decoder\_Wc"}\},
+163            \{\textcolor{stringliteral}{"decoder\_cell2\_Wx"}, \textcolor{stringliteral}{"decoder\_Wcx"}\},
+164            \{\textcolor{stringliteral}{"decoder\_cell2\_b"}, \textcolor{stringliteral}{"decoder\_b\_nl"}\},
+165            \{\textcolor{stringliteral}{"decoder\_cell2\_bx"}, \textcolor{stringliteral}{"decoder\_bx\_nl"}\},
+166            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W0"}, \textcolor{stringliteral}{"ff\_logit\_prev\_W"}\},
+167            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W1"}, \textcolor{stringliteral}{"ff\_logit\_lstm\_W"}\},
+168            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_W2"}, \textcolor{stringliteral}{"ff\_logit\_ctx\_W"}\},
+169            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b0"}, \textcolor{stringliteral}{"ff\_logit\_prev\_b"}\},
+170            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b1"}, \textcolor{stringliteral}{"ff\_logit\_lstm\_b"}\},
+171            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_b2"}, \textcolor{stringliteral}{"ff\_logit\_ctx\_b"}\},
+172            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma0"}, \textcolor{stringliteral}{"ff\_logit\_l1\_gamma0"}\},
+173            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma1"}, \textcolor{stringliteral}{"ff\_logit\_l1\_gamma1"}\},
+174            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l1\_gamma2"}, \textcolor{stringliteral}{"ff\_logit\_l1\_gamma2"}\},
+175            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l2\_W"}, \textcolor{stringliteral}{"ff\_logit\_W"}\},
+176            \{\textcolor{stringliteral}{"decoder\_ff\_logit\_l2\_b"}, \textcolor{stringliteral}{"ff\_logit\_b"}\},
+177            \{\textcolor{stringliteral}{"decoder\_ff\_state\_W"}, \textcolor{stringliteral}{"ff\_state\_W"}\},
+178            \{\textcolor{stringliteral}{"decoder\_ff\_state\_b"}, \textcolor{stringliteral}{"ff\_state\_b"}\},
+179            \{\textcolor{stringliteral}{"decoder\_ff\_state\_gamma"}, \textcolor{stringliteral}{"ff\_state\_gamma"}\},
+180            \{\textcolor{stringliteral}{"decoder\_Wemb"}, \textcolor{stringliteral}{"Wemb\_dec"}\},
+181            \{\textcolor{stringliteral}{"encoder\_Wemb"}, \textcolor{stringliteral}{"Wemb"}\},
+182            \{\textcolor{stringliteral}{"encoder\_bi\_U"}, \textcolor{stringliteral}{"encoder\_U"}\},
+183            \{\textcolor{stringliteral}{"encoder\_bi\_Ux"}, \textcolor{stringliteral}{"encoder\_Ux"}\},
+184            \{\textcolor{stringliteral}{"encoder\_bi\_W"}, \textcolor{stringliteral}{"encoder\_W"}\},
+185            \{\textcolor{stringliteral}{"encoder\_bi\_Wx"}, \textcolor{stringliteral}{"encoder\_Wx"}\},
+186            \{\textcolor{stringliteral}{"encoder\_bi\_b"}, \textcolor{stringliteral}{"encoder\_b"}\},
+187            \{\textcolor{stringliteral}{"encoder\_bi\_bx"}, \textcolor{stringliteral}{"encoder\_bx"}\},
+188            \{\textcolor{stringliteral}{"encoder\_bi\_gamma1"}, \textcolor{stringliteral}{"encoder\_gamma1"}\},
+189            \{\textcolor{stringliteral}{"encoder\_bi\_gamma2"}, \textcolor{stringliteral}{"encoder\_gamma2"}\},
+190            \{\textcolor{stringliteral}{"encoder\_bi\_r\_U"}, \textcolor{stringliteral}{"encoder\_r\_U"}\},
+191            \{\textcolor{stringliteral}{"encoder\_bi\_r\_Ux"}, \textcolor{stringliteral}{"encoder\_r\_Ux"}\},
+192            \{\textcolor{stringliteral}{"encoder\_bi\_r\_W"}, \textcolor{stringliteral}{"encoder\_r\_W"}\},
+193            \{\textcolor{stringliteral}{"encoder\_bi\_r\_Wx"}, \textcolor{stringliteral}{"encoder\_r\_Wx"}\},
+194            \{\textcolor{stringliteral}{"encoder\_bi\_r\_b"}, \textcolor{stringliteral}{"encoder\_r\_b"}\},
+195            \{\textcolor{stringliteral}{"encoder\_bi\_r\_bx"}, \textcolor{stringliteral}{"encoder\_r\_bx"}\},
+196            \{\textcolor{stringliteral}{"encoder\_bi\_r\_gamma1"}, \textcolor{stringliteral}{"encoder\_r\_gamma1"}\},
+197            \{\textcolor{stringliteral}{"encoder\_bi\_r\_gamma2"}, \textcolor{stringliteral}{"encoder\_r\_gamma2"}\}\};
+198 
+199     graph->getBackend()->setDevice(graph->getDevice());
+200 
+201     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : graph->params()->getMap()) \{
+202       std::vector<float> v;
+203       p.second->val() >> v;
+204 
+205       \textcolor{keywordtype}{unsigned} dim;
+206       \textcolor{keywordflow}{if}(p.second->shape()[0] == 1) \{
+207         shape[0] = p.second->shape()[1];
+208         dim = 1;
+209       \} \textcolor{keywordflow}{else} \{
+210         shape[0] = p.second->shape()[0];
+211         shape[1] = p.second->shape()[1];
+212         dim = 2;
+213       \}
+214 
+215       std::string pName = p.first;
+216       \textcolor{keywordflow}{if}(nameMap.count(pName))
+217         pName = nameMap[pName];
+218 
+219       cnpy::npz\_save(name, pName, v.data(), \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{shape}, dim, mode);
+220       mode = \textcolor{stringliteral}{"a"};
+221     \}
+222 
+223     \textcolor{keywordtype}{float} ctt = 0;
+224     shape[0] = 1;
+225     cnpy::npz\_save(name, \textcolor{stringliteral}{"decoder\_c\_tt"}, &ctt, shape, 1, mode);
+226 
+227     \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->saveModelParameters(name);
+228   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_8h}{amun.\+h}\end{DoxyCompactItemize}

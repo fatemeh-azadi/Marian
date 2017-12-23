@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dba/classmarian_1_1Config">
+<title>marian::Config class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d78/marian_2src_2common_2config_8h">&lt;config.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Config</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d24/classmarian_1_1Config__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Config</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db9/classmarian_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static size_t seed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; modelFeatures_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dba/classmarian_1_1Config_1aa953cca7c4650e7e0538f00388d9f385">Config</link> (
+int argc, char ** argv, <link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9">ConfigMode</link> mode, bool validate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dba/classmarian_1_1Config_1a13774d365b7b891e2f14078832032aff">Config</link> (
+const <link linkend="d6/dba/classmarian_1_1Config">Config</link> &amp; other)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/dba/classmarian_1_1Config_1ab3058530188cfb4eae1bbabfcf4d6bee">has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="d6/dba/classmarian_1_1Config_1a4a765930cfec40c60b48266ed7693109">get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="d6/dba/classmarian_1_1Config_1a955142b802b95bcac26014985e5509f7">operator[]</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d6/dba/classmarian_1_1Config_1aab37767c3fe86331e91ac0a26a8c50f2">get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a024ad20b2fa0be8112bb29aeef448d29">set</link> (
+const std::string &amp; key, const T &amp; value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const YAML::Node &amp; <link linkend="d6/dba/classmarian_1_1Config_1aba3e2758003d471e90fe9eac082a0a56">get</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node &amp; <link linkend="d6/dba/classmarian_1_1Config_1aa42a57837e2d0cdeaa236e1cebd72b72">get</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="d6/dba/classmarian_1_1Config_1a8bb35987743e02b1752b4598337510e4">getModelParameters</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a88b17725ec749ce6fa43e8722dbe0f7b">loadModelParameters</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a34c944633d8c66e513bf50da4469de39">saveModelParameters</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1ad02ea584a6a4d2caf2743b50dcb9e9f1">save</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a2e2137806bbb54f3e8aab100680d62f0">GetYamlFromNpz</link> (
+YAML::Node &amp; , const std::string &amp; , const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a1dd63c638735224839b6faa7050c7f7a">AddYamlToNpz</link> (
+const YAML::Node &amp; , const std::string &amp; , const std::string &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a187242dd22d9d6d18aca5417f5cc7f51">override</link> (
+const YAML::Node &amp; params)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dba/classmarian_1_1Config_1a04803eb8aac3297bc9da7d697cd07ba0">log</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1aa953cca7c4650e7e0538f00388d9f385">
+                <title>marian::Config::Config (int argc, char **argv, ConfigMode mode=ConfigMode::training, bool validate=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a13774d365b7b891e2f14078832032aff">
+                <title>marian::Config::Config (const Config &amp;other)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1ab3058530188cfb4eae1bbabfcf4d6bee">
+                <title>bool marian::Config::has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a4a765930cfec40c60b48266ed7693109">
+                <title>YAML::Node marian::Config::get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a955142b802b95bcac26014985e5509f7">
+                <title>YAML::Node marian::Config::operator[] (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1aab37767c3fe86331e91ac0a26a8c50f2">
+                <title>T marian::Config::get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a024ad20b2fa0be8112bb29aeef448d29">
+                <title>void marian::Config::set (const std::string &amp;key, const T &amp;value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1aba3e2758003d471e90fe9eac082a0a56">
+                <title>const YAML::Node &amp; marian::Config::get () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1aa42a57837e2d0cdeaa236e1cebd72b72">
+                <title>YAML::Node &amp; marian::Config::get ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a8bb35987743e02b1752b4598337510e4">
+                <title>YAML::Node marian::Config::getModelParameters ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a88b17725ec749ce6fa43e8722dbe0f7b">
+                <title>void marian::Config::loadModelParameters (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a34c944633d8c66e513bf50da4469de39">
+                <title>void marian::Config::saveModelParameters (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1ad02ea584a6a4d2caf2743b50dcb9e9f1">
+                <title>void marian::Config::save (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a2e2137806bbb54f3e8aab100680d62f0">
+                <title>void marian::Config::GetYamlFromNpz (YAML::Node &amp;, const std::string &amp;, const std::string &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a1dd63c638735224839b6faa7050c7f7a">
+                <title>void marian::Config::AddYamlToNpz (const YAML::Node &amp;, const std::string &amp;, const std::string &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a187242dd22d9d6d18aca5417f5cc7f51">
+                <title>void marian::Config::override (const YAML::Node &amp;params)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dba/classmarian_1_1Config_1a04803eb8aac3297bc9da7d697cd07ba0">
+                <title>void marian::Config::log ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

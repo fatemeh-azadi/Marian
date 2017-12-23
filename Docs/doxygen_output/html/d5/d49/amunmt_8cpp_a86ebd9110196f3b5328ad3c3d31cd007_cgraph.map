@@ -1,0 +1,35 @@
+<map id="translate" name="translate">
+<area shape="rect" id="node2" href="$d7/d4e/classamunmt_1_1God.html#ad0d3efbdf165ba0bc4de9052a826f7b6" title="amunmt::God::Get" alt="" coords="409,407,540,434"/>
+<area shape="rect" id="node4" href="$d7/d4e/classamunmt_1_1God.html#adad806b2183b4dbf8c27c6078effb9b5" title="amunmt::God::GetThreadPool" alt="" coords="125,239,321,266"/>
+<area shape="rect" id="node5" href="$d9/de5/classamunmt_1_1ThreadPool.html#a1bb89599cb11af51958c771c437aff22" title="amunmt::ThreadPool\l::enqueue" alt="" coords="152,291,295,332"/>
+<area shape="rect" id="node6" href="$d7/dd3/namespaceamunmt.html#a54e0c0c0dd1caecba5c17e45d023fd5e" title="amunmt::TranslationTask" alt="" coords="138,189,309,215"/>
+<area shape="rect" id="node18" href="$d2/d0b/classamunmt_1_1Histories.html#ac2fc201d1dcfc3a689b71f3da4769bd3" title="amunmt::Histories::\lAppend" alt="" coords="155,408,292,449"/>
+<area shape="rect" id="node19" href="$d2/d0b/classamunmt_1_1Histories.html#afa810d825474a48115d2b0691d014bd5" title="amunmt::Histories::size" alt="" coords="394,357,555,383"/>
+<area shape="rect" id="node20" href="$d2/d0b/classamunmt_1_1Histories.html#a1cd0e1d06d2ebea1e026f03592f0e492" title="amunmt::Histories::\lSortByLineNum" alt="" coords="155,525,292,567"/>
+<area shape="rect" id="node21" href="$d2/d0b/classamunmt_1_1Histories.html#a757045db713628fa453bdebd8a35be29" title="amunmt::Histories::at" alt="" coords="149,591,297,618"/>
+<area shape="rect" id="node22" href="$d7/dd3/namespaceamunmt.html#aef108281493b0c3b669c537192eace34" title="amunmt::Printer" alt="" coords="166,727,281,754"/>
+<area shape="rect" id="node3" href="$da/d4e/classamunmt_1_1Config.html#a5257f41272d06c35bebe8130b5897d23" title="amunmt::Config::Get" alt="" coords="652,407,796,434"/>
+<area shape="rect" id="node7" href="$d7/d4e/classamunmt_1_1God.html#a38e952b706c978ecb2b8ad2ab7f7828f" title="amunmt::God::GetSearch" alt="" coords="389,239,560,266"/>
+<area shape="rect" id="node8" href="$d7/d92/classamunmt_1_1Search.html#a8a55a67dbc9dab24441767d7b2066b9a" title="amunmt::Search::Translate" alt="" coords="385,189,565,215"/>
+<area shape="rect" id="node9" href="$d7/d92/classamunmt_1_1Search.html#adab7a84cbd820e7395a3f79fc604bb06" title="amunmt::Search::FilterTarget\lVocab" alt="" coords="628,291,820,332"/>
+<area shape="rect" id="node10" href="$de/ded/classamunmt_1_1Sentences.html#accf70916436eb80cd7f4df9645fd1da8" title="amunmt::Sentences::size" alt="" coords="882,239,1053,266"/>
+<area shape="rect" id="node13" href="$d7/d92/classamunmt_1_1Search.html#aeca132502f793a9cf8f54ba5e12a333a" title="amunmt::Search::Encode" alt="" coords="639,239,809,266"/>
+<area shape="rect" id="node14" href="$d7/d92/classamunmt_1_1Search.html#a1cd54cd91f09de25de5967d0704dc77d" title="amunmt::Search::NewStates" alt="" coords="629,357,819,383"/>
+<area shape="rect" id="node15" href="$de/ded/classamunmt_1_1Sentences.html#a02f0688d10222abd36ef037121a85e72" title="amunmt::Sentences::\lGetMaxLength" alt="" coords="651,5,797,47"/>
+<area shape="rect" id="node16" href="$d7/d92/classamunmt_1_1Search.html#a80d628a5581c65ebe73fe0b941497eba" title="amunmt::Search::CalcBeam" alt="" coords="631,71,817,98"/>
+<area shape="rect" id="node17" href="$d7/d92/classamunmt_1_1Search.html#acdf0343e135ef26bf53ebb9389b379f6" title="amunmt::Search::CleanAfter\lTranslation" alt="" coords="630,123,818,164"/>
+<area shape="rect" id="node11" href="$de/ded/classamunmt_1_1Sentences.html#afe33dd6de1f3dfbcff4003c32bdd1f4b" title="amunmt::Sentences::at" alt="" coords="888,298,1047,325"/>
+<area shape="rect" id="node12" href="$d7/db4/classamunmt_1_1Sentence.html#a929bbcefc70b6bc280bbdadb3be00ec9" title="amunmt::Sentence::GetWords" alt="" coords="868,513,1067,539"/>
+<area shape="rect" id="node23" href="$db/d94/classamunmt_1_1History.html#a1ba4f3d97546a08e25a9c0de1ef02e50" title="amunmt::History::Top" alt="" coords="400,778,549,805"/>
+<area shape="rect" id="node24" href="$db/d94/classamunmt_1_1History.html#af982104b58a4d8cf3893d39724a120c4" title="amunmt::History::NBest" alt="" coords="642,753,806,779"/>
+<area shape="rect" id="node25" href="$d7/d4e/classamunmt_1_1God.html#a1e2a81202f36d8c2c10e5ee35c3b44ae" title="amunmt::God::Postprocess" alt="" coords="383,829,566,855"/>
+<area shape="rect" id="node26" href="$d7/d4e/classamunmt_1_1God.html#aabd3caa5eb93346428948ce6639dc931" title="amunmt::God::GetTargetVocab" alt="" coords="373,879,577,906"/>
+<area shape="rect" id="node27" href="$d7/dd3/namespaceamunmt.html#a24dbaa0ef7dc1f1fcaa131a0f0eacb43" title="amunmt::Join" alt="" coords="424,930,525,957"/>
+<area shape="rect" id="node28" href="$d7/d4e/classamunmt_1_1God.html#a032b43755a3050ee9fb97ad27a91a63b" title="amunmt::God::GetSourceVocab" alt="" coords="371,981,579,1007"/>
+<area shape="rect" id="node29" href="$d7/dd3/namespaceamunmt.html#a589013f9c66aae2070326dc22d2b547d" title="amunmt::GetNematusAlignment\lString" alt="" coords="370,1032,579,1073"/>
+<area shape="rect" id="node30" href="$db/d94/classamunmt_1_1History.html#aab6c98bebac14e388e23ea849b0bba8b" title="amunmt::History::GetLineNum" alt="" coords="375,1098,575,1125"/>
+<area shape="rect" id="node31" href="$d7/dd3/namespaceamunmt.html#a33109e5a2b2adf93a3e60ef4197a85f9" title="amunmt::GetAlignmentString" alt="" coords="379,458,570,485"/>
+<area shape="rect" id="node32" href="$d7/dd3/namespaceamunmt.html#acf078c1279ce98077a069ba41811faa6" title="amunmt::GetAlignment" alt="" coords="397,509,553,535"/>
+<area shape="rect" id="node33" href="$d7/dd3/namespaceamunmt.html#a2cb8f571957aa136afe5b74340ecec52" title="amunmt::GetSoftAlignment\lString" alt="" coords="385,560,565,601"/>
+<area shape="rect" id="node34" href="$d7/d4e/classamunmt_1_1God.html#a75cb5ca765042d1df858a6eeed330bb7" title="amunmt::God::GetScorerNames" alt="" coords="369,626,580,653"/>
+</map>

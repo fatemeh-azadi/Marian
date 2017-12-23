@@ -1,0 +1,168 @@
+\hypertarget{classmarian_1_1Rescore}{}\section{marian\+:\+:Rescore$<$ Model $>$ Class Template Reference}
+\label{classmarian_1_1Rescore}\index{marian\+::\+Rescore$<$ Model $>$@{marian\+::\+Rescore$<$ Model $>$}}
+
+
+{\ttfamily \#include $<$rescorer.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Rescore$<$ Model $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d9/ddf/classmarian_1_1Rescore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Rescore$<$ Model $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d0/d44/classmarian_1_1Rescore__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Rescore_a5700750a23b0e7e9acaaf10a05dfd65f}{Rescore} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options)
+\item 
+void \hyperlink{classmarian_1_1Rescore_ac514b4d602ec5c08fb0730690327ae3e}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Corpus}{Corpus} $>$ \hyperlink{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}{corpus\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ \hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Model $>$ \hyperlink{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}{model\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Model$>$\\*
+class marian\+::\+Rescore$<$ Model $>$}
+
+
+
+Definition at line 38 of file rescorer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!Rescore@{Rescore}}
+\index{Rescore@{Rescore}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{Rescore(\+Ptr$<$ Config $>$ options)}{Rescore(Ptr< Config > options)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf marian\+::\+Rescore}$<$ Model $>$\+::{\bf Rescore} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Rescore_a5700750a23b0e7e9acaaf10a05dfd65f}{}\label{classmarian_1_1Rescore_a5700750a23b0e7e9acaaf10a05dfd65f}
+
+
+Definition at line 46 of file rescorer.\+h.
+
+
+\begin{DoxyCode}
+47       : \hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_}(options),
+48         \hyperlink{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}{corpus\_}(New<Corpus>(\hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_})),
+49         \hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}(New<ExpressionGraph>(\textcolor{keyword}{true})) \{
+50     \hyperlink{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}{corpus\_}->prepare();
+51 
+52     \textcolor{keyword}{auto} device = \hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_}->get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"}).front();
+53     \hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}->setDevice(device);
+54     \hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}->reserveWorkspaceMB(\hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"workspace"}));
+55 
+56     \textcolor{keyword}{auto} modelFile = \hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+57     \textcolor{keyword}{auto} modelOptions = New<Config>(*options);
+58     \textcolor{keywordflow}{try} \{
+59       modelOptions->loadModelParameters(modelFile);
+60     \} \textcolor{keywordflow}{catch}(std::runtime\_error& e) \{
+61       \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(warn)->warn(\textcolor{stringliteral}{"No model settings found in model file"});
+62     \}
+63     \hyperlink{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}{model\_} = New<Model>(modelOptions, \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \textcolor{keyword}{true});
+64     \hyperlink{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}{model\_}->load(\hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}, modelFile);
+65   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!run@{run}}
+\index{run@{run}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ void {\bf marian\+::\+Rescore}$<$ Model $>$\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Rescore_ac514b4d602ec5c08fb0730690327ae3e}{}\label{classmarian_1_1Rescore_ac514b4d602ec5c08fb0730690327ae3e}
+
+
+Implements \hyperlink{structmarian_1_1ModelTask_a2f4fddd0f227555bf792e3c3d4bfdb0d}{marian\+::\+Model\+Task}.
+
+
+
+Definition at line 67 of file rescorer.\+h.
+
+
+\begin{DoxyCode}
+67              \{
+68     Ptr<BatchGenerator<Corpus>> batchGenerator
+69         = New<BatchGenerator<Corpus>>(\hyperlink{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}{corpus\_}, \hyperlink{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{options\_});
+70     batchGenerator->prepare(\textcolor{keyword}{false});
+71 
+72     \textcolor{keyword}{auto} \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output} = New<ScoreCollector>();
+73 
+74     \textcolor{keywordflow}{while}(*batchGenerator) \{
+75       \textcolor{keyword}{auto} batch = batchGenerator->next();
+76 
+77       \textcolor{keyword}{auto} costNode = \hyperlink{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}{model\_}->buildToScore(\hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}, batch);
+78       \hyperlink{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{graph\_}->forward();
+79 
+80       std::vector<float> scores;
+81       costNode->val()->get(scores);
+82 
+83       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < batch->size(); ++i) \{
+84         \hyperlink{namespacetest_a07b64f21658cf1faa97a31563ac979d2}{output}->Write(batch->getSentenceIds()[i], scores[i]);
+85       \}
+86     \}
+87   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!corpus\+\_\+@{corpus\+\_\+}}
+\index{corpus\+\_\+@{corpus\+\_\+}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{corpus\+\_\+}{corpus_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf Ptr}$<${\bf Corpus}$>$ {\bf marian\+::\+Rescore}$<$ Model $>$\+::corpus\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}{}\label{classmarian_1_1Rescore_aa4c8b89fe7b567a755cd4511d374aafe}
+
+
+Definition at line 41 of file rescorer.\+h.
+
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!graph\+\_\+@{graph\+\_\+}}
+\index{graph\+\_\+@{graph\+\_\+}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{graph\+\_\+}{graph_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf Ptr}$<${\bf Expression\+Graph}$>$ {\bf marian\+::\+Rescore}$<$ Model $>$\+::graph\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}{}\label{classmarian_1_1Rescore_a9f6d908e2c46c0b43ca16e61d3c4a618}
+
+
+Definition at line 42 of file rescorer.\+h.
+
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!model\+\_\+@{model\+\_\+}}
+\index{model\+\_\+@{model\+\_\+}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{model\+\_\+}{model_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf Ptr}$<$Model$>$ {\bf marian\+::\+Rescore}$<$ Model $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}{}\label{classmarian_1_1Rescore_a062b8a1e12c90dbc2b68a7321f8afb67}
+
+
+Definition at line 43 of file rescorer.\+h.
+
+\index{marian\+::\+Rescore@{marian\+::\+Rescore}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Rescore@{marian\+::\+Rescore}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Model $>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Rescore}$<$ Model $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}{}\label{classmarian_1_1Rescore_a364be87ce2541f28ca6065e12955f789}
+
+
+Definition at line 40 of file rescorer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rescorer_8h}{rescorer.\+h}\end{DoxyCompactItemize}

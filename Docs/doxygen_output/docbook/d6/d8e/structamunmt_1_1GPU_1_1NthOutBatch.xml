@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">
+<title>amunmt::GPU::NthOutBatch struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/db1/nth__element__kernels_8h">&lt;nth_element_kernels.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::NthOutBatch</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d92/structamunmt_1_1GPU_1_1NthOutBatch__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::NthOutBatch</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d2f/structamunmt_1_1GPU_1_1NthOutBatch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint ind</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float score</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1aeaaf09393da0594788eb8086c3fa03a1">NthOutBatch</link> (
+const float &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a6ff60defd3ccdb31907291d2a629af92">NthOutBatch</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1abf6f0225fbd69c46dab56778e2759272">NthOutBatch</link> (
+uint vInd, float vScore, uint vHypoInd, uint vVocabInd)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &amp; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a58422699357c6645acd86c1e17cab703">operator=</link> (
+const <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &amp; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a67b5fd207727caada80b31cbb8424b12">operator+=</link> (
+const <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1aeaaf09393da0594788eb8086c3fa03a1">
+                <title>__device__ __host__ amunmt::GPU::NthOutBatch::NthOutBatch (const float &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a6ff60defd3ccdb31907291d2a629af92">
+                <title>__device__ __host__ amunmt::GPU::NthOutBatch::NthOutBatch ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1abf6f0225fbd69c46dab56778e2759272">
+                <title>__device__ __host__ amunmt::GPU::NthOutBatch::NthOutBatch (uint vInd, float vScore, uint vHypoInd, uint vVocabInd)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a58422699357c6645acd86c1e17cab703">
+                <title>__device__ __host__ NthOutBatch&amp; amunmt::GPU::NthOutBatch::operator= (const NthOutBatch &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch_1a67b5fd207727caada80b31cbb8424b12">
+                <title>__device__ __host__ NthOutBatch&amp; amunmt::GPU::NthOutBatch::operator+= (const NthOutBatch &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

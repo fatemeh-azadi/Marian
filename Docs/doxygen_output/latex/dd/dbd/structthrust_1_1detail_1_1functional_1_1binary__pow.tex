@@ -1,0 +1,70 @@
+\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__pow}{}\section{thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+pow$<$ T $>$ Struct Template Reference}
+\label{structthrust_1_1detail_1_1functional_1_1binary__pow}\index{thrust\+::detail\+::functional\+::binary\+\_\+pow$<$ T $>$@{thrust\+::detail\+::functional\+::binary\+\_\+pow$<$ T $>$}}
+
+
+{\ttfamily \#include $<$thrust\+\_\+functions.\+h$>$}
+
+
+
+Inheritance diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+pow$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d1/dec/structthrust_1_1detail_1_1functional_1_1binary__pow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for thrust\+:\+:detail\+:\+:functional\+:\+:binary\+\_\+pow$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d8/d38/structthrust_1_1detail_1_1functional_1_1binary__pow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T \hyperlink{structthrust_1_1detail_1_1functional_1_1binary__pow_a94eb06171d280e4b64a1483e5332dd87}{operator()} (const T \&x, const T \&y) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct thrust\+::detail\+::functional\+::binary\+\_\+pow$<$ T $>$}
+
+
+
+Definition at line 142 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{thrust\+::detail\+::functional\+::binary\+\_\+pow@{thrust\+::detail\+::functional\+::binary\+\_\+pow}!operator()@{operator()}}
+\index{operator()@{operator()}!thrust\+::detail\+::functional\+::binary\+\_\+pow@{thrust\+::detail\+::functional\+::binary\+\_\+pow}}
+\subsubsection[{\texorpdfstring{operator()(const T \&x, const T \&y) const }{operator()(const T &x, const T &y) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T {\bf thrust\+::detail\+::functional\+::binary\+\_\+pow}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structthrust_1_1detail_1_1functional_1_1binary__pow_a94eb06171d280e4b64a1483e5332dd87}{}\label{structthrust_1_1detail_1_1functional_1_1binary__pow_a94eb06171d280e4b64a1483e5332dd87}
+
+
+Definition at line 143 of file marian/src/kernels/thrust\+\_\+functions.\+h.
+
+
+\begin{DoxyCode}
+143                                                                  \{
+144     \textcolor{keywordtype}{float} tx = x;
+145     \textcolor{keywordflow}{if}(y == (\textcolor{keywordtype}{int})y && (\textcolor{keywordtype}{int})y % 2 == 0)
+146       tx = abs(x);
+147     \textcolor{keywordflow}{return} powf(tx, y);
+148   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2kernels_2thrust__functions_8h}{marian/src/kernels/thrust\+\_\+functions.\+h}\end{DoxyCompactItemize}

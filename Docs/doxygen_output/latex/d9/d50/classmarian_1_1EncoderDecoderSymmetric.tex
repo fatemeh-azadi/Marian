@@ -1,0 +1,182 @@
+\hypertarget{classmarian_1_1EncoderDecoderSymmetric}{}\section{marian\+:\+:Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$ Class Template Reference}
+\label{classmarian_1_1EncoderDecoderSymmetric}\index{marian\+::\+Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$@{marian\+::\+Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$}}
+
+
+{\ttfamily \#include $<$s2s\+\_\+symmetric.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d4/d2b/classmarian_1_1EncoderDecoderSymmetric__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d1/dff/classmarian_1_1EncoderDecoderSymmetric__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderDecoderSymmetric_af23dd4332fe728e407575eebd65a81f2}{Encoder\+Decoder\+Symmetric} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a55892d5d085f60a4b33dd36acb4e80fa}{clear} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a82f58498cc49ba0665e0f8ef70876d65}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, bool clear\+Graph=true)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Enc\+Dec $>$ \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{inverse\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Enc\+Dec$>$\\*
+class marian\+::\+Encoder\+Decoder\+Symmetric$<$ Enc\+Dec $>$}
+
+
+
+Definition at line 8 of file s2s\+\_\+symmetric.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}!Encoder\+Decoder\+Symmetric@{Encoder\+Decoder\+Symmetric}}
+\index{Encoder\+Decoder\+Symmetric@{Encoder\+Decoder\+Symmetric}!marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder\+Symmetric(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderDecoderSymmetric(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Enc\+Dec $>$ template$<$class... Args$>$ {\bf marian\+::\+Encoder\+Decoder\+Symmetric}$<$ Enc\+Dec $>$\+::{\bf Encoder\+Decoder\+Symmetric} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoderSymmetric_af23dd4332fe728e407575eebd65a81f2}{}\label{classmarian_1_1EncoderDecoderSymmetric_af23dd4332fe728e407575eebd65a81f2}
+
+
+Definition at line 14 of file s2s\+\_\+symmetric.\+h.
+
+
+\begin{DoxyCode}
+15       : EncDec(options, std::vector<size\_t>\{0, 1\}, args...),
+16         \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{inverse\_}(New<EncDec>(options,
+17                              std::vector<size\_t>\{1, 0\},
+18                              \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \textcolor{stringliteral}{"inverse\_"},
+19                              args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, bool clear\+Graph=true)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, bool clearGraph=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Enc\+Dec $>$ virtual {\bf Expr} {\bf marian\+::\+Encoder\+Decoder\+Symmetric}$<$ Enc\+Dec $>$\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoderSymmetric_a82f58498cc49ba0665e0f8ef70876d65}{}\label{classmarian_1_1EncoderDecoderSymmetric_a82f58498cc49ba0665e0f8ef70876d65}
+
+
+Definition at line 26 of file s2s\+\_\+symmetric.\+h.
+
+
+\begin{DoxyCode}
+28                                              \{
+29     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+30 
+31     \textcolor{keywordflow}{if}(EncDec::inference\_) \{
+32       \textcolor{keywordflow}{return} EncDec::build(graph, batch, clearGraph);
+33     \} \textcolor{keywordflow}{else} \{
+34       \textcolor{keyword}{auto} cost1 = EncDec::build(graph, batch, clearGraph);
+35       \textcolor{keyword}{auto} cost2 = \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{inverse\_}->build(graph, batch, \textcolor{keyword}{false});
+36 
+37       \textcolor{keyword}{auto} dec1 = std::dynamic\_pointer\_cast<DecoderS2S>(EncDec::decoder\_);
+38       \textcolor{keyword}{auto} dec2 = std::dynamic\_pointer\_cast<DecoderS2S>(\hyperlink{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{inverse\_}->getDecoder());
+39 
+40       \textcolor{keyword}{auto} srcA = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(dec1->getAlignments(), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 3);
+41       \textcolor{keyword}{auto} trgA = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(dec2->getAlignments(), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 3);
+42 
+43       \textcolor{keywordtype}{int} dimBatch = srcA->shape()[0];
+44       \textcolor{keywordtype}{int} dimSrc = srcA->shape()[2];
+45       \textcolor{keywordtype}{int} dimTrg = srcA->shape()[3];
+46 
+47       std::vector<size\_t> reorder;
+48       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < dimTrg; ++j)
+49         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < dimSrc; ++i)
+50           reorder.push\_back(i * dimTrg + j);
+51 
+52       \textcolor{keywordflow}{if}(dimBatch == 1) \{
+53         srcA = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(srcA, \{dimTrg, dimSrc\});
+54         trgA = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimSrc, dimTrg\});
+55       \} \textcolor{keywordflow}{else} \{
+56         srcA = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(srcA, \{dimSrc, dimBatch, dimTrg\});
+57         trgA = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimTrg, dimBatch, dimSrc\});
+58       \}
+59       \hyperlink{namespacemarian_a442bfa469f081af4c2665c341efc71ce}{debug}(srcA, \textcolor{stringliteral}{"srcA"});
+60       \hyperlink{namespacemarian_a442bfa469f081af4c2665c341efc71ce}{debug}(trgA, \textcolor{stringliteral}{"trgA"});
+61 
+62       \textcolor{keywordtype}{int} dimSrcTrg = dimSrc * dimTrg;
+63       trgA = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(\hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimSrcTrg, dimBatch\}), reorder);
+64 
+65       \textcolor{keyword}{auto} symmetricAlignment
+66           = \hyperlink{namespacemarian_a15ec9743709e47180378db974ddbf116}{mean}(\hyperlink{namespacemarian_a7bed97354565d7b751bed999c6c203e3}{scalar\_product}(\hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(srcA, \{dimBatch, 1, dimSrcTrg\}),
+67                                 \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(trgA, \{dimBatch, 1, dimSrcTrg\}),
+68                                 \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2),
+69                  \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 0);
+70       \textcolor{keywordflow}{return} cost1 + cost2 - symmetricAlignment;
+71     \}
+72   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d50/classmarian_1_1EncoderDecoderSymmetric_a82f58498cc49ba0665e0f8ef70876d65_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}}
+\subsubsection[{\texorpdfstring{clear(\+Ptr$<$ Expression\+Graph $>$ graph)}{clear(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Enc\+Dec $>$ virtual void {\bf marian\+::\+Encoder\+Decoder\+Symmetric}$<$ Enc\+Dec $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoderSymmetric_a55892d5d085f60a4b33dd36acb4e80fa}{}\label{classmarian_1_1EncoderDecoderSymmetric_a55892d5d085f60a4b33dd36acb4e80fa}
+
+
+Definition at line 21 of file s2s\+\_\+symmetric.\+h.
+
+
+\begin{DoxyCode}
+21                                                  \{
+22     EncDec::clear(graph);
+23     \hyperlink{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{inverse\_}->clear(graph);
+24   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}!inverse\+\_\+@{inverse\+\_\+}}
+\index{inverse\+\_\+@{inverse\+\_\+}!marian\+::\+Encoder\+Decoder\+Symmetric@{marian\+::\+Encoder\+Decoder\+Symmetric}}
+\subsubsection[{\texorpdfstring{inverse\+\_\+}{inverse_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Enc\+Dec $>$ {\bf Ptr}$<$Enc\+Dec$>$ {\bf marian\+::\+Encoder\+Decoder\+Symmetric}$<$ Enc\+Dec $>$\+::inverse\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}{}\label{classmarian_1_1EncoderDecoderSymmetric_a528d0f3b8902ccb3a1464fb7312d5c17}
+
+
+Definition at line 10 of file s2s\+\_\+symmetric.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{s2s__symmetric_8h}{s2s\+\_\+symmetric.\+h}\end{DoxyCompactItemize}

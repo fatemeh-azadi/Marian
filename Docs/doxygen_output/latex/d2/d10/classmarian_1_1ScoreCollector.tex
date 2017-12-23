@@ -1,0 +1,173 @@
+\hypertarget{classmarian_1_1ScoreCollector}{}\section{marian\+:\+:Score\+Collector Class Reference}
+\label{classmarian_1_1ScoreCollector}\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+
+
+{\ttfamily \#include $<$score\+\_\+collector.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Score\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df6/classmarian_1_1ScoreCollector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1ScoreCollector_ae444055c2489000c304e015516a2c914}{Score\+Collector} ()
+\item 
+\hyperlink{classmarian_1_1ScoreCollector_a489f30078c9076f4c5e96079b2452aab}{Score\+Collector} (const \hyperlink{classmarian_1_1ScoreCollector}{Score\+Collector} \&)=delete
+\item 
+void \hyperlink{classmarian_1_1ScoreCollector_aea5e72c3f74aec169fbb8df344c49fff}{Write} (long id, float score)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ long, float $>$ \hyperlink{classmarian_1_1ScoreCollector_a0f23001507924b1866c1f6a370a2b369}{Outputs}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{next\+Id\+\_\+} \{0\}
+\item 
+\hyperlink{namespacemarian_aef1c1bbe14b70285b1e8f7653f134cb1}{U\+Ptr}$<$ \hyperlink{classOutputFileStream}{Output\+File\+Stream} $>$ \hyperlink{classmarian_1_1ScoreCollector_a62fd57793146683d75456f0b18c0966e}{out\+Strm\+\_\+}
+\item 
+boost\+::mutex \hyperlink{classmarian_1_1ScoreCollector_a6ed0505c4c459cdaad1b39f86d36f1a4}{mutex\+\_\+}
+\item 
+\hyperlink{classmarian_1_1ScoreCollector_a0f23001507924b1866c1f6a370a2b369}{Outputs} \hyperlink{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{outputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file score\+\_\+collector.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!Outputs@{Outputs}}
+\index{Outputs@{Outputs}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{Outputs}{Outputs}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$long, float$>$ {\bf marian\+::\+Score\+Collector\+::\+Outputs}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1ScoreCollector_a0f23001507924b1866c1f6a370a2b369}{}\label{classmarian_1_1ScoreCollector_a0f23001507924b1866c1f6a370a2b369}
+
+
+Definition at line 25 of file score\+\_\+collector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!Score\+Collector@{Score\+Collector}}
+\index{Score\+Collector@{Score\+Collector}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{Score\+Collector()}{ScoreCollector()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Score\+Collector\+::\+Score\+Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1ScoreCollector_ae444055c2489000c304e015516a2c914}{}\label{classmarian_1_1ScoreCollector_ae444055c2489000c304e015516a2c914}
+
+
+Definition at line 9 of file score\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+10     : \hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_}(0), \hyperlink{classmarian_1_1ScoreCollector_a62fd57793146683d75456f0b18c0966e}{outStrm\_}(\textcolor{keyword}{new} \hyperlink{classOutputFileStream}{OutputFileStream}(std::cout)) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!Score\+Collector@{Score\+Collector}}
+\index{Score\+Collector@{Score\+Collector}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{Score\+Collector(const Score\+Collector \&)=delete}{ScoreCollector(const ScoreCollector &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Score\+Collector\+::\+Score\+Collector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Score\+Collector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classmarian_1_1ScoreCollector_a489f30078c9076f4c5e96079b2452aab}{}\label{classmarian_1_1ScoreCollector_a489f30078c9076f4c5e96079b2452aab}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!Write@{Write}}
+\index{Write@{Write}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{Write(long id, float score)}{Write(long id, float score)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Score\+Collector\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{long}]{id, }
+\item[{float}]{score}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1ScoreCollector_aea5e72c3f74aec169fbb8df344c49fff}{}\label{classmarian_1_1ScoreCollector_aea5e72c3f74aec169fbb8df344c49fff}
+
+
+Definition at line 12 of file score\+\_\+collector.\+cpp.
+
+
+\begin{DoxyCode}
+12                                                \{
+13   boost::mutex::scoped\_lock lock(\hyperlink{classmarian_1_1ScoreCollector_a6ed0505c4c459cdaad1b39f86d36f1a4}{mutex\_});
+14   \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id} == \hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_}) \{
+15     ((std::ostream&)*\hyperlink{classmarian_1_1ScoreCollector_a62fd57793146683d75456f0b18c0966e}{outStrm\_}) << score << std::endl;
+16 
+17     ++\hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_};
+18 
+19     Outputs::const\_iterator iter, iterNext;
+20     iter = \hyperlink{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{outputs\_}.begin();
+21     \textcolor{keywordflow}{while}(iter != \hyperlink{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{outputs\_}.end()) \{
+22       \textcolor{keywordtype}{long} currId = iter->first;
+23 
+24       \textcolor{keywordflow}{if}(currId == \hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_}) \{
+25         \textcolor{comment}{// 1st element in the map is the next}
+26         ((std::ostream&)*outStrm\_) << iter->second << std::endl;
+27 
+28         ++\hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_};
+29 
+30         \textcolor{comment}{// delete current record, move iter on 1}
+31         iterNext = iter;
+32         ++iterNext;
+33         \hyperlink{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{outputs\_}.erase(iter);
+34         iter = iterNext;
+35       \} \textcolor{keywordflow}{else} \{
+36         \textcolor{comment}{// not the next. stop iterating}
+37         assert(\hyperlink{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{nextId\_} < currId);
+38         \textcolor{keywordflow}{break};
+39       \}
+40     \}
+41 
+42   \} \textcolor{keywordflow}{else} \{
+43     \textcolor{comment}{// save for later}
+44     \hyperlink{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{outputs\_}[id] = score;
+45   \}
+46 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!mutex\+\_\+@{mutex\+\_\+}}
+\index{mutex\+\_\+@{mutex\+\_\+}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{mutex\+\_\+}{mutex_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::mutex marian\+::\+Score\+Collector\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1ScoreCollector_a6ed0505c4c459cdaad1b39f86d36f1a4}{}\label{classmarian_1_1ScoreCollector_a6ed0505c4c459cdaad1b39f86d36f1a4}
+
+
+Definition at line 23 of file score\+\_\+collector.\+h.
+
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!next\+Id\+\_\+@{next\+Id\+\_\+}}
+\index{next\+Id\+\_\+@{next\+Id\+\_\+}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{next\+Id\+\_\+}{nextId_}}]{\setlength{\rightskip}{0pt plus 5cm}long marian\+::\+Score\+Collector\+::next\+Id\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}{}\label{classmarian_1_1ScoreCollector_a68bf9186c90c33a7c44d263e58610f3b}
+
+
+Definition at line 21 of file score\+\_\+collector.\+h.
+
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!outputs\+\_\+@{outputs\+\_\+}}
+\index{outputs\+\_\+@{outputs\+\_\+}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{outputs\+\_\+}{outputs_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Outputs} marian\+::\+Score\+Collector\+::outputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}{}\label{classmarian_1_1ScoreCollector_afb3b293c00d7e2b48fa65a32ac7461b7}
+
+
+Definition at line 26 of file score\+\_\+collector.\+h.
+
+\index{marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}!out\+Strm\+\_\+@{out\+Strm\+\_\+}}
+\index{out\+Strm\+\_\+@{out\+Strm\+\_\+}!marian\+::\+Score\+Collector@{marian\+::\+Score\+Collector}}
+\subsubsection[{\texorpdfstring{out\+Strm\+\_\+}{outStrm_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+Ptr}$<${\bf Output\+File\+Stream}$>$ marian\+::\+Score\+Collector\+::out\+Strm\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1ScoreCollector_a62fd57793146683d75456f0b18c0966e}{}\label{classmarian_1_1ScoreCollector_a62fd57793146683d75456f0b18c0966e}
+
+
+Definition at line 22 of file score\+\_\+collector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{score__collector_8h}{score\+\_\+collector.\+h}\item 
+\hyperlink{score__collector_8cpp}{score\+\_\+collector.\+cpp}\end{DoxyCompactItemize}

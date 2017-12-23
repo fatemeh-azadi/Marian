@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d60/rnn_8h">
+    <title>rnn.h File Reference</title>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;chrono&gt;</programlisting>
+    <programlisting>#include &lt;cstdio&gt;</programlisting>
+    <programlisting>#include &lt;iomanip&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/generic.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/types.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/attention.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/cells.h&quot;</programlisting>
+<para>Include dependency diagram for rnn.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d45/rnn_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for rnn.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/ddd/rnn_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d18/namespacemarian_1_1rnn">marian::rnn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d60/rnn_8h_1a6f2f21bd7c93596375b78161b0ff7fae">YAML_REGISTER_TYPE</link> (
+<link linkend="dd/d18/namespacemarian_1_1rnn_1acba2ce4446fe9654f1fd2c69793e34ca">marian::rnn::dir</link> , int )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file rnn.h</para>
+    </simplesect>
+</section>

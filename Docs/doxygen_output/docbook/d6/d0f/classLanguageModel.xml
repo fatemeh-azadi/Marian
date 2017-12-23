@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d0f/classLanguageModel">
+<title>LanguageModel class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/da3/language__model_8h">&lt;language_model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for LanguageModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d3a/classLanguageModel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for LanguageModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d58/classLanguageModel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="dd/dd8/classLanguageModelState">LanguageModelState</link>  <link linkend="d6/d0f/classLanguageModel_1a528d925f7fa4fcc1da9bc4fb0906f938">LMState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const LM &amp; lm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d0f/classLanguageModel_1ae49d1d4f89ed5d16c727772fcbb9f886">LanguageModel</link> (
+const <link linkend="d8/de7/classLM">LM</link> &amp; lm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d6/d0f/classLanguageModel_1aaab17275191d2a9080e248282be355be">Score</link> (
+const State &amp; in, Prob &amp; prob, State &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual State * <link linkend="d6/d0f/classLanguageModel_1acf23ce2df7ca1a9f4a0fc951418dbb7f">NewState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d6/d0f/classLanguageModel_1a1344b4e834417a380e2f79137ff6391f">BeginSentenceState</link> (
+State &amp; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d6/d0f/classLanguageModel_1a01e4a01d056783dd433c88a968ec04df">AssembleBeamState</link> (
+const State &amp; in, const Beam &amp; beam, State &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d6/d0f/classLanguageModel_1afe5aa1473c87082b942a853ce20e9919">GetVocabSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d6/d0f/classLanguageModel_1a528d925f7fa4fcc1da9bc4fb0906f938">
+                <title>typedef LanguageModelState LanguageModel::LMState</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d0f/classLanguageModel_1ae49d1d4f89ed5d16c727772fcbb9f886">
+                <title>LanguageModel::LanguageModel (const LM &amp;lm)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0f/classLanguageModel_1aaab17275191d2a9080e248282be355be">
+                <title>virtual void LanguageModel::Score (const State &amp;in, Prob &amp;prob, State &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0f/classLanguageModel_1acf23ce2df7ca1a9f4a0fc951418dbb7f">
+                <title>virtual State* LanguageModel::NewState ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0f/classLanguageModel_1a1344b4e834417a380e2f79137ff6391f">
+                <title>virtual void LanguageModel::BeginSentenceState (State &amp;state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0f/classLanguageModel_1a01e4a01d056783dd433c88a968ec04df">
+                <title>virtual void LanguageModel::AssembleBeamState (const State &amp;in, const Beam &amp;beam, State &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0f/classLanguageModel_1afe5aa1473c87082b942a853ce20e9919">
+                <title>virtual size_t LanguageModel::GetVocabSize () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

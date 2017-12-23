@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d50/classmarian_1_1EncoderDecoderSymmetric">
+<title>marian::EncoderDecoderSymmetric class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d19/s2s__symmetric_8h">&lt;s2s_symmetric.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::EncoderDecoderSymmetric</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d2b/classmarian_1_1EncoderDecoderSymmetric__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::EncoderDecoderSymmetric</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dff/classmarian_1_1EncoderDecoderSymmetric__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class EncDec</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; EncDec &gt; inverse_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1af23dd4332fe728e407575eebd65a81f2">EncoderDecoderSymmetric</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1a55892d5d085f60a4b33dd36acb4e80fa">clear</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1a82f58498cc49ba0665e0f8ef70876d65">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, bool clearGraph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1af23dd4332fe728e407575eebd65a81f2">
+                <title>marian::EncoderDecoderSymmetric&lt; EncDec &gt;::EncoderDecoderSymmetric (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1a55892d5d085f60a4b33dd36acb4e80fa">
+                <title>virtual void marian::EncoderDecoderSymmetric&lt; EncDec &gt;::clear (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d50/classmarian_1_1EncoderDecoderSymmetric_1a82f58498cc49ba0665e0f8ef70876d65">
+                <title>virtual Expr marian::EncoderDecoderSymmetric&lt; EncDec &gt;::build (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::CorpusBatch &gt; batch, bool clearGraph=true)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps">
+<title>amunmt::GPU::BestHyps class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d90/best__hyps_8h">&lt;best_hyps.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::BestHyps</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d4b/classamunmt_1_1GPU_1_1BestHyps__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::BestHyps</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/da8/classamunmt_1_1GPU_1_1BestHyps__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::unique_ptr&lt; NthElement &gt; nthElement_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; unsigned &gt; keys_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Array&lt; float &gt; costs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint maxBeamSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a87d08291596f0ae319fb600db3cd4638">BestHyps</link> (
+const <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps">BestHyps</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a04e8f72a3150817f37d892b2d760e53a">BestHyps</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a91cb3ebd6db26f6bc705f4cc360497bf">DisAllowUNK</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Prob)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a90f017291d4cd694bd9d55e3392f390c">FindBests</link> (
+const std::vector&lt; uint &gt; &amp; beamSizes, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Probs, std::vector&lt; float &gt; &amp; outCosts, std::vector&lt; unsigned &gt; &amp; outKeys, const bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="d3/d59/soft__alignment_8h_1a875ec1de0fda25e65d972952540246ff">SoftAlignmentPtr</link> &gt; <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a2675e6f24c466b304a16f6d945d68e40">GetAlignments</link> (
+const std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link> &gt; &amp; scorers, size_t hypIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1aada8fcf38e61fd1ce649432cb45376d9">CalcBeam</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; prevHyps, const std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a703e88438d533fef1db5cc95060b36f0">ScorerPtr</link> &gt; &amp; scorers, const <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> &amp; filterIndices, std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &gt; &amp; beams, std::vector&lt; uint &gt; &amp; beamSizes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a5da6d49b0626b8935bafcd8666f5f9c0">FindBests</link> (
+const std::vector&lt; uint &gt; &amp; beamSizes, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Probs, <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &gt; &amp; nBest, std::vector&lt; float &gt; &amp; outCosts, std::vector&lt; unsigned &gt; &amp; outKeys, const bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a9faea39d64a777b66e524190e8dc57ae">getNBestList</link> (
+const std::vector&lt; uint &gt; &amp; beamSizes, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Probs, <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &gt; &amp; nBest, std::vector&lt; float &gt; &amp; outCosts, std::vector&lt; uint &gt; &amp; outKeys, const bool isFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a19a16e9b1c3bb808eed3014058e2bad8">GetPairs</link> (
+<link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">mblas::Array</link>&lt; <link linkend="d6/d8e/structamunmt_1_1GPU_1_1NthOutBatch">NthOutBatch</link> &gt; &amp; nBest, std::vector&lt; uint &gt; &amp; outKeys, std::vector&lt; float &gt; &amp; outValues)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a87d08291596f0ae319fb600db3cd4638">
+                <title>amunmt::GPU::BestHyps::BestHyps (const BestHyps &amp;copy)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a04e8f72a3150817f37d892b2d760e53a">
+                <title>amunmt::GPU::BestHyps::BestHyps (const God &amp;god)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a91cb3ebd6db26f6bc705f4cc360497bf">
+                <title>void amunmt::GPU::BestHyps::DisAllowUNK (mblas::Matrix &amp;Prob)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a90f017291d4cd694bd9d55e3392f390c">
+                <title>void amunmt::GPU::BestHyps::FindBests (const std::vector&lt; uint &gt; &amp;beamSizes, mblas::Matrix &amp;Probs, std::vector&lt; float &gt; &amp;outCosts, std::vector&lt; unsigned &gt; &amp;outKeys, const bool isFirst)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a2675e6f24c466b304a16f6d945d68e40">
+                <title>std::vector&lt;SoftAlignmentPtr&gt; amunmt::GPU::BestHyps::GetAlignments (const std::vector&lt; ScorerPtr &gt; &amp;scorers, size_t hypIndex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1aada8fcf38e61fd1ce649432cb45376d9">
+                <title>void amunmt::GPU::BestHyps::CalcBeam (const Beam &amp;prevHyps, const std::vector&lt; ScorerPtr &gt; &amp;scorers, const Words &amp;filterIndices, std::vector&lt; Beam &gt; &amp;beams, std::vector&lt; uint &gt; &amp;beamSizes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a5da6d49b0626b8935bafcd8666f5f9c0">
+                <title>void amunmt::GPU::BestHyps::FindBests (const std::vector&lt; uint &gt; &amp;beamSizes, mblas::Matrix &amp;Probs, mblas::Array&lt; NthOutBatch &gt; &amp;nBest, std::vector&lt; float &gt; &amp;outCosts, std::vector&lt; unsigned &gt; &amp;outKeys, const bool isFirst)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a9faea39d64a777b66e524190e8dc57ae">
+                <title>void amunmt::GPU::BestHyps::getNBestList (const std::vector&lt; uint &gt; &amp;beamSizes, mblas::Matrix &amp;Probs, mblas::Array&lt; NthOutBatch &gt; &amp;nBest, std::vector&lt; float &gt; &amp;outCosts, std::vector&lt; uint &gt; &amp;outKeys, const bool isFirst=false) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/da0/classamunmt_1_1GPU_1_1BestHyps_1a19a16e9b1c3bb808eed3014058e2bad8">
+                <title>void amunmt::GPU::BestHyps::GetPairs (mblas::Array&lt; NthOutBatch &gt; &amp;nBest, std::vector&lt; uint &gt; &amp;outKeys, std::vector&lt; float &gt; &amp;outValues) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

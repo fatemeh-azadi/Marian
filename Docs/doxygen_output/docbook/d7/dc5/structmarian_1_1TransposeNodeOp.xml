@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dc5/structmarian_1_1TransposeNodeOp">
+<title>marian::TransposeNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TransposeNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d55/structmarian_1_1TransposeNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TransposeNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d4e/structmarian_1_1TransposeNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1a29f25f7ab9129e9752571e6c4c7ccf26">TransposeNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1a963c8d08cf6cb274d9d5c88361317864">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1ac924d0a88ccf18ed27ffc6e10a5fd075">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1a673f354b5892c9f835f470a297f4f22c">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1a72262ff92b274ed93ccc389ec556638a">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp_1a207e692b92be4e144ace62033039b1cc">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1a29f25f7ab9129e9752571e6c4c7ccf26">
+                <title>marian::TransposeNodeOp::TransposeNodeOp (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1a963c8d08cf6cb274d9d5c88361317864">
+                <title>NodeOps marian::TransposeNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1ac924d0a88ccf18ed27ffc6e10a5fd075">
+                <title>NodeOps marian::TransposeNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1a673f354b5892c9f835f470a297f4f22c">
+                <title>Shape marian::TransposeNodeOp::newShape (Expr a)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1a72262ff92b274ed93ccc389ec556638a">
+                <title>const std::string marian::TransposeNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc5/structmarian_1_1TransposeNodeOp_1a207e692b92be4e144ace62033039b1cc">
+                <title>const std::string marian::TransposeNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d88/cuda__helpers_8h">
+    <title>cuda_helpers.h File Reference</title>
+    <programlisting>#include &quot;3rd_party/exception.h&quot;</programlisting>
+<para>Include dependency diagram for cuda_helpers.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/df0/cuda__helpers_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cuda_helpers.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/df0/cuda__helpers_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d88/cuda__helpers_8h_1a408098ee0251b3c78fdf36be40657ad6">CUDA_CHECK</link> { <link linkend="d3/d88/cuda__helpers_8h_1ab3e90881a2476fd461eb2bcfcaa7cf63">gpuAssert</link>((ans), __FILE__, __LINE__); }</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d88/cuda__helpers_8h_1a4ee3be312b13053c2aa9070fecf31252">CUSPARSE_CHECK</link> {                                                     \
+    cusparseStatus_t _c = x;                            \
+    if(_c != CUSPARSE_STATUS_SUCCESS) {                 \
+      printf(&quot;cusparse fail: %d, file: %s, line: %d\n&quot;, \
+             (int)_c,                                   \
+             __FILE__,                                  \
+             __LINE__);                                 \
+      exit(-1);                                         \
+    }                                                   \
+  }</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d88/cuda__helpers_8h_1ab3e90881a2476fd461eb2bcfcaa7cf63">gpuAssert</link> (
+cudaError_t code, const char * file, int line, bool abort)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file cuda_helpers.h</para>
+    </simplesect>
+</section>

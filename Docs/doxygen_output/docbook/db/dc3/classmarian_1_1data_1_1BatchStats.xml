@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dc3/classmarian_1_1data_1_1BatchStats">
+<title>marian::data::BatchStats class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/df5/batch__stats_8h">&lt;batch_stats.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::BatchStats</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d14/classmarian_1_1data_1_1BatchStats__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::BatchStats</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d49/classmarian_1_1data_1_1BatchStats__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::vector&lt; size_t &gt;, size_t &gt; map_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats_1a4f93dbb14442f458ffd59fc61013121d">getBatchSize</link> (
+const std::vector&lt; size_t &gt; &amp; lengths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats_1af6f94f769fcb4ef0555d6dd9c7530ad5">add</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dc3/classmarian_1_1data_1_1BatchStats_1a4f93dbb14442f458ffd59fc61013121d">
+                <title>size_t marian::data::BatchStats::getBatchSize (const std::vector&lt; size_t &gt; &amp;lengths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc3/classmarian_1_1data_1_1BatchStats_1af6f94f769fcb4ef0555d6dd9c7530ad5">
+                <title>void marian::data::BatchStats::add (Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

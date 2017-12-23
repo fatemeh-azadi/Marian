@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d14/classmarian_1_1Amun">
+<title>marian::Amun class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/dbf/amun_8h">&lt;amun.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Amun</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d4f/classmarian_1_1Amun__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Amun</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d0e/classmarian_1_1Amun__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d14/classmarian_1_1Amun_1abcf8225ac2c7895bfc41b9df02ed46c9">Amun</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d14/classmarian_1_1Amun_1a0e8ed942ad3b414f43f29dbb6e9081eb">load</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d14/classmarian_1_1Amun_1a81589662d8f3eebf52cebf4ba395ef2a">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, const std::string &amp; name, bool saveTranslatorConfig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d14/classmarian_1_1Amun_1a2ac35e1d3b74293cad107512005b2b17">save</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d6/d14/classmarian_1_1Amun_1abcf8225ac2c7895bfc41b9df02ed46c9">
+                <title>marian::Amun::Amun (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d14/classmarian_1_1Amun_1a0e8ed942ad3b414f43f29dbb6e9081eb">
+                <title>void marian::Amun::load (Ptr&lt; ExpressionGraph &gt; graph, const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d14/classmarian_1_1Amun_1a81589662d8f3eebf52cebf4ba395ef2a">
+                <title>void marian::Amun::save (Ptr&lt; ExpressionGraph &gt; graph, const std::string &amp;name, bool saveTranslatorConfig)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d14/classmarian_1_1Amun_1a2ac35e1d3b74293cad107512005b2b17">
+                <title>void marian::Amun::save (Ptr&lt; ExpressionGraph &gt; graph, const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

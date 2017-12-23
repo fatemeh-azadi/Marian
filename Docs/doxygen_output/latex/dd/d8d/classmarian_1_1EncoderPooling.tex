@@ -1,0 +1,148 @@
+\hypertarget{classmarian_1_1EncoderPooling}{}\section{marian\+:\+:Encoder\+Pooling Class Reference}
+\label{classmarian_1_1EncoderPooling}\index{marian\+::\+Encoder\+Pooling@{marian\+::\+Encoder\+Pooling}}
+
+
+{\ttfamily \#include $<$pooling.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Pooling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{de/d01/classmarian_1_1EncoderPooling__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Pooling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{dc/d27/classmarian_1_1EncoderPooling__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderPooling_a10b157a6d4cdcb521b2378877944404f}{Encoder\+Pooling} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ \hyperlink{classmarian_1_1EncoderPooling_a676142ec672b7e9e84d8dc539039c57a}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, size\+\_\+t batch\+Idx)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 73 of file pooling.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+Pooling@{marian\+::\+Encoder\+Pooling}!Encoder\+Pooling@{Encoder\+Pooling}}
+\index{Encoder\+Pooling@{Encoder\+Pooling}!marian\+::\+Encoder\+Pooling@{marian\+::\+Encoder\+Pooling}}
+\subsubsection[{\texorpdfstring{Encoder\+Pooling(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderPooling(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Encoder\+Pooling\+::\+Encoder\+Pooling (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderPooling_a10b157a6d4cdcb521b2378877944404f}{}\label{classmarian_1_1EncoderPooling_a10b157a6d4cdcb521b2378877944404f}
+
+
+Definition at line 76 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+77       : \hyperlink{classmarian_1_1EncoderBase_aba592bf63d3b015bdc41fc06d7fa3a59}{EncoderBase}(options, args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Pooling@{marian\+::\+Encoder\+Pooling}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Pooling@{marian\+::\+Encoder\+Pooling}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, size\+\_\+t batch\+Idx)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, size_t batchIdx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Encoder\+State}$>$ marian\+::\+Encoder\+Pooling\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{size\+\_\+t}]{batch\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderPooling_a676142ec672b7e9e84d8dc539039c57a}{}\label{classmarian_1_1EncoderPooling_a676142ec672b7e9e84d8dc539039c57a}
+
+
+Implements \hyperlink{classmarian_1_1EncoderBase_a7404d245bf899d6d8023d56407d81272}{marian\+::\+Encoder\+Base}.
+
+
+
+Definition at line 79 of file pooling.\+h.
+
+
+\begin{DoxyCode}
+81                                            \{
+82     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+83 
+84     \textcolor{keywordtype}{int} dimSrcVoc = \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"})[batchIdx];
+85     \textcolor{keywordtype}{int} dimSrcEmb = \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-emb"});
+86 
+87     \textcolor{keyword}{auto} xEmb = Embedding(\hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_Wemb"}, dimSrcVoc, dimSrcEmb)(graph);
+88 
+89     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} w, xMask;
+90     std::tie(w, xMask) = prepareSource(xEmb, batch, batchIdx);
+91 
+92     \textcolor{keywordtype}{int} dimBatch = w->shape()[0];
+93     \textcolor{keywordtype}{int} dimSrcWords = w->shape()[2];
+94 
+95     \textcolor{keywordtype}{int} dimMaxLength = \hyperlink{classmarian_1_1EncoderBase_a42fa90e65cd49dacccae154bf7873d97}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"max-length"}) + 1;
+96     \textcolor{keyword}{auto} pEmb = Embedding(\hyperlink{classmarian_1_1EncoderBase_abbd764c19ebaae1d6e4ffec0c9930fba}{prefix\_} + \textcolor{stringliteral}{"\_Pemb"}, dimMaxLength, dimSrcEmb)(graph);
+97 
+98     std::vector<size\_t> pIndices;
+99     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < dimSrcWords; ++i)
+100       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < dimBatch; j++)
+101         pIndices.push\_back(i);
+102 
+103     \textcolor{keyword}{auto} p = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(pEmb, pIndices), \{dimBatch, dimSrcEmb, dimSrcWords\});
+104     \textcolor{keyword}{auto} x = w + p;
+105 
+106     \textcolor{keywordtype}{int} k = 3;
+107     \textcolor{keywordtype}{int} layersC = 6;
+108     \textcolor{keywordtype}{int} layersA = 3;
+109 
+110     \textcolor{keyword}{auto} Wup = graph->param(\textcolor{stringliteral}{"W\_c\_up"}, \{dimSrcEmb, 2 * dimSrcEmb\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{init}=
+      \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+111     \textcolor{keyword}{auto} Bup = graph->param(\textcolor{stringliteral}{"b\_c\_up"}, \{1, 2 * dimSrcEmb\}, init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+112 
+113     \textcolor{keyword}{auto} Wdown = graph->param(\textcolor{stringliteral}{"W\_c\_down"}, \{2 * dimSrcEmb, dimSrcEmb\}, init=
+      \hyperlink{namespacemarian_1_1inits_a8838c47537f434b855491cd3ed97ccd1}{inits::glorot\_uniform});
+114     \textcolor{keyword}{auto} Bdown = graph->param(\textcolor{stringliteral}{"b\_c\_down"}, \{1, dimSrcEmb\}, init=\hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+115 
+116     \textcolor{keyword}{auto} cnnC = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(x, Wup, Bup);
+117     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < layersC; ++i)
+118        cnnC = \hyperlink{namespacemarian_ae5b4088136fa6f7ebc01aed5a2d65c5c}{ConvolutionInTime}(graph, cnnC, k, \textcolor{stringliteral}{"cnn-c."} + std::to\_string(i));
+119     cnnC = \hyperlink{namespacemarian_aefe65d738dc9a0536f3a1f9346b8d47b}{affine}(cnnC, Wdown, Bdown);
+120 
+121     \textcolor{keyword}{auto} cnnA = x;
+122     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < layersA; ++i)
+123        cnnA = \hyperlink{namespacemarian_ae5b4088136fa6f7ebc01aed5a2d65c5c}{ConvolutionInTime}(graph, cnnA, k, \textcolor{stringliteral}{"cnn-a."} + std::to\_string(i));
+124 
+125     \textcolor{keywordflow}{return} New<EncoderStatePooling>(cnnC, cnnA + x, xMask, batch);
+126   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d8d/classmarian_1_1EncoderPooling_a676142ec672b7e9e84d8dc539039c57a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pooling_8h}{pooling.\+h}\end{DoxyCompactItemize}

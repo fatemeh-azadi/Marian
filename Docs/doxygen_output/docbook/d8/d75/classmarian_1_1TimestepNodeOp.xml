@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d75/classmarian_1_1TimestepNodeOp">
+<title>marian::TimestepNodeOp class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TimestepNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d81/classmarian_1_1TimestepNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TimestepNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d49/classmarian_1_1TimestepNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr stepNode_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t step_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1ab613494bd1a3df6657a9723c514298c9">TimestepNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, size_t step)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1af59462293088e6859217d6436b929bd3">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1ac014b5b002e36eeefccfaf4939d2a535">allocate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a0c4ed1e755023af411edc66c20f7f816">free</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1abe5db4fc2772dbe3692475450cdb7643">forward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a008635706bbc2acd247d2488a856fba9">backward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a64818c7734019fc042d3712f07e3b087">init_dependent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a41bff17de35cad13c3c9492a862ac944">set_zero_adjoint</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a9d16e5a4d7b7359c4b4e230500a45343">val</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a02af0c9c13e16888c53deb7032061d1d">grad</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a2624a53aaedf5c6838cab594c2f65229">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a2beedbe285b4c1f5b5528d0d2f406ae1">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d8/d75/classmarian_1_1TimestepNodeOp_1a43f50885f973fe1e849f1c940eeb2107">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1ab613494bd1a3df6657a9723c514298c9">
+                <title>marian::TimestepNodeOp::TimestepNodeOp (Expr a, size_t step)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1af59462293088e6859217d6436b929bd3">
+                <title>Shape marian::TimestepNodeOp::newShape (Expr a)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1ac014b5b002e36eeefccfaf4939d2a535">
+                <title>size_t marian::TimestepNodeOp::allocate ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a0c4ed1e755023af411edc66c20f7f816">
+                <title>void marian::TimestepNodeOp::free ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1abe5db4fc2772dbe3692475450cdb7643">
+                <title>void marian::TimestepNodeOp::forward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a008635706bbc2acd247d2488a856fba9">
+                <title>void marian::TimestepNodeOp::backward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a64818c7734019fc042d3712f07e3b087">
+                <title>void marian::TimestepNodeOp::init_dependent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a41bff17de35cad13c3c9492a862ac944">
+                <title>void marian::TimestepNodeOp::set_zero_adjoint ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a9d16e5a4d7b7359c4b4e230500a45343">
+                <title>Tensor&amp; marian::TimestepNodeOp::val ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a02af0c9c13e16888c53deb7032061d1d">
+                <title>Tensor&amp; marian::TimestepNodeOp::grad ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a2624a53aaedf5c6838cab594c2f65229">
+                <title>const std::string marian::TimestepNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a2beedbe285b4c1f5b5528d0d2f406ae1">
+                <title>const std::string marian::TimestepNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d75/classmarian_1_1TimestepNodeOp_1a43f50885f973fe1e849f1c940eeb2107">
+                <title>virtual size_t marian::TimestepNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

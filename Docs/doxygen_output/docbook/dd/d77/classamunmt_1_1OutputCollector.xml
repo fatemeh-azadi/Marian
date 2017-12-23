@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d77/classamunmt_1_1OutputCollector">
+<title>amunmt::OutputCollector class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d83/amun_2common_2output__collector_8h">&lt;output_collector.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::OutputCollector</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d84/classamunmt_1_1OutputCollector__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::OutputCollector</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dbd/classamunmt_1_1OutputCollector__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; long, std::string &gt;  <link linkend="dd/d77/classamunmt_1_1OutputCollector_1af13847c6e59173dcc7365b525b72ddf7">Outputs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream * outStrm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::mutex mutex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long nextId_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Outputs outputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d77/classamunmt_1_1OutputCollector_1aff8aab7c57db78cb5163ed7d0ddd0665">OutputCollector</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d77/classamunmt_1_1OutputCollector_1a2466ebd7eca86fbe9ae073f2d7f45d98">OutputCollector</link> (
+const <link linkend="dd/d77/classamunmt_1_1OutputCollector">OutputCollector</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d77/classamunmt_1_1OutputCollector_1a29dd85f80126c091b4a476ad1ab5751b">Write</link> (
+long sourceId, const std::string &amp; output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dd/d77/classamunmt_1_1OutputCollector_1af13847c6e59173dcc7365b525b72ddf7">
+                <title>typedef std::map&lt;long, std::string&gt; amunmt::OutputCollector::Outputs</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d77/classamunmt_1_1OutputCollector_1aff8aab7c57db78cb5163ed7d0ddd0665">
+                <title>amunmt::OutputCollector::OutputCollector ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d77/classamunmt_1_1OutputCollector_1a2466ebd7eca86fbe9ae073f2d7f45d98">
+                <title>amunmt::OutputCollector::OutputCollector (const OutputCollector &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d77/classamunmt_1_1OutputCollector_1a29dd85f80126c091b4a476ad1ab5751b">
+                <title>void amunmt::OutputCollector::Write (long sourceId, const std::string &amp;output)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

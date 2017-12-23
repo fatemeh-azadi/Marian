@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN">
+<title>amunmt::GPU::Encoder::RNN class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Encoder::RNN</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d3f/classamunmt_1_1GPU_1_1Encoder_1_1RNN__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Encoder::RNN</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d55/classamunmt_1_1GPU_1_1Encoder_1_1RNN__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::unique_ptr&lt; Cell &gt; gru_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CellState State_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a750aca517d363d1b3e74bdafacce7bf4">RNN</link> (
+std::unique_ptr&lt; <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell">Cell</link> &gt; cell)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1adcec5cfc611a4231bc91cb176ad255ba">InitializeState</link> (
+size_t batchSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a52f3ef3e44fc6bf70543d5b264beba94">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Embd)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a957c23ec361936201ad6a0b03dd05dc9">Encode</link> (
+It it, It end, <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context, size_t batchSize, bool invert, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ad6a337d269d1833a6028b8871e57d2d0">mblas::IMatrix</link> * sentenceLengths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a72bceb533a19da123fb575ca449692a0">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a1490e77313cb21fae7e5f5b18104786d">RNN</link> (
+const <link linkend="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN">RNN</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a750aca517d363d1b3e74bdafacce7bf4">
+                <title>amunmt::GPU::Encoder::RNN::RNN (std::unique_ptr&lt; Cell &gt; cell)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1adcec5cfc611a4231bc91cb176ad255ba">
+                <title>void amunmt::GPU::Encoder::RNN::InitializeState (size_t batchSize=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a52f3ef3e44fc6bf70543d5b264beba94">
+                <title>void amunmt::GPU::Encoder::RNN::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Embd)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a957c23ec361936201ad6a0b03dd05dc9">
+                <title>void amunmt::GPU::Encoder::RNN::Encode (It it, It end, mblas::Matrix &amp;Context, size_t batchSize, bool invert, const mblas::IMatrix *sentenceLengths=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a72bceb533a19da123fb575ca449692a0">
+                <title>CellLength amunmt::GPU::Encoder::RNN::GetStateLength () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d5d/classamunmt_1_1GPU_1_1Encoder_1_1RNN_1a1490e77313cb21fae7e5f5b18104786d">
+                <title>amunmt::GPU::Encoder::RNN::RNN (const RNN &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

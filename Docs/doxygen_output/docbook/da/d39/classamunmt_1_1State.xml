@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d39/classamunmt_1_1State">
+<title>amunmt::State class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d3b/scorer_8h">&lt;scorer.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::State</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d36/classamunmt_1_1State__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::State</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d80/classamunmt_1_1State__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d39/classamunmt_1_1State_1ab7f941d1593c857c03343366771aea60">State</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d39/classamunmt_1_1State_1a5c9537bf577c1ba8864cd14464a44d4f">State</link> (
+const <link linkend="da/d39/classamunmt_1_1State">State</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d39/classamunmt_1_1State_1aa1b69b8a6325bf5848413127dfa7b72b">~State</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T &amp; <link linkend="da/d39/classamunmt_1_1State_1a748a6dd71c6bc8b3aba0d2c85aa9e147">get</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const T &amp; <link linkend="da/d39/classamunmt_1_1State_1a84be8238cee2af984eb32192b633074d">get</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="da/d39/classamunmt_1_1State_1adb04a08cfc5f0aa9dc7a3e652b011f71">Debug</link> (
+size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1ab7f941d1593c857c03343366771aea60">
+                <title>amunmt::State::State ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1a5c9537bf577c1ba8864cd14464a44d4f">
+                <title>amunmt::State::State (const State &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1aa1b69b8a6325bf5848413127dfa7b72b">
+                <title>virtual amunmt::State::~State ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1a748a6dd71c6bc8b3aba0d2c85aa9e147">
+                <title>T&amp; amunmt::State::get ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1a84be8238cee2af984eb32192b633074d">
+                <title>const T&amp; amunmt::State::get () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d39/classamunmt_1_1State_1adb04a08cfc5f0aa9dc7a3e652b011f71">
+                <title>virtual std::string amunmt::State::Debug (size_t verbosity=1) const =0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

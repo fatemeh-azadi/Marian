@@ -1,0 +1,72 @@
+\hypertarget{classamunmt_1_1GPU_1_1Cell}{}\section{amunmt\+:\+:G\+PU\+:\+:Cell Class Reference}
+\label{classamunmt_1_1GPU_1_1Cell}\index{amunmt\+::\+G\+P\+U\+::\+Cell@{amunmt\+::\+G\+P\+U\+::\+Cell}}
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d0d/classamunmt_1_1GPU_1_1Cell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{d8/dcc/classamunmt_1_1GPU_1_1Cell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}{Get\+Next\+State} (\hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Next\+State, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&\hyperlink{classamunmt_1_1State}{State}, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Context) const =0
+\item 
+virtual \hyperlink{structamunmt_1_1GPU_1_1CellLength}{Cell\+Length} \hyperlink{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}{Get\+State\+Length} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file cell.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Cell@{amunmt\+::\+G\+P\+U\+::\+Cell}!Get\+Next\+State@{Get\+Next\+State}}
+\index{Get\+Next\+State@{Get\+Next\+State}!amunmt\+::\+G\+P\+U\+::\+Cell@{amunmt\+::\+G\+P\+U\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Get\+Next\+State(\+Cell\+State \&\+Next\+State, const Cell\+State \&\+State, const mblas\+::\+Matrix \&\+Context) const =0}{GetNextState(CellState &NextState, const CellState &State, const mblas::Matrix &Context) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amunmt\+::\+G\+P\+U\+::\+Cell\+::\+Get\+Next\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\+State} \&}]{Next\+State, }
+\item[{const {\bf Cell\+State} \&}]{State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Context}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}{}\label{classamunmt_1_1GPU_1_1Cell_a16d5711472cd8bdef9652d7a71a1f403}
+
+
+Implemented in \hyperlink{classamunmt_1_1GPU_1_1FastGRU_a80dfed3a6e61b1ee726085adb714deb0}{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+R\+U$<$ Weights $>$}, \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a1f485aad0d4da73469d58f61fc121341}{amunmt\+::\+G\+P\+U\+::\+Multiplicative$<$ Cell\+Type, Inner\+Weights $>$}, \hyperlink{classamunmt_1_1GPU_1_1SlowGRU_a56abd7ee93ad637ca54113fbc1427e01}{amunmt\+::\+G\+P\+U\+::\+Slow\+G\+R\+U$<$ Weights $>$}, and \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_a445547f2b64a36f61c0a62dc682364f3}{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+T\+M$<$ Weights $>$}.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Cell@{amunmt\+::\+G\+P\+U\+::\+Cell}!Get\+State\+Length@{Get\+State\+Length}}
+\index{Get\+State\+Length@{Get\+State\+Length}!amunmt\+::\+G\+P\+U\+::\+Cell@{amunmt\+::\+G\+P\+U\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Get\+State\+Length() const =0}{GetStateLength() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cell\+Length} amunmt\+::\+G\+P\+U\+::\+Cell\+::\+Get\+State\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}{}\label{classamunmt_1_1GPU_1_1Cell_a3ed600cc046f7428d6529a7c0cd3ae89}
+
+
+Implemented in \hyperlink{classamunmt_1_1GPU_1_1FastGRU_ae99ea776f3f65eb593621f733feffeb0}{amunmt\+::\+G\+P\+U\+::\+Fast\+G\+R\+U$<$ Weights $>$}, \hyperlink{classamunmt_1_1GPU_1_1SlowGRU_a2e14dcf46c2e4a4a171a43eec99dba87}{amunmt\+::\+G\+P\+U\+::\+Slow\+G\+R\+U$<$ Weights $>$}, \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM_aec4f004b4e6525758546bf164a5de90b}{amunmt\+::\+G\+P\+U\+::\+Slow\+L\+S\+T\+M$<$ Weights $>$}, and \hyperlink{classamunmt_1_1GPU_1_1Multiplicative_a5be06555bcb9b8415ae9558109aa2699}{amunmt\+::\+G\+P\+U\+::\+Multiplicative$<$ Cell\+Type, Inner\+Weights $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cell_8h}{cell.\+h}\end{DoxyCompactItemize}

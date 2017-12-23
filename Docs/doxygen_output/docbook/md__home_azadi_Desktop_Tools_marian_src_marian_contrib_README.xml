@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Contributing to Marian</title>
+
+<para><formalpara><title>Code style</title></formalpara>
+</para>
+
+<para>Main code style rules:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>no tabs, 2 whitespaces instead</para>
+</listitem><listitem>
+<para>lines no longer than 80 characters</para>
+</listitem><listitem>
+<para>no trailing whitespaces</para>
+</listitem><listitem>
+<para>no space between control statements and opening brackets</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Alternatively, use the provided <computeroutput>.clang-format</computeroutput> file for <link xlink:href="https://clang.llvm.org/docs/ClangFormat.html">ClangFormat</link> to format new code fragments, e.g.</para>
+
+<para>clang-format-3.8 &lt;path_to_file&gt;</para>
+
+<para><emphasis>Notice</emphasis>: If you want to merge your changes from the repository cloned before autoformatting on all files in the <emphasis>master</emphasis> repository, you may want to use the <computeroutput>autoformat.sh</computeroutput> script on your files before the merge. </para>
+
+</chapter>

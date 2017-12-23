@@ -1,0 +1,159 @@
+\hypertarget{classmarian_1_1MaxPooling}{}\section{marian\+:\+:Max\+Pooling Class Reference}
+\label{classmarian_1_1MaxPooling}\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+
+
+{\ttfamily \#include $<$convolution.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Max\+Pooling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{dd/de8/classmarian_1_1MaxPooling__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1MaxPooling_a99495c83c7c930ffe1a3b48bd839f4ab}{Max\+Pooling} (const std\+::string \&name, int height=1, int width=1, int stride\+Height=1, int stride\+Width=1)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1MaxPooling_a2c05a471949d1dbd2e001f9335c6891e}{operator()} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} x)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmarian_1_1MaxPooling_af7cdaff9d9b039ef09684dee1275338d}{height\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1MaxPooling_a4128608033be5e33a62c1fc9a0f0e3f0}{width\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1MaxPooling_a102c8a1113206b621dff3e8fb141af6d}{stride\+Height\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1MaxPooling_a9a2da00f129f889191418d6ee2932b26}{stride\+Width\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1MaxPooling_a4002ec5ca7e050ccfefec031bc7627a2}{params\+\_\+}
+\item 
+std\+::string \hyperlink{classmarian_1_1MaxPooling_aa39f6708157a3a169ae70c74aa61f611}{name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 106 of file convolution.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!Max\+Pooling@{Max\+Pooling}}
+\index{Max\+Pooling@{Max\+Pooling}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{Max\+Pooling(const std\+::string \&name, int height=1, int width=1, int stride\+Height=1, int stride\+Width=1)}{MaxPooling(const std::string &name, int height=1, int width=1, int strideHeight=1, int strideWidth=1)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Max\+Pooling\+::\+Max\+Pooling (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{int}]{height = {\ttfamily 1}, }
+\item[{int}]{width = {\ttfamily 1}, }
+\item[{int}]{stride\+Height = {\ttfamily 1}, }
+\item[{int}]{stride\+Width = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MaxPooling_a99495c83c7c930ffe1a3b48bd839f4ab}{}\label{classmarian_1_1MaxPooling_a99495c83c7c930ffe1a3b48bd839f4ab}
+
+
+Definition at line 108 of file convolution.\+h.
+
+
+\begin{DoxyCode}
+114       : \hyperlink{classmarian_1_1MaxPooling_aa39f6708157a3a169ae70c74aa61f611}{name\_}(name),
+115         \hyperlink{classmarian_1_1MaxPooling_af7cdaff9d9b039ef09684dee1275338d}{height\_}(height),
+116         \hyperlink{classmarian_1_1MaxPooling_a4128608033be5e33a62c1fc9a0f0e3f0}{width\_}(width),
+117         \hyperlink{classmarian_1_1MaxPooling_a102c8a1113206b621dff3e8fb141af6d}{strideHeight\_}(strideHeight),
+118         \hyperlink{classmarian_1_1MaxPooling_a9a2da00f129f889191418d6ee2932b26}{strideWidth\_}(strideWidth) \{
+119     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{operator()(\+Expr x)}{operator()(Expr x)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::\+Max\+Pooling\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MaxPooling_a2c05a471949d1dbd2e001f9335c6891e}{}\label{classmarian_1_1MaxPooling_a2c05a471949d1dbd2e001f9335c6891e}
+
+
+Definition at line 121 of file convolution.\+h.
+
+
+\begin{DoxyCode}
+121                             \{
+122       \hyperlink{classmarian_1_1MaxPooling_a4002ec5ca7e050ccfefec031bc7627a2}{params\_} = \{\};
+123       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_abfe3b8c37f479da0a31a1e843d8bdedf}{max\_pooling}(x, \hyperlink{classmarian_1_1MaxPooling_af7cdaff9d9b039ef09684dee1275338d}{height\_}, \hyperlink{classmarian_1_1MaxPooling_a4128608033be5e33a62c1fc9a0f0e3f0}{width\_}, 0, 0, 
+      \hyperlink{classmarian_1_1MaxPooling_a102c8a1113206b621dff3e8fb141af6d}{strideHeight\_}, \hyperlink{classmarian_1_1MaxPooling_a9a2da00f129f889191418d6ee2932b26}{strideWidth\_});
+124     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{de/dce/classmarian_1_1MaxPooling_a2c05a471949d1dbd2e001f9335c6891e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{height\+\_\+}{height_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Max\+Pooling\+::height\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1MaxPooling_af7cdaff9d9b039ef09684dee1275338d}{}\label{classmarian_1_1MaxPooling_af7cdaff9d9b039ef09684dee1275338d}
+
+
+Definition at line 131 of file convolution.\+h.
+
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{name\+\_\+}{name_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::\+Max\+Pooling\+::name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MaxPooling_aa39f6708157a3a169ae70c74aa61f611}{}\label{classmarian_1_1MaxPooling_aa39f6708157a3a169ae70c74aa61f611}
+
+
+Definition at line 128 of file convolution.\+h.
+
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!params\+\_\+@{params\+\_\+}}
+\index{params\+\_\+@{params\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{params\+\_\+}{params_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Expr}$>$ marian\+::\+Max\+Pooling\+::params\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1MaxPooling_a4002ec5ca7e050ccfefec031bc7627a2}{}\label{classmarian_1_1MaxPooling_a4002ec5ca7e050ccfefec031bc7627a2}
+
+
+Definition at line 127 of file convolution.\+h.
+
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!stride\+Height\+\_\+@{stride\+Height\+\_\+}}
+\index{stride\+Height\+\_\+@{stride\+Height\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{stride\+Height\+\_\+}{strideHeight_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Max\+Pooling\+::stride\+Height\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1MaxPooling_a102c8a1113206b621dff3e8fb141af6d}{}\label{classmarian_1_1MaxPooling_a102c8a1113206b621dff3e8fb141af6d}
+
+
+Definition at line 133 of file convolution.\+h.
+
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!stride\+Width\+\_\+@{stride\+Width\+\_\+}}
+\index{stride\+Width\+\_\+@{stride\+Width\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{stride\+Width\+\_\+}{strideWidth_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Max\+Pooling\+::stride\+Width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1MaxPooling_a9a2da00f129f889191418d6ee2932b26}{}\label{classmarian_1_1MaxPooling_a9a2da00f129f889191418d6ee2932b26}
+
+
+Definition at line 134 of file convolution.\+h.
+
+\index{marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!marian\+::\+Max\+Pooling@{marian\+::\+Max\+Pooling}}
+\subsubsection[{\texorpdfstring{width\+\_\+}{width_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Max\+Pooling\+::width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1MaxPooling_a4128608033be5e33a62c1fc9a0f0e3f0}{}\label{classmarian_1_1MaxPooling_a4128608033be5e33a62c1fc9a0f0e3f0}
+
+
+Definition at line 132 of file convolution.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{convolution_8h}{convolution.\+h}\end{DoxyCompactItemize}

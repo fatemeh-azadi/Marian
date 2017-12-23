@@ -1,0 +1,162 @@
+\hypertarget{classmarian_1_1rnn_1_1StackedCellFactory}{}\section{marian\+:\+:rnn\+:\+:Stacked\+Cell\+Factory Class Reference}
+\label{classmarian_1_1rnn_1_1StackedCellFactory}\index{marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Stacked\+Cell\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d65/classmarian_1_1rnn_1_1StackedCellFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Stacked\+Cell\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dcb/classmarian_1_1rnn_1_1StackedCellFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_a3566c87519f1a3d75acefdeb28c1fac0}{Stacked\+Cell\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1Cell}{Cell} $>$ \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_acfcb72125e0e6263f8af71d4b19210ba}{construct} ()
+\item 
+{\footnotesize template$<$class F $>$ }\\\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory}{Stacked\+Cell\+Factory} $>$ \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_ae927a1573ba34933dec52f02b9b66aab}{push\+\_\+back} (const F \&f)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{structmarian_1_1rnn_1_1StackableFactory}{Stackable\+Factory} $>$ $>$ \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}{stackable\+Factories\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 85 of file rnn/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}!Stacked\+Cell\+Factory@{Stacked\+Cell\+Factory}}
+\index{Stacked\+Cell\+Factory@{Stacked\+Cell\+Factory}!marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{Stacked\+Cell\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{StackedCellFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Stacked\+Cell\+Factory\+::\+Stacked\+Cell\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1StackedCellFactory_a3566c87519f1a3d75acefdeb28c1fac0}{}\label{classmarian_1_1rnn_1_1StackedCellFactory_a3566c87519f1a3d75acefdeb28c1fac0}
+
+
+Definition at line 90 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+90 : \hyperlink{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{CellFactory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Cell}$>$ marian\+::rnn\+::\+Stacked\+Cell\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1StackedCellFactory_acfcb72125e0e6263f8af71d4b19210ba}{}\label{classmarian_1_1rnn_1_1StackedCellFactory_acfcb72125e0e6263f8af71d4b19210ba}
+
+
+Reimplemented from \hyperlink{classmarian_1_1rnn_1_1CellFactory_a6d5ae6563bf3f0631b9b93b7f5eeb7b8}{marian\+::rnn\+::\+Cell\+Factory}.
+
+
+
+Definition at line 92 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+92                         \{
+93     \textcolor{keyword}{auto} stacked = New<StackedCell>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+94 
+95     \textcolor{keywordtype}{int} lastDimInput = \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dimInput"});
+96 
+97     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}{stackableFactories\_}.size(); ++i) \{
+98       \textcolor{keyword}{auto} sf = \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}{stackableFactories\_}[i];
+99 
+100       \textcolor{keywordflow}{if}(sf->is<\hyperlink{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{CellFactory}>()) \{
+101         \textcolor{keyword}{auto} cellFactory = sf->as<\hyperlink{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{CellFactory}>();
+102         cellFactory->getOptions()->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+103 
+104         sf->getOptions()->set(\textcolor{stringliteral}{"dimInput"}, lastDimInput);
+105         lastDimInput = 0;
+106 
+107         \textcolor{keywordflow}{if}(i == 0)
+108           \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} f : \hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_})
+109             cellFactory->add\_input(f);
+110 
+111         stacked->push\_back(cellFactory->construct());
+112       \}
+113       \textcolor{keywordflow}{else} \{
+114         \textcolor{keyword}{auto} inputFactory = sf->as<InputFactory>();
+115         inputFactory->getOptions()->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+116         \textcolor{keyword}{auto} input = inputFactory->construct();
+117         stacked->push\_back(input);
+118         lastDimInput += input->dimOutput();
+119       \}
+120     \}
+121     \textcolor{keywordflow}{return} stacked;
+122   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d9f/classmarian_1_1rnn_1_1StackedCellFactory_acfcb72125e0e6263f8af71d4b19210ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const F \&f)}{push_back(const F &f)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F $>$ {\bf Accumulator}$<${\bf Stacked\+Cell\+Factory}$>$ marian\+::rnn\+::\+Stacked\+Cell\+Factory\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const F \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1StackedCellFactory_ae927a1573ba34933dec52f02b9b66aab}{}\label{classmarian_1_1rnn_1_1StackedCellFactory_ae927a1573ba34933dec52f02b9b66aab}
+
+
+Definition at line 125 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+125                                                         \{
+126     \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}{stackableFactories\_}.push\_back(New<F>(f));
+127     \textcolor{keywordflow}{return} Accumulator<StackedCellFactory>(*this);
+128   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}!stackable\+Factories\+\_\+@{stackable\+Factories\+\_\+}}
+\index{stackable\+Factories\+\_\+@{stackable\+Factories\+\_\+}!marian\+::rnn\+::\+Stacked\+Cell\+Factory@{marian\+::rnn\+::\+Stacked\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{stackable\+Factories\+\_\+}{stackableFactories_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Stackable\+Factory}$>$ $>$ marian\+::rnn\+::\+Stacked\+Cell\+Factory\+::stackable\+Factories\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}{}\label{classmarian_1_1rnn_1_1StackedCellFactory_aadc7012abbf4a2e55d8d9415562dab10}
+
+
+Definition at line 87 of file rnn/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rnn_2constructors_8h}{rnn/constructors.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classmarian_1_1mlp_1_1MLPFactory}{}\section{marian\+:\+:mlp\+:\+:M\+L\+P\+Factory Class Reference}
+\label{classmarian_1_1mlp_1_1MLPFactory}\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:mlp\+:\+:M\+L\+P\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{dc/d06/classmarian_1_1mlp_1_1MLPFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:mlp\+:\+:M\+L\+P\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d3/d7e/classmarian_1_1mlp_1_1MLPFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1mlp_1_1MLPFactory_a135e6f01d76d5f10d687e5e63e0a7dbe}{M\+L\+P\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1mlp_1_1MLP}{M\+LP} $>$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory_adadee03fb4f6a53f3332d86b6571cfd7}{construct} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1mlp_1_1MLP}{M\+LP} $>$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory_a1b69334212c9c9c79d384a868b375be6}{operator-\/$>$} ()
+\item 
+{\footnotesize template$<$class LF $>$ }\\\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory}{M\+L\+P\+Factory} $>$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory_a7920938cb7287430fd3f8feac3f9729d}{push\+\_\+back} (const LF \&lf)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{structmarian_1_1mlp_1_1LayerFactory}{Layer\+Factory} $>$ $>$ \hyperlink{classmarian_1_1mlp_1_1MLPFactory_ace88ce2ce8efd26a24418119cc7bc5eb}{layers\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 92 of file layers/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}!M\+L\+P\+Factory@{M\+L\+P\+Factory}}
+\index{M\+L\+P\+Factory@{M\+L\+P\+Factory}!marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+\subsubsection[{\texorpdfstring{M\+L\+P\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{MLPFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+M\+L\+P\+Factory\+::\+M\+L\+P\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLPFactory_a135e6f01d76d5f10d687e5e63e0a7dbe}{}\label{classmarian_1_1mlp_1_1MLPFactory_a135e6f01d76d5f10d687e5e63e0a7dbe}
+
+
+Definition at line 97 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+97 : \hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf M\+LP}$>$ marian\+::mlp\+::\+M\+L\+P\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLPFactory_adadee03fb4f6a53f3332d86b6571cfd7}{}\label{classmarian_1_1mlp_1_1MLPFactory_adadee03fb4f6a53f3332d86b6571cfd7}
+
+
+Definition at line 99 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+99                        \{
+100     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp} = New<MLP>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+101     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} layer : \hyperlink{classmarian_1_1mlp_1_1MLPFactory_ace88ce2ce8efd26a24418119cc7bc5eb}{layers\_}) \{
+102       layer->getOptions()->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+103       \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp}->push\_back(layer->construct());
+104     \}
+105     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp};
+106   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d3a/classmarian_1_1mlp_1_1MLPFactory_adadee03fb4f6a53f3332d86b6571cfd7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf M\+LP}$>$ marian\+::mlp\+::\+M\+L\+P\+Factory\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLPFactory_a1b69334212c9c9c79d384a868b375be6}{}\label{classmarian_1_1mlp_1_1MLPFactory_a1b69334212c9c9c79d384a868b375be6}
+
+
+Definition at line 108 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+108                         \{
+109     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1mlp_1_1MLPFactory_adadee03fb4f6a53f3332d86b6571cfd7}{construct}();
+110   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d3a/classmarian_1_1mlp_1_1MLPFactory_a1b69334212c9c9c79d384a868b375be6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const L\+F \&lf)}{push_back(const LF &lf)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class LF $>$ {\bf Accumulator}$<${\bf M\+L\+P\+Factory}$>$ marian\+::mlp\+::\+M\+L\+P\+Factory\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const LF \&}]{lf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1MLPFactory_a7920938cb7287430fd3f8feac3f9729d}{}\label{classmarian_1_1mlp_1_1MLPFactory_a7920938cb7287430fd3f8feac3f9729d}
+
+
+Definition at line 113 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+113                                                   \{
+114     \hyperlink{classmarian_1_1mlp_1_1MLPFactory_ace88ce2ce8efd26a24418119cc7bc5eb}{layers\_}.push\_back(New<LF>(lf));
+115     \textcolor{keywordflow}{return} Accumulator<MLPFactory>(*this);
+116   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}!layers\+\_\+@{layers\+\_\+}}
+\index{layers\+\_\+@{layers\+\_\+}!marian\+::mlp\+::\+M\+L\+P\+Factory@{marian\+::mlp\+::\+M\+L\+P\+Factory}}
+\subsubsection[{\texorpdfstring{layers\+\_\+}{layers_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$<${\bf Layer\+Factory}$>$ $>$ marian\+::mlp\+::\+M\+L\+P\+Factory\+::layers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1mlp_1_1MLPFactory_ace88ce2ce8efd26a24418119cc7bc5eb}{}\label{classmarian_1_1mlp_1_1MLPFactory_ace88ce2ce8efd26a24418119cc7bc5eb}
+
+
+Definition at line 94 of file layers/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layers_2constructors_8h}{layers/constructors.\+h}\end{DoxyCompactItemize}

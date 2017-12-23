@@ -1,0 +1,2467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d22/namespacemarian">
+<title>marian</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/dc0/classmarian_1_1Accumulator">marian::Accumulator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d02/classmarian_1_1AccuracyValidator">marian::AccuracyValidator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/df8/classmarian_1_1Adagrad">marian::Adagrad</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d1e/classmarian_1_1Adam">marian::Adam</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d6a/structmarian_1_1AffineNodeOp">marian::AffineNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d69/classmarian_1_1AllocationException">marian::AllocationException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d4c/classmarian_1_1Allocator">marian::Allocator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d14/classmarian_1_1Amun">marian::Amun</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup">marian::AsyncGraphGroup</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d10/classmarian_1_1Backend">marian::Backend</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/df6/classmarian_1_1BackendGPU">marian::BackendGPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d4b/classmarian_1_1BeamSearch">marian::BeamSearch</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dff/classmarian_1_1Chainable">marian::Chainable</link></para>
+<para><emphasis>Abstraction of an element in a computation graph for which a
+derivative can be calculated.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d7e/classmarian_1_1ClipperBase">marian::ClipperBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d70/structmarian_1_1ColsNodeOp">marian::ColsNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d3e/structmarian_1_1ConcatenateNodeOp">marian::ConcatenateNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dba/classmarian_1_1Config">marian::Config</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d38/classmarian_1_1ConfigParser">marian::ConfigParser</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d86/structmarian_1_1ConstantNode">marian::ConstantNode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d2c/classmarian_1_1Convolution">marian::Convolution</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp">marian::CrossEntropyNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dde/classmarian_1_1CrossEntropyValidator">marian::CrossEntropyValidator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d04/classmarian_1_1DecoderBase">marian::DecoderBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt">marian::DecoderHardAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d21/classmarian_1_1DecoderHardSoftAtt">marian::DecoderHardSoftAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d4b/classmarian_1_1DecoderS2S">marian::DecoderS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d12/classmarian_1_1DecoderState">marian::DecoderState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d78/classmarian_1_1DecoderStateHardAtt">marian::DecoderStateHardAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d2d/classmarian_1_1DeviceCPU">marian::DeviceCPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/df6/classmarian_1_1DeviceGPU">marian::DeviceGPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/de1/structmarian_1_1DivNodeOp">marian::DivNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d8c/structmarian_1_1DotNodeOp">marian::DotNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dff/structmarian_1_1ElementBinaryNodeOp">marian::ElementBinaryNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/classmarian_1_1Elementwise">marian::Elementwise</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dc6/classmarian_1_1EncoderBase">marian::EncoderBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">marian::EncoderDecoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dad/classmarian_1_1EncoderDecoderBase">marian::EncoderDecoderBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d22/classmarian_1_1EncoderDecoderRec">marian::EncoderDecoderRec</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d50/classmarian_1_1EncoderDecoderSymmetric">marian::EncoderDecoderSymmetric</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8d/classmarian_1_1EncoderPooling">marian::EncoderPooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/dbc/classmarian_1_1EncoderS2S">marian::EncoderS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d1d/classmarian_1_1EncoderState">marian::EncoderState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dce/structmarian_1_1EncoderStateMultiS2S">marian::EncoderStateMultiS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d65/classmarian_1_1EncoderStatePooling">marian::EncoderStatePooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/dc7/structmarian_1_1ExpNodeOp">marian::ExpNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/db9/classmarian_1_1ExpressionGraph">marian::ExpressionGraph</link></para>
+<para><emphasis>Represents a computation graph of expressions, over which algorithmic
+differentiation may be performed.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d28/classmarian_1_1Factory">marian::Factory</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d5d/classmarian_1_1Filter">marian::Filter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/dd6/classmarian_1_1FilterInfo">marian::FilterInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d39/classmarian_1_1Gap">marian::Gap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dc4/classmarian_1_1GradientDropBase">marian::GradientDropBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbe/classmarian_1_1GraphGroup">marian::GraphGroup</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/dc6/classmarian_1_1History">marian::History</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/de9/classmarian_1_1Hypothesis">marian::Hypothesis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/deb/structmarian_1_1LayerNormalizationOp">marian::LayerNormalizationOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d07/classmarian_1_1LexicalBias">marian::LexicalBias</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/da9/structmarian_1_1LexicalProbNodeOp">marian::LexicalProbNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/da3/classmarian_1_1LexProbs">marian::LexProbs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d06/structmarian_1_1LogitNodeOp">marian::LogitNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d51/structmarian_1_1LogNodeOp">marian::LogNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d92/structmarian_1_1LogSoftmaxNodeOp">marian::LogSoftmaxNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dce/classmarian_1_1MaxPooling">marian::MaxPooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dfa/structmarian_1_1MeanNodeOp">marian::MeanNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d97/classmarian_1_1MemoryPiece">marian::MemoryPiece</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/de6/structmarian_1_1MinusNodeOp">marian::MinusNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d2d/structmarian_1_1ModelTask">marian::ModelTask</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d9a/classmarian_1_1Motorway">marian::Motorway</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt">marian::MultiDecoderHardSoftAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d3b/classmarian_1_1MultiDecoderS2S">marian::MultiDecoderS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d1e/classmarian_1_1MultiEncoder">marian::MultiEncoder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d14/classmarian_1_1MultiHardSoftAtt">marian::MultiHardSoftAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/de8/classmarian_1_1MultiS2S">marian::MultiS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d98/structmarian_1_1MultNodeOp">marian::MultNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da7/structmarian_1_1NaryNodeOp">marian::NaryNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d57/structmarian_1_1NegNodeOp">marian::NegNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d7a/classmarian_1_1Node">marian::Node</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/df5/classmarian_1_1Norm">marian::Norm</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d36/classmarian_1_1NthElement">marian::NthElement</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d6e/classmarian_1_1OptimizerBase">marian::OptimizerBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/db8/classmarian_1_1Options">marian::Options</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/de8/classmarian_1_1OutputCollector">marian::OutputCollector</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d36/classmarian_1_1Parameters">marian::Parameters</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/db7/structmarian_1_1ParamNode">marian::ParamNode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d9a/classmarian_1_1PerplexityValidator">marian::PerplexityValidator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8b/structmarian_1_1PlusNodeOp">marian::PlusNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/daf/structmarian_1_1ReLUNodeOp">marian::ReLUNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbf/classmarian_1_1Rescore">marian::Rescore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d6f/classmarian_1_1Rescorer">marian::Rescorer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d2d/classmarian_1_1ReshapeNodeOp">marian::ReshapeNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dfd/structmarian_1_1RowsNodeOp">marian::RowsNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d85/classmarian_1_1S2SValidator">marian::S2SValidator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/df0/structmarian_1_1ScalarAddNodeOp">marian::ScalarAddNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d6d/structmarian_1_1ScalarMultNodeOp">marian::ScalarMultNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbf/structmarian_1_1ScalarProductNodeOp">marian::ScalarProductNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dab/classmarian_1_1Scheduler">marian::Scheduler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d10/classmarian_1_1ScoreCollector">marian::ScoreCollector</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dbc/classmarian_1_1Scorer">marian::Scorer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dcc/classmarian_1_1ScorerState">marian::ScorerState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dbc/classmarian_1_1ScorerWrapper">marian::ScorerWrapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dfb/classmarian_1_1ScorerWrapperState">marian::ScorerWrapperState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d8c/classmarian_1_1ScriptValidator">marian::ScriptValidator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/da5/classmarian_1_1Sgd">marian::Sgd</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d54/structmarian_1_1Shape">marian::Shape</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dbf/structmarian_1_1ShapeGPU">marian::ShapeGPU</link></para>
+<para><emphasis>Represents the size of each dimension in a tensor.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp">marian::ShiftNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/da9/classmarian_1_1SingletonGraph">marian::SingletonGraph</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d60/structmarian_1_1SoftmaxNodeOp">marian::SoftmaxNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db9/classmarian_1_1SparseTensorBase">marian::SparseTensorBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d71/structmarian_1_1SqrtNodeOp">marian::SqrtNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd5/structmarian_1_1SquareNodeOp">marian::SquareNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d7a/structmarian_1_1SumNodeOp">marian::SumNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d8a/structmarian_1_1TanhNodeOp">marian::TanhNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/df2/classmarian_1_1TensorAllocator">marian::TensorAllocator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d3c/classmarian_1_1TensorBase">marian::TensorBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d5b/classmarian_1_1TensorCPU">marian::TensorCPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d75/classmarian_1_1TimestepNodeOp">marian::TimestepNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d14/classmarian_1_1Train">marian::Train</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d46/classmarian_1_1TrainingObserver">marian::TrainingObserver</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dbf/classmarian_1_1TrainingState">marian::TrainingState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d0c/classmarian_1_1TrainMNIST">marian::TrainMNIST</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dae/classmarian_1_1TranslateMultiGPU">marian::TranslateMultiGPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dc5/structmarian_1_1TransposeNodeOp">marian::TransposeNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dd2/structmarian_1_1UnaryNodeOp">marian::UnaryNodeOp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/de6/classmarian_1_1UnseenWordPenalty">marian::UnseenWordPenalty</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/da1/classmarian_1_1Validator">marian::Validator</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd1/classmarian_1_1Vocab">marian::Vocab</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d3d/classmarian_1_1Word2VecReader">marian::Word2VecReader</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d63/classmarian_1_1WordPenalty">marian::WordPenalty</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d0c/classmarian_1_1WordPenaltyState">marian::WordPenaltyState</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d56/namespacemarian_1_1data">marian::data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dec/namespacemarian_1_1inits">marian::inits</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d04/namespacemarian_1_1keywords">marian::keywords</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/de4/namespacemarian_1_1mlp">marian::mlp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d27/namespacemarian_1_1models">marian::models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d18/namespacemarian_1_1rnn">marian::rnn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d55/namespacemarian_1_1sparse">marian::sparse</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9">ConfigMode</link> {
+<link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214">training</link>,
+<link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b">translating</link>,
+<link linkend="da/d22/namespacemarian_1aaddd4b008ff5352b1fe7e16574f7e1f9a6911beb2d5fc11863fef8f5daee5a184">rescoring</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; T &gt;  <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::unique_ptr&lt; T &gt;  <link linkend="da/d22/namespacemarian_1aef1c1bbe14b70285b1e8f7653f134cb1">UPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::weak_ptr&lt; T &gt;  <link linkend="da/d22/namespacemarian_1acde6307b95538fbf82548c2e1108ccf4">Weak</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/d3c/classmarian_1_1TensorBase">TensorBase</link> &gt;  <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/dff/classmarian_1_1Chainable">Chainable</link>&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; &gt;  <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link><para><emphasis>Defines a convenience type to represent a shared pointer to a
+Chainable&lt;Tensor&gt; object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d8/d6e/classmarian_1_1OptimizerBase">OptimizerBase</link> &gt;  <link linkend="da/d22/namespacemarian_1a63563426eab459d09fa044eb645c71e1">OptimizerBasePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d8/d7e/classmarian_1_1ClipperBase">ClipperBase</link> &gt;  <link linkend="da/d22/namespacemarian_1ae7082987f4bcf1b02bf5b23e1ebebacb">ClipperBasePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; RunBase &gt;  <link linkend="da/d22/namespacemarian_1a0b57f584ee553f4bbacf654ce953f1a5">RunBasePtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef size_t  <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> &gt;  <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; std::function&lt; void()&gt; &gt;  <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1acde6307b95538fbf82548c2e1108ccf4">Weak</link>&lt; <link linkend="de/dff/classmarian_1_1Chainable">Chainable</link>&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; &gt;  <link linkend="da/d22/namespacemarian_1a2b926a792e343705a2eb5224771f47de">WExpr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d4/d9a/classmarian_1_1Motorway">Motorway</link>  <link linkend="da/d22/namespacemarian_1a7d8e9572693ffcfd9836ee46cd4b81ce">Highway</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">EncoderDecoder</link>&lt; <link linkend="dd/d8d/classmarian_1_1EncoderPooling">EncoderPooling</link>, <link linkend="d3/d4b/classmarian_1_1DecoderS2S">DecoderS2S</link> &gt;  <link linkend="da/d22/namespacemarian_1a9c309a030b3dc0b8fad7dfa3d584c3c1">Pooling</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d9/d50/classmarian_1_1EncoderDecoderSymmetric">EncoderDecoderSymmetric</link>&lt; <link linkend="da/d22/namespacemarian_1a83eeb152f60aff415a60e0bde62fcb85">S2S</link> &gt;  <link linkend="da/d22/namespacemarian_1a48b010253fa71c5bcb6f5016662d5ff6">SymmetricS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">EncoderDecoder</link>&lt; <link linkend="d3/dbc/classmarian_1_1EncoderS2S">EncoderS2S</link>, <link linkend="d1/dcc/classmarian_1_1DecoderHardAtt">DecoderHardAtt</link> &gt;  <link linkend="da/d22/namespacemarian_1a8c218ad930486503729d954880f0b29d">HardAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">EncoderDecoder</link>&lt; <link linkend="d3/dbc/classmarian_1_1EncoderS2S">EncoderS2S</link>, <link linkend="de/d21/classmarian_1_1DecoderHardSoftAtt">DecoderHardSoftAtt</link> &gt;  <link linkend="da/d22/namespacemarian_1a510c9e6926b0b3808cea5dff79e8d984">HardSoftAtt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link>  <link linkend="da/d22/namespacemarian_1a137d04212ba21a89d625a75676d91939">DecoderStateMultiS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d3/d1e/classmarian_1_1MultiEncoder">MultiEncoder</link>&lt; <link linkend="d3/dbc/classmarian_1_1EncoderS2S">EncoderS2S</link>, <link linkend="d3/dbc/classmarian_1_1EncoderS2S">EncoderS2S</link> &gt;  <link linkend="da/d22/namespacemarian_1ae5c33c87d5d69701dccd48b503ec7d6a">MultiEncoderS2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="d7/d2c/classmarian_1_1EncoderDecoder">EncoderDecoder</link>&lt; <link linkend="d3/dbc/classmarian_1_1EncoderS2S">EncoderS2S</link>, <link linkend="d3/d4b/classmarian_1_1DecoderS2S">DecoderS2S</link> &gt;  <link linkend="da/d22/namespacemarian_1a83eeb152f60aff415a60e0bde62fcb85">S2S</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="d8/d7e/classmarian_1_1ClipperBase">ClipperBase</link> &gt;  <link linkend="da/d22/namespacemarian_1aae0207a20df3fdd1b9913aa55eafb8b9">ClipperPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/dc4/classmarian_1_1GradientDropBase">GradientDropBase</link> &gt;  <link linkend="da/d22/namespacemarian_1a000da7078105881168a3f17ce1b148bb">GradientDrop</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::shared_ptr&lt; <link linkend="d2/db9/classmarian_1_1SparseTensorBase">SparseTensorBase</link> &gt;  <link linkend="da/d22/namespacemarian_1a5484064f1fce2661d0b27a5c02a9392b">SparseTensor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="d5/dc6/classmarian_1_1History">History</link> &gt;  <link linkend="da/d22/namespacemarian_1a805aaffc4cae6d189e6a22d2a14cca84">Histories</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/de9/classmarian_1_1Hypothesis">Hypothesis</link> &gt; &gt;  <link linkend="da/d22/namespacemarian_1aebdf5ddcd9e7774939696be6e1ceb8f0">Beam</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="da/d22/namespacemarian_1aebdf5ddcd9e7774939696be6e1ceb8f0">Beam</link> &gt;  <link linkend="da/d22/namespacemarian_1a441398c850e4cb52313dba352de1a1bc">Beams</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; <link linkend="da/d22/namespacemarian_1a5385eef6e49dd8f789f616ef579dea3f">Words</link>, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/de9/classmarian_1_1Hypothesis">Hypothesis</link> &gt; &gt;  <link linkend="da/d22/namespacemarian_1a39014b8d5e6a286ac891f3da661d6a46">Result</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::vector&lt; <link linkend="da/d22/namespacemarian_1a39014b8d5e6a286ac891f3da661d6a46">Result</link> &gt;  <link linkend="da/d22/namespacemarian_1aaae4a49bda201e73a4671babdb7df6b8">NBestList</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t <link linkend="da/d22/namespacemarian_1a3df798260496f2cf8c2d39272ce213ad">SHAPE_SIZE</link><para><emphasis>Represents the size of each dimension in a tensor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1a58eb44c6e8969831f40ee27feeed33ed">EOS_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1abe23e32294ac45b7fe50b5ee8d7da9ba">UNK_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1ae9a4ff3b7d4df0a6ea4a710810c5b6f6">EOS_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1a85fabda4ef9ec625d0c992f81292dc92">UNK_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1a5a9abba7ca69af7bf465e68f8f7169c5">STP_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1a332a04943d2fc4bba824afc099e46190">CPY_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1a3602e294027f4df7aeba04dd25e83db6">DEL_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> <link linkend="da/d22/namespacemarian_1ae421bed2a0160f392a3c21bed9cabc73">RPL_ID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1ac2ced42d12025e2b9688b345ac777ea7">STP_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1aafe70f6fe2652d0c8712f08bc4e2c8f6">CPY_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1aa9c98f79752cd2294cae93a90ffcf9d3">DEL_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d22/namespacemarian_1a0609886bc1d9c2f4fc75e5e9fc6905ad">RPL_STR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::unordered_map&lt; std::string, <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link> &gt; <link linkend="da/d22/namespacemarian_1a53db7e8e290296787decc0fd95948535">SPEC2SYM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::unordered_map&lt; <link linkend="da/d22/namespacemarian_1a5db8bee455c97a62d6a525dc48efe4c2">Word</link>, std::string &gt; <link linkend="da/d22/namespacemarian_1a70398af3e3d1cc14ff372edcdc1a2595">SYM2SPEC</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="da/d22/namespacemarian_1ac3c48e15e9e2d80e8028b1688190a9e7">MAX_THREADS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="da/d22/namespacemarian_1a596290b68dad437e90054f558f7d2d83">MAX_BLOCKS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="da/d22/namespacemarian_1aa656da9ccb3e53462fef9b9745616b57">guess_terminal_width</link> (
+uint16_t max_width)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a4017daa42159d6a6465637380fb81bbf">OutputYaml</link> (
+const YAML::Node node, YAML::Emitter &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a88f36a7ce9ef4d686bb5e31220481d96">ProcessPaths</link> (
+YAML::Node &amp; node, const boost::filesystem::path &amp; configPath, bool isPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; T &gt; <link linkend="da/d22/namespacemarian_1afe55543784336e96f224f9d88206d1fb">New</link> (
+Args &amp;&amp;... args)<para><emphasis>Creates shared_ptr of any type, passes all arguments to any available
+constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; T &gt; <link linkend="da/d22/namespacemarian_1a8b5635e6b01553e78bfab781201e5d12">New</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; T &gt; p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ad462a1e871db086ba7e97c6d3abdef34">Expression</link> (
+Args &amp;&amp;... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a442bfa469f081af4c2665c341efc71ce">debug</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, const std::string &amp; message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ace1e9a63d52edc363d70d661cf8d0257">rows</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ab9fbdcc76cc853270094524572584222">cols</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a857d82a0343a47a1d864deac823a5f3e">plus</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a72a6c5cedeadde602b3621a3450dbebe">logit</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a1d8d60c90679163c7e9306dd963d981c">logit</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ab84fcdb2b1fa95f89e3921aea4027957">tanh</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ae5810f27b42d7d5f9b83ae23ddf544f2">tanh</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a6228f7e46aeed337e3886df6446b7840">relu</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ac6862e08641f7b69fac5012cf377e0d1">relu</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a0f3132fbaaaf9a5f2c1cbf6e3ad8f5f5">log</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a4d47fe908c56b6de5c71209339461321">exp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ae39f821d2f92647251cfb015fe07f4db">operator-</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a4634bf0330cd2ba9cdfcdc868aff5f31">operator+</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a24de4feecfaaf554c1a0a5221de2a5dc">operator+</link> (
+float a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a6987ca2c3590a14cdd96999e01593600">operator+</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a95ebcb81d4b23c6c11463de49ba1b3cb">operator-</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a4980c825bcd4d4fd369cce025dc9e45e">operator-</link> (
+float a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a30a0eed503c8c667b2c66f5ee8c9c6b5">operator-</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a6aaf9b9fe6f3717c4319e926330f2c22">operator*</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a9733ed505673313bd944e7e04ce7b606">operator*</link> (
+float a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a80d27bc20c3653d6d7882f9087f10390">operator*</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a1b719c7a542512dbc5a589f92114be62">operator/</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a06c2e6bdcd86d1d0466591b05cc7c0d0">operator/</link> (
+float a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a4d70c319f9e3a8de38cb564fd92c9944">operator/</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ad7fbf1ba8e2e04ffdc7d5e4841b5e691">dot</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a00669690ef16ce9b1bde5ee9d1b77ac6">transpose</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a2791a2c8f79a938f5cb22ae613680675">concatenate</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; concats, <link linkend="d4/d04/namespacemarian_1_1keywords_1a10b8b729f40b2bc6f4b9d1f4486d03a4">keywords::axis_k</link> ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1acd984f43188d0ae23c2a6ef13ae5293f">reshape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1aea8d2acadf0d96f6e455addd57cba80d">flatten</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a460460a6de63beebc5d968b44d49d11b">sum</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="d4/d04/namespacemarian_1_1keywords_1a10b8b729f40b2bc6f4b9d1f4486d03a4">keywords::axis_k</link> ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a3c08107d509be52ee2c17eb6d54c7ebc">softmax</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a471a2cbd15b4094528a1643abc814bb6">logsoftmax</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a15ec9743709e47180378db974ddbf116">mean</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="d4/d04/namespacemarian_1_1keywords_1a10b8b729f40b2bc6f4b9d1f4486d03a4">keywords::axis_k</link> ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a37652ca2a00f3c36816fe5fec28104a0">cross_entropy</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1aefe65d738dc9a0536f3a1f9346b8d47b">affine</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a7bed97354565d7b751bed999c6c203e3">scalar_product</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, <link linkend="d4/d04/namespacemarian_1_1keywords_1a10b8b729f40b2bc6f4b9d1f4486d03a4">keywords::axis_k</link> ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a8ccb9507a69a32ecd48410fd1557f209">weighted_average</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> in, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> weights, <link linkend="d4/d04/namespacemarian_1_1keywords_1a10b8b729f40b2bc6f4b9d1f4486d03a4">keywords::axis_k</link> ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a2e7193e67292a4c3347f296f5e669581">step</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, size_t step)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ac5f147047403fcdab5481c89dc1d8212">sqrt</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, float eps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a953e6df1fb209a142e066a2546d88c8a">square</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a6202278a9da8ca8a281a6a96e75082f6">layer_norm</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> gamma, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> beta)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a268400392f22176821c7c4a36733b178">dropout</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a763e5e9b5d5a329d2420fe9bab95476d">shift</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> , <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a3dbe8b5eb203876cd08cf3fe75a1c6bc">convolution</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> filters, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> bias)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a8ee119d3ee4867a3c826de62ea1de4f5">avg_pooling</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, int height, int width, int padHeight, int padWidth, int strideHeight, int strideWidth)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1abfe3b8c37f479da0a31a1e843d8bdedf">max_pooling</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, int height, int width, int padHeight, int padWidth, int strideHeight, int strideWidth)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a5f2633d87f49d6a2a46c44c7100013fc">Dropout</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> tensor, float h, curandGenerator_t gen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a6fb26370e7acf6cf1fd9b03b6af6210e">Gaussian</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> tensor, float mean, float stddev, curandGenerator_t gen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cublasHandle_t <link linkend="da/d22/namespacemarian_1aefcaef2db4de43d9bdd30a750da6e78b">create_handle</link> (
+size_t )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a6e23ca23d59f5e88256ee5257c412f2f">gAddR2</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a35418d90c9b90cff0b6a21d2e00c045a">gAddR2Eq</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, float scale, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a0e46ef4c37b91562f6b1debd5d1e3d8f">gAdd1R2</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a0ee0e667d3fcfdc776e4dddaffeea6e2">Add</link> (
+Functor functor, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ad1f1697aac9247a78d2242921d538402">Reduce</link> (
+Functor functor, T1 out, T2 in, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a690541df38dba6c9e5fbd9237945f673">gAddR3</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in2Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a0a08b33ffd2a9dfa67f0994a15685cd0">gAddR3Eq</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape2, float scale, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a44155273ebd81acda4f4878c7c9b6077">gAdd1R3</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in2Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a1876c27c6adb42553caa12d2c267e074">Add</link> (
+Functor functor, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in1, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in2, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a175b569d0c1b2c89409b964305bbb426">Reduce</link> (
+Functor functor, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in1, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in2, float scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a07c7c2280aabd4e48cdba0d2cf4a917d">gAddR4</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in2Shape, const float * in3, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in3Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a7caa3e7e7bc68c5174a625bd23f2ff8d">gAdd1R4</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in1Shape, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in2Shape, const float * in3, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> in3Shape, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> full)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a5b77f356db43dd0f5ca6eeb10b3ed27b">gAddR4Eq</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape2, const float * in3, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape3, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1afc796f7741733c0887737b61ad6da946">Add</link> (
+Functor functor, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in1, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in2, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ab0049b69592fcc4f7e92641c4d960315">Reduce</link> (
+Functor functor, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in1, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in2, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1aea1055f9f625245cb25935ac339ec283">gElement</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1af90a9ca647f95f9d9d18ac8901c55fb1">Element</link> (
+Functor functor, T1 out, T2 in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1ac56e4fc572e5267a3af0d36864ce665f">gElement</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape2, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ad6fbbc10b0be7e4b842ed71399cca997">Element</link> (
+Functor functor, T1 out, T2 in1, T3 in2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a6ef6e7153edbf1059f24fc8c3f399996">gElement</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape2, const float * in3, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape3, bool broadcast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a108cae15db18ddbf2e345484d3b85eb8">Element</link> (
+Functor functor, T1 out, T2 in1, T3 in2, T4 in3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a61526f5441180f474625a4f7af62172c">gElement</link> (
+Functor functor, float * out, int length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1adcc096ade4f61f451e668c08ff52a924">Element</link> (
+Functor functor, T1 out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a10cae6ac3354fc0097e75cbbba277323">gPick</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1af4c11b5776ff838d3db3d228336802fd">Pick</link> (
+Functor functor, T1 out, const T2 picks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1aaa967e002381c4e5cce7a7c12d758347">gPick</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape, const float * pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1aaad2bafac169bc8b4de2364bd9a228cb">Pick</link> (
+Functor functor, T1 out, const T2 in, const T3 picks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1ababfcb483a7f3ca788a8b2d58f30cc9d">gPickReduce</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape, const float * pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a5d3645642f3d84d3109b851c5b5ce6f7">PickReduce</link> (
+Functor functor, T1 out, const T2 in, const T3 picks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1ae50ba9da16682ded79ad115d7883d49e">gPick</link> (
+Functor functor, float * out, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> outShape, const float * in1, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape1, const float * in2, const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> inShape2, const float * pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a4dcaa19981e73d7875242f2ae1fdd11c">Pick</link> (
+Functor functor, T1 out, const T2 in1, const T3 in2, const T4 picks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="da/d22/namespacemarian_1ae46885b8c35f2b67a2dc65f71e0e4efd">L2Norm</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a01a45889e366b16c79c2cc067f534021">Softmax</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a9dd94a109bd8ccf8e8269bd1d7a86c18">LogSoftmax</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a7da9b69aeeeb493a8c19c3e07b831a92">SoftmaxGrad</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grad, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a4f9d12af1543fda2c0f22dce56050aba">LogSoftmaxGrad</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grad, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a9edd9deddefcee4caf236da00cebe810">CudnnSoftmax</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1af0841b9f603922b0ae92f8fd76c1f5e0">CudnnSoftmaxGrad</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grad, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a658f77291edab2b88417f988781ab07f">CudnnLogSoftmax</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a6b88b6fa809d1fb3ad2399f4b55dd552">CudnnLogSoftmaxGrad</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> grad, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a22ac2bab1004e993e09c272af096cbc3">CrossEntropyPick</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ad12afd6fbca17c63f3444bdbd535c146">CrossEntropyPickBackward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> a, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> pick)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a64116355f8cb16a51c1408df4a3b2b28">Argmax</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> Out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> In)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a509f2975b7c8da70df1cd56de5d3e79e">Prod</link> (
+cublasHandle_t handle, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> C, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> A, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> B, bool transA, bool transB, float beta)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a73ee0cc090c0041df53e3732c5b04462">CopyRowsByIndex</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, thrust::pair&lt; size_t, size_t &gt; * ipair, size_t length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ab292638adfb1873067440a6af74d5ed5">CopyRows</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1aed67e17a4ad7b437ef6361538d1a0023">PasteRows</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a7b1294cb49c42d55331bccbf1def82ba">CopyCols</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1afd1a77f3d0ba7b8b2f1e8daf788159d1">PasteCols</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, const std::vector&lt; size_t &gt; &amp; indeces)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a170142cc4ea06bbb5f76a15a8da4487c">Transpose</link> (
+cublasHandle_t cublasHandle, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a680fee5f243683d820950c554db89df7">Concatenate</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, const std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; &amp; inputs, int ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a09b0dc48a7ac0f9ed26bb50045d7cf1c">Deconcatenate</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; &amp; outputs, const <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, int ax)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1af0eb4b8f5cdcd9947c2974c7c6a12563">LSTMCellForward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a0b45c3ca238a4718908712266a40d4a1">LSTMOutputForward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a373ffb9ba8aae7bd12782b8bf10d005f">LSTMCellBackward</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; outputs, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a4d96e5240735c5a9f47277706dd36ab7">LSTMOutputBackward</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; outputs, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a7b5a0d3c521022a7428ded80cec80686">GRUFastForward</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs, bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a62e537291759d564584ab5190e4c1629">GRUFastBackward</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; outputs, std::vector&lt; <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &gt; inputs, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, bool final)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1acac7e44cebb8b07629f222a92850ed82">Att</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> va, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> context, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> state, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> coverage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a62c7d3b55778baafc734053c4a5f74f3">AttBack</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gva, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gContext, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gState, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gCoverage, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> va, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> context, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> state, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> coverage, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1abfa30c8448843205e713435663fb6cdd">LayerNormalization</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gamma, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> beta, float eps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a1c8cfe7e5243790c154153cd5e048b50">LayerNormalizationGrad</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gradX, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gradGamma, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gradBeta, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> adj, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> y, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> x, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> gamma, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> beta)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ab7bd780a3ab8d3147c56bf9ea6e93232">Shift</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> out, <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> in, <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> shift, bool invert)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1ae6e439cac87eb95867c71f9d45591b8f">SetSparse</link> (
+float * , const std::vector&lt; size_t &gt; &amp; indeces, const std::vector&lt; float &gt; &amp; values)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1a1d13d69eb58fd5635225dbfbae4f4292">guidedAlignmentCost</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> att)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1aa26f29df56274ac4295192e4b43c8fac">MeanInTime</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, int k)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="da/d22/namespacemarian_1ae5b4088136fa6f7ebc01aed5a2d65c5c">ConvolutionInTime</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, int k, std::string name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/d2d/structmarian_1_1ModelTask">ModelTask</link> &gt; <link linkend="da/d22/namespacemarian_1ac15754f657b81a6e5edbd835b6d6aead">WrapModelType</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ae7082987f4bcf1b02bf5b23e1ebebacb">ClipperBasePtr</link> <link linkend="da/d22/namespacemarian_1a991e7dc9706863853c983f2d850e607a">Clipper</link> (
+Args &amp;&amp;... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d8/d6e/classmarian_1_1OptimizerBase">OptimizerBase</link> &gt; <link linkend="da/d22/namespacemarian_1adcc0fde2e522c9f55abdca1186c9a6db">Optimizer</link> (
+float eta, Args &amp;&amp;... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d8/d6e/classmarian_1_1OptimizerBase">OptimizerBase</link> &gt; <link linkend="da/d22/namespacemarian_1a38852784082dcc4b8e892b0751a04257">Optimizer</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> <link linkend="da/d22/namespacemarian_1ae2a878168bf7c77878fe977ede2eb842">operator&lt;&lt;</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, const std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> <link linkend="da/d22/namespacemarian_1ae120a5a7c3d0061ee7ba93a70537dc4b">operator&gt;&gt;</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> t, std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1ad52c2ed4c1cb5883cc029c4d7ff500e3">grad_drop</link> (
+float * data, float * tmp, float * errors, float cut_off, int max_size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a73f09514b9433048ccaf4d07059fc6b9">grad_add_error</link> (
+float * data, float * errors, int max_size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a3c73193a12dc93840c7d8bfec3df5dd1">full_abs</link> (
+float * data, int max_size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1a2f5bce2be75828dd7d0484aa48830564">buildIndices</link> (
+float * denseData, float * denseSum, float * sparseData, int * sparseIndices, int denseSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1aca9103c0b9695e03f87782c1ffc21d3a">randomSampling</link> (
+float * originalData, float * data, int size, int scale, int fullSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1adc3c4f8758198c5bc99f8ed1513592a8">gScatterAdd</link> (
+float * denseData, float * sparseData, int * sparseIndices, int denseSize, int sparseSize, int offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__global__ void <link linkend="da/d22/namespacemarian_1ad5d3e80a51721c2ad517fa4b1b85f0a3">gFindSubtensor</link> (
+int * indices, int size, int targetStart, int targetEnd, int * resultStart, int * resultEnd)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="de/da1/classmarian_1_1Validator">Validator</link>&lt; <link linkend="d9/daf/classmarian_1_1data_1_1Corpus">data::Corpus</link> &gt; &gt; &gt; <link linkend="da/d22/namespacemarian_1a691f0c637b8713ff7972cdd276f2e099">Validators</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt;&gt; vocabs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a1a6a78f80709472d63948acfbce75000">suppressUnk</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a20fd4638030b78bfd5e965a5e6344fa5">suppressWord</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; <link linkend="da/d22/namespacemarian_1a49a499e87a63f466833f0e3a4226ac7d">GetAlignment</link> (
+const HypothesisPtr &amp; hypothesis)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="da/d22/namespacemarian_1a9ddf4c02d2ea11d99b10769ecfa42488">GetAlignmentString</link> (
+const std::vector&lt; size_t &gt; &amp; alignment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d22/namespacemarian_1a3a6ae585e5e6554beee2ab09a6433e83">Printer</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; vocab, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d5/dc6/classmarian_1_1History">History</link> &gt; history, OStream &amp; best1, OStream &amp; bestn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/dbc/classmarian_1_1Scorer">Scorer</link> &gt; <link linkend="da/d22/namespacemarian_1a1ed6060be1629d300bbdad6f12991106">scorerByType</link> (
+std::string fname, float weight, std::string model, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/dbc/classmarian_1_1Scorer">Scorer</link> &gt; &gt; <link linkend="da/d22/namespacemarian_1aa68a12c768f24cc7d06314eadfab8938">createScorers</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Parent namespace for the Marian project. </para>
+    </simplesect>
+</section>

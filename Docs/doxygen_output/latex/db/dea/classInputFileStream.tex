@@ -1,0 +1,233 @@
+\hypertarget{classInputFileStream}{}\section{Input\+File\+Stream Class Reference}
+\label{classInputFileStream}\index{Input\+File\+Stream@{Input\+File\+Stream}}
+
+
+{\ttfamily \#include $<$file\+\_\+stream.\+h$>$}
+
+
+
+Collaboration diagram for Input\+File\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{dc/d85/classInputFileStream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInputFileStream_af04290c34c232c3e7e6f947833df3dd7}{Input\+File\+Stream} (const std\+::string \&file)
+\item 
+\hyperlink{classInputFileStream_a8534a6700e1b89a3999ab36d711b0fdf}{Input\+File\+Stream} (\hyperlink{classTemporaryFile}{Temporary\+File} \&tempfile)
+\item 
+\hyperlink{classInputFileStream_a6563174a509386539e1b9a347b6c78b2}{Input\+File\+Stream} (std\+::istream \&strm)
+\item 
+\hyperlink{classInputFileStream_a8cf0a5adcc6fae4f3f0244da0c6bddf3}{operator bool} ()
+\item 
+std\+::string \hyperlink{classInputFileStream_a5298a928a5d19bf88db3c4b9e1e52b45}{path} ()
+\item 
+bool \hyperlink{classInputFileStream_a3d8e85a070ded9cc9195da0ab93918d5}{empty} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::filesystem\+::path \hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\+\_\+}
+\item 
+boost\+::filesystem\+::ifstream \hyperlink{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}{ifstream\+\_\+}
+\item 
+io\+::file\+\_\+descriptor\+\_\+source \hyperlink{classInputFileStream_a4571c555900dd34713cddcbffb86b940}{fds\+\_\+}
+\item 
+io\+::filtering\+\_\+istream \hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classInputFileStream}{Input\+File\+Stream} \& \hyperlink{classInputFileStream_a8389de80920d111927eb0954d6b284ef}{operator$>$$>$} (\hyperlink{classInputFileStream}{Input\+File\+Stream} \&stream, T \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{Input\+File\+Stream(const std\+::string \&file)}{InputFileStream(const std::string &file)}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+File\+Stream\+::\+Input\+File\+Stream (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_af04290c34c232c3e7e6f947833df3dd7}{}\label{classInputFileStream_af04290c34c232c3e7e6f947833df3dd7}
+
+
+Definition at line 70 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+70                                          : \hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\_}(file), \hyperlink{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}{ifstream\_}(
+      \hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\_}) \{
+71     UTIL\_THROW\_IF2(!boost::filesystem::exists(\hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\_}),
+72                    \textcolor{stringliteral}{"File "} << file << \textcolor{stringliteral}{" does not exist"});
+73 
+74     \textcolor{keywordflow}{if}(\hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\_}.extension() == \textcolor{stringliteral}{".gz"})
+75       \hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_}.push(io::gzip\_decompressor());
+76     \hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_}.push(\hyperlink{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}{ifstream\_});
+77   \}
+\end{DoxyCode}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{Input\+File\+Stream(\+Temporary\+File \&tempfile)}{InputFileStream(TemporaryFile &tempfile)}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+File\+Stream\+::\+Input\+File\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Temporary\+File} \&}]{tempfile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_a8534a6700e1b89a3999ab36d711b0fdf}{}\label{classInputFileStream_a8534a6700e1b89a3999ab36d711b0fdf}
+
+
+Definition at line 79 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+80       : \hyperlink{classInputFileStream_a4571c555900dd34713cddcbffb86b940}{fds\_}(tempfile.\hyperlink{classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19}{getFileDescriptor}(), io::never\_close\_handle) \{
+81     lseek(tempfile.\hyperlink{classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19}{getFileDescriptor}(), 0, SEEK\_SET);
+82     \hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_}.push(\hyperlink{classInputFileStream_a4571c555900dd34713cddcbffb86b940}{fds\_}, 1024);
+83   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dea/classInputFileStream_a8534a6700e1b89a3999ab36d711b0fdf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{Input\+File\+Stream(std\+::istream \&strm)}{InputFileStream(std::istream &strm)}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+File\+Stream\+::\+Input\+File\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{strm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_a6563174a509386539e1b9a347b6c78b2}{}\label{classInputFileStream_a6563174a509386539e1b9a347b6c78b2}
+
+
+Definition at line 85 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+85 \{ \hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_}.push(strm, 0); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!empty@{empty}}
+\index{empty@{empty}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{empty()}{empty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\+File\+Stream\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_a3d8e85a070ded9cc9195da0ab93918d5}{}\label{classInputFileStream_a3d8e85a070ded9cc9195da0ab93918d5}
+
+
+Definition at line 99 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+99                \{
+100     \textcolor{keywordflow}{return} \hyperlink{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}{ifstream\_}.peek() == std::ifstream::traits\_type::eof();
+101   \}
+\end{DoxyCode}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{operator bool()}{operator bool()}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+File\+Stream\+::operator bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_a8cf0a5adcc6fae4f3f0244da0c6bddf3}{}\label{classInputFileStream_a8cf0a5adcc6fae4f3f0244da0c6bddf3}
+
+
+Definition at line 89 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+89 \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{bool})\hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_}; \}
+\end{DoxyCode}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!path@{path}}
+\index{path@{path}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{path()}{path()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Input\+File\+Stream\+::path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classInputFileStream_a5298a928a5d19bf88db3c4b9e1e52b45}{}\label{classInputFileStream_a5298a928a5d19bf88db3c4b9e1e52b45}
+
+
+Definition at line 97 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+97 \{ \textcolor{keywordflow}{return} \hyperlink{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{file\_}.string(); \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Input\+File\+Stream}\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+File\+Stream} \&}]{stream, }
+\item[{T \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classInputFileStream_a8389de80920d111927eb0954d6b284ef}{}\label{classInputFileStream_a8389de80920d111927eb0954d6b284ef}
+
+
+Definition at line 92 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+92                                                                     \{
+93     stream.\hyperlink{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{istream\_} >> t;
+94     \textcolor{keywordflow}{return} stream;
+95   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Input\+File\+Stream@{Input\+File\+Stream}!fds\+\_\+@{fds\+\_\+}}
+\index{fds\+\_\+@{fds\+\_\+}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{fds\+\_\+}{fds_}}]{\setlength{\rightskip}{0pt plus 5cm}io\+::file\+\_\+descriptor\+\_\+source Input\+File\+Stream\+::fds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputFileStream_a4571c555900dd34713cddcbffb86b940}{}\label{classInputFileStream_a4571c555900dd34713cddcbffb86b940}
+
+
+Definition at line 106 of file marian/src/common/file\+\_\+stream.\+h.
+
+\index{Input\+File\+Stream@{Input\+File\+Stream}!file\+\_\+@{file\+\_\+}}
+\index{file\+\_\+@{file\+\_\+}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{file\+\_\+}{file_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::filesystem\+::path Input\+File\+Stream\+::file\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}{}\label{classInputFileStream_a2d500667ce04e9dfb7a23308d9ddf76d}
+
+
+Definition at line 104 of file marian/src/common/file\+\_\+stream.\+h.
+
+\index{Input\+File\+Stream@{Input\+File\+Stream}!ifstream\+\_\+@{ifstream\+\_\+}}
+\index{ifstream\+\_\+@{ifstream\+\_\+}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{ifstream\+\_\+}{ifstream_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::filesystem\+::ifstream Input\+File\+Stream\+::ifstream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}{}\label{classInputFileStream_a151c433c8d6f4f989438de27328a5ff2}
+
+
+Definition at line 105 of file marian/src/common/file\+\_\+stream.\+h.
+
+\index{Input\+File\+Stream@{Input\+File\+Stream}!istream\+\_\+@{istream\+\_\+}}
+\index{istream\+\_\+@{istream\+\_\+}!Input\+File\+Stream@{Input\+File\+Stream}}
+\subsubsection[{\texorpdfstring{istream\+\_\+}{istream_}}]{\setlength{\rightskip}{0pt plus 5cm}io\+::filtering\+\_\+istream Input\+File\+Stream\+::istream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}{}\label{classInputFileStream_a24a2f19b44c9f62116d4242ba8178396}
+
+
+Definition at line 107 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2common_2file__stream_8h}{marian/src/common/file\+\_\+stream.\+h}\end{DoxyCompactItemize}

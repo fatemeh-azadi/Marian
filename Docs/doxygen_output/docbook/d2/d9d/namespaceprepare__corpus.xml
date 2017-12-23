@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d9d/namespaceprepare__corpus">
+<title>prepare_corpus</title>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d2/d9d/namespaceprepare__corpus_1a3a77493842e1a07de99c534afdef4e4d">UNK</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d2/d9d/namespaceprepare__corpus_1a0ba757facf41222f76e6596363b348c4">EOS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d2/d9d/namespaceprepare__corpus_1aa70e0cc7eb57e827cc406e421ee340d2">main</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d2/d9d/namespaceprepare__corpus_1a94500e5ed125979793ade8632786b6c3">replace_unks</link> (
+l , voc )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d2/d9d/namespaceprepare__corpus_1a41cd95c2147ad4e9b6486dbb66b6b87b">load_yaml</link> (
+lines )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="d2/d9d/namespaceprepare__corpus_1a8cd0e0b6ee5199bd8838a625ef5803b9">parse_user_args</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

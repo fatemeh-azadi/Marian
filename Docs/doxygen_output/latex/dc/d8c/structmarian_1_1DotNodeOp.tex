@@ -1,0 +1,307 @@
+\hypertarget{structmarian_1_1DotNodeOp}{}\section{marian\+:\+:Dot\+Node\+Op Struct Reference}
+\label{structmarian_1_1DotNodeOp}\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+binary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Dot\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d46/structmarian_1_1DotNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Dot\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddc/structmarian_1_1DotNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1DotNodeOp_a66d1926cfedd0f890967b6d0fc618ab8}{Dot\+Node\+Op} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} b, Args...\+args)
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52}{new\+Shape} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} a, \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} b)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1DotNodeOp_a26ba9e725a0220dd11201529bb8edbfb}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1DotNodeOp_aab065629807f2abbe28a61fa1f800c63}{color} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!Dot\+Node\+Op@{Dot\+Node\+Op}}
+\index{Dot\+Node\+Op@{Dot\+Node\+Op}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Dot\+Node\+Op(\+Expr a, Expr b, Args...\+args)}{DotNodeOp(Expr a, Expr b, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Dot\+Node\+Op\+::\+Dot\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{{\bf Expr}}]{b, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1DotNodeOp_a66d1926cfedd0f890967b6d0fc618ab8}{}\label{structmarian_1_1DotNodeOp_a66d1926cfedd0f890967b6d0fc618ab8}
+
+
+Definition at line 28 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+29       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(\{a, b\}, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52}{newShape}(a, b), args...) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a66d1926cfedd0f890967b6d0fc618ab8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Dot\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a}{}\label{structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 53 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+53                         \{
+54     \textcolor{comment}{// D is the adjoint, the matrix of derivatives}
+55     \textcolor{comment}{// df/dA += D*B.T}
+56     \textcolor{comment}{// df/dB += A.T*D}
+57     \textcolor{comment}{// beta set to 1.0 in gemm, C = dot(A,B) + beta * C}
+58     \textcolor{comment}{// to sum gradients from different graph parts}
+59     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a509f2975b7c8da70df1cd56de5d3e79e}{Prod}(std::static\_pointer\_cast<BackendGPU>(
+      \hyperlink{classmarian_1_1Node_a4aa5aa482c70595fa5d43c1fbabf5c18}{getBackend}())
+60                             ->getCublasHandle(),
+61                         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(),
+62                         \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_},
+63                         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+64                         \textcolor{keyword}{false},
+65                         \textcolor{keyword}{true},
+66                         1.0)),
+67             \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a509f2975b7c8da70df1cd56de5d3e79e}{Prod}(std::static\_pointer\_cast<BackendGPU>(
+      \hyperlink{classmarian_1_1Node_a4aa5aa482c70595fa5d43c1fbabf5c18}{getBackend}())
+68                             ->getCublasHandle(),
+69                         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(),
+70                         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+71                         \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_},
+72                         \textcolor{keyword}{true},
+73                         \textcolor{keyword}{false},
+74                         1.0))\};
+75   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a015697830536478b4b8226c7e963dd3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Dot\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1DotNodeOp_aab065629807f2abbe28a61fa1f800c63}{}\label{structmarian_1_1DotNodeOp_aab065629807f2abbe28a61fa1f800c63}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}.
+
+
+
+Definition at line 79 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+79 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"orange"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Dot\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d}{}\label{structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 42 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+42                        \{
+43     \textcolor{comment}{// C = A*B}
+44     \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a509f2975b7c8da70df1cd56de5d3e79e}{Prod}(
+45         std::static\_pointer\_cast<BackendGPU>(\hyperlink{classmarian_1_1Node_a4aa5aa482c70595fa5d43c1fbabf5c18}{getBackend}())->getCublasHandle(),
+46         \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_},
+47         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+48         \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+49         \textcolor{keyword}{false},
+50         \textcolor{keyword}{false}))\};
+51   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a72a5f5125f26d022b23630dc90ea5c2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(\+Expr a, Expr b)}{newShape(Expr a, Expr b)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Dot\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{a, }
+\item[{{\bf Expr}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52}{}\label{structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52}
+
+
+Definition at line 31 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+31                                  \{
+32     \textcolor{keyword}{auto} shapeA = a->shape();
+33     \textcolor{keyword}{auto} shapeB = b->shape();
+34 
+35     Shape outShape = shapeA;
+36     outShape.set(1, shapeB[1]);
+37     UTIL\_THROW\_IF2(shapeA[1] != shapeB[0],
+38                    \textcolor{stringliteral}{"matrix product requires dimensions to match"});
+39     \textcolor{keywordflow}{return} outShape;
+40   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_ad897baac4270ce0d87fd90d340609e52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Dot\+Node\+Op@{marian\+::\+Dot\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Dot\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1DotNodeOp_a26ba9e725a0220dd11201529bb8edbfb}{}\label{structmarian_1_1DotNodeOp_a26ba9e725a0220dd11201529bb8edbfb}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 77 of file node\+\_\+operators\+\_\+binary.\+h.
+
+
+\begin{DoxyCode}
+77 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"•"}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d8c/structmarian_1_1DotNodeOp_a26ba9e725a0220dd11201529bb8edbfb_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__binary_8h}{node\+\_\+operators\+\_\+binary.\+h}\end{DoxyCompactItemize}

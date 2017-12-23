@@ -1,0 +1,84 @@
+\hypertarget{config__parser_8cpp}{}\section{config\+\_\+parser.\+cpp File Reference}
+\label{config__parser_8cpp}\index{config\+\_\+parser.\+cpp@{config\+\_\+parser.\+cpp}}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/cnpy/cnpy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/config\+\_\+parser.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/file\+\_\+stream.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/version.\+h\char`\"{}}\\*
+Include dependency graph for config\+\_\+parser.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dcb/config__parser_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}(key,  type)
+\item 
+\#define \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}(key,  type)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{marian\+::guess\+\_\+terminal\+\_\+width} (uint16\+\_\+t max\+\_\+width)
+\item 
+void \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{marian\+::\+Output\+Yaml} (const Y\+A\+M\+L\+::\+Node node, Y\+A\+M\+L\+::\+Emitter \&out)
+\item 
+void \hyperlink{namespacemarian_a88f36a7ce9ef4d686bb5e31220481d96}{marian\+::\+Process\+Paths} (Y\+A\+M\+L\+::\+Node \&node, const boost\+::filesystem\+::path \&config\+Path, bool is\+Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{config\+\_\+parser.\+cpp@{config\+\_\+parser.\+cpp}!S\+E\+T\+\_\+\+O\+P\+T\+I\+ON@{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}}
+\index{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON@{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}!config\+\_\+parser.\+cpp@{config\+\_\+parser.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+O\+P\+T\+I\+ON}{SET_OPTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+O\+P\+T\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{key, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{}\label{config__parser_8cpp_affc23be689aba6d401f64257177c293c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                           \(\backslash\)
+    if(!vm\_[key].defaulted() || !config\_[key]) \{ \(\backslash\)
+      config\_[key] = vm\_[key].as<type>();        \(\backslash\)
+    \}                                            \(\backslash\)
+  \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 13 of file config\+\_\+parser.\+cpp.
+
+\index{config\+\_\+parser.\+cpp@{config\+\_\+parser.\+cpp}!S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT@{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}}
+\index{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT@{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}!config\+\_\+parser.\+cpp@{config\+\_\+parser.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT}{SET_OPTION_NONDEFAULT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+N\+D\+E\+F\+A\+U\+LT(
+\begin{DoxyParamCaption}
+\item[{}]{key, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{config__parser_8cpp_a662e89992591378e43abcff938a17669}{}\label{config__parser_8cpp_a662e89992591378e43abcff938a17669}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+    if(vm\_.count(key) > 0) \{              \(\backslash\)
+      config\_[key] = vm\_[key].as<type>(); \(\backslash\)
+    \}                                     \(\backslash\)
+  \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Definition at line 20 of file config\+\_\+parser.\+cpp.
+

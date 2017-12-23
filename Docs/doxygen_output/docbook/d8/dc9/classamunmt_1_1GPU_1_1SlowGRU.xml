@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU">
+<title>amunmt::GPU::SlowGRU class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/db8/gru_8h">&lt;gru.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::SlowGRU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d4e/classamunmt_1_1GPU_1_1SlowGRU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::SlowGRU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d55/classamunmt_1_1GPU_1_1SlowGRU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link></type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix RU_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix R_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix U_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix H_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1acffc14f37cb72cef5d2fbc3dadd67b16">SlowGRU</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a56abd7ee93ad637ca54113fbc1427e01">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a2e14dcf46c2e4a4a171a43eec99dba87">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a88bcf5dfa1b781cbe4df2faceb21d1d1">SlowGRU</link> (
+const <link linkend="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU">SlowGRU</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1acffc14f37cb72cef5d2fbc3dadd67b16">
+                <title>amunmt::GPU::SlowGRU&lt; Weights &gt;::SlowGRU (const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a56abd7ee93ad637ca54113fbc1427e01">
+                <title>virtual void amunmt::GPU::SlowGRU&lt; Weights &gt;::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a2e14dcf46c2e4a4a171a43eec99dba87">
+                <title>virtual CellLength amunmt::GPU::SlowGRU&lt; Weights &gt;::GetStateLength () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dc9/classamunmt_1_1GPU_1_1SlowGRU_1a88bcf5dfa1b781cbe4df2faceb21d1d1">
+                <title>amunmt::GPU::SlowGRU&lt; Weights &gt;::SlowGRU (const SlowGRU &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

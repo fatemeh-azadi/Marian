@@ -1,0 +1,52 @@
+\hypertarget{scorers_8h}{}\section{scorers.\+h File Reference}
+\label{scorers_8h}\index{scorers.\+h@{scorers.\+h}}
+{\ttfamily \#include \char`\"{}marian.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/s2s.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/amun.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/hardatt.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}models/multi\+\_\+s2s.\+h\char`\"{}}\\*
+Include dependency graph for scorers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd2/scorers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{de/df9/scorers_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1ScorerState}{marian\+::\+Scorer\+State}
+\item 
+class \hyperlink{classmarian_1_1Scorer}{marian\+::\+Scorer}
+\item 
+class \hyperlink{classmarian_1_1ScorerWrapperState}{marian\+::\+Scorer\+Wrapper\+State}
+\item 
+class \hyperlink{classmarian_1_1ScorerWrapper}{marian\+::\+Scorer\+Wrapper$<$ Encoder\+Decoder $>$}
+\item 
+class \hyperlink{classmarian_1_1WordPenaltyState}{marian\+::\+Word\+Penalty\+State}
+\item 
+class \hyperlink{classmarian_1_1WordPenalty}{marian\+::\+Word\+Penalty}
+\item 
+class \hyperlink{classmarian_1_1UnseenWordPenalty}{marian\+::\+Unseen\+Word\+Penalty}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Ptr$<$ Scorer $>$ \hyperlink{namespacemarian_a1ed6060be1629d300bbdad6f12991106}{marian\+::scorer\+By\+Type} (std\+::string fname, float weight, std\+::string model, Ptr$<$ Config $>$ options)
+\item 
+std\+::vector$<$ Ptr$<$ Scorer $>$ $>$ \hyperlink{namespacemarian_aa68a12c768f24cc7d06314eadfab8938}{marian\+::create\+Scorers} (Ptr$<$ Config $>$ options)
+\end{DoxyCompactItemize}

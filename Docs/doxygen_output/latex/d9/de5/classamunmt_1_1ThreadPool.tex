@@ -1,0 +1,242 @@
+\hypertarget{classamunmt_1_1ThreadPool}{}\section{amunmt\+:\+:Thread\+Pool Class Reference}
+\label{classamunmt_1_1ThreadPool}\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+
+
+{\ttfamily \#include $<$threadpool.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Thread\+Pool\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d4e/classamunmt_1_1ThreadPool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1ThreadPool_a3bc1ace57ef28ce5c78ee1672ae9c382}{Thread\+Pool} (size\+\_\+t threads, size\+\_\+t \hyperlink{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{bound}=0)
+\item 
+{\footnotesize template$<$class F , class... Args$>$ }\\auto \hyperlink{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{enqueue} (F \&\&f, Args \&\&...args) -\/$>$ std\+::future$<$ typename std\+::result\+\_\+of$<$ F(Args...)$>$\+::type $>$
+\item 
+\hyperlink{classamunmt_1_1ThreadPool_a03f83dd78a39dbe485326a50497d6906}{$\sim$\+Thread\+Pool} ()
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1ThreadPool_a56f770af85865ea1eb35f3d2ade28043}{get\+Num\+Tasks} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::thread $>$ \hyperlink{classamunmt_1_1ThreadPool_abd917167eb8a227f9aa7faaaec23745e}{workers}
+\item 
+std\+::queue$<$ std\+::function$<$ void()$>$ $>$ \hyperlink{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}{tasks}
+\item 
+std\+::mutex \hyperlink{classamunmt_1_1ThreadPool_a4b1865f03dab554b2e933dfe6f662f48}{queue\+\_\+mutex}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classamunmt_1_1ThreadPool_a2f3b5194456806a842817062870b4907}{condition}
+\item 
+std\+::size\+\_\+t \hyperlink{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{bound}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classamunmt_1_1ThreadPool_ade8c762e453107fd5e3e3097be95732e}{bounded\+\_\+condition}
+\item 
+bool \hyperlink{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{stop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 43 of file threadpool.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!Thread\+Pool@{Thread\+Pool}}
+\index{Thread\+Pool@{Thread\+Pool}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{Thread\+Pool(size\+\_\+t threads, size\+\_\+t bound=0)}{ThreadPool(size_t threads, size_t bound=0)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Thread\+Pool\+::\+Thread\+Pool (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{threads, }
+\item[{size\+\_\+t}]{bound = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classamunmt_1_1ThreadPool_a3bc1ace57ef28ce5c78ee1672ae9c382}{}\label{classamunmt_1_1ThreadPool_a3bc1ace57ef28ce5c78ee1672ae9c382}
+
+
+Definition at line 71 of file threadpool.\+h.
+
+
+\begin{DoxyCode}
+72   : \hyperlink{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{stop}(\textcolor{keyword}{false}), \hyperlink{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{bound}(in\_bound) \{
+73     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0;i<threads;++i)
+74       \hyperlink{classamunmt_1_1ThreadPool_abd917167eb8a227f9aa7faaaec23745e}{workers}.emplace\_back(
+75           [\textcolor{keyword}{this}] \{
+76               for(;;) \{
+77                   std::function<void()> task;
+78                   \{
+79                     std::unique\_lock<std::mutex> lock(this->queue\_mutex);
+80                     this->condition.wait(lock,
+81                         [this]\{ return this->stop || !this->tasks.empty(); \});
+82                     if (this->stop && this->tasks.empty())
+83                         return;
+84                     task = std::move(this->tasks.front());
+85                     this->tasks.pop();
+86                   \}
+87                   this->bounded\_condition.notify\_one();
+88 
+89                   task();
+90               \}
+91           \}
+92       );
+93 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!````~Thread\+Pool@{$\sim$\+Thread\+Pool}}
+\index{````~Thread\+Pool@{$\sim$\+Thread\+Pool}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{$\sim$\+Thread\+Pool()}{~ThreadPool()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Thread\+Pool\+::$\sim$\+Thread\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1ThreadPool_a03f83dd78a39dbe485326a50497d6906}{}\label{classamunmt_1_1ThreadPool_a03f83dd78a39dbe485326a50497d6906}
+
+
+Definition at line 122 of file threadpool.\+h.
+
+
+\begin{DoxyCode}
+122                                \{
+123   \{
+124       std::unique\_lock<std::mutex> lock(\hyperlink{classamunmt_1_1ThreadPool_a4b1865f03dab554b2e933dfe6f662f48}{queue\_mutex});
+125       \hyperlink{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{stop} = \textcolor{keyword}{true};
+126   \}
+127   \hyperlink{classamunmt_1_1ThreadPool_ade8c762e453107fd5e3e3097be95732e}{bounded\_condition}.notify\_all();
+128   \hyperlink{classamunmt_1_1ThreadPool_a2f3b5194456806a842817062870b4907}{condition}.notify\_all();
+129   \textcolor{keywordflow}{for} (std::thread &worker: \hyperlink{classamunmt_1_1ThreadPool_abd917167eb8a227f9aa7faaaec23745e}{workers}) \{
+130     worker.join();
+131   \}
+132 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{enqueue(\+F \&\&f, Args \&\&...\+args) -\/$>$ std\+::future$<$ typename std\+::result\+\_\+of$<$ F(\+Args...)$>$\+::type $>$}{enqueue(F &&f, Args &&...args) -> std::future< typename std::result_of< F(Args...)>::type >}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F , class... Args$>$ auto amunmt\+::\+Thread\+Pool\+::enqueue (
+\begin{DoxyParamCaption}
+\item[{F \&\&}]{f, }
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+) -\/$>$ std\+::future$<$typename std\+::result\+\_\+of$<$F(Args...)$>$\+::type$>$}\hypertarget{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{}\label{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}
+
+
+Definition at line 97 of file threadpool.\+h.
+
+
+\begin{DoxyCode}
+99 \{
+100   \textcolor{keyword}{using} return\_type = \textcolor{keyword}{typename} std::result\_of<F(Args...)>::type;
+101 
+102   \textcolor{keyword}{auto} task = std::make\_shared< std::packaged\_task<return\_type()> >(
+103           std::bind(std::forward<F>(f), std::forward<Args>(args)...)
+104       );
+105 
+106   std::future<return\_type> res = task->get\_future();
+107   \{
+108       std::unique\_lock<std::mutex> lock(\hyperlink{classamunmt_1_1ThreadPool_a4b1865f03dab554b2e933dfe6f662f48}{queue\_mutex});
+109       this->\hyperlink{classamunmt_1_1ThreadPool_ade8c762e453107fd5e3e3097be95732e}{bounded\_condition}.wait(lock, [\textcolor{keyword}{this}] \{ \textcolor{keywordflow}{return} this->
+      \hyperlink{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}{tasks}.size() < this->\hyperlink{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{bound} || this->\hyperlink{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{bound} == 0 || this->\hyperlink{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{stop}; \});
+110       \textcolor{comment}{// don't allow enqueueing after stopping the pool}
+111       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{stop}) \{
+112         \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"enqueue on stopped ThreadPool"});
+113       \}
+114 
+115       \hyperlink{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}{tasks}.emplace([task]()\{ (*task)(); \});
+116   \}
+117   \hyperlink{classamunmt_1_1ThreadPool_a2f3b5194456806a842817062870b4907}{condition}.notify\_one();
+118   \textcolor{keywordflow}{return} res;
+119 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/de5/classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!get\+Num\+Tasks@{get\+Num\+Tasks}}
+\index{get\+Num\+Tasks@{get\+Num\+Tasks}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Num\+Tasks() const }{getNumTasks() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Thread\+Pool\+::get\+Num\+Tasks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1ThreadPool_a56f770af85865ea1eb35f3d2ade28043}{}\label{classamunmt_1_1ThreadPool_a56f770af85865ea1eb35f3d2ade28043}
+
+
+Definition at line 52 of file threadpool.\+h.
+
+
+\begin{DoxyCode}
+52                                \{
+53       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}{tasks}.size();
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!bound@{bound}}
+\index{bound@{bound}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{bound}{bound}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t amunmt\+::\+Thread\+Pool\+::bound\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}{}\label{classamunmt_1_1ThreadPool_aa85a12e692be6c514ffd8443b80ba0dc}
+
+
+Definition at line 65 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!bounded\+\_\+condition@{bounded\+\_\+condition}}
+\index{bounded\+\_\+condition@{bounded\+\_\+condition}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{bounded\+\_\+condition}{bounded_condition}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::condition\+\_\+variable amunmt\+::\+Thread\+Pool\+::bounded\+\_\+condition\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_ade8c762e453107fd5e3e3097be95732e}{}\label{classamunmt_1_1ThreadPool_ade8c762e453107fd5e3e3097be95732e}
+
+
+Definition at line 66 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!condition@{condition}}
+\index{condition@{condition}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{condition}{condition}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::condition\+\_\+variable amunmt\+::\+Thread\+Pool\+::condition\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_a2f3b5194456806a842817062870b4907}{}\label{classamunmt_1_1ThreadPool_a2f3b5194456806a842817062870b4907}
+
+
+Definition at line 64 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!queue\+\_\+mutex@{queue\+\_\+mutex}}
+\index{queue\+\_\+mutex@{queue\+\_\+mutex}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{queue\+\_\+mutex}{queue_mutex}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex amunmt\+::\+Thread\+Pool\+::queue\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_a4b1865f03dab554b2e933dfe6f662f48}{}\label{classamunmt_1_1ThreadPool_a4b1865f03dab554b2e933dfe6f662f48}
+
+
+Definition at line 63 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!stop@{stop}}
+\index{stop@{stop}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{stop}{stop}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+Thread\+Pool\+::stop\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}{}\label{classamunmt_1_1ThreadPool_abf9a006374a3c361401bf98ecbfeabf7}
+
+
+Definition at line 67 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!tasks@{tasks}}
+\index{tasks@{tasks}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{tasks}{tasks}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::queue$<$ std\+::function$<$void()$>$ $>$ amunmt\+::\+Thread\+Pool\+::tasks\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}{}\label{classamunmt_1_1ThreadPool_ab4e36abc1369312be77d1cfb04396546}
+
+
+Definition at line 60 of file threadpool.\+h.
+
+\index{amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}!workers@{workers}}
+\index{workers@{workers}!amunmt\+::\+Thread\+Pool@{amunmt\+::\+Thread\+Pool}}
+\subsubsection[{\texorpdfstring{workers}{workers}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::thread$>$ amunmt\+::\+Thread\+Pool\+::workers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1ThreadPool_abd917167eb8a227f9aa7faaaec23745e}{}\label{classamunmt_1_1ThreadPool_abd917167eb8a227f9aa7faaaec23745e}
+
+
+Definition at line 58 of file threadpool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{threadpool_8h}{threadpool.\+h}\end{DoxyCompactItemize}

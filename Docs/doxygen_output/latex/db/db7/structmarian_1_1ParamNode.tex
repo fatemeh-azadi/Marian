@@ -1,0 +1,246 @@
+\hypertarget{structmarian_1_1ParamNode}{}\section{marian\+:\+:Param\+Node Struct Reference}
+\label{structmarian_1_1ParamNode}\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Param\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d60/structmarian_1_1ParamNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Param\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d7c/structmarian_1_1ParamNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1ParamNode_aa452140f55ba4ede7b98f36bfd772c04}{Param\+Node} (Args...\+args)
+\item 
+\hyperlink{structmarian_1_1ParamNode_a330a050f63c33ca3b0efa8bd16d7f969}{$\sim$\+Param\+Node} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ParamNode_a3b95c7c7a19f6ae26b0001b15e9cffe6}{allocate} ()
+\item 
+virtual void \hyperlink{structmarian_1_1ParamNode_a3d6c140ce46f6c97912fa4de460752cc}{init} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ParamNode_aecb590c68e3996b385779f896639036e}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ParamNode_a8ed000b20face6bd31bdb9af750c56b0}{form} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ParamNode_aead6b45314b0b5a53c998acf994db204}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ParamNode_a851c5d3d18a4fbde8e84c2a2f758e200}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \&)$>$ \hyperlink{structmarian_1_1ParamNode_a1cc49dadd3e5d7490bb094a5f675d01b}{init\+\_\+}
+\item 
+bool \hyperlink{structmarian_1_1ParamNode_a4c0eec72e118e3b2cfc1541d5224b6c8}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file node\+\_\+operators.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!Param\+Node@{Param\+Node}}
+\index{Param\+Node@{Param\+Node}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{Param\+Node(\+Args...\+args)}{ParamNode(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Param\+Node\+::\+Param\+Node (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ParamNode_aa452140f55ba4ede7b98f36bfd772c04}{}\label{structmarian_1_1ParamNode_aa452140f55ba4ede7b98f36bfd772c04}
+
+
+Definition at line 42 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+43       : \hyperlink{classmarian_1_1Node_ab2576bb59c9c4d52bb2f676bb848ebc5}{Node}(args...),
+44         \hyperlink{structmarian_1_1ParamNode_a1cc49dadd3e5d7490bb094a5f675d01b}{init\_}(\hyperlink{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}{Get}(\hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init}, [](\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor}) \{\})),
+45         \hyperlink{structmarian_1_1ParamNode_a4c0eec72e118e3b2cfc1541d5224b6c8}{initialized\_}(\textcolor{keyword}{false}) \{
+46     UTIL\_THROW\_IF2(!\hyperlink{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}{Has}(\hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape}),
+47                    \textcolor{stringliteral}{"Param items require shape information"});
+48     \hyperlink{classmarian_1_1Node_a04b5aa3633d6a01b074f59fd93d7fb15}{setTrainable}(!\hyperlink{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}{Get}(\hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{keywords::fixed}, \textcolor{keyword}{false}));
+49   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/db7/structmarian_1_1ParamNode_aa452140f55ba4ede7b98f36bfd772c04_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!````~Param\+Node@{$\sim$\+Param\+Node}}
+\index{````~Param\+Node@{$\sim$\+Param\+Node}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{$\sim$\+Param\+Node()}{~ParamNode()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Param\+Node\+::$\sim$\+Param\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ParamNode_a330a050f63c33ca3b0efa8bd16d7f969}{}\label{structmarian_1_1ParamNode_a330a050f63c33ca3b0efa8bd16d7f969}
+
+
+Definition at line 51 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+51 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{db/db7/structmarian_1_1ParamNode_a330a050f63c33ca3b0efa8bd16d7f969_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!allocate@{allocate}}
+\index{allocate@{allocate}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{allocate()}{allocate()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Param\+Node\+::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_a3b95c7c7a19f6ae26b0001b15e9cffe6}{}\label{structmarian_1_1ParamNode_a3b95c7c7a19f6ae26b0001b15e9cffe6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a66c54550ad60cc510329435eb21f8589}{marian\+::\+Node}.
+
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!color@{color}}
+\index{color@{color}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Param\+Node\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_aead6b45314b0b5a53c998acf994db204}{}\label{structmarian_1_1ParamNode_aead6b45314b0b5a53c998acf994db204}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}.
+
+
+
+Definition at line 61 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+61 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"orangered"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!form@{form}}
+\index{form@{form}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{form()}{form()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Param\+Node\+::form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_a8ed000b20face6bd31bdb9af750c56b0}{}\label{structmarian_1_1ParamNode_a8ed000b20face6bd31bdb9af750c56b0}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a7aaaab594766b33355f2b31821b8af49}{marian\+::\+Node}.
+
+
+
+Definition at line 59 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+59 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"hexagon"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Param\+Node\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_a851c5d3d18a4fbde8e84c2a2f758e200}{}\label{structmarian_1_1ParamNode_a851c5d3d18a4fbde8e84c2a2f758e200}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 63 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+63 \{ \textcolor{keywordflow}{return} boost::hash<size\_t>()((\textcolor{keywordtype}{size\_t}) this); \}
+\end{DoxyCode}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!init@{init}}
+\index{init@{init}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Param\+Node\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_a3d6c140ce46f6c97912fa4de460752cc}{}\label{structmarian_1_1ParamNode_a3d6c140ce46f6c97912fa4de460752cc}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_abf3d18a7c661ba0d3d7fbcfb4e883736}{marian\+::\+Node}.
+
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!type@{type}}
+\index{type@{type}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Param\+Node\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ParamNode_aecb590c68e3996b385779f896639036e}{}\label{structmarian_1_1ParamNode_aecb590c68e3996b385779f896639036e}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 57 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+57 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"param"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!init\+\_\+@{init\+\_\+}}
+\index{init\+\_\+@{init\+\_\+}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{init\+\_\+}{init_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor}\&)$>$ marian\+::\+Param\+Node\+::init\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structmarian_1_1ParamNode_a1cc49dadd3e5d7490bb094a5f675d01b}{}\label{structmarian_1_1ParamNode_a1cc49dadd3e5d7490bb094a5f675d01b}
+
+
+Definition at line 66 of file node\+\_\+operators.\+h.
+
+\index{marian\+::\+Param\+Node@{marian\+::\+Param\+Node}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!marian\+::\+Param\+Node@{marian\+::\+Param\+Node}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Param\+Node\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structmarian_1_1ParamNode_a4c0eec72e118e3b2cfc1541d5224b6c8}{}\label{structmarian_1_1ParamNode_a4c0eec72e118e3b2cfc1541d5224b6c8}
+
+
+Definition at line 67 of file node\+\_\+operators.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators_8h}{node\+\_\+operators.\+h}\end{DoxyCompactItemize}

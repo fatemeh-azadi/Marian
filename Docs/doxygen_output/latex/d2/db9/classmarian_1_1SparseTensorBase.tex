@@ -1,0 +1,609 @@
+\hypertarget{classmarian_1_1SparseTensorBase}{}\section{marian\+:\+:Sparse\+Tensor\+Base Class Reference}
+\label{classmarian_1_1SparseTensorBase}\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+
+
+{\ttfamily \#include $<$sparse\+\_\+tensor.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Sparse\+Tensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d0/dfa/classmarian_1_1SparseTensorBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Sparse\+Tensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d9/d3c/classmarian_1_1SparseTensorBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128}{Sparse\+Tensor\+Base} (int \hyperlink{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{capacity}, size\+\_\+t device)
+\item 
+\hyperlink{classmarian_1_1SparseTensorBase_a7e958f74b9bda76d07ae95b0c1323037}{Sparse\+Tensor\+Base} (float $\ast$\hyperlink{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{data}, int $\ast$\hyperlink{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{indices}, int \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}, size\+\_\+t device)
+\item 
+\hyperlink{classmarian_1_1SparseTensorBase_a0ea47eeb67b66813f10e6a47eaa24208}{$\sim$\+Sparse\+Tensor\+Base} ()
+\item 
+int \hyperlink{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{capacity} ()
+\item 
+int \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size} ()
+\item 
+float $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{data} ()
+\item 
+int $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{indices} ()
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0}{copy\+From} (float $\ast$\hyperlink{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{data}, int $\ast$\hyperlink{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{indices}, int \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}, bool data\+\_\+only)
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a4392bbfef3fd38761890e1160a070e99}{copy\+From} (std\+::shared\+\_\+ptr$<$ \hyperlink{classmarian_1_1SparseTensorBase}{Sparse\+Tensor\+Base} $>$ t, bool data\+\_\+only=false)
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a794e424ecff64e4f6030ab684a02b7e3}{copy\+From\+Dense} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1SparseTensorBase_a94a6cf320854651c0912cd4b36247488}{get\+Device} ()
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a251307ea1a595fd304be1eda5c28eed3}{set\+Size} (int \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size})
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a137f5bf36d71f75ae77c7d8adbe7cb1a}{to\+Dense} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t, int offset)
+\item 
+void \hyperlink{classmarian_1_1SparseTensorBase_a2ee4ca96e1f220c5883cf2d557ddd280}{scatter\+Add} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} t, int offset=0)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classmarian_1_1SparseTensorBase}{Sparse\+Tensor\+Base} $>$ \hyperlink{classmarian_1_1SparseTensorBase_af7f5d119d88cad27434eba2dc49bc848}{subtensor} (int pos, int \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}, int idx)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\+\_\+}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\+\_\+}
+\item 
+int \hyperlink{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{capacity\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\+\_\+}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_a650c5100969356a168d15b61b8f09d5f}{d\+\_\+is\+\_\+unsorted}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_ab8941274a48c9bf0f53785888e97e9d9}{gstart\+\_\+}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1SparseTensorBase_a226a045c5a1148e945a177bd283c693b}{gend\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 49 of file sparse\+\_\+tensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!Sparse\+Tensor\+Base@{Sparse\+Tensor\+Base}}
+\index{Sparse\+Tensor\+Base@{Sparse\+Tensor\+Base}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{Sparse\+Tensor\+Base(int capacity, size\+\_\+t device)}{SparseTensorBase(int capacity, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Sparse\+Tensor\+Base\+::\+Sparse\+Tensor\+Base (
+\begin{DoxyParamCaption}
+\item[{int}]{capacity, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128}{}\label{classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128}
+
+
+Definition at line 61 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+61                                                 \{
+62     \hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_} = device;
+63     \hyperlink{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{capacity\_} = \hyperlink{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{capacity};
+64     cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_});
+65     cudaMalloc(&\hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * \hyperlink{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{capacity});
+66     cudaMalloc(&\hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * \hyperlink{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{capacity});
+67 
+68     cudaMalloc(&\hyperlink{classmarian_1_1SparseTensorBase_ab8941274a48c9bf0f53785888e97e9d9}{gstart\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * 100);
+69     cudaMalloc(&\hyperlink{classmarian_1_1SparseTensorBase_a226a045c5a1148e945a177bd283c693b}{gend\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * 100);
+70   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!Sparse\+Tensor\+Base@{Sparse\+Tensor\+Base}}
+\index{Sparse\+Tensor\+Base@{Sparse\+Tensor\+Base}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{Sparse\+Tensor\+Base(float $\ast$data, int $\ast$indices, int size, size\+\_\+t device)}{SparseTensorBase(float *data, int *indices, int size, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Sparse\+Tensor\+Base\+::\+Sparse\+Tensor\+Base (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{data, }
+\item[{int $\ast$}]{indices, }
+\item[{int}]{size, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a7e958f74b9bda76d07ae95b0c1323037}{}\label{classmarian_1_1SparseTensorBase_a7e958f74b9bda76d07ae95b0c1323037}
+
+
+Definition at line 72 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+72                                                                        \{
+73     \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_} = \hyperlink{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{data};
+74     \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_} = \hyperlink{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{indices};
+75     \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} = \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size};
+76     \hyperlink{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{capacity\_} = \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size};
+77     \hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_} = device;
+78   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a7e958f74b9bda76d07ae95b0c1323037_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!````~Sparse\+Tensor\+Base@{$\sim$\+Sparse\+Tensor\+Base}}
+\index{````~Sparse\+Tensor\+Base@{$\sim$\+Sparse\+Tensor\+Base}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{$\sim$\+Sparse\+Tensor\+Base()}{~SparseTensorBase()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Sparse\+Tensor\+Base\+::$\sim$\+Sparse\+Tensor\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a0ea47eeb67b66813f10e6a47eaa24208}{}\label{classmarian_1_1SparseTensorBase_a0ea47eeb67b66813f10e6a47eaa24208}
+
+
+Definition at line 80 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+80 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!capacity@{capacity}}
+\index{capacity@{capacity}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{capacity()}{capacity()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Sparse\+Tensor\+Base\+::capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}{}\label{classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb}
+
+
+Definition at line 82 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+82 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{capacity\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a7f9b952552b3310028356e9062f8dbcb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!copy\+From@{copy\+From}}
+\index{copy\+From@{copy\+From}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{copy\+From(float $\ast$data, int $\ast$indices, int size, bool data\+\_\+only)}{copyFrom(float *data, int *indices, int size, bool data_only)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::copy\+From (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{data, }
+\item[{int $\ast$}]{indices, }
+\item[{int}]{size, }
+\item[{bool}]{data\+\_\+only}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0}{}\label{classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0}
+
+
+Definition at line 90 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+90                                                                      \{
+91     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{capacity\_} < \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}) \{
+92       \textcolor{keywordflow}{return};
+93       \textcolor{comment}{// NO enough capacity}
+94     \}
+95     \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} = \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size};
+96     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size} == 0)
+97       \textcolor{keywordflow}{return};
+98     cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_});
+99 
+100     cudaMemcpy(\hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_}, \hyperlink{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{data}, \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size} * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}), cudaMemcpyDefault);
+101     \textcolor{keywordflow}{if}(!data\_only)
+102       cudaMemcpy(\hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}, \hyperlink{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{indices}, \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size} * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}), cudaMemcpyDefault);
+103     cudaStreamSynchronize(0);
+104   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!copy\+From@{copy\+From}}
+\index{copy\+From@{copy\+From}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{copy\+From(std\+::shared\+\_\+ptr$<$ Sparse\+Tensor\+Base $>$ t, bool data\+\_\+only=false)}{copyFrom(std::shared_ptr< SparseTensorBase > t, bool data_only=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::copy\+From (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Sparse\+Tensor\+Base} $>$}]{t, }
+\item[{bool}]{data\+\_\+only = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a4392bbfef3fd38761890e1160a070e99}{}\label{classmarian_1_1SparseTensorBase_a4392bbfef3fd38761890e1160a070e99}
+
+
+Definition at line 107 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+107                                                                            \{
+108     \hyperlink{classmarian_1_1SparseTensorBase_a8cde6c7346cf727cd195dc36527db4c0}{copyFrom}(t->data(), t->indices(), t->size(), data\_only);
+109   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a4392bbfef3fd38761890e1160a070e99_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!copy\+From\+Dense@{copy\+From\+Dense}}
+\index{copy\+From\+Dense@{copy\+From\+Dense}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{copy\+From\+Dense(\+Tensor t)}{copyFromDense(Tensor t)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::copy\+From\+Dense (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a794e424ecff64e4f6030ab684a02b7e3}{}\label{classmarian_1_1SparseTensorBase_a794e424ecff64e4f6030ab684a02b7e3}
+
+
+Definition at line 111 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+111 \{ cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_}); \}
+\end{DoxyCode}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!data@{data}}
+\index{data@{data}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}{}\label{classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563}
+
+
+Definition at line 86 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+86 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_aff6f84e8e953b957e131c474c4485563_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Sparse\+Tensor\+Base\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a94a6cf320854651c0912cd4b36247488}{}\label{classmarian_1_1SparseTensorBase_a94a6cf320854651c0912cd4b36247488}
+
+
+Definition at line 113 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+113 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!indices@{indices}}
+\index{indices@{indices}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{indices()}{indices()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}{}\label{classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2}
+
+
+Definition at line 88 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+88 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a6b3971141be6c3baddc84d70eea1f0c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!scatter\+Add@{scatter\+Add}}
+\index{scatter\+Add@{scatter\+Add}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{scatter\+Add(\+Tensor t, int offset=0)}{scatterAdd(Tensor t, int offset=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::scatter\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t, }
+\item[{int}]{offset = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a2ee4ca96e1f220c5883cf2d557ddd280}{}\label{classmarian_1_1SparseTensorBase_a2ee4ca96e1f220c5883cf2d557ddd280}
+
+
+Definition at line 127 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+127                                             \{
+128     cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_});
+129     cudaStreamSynchronize(0);
+130     \textcolor{keywordtype}{int} threads = 512;
+131     \textcolor{keywordtype}{int} blocks = 1 + \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} / threads;
+132     gScatterAdd<<<blocks, threads>>>(
+133         t->data(), \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_}, \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}, t->size(), \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_}, offset);
+134   \}
+\end{DoxyCode}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{set\+Size(int size)}{setSize(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a251307ea1a595fd304be1eda5c28eed3}{}\label{classmarian_1_1SparseTensorBase_a251307ea1a595fd304be1eda5c28eed3}
+
+
+Definition at line 115 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+115 \{ \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} = \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_a251307ea1a595fd304be1eda5c28eed3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!size@{size}}
+\index{size@{size}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Sparse\+Tensor\+Base\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{}\label{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}
+
+
+Definition at line 84 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+84 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!subtensor@{subtensor}}
+\index{subtensor@{subtensor}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{subtensor(int pos, int size, int idx)}{subtensor(int pos, int size, int idx)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Sparse\+Tensor\+Base}$>$ marian\+::\+Sparse\+Tensor\+Base\+::subtensor (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{int}]{size, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_af7f5d119d88cad27434eba2dc49bc848}{}\label{classmarian_1_1SparseTensorBase_af7f5d119d88cad27434eba2dc49bc848}
+
+
+Definition at line 136 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+136                                                                         \{
+137     cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_});
+138     cudaStreamSynchronize(0);
+139     \textcolor{keywordtype}{int}* start = \hyperlink{classmarian_1_1SparseTensorBase_ab8941274a48c9bf0f53785888e97e9d9}{gstart\_} + idx;
+140     \textcolor{keywordtype}{int}* end = \hyperlink{classmarian_1_1SparseTensorBase_a226a045c5a1148e945a177bd283c693b}{gend\_} + idx;
+141 
+142     \textcolor{keywordtype}{int} threads = 512;
+143     \textcolor{keywordtype}{int} blocks = 1 + \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} / threads;
+144     cudaMemset(start, -1, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));
+145     cudaMemset(end, 0, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));
+146 
+147     gFindSubtensor<<<blocks, threads>>>(
+148         \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}, \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_}, pos, pos + \hyperlink{classmarian_1_1SparseTensorBase_af8c34e3fb5b12c7a65dbe6892c5ca0d1}{size}, start, end);
+149 
+150     \textcolor{keywordtype}{int} startOffset;
+151     \textcolor{keywordtype}{int} endOffset;
+152     \textcolor{keywordtype}{int} tmp\_dt;
+153     cudaMemcpy(&startOffset, start, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}), cudaMemcpyDeviceToHost);
+154     cudaMemcpy(&endOffset, end, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}), cudaMemcpyDeviceToHost);
+155 
+156     \textcolor{keywordflow}{if}(startOffset != -1 && startOffset < size\_)
+157       cudaMemcpy(
+158           &tmp\_dt, indices\_ + startOffset, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}), cudaMemcpyDeviceToHost);
+159 
+160     \textcolor{keywordtype}{int} subtensorSize = max(0, endOffset - startOffset + 1);
+161     cudaStreamSynchronize(0);
+162     \textcolor{keywordflow}{return} std::shared\_ptr<SparseTensorBase>(\textcolor{keyword}{new} \hyperlink{classmarian_1_1SparseTensorBase_a14749b9a7f78366bfe1cc9695c132128}{SparseTensorBase}(
+163         \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_} + startOffset, indices\_ + startOffset, subtensorSize, \hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_}));
+164   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/db9/classmarian_1_1SparseTensorBase_af7f5d119d88cad27434eba2dc49bc848_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!to\+Dense@{to\+Dense}}
+\index{to\+Dense@{to\+Dense}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{to\+Dense(\+Tensor t, int offset)}{toDense(Tensor t, int offset)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sparse\+Tensor\+Base\+::to\+Dense (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{t, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1SparseTensorBase_a137f5bf36d71f75ae77c7d8adbe7cb1a}{}\label{classmarian_1_1SparseTensorBase_a137f5bf36d71f75ae77c7d8adbe7cb1a}
+
+
+Definition at line 118 of file sparse\+\_\+tensor.\+h.
+
+
+\begin{DoxyCode}
+118                                      \{
+119     cudaSetDevice(\hyperlink{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{device\_});
+120     \textcolor{keywordtype}{int} threads = 512;
+121     \textcolor{keywordtype}{int} blocks = 1 + \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_} / threads;
+122     t->set(0);
+123     gScatterAdd<<<blocks, threads>>>(
+124         t->data(), \hyperlink{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{data\_}, \hyperlink{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{indices\_}, t->size(), \hyperlink{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{size\_}, offset);
+125   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{capacity\+\_\+}{capacity_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Sparse\+Tensor\+Base\+::capacity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}{}\label{classmarian_1_1SparseTensorBase_a141ed92eb61d17e41085f55c57446dc1}
+
+
+Definition at line 53 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!d\+\_\+is\+\_\+unsorted@{d\+\_\+is\+\_\+unsorted}}
+\index{d\+\_\+is\+\_\+unsorted@{d\+\_\+is\+\_\+unsorted}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{d\+\_\+is\+\_\+unsorted}{d_is_unsorted}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::d\+\_\+is\+\_\+unsorted\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a650c5100969356a168d15b61b8f09d5f}{}\label{classmarian_1_1SparseTensorBase_a650c5100969356a168d15b61b8f09d5f}
+
+
+Definition at line 56 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}{}\label{classmarian_1_1SparseTensorBase_a633f417eb28496e8c0268e551e1992cf}
+
+
+Definition at line 50 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Sparse\+Tensor\+Base\+::device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}{}\label{classmarian_1_1SparseTensorBase_a56fcd8295b57ec3eb731cd431f80c110}
+
+
+Definition at line 54 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!gend\+\_\+@{gend\+\_\+}}
+\index{gend\+\_\+@{gend\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{gend\+\_\+}{gend_}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::gend\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a226a045c5a1148e945a177bd283c693b}{}\label{classmarian_1_1SparseTensorBase_a226a045c5a1148e945a177bd283c693b}
+
+
+Definition at line 58 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!gstart\+\_\+@{gstart\+\_\+}}
+\index{gstart\+\_\+@{gstart\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{gstart\+\_\+}{gstart_}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::gstart\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_ab8941274a48c9bf0f53785888e97e9d9}{}\label{classmarian_1_1SparseTensorBase_ab8941274a48c9bf0f53785888e97e9d9}
+
+
+Definition at line 57 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!indices\+\_\+@{indices\+\_\+}}
+\index{indices\+\_\+@{indices\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{indices\+\_\+}{indices_}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::\+Sparse\+Tensor\+Base\+::indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}{}\label{classmarian_1_1SparseTensorBase_a365dfd224d685b1cc9c8006d5f608cbf}
+
+
+Definition at line 51 of file sparse\+\_\+tensor.\+h.
+
+\index{marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!marian\+::\+Sparse\+Tensor\+Base@{marian\+::\+Sparse\+Tensor\+Base}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::\+Sparse\+Tensor\+Base\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}{}\label{classmarian_1_1SparseTensorBase_a688fe45dc53bafb2eaded0ea9303867c}
+
+
+Definition at line 52 of file sparse\+\_\+tensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sparse__tensor_8h}{sparse\+\_\+tensor.\+h}\end{DoxyCompactItemize}

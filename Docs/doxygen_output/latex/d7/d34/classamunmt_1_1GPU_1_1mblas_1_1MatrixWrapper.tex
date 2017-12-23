@@ -1,0 +1,897 @@
+\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Matrix\+Wrapper$<$ T $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper$<$ T $>$@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper$<$ T $>$}}
+
+
+{\ttfamily \#include $<$matrix\+\_\+wrapper.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:Matrix\+Wrapper$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d1/d86/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a963aad752bc0dfb4264cdfe30a065fc7}{Matrix\+Wrapper} ()
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a4187cbbb8d69e2b7ef67a1d4ee9b614b}{Matrix\+Wrapper} (const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix}$<$ T $>$ \&matrix, bool col\+Major=true)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a306ec23b431f032ab32612b3b04e2252}{Matrix\+Wrapper} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix}$<$ T $>$ \&matrix, bool col\+Major=true)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8424c79a1e32a6ecda10e949a0684933}{Matrix\+Wrapper} (uint a, uint b, uint c, uint d)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aadf70ef14c89755a661690225179e482}{Matrix\+Wrapper} (const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{Array}$<$ T $>$ \&vec)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6d96130479c24d1c4cac1ba852041f18}{Matrix\+Wrapper} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{Array}$<$ T $>$ \&vec)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a799324b54b661c6afce33713f95ec934}{Matrix\+Wrapper} (T $\ast$ptr, uint a, uint b, uint c, uint d)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{dim} (uint i) const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size} () const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride} (uint i) const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{update\+Strides} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb}{update\+Strides\+Row\+Major} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{data} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ const T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a41904dfb844d082ed03466c64412c31c}{data} () const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ const T \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1103bd1708bdb389f581f4c4f27e6dcd}{operator\mbox{[}$\,$\mbox{]}} (uint i) const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ T \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad54c816f0eefa37f9155b580e8c2e0b1}{operator\mbox{[}$\,$\mbox{]}} (uint i)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ const T \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aca5da79a1954635935a880cfdf84b35c}{operator()} (uint a, uint b, uint c, uint d) const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ T \& \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad20ebf908142f588bcd42edaad002fa9}{operator()} (uint a, uint b, uint c, uint d)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1e70b609eca106cb5a161d8cc186cf07}{id2\+Indices} (uint id, uint $\ast$out) const 
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa}{indices2\+Id} (uint a, uint b, uint c, uint d) const 
+\item 
+std\+::string \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_afa181ca54a0a16e376f27cc2ba2fac9d}{Debug} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\+\_\+} \mbox{[}\hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\+\_\+} \mbox{[}\hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{size\+\_\+}
+\item 
+T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\+\_\+}
+\item 
+const T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{data\+Const\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper$<$ T $>$}
+
+
+
+Definition at line 10 of file matrix\+\_\+wrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper()}{MatrixWrapper()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a963aad752bc0dfb4264cdfe30a065fc7}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a963aad752bc0dfb4264cdfe30a065fc7}
+
+
+Definition at line 13 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+14   \{
+15     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = 0;
+16     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = 0;
+17     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = 0;
+18     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = 0;
+19     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+20 
+21     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = \textcolor{keyword}{nullptr};
+22     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = \textcolor{keyword}{nullptr};
+23   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a963aad752bc0dfb4264cdfe30a065fc7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(const T\+Matrix$<$ T $>$ \&matrix, bool col\+Major=true)}{MatrixWrapper(const TMatrix< T > &matrix, bool colMajor=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+Matrix}$<$ T $>$ \&}]{matrix, }
+\item[{bool}]{col\+Major = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a4187cbbb8d69e2b7ef67a1d4ee9b614b}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a4187cbbb8d69e2b7ef67a1d4ee9b614b}
+
+
+Definition at line 25 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+26   \{
+27     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = matrix.dim(0);
+28     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = matrix.dim(1);
+29     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = matrix.dim(2);
+30     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = matrix.dim(3);
+31 
+32     \textcolor{keywordflow}{if} (colMajor) \{
+33       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+34     \}
+35     \textcolor{keywordflow}{else} \{
+36       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb}{updateStridesRowMajor}();
+37     \}
+38 
+39     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = \textcolor{keyword}{nullptr};
+40     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = matrix.data();
+41   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a4187cbbb8d69e2b7ef67a1d4ee9b614b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(\+T\+Matrix$<$ T $>$ \&matrix, bool col\+Major=true)}{MatrixWrapper(TMatrix< T > &matrix, bool colMajor=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Matrix}$<$ T $>$ \&}]{matrix, }
+\item[{bool}]{col\+Major = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a306ec23b431f032ab32612b3b04e2252}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a306ec23b431f032ab32612b3b04e2252}
+
+
+Definition at line 43 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+44   \{
+45     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = matrix.dim(0);
+46     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = matrix.dim(1);
+47     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = matrix.dim(2);
+48     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = matrix.dim(3);
+49 
+50     \textcolor{keywordflow}{if} (colMajor) \{
+51       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+52     \}
+53     \textcolor{keywordflow}{else} \{
+54       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb}{updateStridesRowMajor}();
+55     \}
+56 
+57     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = matrix.data();
+58     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_};
+59   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a306ec23b431f032ab32612b3b04e2252_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(uint a, uint b, uint c, uint d)}{MatrixWrapper(uint a, uint b, uint c, uint d)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{uint}]{a, }
+\item[{uint}]{b, }
+\item[{uint}]{c, }
+\item[{uint}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8424c79a1e32a6ecda10e949a0684933}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8424c79a1e32a6ecda10e949a0684933}
+
+
+Definition at line 61 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+62   \{ \textcolor{comment}{// test constructor}
+63     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = a;
+64     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = b;
+65     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = c;
+66     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d};
+67     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+68   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8424c79a1e32a6ecda10e949a0684933_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(const Array$<$ T $>$ \&vec)}{MatrixWrapper(const Array< T > &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aadf70ef14c89755a661690225179e482}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aadf70ef14c89755a661690225179e482}
+
+
+Definition at line 70 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+71   \{
+72     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = vec.size();
+73     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = 1;
+74     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = 1;
+75     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = 1;
+76     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+77 
+78     assert(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}() == vec.size());
+79 
+80     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = \textcolor{keyword}{nullptr};
+81     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = vec.data();
+82   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aadf70ef14c89755a661690225179e482_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(\+Array$<$ T $>$ \&vec)}{MatrixWrapper(Array< T > &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6d96130479c24d1c4cac1ba852041f18}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6d96130479c24d1c4cac1ba852041f18}
+
+
+Definition at line 84 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+85   \{
+86     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = vec.size();
+87     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = 1;
+88     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = 1;
+89     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = 1;
+90     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+91 
+92     assert(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}() == vec.size());
+93 
+94     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = vec.data();
+95     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_};
+96   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6d96130479c24d1c4cac1ba852041f18_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Matrix\+Wrapper@{Matrix\+Wrapper}}
+\index{Matrix\+Wrapper@{Matrix\+Wrapper}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Matrix\+Wrapper(\+T $\ast$ptr, uint a, uint b, uint c, uint d)}{MatrixWrapper(T *ptr, uint a, uint b, uint c, uint d)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::{\bf Matrix\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ptr, }
+\item[{uint}]{a, }
+\item[{uint}]{b, }
+\item[{uint}]{c, }
+\item[{uint}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a799324b54b661c6afce33713f95ec934}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a799324b54b661c6afce33713f95ec934}
+
+
+Definition at line 99 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+100   \{
+101     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] = a;
+102     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1] = b;
+103     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[2] = c;
+104     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[3] = \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d};
+105     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{updateStrides}();
+106 
+107     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_} = ptr;
+108     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_} = ptr;
+109   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a799324b54b661c6afce33713f95ec934_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}
+
+
+Definition at line 150 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+151   \{
+152     assert(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_});
+153     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{data\_};
+154   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ const T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a41904dfb844d082ed03466c64412c31c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a41904dfb844d082ed03466c64412c31c}
+
+
+Definition at line 157 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+158   \{
+159     assert(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_});
+160     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{dataConst\_};
+161   \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{Debug() const }{Debug() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::string {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_afa181ca54a0a16e376f27cc2ba2fac9d}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_afa181ca54a0a16e376f27cc2ba2fac9d}
+
+
+Definition at line 226 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+227   \{
+228     std::stringstream strm;
+229 
+230     strm << \textcolor{stringliteral}{"dim="};
+231     \textcolor{keywordflow}{for} (uint i = 0; i < \hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{SHAPE\_SIZE}; ++i) \{
+232       strm << \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[i] << \textcolor{stringliteral}{" "};
+233     \}
+234     strm << \textcolor{stringliteral}{"="} << \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{size\_};
+235 
+236     strm << \textcolor{stringliteral}{" stride="};
+237     \textcolor{keywordflow}{for} (uint i = 0; i < \hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{SHAPE\_SIZE}; ++i) \{
+238       strm << \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(i) << \textcolor{stringliteral}{" "};
+239     \}
+240 
+241     \textcolor{keywordflow}{return} strm.str();
+242   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_afa181ca54a0a16e376f27cc2ba2fac9d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_afa181ca54a0a16e376f27cc2ba2fac9d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!dim@{dim}}
+\index{dim@{dim}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{dim(uint i) const }{dim(uint i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::dim (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}
+
+
+Definition at line 112 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+113   \{  \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[i]; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!id2\+Indices@{id2\+Indices}}
+\index{id2\+Indices@{id2\+Indices}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{id2\+Indices(uint id, uint $\ast$out) const }{id2Indices(uint id, uint *out) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::id2\+Indices (
+\begin{DoxyParamCaption}
+\item[{uint}]{id, }
+\item[{uint $\ast$}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1e70b609eca106cb5a161d8cc186cf07}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1e70b609eca106cb5a161d8cc186cf07}
+
+
+Definition at line 192 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+193   \{
+194     assert(\textcolor{keywordtype}{id} < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}());
+195 
+196     out[3] = \textcolor{keywordtype}{id} / \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(3);
+197     \textcolor{keywordtype}{id} = \textcolor{keywordtype}{id} % \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(3);
+198 
+199     out[2] = \textcolor{keywordtype}{id} / \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(2);
+200     \textcolor{keywordtype}{id} = \textcolor{keywordtype}{id} % \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(2);
+201 
+202     out[0] = \textcolor{keywordtype}{id} / \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(0);
+203     \textcolor{keywordtype}{id} = \textcolor{keywordtype}{id} % \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(0);
+204 
+205     out[1] = \textcolor{keywordtype}{id} / \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(1);
+206   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1e70b609eca106cb5a161d8cc186cf07_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1e70b609eca106cb5a161d8cc186cf07_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!indices2\+Id@{indices2\+Id}}
+\index{indices2\+Id@{indices2\+Id}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{indices2\+Id(uint a, uint b, uint c, uint d) const }{indices2Id(uint a, uint b, uint c, uint d) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::indices2\+Id (
+\begin{DoxyParamCaption}
+\item[{uint}]{a, }
+\item[{uint}]{b, }
+\item[{uint}]{c, }
+\item[{uint}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa}
+
+
+Definition at line 209 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+210   \{
+211     assert(a < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{dim}(0));
+212     assert(b < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{dim}(1));
+213     assert(c < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{dim}(2));
+214     assert(\hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d} < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8846d6edb1c807c90f9aa23f4193a665}{dim}(3));
+215 
+216     uint ind = 0;
+217     ind += a * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(0);
+218     ind += b * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(1);
+219     ind += c * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(2);
+220     ind += \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d} * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{stride}(3);
+221 
+222     assert(ind < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}());
+223     \textcolor{keywordflow}{return} ind;
+224   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator()(uint a, uint b, uint c, uint d) const }{operator()(uint a, uint b, uint c, uint d) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ const T\& {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{uint}]{a, }
+\item[{uint}]{b, }
+\item[{uint}]{c, }
+\item[{uint}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aca5da79a1954635935a880cfdf84b35c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aca5da79a1954635935a880cfdf84b35c}
+
+
+Definition at line 178 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+179   \{
+180     uint \textcolor{keywordtype}{id} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa}{indices2Id}(a, b, c, \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d});
+181     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{data}()[id];
+182   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aca5da79a1954635935a880cfdf84b35c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator()(uint a, uint b, uint c, uint d)}{operator()(uint a, uint b, uint c, uint d)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ T\& {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{uint}]{a, }
+\item[{uint}]{b, }
+\item[{uint}]{c, }
+\item[{uint}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad20ebf908142f588bcd42edaad002fa9}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad20ebf908142f588bcd42edaad002fa9}
+
+
+Definition at line 185 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+186   \{
+187     uint \textcolor{keywordtype}{id} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a09c3749fd756b2b72de447ef5ee66cfa}{indices2Id}(a, b, c, \hyperlink{namespacefix__hard_aabe341c29efe998cc0ae0776d9e87043}{d});
+188     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{data}()[id];
+189   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad20ebf908142f588bcd42edaad002fa9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator[](uint i) const }{operator[](uint i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ const T\& {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1103bd1708bdb389f581f4c4f27e6dcd}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1103bd1708bdb389f581f4c4f27e6dcd}
+
+
+Definition at line 164 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+165   \{
+166     assert(i < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}());
+167     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{data}()[i];
+168   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1103bd1708bdb389f581f4c4f27e6dcd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{operator[](uint i)}{operator[](uint i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ T\& {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad54c816f0eefa37f9155b580e8c2e0b1}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad54c816f0eefa37f9155b580e8c2e0b1}
+
+
+Definition at line 171 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+172   \{
+173     assert(i < \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{size}());
+174     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8bac878980ee8e229281d2eb267c0c1b}{data}()[i];
+175   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ad54c816f0eefa37f9155b580e8c2e0b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!size@{size}}
+\index{size@{size}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802}
+
+
+Definition at line 116 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+117   \{
+118     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{size\_};
+119   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_aed1483dbf0148749d04eea433582e802_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!stride@{stride}}
+\index{stride@{stride}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{stride(uint i) const }{stride(uint i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::stride (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7}
+
+
+Definition at line 122 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+123   \{
+124     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[i];
+125   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a8e0bd961034d3596ec4a93dfaf58c5a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!update\+Strides@{update\+Strides}}
+\index{update\+Strides@{update\+Strides}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{update\+Strides()}{updateStrides()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::update\+Strides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940}
+
+
+Definition at line 128 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+129   \{
+130     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[0] = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1];
+131     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[1] = 1;
+132     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[2] = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1];
+133     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[3] = dim\_[0] * dim\_[1] * dim\_[2];
+134 
+135     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{size\_} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[3] * dim\_[3];
+136   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a218d0f178d9f187978212e49641c0940_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!update\+Strides\+Row\+Major@{update\+Strides\+Row\+Major}}
+\index{update\+Strides\+Row\+Major@{update\+Strides\+Row\+Major}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{update\+Strides\+Row\+Major()}{updateStridesRowMajor()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+device\+\_\+\+\_\+ \+\_\+\+\_\+host\+\_\+\+\_\+ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::update\+Strides\+Row\+Major (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb}
+
+
+Definition at line 139 of file matrix\+\_\+wrapper.\+h.
+
+
+\begin{DoxyCode}
+140   \{
+141     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[0] = 1;
+142     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[1] = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0];
+143     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[2] = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[0] * \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{dim\_}[1];
+144     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[3] = dim\_[0] * dim\_[1] * dim\_[2];
+145 
+146     \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{size\_} = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{stride\_}[3] * dim\_[3];
+147   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a1ac84e1638525648f6eba2f995fb34cb_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::data\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_ab350c962dc0fc97fcdb2b1e10b0474e9}
+
+
+Definition at line 249 of file matrix\+\_\+wrapper.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!data\+Const\+\_\+@{data\+Const\+\_\+}}
+\index{data\+Const\+\_\+@{data\+Const\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{data\+Const\+\_\+}{dataConst_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::data\+Const\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a2b562e025bf15e9df43c2db85b4e9ee2}
+
+
+Definition at line 250 of file matrix\+\_\+wrapper.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!dim\+\_\+@{dim\+\_\+}}
+\index{dim\+\_\+@{dim\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{dim\+\_\+}{dim_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::dim\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a3a215de9912888c405dbce53470c00cf}
+
+
+Definition at line 245 of file matrix\+\_\+wrapper.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::size\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a0129d0e6411ab44f357899527a9de65d}
+
+
+Definition at line 247 of file matrix\+\_\+wrapper.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}!stride\+\_\+@{stride\+\_\+}}
+\index{stride\+\_\+@{stride\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper@{amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}}
+\subsubsection[{\texorpdfstring{stride\+\_\+}{stride_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ uint {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+Matrix\+Wrapper}$<$ T $>$\+::stride\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}{}\label{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_a6dabb13853d38e442864ffa313367758}
+
+
+Definition at line 246 of file matrix\+\_\+wrapper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{matrix__wrapper_8h}{matrix\+\_\+wrapper.\+h}\end{DoxyCompactItemize}

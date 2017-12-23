@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d06/structmarian_1_1LogitNodeOp">
+<title>marian::LogitNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::LogitNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d6b/structmarian_1_1LogitNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::LogitNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d90/structmarian_1_1LogitNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d06/structmarian_1_1LogitNodeOp_1aa7d4f02bd4c56cecfa7d408eab860483">LogitNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d06/structmarian_1_1LogitNodeOp_1a01cdefe75c98513764cdbcdc8999b5ef">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d06/structmarian_1_1LogitNodeOp_1a574fae9f1ecf9e601c5ab0312b88d136">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d06/structmarian_1_1LogitNodeOp_1a89ce677c70d1f65f2a359336b6f14543">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d06/structmarian_1_1LogitNodeOp_1aa7d4f02bd4c56cecfa7d408eab860483">
+                <title>marian::LogitNodeOp::LogitNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d06/structmarian_1_1LogitNodeOp_1a01cdefe75c98513764cdbcdc8999b5ef">
+                <title>NodeOps marian::LogitNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d06/structmarian_1_1LogitNodeOp_1a574fae9f1ecf9e601c5ab0312b88d136">
+                <title>NodeOps marian::LogitNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d06/structmarian_1_1LogitNodeOp_1a89ce677c70d1f65f2a359336b6f14543">
+                <title>const std::string marian::LogitNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

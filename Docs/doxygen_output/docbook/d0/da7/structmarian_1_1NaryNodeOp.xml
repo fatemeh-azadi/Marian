@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/da7/structmarian_1_1NaryNodeOp">
+<title>marian::NaryNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/d77/node_8h">&lt;node.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::NaryNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d19/structmarian_1_1NaryNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::NaryNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d1d/structmarian_1_1NaryNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t hash_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/da7/structmarian_1_1NaryNodeOp_1aed8f74da7153fd55707ea8cd1456058b">NaryNodeOp</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d0/da7/structmarian_1_1NaryNodeOp_1a91a3a2f5e7e91d4966698b7bc443d63b">~NaryNodeOp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; <link linkend="d0/da7/structmarian_1_1NaryNodeOp_1a594b5e543321e738a365eecab5db0638">children</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d0/da7/structmarian_1_1NaryNodeOp_1ab1b6a692080382203afe5ceaf0c4279d">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/da7/structmarian_1_1NaryNodeOp_1ae01b13621696a89e290a6e6c7e5c668a">remove_children_from_top_nodes</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/da7/structmarian_1_1NaryNodeOp_1aed8f74da7153fd55707ea8cd1456058b">
+                <title>marian::NaryNodeOp::NaryNodeOp (const std::vector&lt; Expr &gt; &amp;nodes, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/da7/structmarian_1_1NaryNodeOp_1a91a3a2f5e7e91d4966698b7bc443d63b">
+                <title>virtual marian::NaryNodeOp::~NaryNodeOp ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/da7/structmarian_1_1NaryNodeOp_1a594b5e543321e738a365eecab5db0638">
+                <title>std::vector&lt;Expr&gt;&amp; marian::NaryNodeOp::children ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/da7/structmarian_1_1NaryNodeOp_1ab1b6a692080382203afe5ceaf0c4279d">
+                <title>virtual size_t marian::NaryNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/da7/structmarian_1_1NaryNodeOp_1ae01b13621696a89e290a6e6c7e5c668a">
+                <title>void marian::NaryNodeOp::remove_children_from_top_nodes ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

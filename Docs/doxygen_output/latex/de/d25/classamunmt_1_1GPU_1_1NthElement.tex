@@ -1,0 +1,209 @@
+\hypertarget{classamunmt_1_1GPU_1_1NthElement}{}\section{amunmt\+:\+:G\+PU\+:\+:Nth\+Element Class Reference}
+\label{classamunmt_1_1GPU_1_1NthElement}\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+
+
+{\ttfamily \#include $<$nth\+\_\+element.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Nth\+Element\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/da7/classamunmt_1_1GPU_1_1NthElement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NthElement_a9481caa29f7c86f5eef0893e0eb0c179}{Nth\+Element} ()=delete
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NthElement_a2fd3cfcd80c78af56bbffa10e2a86b61}{Nth\+Element} (const \hyperlink{classamunmt_1_1GPU_1_1NthElement}{Nth\+Element} \&copy)=delete
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NthElement_a2309a381e27377ca51a9befa39d2fb88}{Nth\+Element} (uint max\+Beam\+Size, uint max\+Batch\+Size)
+\item 
+virtual \hyperlink{classamunmt_1_1GPU_1_1NthElement_a35b16ed77f4e2981ad0cc38a2d60dfe8}{$\sim$\+Nth\+Element} ()
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1NthElement_aaed3b2c335f19a3e95dbbc4f5bc899db}{get\+N\+Best\+List} (const std\+::vector$<$ uint $>$ \&beam\+Sizes, \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ uint $>$ \&out\+Keys, const bool is\+First=false)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1NthElement_aee660af609c4cd3787bed4c7a457df08}{Get\+Pairs} (uint number, std\+::vector$<$ uint $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1NthElement_a76f1dcaa21cab7d3dae79e8065df2e3a}{get\+Value\+By\+Key} (std\+::vector$<$ float $>$ \&out, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&d\+\_\+in) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1NthElement_a89c467a1af86daa2407335b71dcae372}{get\+N\+Best\+List} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&probs, const std\+::vector$<$ uint $>$ \&batch\+First\+Element\+Idxs, const std\+::vector$<$ uint $>$ \&cummulated\+Beam\+Sizes)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const uint \hyperlink{classamunmt_1_1GPU_1_1NthElement_a1f8b1479cf23b5b8aa9f703286e963c2}{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE} = 512
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{mblas\+::\+T\+Matrix}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_a548c267a24a0bb08c0e1404f686bb436}{d\+\_\+out}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{mblas\+::\+T\+Matrix}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_a0a062223b34ac2de666f65bb66c1a8ba}{d\+\_\+res}
+\item 
+std\+::vector$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_ab23b653e994f5b6a24bcb12aa8afc1e7}{h\+\_\+res}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{mblas\+::\+T\+Matrix}$<$ float $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_a43e7096145399135e2142662f09e763a}{d\+\_\+breakdown}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{mblas\+::\+T\+Matrix}$<$ uint $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_ac2ca8b0b8656e32630331bf9b805b6bd}{d\+\_\+batch\+Position}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{mblas\+::\+T\+Matrix}$<$ uint $>$ \hyperlink{classamunmt_1_1GPU_1_1NthElement_adc21c425caa1181bf05b06b475dafc10}{d\+\_\+cum\+Beam\+Sizes}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1NthElement_a86e18f1731eb39119d07d2f1b6692dca}{max\+Beam\+Size\+\_\+}
+\item 
+uint \hyperlink{classamunmt_1_1GPU_1_1NthElement_a86641a85c4e1c28d3e4776640a10187f}{max\+Batch\+Size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element()=delete}{NthElement()=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a9481caa29f7c86f5eef0893e0eb0c179}{}\label{classamunmt_1_1GPU_1_1NthElement_a9481caa29f7c86f5eef0893e0eb0c179}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element(const Nth\+Element \&copy)=delete}{NthElement(const NthElement &copy)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Nth\+Element} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a2fd3cfcd80c78af56bbffa10e2a86b61}{}\label{classamunmt_1_1GPU_1_1NthElement_a2fd3cfcd80c78af56bbffa10e2a86b61}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!Nth\+Element@{Nth\+Element}}
+\index{Nth\+Element@{Nth\+Element}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Nth\+Element(uint max\+Beam\+Size, uint max\+Batch\+Size)}{NthElement(uint maxBeamSize, uint maxBatchSize)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::\+Nth\+Element (
+\begin{DoxyParamCaption}
+\item[{uint}]{max\+Beam\+Size, }
+\item[{uint}]{max\+Batch\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a2309a381e27377ca51a9befa39d2fb88}{}\label{classamunmt_1_1GPU_1_1NthElement_a2309a381e27377ca51a9befa39d2fb88}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!````~Nth\+Element@{$\sim$\+Nth\+Element}}
+\index{````~Nth\+Element@{$\sim$\+Nth\+Element}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{$\sim$\+Nth\+Element()}{~NthElement()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::$\sim$\+Nth\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a35b16ed77f4e2981ad0cc38a2d60dfe8}{}\label{classamunmt_1_1GPU_1_1NthElement_a35b16ed77f4e2981ad0cc38a2d60dfe8}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!get\+N\+Best\+List@{get\+N\+Best\+List}}
+\index{get\+N\+Best\+List@{get\+N\+Best\+List}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+N\+Best\+List(const std\+::vector$<$ uint $>$ \&beam\+Sizes, mblas\+::\+Matrix \&\+Probs, std\+::vector$<$ float $>$ \&out\+Costs, std\+::vector$<$ uint $>$ \&out\+Keys, const bool is\+First=false)}{getNBestList(const std::vector< uint > &beamSizes, mblas::Matrix &Probs, std::vector< float > &outCosts, std::vector< uint > &outKeys, const bool isFirst=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::get\+N\+Best\+List (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes, }
+\item[{{\bf mblas\+::\+Matrix} \&}]{Probs, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Costs, }
+\item[{std\+::vector$<$ uint $>$ \&}]{out\+Keys, }
+\item[{const bool}]{is\+First = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NthElement_aaed3b2c335f19a3e95dbbc4f5bc899db}{}\label{classamunmt_1_1GPU_1_1NthElement_aaed3b2c335f19a3e95dbbc4f5bc899db}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!get\+N\+Best\+List@{get\+N\+Best\+List}}
+\index{get\+N\+Best\+List@{get\+N\+Best\+List}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+N\+Best\+List(mblas\+::\+Matrix \&probs, const std\+::vector$<$ uint $>$ \&batch\+First\+Element\+Idxs, const std\+::vector$<$ uint $>$ \&cummulated\+Beam\+Sizes)}{getNBestList(mblas::Matrix &probs, const std::vector< uint > &batchFirstElementIdxs, const std::vector< uint > &cummulatedBeamSizes)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::get\+N\+Best\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{probs, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{batch\+First\+Element\+Idxs, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{cummulated\+Beam\+Sizes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a89c467a1af86daa2407335b71dcae372}{}\label{classamunmt_1_1GPU_1_1NthElement_a89c467a1af86daa2407335b71dcae372}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!Get\+Pairs@{Get\+Pairs}}
+\index{Get\+Pairs@{Get\+Pairs}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{Get\+Pairs(uint number, std\+::vector$<$ uint $>$ \&out\+Keys, std\+::vector$<$ float $>$ \&out\+Values)}{GetPairs(uint number, std::vector< uint > &outKeys, std::vector< float > &outValues)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::\+Get\+Pairs (
+\begin{DoxyParamCaption}
+\item[{uint}]{number, }
+\item[{std\+::vector$<$ uint $>$ \&}]{out\+Keys, }
+\item[{std\+::vector$<$ float $>$ \&}]{out\+Values}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NthElement_aee660af609c4cd3787bed4c7a457df08}{}\label{classamunmt_1_1GPU_1_1NthElement_aee660af609c4cd3787bed4c7a457df08}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!get\+Value\+By\+Key@{get\+Value\+By\+Key}}
+\index{get\+Value\+By\+Key@{get\+Value\+By\+Key}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{get\+Value\+By\+Key(std\+::vector$<$ float $>$ \&out, const mblas\+::\+Matrix \&d\+\_\+in) const }{getValueByKey(std::vector< float > &out, const mblas::Matrix &d_in) const }}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::get\+Value\+By\+Key (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{out, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{d\+\_\+in}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a76f1dcaa21cab7d3dae79e8065df2e3a}{}\label{classamunmt_1_1GPU_1_1NthElement_a76f1dcaa21cab7d3dae79e8065df2e3a}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}{BLOCK_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}const uint amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE = 512\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a1f8b1479cf23b5b8aa9f703286e963c2}{}\label{classamunmt_1_1GPU_1_1NthElement_a1f8b1479cf23b5b8aa9f703286e963c2}
+
+
+Definition at line 35 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!d\+\_\+batch\+Position@{d\+\_\+batch\+Position}}
+\index{d\+\_\+batch\+Position@{d\+\_\+batch\+Position}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+batch\+Position}{d_batchPosition}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+T\+Matrix}$<$uint$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::d\+\_\+batch\+Position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_ac2ca8b0b8656e32630331bf9b805b6bd}{}\label{classamunmt_1_1GPU_1_1NthElement_ac2ca8b0b8656e32630331bf9b805b6bd}
+
+
+Definition at line 43 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!d\+\_\+breakdown@{d\+\_\+breakdown}}
+\index{d\+\_\+breakdown@{d\+\_\+breakdown}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+breakdown}{d_breakdown}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+T\+Matrix}$<$float$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::d\+\_\+breakdown\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a43e7096145399135e2142662f09e763a}{}\label{classamunmt_1_1GPU_1_1NthElement_a43e7096145399135e2142662f09e763a}
+
+
+Definition at line 42 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!d\+\_\+cum\+Beam\+Sizes@{d\+\_\+cum\+Beam\+Sizes}}
+\index{d\+\_\+cum\+Beam\+Sizes@{d\+\_\+cum\+Beam\+Sizes}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+cum\+Beam\+Sizes}{d_cumBeamSizes}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+T\+Matrix}$<$uint$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::d\+\_\+cum\+Beam\+Sizes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_adc21c425caa1181bf05b06b475dafc10}{}\label{classamunmt_1_1GPU_1_1NthElement_adc21c425caa1181bf05b06b475dafc10}
+
+
+Definition at line 44 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!d\+\_\+out@{d\+\_\+out}}
+\index{d\+\_\+out@{d\+\_\+out}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+out}{d_out}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+T\+Matrix}$<${\bf Nth\+Out}$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::d\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a548c267a24a0bb08c0e1404f686bb436}{}\label{classamunmt_1_1GPU_1_1NthElement_a548c267a24a0bb08c0e1404f686bb436}
+
+
+Definition at line 37 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!d\+\_\+res@{d\+\_\+res}}
+\index{d\+\_\+res@{d\+\_\+res}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{d\+\_\+res}{d_res}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mblas\+::\+T\+Matrix}$<${\bf Nth\+Out}$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::d\+\_\+res\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a0a062223b34ac2de666f65bb66c1a8ba}{}\label{classamunmt_1_1GPU_1_1NthElement_a0a062223b34ac2de666f65bb66c1a8ba}
+
+
+Definition at line 39 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!h\+\_\+res@{h\+\_\+res}}
+\index{h\+\_\+res@{h\+\_\+res}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{h\+\_\+res}{h_res}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Nth\+Out}$>$ amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::h\+\_\+res\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_ab23b653e994f5b6a24bcb12aa8afc1e7}{}\label{classamunmt_1_1GPU_1_1NthElement_ab23b653e994f5b6a24bcb12aa8afc1e7}
+
+
+Definition at line 40 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!max\+Batch\+Size\+\_\+@{max\+Batch\+Size\+\_\+}}
+\index{max\+Batch\+Size\+\_\+@{max\+Batch\+Size\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{max\+Batch\+Size\+\_\+}{maxBatchSize_}}]{\setlength{\rightskip}{0pt plus 5cm}uint amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::max\+Batch\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a86641a85c4e1c28d3e4776640a10187f}{}\label{classamunmt_1_1GPU_1_1NthElement_a86641a85c4e1c28d3e4776640a10187f}
+
+
+Definition at line 46 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}!max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}}
+\index{max\+Beam\+Size\+\_\+@{max\+Beam\+Size\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Nth\+Element@{amunmt\+::\+G\+P\+U\+::\+Nth\+Element}}
+\subsubsection[{\texorpdfstring{max\+Beam\+Size\+\_\+}{maxBeamSize_}}]{\setlength{\rightskip}{0pt plus 5cm}uint amunmt\+::\+G\+P\+U\+::\+Nth\+Element\+::max\+Beam\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NthElement_a86e18f1731eb39119d07d2f1b6692dca}{}\label{classamunmt_1_1GPU_1_1NthElement_a86e18f1731eb39119d07d2f1b6692dca}
+
+
+Definition at line 46 of file amun/gpu/mblas/nth\+\_\+element.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2gpu_2mblas_2nth__element_8h}{amun/gpu/mblas/nth\+\_\+element.\+h}\end{DoxyCompactItemize}

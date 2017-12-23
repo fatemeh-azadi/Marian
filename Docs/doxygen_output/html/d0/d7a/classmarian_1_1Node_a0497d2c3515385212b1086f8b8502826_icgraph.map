@@ -1,0 +1,31 @@
+<map id="marian::Node::grad" name="marian::Node::grad">
+<area shape="rect" id="node2" href="$dc/d8c/structmarian_1_1DotNodeOp.html#a015697830536478b4b8226c7e963dd3a" title="marian::DotNodeOp::\lbackwardOps" alt="" coords="207,5,353,47"/>
+<area shape="rect" id="node4" href="$d9/dbf/structmarian_1_1ScalarProductNodeOp.html#ad8f0e8f1aa0b07f36280265ce5b2d808" title="marian::ScalarProductNode\lOp::backwardOps" alt="" coords="189,71,371,112"/>
+<area shape="rect" id="node5" href="$dd/d8b/structmarian_1_1PlusNodeOp.html#a3a9f5aac6cb519bc00c7cd916d458859" title="marian::PlusNodeOp\l::backwardOps" alt="" coords="209,136,351,177"/>
+<area shape="rect" id="node6" href="$d1/de6/structmarian_1_1MinusNodeOp.html#a126094d4dcd7a89fc897f0017d18e51b" title="marian::MinusNodeOp\l::backwardOps" alt="" coords="204,201,356,243"/>
+<area shape="rect" id="node7" href="$dc/d98/structmarian_1_1MultNodeOp.html#a27aa4d7f39e4ba64e3be883ca6dfaf45" title="marian::MultNodeOp\l::backwardOps" alt="" coords="209,267,351,308"/>
+<area shape="rect" id="node8" href="$df/de1/structmarian_1_1DivNodeOp.html#affd4ce9819f516cb1ea37786ffd8815a" title="marian::DivNodeOp::\lbackwardOps" alt="" coords="207,332,353,373"/>
+<area shape="rect" id="node9" href="$da/d72/structmarian_1_1CrossEntropyNodeOp.html#ac500562de661363f71a0f16331dd60e7" title="marian::CrossEntropyNode\lOp::backwardOps" alt="" coords="190,397,370,439"/>
+<area shape="rect" id="node10" href="$d0/d6a/structmarian_1_1AffineNodeOp.html#a277f706113217219266122ccbd44679b" title="marian::AffineNodeOp\l::backwardOps" alt="" coords="205,463,355,504"/>
+<area shape="rect" id="node11" href="$d8/deb/structmarian_1_1LayerNormalizationOp.html#a31596fee029ef32402528e24376e2c69" title="marian::LayerNormalization\lOp::backwardOps" alt="" coords="189,528,371,569"/>
+<area shape="rect" id="node12" href="$d1/df0/structmarian_1_1ScalarAddNodeOp.html#a9507deac5ac29d8b07fc950a1e7b3aff" title="marian::ScalarAddNodeOp\l::backwardOps" alt="" coords="191,593,369,635"/>
+<area shape="rect" id="node13" href="$d2/d6d/structmarian_1_1ScalarMultNodeOp.html#ae090e81626c938ff80aa51f0ec738e43" title="marian::ScalarMultNodeOp\l::backwardOps" alt="" coords="191,659,369,700"/>
+<area shape="rect" id="node14" href="$dc/d06/structmarian_1_1LogitNodeOp.html#a574fae9f1ecf9e601c5ab0312b88d136" title="marian::LogitNodeOp\l::backwardOps" alt="" coords="207,724,353,765"/>
+<area shape="rect" id="node15" href="$d9/d8a/structmarian_1_1TanhNodeOp.html#a01f8dfc69d49509d2ba630517d3e10d6" title="marian::TanhNodeOp\l::backwardOps" alt="" coords="207,789,353,831"/>
+<area shape="rect" id="node16" href="$d6/daf/structmarian_1_1ReLUNodeOp.html#ad1878b3530b0044d1bc7bbe1ad2d66a1" title="marian::ReLUNodeOp\l::backwardOps" alt="" coords="205,855,355,896"/>
+<area shape="rect" id="node17" href="$df/d60/structmarian_1_1SoftmaxNodeOp.html#a60b215754e045ea3442cb8bb1ba26465" title="marian::SoftmaxNodeOp\l::backwardOps" alt="" coords="197,920,363,961"/>
+<area shape="rect" id="node18" href="$d3/d92/structmarian_1_1LogSoftmaxNodeOp.html#ab2ae88fe3ba607a32e566c6e0022c9f7" title="marian::LogSoftmaxNodeOp\l::backwardOps" alt="" coords="187,985,373,1027"/>
+<area shape="rect" id="node19" href="$dc/d7a/structmarian_1_1SumNodeOp.html#a705a3304de7f9aad90b7ead6736a8e46" title="marian::SumNodeOp::\lbackwardOps" alt="" coords="204,1051,356,1092"/>
+<area shape="rect" id="node20" href="$de/dfa/structmarian_1_1MeanNodeOp.html#a6ea05faab13f92bf40430274016db0f6" title="marian::MeanNodeOp\l::backwardOps" alt="" coords="205,1116,355,1157"/>
+<area shape="rect" id="node21" href="$d0/d51/structmarian_1_1LogNodeOp.html#a739a39b083f5995aee9badd4b528de03" title="marian::LogNodeOp::\lbackwardOps" alt="" coords="207,1181,353,1223"/>
+<area shape="rect" id="node22" href="$d5/dc7/structmarian_1_1ExpNodeOp.html#a99a3c11f354e675876e681abd964c99d" title="marian::ExpNodeOp::\lbackwardOps" alt="" coords="206,1247,354,1288"/>
+<area shape="rect" id="node23" href="$d3/d71/structmarian_1_1SqrtNodeOp.html#adeeaeffd66c0f516cc43b2f84b2a3240" title="marian::SqrtNodeOp\l::backwardOps" alt="" coords="209,1312,351,1353"/>
+<area shape="rect" id="node24" href="$db/dd5/structmarian_1_1SquareNodeOp.html#acc9e02797b8bdbbb797033bc0712bee7" title="marian::SquareNodeOp\l::backwardOps" alt="" coords="201,1377,359,1419"/>
+<area shape="rect" id="node25" href="$d4/d57/structmarian_1_1NegNodeOp.html#ab7f6421e5106374dae28e016b48280fd" title="marian::NegNodeOp::\lbackwardOps" alt="" coords="205,1443,355,1484"/>
+<area shape="rect" id="node26" href="$db/dfd/structmarian_1_1RowsNodeOp.html#a09fcd9c3cd6c67f9c0ab37c48d9c41cd" title="marian::RowsNodeOp\l::backwardOps" alt="" coords="205,1508,355,1549"/>
+<area shape="rect" id="node27" href="$d7/d70/structmarian_1_1ColsNodeOp.html#ab5711eb131212a41924e7da36d2e396c" title="marian::ColsNodeOp\l::backwardOps" alt="" coords="208,1573,352,1615"/>
+<area shape="rect" id="node28" href="$d7/dc5/structmarian_1_1TransposeNodeOp.html#ac924d0a88ccf18ed27ffc6e10a5fd075" title="marian::TransposeNodeOp\l::backwardOps" alt="" coords="191,1639,369,1680"/>
+<area shape="rect" id="node29" href="$d9/d6c/structmarian_1_1ShiftNodeOp.html#aa23a0bc2d5f513cb6d2f540783a720a3" title="marian::ShiftNodeOp\l::backwardOps" alt="" coords="208,1704,352,1745"/>
+<area shape="rect" id="node30" href="$df/da9/structmarian_1_1LexicalProbNodeOp.html#a494a1751a4a92064d0b6f88672e67e69" title="marian::LexicalProbNodeOp\l::backward" alt="" coords="187,1769,373,1811"/>
+<area shape="rect" id="node3" href="$d8/deb/structmarian_1_1LayerNormalizationOp.html#a4181e34fd584d36ffb6397feb1c2ef51" title="marian::LayerNormalization\lOp::type" alt="" coords="421,5,603,47"/>
+</map>

@@ -1,0 +1,95 @@
+\hypertarget{classmarian_1_1Sgd}{}\section{marian\+:\+:Sgd Class Reference}
+\label{classmarian_1_1Sgd}\index{marian\+::\+Sgd@{marian\+::\+Sgd}}
+
+
+{\ttfamily \#include $<$optimizers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Sgd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d4/dbb/classmarian_1_1Sgd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Sgd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{dd/d51/classmarian_1_1Sgd__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1Sgd_a52cb732a0651ad0ecd39cd1829b6938e}{Sgd} (float eta, Args...\+args)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1Sgd_a8a74cc7115e1aafcb67d013b37c8f1ec}{update\+Impl} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grads)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 49 of file optimizers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Sgd@{marian\+::\+Sgd}!Sgd@{Sgd}}
+\index{Sgd@{Sgd}!marian\+::\+Sgd@{marian\+::\+Sgd}}
+\subsubsection[{\texorpdfstring{Sgd(float eta, Args...\+args)}{Sgd(float eta, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Sgd\+::\+Sgd (
+\begin{DoxyParamCaption}
+\item[{float}]{eta, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Sgd_a52cb732a0651ad0ecd39cd1829b6938e}{}\label{classmarian_1_1Sgd_a52cb732a0651ad0ecd39cd1829b6938e}
+
+
+Definition at line 52 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+52 : \hyperlink{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}{OptimizerBase}(\hyperlink{namespacemarian_1_1keywords_af8a81aa00fe33fd2eea3287b1bff35be}{eta}, args...) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d1/da5/classmarian_1_1Sgd_a52cb732a0651ad0ecd39cd1829b6938e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Sgd@{marian\+::\+Sgd}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!marian\+::\+Sgd@{marian\+::\+Sgd}}
+\subsubsection[{\texorpdfstring{update\+Impl(\+Tensor params, Tensor grads)}{updateImpl(Tensor params, Tensor grads)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Sgd\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params, }
+\item[{{\bf Tensor}}]{grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1Sgd_a8a74cc7115e1aafcb67d013b37c8f1ec}{}\label{classmarian_1_1Sgd_a8a74cc7115e1aafcb67d013b37c8f1ec}
+
+
+Implements \hyperlink{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{marian\+::\+Optimizer\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{optimizers_8h}{optimizers.\+h}\end{DoxyCompactItemize}

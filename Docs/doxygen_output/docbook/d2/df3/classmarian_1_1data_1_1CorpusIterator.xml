@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator">
+<title>marian::data::CorpusIterator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/d8f/corpus_8h">&lt;corpus.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::CorpusIterator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d9f/classmarian_1_1data_1_1CorpusIterator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::CorpusIterator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d5f/classmarian_1_1data_1_1CorpusIterator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Corpus * corpus_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SentenceTuple tup_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int pos_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a92c02bbdf32a86020a67fa8b1c7dadd1">CorpusIterator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a764a04bff4c5198bab87349daaa2c8dd">CorpusIterator</link> (
+<link linkend="d9/daf/classmarian_1_1data_1_1Corpus">Corpus</link> &amp; corpus)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a5ed84552327c21fb556a1d0185990b9d">increment</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a4812630a233e6cf5e2412ebcb2b68bd7">equal</link> (
+<link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator">CorpusIterator</link> const &amp; other)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="d8/d05/classmarian_1_1data_1_1SentenceTuple">SentenceTuple</link> &amp; <link linkend="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a06c4c53091baf2ecb4a1afc756778c6f">dereference</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a92c02bbdf32a86020a67fa8b1c7dadd1">
+                <title>marian::data::CorpusIterator::CorpusIterator ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a764a04bff4c5198bab87349daaa2c8dd">
+                <title>marian::data::CorpusIterator::CorpusIterator (Corpus &amp;corpus)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a5ed84552327c21fb556a1d0185990b9d">
+                <title>void marian::data::CorpusIterator::increment ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a4812630a233e6cf5e2412ebcb2b68bd7">
+                <title>bool marian::data::CorpusIterator::equal (CorpusIterator const &amp;other) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/df3/classmarian_1_1data_1_1CorpusIterator_1a06c4c53091baf2ecb4a1afc756778c6f">
+                <title>const SentenceTuple &amp; marian::data::CorpusIterator::dereference () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

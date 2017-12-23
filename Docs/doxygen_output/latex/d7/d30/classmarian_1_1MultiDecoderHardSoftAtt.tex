@@ -1,0 +1,360 @@
+\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt}{}\section{marian\+:\+:Multi\+Decoder\+Hard\+Soft\+Att Class Reference}
+\label{classmarian_1_1MultiDecoderHardSoftAtt}\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+
+
+{\ttfamily \#include $<$hardatt.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Multi\+Decoder\+Hard\+Soft\+Att\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/d61/classmarian_1_1MultiDecoderHardSoftAtt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Multi\+Decoder\+Hard\+Soft\+Att\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d65/classmarian_1_1MultiDecoderHardSoftAtt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1MultiDecoderHardSoftAtt_a78a197b705bb25ecbbafb6006e963036}{Multi\+Decoder\+Hard\+Soft\+Att} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1MultiDecoderHardSoftAtt_a82443e3da9466ff952ac9deeb0a77df6}{start\+State} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderState}{Encoder\+State} $>$ enc\+State)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1MultiDecoderHardSoftAtt_a9dc01206082f6b287300c2ee6460d3ba}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state)
+\item 
+virtual void \hyperlink{classmarian_1_1MultiDecoderHardSoftAtt_a2c0c368e276e2db20c116b20497b1bb6}{select\+Embeddings} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Idx)
+\item 
+const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \hyperlink{classmarian_1_1MultiDecoderHardSoftAtt_a5663940ea8e359b7af4ebb16380fe01e}{get\+Alignments} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 351 of file hardatt.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}!Multi\+Decoder\+Hard\+Soft\+Att@{Multi\+Decoder\+Hard\+Soft\+Att}}
+\index{Multi\+Decoder\+Hard\+Soft\+Att@{Multi\+Decoder\+Hard\+Soft\+Att}!marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+\subsubsection[{\texorpdfstring{Multi\+Decoder\+Hard\+Soft\+Att(\+Ptr$<$ Config $>$ options, Args...\+args)}{MultiDecoderHardSoftAtt(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att\+::\+Multi\+Decoder\+Hard\+Soft\+Att (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt_a78a197b705bb25ecbbafb6006e963036}{}\label{classmarian_1_1MultiDecoderHardSoftAtt_a78a197b705bb25ecbbafb6006e963036}
+
+
+Definition at line 354 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+355       : \hyperlink{classmarian_1_1DecoderHardSoftAtt_a4685d8ba22a7f5b083dd15a7957d97f6}{DecoderHardSoftAtt}(options, args...) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}!get\+Alignments@{get\+Alignments}}
+\index{get\+Alignments@{get\+Alignments}!marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+\subsubsection[{\texorpdfstring{get\+Alignments()}{getAlignments()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf Expr}$>$ marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att\+::get\+Alignments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt_a5663940ea8e359b7af4ebb16380fe01e}{}\label{classmarian_1_1MultiDecoderHardSoftAtt_a5663940ea8e359b7af4ebb16380fe01e}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderHardSoftAtt_a39c270be364b3e37f3834f6fc867ac34}{marian\+::\+Decoder\+Hard\+Soft\+Att}.
+
+
+
+Definition at line 519 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+519                                         \{
+520     \textcolor{keyword}{auto} att1 = \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}->at(0)->as<rnn::StackedCell>()->at(1)->as<
+      \hyperlink{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{rnn::Attention}>();
+521     \textcolor{keywordflow}{return} att1->\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_a7fab38ad7965922a7e8eb26f0d4906af}{getAlignments}();
+522   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_a5663940ea8e359b7af4ebb16380fe01e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}!select\+Embeddings@{select\+Embeddings}}
+\index{select\+Embeddings@{select\+Embeddings}!marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+\subsubsection[{\texorpdfstring{select\+Embeddings(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Idx)}{selectEmbeddings(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state, const std::vector< size_t > &embIdx)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att\+::select\+Embeddings (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{emb\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt_a2c0c368e276e2db20c116b20497b1bb6}{}\label{classmarian_1_1MultiDecoderHardSoftAtt_a2c0c368e276e2db20c116b20497b1bb6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderHardAtt_a7da3e691169734a9c952c6402e13f379}{marian\+::\+Decoder\+Hard\+Att}.
+
+
+
+Definition at line 495 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+497                                                                  \{
+498     \hyperlink{classmarian_1_1DecoderBase_aedde227a468dd3d8aa9e94c558d4bd2f}{DecoderBase::selectEmbeddings}(graph, state, embIdx);
+499 
+500     \textcolor{keyword}{auto} stateHardAtt = std::dynamic\_pointer\_cast<DecoderStateHardAtt>(state);
+501 
+502     \textcolor{keyword}{auto} mEncState = std::static\_pointer\_cast<EncoderStateMultiS2S>(
+503         state->getEncoderState());
+504 
+505     \textcolor{keywordtype}{int} dimSrcWords = mEncState->enc1->getContext()->shape()[2];
+506 
+507     \textcolor{keywordflow}{if}(embIdx.empty()) \{
+508       stateHardAtt->setAttentionIndices(\{0\});
+509     \} \textcolor{keywordflow}{else} \{
+510       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < embIdx.size(); ++i)
+511         \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1DecoderHardAtt_ae7483a3610b341043577f1d17d5b9241}{specialSymbols\_}.count(embIdx[i])) \{
+512           stateHardAtt->getAttentionIndices()[i]++;
+513           \textcolor{keywordflow}{if}(stateHardAtt->getAttentionIndices()[i] >= dimSrcWords)
+514             stateHardAtt->getAttentionIndices()[i] = dimSrcWords - 1;
+515         \}
+516     \}
+517   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_a2c0c368e276e2db20c116b20497b1bb6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}!start\+State@{start\+State}}
+\index{start\+State@{start\+State}!marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+\subsubsection[{\texorpdfstring{start\+State(\+Ptr$<$ Encoder\+State $>$ enc\+State)}{startState(Ptr< EncoderState > encState)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att\+::start\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Encoder\+State} $>$}]{enc\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt_a82443e3da9466ff952ac9deeb0a77df6}{}\label{classmarian_1_1MultiDecoderHardSoftAtt_a82443e3da9466ff952ac9deeb0a77df6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderHardAtt_a242961c2a50950ca158b5f4965df4ef7}{marian\+::\+Decoder\+Hard\+Att}.
+
+
+
+Definition at line 357 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+357                                                                    \{
+358     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+359 
+360     \textcolor{keyword}{auto} mEncState = std::static\_pointer\_cast<EncoderStateMultiS2S>(encState);
+361 
+362     \textcolor{keyword}{auto} meanContext1 = \hyperlink{namespacemarian_a8ccb9507a69a32ecd48410fd1557f209}{weighted\_average}(
+363         mEncState->enc1->getContext(), mEncState->enc1->getMask(), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2);
+364 
+365     \textcolor{keyword}{auto} meanContext2 = \hyperlink{namespacemarian_a8ccb9507a69a32ecd48410fd1557f209}{weighted\_average}(
+366         mEncState->enc2->getContext(), mEncState->enc2->getMask(), \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 2);
+367 
+368     \textcolor{keyword}{auto} graph = meanContext1->graph();
+369 
+370     \textcolor{comment}{// apply single layer network to mean to map into decoder space}
+371     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp} = \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp::mlp}(graph)
+372                .push\_back(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{mlp::dense}(graph)
+373                           (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_ff\_state"})
+374                           (\textcolor{stringliteral}{"dim"}, opt<int>(\textcolor{stringliteral}{"dim-rnn"}))
+375                           (\textcolor{stringliteral}{"activation"}, \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}{mlp::act::tanh})
+376                           (\textcolor{stringliteral}{"layer-normalization"}, opt<bool>(\textcolor{stringliteral}{"layer-normalization"})));
+377     \textcolor{keyword}{auto} start = \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp}->apply(meanContext1, meanContext2);
+378 
+379     \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{rnn::States} startStates(opt<size\_t>(\textcolor{stringliteral}{"dec-depth"}), \{start, start\});
+380     \textcolor{keywordflow}{return} New<DecoderStateHardAtt>(
+381         startStates, \textcolor{keyword}{nullptr}, encState, std::vector<size\_t>(\{0\}));
+382   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_a82443e3da9466ff952ac9deeb0a77df6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}!step@{step}}
+\index{step@{step}!marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att@{marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state)}{step(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Multi\+Decoder\+Hard\+Soft\+Att\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1MultiDecoderHardSoftAtt_a9dc01206082f6b287300c2ee6460d3ba}{}\label{classmarian_1_1MultiDecoderHardSoftAtt_a9dc01206082f6b287300c2ee6460d3ba}
+
+
+Reimplemented from \hyperlink{classmarian_1_1DecoderHardSoftAtt_aa3331fae45271298ce86ad6f6a5c9cf5}{marian\+::\+Decoder\+Hard\+Soft\+Att}.
+
+
+
+Definition at line 384 of file hardatt.\+h.
+
+
+\begin{DoxyCode}
+385                                                           \{
+386     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+387 
+388     \textcolor{keywordtype}{int} dimTrgVoc = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"}).back();
+389 
+390     \textcolor{keywordtype}{int} dimTrgEmb = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-emb"});
+391 
+392     \textcolor{keywordtype}{int} dimDecState = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"dim-rnn"});
+393     \textcolor{keywordtype}{bool} layerNorm = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"layer-normalization"});
+394     \textcolor{keywordtype}{bool} skipDepth = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"skip"});
+395 
+396     \textcolor{keywordtype}{size\_t} decoderLayers = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"dec-depth"});
+397     \textcolor{keyword}{auto} cellType = \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<std::string>(\textcolor{stringliteral}{"dec-cell"});
+398 
+399     \textcolor{keywordtype}{float} dropoutRnn = \hyperlink{classmarian_1_1DecoderBase_a808975d515f60a53096f6794c3dc61d4}{inference\_} ? 0 : \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"dropout-rnn"});
+400     \textcolor{keywordtype}{float} dropoutTrg = \hyperlink{classmarian_1_1DecoderBase_a808975d515f60a53096f6794c3dc61d4}{inference\_} ? 0 : \hyperlink{classmarian_1_1DecoderBase_a75375e7661a014fd15bbee3b0a047b91}{options\_}->get<\textcolor{keywordtype}{float}>(\textcolor{stringliteral}{"dropout-trg"});
+401 
+402     \textcolor{keyword}{auto} stateHardAtt = std::dynamic\_pointer\_cast<DecoderStateHardAtt>(state);
+403 
+404     \textcolor{keyword}{auto} trgEmbeddings = stateHardAtt->getTargetEmbeddings();
+405 
+406     \textcolor{keyword}{auto} context = stateHardAtt->getEncoderState()->getContext();
+407     \textcolor{keywordtype}{int} dimContext = context->shape()[1];
+408     \textcolor{keywordtype}{int} dimSrcWords = context->shape()[2];
+409 
+410     \textcolor{keywordtype}{int} dimBatch = context->shape()[0];
+411     \textcolor{keywordtype}{int} dimTrgWords = trgEmbeddings->shape()[2];
+412     \textcolor{keywordtype}{int} dimBeam = trgEmbeddings->shape()[3];
+413 
+414     \textcolor{keywordflow}{if}(dropoutTrg) \{
+415       \textcolor{keyword}{auto} trgWordDrop = graph->dropout(dropoutTrg, \{dimBatch, 1, dimTrgWords\});
+416       trgEmbeddings = \hyperlink{namespacemarian_a268400392f22176821c7c4a36733b178}{dropout}(trgEmbeddings, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = trgWordDrop);
+417     \}
+418 
+419     \textcolor{keyword}{auto} flatContext = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(context, \{dimBatch * dimSrcWords, dimContext\});
+420     \textcolor{keyword}{auto} attendedContext
+421         = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}(flatContext, stateHardAtt->getAttentionIndices());
+422     attendedContext = \hyperlink{namespacemarian_acd984f43188d0ae23c2a6ef13ae5293f}{reshape}(attendedContext,
+423                               \{dimBatch, dimContext, dimTrgWords, dimBeam\});
+424 
+425     \textcolor{keyword}{auto} rnnInputs = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{trgEmbeddings, attendedContext\}, 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 1);
+426     \textcolor{keywordtype}{int} dimInput = rnnInputs->shape()[1];
+427 
+428     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}) \{
+429 
+430       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn} = \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn::rnn}(graph)
+431                  (\textcolor{stringliteral}{"type"}, cellType)
+432                  (\textcolor{stringliteral}{"dimInput"}, dimInput)
+433                  (\textcolor{stringliteral}{"dimState"}, dimDecState)
+434                  (\textcolor{stringliteral}{"dropout"}, dropoutRnn)
+435                  (\textcolor{stringliteral}{"layer-normalization"}, layerNorm)
+436                  (\textcolor{stringliteral}{"skip"}, skipDepth);
+437 
+438       \textcolor{keyword}{auto} mEncState = std::static\_pointer\_cast<EncoderStateMultiS2S>(
+439         state->getEncoderState());
+440 
+441       \textcolor{keyword}{auto} attCell = \hyperlink{namespacemarian_1_1rnn_a55385034d5ad19187245bb2b564cb7eb}{rnn::stacked\_cell}(graph)
+442                      .push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+443                                 (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_cell1"}))
+444                      .push\_back(\hyperlink{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}{rnn::attention}(graph)
+445                                 (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_att1"})
+446                                 .set\_state(mEncState->enc1))
+447                      .push\_back(\hyperlink{namespacemarian_1_1rnn_a57316dc4c756edb2a8dfabea7e50d92b}{rnn::attention}(graph)
+448                                 (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_att2"})
+449                                 .set\_state(mEncState->enc2))
+450                      .push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+451                                 (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_cell2"})
+452                                 (\textcolor{stringliteral}{"final"}, \textcolor{keyword}{true}));
+453 
+454       \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}.push\_back(attCell);
+455       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < decoderLayers - 1; ++i)
+456         \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}.push\_back(\hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{rnn::cell}(graph)
+457                       (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_l"} + std::to\_string(i)));
+458 
+459       \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_} = \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}.construct();
+460 
+461     \}
+462 
+463     \textcolor{keyword}{auto} decContext = \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}->transduce(rnnInputs, stateHardAtt->getStates());
+464     \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{rnn::States} decStates = \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}->lastCellStates();
+465 
+466     \textcolor{keyword}{auto} att1 = \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}->at(0)->as<rnn::StackedCell>()->at(1)->as<
+      \hyperlink{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{rnn::Attention}>();
+467     \textcolor{keyword}{auto} alignedContext1 = att1->\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b}{getContext}();
+468 
+469     \textcolor{keyword}{auto} att2 = \hyperlink{classmarian_1_1DecoderHardSoftAtt_ae077a0f8f32a457c0c2c972ca4251ede}{rnn\_}->at(0)->as<rnn::StackedCell>()->at(2)->as<
+      \hyperlink{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{rnn::Attention}>();
+470     \textcolor{keyword}{auto} alignedContext2 = att2->\hyperlink{classmarian_1_1rnn_1_1GlobalAttention_ad518e4c82f56b8f95393dffa2df2288b}{getContext}();
+471 
+472     \textcolor{keyword}{auto} alignedContext = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(\{alignedContext1,
+473                                        alignedContext2\},
+474                                        axis=1);
+475 
+477     \textcolor{keyword}{auto} out = \hyperlink{namespacemarian_1_1mlp_a4d0fe240d31bdc33bcbdb5401de49e27}{mlp::mlp}(graph)
+478                .push\_back(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{mlp::dense}(graph)
+479                           (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_ff\_logit\_l1"})
+480                           (\textcolor{stringliteral}{"dim"}, dimTrgEmb)
+481                           (\textcolor{stringliteral}{"activation"}, \hyperlink{namespacemarian_1_1mlp_ac16d27a877d16d7394f2057aee439d72a5c0dbba3a6ee4ac0eb26cfee75ccb8b4}{mlp::act::tanh})
+482                           (\textcolor{stringliteral}{"layer-normalization"}, layerNorm))
+483                .push\_back(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{mlp::dense}(graph)
+484                           (\textcolor{stringliteral}{"prefix"}, \hyperlink{classmarian_1_1DecoderBase_a043a90801b6bda9a45e309607136e947}{prefix\_} + \textcolor{stringliteral}{"\_ff\_logit\_l2"})
+485                           (\textcolor{stringliteral}{"dim"}, dimTrgVoc));
+486 
+487     \textcolor{keyword}{auto} logits = out->apply(rnnInputs, decContext, alignedContext);
+488 
+489     \textcolor{keywordflow}{return} New<DecoderStateHardAtt>(decStates,
+490                                     logits,
+491                                     stateHardAtt->getEncoderState(),
+492                                     stateHardAtt->getAttentionIndices());
+493   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_a9dc01206082f6b287300c2ee6460d3ba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hardatt_8h}{hardatt.\+h}\end{DoxyCompactItemize}

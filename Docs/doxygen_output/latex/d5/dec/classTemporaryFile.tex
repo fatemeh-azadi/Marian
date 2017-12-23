@@ -1,0 +1,263 @@
+\hypertarget{classTemporaryFile}{}\section{Temporary\+File Class Reference}
+\label{classTemporaryFile}\index{Temporary\+File@{Temporary\+File}}
+
+
+{\ttfamily \#include $<$file\+\_\+stream.\+h$>$}
+
+
+
+Collaboration diagram for Temporary\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d6/d45/classTemporaryFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTemporaryFile_ae277398c5952b6ad8f1884a9a529a5cd}{Temporary\+File} (const std\+::string base=\char`\"{}/tmp/\char`\"{})
+\item 
+\hyperlink{classTemporaryFile_a7a0f828343c95d3a7e81d6d3587ad116}{$\sim$\+Temporary\+File} ()
+\item 
+int \hyperlink{classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19}{get\+File\+Descriptor} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTemporaryFile_a31644f6b89b246deb1ccaa1dbc8f0e40}{mkstemp\+\_\+and\+\_\+unlink} (char $\ast$tmpl)
+\item 
+int \hyperlink{classTemporaryFile_a29753c39509ccada57e78c7c89141f06}{Make\+Temp} (const std\+::string \&base)
+\item 
+void \hyperlink{classTemporaryFile_a97edc170c91b8a4b3fe49aab861ad5d4}{Normalize\+Temp\+Prefix} (std\+::string \&base)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Temporary\+File@{Temporary\+File}!Temporary\+File@{Temporary\+File}}
+\index{Temporary\+File@{Temporary\+File}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{Temporary\+File(const std\+::string base=""/tmp/"")}{TemporaryFile(const std::string base="/tmp/")}}]{\setlength{\rightskip}{0pt plus 5cm}Temporary\+File\+::\+Temporary\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{base = {\ttfamily \char`\"{}/tmp/\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTemporaryFile_ae277398c5952b6ad8f1884a9a529a5cd}{}\label{classTemporaryFile_ae277398c5952b6ad8f1884a9a529a5cd}
+
+
+Definition at line 52 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+52                                                 \{
+53     std::string baseTemp(base);
+54     \hyperlink{classTemporaryFile_a97edc170c91b8a4b3fe49aab861ad5d4}{NormalizeTempPrefix}(baseTemp);
+55     \hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\_} = \hyperlink{classTemporaryFile_a29753c39509ccada57e78c7c89141f06}{MakeTemp}(baseTemp);
+56   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_ae277398c5952b6ad8f1884a9a529a5cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Temporary\+File@{Temporary\+File}!````~Temporary\+File@{$\sim$\+Temporary\+File}}
+\index{````~Temporary\+File@{$\sim$\+Temporary\+File}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{$\sim$\+Temporary\+File()}{~TemporaryFile()}}]{\setlength{\rightskip}{0pt plus 5cm}Temporary\+File\+::$\sim$\+Temporary\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTemporaryFile_a7a0f828343c95d3a7e81d6d3587ad116}{}\label{classTemporaryFile_a7a0f828343c95d3a7e81d6d3587ad116}
+
+
+Definition at line 58 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+58                    \{
+59     \textcolor{keywordflow}{if}(\hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\_} != -1 && close(\hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\_})) \{
+60       std::cerr << \textcolor{stringliteral}{"Could not close file "} << \hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\_} << std::endl;
+61       std::abort();
+62     \}
+63   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Temporary\+File@{Temporary\+File}!get\+File\+Descriptor@{get\+File\+Descriptor}}
+\index{get\+File\+Descriptor@{get\+File\+Descriptor}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{get\+File\+Descriptor()}{getFileDescriptor()}}]{\setlength{\rightskip}{0pt plus 5cm}int Temporary\+File\+::get\+File\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19}{}\label{classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19}
+
+
+Definition at line 65 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+65 \{ \textcolor{keywordflow}{return} \hyperlink{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{fd\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_a072b404ac82e2fe98d9c78ed93fc4e19_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Temporary\+File@{Temporary\+File}!Make\+Temp@{Make\+Temp}}
+\index{Make\+Temp@{Make\+Temp}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{Make\+Temp(const std\+::string \&base)}{MakeTemp(const std::string &base)}}]{\setlength{\rightskip}{0pt plus 5cm}int Temporary\+File\+::\+Make\+Temp (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classTemporaryFile_a29753c39509ccada57e78c7c89141f06}{}\label{classTemporaryFile_a29753c39509ccada57e78c7c89141f06}
+
+
+Definition at line 28 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+28                                       \{
+29     std::string name(base);
+30     name += \textcolor{stringliteral}{"XXXXXX"};
+31     name.push\_back(0);
+32     \textcolor{keywordtype}{int} ret;
+33     UTIL\_THROW\_IF2(-1 == (ret = \hyperlink{classTemporaryFile_a31644f6b89b246deb1ccaa1dbc8f0e40}{mkstemp\_and\_unlink}(&name[0])),
+34                    \textcolor{stringliteral}{"while making a temporary based on "} << base);
+35     \textcolor{keywordflow}{return} ret;
+36   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_a29753c39509ccada57e78c7c89141f06_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_a29753c39509ccada57e78c7c89141f06_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Temporary\+File@{Temporary\+File}!mkstemp\+\_\+and\+\_\+unlink@{mkstemp\+\_\+and\+\_\+unlink}}
+\index{mkstemp\+\_\+and\+\_\+unlink@{mkstemp\+\_\+and\+\_\+unlink}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{mkstemp\+\_\+and\+\_\+unlink(char $\ast$tmpl)}{mkstemp_and_unlink(char *tmpl)}}]{\setlength{\rightskip}{0pt plus 5cm}int Temporary\+File\+::mkstemp\+\_\+and\+\_\+unlink (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{tmpl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classTemporaryFile_a31644f6b89b246deb1ccaa1dbc8f0e40}{}\label{classTemporaryFile_a31644f6b89b246deb1ccaa1dbc8f0e40}
+
+
+Definition at line 20 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+20                                      \{
+21     \textcolor{keywordtype}{int} ret = mkstemp(tmpl);
+22     \textcolor{keywordflow}{if}(ret != -1) \{
+23       UTIL\_THROW\_IF2(unlink(tmpl), \textcolor{stringliteral}{"while deleting "} << tmpl);
+24     \}
+25     \textcolor{keywordflow}{return} ret;
+26   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_a31644f6b89b246deb1ccaa1dbc8f0e40_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Temporary\+File@{Temporary\+File}!Normalize\+Temp\+Prefix@{Normalize\+Temp\+Prefix}}
+\index{Normalize\+Temp\+Prefix@{Normalize\+Temp\+Prefix}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{Normalize\+Temp\+Prefix(std\+::string \&base)}{NormalizeTempPrefix(std::string &base)}}]{\setlength{\rightskip}{0pt plus 5cm}void Temporary\+File\+::\+Normalize\+Temp\+Prefix (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classTemporaryFile_a97edc170c91b8a4b3fe49aab861ad5d4}{}\label{classTemporaryFile_a97edc170c91b8a4b3fe49aab861ad5d4}
+
+
+Definition at line 38 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+\begin{DoxyCode}
+38                                             \{
+39     \textcolor{keywordflow}{if}(base.empty())
+40       \textcolor{keywordflow}{return};
+41     \textcolor{keywordflow}{if}(base[base.size() - 1] == \textcolor{charliteral}{'/'})
+42       \textcolor{keywordflow}{return};
+43     \textcolor{keyword}{struct }stat sb;
+44     \textcolor{comment}{// It's fine for it to not exist.}
+45     \textcolor{keywordflow}{if}(-1 == stat(base.c\_str(), &sb))
+46       \textcolor{keywordflow}{return};
+47     \textcolor{keywordflow}{if}(S\_ISDIR(sb.st\_mode))
+48       base += \textcolor{charliteral}{'/'};
+49   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dec/classTemporaryFile_a97edc170c91b8a4b3fe49aab861ad5d4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Temporary\+File@{Temporary\+File}!fd\+\_\+@{fd\+\_\+}}
+\index{fd\+\_\+@{fd\+\_\+}!Temporary\+File@{Temporary\+File}}
+\subsubsection[{\texorpdfstring{fd\+\_\+}{fd_}}]{\setlength{\rightskip}{0pt plus 5cm}int Temporary\+File\+::fd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}{}\label{classTemporaryFile_a3c914ba5112fa559431c069a0c04f49f}
+
+
+Definition at line 18 of file marian/src/common/file\+\_\+stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2common_2file__stream_8h}{marian/src/common/file\+\_\+stream.\+h}\end{DoxyCompactItemize}

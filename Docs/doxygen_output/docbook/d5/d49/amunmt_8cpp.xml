@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d49/amunmt_8cpp">
+    <title>amunmt.cpp File Reference</title>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;boost/timer/timer.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/thread/tss.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/python.hpp&gt;</programlisting>
+    <programlisting>#include &quot;common/god.h&quot;</programlisting>
+    <programlisting>#include &quot;common/logging.h&quot;</programlisting>
+    <programlisting>#include &quot;common/threadpool.h&quot;</programlisting>
+    <programlisting>#include &quot;common/search.h&quot;</programlisting>
+    <programlisting>#include &quot;common/printer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentence.h&quot;</programlisting>
+    <programlisting>#include &quot;common/sentences.h&quot;</programlisting>
+    <programlisting>#include &quot;common/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;common/translation_task.h&quot;</programlisting>
+<para>Include dependency diagram for amunmt.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d73/amunmt_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for amunmt.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/da8/amunmt_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/d4e/classamunmt_1_1God">God</link> <link linkend="d5/d49/amunmt_8cpp_1a68e183ea40ac13ec04c8df483d3eeb9c">god_</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d49/amunmt_8cpp_1a2e8ddb8bd2f3405f554c9f2c52277f4b">init</link> (
+const std::string &amp; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::python::list <link linkend="d5/d49/amunmt_8cpp_1a86ebd9110196f3b5328ad3c3d31cd007">translate</link> (
+boost::python::list &amp; in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d49/amunmt_8cpp_1a1fa5ce5d158455cf2d152ebcbcdf29d0">BOOST_PYTHON_MODULE</link> (
+libamunmt )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file amunmt.cpp</para>
+    </simplesect>
+</section>

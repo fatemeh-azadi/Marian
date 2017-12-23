@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment">
+<title>amunmt::GPU::Weights::DecAlignment struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d2c/amun_2gpu_2dl4mt_2model_8h">&lt;model.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Weights::DecAlignment</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d14/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Weights::DecAlignment</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dcc/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; V_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; W_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; B_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; U_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; C_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Gamma_1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::shared_ptr&lt; mblas::Matrix &gt; Gamma_2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment_1a0b826f830847470f13cd1177cbf5a815">DecAlignment</link> (
+const <link linkend="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment">DecAlignment</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment_1ab9f72f570ba3971d5f8bbdb72a4982bb">DecAlignment</link> (
+const <link linkend="d3/ddf/classamunmt_1_1GPU_1_1NpzConverter">NpzConverter</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment_1a0b826f830847470f13cd1177cbf5a815">
+                <title>amunmt::GPU::Weights::DecAlignment::DecAlignment (const DecAlignment &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d68/structamunmt_1_1GPU_1_1Weights_1_1DecAlignment_1ab9f72f570ba3971d5f8bbdb72a4982bb">
+                <title>amunmt::GPU::Weights::DecAlignment::DecAlignment (const NpzConverter &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

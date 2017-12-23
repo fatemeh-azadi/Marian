@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/da2/structamunmt_1_1GPU_1_1NthOut">
+<title>amunmt::GPU::NthOut struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/db1/nth__element__kernels_8h">&lt;nth_element_kernels.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::NthOut</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/de7/structamunmt_1_1GPU_1_1NthOut__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::NthOut</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dee/structamunmt_1_1GPU_1_1NthOut__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint ind</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float score</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut_1a979359f6888f6eeb9d6b56cdf8d84cb2">NthOut</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut_1a1104066f5ef2fafba6cabf30c159bd2a">NthOut</link> (
+uint init)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut_1ac3421e0f8928a69e805d412d421cb8a3">NthOut</link> (
+uint &amp; vInd, float vScore)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &amp; <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut_1a4bd38b073569507260685323ab0838bd">operator+=</link> (
+const <link linkend="db/da2/structamunmt_1_1GPU_1_1NthOut">NthOut</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/da2/structamunmt_1_1GPU_1_1NthOut_1a979359f6888f6eeb9d6b56cdf8d84cb2">
+                <title>__device__ __host__ amunmt::GPU::NthOut::NthOut ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/da2/structamunmt_1_1GPU_1_1NthOut_1a1104066f5ef2fafba6cabf30c159bd2a">
+                <title>__device__ __host__ amunmt::GPU::NthOut::NthOut (uint init)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/da2/structamunmt_1_1GPU_1_1NthOut_1ac3421e0f8928a69e805d412d421cb8a3">
+                <title>__device__ __host__ amunmt::GPU::NthOut::NthOut (uint &amp;vInd, float vScore)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/da2/structamunmt_1_1GPU_1_1NthOut_1a4bd38b073569507260685323ab0838bd">
+                <title>__device__ __host__ NthOut&amp; amunmt::GPU::NthOut::operator+= (const NthOut &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d62/classmarian_1_1sparse_1_1CSR">
+<title>marian::sparse::CSR class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/dd7/sparse_8h">&lt;sparse.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::sparse::CSR</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/de6/classmarian_1_1sparse_1_1CSR__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::sparse::CSR</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/de8/classmarian_1_1sparse_1_1CSR__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int nnz_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int rows_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int cols_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cusparseHandle_t handle_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cusparseMatDescr_t descr_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * rowIndices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * colIndices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * values_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a7a2b6f436319f0f5382e10c7709dd2c6">CSR</link> (
+int rows, int cols, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1ac6c38489d34bc7aded9878e9d92c9dce">CSR</link> (
+int rows, int cols, const std::vector&lt; float &gt; &amp; values, const std::vector&lt; int &gt; &amp; rowIndices, const std::vector&lt; int &gt; &amp; colIndices, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a5e62d4f84783a6a7fce4a0392225f916">CSR</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> dense)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1ac34b367d43aab52753212a9fb801cb65">~CSR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a10f3b80814d3d694e568255f226e7418">toTensor</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> dense)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cusparseHandle_t <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a25bc1f2b6c9d78e0faf5f0f19f9305e9">handle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cusparseMatDescr_t <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1ae4ae60a33b7eb31a15c98427d9d4a4af">description</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a9b68bf8d20aacba28f927880c2400b52">nnz</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a257b7c6a4c057270dace672caecdf69a">rows</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a2df7ca188de91d079ec9fb3157f5286d">cols</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float * <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1af3d51ccd7e843d03db235cc5ec81d366">values</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a2ef5c672f6f31487700cf0b14b2048b4">rowIndices</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1aa85374eab5d0e848ff5af442b8ba2232">colIndices</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a81c8add2340a4d2ec22be32a5f4185dc">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a4b280206ea0651821d1993cb38d2ada7">allocValues</link> (
+int nnz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a35eb04afb14985e6fe9ce75b3a8f0ff4">allocRowIndices</link> (
+int rows)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1a0b0089d20b429d67d3483627d577815d">allocColIndices</link> (
+int nnz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR_1ac4d7eff581b229cb8ad0b65f80a39b62">debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a7a2b6f436319f0f5382e10c7709dd2c6">
+                <title>marian::sparse::CSR::CSR (int rows, int cols, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1ac6c38489d34bc7aded9878e9d92c9dce">
+                <title>marian::sparse::CSR::CSR (int rows, int cols, const std::vector&lt; float &gt; &amp;values, const std::vector&lt; int &gt; &amp;rowIndices, const std::vector&lt; int &gt; &amp;colIndices, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a5e62d4f84783a6a7fce4a0392225f916">
+                <title>marian::sparse::CSR::CSR (Tensor dense)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1ac34b367d43aab52753212a9fb801cb65">
+                <title>marian::sparse::CSR::~CSR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a10f3b80814d3d694e568255f226e7418">
+                <title>void marian::sparse::CSR::toTensor (Tensor dense)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a25bc1f2b6c9d78e0faf5f0f19f9305e9">
+                <title>cusparseHandle_t marian::sparse::CSR::handle ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1ae4ae60a33b7eb31a15c98427d9d4a4af">
+                <title>cusparseMatDescr_t marian::sparse::CSR::description ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a9b68bf8d20aacba28f927880c2400b52">
+                <title>int marian::sparse::CSR::nnz ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a257b7c6a4c057270dace672caecdf69a">
+                <title>int marian::sparse::CSR::rows ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a2df7ca188de91d079ec9fb3157f5286d">
+                <title>int marian::sparse::CSR::cols ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1af3d51ccd7e843d03db235cc5ec81d366">
+                <title>float* marian::sparse::CSR::values ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a2ef5c672f6f31487700cf0b14b2048b4">
+                <title>int* marian::sparse::CSR::rowIndices ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1aa85374eab5d0e848ff5af442b8ba2232">
+                <title>int* marian::sparse::CSR::colIndices ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a81c8add2340a4d2ec22be32a5f4185dc">
+                <title>size_t marian::sparse::CSR::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a4b280206ea0651821d1993cb38d2ada7">
+                <title>void marian::sparse::CSR::allocValues (int nnz=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a35eb04afb14985e6fe9ce75b3a8f0ff4">
+                <title>void marian::sparse::CSR::allocRowIndices (int rows=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1a0b0089d20b429d67d3483627d577815d">
+                <title>void marian::sparse::CSR::allocColIndices (int nnz=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d62/classmarian_1_1sparse_1_1CSR_1ac4d7eff581b229cb8ad0b65f80a39b62">
+                <title>std::string marian::sparse::CSR::debug ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

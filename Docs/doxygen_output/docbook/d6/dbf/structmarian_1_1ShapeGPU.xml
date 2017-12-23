@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dbf/structmarian_1_1ShapeGPU">
+<title>marian::ShapeGPU struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d29/shape__gpu_8h">&lt;shape_gpu.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ShapeGPU</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/de3/structmarian_1_1ShapeGPU__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ShapeGPU</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d24/structmarian_1_1ShapeGPU__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int shape_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int stride_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int bstride_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a0a8de43da6ef2eff572585f5780f8b61">ShapeGPU</link> (
+)<para><emphasis>Constructs a default shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a13529f654e08e8b5b5a74f6e66c22fdc">ShapeGPU</link> (
+std::initializer_list&lt; int &gt; il)<para><emphasis>Constructs a shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a1d1f437e8b921acc0044d6b27fd9c0de">ShapeGPU</link> (
+const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> &amp; shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a0860255b1ddd7e4bbde8c9ebc60738ca">ShapeGPU</link> (
+const <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> &amp; shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1ac0dcb3abcea0f59dafd339cd49249547">updateStrides</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1aabf629e515546d98185f54651936fa4e">set</link> (
+int i, int dim)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a5a960d13af52f0b02aa1ba0e6d29a734">dim</link> (
+int i)<para><emphasis>Gets a reference to the int representing the size of the
+&lt;code&gt;i&lt;/code&gt;th dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a081cd10d19ea282349cd6258d1b438a1">dim</link> (
+int i)<para><emphasis>Gets the size of the &lt;code&gt;i&lt;/code&gt;th dimension represented by this
+object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1aa055cb9851f538831c1ffdd6b7b9f06a">operator[]</link> (
+int i)<para><emphasis>Gets a reference to the int representing the size of the
+&lt;code&gt;i&lt;/code&gt;th dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a4f9dc2d347c1c665d7988dc9b931299b">operator[]</link> (
+int i)<para><emphasis>Gets the size of the &lt;code&gt;i&lt;/code&gt;th dimension represented by this
+object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a411087bfb2a81997c34fc70d16915b72">stride</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a654ae2347fb721431816e338b1f55292">bstride</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ size_t <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1aa9f763893bf9869c8d1e185fd8ffd46f">size</link> (
+)<para><emphasis>Gets the number of dimensions represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a4af583e3ce361798a8b84c4f0a058e5d">elements</link> (
+)<para><emphasis>Gets the total number of elements in a tensor of this shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1ab7d93ef443405d53f34cd2d41c25fd37">index</link> (
+int * d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ int <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1abba723039045f88819630d71dc448744">bindex</link> (
+int * d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ void <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a35f26e62cc21105d42ab2e872298d01a">dims</link> (
+int i, int * d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1ad554ee83ce80bb45f6ae0cb1f3757a13">begin</link> (
+)<para><emphasis>Gets a pointer to an int that specifies the size of the first
+dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int * <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a72aa4cb98ce3cfd74f4a32ffbdc5731c">end</link> (
+)<para><emphasis>Gets a pointer to an int that specifies the size of the last
+dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int * <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1aee7df6d72cd1f6902bbf6b55204f3c9f">begin</link> (
+)<para><emphasis>Gets a const pointer to an int that specifies the size of the first
+dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int * <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a2b79e2858c5728c879ecdbe715d1fef5">end</link> (
+)<para><emphasis>Gets a const pointer to an int that specifies the size of the last
+dimension represented by this object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1ad0c633b0b24bd5fe274cd5fd82829edf">operator==</link> (
+const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> &amp; other)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d6/dbf/structmarian_1_1ShapeGPU_1a17fd00f6b6ead0006f376cf97595c1d6">operator!=</link> (
+const <link linkend="d6/dbf/structmarian_1_1ShapeGPU">ShapeGPU</link> &amp; other)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Represents the size of each dimension in a tensor. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Note: this class currently is hard-coded to four dimensions. </para>
+                <para>Definition at line 17 of file shape_gpu.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>shape_gpu.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a0a8de43da6ef2eff572585f5780f8b61">
+                <title>marian::ShapeGPU::ShapeGPU ()</title> <emphasis>Constructs a default shape.</emphasis>
+                
+<para>This default shape has four dimensions. The size of each dimension is 1. </para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a13529f654e08e8b5b5a74f6e66c22fdc">
+                <title>marian::ShapeGPU::ShapeGPU (std::initializer_list&lt; int &gt; il)</title> <emphasis>Constructs a shape.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para>A list of integers representing the size of each dimension. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a1d1f437e8b921acc0044d6b27fd9c0de">
+                <title>marian::ShapeGPU::ShapeGPU (const ShapeGPU &amp;shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a0860255b1ddd7e4bbde8c9ebc60738ca">
+                <title>marian::ShapeGPU::ShapeGPU (const Shape &amp;shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1ac0dcb3abcea0f59dafd339cd49249547">
+                <title>void marian::ShapeGPU::updateStrides ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1aabf629e515546d98185f54651936fa4e">
+                <title>void marian::ShapeGPU::set (int i, int dim)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a5a960d13af52f0b02aa1ba0e6d29a734">
+                <title>__host__ __device__ int marian::ShapeGPU::dim (int i)</title> <emphasis>Gets a reference to the int representing the size of the
+&lt;code&gt;i&lt;/code&gt;th dimension represented by this object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>a reference to the int representing the size of the <computeroutput>i</computeroutput>th dimension represented by this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a081cd10d19ea282349cd6258d1b438a1">
+                <title>__host__ __device__ int marian::ShapeGPU::dim (int i) const </title> <emphasis>Gets the size of the &lt;code&gt;i&lt;/code&gt;th dimension represented by this
+object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the size of the <computeroutput>i</computeroutput>th dimension represented by this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1aa055cb9851f538831c1ffdd6b7b9f06a">
+                <title>__host__ __device__ int marian::ShapeGPU::operator[] (int i)</title> <emphasis>Gets a reference to the int representing the size of the
+&lt;code&gt;i&lt;/code&gt;th dimension represented by this object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>a reference to the int representing the size of the <computeroutput>i</computeroutput>th dimension represented by this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a4f9dc2d347c1c665d7988dc9b931299b">
+                <title>__host__ __device__ int marian::ShapeGPU::operator[] (int i) const </title> <emphasis>Gets the size of the &lt;code&gt;i&lt;/code&gt;th dimension represented by this
+object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the size of the <computeroutput>i</computeroutput>th dimension represented by this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a411087bfb2a81997c34fc70d16915b72">
+                <title>__host__ __device__ int marian::ShapeGPU::stride (int i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a654ae2347fb721431816e338b1f55292">
+                <title>__host__ __device__ int marian::ShapeGPU::bstride (int i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1aa9f763893bf9869c8d1e185fd8ffd46f">
+                <title>__host__ __device__ size_t marian::ShapeGPU::size () const </title> <emphasis>Gets the number of dimensions represented by this object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the number of dimensions represented by this object </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a4af583e3ce361798a8b84c4f0a058e5d">
+                <title>__host__ __device__ int marian::ShapeGPU::elements () const </title> <emphasis>Gets the total number of elements in a tensor of this shape.</emphasis>
+                
+<para>For example, if this shape represents a 5x100 tensor, this method would return 500.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>the total number of elements in a tensor of this shape </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1ab7d93ef443405d53f34cd2d41c25fd37">
+                <title>__host__ __device__ int marian::ShapeGPU::index (int *d) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1abba723039045f88819630d71dc448744">
+                <title>__host__ __device__ int marian::ShapeGPU::bindex (int *d) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a35f26e62cc21105d42ab2e872298d01a">
+                <title>__host__ __device__ void marian::ShapeGPU::dims (int i, int *d) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1ad554ee83ce80bb45f6ae0cb1f3757a13">
+                <title>int* marian::ShapeGPU::begin ()</title> <emphasis>Gets a pointer to an int that specifies the size of the first
+dimension represented by this object.</emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a72aa4cb98ce3cfd74f4a32ffbdc5731c">
+                <title>int* marian::ShapeGPU::end ()</title> <emphasis>Gets a pointer to an int that specifies the size of the last
+dimension represented by this object.</emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1aee7df6d72cd1f6902bbf6b55204f3c9f">
+                <title>const int* marian::ShapeGPU::begin () const </title> <emphasis>Gets a const pointer to an int that specifies the size of the first
+dimension represented by this object.</emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a2b79e2858c5728c879ecdbe715d1fef5">
+                <title>const int* marian::ShapeGPU::end () const </title> <emphasis>Gets a const pointer to an int that specifies the size of the last
+dimension represented by this object.</emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1ad0c633b0b24bd5fe274cd5fd82829edf">
+                <title>bool marian::ShapeGPU::operator== (const ShapeGPU &amp;other) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/dbf/structmarian_1_1ShapeGPU_1a17fd00f6b6ead0006f376cf97595c1d6">
+                <title>bool marian::ShapeGPU::operator!= (const ShapeGPU &amp;other) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,61 @@
+\hypertarget{chainable_8h}{}\section{chainable.\+h File Reference}
+\label{chainable_8h}\index{chainable.\+h@{chainable.\+h}}
+{\ttfamily \#include $<$boost/functional/hash.\+hpp$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/definitions.\+h\char`\"{}}\\*
+Include dependency graph for chainable.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d47/chainable_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d1b/chainable_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{classmarian_1_1Chainable}{marian\+::\+Chainable$<$ Data\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Abstraction of an element in a computation graph for which a derivative can be calculated. \end{DoxyCompactList}\item 
+struct \hyperlink{classmarian_1_1Chainable}{marian\+::\+Chainable$<$ Data\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Abstraction of an element in a computation graph for which a derivative can be calculated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{chainable_8h_a48f5ac3fc4e5043f1ebfed786912842c}{Node\+Op}(op)~\mbox{[}=\mbox{]}() \{ op; \}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::function$<$ void()$>$ $>$ \hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{marian\+::\+Node\+Ops}
+\item 
+typedef Weak$<$ Chainable$<$ Tensor $>$ $>$ \hyperlink{namespacemarian_a2b926a792e343705a2eb5224771f47de}{marian\+::\+W\+Expr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{chainable.\+h@{chainable.\+h}!Node\+Op@{Node\+Op}}
+\index{Node\+Op@{Node\+Op}!chainable.\+h@{chainable.\+h}}
+\subsubsection[{\texorpdfstring{Node\+Op}{NodeOp}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Node\+Op(
+\begin{DoxyParamCaption}
+\item[{}]{op}
+\end{DoxyParamCaption}
+)~\mbox{[}=\mbox{]}() \{ op; \}}\hypertarget{chainable_8h_a48f5ac3fc4e5043f1ebfed786912842c}{}\label{chainable_8h_a48f5ac3fc4e5043f1ebfed786912842c}
+
+
+Definition at line 15 of file chainable.\+h.
+

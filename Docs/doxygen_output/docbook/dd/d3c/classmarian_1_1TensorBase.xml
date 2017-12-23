@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d3c/classmarian_1_1TensorBase">
+<title>marian::TensorBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d3d/tensor_8h">&lt;tensor.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TensorBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dd3/classmarian_1_1TensorBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TensorBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d77/classmarian_1_1TensorBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; MemoryPiece &gt; memory_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shape shape_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t device_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d3c/classmarian_1_1TensorBase_1a1542be522ca1bdfb1c314580859b8982">TensorBase</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; memory, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shape, size_t device)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d3c/classmarian_1_1TensorBase_1a3a7c371bb0c969d5984ab976518b8dee">~TensorBase</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="dd/d3c/classmarian_1_1TensorBase_1af507312f77caa146a8c0bf13eaf96bd4">reset</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; memory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d97/classmarian_1_1MemoryPiece">MemoryPiece</link> &gt; <link linkend="dd/d3c/classmarian_1_1TensorBase_1a0fef86a2f4c3704c38cbe3aa6d11b113">memory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> &amp; <link linkend="dd/d3c/classmarian_1_1TensorBase_1adbee0ca45fa5a195171a99fc7a9b00c8">shape</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float * <link linkend="dd/d3c/classmarian_1_1TensorBase_1a67e5b255f621fbae8152d5e75dbb2339">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="dd/d3c/classmarian_1_1TensorBase_1ae4a6d6a80b85704484a5f21b9c1506d0">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="dd/d3c/classmarian_1_1TensorBase_1aa627fcb0c643d0ef671973ca2c9ecd3b">scalar</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="dd/d3c/classmarian_1_1TensorBase_1a7b8de35867bf1502ae1c8393670686fe">getDevice</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> <link linkend="dd/d3c/classmarian_1_1TensorBase_1ac2b98828c27c5900889acab2c6887ae0">subtensor</link> (
+int offset, int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="dd/d3c/classmarian_1_1TensorBase_1a7e314b9f748c97582b8828d030d95392">get</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1a71a6d16f11e6e9cb81ee432d47ff8384">set</link> (
+size_t i, float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1ac74a5bcfcf3e06c3a90a61974167d72c">get</link> (
+std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1ade643d2744839460f321ca1c06a0929d">set</link> (
+float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1a923d9d297704c6a83478e024f75b1af3">set</link> (
+const std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1a86fbac9f53e727f7c1777cfc91a0d4c5">setSparse</link> (
+const std::vector&lt; size_t &gt; &amp; k, const std::vector&lt; float &gt; &amp; v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/classmarian_1_1TensorBase_1a4a485c5ed143b21af0984875094dd020">copyFrom</link> (
+<link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="dd/d3c/classmarian_1_1TensorBase_1a87368e8344d51db32558263242e6343e">debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a1542be522ca1bdfb1c314580859b8982">
+                <title>marian::TensorBase::TensorBase (Ptr&lt; MemoryPiece &gt; memory, Shape shape, size_t device)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a3a7c371bb0c969d5984ab976518b8dee">
+                <title>marian::TensorBase::~TensorBase ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1af507312f77caa146a8c0bf13eaf96bd4">
+                <title>virtual void marian::TensorBase::reset (Ptr&lt; MemoryPiece &gt; memory)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a0fef86a2f4c3704c38cbe3aa6d11b113">
+                <title>virtual Ptr&lt;MemoryPiece&gt; marian::TensorBase::memory ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1adbee0ca45fa5a195171a99fc7a9b00c8">
+                <title>virtual Shape&amp; marian::TensorBase::shape ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a67e5b255f621fbae8152d5e75dbb2339">
+                <title>virtual float* marian::TensorBase::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1ae4a6d6a80b85704484a5f21b9c1506d0">
+                <title>virtual size_t marian::TensorBase::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1aa627fcb0c643d0ef671973ca2c9ecd3b">
+                <title>virtual float marian::TensorBase::scalar ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a7b8de35867bf1502ae1c8393670686fe">
+                <title>size_t marian::TensorBase::getDevice ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1ac2b98828c27c5900889acab2c6887ae0">
+                <title>Tensor marian::TensorBase::subtensor (int offset, int size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a7e314b9f748c97582b8828d030d95392">
+                <title>float marian::TensorBase::get (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a71a6d16f11e6e9cb81ee432d47ff8384">
+                <title>void marian::TensorBase::set (size_t i, float value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1ac74a5bcfcf3e06c3a90a61974167d72c">
+                <title>void marian::TensorBase::get (std::vector&lt; float &gt; &amp;v)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1ade643d2744839460f321ca1c06a0929d">
+                <title>void marian::TensorBase::set (float value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a923d9d297704c6a83478e024f75b1af3">
+                <title>void marian::TensorBase::set (const std::vector&lt; float &gt; &amp;v)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a86fbac9f53e727f7c1777cfc91a0d4c5">
+                <title>void marian::TensorBase::setSparse (const std::vector&lt; size_t &gt; &amp;k, const std::vector&lt; float &gt; &amp;v)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a4a485c5ed143b21af0984875094dd020">
+                <title>void marian::TensorBase::copyFrom (Tensor)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d3c/classmarian_1_1TensorBase_1a87368e8344d51db32558263242e6343e">
+                <title>std::string marian::TensorBase::debug ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

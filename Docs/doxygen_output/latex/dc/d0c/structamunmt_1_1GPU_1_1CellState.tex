@@ -1,0 +1,97 @@
+\hypertarget{structamunmt_1_1GPU_1_1CellState}{}\section{amunmt\+:\+:G\+PU\+:\+:Cell\+State Struct Reference}
+\label{structamunmt_1_1GPU_1_1CellState}\index{amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}}
+
+
+{\ttfamily \#include $<$cellstate.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Cell\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d6/dab/structamunmt_1_1GPU_1_1CellState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1CellState_a3a2c43fc9bfad16b96985a13ccff659e}{Cell\+State} ()
+\item 
+\hyperlink{structamunmt_1_1GPU_1_1CellState_ad4167f08591116e885bbc6679190939d}{Cell\+State} (std\+::unique\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{cell}, std\+::unique\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{cell}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file cellstate.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}!Cell\+State@{Cell\+State}}
+\index{Cell\+State@{Cell\+State}!amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}}
+\subsubsection[{\texorpdfstring{Cell\+State()}{CellState()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Cell\+State\+::\+Cell\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1CellState_a3a2c43fc9bfad16b96985a13ccff659e}{}\label{structamunmt_1_1GPU_1_1CellState_a3a2c43fc9bfad16b96985a13ccff659e}
+
+
+Definition at line 10 of file cellstate.\+h.
+
+
+\begin{DoxyCode}
+10              \{
+11     \hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output} = std::unique\_ptr<mblas::Matrix>(\textcolor{keyword}{new} \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas::Matrix}());
+12     \hyperlink{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{cell} = std::unique\_ptr<mblas::Matrix>(\textcolor{keyword}{new} \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas::Matrix}());
+13   \};
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}!Cell\+State@{Cell\+State}}
+\index{Cell\+State@{Cell\+State}!amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}}
+\subsubsection[{\texorpdfstring{Cell\+State(std\+::unique\+\_\+ptr$<$ mblas\+::\+Matrix $>$ cell, std\+::unique\+\_\+ptr$<$ mblas\+::\+Matrix $>$ output)}{CellState(std::unique_ptr< mblas::Matrix > cell, std::unique_ptr< mblas::Matrix > output)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Cell\+State\+::\+Cell\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf mblas\+::\+Matrix} $>$}]{cell, }
+\item[{std\+::unique\+\_\+ptr$<$ {\bf mblas\+::\+Matrix} $>$}]{output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structamunmt_1_1GPU_1_1CellState_ad4167f08591116e885bbc6679190939d}{}\label{structamunmt_1_1GPU_1_1CellState_ad4167f08591116e885bbc6679190939d}
+
+
+Definition at line 15 of file cellstate.\+h.
+
+
+\begin{DoxyCode}
+15                                                                                :
+16     \hyperlink{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{cell}(std::move(cell)), \hyperlink{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{output}(std::move(output)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}!cell@{cell}}
+\index{cell@{cell}!amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}}
+\subsubsection[{\texorpdfstring{cell}{cell}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Cell\+State\+::cell}\hypertarget{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}{}\label{structamunmt_1_1GPU_1_1CellState_a3d8d1a31845d19b6b635b0a99029e21a}
+
+
+Definition at line 19 of file cellstate.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}!output@{output}}
+\index{output@{output}!amunmt\+::\+G\+P\+U\+::\+Cell\+State@{amunmt\+::\+G\+P\+U\+::\+Cell\+State}}
+\subsubsection[{\texorpdfstring{output}{output}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Cell\+State\+::output}\hypertarget{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}{}\label{structamunmt_1_1GPU_1_1CellState_ac2d94a4fd199fe8458529a075b9df1b7}
+
+
+Definition at line 18 of file cellstate.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cellstate_8h}{cellstate.\+h}\end{DoxyCompactItemize}

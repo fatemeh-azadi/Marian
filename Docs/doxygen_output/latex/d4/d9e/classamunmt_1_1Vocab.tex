@@ -1,0 +1,275 @@
+\hypertarget{classamunmt_1_1Vocab}{}\section{amunmt\+:\+:Vocab Class Reference}
+\label{classamunmt_1_1Vocab}\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+
+
+{\ttfamily \#include $<$vocab.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Vocab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d0/d2a/classamunmt_1_1Vocab__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Vocab_afba1a9cfd5441b9a4455bb69cc656e93}{Vocab} (const std\+::string \&path)
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Vocab_a18466782bbc9fd453034fa5a58e72be9}{operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&word) const 
+\item 
+\hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \hyperlink{classamunmt_1_1Vocab_a0e6c0ff224b78f0e99b184c9d9432d11}{operator()} (const std\+::vector$<$ std\+::string $>$ \&line\+Tokens, bool add\+E\+OS=true) const 
+\item 
+\hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \hyperlink{classamunmt_1_1Vocab_a557548134490b9904832cddecae4c55d}{operator()} (const std\+::string \&line, bool add\+E\+OS=true) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1Vocab_ad04a5e797a3e47de9a14a5246eb813db}{operator()} (const \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} \&sentence, bool ignore\+E\+OS=true) const 
+\item 
+const std\+::string \& \hyperlink{classamunmt_1_1Vocab_abeae26d24cc48fba79af12a0bdfd5f0b}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t id) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Vocab_ae48b739add0c08cb29aeef394641dd4b}{size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, size\+\_\+t $>$ \hyperlink{classamunmt_1_1Vocab_aa5df0ddc7a061269c9d22892fa07e060}{Str2\+Id}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1Vocab_a3cdf2946c36276f80c05e29d601c11fc}{Id2\+Str}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Vocab_aa5df0ddc7a061269c9d22892fa07e060}{Str2\+Id} \hyperlink{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}{str2id\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1Vocab_a3cdf2946c36276f80c05e29d601c11fc}{Id2\+Str} \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file amun/common/vocab.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!Id2\+Str@{Id2\+Str}}
+\index{Id2\+Str@{Id2\+Str}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Id2\+Str}{Id2Str}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$std\+::string$>$ {\bf amunmt\+::\+Vocab\+::\+Id2\+Str}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Vocab_a3cdf2946c36276f80c05e29d601c11fc}{}\label{classamunmt_1_1Vocab_a3cdf2946c36276f80c05e29d601c11fc}
+
+
+Definition at line 31 of file amun/common/vocab.\+h.
+
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!Str2\+Id@{Str2\+Id}}
+\index{Str2\+Id@{Str2\+Id}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Str2\+Id}{Str2Id}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, size\+\_\+t$>$ {\bf amunmt\+::\+Vocab\+::\+Str2\+Id}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Vocab_aa5df0ddc7a061269c9d22892fa07e060}{}\label{classamunmt_1_1Vocab_aa5df0ddc7a061269c9d22892fa07e060}
+
+
+Definition at line 28 of file amun/common/vocab.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!Vocab@{Vocab}}
+\index{Vocab@{Vocab}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{Vocab(const std\+::string \&path)}{Vocab(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Vocab\+::\+Vocab (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Vocab_afba1a9cfd5441b9a4455bb69cc656e93}{}\label{classamunmt_1_1Vocab_afba1a9cfd5441b9a4455bb69cc656e93}
+
+
+Definition at line 12 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+12                                   \{
+13     YAML::Node vocab = YAML::Load(\hyperlink{classInputFileStream}{InputFileStream}(path));
+14     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& pair : vocab) \{
+15       \textcolor{keyword}{auto} str = pair.first.as<std::string>();
+16       \textcolor{keyword}{auto} \textcolor{keywordtype}{id} = pair.second.as<\hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word}>();
+17       \hyperlink{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}{str2id\_}[str] = id;
+18       \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id} >= \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}.size())
+19         \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}.resize(\textcolor{keywordtype}{id} + 1);
+20       \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}[id] = str;
+21     \}
+22     \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(\hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}.empty(), \textcolor{stringliteral}{"Empty vocabulary "} << path);
+23     \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}[\hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{EOS\_ID}] = \hyperlink{namespaceamunmt_a396941d367e0babddc9fa87260a805f7}{EOS\_STR};
+24     id2str\_[\hyperlink{namespaceamunmt_a7904fd3bd044d608e81e54933a771ec9}{UNK\_ID}] = \hyperlink{namespaceamunmt_aff26c2cbd5a97e90ecdc5e0dbba13516}{UNK\_STR};
+25 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::vector$<$ std\+::string $>$ \&line\+Tokens, bool add\+E\+O\+S=true) const }{operator()(const std::vector< std::string > &lineTokens, bool addEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words} amunmt\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{line\+Tokens, }
+\item[{bool}]{add\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_a0e6c0ff224b78f0e99b184c9d9432d11}{}\label{classamunmt_1_1Vocab_a0e6c0ff224b78f0e99b184c9d9432d11}
+
+
+Definition at line 35 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+35                                                                                  \{
+36   \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} words(lineTokens.size());
+37   std::transform(lineTokens.begin(), lineTokens.end(), words.begin(),
+38                   [&](\textcolor{keyword}{const} std::string& w) \{ \textcolor{keywordflow}{return} (*\textcolor{keyword}{this})[w]; \});
+39   \textcolor{keywordflow}{if}(addEOS)
+40     words.push\_back(\hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{EOS\_ID});
+41   \textcolor{keywordflow}{return} words;
+42 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&line, bool add\+E\+O\+S=true) const }{operator()(const std::string &line, bool addEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words} amunmt\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line, }
+\item[{bool}]{add\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_a557548134490b9904832cddecae4c55d}{}\label{classamunmt_1_1Vocab_a557548134490b9904832cddecae4c55d}
+
+
+Definition at line 44 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+44                                                                 \{
+45   std::vector<std::string> lineTokens;
+46   \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split}(line, lineTokens, \textcolor{stringliteral}{" "});
+47   \textcolor{keywordflow}{return} (*\textcolor{keyword}{this})(lineTokens, addEOS);
+48 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d4/d9e/classamunmt_1_1Vocab_a557548134490b9904832cddecae4c55d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!operator()@{operator()}}
+\index{operator()@{operator()}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator()(const Words \&sentence, bool ignore\+E\+O\+S=true) const }{operator()(const Words &sentence, bool ignoreEOS=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+Vocab\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Words} \&}]{sentence, }
+\item[{bool}]{ignore\+E\+OS = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_ad04a5e797a3e47de9a14a5246eb813db}{}\label{classamunmt_1_1Vocab_ad04a5e797a3e47de9a14a5246eb813db}
+
+
+Definition at line 50 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+50                                                                                   \{
+51   std::vector<std::string> decoded;
+52   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < sentence.size(); ++i) \{
+53     \textcolor{keywordflow}{if}(sentence[i] != \hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{EOS\_ID} || !ignoreEOS) \{
+54       decoded.push\_back((*\textcolor{keyword}{this})[sentence[i]]);
+55     \}
+56   \}
+57   \textcolor{keywordflow}{return} decoded;
+58 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator[](const std\+::string \&word) const }{operator[](const std::string &word) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Vocab\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{word}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_a18466782bbc9fd453034fa5a58e72be9}{}\label{classamunmt_1_1Vocab_a18466782bbc9fd453034fa5a58e72be9}
+
+
+Definition at line 27 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+27                                                     \{
+28     \textcolor{keyword}{auto} it = \hyperlink{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}{str2id\_}.find(word);
+29     \textcolor{keywordflow}{if}(it != \hyperlink{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}{str2id\_}.end())
+30         \textcolor{keywordflow}{return} it->second;
+31     \textcolor{keywordflow}{else}
+32         \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_a7904fd3bd044d608e81e54933a771ec9}{UNK\_ID};
+33 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t id) const }{operator[](size_t id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& amunmt\+::\+Vocab\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_abeae26d24cc48fba79af12a0bdfd5f0b}{}\label{classamunmt_1_1Vocab_abeae26d24cc48fba79af12a0bdfd5f0b}
+
+
+Definition at line 61 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+61                                                   \{
+62   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(\textcolor{keywordtype}{id} >= \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}.size(), \textcolor{stringliteral}{"Unknown word id: "} << id);
+63   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}[id];
+64 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!size@{size}}
+\index{size@{size}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Vocab\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Vocab_ae48b739add0c08cb29aeef394641dd4b}{}\label{classamunmt_1_1Vocab_ae48b739add0c08cb29aeef394641dd4b}
+
+
+Definition at line 66 of file amun/common/vocab.\+cpp.
+
+
+\begin{DoxyCode}
+66                          \{
+67   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{id2str\_}.size();
+68 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d9e/classamunmt_1_1Vocab_ae48b739add0c08cb29aeef394641dd4b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!id2str\+\_\+@{id2str\+\_\+}}
+\index{id2str\+\_\+@{id2str\+\_\+}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{id2str\+\_\+}{id2str_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id2\+Str} amunmt\+::\+Vocab\+::id2str\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}{}\label{classamunmt_1_1Vocab_a1eb74fdcd40400033cd54de1b6479a46}
+
+
+Definition at line 32 of file amun/common/vocab.\+h.
+
+\index{amunmt\+::\+Vocab@{amunmt\+::\+Vocab}!str2id\+\_\+@{str2id\+\_\+}}
+\index{str2id\+\_\+@{str2id\+\_\+}!amunmt\+::\+Vocab@{amunmt\+::\+Vocab}}
+\subsubsection[{\texorpdfstring{str2id\+\_\+}{str2id_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Str2\+Id} amunmt\+::\+Vocab\+::str2id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}{}\label{classamunmt_1_1Vocab_a65742057ec048992dcc4ddca523b572f}
+
+
+Definition at line 29 of file amun/common/vocab.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2common_2vocab_8h}{amun/common/vocab.\+h}\item 
+\hyperlink{amun_2common_2vocab_8cpp}{amun/common/vocab.\+cpp}\end{DoxyCompactItemize}

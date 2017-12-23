@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d9a/classmarian_1_1PerplexityValidator">
+<title>marian::PerplexityValidator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d7d/training_2validator_8h">&lt;validator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::PerplexityValidator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d32/classmarian_1_1PerplexityValidator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::PerplexityValidator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/def/classmarian_1_1PerplexityValidator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Builder</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Builder &gt; builder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d9a/classmarian_1_1PerplexityValidator_1a9a6c1b5ec39f8b75678f438644679557">PerplexityValidator</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt;&gt; vocabs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="df/d9a/classmarian_1_1PerplexityValidator_1a30a9da5e5a20b5f7f90643eb1ae85dac">validateBG</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator">data::BatchGenerator</link>&lt; <link linkend="d9/daf/classmarian_1_1data_1_1Corpus">data::Corpus</link> &gt;&gt; batchGenerator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="df/d9a/classmarian_1_1PerplexityValidator_1ab276447aa46c5f00fb3e559b2010a00c">keepBest</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="df/d9a/classmarian_1_1PerplexityValidator_1a1df91365d8eef33c49bbd487de8e244e">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d9a/classmarian_1_1PerplexityValidator_1a9a6c1b5ec39f8b75678f438644679557">
+                <title>marian::PerplexityValidator&lt; Builder &gt;::PerplexityValidator (std::vector&lt; Ptr&lt; Vocab &gt;&gt; vocabs, Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d9a/classmarian_1_1PerplexityValidator_1a30a9da5e5a20b5f7f90643eb1ae85dac">
+                <title>virtual float marian::PerplexityValidator&lt; Builder &gt;::validateBG (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::BatchGenerator&lt; data::Corpus &gt;&gt; batchGenerator)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d9a/classmarian_1_1PerplexityValidator_1ab276447aa46c5f00fb3e559b2010a00c">
+                <title>virtual void marian::PerplexityValidator&lt; Builder &gt;::keepBest (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d9a/classmarian_1_1PerplexityValidator_1a1df91365d8eef33c49bbd487de8e244e">
+                <title>std::string marian::PerplexityValidator&lt; Builder &gt;::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

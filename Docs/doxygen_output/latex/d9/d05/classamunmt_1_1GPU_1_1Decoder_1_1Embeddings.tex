@@ -1,0 +1,160 @@
+\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings}{}\section{amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Embeddings$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings}\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings$<$ Weights $>$}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Embeddings$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d7c/classamunmt_1_1GPU_1_1Decoder_1_1Embeddings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a94b03b0cbce11ec4b1b2b4e2c0ac20b0}{Embeddings} (const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a5c32bbdcdde7a6d814f8599e8d4955a8}{Lookup} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Rows, const std\+::vector$<$ uint $>$ \&ids)
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a4fb8ced10c1c7b6107b1da22dd38161a}{Get\+Cols} ()
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_ac12423a688365ada8d2a3f744eb40086}{Get\+Rows} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a1995aa26ef329885c0858e9a9afb16ba}{Embeddings} (const \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings}{Embeddings} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}{indices\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings$<$ Weights $>$}
+
+
+
+Definition at line 21 of file decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!Embeddings@{Embeddings}}
+\index{Embeddings@{Embeddings}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Embeddings(const Weights \&model)}{Embeddings(const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::{\bf Embeddings} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a94b03b0cbce11ec4b1b2b4e2c0ac20b0}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a94b03b0cbce11ec4b1b2b4e2c0ac20b0}
+
+
+Definition at line 23 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+24         : \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\_}(model)
+25         \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!Embeddings@{Embeddings}}
+\index{Embeddings@{Embeddings}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Embeddings(const Embeddings \&)=delete}{Embeddings(const Embeddings &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::{\bf Embeddings} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Embeddings}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a1995aa26ef329885c0858e9a9afb16ba}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a1995aa26ef329885c0858e9a9afb16ba}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!Get\+Cols@{Get\+Cols}}
+\index{Get\+Cols@{Get\+Cols}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Get\+Cols()}{GetCols()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::Get\+Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a4fb8ced10c1c7b6107b1da22dd38161a}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a4fb8ced10c1c7b6107b1da22dd38161a}
+
+
+Definition at line 43 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+43                          \{
+44           \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\_}.E\_->dim(1);
+45         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!Get\+Rows@{Get\+Rows}}
+\index{Get\+Rows@{Get\+Rows}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Get\+Rows() const }{GetRows() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::Get\+Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_ac12423a688365ada8d2a3f744eb40086}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_ac12423a688365ada8d2a3f744eb40086}
+
+
+Definition at line 47 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+47                                \{
+48           \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\_}.E\_->dim(0);
+49         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{Lookup(mblas\+::\+Matrix \&\+Rows, const std\+::vector$<$ uint $>$ \&ids)}{Lookup(mblas::Matrix &Rows, const std::vector< uint > &ids)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::Lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Rows, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{ids}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a5c32bbdcdde7a6d814f8599e8d4955a8}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a5c32bbdcdde7a6d814f8599e8d4955a8}
+
+
+Definition at line 27 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+27                                                                    \{
+28           \textcolor{keyword}{using namespace }mblas;
+29           std::vector<uint> tids = ids;
+30           \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& \textcolor{keywordtype}{id} : tids)
+31             \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id} >= \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\_}.E\_->dim(0))
+32               \textcolor{keywordtype}{id} = 1;
+33           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}{indices\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize}(tids.size());
+34 
+35           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{mblas::copy}(tids.data(),
+36               tids.size(),
+37               \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}{indices\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861}{data}(),
+38               cudaMemcpyHostToDevice);
+39 
+40           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a45e67b812840551fae28c4f7cca2b562}{Assemble}(Rows, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{w\_}.E\_, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}{indices\_});
+41         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!indices\+\_\+@{indices\+\_\+}}
+\index{indices\+\_\+@{indices\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{indices\+\_\+}{indices_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Array}$<$uint$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_a37dc8ee1950cc98d0c4d9b130729096c}
+
+
+Definition at line 53 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Embeddings}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Embeddings_aa19afc31e320bd10be7ea1d9a0a9acc2}
+
+
+Definition at line 52 of file decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8h}{decoder.\+h}\end{DoxyCompactItemize}

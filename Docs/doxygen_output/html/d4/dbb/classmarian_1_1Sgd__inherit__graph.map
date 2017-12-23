@@ -1,0 +1,4 @@
+<map id="marian::Sgd" name="marian::Sgd">
+<area shape="rect" id="node2" href="$d8/d6e/classmarian_1_1OptimizerBase.html" title="{marian::OptimizerBase\n|# clipper_\l# eta_\l|+ OptimizerBase()\l+ update()\l+ update()\l+ actAfterEpoch()\l+ actAfterBatches()\l+ actAfterStalled()\l# updateImpl()\l}" alt="" coords="12,160,167,340"/>
+<area shape="rect" id="node3" href="$df/d46/classmarian_1_1TrainingObserver.html" title="{marian::TrainingObserver\n||+ actAfterEpoch()\l+ actAfterBatches()\l+ actAfterStalled()\l}" alt="" coords="5,5,173,112"/>
+</map>

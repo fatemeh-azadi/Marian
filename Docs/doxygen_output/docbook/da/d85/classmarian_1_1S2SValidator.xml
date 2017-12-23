@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d85/classmarian_1_1S2SValidator">
+<title>marian::S2SValidator class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d7d/training_2validator_8h">&lt;validator.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::S2SValidator</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d73/classmarian_1_1S2SValidator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::S2SValidator</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d40/classmarian_1_1S2SValidator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class Builder</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Builder &gt; builder_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d85/classmarian_1_1S2SValidator_1a0ff038a7d2c76b6ed7c4cb7d1a8bf46a">S2SValidator</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt;&gt; vocabs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="da/d85/classmarian_1_1S2SValidator_1aef728e7e102607d2d69d96aa4906d128">validate</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="da/d85/classmarian_1_1S2SValidator_1a4b6ef1beacf57dce676851f740700573">validateBG</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d3/d1c/classmarian_1_1data_1_1BatchGenerator">data::BatchGenerator</link>&lt; <link linkend="d9/daf/classmarian_1_1data_1_1Corpus">data::Corpus</link> &gt;&gt; batchGenerator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="da/d85/classmarian_1_1S2SValidator_1aea688081d232cfd12523c54b4869148a">lowerIsBetter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="da/d85/classmarian_1_1S2SValidator_1ae5a8f8799039bdac36790ef06158249e">keepBest</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="da/d85/classmarian_1_1S2SValidator_1a66b288aad453a7bf669b3542cd35f564">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1a0ff038a7d2c76b6ed7c4cb7d1a8bf46a">
+                <title>marian::S2SValidator&lt; Builder &gt;::S2SValidator (std::vector&lt; Ptr&lt; Vocab &gt;&gt; vocabs, Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1aef728e7e102607d2d69d96aa4906d128">
+                <title>virtual float marian::S2SValidator&lt; Builder &gt;::validate (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1a4b6ef1beacf57dce676851f740700573">
+                <title>virtual float marian::S2SValidator&lt; Builder &gt;::validateBG (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; data::BatchGenerator&lt; data::Corpus &gt;&gt; batchGenerator)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1aea688081d232cfd12523c54b4869148a">
+                <title>virtual bool marian::S2SValidator&lt; Builder &gt;::lowerIsBetter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1ae5a8f8799039bdac36790ef06158249e">
+                <title>virtual void marian::S2SValidator&lt; Builder &gt;::keepBest (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d85/classmarian_1_1S2SValidator_1a66b288aad453a7bf669b3542cd35f564">
+                <title>virtual std::string marian::S2SValidator&lt; Builder &gt;::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

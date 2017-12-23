@@ -1,0 +1,219 @@
+\hypertarget{classmarian_1_1Accumulator}{}\section{marian\+:\+:Accumulator$<$ Factory $>$ Class Template Reference}
+\label{classmarian_1_1Accumulator}\index{marian\+::\+Accumulator$<$ Factory $>$@{marian\+::\+Accumulator$<$ Factory $>$}}
+
+
+{\ttfamily \#include $<$factory.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Accumulator$<$ Factory $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{de/d16/classmarian_1_1Accumulator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Accumulator$<$ Factory $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{d7/d50/classmarian_1_1Accumulator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Accumulator_adaea1333c529910642e9d2152d6b0252}{Accumulator} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{classmarian_1_1Accumulator_a345fa63687817aa7c1bb04d4fb9674f5}{Accumulator} (const \hyperlink{classmarian_1_1Factory}{Factory} \&factory)
+\item 
+\hyperlink{classmarian_1_1Accumulator_a128ddface8764c47e00df51000cf3b97}{Accumulator} (const \hyperlink{classmarian_1_1Accumulator}{Accumulator} \&)=default
+\item 
+\hyperlink{classmarian_1_1Accumulator_a3177fd1f47daac50ff52f589fde27736}{Accumulator} (\hyperlink{classmarian_1_1Accumulator}{Accumulator} \&\&)=default
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmarian_1_1Accumulator}{Accumulator} \& \hyperlink{classmarian_1_1Accumulator_a4b8b5ce9f86b9eb95bab24f9d3280082}{operator()} (const std\+::string \&key, T value)
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator} \& \hyperlink{classmarian_1_1Accumulator_a4a2a61b1d4c808e171f388f5500c3fdb}{operator()} (const std\+::string \&yaml)
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator} \& \hyperlink{classmarian_1_1Accumulator_a1e484c1642629556356cd7d50a4c34db}{operator()} (Y\+A\+M\+L\+::\+Node yaml)
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1Factory}{Factory} $>$ \hyperlink{classmarian_1_1Accumulator_a0e5b3dc96102bd31d11cd0158f6f9189}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Factory$>$\\*
+class marian\+::\+Accumulator$<$ Factory $>$}
+
+
+
+Definition at line 39 of file factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!Accumulator@{Accumulator}}
+\index{Accumulator@{Accumulator}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{Accumulator(\+Ptr$<$ Expression\+Graph $>$ graph)}{Accumulator(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::{\bf Accumulator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_adaea1333c529910642e9d2152d6b0252}{}\label{classmarian_1_1Accumulator_adaea1333c529910642e9d2152d6b0252}
+
+
+Definition at line 41 of file factory.\+h.
+
+
+\begin{DoxyCode}
+41 : \hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory}(graph) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!Accumulator@{Accumulator}}
+\index{Accumulator@{Accumulator}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{Accumulator(const Factory \&factory)}{Accumulator(const Factory &factory)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::{\bf Accumulator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Factory} \&}]{factory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_a345fa63687817aa7c1bb04d4fb9674f5}{}\label{classmarian_1_1Accumulator_a345fa63687817aa7c1bb04d4fb9674f5}
+
+
+Definition at line 42 of file factory.\+h.
+
+
+\begin{DoxyCode}
+42 : \hyperlink{classmarian_1_1Factory_ab6d238f17d2460511087ba73d908c30e}{Factory}(factory) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!Accumulator@{Accumulator}}
+\index{Accumulator@{Accumulator}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{Accumulator(const Accumulator \&)=default}{Accumulator(const Accumulator &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::{\bf Accumulator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Accumulator}$<$ {\bf Factory} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classmarian_1_1Accumulator_a128ddface8764c47e00df51000cf3b97}{}\label{classmarian_1_1Accumulator_a128ddface8764c47e00df51000cf3b97}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!Accumulator@{Accumulator}}
+\index{Accumulator@{Accumulator}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{Accumulator(\+Accumulator \&\&)=default}{Accumulator(Accumulator &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::{\bf Accumulator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Accumulator}$<$ {\bf Factory} $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classmarian_1_1Accumulator_a3177fd1f47daac50ff52f589fde27736}{}\label{classmarian_1_1Accumulator_a3177fd1f47daac50ff52f589fde27736}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!clone@{clone}}
+\index{clone@{clone}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{clone()}{clone()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf Accumulator}$<${\bf Factory}$>$ {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_a0e5b3dc96102bd31d11cd0158f6f9189}{}\label{classmarian_1_1Accumulator_a0e5b3dc96102bd31d11cd0158f6f9189}
+
+
+Definition at line 62 of file factory.\+h.
+
+
+\begin{DoxyCode}
+62                                \{
+63     \textcolor{keywordflow}{return} Accumulator<Factory>(Factory::clone());
+64   \}
+\end{DoxyCode}
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&key, T value)}{operator()(const std::string &key, T value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ template$<$typename T $>$ {\bf Accumulator}\& {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_a4b8b5ce9f86b9eb95bab24f9d3280082}{}\label{classmarian_1_1Accumulator_a4b8b5ce9f86b9eb95bab24f9d3280082}
+
+
+Definition at line 47 of file factory.\+h.
+
+
+\begin{DoxyCode}
+47                                                          \{
+48     \hyperlink{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}{Factory::getOptions}()->set(key, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{value});
+49     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+50   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dc0/classmarian_1_1Accumulator_a4b8b5ce9f86b9eb95bab24f9d3280082_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&yaml)}{operator()(const std::string &yaml)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf Accumulator}\& {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{yaml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_a4a2a61b1d4c808e171f388f5500c3fdb}{}\label{classmarian_1_1Accumulator_a4a2a61b1d4c808e171f388f5500c3fdb}
+
+
+Definition at line 52 of file factory.\+h.
+
+
+\begin{DoxyCode}
+52                                                  \{
+53     \hyperlink{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}{Factory::getOptions}()->parse(yaml);
+54     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+55   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dc0/classmarian_1_1Accumulator_a4a2a61b1d4c808e171f388f5500c3fdb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Accumulator@{marian\+::\+Accumulator}!operator()@{operator()}}
+\index{operator()@{operator()}!marian\+::\+Accumulator@{marian\+::\+Accumulator}}
+\subsubsection[{\texorpdfstring{operator()(\+Y\+A\+M\+L\+::\+Node yaml)}{operator()(YAML::Node yaml)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Factory$>$ {\bf Accumulator}\& {\bf marian\+::\+Accumulator}$<$ {\bf Factory} $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node}]{yaml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Accumulator_a1e484c1642629556356cd7d50a4c34db}{}\label{classmarian_1_1Accumulator_a1e484c1642629556356cd7d50a4c34db}
+
+
+Definition at line 57 of file factory.\+h.
+
+
+\begin{DoxyCode}
+57                                          \{
+58     \hyperlink{classmarian_1_1Factory_af3c6a87f9a9c56c7f62aae0c33c9cde3}{Factory::getOptions}()->merge(yaml);
+59     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+60   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dc0/classmarian_1_1Accumulator_a1e484c1642629556356cd7d50a4c34db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{factory_8h}{factory.\+h}\end{DoxyCompactItemize}

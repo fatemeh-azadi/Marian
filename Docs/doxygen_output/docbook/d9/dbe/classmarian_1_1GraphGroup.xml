@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dbe/classmarian_1_1GraphGroup">
+<title>marian::GraphGroup class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d9d/graph__group_8h">&lt;graph_group.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::GraphGroup</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d6b/classmarian_1_1GraphGroup__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::GraphGroup</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d9d/classmarian_1_1GraphGroup__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; OptimizerBase &gt; opt_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/dbe/classmarian_1_1GraphGroup_1a5d421471110114cb3c6816eb444043df">GraphGroup</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d9/dbe/classmarian_1_1GraphGroup_1ac425bf61f8a0f9a392a8dce76dc9cf35">~GraphGroup</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/dbe/classmarian_1_1GraphGroup_1afbb46b2bd868ade2d6f50eff791b6cbc">update</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d7/db1/classmarian_1_1data_1_1Batch">data::Batch</link> &gt; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/dbe/classmarian_1_1GraphGroup_1ac663af7f403dcf97832afbb4cf07a565">load</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/dbe/classmarian_1_1GraphGroup_1ade2dd39ba30033ca9ed48b0ac7be039b">save</link> (
+bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dc3/classmarian_1_1data_1_1BatchStats">data::BatchStats</link> &gt; <link linkend="d9/dbe/classmarian_1_1GraphGroup_1a2654e63f6a13457056c99b1bcb903198">collectStats</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1a5d421471110114cb3c6816eb444043df">
+                <title>marian::GraphGroup::GraphGroup (Ptr&lt; Config &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1ac425bf61f8a0f9a392a8dce76dc9cf35">
+                <title>virtual marian::GraphGroup::~GraphGroup ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1afbb46b2bd868ade2d6f50eff791b6cbc">
+                <title>virtual void marian::GraphGroup::update (Ptr&lt; data::Batch &gt;)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1ac663af7f403dcf97832afbb4cf07a565">
+                <title>virtual void marian::GraphGroup::load ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1ade2dd39ba30033ca9ed48b0ac7be039b">
+                <title>virtual void marian::GraphGroup::save (bool=false)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dbe/classmarian_1_1GraphGroup_1a2654e63f6a13457056c99b1bcb903198">
+                <title>virtual Ptr&lt;data::BatchStats&gt; marian::GraphGroup::collectStats ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

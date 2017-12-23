@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d2d/exception_8h">
+    <title>exception.h File Reference</title>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &lt;exception&gt;</programlisting>
+    <programlisting>#include &lt;limits&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+<para>Include dependency diagram for exception.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d15/exception_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for exception.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/ddd/exception_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d08/classamunmt_1_1util_1_1Exception">amunmt::util::Exception</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d08/classamunmt_1_1util_1_1Exception">amunmt::util::Exception::ExceptionTag</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/df9/classamunmt_1_1util_1_1ErrnoException">amunmt::util::ErrnoException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d39/classamunmt_1_1util_1_1FileOpenException">amunmt::util::FileOpenException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dd9/classamunmt_1_1util_1_1OverflowException">amunmt::util::OverflowException</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d59/namespaceamunmt_1_1util">amunmt::util</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a2b91e3495cdcf55a65c694187c41b0fa">UTIL_FUNC_NAME</link> NULL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a1b57ce5161b0c78b87aea8e689198a65">UTIL_THROW_BACKEND</link> do { \
+  Exception UTIL_e Arg; \
+  UTIL_e.SetLocation(__FILE__, __LINE__, <link linkend="dd/d2d/exception_8h_1a2b91e3495cdcf55a65c694187c41b0fa">UTIL_FUNC_NAME</link>, #Exception, Condition); \
+  UTIL_e &lt;&lt; Modify; \
+  throw UTIL_e; \
+} while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a34483ecd6933b58806a1c9e739f0586b">UTIL_THROW_ARG</link> <link linkend="dd/d2d/exception_8h_1a1b57ce5161b0c78b87aea8e689198a65">UTIL_THROW_BACKEND</link>(NULL, Exception, Arg, Modify)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a38091a5eb7c24c5126eecbdb9f838995">UTIL_THROW</link> <link linkend="dd/d2d/exception_8h_1a1b57ce5161b0c78b87aea8e689198a65">UTIL_THROW_BACKEND</link>(NULL, Exception, , Modify);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a620a250f8b1bb0d664281ec2eb1b5b41">amunmt_UTIL_THROW2</link> <link linkend="dd/d2d/exception_8h_1a1b57ce5161b0c78b87aea8e689198a65">UTIL_THROW_BACKEND</link>(NULL, <link linkend="da/d08/classamunmt_1_1util_1_1Exception">amunmt::util::Exception</link>, , Modify);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a41cea4b22d5d60c5b80dcbbabf1f47a6">UTIL_UNLIKELY</link> (x)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a88f70ef68524264d98ff48104713b309">UTIL_LIKELY</link> (x)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a05876778d738770527a358b87c721871">UTIL_THROW_IF_ARG</link> do { \
+  if (<link linkend="dd/d2d/exception_8h_1a41cea4b22d5d60c5b80dcbbabf1f47a6">UTIL_UNLIKELY</link>(Condition)) { \
+    <link linkend="dd/d2d/exception_8h_1a1b57ce5161b0c78b87aea8e689198a65">UTIL_THROW_BACKEND</link>(#Condition, Exception, Arg, Modify); \
+  } \
+} while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1aeb8c2ad3f9ccb2e20e6f74fd75bd23ce">UTIL_THROW_IF</link> <link linkend="dd/d2d/exception_8h_1a05876778d738770527a358b87c721871">UTIL_THROW_IF_ARG</link>(Condition, Exception, , Modify)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/exception_8h_1a361c5b6ab6490fc4572337346f390fb1">amunmt_UTIL_THROW_IF2</link> <link linkend="dd/d2d/exception_8h_1a05876778d738770527a358b87c721871">UTIL_THROW_IF_ARG</link>(Condition, <link linkend="da/d08/classamunmt_1_1util_1_1Exception">amunmt::util::Exception</link>, , Modify)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file exception.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dbf/classmarian_1_1TrainingState">
+<title>marian::TrainingState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/df4/training__state_8h">&lt;training_state.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TrainingState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d55/classmarian_1_1TrainingState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TrainingState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d19/classmarian_1_1TrainingState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int epochs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int batches</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int stalled</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int maxStalled</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float eta</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; TrainingObserver &gt; &gt; observers_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/dbf/classmarian_1_1TrainingState_1a779eb7a4b5a0d5f014ac097cf63d5160">TrainingState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dbf/classmarian_1_1TrainingState_1a6babf2034b20e5287a7eab8db27195c8">registerObserver</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d46/classmarian_1_1TrainingObserver">TrainingObserver</link> &gt; observer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dbf/classmarian_1_1TrainingState_1a2bb562c6092063a3135d3320ae8c3590">newEpoch</link> (
+int num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dbf/classmarian_1_1TrainingState_1a7ffdee69043609288065ab193112abfb">newBatches</link> (
+int num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dbf/classmarian_1_1TrainingState_1aab523ccb0a9285fb6f713d293befcbdd">newStalled</link> (
+int num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/dbf/classmarian_1_1TrainingState_1a779eb7a4b5a0d5f014ac097cf63d5160">
+                <title>marian::TrainingState::TrainingState (Ptr&lt; Config &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dbf/classmarian_1_1TrainingState_1a6babf2034b20e5287a7eab8db27195c8">
+                <title>void marian::TrainingState::registerObserver (Ptr&lt; TrainingObserver &gt; observer)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dbf/classmarian_1_1TrainingState_1a2bb562c6092063a3135d3320ae8c3590">
+                <title>void marian::TrainingState::newEpoch (int num)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dbf/classmarian_1_1TrainingState_1a7ffdee69043609288065ab193112abfb">
+                <title>void marian::TrainingState::newBatches (int num)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/dbf/classmarian_1_1TrainingState_1aab523ccb0a9285fb6f713d293befcbdd">
+                <title>void marian::TrainingState::newStalled (int num)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

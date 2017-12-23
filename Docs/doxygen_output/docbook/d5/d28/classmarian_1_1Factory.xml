@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d28/classmarian_1_1Factory">
+<title>marian::Factory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/d06/factory_8h">&lt;factory.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Factory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d4c/classmarian_1_1Factory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Factory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d83/classmarian_1_1Factory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Options &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; ExpressionGraph &gt; graph_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d28/classmarian_1_1Factory_1ab6d238f17d2460511087ba73d908c30e">Factory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d5/d28/classmarian_1_1Factory_1a88d85aadc4ff96b0f691ae2c2a738ba1">~Factory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; <link linkend="d5/d28/classmarian_1_1Factory_1af3c6a87f9a9c56c7f62aae0c33c9cde3">getOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d5/d28/classmarian_1_1Factory_1a9b2a922c487a8798ebbbf1a9bffd5ef2">str</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d5/d28/classmarian_1_1Factory_1abc51a49edfa544441e7b187a0176d107">opt</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="d5/d28/classmarian_1_1Factory_1af818963ee25402cc6ef601d6ed711d19">opt</link> (
+const std::string &amp; key, T defaultValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1ab6d238f17d2460511087ba73d908c30e">
+                <title>marian::Factory::Factory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1a88d85aadc4ff96b0f691ae2c2a738ba1">
+                <title>virtual marian::Factory::~Factory ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1af3c6a87f9a9c56c7f62aae0c33c9cde3">
+                <title>Ptr&lt;Options&gt; marian::Factory::getOptions ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1a9b2a922c487a8798ebbbf1a9bffd5ef2">
+                <title>std::string marian::Factory::str ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1abc51a49edfa544441e7b187a0176d107">
+                <title>T marian::Factory::opt (const std::string &amp;key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d28/classmarian_1_1Factory_1af818963ee25402cc6ef601d6ed711d19">
+                <title>T marian::Factory::opt (const std::string &amp;key, T defaultValue)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

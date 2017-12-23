@@ -1,0 +1,185 @@
+\hypertarget{classmarian_1_1rnn_1_1CellFactory}{}\section{marian\+:\+:rnn\+:\+:Cell\+Factory Class Reference}
+\label{classmarian_1_1rnn_1_1CellFactory}\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:rnn\+:\+:Cell\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/ddc/classmarian_1_1rnn_1_1CellFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:Cell\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d9b/classmarian_1_1rnn_1_1CellFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{Cell\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1rnn_1_1Cell}{Cell} $>$ \hyperlink{classmarian_1_1rnn_1_1CellFactory_a6d5ae6563bf3f0631b9b93b7f5eeb7b8}{construct} ()
+\item 
+\hyperlink{classmarian_1_1rnn_1_1CellFactory}{Cell\+Factory} \hyperlink{classmarian_1_1rnn_1_1CellFactory_a70eb689eb1d0afbe2d705914965476e5}{clone} ()
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1CellFactory_ab216b55d0ee66622c060c86b87a623b2}{add\+\_\+input} (std\+::function$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}(\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ rnn\+::\+R\+NN $>$)$>$ func)
+\item 
+virtual void \hyperlink{classmarian_1_1rnn_1_1CellFactory_a6dfd2bcc2d06e627af61295936a42d38}{add\+\_\+input} (\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} input)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::function$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr}(\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ rnn\+::\+R\+NN $>$)$>$ $>$ \hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file rnn/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!Cell\+Factory@{Cell\+Factory}}
+\index{Cell\+Factory@{Cell\+Factory}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{Cell\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{CellFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+Cell\+Factory\+::\+Cell\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{}\label{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}
+
+
+Definition at line 37 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+37 : \hyperlink{structmarian_1_1rnn_1_1StackableFactory_a8d89897e89e02ea87c725a63bb8e3bd0}{StackableFactory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!add\+\_\+input@{add\+\_\+input}}
+\index{add\+\_\+input@{add\+\_\+input}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{add\+\_\+input(std\+::function$<$ Expr(\+Ptr$<$ rnn\+::\+R\+N\+N $>$)$>$ func)}{add_input(std::function< Expr(Ptr< rnn::RNN >)> func)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Cell\+Factory\+::add\+\_\+input (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ {\bf Expr}({\bf Ptr}$<$ rnn\+::\+R\+NN $>$)$>$}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_ab216b55d0ee66622c060c86b87a623b2}{}\label{classmarian_1_1rnn_1_1CellFactory_ab216b55d0ee66622c060c86b87a623b2}
+
+
+Definition at line 73 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+73                                                               \{
+74     \hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_}.push\_back(func);
+75   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!add\+\_\+input@{add\+\_\+input}}
+\index{add\+\_\+input@{add\+\_\+input}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{add\+\_\+input(\+Expr input)}{add_input(Expr input)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::rnn\+::\+Cell\+Factory\+::add\+\_\+input (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr}}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_a6dfd2bcc2d06e627af61295936a42d38}{}\label{classmarian_1_1rnn_1_1CellFactory_a6dfd2bcc2d06e627af61295936a42d38}
+
+
+Definition at line 77 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+77                                      \{
+78     \hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_}.push\_back([input](Ptr<rnn::RNN> \hyperlink{namespacemarian_1_1rnn_aff1b115e415945b445f8d4a2068ec3e8}{rnn}) \{ \textcolor{keywordflow}{return} input; \});
+79   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!clone@{clone}}
+\index{clone@{clone}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{clone()}{clone()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\+Factory} marian\+::rnn\+::\+Cell\+Factory\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_a70eb689eb1d0afbe2d705914965476e5}{}\label{classmarian_1_1rnn_1_1CellFactory_a70eb689eb1d0afbe2d705914965476e5}
+
+
+Definition at line 66 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+66                       \{
+67     \hyperlink{classmarian_1_1rnn_1_1CellFactory_a8bc10b58aae39754e29d6793d29889f2}{CellFactory} aClone(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_});
+68     aClone.options\_->merge(\hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+69     aClone.inputs\_ = \hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_};
+70     \textcolor{keywordflow}{return} aClone;
+71   \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Cell}$>$ marian\+::rnn\+::\+Cell\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_a6d5ae6563bf3f0631b9b93b7f5eeb7b8}{}\label{classmarian_1_1rnn_1_1CellFactory_a6d5ae6563bf3f0631b9b93b7f5eeb7b8}
+
+
+Reimplemented in \hyperlink{classmarian_1_1rnn_1_1StackedCellFactory_acfcb72125e0e6263f8af71d4b19210ba}{marian\+::rnn\+::\+Stacked\+Cell\+Factory}.
+
+
+
+Definition at line 39 of file rnn/constructors.\+h.
+
+
+\begin{DoxyCode}
+39                                 \{
+40     std::string type = \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_}->get<std::string>(\textcolor{stringliteral}{"type"});
+41     \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"gru"}) \{
+42       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = New<GRU>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+43       \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}->setLazyInputs(\hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_});
+44       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+45     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"lstm"}) \{
+46       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = New<LSTM>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+47       \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}->setLazyInputs(\hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_});
+48       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+49     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"mlstm"}) \{
+50       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = New<MLSTM>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+51       \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}->setLazyInputs(\hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_});
+52       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+53     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"mgru"})\{
+54       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = New<MGRU>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+55       \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}->setLazyInputs(\hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_});
+56       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+57     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"tanh"}) \{
+58       \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell} = New<Tanh>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+59       \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell}->setLazyInputs(\hyperlink{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{inputs\_});
+60       \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1rnn_af723e51535e0b11de5b28fe19627a3fb}{cell};
+61     \} \textcolor{keywordflow}{else} \{
+62       UTIL\_THROW2(\textcolor{stringliteral}{"Unknown RNN cell type"});
+63     \}
+64   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}!inputs\+\_\+@{inputs\+\_\+}}
+\index{inputs\+\_\+@{inputs\+\_\+}!marian\+::rnn\+::\+Cell\+Factory@{marian\+::rnn\+::\+Cell\+Factory}}
+\subsubsection[{\texorpdfstring{inputs\+\_\+}{inputs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::function$<${\bf Expr}({\bf Ptr}$<$rnn\+::\+R\+NN$>$)$>$ $>$ marian\+::rnn\+::\+Cell\+Factory\+::inputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}{}\label{classmarian_1_1rnn_1_1CellFactory_a1a1309730b71955d9e6a14189a295e21}
+
+
+Definition at line 34 of file rnn/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rnn_2constructors_8h}{rnn/constructors.\+h}\end{DoxyCompactItemize}

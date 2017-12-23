@@ -1,0 +1,248 @@
+\hypertarget{namespaceamunmt_1_1GPU}{}\section{amunmt\+:\+:G\+PU Namespace Reference}
+\label{namespaceamunmt_1_1GPU}\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas}{mblas}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1BestHyps}{Best\+Hyps}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Cell}{Cell}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1CellLength}{Cell\+Length}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1ClassLanguageModel}{Class\+Language\+Model}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Decoder}{Decoder}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Encoder}{Encoder}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoder}{Encoder\+Decoder}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoderLoader}{Encoder\+Decoder\+Loader}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1EncoderDecoderState}{Encoder\+Decoder\+State}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1FastGRU}{Fast\+G\+RU}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1Multiplicative}{Multiplicative}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1NpzConverter}{Npz\+Converter}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1NthElement}{Nth\+Element}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1SlowGRU}{Slow\+G\+RU}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM}{Slow\+L\+S\+TM}
+\item 
+struct \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespaceamunmt_1_1GPU_aef4855cf4b6eab614a38b158bda76705}{G\+RU} = \hyperlink{classamunmt_1_1GPU_1_1FastGRU}{Fast\+G\+RU}$<$ T $>$
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespaceamunmt_1_1GPU_a5da1f5e1c7dfe4068d4a79ae464191d7}{L\+S\+TM} = \hyperlink{classamunmt_1_1GPU_1_1SlowLSTM}{Slow\+L\+S\+TM}$<$ T $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_a92130d6efa8121cebe9e3ffdfa9fff8a}{g\+Elementwise\+Ops} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ out\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ state\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ ruh\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ temp\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ b\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ bx1\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ bx2\+Wrap)
+\item 
+std\+::ostream \& \hyperlink{namespaceamunmt_1_1GPU_a85a2c70f9666759dd9db598bfcd51bab}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} \&obj)
+\item 
+std\+::ostream \& \hyperlink{namespaceamunmt_1_1GPU_aa3a73ca48e972648baa9d227e8e97da9}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{structamunmt_1_1GPU_1_1NthOutBatch}{Nth\+Out\+Batch} \&obj)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_acf0906d22f8965ad5160853abf94b437}{g\+Max\+Element} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ out, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ probs\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ uint $>$ batch\+Position\+Wrap, uint num\+Batches)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_a51fe7e37c1246d7a4e6fff93ac7e079c}{g\+Max\+Element\+Update} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ out, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ probs\+Wrap, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ \hyperlink{structamunmt_1_1GPU_1_1NthOut}{Nth\+Out} $>$ res\+New\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ uint $>$ batch\+Position\+Wrap, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ uint $>$ cum\+Beam\+Sizes\+Wrap, uint num\+Blocks)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespaceamunmt_1_1GPU_a2b768df4c05b3d5f4c1894cbb56c8d05}{g\+Get\+Value\+By\+Key} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ out, const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper}{mblas\+::\+Matrix\+Wrapper}$<$ float $>$ in, uint $\ast$indices, uint n)
+\item 
+void \hyperlink{namespaceamunmt_1_1GPU_aebe531e40abaff95bbd58b556b1a570f}{Handle\+Error} (cuda\+Error\+\_\+t err, const char $\ast$file, int line)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, boost\+::timer\+::cpu\+\_\+timer $>$ \hyperlink{namespaceamunmt_1_1GPU_a308fc6e1bfa76da409cba239406bb7fa}{timers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!G\+RU@{G\+RU}}
+\index{G\+RU@{G\+RU}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{G\+RU}{GRU}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ using {\bf amunmt\+::\+G\+P\+U\+::\+G\+RU} = typedef {\bf Fast\+G\+RU}$<$T$>$}\hypertarget{namespaceamunmt_1_1GPU_aef4855cf4b6eab614a38b158bda76705}{}\label{namespaceamunmt_1_1GPU_aef4855cf4b6eab614a38b158bda76705}
+
+
+Definition at line 256 of file gru.\+h.
+
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!L\+S\+TM@{L\+S\+TM}}
+\index{L\+S\+TM@{L\+S\+TM}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{L\+S\+TM}{LSTM}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ using {\bf amunmt\+::\+G\+P\+U\+::\+L\+S\+TM} = typedef {\bf Slow\+L\+S\+TM}$<$T$>$}\hypertarget{namespaceamunmt_1_1GPU_a5da1f5e1c7dfe4068d4a79ae464191d7}{}\label{namespaceamunmt_1_1GPU_a5da1f5e1c7dfe4068d4a79ae464191d7}
+
+
+Definition at line 81 of file lstm.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!g\+Elementwise\+Ops@{g\+Elementwise\+Ops}}
+\index{g\+Elementwise\+Ops@{g\+Elementwise\+Ops}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{g\+Elementwise\+Ops(mblas\+::\+Matrix\+Wrapper$<$ float $>$ out\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ state\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ ruh\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ temp\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ b\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ bx1\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ bx2\+Wrap)}{gElementwiseOps(mblas::MatrixWrapper< float > outWrap, const mblas::MatrixWrapper< float > stateWrap, const mblas::MatrixWrapper< float > ruhWrap, const mblas::MatrixWrapper< float > tempWrap, const mblas::MatrixWrapper< float > bWrap, const mblas::MatrixWrapper< float > bx1Wrap, const mblas::MatrixWrapper< float > bx2Wrap)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::g\+Elementwise\+Ops (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{out\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{state\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{ruh\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{temp\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{b\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{bx1\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{bx2\+Wrap}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_a92130d6efa8121cebe9e3ffdfa9fff8a}{}\label{namespaceamunmt_1_1GPU_a92130d6efa8121cebe9e3ffdfa9fff8a}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!g\+Get\+Value\+By\+Key@{g\+Get\+Value\+By\+Key}}
+\index{g\+Get\+Value\+By\+Key@{g\+Get\+Value\+By\+Key}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{g\+Get\+Value\+By\+Key(mblas\+::\+Matrix\+Wrapper$<$ float $>$ out, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ in, uint $\ast$indices, uint n)}{gGetValueByKey(mblas::MatrixWrapper< float > out, const mblas::MatrixWrapper< float > in, uint *indices, uint n)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::g\+Get\+Value\+By\+Key (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{out, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{in, }
+\item[{uint $\ast$}]{indices, }
+\item[{uint}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_a2b768df4c05b3d5f4c1894cbb56c8d05}{}\label{namespaceamunmt_1_1GPU_a2b768df4c05b3d5f4c1894cbb56c8d05}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d95/namespaceamunmt_1_1GPU_a2b768df4c05b3d5f4c1894cbb56c8d05_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!g\+Max\+Element@{g\+Max\+Element}}
+\index{g\+Max\+Element@{g\+Max\+Element}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{g\+Max\+Element(mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ out, const mblas\+::\+Matrix\+Wrapper$<$ float $>$ probs\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ batch\+Position\+Wrap, uint num\+Batches)}{gMaxElement(mblas::MatrixWrapper< NthOut > out, const mblas::MatrixWrapper< float > probsWrap, const mblas::MatrixWrapper< uint > batchPositionWrap, uint numBatches)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::g\+Max\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ {\bf Nth\+Out} $>$}]{out, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{probs\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ uint $>$}]{batch\+Position\+Wrap, }
+\item[{uint}]{num\+Batches}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_acf0906d22f8965ad5160853abf94b437}{}\label{namespaceamunmt_1_1GPU_acf0906d22f8965ad5160853abf94b437}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d95/namespaceamunmt_1_1GPU_acf0906d22f8965ad5160853abf94b437_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!g\+Max\+Element\+Update@{g\+Max\+Element\+Update}}
+\index{g\+Max\+Element\+Update@{g\+Max\+Element\+Update}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{g\+Max\+Element\+Update(mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ out, mblas\+::\+Matrix\+Wrapper$<$ float $>$ probs\+Wrap, mblas\+::\+Matrix\+Wrapper$<$ Nth\+Out $>$ res\+New\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ batch\+Position\+Wrap, const mblas\+::\+Matrix\+Wrapper$<$ uint $>$ cum\+Beam\+Sizes\+Wrap, uint num\+Blocks)}{gMaxElementUpdate(mblas::MatrixWrapper< NthOut > out, mblas::MatrixWrapper< float > probsWrap, mblas::MatrixWrapper< NthOut > resNewWrap, const mblas::MatrixWrapper< uint > batchPositionWrap, const mblas::MatrixWrapper< uint > cumBeamSizesWrap, uint numBlocks)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+global\+\_\+\+\_\+ void amunmt\+::\+G\+P\+U\+::g\+Max\+Element\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ {\bf Nth\+Out} $>$}]{out, }
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ float $>$}]{probs\+Wrap, }
+\item[{{\bf mblas\+::\+Matrix\+Wrapper}$<$ {\bf Nth\+Out} $>$}]{res\+New\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ uint $>$}]{batch\+Position\+Wrap, }
+\item[{const {\bf mblas\+::\+Matrix\+Wrapper}$<$ uint $>$}]{cum\+Beam\+Sizes\+Wrap, }
+\item[{uint}]{num\+Blocks}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_a51fe7e37c1246d7a4e6fff93ac7e079c}{}\label{namespaceamunmt_1_1GPU_a51fe7e37c1246d7a4e6fff93ac7e079c}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d95/namespaceamunmt_1_1GPU_a51fe7e37c1246d7a4e6fff93ac7e079c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!Handle\+Error@{Handle\+Error}}
+\index{Handle\+Error@{Handle\+Error}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{Handle\+Error(cuda\+Error\+\_\+t err, const char $\ast$file, int line)}{HandleError(cudaError_t err, const char *file, int line)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Handle\+Error (
+\begin{DoxyParamCaption}
+\item[{cuda\+Error\+\_\+t}]{err, }
+\item[{const char $\ast$}]{file, }
+\item[{int}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_1_1GPU_aebe531e40abaff95bbd58b556b1a570f}{}\label{namespaceamunmt_1_1GPU_aebe531e40abaff95bbd58b556b1a570f}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&out, const Nth\+Out \&obj)}{operator<<(std::ostream &out, const NthOut &obj)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& amunmt\+::\+G\+P\+U\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Nth\+Out} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1GPU_a85a2c70f9666759dd9db598bfcd51bab}{}\label{namespaceamunmt_1_1GPU_a85a2c70f9666759dd9db598bfcd51bab}
+
+
+Definition at line 93 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+94 \{
+95   out << \textcolor{stringliteral}{"("} << obj.ind << \textcolor{stringliteral}{","} << obj.score << \textcolor{stringliteral}{")"};
+96   \textcolor{keywordflow}{return} out;
+97 \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&out, const Nth\+Out\+Batch \&obj)}{operator<<(std::ostream &out, const NthOutBatch &obj)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& amunmt\+::\+G\+P\+U\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Nth\+Out\+Batch} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceamunmt_1_1GPU_aa3a73ca48e972648baa9d227e8e97da9}{}\label{namespaceamunmt_1_1GPU_aa3a73ca48e972648baa9d227e8e97da9}
+
+
+Definition at line 99 of file nth\+\_\+element\+\_\+kernels.\+h.
+
+
+\begin{DoxyCode}
+100 \{
+101   out << \textcolor{stringliteral}{"("}
+102       << obj.ind << \textcolor{stringliteral}{","}
+103       << obj.score << \textcolor{stringliteral}{","}
+104       \textcolor{comment}{//<< obj.hypoInd << ","}
+105       \textcolor{comment}{//<< obj.vocabInd}
+106       << \textcolor{stringliteral}{")"};
+107   \textcolor{keywordflow}{return} out;
+108 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d95/namespaceamunmt_1_1GPU_aa3a73ca48e972648baa9d227e8e97da9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}!timers@{timers}}
+\index{timers@{timers}!amunmt\+::\+G\+PU@{amunmt\+::\+G\+PU}}
+\subsubsection[{\texorpdfstring{timers}{timers}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, boost\+::timer\+::cpu\+\_\+timer$>$ amunmt\+::\+G\+P\+U\+::timers}\hypertarget{namespaceamunmt_1_1GPU_a308fc6e1bfa76da409cba239406bb7fa}{}\label{namespaceamunmt_1_1GPU_a308fc6e1bfa76da409cba239406bb7fa}

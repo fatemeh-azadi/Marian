@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d8a/structmarian_1_1TanhNodeOp">
+<title>marian::TanhNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::TanhNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/de8/structmarian_1_1TanhNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::TanhNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dc2/structmarian_1_1TanhNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1a5aea6b7aa9d3412374bfa5c423f32068">TanhNodeOp</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1a09f244867abe44271e2138204eaff0d2">newShape</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; nodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1a96a8cfc7646b2b73b421a099cabdb579">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1a01f8dfc69d49509d2ba630517d3e10d6">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1acb68c7e8dbabe5285de4b0666044302a">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/d8a/structmarian_1_1TanhNodeOp_1a451895f7e17e7fe2ac3c20250a998758">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1a5aea6b7aa9d3412374bfa5c423f32068">
+                <title>marian::TanhNodeOp::TanhNodeOp (const std::vector&lt; Expr &gt; &amp;nodes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1a09f244867abe44271e2138204eaff0d2">
+                <title>Shape marian::TanhNodeOp::newShape (const std::vector&lt; Expr &gt; &amp;nodes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1a96a8cfc7646b2b73b421a099cabdb579">
+                <title>NodeOps marian::TanhNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1a01f8dfc69d49509d2ba630517d3e10d6">
+                <title>NodeOps marian::TanhNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1acb68c7e8dbabe5285de4b0666044302a">
+                <title>const std::string marian::TanhNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d8a/structmarian_1_1TanhNodeOp_1a451895f7e17e7fe2ac3c20250a998758">
+                <title>const std::string marian::TanhNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

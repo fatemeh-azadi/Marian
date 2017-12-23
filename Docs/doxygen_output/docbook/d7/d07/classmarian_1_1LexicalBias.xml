@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d07/classmarian_1_1LexicalBias">
+<title>marian::LexicalBias class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc2/lex__probs_8h">&lt;lex_probs.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::LexicalBias</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dbf/classmarian_1_1LexicalBias__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::LexicalBias</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d0a/classmarian_1_1LexicalBias__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; sparse::CSR &gt; sentLexProbs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; GlobalAttention &gt; attention_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float eps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool single_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d07/classmarian_1_1LexicalBias_1a2a1c2b9a00a85ee6620f80a5c8c40534">LexicalBias</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/d62/classmarian_1_1sparse_1_1CSR">sparse::CSR</link> &gt; sentLexProbs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; GlobalAttention &gt; attention, float eps, bool single)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d7/d07/classmarian_1_1LexicalBias_1ab5d432af32715db16e5a51b29c36aed9">operator()</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> logits)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d07/classmarian_1_1LexicalBias_1a2a1c2b9a00a85ee6620f80a5c8c40534">
+                <title>marian::LexicalBias::LexicalBias (Ptr&lt; sparse::CSR &gt; sentLexProbs, Ptr&lt; GlobalAttention &gt; attention, float eps, bool single)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d07/classmarian_1_1LexicalBias_1ab5d432af32715db16e5a51b29c36aed9">
+                <title>Expr marian::LexicalBias::operator() (Expr logits)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

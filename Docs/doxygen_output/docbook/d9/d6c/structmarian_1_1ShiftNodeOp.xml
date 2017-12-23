@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6c/structmarian_1_1ShiftNodeOp">
+<title>marian::ShiftNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::ShiftNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d79/structmarian_1_1ShiftNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::ShiftNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d77/structmarian_1_1ShiftNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shape shift_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp_1a11c4d56e48c76e7d9c9c1833f5ded975">ShiftNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> shift, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp_1a42cd06dbea0bf66e744d1503a9ff8a1b">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp_1aa23a0bc2d5f513cb6d2f540783a720a3">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp_1ad76f8eb10fecb4724458cfae39daf283">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d9/d6c/structmarian_1_1ShiftNodeOp_1a687a08ebcb58fc58deca832b226fe2dd">hash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d6c/structmarian_1_1ShiftNodeOp_1a11c4d56e48c76e7d9c9c1833f5ded975">
+                <title>marian::ShiftNodeOp::ShiftNodeOp (Expr a, Shape shift, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d6c/structmarian_1_1ShiftNodeOp_1a42cd06dbea0bf66e744d1503a9ff8a1b">
+                <title>NodeOps marian::ShiftNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d6c/structmarian_1_1ShiftNodeOp_1aa23a0bc2d5f513cb6d2f540783a720a3">
+                <title>NodeOps marian::ShiftNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d6c/structmarian_1_1ShiftNodeOp_1ad76f8eb10fecb4724458cfae39daf283">
+                <title>const std::string marian::ShiftNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d6c/structmarian_1_1ShiftNodeOp_1a687a08ebcb58fc58deca832b226fe2dd">
+                <title>virtual size_t marian::ShiftNodeOp::hash ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dbc/matrix__functions_8h">
+    <title>matrix_functions.h File Reference</title>
+    <programlisting>#include &lt;cmath&gt;</programlisting>
+    <programlisting>#include &lt;cublas_v2.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/execution_policy.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/functional.h&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/thrust_functions.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix_wrapper.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/handles.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/nth_element_kernels.h&quot;</programlisting>
+<para>Include dependency diagram for matrix_functions.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d13/matrix__functions_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for matrix_functions.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dc0/matrix__functions_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas">amunmt::GPU::mblas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dbc/matrix__functions_8h_1a8b5173357adb02a86c027316e0acdfa0">MAX_THREADS</link> 512</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dbc/matrix__functions_8h_1aba7f789f3266685ad8840806656e3692">MAX_BLOCKS</link> 65535</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file matrix_functions.h</para>
+    </simplesect>
+</section>

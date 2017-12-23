@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d1d/classmarian_1_1EncoderState">
+<title>marian::EncoderState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/ddb/states_8h">&lt;states.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::EncoderState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dad/classmarian_1_1EncoderState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::EncoderState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d82/classmarian_1_1EncoderState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr context_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Expr mask_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; data::CorpusBatch &gt; batch_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d1d/classmarian_1_1EncoderState_1ac0886e5123196f081f05b4b56ec2c609">EncoderState</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> context, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d1d/classmarian_1_1EncoderState_1a2ec499c3eb57a47ad2f951e5ea4621b9">EncoderState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d1d/classmarian_1_1EncoderState_1a35888943fb53059c7b524b3b011d7a0c">getContext</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d1d/classmarian_1_1EncoderState_1a00f8d237ecedfae174695526969e590a">getAttended</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="dc/d1d/classmarian_1_1EncoderState_1a5ae25950692389c47b4035ebcae4725e">getMask</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::vector&lt; size_t &gt; &amp; <link linkend="dc/d1d/classmarian_1_1EncoderState_1a21e65549359c321ee7874e56ca04405b">getSourceWords</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1ac0886e5123196f081f05b4b56ec2c609">
+                <title>marian::EncoderState::EncoderState (Expr context, Expr mask, Ptr&lt; data::CorpusBatch &gt; batch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1a2ec499c3eb57a47ad2f951e5ea4621b9">
+                <title>marian::EncoderState::EncoderState ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1a35888943fb53059c7b524b3b011d7a0c">
+                <title>virtual Expr marian::EncoderState::getContext ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1a00f8d237ecedfae174695526969e590a">
+                <title>virtual Expr marian::EncoderState::getAttended ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1a5ae25950692389c47b4035ebcae4725e">
+                <title>virtual Expr marian::EncoderState::getMask ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d1d/classmarian_1_1EncoderState_1a21e65549359c321ee7874e56ca04405b">
+                <title>virtual const std::vector&lt;size_t&gt;&amp; marian::EncoderState::getSourceWords ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d8b/structmarian_1_1keywords_1_1is__one__of_3_01F_00_01S_00_01T_8_8_8_01_4">
+<title>marian::keywords::is_one_of&lt; F, S, T... &gt; struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/db7/keywords_8h">&lt;keywords.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::keywords::is_one_of&lt; F, S, T... &gt;</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d15/structmarian_1_1keywords_1_1is__one__of_3_01F_00_01S_00_01T_8_8_8_01_4__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::keywords::is_one_of&lt; F, S, T... &gt;</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d51/structmarian_1_1keywords_1_1is__one__of_3_01F_00_01S_00_01T_8_8_8_01_4__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+      <param>
+        <type>typename S</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static constexpr bool value</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

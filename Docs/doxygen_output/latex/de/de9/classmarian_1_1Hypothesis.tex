@@ -1,0 +1,211 @@
+\hypertarget{classmarian_1_1Hypothesis}{}\section{marian\+:\+:Hypothesis Class Reference}
+\label{classmarian_1_1Hypothesis}\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+
+
+{\ttfamily \#include $<$hypothesis.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Hypothesis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{d9/daa/classmarian_1_1Hypothesis__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1Hypothesis_adcdc27d5062750a588b9f909b4d7a8b9}{Hypothesis} ()
+\item 
+\hyperlink{classmarian_1_1Hypothesis_a1ee83c959e3fa7e8e76d7ca234477e80}{Hypothesis} (const \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Hypothesis}{Hypothesis} $>$ prev\+Hyp, size\+\_\+t word, size\+\_\+t prev\+Index, float cost)
+\item 
+const \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Hypothesis}{Hypothesis} $>$ \hyperlink{classmarian_1_1Hypothesis_ab502e9a71c3f82598ce244720cafd5d1}{Get\+Prev\+Hyp} () const 
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Hypothesis_a9d1318d435dc2202447c06630efac473}{Get\+Word} () const 
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Hypothesis_a8b073015c20d5a76c286640977fad91e}{Get\+Prev\+State\+Index} () const 
+\item 
+float \hyperlink{classmarian_1_1Hypothesis_a9c7a517dfecb9aab1fed4471658a3af7}{Get\+Cost} () const 
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{classmarian_1_1Hypothesis_a50cf986260d0b079a52bb6efbcdba762}{Get\+Cost\+Breakdown} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Hypothesis}{Hypothesis} $>$ \hyperlink{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}{prev\+Hyp\+\_\+}
+\item 
+const size\+\_\+t \hyperlink{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}{prev\+Index\+\_\+}
+\item 
+const size\+\_\+t \hyperlink{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}{word\+\_\+}
+\item 
+const float \hyperlink{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}{cost\+\_\+}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmarian_1_1Hypothesis_acd703ab8971154a3e1499d68bac4aa22}{cost\+Breakdown\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file marian/src/translator/hypothesis.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Hypothesis@{Hypothesis}}
+\index{Hypothesis@{Hypothesis}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Hypothesis()}{Hypothesis()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Hypothesis\+::\+Hypothesis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_adcdc27d5062750a588b9f909b4d7a8b9}{}\label{classmarian_1_1Hypothesis_adcdc27d5062750a588b9f909b4d7a8b9}
+
+
+Definition at line 10 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+10 : \hyperlink{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}{prevHyp\_}(\textcolor{keyword}{nullptr}), \hyperlink{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}{prevIndex\_}(0), \hyperlink{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}{word\_}(0), \hyperlink{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}{cost\_}(0.0) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Hypothesis@{Hypothesis}}
+\index{Hypothesis@{Hypothesis}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Hypothesis(const Ptr$<$ Hypothesis $>$ prev\+Hyp, size\+\_\+t word, size\+\_\+t prev\+Index, float cost)}{Hypothesis(const Ptr< Hypothesis > prevHyp, size_t word, size_t prevIndex, float cost)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Hypothesis\+::\+Hypothesis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ptr}$<$ {\bf Hypothesis} $>$}]{prev\+Hyp, }
+\item[{size\+\_\+t}]{word, }
+\item[{size\+\_\+t}]{prev\+Index, }
+\item[{float}]{cost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_a1ee83c959e3fa7e8e76d7ca234477e80}{}\label{classmarian_1_1Hypothesis_a1ee83c959e3fa7e8e76d7ca234477e80}
+
+
+Definition at line 12 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+16       : \hyperlink{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}{prevHyp\_}(prevHyp), \hyperlink{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}{prevIndex\_}(prevIndex), \hyperlink{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}{word\_}(word), 
+      \hyperlink{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}{cost\_}(cost) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Get\+Cost@{Get\+Cost}}
+\index{Get\+Cost@{Get\+Cost}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Get\+Cost() const }{GetCost() const }}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Hypothesis\+::\+Get\+Cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_a9c7a517dfecb9aab1fed4471658a3af7}{}\label{classmarian_1_1Hypothesis_a9c7a517dfecb9aab1fed4471658a3af7}
+
+
+Definition at line 24 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+24 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}{cost\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Get\+Cost\+Breakdown@{Get\+Cost\+Breakdown}}
+\index{Get\+Cost\+Breakdown@{Get\+Cost\+Breakdown}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Get\+Cost\+Breakdown()}{GetCostBreakdown()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$\& marian\+::\+Hypothesis\+::\+Get\+Cost\+Breakdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_a50cf986260d0b079a52bb6efbcdba762}{}\label{classmarian_1_1Hypothesis_a50cf986260d0b079a52bb6efbcdba762}
+
+
+Definition at line 26 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+26 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Hypothesis_acd703ab8971154a3e1499d68bac4aa22}{costBreakdown\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Get\+Prev\+Hyp@{Get\+Prev\+Hyp}}
+\index{Get\+Prev\+Hyp@{Get\+Prev\+Hyp}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Get\+Prev\+Hyp() const }{GetPrevHyp() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Ptr}$<${\bf Hypothesis}$>$ marian\+::\+Hypothesis\+::\+Get\+Prev\+Hyp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_ab502e9a71c3f82598ce244720cafd5d1}{}\label{classmarian_1_1Hypothesis_ab502e9a71c3f82598ce244720cafd5d1}
+
+
+Definition at line 18 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+18 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}{prevHyp\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Get\+Prev\+State\+Index@{Get\+Prev\+State\+Index}}
+\index{Get\+Prev\+State\+Index@{Get\+Prev\+State\+Index}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Get\+Prev\+State\+Index() const }{GetPrevStateIndex() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Hypothesis\+::\+Get\+Prev\+State\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_a8b073015c20d5a76c286640977fad91e}{}\label{classmarian_1_1Hypothesis_a8b073015c20d5a76c286640977fad91e}
+
+
+Definition at line 22 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+22 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}{prevIndex\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!Get\+Word@{Get\+Word}}
+\index{Get\+Word@{Get\+Word}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{Get\+Word() const }{GetWord() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Hypothesis\+::\+Get\+Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Hypothesis_a9d1318d435dc2202447c06630efac473}{}\label{classmarian_1_1Hypothesis_a9d1318d435dc2202447c06630efac473}
+
+
+Definition at line 20 of file marian/src/translator/hypothesis.\+h.
+
+
+\begin{DoxyCode}
+20 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}{word\_}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!cost\+\_\+@{cost\+\_\+}}
+\index{cost\+\_\+@{cost\+\_\+}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{cost\+\_\+}{cost_}}]{\setlength{\rightskip}{0pt plus 5cm}const float marian\+::\+Hypothesis\+::cost\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}{}\label{classmarian_1_1Hypothesis_ab1226b0488b36816a3596988a19483c6}
+
+
+Definition at line 32 of file marian/src/translator/hypothesis.\+h.
+
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!cost\+Breakdown\+\_\+@{cost\+Breakdown\+\_\+}}
+\index{cost\+Breakdown\+\_\+@{cost\+Breakdown\+\_\+}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{cost\+Breakdown\+\_\+}{costBreakdown_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ marian\+::\+Hypothesis\+::cost\+Breakdown\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Hypothesis_acd703ab8971154a3e1499d68bac4aa22}{}\label{classmarian_1_1Hypothesis_acd703ab8971154a3e1499d68bac4aa22}
+
+
+Definition at line 34 of file marian/src/translator/hypothesis.\+h.
+
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!prev\+Hyp\+\_\+@{prev\+Hyp\+\_\+}}
+\index{prev\+Hyp\+\_\+@{prev\+Hyp\+\_\+}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{prev\+Hyp\+\_\+}{prevHyp_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Ptr}$<${\bf Hypothesis}$>$ marian\+::\+Hypothesis\+::prev\+Hyp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}{}\label{classmarian_1_1Hypothesis_a8fa72ed72506549b2b089437c075a44b}
+
+
+Definition at line 29 of file marian/src/translator/hypothesis.\+h.
+
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!prev\+Index\+\_\+@{prev\+Index\+\_\+}}
+\index{prev\+Index\+\_\+@{prev\+Index\+\_\+}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{prev\+Index\+\_\+}{prevIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t marian\+::\+Hypothesis\+::prev\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}{}\label{classmarian_1_1Hypothesis_a84c448603601d1211175d07aece5a5cb}
+
+
+Definition at line 30 of file marian/src/translator/hypothesis.\+h.
+
+\index{marian\+::\+Hypothesis@{marian\+::\+Hypothesis}!word\+\_\+@{word\+\_\+}}
+\index{word\+\_\+@{word\+\_\+}!marian\+::\+Hypothesis@{marian\+::\+Hypothesis}}
+\subsubsection[{\texorpdfstring{word\+\_\+}{word_}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t marian\+::\+Hypothesis\+::word\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}{}\label{classmarian_1_1Hypothesis_af6a592017f00d65952995901371c6ebf}
+
+
+Definition at line 31 of file marian/src/translator/hypothesis.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2translator_2hypothesis_8h}{marian/src/translator/hypothesis.\+h}\end{DoxyCompactItemize}

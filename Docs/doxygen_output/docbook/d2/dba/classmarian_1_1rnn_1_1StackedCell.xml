@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell">
+<title>marian::rnn::StackedCell class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::StackedCell</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d42/classmarian_1_1rnn_1_1StackedCell__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::StackedCell</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d6e/classmarian_1_1rnn_1_1StackedCell__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; Stackable &gt; &gt; stackables_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Expr &gt; lastInputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a97c4228ddb80424626d9ee63e5b10532">StackedCell</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a1e4efaf97b244cc8833a5e6a30217453">StackedCell</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options, const std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable">Stackable</link> &gt;&gt; &amp; stackables)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a8795edc5c74994d2587900cb2a173269">push_back</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable">Stackable</link> &gt; stackable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1ae4448d097ccf117bf9385e074ccb346a">applyInput</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; inputs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a21feb9e10b75dca081f701343a0f35ac">applyState</link> (
+std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; mappedInputs, <link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable">Stackable</link> &gt; <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a6c052aa3a8bdfe928c42468b130fca60">operator[]</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d4/d04/classmarian_1_1rnn_1_1Stackable">Stackable</link> &gt; <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a887e64ea9ede2a24062df53929aba4a1">at</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1aaba6d09533f30c9622f4045e608aa09e">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a1f7cf03b01bc99cfa3f5174d24407939">getLazyInputs</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; rnn::RNN &gt; parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a87a4b17016e0d60ff14ed81f806dfd6d">setLazyInputs</link> (
+std::vector&lt; std::function&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link>(<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; rnn::RNN &gt;)&gt;&gt; lazy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a97c4228ddb80424626d9ee63e5b10532">
+                <title>marian::rnn::StackedCell::StackedCell (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a1e4efaf97b244cc8833a5e6a30217453">
+                <title>marian::rnn::StackedCell::StackedCell (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; Options &gt; options, const std::vector&lt; Ptr&lt; Stackable &gt;&gt; &amp;stackables)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a8795edc5c74994d2587900cb2a173269">
+                <title>void marian::rnn::StackedCell::push_back (Ptr&lt; Stackable &gt; stackable)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1ae4448d097ccf117bf9385e074ccb346a">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::StackedCell::applyInput (std::vector&lt; Expr &gt; inputs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a21feb9e10b75dca081f701343a0f35ac">
+                <title>virtual State marian::rnn::StackedCell::applyState (std::vector&lt; Expr &gt; mappedInputs, State state, Expr mask=nullptr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a6c052aa3a8bdfe928c42468b130fca60">
+                <title>Ptr&lt;Stackable&gt; marian::rnn::StackedCell::operator[] (int i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a887e64ea9ede2a24062df53929aba4a1">
+                <title>Ptr&lt;Stackable&gt; marian::rnn::StackedCell::at (int i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1aaba6d09533f30c9622f4045e608aa09e">
+                <title>virtual void marian::rnn::StackedCell::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a1f7cf03b01bc99cfa3f5174d24407939">
+                <title>virtual std::vector&lt;Expr&gt; marian::rnn::StackedCell::getLazyInputs (Ptr&lt; rnn::RNN &gt; parent)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dba/classmarian_1_1rnn_1_1StackedCell_1a87a4b17016e0d60ff14ed81f806dfd6d">
+                <title>virtual void marian::rnn::StackedCell::setLazyInputs (std::vector&lt; std::function&lt; Expr(Ptr&lt; rnn::RNN &gt;)&gt;&gt; lazy)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,337 @@
+\hypertarget{classamunmt_1_1Sentences}{}\section{amunmt\+:\+:Sentences Class Reference}
+\label{classamunmt_1_1Sentences}\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+
+
+{\ttfamily \#include $<$sentences.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:Sentences\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{d2/d84/classamunmt_1_1Sentences__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Sentences_ae8e09eee2812b30969440999118b84d4}{Sentences} ()
+\item 
+\hyperlink{classamunmt_1_1Sentences_a2cd447b9da2c51aa1534d76937f04792}{$\sim$\+Sentences} ()
+\item 
+void \hyperlink{classamunmt_1_1Sentences_a65e915e68559978f479af22b1173f3c6}{push\+\_\+back} (\hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{Sentence\+Ptr} sentence)
+\item 
+\hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{Sentence\+Ptr} \hyperlink{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}{at} (size\+\_\+t id) const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size} () const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentences_a02f0688d10222abd36ef037121a85e72}{Get\+Max\+Length} () const 
+\item 
+void \hyperlink{classamunmt_1_1Sentences_ada175aa31a779a503afec2441efac300}{Sort\+By\+Length} ()
+\item 
+\hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{Sentences\+Ptr} \hyperlink{classamunmt_1_1Sentences_ada8019dbcd4db342747d425044468b5e}{Next\+Mini\+Batch} (size\+\_\+t batchsize, int batch\+Words)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Sentences_ace55e7b61f3c77f73cd91fb50e430775}{Sentences} (const \hyperlink{classamunmt_1_1Sentences}{Sentences} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{Sentence\+Ptr} $>$ \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{max\+Length\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file sentences.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!Sentences@{Sentences}}
+\index{Sentences@{Sentences}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{Sentences()}{Sentences()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentences\+::\+Sentences (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentences_ae8e09eee2812b30969440999118b84d4}{}\label{classamunmt_1_1Sentences_ae8e09eee2812b30969440999118b84d4}
+
+
+Definition at line 8 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+9   : \hyperlink{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{maxLength\_}(0)
+10 \{\}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{de/ded/classamunmt_1_1Sentences_ae8e09eee2812b30969440999118b84d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!````~Sentences@{$\sim$\+Sentences}}
+\index{````~Sentences@{$\sim$\+Sentences}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{$\sim$\+Sentences()}{~Sentences()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentences\+::$\sim$\+Sentences (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentences_a2cd447b9da2c51aa1534d76937f04792}{}\label{classamunmt_1_1Sentences_a2cd447b9da2c51aa1534d76937f04792}
+
+
+Definition at line 12 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+13 \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!Sentences@{Sentences}}
+\index{Sentences@{Sentences}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{Sentences(const Sentences \&)=delete}{Sentences(const Sentences &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+Sentences\+::\+Sentences (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sentences} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1Sentences_ace55e7b61f3c77f73cd91fb50e430775}{}\label{classamunmt_1_1Sentences_ace55e7b61f3c77f73cd91fb50e430775}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!at@{at}}
+\index{at@{at}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{at(size\+\_\+t id) const }{at(size_t id) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sentence\+Ptr} amunmt\+::\+Sentences\+::at (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}{}\label{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}
+
+
+Definition at line 15 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+15                                          \{
+16   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.at(\textcolor{keywordtype}{id});
+17 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/ded/classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!Get\+Max\+Length@{Get\+Max\+Length}}
+\index{Get\+Max\+Length@{Get\+Max\+Length}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{Get\+Max\+Length() const }{GetMaxLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentences\+::\+Get\+Max\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentences_a02f0688d10222abd36ef037121a85e72}{}\label{classamunmt_1_1Sentences_a02f0688d10222abd36ef037121a85e72}
+
+
+Definition at line 23 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+23                                      \{
+24   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{maxLength\_};
+25 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/ded/classamunmt_1_1Sentences_a02f0688d10222abd36ef037121a85e72_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!Next\+Mini\+Batch@{Next\+Mini\+Batch}}
+\index{Next\+Mini\+Batch@{Next\+Mini\+Batch}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{Next\+Mini\+Batch(size\+\_\+t batchsize, int batch\+Words)}{NextMiniBatch(size_t batchsize, int batchWords)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sentences\+Ptr} amunmt\+::\+Sentences\+::\+Next\+Mini\+Batch (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{batchsize, }
+\item[{int}]{batch\+Words}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentences_ada8019dbcd4db342747d425044468b5e}{}\label{classamunmt_1_1Sentences_ada8019dbcd4db342747d425044468b5e}
+
+
+Definition at line 50 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+51 \{
+52   \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences_ae8e09eee2812b30969440999118b84d4}{Sentences}());
+53 
+54   \textcolor{keywordflow}{if} (batchWords) \{
+55     \textcolor{keywordtype}{size\_t} numWords = 0;
+56     \textcolor{keywordtype}{size\_t} maxBatch = std::min(batchsize, \hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size}());
+57     \textcolor{comment}{//cerr << "maxBatch=" << maxBatch << endl;}
+58 
+59     \textcolor{keywordtype}{size\_t} ind = 0;
+60     \textcolor{keywordflow}{while} (ind < maxBatch) \{
+61       \hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{SentencePtr} sentence = \hyperlink{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}{at}(ind);
+62       \textcolor{keywordtype}{size\_t} sentLen = sentence->GetWords(0).size();
+63 
+64       \textcolor{keywordflow}{if} (\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}->size() && (numWords + sentLen) > batchWords) \{
+65         \textcolor{comment}{// max batch}
+66         \textcolor{keywordflow}{break};
+67       \}
+68 
+69       numWords += sentLen;
+70 
+71       \textcolor{comment}{// add next 32 sentences}
+72       \textcolor{keywordtype}{size\_t} endInd = std::min(\hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size}(), ind + 32);
+73       \textcolor{keywordflow}{for} (; ind < endInd; ++ind) \{
+74         sentence = \hyperlink{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}{at}(ind);
+75         \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}->push\_back(sentence);
+76 
+77         \textcolor{keywordflow}{if} (ind == maxBatch) \{
+78           \textcolor{keywordflow}{break};
+79         \}
+80       \}
+81     \}
+82 
+83     \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.erase(\hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.begin(), \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.begin() + ind);
+84 
+85     \textcolor{comment}{//cerr << "sentences=" << sentences->size() << " coll\_=" << coll\_.size() << endl;}
+86   \}
+87   \textcolor{keywordflow}{else} \{
+88     \textcolor{keywordtype}{size\_t} startInd = (batchsize > \hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size}()) ? 0 : \hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size}() - batchsize;
+89     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = startInd; i < \hyperlink{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{size}(); ++i) \{
+90       \hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{SentencePtr} sentence = \hyperlink{classamunmt_1_1Sentences_afe33dd6de1f3dfbcff4003c32bdd1f4b}{at}(i);
+91       \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}->push\_back(sentence);
+92     \}
+93 
+94     \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.resize(startInd);
+95   \}
+96 
+97   \textcolor{keywordflow}{return} \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences};
+98 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/ded/classamunmt_1_1Sentences_ada8019dbcd4db342747d425044468b5e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(\+Sentence\+Ptr sentence)}{push_back(SentencePtr sentence)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Sentences\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Sentence\+Ptr}}]{sentence}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentences_a65e915e68559978f479af22b1173f3c6}{}\label{classamunmt_1_1Sentences_a65e915e68559978f479af22b1173f3c6}
+
+
+Definition at line 27 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+27                                               \{
+28   \textcolor{keyword}{const} \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} &words = sentence->GetWords(0);
+29   \textcolor{keywordtype}{size\_t} len = words.size();
+30   \textcolor{keywordflow}{if} (len > \hyperlink{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{maxLength\_}) \{
+31     \hyperlink{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{maxLength\_} = len;
+32   \}
+33 
+34   \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.push\_back(sentence);
+35 \}
+\end{DoxyCode}
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!size@{size}}
+\index{size@{size}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentences\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}{}\label{classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8}
+
+
+Definition at line 19 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+19                              \{
+20   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.size();
+21 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/ded/classamunmt_1_1Sentences_accf70916436eb80cd7f4df9645fd1da8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!Sort\+By\+Length@{Sort\+By\+Length}}
+\index{Sort\+By\+Length@{Sort\+By\+Length}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{Sort\+By\+Length()}{SortByLength()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Sentences\+::\+Sort\+By\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1Sentences_ada175aa31a779a503afec2441efac300}{}\label{classamunmt_1_1Sentences_ada175aa31a779a503afec2441efac300}
+
+
+Definition at line 44 of file sentences.\+cpp.
+
+
+\begin{DoxyCode}
+44                              \{
+45   std::sort(\hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.rbegin(), \hyperlink{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{coll\_}.rend(), LengthOrderer());
+46   \textcolor{comment}{//std::sort(coll\_.begin(), coll\_.end(), LengthOrderer());}
+47   \textcolor{comment}{//std::random\_shuffle ( coll\_.begin(), coll\_.end() );}
+48 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!coll\+\_\+@{coll\+\_\+}}
+\index{coll\+\_\+@{coll\+\_\+}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{coll\+\_\+}{coll_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Sentence\+Ptr}$>$ amunmt\+::\+Sentences\+::coll\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}{}\label{classamunmt_1_1Sentences_ae2784b113f5764d9e2efe50cf28b4340}
+
+
+Definition at line 28 of file sentences.\+h.
+
+\index{amunmt\+::\+Sentences@{amunmt\+::\+Sentences}!max\+Length\+\_\+@{max\+Length\+\_\+}}
+\index{max\+Length\+\_\+@{max\+Length\+\_\+}!amunmt\+::\+Sentences@{amunmt\+::\+Sentences}}
+\subsubsection[{\texorpdfstring{max\+Length\+\_\+}{maxLength_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+Sentences\+::max\+Length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}{}\label{classamunmt_1_1Sentences_a9dccc95db296164c8f7aabe70f031f48}
+
+
+Definition at line 29 of file sentences.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sentences_8h}{sentences.\+h}\item 
+\hyperlink{sentences_8cpp}{sentences.\+cpp}\end{DoxyCompactItemize}

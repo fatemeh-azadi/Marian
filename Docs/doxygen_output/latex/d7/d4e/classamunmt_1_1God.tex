@@ -1,0 +1,1431 @@
+\hypertarget{classamunmt_1_1God}{}\section{amunmt\+:\+:God Class Reference}
+\label{classamunmt_1_1God}\index{amunmt\+::\+God@{amunmt\+::\+God}}
+
+
+{\ttfamily \#include $<$god.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:God\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/db9/classamunmt_1_1God__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1God_acef51eae6aed7d1b6883b6f198cf92d4}{God} ()
+\item 
+virtual \hyperlink{classamunmt_1_1God_a05b83810590c957aed395391590c0cf7}{$\sim$\+God} ()
+\item 
+\hyperlink{classamunmt_1_1God}{God} \& \hyperlink{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}{Init} (const std\+::string \&)
+\item 
+\hyperlink{classamunmt_1_1God}{God} \& \hyperlink{classamunmt_1_1God_a7a424275f1192499979b2f58ac250559}{Init} (int argc, char $\ast$$\ast$argv)
+\item 
+void \hyperlink{classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd}{Cleanup} ()
+\item 
+bool \hyperlink{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}{Has} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get} (const std\+::string \&key) const 
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classamunmt_1_1God_acbdecb98f98edf71cc8a81493df2c56a}{Get} (const std\+::string \&key) const 
+\item 
+\hyperlink{classamunmt_1_1Vocab}{Vocab} \& \hyperlink{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}{Get\+Source\+Vocab} (size\+\_\+t i=0) const 
+\item 
+\hyperlink{classamunmt_1_1Vocab}{Vocab} \& \hyperlink{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}{Get\+Target\+Vocab} () const 
+\item 
+std\+::istream \& \hyperlink{classamunmt_1_1God_aa118cbeda9e332f518135b027aff3ac2}{Get\+Input\+Stream} () const 
+\item 
+\hyperlink{classamunmt_1_1OutputCollector}{Output\+Collector} \& \hyperlink{classamunmt_1_1God_ab8af5f6cc4352c053f42f4e707a281f9}{Get\+Output\+Collector} () const 
+\item 
+std\+::shared\+\_\+ptr$<$ const \hyperlink{classamunmt_1_1Filter}{Filter} $>$ \hyperlink{classamunmt_1_1God_a0ebdb327d0eb53de76824ba967a0b1b6}{Get\+Filter} () const 
+\item 
+\hyperlink{namespaceamunmt_a4a9522da34de52554ec07cedc30361b8}{Best\+Hyps\+Base\+Ptr} \hyperlink{classamunmt_1_1God_aa482b0ccfa13656701b3f03c8c869fea}{Get\+Best\+Hyps} (const \hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \&device\+Info) const 
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr} $>$ \hyperlink{classamunmt_1_1God_ae3fcd8b1f31d85bda0887e1ef50cf282}{Get\+Scorers} (const \hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \&device\+Info) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1God_a75cb5ca765042d1df858a6eeed330bb7}{Get\+Scorer\+Names} () const 
+\item 
+const std\+::map$<$ std\+::string, float $>$ \& \hyperlink{classamunmt_1_1God_a7dbd89cd4c2b921d821d9ddb1c76fabf}{Get\+Scorer\+Weights} () const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1God_a98a2f57d4f28a7e7d58f3b68680dbdb1}{Preprocess} (size\+\_\+t i, const std\+::vector$<$ std\+::string $>$ \&input) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classamunmt_1_1God_a1e2a81202f36d8c2c10e5ee35c3b44ae}{Postprocess} (const std\+::vector$<$ std\+::string $>$ \&input) const 
+\item 
+void \hyperlink{classamunmt_1_1God_a33ef746e9d56529017f77d2ed5cab80f}{Load\+Weights} (const std\+::string \&path)
+\item 
+\hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \hyperlink{classamunmt_1_1God_ab9fdce5683a6fc47cdab2dd2da263fd5}{Get\+Next\+Device} () const 
+\item 
+\hyperlink{classamunmt_1_1Search}{Search} \& \hyperlink{classamunmt_1_1God_a38e952b706c978ecb2b8ad2ab7f7828f}{Get\+Search} () const 
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1God_ac1fe1740097a86cded1e88937d538a97}{Get\+Total\+Threads} () const 
+\item 
+\hyperlink{classamunmt_1_1ThreadPool}{Thread\+Pool} \& \hyperlink{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{Get\+Thread\+Pool} ()
+\item 
+bool \hyperlink{classamunmt_1_1God_ace871e61162c362f7ae8eb8162ba6b66}{Return\+N\+Best\+List} () const 
+\item 
+bool \hyperlink{classamunmt_1_1God_a84dbb75205f93a9a769d05f51e4b9f26}{Use\+Fused\+Softmax} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{namespaceamunmt_a7907c3626488deed31e31452d178d78e}{Loader\+Ptr} $>$ \hyperlink{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}{Loaders}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105}{Load\+Scorers} ()
+\item 
+void \hyperlink{classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80}{Load\+Filtering} ()
+\item 
+void \hyperlink{classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484}{Load\+Pre\+Post\+Processing} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1Config}{Config} \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\+\_\+}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Vocab}{Vocab} $>$ $>$ \hyperlink{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}{source\+Vocabs\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Vocab}{Vocab} $>$ \hyperlink{classamunmt_1_1God_a38957553a6fc282c0487c4d2d9a02f90}{target\+Vocab\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ const \hyperlink{classamunmt_1_1Filter}{Filter} $>$ \hyperlink{classamunmt_1_1God_aae4d25701c8177302ea6f07daff690c5}{filter\+\_\+}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespaceamunmt_a01f8e038a68167c344d9e40146064712}{Preprocessor\+Ptr} $>$ $>$ \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespaceamunmt_a93da118427da6be237f0407643816798}{Postprocessor\+Ptr} $>$ \hyperlink{classamunmt_1_1God_aef3af265dadb03728481dda039df6e26}{postprocessors\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}{Loaders} \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpu\+Loaders\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}{Loaders} \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpu\+Loaders\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}{Loaders} \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpga\+Loaders\+\_\+}
+\item 
+std\+::map$<$ std\+::string, float $>$ \hyperlink{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}{weights\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$ \hyperlink{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}{info\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$ \hyperlink{classamunmt_1_1God_a873205411a78432714ad191989c78367}{progress\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1InputFileStream}{Input\+File\+Stream} $>$ \hyperlink{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}{input\+Stream\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1OutputCollector}{Output\+Collector} \hyperlink{classamunmt_1_1God_a2dc4151a17c691e86bab1f2cc1d0a932}{output\+Collector\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{thread\+Incr\+\_\+}
+\item 
+boost\+::shared\+\_\+mutex \hyperlink{classamunmt_1_1God_afcd5629990403f8b2b16d9bd08db238e}{access\+Lock\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1ThreadPool}{Thread\+Pool} $>$ \hyperlink{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}{pool\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}{return\+N\+Best\+List\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1God_a2ea1b8cdaf00c9a882945ba8238f99ea}{use\+Fused\+Softmax\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file god.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Loaders@{Loaders}}
+\index{Loaders@{Loaders}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Loaders}{Loaders}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Loader\+Ptr}$>$ {\bf amunmt\+::\+God\+::\+Loaders}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}{}\label{classamunmt_1_1God_abe005048d71d1ac78750395d4ac8a531}
+
+
+Definition at line 102 of file god.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!God@{God}}
+\index{God@{God}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{God()}{God()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+God\+::\+God (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1God_acef51eae6aed7d1b6883b6f198cf92d4}{}\label{classamunmt_1_1God_acef51eae6aed7d1b6883b6f198cf92d4}
+
+
+Definition at line 28 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+29  : \hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_}(0)
+30 \{
+31 \}
+\end{DoxyCode}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!````~God@{$\sim$\+God}}
+\index{````~God@{$\sim$\+God}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{$\sim$\+God()}{~God()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+God\+::$\sim$\+God (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classamunmt_1_1God_a05b83810590c957aed395391590c0cf7}{}\label{classamunmt_1_1God_a05b83810590c957aed395391590c0cf7}
+
+
+Definition at line 33 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+34 \{
+35   \hyperlink{classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd}{Cleanup}();
+36 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d7/d4e/classamunmt_1_1God_a05b83810590c957aed395391590c0cf7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Cleanup()}{Cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+God\+::\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd}{}\label{classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd}
+
+
+Definition at line 119 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+120 \{
+121   \hyperlink{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}{pool\_}.reset();
+122   \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpuLoaders\_}.clear();
+123   \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_}.clear();
+124   \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpgaLoaders\_}.clear();
+125 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d7/d4e/classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get@{Get}}
+\index{Get@{Get}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&key) const }{Get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T amunmt\+::\+God\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{}\label{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}
+
+
+Definition at line 45 of file god.\+h.
+
+
+\begin{DoxyCode}
+45                                       \{
+46       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}<T>(key);
+47     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d7/d4e/classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get@{Get}}
+\index{Get@{Get}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&key) const }{Get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node amunmt\+::\+God\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_acbdecb98f98edf71cc8a81493df2c56a}{}\label{classamunmt_1_1God_acbdecb98f98edf71cc8a81493df2c56a}
+
+
+Definition at line 49 of file god.\+h.
+
+
+\begin{DoxyCode}
+49                                              \{
+50       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}(key);
+51     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/d4e/classamunmt_1_1God_acbdecb98f98edf71cc8a81493df2c56a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Best\+Hyps@{Get\+Best\+Hyps}}
+\index{Get\+Best\+Hyps@{Get\+Best\+Hyps}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Best\+Hyps(const Device\+Info \&device\+Info) const }{GetBestHyps(const DeviceInfo &deviceInfo) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Best\+Hyps\+Base\+Ptr} amunmt\+::\+God\+::\+Get\+Best\+Hyps (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device\+Info} \&}]{device\+Info}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_aa482b0ccfa13656701b3f03c8c869fea}{}\label{classamunmt_1_1God_aa482b0ccfa13656701b3f03c8c869fea}
+
+
+Definition at line 256 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+256                                                                    \{
+257   \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice}) \{
+258     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpuLoaders\_}.begin()->second->GetBestHyps(*\textcolor{keyword}{this}, deviceInfo);
+259   \}
+260   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice}) \{
+261     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_}.begin()->second->GetBestHyps(*\textcolor{keyword}{this}, deviceInfo);
+262   \}
+263   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice}) \{
+264     \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpgaLoaders\_}.begin()->second->GetBestHyps(*\textcolor{keyword}{this}, deviceInfo);
+265   \}
+266   \textcolor{keywordflow}{else} \{
+267   \hyperlink{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{amunmt\_UTIL\_THROW2}(\textcolor{stringliteral}{"Unknown device type:"} << deviceInfo);
+268   \}
+269 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_aa482b0ccfa13656701b3f03c8c869fea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Filter@{Get\+Filter}}
+\index{Get\+Filter@{Get\+Filter}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Filter() const }{GetFilter() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ const {\bf Filter} $>$ amunmt\+::\+God\+::\+Get\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a0ebdb327d0eb53de76824ba967a0b1b6}{}\label{classamunmt_1_1God_a0ebdb327d0eb53de76824ba967a0b1b6}
+
+
+Definition at line 222 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+222                                                  \{
+223   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_aae4d25701c8177302ea6f07daff690c5}{filter\_};
+224 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d7/d4e/classamunmt_1_1God_a0ebdb327d0eb53de76824ba967a0b1b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Input\+Stream@{Get\+Input\+Stream}}
+\index{Get\+Input\+Stream@{Get\+Input\+Stream}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Input\+Stream() const }{GetInputStream() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream \& amunmt\+::\+God\+::\+Get\+Input\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_aa118cbeda9e332f518135b027aff3ac2}{}\label{classamunmt_1_1God_aa118cbeda9e332f518135b027aff3ac2}
+
+
+Definition at line 226 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+226                                       \{
+227   \textcolor{keywordflow}{return} *\hyperlink{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}{inputStream\_};
+228 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_aa118cbeda9e332f518135b027aff3ac2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Next\+Device@{Get\+Next\+Device}}
+\index{Get\+Next\+Device@{Get\+Next\+Device}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Next\+Device() const }{GetNextDevice() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device\+Info} amunmt\+::\+God\+::\+Get\+Next\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_ab9fdce5683a6fc47cdab2dd2da263fd5}{}\label{classamunmt_1_1God_ab9fdce5683a6fc47cdab2dd2da263fd5}
+
+
+Definition at line 305 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+306 \{
+307   DeviceInfo ret;
+308 
+309   \textcolor{keywordtype}{size\_t} cpuThreads = 0, gpuThreads = 0, fpgaThreads = 0;
+310   std::vector<size\_t> gpuDevices, fpgaDevices;
+311 
+312 \textcolor{preprocessor}{#ifdef CUDA}
+313   gpuThreads = Get<size\_t>(\textcolor{stringliteral}{"gpu-threads"});
+314   gpuDevices = Get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"});
+315 \textcolor{preprocessor}{#endif}
+316 
+317 \textcolor{preprocessor}{#ifdef HAS\_CPU}
+318   cpuThreads = God::Get<size\_t>(\textcolor{stringliteral}{"cpu-threads"});
+319 \textcolor{preprocessor}{#endif}
+320 
+321 \textcolor{preprocessor}{#ifdef HAS\_FPGA}
+322   fpgaThreads = Get<size\_t>(\textcolor{stringliteral}{"fpga-threads"});
+323   fpgaDevices = Get<std::vector<size\_t>>(\textcolor{stringliteral}{"fpga-devices"});
+324 \textcolor{preprocessor}{#endif}
+325 
+326   \textcolor{keywordtype}{size\_t} totGPUThreads = gpuThreads * gpuDevices.size();
+327   \textcolor{keywordtype}{size\_t} totFPGAThreads = fpgaThreads * fpgaDevices.size();
+328 
+329   \textcolor{comment}{// start locking}
+330   boost::unique\_lock<boost::shared\_mutex> lock(\hyperlink{classamunmt_1_1God_afcd5629990403f8b2b16d9bd08db238e}{accessLock\_});
+331 
+332   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_} < cpuThreads) \{
+333     ret.deviceType = \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice};
+334     ret.threadInd = \hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_};
+335   \}
+336   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_} < cpuThreads + totGPUThreads) \{
+337     ret.deviceType = \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice};
+338     \textcolor{keywordtype}{size\_t} threadIncr = \hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_} - cpuThreads;
+339 
+340     ret.threadInd = threadIncr / gpuDevices.size();
+341 
+342     \textcolor{keywordtype}{size\_t} deviceInd = threadIncr % gpuDevices.size();
+343     assert(deviceInd < gpuDevices.size());
+344     ret.deviceId = gpuDevices[deviceInd];
+345   \}
+346   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_} < cpuThreads + totGPUThreads + totFPGAThreads) \{
+347     ret.deviceType = \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice};
+348     \textcolor{keywordtype}{size\_t} threadIncr = \hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_} - cpuThreads - totGPUThreads;
+349 
+350     ret.threadInd = threadIncr / fpgaDevices.size();
+351 
+352     \textcolor{keywordtype}{size\_t} deviceInd = threadIncr % fpgaDevices.size();
+353     assert(deviceInd < fpgaDevices.size());
+354     ret.deviceId = fpgaDevices[deviceInd];
+355   \}
+356   \textcolor{keywordflow}{else} \{
+357     \hyperlink{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{amunmt\_UTIL\_THROW2}(\textcolor{stringliteral}{"Too many threads"});
+358   \}
+359 
+360   ++\hyperlink{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{threadIncr\_};
+361 
+362   \textcolor{keywordflow}{return} ret;
+363 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_ab9fdce5683a6fc47cdab2dd2da263fd5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Output\+Collector@{Get\+Output\+Collector}}
+\index{Get\+Output\+Collector@{Get\+Output\+Collector}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Output\+Collector() const }{GetOutputCollector() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\+Collector} \& amunmt\+::\+God\+::\+Get\+Output\+Collector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_ab8af5f6cc4352c053f42f4e707a281f9}{}\label{classamunmt_1_1God_ab8af5f6cc4352c053f42f4e707a281f9}
+
+
+Definition at line 230 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+230                                                \{
+231   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a2dc4151a17c691e86bab1f2cc1d0a932}{outputCollector\_};
+232 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_ab8af5f6cc4352c053f42f4e707a281f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Scorer\+Names@{Get\+Scorer\+Names}}
+\index{Get\+Scorer\+Names@{Get\+Scorer\+Names}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Scorer\+Names() const }{GetScorerNames() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+God\+::\+Get\+Scorer\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a75cb5ca765042d1df858a6eeed330bb7}{}\label{classamunmt_1_1God_a75cb5ca765042d1df858a6eeed330bb7}
+
+
+Definition at line 271 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+271                                                \{
+272   std::vector<std::string> scorerNames;
+273   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& name : \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpuLoaders\_} | boost::adaptors::map\_keys)
+274     scorerNames.push\_back(name);
+275   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& name : \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_} | boost::adaptors::map\_keys)
+276     scorerNames.push\_back(name);
+277   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& name : \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpgaLoaders\_} | boost::adaptors::map\_keys)
+278     scorerNames.push\_back(name);
+279 
+280   \textcolor{keywordflow}{return} scorerNames;
+281 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a75cb5ca765042d1df858a6eeed330bb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Scorers@{Get\+Scorers}}
+\index{Get\+Scorers@{Get\+Scorers}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Scorers(const Device\+Info \&device\+Info) const }{GetScorers(const DeviceInfo &deviceInfo) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Scorer\+Ptr} $>$ amunmt\+::\+God\+::\+Get\+Scorers (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device\+Info} \&}]{device\+Info}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_ae3fcd8b1f31d85bda0887e1ef50cf282}{}\label{classamunmt_1_1God_ae3fcd8b1f31d85bda0887e1ef50cf282}
+
+
+Definition at line 234 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+234                                                                        \{
+235   std::vector<ScorerPtr> scorers;
+236 
+237   \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice}) \{
+238     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& loader : \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpuLoaders\_} | boost::adaptors::map\_values)
+239       scorers.emplace\_back(loader->NewScorer(*\textcolor{keyword}{this}, deviceInfo));
+240   \}
+241   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice}) \{
+242     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& loader : \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_} | boost::adaptors::map\_values)
+243       scorers.emplace\_back(loader->NewScorer(*\textcolor{keyword}{this}, deviceInfo));
+244   \}
+245   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (deviceInfo.deviceType == \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice}) \{
+246     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& loader : \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpgaLoaders\_} | boost::adaptors::map\_values)
+247       scorers.emplace\_back(loader->NewScorer(*\textcolor{keyword}{this}, deviceInfo));
+248   \}
+249   \textcolor{keywordflow}{else} \{
+250   \hyperlink{exception_8h_a620a250f8b1bb0d664281ec2eb1b5b41}{amunmt\_UTIL\_THROW2}(\textcolor{stringliteral}{"Unknown device type:"} << deviceInfo);
+251   \}
+252 
+253   \textcolor{keywordflow}{return} scorers;
+254 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{d7/d4e/classamunmt_1_1God_ae3fcd8b1f31d85bda0887e1ef50cf282_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Scorer\+Weights@{Get\+Scorer\+Weights}}
+\index{Get\+Scorer\+Weights@{Get\+Scorer\+Weights}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Scorer\+Weights() const }{GetScorerWeights() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$ std\+::string, float $>$ \& amunmt\+::\+God\+::\+Get\+Scorer\+Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a7dbd89cd4c2b921d821d9ddb1c76fabf}{}\label{classamunmt_1_1God_a7dbd89cd4c2b921d821d9ddb1c76fabf}
+
+
+Definition at line 283 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+283                                                             \{
+284   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}{weights\_};
+285 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a7dbd89cd4c2b921d821d9ddb1c76fabf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Search@{Get\+Search}}
+\index{Get\+Search@{Get\+Search}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Search() const }{GetSearch() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Search} \& amunmt\+::\+God\+::\+Get\+Search (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a38e952b706c978ecb2b8ad2ab7f7828f}{}\label{classamunmt_1_1God_a38e952b706c978ecb2b8ad2ab7f7828f}
+
+
+Definition at line 365 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+366 \{
+367   thread\_local Search obj(*\textcolor{keyword}{this});
+368   \textcolor{keywordflow}{return} obj;
+369 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a38e952b706c978ecb2b8ad2ab7f7828f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Source\+Vocab@{Get\+Source\+Vocab}}
+\index{Get\+Source\+Vocab@{Get\+Source\+Vocab}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Source\+Vocab(size\+\_\+t i=0) const }{GetSourceVocab(size_t i=0) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vocab} \& amunmt\+::\+God\+::\+Get\+Source\+Vocab (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}{}\label{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}
+
+
+Definition at line 214 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+214                                          \{
+215   \textcolor{keywordflow}{return} *\hyperlink{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}{sourceVocabs\_}[i];
+216 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Target\+Vocab@{Get\+Target\+Vocab}}
+\index{Get\+Target\+Vocab@{Get\+Target\+Vocab}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Target\+Vocab() const }{GetTargetVocab() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vocab} \& amunmt\+::\+God\+::\+Get\+Target\+Vocab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}{}\label{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}
+
+
+Definition at line 218 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+218                                  \{
+219   \textcolor{keywordflow}{return} *\hyperlink{classamunmt_1_1God_a38957553a6fc282c0487c4d2d9a02f90}{targetVocab\_};
+220 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Thread\+Pool@{Get\+Thread\+Pool}}
+\index{Get\+Thread\+Pool@{Get\+Thread\+Pool}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Thread\+Pool()}{GetThreadPool()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Thread\+Pool}\& amunmt\+::\+God\+::\+Get\+Thread\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{}\label{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}
+
+
+Definition at line 77 of file god.\+h.
+
+
+\begin{DoxyCode}
+78     \{ \textcolor{keywordflow}{return} *\hyperlink{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}{pool\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Get\+Total\+Threads@{Get\+Total\+Threads}}
+\index{Get\+Total\+Threads@{Get\+Total\+Threads}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Get\+Total\+Threads() const }{GetTotalThreads() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+God\+::\+Get\+Total\+Threads (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_ac1fe1740097a86cded1e88937d538a97}{}\label{classamunmt_1_1God_ac1fe1740097a86cded1e88937d538a97}
+
+
+Definition at line 371 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+372 \{
+373   \textcolor{keywordtype}{size\_t} totalThreads = 0;
+374 
+375 \textcolor{preprocessor}{#ifdef CUDA}
+376   \textcolor{keywordtype}{size\_t} gpuThreads = Get<size\_t>(\textcolor{stringliteral}{"gpu-threads"});
+377   \textcolor{keyword}{auto} devices = Get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"});
+378   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Setting GPU thread count to \{\}"}, gpuThreads);
+379   totalThreads += gpuThreads * devices.size();
+380 \textcolor{preprocessor}{#endif}
+381 
+382 \textcolor{preprocessor}{#ifdef HAS\_CPU}
+383   \textcolor{keywordtype}{size\_t} cpuThreads = Get<size\_t>(\textcolor{stringliteral}{"cpu-threads"});
+384   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info}->info(\textcolor{stringliteral}{"Setting CPU thread count to \{\}"}, cpuThreads));
+385   totalThreads += cpuThreads;
+386 \textcolor{preprocessor}{#endif}
+387 
+388 \textcolor{preprocessor}{#ifdef HAS\_FPGA}
+389   \textcolor{keywordtype}{size\_t} fpgaThreads = Get<size\_t>(\textcolor{stringliteral}{"fpga-threads"});
+390   \textcolor{keyword}{auto} fpgaDevices = Get<std::vector<size\_t>>(\textcolor{stringliteral}{"fpga-devices"});
+391   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info}->info(\textcolor{stringliteral}{"Setting FPGA thread count to \{\}"}, fpgaThreads));
+392   totalThreads += fpgaThreads * fpgaDevices.size();
+393 \textcolor{preprocessor}{#endif}
+394 
+395   \textcolor{keywordflow}{return} totalThreads;
+396 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_ac1fe1740097a86cded1e88937d538a97_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Has@{Has}}
+\index{Has@{Has}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Has(const std\+::string \&key) const }{Has(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+God\+::\+Has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}{}\label{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}
+
+
+Definition at line 40 of file god.\+h.
+
+
+\begin{DoxyCode}
+40                                          \{
+41       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_aea1c78c5d37a811d86d8b49b8dac94d1}{Has}(key);
+42     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d7/d4e/classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Init@{Init}}
+\index{Init@{Init}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Init(const std\+::string \&)}{Init(const std::string &)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf God} \& amunmt\+::\+God\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{options}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}{}\label{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}
+
+
+Definition at line 38 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+38                                        \{
+39   std::vector<std::string> args = boost::program\_options::split\_unix(options);
+40   \textcolor{keywordtype}{int} argc = args.size() + 1;
+41   \textcolor{keywordtype}{char}* argv[argc];
+42   argv[0] = \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(\textcolor{stringliteral}{"bogus"});
+43   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < argc; ++i) \{
+44     argv[i] = \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(args[i-1].c\_str());
+45   \}
+46   \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}{Init}(argc, argv);
+47 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Init@{Init}}
+\index{Init@{Init}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Init(int argc, char $\ast$$\ast$argv)}{Init(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf God} \& amunmt\+::\+God\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1God_a7a424275f1192499979b2f58ac250559}{}\label{classamunmt_1_1God_a7a424275f1192499979b2f58ac250559}
+
+
+Definition at line 51 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+51                                     \{
+52 
+53   \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_ae621721651f919b18e8719a6f30ad568}{AddOptions}(argc, argv);
+54   \hyperlink{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}{info\_} = spdlog::stderr\_logger\_mt(\textcolor{stringliteral}{"info"});
+55   \hyperlink{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}{info\_}->set\_pattern(\textcolor{stringliteral}{"[%c] (%L) %v"});
+56   \hyperlink{namespaceamunmt_a14c0b46e2e86d44662d37f953788043c}{set\_loglevel}(*\hyperlink{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}{info\_}, \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"log-info"}));
+57 
+58   \hyperlink{classamunmt_1_1God_a873205411a78432714ad191989c78367}{progress\_} = spdlog::stderr\_logger\_mt(\textcolor{stringliteral}{"progress"});
+59   \hyperlink{classamunmt_1_1God_a873205411a78432714ad191989c78367}{progress\_}->set\_pattern(\textcolor{stringliteral}{"%v"});
+60   \hyperlink{namespaceamunmt_a14c0b46e2e86d44662d37f953788043c}{set\_loglevel}(*\hyperlink{classamunmt_1_1God_a873205411a78432714ad191989c78367}{progress\_}, \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"log-progress"}));
+61   
+62   \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_ab10da8bb0a4fbc3a41867f9c14e17059}{LogOptions}();
+63 
+64   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}(\textcolor{stringliteral}{"source-vocab"}).IsSequence()) \{
+65     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} sourceVocabPath : \hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<std::vector<std::string>>(\textcolor{stringliteral}{"source-vocab"})) \{
+66       \hyperlink{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}{sourceVocabs\_}.emplace\_back(\textcolor{keyword}{new} Vocab(sourceVocabPath));
+67     \}
+68   \} \textcolor{keywordflow}{else} \{
+69     \hyperlink{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}{sourceVocabs\_}.emplace\_back(\textcolor{keyword}{new} Vocab(Get<std::string>(\textcolor{stringliteral}{"source-vocab"})));
+70   \}
+71   \hyperlink{classamunmt_1_1God_a38957553a6fc282c0487c4d2d9a02f90}{targetVocab\_}.reset(\textcolor{keyword}{new} Vocab(Get<std::string>(\textcolor{stringliteral}{"target-vocab"})));
+72 
+73   \hyperlink{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}{weights\_} = Get<std::map<std::string, float>>(\textcolor{stringliteral}{"weights"});
+74 
+75   \textcolor{keywordflow}{if}(Get<bool>(\textcolor{stringliteral}{"show-weights"})) \{
+76     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Outputting weights and exiting"});
+77     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} && pair : \hyperlink{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}{weights\_}) \{
+78       std::cout << pair.first << \textcolor{stringliteral}{"= "} << pair.second << std::endl;
+79     \}
+80     exit(0);
+81   \}
+82 
+83   \hyperlink{classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105}{LoadScorers}();
+84   \hyperlink{classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80}{LoadFiltering}();
+85 
+86   \hyperlink{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}{returnNBestList\_} = Get<bool>(\textcolor{stringliteral}{"return-alignment"})
+87                    || Get<bool>(\textcolor{stringliteral}{"return-soft-alignment"})
+88                    || Get<bool>(\textcolor{stringliteral}{"return-nematus-alignment"});
+89 
+90   \hyperlink{classamunmt_1_1God_a2ea1b8cdaf00c9a882945ba8238f99ea}{useFusedSoftmax\_} = \textcolor{keyword}{true};
+91   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}{returnNBestList\_} ||
+92       \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_}.size() != 1 || \textcolor{comment}{// more than 1 scorer}
+93       God::Get<size\_t>(\textcolor{stringliteral}{"beam-size"}) > 11 \textcolor{comment}{// beam size affect shared mem alloc in gLogSoftMax()}
+94       ) \{
+95     useFusedSoftmax\_ = \textcolor{keyword}{false};
+96   \}
+97   \textcolor{comment}{//cerr << "useFusedSoftmax\_=" << useFusedSoftmax\_ << endl;}
+98 
+99   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}{Has}(\textcolor{stringliteral}{"input-file"})) \{
+100     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Reading from \{\}"}, Get<std::string>(\textcolor{stringliteral}{"input-file"}));
+101     \hyperlink{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}{inputStream\_}.reset(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(Get<std::string>(\textcolor{stringliteral}{"input-file"})));
+102   \}
+103   \textcolor{keywordflow}{else} \{
+104     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Reading from stdin"});
+105     \hyperlink{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}{inputStream\_}.reset(\textcolor{keyword}{new} \hyperlink{classInputFileStream}{InputFileStream}(std::cin));
+106   \}
+107 
+108   \hyperlink{classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484}{LoadPrePostProcessing}();
+109 
+110   \textcolor{keywordtype}{size\_t} totalThreads = \hyperlink{classamunmt_1_1God_ac1fe1740097a86cded1e88937d538a97}{GetTotalThreads}();
+111   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Total number of threads: \{\}"}, totalThreads);
+112   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(totalThreads == 0, \textcolor{stringliteral}{"Total number of threads is 0"});
+113 
+114   \hyperlink{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}{pool\_}.reset(\textcolor{keyword}{new} ThreadPool(totalThreads, totalThreads));
+115 
+116   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+117 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a7a424275f1192499979b2f58ac250559_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Load\+Filtering@{Load\+Filtering}}
+\index{Load\+Filtering@{Load\+Filtering}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Load\+Filtering()}{LoadFiltering()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+God\+::\+Load\+Filtering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80}{}\label{classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80}
+
+
+Definition at line 160 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+160                         \{
+161   \textcolor{keywordflow}{if} (!\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<std::vector<std::string>>(\textcolor{stringliteral}{"softmax-filter"}).empty()) \{
+162     \textcolor{keyword}{auto} filterOptions = Get<std::vector<std::string>>(\textcolor{stringliteral}{"softmax-filter"});
+163     std::string alignmentFile = filterOptions[0];
+164     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Reading target softmax filter file from \{\}"}, alignmentFile);
+165     Filter* filter = \textcolor{keyword}{nullptr};
+166     \textcolor{keywordflow}{if} (filterOptions.size() >= 3) \{
+167       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} numNFirst = stoi(filterOptions[1]);
+168       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} maxNumTranslation = stoi(filterOptions[2]);
+169       filter = \textcolor{keyword}{new} Filter(\hyperlink{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}{GetSourceVocab}(0),
+170                           \hyperlink{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}{GetTargetVocab}(),
+171                           alignmentFile,
+172                           numNFirst,
+173                           maxNumTranslation);
+174     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (filterOptions.size() == 2) \{
+175       \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} numNFirst = stoi(filterOptions[1]);
+176       filter = \textcolor{keyword}{new} Filter(\hyperlink{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}{GetSourceVocab}(0),
+177                           \hyperlink{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}{GetTargetVocab}(),
+178                           alignmentFile,
+179                           numNFirst);
+180     \} \textcolor{keywordflow}{else} \{
+181       filter = \textcolor{keyword}{new} Filter(\hyperlink{classamunmt_1_1God_a032b43755a3050ee9fb97ad27a91a63b}{GetSourceVocab}(0),
+182                           \hyperlink{classamunmt_1_1God_aabd3caa5eb93346428948ce6639dc931}{GetTargetVocab}(),
+183                           alignmentFile);
+184     \}
+185     \hyperlink{classamunmt_1_1God_aae4d25701c8177302ea6f07daff690c5}{filter\_}.reset(filter);
+186   \}
+187 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a112ca45757470e5bca5ec924538b5b80_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Load\+Pre\+Post\+Processing@{Load\+Pre\+Post\+Processing}}
+\index{Load\+Pre\+Post\+Processing@{Load\+Pre\+Post\+Processing}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Load\+Pre\+Post\+Processing()}{LoadPrePostProcessing()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+God\+::\+Load\+Pre\+Post\+Processing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484}{}\label{classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484}
+
+
+Definition at line 189 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+189                                 \{
+190   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}{Has}(\textcolor{stringliteral}{"bpe"})) \{
+191     \textcolor{keywordflow}{if}(\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}(\textcolor{stringliteral}{"bpe"}).IsSequence()) \{
+192       \textcolor{keywordtype}{size\_t} i = 0;
+193       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} bpePath : \hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<std::vector<std::string>>(\textcolor{stringliteral}{"bpe"})) \{
+194         \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"using bpe: \{\}"}, bpePath);
+195         \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}.push\_back(std::vector<PreprocessorPtr>());
+196         \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}[i++].emplace\_back(\textcolor{keyword}{new} BPE(bpePath));
+197       \}
+198     \}
+199     \textcolor{keywordflow}{else} \{
+200       \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"using bpe: \{\}"}, Get<std::string>(\textcolor{stringliteral}{"bpe"}));
+201         \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}.push\_back(std::vector<PreprocessorPtr>());
+202       \textcolor{keywordflow}{if} (Get<std::string>(\textcolor{stringliteral}{"bpe"}) != \textcolor{stringliteral}{""}) \{
+203         \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}[0].emplace\_back(\textcolor{keyword}{new} BPE(Get<std::string>(\textcolor{stringliteral}{"bpe"})));
+204       \}
+205     \}
+206   \}
+207 
+208   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a5c284bd5bdde636f02dbb86af55744ae}{Has}(\textcolor{stringliteral}{"bpe"}) && !Get<bool>(\textcolor{stringliteral}{"no-debpe"})) \{
+209     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"De-BPE output"});
+210     \hyperlink{classamunmt_1_1God_aef3af265dadb03728481dda039df6e26}{postprocessors\_}.emplace\_back(\textcolor{keyword}{new} BPE());
+211   \}
+212 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a9fd4b0bf9cb28b74651640055f488484_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Load\+Scorers@{Load\+Scorers}}
+\index{Load\+Scorers@{Load\+Scorers}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Load\+Scorers()}{LoadScorers()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+God\+::\+Load\+Scorers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105}{}\label{classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105}
+
+
+Definition at line 127 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+127                       \{
+128   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Loading scorers..."});
+129 \textcolor{preprocessor}{#ifdef CUDA}
+130   \textcolor{keywordtype}{size\_t} gpuThreads = God::Get<size\_t>(\textcolor{stringliteral}{"gpu-threads"});
+131   \textcolor{keyword}{auto} devices = God::Get<std::vector<size\_t>>(\textcolor{stringliteral}{"devices"});
+132   \textcolor{keywordflow}{if} (gpuThreads > 0 && devices.size() > 0) \{
+133     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& pair : \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}()[\textcolor{stringliteral}{"scorers"}]) \{
+134       std::string name = pair.first.as<std::string>();
+135       \hyperlink{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{gpuLoaders\_}.emplace(name, \hyperlink{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}{LoaderFactory::Create}(*\textcolor{keyword}{this}, name, pair.
+      second, \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice}));
+136     \}
+137   \}
+138 \textcolor{preprocessor}{#endif}
+139 \textcolor{preprocessor}{#ifdef HAS\_CPU}
+140   \textcolor{keywordtype}{size\_t} cpuThreads = God::Get<size\_t>(\textcolor{stringliteral}{"cpu-threads"});
+141   \textcolor{keywordflow}{if} (cpuThreads) \{
+142     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& pair : \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}()[\textcolor{stringliteral}{"scorers"}]) \{
+143       std::string name = pair.first.as<std::string>();
+144       \hyperlink{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{cpuLoaders\_}.emplace(name, \hyperlink{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}{LoaderFactory::Create}(*\textcolor{keyword}{this}, name, pair.
+      second, \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice}));
+145     \}
+146   \}
+147 \textcolor{preprocessor}{#endif}
+148 \textcolor{preprocessor}{#ifdef HAS\_FPGA}
+149   \textcolor{keywordtype}{size\_t} fpgaThreads = God::Get<size\_t>(\textcolor{stringliteral}{"fpga-threads"});
+150   \textcolor{keywordflow}{if} (fpgaThreads) \{
+151     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& pair : \hyperlink{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{config\_}.\hyperlink{classamunmt_1_1Config_a5257f41272d06c35bebe8130b5897d23}{Get}()[\textcolor{stringliteral}{"scorers"}]) \{
+152       std::string name = pair.first.as<std::string>();
+153       \hyperlink{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{fpgaLoaders\_}.emplace(name, \hyperlink{classamunmt_1_1LoaderFactory_aaaf8621316a4c3832bcdfecbd5f69598}{LoaderFactory::Create}(*\textcolor{keyword}{this}, name, pair.
+      second, \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice}));
+154     \}
+155   \}
+156 \textcolor{preprocessor}{#endif}
+157 
+158 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a6ce7fae6876a5e4d39451a0de1691105_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Load\+Weights@{Load\+Weights}}
+\index{Load\+Weights@{Load\+Weights}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Load\+Weights(const std\+::string \&path)}{LoadWeights(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+God\+::\+Load\+Weights (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1God_a33ef746e9d56529017f77d2ed5cab80f}{}\label{classamunmt_1_1God_a33ef746e9d56529017f77d2ed5cab80f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a33ef746e9d56529017f77d2ed5cab80f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Postprocess@{Postprocess}}
+\index{Postprocess@{Postprocess}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Postprocess(const std\+::vector$<$ std\+::string $>$ \&input) const }{Postprocess(const std::vector< std::string > &input) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+God\+::\+Postprocess (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a1e2a81202f36d8c2c10e5ee35c3b44ae}{}\label{classamunmt_1_1God_a1e2a81202f36d8c2c10e5ee35c3b44ae}
+
+
+Definition at line 297 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+297                                                                              \{
+298   std::vector<std::string> processed = input;
+299   \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& processor : \hyperlink{classamunmt_1_1God_aef3af265dadb03728481dda039df6e26}{postprocessors\_}) \{
+300     processed = processor->Postprocess(processed);
+301   \}
+302   \textcolor{keywordflow}{return} processed;
+303 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a1e2a81202f36d8c2c10e5ee35c3b44ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Preprocess@{Preprocess}}
+\index{Preprocess@{Preprocess}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Preprocess(size\+\_\+t i, const std\+::vector$<$ std\+::string $>$ \&input) const }{Preprocess(size_t i, const std::vector< std::string > &input) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ amunmt\+::\+God\+::\+Preprocess (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1God_a98a2f57d4f28a7e7d58f3b68680dbdb1}{}\label{classamunmt_1_1God_a98a2f57d4f28a7e7d58f3b68680dbdb1}
+
+
+Definition at line 287 of file god.\+cpp.
+
+
+\begin{DoxyCode}
+287                                                                                       \{
+288   std::vector<std::string> processed = input;
+289   \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}.size() >= i + 1) \{
+290     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}& processor : \hyperlink{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{preprocessors\_}[i]) \{
+291       processed = processor->Preprocess(processed);
+292     \}
+293   \}
+294   \textcolor{keywordflow}{return} processed;
+295 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a98a2f57d4f28a7e7d58f3b68680dbdb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Return\+N\+Best\+List@{Return\+N\+Best\+List}}
+\index{Return\+N\+Best\+List@{Return\+N\+Best\+List}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Return\+N\+Best\+List() const }{ReturnNBestList() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+God\+::\+Return\+N\+Best\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_ace871e61162c362f7ae8eb8162ba6b66}{}\label{classamunmt_1_1God_ace871e61162c362f7ae8eb8162ba6b66}
+
+
+Definition at line 80 of file god.\+h.
+
+
+\begin{DoxyCode}
+81     \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}{returnNBestList\_}; \}
+\end{DoxyCode}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!Use\+Fused\+Softmax@{Use\+Fused\+Softmax}}
+\index{Use\+Fused\+Softmax@{Use\+Fused\+Softmax}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{Use\+Fused\+Softmax() const }{UseFusedSoftmax() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+God\+::\+Use\+Fused\+Softmax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1God_a84dbb75205f93a9a769d05f51e4b9f26}{}\label{classamunmt_1_1God_a84dbb75205f93a9a769d05f51e4b9f26}
+
+
+Definition at line 83 of file god.\+h.
+
+
+\begin{DoxyCode}
+84     \{ \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1God_a2ea1b8cdaf00c9a882945ba8238f99ea}{useFusedSoftmax\_}; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d4e/classamunmt_1_1God_a84dbb75205f93a9a769d05f51e4b9f26_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+God@{amunmt\+::\+God}!access\+Lock\+\_\+@{access\+Lock\+\_\+}}
+\index{access\+Lock\+\_\+@{access\+Lock\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{access\+Lock\+\_\+}{accessLock_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::shared\+\_\+mutex amunmt\+::\+God\+::access\+Lock\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_afcd5629990403f8b2b16d9bd08db238e}{}\label{classamunmt_1_1God_afcd5629990403f8b2b16d9bd08db238e}
+
+
+Definition at line 113 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!config\+\_\+@{config\+\_\+}}
+\index{config\+\_\+@{config\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{config\+\_\+}{config_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config} amunmt\+::\+God\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}{}\label{classamunmt_1_1God_a5a0f3720bd8f1f19b7e50206e123f0e9}
+
+
+Definition at line 92 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!cpu\+Loaders\+\_\+@{cpu\+Loaders\+\_\+}}
+\index{cpu\+Loaders\+\_\+@{cpu\+Loaders\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{cpu\+Loaders\+\_\+}{cpuLoaders_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Loaders} amunmt\+::\+God\+::cpu\+Loaders\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}{}\label{classamunmt_1_1God_aa18f86519617baf112214a7564a7bae0}
+
+
+Definition at line 103 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!filter\+\_\+@{filter\+\_\+}}
+\index{filter\+\_\+@{filter\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{filter\+\_\+}{filter_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$const {\bf Filter}$>$ amunmt\+::\+God\+::filter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_aae4d25701c8177302ea6f07daff690c5}{}\label{classamunmt_1_1God_aae4d25701c8177302ea6f07daff690c5}
+
+
+Definition at line 97 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!fpga\+Loaders\+\_\+@{fpga\+Loaders\+\_\+}}
+\index{fpga\+Loaders\+\_\+@{fpga\+Loaders\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{fpga\+Loaders\+\_\+}{fpgaLoaders_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Loaders} amunmt\+::\+God\+::fpga\+Loaders\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}{}\label{classamunmt_1_1God_a59b113c68d8b05dfd18b8a48ed9fa180}
+
+
+Definition at line 103 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!gpu\+Loaders\+\_\+@{gpu\+Loaders\+\_\+}}
+\index{gpu\+Loaders\+\_\+@{gpu\+Loaders\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{gpu\+Loaders\+\_\+}{gpuLoaders_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Loaders} amunmt\+::\+God\+::gpu\+Loaders\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}{}\label{classamunmt_1_1God_a2a713e550f5ee7296e7a66bd0b98339d}
+
+
+Definition at line 103 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!info\+\_\+@{info\+\_\+}}
+\index{info\+\_\+@{info\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{info\+\_\+}{info_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$spdlog\+::logger$>$ amunmt\+::\+God\+::info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}{}\label{classamunmt_1_1God_a7df10015474c9e2f00b104f23615c661}
+
+
+Definition at line 106 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!input\+Stream\+\_\+@{input\+Stream\+\_\+}}
+\index{input\+Stream\+\_\+@{input\+Stream\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{input\+Stream\+\_\+}{inputStream_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Input\+File\+Stream}$>$ amunmt\+::\+God\+::input\+Stream\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}{}\label{classamunmt_1_1God_ad61c0588d0ce38a334d220337e5185d3}
+
+
+Definition at line 109 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!output\+Collector\+\_\+@{output\+Collector\+\_\+}}
+\index{output\+Collector\+\_\+@{output\+Collector\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{output\+Collector\+\_\+}{outputCollector_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\+Collector} amunmt\+::\+God\+::output\+Collector\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a2dc4151a17c691e86bab1f2cc1d0a932}{}\label{classamunmt_1_1God_a2dc4151a17c691e86bab1f2cc1d0a932}
+
+
+Definition at line 110 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!pool\+\_\+@{pool\+\_\+}}
+\index{pool\+\_\+@{pool\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{pool\+\_\+}{pool_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Thread\+Pool}$>$ amunmt\+::\+God\+::pool\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}{}\label{classamunmt_1_1God_a93baaad747946f9e25f35383f65c3981}
+
+
+Definition at line 115 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!postprocessors\+\_\+@{postprocessors\+\_\+}}
+\index{postprocessors\+\_\+@{postprocessors\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{postprocessors\+\_\+}{postprocessors_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Postprocessor\+Ptr}$>$ amunmt\+::\+God\+::postprocessors\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_aef3af265dadb03728481dda039df6e26}{}\label{classamunmt_1_1God_aef3af265dadb03728481dda039df6e26}
+
+
+Definition at line 100 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!preprocessors\+\_\+@{preprocessors\+\_\+}}
+\index{preprocessors\+\_\+@{preprocessors\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{preprocessors\+\_\+}{preprocessors_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf Preprocessor\+Ptr}$>$ $>$ amunmt\+::\+God\+::preprocessors\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}{}\label{classamunmt_1_1God_a609e290d29732005f6ce09a1e8c3a698}
+
+
+Definition at line 99 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!progress\+\_\+@{progress\+\_\+}}
+\index{progress\+\_\+@{progress\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{progress\+\_\+}{progress_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$spdlog\+::logger$>$ amunmt\+::\+God\+::progress\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a873205411a78432714ad191989c78367}{}\label{classamunmt_1_1God_a873205411a78432714ad191989c78367}
+
+
+Definition at line 107 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!return\+N\+Best\+List\+\_\+@{return\+N\+Best\+List\+\_\+}}
+\index{return\+N\+Best\+List\+\_\+@{return\+N\+Best\+List\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{return\+N\+Best\+List\+\_\+}{returnNBestList_}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+God\+::return\+N\+Best\+List\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}{}\label{classamunmt_1_1God_a83284d424437eb00ebe5fcd5666cebfb}
+
+
+Definition at line 117 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!source\+Vocabs\+\_\+@{source\+Vocabs\+\_\+}}
+\index{source\+Vocabs\+\_\+@{source\+Vocabs\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{source\+Vocabs\+\_\+}{sourceVocabs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::unique\+\_\+ptr$<${\bf Vocab}$>$ $>$ amunmt\+::\+God\+::source\+Vocabs\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}{}\label{classamunmt_1_1God_acb283c7cf822e3efed96a938695c1ac0}
+
+
+Definition at line 94 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!target\+Vocab\+\_\+@{target\+Vocab\+\_\+}}
+\index{target\+Vocab\+\_\+@{target\+Vocab\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{target\+Vocab\+\_\+}{targetVocab_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Vocab}$>$ amunmt\+::\+God\+::target\+Vocab\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a38957553a6fc282c0487c4d2d9a02f90}{}\label{classamunmt_1_1God_a38957553a6fc282c0487c4d2d9a02f90}
+
+
+Definition at line 95 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!thread\+Incr\+\_\+@{thread\+Incr\+\_\+}}
+\index{thread\+Incr\+\_\+@{thread\+Incr\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{thread\+Incr\+\_\+}{threadIncr_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t amunmt\+::\+God\+::thread\+Incr\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}{}\label{classamunmt_1_1God_a900c7443532f035640b4ff064899b50e}
+
+
+Definition at line 112 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!use\+Fused\+Softmax\+\_\+@{use\+Fused\+Softmax\+\_\+}}
+\index{use\+Fused\+Softmax\+\_\+@{use\+Fused\+Softmax\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{use\+Fused\+Softmax\+\_\+}{useFusedSoftmax_}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+God\+::use\+Fused\+Softmax\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a2ea1b8cdaf00c9a882945ba8238f99ea}{}\label{classamunmt_1_1God_a2ea1b8cdaf00c9a882945ba8238f99ea}
+
+
+Definition at line 118 of file god.\+h.
+
+\index{amunmt\+::\+God@{amunmt\+::\+God}!weights\+\_\+@{weights\+\_\+}}
+\index{weights\+\_\+@{weights\+\_\+}!amunmt\+::\+God@{amunmt\+::\+God}}
+\subsubsection[{\texorpdfstring{weights\+\_\+}{weights_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, float$>$ amunmt\+::\+God\+::weights\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}{}\label{classamunmt_1_1God_a45d56b77d799c8c15e0f2af351fdf212}
+
+
+Definition at line 104 of file god.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{god_8h}{god.\+h}\item 
+\hyperlink{god_8cpp}{god.\+cpp}\end{DoxyCompactItemize}

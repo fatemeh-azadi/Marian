@@ -1,0 +1,36 @@
+<map id="marian::Pick" name="marian::Pick">
+<area shape="rect" id="node2" href="$da/d22/namespacemarian.html#ae46885b8c35f2b67a2dc65f71e0e4efd" title="marian::L2Norm" alt="" coords="195,5,310,32"/>
+<area shape="rect" id="node3" href="$da/d22/namespacemarian.html#a01a45889e366b16c79c2cc067f534021" title="marian::Softmax" alt="" coords="193,56,312,83"/>
+<area shape="rect" id="node4" href="$da/d22/namespacemarian.html#a9dd94a109bd8ccf8e8269bd1d7a86c18" title="marian::LogSoftmax" alt="" coords="183,107,322,133"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a7da9b69aeeeb493a8c19c3e07b831a92" title="marian::SoftmaxGrad" alt="" coords="179,157,326,184"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#a4f9d12af1543fda2c0f22dce56050aba" title="marian::LogSoftmaxGrad" alt="" coords="169,208,336,235"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#a9edd9deddefcee4caf236da00cebe810" title="marian::CudnnSoftmax" alt="" coords="175,259,331,285"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#af0841b9f603922b0ae92f8fd76c1f5e0" title="marian::CudnnSoftmaxGrad" alt="" coords="161,309,345,336"/>
+<area shape="rect" id="node9" href="$da/d22/namespacemarian.html#a658f77291edab2b88417f988781ab07f" title="marian::CudnnLogSoftmax" alt="" coords="164,360,341,387"/>
+<area shape="rect" id="node10" href="$da/d22/namespacemarian.html#a6b88b6fa809d1fb3ad2399f4b55dd552" title="marian::CudnnLogSoftmaxGrad" alt="" coords="150,411,355,437"/>
+<area shape="rect" id="node11" href="$da/d22/namespacemarian.html#a22ac2bab1004e993e09c272af096cbc3" title="marian::CrossEntropyPick" alt="" coords="165,461,340,488"/>
+<area shape="rect" id="node12" href="$da/d22/namespacemarian.html#ad12afd6fbca17c63f3444bdbd535c146" title="marian::CrossEntropyPick\lBackward" alt="" coords="165,513,340,554"/>
+<area shape="rect" id="node13" href="$da/d22/namespacemarian.html#a64116355f8cb16a51c1408df4a3b2b28" title="marian::Argmax" alt="" coords="195,579,310,605"/>
+<area shape="rect" id="node14" href="$da/d22/namespacemarian.html#a509f2975b7c8da70df1cd56de5d3e79e" title="marian::Prod" alt="" coords="205,629,301,656"/>
+<area shape="rect" id="node15" href="$da/d22/namespacemarian.html#a73ee0cc090c0041df53e3732c5b04462" title="marian::CopyRowsByIndex" alt="" coords="161,680,344,707"/>
+<area shape="rect" id="node16" href="$da/d22/namespacemarian.html#ab292638adfb1873067440a6af74d5ed5" title="marian::CopyRows" alt="" coords="185,731,320,757"/>
+<area shape="rect" id="node17" href="$da/d22/namespacemarian.html#aed67e17a4ad7b437ef6361538d1a0023" title="marian::PasteRows" alt="" coords="184,781,321,808"/>
+<area shape="rect" id="node18" href="$da/d22/namespacemarian.html#a7b1294cb49c42d55331bccbf1def82ba" title="marian::CopyCols" alt="" coords="189,832,316,859"/>
+<area shape="rect" id="node19" href="$da/d22/namespacemarian.html#afd1a77f3d0ba7b8b2f1e8daf788159d1" title="marian::PasteCols" alt="" coords="187,883,318,909"/>
+<area shape="rect" id="node20" href="$da/d22/namespacemarian.html#a170142cc4ea06bbb5f76a15a8da4487c" title="marian::Transpose" alt="" coords="187,933,318,960"/>
+<area shape="rect" id="node21" href="$da/d22/namespacemarian.html#a680fee5f243683d820950c554db89df7" title="marian::Concatenate" alt="" coords="181,984,324,1011"/>
+<area shape="rect" id="node22" href="$da/d22/namespacemarian.html#a09b0dc48a7ac0f9ed26bb50045d7cf1c" title="marian::Deconcatenate" alt="" coords="174,1035,331,1061"/>
+<area shape="rect" id="node23" href="$da/d22/namespacemarian.html#af0eb4b8f5cdcd9947c2974c7c6a12563" title="marian::LSTMCellForward" alt="" coords="165,1085,340,1112"/>
+<area shape="rect" id="node24" href="$da/d22/namespacemarian.html#a0b45c3ca238a4718908712266a40d4a1" title="marian::LSTMOutputForward" alt="" coords="157,1136,348,1163"/>
+<area shape="rect" id="node25" href="$da/d22/namespacemarian.html#a373ffb9ba8aae7bd12782b8bf10d005f" title="marian::LSTMCellBackward" alt="" coords="160,1187,345,1213"/>
+<area shape="rect" id="node26" href="$da/d22/namespacemarian.html#a4d96e5240735c5a9f47277706dd36ab7" title="marian::LSTMOutputBackward" alt="" coords="152,1237,353,1264"/>
+<area shape="rect" id="node27" href="$da/d22/namespacemarian.html#a7b5a0d3c521022a7428ded80cec80686" title="marian::GRUFastForward" alt="" coords="167,1288,339,1315"/>
+<area shape="rect" id="node28" href="$da/d22/namespacemarian.html#a62e537291759d564584ab5190e4c1629" title="marian::GRUFastBackward" alt="" coords="161,1339,344,1365"/>
+<area shape="rect" id="node29" href="$da/d22/namespacemarian.html#acac7e44cebb8b07629f222a92850ed82" title="marian::Att" alt="" coords="209,1389,296,1416"/>
+<area shape="rect" id="node30" href="$da/d22/namespacemarian.html#a62c7d3b55778baafc734053c4a5f74f3" title="marian::AttBack" alt="" coords="195,1440,311,1467"/>
+<area shape="rect" id="node31" href="$da/d22/namespacemarian.html#abfa30c8448843205e713435663fb6cdd" title="marian::LayerNormalization" alt="" coords="162,1491,343,1517"/>
+<area shape="rect" id="node32" href="$da/d22/namespacemarian.html#a1c8cfe7e5243790c154153cd5e048b50" title="marian::LayerNormalizationGrad" alt="" coords="148,1541,357,1568"/>
+<area shape="rect" id="node33" href="$da/d22/namespacemarian.html#ab7bd780a3ab8d3147c56bf9ea6e93232" title="marian::Shift" alt="" coords="205,1592,301,1619"/>
+<area shape="rect" id="node34" href="$da/d22/namespacemarian.html#a763e5e9b5d5a329d2420fe9bab95476d" title="marian::shift" alt="" coords="205,1643,300,1669"/>
+<area shape="rect" id="node35" href="$da/d22/namespacemarian.html#ae6e439cac87eb95867c71f9d45591b8f" title="marian::SetSparse" alt="" coords="187,1693,318,1720"/>
+</map>

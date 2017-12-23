@@ -1,0 +1,273 @@
+\hypertarget{structmarian_1_1ConstantNode}{}\section{marian\+:\+:Constant\+Node Struct Reference}
+\label{structmarian_1_1ConstantNode}\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Constant\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/d98/structmarian_1_1ConstantNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Constant\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d33/structmarian_1_1ConstantNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{structmarian_1_1ConstantNode_a4e5ecee829c85dde0820e1d7b01820c6}{Constant\+Node} (Args...\+args)
+\item 
+\hyperlink{structmarian_1_1ConstantNode_ab0524f64931fd40abc67720f48e3f6ca}{$\sim$\+Constant\+Node} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ConstantNode_ae86ec3d578ec6288453ffd6393ffc812}{allocate} ()
+\item 
+virtual void \hyperlink{structmarian_1_1ConstantNode_a5c1241fba007195c72b828073689e9b2}{init} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ConstantNode_ac83eb6772734df9119de9dd6a3d4672b}{type} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ConstantNode_a7a26bbfe4c964f9b2380270c88c62f6b}{form} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1ConstantNode_ae6c4dd1a5cf3b9fa6371e6e67a9f0013}{color} ()
+\item 
+virtual size\+\_\+t \hyperlink{structmarian_1_1ConstantNode_ab85566eb0da3759e9c3ae91b9d229ac5}{hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor})$>$ \hyperlink{structmarian_1_1ConstantNode_aa7443e15d4a1980a9c67e35c6d9d3ee8}{init\+\_\+}
+\item 
+bool \hyperlink{structmarian_1_1ConstantNode_aa8f7c252c751f5e2ad3fa797f679338b}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file node\+\_\+operators.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!Constant\+Node@{Constant\+Node}}
+\index{Constant\+Node@{Constant\+Node}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{Constant\+Node(\+Args...\+args)}{ConstantNode(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Constant\+Node\+::\+Constant\+Node (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ConstantNode_a4e5ecee829c85dde0820e1d7b01820c6}{}\label{structmarian_1_1ConstantNode_a4e5ecee829c85dde0820e1d7b01820c6}
+
+
+Definition at line 10 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+11       : \hyperlink{classmarian_1_1Node_ab2576bb59c9c4d52bb2f676bb848ebc5}{Node}(args...),
+12         \hyperlink{structmarian_1_1ConstantNode_aa7443e15d4a1980a9c67e35c6d9d3ee8}{init\_}(\hyperlink{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}{Get}(\hyperlink{namespacemarian_1_1keywords_afdd3807e3d6fe2bc979d11fa0cf3ee3e}{keywords::init}, [](\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor}) \{\})),
+13         \hyperlink{structmarian_1_1ConstantNode_aa8f7c252c751f5e2ad3fa797f679338b}{initialized\_}(\textcolor{keyword}{false}) \{
+14     UTIL\_THROW\_IF2(!\hyperlink{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}{Has}(\hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape}),
+15                    \textcolor{stringliteral}{"Constant items require shape information"});
+16     \hyperlink{classmarian_1_1Node_a04b5aa3633d6a01b074f59fd93d7fb15}{setTrainable}(\textcolor{keyword}{false});
+17   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d86/structmarian_1_1ConstantNode_a4e5ecee829c85dde0820e1d7b01820c6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!````~Constant\+Node@{$\sim$\+Constant\+Node}}
+\index{````~Constant\+Node@{$\sim$\+Constant\+Node}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{$\sim$\+Constant\+Node()}{~ConstantNode()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Constant\+Node\+::$\sim$\+Constant\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1ConstantNode_ab0524f64931fd40abc67720f48e3f6ca}{}\label{structmarian_1_1ConstantNode_ab0524f64931fd40abc67720f48e3f6ca}
+
+
+Definition at line 19 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d1/d86/structmarian_1_1ConstantNode_ab0524f64931fd40abc67720f48e3f6ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!allocate@{allocate}}
+\index{allocate@{allocate}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{allocate()}{allocate()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Constant\+Node\+::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_ae86ec3d578ec6288453ffd6393ffc812}{}\label{structmarian_1_1ConstantNode_ae86ec3d578ec6288453ffd6393ffc812}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a66c54550ad60cc510329435eb21f8589}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d1/d86/structmarian_1_1ConstantNode_ae86ec3d578ec6288453ffd6393ffc812_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!color@{color}}
+\index{color@{color}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Constant\+Node\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_ae6c4dd1a5cf3b9fa6371e6e67a9f0013}{}\label{structmarian_1_1ConstantNode_ae6c4dd1a5cf3b9fa6371e6e67a9f0013}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}.
+
+
+
+Definition at line 28 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+28 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"white"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!form@{form}}
+\index{form@{form}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{form()}{form()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Constant\+Node\+::form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_a7a26bbfe4c964f9b2380270c88c62f6b}{}\label{structmarian_1_1ConstantNode_a7a26bbfe4c964f9b2380270c88c62f6b}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a7aaaab594766b33355f2b31821b8af49}{marian\+::\+Node}.
+
+
+
+Definition at line 26 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+26 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"diamond"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!hash@{hash}}
+\index{hash@{hash}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{hash()}{hash()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t marian\+::\+Constant\+Node\+::hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_ab85566eb0da3759e9c3ae91b9d229ac5}{}\label{structmarian_1_1ConstantNode_ab85566eb0da3759e9c3ae91b9d229ac5}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a5124cecc616150ff33fae3eff61e7372}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 30 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+30                         \{
+31     \textcolor{comment}{// @TODO: think of something better for constant nodes}
+32     \textcolor{keywordflow}{return} boost::hash<size\_t>()((\textcolor{keywordtype}{size\_t}) this);
+33   \}
+\end{DoxyCode}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!init@{init}}
+\index{init@{init}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Constant\+Node\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_a5c1241fba007195c72b828073689e9b2}{}\label{structmarian_1_1ConstantNode_a5c1241fba007195c72b828073689e9b2}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_abf3d18a7c661ba0d3d7fbcfb4e883736}{marian\+::\+Node}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d1/d86/structmarian_1_1ConstantNode_a5c1241fba007195c72b828073689e9b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!type@{type}}
+\index{type@{type}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Constant\+Node\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1ConstantNode_ac83eb6772734df9119de9dd6a3d4672b}{}\label{structmarian_1_1ConstantNode_ac83eb6772734df9119de9dd6a3d4672b}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 24 of file node\+\_\+operators.\+h.
+
+
+\begin{DoxyCode}
+24 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"const"}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!init\+\_\+@{init\+\_\+}}
+\index{init\+\_\+@{init\+\_\+}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{init\+\_\+}{init_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void({\bf Tensor})$>$ marian\+::\+Constant\+Node\+::init\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structmarian_1_1ConstantNode_aa7443e15d4a1980a9c67e35c6d9d3ee8}{}\label{structmarian_1_1ConstantNode_aa7443e15d4a1980a9c67e35c6d9d3ee8}
+
+
+Definition at line 36 of file node\+\_\+operators.\+h.
+
+\index{marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!marian\+::\+Constant\+Node@{marian\+::\+Constant\+Node}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Constant\+Node\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{structmarian_1_1ConstantNode_aa8f7c252c751f5e2ad3fa797f679338b}{}\label{structmarian_1_1ConstantNode_aa8f7c252c751f5e2ad3fa797f679338b}
+
+
+Definition at line 37 of file node\+\_\+operators.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators_8h}{node\+\_\+operators.\+h}\end{DoxyCompactItemize}

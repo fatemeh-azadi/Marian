@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d2b/classmarian_1_1data_1_1Dataset">
+<title>marian::data::Dataset class Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/daf/data_2dataset_8h">&lt;dataset.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::Dataset</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/daa/classmarian_1_1data_1_1Dataset__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::Dataset</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d9b/classmarian_1_1data_1_1Dataset__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Examples examples_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1a6db460dbb984620b13700ac6069f9925">Dataset</link> (
+std::vector&lt; std::string &gt; paths)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1ae999d10fb3509203d694639582e438a6">loadData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">iterator</link> <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1ad2cd49a5cd8a999e9d33bb1e0147f03e">begin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a5ab99390e2f5f8c7eab612977ae64f38">iterator</link> <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1a123311e204818aeee4d5e4011e1b79fe">end</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1abaaf65b7a716604071b8756dd11e8391">shuffle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/deb/classmarian_1_1data_1_1DatasetBase_1a4cb5e9051a072fcc61ed4638862f01f5">batch_ptr</link> <link linkend="d2/d2b/classmarian_1_1data_1_1Dataset_1a27ff57e73e81b555305a5f45cde30d91">toBatch</link> (
+const <link linkend="de/d56/namespacemarian_1_1data_1a39201a9c7e3f08ea31141ec770b60868">Examples</link> &amp; batchVector)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1a6db460dbb984620b13700ac6069f9925">
+                <title>marian::data::Dataset::Dataset (std::vector&lt; std::string &gt; paths)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1ae999d10fb3509203d694639582e438a6">
+                <title>virtual void marian::data::Dataset::loadData ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1ad2cd49a5cd8a999e9d33bb1e0147f03e">
+                <title>iterator marian::data::Dataset::begin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1a123311e204818aeee4d5e4011e1b79fe">
+                <title>iterator marian::data::Dataset::end ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1abaaf65b7a716604071b8756dd11e8391">
+                <title>void marian::data::Dataset::shuffle ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d2b/classmarian_1_1data_1_1Dataset_1a27ff57e73e81b555305a5f45cde30d91">
+                <title>batch_ptr marian::data::Dataset::toBatch (const Examples &amp;batchVector)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

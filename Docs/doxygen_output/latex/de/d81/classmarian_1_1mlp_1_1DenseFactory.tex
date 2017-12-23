@@ -1,0 +1,158 @@
+\hypertarget{classmarian_1_1mlp_1_1DenseFactory}{}\section{marian\+:\+:mlp\+:\+:Dense\+Factory Class Reference}
+\label{classmarian_1_1mlp_1_1DenseFactory}\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+
+
+{\ttfamily \#include $<$constructors.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:mlp\+:\+:Dense\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d38/classmarian_1_1mlp_1_1DenseFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:mlp\+:\+:Dense\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/dab/classmarian_1_1mlp_1_1DenseFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1mlp_1_1DenseFactory_a6c805ca4dc86a997010dd9058696f28d}{Dense\+Factory} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory}{Dense\+Factory} $>$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a73aeebf237e26e01cd58f80bf3ba20be}{tie} (const std\+::string \&param, const std\+::string \&tied)
+\item 
+\hyperlink{classmarian_1_1Accumulator}{Accumulator}$<$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory}{Dense\+Factory} $>$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory_aed7d02fe20bf0bf9de28564fd5e363ae}{tie\+\_\+transposed} (const std\+::string \&param, const std\+::string \&tied)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Layer $>$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a8f8ed567ae10a6fc455667b7f180378f}{construct} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a36527627208b9e0a0e08f32ffed6afeb}{tied\+Params\+\_\+}
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a3ba79a0f9f037b4b22d2309efc91f1e7}{tied\+Params\+Transposed\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file layers/constructors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!Dense\+Factory@{Dense\+Factory}}
+\index{Dense\+Factory@{Dense\+Factory}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{Dense\+Factory(\+Ptr$<$ Expression\+Graph $>$ graph)}{DenseFactory(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::mlp\+::\+Dense\+Factory\+::\+Dense\+Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_a6c805ca4dc86a997010dd9058696f28d}{}\label{classmarian_1_1mlp_1_1DenseFactory_a6c805ca4dc86a997010dd9058696f28d}
+
+
+Definition at line 35 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+35 : \hyperlink{structmarian_1_1mlp_1_1LayerFactory_aa191841467f48299dc2a96039972d3f8}{LayerFactory}(graph) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!construct@{construct}}
+\index{construct@{construct}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{construct()}{construct()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<$Layer$>$ marian\+::mlp\+::\+Dense\+Factory\+::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_a8f8ed567ae10a6fc455667b7f180378f}{}\label{classmarian_1_1mlp_1_1DenseFactory_a8f8ed567ae10a6fc455667b7f180378f}
+
+
+Implements \hyperlink{structmarian_1_1mlp_1_1LayerFactory_adf4c58df3dd15cd1904cdd66bf45c7b9}{marian\+::mlp\+::\+Layer\+Factory}.
+
+
+
+Definition at line 47 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+47                          \{
+48     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense} = New<Dense>(\hyperlink{classmarian_1_1Factory_aa23d3b5d72140912b8666a97f5cf10e5}{graph\_}, \hyperlink{classmarian_1_1Factory_a9bb7f7a432f482665443b33a38cb433a}{options\_});
+49     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& p: \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a36527627208b9e0a0e08f32ffed6afeb}{tiedParams\_})
+50       \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->tie(p.first, p.second);
+51     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& p: \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a3ba79a0f9f037b4b22d2309efc91f1e7}{tiedParamsTransposed\_})
+52       \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->tie\_transposed(p.first, p.second);
+53     \textcolor{keywordflow}{return} \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense};
+54   \}
+\end{DoxyCode}
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!tie@{tie}}
+\index{tie@{tie}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{tie(const std\+::string \&param, const std\+::string \&tied)}{tie(const std::string &param, const std::string &tied)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accumulator}$<${\bf Dense\+Factory}$>$ marian\+::mlp\+::\+Dense\+Factory\+::tie (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{param, }
+\item[{const std\+::string \&}]{tied}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_a73aeebf237e26e01cd58f80bf3ba20be}{}\label{classmarian_1_1mlp_1_1DenseFactory_a73aeebf237e26e01cd58f80bf3ba20be}
+
+
+Definition at line 37 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+37                                                                                \{
+38     \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a36527627208b9e0a0e08f32ffed6afeb}{tiedParams\_}.push\_back(\{param, tied\});
+39     \textcolor{keywordflow}{return} Accumulator<DenseFactory>(*this);
+40   \}
+\end{DoxyCode}
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!tie\+\_\+transposed@{tie\+\_\+transposed}}
+\index{tie\+\_\+transposed@{tie\+\_\+transposed}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{tie\+\_\+transposed(const std\+::string \&param, const std\+::string \&tied)}{tie_transposed(const std::string &param, const std::string &tied)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accumulator}$<${\bf Dense\+Factory}$>$ marian\+::mlp\+::\+Dense\+Factory\+::tie\+\_\+transposed (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{param, }
+\item[{const std\+::string \&}]{tied}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_aed7d02fe20bf0bf9de28564fd5e363ae}{}\label{classmarian_1_1mlp_1_1DenseFactory_aed7d02fe20bf0bf9de28564fd5e363ae}
+
+
+Definition at line 42 of file layers/constructors.\+h.
+
+
+\begin{DoxyCode}
+42                                                                                           \{
+43     \hyperlink{classmarian_1_1mlp_1_1DenseFactory_a3ba79a0f9f037b4b22d2309efc91f1e7}{tiedParamsTransposed\_}.push\_back(\{param, tied\});
+44     \textcolor{keywordflow}{return} Accumulator<DenseFactory>(*this);
+45   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!tied\+Params\+\_\+@{tied\+Params\+\_\+}}
+\index{tied\+Params\+\_\+@{tied\+Params\+\_\+}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{tied\+Params\+\_\+}{tiedParams_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$ marian\+::mlp\+::\+Dense\+Factory\+::tied\+Params\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_a36527627208b9e0a0e08f32ffed6afeb}{}\label{classmarian_1_1mlp_1_1DenseFactory_a36527627208b9e0a0e08f32ffed6afeb}
+
+
+Definition at line 31 of file layers/constructors.\+h.
+
+\index{marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}!tied\+Params\+Transposed\+\_\+@{tied\+Params\+Transposed\+\_\+}}
+\index{tied\+Params\+Transposed\+\_\+@{tied\+Params\+Transposed\+\_\+}!marian\+::mlp\+::\+Dense\+Factory@{marian\+::mlp\+::\+Dense\+Factory}}
+\subsubsection[{\texorpdfstring{tied\+Params\+Transposed\+\_\+}{tiedParamsTransposed_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$ marian\+::mlp\+::\+Dense\+Factory\+::tied\+Params\+Transposed\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1mlp_1_1DenseFactory_a3ba79a0f9f037b4b22d2309efc91f1e7}{}\label{classmarian_1_1mlp_1_1DenseFactory_a3ba79a0f9f037b4b22d2309efc91f1e7}
+
+
+Definition at line 32 of file layers/constructors.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layers_2constructors_8h}{layers/constructors.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dbf/classamunmt_1_1LengthOrderer">
+<title>amunmt::LengthOrderer class Reference</title>
+<para>Inheritance diagram for amunmt::LengthOrderer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dca/classamunmt_1_1LengthOrderer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::LengthOrderer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d16/classamunmt_1_1LengthOrderer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/dbf/classamunmt_1_1LengthOrderer_1ac9e29a0a587d693264101e6c06154583">operator()</link> (
+const <link linkend="d7/dd3/namespaceamunmt_1a79f0566b0c1ac270d350b2912a3be4a4">SentencePtr</link> &amp; a, const <link linkend="d7/dd3/namespaceamunmt_1a79f0566b0c1ac270d350b2912a3be4a4">SentencePtr</link> &amp; b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="de/dbf/classamunmt_1_1LengthOrderer_1ac9e29a0a587d693264101e6c06154583">
+                <title>bool amunmt::LengthOrderer::operator() (const SentencePtr &amp;a, const SentencePtr &amp;b) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

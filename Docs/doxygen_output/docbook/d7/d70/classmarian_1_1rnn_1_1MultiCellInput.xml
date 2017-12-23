@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput">
+<title>marian::rnn::MultiCellInput class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d51/marian_2src_2rnn_2types_8h">&lt;types.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::MultiCellInput</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d7a/classmarian_1_1rnn_1_1MultiCellInput__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::MultiCellInput</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dbb/classmarian_1_1rnn_1_1MultiCellInput__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Ptr&lt; CellInput &gt; &gt; inputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1aface631182bc9360f9516c2a5b59cb5b">MultiCellInput</link> (
+const std::vector&lt; <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/d5d/classmarian_1_1rnn_1_1CellInput">CellInput</link> &gt;&gt; &amp; inputs, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/db8/classmarian_1_1Options">Options</link> &gt; options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a099cc1af045103e8ef1be23deb4515e7">push_back</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/d5d/classmarian_1_1rnn_1_1CellInput">CellInput</link> &gt; input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a2ac13f95a42a983a77dfa33c02b62a84">apply</link> (
+<link linkend="dc/d6a/structmarian_1_1rnn_1_1State">State</link> state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1ad3fac6f8682f6af651147cd045075d4a">dimOutput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a0ac479a873c47c2817015c26b2ccc213">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1aface631182bc9360f9516c2a5b59cb5b">
+                <title>marian::rnn::MultiCellInput::MultiCellInput (const std::vector&lt; Ptr&lt; CellInput &gt;&gt; &amp;inputs, Ptr&lt; Options &gt; options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a099cc1af045103e8ef1be23deb4515e7">
+                <title>void marian::rnn::MultiCellInput::push_back (Ptr&lt; CellInput &gt; input)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a2ac13f95a42a983a77dfa33c02b62a84">
+                <title>virtual Expr marian::rnn::MultiCellInput::apply (State state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1ad3fac6f8682f6af651147cd045075d4a">
+                <title>virtual int marian::rnn::MultiCellInput::dimOutput ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d70/classmarian_1_1rnn_1_1MultiCellInput_1a0ac479a873c47c2817015c26b2ccc213">
+                <title>virtual void marian::rnn::MultiCellInput::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

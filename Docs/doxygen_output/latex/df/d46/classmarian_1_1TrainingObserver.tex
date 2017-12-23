@@ -1,0 +1,99 @@
+\hypertarget{classmarian_1_1TrainingObserver}{}\section{marian\+:\+:Training\+Observer Class Reference}
+\label{classmarian_1_1TrainingObserver}\index{marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}}
+
+
+{\ttfamily \#include $<$training\+\_\+state.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Training\+Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d9f/classmarian_1_1TrainingObserver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Training\+Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{db/d99/classmarian_1_1TrainingObserver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmarian_1_1TrainingObserver_a518893407fa20fc4b7ab892154de238d}{act\+After\+Epoch} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)=0
+\item 
+virtual void \hyperlink{classmarian_1_1TrainingObserver_a941ffcde6aaa5f3b48b48826897829a4}{act\+After\+Batches} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\item 
+virtual void \hyperlink{classmarian_1_1TrainingObserver_ac9ae3ce0bb0f3f9d48d6198087161bfc}{act\+After\+Stalled} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file training\+\_\+state.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}!act\+After\+Batches@{act\+After\+Batches}}
+\index{act\+After\+Batches@{act\+After\+Batches}!marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}}
+\subsubsection[{\texorpdfstring{act\+After\+Batches(\+Training\+State \&state)}{actAfterBatches(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Training\+Observer\+::act\+After\+Batches (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TrainingObserver_a941ffcde6aaa5f3b48b48826897829a4}{}\label{classmarian_1_1TrainingObserver_a941ffcde6aaa5f3b48b48826897829a4}
+
+
+Reimplemented in \hyperlink{classmarian_1_1Scheduler_a60bfc4c438a7dbc758a1890057f20d88}{marian\+::\+Scheduler$<$ Data\+Set $>$}, and \hyperlink{classmarian_1_1OptimizerBase_a208c189f94d7f1cee8005d4472539116}{marian\+::\+Optimizer\+Base}.
+
+
+
+Definition at line 15 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+\index{marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}!act\+After\+Epoch@{act\+After\+Epoch}}
+\index{act\+After\+Epoch@{act\+After\+Epoch}!marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}}
+\subsubsection[{\texorpdfstring{act\+After\+Epoch(\+Training\+State \&state)=0}{actAfterEpoch(TrainingState &state)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Training\+Observer\+::act\+After\+Epoch (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1TrainingObserver_a518893407fa20fc4b7ab892154de238d}{}\label{classmarian_1_1TrainingObserver_a518893407fa20fc4b7ab892154de238d}
+
+
+Implemented in \hyperlink{classmarian_1_1Scheduler_a2dc5ce5d6188cd5dc46781952159179d}{marian\+::\+Scheduler$<$ Data\+Set $>$}, and \hyperlink{classmarian_1_1OptimizerBase_aab974f017773f25b979ceb42d7d98752}{marian\+::\+Optimizer\+Base}.
+
+\index{marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}!act\+After\+Stalled@{act\+After\+Stalled}}
+\index{act\+After\+Stalled@{act\+After\+Stalled}!marian\+::\+Training\+Observer@{marian\+::\+Training\+Observer}}
+\subsubsection[{\texorpdfstring{act\+After\+Stalled(\+Training\+State \&state)}{actAfterStalled(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Training\+Observer\+::act\+After\+Stalled (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1TrainingObserver_ac9ae3ce0bb0f3f9d48d6198087161bfc}{}\label{classmarian_1_1TrainingObserver_ac9ae3ce0bb0f3f9d48d6198087161bfc}
+
+
+Reimplemented in \hyperlink{classmarian_1_1Scheduler_aabac3f0247038406f6a55ac8e086790f}{marian\+::\+Scheduler$<$ Data\+Set $>$}, and \hyperlink{classmarian_1_1OptimizerBase_a6e14a01324f548d37a530a6be2237ce9}{marian\+::\+Optimizer\+Base}.
+
+
+
+Definition at line 16 of file training\+\_\+state.\+h.
+
+
+\begin{DoxyCode}
+16 \{\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{training__state_8h}{training\+\_\+state.\+h}\end{DoxyCompactItemize}

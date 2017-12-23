@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit">
+<title>thrust::detail::functional::unary_logit struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/df7/amun_2gpu_2mblas_2thrust__functions_8h">&lt;thrust_functions.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for thrust::detail::functional::unary_logit</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d4f/structthrust_1_1detail_1_1functional_1_1unary__logit__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for thrust::detail::functional::unary_logit</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dd2/structthrust_1_1detail_1_1functional_1_1unary__logit__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__host__ __device__ T <link linkend="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit_1a8de2bf134020649c943862533931057c">operator()</link> (
+const T &amp; x)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit_1a8de2bf134020649c943862533931057c">
+                <title>__host__ __device__ T thrust::detail::functional::unary_logit&lt; T &gt;::operator() (const T &amp;x) const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

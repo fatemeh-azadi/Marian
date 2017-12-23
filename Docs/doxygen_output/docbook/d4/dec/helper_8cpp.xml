@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dec/helper_8cpp">
+    <title>helper.cpp File Reference</title>
+    <programlisting>#include &lt;algorithm&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;random&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+<para>Include dependency diagram for helper.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d6c/helper_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for helper.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d7b/helper_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="d4/dec/helper_8cpp_1a39d9d0ea3381086077a6903a316d1990">NUM_FEATURES</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="d4/dec/helper_8cpp_1a4308aa5ca15a84e929b69f44e78ae00a">NUM_LABELS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/helper_8cpp_1a48e064c32fa6ac4d4333cc00f9d158da">readIrisData</link> (
+const std::string fileName, std::vector&lt; float &gt; &amp; features, std::vector&lt; float &gt; &amp; labels)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dec/helper_8cpp_1a2bcad979b966dc26403a8f4e4e9012e0">shuffleData</link> (
+std::vector&lt; float &gt; &amp; features, std::vector&lt; float &gt; &amp; labels)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="d4/dec/helper_8cpp_1adf5c5e47905ba030c0798c4f55fa87ad">calculateAccuracy</link> (
+const std::vector&lt; float &gt; probs, const std::vector&lt; float &gt; labels)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file helper.cpp</para>
+    </simplesect>
+</section>

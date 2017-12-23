@@ -1,0 +1,173 @@
+\hypertarget{classmarian_1_1EncoderDecoderBase}{}\section{marian\+:\+:Encoder\+Decoder\+Base Class Reference}
+\label{classmarian_1_1EncoderDecoderBase}\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+
+
+{\ttfamily \#include $<$encdec.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Decoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d09/classmarian_1_1EncoderDecoderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Decoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{dc/d39/classmarian_1_1EncoderDecoderBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoderBase_aed4f5b4c03698b66ab47827866e67947}{load} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, const std\+::string \&)=0
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoderBase_a38bf117cbdc25c25357dd1922cfd2a2d}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, const std\+::string \&)=0
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoderBase_a2bad3e7fc27ea8b139f5a11a1fabe508}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, const std\+::string \&, bool)=0
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoderBase_a7613ff13f2fe0f11571d21e2235f7514}{select\+Embeddings} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&)=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoderBase_a87b83c44031999f47ee3bad03ababc9a}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$, const std\+::vector$<$ size\+\_\+t $>$ \&, const std\+::vector$<$ size\+\_\+t $>$ \&)=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoderBase_a6007e315951e619751aff381020174ea}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$)=0
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoderBase_ad64d35743ba11ca947d25d985fedcdd3}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, bool clear\+Graph=true)=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderBase}{Encoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoderBase_a6b9540f9c2a80a5ae1b7feaa0ecf17bd}{get\+Encoder} ()=0
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderBase}{Decoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoderBase_a202af6f0ef3a39914b57f1df797047c5}{get\+Decoder} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 153 of file encdec.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, bool clear\+Graph=true)=0}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, bool clearGraph=true)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Expr} marian\+::\+Encoder\+Decoder\+Base\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_ad64d35743ba11ca947d25d985fedcdd3}{}\label{classmarian_1_1EncoderDecoderBase_ad64d35743ba11ca947d25d985fedcdd3}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}, and \hyperlink{classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2}{marian\+::\+Encoder\+Decoder\+Rec}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!get\+Decoder@{get\+Decoder}}
+\index{get\+Decoder@{get\+Decoder}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{get\+Decoder()=0}{getDecoder()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+Base}$>$ marian\+::\+Encoder\+Decoder\+Base\+::get\+Decoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a202af6f0ef3a39914b57f1df797047c5}{}\label{classmarian_1_1EncoderDecoderBase_a202af6f0ef3a39914b57f1df797047c5}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, and \hyperlink{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!get\+Encoder@{get\+Encoder}}
+\index{get\+Encoder@{get\+Encoder}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{get\+Encoder()=0}{getEncoder()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Encoder\+Base}$>$ marian\+::\+Encoder\+Decoder\+Base\+::get\+Encoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a6b9540f9c2a80a5ae1b7feaa0ecf17bd}{}\label{classmarian_1_1EncoderDecoderBase_a6b9540f9c2a80a5ae1b7feaa0ecf17bd}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, and \hyperlink{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!load@{load}}
+\index{load@{load}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{load(\+Ptr$<$ Expression\+Graph $>$, const std\+::string \&)=0}{load(Ptr< ExpressionGraph >, const std::string &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Encoder\+Decoder\+Base\+::load (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{const std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_aed4f5b4c03698b66ab47827866e67947}{}\label{classmarian_1_1EncoderDecoderBase_aed4f5b4c03698b66ab47827866e67947}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}, and \hyperlink{classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb}{marian\+::\+Amun}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!save@{save}}
+\index{save@{save}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$, const std\+::string \&)=0}{save(Ptr< ExpressionGraph >, const std::string &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Encoder\+Decoder\+Base\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{const std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a38bf117cbdc25c25357dd1922cfd2a2d}{}\label{classmarian_1_1EncoderDecoderBase_a38bf117cbdc25c25357dd1922cfd2a2d}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}, and \hyperlink{classmarian_1_1Amun_a2ac35e1d3b74293cad107512005b2b17}{marian\+::\+Amun}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!save@{save}}
+\index{save@{save}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$, const std\+::string \&, bool)=0}{save(Ptr< ExpressionGraph >, const std::string &, bool)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Encoder\+Decoder\+Base\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{const std\+::string \&}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a2bad3e7fc27ea8b139f5a11a1fabe508}{}\label{classmarian_1_1EncoderDecoderBase_a2bad3e7fc27ea8b139f5a11a1fabe508}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}, and \hyperlink{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}{marian\+::\+Amun}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!select\+Embeddings@{select\+Embeddings}}
+\index{select\+Embeddings@{select\+Embeddings}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{select\+Embeddings(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&)=0}{selectEmbeddings(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state, const std::vector< size_t > &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Encoder\+Decoder\+Base\+::select\+Embeddings (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a7613ff13f2fe0f11571d21e2235f7514}{}\label{classmarian_1_1EncoderDecoderBase_a7613ff13f2fe0f11571d21e2235f7514}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, and \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!step@{step}}
+\index{step@{step}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$, const std\+::vector$<$ size\+\_\+t $>$ \&, const std\+::vector$<$ size\+\_\+t $>$ \&)=0}{step(Ptr< ExpressionGraph > graph, Ptr< DecoderState >, const std::vector< size_t > &, const std::vector< size_t > &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Encoder\+Decoder\+Base\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a87b83c44031999f47ee3bad03ababc9a}{}\label{classmarian_1_1EncoderDecoderBase_a87b83c44031999f47ee3bad03ababc9a}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, and \hyperlink{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}.
+
+\index{marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}!step@{step}}
+\index{step@{step}!marian\+::\+Encoder\+Decoder\+Base@{marian\+::\+Encoder\+Decoder\+Base}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$, Ptr$<$ Decoder\+State $>$)=0}{step(Ptr< ExpressionGraph >, Ptr< DecoderState >)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ marian\+::\+Encoder\+Decoder\+Base\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1EncoderDecoderBase_a6007e315951e619751aff381020174ea}{}\label{classmarian_1_1EncoderDecoderBase_a6007e315951e619751aff381020174ea}
+
+
+Implemented in \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{marian\+::\+Encoder\+Decoder$<$ Encoder\+S2\+S, Decoder\+S2\+S $>$}, \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+Hard\+Soft\+Att $>$}, and \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{marian\+::\+Encoder\+Decoder$<$ Multi\+Encoder\+S2\+S, Multi\+Decoder\+S2\+S $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encdec_8h}{encdec.\+h}\end{DoxyCompactItemize}

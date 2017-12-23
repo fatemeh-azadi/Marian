@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/db0/classamunmt_1_1GPU_1_1Cell">
+<title>amunmt::GPU::Cell class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/ddd/cell_8h">&lt;cell.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::Cell</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d0d/classamunmt_1_1GPU_1_1Cell__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Cell</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dcc/classamunmt_1_1GPU_1_1Cell__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell_1a16d5711472cd8bdef9652d7a71a1f403">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="d0/db0/classamunmt_1_1GPU_1_1Cell_1a3ed600cc046f7428d6529a7c0cd3ae89">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d0/db0/classamunmt_1_1GPU_1_1Cell_1a16d5711472cd8bdef9652d7a71a1f403">
+                <title>virtual void amunmt::GPU::Cell::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context) const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/db0/classamunmt_1_1GPU_1_1Cell_1a3ed600cc046f7428d6529a7c0cd3ae89">
+                <title>virtual CellLength amunmt::GPU::Cell::GetStateLength () const =0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

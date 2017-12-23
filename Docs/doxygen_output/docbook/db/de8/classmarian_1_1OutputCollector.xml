@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/de8/classmarian_1_1OutputCollector">
+<title>marian::OutputCollector class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/df0/marian_2src_2translator_2output__collector_8h">&lt;output_collector.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::OutputCollector</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/ddc/classmarian_1_1OutputCollector__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::OutputCollector</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/de7/classmarian_1_1OutputCollector__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; long, std::pair&lt; std::string, std::string &gt; &gt;  <link linkend="db/de8/classmarian_1_1OutputCollector_1a63097e38c39a83640b903e546aa3cbb8">Outputs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>UPtr&lt; OutputFileStream &gt; outStrm_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::mutex mutex_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long nextId_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Outputs outputs_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/de8/classmarian_1_1OutputCollector_1aaf5f787d896df8489817047ae50b69f0">OutputCollector</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/de8/classmarian_1_1OutputCollector_1a6b877d0629db1fe8d5f5c920025cc859">OutputCollector</link> (
+T &amp;&amp; arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/de8/classmarian_1_1OutputCollector_1ac0401cb81937a4b38102ead335cf03d9">OutputCollector</link> (
+const <link linkend="db/de8/classmarian_1_1OutputCollector">OutputCollector</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/de8/classmarian_1_1OutputCollector_1aac7fb8a5e89ce5a9bac56a6a414e7fe5">Write</link> (
+long sourceId, const std::string &amp; best1, const std::string &amp; bestn, bool nbest)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/de8/classmarian_1_1OutputCollector_1a63097e38c39a83640b903e546aa3cbb8">
+                <title>typedef std::map&lt;long, std::pair&lt;std::string, std::string&gt; &gt; marian::OutputCollector::Outputs</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/de8/classmarian_1_1OutputCollector_1aaf5f787d896df8489817047ae50b69f0">
+                <title>marian::OutputCollector::OutputCollector ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/de8/classmarian_1_1OutputCollector_1a6b877d0629db1fe8d5f5c920025cc859">
+                <title>marian::OutputCollector::OutputCollector (T &amp;&amp;arg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/de8/classmarian_1_1OutputCollector_1ac0401cb81937a4b38102ead335cf03d9">
+                <title>marian::OutputCollector::OutputCollector (const OutputCollector &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/de8/classmarian_1_1OutputCollector_1aac7fb8a5e89ce5a9bac56a6a414e7fe5">
+                <title>void marian::OutputCollector::Write (long sourceId, const std::string &amp;best1, const std::string &amp;bestn, bool nbest)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

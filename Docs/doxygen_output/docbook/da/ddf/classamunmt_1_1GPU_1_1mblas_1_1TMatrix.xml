@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">
+<title>amunmt::GPU::mblas::TMatrix class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/df4/matrix_8h">&lt;matrix.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::mblas::TMatrix</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d96/classamunmt_1_1GPU_1_1mblas_1_1TMatrix__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::mblas::TMatrix</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dfa/classamunmt_1_1GPU_1_1mblas_1_1TMatrix__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef T  <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1afcab21668823619cd9578fea0cebd8df">value_type</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t dim_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t arrSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1ae81300081f0705b32c36a04b33e9000c">TMatrix</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a2bed15df51e1820a0dd900b111bfe222">TMatrix</link> (
+size_t rows, size_t cols, size_t beam, size_t batches, bool zero)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a58b584dc9bee09d49e85b801ce7f880a">TMatrix</link> (
+<link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link> &amp;&amp; m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a5d0ced2a1cb7fbce39d018a571ef72de">TMatrix</link> (
+const <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link> &amp; m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a5355566f8a8a7e804ab41cd2dcc3f306">~TMatrix</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a642b2578400a4e9d395212f888ff9b1a">dim</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a080c2f2b4f5143726a957b0bd9fc201e">Resize</link> (
+size_t rows, size_t cols, size_t beam, size_t batches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a379c5cc8ef7ca2f71da2d5055c9fb542">NewSize</link> (
+size_t rows, size_t cols, size_t beam, size_t batches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a71311ec900cc6cc35ac9605893a3f529">reserve</link> (
+size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a2a1e6f455240cec3b8406cfef94128e5">Debug</link> (
+size_t verbosity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1afcab21668823619cd9578fea0cebd8df">value_type</link> * <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1ae8f1f47f7a414caad928ab99627f7084">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1afcab21668823619cd9578fea0cebd8df">value_type</link> * <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a6014fe64c3726d3133490697648ec0e5">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a50ee1366bd54a911738974d06f4716fe">swap</link> (
+<link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link> &amp; other)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1afcab21668823619cd9578fea0cebd8df">
+                <title>typedef T amunmt::GPU::mblas::TMatrix&lt; T &gt;::value_type</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1ae81300081f0705b32c36a04b33e9000c">
+                <title>amunmt::GPU::mblas::TMatrix&lt; T &gt;::TMatrix ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a2bed15df51e1820a0dd900b111bfe222">
+                <title>amunmt::GPU::mblas::TMatrix&lt; T &gt;::TMatrix (size_t rows, size_t cols, size_t beam, size_t batches, bool zero=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a58b584dc9bee09d49e85b801ce7f880a">
+                <title>amunmt::GPU::mblas::TMatrix&lt; T &gt;::TMatrix (TMatrix &amp;&amp;m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a5d0ced2a1cb7fbce39d018a571ef72de">
+                <title>amunmt::GPU::mblas::TMatrix&lt; T &gt;::TMatrix (const TMatrix &amp;m)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a5355566f8a8a7e804ab41cd2dcc3f306">
+                <title>amunmt::GPU::mblas::TMatrix&lt; T &gt;::~TMatrix ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a642b2578400a4e9d395212f888ff9b1a">
+                <title>virtual size_t amunmt::GPU::mblas::TMatrix&lt; T &gt;::dim (size_t i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a080c2f2b4f5143726a957b0bd9fc201e">
+                <title>void amunmt::GPU::mblas::TMatrix&lt; T &gt;::Resize (size_t rows, size_t cols, size_t beam=1, size_t batches=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a379c5cc8ef7ca2f71da2d5055c9fb542">
+                <title>void amunmt::GPU::mblas::TMatrix&lt; T &gt;::NewSize (size_t rows, size_t cols, size_t beam=1, size_t batches=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a71311ec900cc6cc35ac9605893a3f529">
+                <title>void amunmt::GPU::mblas::TMatrix&lt; T &gt;::reserve (size_t size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a2a1e6f455240cec3b8406cfef94128e5">
+                <title>virtual std::string amunmt::GPU::mblas::TMatrix&lt; T &gt;::Debug (size_t verbosity=1) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1ae8f1f47f7a414caad928ab99627f7084">
+                <title>value_type* amunmt::GPU::mblas::TMatrix&lt; T &gt;::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a6014fe64c3726d3133490697648ec0e5">
+                <title>const value_type* amunmt::GPU::mblas::TMatrix&lt; T &gt;::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_1a50ee1366bd54a911738974d06f4716fe">
+                <title>void amunmt::GPU::mblas::TMatrix&lt; T &gt;::swap (TMatrix &amp;other)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,74 @@
+\hypertarget{bpe_8h}{}\section{bpe.\+h File Reference}
+\label{bpe_8h}\index{bpe.\+h@{bpe.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+{\ttfamily \#include $<$iterator$>$}\\*
+{\ttfamily \#include \char`\"{}common/processor/processor.\+h\char`\"{}}\\*
+Include dependency graph for bpe.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d8f/bpe_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d98/bpe_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1BPE}{amunmt\+::\+B\+PE}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt}{amunmt}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{hash\+\_\+combine} (std\+::size\+\_\+t \&seed, const T \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{bpe.\+h@{bpe.\+h}!hash\+\_\+combine@{hash\+\_\+combine}}
+\index{hash\+\_\+combine@{hash\+\_\+combine}!bpe.\+h@{bpe.\+h}}
+\subsubsection[{\texorpdfstring{hash\+\_\+combine(std\+::size\+\_\+t \&seed, const T \&v)}{hash_combine(std::size_t &seed, const T &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void hash\+\_\+combine (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t \&}]{seed, }
+\item[{const T \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}{}\label{bpe_8h_a04cc1b733a2f4d205f13f7a59facba64}
+
+
+Definition at line 14 of file bpe.\+h.
+
+
+\begin{DoxyCode}
+15 \{
+16   std::hash<T> hasher;
+17   seed ^= hasher(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+18 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d80/bpe_8h_a04cc1b733a2f4d205f13f7a59facba64_icgraph}
+\end{center}
+\end{figure}
+
+

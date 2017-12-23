@@ -1,0 +1,407 @@
+\hypertarget{classmarian_1_1rnn_1_1States}{}\section{marian\+:\+:rnn\+:\+:States Class Reference}
+\label{classmarian_1_1rnn_1_1States}\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:rnn\+:\+:States\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{d5/db7/classmarian_1_1rnn_1_1States__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1rnn_1_1States_a6c7f0d8f86f47997f1af17fe705c71d5}{States} ()
+\item 
+\hyperlink{classmarian_1_1rnn_1_1States_a75ec1bb99b5e17f8bc253845b143aaa9}{States} (const std\+::vector$<$ \hyperlink{structmarian_1_1rnn_1_1State}{State} $>$ \&states)
+\item 
+\hyperlink{classmarian_1_1rnn_1_1States_a685063fb4d227663cf1cdb8937fa4ac6}{States} (size\+\_\+t num, \hyperlink{structmarian_1_1rnn_1_1State}{State} state)
+\item 
+auto \hyperlink{classmarian_1_1rnn_1_1States_a60e61291cb512a79f263d56431a1f33f}{begin} () -\/$>$ decltype(states\+\_\+.\+begin())
+\item 
+auto \hyperlink{classmarian_1_1rnn_1_1States_a1c6ba08bb8971e1afc621dd393f47684}{end} () -\/$>$ decltype(states\+\_\+.\+begin())
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1rnn_1_1States_a616c6828055565099320924bcb77b3da}{outputs} ()
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_a9208d7250a1217c3003433d71843d21e}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)
+\item 
+const \hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_a53476e8b579873f89229a9ea08e9a783}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const 
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_a678c607577574116ef2a7883bf698ec3}{back} ()
+\item 
+const \hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_a59846fcf53c9e0cf3bb7520bc0b93731}{back} () const 
+\item 
+\hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_aa4591eb77bab804e0f32b6a71fceda29}{front} ()
+\item 
+const \hyperlink{structmarian_1_1rnn_1_1State}{State} \& \hyperlink{classmarian_1_1rnn_1_1States_a8c824d694f2cccdd343b0e4e3d9e2096}{front} () const 
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1rnn_1_1States_a349665bcd4d6afa53cbd76a9bba6d29d}{size} () const 
+\item 
+void \hyperlink{classmarian_1_1rnn_1_1States_a85ffd790e403eb26f6153060d9997a4f}{push\+\_\+back} (const \hyperlink{structmarian_1_1rnn_1_1State}{State} \&state)
+\item 
+\hyperlink{classmarian_1_1rnn_1_1States}{States} \hyperlink{classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584}{select} (const std\+::vector$<$ size\+\_\+t $>$ \&indices)
+\item 
+void \hyperlink{classmarian_1_1rnn_1_1States_a7b971406b7426daad07da698219711bf}{reverse} ()
+\item 
+void \hyperlink{classmarian_1_1rnn_1_1States_aba3db864a663b5570d5a02dc2b9cfe72}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structmarian_1_1rnn_1_1State}{State} $>$ \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file marian/src/rnn/types.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!States@{States}}
+\index{States@{States}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{States()}{States()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+States\+::\+States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a6c7f0d8f86f47997f1af17fe705c71d5}{}\label{classmarian_1_1rnn_1_1States_a6c7f0d8f86f47997f1af17fe705c71d5}
+
+
+Definition at line 42 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+42 \{\}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!States@{States}}
+\index{States@{States}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{States(const std\+::vector$<$ State $>$ \&states)}{States(const std::vector< State > &states)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+States\+::\+States (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf State} $>$ \&}]{states}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a75ec1bb99b5e17f8bc253845b143aaa9}{}\label{classmarian_1_1rnn_1_1States_a75ec1bb99b5e17f8bc253845b143aaa9}
+
+
+Definition at line 43 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+43 : \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}(states) \{\}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!States@{States}}
+\index{States@{States}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{States(size\+\_\+t num, State state)}{States(size_t num, State state)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::rnn\+::\+States\+::\+States (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num, }
+\item[{{\bf State}}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a685063fb4d227663cf1cdb8937fa4ac6}{}\label{classmarian_1_1rnn_1_1States_a685063fb4d227663cf1cdb8937fa4ac6}
+
+
+Definition at line 44 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+44 : \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}(num, state) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!back@{back}}
+\index{back@{back}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{back()}{back()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State}\& marian\+::rnn\+::\+States\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a678c607577574116ef2a7883bf698ec3}{}\label{classmarian_1_1rnn_1_1States_a678c607577574116ef2a7883bf698ec3}
+
+
+Definition at line 62 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+62 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.back(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!back@{back}}
+\index{back@{back}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{back() const }{back() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf State}\& marian\+::rnn\+::\+States\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a59846fcf53c9e0cf3bb7520bc0b93731}{}\label{classmarian_1_1rnn_1_1States_a59846fcf53c9e0cf3bb7520bc0b93731}
+
+
+Definition at line 63 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+63 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.back(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!begin@{begin}}
+\index{begin@{begin}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{begin() -\/$>$ decltype(states\+\_\+.\+begin())}{begin() -> decltype(states_.begin())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::rnn\+::\+States\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(states\+\_\+.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a60e61291cb512a79f263d56431a1f33f}{}\label{classmarian_1_1rnn_1_1States_a60e61291cb512a79f263d56431a1f33f}
+
+
+Definition at line 46 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+46 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.begin(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!clear@{clear}}
+\index{clear@{clear}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::rnn\+::\+States\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_aba3db864a663b5570d5a02dc2b9cfe72}{}\label{classmarian_1_1rnn_1_1States_aba3db864a663b5570d5a02dc2b9cfe72}
+
+
+Definition at line 85 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+85 \{ \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.clear(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!end@{end}}
+\index{end@{end}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{end() -\/$>$ decltype(states\+\_\+.\+begin())}{end() -> decltype(states_.begin())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::rnn\+::\+States\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(states\+\_\+.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a1c6ba08bb8971e1afc621dd393f47684}{}\label{classmarian_1_1rnn_1_1States_a1c6ba08bb8971e1afc621dd393f47684}
+
+
+Definition at line 47 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+47 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.end(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!front@{front}}
+\index{front@{front}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{front()}{front()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State}\& marian\+::rnn\+::\+States\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_aa4591eb77bab804e0f32b6a71fceda29}{}\label{classmarian_1_1rnn_1_1States_aa4591eb77bab804e0f32b6a71fceda29}
+
+
+Definition at line 65 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+65 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.front(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!front@{front}}
+\index{front@{front}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{front() const }{front() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf State}\& marian\+::rnn\+::\+States\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a8c824d694f2cccdd343b0e4e3d9e2096}{}\label{classmarian_1_1rnn_1_1States_a8c824d694f2cccdd343b0e4e3d9e2096}
+
+
+Definition at line 66 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+66 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.front(); \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i)}{operator[](size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State}\& marian\+::rnn\+::\+States\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a9208d7250a1217c3003433d71843d21e}{}\label{classmarian_1_1rnn_1_1States_a9208d7250a1217c3003433d71843d21e}
+
+
+Definition at line 59 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+59 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}[i]; \};
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i) const }{operator[](size_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf State}\& marian\+::rnn\+::\+States\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a53476e8b579873f89229a9ea08e9a783}{}\label{classmarian_1_1rnn_1_1States_a53476e8b579873f89229a9ea08e9a783}
+
+
+Definition at line 60 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+60 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}[i]; \};
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!outputs@{outputs}}
+\index{outputs@{outputs}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{outputs()}{outputs()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} marian\+::rnn\+::\+States\+::outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a616c6828055565099320924bcb77b3da}{}\label{classmarian_1_1rnn_1_1States_a616c6828055565099320924bcb77b3da}
+
+
+Definition at line 49 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+49                    \{
+50       std::vector<Expr> \hyperlink{classmarian_1_1rnn_1_1States_a616c6828055565099320924bcb77b3da}{outputs};
+51       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} s : \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_})
+52         outputs.push\_back(s.output);
+53       \textcolor{keywordflow}{if}(outputs.size() > 1)
+54         \textcolor{keywordflow}{return} \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(outputs, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{keywords::axis} = 2);
+55       \textcolor{keywordflow}{else}
+56         \textcolor{keywordflow}{return} outputs[0];
+57     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{dc/d39/classmarian_1_1rnn_1_1States_a616c6828055565099320924bcb77b3da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const State \&state)}{push_back(const State &state)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::rnn\+::\+States\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const {\bf State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a85ffd790e403eb26f6153060d9997a4f}{}\label{classmarian_1_1rnn_1_1States_a85ffd790e403eb26f6153060d9997a4f}
+
+
+Definition at line 70 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+70                                        \{
+71       \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.push\_back(state);
+72     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d39/classmarian_1_1rnn_1_1States_a85ffd790e403eb26f6153060d9997a4f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!reverse@{reverse}}
+\index{reverse@{reverse}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{reverse()}{reverse()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::rnn\+::\+States\+::reverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a7b971406b7426daad07da698219711bf}{}\label{classmarian_1_1rnn_1_1States_a7b971406b7426daad07da698219711bf}
+
+
+Definition at line 81 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+81                    \{
+82       std::reverse(\hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.begin(), \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.end());
+83     \}
+\end{DoxyCode}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!select@{select}}
+\index{select@{select}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{select(const std\+::vector$<$ size\+\_\+t $>$ \&indices)}{select(const std::vector< size_t > &indices)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf States} marian\+::rnn\+::\+States\+::select (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584}{}\label{classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584}
+
+
+Definition at line 74 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+74                                                     \{
+75       \hyperlink{classmarian_1_1rnn_1_1States_a6c7f0d8f86f47997f1af17fe705c71d5}{States} selected;
+76       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& state : \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_})
+77         selected.push\_back(state.select(indices));
+78       \textcolor{keywordflow}{return} selected;
+79     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{dc/d39/classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{dc/d39/classmarian_1_1rnn_1_1States_a73f73fda27e8dcb664513b3e7dc94584_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!size@{size}}
+\index{size@{size}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::rnn\+::\+States\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1rnn_1_1States_a349665bcd4d6afa53cbd76a9bba6d29d}{}\label{classmarian_1_1rnn_1_1States_a349665bcd4d6afa53cbd76a9bba6d29d}
+
+
+Definition at line 68 of file marian/src/rnn/types.\+h.
+
+
+\begin{DoxyCode}
+68 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{states\_}.size(); \};
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}!states\+\_\+@{states\+\_\+}}
+\index{states\+\_\+@{states\+\_\+}!marian\+::rnn\+::\+States@{marian\+::rnn\+::\+States}}
+\subsubsection[{\texorpdfstring{states\+\_\+}{states_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf State}$>$ marian\+::rnn\+::\+States\+::states\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}{}\label{classmarian_1_1rnn_1_1States_ab2e3001ec9b7d4961a8dbae31eb0c5dd}
+
+
+Definition at line 39 of file marian/src/rnn/types.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{marian_2src_2rnn_2types_8h}{marian/src/rnn/types.\+h}\end{DoxyCompactItemize}

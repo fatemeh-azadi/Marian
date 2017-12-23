@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/df4/structamunmt_1_1AmunInput">
+<title>amunmt::AmunInput struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/df3/hypo__info_8h">&lt;hypo_info.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::AmunInput</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dff/structamunmt_1_1AmunInput__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::AmunInput</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d6e/structamunmt_1_1AmunInput__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Words phrase</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/df4/structamunmt_1_1AmunInput_1ad63dd5ec074a95efd4a3de375f0127c1">AmunInput</link> (
+const <link linkend="d9/d4b/structamunmt_1_1HypoState">HypoState</link> &amp; hypoState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/df4/structamunmt_1_1AmunInput_1ad63dd5ec074a95efd4a3de375f0127c1">
+                <title>amunmt::AmunInput::AmunInput (const HypoState &amp;hypoState)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

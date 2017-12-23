@@ -1,0 +1,221 @@
+\hypertarget{classmarian_1_1keywords_1_1Keywords}{}\section{marian\+:\+:keywords\+:\+:Keywords Class Reference}
+\label{classmarian_1_1keywords_1_1Keywords}\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+
+
+{\ttfamily \#include $<$keywords.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:keywords\+:\+:Keywords\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc1/classmarian_1_1keywords_1_1Keywords__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:keywords\+:\+:Keywords\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d0/d3f/classmarian_1_1keywords_1_1Keywords__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1keywords_1_1Keywords_a7a0535a25f392cf82e3419dce9eb52db}{Keywords} (Args...\+args)
+\item 
+{\footnotesize template$<$typename Match $>$ }\\bool \hyperlink{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}{Has} (Match key)
+\item 
+{\footnotesize template$<$typename Match $>$ }\\Match\+::value\+\_\+type \hyperlink{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}{Get} (Match key, typename Match\+::value\+\_\+type dflt)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmarian_1_1keywords_1_1Keywords_a7efdbf15c7e2c424fa442b1069a3b4d2}{add} ()
+\item 
+{\footnotesize template$<$typename Head $>$ }\\void \hyperlink{classmarian_1_1keywords_1_1Keywords_aa7c4e2fb5f3a9b4c63590a2504a1b238}{add} (Head head)
+\item 
+{\footnotesize template$<$typename Head , typename... Tail$>$ }\\void \hyperlink{classmarian_1_1keywords_1_1Keywords_a339ac5598ed95cb7c36d56029c0f7def}{add} (Head head, Tail...\+tail)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ unsigned, boost\+::any $>$ \hyperlink{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{storage\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 172 of file keywords.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!Keywords@{Keywords}}
+\index{Keywords@{Keywords}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{Keywords(\+Args...\+args)}{Keywords(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::keywords\+::\+Keywords\+::\+Keywords (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_a7a0535a25f392cf82e3419dce9eb52db}{}\label{classmarian_1_1keywords_1_1Keywords_a7a0535a25f392cf82e3419dce9eb52db}
+
+
+Definition at line 191 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+191                          \{
+192     \hyperlink{classmarian_1_1keywords_1_1Keywords_a7efdbf15c7e2c424fa442b1069a3b4d2}{add}(args...);
+193   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!add@{add}}
+\index{add@{add}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{add()}{add()}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::keywords\+::\+Keywords\+::add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_a7efdbf15c7e2c424fa442b1069a3b4d2}{}\label{classmarian_1_1keywords_1_1Keywords_a7efdbf15c7e2c424fa442b1069a3b4d2}
+
+
+Definition at line 176 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+176 \{\}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!add@{add}}
+\index{add@{add}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{add(\+Head head)}{add(Head head)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Head $>$ void marian\+::keywords\+::\+Keywords\+::add (
+\begin{DoxyParamCaption}
+\item[{Head}]{head}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_aa7c4e2fb5f3a9b4c63590a2504a1b238}{}\label{classmarian_1_1keywords_1_1Keywords_aa7c4e2fb5f3a9b4c63590a2504a1b238}
+
+
+Definition at line 179 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+179                       \{
+180     \hyperlink{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{storage\_}[head.id()] = head();
+181   \}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!add@{add}}
+\index{add@{add}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{add(\+Head head, Tail...\+tail)}{add(Head head, Tail...tail)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Head , typename... Tail$>$ void marian\+::keywords\+::\+Keywords\+::add (
+\begin{DoxyParamCaption}
+\item[{Head}]{head, }
+\item[{Tail...}]{tail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_a339ac5598ed95cb7c36d56029c0f7def}{}\label{classmarian_1_1keywords_1_1Keywords_a339ac5598ed95cb7c36d56029c0f7def}
+
+
+Definition at line 184 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+184                                     \{
+185     \hyperlink{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{storage\_}[head.id()] = head();
+186     \hyperlink{classmarian_1_1keywords_1_1Keywords_a7efdbf15c7e2c424fa442b1069a3b4d2}{add}(tail...);
+187   \}
+\end{DoxyCode}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!Get@{Get}}
+\index{Get@{Get}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{Get(\+Match key, typename Match\+::value\+\_\+type dflt)}{Get(Match key, typename Match::value_type dflt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Match $>$ Match\+::value\+\_\+type marian\+::keywords\+::\+Keywords\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{Match}]{key, }
+\item[{typename Match\+::value\+\_\+type}]{dflt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}{}\label{classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5}
+
+
+Definition at line 201 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+201                                                                          \{
+202     \textcolor{keyword}{using} boost::any\_cast;
+203     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}{Has}(key)) \{
+204       \textcolor{keywordflow}{return} any\_cast<\textcolor{keyword}{typename} Match::value\_type>(\hyperlink{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{storage\_}[key.id()]);
+205     \} \textcolor{keywordflow}{else} \{
+206       \textcolor{keywordflow}{return} dflt;
+207     \}
+208   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d9b/classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d9b/classmarian_1_1keywords_1_1Keywords_ab9d8d0291a01f46f182d35c1b97bffe5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!Has@{Has}}
+\index{Has@{Has}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{Has(\+Match key)}{Has(Match key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Match $>$ bool marian\+::keywords\+::\+Keywords\+::\+Has (
+\begin{DoxyParamCaption}
+\item[{Match}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}{}\label{classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d}
+
+
+Definition at line 196 of file keywords.\+h.
+
+
+\begin{DoxyCode}
+196                       \{
+197     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{storage\_}.count(key.id()) > 0;
+198   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d9b/classmarian_1_1keywords_1_1Keywords_a09055f1903a6dcfe6a34e154df99a21d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}!storage\+\_\+@{storage\+\_\+}}
+\index{storage\+\_\+@{storage\+\_\+}!marian\+::keywords\+::\+Keywords@{marian\+::keywords\+::\+Keywords}}
+\subsubsection[{\texorpdfstring{storage\+\_\+}{storage_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$unsigned, boost\+::any$>$ marian\+::keywords\+::\+Keywords\+::storage\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}{}\label{classmarian_1_1keywords_1_1Keywords_ac4af771537df4c0eff59466cf446ac34}
+
+
+Definition at line 174 of file keywords.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{keywords_8h}{keywords.\+h}\end{DoxyCompactItemize}

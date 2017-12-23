@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d0e/classamunmt_1_1Filter">
+<title>amunmt::Filter class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/da4/amun_2common_2filter_8h">&lt;filter.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Filter</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dbe/classamunmt_1_1Filter__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Filter</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d50/classamunmt_1_1Filter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t numFirstWords_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; Words &gt; mapper_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d0e/classamunmt_1_1Filter_1a2f1930edcf77b0e457dee551bec9bfde">Filter</link> (
+const size_t numFirstWords)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d0e/classamunmt_1_1Filter_1a876cd1873c845ac085771497bbe7f628">Filter</link> (
+const <link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; srcVocab, const <link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; trgVocab, const std::string &amp; path, const size_t numFirstWords, const size_t maxNumTranslation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> <link linkend="d6/d0e/classamunmt_1_1Filter_1a2590b529fb636d351730f2fae05a78e9">GetFilteredVocab</link> (
+const T &amp; srcWords, const size_t maxVocabSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t <link linkend="d6/d0e/classamunmt_1_1Filter_1a8b4e8daccd3d04c498574647b3493ace">GetNumFirstWords</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d0e/classamunmt_1_1Filter_1afa06c9b88b2a63f4868ce2e5317011d3">SetNumFirstWords</link> (
+size_t numFirstWords)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::vector&lt; <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> &gt; <link linkend="d6/d0e/classamunmt_1_1Filter_1a8577454f5c8aa797f92c53c51d7791bc">ParseAlignmentFile</link> (
+const <link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; srcVocab, const <link linkend="d4/d9e/classamunmt_1_1Vocab">Vocab</link> &amp; trgVocab, const std::string &amp; path, const size_t maxNumTranslation, const size_t numNFirst)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1a2f1930edcf77b0e457dee551bec9bfde">
+                <title>amunmt::Filter::Filter (const size_t numFirstWords=10000)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1a876cd1873c845ac085771497bbe7f628">
+                <title>amunmt::Filter::Filter (const Vocab &amp;srcVocab, const Vocab &amp;trgVocab, const std::string &amp;path, const size_t numFirstWords=10000, const size_t maxNumTranslation=1000)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1a2590b529fb636d351730f2fae05a78e9">
+                <title>Words amunmt::Filter::GetFilteredVocab (const T &amp;srcWords, const size_t maxVocabSize) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1a8b4e8daccd3d04c498574647b3493ace">
+                <title>size_t amunmt::Filter::GetNumFirstWords () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1afa06c9b88b2a63f4868ce2e5317011d3">
+                <title>void amunmt::Filter::SetNumFirstWords (size_t numFirstWords)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d0e/classamunmt_1_1Filter_1a8577454f5c8aa797f92c53c51d7791bc">
+                <title>std::vector&lt; Words &gt; amunmt::Filter::ParseAlignmentFile (const Vocab &amp;srcVocab, const Vocab &amp;trgVocab, const std::string &amp;path, const size_t maxNumTranslation, const size_t numNFirst)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

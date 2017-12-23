@@ -1,0 +1,193 @@
+\hypertarget{classmarian_1_1PerplexityValidator}{}\section{marian\+:\+:Perplexity\+Validator$<$ Builder $>$ Class Template Reference}
+\label{classmarian_1_1PerplexityValidator}\index{marian\+::\+Perplexity\+Validator$<$ Builder $>$@{marian\+::\+Perplexity\+Validator$<$ Builder $>$}}
+
+
+{\ttfamily \#include $<$validator.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Perplexity\+Validator$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{de/d32/classmarian_1_1PerplexityValidator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Perplexity\+Validator$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{db/def/classmarian_1_1PerplexityValidator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1PerplexityValidator_a9a6c1b5ec39f8b75678f438644679557}{Perplexity\+Validator} (std\+::vector$<$ \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$$>$ vocabs, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+virtual float \hyperlink{classmarian_1_1PerplexityValidator_a30a9da5e5a20b5f7f90643eb1ae85dac}{validate\+BG} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchGenerator}{data\+::\+Batch\+Generator}$<$ \hyperlink{classmarian_1_1data_1_1Corpus}{data\+::\+Corpus} $>$$>$ batch\+Generator)
+\item 
+virtual void \hyperlink{classmarian_1_1PerplexityValidator_ab276447aa46c5f00fb3e559b2010a00c}{keep\+Best} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+std\+::string \hyperlink{classmarian_1_1PerplexityValidator_a1df91365d8eef33c49bbd487de8e244e}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Builder $>$ \hyperlink{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}{builder\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Builder$>$\\*
+class marian\+::\+Perplexity\+Validator$<$ Builder $>$}
+
+
+
+Definition at line 118 of file training/validator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}!Perplexity\+Validator@{Perplexity\+Validator}}
+\index{Perplexity\+Validator@{Perplexity\+Validator}!marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}}
+\subsubsection[{\texorpdfstring{Perplexity\+Validator(std\+::vector$<$ Ptr$<$ Vocab $>$$>$ vocabs, Ptr$<$ Config $>$ options, Args...\+args)}{PerplexityValidator(std::vector< Ptr< Vocab >> vocabs, Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ template$<$class... Args$>$ {\bf marian\+::\+Perplexity\+Validator}$<$ Builder $>$\+::{\bf Perplexity\+Validator} (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Ptr}$<$ {\bf Vocab} $>$$>$}]{vocabs, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1PerplexityValidator_a9a6c1b5ec39f8b75678f438644679557}{}\label{classmarian_1_1PerplexityValidator_a9a6c1b5ec39f8b75678f438644679557}
+
+
+Definition at line 124 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+127       : \hyperlink{classmarian_1_1Validator_a438455be8ec5c8e0158ad4d8586b6d51}{Validator}(vocabs, options),
+128         \hyperlink{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}{builder\_}(New<Builder>(options, \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \textcolor{keyword}{true}, args...)) \{
+129     \hyperlink{classmarian_1_1Validator_a6f65080ef5845f74757a5deafc5a397f}{initLastBest}();
+130   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{df/d9a/classmarian_1_1PerplexityValidator_a9a6c1b5ec39f8b75678f438644679557_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}!keep\+Best@{keep\+Best}}
+\index{keep\+Best@{keep\+Best}!marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}}
+\subsubsection[{\texorpdfstring{keep\+Best(\+Ptr$<$ Expression\+Graph $>$ graph)}{keepBest(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual void {\bf marian\+::\+Perplexity\+Validator}$<$ Builder $>$\+::keep\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1PerplexityValidator_ab276447aa46c5f00fb3e559b2010a00c}{}\label{classmarian_1_1PerplexityValidator_ab276447aa46c5f00fb3e559b2010a00c}
+
+
+Implements \hyperlink{classmarian_1_1Validator_ab70989b9c6aef7dc0d0655fd066e7fa9}{marian\+::\+Validator$<$ data\+::\+Corpus $>$}.
+
+
+
+Definition at line 150 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+150                                                     \{
+151     \textcolor{keyword}{auto} model = \hyperlink{classmarian_1_1Validator_a59fc30678618608874029374e386d3c0}{options\_}->get<std::string>(\textcolor{stringliteral}{"model"});
+152     \hyperlink{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}{builder\_}->save(graph, model + \textcolor{stringliteral}{".best-"} + \hyperlink{classmarian_1_1PerplexityValidator_a1df91365d8eef33c49bbd487de8e244e}{type}() + \textcolor{stringliteral}{".npz"}, \textcolor{keyword}{true});
+153   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d9a/classmarian_1_1PerplexityValidator_ab276447aa46c5f00fb3e559b2010a00c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}!type@{type}}
+\index{type@{type}!marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ std\+::string {\bf marian\+::\+Perplexity\+Validator}$<$ Builder $>$\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1PerplexityValidator_a1df91365d8eef33c49bbd487de8e244e}{}\label{classmarian_1_1PerplexityValidator_a1df91365d8eef33c49bbd487de8e244e}
+
+
+Implements \hyperlink{classmarian_1_1Validator_a46fae77a7ebd17d3727beb0858f025f0}{marian\+::\+Validator$<$ data\+::\+Corpus $>$}.
+
+
+
+Definition at line 155 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+155 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"perplexity"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}!validate\+BG@{validate\+BG}}
+\index{validate\+BG@{validate\+BG}!marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}}
+\subsubsection[{\texorpdfstring{validate\+B\+G(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Batch\+Generator$<$ data\+::\+Corpus $>$$>$ batch\+Generator)}{validateBG(Ptr< ExpressionGraph > graph, Ptr< data::BatchGenerator< data::Corpus >> batchGenerator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ virtual float {\bf marian\+::\+Perplexity\+Validator}$<$ Builder $>$\+::validate\+BG (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch\+Generator}$<$ {\bf data\+::\+Corpus} $>$$>$}]{batch\+Generator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1PerplexityValidator_a30a9da5e5a20b5f7f90643eb1ae85dac}{}\label{classmarian_1_1PerplexityValidator_a30a9da5e5a20b5f7f90643eb1ae85dac}
+
+
+Implements \hyperlink{classmarian_1_1Validator_a62416349540dc2b628b70b4f401c4a49}{marian\+::\+Validator$<$ data\+::\+Corpus $>$}.
+
+
+
+Definition at line 132 of file training/validator.\+h.
+
+
+\begin{DoxyCode}
+134                                                           \{
+135     \textcolor{keywordtype}{float} cost = 0;
+136     \textcolor{keywordtype}{size\_t} words = 0;
+137 
+138     \textcolor{keywordflow}{while}(*batchGenerator) \{
+139       \textcolor{keyword}{auto} batch = batchGenerator->next();
+140       \textcolor{keyword}{auto} costNode = \hyperlink{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}{builder\_}->build(graph, batch);
+141       graph->forward();
+142 
+143       cost += costNode->scalar() * batch->size();
+144       words += batch->words();
+145     \}
+146 
+147     \textcolor{keywordflow}{return} expf(cost / words);
+148   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}!builder\+\_\+@{builder\+\_\+}}
+\index{builder\+\_\+@{builder\+\_\+}!marian\+::\+Perplexity\+Validator@{marian\+::\+Perplexity\+Validator}}
+\subsubsection[{\texorpdfstring{builder\+\_\+}{builder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<$Builder$>$ {\bf marian\+::\+Perplexity\+Validator}$<$ Builder $>$\+::builder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}{}\label{classmarian_1_1PerplexityValidator_accdabbe55459e8f2c90c6575a6b9c8d2}
+
+
+Definition at line 120 of file training/validator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{training_2validator_8h}{training/validator.\+h}\end{DoxyCompactItemize}

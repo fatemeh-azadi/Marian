@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d90/best__hyps_8h">
+    <title>best_hyps.h File Reference</title>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;numeric&gt;</programlisting>
+    <programlisting>#include &lt;boost/timer/timer.hpp&gt;</programlisting>
+    <programlisting>#include &quot;common/scorer.h&quot;</programlisting>
+    <programlisting>#include &quot;common/exception.h&quot;</programlisting>
+    <programlisting>#include &quot;common/god.h&quot;</programlisting>
+    <programlisting>#include &quot;common/utils.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/matrix_functions.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/nth_element.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/mblas/array.h&quot;</programlisting>
+    <programlisting>#include &quot;gpu/decoder/encoder_decoder.h&quot;</programlisting>
+<para>Include dependency diagram for best_hyps.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d2d/best__hyps_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for best_hyps.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/df0/best__hyps_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/da0/classamunmt_1_1GPU_1_1BestHyps">amunmt::GPU::BestHyps</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/dd3/namespaceamunmt">amunmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d95/namespaceamunmt_1_1GPU">amunmt::GPU</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file best_hyps.h</para>
+    </simplesect>
+</section>

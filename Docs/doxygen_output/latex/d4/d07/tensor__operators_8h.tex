@@ -1,0 +1,170 @@
+\hypertarget{tensor__operators_8h}{}\section{tensor\+\_\+operators.\+h File Reference}
+\label{tensor__operators_8h}\index{tensor\+\_\+operators.\+h@{tensor\+\_\+operators.\+h}}
+{\ttfamily \#include $<$cublas\+\_\+v2.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/device\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/functional.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/host\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$thrust/pair.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}kernels/shape\+\_\+gpu.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tensors/tensor.\+h\char`\"{}}\\*
+Include dependency graph for tensor\+\_\+operators.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d8f/tensor__operators_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/da6/tensor__operators_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+cublas\+Handle\+\_\+t \hyperlink{namespacemarian_aefcaef2db4de43d9bdd30a750da6e78b}{marian\+::create\+\_\+handle} (size\+\_\+t)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a6e23ca23d59f5e88256ee5257c412f2f}{marian\+::g\+Add\+R2} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const Shape\+G\+PU full, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a35418d90c9b90cff0b6a21d2e00c045a}{marian\+::g\+Add\+R2\+Eq} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, float scale, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a0e46ef4c37b91562f6b1debd5d1e3d8f}{marian\+::g\+Add1\+R2} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const Shape\+G\+PU full, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{marian\+::\+Add} (Functor functor, Tensor out, Tensor in, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 $>$ }\\void \hyperlink{namespacemarian_ad1f1697aac9247a78d2242921d538402}{marian\+::\+Reduce} (Functor functor, T1 out, T2 in, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a690541df38dba6c9e5fbd9237945f673}{marian\+::g\+Add\+R3} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const float $\ast$in2, const Shape\+G\+PU in2\+Shape, const Shape\+G\+PU full, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a0a08b33ffd2a9dfa67f0994a15685cd0}{marian\+::g\+Add\+R3\+Eq} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, const float $\ast$in2, const Shape\+G\+PU in\+Shape2, float scale, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a44155273ebd81acda4f4878c7c9b6077}{marian\+::g\+Add1\+R3} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const float $\ast$in2, const Shape\+G\+PU in2\+Shape, const Shape\+G\+PU full, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{namespacemarian_a1876c27c6adb42553caa12d2c267e074}{marian\+::\+Add} (Functor functor, Tensor out, Tensor in1, Tensor in2, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{namespacemarian_a175b569d0c1b2c89409b964305bbb426}{marian\+::\+Reduce} (Functor functor, Tensor out, Tensor in1, Tensor in2, float scale=1.\+0)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a07c7c2280aabd4e48cdba0d2cf4a917d}{marian\+::g\+Add\+R4} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const float $\ast$in2, const Shape\+G\+PU in2\+Shape, const float $\ast$in3, const Shape\+G\+PU in3\+Shape, const Shape\+G\+PU full)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a7caa3e7e7bc68c5174a625bd23f2ff8d}{marian\+::g\+Add1\+R4} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in1\+Shape, const float $\ast$in2, const Shape\+G\+PU in2\+Shape, const float $\ast$in3, const Shape\+G\+PU in3\+Shape, const Shape\+G\+PU full)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a5b77f356db43dd0f5ca6eeb10b3ed27b}{marian\+::g\+Add\+R4\+Eq} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, const float $\ast$in2, const Shape\+G\+PU in\+Shape2, const float $\ast$in3, const Shape\+G\+PU in\+Shape3, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{namespacemarian_afc796f7741733c0887737b61ad6da946}{marian\+::\+Add} (Functor functor, Tensor out, Tensor in1, Tensor in2, Tensor in3)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{namespacemarian_ab0049b69592fcc4f7e92641c4d960315}{marian\+::\+Reduce} (Functor functor, Tensor out, Tensor in1, Tensor in2, Tensor in3)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_aea1055f9f625245cb25935ac339ec283}{marian\+::g\+Element} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in, const Shape\+G\+PU in\+Shape, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 $>$ }\\void \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{marian\+::\+Element} (Functor functor, T1 out, T2 in)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_ac56e4fc572e5267a3af0d36864ce665f}{marian\+::g\+Element} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, const float $\ast$in2, const Shape\+G\+PU in\+Shape2, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 , class T3 $>$ }\\void \hyperlink{namespacemarian_ad6fbbc10b0be7e4b842ed71399cca997}{marian\+::\+Element} (Functor functor, T1 out, T2 in1, T3 in2)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a6ef6e7153edbf1059f24fc8c3f399996}{marian\+::g\+Element} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, const float $\ast$in2, const Shape\+G\+PU in\+Shape2, const float $\ast$in3, const Shape\+G\+PU in\+Shape3, bool broadcast)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 , class T3 , class T4 $>$ }\\void \hyperlink{namespacemarian_a108cae15db18ddbf2e345484d3b85eb8}{marian\+::\+Element} (Functor functor, T1 out, T2 in1, T3 in2, T4 in3)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a61526f5441180f474625a4f7af62172c}{marian\+::g\+Element} (Functor functor, float $\ast$out, int length)
+\item 
+{\footnotesize template$<$class Functor , class T1 $>$ }\\void \hyperlink{namespacemarian_adcc096ade4f61f451e668c08ff52a924}{marian\+::\+Element} (Functor functor, T1 out)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_a10cae6ac3354fc0097e75cbbba277323}{marian\+::g\+Pick} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$pick)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 $>$ }\\void \hyperlink{namespacemarian_af4c11b5776ff838d3db3d228336802fd}{marian\+::\+Pick} (Functor functor, T1 out, const T2 picks)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_aaa967e002381c4e5cce7a7c12d758347}{marian\+::g\+Pick} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in, const Shape\+G\+PU in\+Shape, const float $\ast$pick)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 , class T3 $>$ }\\void \hyperlink{namespacemarian_aaad2bafac169bc8b4de2364bd9a228cb}{marian\+::\+Pick} (Functor functor, T1 out, const T2 in, const T3 picks)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_ababfcb483a7f3ca788a8b2d58f30cc9d}{marian\+::g\+Pick\+Reduce} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in, const Shape\+G\+PU in\+Shape, const float $\ast$pick)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 , class T3 $>$ }\\void \hyperlink{namespacemarian_a5d3645642f3d84d3109b851c5b5ce6f7}{marian\+::\+Pick\+Reduce} (Functor functor, T1 out, const T2 in, const T3 picks)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void \hyperlink{namespacemarian_ae50ba9da16682ded79ad115d7883d49e}{marian\+::g\+Pick} (Functor functor, float $\ast$out, Shape\+G\+PU out\+Shape, const float $\ast$in1, const Shape\+G\+PU in\+Shape1, const float $\ast$in2, const Shape\+G\+PU in\+Shape2, const float $\ast$pick)
+\item 
+{\footnotesize template$<$class Functor , class T1 , class T2 , class T3 , class T4 $>$ }\\void \hyperlink{namespacemarian_a4dcaa19981e73d7875242f2ae1fdd11c}{marian\+::\+Pick} (Functor functor, T1 out, const T2 in1, const T3 in2, const T4 picks)
+\item 
+float \hyperlink{namespacemarian_ae46885b8c35f2b67a2dc65f71e0e4efd}{marian\+::\+L2\+Norm} (Tensor in)
+\item 
+void \hyperlink{namespacemarian_a01a45889e366b16c79c2cc067f534021}{marian\+::\+Softmax} (Tensor out, Tensor in, Tensor mask=nullptr)
+\item 
+void \hyperlink{namespacemarian_a9dd94a109bd8ccf8e8269bd1d7a86c18}{marian\+::\+Log\+Softmax} (Tensor out, Tensor in)
+\item 
+void \hyperlink{namespacemarian_a7da9b69aeeeb493a8c19c3e07b831a92}{marian\+::\+Softmax\+Grad} (Tensor grad, Tensor adj, Tensor val)
+\item 
+void \hyperlink{namespacemarian_a4f9d12af1543fda2c0f22dce56050aba}{marian\+::\+Log\+Softmax\+Grad} (Tensor grad, Tensor adj, Tensor val)
+\item 
+void \hyperlink{namespacemarian_a9edd9deddefcee4caf236da00cebe810}{marian\+::\+Cudnn\+Softmax} (Tensor out, Tensor in)
+\item 
+void \hyperlink{namespacemarian_af0841b9f603922b0ae92f8fd76c1f5e0}{marian\+::\+Cudnn\+Softmax\+Grad} (Tensor grad, Tensor adj, Tensor val)
+\item 
+void \hyperlink{namespacemarian_a658f77291edab2b88417f988781ab07f}{marian\+::\+Cudnn\+Log\+Softmax} (Tensor out, Tensor in)
+\item 
+void \hyperlink{namespacemarian_a6b88b6fa809d1fb3ad2399f4b55dd552}{marian\+::\+Cudnn\+Log\+Softmax\+Grad} (Tensor grad, Tensor adj, Tensor val)
+\item 
+void \hyperlink{namespacemarian_a22ac2bab1004e993e09c272af096cbc3}{marian\+::\+Cross\+Entropy\+Pick} (Tensor out, Tensor in, Tensor pick)
+\item 
+void \hyperlink{namespacemarian_ad12afd6fbca17c63f3444bdbd535c146}{marian\+::\+Cross\+Entropy\+Pick\+Backward} (Tensor out, Tensor adj, Tensor a, Tensor pick)
+\item 
+void \hyperlink{namespacemarian_a64116355f8cb16a51c1408df4a3b2b28}{marian\+::\+Argmax} (Tensor Out, const Tensor In)
+\item 
+void \hyperlink{namespacemarian_a509f2975b7c8da70df1cd56de5d3e79e}{marian\+::\+Prod} (cublas\+Handle\+\_\+t handle, Tensor C, const Tensor A, const Tensor B, bool transA, bool transB, float beta=0)
+\item 
+void \hyperlink{namespacemarian_a73ee0cc090c0041df53e3732c5b04462}{marian\+::\+Copy\+Rows\+By\+Index} (Tensor out, const Tensor in, thrust\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ $\ast$ipair, size\+\_\+t length)
+\item 
+void \hyperlink{namespacemarian_ab292638adfb1873067440a6af74d5ed5}{marian\+::\+Copy\+Rows} (Tensor out, const Tensor in, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)
+\item 
+void \hyperlink{namespacemarian_aed67e17a4ad7b437ef6361538d1a0023}{marian\+::\+Paste\+Rows} (Tensor out, const Tensor in, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)
+\item 
+void \hyperlink{namespacemarian_a7b1294cb49c42d55331bccbf1def82ba}{marian\+::\+Copy\+Cols} (Tensor out, const Tensor in, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)
+\item 
+void \hyperlink{namespacemarian_afd1a77f3d0ba7b8b2f1e8daf788159d1}{marian\+::\+Paste\+Cols} (Tensor out, const Tensor in, const std\+::vector$<$ size\+\_\+t $>$ \&indeces)
+\item 
+void \hyperlink{namespacemarian_a170142cc4ea06bbb5f76a15a8da4487c}{marian\+::\+Transpose} (cublas\+Handle\+\_\+t cublas\+Handle, Tensor out, const Tensor in)
+\item 
+void \hyperlink{namespacemarian_a680fee5f243683d820950c554db89df7}{marian\+::\+Concatenate} (Tensor out, const std\+::vector$<$ Tensor $>$ \&inputs, int ax)
+\item 
+void \hyperlink{namespacemarian_a09b0dc48a7ac0f9ed26bb50045d7cf1c}{marian\+::\+Deconcatenate} (std\+::vector$<$ Tensor $>$ \&outputs, const Tensor in, int ax)
+\item 
+void \hyperlink{namespacemarian_af0eb4b8f5cdcd9947c2974c7c6a12563}{marian\+::\+L\+S\+T\+M\+Cell\+Forward} (Tensor out, std\+::vector$<$ Tensor $>$ inputs)
+\item 
+void \hyperlink{namespacemarian_a0b45c3ca238a4718908712266a40d4a1}{marian\+::\+L\+S\+T\+M\+Output\+Forward} (Tensor out, std\+::vector$<$ Tensor $>$ inputs)
+\item 
+void \hyperlink{namespacemarian_a373ffb9ba8aae7bd12782b8bf10d005f}{marian\+::\+L\+S\+T\+M\+Cell\+Backward} (std\+::vector$<$ Tensor $>$ outputs, std\+::vector$<$ Tensor $>$ inputs, Tensor adj)
+\item 
+void \hyperlink{namespacemarian_a4d96e5240735c5a9f47277706dd36ab7}{marian\+::\+L\+S\+T\+M\+Output\+Backward} (std\+::vector$<$ Tensor $>$ outputs, std\+::vector$<$ Tensor $>$ inputs, Tensor adj)
+\item 
+void \hyperlink{namespacemarian_a7b5a0d3c521022a7428ded80cec80686}{marian\+::\+G\+R\+U\+Fast\+Forward} (Tensor out, std\+::vector$<$ Tensor $>$ inputs, bool final=false)
+\item 
+void \hyperlink{namespacemarian_a62e537291759d564584ab5190e4c1629}{marian\+::\+G\+R\+U\+Fast\+Backward} (std\+::vector$<$ Tensor $>$ outputs, std\+::vector$<$ Tensor $>$ inputs, Tensor adj, bool final=false)
+\item 
+void \hyperlink{namespacemarian_acac7e44cebb8b07629f222a92850ed82}{marian\+::\+Att} (Tensor out, Tensor va, Tensor context, Tensor state, Tensor coverage)
+\item 
+void \hyperlink{namespacemarian_a62c7d3b55778baafc734053c4a5f74f3}{marian\+::\+Att\+Back} (Tensor gva, Tensor g\+Context, Tensor g\+State, Tensor g\+Coverage, Tensor va, Tensor context, Tensor state, Tensor coverage, Tensor adj)
+\item 
+void \hyperlink{namespacemarian_abfa30c8448843205e713435663fb6cdd}{marian\+::\+Layer\+Normalization} (Tensor out, Tensor in, Tensor gamma, Tensor beta, float eps=1e-\/9)
+\item 
+void \hyperlink{namespacemarian_a1c8cfe7e5243790c154153cd5e048b50}{marian\+::\+Layer\+Normalization\+Grad} (Tensor gradX, Tensor grad\+Gamma, Tensor grad\+Beta, Tensor adj, Tensor y, Tensor x, Tensor gamma, Tensor beta)
+\item 
+void \hyperlink{namespacemarian_ab7bd780a3ab8d3147c56bf9ea6e93232}{marian\+::\+Shift} (Tensor out, Tensor in, Shape\+G\+PU shift, bool invert=false)
+\item 
+void \hyperlink{namespacemarian_ae6e439cac87eb95867c71f9d45591b8f}{marian\+::\+Set\+Sparse} (float $\ast$, const std\+::vector$<$ size\+\_\+t $>$ \&indeces, const std\+::vector$<$ float $>$ \&values)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespacemarian_ac3c48e15e9e2d80e8028b1688190a9e7}{marian\+::\+M\+A\+X\+\_\+\+T\+H\+R\+E\+A\+DS} = 512
+\item 
+const int \hyperlink{namespacemarian_a596290b68dad437e90054f558f7d2d83}{marian\+::\+M\+A\+X\+\_\+\+B\+L\+O\+C\+KS} = 65535
+\end{DoxyCompactItemize}

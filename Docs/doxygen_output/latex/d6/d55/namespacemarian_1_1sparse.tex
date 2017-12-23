@@ -1,0 +1,85 @@
+\hypertarget{namespacemarian_1_1sparse}{}\section{marian\+:\+:sparse Namespace Reference}
+\label{namespacemarian_1_1sparse}\index{marian\+::sparse@{marian\+::sparse}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacemarian_1_1sparse_ad5213500007ccc462473804a1374c1ff}{multiply} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR} $>$, const \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR} $>$, const \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR} $>$, bool=false, bool=false)
+\item 
+void \hyperlink{namespacemarian_1_1sparse_ac9a85dbc1c93bd5cf582d9f298203d55}{Lfa\+Forward} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} out, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} logits, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} att, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR} $>$ sparse\+Lf)
+\item 
+void \hyperlink{namespacemarian_1_1sparse_ae51a1c2f9f89106dde6193dcf00a7b76}{Lfa\+Backward} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grad, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} adj, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{C\+SR} $>$ sparse\+Lf)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{marian\+::sparse@{marian\+::sparse}!Lfa\+Backward@{Lfa\+Backward}}
+\index{Lfa\+Backward@{Lfa\+Backward}!marian\+::sparse@{marian\+::sparse}}
+\subsubsection[{\texorpdfstring{Lfa\+Backward(\+Tensor grad, Tensor adj, Ptr$<$ C\+S\+R $>$ sparse\+Lf)}{LfaBackward(Tensor grad, Tensor adj, Ptr< CSR > sparseLf)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+Lfa\+Backward (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{grad, }
+\item[{{\bf Tensor}}]{adj, }
+\item[{{\bf Ptr}$<$ {\bf C\+SR} $>$}]{sparse\+Lf}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1sparse_ae51a1c2f9f89106dde6193dcf00a7b76}{}\label{namespacemarian_1_1sparse_ae51a1c2f9f89106dde6193dcf00a7b76}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d55/namespacemarian_1_1sparse_ae51a1c2f9f89106dde6193dcf00a7b76_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse@{marian\+::sparse}!Lfa\+Forward@{Lfa\+Forward}}
+\index{Lfa\+Forward@{Lfa\+Forward}!marian\+::sparse@{marian\+::sparse}}
+\subsubsection[{\texorpdfstring{Lfa\+Forward(\+Tensor out, Tensor logits, Tensor att, Ptr$<$ C\+S\+R $>$ sparse\+Lf)}{LfaForward(Tensor out, Tensor logits, Tensor att, Ptr< CSR > sparseLf)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+Lfa\+Forward (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{out, }
+\item[{{\bf Tensor}}]{logits, }
+\item[{{\bf Tensor}}]{att, }
+\item[{{\bf Ptr}$<$ {\bf C\+SR} $>$}]{sparse\+Lf}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1sparse_ac9a85dbc1c93bd5cf582d9f298203d55}{}\label{namespacemarian_1_1sparse_ac9a85dbc1c93bd5cf582d9f298203d55}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d55/namespacemarian_1_1sparse_ac9a85dbc1c93bd5cf582d9f298203d55_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse@{marian\+::sparse}!multiply@{multiply}}
+\index{multiply@{multiply}!marian\+::sparse@{marian\+::sparse}}
+\subsubsection[{\texorpdfstring{multiply(\+Ptr$<$ C\+S\+R $>$, const Ptr$<$ C\+S\+R $>$, const Ptr$<$ C\+S\+R $>$, bool=false, bool=false)}{multiply(Ptr< CSR >, const Ptr< CSR >, const Ptr< CSR >, bool=false, bool=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf C\+SR} $>$}]{, }
+\item[{const {\bf Ptr}$<$ {\bf C\+SR} $>$}]{, }
+\item[{const {\bf Ptr}$<$ {\bf C\+SR} $>$}]{, }
+\item[{bool}]{ = {\ttfamily false}, }
+\item[{bool}]{ = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemarian_1_1sparse_ad5213500007ccc462473804a1374c1ff}{}\label{namespacemarian_1_1sparse_ad5213500007ccc462473804a1374c1ff}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d55/namespacemarian_1_1sparse_ad5213500007ccc462473804a1374c1ff_icgraph}
+\end{center}
+\end{figure}
+
+

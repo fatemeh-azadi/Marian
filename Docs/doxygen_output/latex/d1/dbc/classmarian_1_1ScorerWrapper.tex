@@ -1,0 +1,229 @@
+\hypertarget{classmarian_1_1ScorerWrapper}{}\section{marian\+:\+:Scorer\+Wrapper$<$ Encoder\+Decoder $>$ Class Template Reference}
+\label{classmarian_1_1ScorerWrapper}\index{marian\+::\+Scorer\+Wrapper$<$ Encoder\+Decoder $>$@{marian\+::\+Scorer\+Wrapper$<$ Encoder\+Decoder $>$}}
+
+
+{\ttfamily \#include $<$scorers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Scorer\+Wrapper$<$ Encoder\+Decoder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{dc/d4f/classmarian_1_1ScorerWrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Scorer\+Wrapper$<$ Encoder\+Decoder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d77/classmarian_1_1ScorerWrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1ScorerWrapper_ab34eddb938c270883278d22326e4bece}{Scorer\+Wrapper} (const std\+::string \&name, float weight, const std\+::string \&fname, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1ScorerWrapper_a5acee4f1d49e12f72859523fa4f36355}{Scorer\+Wrapper} (const std\+::string \&name, float weight, const std\+::string \&fname, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, const std\+::vector$<$ size\+\_\+t $>$ \&batch\+Indices, Args...\+args)
+\item 
+virtual void \hyperlink{classmarian_1_1ScorerWrapper_a60c96b84ad4453d1776a03471cf32ae2}{init} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual void \hyperlink{classmarian_1_1ScorerWrapper_a74899e2039404d2cf249bd6c7a61bc13}{clear} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ \hyperlink{classmarian_1_1ScorerWrapper_a27b72b8c2c42265eb95b8e0600f11eb3}{start\+State} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ \hyperlink{classmarian_1_1ScorerWrapper_aa3009ac5556282e55bf1d28ac474c0c7}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ScorerState}{Scorer\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderDecoder}{Encoder\+Decoder} $>$ \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\+\_\+}
+\item 
+std\+::string \hyperlink{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}{fname\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Encoder\+Decoder$>$\\*
+class marian\+::\+Scorer\+Wrapper$<$ Encoder\+Decoder $>$}
+
+
+
+Definition at line 63 of file scorers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!Scorer\+Wrapper@{Scorer\+Wrapper}}
+\index{Scorer\+Wrapper@{Scorer\+Wrapper}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{Scorer\+Wrapper(const std\+::string \&name, float weight, const std\+::string \&fname, Ptr$<$ Config $>$ options, Args...\+args)}{ScorerWrapper(const std::string &name, float weight, const std::string &fname, Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ template$<$class... Args$>$ {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::{\bf Scorer\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{float}]{weight, }
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1ScorerWrapper_ab34eddb938c270883278d22326e4bece}{}\label{classmarian_1_1ScorerWrapper_ab34eddb938c270883278d22326e4bece}
+
+
+Definition at line 70 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+75       : \hyperlink{classmarian_1_1Scorer_a70f41d372a9989811cd83852f3283c32}{Scorer}(name, weight),
+76         \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}(New<EncoderDecoder>(options,
+77                                     std::vector<size\_t>(\{0, 1\}),
+78                                     \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \textcolor{keyword}{true},
+79                                     args...)),
+80         \hyperlink{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}{fname\_}(fname) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!Scorer\+Wrapper@{Scorer\+Wrapper}}
+\index{Scorer\+Wrapper@{Scorer\+Wrapper}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{Scorer\+Wrapper(const std\+::string \&name, float weight, const std\+::string \&fname, Ptr$<$ Config $>$ options, const std\+::vector$<$ size\+\_\+t $>$ \&batch\+Indices, Args...\+args)}{ScorerWrapper(const std::string &name, float weight, const std::string &fname, Ptr< Config > options, const std::vector< size_t > &batchIndices, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ template$<$class... Args$>$ {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::{\bf Scorer\+Wrapper} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{float}]{weight, }
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{batch\+Indices, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1ScorerWrapper_a5acee4f1d49e12f72859523fa4f36355}{}\label{classmarian_1_1ScorerWrapper_a5acee4f1d49e12f72859523fa4f36355}
+
+
+Definition at line 83 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+89       : \hyperlink{classmarian_1_1Scorer_a70f41d372a9989811cd83852f3283c32}{Scorer}(name, weight),
+90         \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}(New<EncoderDecoder>(
+91             options, batchIndices, \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \textcolor{keyword}{true}, args...)),
+92         \hyperlink{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}{fname\_}(fname) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{clear(\+Ptr$<$ Expression\+Graph $>$ graph)}{clear(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ virtual void {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerWrapper_a74899e2039404d2cf249bd6c7a61bc13}{}\label{classmarian_1_1ScorerWrapper_a74899e2039404d2cf249bd6c7a61bc13}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_a303fd84dab071186dee77891c8351e55}{marian\+::\+Scorer}.
+
+
+
+Definition at line 99 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+99                                                  \{
+100     graph->switchParams(\hyperlink{classmarian_1_1Scorer_a0ad62a34381151462c960b1e731563bf}{getName}());
+101     \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}->clear(graph);
+102   \}
+\end{DoxyCode}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!init@{init}}
+\index{init@{init}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{init(\+Ptr$<$ Expression\+Graph $>$ graph)}{init(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ virtual void {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerWrapper_a60c96b84ad4453d1776a03471cf32ae2}{}\label{classmarian_1_1ScorerWrapper_a60c96b84ad4453d1776a03471cf32ae2}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Scorer_a5146708323940573726fda431f3baa51}{marian\+::\+Scorer}.
+
+
+
+Definition at line 94 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+94                                                 \{
+95     graph->switchParams(\hyperlink{classmarian_1_1Scorer_a0ad62a34381151462c960b1e731563bf}{getName}());
+96     \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}->load(graph, \hyperlink{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}{fname\_});
+97   \}
+\end{DoxyCode}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!start\+State@{start\+State}}
+\index{start\+State@{start\+State}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{start\+State(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{startState(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ virtual {\bf Ptr}$<${\bf Scorer\+State}$>$ {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::start\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerWrapper_a27b72b8c2c42265eb95b8e0600f11eb3}{}\label{classmarian_1_1ScorerWrapper_a27b72b8c2c42265eb95b8e0600f11eb3}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_aaefbe7744d015a273344eea6729b0bed}{marian\+::\+Scorer}.
+
+
+
+Definition at line 104 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+105                                                                   \{
+106     graph->switchParams(\hyperlink{classmarian_1_1Scorer_a0ad62a34381151462c960b1e731563bf}{getName}());
+107     \textcolor{keywordflow}{return} New<ScorerWrapperState>(\hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}->startState(graph, batch));
+108   \}
+\end{DoxyCode}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!step@{step}}
+\index{step@{step}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Scorer\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)}{step(Ptr< ExpressionGraph > graph, Ptr< ScorerState > state, const std::vector< size_t > &hypIndices, const std::vector< size_t > &embIndices)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ virtual {\bf Ptr}$<${\bf Scorer\+State}$>$ {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Scorer\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{hyp\+Indices, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{emb\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1ScorerWrapper_aa3009ac5556282e55bf1d28ac474c0c7}{}\label{classmarian_1_1ScorerWrapper_aa3009ac5556282e55bf1d28ac474c0c7}
+
+
+Implements \hyperlink{classmarian_1_1Scorer_a377f003fbab702227d0aa895af54a94a}{marian\+::\+Scorer}.
+
+
+
+Definition at line 110 of file scorers.\+h.
+
+
+\begin{DoxyCode}
+113                                                                      \{
+114     graph->switchParams(\hyperlink{classmarian_1_1Scorer_a0ad62a34381151462c960b1e731563bf}{getName}());
+115     \textcolor{keyword}{auto} wrappedState
+116         = std::dynamic\_pointer\_cast<ScorerWrapperState>(state)->getState();
+117     \textcolor{keywordflow}{return} New<ScorerWrapperState>(
+118         \hyperlink{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{encdec\_}->step(graph, wrappedState, hypIndices, embIndices));
+119   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!encdec\+\_\+@{encdec\+\_\+}}
+\index{encdec\+\_\+@{encdec\+\_\+}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{encdec\+\_\+}{encdec_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ {\bf Ptr}$<${\bf Encoder\+Decoder}$>$ {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::encdec\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}{}\label{classmarian_1_1ScorerWrapper_a5004443a8f1b1c1c3fc9f061035fac7c}
+
+
+Definition at line 65 of file scorers.\+h.
+
+\index{marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}!fname\+\_\+@{fname\+\_\+}}
+\index{fname\+\_\+@{fname\+\_\+}!marian\+::\+Scorer\+Wrapper@{marian\+::\+Scorer\+Wrapper}}
+\subsubsection[{\texorpdfstring{fname\+\_\+}{fname_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder\+Decoder $>$ std\+::string {\bf marian\+::\+Scorer\+Wrapper}$<$ {\bf Encoder\+Decoder} $>$\+::fname\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}{}\label{classmarian_1_1ScorerWrapper_a6b6ff6dc3052ca52e9d8e66dadb46065}
+
+
+Definition at line 66 of file scorers.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scorers_8h}{scorers.\+h}\end{DoxyCompactItemize}

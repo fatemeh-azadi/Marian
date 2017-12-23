@@ -1,0 +1,113 @@
+\hypertarget{classmarian_1_1Rescorer}{}\section{marian\+:\+:Rescorer$<$ Builder $>$ Class Template Reference}
+\label{classmarian_1_1Rescorer}\index{marian\+::\+Rescorer$<$ Builder $>$@{marian\+::\+Rescorer$<$ Builder $>$}}
+
+
+{\ttfamily \#include $<$rescorer.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Rescorer$<$ Builder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{db/d99/classmarian_1_1Rescorer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1Rescorer_a67bca222ecff0e2fd09a0ee0664d7df8}{Rescorer} (Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1Rescorer_aadfff7b573874b6936554c6e45931ac6}{load} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&model\+File)
+\item 
+\hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1Rescorer_a82fac618c915e58ad2302e3cfe329d08}{build\+To\+Score} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ Builder $>$ \hyperlink{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}{builder\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Builder$>$\\*
+class marian\+::\+Rescorer$<$ Builder $>$}
+
+
+
+Definition at line 19 of file rescorer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Rescorer@{marian\+::\+Rescorer}!Rescorer@{Rescorer}}
+\index{Rescorer@{Rescorer}!marian\+::\+Rescorer@{marian\+::\+Rescorer}}
+\subsubsection[{\texorpdfstring{Rescorer(\+Args...\+args)}{Rescorer(Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ template$<$typename... Args$>$ {\bf marian\+::\+Rescorer}$<$ Builder $>$\+::{\bf Rescorer} (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Rescorer_a67bca222ecff0e2fd09a0ee0664d7df8}{}\label{classmarian_1_1Rescorer_a67bca222ecff0e2fd09a0ee0664d7df8}
+
+
+Definition at line 25 of file rescorer.\+h.
+
+
+\begin{DoxyCode}
+25                          :
+26     \hyperlink{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}{builder\_}(\textcolor{keyword}{new} Builder(args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Rescorer@{marian\+::\+Rescorer}!build\+To\+Score@{build\+To\+Score}}
+\index{build\+To\+Score@{build\+To\+Score}!marian\+::\+Rescorer@{marian\+::\+Rescorer}}
+\subsubsection[{\texorpdfstring{build\+To\+Score(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{buildToScore(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Expr} {\bf marian\+::\+Rescorer}$<$ Builder $>$\+::build\+To\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Rescorer_a82fac618c915e58ad2302e3cfe329d08}{}\label{classmarian_1_1Rescorer_a82fac618c915e58ad2302e3cfe329d08}
+
+
+Definition at line 32 of file rescorer.\+h.
+
+
+\begin{DoxyCode}
+32                                                                             \{
+33     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}{builder\_}->buildToScore(graph, batch);
+34   \}
+\end{DoxyCode}
+\index{marian\+::\+Rescorer@{marian\+::\+Rescorer}!load@{load}}
+\index{load@{load}!marian\+::\+Rescorer@{marian\+::\+Rescorer}}
+\subsubsection[{\texorpdfstring{load(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&model\+File)}{load(Ptr< ExpressionGraph > graph, const std::string &modelFile)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ void {\bf marian\+::\+Rescorer}$<$ Builder $>$\+::load (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{model\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Rescorer_aadfff7b573874b6936554c6e45931ac6}{}\label{classmarian_1_1Rescorer_aadfff7b573874b6936554c6e45931ac6}
+
+
+Definition at line 28 of file rescorer.\+h.
+
+
+\begin{DoxyCode}
+28                                                                     \{
+29     \hyperlink{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}{builder\_}->load(graph, modelFile);
+30   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Rescorer@{marian\+::\+Rescorer}!builder\+\_\+@{builder\+\_\+}}
+\index{builder\+\_\+@{builder\+\_\+}!marian\+::\+Rescorer@{marian\+::\+Rescorer}}
+\subsubsection[{\texorpdfstring{builder\+\_\+}{builder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Builder $>$ {\bf Ptr}$<$Builder$>$ {\bf marian\+::\+Rescorer}$<$ Builder $>$\+::builder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}{}\label{classmarian_1_1Rescorer_ade8d099ced1d21c036c6aa38293ba5e9}
+
+
+Definition at line 21 of file rescorer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rescorer_8h}{rescorer.\+h}\end{DoxyCompactItemize}

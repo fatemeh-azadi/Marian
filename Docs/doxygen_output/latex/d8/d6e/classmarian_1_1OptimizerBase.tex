@@ -1,0 +1,255 @@
+\hypertarget{classmarian_1_1OptimizerBase}{}\section{marian\+:\+:Optimizer\+Base Class Reference}
+\label{classmarian_1_1OptimizerBase}\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+
+
+{\ttfamily \#include $<$optimizers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Optimizer\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d8a/classmarian_1_1OptimizerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Optimizer\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{dd/ddc/classmarian_1_1OptimizerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}{Optimizer\+Base} (float eta, Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1OptimizerBase_a7bfd912c8dbb63dae60cee9fe3718e0a}{update} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+void \hyperlink{classmarian_1_1OptimizerBase_acddf953946c7808bc45b7e84cda7299c}{update} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grads)
+\item 
+void \hyperlink{classmarian_1_1OptimizerBase_aab974f017773f25b979ceb42d7d98752}{act\+After\+Epoch} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\item 
+void \hyperlink{classmarian_1_1OptimizerBase_a208c189f94d7f1cee8005d4472539116}{act\+After\+Batches} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\item 
+void \hyperlink{classmarian_1_1OptimizerBase_a6e14a01324f548d37a530a6be2237ce9}{act\+After\+Stalled} (\hyperlink{classmarian_1_1TrainingState}{Training\+State} \&state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{update\+Impl} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grads)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ClipperBase}{Clipper\+Base} $>$ \hyperlink{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}{clipper\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{eta\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file optimizers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!Optimizer\+Base@{Optimizer\+Base}}
+\index{Optimizer\+Base@{Optimizer\+Base}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{Optimizer\+Base(float eta, Args...\+args)}{OptimizerBase(float eta, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Optimizer\+Base\+::\+Optimizer\+Base (
+\begin{DoxyParamCaption}
+\item[{float}]{eta, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}{}\label{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}
+
+
+Definition at line 17 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+18       : \hyperlink{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}{clipper\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a1ce7910671af4bcc0573570988101938}{keywords::clip}, \textcolor{keyword}{nullptr}, args...)), 
+      \hyperlink{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{eta\_}(\hyperlink{namespacemarian_1_1keywords_af8a81aa00fe33fd2eea3287b1bff35be}{eta}) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!act\+After\+Batches@{act\+After\+Batches}}
+\index{act\+After\+Batches@{act\+After\+Batches}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{act\+After\+Batches(\+Training\+State \&state)}{actAfterBatches(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Optimizer\+Base\+::act\+After\+Batches (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1OptimizerBase_a208c189f94d7f1cee8005d4472539116}{}\label{classmarian_1_1OptimizerBase_a208c189f94d7f1cee8005d4472539116}
+
+
+Reimplemented from \hyperlink{classmarian_1_1TrainingObserver_a941ffcde6aaa5f3b48b48826897829a4}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 35 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+35                                              \{
+36     \hyperlink{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{eta\_} = state.eta;
+37   \}
+\end{DoxyCode}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!act\+After\+Epoch@{act\+After\+Epoch}}
+\index{act\+After\+Epoch@{act\+After\+Epoch}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{act\+After\+Epoch(\+Training\+State \&state)}{actAfterEpoch(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Optimizer\+Base\+::act\+After\+Epoch (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1OptimizerBase_aab974f017773f25b979ceb42d7d98752}{}\label{classmarian_1_1OptimizerBase_aab974f017773f25b979ceb42d7d98752}
+
+
+Implements \hyperlink{classmarian_1_1TrainingObserver_a518893407fa20fc4b7ab892154de238d}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 32 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+32                                            \{
+33     \hyperlink{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{eta\_} = state.eta;
+34   \}
+\end{DoxyCode}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!act\+After\+Stalled@{act\+After\+Stalled}}
+\index{act\+After\+Stalled@{act\+After\+Stalled}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{act\+After\+Stalled(\+Training\+State \&state)}{actAfterStalled(TrainingState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Optimizer\+Base\+::act\+After\+Stalled (
+\begin{DoxyParamCaption}
+\item[{{\bf Training\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1OptimizerBase_a6e14a01324f548d37a530a6be2237ce9}{}\label{classmarian_1_1OptimizerBase_a6e14a01324f548d37a530a6be2237ce9}
+
+
+Reimplemented from \hyperlink{classmarian_1_1TrainingObserver_ac9ae3ce0bb0f3f9d48d6198087161bfc}{marian\+::\+Training\+Observer}.
+
+
+
+Definition at line 38 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+38                                              \{
+39     \hyperlink{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{eta\_} = state.eta;
+40   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d8/d6e/classmarian_1_1OptimizerBase_a6e14a01324f548d37a530a6be2237ce9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!update@{update}}
+\index{update@{update}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{update(\+Ptr$<$ Expression\+Graph $>$ graph)}{update(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Optimizer\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1OptimizerBase_a7bfd912c8dbb63dae60cee9fe3718e0a}{}\label{classmarian_1_1OptimizerBase_a7bfd912c8dbb63dae60cee9fe3718e0a}
+
+
+Definition at line 20 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+20                                           \{
+21     \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} p = graph->params()->vals();
+22     \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} g = graph->params()->grads();
+23     \hyperlink{classmarian_1_1OptimizerBase_a7bfd912c8dbb63dae60cee9fe3718e0a}{update}(p, g);
+24   \}
+\end{DoxyCode}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!update@{update}}
+\index{update@{update}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{update(\+Tensor params, Tensor grads)}{update(Tensor params, Tensor grads)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Optimizer\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params, }
+\item[{{\bf Tensor}}]{grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1OptimizerBase_acddf953946c7808bc45b7e84cda7299c}{}\label{classmarian_1_1OptimizerBase_acddf953946c7808bc45b7e84cda7299c}
+
+
+Definition at line 26 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+26                                            \{
+27     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}{clipper\_})
+28       \hyperlink{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}{clipper\_}->clip(grads);
+29     \hyperlink{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{updateImpl}(params, grads);
+30   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d8/d6e/classmarian_1_1OptimizerBase_acddf953946c7808bc45b7e84cda7299c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{update\+Impl(\+Tensor params, Tensor grads)=0}{updateImpl(Tensor params, Tensor grads)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marian\+::\+Optimizer\+Base\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params, }
+\item[{{\bf Tensor}}]{grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{}\label{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}
+
+
+Implemented in \hyperlink{classmarian_1_1Adam_a8134d893e68d1be18ea2cdcc98994f56}{marian\+::\+Adam}, \hyperlink{classmarian_1_1Adagrad_abba8d5d6bb96ff15f4f956f185c7887a}{marian\+::\+Adagrad}, and \hyperlink{classmarian_1_1Sgd_a8a74cc7115e1aafcb67d013b37c8f1ec}{marian\+::\+Sgd}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d6e/classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!clipper\+\_\+@{clipper\+\_\+}}
+\index{clipper\+\_\+@{clipper\+\_\+}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{clipper\+\_\+}{clipper_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Clipper\+Base}$>$ marian\+::\+Optimizer\+Base\+::clipper\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}{}\label{classmarian_1_1OptimizerBase_ac2a86cf5b8691476b891c9a9df99218d}
+
+
+Definition at line 45 of file optimizers.\+h.
+
+\index{marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}!eta\+\_\+@{eta\+\_\+}}
+\index{eta\+\_\+@{eta\+\_\+}!marian\+::\+Optimizer\+Base@{marian\+::\+Optimizer\+Base}}
+\subsubsection[{\texorpdfstring{eta\+\_\+}{eta_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Optimizer\+Base\+::eta\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}{}\label{classmarian_1_1OptimizerBase_a3ef582b12fb6816fb26d0eb8f697e204}
+
+
+Definition at line 46 of file optimizers.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{optimizers_8h}{optimizers.\+h}\end{DoxyCompactItemize}

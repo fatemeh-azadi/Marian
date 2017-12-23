@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper">
+<title>amunmt::GPU::mblas::MatrixWrapper class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/df1/matrix__wrapper_8h">&lt;matrix_wrapper.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::mblas::MatrixWrapper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d41/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::mblas::MatrixWrapper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d86/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint dim_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint stride_[SHAPE_SIZE]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint size_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T * data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const T * dataConst_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a963aad752bc0dfb4264cdfe30a065fc7">MatrixWrapper</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a4187cbbb8d69e2b7ef67a1d4ee9b614b">MatrixWrapper</link> (
+const <link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link>&lt; T &gt; &amp; matrix, bool colMajor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a306ec23b431f032ab32612b3b04e2252">MatrixWrapper</link> (
+<link linkend="da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix">TMatrix</link>&lt; T &gt; &amp; matrix, bool colMajor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8424c79a1e32a6ecda10e949a0684933">MatrixWrapper</link> (
+uint a, uint b, uint c, uint d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aadf70ef14c89755a661690225179e482">MatrixWrapper</link> (
+const <link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">Array</link>&lt; T &gt; &amp; vec)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a6d96130479c24d1c4cac1ba852041f18">MatrixWrapper</link> (
+<link linkend="d4/dd1/classamunmt_1_1GPU_1_1mblas_1_1Array">Array</link>&lt; T &gt; &amp; vec)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a799324b54b661c6afce33713f95ec934">MatrixWrapper</link> (
+T * ptr, uint a, uint b, uint c, uint d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ uint <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8846d6edb1c807c90f9aa23f4193a665">dim</link> (
+uint i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ uint <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aed1483dbf0148749d04eea433582e802">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ uint <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8e0bd961034d3596ec4a93dfaf58c5a7">stride</link> (
+uint i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ void <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a218d0f178d9f187978212e49641c0940">updateStrides</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ void <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1ac84e1638525648f6eba2f995fb34cb">updateStridesRowMajor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ T * <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8bac878980ee8e229281d2eb267c0c1b">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ const T * <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a41904dfb844d082ed03466c64412c31c">data</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ const T &amp; <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1103bd1708bdb389f581f4c4f27e6dcd">operator[]</link> (
+uint i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ T &amp; <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1ad54c816f0eefa37f9155b580e8c2e0b1">operator[]</link> (
+uint i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ const T &amp; <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aca5da79a1954635935a880cfdf84b35c">operator()</link> (
+uint a, uint b, uint c, uint d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ T &amp; <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1ad20ebf908142f588bcd42edaad002fa9">operator()</link> (
+uint a, uint b, uint c, uint d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ void <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1e70b609eca106cb5a161d8cc186cf07">id2Indices</link> (
+uint id, uint * out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>__device__ __host__ uint <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a09c3749fd756b2b72de447ef5ee66cfa">indices2Id</link> (
+uint a, uint b, uint c, uint d)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1afa181ca54a0a16e376f27cc2ba2fac9d">Debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a963aad752bc0dfb4264cdfe30a065fc7">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a4187cbbb8d69e2b7ef67a1d4ee9b614b">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (const TMatrix&lt; T &gt; &amp;matrix, bool colMajor=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a306ec23b431f032ab32612b3b04e2252">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (TMatrix&lt; T &gt; &amp;matrix, bool colMajor=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8424c79a1e32a6ecda10e949a0684933">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (uint a, uint b, uint c, uint d)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aadf70ef14c89755a661690225179e482">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (const Array&lt; T &gt; &amp;vec)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a6d96130479c24d1c4cac1ba852041f18">
+                <title>amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (Array&lt; T &gt; &amp;vec)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a799324b54b661c6afce33713f95ec934">
+                <title>__device__ amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::MatrixWrapper (T *ptr, uint a, uint b, uint c, uint d)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8846d6edb1c807c90f9aa23f4193a665">
+                <title>__device__ __host__ uint amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::dim (uint i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aed1483dbf0148749d04eea433582e802">
+                <title>__device__ __host__ uint amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::size () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8e0bd961034d3596ec4a93dfaf58c5a7">
+                <title>__device__ __host__ uint amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::stride (uint i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a218d0f178d9f187978212e49641c0940">
+                <title>__device__ __host__ void amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::updateStrides ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1ac84e1638525648f6eba2f995fb34cb">
+                <title>__device__ __host__ void amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::updateStridesRowMajor ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a8bac878980ee8e229281d2eb267c0c1b">
+                <title>__device__ T* amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::data ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a41904dfb844d082ed03466c64412c31c">
+                <title>__device__ const T* amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::data () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1103bd1708bdb389f581f4c4f27e6dcd">
+                <title>__device__ const T&amp; amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::operator[] (uint i) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1ad54c816f0eefa37f9155b580e8c2e0b1">
+                <title>__device__ T&amp; amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::operator[] (uint i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1aca5da79a1954635935a880cfdf84b35c">
+                <title>__device__ const T&amp; amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::operator() (uint a, uint b, uint c, uint d) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1ad20ebf908142f588bcd42edaad002fa9">
+                <title>__device__ T&amp; amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::operator() (uint a, uint b, uint c, uint d)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a1e70b609eca106cb5a161d8cc186cf07">
+                <title>__device__ __host__ void amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::id2Indices (uint id, uint *out) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1a09c3749fd756b2b72de447ef5ee66cfa">
+                <title>__device__ __host__ uint amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::indices2Id (uint a, uint b, uint c, uint d) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d34/classamunmt_1_1GPU_1_1mblas_1_1MatrixWrapper_1afa181ca54a0a16e376f27cc2ba2fac9d">
+                <title>std::string amunmt::GPU::mblas::MatrixWrapper&lt; T &gt;::Debug () const </title> <emphasis></emphasis>
+                
+            </section>
+</section>

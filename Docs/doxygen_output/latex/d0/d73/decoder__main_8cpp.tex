@@ -1,0 +1,115 @@
+\hypertarget{decoder__main_8cpp}{}\section{decoder\+\_\+main.\+cpp File Reference}
+\label{decoder__main_8cpp}\index{decoder\+\_\+main.\+cpp@{decoder\+\_\+main.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$boost/timer/timer.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}common/god.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/logging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/search.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/threadpool.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/printer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentence.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/sentences.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/exception.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/translation\+\_\+task.\+h\char`\"{}}\\*
+Include dependency graph for decoder\+\_\+main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d52/decoder__main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{decoder__main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{decoder\+\_\+main.\+cpp@{decoder\+\_\+main.\+cpp}!main@{main}}
+\index{main@{main}!decoder\+\_\+main.\+cpp@{decoder\+\_\+main.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{decoder__main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\label{decoder__main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Definition at line 20 of file decoder\+\_\+main.\+cpp.
+
+
+\begin{DoxyCode}
+21 \{
+22   \hyperlink{classamunmt_1_1God}{God} god;
+23   god.\hyperlink{classamunmt_1_1God_add49c80e570f5be5b2802565458f1c36}{Init}(argc, argv);
+24 
+25   std::setvbuf(stdout, NULL, \_IONBF, 0);
+26   std::setvbuf(stdin, NULL, \_IONBF, 0);
+27   boost::timer::cpu\_timer timer;
+28 
+29 
+30   \textcolor{keywordtype}{size\_t} miniSize = (god.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"cpu-threads"}) == 0) ? god.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"mini-batch"}) : 1;
+31   \textcolor{keywordtype}{size\_t} maxiSize = (god.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"cpu-threads"}) == 0) ? god.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"maxi-batch"}) : 1;
+32   \textcolor{keywordtype}{int} miniWords = god.\hyperlink{classamunmt_1_1God_ad0d3efbdf165ba0bc4de9052a826f7b6}{Get}<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"mini-batch-words"});
+33 
+34   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Reading input"});
+35 
+36   \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} maxiBatch(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences}{Sentences}());
+37 
+38   std::string line;
+39   std::size\_t lineNum = 0;
+40 
+41   \textcolor{keywordflow}{while} (std::getline(god.\hyperlink{classamunmt_1_1God_aa118cbeda9e332f518135b027aff3ac2}{GetInputStream}(), line)) \{
+42     maxiBatch->push\_back(\hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{SentencePtr}(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentence}{Sentence}(god, lineNum++, line)));
+43 
+44     \textcolor{keywordflow}{if} (maxiBatch->size() >= maxiSize) \{
+45 
+46       maxiBatch->SortByLength();
+47       \textcolor{keywordflow}{while} (maxiBatch->size()) \{
+48         \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} miniBatch = maxiBatch->NextMiniBatch(miniSize, miniWords);
+49         \textcolor{comment}{//cerr << "miniBatch=" << miniBatch->size() << " maxiBatch=" << maxiBatch->size() << endl;}
+50 
+51         god.\hyperlink{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{GetThreadPool}().\hyperlink{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{enqueue}(
+52             [&god,miniBatch]\{ \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85}{TranslationTaskAndOutput}(god, miniBatch); \}
+53             );
+54       \}
+55 
+56       maxiBatch.reset(\textcolor{keyword}{new} \hyperlink{classamunmt_1_1Sentences}{Sentences}());
+57     \}
+58 
+59   \}
+60 
+61   \textcolor{comment}{// last batch}
+62   \textcolor{keywordflow}{if} (maxiBatch->size()) \{
+63     maxiBatch->SortByLength();
+64     \textcolor{keywordflow}{while} (maxiBatch->size()) \{
+65       \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{SentencesPtr} miniBatch = maxiBatch->NextMiniBatch(miniSize, miniWords);
+66       god.\hyperlink{classamunmt_1_1God_adad806b2183b4dbf8c27c6078effb9b5}{GetThreadPool}().\hyperlink{classamunmt_1_1ThreadPool_a1bb89599cb11af51958c771c437aff22}{enqueue}(
+67           [&god,miniBatch]\{ \textcolor{keywordflow}{return} \hyperlink{namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85}{TranslationTaskAndOutput}(god, miniBatch); \}
+68           );
+69     \}
+70   \}
+71 
+72   god.\hyperlink{classamunmt_1_1God_a5a2cd8055526b5da47e255a7f75ea6cd}{Cleanup}();
+73   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Total time: \{\}"}, timer.format());
+74 
+75   \textcolor{keywordflow}{return} 0;
+76 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d73/decoder__main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+

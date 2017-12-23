@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dd2/structmarian_1_1UnaryNodeOp">
+<title>marian::UnaryNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::UnaryNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/da6/structmarian_1_1UnaryNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::UnaryNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d71/structmarian_1_1UnaryNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/dd2/structmarian_1_1UnaryNodeOp_1af4481274a5a2cf72328c7cdffeb5f571">UnaryNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d9/dd2/structmarian_1_1UnaryNodeOp_1a826c7c1d74e47f70040cd1884b8ab984">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d9/dd2/structmarian_1_1UnaryNodeOp_1af4481274a5a2cf72328c7cdffeb5f571">
+                <title>marian::UnaryNodeOp::UnaryNodeOp (Expr a, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/dd2/structmarian_1_1UnaryNodeOp_1a826c7c1d74e47f70040cd1884b8ab984">
+                <title>const std::string marian::UnaryNodeOp::color ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

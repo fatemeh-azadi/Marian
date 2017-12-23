@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d4f/expression__graph_8h">
+    <title>expression_graph.h File Reference</title>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;unordered_set&gt;</programlisting>
+    <programlisting>#include &quot;3rd_party/cnpy/cnpy.h&quot;</programlisting>
+    <programlisting>#include &quot;3rd_party/threadpool.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;data/batch_generator.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/backend.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/chainable.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/node_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/parameters.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/param_initializers.h&quot;</programlisting>
+    <programlisting>#include &quot;tensors/tensor_allocator.h&quot;</programlisting>
+<para>Include dependency diagram for expression_graph.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d0b/expression__graph_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for expression_graph.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/da4/expression__graph_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/db9/classmarian_1_1ExpressionGraph">marian::ExpressionGraph</link></para>
+<para><emphasis>Represents a computation graph of expressions, over which algorithmic
+differentiation may be performed.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file expression_graph.h</para>
+    </simplesect>
+</section>

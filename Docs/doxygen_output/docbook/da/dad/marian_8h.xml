@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dad/marian_8h">
+    <title>marian.h File Reference</title>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;common/options.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_graph.h&quot;</programlisting>
+    <programlisting>#include &quot;graph/expression_operators.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/generic.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/param_initializers.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/constructors.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/rnn.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/constructors.h&quot;</programlisting>
+    <programlisting>#include &quot;rnn/attention.h&quot;</programlisting>
+    <programlisting>#include &quot;optimizers/optimizers.h&quot;</programlisting>
+    <programlisting>#include &quot;data/batch_generator.h&quot;</programlisting>
+    <programlisting>#include &quot;data/corpus.h&quot;</programlisting>
+    <programlisting>#include &quot;common/config.h&quot;</programlisting>
+    <programlisting>#include &quot;common/logging.h&quot;</programlisting>
+    <programlisting>#include &quot;layers/guided_alignment.h&quot;</programlisting>
+    <programlisting>#include &quot;models/states.h&quot;</programlisting>
+    <programlisting>#include &quot;models/encdec.h&quot;</programlisting>
+<para>Include dependency diagram for marian.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d3a/marian_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/de4/marian_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file marian.h</para>
+    </simplesect>
+</section>

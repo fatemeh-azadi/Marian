@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/de1/classamunmt_1_1GPU_1_1SlowLSTM">
+<title>amunmt::GPU::SlowLSTM class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d55/lstm_8h">&lt;lstm.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::SlowLSTM</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d46/classamunmt_1_1GPU_1_1SlowLSTM__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::SlowLSTM</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d37/classamunmt_1_1GPU_1_1SlowLSTM__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link></type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix FIO_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix F_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix I_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix O_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix H_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp1_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>mblas::Matrix Temp2_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a63203f4c1e9fbc4d85945aca374db8c9">SlowLSTM</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a445547f2b64a36f61c0a62dc682364f3">GetNextState</link> (
+<link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; NextState, const <link linkend="dc/d0c/structamunmt_1_1GPU_1_1CellState">CellState</link> &amp; State, const <link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d9d/structamunmt_1_1GPU_1_1CellLength">CellLength</link> <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1aec4f004b4e6525758546bf164a5de90b">GetStateLength</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a91b93e0bbd407c7042e4322e5a44cd9b">SlowLSTM</link> (
+const <link linkend="df/de1/classamunmt_1_1GPU_1_1SlowLSTM">SlowLSTM</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a63203f4c1e9fbc4d85945aca374db8c9">
+                <title>amunmt::GPU::SlowLSTM&lt; Weights &gt;::SlowLSTM (const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a445547f2b64a36f61c0a62dc682364f3">
+                <title>virtual void amunmt::GPU::SlowLSTM&lt; Weights &gt;::GetNextState (CellState &amp;NextState, const CellState &amp;State, const mblas::Matrix &amp;Context) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1aec4f004b4e6525758546bf164a5de90b">
+                <title>virtual CellLength amunmt::GPU::SlowLSTM&lt; Weights &gt;::GetStateLength () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/de1/classamunmt_1_1GPU_1_1SlowLSTM_1a91b93e0bbd407c7042e4322e5a44cd9b">
+                <title>amunmt::GPU::SlowLSTM&lt; Weights &gt;::SlowLSTM (const SlowLSTM &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

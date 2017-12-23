@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d2c/classmarian_1_1Convolution">
+<title>marian::Convolution class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/convolution_8h">&lt;convolution.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Convolution</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d52/classmarian_1_1Convolution__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Convolution</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dc7/classmarian_1_1Convolution__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Expr &gt; params_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string name_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int depth_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int kernelHeight_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int kernelWidth_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int kernelNum_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d2c/classmarian_1_1Convolution_1a7ec673f9c5d0af080721411152f5f944">Convolution</link> (
+const std::string &amp; name, int kernelHeight, int kernelWidth, int kernelNum, int depth)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d8/d2c/classmarian_1_1Convolution_1ac5755a44695ec454ca80d8f309a20e80">operator()</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d8/d2c/classmarian_1_1Convolution_1a81e17c2e8691fb6bcb922343e797a23a">operator()</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> x, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> mask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d2c/classmarian_1_1Convolution_1a7ec673f9c5d0af080721411152f5f944">
+                <title>marian::Convolution::Convolution (const std::string &amp;name, int kernelHeight=3, int kernelWidth=3, int kernelNum=1, int depth=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d2c/classmarian_1_1Convolution_1ac5755a44695ec454ca80d8f309a20e80">
+                <title>Expr marian::Convolution::operator() (Expr x)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d2c/classmarian_1_1Convolution_1a81e17c2e8691fb6bcb922343e797a23a">
+                <title>Expr marian::Convolution::operator() (Expr x, Expr mask)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

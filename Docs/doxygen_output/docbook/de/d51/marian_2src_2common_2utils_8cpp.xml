@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d51/marian_2src_2common_2utils_8cpp">
+    <title>marian/src/common/utils.cpp File Reference</title>
+    <programlisting>#include &quot;utils.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+<para>Include dependency diagram for marian/src/common/utils.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d6e/marian_2src_2common_2utils_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for marian/src/common/utils.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d9c/marian_2src_2common_2utils_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d51/marian_2src_2common_2utils_8cpp_1af066c0093a155a73560a38f1b35cf396">Trim</link> (
+std::string &amp; s)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d51/marian_2src_2common_2utils_8cpp_1a13825c4df43487f2af82dad532033d82">Split</link> (
+const std::string &amp; line, std::vector&lt; std::string &gt; &amp; pieces, const std::string del)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="de/d51/marian_2src_2common_2utils_8cpp_1abb2242b5129a2aa5eddc9953c92ee9bc">Join</link> (
+const std::vector&lt; std::string &gt; &amp; words, const std::string del)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file utils.cpp</para>
+    </simplesect>
+</section>

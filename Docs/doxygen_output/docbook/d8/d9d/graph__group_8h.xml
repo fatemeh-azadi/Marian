@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d9d/graph__group_8h">
+    <title>graph_group.h File Reference</title>
+    <programlisting>#include &lt;future&gt;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &lt;boost/filesystem.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/thread/locks.hpp&gt;</programlisting>
+    <programlisting>#include &lt;boost/thread/shared_mutex.hpp&gt;</programlisting>
+    <programlisting>#include &quot;3rd_party/threadpool.h&quot;</programlisting>
+    <programlisting>#include &quot;common/definitions.h&quot;</programlisting>
+    <programlisting>#include &quot;data/batch_generator.h&quot;</programlisting>
+    <programlisting>#include &quot;optimizers/optimizers.h&quot;</programlisting>
+    <programlisting>#include &quot;training/dropper.h&quot;</programlisting>
+    <programlisting>#include &quot;training/scheduler.h&quot;</programlisting>
+    <programlisting>#include &quot;training/sparse_tensor.h&quot;</programlisting>
+    <programlisting>#include &quot;training/training.h&quot;</programlisting>
+    <programlisting>#include &quot;training/validator.h&quot;</programlisting>
+<para>Include dependency diagram for graph_group.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d7c/graph__group_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for graph_group.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d21/graph__group_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dbe/classmarian_1_1GraphGroup">marian::GraphGroup</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/da9/classmarian_1_1SingletonGraph">marian::SingletonGraph</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d8a/classmarian_1_1AsyncGraphGroup">marian::AsyncGraphGroup</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d22/namespacemarian">marian</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file graph_group.h</para>
+    </simplesect>
+</section>

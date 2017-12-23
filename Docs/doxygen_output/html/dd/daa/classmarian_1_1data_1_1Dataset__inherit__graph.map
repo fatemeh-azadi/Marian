@@ -1,0 +1,4 @@
+<map id="marian::data::Dataset" name="marian::data::Dataset">
+<area shape="rect" id="node3" href="$d7/d07/classmarian_1_1data_1_1MNIST.html" title="{marian::data::MNIST\n|&#45; IMAGE_MAGIC_NUMBER\l&#45; LABEL_MAGIC_NUMBER\l|+ MNIST()\l+ loadData()\l&#45; reverseInt()\l&#45; ReadImages()\l&#45; ReadLabels()\l}" alt="" coords="5,461,196,612"/>
+<area shape="rect" id="node2" href="$db/deb/classmarian_1_1data_1_1DatasetBase.html" title="{marian::data::DatasetBase\l\&lt; Example, ExampleIterator,\l DataBatch \&gt;\n|# paths_\l|+ DatasetBase()\l+ DatasetBase()\l+ begin()\l+ end()\l+ shuffle()\l+ toBatch()\l+ reset()\l+ prepare()\l}" alt="" coords="6,5,195,215"/>
+</map>

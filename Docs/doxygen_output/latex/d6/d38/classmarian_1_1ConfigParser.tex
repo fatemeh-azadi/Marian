@@ -1,0 +1,952 @@
+\hypertarget{classmarian_1_1ConfigParser}{}\section{marian\+:\+:Config\+Parser Class Reference}
+\label{classmarian_1_1ConfigParser}\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+
+
+{\ttfamily \#include $<$config\+\_\+parser.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Config\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d2/d9f/classmarian_1_1ConfigParser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1ConfigParser_a49dfb61d0168ee1d126946f777c355ae}{Config\+Parser} (int argc, char $\ast$$\ast$argv, \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9}{Config\+Mode} mode, bool validate=false)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_a538eb5f3c97b6a25a2fc0c7a8f015425}{parse\+Options} (int argc, char $\ast$$\ast$argv, bool validate)
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1ConfigParser_adccbbc01f03e141aa80dd3baf94eae58}{get\+Config} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{has} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1ConfigParser_a26aabf7e2d79ed5ec4fa1a1c8d46c719}{get} (const std\+::string \&key) const 
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_ae77d0dbd400ca620dbf5b053278f4141}{add\+Options\+Common} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_aa2556e888231001b9f4d02cd742939ba}{add\+Options\+Model} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_aed7318279a0412b11ff0a9e23363c12e}{add\+Options\+Training} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_aedbe49f4f858e12c403268b365b46865}{add\+Options\+Rescore} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d}{add\+Options\+Valid} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_a07165d2c1c885c858d8127eb09f00e71}{add\+Options\+Translate} (boost\+::program\+\_\+options\+::options\+\_\+description \&)
+\item 
+void \hyperlink{classmarian_1_1ConfigParser_abbe3a863f0c0599f1aab53e446291b02}{validate\+Options} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9}{Config\+Mode} \hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\+\_\+}
+\item 
+boost\+::program\+\_\+options\+::options\+\_\+description \hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\+\_\+options\+\_\+}
+\item 
+Y\+A\+M\+L\+::\+Node \hyperlink{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{config\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file config\+\_\+parser.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!Config\+Parser@{Config\+Parser}}
+\index{Config\+Parser@{Config\+Parser}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{Config\+Parser(int argc, char $\ast$$\ast$argv, Config\+Mode mode, bool validate=false)}{ConfigParser(int argc, char **argv, ConfigMode mode, bool validate=false)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Config\+Parser\+::\+Config\+Parser (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{{\bf Config\+Mode}}]{mode, }
+\item[{bool}]{validate = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1ConfigParser_a49dfb61d0168ee1d126946f777c355ae}{}\label{classmarian_1_1ConfigParser_a49dfb61d0168ee1d126946f777c355ae}
+
+
+Definition at line 27 of file config\+\_\+parser.\+h.
+
+
+\begin{DoxyCode}
+28       : \hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_}(mode),
+29         \hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_}(\textcolor{stringliteral}{"Allowed options"}, \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}()) \{
+30     \hyperlink{classmarian_1_1ConfigParser_a538eb5f3c97b6a25a2fc0c7a8f015425}{parseOptions}(argc, argv, validate);
+31   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Common@{add\+Options\+Common}}
+\index{add\+Options\+Common@{add\+Options\+Common}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Common(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsCommon(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Common (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_ae77d0dbd400ca620dbf5b053278f4141}{}\label{classmarian_1_1ConfigParser_ae77d0dbd400ca620dbf5b053278f4141}
+
+
+Definition at line 178 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+178                                                                \{
+179   \textcolor{keywordtype}{int} defaultWorkspace = (\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}) ? 512 : 2048;
+180 
+181   po::options\_description general(\textcolor{stringliteral}{"General options"}, \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+182   \textcolor{comment}{// clang-format off}
+183   general.add\_options()
+184     (\textcolor{stringliteral}{"config,c"}, po::value<std::string>(),
+185      \textcolor{stringliteral}{"Configuration file"})
+186     (\textcolor{stringliteral}{"workspace,w"}, po::value<size\_t>()->default\_value(defaultWorkspace),
+187       \textcolor{stringliteral}{"Preallocate  arg  MB of work space"})
+188     (\textcolor{stringliteral}{"log"}, po::value<std::string>(),
+189      \textcolor{stringliteral}{"Log training process information to file given by  arg"})
+190     (\textcolor{stringliteral}{"log-level"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"info"}),
+191      \textcolor{stringliteral}{"Set verbosity level of logging "}
+192      \textcolor{stringliteral}{"(trace - debug - info - warn - err(or) - critical - off)"})
+193     (\textcolor{stringliteral}{"seed"}, po::value<size\_t>()->default\_value(0),
+194      \textcolor{stringliteral}{"Seed for all random number generators. 0 means initialize randomly"})
+195     (\textcolor{stringliteral}{"relative-paths"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+196      \textcolor{stringliteral}{"All paths are relative to the config file location"})
+197     (\textcolor{stringliteral}{"dump-config"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+198      \textcolor{stringliteral}{"Dump current (modified) configuration to stdout and exit"})
+199     (\textcolor{stringliteral}{"version"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+200       \textcolor{stringliteral}{"Print version number and exit"})
+201     (\textcolor{stringliteral}{"help,h"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+202       \textcolor{stringliteral}{"Print this help message and exit"})
+203   ;
+204   \textcolor{comment}{// clang-format on}
+205   desc.add(general);
+206 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_ae77d0dbd400ca620dbf5b053278f4141_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Model@{add\+Options\+Model}}
+\index{add\+Options\+Model@{add\+Options\+Model}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Model(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsModel(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Model (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_aa2556e888231001b9f4d02cd742939ba}{}\label{classmarian_1_1ConfigParser_aa2556e888231001b9f4d02cd742939ba}
+
+
+Definition at line 208 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+208                                                               \{
+209   po::options\_description model(\textcolor{stringliteral}{"Model options"}, \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+210   \textcolor{comment}{// clang-format off}
+211   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}) \{
+212     model.add\_options()
+213     (\textcolor{stringliteral}{"models,m"}, po::value<std::vector<std::string>>()
+214       ->multitoken()
+215       ->default\_value(std::vector<std::string>(\{\textcolor{stringliteral}{"model.npz"}\}), \textcolor{stringliteral}{"model.npz"}),
+216      \textcolor{stringliteral}{"Paths to model(s) to be loaded"});
+217   \} \textcolor{keywordflow}{else} \{
+218     model.add\_options()
+219       (\textcolor{stringliteral}{"model,m"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"model.npz"}),
+220       \textcolor{stringliteral}{"Path prefix for model to be saved/resumed"});
+221   \}
+222 
+223   model.add\_options()
+224     (\textcolor{stringliteral}{"type"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"amun"}),
+225       \textcolor{stringliteral}{"Model type (possible values: amun, s2s, multi-s2s)"})
+226     (\textcolor{stringliteral}{"dim-vocabs"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<int>>()
+227       ->multitoken()
+228       ->default\_value(std::vector<int>(\{50000, 50000\}), \textcolor{stringliteral}{"50000 50000"}),
+229      \textcolor{stringliteral}{"Maximum items in vocabulary ordered by rank"})
+230     (\textcolor{stringliteral}{"dim-emb"}, po::value<int>()->default\_value(512),
+231      \textcolor{stringliteral}{"Size of embedding vector"})
+232     (\textcolor{stringliteral}{"dim-rnn"}, po::value<int>()->default\_value(1024),
+233      \textcolor{stringliteral}{"Size of rnn hidden state"})
+234     (\textcolor{stringliteral}{"enc-type"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"bidirectional"}),
+235      \textcolor{stringliteral}{"Type of encoder RNN : bidirectional, bi-unidirectional, alternating (s2s)"})
+236     (\textcolor{stringliteral}{"enc-cell"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"gru"}),
+237      \textcolor{stringliteral}{"Type of RNN cell: gru, lstm, tanh (s2s)"})
+238     (\textcolor{stringliteral}{"enc-cell-depth"}, po::value<int>()->default\_value(1),
+239      \textcolor{stringliteral}{"Number of tansitional cells in encoder layers (s2s)"})
+240     (\textcolor{stringliteral}{"enc-depth"}, po::value<int>()->default\_value(1),
+241      \textcolor{stringliteral}{"Number of encoder layers (s2s)"})
+242     (\textcolor{stringliteral}{"dec-cell"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"gru"}),
+243      \textcolor{stringliteral}{"Type of RNN cell: gru, lstm, tanh (s2s)"})
+244     (\textcolor{stringliteral}{"dec-cell-base-depth"}, po::value<int>()->default\_value(2),
+245      \textcolor{stringliteral}{"Number of tansitional cells in first decoder layer (s2s)"})
+246     (\textcolor{stringliteral}{"dec-cell-high-depth"}, po::value<int>()->default\_value(1),
+247      \textcolor{stringliteral}{"Number of tansitional cells in next decoder layers (s2s)"})
+248     (\textcolor{stringliteral}{"dec-depth"}, po::value<int>()->default\_value(1),
+249      \textcolor{stringliteral}{"Number of decoder layers (s2s)"})
+250     \textcolor{comment}{//("dec-high-context", po::value<std::string>()->default\_value("none"),}
+251     \textcolor{comment}{// "Repeat attended context: none, repeat, conditional, conditional-repeat (s2s)")}
+252     (\textcolor{stringliteral}{"skip"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+253      \textcolor{stringliteral}{"Use skip connections (s2s)"})
+254     (\textcolor{stringliteral}{"layer-normalization"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+255      \textcolor{stringliteral}{"Enable layer normalization"})
+256     (\textcolor{stringliteral}{"best-deep"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+257      \textcolor{stringliteral}{"Use WMT-2017-style deep configuration (s2s)"})
+258     (\textcolor{stringliteral}{"special-vocab"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<size\_t>>()->multitoken(),
+259      \textcolor{stringliteral}{"Model-specific special vocabulary ids"})
+260     (\textcolor{stringliteral}{"tied-embeddings"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+261      \textcolor{stringliteral}{"Tie target embeddings and output embeddings in output layer"})
+262     ;
+263 
+264   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training}) \{
+265     model.add\_options()
+266       (\textcolor{stringliteral}{"dropout-rnn"}, po::value<float>()->default\_value(0),
+267        \textcolor{stringliteral}{"Scaling dropout along rnn layers and time (0 = no dropout)"})
+268       (\textcolor{stringliteral}{"dropout-src"}, po::value<float>()->default\_value(0),
+269        \textcolor{stringliteral}{"Dropout source words (0 = no dropout)"})
+270       (\textcolor{stringliteral}{"dropout-trg"}, po::value<float>()->default\_value(0),
+271        \textcolor{stringliteral}{"Dropout target words (0 = no dropout)"})
+272       (\textcolor{stringliteral}{"noise-src"}, po::value<float>()->default\_value(0),
+273        \textcolor{stringliteral}{"Add noise to source embeddings with given stddev (0 = no noise)"})
+274 
+275     ;
+276   \}
+277   \textcolor{comment}{// clang-format on}
+278 
+279   desc.add(model);
+280 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_aa2556e888231001b9f4d02cd742939ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Rescore@{add\+Options\+Rescore}}
+\index{add\+Options\+Rescore@{add\+Options\+Rescore}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Rescore(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsRescore(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Rescore (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_aedbe49f4f858e12c403268b365b46865}{}\label{classmarian_1_1ConfigParser_aedbe49f4f858e12c403268b365b46865}
+
+
+Definition at line 463 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+463                                                                 \{
+464   po::options\_description rescore(\textcolor{stringliteral}{"Rescorer options"}, \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+465   \textcolor{comment}{// clang-format off}
+466   rescore.add\_options()
+467     (\textcolor{stringliteral}{"no-reload"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+468       \textcolor{stringliteral}{"Do not load existing model specified in --model arg"})
+469     (\textcolor{stringliteral}{"train-sets,t"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken(),
+470       \textcolor{stringliteral}{"Paths to corpora to be scored: source target"})
+471     (\textcolor{stringliteral}{"vocabs,v"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken(),
+472       \textcolor{stringliteral}{"Paths to vocabulary files have to correspond to --train-sets. "}
+473       \textcolor{stringliteral}{"If this parameter is not supplied we look for vocabulary files "}
+474       \textcolor{stringliteral}{"source.\{yml,json\} and target.\{yml,json\}. "}
+475       \textcolor{stringliteral}{"If these files do not exists they are created"})
+476     (\textcolor{stringliteral}{"max-length"}, po::value<size\_t>()->default\_value(1000),
+477       \textcolor{stringliteral}{"Maximum length of a sentence in a training sentence pair"})
+478     (\textcolor{stringliteral}{"devices,d"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<int>>()
+479       ->multitoken()
+480       ->default\_value(std::vector<int>(\{0\}), \textcolor{stringliteral}{"0"}),
+481       \textcolor{stringliteral}{"GPUs to use for training. Asynchronous SGD is used with multiple devices"})
+482 
+483     (\textcolor{stringliteral}{"mini-batch"}, po::value<int>()->default\_value(64),
+484       \textcolor{stringliteral}{"Size of mini-batch used during update"})
+485     (\textcolor{stringliteral}{"mini-batch-words"}, po::value<int>()->default\_value(0),
+486       \textcolor{stringliteral}{"Set mini-batch size based on words instead of sentences"})
+487     (\textcolor{stringliteral}{"dynamic-batching"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+488       \textcolor{stringliteral}{"Determine mini-batch size dynamically based on sentence-length and reserved memory"})
+489     (\textcolor{stringliteral}{"maxi-batch"}, po::value<int>()->default\_value(100),
+490       \textcolor{stringliteral}{"Number of batches to preload for length-based sorting"})
+491     ;
+492   \textcolor{comment}{// clang-format on}
+493   desc.add(rescore);
+494 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_aedbe49f4f858e12c403268b365b46865_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Training@{add\+Options\+Training}}
+\index{add\+Options\+Training@{add\+Options\+Training}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Training(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsTraining(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Training (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_aed7318279a0412b11ff0a9e23363c12e}{}\label{classmarian_1_1ConfigParser_aed7318279a0412b11ff0a9e23363c12e}
+
+
+Definition at line 282 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+282                                                                  \{
+283   po::options\_description \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{training}(\textcolor{stringliteral}{"Training options"}, 
+      \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+284   \textcolor{comment}{// clang-format off}
+285   \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{training}.add\_options()
+286     (\textcolor{stringliteral}{"overwrite"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+287       \textcolor{stringliteral}{"Overwrite model with following checkpoints"})
+288     (\textcolor{stringliteral}{"no-reload"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+289       \textcolor{stringliteral}{"Do not load existing model specified in --model arg"})
+290     (\textcolor{stringliteral}{"train-sets,t"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken(),
+291       \textcolor{stringliteral}{"Paths to training corpora: source target"})
+292     (\textcolor{stringliteral}{"vocabs,v"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken(),
+293       \textcolor{stringliteral}{"Paths to vocabulary files have to correspond to --train-sets. "}
+294       \textcolor{stringliteral}{"If this parameter is not supplied we look for vocabulary files "}
+295       \textcolor{stringliteral}{"source.\{yml,json\} and target.\{yml,json\}. "}
+296       \textcolor{stringliteral}{"If these files do not exists they are created"})
+297     (\textcolor{stringliteral}{"max-length"}, po::value<size\_t>()->default\_value(50),
+298       \textcolor{stringliteral}{"Maximum length of a sentence in a training sentence pair"})
+299     (\textcolor{stringliteral}{"after-epochs,e"}, po::value<size\_t>()->default\_value(0),
+300       \textcolor{stringliteral}{"Finish after this many epochs, 0 is infinity"})
+301     (\textcolor{stringliteral}{"after-batches"}, po::value<size\_t>()->default\_value(0),
+302       \textcolor{stringliteral}{"Finish after this many batch updates, 0 is infinity"})
+303     (\textcolor{stringliteral}{"disp-freq"}, po::value<size\_t>()->default\_value(1000),
+304       \textcolor{stringliteral}{"Display information every  arg  updates"})
+305     (\textcolor{stringliteral}{"save-freq"}, po::value<size\_t>()->default\_value(10000),
+306       \textcolor{stringliteral}{"Save model file every  arg  updates"})
+307     (\textcolor{stringliteral}{"no-shuffle"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+308     \textcolor{stringliteral}{"Skip shuffling of training data before each epoch"})
+309     (\textcolor{stringliteral}{"tempdir,T"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"/tmp"}),
+310       \textcolor{stringliteral}{"Directory for temporary (shuffled) files"})
+311     (\textcolor{stringliteral}{"devices,d"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<int>>()
+312       ->multitoken()
+313       ->default\_value(std::vector<int>(\{0\}), \textcolor{stringliteral}{"0"}),
+314       \textcolor{stringliteral}{"GPUs to use for training. Asynchronous SGD is used with multiple devices"})
+315 
+316     (\textcolor{stringliteral}{"mini-batch"}, po::value<int>()->default\_value(64),
+317       \textcolor{stringliteral}{"Size of mini-batch used during update"})
+318     (\textcolor{stringliteral}{"mini-batch-words"}, po::value<int>()->default\_value(0),
+319       \textcolor{stringliteral}{"Set mini-batch size based on words instead of sentences"})
+320     (\textcolor{stringliteral}{"dynamic-batching"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+321       \textcolor{stringliteral}{"Determine mini-batch size dynamically based on sentence-length and reserved memory"})
+322     (\textcolor{stringliteral}{"maxi-batch"}, po::value<int>()->default\_value(100),
+323       \textcolor{stringliteral}{"Number of batches to preload for length-based sorting"})
+324     (\textcolor{stringliteral}{"maxi-batch-sort"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"trg"}),
+325       \textcolor{stringliteral}{"Sorting strategy for maxi-batch: trg (default) src none"})
+326 
+327     (\textcolor{stringliteral}{"optimizer,o"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"adam"}),
+328      \textcolor{stringliteral}{"Optimization algorithm (possible values: sgd, adagrad, adam"})
+329     (\textcolor{stringliteral}{"learn-rate,l"}, po::value<double>()->default\_value(0.0001),
+330      \textcolor{stringliteral}{"Learning rate"})
+331     (\textcolor{stringliteral}{"lr-decay"}, po::value<double>()->default\_value(0.0),
+332      \textcolor{stringliteral}{"Decay factor for learning rate: lr = lr * arg (0 to disable)"})
+333     (\textcolor{stringliteral}{"lr-decay-strategy"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"epoch+stalled"}),
+334      \textcolor{stringliteral}{"Strategy for learning rate decaying "}
+335      \textcolor{stringliteral}{"(possible values: epoch, batches, stalled, epoch+batches, epoch+stalled)"})
+336     (\textcolor{stringliteral}{"lr-decay-start"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<size\_t>>()
+337        ->multitoken()
+338        ->default\_value(std::vector<size\_t>(\{10,1\}), \textcolor{stringliteral}{"10,1"}),
+339        \textcolor{stringliteral}{"The first number of epoch/batches/stalled validations to start "}
+340        \textcolor{stringliteral}{"learning rate decaying"})
+341     (\textcolor{stringliteral}{"lr-decay-freq"}, po::value<size\_t>()->default\_value(50000),
+342      \textcolor{stringliteral}{"Learning rate decaying frequency for batches, "}
+343      \textcolor{stringliteral}{"requires --lr-decay-strategy to be batches"})
+344 
+345     (\textcolor{stringliteral}{"clip-norm"}, po::value<double>()->default\_value(1.f),
+346      \textcolor{stringliteral}{"Clip gradient norm to  arg  (0 to disable)"})
+347     (\textcolor{stringliteral}{"moving-average"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+348      \textcolor{stringliteral}{"Maintain and save moving average of parameters"})
+349     (\textcolor{stringliteral}{"moving-decay"}, po::value<double>()->default\_value(0.9999, \textcolor{stringliteral}{"0.9999"}),
+350      \textcolor{stringliteral}{"Decay factor for moving average"})
+351     \textcolor{comment}{//("moving-inject-freq", po::value<size\_t>()->default\_value(0),}
+352     \textcolor{comment}{// "Replace model parameters with moving average every  arg  updates (0 to disable)")}
+353     \textcolor{comment}{//("lexical-table", po::value<std::string>(),}
+354     \textcolor{comment}{// "Load lexical table")}
+355 
+356     (\textcolor{stringliteral}{"guided-alignment"}, po::value<std::string>(),
+357      \textcolor{stringliteral}{"Use guided alignment to guide attention"})
+358     (\textcolor{stringliteral}{"guided-alignment-cost"}, po::value<std::string>()->default\_value(\textcolor{stringliteral}{"ce"}),
+359      \textcolor{stringliteral}{"Cost type for guided alignment. Possible values: ce (cross-entropy), "}
+360      \textcolor{stringliteral}{"mse (mean square error), mult (multiplication)"})
+361     (\textcolor{stringliteral}{"guided-alignment-weight"}, po::value<double>()->default\_value(1),
+362      \textcolor{stringliteral}{"Weight for guided alignment cost"})
+363 
+364     (\textcolor{stringliteral}{"drop-rate"}, po::value<double>()->default\_value(0),
+365      \textcolor{stringliteral}{"Gradient drop ratio (read: https://arxiv.org/abs/1704.05021)"})
+366     (\textcolor{stringliteral}{"embedding-vectors"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()
+367       ->multitoken(),
+368      \textcolor{stringliteral}{"Paths to files with custom source and target embedding vectors"})
+369     (\textcolor{stringliteral}{"embedding-normalization"}, po::value<bool>()
+370       ->zero\_tokens()
+371       ->default\_value(\textcolor{keyword}{false}),
+372      \textcolor{stringliteral}{"Enable normalization of custom embedding vectors"})
+373     (\textcolor{stringliteral}{"embedding-fix-src"}, po::value<bool>()
+374       ->zero\_tokens()
+375       ->default\_value(\textcolor{keyword}{false}),
+376      \textcolor{stringliteral}{"Fix source embeddings. Affects all encoders"})
+377     (\textcolor{stringliteral}{"embedding-fix-trg"}, po::value<bool>()
+378       ->zero\_tokens()
+379       ->default\_value(\textcolor{keyword}{false}),
+380      \textcolor{stringliteral}{"Fix target embeddings. Affects all decoders"})
+381   ;
+382   \textcolor{comment}{// clang-format on}
+383   desc.add(\hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{training});
+384 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_aed7318279a0412b11ff0a9e23363c12e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Translate@{add\+Options\+Translate}}
+\index{add\+Options\+Translate@{add\+Options\+Translate}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Translate(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsTranslate(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Translate (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_a07165d2c1c885c858d8127eb09f00e71}{}\label{classmarian_1_1ConfigParser_a07165d2c1c885c858d8127eb09f00e71}
+
+
+Definition at line 424 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+424                                                                   \{
+425   po::options\_description \hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate}(\textcolor{stringliteral}{"Translator options"},
+426                                     \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+427   \textcolor{comment}{// clang-format off}
+428   \hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate}.add\_options()
+429     (\textcolor{stringliteral}{"input,i"}, po::value<std::vector<std::string>>()
+430       ->multitoken()
+431       ->default\_value(std::vector<std::string>(\{\textcolor{stringliteral}{"stdin"}\}), \textcolor{stringliteral}{"stdin"}),
+432       \textcolor{stringliteral}{"Paths to input file(s), stdin by default"})
+433     (\textcolor{stringliteral}{"vocabs,v"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()->multitoken(),
+434       \textcolor{stringliteral}{"Paths to vocabulary files have to correspond to --input"})
+435     (\textcolor{stringliteral}{"beam-size,b"}, po::value<size\_t>()->default\_value(12),
+436       \textcolor{stringliteral}{"Beam size used during search"})
+437     (\textcolor{stringliteral}{"normalize,n"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+438       \textcolor{stringliteral}{"Normalize translation score by translation length"})
+439     (\textcolor{stringliteral}{"allow-unk"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+440       \textcolor{stringliteral}{"Allow unknown words to appear in output"})
+441     (\textcolor{stringliteral}{"max-length"}, po::value<size\_t>()->default\_value(1000),
+442       \textcolor{stringliteral}{"Maximum length of a sentence in a training sentence pair"})
+443     (\textcolor{stringliteral}{"devices,d"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<int>>()
+444       ->multitoken()
+445       ->default\_value(std::vector<int>(\{0\}), \textcolor{stringliteral}{"0"}),
+446       \textcolor{stringliteral}{"GPUs to use for translating"})
+447     (\textcolor{stringliteral}{"mini-batch"}, po::value<int>()->default\_value(1),
+448       \textcolor{stringliteral}{"Size of mini-batch used during update"})
+449     (\textcolor{stringliteral}{"maxi-batch"}, po::value<int>()->default\_value(1),
+450       \textcolor{stringliteral}{"Number of batches to preload for length-based sorting"})
+451     (\textcolor{stringliteral}{"n-best"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+452       \textcolor{stringliteral}{"Display n-best list"})
+453     \textcolor{comment}{//("lexical-table", po::value<std::string>(),}
+454     \textcolor{comment}{// "Path to lexical table")}
+455     (\textcolor{stringliteral}{"weights"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<float>>()
+456       ->multitoken(),
+457       \textcolor{stringliteral}{"Scorer weights"})
+458   ;
+459   \textcolor{comment}{// clang-format on}
+460   desc.add(\hyperlink{amunmt_8cpp_a86ebd9110196f3b5328ad3c3d31cd007}{translate});
+461 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_a07165d2c1c885c858d8127eb09f00e71_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!add\+Options\+Valid@{add\+Options\+Valid}}
+\index{add\+Options\+Valid@{add\+Options\+Valid}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{add\+Options\+Valid(boost\+::program\+\_\+options\+::options\+\_\+description \&)}{addOptionsValid(boost::program_options::options_description &)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::add\+Options\+Valid (
+\begin{DoxyParamCaption}
+\item[{boost\+::program\+\_\+options\+::options\+\_\+description \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d}{}\label{classmarian_1_1ConfigParser_a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d}
+
+
+Definition at line 386 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+386                                                               \{
+387   po::options\_description \hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{valid}(\textcolor{stringliteral}{"Validation set options"},
+388                                 \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{guess\_terminal\_width}());
+389   \textcolor{comment}{// clang-format off}
+390   \hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{valid}.add\_options()
+391     (\textcolor{stringliteral}{"valid-sets"}, po::value<std::vector<std::string>>()->multitoken(),
+392       \textcolor{stringliteral}{"Paths to validation corpora: source target"})
+393     (\textcolor{stringliteral}{"valid-freq"}, po::value<size\_t>()->default\_value(10000),
+394       \textcolor{stringliteral}{"Validate model every  arg  updates"})
+395     (\textcolor{stringliteral}{"valid-metrics"}, \hyperlink{namespacemarian_1_1keywords_ac70de1b4c3cf6b7080cf5086f2963fd8}{po::value}<std::vector<std::string>>()
+396       ->multitoken()
+397       ->default\_value(std::vector<std::string>(\{\textcolor{stringliteral}{"cross-entropy"}\}),
+398                       \textcolor{stringliteral}{"cross-entropy"}),
+399       \textcolor{stringliteral}{"Metric to use during validation: cross-entropy, perplexity, valid-script. "}
+400       \textcolor{stringliteral}{"Multiple metrics can be specified"})
+401     (\textcolor{stringliteral}{"valid-mini-batch"}, po::value<int>()->default\_value(64),
+402       \textcolor{stringliteral}{"Size of mini-batch used during validation"})
+403     (\textcolor{stringliteral}{"valid-script-path"}, po::value<std::string>(),
+404      \textcolor{stringliteral}{"Path to external validation script"})
+405     (\textcolor{stringliteral}{"early-stopping"}, po::value<size\_t>()->default\_value(10),
+406      \textcolor{stringliteral}{"Stop if the first validation metric does not improve for  arg  consecutive "}
+407      \textcolor{stringliteral}{"validation steps"})
+408     (\textcolor{stringliteral}{"keep-best"}, po::value<bool>()->zero\_tokens()->default\_value(\textcolor{keyword}{false}),
+409       \textcolor{stringliteral}{"Keep best model for each validation metric"})
+410     (\textcolor{stringliteral}{"valid-log"}, po::value<std::string>(),
+411      \textcolor{stringliteral}{"Log validation scores to file given by  arg"})
+412 
+413     \textcolor{comment}{/*("beam-size", po::value<size\_t>()->default\_value(12),}
+414 \textcolor{comment}{      "Beam size used during search with validating translator")}
+415 \textcolor{comment}{    ("normalize", po::value<bool>()->zero\_tokens()->default\_value(false),}
+416 \textcolor{comment}{      "Normalize translation score by translation length")}
+417 \textcolor{comment}{    ("allow-unk", po::value<bool>()->zero\_tokens()->default\_value(false),}
+418 \textcolor{comment}{      "Allow unknown words to appear in output")*/}
+419   ;
+420   \textcolor{comment}{// clang-format on}
+421   desc.add(\hyperlink{namespacemarian_1_1keywords_a954e890640810041c811c50d386e918a}{valid});
+422 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classmarian_1_1ConfigParser_a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!get@{get}}
+\index{get@{get}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key) const }{get(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T marian\+::\+Config\+Parser\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_a26aabf7e2d79ed5ec4fa1a1c8d46c719}{}\label{classmarian_1_1ConfigParser_a26aabf7e2d79ed5ec4fa1a1c8d46c719}
+
+
+Definition at line 44 of file config\+\_\+parser.\+h.
+
+
+\begin{DoxyCode}
+44                                     \{
+45     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{config\_}[key].as<T>();
+46   \}
+\end{DoxyCode}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!get\+Config@{get\+Config}}
+\index{get\+Config@{get\+Config}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{get\+Config() const }{getConfig() const }}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+Parser\+::get\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmarian_1_1ConfigParser_adccbbc01f03e141aa80dd3baf94eae58}{}\label{classmarian_1_1ConfigParser_adccbbc01f03e141aa80dd3baf94eae58}
+
+
+Definition at line 719 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+719                                        \{
+720   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{config\_};
+721 \}
+\end{DoxyCode}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!has@{has}}
+\index{has@{has}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{has(const std\+::string \&key) const }{has(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::\+Config\+Parser\+::has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{}\label{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}
+
+
+Definition at line 122 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+122                                                  \{
+123   \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{config\_}[key];
+124 \}
+\end{DoxyCode}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!parse\+Options@{parse\+Options}}
+\index{parse\+Options@{parse\+Options}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{parse\+Options(int argc, char $\ast$$\ast$argv, bool validate)}{parseOptions(int argc, char **argv, bool validate)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::parse\+Options (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{bool}]{validate}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1ConfigParser_a538eb5f3c97b6a25a2fc0c7a8f015425}{}\label{classmarian_1_1ConfigParser_a538eb5f3c97b6a25a2fc0c7a8f015425}
+model
+
+valid 
+
+Definition at line 496 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+497                                             \{
+498 
+499   \hyperlink{classmarian_1_1ConfigParser_ae77d0dbd400ca620dbf5b053278f4141}{addOptionsCommon}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+500   \hyperlink{classmarian_1_1ConfigParser_aa2556e888231001b9f4d02cd742939ba}{addOptionsModel}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+501 
+502   \textcolor{comment}{// clang-format off}
+503   \textcolor{keywordflow}{switch}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_}) \{
+504     \textcolor{keywordflow}{case} \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}:
+505       \hyperlink{classmarian_1_1ConfigParser_a07165d2c1c885c858d8127eb09f00e71}{addOptionsTranslate}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+506       \textcolor{keywordflow}{break};
+507     \textcolor{keywordflow}{case} \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a6911beb2d5fc11863fef8f5daee5a184}{ConfigMode::rescoring}:
+508       \hyperlink{classmarian_1_1ConfigParser_aedbe49f4f858e12c403268b365b46865}{addOptionsRescore}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+509       \textcolor{keywordflow}{break};
+510     \textcolor{keywordflow}{case} \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training}:
+511       \hyperlink{classmarian_1_1ConfigParser_aed7318279a0412b11ff0a9e23363c12e}{addOptionsTraining}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+512       \hyperlink{classmarian_1_1ConfigParser_a9d7e94d97f2cc1cc7b6fe7e36e7b1f6d}{addOptionsValid}(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_});
+513       \textcolor{keywordflow}{break};
+514   \}
+515   \textcolor{comment}{// clang-format on}
+516 
+517 
+518   boost::program\_options::variables\_map vm\_;
+519   \textcolor{keywordflow}{try} \{
+520     po::store(
+521         po::command\_line\_parser(argc, argv).options(\hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_}).run(),
+522         vm\_);
+523     po::notify(vm\_);
+524   \} \textcolor{keywordflow}{catch}(std::exception& e) \{
+525     std::cerr << \textcolor{stringliteral}{"Error: "} << e.what() << std::endl << std::endl;
+526     std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) + \textcolor{stringliteral}{" [options]"} << std::endl;
+527     std::cerr << \hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_} << std::endl;
+528     exit(1);
+529   \}
+530 
+531   \textcolor{keywordflow}{if}(vm\_[\textcolor{stringliteral}{"help"}].as<bool>()) \{
+532     std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) + \textcolor{stringliteral}{" [options]"} << std::endl;
+533     std::cerr << \hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_} << std::endl;
+534     exit(0);
+535   \}
+536 
+537   \textcolor{keywordflow}{if}(vm\_[\textcolor{stringliteral}{"version"}].as<bool>()) \{
+538     std::cerr << PROJECT\_VERSION\_FULL << std::endl;
+539     exit(0);
+540   \}
+541 
+542   std::string configPath;
+543   \textcolor{keywordflow}{if}(vm\_.count(\textcolor{stringliteral}{"config"})) \{
+544     configPath = vm\_[\textcolor{stringliteral}{"config"}].as<std::string>();
+545     \hyperlink{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{config\_} = YAML::Load(\hyperlink{classInputFileStream}{InputFileStream}(configPath));
+546   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training})
+547             && boost::filesystem::exists(vm\_[\textcolor{stringliteral}{"model"}].as<std::string>()
+548                                          + \textcolor{stringliteral}{".yml"})
+549             && !vm\_[\textcolor{stringliteral}{"no-reload"}].as<bool>()) \{
+550     configPath = vm\_[\textcolor{stringliteral}{"model"}].as<std::string>() + \textcolor{stringliteral}{".yml"};
+551     config\_ = YAML::Load(\hyperlink{classInputFileStream}{InputFileStream}(configPath));
+552   \}
+553 
+556   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}) \{
+557     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"models"}, std::vector<std::string>);
+558   \} \textcolor{keywordflow}{else} \{
+559     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"model"}, std::string);
+560   \}
+561 
+562   \textcolor{keywordflow}{if}(!vm\_[\textcolor{stringliteral}{"vocabs"}].empty()) \{
+563     config\_[\textcolor{stringliteral}{"vocabs"}] = vm\_[\textcolor{stringliteral}{"vocabs"}].as<std::vector<std::string>>();
+564   \}
+565 
+566   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"type"}, std::string);
+567   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dim-vocabs"}, std::vector<int>);
+568   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dim-emb"}, \textcolor{keywordtype}{int});
+569   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dim-rnn"}, \textcolor{keywordtype}{int});
+570 
+571   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"enc-type"}, std::string);
+572   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"enc-cell"}, std::string);
+573   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"enc-cell-depth"}, \textcolor{keywordtype}{int});
+574   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"enc-depth"}, \textcolor{keywordtype}{int});
+575 
+576   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dec-cell"}, std::string);
+577   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dec-cell-base-depth"}, \textcolor{keywordtype}{int});
+578   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dec-cell-high-depth"}, \textcolor{keywordtype}{int});
+579   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dec-depth"}, \textcolor{keywordtype}{int});
+580   \textcolor{comment}{// SET\_OPTION("dec-high-context", std::string);}
+581 
+582   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"skip"}, \textcolor{keywordtype}{bool});
+583   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"tied-embeddings"}, \textcolor{keywordtype}{bool});
+584   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"layer-normalization"}, \textcolor{keywordtype}{bool});
+585 
+586   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"best-deep"}, \textcolor{keywordtype}{bool});
+587   \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"special-vocab"}, std::vector<size\_t>);
+588 
+589   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training}) \{
+590     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dropout-rnn"}, \textcolor{keywordtype}{float});
+591     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dropout-src"}, \textcolor{keywordtype}{float});
+592     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dropout-trg"}, \textcolor{keywordtype}{float});
+593     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"noise-src"}, \textcolor{keywordtype}{float});
+594 
+595     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"overwrite"}, \textcolor{keywordtype}{bool});
+596     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"no-reload"}, \textcolor{keywordtype}{bool});
+597     \textcolor{keywordflow}{if}(!vm\_[\textcolor{stringliteral}{"train-sets"}].empty()) \{
+598       config\_[\textcolor{stringliteral}{"train-sets"}] = vm\_[\textcolor{stringliteral}{"train-sets"}].as<std::vector<std::string>>();
+599     \}
+600     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"after-epochs"}, \textcolor{keywordtype}{size\_t});
+601     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"after-batches"}, \textcolor{keywordtype}{size\_t});
+602     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"disp-freq"}, \textcolor{keywordtype}{size\_t});
+603     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"save-freq"}, \textcolor{keywordtype}{size\_t});
+604     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"no-shuffle"}, \textcolor{keywordtype}{bool});
+605     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"tempdir"}, std::string);
+606 
+607     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"optimizer"}, std::string);
+608     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"learn-rate"}, \textcolor{keywordtype}{double});
+609     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"mini-batch-words"}, \textcolor{keywordtype}{int});
+610     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dynamic-batching"}, \textcolor{keywordtype}{bool});
+611 
+612     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"lr-decay"}, \textcolor{keywordtype}{double});
+613     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"lr-decay-strategy"}, std::string);
+614     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"lr-decay-start"}, std::vector<size\_t>);
+615     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"lr-decay-freq"}, \textcolor{keywordtype}{size\_t});
+616 
+617     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"clip-norm"}, \textcolor{keywordtype}{double});
+618     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"moving-average"}, \textcolor{keywordtype}{bool});
+619     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"moving-decay"}, \textcolor{keywordtype}{double});
+620     \textcolor{comment}{//SET\_OPTION("moving-inject-freq", size\_t);}
+621 
+622     \textcolor{comment}{// SET\_OPTION\_NONDEFAULT("lexical-table", std::string);}
+623 
+624     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"guided-alignment"}, std::string);
+625     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"guided-alignment-cost"}, std::string);
+626     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"guided-alignment-weight"}, \textcolor{keywordtype}{double});
+627     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"drop-rate"}, \textcolor{keywordtype}{double});
+628     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"embedding-vectors"}, std::vector<std::string>);
+629     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"embedding-normalization"}, \textcolor{keywordtype}{bool});
+630     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"embedding-fix-src"}, \textcolor{keywordtype}{bool});
+631     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"embedding-fix-trg"}, \textcolor{keywordtype}{bool});
+632   \}
+633   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a6911beb2d5fc11863fef8f5daee5a184}{ConfigMode::rescoring}) \{
+634     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"no-reload"}, \textcolor{keywordtype}{bool});
+635     \textcolor{keywordflow}{if}(!vm\_[\textcolor{stringliteral}{"train-sets"}].empty()) \{
+636       config\_[\textcolor{stringliteral}{"train-sets"}] = vm\_[\textcolor{stringliteral}{"train-sets"}].as<std::vector<std::string>>();
+637     \}
+638     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"mini-batch-words"}, \textcolor{keywordtype}{int});
+639     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"dynamic-batching"}, \textcolor{keywordtype}{bool});
+640   \}
+641   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating}) \{
+642     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"input"}, std::vector<std::string>);
+643     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"normalize"}, \textcolor{keywordtype}{bool});
+644     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"n-best"}, \textcolor{keywordtype}{bool});
+645     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"beam-size"}, \textcolor{keywordtype}{size\_t});
+646     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"allow-unk"}, \textcolor{keywordtype}{bool});
+647     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"weights"}, std::vector<float>);
+648     \textcolor{comment}{// SET\_OPTION\_NONDEFAULT("lexical-table", std::string);}
+649   \}
+650 
+652   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training}) \{
+653     \textcolor{keywordflow}{if}(!vm\_[\textcolor{stringliteral}{"valid-sets"}].empty()) \{
+654       config\_[\textcolor{stringliteral}{"valid-sets"}] = vm\_[\textcolor{stringliteral}{"valid-sets"}].as<std::vector<std::string>>();
+655     \}
+656     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"valid-sets"}, std::vector<std::string>);
+657     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"valid-freq"}, \textcolor{keywordtype}{size\_t});
+658     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"valid-metrics"}, std::vector<std::string>);
+659     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"valid-mini-batch"}, \textcolor{keywordtype}{int});
+660     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"valid-script-path"}, std::string);
+661     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"early-stopping"}, \textcolor{keywordtype}{size\_t});
+662     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"keep-best"}, \textcolor{keywordtype}{bool});
+663     \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"valid-log"}, std::string);
+664 
+665     \textcolor{comment}{// SET\_OPTION("normalize", bool);}
+666     \textcolor{comment}{// SET\_OPTION("beam-size", size\_t);}
+667     \textcolor{comment}{// SET\_OPTION("allow-unk", bool);}
+668   \}
+669 
+670   \textcolor{keywordflow}{if}(doValidate) \{
+671     \textcolor{keywordflow}{try} \{
+672       \hyperlink{classmarian_1_1ConfigParser_abbe3a863f0c0599f1aab53e446291b02}{validateOptions}();
+673     \} \textcolor{keywordflow}{catch}(util::Exception& e) \{
+674       std::cerr << \textcolor{stringliteral}{"Error: "} << e.what() << std::endl << std::endl;
+675 
+676       std::cerr << \textcolor{stringliteral}{"Usage: "} + std::string(argv[0]) + \textcolor{stringliteral}{" [options]"} << std::endl;
+677       std::cerr << \hyperlink{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{cmdline\_options\_} << std::endl;
+678       exit(1);
+679     \}
+680   \}
+681 
+682   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"workspace"}, \textcolor{keywordtype}{size\_t});
+683   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"log-level"}, std::string);
+684   \hyperlink{config__parser_8cpp_a662e89992591378e43abcff938a17669}{SET\_OPTION\_NONDEFAULT}(\textcolor{stringliteral}{"log"}, std::string);
+685   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"seed"}, \textcolor{keywordtype}{size\_t});
+686   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"relative-paths"}, \textcolor{keywordtype}{bool});
+687   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"devices"}, std::vector<int>);
+688   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"mini-batch"}, \textcolor{keywordtype}{int});
+689   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"maxi-batch"}, \textcolor{keywordtype}{int});
+690 
+691   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{ConfigMode::training})
+692     \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"maxi-batch-sort"}, std::string);
+693   \hyperlink{config__parser_8cpp_affc23be689aba6d401f64257177c293c}{SET\_OPTION}(\textcolor{stringliteral}{"max-length"}, \textcolor{keywordtype}{size\_t});
+694 
+695   \textcolor{keywordflow}{if}(vm\_[\textcolor{stringliteral}{"best-deep"}].as<bool>()) \{
+696     config\_[\textcolor{stringliteral}{"layer-normalization"}] = \textcolor{keyword}{true};
+697     config\_[\textcolor{stringliteral}{"tied-embeddings"}] = \textcolor{keyword}{true};
+698     config\_[\textcolor{stringliteral}{"enc-type"}] = \textcolor{stringliteral}{"alternating"};
+699     config\_[\textcolor{stringliteral}{"enc-cell-depth"}] = 2;
+700     config\_[\textcolor{stringliteral}{"enc-depth"}] = 4;
+701     config\_[\textcolor{stringliteral}{"dec-cell-base-depth"}] = 4;
+702     config\_[\textcolor{stringliteral}{"dec-cell-high-depth"}] = 2;
+703     config\_[\textcolor{stringliteral}{"dec-depth"}] = 4;
+704     config\_[\textcolor{stringliteral}{"skip"}] = \textcolor{keyword}{true};
+705   \}
+706 
+707   \textcolor{keywordflow}{if}(get<bool>(\textcolor{stringliteral}{"relative-paths"}) && !vm\_[\textcolor{stringliteral}{"dump-config"}].as<bool>())
+708     \hyperlink{namespacemarian_a88f36a7ce9ef4d686bb5e31220481d96}{ProcessPaths}(
+709         config\_, boost::filesystem::path\{configPath\}.parent\_path(), \textcolor{keyword}{false});
+710 
+711   \textcolor{keywordflow}{if}(vm\_[\textcolor{stringliteral}{"dump-config"}].as<bool>()) \{
+712     YAML::Emitter emit;
+713     \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{OutputYaml}(config\_, emit);
+714     std::cout << emit.c\_str() << std::endl;
+715     exit(0);
+716   \}
+717 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d6/d38/classmarian_1_1ConfigParser_a538eb5f3c97b6a25a2fc0c7a8f015425_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!validate\+Options@{validate\+Options}}
+\index{validate\+Options@{validate\+Options}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{validate\+Options() const }{validateOptions() const }}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Config\+Parser\+::validate\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_abbe3a863f0c0599f1aab53e446291b02}{}\label{classmarian_1_1ConfigParser_abbe3a863f0c0599f1aab53e446291b02}
+
+
+Definition at line 126 of file config\+\_\+parser.\+cpp.
+
+
+\begin{DoxyCode}
+126                                          \{
+127   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{ConfigMode::translating})
+128     \textcolor{keywordflow}{return};
+129 
+130   UTIL\_THROW\_IF2(
+131       !\hyperlink{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{has}(\textcolor{stringliteral}{"train-sets"}) || \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"}).empty(),
+132       \textcolor{stringliteral}{"No train sets given in config file or on command line"});
+133   UTIL\_THROW\_IF2(
+134       \hyperlink{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{has}(\textcolor{stringliteral}{"vocabs"})
+135           && \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"vocabs"}).size()
+136                  != \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"}).size(),
+137       \textcolor{stringliteral}{"There should be as many vocabularies as training sets"});
+138   UTIL\_THROW\_IF2(
+139       \hyperlink{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{has}(\textcolor{stringliteral}{"embedding-vectors"})
+140           && \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"embedding-vectors"}).size()
+141                  != \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"}).size(),
+142       \textcolor{stringliteral}{"There should be as many files with embedding vectors as "}
+143       \textcolor{stringliteral}{"training sets"});
+144 
+145   \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{mode\_} == \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a6911beb2d5fc11863fef8f5daee5a184}{ConfigMode::rescoring})
+146     \textcolor{keywordflow}{return};
+147 
+148   boost::filesystem::path modelPath(get<std::string>(\textcolor{stringliteral}{"model"}));
+149   \textcolor{keyword}{auto} modelDir = modelPath.parent\_path();
+150   UTIL\_THROW\_IF2(
+151       !modelDir.empty() && !boost::filesystem::is\_directory(modelDir),
+152       \textcolor{stringliteral}{"Model directory does not exist"});
+153 
+154   UTIL\_THROW\_IF2(
+155       \hyperlink{classmarian_1_1ConfigParser_a667e86d91936eb1d19044891b060e987}{has}(\textcolor{stringliteral}{"valid-sets"})
+156           && \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"valid-sets"}).size()
+157                  != \textcolor{keyword}{get}<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"}).size(),
+158       \textcolor{stringliteral}{"There should be as many validation sets as training sets"});
+159 
+160   \textcolor{comment}{// validations for learning rate decaying}
+161   UTIL\_THROW\_IF2(get<double>(\textcolor{stringliteral}{"lr-decay"}) > 1.0,
+162                  \textcolor{stringliteral}{"Learning rate decay factor greater than 1.0 is unusual"});
+163   UTIL\_THROW\_IF2(
+164       (get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"}) == \textcolor{stringliteral}{"epoch+batches"}
+165        || get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"}) == \textcolor{stringliteral}{"epoch+stalled"})
+166           && \textcolor{keyword}{get}<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"}).size() != 2,
+167       \textcolor{stringliteral}{"Decay strategies 'epoch+batches' and 'epoch+stalled' require two "}
+168       \textcolor{stringliteral}{"values specified with --lr-decay-start options"});
+169   UTIL\_THROW\_IF2(
+170       (get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"}) == \textcolor{stringliteral}{"epoch"}
+171        || get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"}) == \textcolor{stringliteral}{"batches"}
+172        || get<std::string>(\textcolor{stringliteral}{"lr-decay-strategy"}) == \textcolor{stringliteral}{"stalled"})
+173           && \textcolor{keyword}{get}<std::vector<size\_t>>(\textcolor{stringliteral}{"lr-decay-start"}).size() != 1,
+174       \textcolor{stringliteral}{"Single decay strategies require only one value specified with "}
+175       \textcolor{stringliteral}{"--lr-decay-start option"});
+176 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!cmdline\+\_\+options\+\_\+@{cmdline\+\_\+options\+\_\+}}
+\index{cmdline\+\_\+options\+\_\+@{cmdline\+\_\+options\+\_\+}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{cmdline\+\_\+options\+\_\+}{cmdline_options_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::program\+\_\+options\+::options\+\_\+description marian\+::\+Config\+Parser\+::cmdline\+\_\+options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}{}\label{classmarian_1_1ConfigParser_af57fa6f4fb82e1e5b6068e7dcb56b3b2}
+
+
+Definition at line 39 of file config\+\_\+parser.\+h.
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!config\+\_\+@{config\+\_\+}}
+\index{config\+\_\+@{config\+\_\+}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{config\+\_\+}{config_}}]{\setlength{\rightskip}{0pt plus 5cm}Y\+A\+M\+L\+::\+Node marian\+::\+Config\+Parser\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}{}\label{classmarian_1_1ConfigParser_a48aeae345c018ede7fb97d4705d5aeb1}
+
+
+Definition at line 40 of file config\+\_\+parser.\+h.
+
+\index{marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}!mode\+\_\+@{mode\+\_\+}}
+\index{mode\+\_\+@{mode\+\_\+}!marian\+::\+Config\+Parser@{marian\+::\+Config\+Parser}}
+\subsubsection[{\texorpdfstring{mode\+\_\+}{mode_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\+Mode} marian\+::\+Config\+Parser\+::mode\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}{}\label{classmarian_1_1ConfigParser_ae3bb2ffc2601222cc53734a60ab1f980}
+
+
+Definition at line 38 of file config\+\_\+parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{config__parser_8h}{config\+\_\+parser.\+h}\item 
+\hyperlink{config__parser_8cpp}{config\+\_\+parser.\+cpp}\end{DoxyCompactItemize}

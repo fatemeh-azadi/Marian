@@ -1,0 +1,14 @@
+<map id="marian::DecoderHardSoftAtt::step" name="marian::DecoderHardSoftAtt::step">
+<area shape="rect" id="node2" href="$da/d12/classmarian_1_1DecoderState.html#a93f6000b711e4f710f46268e0781eed4" title="marian::DecoderState\l::getTargetEmbeddings" alt="" coords="253,41,411,82"/>
+<area shape="rect" id="node3" href="$da/d22/namespacemarian.html#a268400392f22176821c7c4a36733b178" title="marian::dropout" alt="" coords="276,107,388,133"/>
+<area shape="rect" id="node9" href="$da/d22/namespacemarian.html#acd984f43188d0ae23c2a6ef13ae5293f" title="marian::reshape" alt="" coords="275,157,389,184"/>
+<area shape="rect" id="node10" href="$da/d22/namespacemarian.html#ace1e9a63d52edc363d70d661cf8d0257" title="marian::rows" alt="" coords="283,208,381,235"/>
+<area shape="rect" id="node11" href="$da/d22/namespacemarian.html#a2791a2c8f79a938f5cb22ae613680675" title="marian::concatenate" alt="" coords="479,313,619,340"/>
+<area shape="rect" id="node12" href="$d4/d04/classmarian_1_1rnn_1_1Stackable.html#a33df0f892797bb7ebe12f3c0f18b43ce" title="marian::rnn::Stackable::as" alt="" coords="245,309,419,336"/>
+<area shape="rect" id="node13" href="$d7/db4/classmarian_1_1rnn_1_1GlobalAttention.html#ad518e4c82f56b8f95393dffa2df2288b" title="marian::rnn::GlobalAttention\l::getContext" alt="" coords="240,361,424,402"/>
+<area shape="rect" id="node4" href="$d4/d04/namespacemarian_1_1keywords.html#a74d7a2502faafdd421ef3dff629e284f" title="marian::keywords::Get" alt="" coords="472,5,627,32"/>
+<area shape="rect" id="node5" href="$da/d22/namespacemarian.html#a763e5e9b5d5a329d2420fe9bab95476d" title="marian::shift" alt="" coords="502,56,597,83"/>
+<area shape="rect" id="node6" href="$da/d22/namespacemarian.html#a3dbe8b5eb203876cd08cf3fe75a1c6bc" title="marian::convolution" alt="" coords="482,107,617,133"/>
+<area shape="rect" id="node7" href="$da/d22/namespacemarian.html#a8ee119d3ee4867a3c826de62ea1de4f5" title="marian::avg_pooling" alt="" coords="480,157,619,184"/>
+<area shape="rect" id="node8" href="$da/d22/namespacemarian.html#abfe3b8c37f479da0a31a1e843d8bdedf" title="marian::max_pooling" alt="" coords="478,208,621,235"/>
+</map>

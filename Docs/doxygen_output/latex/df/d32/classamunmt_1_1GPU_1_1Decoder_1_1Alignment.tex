@@ -1,0 +1,295 @@
+\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment}{}\section{amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Alignment$<$ Weights $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment}\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment$<$ Weights $>$@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment$<$ Weights $>$}}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Decoder\+:\+:Alignment$<$ Weights $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d26/classamunmt_1_1GPU_1_1Decoder_1_1Alignment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_af47ff2a53bffd4fbba26a3c3947f0163}{Alignment} (const \hyperlink{classamunmt_1_1God}{God} \&god, const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \&model)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1c314472de493ae8cc1b3a4a2946f437}{Init} (const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Source\+Context)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aca6a7ea06e3db456c9cf723cb62a975f}{Get\+Aligned\+Source\+Context} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Aligned\+Source\+Context, const \hyperlink{structamunmt_1_1GPU_1_1CellState}{Cell\+State} \&Hidden\+State, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Source\+Context, const \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad6a337d269d1833a6028b8871e57d2d0}{mblas\+::\+I\+Matrix} \&sentence\+Lengths, const std\+::vector$<$ uint $>$ \&beam\+Sizes)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aed7d728b2215ca90b3bdbda2a4eee4b3}{Get\+Attention} (\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \&Attention)
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \& \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a4636a760faa3cfb514d206a5edb753d7}{Get\+Attention} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a027ea50b30f3251069c35ec2ee64b68b}{Alignment} (const \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment}{Alignment} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structamunmt_1_1GPU_1_1Weights}{Weights} \& \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\+\_\+}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array}{mblas\+::\+Array}$<$ uint $>$ \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{d\+Batch\+Mapping\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{S\+C\+U\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab9dd63a8ff8558c4be5a1edb595444a9}{Temp1\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a86103e1e592a30bfe7efc705ee3779ed}{Ones\+\_\+}
+\item 
+\hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ada54a344803a2df414eea80f596a568d}{Sums\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Weights$>$\\*
+class amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment$<$ Weights $>$}
+
+
+
+Definition at line 139 of file decoder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Alignment(const God \&god, const Weights \&model)}{Alignment(const God &god, const Weights &model)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::{\bf Alignment} (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const {\bf Weights} \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_af47ff2a53bffd4fbba26a3c3947f0163}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_af47ff2a53bffd4fbba26a3c3947f0163}
+
+
+Definition at line 141 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+142           : \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}(model)
+143           , \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_}(god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"mini-batch"}) * god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"beam-size"}), 0)
+144         \{\}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Alignment(const Alignment \&)=delete}{Alignment(const Alignment &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::{\bf Alignment} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Alignment}$<$ {\bf Weights} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a027ea50b30f3251069c35ec2ee64b68b}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a027ea50b30f3251069c35ec2ee64b68b}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Get\+Aligned\+Source\+Context@{Get\+Aligned\+Source\+Context}}
+\index{Get\+Aligned\+Source\+Context@{Get\+Aligned\+Source\+Context}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Get\+Aligned\+Source\+Context(mblas\+::\+Matrix \&\+Aligned\+Source\+Context, const Cell\+State \&\+Hidden\+State, const mblas\+::\+Matrix \&\+Source\+Context, const mblas\+::\+I\+Matrix \&sentence\+Lengths, const std\+::vector$<$ uint $>$ \&beam\+Sizes)}{GetAlignedSourceContext(mblas::Matrix &AlignedSourceContext, const CellState &HiddenState, const mblas::Matrix &SourceContext, const mblas::IMatrix &sentenceLengths, const std::vector< uint > &beamSizes)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Get\+Aligned\+Source\+Context (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Aligned\+Source\+Context, }
+\item[{const {\bf Cell\+State} \&}]{Hidden\+State, }
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Source\+Context, }
+\item[{const {\bf mblas\+::\+I\+Matrix} \&}]{sentence\+Lengths, }
+\item[{const std\+::vector$<$ uint $>$ \&}]{beam\+Sizes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aca6a7ea06e3db456c9cf723cb62a975f}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aca6a7ea06e3db456c9cf723cb62a975f}
+
+
+Definition at line 157 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+162         \{
+163           \textcolor{comment}{// mapping = 1/0 whether each position, in each sentence in the batch is actually a valid word}
+164           \textcolor{comment}{// batchMapping = which sentence is each element in the batch. eg 0 0 1 2 2 2 = first 2 belongs
+       to sent0, 3rd is sent1, 4th and 5th is sent2}
+165           \textcolor{comment}{// dBatchMapping\_ = fixed length (batch*beam) version of dBatchMapping\_}
+166 
+167           \textcolor{keyword}{using namespace }mblas;
+168 
+169           \textcolor{keywordtype}{size\_t} maxLength = SourceContext.dim(0);
+170           \textcolor{keywordtype}{size\_t} batchSize = SourceContext.dim(3);
+171           \textcolor{comment}{//std::cerr << "batchSize=" << batchSize << std::endl;}
+172           \textcolor{comment}{//std::cerr << "HiddenState=" << HiddenState.Debug(0) << std::endl;}
+173 
+174           std::vector<uint> batchMapping(HiddenState.output->dim(0));
+175           \textcolor{keywordtype}{size\_t} k = 0;
+176           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < beamSizes.size(); ++i) \{
+177             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < beamSizes[i]; ++j) \{
+178               batchMapping[k++] = i;
+179             \}
+180           \}
+181 
+182           \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_ac5a8bd146e017b8bacd499053ca159cb}{resize}(batchMapping.size());
+183           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6531a040aa422fcd149f89b92f6d2585}{mblas::copy}(batchMapping.data(),
+184               batchMapping.size(),
+185               \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_}.\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1Array_a4034555b63c429f5f3113e7297094861}{data}(),
+186               cudaMemcpyHostToDevice);
+187 
+188           \textcolor{comment}{/*}
+189 \textcolor{comment}{          std::cerr << "SourceContext=" << SourceContext.Debug(0) << std::endl;}
+190 \textcolor{comment}{          std::cerr << "AlignedSourceContext=" << AlignedSourceContext.Debug(0) << std::endl;}
+191 \textcolor{comment}{          std::cerr << "A\_=" << A\_.Debug(0) << std::endl;}
+192 \textcolor{comment}{          std::cerr << "sentenceLengths=" << sentenceLengths.Debug(2) << std::endl;}
+193 \textcolor{comment}{          */}
+194 
+195           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\textcolor{comment}{/*h\_[1],*/} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\_}, *(HiddenState.output), *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.W\_);
+196           \textcolor{comment}{//std::cerr << "1Temp2\_=" << Temp2\_.Debug() << std::endl;}
+197 
+198           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.Gamma\_2\_->size()) \{
+199             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.Gamma\_2\_, 1e-9);
+200           \} \textcolor{keywordflow}{else} \{
+201             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ace73de50c8241f219ad490d64513829f}{BroadcastVec}(\_1 + \_2, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.B\_\textcolor{comment}{/*, s\_[1]*/});
+202           \}
+203           \textcolor{comment}{//std::cerr << "2Temp2\_=" << Temp2\_.Debug() << std::endl;}
+204 
+205           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_afba17f6f1ebd7b942ed07d760259d143}{Broadcast}(\hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1 + \_2), \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab9dd63a8ff8558c4be5a1edb595444a9}{Temp1\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{SCU\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{Temp2\_}, 
+      \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_}, maxLength);
+206 
+207           \textcolor{comment}{//std::cerr << "w\_.V\_=" << w\_.V\_->Debug(0) << std::endl;}
+208           \textcolor{comment}{//std::cerr << "3Temp1\_=" << Temp1\_.Debug(0) << std::endl;}
+209 
+210           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.V\_, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab9dd63a8ff8558c4be5a1edb595444a9}{Temp1\_}, \textcolor{keyword}{false}, \textcolor{keyword}{true});
+211 
+212           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ad21070cb29f8c33c03f76e31ef902dfe}{mblas::Softmax}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_}, sentenceLengths, batchSize);
+213           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a90a5cec147d44d6774e5de8e9e0d696e}{mblas::WeightedMean}(AlignedSourceContext, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\_}, SourceContext, 
+      \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{dBatchMapping\_});
+214 
+215           \textcolor{comment}{/*}
+216 \textcolor{comment}{          std::cerr << "AlignedSourceContext=" << AlignedSourceContext.Debug() << std::endl;}
+217 \textcolor{comment}{          std::cerr << "A\_=" << A\_.Debug() << std::endl;}
+218 \textcolor{comment}{          std::cerr << "SourceContext=" << SourceContext.Debug() << std::endl;}
+219 \textcolor{comment}{          std::cerr << "mapping=" << Debug(mapping, 2) << std::endl;}
+220 \textcolor{comment}{          std::cerr << "dBatchMapping\_=" << Debug(dBatchMapping\_, 2) << std::endl;}
+221 \textcolor{comment}{          std::cerr << std::endl;}
+222 \textcolor{comment}{          */}
+223         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Get\+Attention@{Get\+Attention}}
+\index{Get\+Attention@{Get\+Attention}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Get\+Attention(mblas\+::\+Matrix \&\+Attention)}{GetAttention(mblas::Matrix &Attention)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Get\+Attention (
+\begin{DoxyParamCaption}
+\item[{{\bf mblas\+::\+Matrix} \&}]{Attention}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aed7d728b2215ca90b3bdbda2a4eee4b3}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_aed7d728b2215ca90b3bdbda2a4eee4b3}
+
+
+Definition at line 225 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+225                                                   \{
+226           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a6359878c47a6c3703d7d8b6e9db1d87e}{mblas::Copy}(\hyperlink{namespacemarian_1_1rnn_ae9586d2236bd64dae0a644c58d9fc76e}{Attention}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\_});
+227         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Get\+Attention@{Get\+Attention}}
+\index{Get\+Attention@{Get\+Attention}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Get\+Attention()}{GetAttention()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix}\& {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Get\+Attention (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a4636a760faa3cfb514d206a5edb753d7}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a4636a760faa3cfb514d206a5edb753d7}
+
+
+Definition at line 229 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+229                                     \{
+230           \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{A\_};
+231         \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Init@{Init}}
+\index{Init@{Init}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Init(const mblas\+::\+Matrix \&\+Source\+Context)}{Init(const mblas::Matrix &SourceContext)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ void {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf mblas\+::\+Matrix} \&}]{Source\+Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1c314472de493ae8cc1b3a4a2946f437}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1c314472de493ae8cc1b3a4a2946f437}
+
+
+Definition at line 146 of file decoder.\+h.
+
+
+\begin{DoxyCode}
+146                                                     \{
+147           \textcolor{keyword}{using namespace }mblas;
+148 
+149           \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a463b2de180e8ab66bae53d1f8c5bc011}{Prod}(\textcolor{comment}{/*h\_[0],*/} \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{SCU\_}, SourceContext, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.U\_);
+150           \textcolor{comment}{//std::cerr << "SCU\_=" << SCU\_.Debug(1) << std::endl;}
+151 
+152           \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.Gamma\_1\_->size()) \{
+153             \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ae50f34596c0fcc0aa93e717edcd66379}{Normalization}(\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{SCU\_}, \hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{SCU\_}, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.Gamma\_1\_, *\hyperlink{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{w\_}.B\_, 1e-9);
+154           \}
+155         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!A\+\_\+@{A\+\_\+}}
+\index{A\+\_\+@{A\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{A\+\_\+}{A_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::A\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a1bff435fc752946c60aaec9bdda999cf}
+
+
+Definition at line 241 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!d\+Batch\+Mapping\+\_\+@{d\+Batch\+Mapping\+\_\+}}
+\index{d\+Batch\+Mapping\+\_\+@{d\+Batch\+Mapping\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{d\+Batch\+Mapping\+\_\+}{dBatchMapping_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Array}$<$uint$>$ {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::d\+Batch\+Mapping\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab90a6f08ed51961ec0e95125a3024ac8}
+
+
+Definition at line 236 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Ones\+\_\+@{Ones\+\_\+}}
+\index{Ones\+\_\+@{Ones\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Ones\+\_\+}{Ones_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Ones\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a86103e1e592a30bfe7efc705ee3779ed}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a86103e1e592a30bfe7efc705ee3779ed}
+
+
+Definition at line 243 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!S\+C\+U\+\_\+@{S\+C\+U\+\_\+}}
+\index{S\+C\+U\+\_\+@{S\+C\+U\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{S\+C\+U\+\_\+}{SCU_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::S\+C\+U\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ac209ca675c6170b4eb433d4ec323ed37}
+
+
+Definition at line 238 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Sums\+\_\+@{Sums\+\_\+}}
+\index{Sums\+\_\+@{Sums\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Sums\+\_\+}{Sums_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Sums\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ada54a344803a2df414eea80f596a568d}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ada54a344803a2df414eea80f596a568d}
+
+
+Definition at line 244 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Temp1\+\_\+@{Temp1\+\_\+}}
+\index{Temp1\+\_\+@{Temp1\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Temp1\+\_\+}{Temp1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Temp1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab9dd63a8ff8558c4be5a1edb595444a9}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_ab9dd63a8ff8558c4be5a1edb595444a9}
+
+
+Definition at line 239 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!Temp2\+\_\+@{Temp2\+\_\+}}
+\index{Temp2\+\_\+@{Temp2\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{Temp2\+\_\+}{Temp2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ {\bf mblas\+::\+Matrix} {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::Temp2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a436ddfe4e64a8f9d2e088c62743d4e30}
+
+
+Definition at line 240 of file decoder.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment@{amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}}
+\subsubsection[{\texorpdfstring{w\+\_\+}{w_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Weights$>$ const {\bf Weights}\& {\bf amunmt\+::\+G\+P\+U\+::\+Decoder\+::\+Alignment}$<$ {\bf Weights} $>$\+::w\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}{}\label{classamunmt_1_1GPU_1_1Decoder_1_1Alignment_a76259ec6506c944eb14b820b507be817}
+
+
+Definition at line 234 of file decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8h}{decoder.\+h}\end{DoxyCompactItemize}

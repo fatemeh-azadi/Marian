@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d41/namespacelm">
+<title>lm</title>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/da2/namespacelm_1_1ngram">lm::ngram</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned int  <link linkend="d9/d41/namespacelm_1aea554f766016a7141535a9f8f648766a">WordIndex</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

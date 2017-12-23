@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d92/structmarian_1_1LogSoftmaxNodeOp">
+<title>marian::LogSoftmaxNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::LogSoftmaxNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d83/structmarian_1_1LogSoftmaxNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::LogSoftmaxNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d7f/structmarian_1_1LogSoftmaxNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a15be6dc8958a144ff3452ef951f5a430">LogSoftmaxNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a37bbd793241ab857be6ca238383867f1">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1ab2ae88fe3ba607a32e566c6e0022c9f7">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a9be31a897d97bad9da23e8adbc3bbcf8">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a15be6dc8958a144ff3452ef951f5a430">
+                <title>marian::LogSoftmaxNodeOp::LogSoftmaxNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a37bbd793241ab857be6ca238383867f1">
+                <title>NodeOps marian::LogSoftmaxNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1ab2ae88fe3ba607a32e566c6e0022c9f7">
+                <title>NodeOps marian::LogSoftmaxNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d92/structmarian_1_1LogSoftmaxNodeOp_1a9be31a897d97bad9da23e8adbc3bbcf8">
+                <title>const std::string marian::LogSoftmaxNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

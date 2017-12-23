@@ -1,0 +1,248 @@
+\hypertarget{structmarian_1_1TanhNodeOp}{}\section{marian\+:\+:Tanh\+Node\+Op Struct Reference}
+\label{structmarian_1_1TanhNodeOp}\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+
+
+{\ttfamily \#include $<$node\+\_\+operators\+\_\+unary.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Tanh\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/de8/structmarian_1_1TanhNodeOp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Tanh\+Node\+Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dc2/structmarian_1_1TanhNodeOp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmarian_1_1TanhNodeOp_a5aea6b7aa9d3412374bfa5c423f32068}{Tanh\+Node\+Op} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes)
+\item 
+\hyperlink{structmarian_1_1Shape}{Shape} \hyperlink{structmarian_1_1TanhNodeOp_a09f244867abe44271e2138204eaff0d2}{new\+Shape} (const std\+::vector$<$ \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} $>$ \&nodes)
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1TanhNodeOp_a96a8cfc7646b2b73b421a099cabdb579}{forward\+Ops} ()
+\item 
+\hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{Node\+Ops} \hyperlink{structmarian_1_1TanhNodeOp_a01f8dfc69d49509d2ba630517d3e10d6}{backward\+Ops} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1TanhNodeOp_acb68c7e8dbabe5285de4b0666044302a}{color} ()
+\item 
+const std\+::string \hyperlink{structmarian_1_1TanhNodeOp_a451895f7e17e7fe2ac3c20250a998758}{type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 87 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!Tanh\+Node\+Op@{Tanh\+Node\+Op}}
+\index{Tanh\+Node\+Op@{Tanh\+Node\+Op}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{Tanh\+Node\+Op(const std\+::vector$<$ Expr $>$ \&nodes)}{TanhNodeOp(const std::vector< Expr > &nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Tanh\+Node\+Op\+::\+Tanh\+Node\+Op (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1TanhNodeOp_a5aea6b7aa9d3412374bfa5c423f32068}{}\label{structmarian_1_1TanhNodeOp_a5aea6b7aa9d3412374bfa5c423f32068}
+
+
+Definition at line 88 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+89       : \hyperlink{structmarian_1_1NaryNodeOp_aed8f74da7153fd55707ea8cd1456058b}{NaryNodeOp}(nodes, \hyperlink{namespacemarian_1_1keywords_a5933d683efd12b59e17a7131fa64cf1c}{keywords::shape} = \hyperlink{structmarian_1_1TanhNodeOp_a09f244867abe44271e2138204eaff0d2}{newShape}(nodes)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!backward\+Ops@{backward\+Ops}}
+\index{backward\+Ops@{backward\+Ops}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{backward\+Ops()}{backwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Tanh\+Node\+Op\+::backward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1TanhNodeOp_a01f8dfc69d49509d2ba630517d3e10d6}{}\label{structmarian_1_1TanhNodeOp_a01f8dfc69d49509d2ba630517d3e10d6}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a783915262a9d7af81372c8f0a8363beb}{marian\+::\+Node}.
+
+
+
+Definition at line 131 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+131                         \{
+132     \hyperlink{namespacemarian_a4956376218cc236016c20bc4071470da}{NodeOps} ops;
+133     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size(); i++) \{
+134       ops.push\_back(
+135           \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_a0ee0e667d3fcfdc776e4dddaffeea6e2}{Add}(\_1 * (1.0f - (\_2 * \_2)), \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(i)->\hyperlink{classmarian_1_1Node_a0497d2c3515385212b1086f8b8502826}{grad}(), 
+      \hyperlink{classmarian_1_1Node_a13a0badd98010fdd2536cb5d055ade5a}{adj\_}, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_})));
+136     \}
+137     \textcolor{keywordflow}{return} ops;
+138   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d8a/structmarian_1_1TanhNodeOp_a01f8dfc69d49509d2ba630517d3e10d6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!color@{color}}
+\index{color@{color}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{color()}{color()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Tanh\+Node\+Op\+::color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1TanhNodeOp_acb68c7e8dbabe5285de4b0666044302a}{}\label{structmarian_1_1TanhNodeOp_acb68c7e8dbabe5285de4b0666044302a}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a19cfc4e99a01cb4a3fe1b20dce3b7db2}{marian\+::\+Node}.
+
+
+
+Definition at line 140 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+140 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"yellow"}; \}
+\end{DoxyCode}
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!forward\+Ops@{forward\+Ops}}
+\index{forward\+Ops@{forward\+Ops}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{forward\+Ops()}{forwardOps()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Ops} marian\+::\+Tanh\+Node\+Op\+::forward\+Ops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1TanhNodeOp_a96a8cfc7646b2b73b421a099cabdb579}{}\label{structmarian_1_1TanhNodeOp_a96a8cfc7646b2b73b421a099cabdb579}
+
+
+Reimplemented from \hyperlink{classmarian_1_1Node_a13a2bc9bdc100205606bbd01acecb659}{marian\+::\+Node}.
+
+
+
+Definition at line 105 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+105                        \{
+106     \textcolor{keywordflow}{switch}(\hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size()) \{
+107       \textcolor{keywordflow}{case} 1: \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_2), \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, 
+      \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+108       \textcolor{keywordflow}{case} 2:
+109         \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(
+110             \_1 = \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_2 + \_3), \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(), \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->
+      \hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+111       \textcolor{keywordflow}{case} 3:
+112         \textcolor{keywordflow}{return} \{\hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_2 + \_3 + \_4),
+113                                \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_},
+114                                \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+115                                \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+116                                \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(2)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}()))\};
+117       \textcolor{keywordflow}{default}:
+118         \textcolor{keywordflow}{return} \{
+119           \hyperlink{definitions_8h_a48f5ac3fc4e5043f1ebfed786912842c}{NodeOp}(\hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \_2 + \_3 + \_4,
+120                          \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_},
+121                          \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(0)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+122                          \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(1)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}(),
+123                          \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(2)->\hyperlink{classmarian_1_1Node_a0df86f2ff4a169111d6ba0865e6fd935}{val}());
+124                  \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 3; i < \hyperlink{classmarian_1_1Node_a4d44ab201d96c0f283188bcc91f64b1d}{children\_}.size(); ++i)
+125                      \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 += \_2, \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_}, \hyperlink{classmarian_1_1Node_a71a9c8ad6ba12d421fa97222d74a90b9}{child}(i)->val());
+126                  \hyperlink{namespacemarian_af90a9ca647f95f9d9d18ac8901c55fb1}{Element}(\_1 = \hyperlink{namespacethrust_1_1detail_1_1functional_a565a36ed831a74fec50b00c921f669ba}{Tanh}(\_1), \hyperlink{classmarian_1_1Node_ab64614c39ead91341c3d485dd0817cab}{val\_});)
+127         \};
+128     \}
+129   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d8a/structmarian_1_1TanhNodeOp_a96a8cfc7646b2b73b421a099cabdb579_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!new\+Shape@{new\+Shape}}
+\index{new\+Shape@{new\+Shape}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{new\+Shape(const std\+::vector$<$ Expr $>$ \&nodes)}{newShape(const std::vector< Expr > &nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} marian\+::\+Tanh\+Node\+Op\+::new\+Shape (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Expr} $>$ \&}]{nodes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structmarian_1_1TanhNodeOp_a09f244867abe44271e2138204eaff0d2}{}\label{structmarian_1_1TanhNodeOp_a09f244867abe44271e2138204eaff0d2}
+
+
+Definition at line 91 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+91                                                \{
+92     Shape \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape} = nodes[0]->shape();
+93 
+94     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n = 1; n < nodes.size(); ++n) \{
+95       Shape shapen = nodes[n]->shape();
+96       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < shapen.size(); ++i) \{
+97         UTIL\_THROW\_IF2(shape[i] != shapen[i] && shape[i] != 1 && shapen[i] != 1,
+98                        \textcolor{stringliteral}{"Shapes cannot be broadcasted"});
+99         shape.set(i, std::max(shape[i], shapen[i]));
+100       \}
+101     \}
+102     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1Node_aa631f0244ad94b4c64efab0f140bd1d5}{shape};
+103   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d8a/structmarian_1_1TanhNodeOp_a09f244867abe44271e2138204eaff0d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}!type@{type}}
+\index{type@{type}!marian\+::\+Tanh\+Node\+Op@{marian\+::\+Tanh\+Node\+Op}}
+\subsubsection[{\texorpdfstring{type()}{type()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string marian\+::\+Tanh\+Node\+Op\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{structmarian_1_1TanhNodeOp_a451895f7e17e7fe2ac3c20250a998758}{}\label{structmarian_1_1TanhNodeOp_a451895f7e17e7fe2ac3c20250a998758}
+
+
+Implements \hyperlink{classmarian_1_1Chainable_a2b7a5cbdac7a7d3bd7d781a6ff148fc3}{marian\+::\+Chainable$<$ Tensor $>$}.
+
+
+
+Definition at line 142 of file node\+\_\+operators\+\_\+unary.\+h.
+
+
+\begin{DoxyCode}
+142 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"tanh"}; \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node__operators__unary_8h}{node\+\_\+operators\+\_\+unary.\+h}\end{DoxyCompactItemize}

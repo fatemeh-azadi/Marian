@@ -1,0 +1,593 @@
+\hypertarget{classmarian_1_1EncoderDecoder}{}\section{marian\+:\+:Encoder\+Decoder$<$ Encoder, Decoder $>$ Class Template Reference}
+\label{classmarian_1_1EncoderDecoder}\index{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$@{marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}}
+
+
+{\ttfamily \#include $<$encdec.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Encoder\+Decoder$<$ Encoder, Decoder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{d0/d5f/classmarian_1_1EncoderDecoder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Encoder\+Decoder$<$ Encoder, Decoder $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/de6/classmarian_1_1EncoderDecoder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmarian_1_1data_1_1Corpus}{data\+::\+Corpus} \hyperlink{classmarian_1_1EncoderDecoder_abe6c265b398b2bd947e93fb0a11761b3}{dataset\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderDecoder_ac08c9c6cf3847fd500b4d2bdf3470382}{Encoder\+Decoder} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, Args...\+args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{classmarian_1_1EncoderDecoder_abd0caec06ebcf39e71c074cd8dcb7e61}{Encoder\+Decoder} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, const std\+::vector$<$ size\+\_\+t $>$ \&batch\+Indices, Args...\+args)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderBase}{Encoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{get\+Encoder} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderBase}{Decoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{get\+Decoder} ()
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{load} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name)
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name, bool save\+Translator\+Config)
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{save} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, const std\+::string \&name)
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}{clear} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}{start\+State} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state)
+\item 
+virtual \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{step} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)
+\item 
+virtual void \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{select\+Embeddings} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderState}{Decoder\+State} $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Idx)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, bool clear\+Graph=true)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoder_a689c60d4a1c79e4d5e4e57a6d947e535}{build} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1Batch}{data\+::\+Batch} $>$ batch, bool clear\+Graph=true)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1BatchStats}{data\+::\+Batch\+Stats} $>$ \hyperlink{classmarian_1_1EncoderDecoder_aa2e6bff207c6bc17206115ff44a22fe5}{collect\+Stats} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classmarian_1_1EncoderDecoder_a85f3edf6aa54eadf41871f0a9fa3311e}{opt} (const std\+::string \&key)
+\item 
+virtual \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} \hyperlink{classmarian_1_1EncoderDecoder_a3a4c9f318d7d21fc4b9eead88a09798b}{build\+To\+Score} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch, bool clear\+Graph=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\+\_\+}
+\item 
+std\+::string \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1EncoderBase}{Encoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{encoder\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1DecoderBase}{Decoder\+Base} $>$ \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\+\_\+}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batch\+Indices\+\_\+}
+\item 
+bool \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\+\_\+} \{false\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Encoder, class Decoder$>$\\*
+class marian\+::\+Encoder\+Decoder$<$ Encoder, Decoder $>$}
+
+
+
+Definition at line 181 of file encdec.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!dataset\+\_\+type@{dataset\+\_\+type}}
+\index{dataset\+\_\+type@{dataset\+\_\+type}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{dataset\+\_\+type}{dataset_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ typedef {\bf data\+::\+Corpus} {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::{\bf dataset\+\_\+type}}\hypertarget{classmarian_1_1EncoderDecoder_abe6c265b398b2bd947e93fb0a11761b3}{}\label{classmarian_1_1EncoderDecoder_abe6c265b398b2bd947e93fb0a11761b3}
+
+
+Definition at line 194 of file encdec.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!Encoder\+Decoder@{Encoder\+Decoder}}
+\index{Encoder\+Decoder@{Encoder\+Decoder}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder(\+Ptr$<$ Config $>$ options, Args...\+args)}{EncoderDecoder(Ptr< Config > options, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ template$<$class... Args$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::{\bf Encoder\+Decoder} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoder_ac08c9c6cf3847fd500b4d2bdf3470382}{}\label{classmarian_1_1EncoderDecoder_ac08c9c6cf3847fd500b4d2bdf3470382}
+
+
+Definition at line 197 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+198       : \hyperlink{classmarian_1_1EncoderDecoder_ac08c9c6cf3847fd500b4d2bdf3470382}{EncoderDecoder}(options, \{0, 1\}, args...) \{\}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!Encoder\+Decoder@{Encoder\+Decoder}}
+\index{Encoder\+Decoder@{Encoder\+Decoder}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{Encoder\+Decoder(\+Ptr$<$ Config $>$ options, const std\+::vector$<$ size\+\_\+t $>$ \&batch\+Indices, Args...\+args)}{EncoderDecoder(Ptr< Config > options, const std::vector< size_t > &batchIndices, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ template$<$class... Args$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::{\bf Encoder\+Decoder} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{batch\+Indices, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoder_abd0caec06ebcf39e71c074cd8dcb7e61}{}\label{classmarian_1_1EncoderDecoder_abd0caec06ebcf39e71c074cd8dcb7e61}
+
+
+Definition at line 201 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+204       : \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}(options),
+205         \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batchIndices\_}(batchIndices),
+206         \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix}, \textcolor{stringliteral}{""}, args...)),
+207         \hyperlink{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{encoder\_}(New<Encoder>(
+208             options, \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_} + \textcolor{stringliteral}{"encoder"}, args...)),
+209         \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}(New<Decoder>(
+210             options, \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_} + \textcolor{stringliteral}{"decoder"}, args...)),
+211         \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference}, \textcolor{keyword}{false}, args...)) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, bool clear\+Graph=true)}{build(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, bool clearGraph=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Expr} {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{}\label{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_ad64d35743ba11ca947d25d985fedcdd3}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1EncoderDecoderRec_a5d7be4c554cdd6752a8ee5964ff116c2}{marian\+::\+Encoder\+Decoder\+Rec}.
+
+
+
+Definition at line 275 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+277                                              \{
+278     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+279 
+280     \textcolor{keywordflow}{if}(clearGraph)
+281       \hyperlink{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}{clear}(graph);
+282 
+283     \textcolor{keyword}{auto} state = \hyperlink{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}{startState}(graph, batch);
+284 
+285     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} trgMask, trgIdx;
+286     std::tie(trgMask, trgIdx)
+287         = \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->groundTruth(state, graph, batch, \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batchIndices\_}.back());
+288 
+289     \textcolor{keyword}{auto} nextState = \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step}(graph, state);
+290 
+291     \textcolor{keyword}{auto} cost = CrossEntropyCost(\hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_} + \textcolor{stringliteral}{"cost"})
+292                   (nextState->getProbs(), trgIdx, \hyperlink{namespacemarian_1_1keywords_a201bea6bea8108889b63081132cc3cd7}{mask} = trgMask);
+293 
+294     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->has(\textcolor{stringliteral}{"guided-alignment"}) && !\hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_}) \{
+295       \textcolor{keyword}{auto} alignments = \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->getAlignments();
+296       UTIL\_THROW\_IF2(alignments.empty(), \textcolor{stringliteral}{"Model does not seem to support alignments"});
+297       \textcolor{keyword}{auto} att = \hyperlink{namespacemarian_a2791a2c8f79a938f5cb22ae613680675}{concatenate}(alignments, \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis} = 3);
+298       \textcolor{keywordflow}{return} cost + \hyperlink{namespacemarian_a1d13d69eb58fd5635225dbfbae4f4292}{guidedAlignmentCost}(graph, batch, 
+      \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}, att);
+299     \} \textcolor{keywordflow}{else} \{
+300       \textcolor{keywordflow}{return} cost;
+301     \}
+302   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!build@{build}}
+\index{build@{build}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{build(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Batch $>$ batch, bool clear\+Graph=true)}{build(Ptr< ExpressionGraph > graph, Ptr< data::Batch > batch, bool clearGraph=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Expr} {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a689c60d4a1c79e4d5e4e57a6d947e535}{}\label{classmarian_1_1EncoderDecoder_a689c60d4a1c79e4d5e4e57a6d947e535}
+
+
+Definition at line 304 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+306                                              \{
+307     \textcolor{keyword}{auto} corpusBatch = std::static\_pointer\_cast<data::CorpusBatch>(batch);
+308     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{build}(graph, corpusBatch, clearGraph);
+309   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!build\+To\+Score@{build\+To\+Score}}
+\index{build\+To\+Score@{build\+To\+Score}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{build\+To\+Score(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch, bool clear\+Graph=true)}{buildToScore(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch, bool clearGraph=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Expr} {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::build\+To\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch, }
+\item[{bool}]{clear\+Graph = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a3a4c9f318d7d21fc4b9eead88a09798b}{}\label{classmarian_1_1EncoderDecoder_a3a4c9f318d7d21fc4b9eead88a09798b}
+
+
+Definition at line 339 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+341                                                     \{
+342     \textcolor{keyword}{using namespace }\hyperlink{namespacekeywords}{keywords};
+343 
+344     \textcolor{keywordflow}{if}(clearGraph)
+345       \hyperlink{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}{clear}(graph);
+346     \textcolor{keyword}{auto} state = \hyperlink{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}{startState}(graph, batch);
+347 
+348     \hyperlink{namespacemarian_a498d8baf75b754011078b890b39c8e12}{Expr} trgMask, trgIdx;
+349     std::tie(trgMask, trgIdx)
+350         = \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->groundTruth(state, graph, batch, \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batchIndices\_}.back());
+351 
+352     \textcolor{keyword}{auto} nextState = \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step}(graph, state);
+353 
+354     \textcolor{keywordflow}{return} -\hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum}(\hyperlink{namespacemarian_a37652ca2a00f3c36816fe5fec28104a0}{cross\_entropy}(nextState->getProbs(), trgIdx) * trgMask, 
+      \hyperlink{namespacemarian_1_1keywords_ace9158eabbddaca833133f12da98b9d6}{axis}=2);
+355   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!clear@{clear}}
+\index{clear@{clear}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{clear(\+Ptr$<$ Expression\+Graph $>$ graph)}{clear(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual void {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}{}\label{classmarian_1_1EncoderDecoder_ad42d2109d87d2bd25da7f1a6bb72777c}
+
+
+Definition at line 234 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+234                                                  \{
+235     graph->clear();
+236     \hyperlink{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{encoder\_} = New<Encoder>(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_},
+237                             \hyperlink{namespacemarian_1_1keywords_aa2cadd13ac94307ff92c68efb57264ac}{keywords::prefix} = \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_} + \textcolor{stringliteral}{"encoder"},
+238                             \hyperlink{namespacemarian_1_1keywords_a7164ab5ae8f1206943787d0891d89735}{keywords::inference} = \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_});
+239 
+240     \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_} = New<Decoder>(\hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_},
+241                             keywords::prefix = \hyperlink{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{prefix\_} + \textcolor{stringliteral}{"decoder"},
+242                             keywords::inference = \hyperlink{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{inference\_});
+243   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!collect\+Stats@{collect\+Stats}}
+\index{collect\+Stats@{collect\+Stats}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{collect\+Stats(\+Ptr$<$ Expression\+Graph $>$ graph)}{collectStats(Ptr< ExpressionGraph > graph)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf data\+::\+Batch\+Stats}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::collect\+Stats (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoder_aa2e6bff207c6bc17206115ff44a22fe5}{}\label{classmarian_1_1EncoderDecoder_aa2e6bff207c6bc17206115ff44a22fe5}
+
+
+Definition at line 311 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+311                                                                \{
+312     \textcolor{keyword}{auto} stats = New<data::BatchStats>();
+313 
+314     \textcolor{keywordtype}{size\_t} \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step} = 10;
+315     \textcolor{keywordtype}{size\_t} maxLength = opt<size\_t>(\textcolor{stringliteral}{"max-length"});
+316     \textcolor{keywordtype}{size\_t} numFiles = opt<std::vector<std::string>>(\textcolor{stringliteral}{"train-sets"}).size();
+317     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = step; i <= maxLength; i += \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step}) \{
+318       \textcolor{keywordtype}{size\_t} batchSize = \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step};
+319       std::vector<size\_t> lengths(numFiles, i);
+320       \textcolor{keywordtype}{bool} fits = \textcolor{keyword}{true};
+321       \textcolor{keywordflow}{do} \{
+322         \textcolor{keyword}{auto} batch = \hyperlink{classmarian_1_1data_1_1CorpusBatch_a076a85a873fbfd1b106cf8f8495b8a4e}{data::CorpusBatch::fakeBatch}(
+323             lengths, batchSize, \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->has(\textcolor{stringliteral}{"guided-alignment"}));
+324         \hyperlink{classmarian_1_1EncoderDecoder_a859d35d8ad42e6de1f8a55d5efa9b998}{build}(graph, batch);
+325         fits = graph->fits();
+326         \textcolor{keywordflow}{if}(fits)
+327           stats->add(batch);
+328         batchSize += \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step};
+329       \} \textcolor{keywordflow}{while}(fits);
+330     \}
+331     \textcolor{keywordflow}{return} stats;
+332   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!get\+Decoder@{get\+Decoder}}
+\index{get\+Decoder@{get\+Decoder}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Decoder()}{getDecoder()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf Decoder\+Base}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::get\+Decoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}{}\label{classmarian_1_1EncoderDecoder_a112eff919d3e05aa57616cad4dccd09c}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a202af6f0ef3a39914b57f1df797047c5}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Definition at line 215 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+215 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!get\+Encoder@{get\+Encoder}}
+\index{get\+Encoder@{get\+Encoder}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Encoder()}{getEncoder()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf Encoder\+Base}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::get\+Encoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}{}\label{classmarian_1_1EncoderDecoder_ae8e8facb50d27fb952f673f97ca5ca22}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a6b9540f9c2a80a5ae1b7feaa0ecf17bd}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Definition at line 213 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+213 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{encoder\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!load@{load}}
+\index{load@{load}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{load(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name)}{load(Ptr< ExpressionGraph > graph, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual void {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::load (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}{}\label{classmarian_1_1EncoderDecoder_af535052d08f862bbeefe55052886c44f}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_aed4f5b4c03698b66ab47827866e67947}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1Amun_a0e8ed942ad3b414f43f29dbb6e9081eb}{marian\+::\+Amun}.
+
+
+
+Definition at line 217 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+217                                                                        \{
+218     graph->load(name);
+219   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!opt@{opt}}
+\index{opt@{opt}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{opt(const std\+::string \&key)}{opt(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ template$<$typename T $>$ T {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::opt (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1EncoderDecoder_a85f3edf6aa54eadf41871f0a9fa3311e}{}\label{classmarian_1_1EncoderDecoder_a85f3edf6aa54eadf41871f0a9fa3311e}
+
+
+Definition at line 335 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+335                               \{
+336     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->get<T>(key);
+337   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!save@{save}}
+\index{save@{save}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name, bool save\+Translator\+Config)}{save(Ptr< ExpressionGraph > graph, const std::string &name, bool saveTranslatorConfig)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual void {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name, }
+\item[{bool}]{save\+Translator\+Config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}{}\label{classmarian_1_1EncoderDecoder_a16a607b6b5f58ebe1457d2109653daa6}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a2bad3e7fc27ea8b139f5a11a1fabe508}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1Amun_a81589662d8f3eebf52cebf4ba395ef2a}{marian\+::\+Amun}.
+
+
+
+Definition at line 221 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+223                                                \{
+224     \textcolor{comment}{// ignore config for now}
+225     graph->save(name);
+226     \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->saveModelParameters(name);
+227   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!save@{save}}
+\index{save@{save}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{save(\+Ptr$<$ Expression\+Graph $>$ graph, const std\+::string \&name)}{save(Ptr< ExpressionGraph > graph, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual void {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}{}\label{classmarian_1_1EncoderDecoder_a4ae96d1149cd6d1952a5af26c02276b4}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a38bf117cbdc25c25357dd1922cfd2a2d}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmarian_1_1Amun_a2ac35e1d3b74293cad107512005b2b17}{marian\+::\+Amun}.
+
+
+
+Definition at line 229 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+229                                                                        \{
+230     graph->save(name);
+231     \hyperlink{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{options\_}->saveModelParameters(name);
+232   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!select\+Embeddings@{select\+Embeddings}}
+\index{select\+Embeddings@{select\+Embeddings}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{select\+Embeddings(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Idx)}{selectEmbeddings(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state, const std::vector< size_t > &embIdx)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual void {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::select\+Embeddings (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{emb\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{}\label{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a7613ff13f2fe0f11571d21e2235f7514}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Definition at line 269 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+271                                                                  \{
+272     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->selectEmbeddings(graph, state, embIdx);
+273   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!start\+State@{start\+State}}
+\index{start\+State@{start\+State}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{start\+State(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{startState(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::start\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}{}\label{classmarian_1_1EncoderDecoder_ad4e4f2b699812b5e082ebc10f31ab433}
+
+
+Definition at line 245 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+246                                                                    \{
+247     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->startState(
+248         \hyperlink{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{encoder\_}->build(graph, batch, \hyperlink{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{batchIndices\_}.front()));
+249   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!step@{step}}
+\index{step@{step}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state)}{step(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{}\label{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a6007e315951e619751aff381020174ea}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Definition at line 251 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+252                                                           \{
+253     \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{decoder\_}->step(graph, state);
+254   \}
+\end{DoxyCode}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!step@{step}}
+\index{step@{step}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{step(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ Decoder\+State $>$ state, const std\+::vector$<$ size\+\_\+t $>$ \&hyp\+Indices, const std\+::vector$<$ size\+\_\+t $>$ \&emb\+Indices)}{step(Ptr< ExpressionGraph > graph, Ptr< DecoderState > state, const std::vector< size_t > &hypIndices, const std::vector< size_t > &embIndices)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ virtual {\bf Ptr}$<${\bf Decoder\+State}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::step (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf Decoder\+State} $>$}]{state, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{hyp\+Indices, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{emb\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}{}\label{classmarian_1_1EncoderDecoder_a971e6d5f8523616276087416cdcb1a18}
+
+
+Implements \hyperlink{classmarian_1_1EncoderDecoderBase_a87b83c44031999f47ee3bad03ababc9a}{marian\+::\+Encoder\+Decoder\+Base}.
+
+
+
+Definition at line 256 of file encdec.\+h.
+
+
+\begin{DoxyCode}
+259                                                                       \{
+260     \textcolor{keyword}{auto} selectedState = hypIndices.empty() ? state : state->select(hypIndices);
+261 
+262     \hyperlink{classmarian_1_1EncoderDecoder_a1375c25eceae2e904b9ef43397f9ea1c}{selectEmbeddings}(graph, selectedState, embIndices);
+263     selectedState->setSingleStep(\textcolor{keyword}{true});
+264     \textcolor{keyword}{auto} nextState = \hyperlink{classmarian_1_1EncoderDecoder_a558f6af38685965b966512478de18c4b}{step}(graph, selectedState);
+265     nextState->setProbs(\hyperlink{namespacemarian_a471a2cbd15b4094528a1643abc814bb6}{logsoftmax}(nextState->getProbs()));
+266     \textcolor{keywordflow}{return} nextState;
+267   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!batch\+Indices\+\_\+@{batch\+Indices\+\_\+}}
+\index{batch\+Indices\+\_\+@{batch\+Indices\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{batch\+Indices\+\_\+}{batchIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ std\+::vector$<$size\+\_\+t$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::batch\+Indices\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}{}\label{classmarian_1_1EncoderDecoder_a7ca0d84733de420d7103df7a9e65b7ad}
+
+
+Definition at line 189 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!decoder\+\_\+@{decoder\+\_\+}}
+\index{decoder\+\_\+@{decoder\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{decoder\+\_\+}{decoder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf Decoder\+Base}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::decoder\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}{}\label{classmarian_1_1EncoderDecoder_a3e86046f2f51b1f2b146f366afea9c3b}
+
+
+Definition at line 187 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!encoder\+\_\+@{encoder\+\_\+}}
+\index{encoder\+\_\+@{encoder\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{encoder\+\_\+}{encoder_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf Encoder\+Base}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::encoder\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}{}\label{classmarian_1_1EncoderDecoder_a31a65f97ea313106b7f560ffac52e969}
+
+
+Definition at line 186 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!inference\+\_\+@{inference\+\_\+}}
+\index{inference\+\_\+@{inference\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{inference\+\_\+}{inference_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ bool {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::inference\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}{}\label{classmarian_1_1EncoderDecoder_a51626185014f44e369ca9ea8b9da7c10}
+
+
+Definition at line 191 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!options\+\_\+@{options\+\_\+}}
+\index{options\+\_\+@{options\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{options\+\_\+}{options_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ {\bf Ptr}$<${\bf Config}$>$ {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}{}\label{classmarian_1_1EncoderDecoder_a467e7d547bd7888d1bea248e99cef212}
+
+
+Definition at line 183 of file encdec.\+h.
+
+\index{marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}!prefix\+\_\+@{prefix\+\_\+}}
+\index{prefix\+\_\+@{prefix\+\_\+}!marian\+::\+Encoder\+Decoder@{marian\+::\+Encoder\+Decoder}}
+\subsubsection[{\texorpdfstring{prefix\+\_\+}{prefix_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Encoder, class Decoder$>$ std\+::string {\bf marian\+::\+Encoder\+Decoder}$<$ Encoder, Decoder $>$\+::prefix\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}{}\label{classmarian_1_1EncoderDecoder_aeccce58b4406c58abd7ad596ff6b8eae}
+
+
+Definition at line 184 of file encdec.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{encdec_8h}{encdec.\+h}\end{DoxyCompactItemize}

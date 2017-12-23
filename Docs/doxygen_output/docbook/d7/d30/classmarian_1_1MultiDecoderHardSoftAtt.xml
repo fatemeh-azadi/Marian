@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt">
+<title>marian::MultiDecoderHardSoftAtt class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d82/hardatt_8h">&lt;hardatt.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultiDecoderHardSoftAtt</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d61/classmarian_1_1MultiDecoderHardSoftAtt__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultiDecoderHardSoftAtt</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d65/classmarian_1_1MultiDecoderHardSoftAtt__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a78a197b705bb25ecbbafb6006e963036">MultiDecoderHardSoftAtt</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a82443e3da9466ff952ac9deeb0a77df6">startState</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; encState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a9dc01206082f6b287300c2ee6460d3ba">step</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a2c0c368e276e2db20c116b20497b1bb6">selectEmbeddings</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/d12/classmarian_1_1DecoderState">DecoderState</link> &gt; state, const std::vector&lt; size_t &gt; &amp; embIdx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a5663940ea8e359b7af4ebb16380fe01e">getAlignments</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a78a197b705bb25ecbbafb6006e963036">
+                <title>marian::MultiDecoderHardSoftAtt::MultiDecoderHardSoftAtt (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a82443e3da9466ff952ac9deeb0a77df6">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::MultiDecoderHardSoftAtt::startState (Ptr&lt; EncoderState &gt; encState)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a9dc01206082f6b287300c2ee6460d3ba">
+                <title>virtual Ptr&lt;DecoderState&gt; marian::MultiDecoderHardSoftAtt::step (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a2c0c368e276e2db20c116b20497b1bb6">
+                <title>virtual void marian::MultiDecoderHardSoftAtt::selectEmbeddings (Ptr&lt; ExpressionGraph &gt; graph, Ptr&lt; DecoderState &gt; state, const std::vector&lt; size_t &gt; &amp;embIdx)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d30/classmarian_1_1MultiDecoderHardSoftAtt_1a5663940ea8e359b7af4ebb16380fe01e">
+                <title>const std::vector&lt;Expr&gt; marian::MultiDecoderHardSoftAtt::getAlignments ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

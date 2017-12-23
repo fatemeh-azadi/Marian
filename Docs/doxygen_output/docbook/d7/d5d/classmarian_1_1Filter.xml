@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d5d/classmarian_1_1Filter">
+<title>marian::Filter class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d0d/marian_2src_2data_2filter_8h">&lt;filter.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Filter</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d31/classmarian_1_1Filter__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Filter</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d8b/classmarian_1_1Filter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Vocab &gt; srcVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Vocab &gt; trgVocab_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t firstNum_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t bestNum_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::unordered_map&lt; size_t, float &gt; &gt; data_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d5d/classmarian_1_1Filter_1af947fe56dd94605ee2cbf8959918d1bf">load</link> (
+const std::string &amp; fname)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d5d/classmarian_1_1Filter_1ad3de142a4ea393d5ceffbedbf7bbc14f">prune</link> (
+float threshold)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5d/classmarian_1_1Filter_1a06b1bb4499db641fc5515da686ec81a4">Filter</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; srcVocab, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="db/dd1/classmarian_1_1Vocab">Vocab</link> &gt; trgVocab)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d0/dd6/classmarian_1_1FilterInfo">FilterInfo</link> &gt; <link linkend="d7/d5d/classmarian_1_1Filter_1a8d8273bc026392ffd220d2cb5314b60c">createInfo</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch">data::SubBatch</link> &gt; srcBatch, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d1/dd0/classmarian_1_1data_1_1SubBatch">data::SubBatch</link> &gt; trgBatch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d5d/classmarian_1_1Filter_1af947fe56dd94605ee2cbf8959918d1bf">
+                <title>void marian::Filter::load (const std::string &amp;fname)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d5d/classmarian_1_1Filter_1ad3de142a4ea393d5ceffbedbf7bbc14f">
+                <title>void marian::Filter::prune (float threshold=0.f)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d5d/classmarian_1_1Filter_1a06b1bb4499db641fc5515da686ec81a4">
+                <title>marian::Filter::Filter (Ptr&lt; Config &gt; options, Ptr&lt; Vocab &gt; srcVocab, Ptr&lt; Vocab &gt; trgVocab)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d5d/classmarian_1_1Filter_1a8d8273bc026392ffd220d2cb5314b60c">
+                <title>Ptr&lt;FilterInfo&gt; marian::Filter::createInfo (Ptr&lt; data::SubBatch &gt; srcBatch, Ptr&lt; data::SubBatch &gt; trgBatch)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

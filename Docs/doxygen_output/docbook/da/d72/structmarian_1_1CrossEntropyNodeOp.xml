@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp">
+<title>marian::CrossEntropyNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::CrossEntropyNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/da2/structmarian_1_1CrossEntropyNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::CrossEntropyNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/da0/structmarian_1_1CrossEntropyNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp_1ac48a140d97cbf643601b2d16cdc674e0">CrossEntropyNodeOp</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> b, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/d54/structmarian_1_1Shape">Shape</link> <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp_1a1e72292a14569fda92abc806dbc79acb">newShape</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp_1a97a41f78385e61ab9b5228e6a8429e81">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp_1ac500562de661363f71a0f16331dd60e7">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="da/d72/structmarian_1_1CrossEntropyNodeOp_1abce29fdc82fc339597d2e2f06a585e4d">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp_1ac48a140d97cbf643601b2d16cdc674e0">
+                <title>marian::CrossEntropyNodeOp::CrossEntropyNodeOp (Expr a, Expr b, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp_1a1e72292a14569fda92abc806dbc79acb">
+                <title>Shape marian::CrossEntropyNodeOp::newShape (Expr a)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp_1a97a41f78385e61ab9b5228e6a8429e81">
+                <title>NodeOps marian::CrossEntropyNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp_1ac500562de661363f71a0f16331dd60e7">
+                <title>NodeOps marian::CrossEntropyNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d72/structmarian_1_1CrossEntropyNodeOp_1abce29fdc82fc339597d2e2f06a585e4d">
+                <title>const std::string marian::CrossEntropyNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,49 @@
+\hypertarget{config__parser_8h}{}\section{config\+\_\+parser.\+h File Reference}
+\label{config__parser_8h}\index{config\+\_\+parser.\+h@{config\+\_\+parser.\+h}}
+{\ttfamily \#include $<$boost/program\+\_\+options.\+hpp$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}3rd\+\_\+party/yaml-\/cpp/yaml.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/file\+\_\+stream.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common/logging.\+h\char`\"{}}\\*
+Include dependency graph for config\+\_\+parser.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d34/config__parser_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d16/config__parser_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmarian_1_1ConfigParser}{marian\+::\+Config\+Parser}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemarian}{marian}
+\begin{DoxyCompactList}\small\item\em Parent namespace for the Marian project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9}{marian\+::\+Config\+Mode} \{ \hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9ac185ddac8b5a8f5aa23c5b80bc12d214}{marian\+::\+Config\+Mode\+::training}, 
+\hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a5143d2bebfe7a6b9c7050a8f6bf53e2b}{marian\+::\+Config\+Mode\+::translating}, 
+\hyperlink{namespacemarian_aaddd4b008ff5352b1fe7e16574f7e1f9a6911beb2d5fc11863fef8f5daee5a184}{marian\+::\+Config\+Mode\+::rescoring}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{namespacemarian_aa656da9ccb3e53462fef9b9745616b57}{marian\+::guess\+\_\+terminal\+\_\+width} (uint16\+\_\+t max\+\_\+width)
+\item 
+void \hyperlink{namespacemarian_a4017daa42159d6a6465637380fb81bbf}{marian\+::\+Output\+Yaml} (const Y\+A\+M\+L\+::\+Node node, Y\+A\+M\+L\+::\+Emitter \&out)
+\end{DoxyCompactItemize}

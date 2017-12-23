@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Marian tests</title>
+
+<para>Unit tests and application tests are enabled with CMake option <computeroutput>-DCOMPILE_TESTS=ON</computeroutput>.</para>
+
+<para>We use <link xlink:href="https://github.com/philsquared/Catch">Catch framework</link> for unit testing. </para>
+
+</chapter>

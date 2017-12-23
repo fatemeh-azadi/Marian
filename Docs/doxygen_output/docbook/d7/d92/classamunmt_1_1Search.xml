@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d92/classamunmt_1_1Search">
+<title>amunmt::Search class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d85/search_8h">&lt;search.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Search</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d50/classamunmt_1_1Search__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Search</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dba/classamunmt_1_1Search__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>DeviceInfo deviceInfo_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; ScorerPtr &gt; scorers_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; const Filter &gt; filter_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const size_t maxBeamSize_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool normalizeScore_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Words filterIndices_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BestHypsBasePtr bestHyps_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d92/classamunmt_1_1Search_1a53c2b92efabd8d05077a4b8edd7ffba3">Search</link> (
+const <link linkend="d7/d4e/classamunmt_1_1God">God</link> &amp; god)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/d92/classamunmt_1_1Search_1a0e03aa98be68900afc313ff9a8ead751">~Search</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="d2/d0b/classamunmt_1_1Histories">Histories</link> &gt; <link linkend="d7/d92/classamunmt_1_1Search_1a8a55a67dbc9dab24441767d7b2066b9a">Translate</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; sentences)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a4fe2912e208820f8217fbcf229ebacf7">States</link> <link linkend="d7/d92/classamunmt_1_1Search_1a1cd54cd91f09de25de5967d0704dc77d">NewStates</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d92/classamunmt_1_1Search_1adab7a84cbd820e7395a3f79fc604bb06">FilterTargetVocab</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; sentences)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d7/dd3/namespaceamunmt_1a4fe2912e208820f8217fbcf229ebacf7">States</link> <link linkend="d7/d92/classamunmt_1_1Search_1aeca132502f793a9cf8f54ba5e12a333a">Encode</link> (
+const <link linkend="de/ded/classamunmt_1_1Sentences">Sentences</link> &amp; sentences)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d92/classamunmt_1_1Search_1acdf0343e135ef26bf53ebb9389b379f6">CleanAfterTranslation</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/d92/classamunmt_1_1Search_1a80d628a5581c65ebe73fe0b941497eba">CalcBeam</link> (
+std::shared_ptr&lt; <link linkend="d2/d0b/classamunmt_1_1Histories">Histories</link> &gt; &amp; histories, std::vector&lt; uint &gt; &amp; beamSizes, <link linkend="d7/dd3/namespaceamunmt_1a534a3a9a1d99c01a5adf05e700a26012">Beam</link> &amp; prevHyps, <link linkend="d7/dd3/namespaceamunmt_1a4fe2912e208820f8217fbcf229ebacf7">States</link> &amp; states, <link linkend="d7/dd3/namespaceamunmt_1a4fe2912e208820f8217fbcf229ebacf7">States</link> &amp; nextStates)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d92/classamunmt_1_1Search_1a4c25f77fc140b60ce1b2b847478b58ed">Search</link> (
+const <link linkend="d7/d92/classamunmt_1_1Search">Search</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a53c2b92efabd8d05077a4b8edd7ffba3">
+                <title>amunmt::Search::Search (const God &amp;god)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a0e03aa98be68900afc313ff9a8ead751">
+                <title>amunmt::Search::~Search ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a8a55a67dbc9dab24441767d7b2066b9a">
+                <title>std::shared_ptr&lt; Histories &gt; amunmt::Search::Translate (const Sentences &amp;sentences)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a1cd54cd91f09de25de5967d0704dc77d">
+                <title>States amunmt::Search::NewStates () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1adab7a84cbd820e7395a3f79fc604bb06">
+                <title>void amunmt::Search::FilterTargetVocab (const Sentences &amp;sentences)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1aeca132502f793a9cf8f54ba5e12a333a">
+                <title>States amunmt::Search::Encode (const Sentences &amp;sentences)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1acdf0343e135ef26bf53ebb9389b379f6">
+                <title>void amunmt::Search::CleanAfterTranslation ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a80d628a5581c65ebe73fe0b941497eba">
+                <title>bool amunmt::Search::CalcBeam (std::shared_ptr&lt; Histories &gt; &amp;histories, std::vector&lt; uint &gt; &amp;beamSizes, Beam &amp;prevHyps, States &amp;states, States &amp;nextStates)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d92/classamunmt_1_1Search_1a4c25f77fc140b60ce1b2b847478b58ed">
+                <title>amunmt::Search::Search (const Search &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

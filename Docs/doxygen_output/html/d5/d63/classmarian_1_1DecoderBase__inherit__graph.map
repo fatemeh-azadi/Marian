@@ -1,0 +1,7 @@
+<map id="marian::DecoderBase" name="marian::DecoderBase">
+<area shape="rect" id="node2" href="$d1/dcc/classmarian_1_1DecoderHardAtt.html" title="{marian::DecoderHardAtt\n|# rnn_\l# specialSymbols_\l|+ DecoderHardAtt()\l+ startState()\l+ step()\l+ groundTruth()\l+ selectEmbeddings()\l+ getAlignments()\l}" alt="" coords="18,248,181,413"/>
+<area shape="rect" id="node5" href="$d3/d4b/classmarian_1_1DecoderS2S.html" title="{marian::DecoderS2S\n|&#45; rnn_\l&#45; tiedOutputWeights_\l|+ DecoderS2S()\l+ startState()\l+ step()\l+ getAlignments()\l&#45; constructDecoderRNN()\l}" alt="" coords="205,255,375,406"/>
+<area shape="rect" id="node6" href="$d3/d3b/classmarian_1_1MultiDecoderS2S.html" title="{marian::MultiDecoderS2S\n|&#45; rnn_\l&#45; tiedOutputWeights_\l|+ MultiDecoderS2S()\l+ startState()\l+ step()\l+ getAlignments()\l&#45; constructDecoderRNN()\l}" alt="" coords="399,255,570,406"/>
+<area shape="rect" id="node3" href="$de/d21/classmarian_1_1DecoderHardSoftAtt.html" title="{marian::DecoderHardSoftAtt\n|# rnn_\l|+ DecoderHardSoftAtt()\l+ step()\l+ getAlignments()\l}" alt="" coords="6,461,193,568"/>
+<area shape="rect" id="node4" href="$d7/d30/classmarian_1_1MultiDecoderHardSoftAtt.html" title="{marian::MultiDecoderHard\lSoftAtt\n||+ MultiDecoderHardSoftAtt()\l+ startState()\l+ step()\l+ selectEmbeddings()\l+ getAlignments()\l}" alt="" coords="5,616,193,767"/>
+</map>

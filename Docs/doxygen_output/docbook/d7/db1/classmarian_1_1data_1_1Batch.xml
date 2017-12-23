@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/db1/classmarian_1_1data_1_1Batch">
+<title>marian::data::Batch class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d9b/batch_8h">&lt;batch.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::data::Batch</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dc4/classmarian_1_1data_1_1Batch__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::data::Batch</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d79/classmarian_1_1data_1_1Batch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; size_t &gt; sentenceIds_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d7/db1/classmarian_1_1data_1_1Batch_1a94c7526a079220adb07575e302c670c4">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d7/db1/classmarian_1_1data_1_1Batch_1add894ad400ec53d81b4a9950fe4b34b6">words</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; size_t &gt; &amp; <link linkend="d7/db1/classmarian_1_1data_1_1Batch_1a97e46e2989b883d9bda1c53840ef5315">getSentenceIds</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/db1/classmarian_1_1data_1_1Batch_1a22fd2ded066b30034cc506849b0cc4c3">setSentenceIds</link> (
+const std::vector&lt; size_t &gt; &amp; ids)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/db1/classmarian_1_1data_1_1Batch_1a94c7526a079220adb07575e302c670c4">
+                <title>virtual size_t marian::data::Batch::size () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db1/classmarian_1_1data_1_1Batch_1add894ad400ec53d81b4a9950fe4b34b6">
+                <title>virtual size_t marian::data::Batch::words () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db1/classmarian_1_1data_1_1Batch_1a97e46e2989b883d9bda1c53840ef5315">
+                <title>const std::vector&lt;size_t&gt;&amp; marian::data::Batch::getSentenceIds () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/db1/classmarian_1_1data_1_1Batch_1a22fd2ded066b30034cc506849b0cc4c3">
+                <title>void marian::data::Batch::setSentenceIds (const std::vector&lt; size_t &gt; &amp;ids)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

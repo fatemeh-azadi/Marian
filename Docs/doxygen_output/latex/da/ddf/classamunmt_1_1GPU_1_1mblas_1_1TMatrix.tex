@@ -1,0 +1,532 @@
+\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{}\section{amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:T\+Matrix$<$ T $>$ Class Template Reference}
+\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}}
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+
+
+Inheritance diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:T\+Matrix$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d1/d96/classamunmt_1_1GPU_1_1mblas_1_1TMatrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:mblas\+:\+:T\+Matrix$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{d1/dfa/classamunmt_1_1GPU_1_1mblas_1_1TMatrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_afcab21668823619cd9578fea0cebd8df}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae81300081f0705b32c36a04b33e9000c}{T\+Matrix} ()
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2bed15df51e1820a0dd900b111bfe222}{T\+Matrix} (size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam, size\+\_\+t batches, bool zero=false)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a58b584dc9bee09d49e85b801ce7f880a}{T\+Matrix} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix} \&\&m)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5d0ced2a1cb7fbce39d018a571ef72de}{T\+Matrix} (const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix} \&m)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5355566f8a8a7e804ab41cd2dcc3f306}{$\sim$\+T\+Matrix} ()
+\item 
+virtual size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{dim} (size\+\_\+t i) const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{Resize} (size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a379c5cc8ef7ca2f71da2d5055c9fb542}{New\+Size} (size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a71311ec900cc6cc35ac9605893a3f529}{reserve} (size\+\_\+t \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size})
+\item 
+virtual std\+::string \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{Debug} (size\+\_\+t verbosity=1) const 
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_afcab21668823619cd9578fea0cebd8df}{value\+\_\+type} $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae8f1f47f7a414caad928ab99627f7084}{data} ()
+\item 
+const \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_afcab21668823619cd9578fea0cebd8df}{value\+\_\+type} $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a6014fe64c3726d3133490697648ec0e5}{data} () const 
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a50ee1366bd54a911738974d06f4716fe}{swap} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix}{T\+Matrix} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\+\_\+} \mbox{[}\hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+size\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arr\+Size\+\_\+}
+\item 
+T $\ast$ \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix$<$ T $>$}
+
+
+
+Definition at line 52 of file matrix.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef T {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::{\bf value\+\_\+type}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_afcab21668823619cd9578fea0cebd8df}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_afcab21668823619cd9578fea0cebd8df}
+
+
+Definition at line 54 of file matrix.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!T\+Matrix@{T\+Matrix}}
+\index{T\+Matrix@{T\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{T\+Matrix()}{TMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::{\bf T\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae81300081f0705b32c36a04b33e9000c}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae81300081f0705b32c36a04b33e9000c}
+
+
+Definition at line 56 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+57     : \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_}(0)
+58     , \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}(\textcolor{keyword}{nullptr})
+59     \{
+60       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = 0;
+61       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = 0;
+62       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = 0;
+63       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = 0;
+64     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!T\+Matrix@{T\+Matrix}}
+\index{T\+Matrix@{T\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{T\+Matrix(size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam, size\+\_\+t batches, bool zero=false)}{TMatrix(size_t rows, size_t cols, size_t beam, size_t batches, bool zero=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::{\bf T\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{cols, }
+\item[{size\+\_\+t}]{beam, }
+\item[{size\+\_\+t}]{batches, }
+\item[{bool}]{zero = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2bed15df51e1820a0dd900b111bfe222}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2bed15df51e1820a0dd900b111bfe222}
+
+
+Definition at line 66 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+67     \{
+68       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows};
+69       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols};
+70       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = beam;
+71       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = batches;
+72       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}();
+73 
+74       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} * \textcolor{keyword}{sizeof}(T)) );
+75       \textcolor{keywordflow}{if} (zero) \{
+76         \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemsetAsync(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, 0, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} * \textcolor{keyword}{sizeof}(T), 
+      \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}()) );
+77       \}
+78     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!T\+Matrix@{T\+Matrix}}
+\index{T\+Matrix@{T\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{T\+Matrix(\+T\+Matrix \&\&m)}{TMatrix(TMatrix &&m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::{\bf T\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Matrix}$<$ T $>$ \&\&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a58b584dc9bee09d49e85b801ce7f880a}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a58b584dc9bee09d49e85b801ce7f880a}
+
+
+Definition at line 80 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+81     : \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae81300081f0705b32c36a04b33e9000c}{TMatrix}()
+82     \{
+83       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a50ee1366bd54a911738974d06f4716fe}{swap}(\hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m});
+84     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!T\+Matrix@{T\+Matrix}}
+\index{T\+Matrix@{T\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{T\+Matrix(const T\+Matrix \&m)}{TMatrix(const TMatrix &m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::{\bf T\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+Matrix}$<$ T $>$ \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5d0ced2a1cb7fbce39d018a571ef72de}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5d0ced2a1cb7fbce39d018a571ef72de}
+
+
+Definition at line 86 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+87     : \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_}(\hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.arrSize\_)
+88     \{
+89       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim\_[0];
+90       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim\_[1];
+91       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim\_[2];
+92       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.dim\_[3];
+93 
+94       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} * \textcolor{keyword}{sizeof}(T)) );
+95       \textcolor{comment}{//std::cerr << "malloc data2:" << data\_ << std::endl;}
+96       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(
+97           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_},
+98           \hyperlink{namespacefix__hard_aeddecc2eb0c9f49a568cb1bf69ac50f5}{m}.data\_,
+99           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} * \textcolor{keyword}{sizeof}(T),
+100           cudaMemcpyDeviceToDevice,
+101           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}()) );
+102     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!````~T\+Matrix@{$\sim$\+T\+Matrix}}
+\index{````~T\+Matrix@{$\sim$\+T\+Matrix}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{$\sim$\+T\+Matrix()}{~TMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::$\sim${\bf T\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5355566f8a8a7e804ab41cd2dcc3f306}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a5355566f8a8a7e804ab41cd2dcc3f306}
+
+
+Definition at line 104 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+105     \{
+106       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}));
+107     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf value\+\_\+type}$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae8f1f47f7a414caad928ab99627f7084}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae8f1f47f7a414caad928ab99627f7084}
+
+
+Definition at line 251 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+251                        \{
+252       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_};
+253     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae8f1f47f7a414caad928ab99627f7084_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!data@{data}}
+\index{data@{data}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const {\bf value\+\_\+type}$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a6014fe64c3726d3133490697648ec0e5}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a6014fe64c3726d3133490697648ec0e5}
+
+
+Definition at line 255 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+255                                    \{
+256       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_};
+257     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{Debug(size\+\_\+t verbosity=1) const }{Debug(size_t verbosity=1) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual std\+::string {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::Debug (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{verbosity = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a2a1e6f455240cec3b8406cfef94128e5}
+
+
+Reimplemented from \hyperlink{classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd}{amunmt\+::\+Base\+Matrix}.
+
+
+
+Definition at line 218 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+219     \{
+220       std::stringstream strm;
+221       strm << \hyperlink{classamunmt_1_1BaseMatrix_ae7601bd2c92e0102c263e143c36fb6cd}{BaseMatrix::Debug}(verbosity) << \textcolor{stringliteral}{" "};
+222       strm << \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} << \textcolor{stringliteral}{" "}
+223           << \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} << \textcolor{stringliteral}{" "}
+224           << std::flush;
+225 
+226       \textcolor{keywordflow}{if} (verbosity) \{
+227         T \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_a9ef50bea247d2ef942fbb6d73e3ccaa7}{Sum}(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae8f1f47f7a414caad928ab99627f7084}{data}(), \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}());
+228         strm << \textcolor{stringliteral}{"sum="} << sum << std::flush;
+229 
+230         \textcolor{keywordflow}{if} (verbosity == 2) \{
+231           \textcolor{keyword}{const} cudaStream\_t& stream = \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}();
+232           T h\_data[\hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}()];
+233 
+234           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(
+235               &h\_data,
+236               \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_},
+237               \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}() * \textcolor{keyword}{sizeof}(T),
+238               cudaMemcpyDeviceToHost,
+239               stream) );
+240           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaStreamSynchronize(stream) );
+241 
+242           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}(); ++i) \{
+243             strm << \textcolor{stringliteral}{" "} << h\_data[i];
+244           \}
+245         \}
+246       \}
+247 
+248       \textcolor{keywordflow}{return} strm.str();
+249     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!dim@{dim}}
+\index{dim@{dim}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{dim(size\+\_\+t i) const }{dim(size_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::dim (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a}
+
+
+Implements \hyperlink{classamunmt_1_1BaseMatrix_a8fca680b1a864b3d99e9cfe6aa60f1d4}{amunmt\+::\+Base\+Matrix}.
+
+
+
+Definition at line 109 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+110     \{
+111       \textcolor{keywordflow}{return} \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[i];
+112     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a642b2578400a4e9d395212f888ff9b1a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!New\+Size@{New\+Size}}
+\index{New\+Size@{New\+Size}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{New\+Size(size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)}{NewSize(size_t rows, size_t cols, size_t beam=1, size_t batches=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::New\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{cols, }
+\item[{size\+\_\+t}]{beam = {\ttfamily 1}, }
+\item[{size\+\_\+t}]{batches = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a379c5cc8ef7ca2f71da2d5055c9fb542}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a379c5cc8ef7ca2f71da2d5055c9fb542}
+
+
+Definition at line 158 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+158                                                                                 \{
+159       \textcolor{keywordtype}{size\_t} newSize = \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} * \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} * beam * batches;
+160       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}) \{
+161         \textcolor{keywordflow}{if} (newSize > \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_}) \{
+162           T *newData;
+163           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&newData, newSize * \textcolor{keyword}{sizeof}(T)) );
+164           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}));
+165           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} = newData;
+166           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = newSize;
+167         \}
+168         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} == 0 || \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} == 0) \{
+169             \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}));
+170             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} = \textcolor{keyword}{nullptr};
+171             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = 0;
+172             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = 0;
+173             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = 0;
+174             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = 0;
+175             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = 0;
+176         \}
+177       \}
+178       \textcolor{keywordflow}{else} \{
+179         \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, newSize * \textcolor{keyword}{sizeof}(T)) );
+180         \textcolor{comment}{//std::cerr << "malloc data4:" << data\_ << std::endl;}
+181         \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = newSize;
+182       \}
+183 
+184       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows};
+185       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols};
+186       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = beam;
+187       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = batches;
+188     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/ddf/classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a379c5cc8ef7ca2f71da2d5055c9fb542_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!reserve@{reserve}}
+\index{reserve@{reserve}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t size)}{reserve(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a71311ec900cc6cc35ac9605893a3f529}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a71311ec900cc6cc35ac9605893a3f529}
+
+
+Definition at line 190 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+191     \{
+192       assert(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} == \textcolor{keyword}{nullptr});
+193       \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size} * \textcolor{keyword}{sizeof}(T)) );
+194       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size};
+195     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!Resize@{Resize}}
+\index{Resize@{Resize}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{Resize(size\+\_\+t rows, size\+\_\+t cols, size\+\_\+t beam=1, size\+\_\+t batches=1)}{Resize(size_t rows, size_t cols, size_t beam=1, size_t batches=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::Resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{rows, }
+\item[{size\+\_\+t}]{cols, }
+\item[{size\+\_\+t}]{beam = {\ttfamily 1}, }
+\item[{size\+\_\+t}]{batches = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a080c2f2b4f5143726a957b0bd9fc201e}
+
+
+Implements \hyperlink{classamunmt_1_1BaseMatrix_a4cb69cec51d0849c2e9126131265a044}{amunmt\+::\+Base\+Matrix}.
+
+
+
+Definition at line 114 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+114                                                                                \{
+115       \textcolor{keywordtype}{size\_t} newSize = \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} * \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} * beam * batches;
+116       \textcolor{keywordflow}{if} (\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}) \{
+117         \textcolor{keywordflow}{if} (newSize > \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_}) \{
+118           T *newData;
+119           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&newData, newSize * \textcolor{keyword}{sizeof}(T)) );
+120           \textcolor{comment}{//std::cerr << "malloc data3:" << data\_ << std::endl;}
+121 
+122           \textcolor{comment}{//size\_t count = std::min(arrSize\_, newSize);}
+123 
+124           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMemcpyAsync(
+125               newData,
+126               \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_},
+127               \hyperlink{classamunmt_1_1BaseMatrix_a52ccc5b9234726532fe0452a8aed5b1f}{size}() * \textcolor{keyword}{sizeof}(T),
+128               cudaMemcpyDeviceToDevice,
+129               \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1CudaStreamHandler_aab9046cda40ac3fed5676d5aa680e6c8}{CudaStreamHandler::GetStream}()) );
+130 
+131           \textcolor{comment}{//std::cerr << "free data1:" << data\_ << std::endl;}
+132           \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}));
+133           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} = newData;
+134           \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = newSize;
+135         \}
+136         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} == 0 || \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols} == 0) \{
+137             \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}(cudaFree(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}));
+138             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_} = \textcolor{keyword}{nullptr};
+139             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = 0;
+140             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = 0;
+141             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = 0;
+142             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = 0;
+143             \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = 0;
+144         \}
+145       \}
+146       \textcolor{keywordflow}{else} \{
+147         \hyperlink{types-gpu_8h_af415eaa6c6ad014020a7ece805612466}{HANDLE\_ERROR}( cudaMalloc(&\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, newSize * \textcolor{keyword}{sizeof}(T)) );
+148         \textcolor{comment}{//std::cerr << "malloc data4:" << data\_ << std::endl;}
+149         \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_} = newSize;
+150       \}
+151 
+152       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[0] = \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows};
+153       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[1] = \hyperlink{namespacemarian_ab9fbdcc76cc853270094524572584222}{cols};
+154       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[2] = beam;
+155       \hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}[3] = batches;
+156     \}
+\end{DoxyCode}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!swap@{swap}}
+\index{swap@{swap}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{swap(\+T\+Matrix \&other)}{swap(TMatrix &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Matrix}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a50ee1366bd54a911738974d06f4716fe}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a50ee1366bd54a911738974d06f4716fe}
+
+
+Definition at line 259 of file matrix.\+h.
+
+
+\begin{DoxyCode}
+260     \{
+261       std::swap(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{dim\_}, other.dim\_);
+262       std::swap(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{arrSize\_}, other.arrSize\_);
+263       std::swap(\hyperlink{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{data\_}, other.data\_);
+264     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!arr\+Size\+\_\+@{arr\+Size\+\_\+}}
+\index{arr\+Size\+\_\+@{arr\+Size\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{arr\+Size\+\_\+}{arrSize_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::arr\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ae5fabb47536114e44975883ccf2d9c89}
+
+
+Definition at line 269 of file matrix.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_a277cd179551a588798f9c4e3269fb47a}
+
+
+Definition at line 270 of file matrix.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}!dim\+\_\+@{dim\+\_\+}}
+\index{dim\+\_\+@{dim\+\_\+}!amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix@{amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}}
+\subsubsection[{\texorpdfstring{dim\+\_\+}{dim_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf amunmt\+::\+G\+P\+U\+::mblas\+::\+T\+Matrix}$<$ T $>$\+::dim\+\_\+\mbox{[}{\bf S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}{}\label{classamunmt_1_1GPU_1_1mblas_1_1TMatrix_ad9811151546f114cf3f55c80f384087e}
+
+
+Definition at line 267 of file matrix.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{matrix_8h}{matrix.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,729 @@
+\hypertarget{classmarian_1_1sparse_1_1CSR}{}\section{marian\+:\+:sparse\+:\+:C\+SR Class Reference}
+\label{classmarian_1_1sparse_1_1CSR}\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+
+
+{\ttfamily \#include $<$sparse.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:sparse\+:\+:C\+SR\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{dc/de8/classmarian_1_1sparse_1_1CSR__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1sparse_1_1CSR_a7a2b6f436319f0f5382e10c7709dd2c6}{C\+SR} (int \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}, int \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}, size\+\_\+t device)
+\item 
+\hyperlink{classmarian_1_1sparse_1_1CSR_ac6c38489d34bc7aded9878e9d92c9dce}{C\+SR} (int \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}, int \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}, const std\+::vector$<$ float $>$ \&\hyperlink{classmarian_1_1sparse_1_1CSR_af3d51ccd7e843d03db235cc5ec81d366}{values}, const std\+::vector$<$ int $>$ \&\hyperlink{classmarian_1_1sparse_1_1CSR_a2ef5c672f6f31487700cf0b14b2048b4}{row\+Indices}, const std\+::vector$<$ int $>$ \&\hyperlink{classmarian_1_1sparse_1_1CSR_aa85374eab5d0e848ff5af442b8ba2232}{col\+Indices}, size\+\_\+t device)
+\item 
+\hyperlink{classmarian_1_1sparse_1_1CSR_a5e62d4f84783a6a7fce4a0392225f916}{C\+SR} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} dense)
+\item 
+\hyperlink{classmarian_1_1sparse_1_1CSR_ac34b367d43aab52753212a9fb801cb65}{$\sim$\+C\+SR} ()
+\item 
+void \hyperlink{classmarian_1_1sparse_1_1CSR_a10f3b80814d3d694e568255f226e7418}{to\+Tensor} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} dense)
+\item 
+cusparse\+Handle\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_a25bc1f2b6c9d78e0faf5f0f19f9305e9}{handle} ()
+\item 
+cusparse\+Mat\+Descr\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_ae4ae60a33b7eb31a15c98427d9d4a4af}{description} ()
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz} ()
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows} ()
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols} ()
+\item 
+float $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_af3d51ccd7e843d03db235cc5ec81d366}{values} ()
+\item 
+int $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_a2ef5c672f6f31487700cf0b14b2048b4}{row\+Indices} ()
+\item 
+int $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_aa85374eab5d0e848ff5af442b8ba2232}{col\+Indices} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_a81c8add2340a4d2ec22be32a5f4185dc}{get\+Device} ()
+\item 
+void \hyperlink{classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7}{alloc\+Values} (int \hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz}=0)
+\item 
+void \hyperlink{classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4}{alloc\+Row\+Indices} (int \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}=0)
+\item 
+void \hyperlink{classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d}{alloc\+Col\+Indices} (int \hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz}=0)
+\item 
+std\+::string \hyperlink{classmarian_1_1sparse_1_1CSR_ac4d7eff581b229cb8ad0b65f80a39b62}{debug} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\+\_\+} \{0\}
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\+\_\+} \{0\}
+\item 
+int \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\+\_\+} \{0\}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\+\_\+} \{0\}
+\item 
+cusparse\+Handle\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\+\_\+} \{0\}
+\item 
+cusparse\+Mat\+Descr\+\_\+t \hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\+\_\+} \{0\}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{row\+Indices\+\_\+} \{0\}
+\item 
+int $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{col\+Indices\+\_\+} \{0\}
+\item 
+float $\ast$ \hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\+\_\+} \{0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file sparse.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!C\+SR@{C\+SR}}
+\index{C\+SR@{C\+SR}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{C\+S\+R(int rows, int cols, size\+\_\+t device)}{CSR(int rows, int cols, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::sparse\+::\+C\+S\+R\+::\+C\+SR (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a7a2b6f436319f0f5382e10c7709dd2c6}{}\label{classmarian_1_1sparse_1_1CSR_a7a2b6f436319f0f5382e10c7709dd2c6}
+
+
+Definition at line 27 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+28       : \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_}(\hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}), \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_}(\hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}), \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_}(device) \{
+29     cudaSetDevice(device);
+30     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseCreate(&\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_}));
+31     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseCreateMatDescr(&\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}));
+32     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseSetMatType(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_MATRIX\_TYPE\_GENERAL));
+33     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseSetMatIndexBase(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_INDEX\_BASE\_ZERO));
+34   \}
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!C\+SR@{C\+SR}}
+\index{C\+SR@{C\+SR}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{C\+S\+R(int rows, int cols, const std\+::vector$<$ float $>$ \&values, const std\+::vector$<$ int $>$ \&row\+Indices, const std\+::vector$<$ int $>$ \&col\+Indices, size\+\_\+t device)}{CSR(int rows, int cols, const std::vector< float > &values, const std::vector< int > &rowIndices, const std::vector< int > &colIndices, size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::sparse\+::\+C\+S\+R\+::\+C\+SR (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{const std\+::vector$<$ float $>$ \&}]{values, }
+\item[{const std\+::vector$<$ int $>$ \&}]{row\+Indices, }
+\item[{const std\+::vector$<$ int $>$ \&}]{col\+Indices, }
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_ac6c38489d34bc7aded9878e9d92c9dce}{}\label{classmarian_1_1sparse_1_1CSR_ac6c38489d34bc7aded9878e9d92c9dce}
+
+
+Definition at line 36 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+42       : \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}(values.size()), \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_}(\hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}), \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_}(\hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}), 
+      \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_}(device) \{
+43     cudaSetDevice(device);
+44     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseCreate(&\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_}));
+45     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseCreateMatDescr(&\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}));
+46     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseSetMatType(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_MATRIX\_TYPE\_GENERAL));
+47     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseSetMatIndexBase(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_INDEX\_BASE\_ZERO));
+48 
+49     \hyperlink{classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7}{allocValues}();
+50     \hyperlink{classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4}{allocRowIndices}();
+51     \hyperlink{classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d}{allocColIndices}();
+52 
+53     \textcolor{keywordtype}{int}* cooRowIndices;
+54     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMalloc(&cooRowIndices, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}));
+55 
+56     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMemcpy(
+57         \hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_}, values.data(), \textcolor{keyword}{sizeof}(float) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}, cudaMemcpyDefault));
+58     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMemcpy(cooRowIndices,
+59                           rowIndices.data(),
+60                           \textcolor{keyword}{sizeof}(int) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_},
+61                           cudaMemcpyDefault));
+62     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMemcpy(
+63         \hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_}, colIndices.data(), \textcolor{keyword}{sizeof}(int) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}, cudaMemcpyDefault));
+64 
+65     \textcolor{comment}{// @TODO: sort here!}
+66 
+67     \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseXcoo2csr(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_},
+68                                     cooRowIndices,
+69                                     \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_},
+70                                     \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_},
+71                                     \hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_},
+72                                     CUSPARSE\_INDEX\_BASE\_ZERO));
+73     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(cooRowIndices));
+74   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_ac6c38489d34bc7aded9878e9d92c9dce_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!C\+SR@{C\+SR}}
+\index{C\+SR@{C\+SR}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{C\+S\+R(\+Tensor dense)}{CSR(Tensor dense)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::sparse\+::\+C\+S\+R\+::\+C\+SR (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{dense}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a5e62d4f84783a6a7fce4a0392225f916}{}\label{classmarian_1_1sparse_1_1CSR_a5e62d4f84783a6a7fce4a0392225f916}
+
+
+Definition at line 76 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+76                     : \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_}(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->getDevice()) \{
+77     cudaSetDevice(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->getDevice());
+78     \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_} = \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->shape()[0] * \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->shape()[2] * \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->shape()[3];
+79     \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_} = \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->shape()[1];
+80 
+81     cusparseCreate(&\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_});
+82     cusparseCreateMatDescr(&\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_});
+83     cusparseSetMatType(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_MATRIX\_TYPE\_GENERAL);
+84     cusparseSetMatIndexBase(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}, CUSPARSE\_INDEX\_BASE\_ZERO);
+85 
+86     \textcolor{comment}{// invert everything because of row-major format and use dense2csc,}
+87     \textcolor{comment}{// next keep using routines for csr}
+88     \textcolor{keywordtype}{int}* nnzPerCol;
+89     cudaMalloc(&nnzPerCol, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_});
+90     cusparseSnnz(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_},
+91                  CUSPARSE\_DIRECTION\_COLUMN,
+92                  \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_},
+93                  rows\_,
+94                  \hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_},
+95                  \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->data(),
+96                  \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_},
+97                  nnzPerCol,
+98                  &\hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_});
+99     \hyperlink{classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7}{allocValues}();
+100     \hyperlink{classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4}{allocRowIndices}();
+101     \hyperlink{classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d}{allocColIndices}();
+102 
+103     cusparseSdense2csc(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_},
+104                        \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_},
+105                        rows\_,
+106                        \hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_},
+107                        \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->data(),
+108                        \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_},
+109                        nnzPerCol,
+110                        \hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_},
+111                        \hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_},
+112                        \hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_});
+113     cudaFree(nnzPerCol);
+114   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a5e62d4f84783a6a7fce4a0392225f916_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!````~C\+SR@{$\sim$\+C\+SR}}
+\index{````~C\+SR@{$\sim$\+C\+SR}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+R()}{~CSR()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::sparse\+::\+C\+S\+R\+::$\sim$\+C\+SR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_ac34b367d43aab52753212a9fb801cb65}{}\label{classmarian_1_1sparse_1_1CSR_ac34b367d43aab52753212a9fb801cb65}
+
+
+Definition at line 116 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+116          \{
+117     cudaSetDevice(\hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_});
+118     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_})
+119       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_}));
+120     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_})
+121       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_}));
+122     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_})
+123       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_}));
+124 
+125     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_})
+126       \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseDestroy(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_}));
+127     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_})
+128       \hyperlink{cuda__helpers_8h_a4ee3be312b13053c2aa9070fecf31252}{CUSPARSE\_CHECK}(cusparseDestroyMatDescr(\hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}));
+129   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!alloc\+Col\+Indices@{alloc\+Col\+Indices}}
+\index{alloc\+Col\+Indices@{alloc\+Col\+Indices}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{alloc\+Col\+Indices(int nnz=0)}{allocColIndices(int nnz=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+C\+S\+R\+::alloc\+Col\+Indices (
+\begin{DoxyParamCaption}
+\item[{int}]{nnz = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d}{}\label{classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d}
+
+
+Definition at line 177 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+177                                     \{
+178     cudaSetDevice(\hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_});
+179     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz} > 0)
+180       \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_} = \hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz};
+181     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_})
+182       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_}));
+183     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMalloc(&\hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}));
+184   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a0b0089d20b429d67d3483627d577815d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!alloc\+Row\+Indices@{alloc\+Row\+Indices}}
+\index{alloc\+Row\+Indices@{alloc\+Row\+Indices}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{alloc\+Row\+Indices(int rows=0)}{allocRowIndices(int rows=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+C\+S\+R\+::alloc\+Row\+Indices (
+\begin{DoxyParamCaption}
+\item[{int}]{rows = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4}{}\label{classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4}
+
+
+Definition at line 168 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+168                                      \{
+169     cudaSetDevice(\hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_});
+170     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows} > 0)
+171       \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_} = \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows};
+172     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_})
+173       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_}));
+174     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMalloc(&\hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * (
+      \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_} + 1)));
+175   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a35eb04afb14985e6fe9ce75b3a8f0ff4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!alloc\+Values@{alloc\+Values}}
+\index{alloc\+Values@{alloc\+Values}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{alloc\+Values(int nnz=0)}{allocValues(int nnz=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+C\+S\+R\+::alloc\+Values (
+\begin{DoxyParamCaption}
+\item[{int}]{nnz = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7}{}\label{classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7}
+
+
+Definition at line 159 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+159                                 \{
+160     cudaSetDevice(\hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_});
+161     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz} > 0)
+162       \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_} = \hyperlink{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{nnz};
+163     \textcolor{keywordflow}{if}(\hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_})
+164       \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaFree(\hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_}));
+165     \hyperlink{cuda__helpers_8h_a408098ee0251b3c78fdf36be40657ad6}{CUDA\_CHECK}(cudaMalloc(&\hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}));
+166   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a4b280206ea0651821d1993cb38d2ada7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!col\+Indices@{col\+Indices}}
+\index{col\+Indices@{col\+Indices}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{col\+Indices()}{colIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::sparse\+::\+C\+S\+R\+::col\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_aa85374eab5d0e848ff5af442b8ba2232}{}\label{classmarian_1_1sparse_1_1CSR_aa85374eab5d0e848ff5af442b8ba2232}
+
+
+Definition at line 155 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+155 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_}; \}
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!cols@{cols}}
+\index{cols@{cols}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{cols()}{cols()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{}\label{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}
+
+
+Definition at line 151 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+151 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!debug@{debug}}
+\index{debug@{debug}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{debug()}{debug()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string marian\+::sparse\+::\+C\+S\+R\+::debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_ac4d7eff581b229cb8ad0b65f80a39b62}{}\label{classmarian_1_1sparse_1_1CSR_ac4d7eff581b229cb8ad0b65f80a39b62}
+
+
+Definition at line 186 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+186                     \{
+187     uint8\_t* buffer;
+188     cudaMalloc(&buffer, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}) * \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}() * \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}());
+189 
+190     \textcolor{keyword}{auto} mem = New<MemoryPiece>(buffer, \textcolor{keyword}{sizeof}(float) * \hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}() * \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}());
+191     \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} tensor(\textcolor{keyword}{new} TensorBase(mem, \{\hyperlink{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{rows}(), \hyperlink{classmarian_1_1sparse_1_1CSR_a2df7ca188de91d079ec9fb3157f5286d}{cols}()\}, \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_}));
+192     \hyperlink{classmarian_1_1sparse_1_1CSR_a10f3b80814d3d694e568255f226e7418}{toTensor}(tensor);
+193     std::string temp = tensor->debug();
+194 
+195     cudaFree(buffer);
+196     \textcolor{keywordflow}{return} temp;
+197   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_ac4d7eff581b229cb8ad0b65f80a39b62_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!description@{description}}
+\index{description@{description}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{description()}{description()}}]{\setlength{\rightskip}{0pt plus 5cm}cusparse\+Mat\+Descr\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_ae4ae60a33b7eb31a15c98427d9d4a4af}{}\label{classmarian_1_1sparse_1_1CSR_ae4ae60a33b7eb31a15c98427d9d4a4af}
+
+
+Definition at line 147 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+147 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_}; \};
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a81c8add2340a4d2ec22be32a5f4185dc}{}\label{classmarian_1_1sparse_1_1CSR_a81c8add2340a4d2ec22be32a5f4185dc}
+
+
+Definition at line 157 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+157 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_}; \}
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!handle@{handle}}
+\index{handle@{handle}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{handle()}{handle()}}]{\setlength{\rightskip}{0pt plus 5cm}cusparse\+Handle\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a25bc1f2b6c9d78e0faf5f0f19f9305e9}{}\label{classmarian_1_1sparse_1_1CSR_a25bc1f2b6c9d78e0faf5f0f19f9305e9}
+
+
+Definition at line 146 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+146 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_}; \};
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!nnz@{nnz}}
+\index{nnz@{nnz}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{nnz()}{nnz()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::nnz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}{}\label{classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52}
+
+
+Definition at line 149 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+149 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{nnz\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a9b68bf8d20aacba28f927880c2400b52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!row\+Indices@{row\+Indices}}
+\index{row\+Indices@{row\+Indices}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{row\+Indices()}{rowIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::sparse\+::\+C\+S\+R\+::row\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a2ef5c672f6f31487700cf0b14b2048b4}{}\label{classmarian_1_1sparse_1_1CSR_a2ef5c672f6f31487700cf0b14b2048b4}
+
+
+Definition at line 154 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+154 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_}; \}
+\end{DoxyCode}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!rows@{rows}}
+\index{rows@{rows}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{rows()}{rows()}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}{}\label{classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a}
+
+
+Definition at line 150 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+150 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a257b7c6a4c057270dace672caecdf69a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!to\+Tensor@{to\+Tensor}}
+\index{to\+Tensor@{to\+Tensor}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{to\+Tensor(\+Tensor dense)}{toTensor(Tensor dense)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::sparse\+::\+C\+S\+R\+::to\+Tensor (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{dense}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a10f3b80814d3d694e568255f226e7418}{}\label{classmarian_1_1sparse_1_1CSR_a10f3b80814d3d694e568255f226e7418}
+
+
+Definition at line 131 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+131                               \{
+132     cudaSetDevice(\hyperlink{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{device\_});
+133     UTIL\_THROW\_IF2(\hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->size() != \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_} * \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_}, \textcolor{stringliteral}{"Matrix sizes do not match"});
+134 
+135     cusparseScsc2dense(\hyperlink{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{handle\_},
+136                        cols\_,
+137                        \hyperlink{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{rows\_},
+138                        \hyperlink{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{descr\_},
+139                        \hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_},
+140                        \hyperlink{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{colIndices\_},
+141                        \hyperlink{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{rowIndices\_},
+142                        \hyperlink{namespacemarian_1_1mlp_a8c25b1e343bf78e66cd9e33e607efeb5}{dense}->data(),
+143                        \hyperlink{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{cols\_});
+144   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d1/d62/classmarian_1_1sparse_1_1CSR_a10f3b80814d3d694e568255f226e7418_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!values@{values}}
+\index{values@{values}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{values()}{values()}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::sparse\+::\+C\+S\+R\+::values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1sparse_1_1CSR_af3d51ccd7e843d03db235cc5ec81d366}{}\label{classmarian_1_1sparse_1_1CSR_af3d51ccd7e843d03db235cc5ec81d366}
+
+
+Definition at line 153 of file sparse.\+h.
+
+
+\begin{DoxyCode}
+153 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{values\_}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!col\+Indices\+\_\+@{col\+Indices\+\_\+}}
+\index{col\+Indices\+\_\+@{col\+Indices\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{col\+Indices\+\_\+}{colIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::sparse\+::\+C\+S\+R\+::col\+Indices\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}{}\label{classmarian_1_1sparse_1_1CSR_a258613537e03fd0fdaad0c8dd6188311}
+
+
+Definition at line 23 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!cols\+\_\+@{cols\+\_\+}}
+\index{cols\+\_\+@{cols\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{cols\+\_\+}{cols_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::cols\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}{}\label{classmarian_1_1sparse_1_1CSR_a308d9860a310b4cac456780b705ede57}
+
+
+Definition at line 16 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!descr\+\_\+@{descr\+\_\+}}
+\index{descr\+\_\+@{descr\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{descr\+\_\+}{descr_}}]{\setlength{\rightskip}{0pt plus 5cm}cusparse\+Mat\+Descr\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::descr\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}{}\label{classmarian_1_1sparse_1_1CSR_aefc692180153e470c2d6256eb4ec3f5b}
+
+
+Definition at line 20 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::device\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}{}\label{classmarian_1_1sparse_1_1CSR_a9466b731ae5e8bebd9713b8d6651dc41}
+
+
+Definition at line 17 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!handle\+\_\+@{handle\+\_\+}}
+\index{handle\+\_\+@{handle\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{handle\+\_\+}{handle_}}]{\setlength{\rightskip}{0pt plus 5cm}cusparse\+Handle\+\_\+t marian\+::sparse\+::\+C\+S\+R\+::handle\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}{}\label{classmarian_1_1sparse_1_1CSR_a3bfb6efc65c5b85247ca0cd2a8863c00}
+
+
+Definition at line 19 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!nnz\+\_\+@{nnz\+\_\+}}
+\index{nnz\+\_\+@{nnz\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{nnz\+\_\+}{nnz_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::nnz\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}{}\label{classmarian_1_1sparse_1_1CSR_a567e83de09f28445aa97c6374477b8fa}
+
+
+Definition at line 14 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!row\+Indices\+\_\+@{row\+Indices\+\_\+}}
+\index{row\+Indices\+\_\+@{row\+Indices\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{row\+Indices\+\_\+}{rowIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ marian\+::sparse\+::\+C\+S\+R\+::row\+Indices\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}{}\label{classmarian_1_1sparse_1_1CSR_a6d20131d1a2e8b89ed037bc6d4debdeb}
+
+
+Definition at line 22 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!rows\+\_\+@{rows\+\_\+}}
+\index{rows\+\_\+@{rows\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{rows\+\_\+}{rows_}}]{\setlength{\rightskip}{0pt plus 5cm}int marian\+::sparse\+::\+C\+S\+R\+::rows\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}{}\label{classmarian_1_1sparse_1_1CSR_adc2e92a08b1ac2c6ace0c1283e4c353e}
+
+
+Definition at line 15 of file sparse.\+h.
+
+\index{marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}!values\+\_\+@{values\+\_\+}}
+\index{values\+\_\+@{values\+\_\+}!marian\+::sparse\+::\+C\+SR@{marian\+::sparse\+::\+C\+SR}}
+\subsubsection[{\texorpdfstring{values\+\_\+}{values_}}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ marian\+::sparse\+::\+C\+S\+R\+::values\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}{}\label{classmarian_1_1sparse_1_1CSR_a10886b73b3ba7e2bb066b187345ba504}
+
+
+Definition at line 24 of file sparse.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sparse_8h}{sparse.\+h}\end{DoxyCompactItemize}

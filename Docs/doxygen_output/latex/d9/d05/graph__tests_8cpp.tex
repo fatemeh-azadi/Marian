@@ -1,0 +1,115 @@
+\hypertarget{graph__tests_8cpp}{}\section{graph\+\_\+tests.\+cpp File Reference}
+\label{graph__tests_8cpp}\index{graph\+\_\+tests.\+cpp@{graph\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}catch.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+graph.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graph/expression\+\_\+operators.\+h\char`\"{}}\\*
+Include dependency graph for graph\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d86/graph__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graph__tests_8cpp_abe3c8f721d3cdd233070b209b493833c}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Graph device is \hyperlink{marian_2src_2tests_2CMakeLists_8txt_a59d4487ba23386d5b73310f034357598}{set}\char`\"{},\char`\"{}\mbox{[}graph\mbox{]}\char`\"{})
+\item 
+\hyperlink{graph__tests_8cpp_a6cf89c595ea58fa3333caaf0696f14b8}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Expression graph can be initialized with constant values\char`\"{},\char`\"{}\mbox{[}graph\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{graph\+\_\+tests.\+cpp@{graph\+\_\+tests.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!graph\+\_\+tests.\+cpp@{graph\+\_\+tests.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E(""Graph device is set"",""[graph]"")}{TEST_CASE("Graph device is set","[graph]")}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+\+C\+A\+SE (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Graph device is {\bf set}\char`\"{}}]{, }
+\item[{\char`\"{}\char`\"{}}]{\mbox{[}graph\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{graph__tests_8cpp_abe3c8f721d3cdd233070b209b493833c}{}\label{graph__tests_8cpp_abe3c8f721d3cdd233070b209b493833c}
+
+
+Definition at line 7 of file graph\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}
+7                                             \{
+8   \textcolor{keyword}{auto} graph = New<ExpressionGraph>();
+9 
+10   graph->setDevice(0);
+11   REQUIRE(graph->getDevice() == 0);
+12   graph->setDevice(1);
+13   REQUIRE(graph->getDevice() == 1);
+14 \}
+\end{DoxyCode}
+\index{graph\+\_\+tests.\+cpp@{graph\+\_\+tests.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!graph\+\_\+tests.\+cpp@{graph\+\_\+tests.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E(""Expression graph can be initialized with constant values"",""[graph]"")}{TEST_CASE("Expression graph can be initialized with constant values","[graph]")}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+\+C\+A\+SE (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Expression graph can be initialized with constant values\char`\"{}}]{, }
+\item[{\char`\"{}\char`\"{}}]{\mbox{[}graph\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{graph__tests_8cpp_a6cf89c595ea58fa3333caaf0696f14b8}{}\label{graph__tests_8cpp_a6cf89c595ea58fa3333caaf0696f14b8}
+
+
+Definition at line 16 of file graph\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}
+17                      \{
+18   \textcolor{keyword}{auto} graph = New<ExpressionGraph>();
+19   graph->setDevice(0);
+20   graph->reserveWorkspaceMB(4);
+21 
+22   std::vector<float> values;
+23 
+24   SECTION(\textcolor{stringliteral}{"initializing with zeros"}) \{
+25     graph->clear();
+26     values.clear();
+27     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{zeros} = graph->param(\textcolor{stringliteral}{"0s"}, \{2, 5\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{inits::zeros});
+28     graph->forward();
+29 
+30     \hyperlink{namespacemarian_1_1inits_a1bd34fd256e3df7bb1e27955a7f2b359}{zeros}->val()->get(values);
+31     REQUIRE(values == std::vector<float>(10, 0.0f));
+32   \}
+33 
+34   SECTION(\textcolor{stringliteral}{"initializing with ones"}) \{
+35     graph->clear();
+36     values.clear();
+37     \textcolor{keyword}{auto} \hyperlink{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{ones} = graph->param(\textcolor{stringliteral}{"1s"}, \{2, 5\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{inits::ones});
+38     graph->forward();
+39 
+40     \hyperlink{namespacemarian_1_1inits_ae2baa2cb7116abb19c235fbe5ed0de9c}{ones}->val()->get(values);
+41     REQUIRE(values == std::vector<float>(10, 1.0f));
+42   \}
+43 
+44   SECTION(\textcolor{stringliteral}{"initializing from vector"}) \{
+45     graph->clear();
+46     values.clear();
+47     std::vector<float> v(\{1, 2, 3, 4, 5, 6\});
+48     \textcolor{keyword}{auto} vals = graph->param(\textcolor{stringliteral}{"vs"}, \{2, 3\}, \hyperlink{amunmt_8cpp_a2e8ddb8bd2f3405f554c9f2c52277f4b}{keywords::init} = 
+      \hyperlink{namespacemarian_1_1inits_ab9566318ddbacd376c74cdbdfac091e4}{inits::from\_vector}(v));
+49     graph->forward();
+50 
+51     REQUIRE(values.empty());
+52     vals->val()->get(values);
+53     REQUIRE(values == v);
+54   \}
+55 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{d9/d05/graph__tests_8cpp_a6cf89c595ea58fa3333caaf0696f14b8_cgraph}
+\end{center}
+\end{figure}
+
+

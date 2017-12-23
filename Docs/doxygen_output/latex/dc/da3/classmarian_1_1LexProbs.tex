@@ -1,0 +1,326 @@
+\hypertarget{classmarian_1_1LexProbs}{}\section{marian\+:\+:Lex\+Probs Class Reference}
+\label{classmarian_1_1LexProbs}\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+
+
+{\ttfamily \#include $<$lex\+\_\+probs.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Lex\+Probs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{d6/d8f/classmarian_1_1LexProbs__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1LexProbs_a3e3cf041f4c478e6bc3b82018070302f}{Lex\+Probs} (const std\+::string \&fname, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ src\+Vocab, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ trg\+Vocab, size\+\_\+t src\+Dim, size\+\_\+t trg\+Dim)
+\item 
+\hyperlink{classmarian_1_1LexProbs_aeb1ccb2cc1b340733bbcb3fe082b66fc}{Lex\+Probs} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Config}{Config} $>$ options, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ src\+Vocab, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1Vocab}{Vocab} $>$ trg\+Vocab)
+\item 
+void \hyperlink{classmarian_1_1LexProbs_aace10e92c706a3ddc6706fc8bb91b97b}{build\+Probs} (size\+\_\+t device)
+\item 
+void \hyperlink{classmarian_1_1LexProbs_a4d958aee140ae2db31f96dd82cc22137}{reset\+Lf} (\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1ExpressionGraph}{Expression\+Graph} $>$ graph, \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1data_1_1CorpusBatch}{data\+::\+Corpus\+Batch} $>$ batch)
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{classmarian_1_1LexProbs_a02856f8d11871c723acafeab1d8ecde5}{get\+Probs} ()
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{classmarian_1_1LexProbs_a890317e54a6416a4a4afe8d906dd2a92}{get\+Lf} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{src\+Dim\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}{trg\+Dim\+\_\+}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}{values\+\_\+}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}{row\+Indices\+\_\+}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}{col\+Indices\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static thread\+\_\+local \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lex\+Probs\+\_\+}
+\item 
+static thread\+\_\+local \hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1sparse_1_1CSR}{sparse\+::\+C\+SR} $>$ \hyperlink{classmarian_1_1LexProbs_a65bfae71dcdadf29398ab31ab855065c}{lf\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file lex\+\_\+probs.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!Lex\+Probs@{Lex\+Probs}}
+\index{Lex\+Probs@{Lex\+Probs}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{Lex\+Probs(const std\+::string \&fname, Ptr$<$ Vocab $>$ src\+Vocab, Ptr$<$ Vocab $>$ trg\+Vocab, size\+\_\+t src\+Dim, size\+\_\+t trg\+Dim)}{LexProbs(const std::string &fname, Ptr< Vocab > srcVocab, Ptr< Vocab > trgVocab, size_t srcDim, size_t trgDim)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Lex\+Probs\+::\+Lex\+Probs (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{fname, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{src\+Vocab, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{trg\+Vocab, }
+\item[{size\+\_\+t}]{src\+Dim, }
+\item[{size\+\_\+t}]{trg\+Dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_a3e3cf041f4c478e6bc3b82018070302f}{}\label{classmarian_1_1LexProbs_a3e3cf041f4c478e6bc3b82018070302f}
+
+
+Definition at line 25 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+30       : \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{srcDim\_}(srcDim), \hyperlink{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}{trgDim\_}(trgDim) \{
+31     \hyperlink{classInputFileStream}{InputFileStream} in(fname);
+32 
+33     std::vector<std::map<size\_t, float>> data;
+34     \textcolor{keywordtype}{size\_t} nonzeros = 0;
+35     std::string src, trg;
+36     \textcolor{keywordtype}{float} prob;
+37     \textcolor{keywordflow}{while}(in >> trg >> src >> prob) \{
+38       \textcolor{keywordflow}{if}(src == \textcolor{stringliteral}{"NULL"} || trg == \textcolor{stringliteral}{"NULL"})
+39         \textcolor{keywordflow}{continue};
+40 
+41       \textcolor{keywordtype}{size\_t} sid = (*srcVocab)[src];
+42       \textcolor{keywordtype}{size\_t} tid = (*trgVocab)[trg];
+43 
+44       \textcolor{keywordflow}{if}(sid < \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{srcDim\_} && tid < trgDim\_ && prob > 0.001) \{
+45         \textcolor{keywordflow}{if}(data.size() <= sid)
+46           data.resize(sid + 1);
+47         \textcolor{keywordflow}{if}(data[sid].count(tid) == 0) \{
+48           data[sid][tid] = prob;
+49           nonzeros++;
+50         \}
+51       \}
+52     \}
+53     \textcolor{comment}{// EOS symbol}
+54     \textcolor{keywordflow}{if}(data.size() <= 1)
+55       data.resize(1);
+56     data[0][0] = 1;
+57     nonzeros++;
+58 
+59     \hyperlink{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}{values\_}.resize(nonzeros);
+60     \hyperlink{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}{rowIndices\_}.resize(nonzeros);
+61     \hyperlink{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}{colIndices\_}.resize(nonzeros);
+62 
+63     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Building dictionary of \{\} pairs from lexical table"}, nonzeros);
+64 
+65     \textcolor{keywordtype}{size\_t} ind = 0;
+66     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} sid = 0; sid < data.size() && sid < srcDim; ++sid) \{
+67       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& it : data[sid]) \{
+68         \textcolor{keywordtype}{size\_t} tid = it.first;
+69         \textcolor{keywordtype}{float} val = it.second;
+70 
+71         \textcolor{keywordflow}{if}(tid >= \hyperlink{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}{trgDim\_})
+72           \textcolor{keywordflow}{break};
+73 
+74         \hyperlink{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}{rowIndices\_}[ind] = sid;
+75         \hyperlink{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}{colIndices\_}[ind] = tid;
+76         \hyperlink{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}{values\_}[ind] = val;
+77         ind++;
+78       \}
+79     \}
+80   \}
+\end{DoxyCode}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!Lex\+Probs@{Lex\+Probs}}
+\index{Lex\+Probs@{Lex\+Probs}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{Lex\+Probs(\+Ptr$<$ Config $>$ options, Ptr$<$ Vocab $>$ src\+Vocab, Ptr$<$ Vocab $>$ trg\+Vocab)}{LexProbs(Ptr< Config > options, Ptr< Vocab > srcVocab, Ptr< Vocab > trgVocab)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Lex\+Probs\+::\+Lex\+Probs (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Config} $>$}]{options, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{src\+Vocab, }
+\item[{{\bf Ptr}$<$ {\bf Vocab} $>$}]{trg\+Vocab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_aeb1ccb2cc1b340733bbcb3fe082b66fc}{}\label{classmarian_1_1LexProbs_aeb1ccb2cc1b340733bbcb3fe082b66fc}
+
+
+Definition at line 82 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+83       : \hyperlink{classmarian_1_1LexProbs_a3e3cf041f4c478e6bc3b82018070302f}{LexProbs}(options->get<std::string>(\textcolor{stringliteral}{"lexical-table"}),
+84                  srcVocab,
+85                  trgVocab,
+86                  options->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"}).front(),
+87                  options->get<std::vector<int>>(\textcolor{stringliteral}{"dim-vocabs"}).back()) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!build\+Probs@{build\+Probs}}
+\index{build\+Probs@{build\+Probs}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{build\+Probs(size\+\_\+t device)}{buildProbs(size_t device)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Lex\+Probs\+::build\+Probs (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_aace10e92c706a3ddc6706fc8bb91b97b}{}\label{classmarian_1_1LexProbs_aace10e92c706a3ddc6706fc8bb91b97b}
+
+
+Definition at line 89 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+89                                  \{
+90     \textcolor{keywordflow}{if}(!\hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lexProbs\_}) \{
+91       \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Building sparse matrix for lexical probabilities"});
+92       \hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lexProbs\_} = New<sparse::CSR>(
+93           \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{srcDim\_}, \hyperlink{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}{trgDim\_}, \hyperlink{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}{values\_}, \hyperlink{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}{rowIndices\_}, 
+      \hyperlink{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}{colIndices\_}, device);
+94     \}
+95   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/da3/classmarian_1_1LexProbs_aace10e92c706a3ddc6706fc8bb91b97b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!get\+Lf@{get\+Lf}}
+\index{get\+Lf@{get\+Lf}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{get\+Lf()}{getLf()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lex\+Probs\+::get\+Lf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_a890317e54a6416a4a4afe8d906dd2a92}{}\label{classmarian_1_1LexProbs_a890317e54a6416a4a4afe8d906dd2a92}
+
+
+Definition at line 124 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+124 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1LexProbs_a65bfae71dcdadf29398ab31ab855065c}{lf\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!get\+Probs@{get\+Probs}}
+\index{get\+Probs@{get\+Probs}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{get\+Probs()}{getProbs()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lex\+Probs\+::get\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_a02856f8d11871c723acafeab1d8ecde5}{}\label{classmarian_1_1LexProbs_a02856f8d11871c723acafeab1d8ecde5}
+
+
+Definition at line 122 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+122 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lexProbs\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!reset\+Lf@{reset\+Lf}}
+\index{reset\+Lf@{reset\+Lf}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{reset\+Lf(\+Ptr$<$ Expression\+Graph $>$ graph, Ptr$<$ data\+::\+Corpus\+Batch $>$ batch)}{resetLf(Ptr< ExpressionGraph > graph, Ptr< data::CorpusBatch > batch)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Lex\+Probs\+::reset\+Lf (
+\begin{DoxyParamCaption}
+\item[{{\bf Ptr}$<$ {\bf Expression\+Graph} $>$}]{graph, }
+\item[{{\bf Ptr}$<$ {\bf data\+::\+Corpus\+Batch} $>$}]{batch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1LexProbs_a4d958aee140ae2db31f96dd82cc22137}{}\label{classmarian_1_1LexProbs_a4d958aee140ae2db31f96dd82cc22137}
+
+
+Definition at line 97 of file lex\+\_\+probs.\+h.
+
+
+\begin{DoxyCode}
+97                                                                        \{
+98     \hyperlink{classmarian_1_1LexProbs_aace10e92c706a3ddc6706fc8bb91b97b}{buildProbs}(graph->getDevice());
+99 
+100     \textcolor{keyword}{auto} srcBatch = batch->front();
+101     \textcolor{keyword}{auto}& indices = srcBatch->indeces();
+102 
+103     \textcolor{keywordtype}{size\_t} \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows} = indices.size();
+104 
+105     std::vector<float> values(rows);
+106     std::vector<int> rowIndices(rows);
+107     std::vector<int> colIndices(rows);
+108 
+109     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}; ++i) \{
+110       UTIL\_THROW\_IF2(indices[i] >= \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{srcDim\_}, \textcolor{stringliteral}{"column index to large"});
+111       values[i] = 1;
+112       rowIndices[i] = i;
+113       colIndices[i] = indices[i];
+114     \}
+115 
+116     \textcolor{keyword}{auto} lookup = New<sparse::CSR>(
+117         \hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}, \hyperlink{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{srcDim\_}, values, rowIndices, colIndices, graph->getDevice());
+118     \hyperlink{classmarian_1_1LexProbs_a65bfae71dcdadf29398ab31ab855065c}{lf\_} = New<sparse::CSR>(\hyperlink{namespacemarian_ace1e9a63d52edc363d70d661cf8d0257}{rows}, \hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lexProbs\_}->cols(), graph->getDevice());
+119     \hyperlink{namespacemarian_1_1sparse_ad5213500007ccc462473804a1374c1ff}{sparse::multiply}(lf\_, lookup, \hyperlink{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{lexProbs\_});
+120   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/da3/classmarian_1_1LexProbs_a4d958aee140ae2db31f96dd82cc22137_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!col\+Indices\+\_\+@{col\+Indices\+\_\+}}
+\index{col\+Indices\+\_\+@{col\+Indices\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{col\+Indices\+\_\+}{colIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ marian\+::\+Lex\+Probs\+::col\+Indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}{}\label{classmarian_1_1LexProbs_af46061a0c4104dce0c8da7d91f014f44}
+
+
+Definition at line 22 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!lex\+Probs\+\_\+@{lex\+Probs\+\_\+}}
+\index{lex\+Probs\+\_\+@{lex\+Probs\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{lex\+Probs\+\_\+}{lexProbs_}}]{\setlength{\rightskip}{0pt plus 5cm}thread\+\_\+local {\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lex\+Probs\+::lex\+Probs\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}{}\label{classmarian_1_1LexProbs_a58752d3501db781924b464b19d0d3af2}
+
+
+Definition at line 14 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!lf\+\_\+@{lf\+\_\+}}
+\index{lf\+\_\+@{lf\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{lf\+\_\+}{lf_}}]{\setlength{\rightskip}{0pt plus 5cm}thread\+\_\+local {\bf Ptr}$<${\bf sparse\+::\+C\+SR}$>$ marian\+::\+Lex\+Probs\+::lf\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_a65bfae71dcdadf29398ab31ab855065c}{}\label{classmarian_1_1LexProbs_a65bfae71dcdadf29398ab31ab855065c}
+
+
+Definition at line 15 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!row\+Indices\+\_\+@{row\+Indices\+\_\+}}
+\index{row\+Indices\+\_\+@{row\+Indices\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{row\+Indices\+\_\+}{rowIndices_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ marian\+::\+Lex\+Probs\+::row\+Indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}{}\label{classmarian_1_1LexProbs_af0877c33d19bcec0d40e3cc99946d93b}
+
+
+Definition at line 21 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!src\+Dim\+\_\+@{src\+Dim\+\_\+}}
+\index{src\+Dim\+\_\+@{src\+Dim\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{src\+Dim\+\_\+}{srcDim_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Lex\+Probs\+::src\+Dim\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}{}\label{classmarian_1_1LexProbs_a066f91b5a18aa4e703d36b2e5583a1d5}
+
+
+Definition at line 17 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!trg\+Dim\+\_\+@{trg\+Dim\+\_\+}}
+\index{trg\+Dim\+\_\+@{trg\+Dim\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{trg\+Dim\+\_\+}{trgDim_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Lex\+Probs\+::trg\+Dim\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}{}\label{classmarian_1_1LexProbs_aca81dfd4fe0b8a08e499cfeab3115950}
+
+
+Definition at line 18 of file lex\+\_\+probs.\+h.
+
+\index{marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}!values\+\_\+@{values\+\_\+}}
+\index{values\+\_\+@{values\+\_\+}!marian\+::\+Lex\+Probs@{marian\+::\+Lex\+Probs}}
+\subsubsection[{\texorpdfstring{values\+\_\+}{values_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ marian\+::\+Lex\+Probs\+::values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}{}\label{classmarian_1_1LexProbs_a12c2b523b16a3239d99fd69a6a463927}
+
+
+Definition at line 20 of file lex\+\_\+probs.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lex__probs_8h}{lex\+\_\+probs.\+h}\end{DoxyCompactItemize}

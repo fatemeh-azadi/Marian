@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d4e/classamunmt_1_1Config">
+<title>amunmt::Config class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d5e/amun_2common_2config_8h">&lt;config.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::Config</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/da0/classamunmt_1_1Config__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::Config</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/df0/classamunmt_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node config_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string inputPath</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="da/d4e/classamunmt_1_1Config_1aea1c78c5d37a811d86d8b49b8dac94d1">Has</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>YAML::Node <link linkend="da/d4e/classamunmt_1_1Config_1a5257f41272d06c35bebe8130b5897d23">Get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="da/d4e/classamunmt_1_1Config_1aa7e531efa35245ae0dd6ccbe02e98006">Get</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const YAML::Node &amp; <link linkend="da/d4e/classamunmt_1_1Config_1a76c3003096368571fd19e3621691e734">Get</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d4e/classamunmt_1_1Config_1ae621721651f919b18e8719a6f30ad568">AddOptions</link> (
+size_t argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d4e/classamunmt_1_1Config_1ab10da8bb0a4fbc3a41867f9c14e17059">LogOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1aea1c78c5d37a811d86d8b49b8dac94d1">
+                <title>bool amunmt::Config::Has (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1a5257f41272d06c35bebe8130b5897d23">
+                <title>YAML::Node amunmt::Config::Get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1aa7e531efa35245ae0dd6ccbe02e98006">
+                <title>T amunmt::Config::Get (const std::string &amp;key) const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1a76c3003096368571fd19e3621691e734">
+                <title>const YAML::Node &amp; amunmt::Config::Get () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1ae621721651f919b18e8719a6f30ad568">
+                <title>void amunmt::Config::AddOptions (size_t argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="da/d4e/classamunmt_1_1Config_1ab10da8bb0a4fbc3a41867f9c14e17059">
+                <title>void amunmt::Config::LogOptions ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

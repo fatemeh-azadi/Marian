@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d81/classmarian_1_1mlp_1_1DenseFactory">
+<title>marian::mlp::DenseFactory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dc3/layers_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::mlp::DenseFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d38/classmarian_1_1mlp_1_1DenseFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::mlp::DenseFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dab/classmarian_1_1mlp_1_1DenseFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; tiedParams_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; tiedParamsTransposed_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a6c805ca4dc86a997010dd9058696f28d">DenseFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory">DenseFactory</link> &gt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a73aeebf237e26e01cd58f80bf3ba20be">tie</link> (
+const std::string &amp; param, const std::string &amp; tied)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/dc0/classmarian_1_1Accumulator">Accumulator</link>&lt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory">DenseFactory</link> &gt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory_1aed7d02fe20bf0bf9de28564fd5e363ae">tie_transposed</link> (
+const std::string &amp; param, const std::string &amp; tied)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; Layer &gt; <link linkend="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a8f8ed567ae10a6fc455667b7f180378f">construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a6c805ca4dc86a997010dd9058696f28d">
+                <title>marian::mlp::DenseFactory::DenseFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a73aeebf237e26e01cd58f80bf3ba20be">
+                <title>Accumulator&lt;DenseFactory&gt; marian::mlp::DenseFactory::tie (const std::string &amp;param, const std::string &amp;tied)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d81/classmarian_1_1mlp_1_1DenseFactory_1aed7d02fe20bf0bf9de28564fd5e363ae">
+                <title>Accumulator&lt;DenseFactory&gt; marian::mlp::DenseFactory::tie_transposed (const std::string &amp;param, const std::string &amp;tied)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d81/classmarian_1_1mlp_1_1DenseFactory_1a8f8ed567ae10a6fc455667b7f180378f">
+                <title>Ptr&lt;Layer&gt; marian::mlp::DenseFactory::construct ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

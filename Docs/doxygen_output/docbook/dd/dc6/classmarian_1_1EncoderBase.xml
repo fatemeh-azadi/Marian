@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dc6/classmarian_1_1EncoderBase">
+<title>marian::EncoderBase class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d95/encdec_8h">&lt;encdec.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::EncoderBase</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d76/classmarian_1_1EncoderBase__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::EncoderBase</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d31/classmarian_1_1EncoderBase__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ptr&lt; Config &gt; options_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string prefix_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool inference_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::tuple&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link>, <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; <link linkend="dd/dc6/classmarian_1_1EncoderBase_1a02e1594dfe8b093081c24f1aea1a35d6">lookup</link> (
+<link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> srcEmbeddings, <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; batch, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/dc6/classmarian_1_1EncoderBase_1aba592bf63d3b015bdc41fc06d7fa3a59">EncoderBase</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="d6/dba/classmarian_1_1Config">Config</link> &gt; options, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d1d/classmarian_1_1EncoderState">EncoderState</link> &gt; <link linkend="dd/dc6/classmarian_1_1EncoderBase_1a7404d245bf899d6d8023d56407d81272">build</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; , <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="df/d0c/classmarian_1_1data_1_1CorpusBatch">data::CorpusBatch</link> &gt; , size_t )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="dd/dc6/classmarian_1_1EncoderBase_1aff87b618b2754b99eaf961e95739366d">opt</link> (
+const std::string &amp; key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/dc6/classmarian_1_1EncoderBase_1a02e1594dfe8b093081c24f1aea1a35d6">
+                <title>virtual std::tuple&lt;Expr, Expr&gt; marian::EncoderBase::lookup (Expr srcEmbeddings, Ptr&lt; data::CorpusBatch &gt; batch, size_t index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dc6/classmarian_1_1EncoderBase_1aba592bf63d3b015bdc41fc06d7fa3a59">
+                <title>marian::EncoderBase::EncoderBase (Ptr&lt; Config &gt; options, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dc6/classmarian_1_1EncoderBase_1a7404d245bf899d6d8023d56407d81272">
+                <title>virtual Ptr&lt;EncoderState&gt; marian::EncoderBase::build (Ptr&lt; ExpressionGraph &gt;, Ptr&lt; data::CorpusBatch &gt;, size_t)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/dc6/classmarian_1_1EncoderBase_1aff87b618b2754b99eaf961e95739366d">
+                <title>T marian::EncoderBase::opt (const std::string &amp;key)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

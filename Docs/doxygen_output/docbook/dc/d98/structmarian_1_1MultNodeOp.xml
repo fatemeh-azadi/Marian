@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d98/structmarian_1_1MultNodeOp">
+<title>marian::MultNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/dc5/node__operators__binary_8h">&lt;node_operators_binary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::MultNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/df2/structmarian_1_1MultNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::MultNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dbd/structmarian_1_1MultNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d98/structmarian_1_1MultNodeOp_1ac436d5c700e29f08e37d962820762157">MultNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d98/structmarian_1_1MultNodeOp_1a659fc65e22c0921a06bd167b0b1c2102">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="dc/d98/structmarian_1_1MultNodeOp_1a27aa4d7f39e4ba64e3be883ca6dfaf45">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="dc/d98/structmarian_1_1MultNodeOp_1a69109e1f4c13884564ca7ba27eb5cf49">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="dc/d98/structmarian_1_1MultNodeOp_1ac436d5c700e29f08e37d962820762157">
+                <title>marian::MultNodeOp::MultNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d98/structmarian_1_1MultNodeOp_1a659fc65e22c0921a06bd167b0b1c2102">
+                <title>NodeOps marian::MultNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d98/structmarian_1_1MultNodeOp_1a27aa4d7f39e4ba64e3be883ca6dfaf45">
+                <title>NodeOps marian::MultNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d98/structmarian_1_1MultNodeOp_1a69109e1f4c13884564ca7ba27eb5cf49">
+                <title>const std::string marian::MultNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

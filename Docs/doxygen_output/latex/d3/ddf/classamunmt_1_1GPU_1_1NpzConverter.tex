@@ -1,0 +1,114 @@
+\hypertarget{classamunmt_1_1GPU_1_1NpzConverter}{}\section{amunmt\+:\+:G\+PU\+:\+:Npz\+Converter Class Reference}
+\label{classamunmt_1_1GPU_1_1NpzConverter}\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+
+
+{\ttfamily \#include $<$npz\+\_\+converter.\+h$>$}
+
+
+
+Collaboration diagram for amunmt\+:\+:G\+PU\+:\+:Npz\+Converter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d4/dd1/classamunmt_1_1GPU_1_1NpzConverter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_1_1NpyMatrixWrapper}{Npy\+Matrix\+Wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_a8224784edd4b369216e414bcead20c4a}{Npz\+Converter} (const std\+::string \&file)
+\item 
+\hyperlink{classamunmt_1_1GPU_1_1NpzConverter_abde0ffc848f1290870b4b6c7336626a5}{$\sim$\+Npz\+Converter} ()
+\item 
+void \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_af38fa6db0c029115fc19f3360303b1de}{Destruct} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_a26aeafd22013bc125b82b6a0ff80da8b}{get} (const std\+::string \&key, bool mandatory, bool transpose=false) const 
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{namespaceamunmt_1_1GPU_1_1mblas_ab67821a8254de53e45a623cf73c0aef6}{mblas\+::\+Matrix} $>$ \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_a01dd60fd9a2c429e3ca254306f0780eb}{get\+First\+Of\+Many} (const std\+::vector$<$ std\+::pair$<$ std\+::string, bool $>$$>$ keys, bool mandatory) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cnpy\+::npz\+\_\+t \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_a89a590bcff389dba1899df76b2ada83c}{model\+\_\+}
+\item 
+bool \hyperlink{classamunmt_1_1GPU_1_1NpzConverter_af5b88c82917ea4b0ee3e91fd8fde479b}{destructed\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!Npz\+Converter@{Npz\+Converter}}
+\index{Npz\+Converter@{Npz\+Converter}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{Npz\+Converter(const std\+::string \&file)}{NpzConverter(const std::string &file)}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Npz\+Converter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_a8224784edd4b369216e414bcead20c4a}{}\label{classamunmt_1_1GPU_1_1NpzConverter_a8224784edd4b369216e414bcead20c4a}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!````~Npz\+Converter@{$\sim$\+Npz\+Converter}}
+\index{````~Npz\+Converter@{$\sim$\+Npz\+Converter}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Npz\+Converter()}{~NpzConverter()}}]{\setlength{\rightskip}{0pt plus 5cm}amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::$\sim$\+Npz\+Converter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_abde0ffc848f1290870b4b6c7336626a5}{}\label{classamunmt_1_1GPU_1_1NpzConverter_abde0ffc848f1290870b4b6c7336626a5}
+
+
+\subsection{Member Function Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!Destruct@{Destruct}}
+\index{Destruct@{Destruct}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{Destruct()}{Destruct()}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::\+Destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_af38fa6db0c029115fc19f3360303b1de}{}\label{classamunmt_1_1GPU_1_1NpzConverter_af38fa6db0c029115fc19f3360303b1de}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!get@{get}}
+\index{get@{get}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{get(const std\+::string \&key, bool mandatory, bool transpose=false) const }{get(const std::string &key, bool mandatory, bool transpose=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{bool}]{mandatory, }
+\item[{bool}]{transpose = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_a26aeafd22013bc125b82b6a0ff80da8b}{}\label{classamunmt_1_1GPU_1_1NpzConverter_a26aeafd22013bc125b82b6a0ff80da8b}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!get\+First\+Of\+Many@{get\+First\+Of\+Many}}
+\index{get\+First\+Of\+Many@{get\+First\+Of\+Many}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{get\+First\+Of\+Many(const std\+::vector$<$ std\+::pair$<$ std\+::string, bool $>$$>$ keys, bool mandatory) const }{getFirstOfMany(const std::vector< std::pair< std::string, bool >> keys, bool mandatory) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf mblas\+::\+Matrix}$>$ amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::get\+First\+Of\+Many (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, bool $>$$>$}]{keys, }
+\item[{bool}]{mandatory}
+\end{DoxyParamCaption}
+) const}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_a01dd60fd9a2c429e3ca254306f0780eb}{}\label{classamunmt_1_1GPU_1_1NpzConverter_a01dd60fd9a2c429e3ca254306f0780eb}
+
+
+\subsection{Member Data Documentation}
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!destructed\+\_\+@{destructed\+\_\+}}
+\index{destructed\+\_\+@{destructed\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{destructed\+\_\+}{destructed_}}]{\setlength{\rightskip}{0pt plus 5cm}bool amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::destructed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_af5b88c82917ea4b0ee3e91fd8fde479b}{}\label{classamunmt_1_1GPU_1_1NpzConverter_af5b88c82917ea4b0ee3e91fd8fde479b}
+
+
+Definition at line 54 of file amun/gpu/npz\+\_\+converter.\+h.
+
+\index{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}!model\+\_\+@{model\+\_\+}}
+\index{model\+\_\+@{model\+\_\+}!amunmt\+::\+G\+P\+U\+::\+Npz\+Converter@{amunmt\+::\+G\+P\+U\+::\+Npz\+Converter}}
+\subsubsection[{\texorpdfstring{model\+\_\+}{model_}}]{\setlength{\rightskip}{0pt plus 5cm}cnpy\+::npz\+\_\+t amunmt\+::\+G\+P\+U\+::\+Npz\+Converter\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classamunmt_1_1GPU_1_1NpzConverter_a89a590bcff389dba1899df76b2ada83c}{}\label{classamunmt_1_1GPU_1_1NpzConverter_a89a590bcff389dba1899df76b2ada83c}
+
+
+Definition at line 53 of file amun/gpu/npz\+\_\+converter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amun_2gpu_2npz__converter_8h}{amun/gpu/npz\+\_\+converter.\+h}\end{DoxyCompactItemize}

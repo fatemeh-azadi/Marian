@@ -1,0 +1,325 @@
+\hypertarget{classmarian_1_1data_1_1SentenceTuple}{}\section{marian\+:\+:data\+:\+:Sentence\+Tuple Class Reference}
+\label{classmarian_1_1data_1_1SentenceTuple}\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+
+
+{\ttfamily \#include $<$corpus.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:data\+:\+:Sentence\+Tuple\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{d2/d7a/classmarian_1_1data_1_1SentenceTuple__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1data_1_1SentenceTuple_a53dba33c13ccbcc8b3e05bf2a0e4fe06}{Sentence\+Tuple} (size\+\_\+t id)
+\item 
+\hyperlink{classmarian_1_1data_1_1SentenceTuple_ac361a79106e555ff199ac6db1d1f321b}{$\sim$\+Sentence\+Tuple} ()
+\item 
+void \hyperlink{classmarian_1_1data_1_1SentenceTuple_a749e5acf8c894f139153f03abafc5ccb}{push\+\_\+back} (const \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \&words)
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SentenceTuple_a9b37c6147029e8c2f1f1c595a2a586bf}{size} () const 
+\item 
+\hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \& \hyperlink{classmarian_1_1data_1_1SentenceTuple_aca744f3dd385b7dfd4d227e5f8bc069e}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)
+\item 
+\hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \& \hyperlink{classmarian_1_1data_1_1SentenceTuple_af3d4f7ca49cf6d7b50c452cf540a1ef3}{back} ()
+\item 
+const \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \& \hyperlink{classmarian_1_1data_1_1SentenceTuple_aa9ac44b432ebb3a219f7d7fbfbed5c0a}{back} () const 
+\item 
+const \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} \& \hyperlink{classmarian_1_1data_1_1SentenceTuple_a93d5b03fa677c1ce7bfdccfa009d5ab5}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const 
+\item 
+bool \hyperlink{classmarian_1_1data_1_1SentenceTuple_a8a06101b2aa23aa9c93f414c93f1e618}{empty} () const 
+\item 
+auto \hyperlink{classmarian_1_1data_1_1SentenceTuple_ad7fd707bbf2eadcbe8c665b334ec0c38}{begin} () -\/$>$ decltype(tuple\+\_\+.\+begin())
+\item 
+auto \hyperlink{classmarian_1_1data_1_1SentenceTuple_a5556b2b70f347a64af8dc31c9d677636}{end} () -\/$>$ decltype(tuple\+\_\+.\+end())
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SentenceTuple_a3ddb9241a86b88d8461a83bce1727f34}{get\+Id} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1data_1_1SentenceTuple_a5a1ca69d489e8c68bc947775f309b652}{id\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{namespacemarian_a5385eef6e49dd8f789f616ef579dea3f}{Words} $>$ \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file corpus.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!Sentence\+Tuple@{Sentence\+Tuple}}
+\index{Sentence\+Tuple@{Sentence\+Tuple}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{Sentence\+Tuple(size\+\_\+t id)}{SentenceTuple(size_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Sentence\+Tuple\+::\+Sentence\+Tuple (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a53dba33c13ccbcc8b3e05bf2a0e4fe06}{}\label{classmarian_1_1data_1_1SentenceTuple_a53dba33c13ccbcc8b3e05bf2a0e4fe06}
+
+
+Definition at line 26 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+26 : \hyperlink{classmarian_1_1data_1_1SentenceTuple_a5a1ca69d489e8c68bc947775f309b652}{id\_}(\textcolor{keywordtype}{id}) \{\}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!````~Sentence\+Tuple@{$\sim$\+Sentence\+Tuple}}
+\index{````~Sentence\+Tuple@{$\sim$\+Sentence\+Tuple}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{$\sim$\+Sentence\+Tuple()}{~SentenceTuple()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::data\+::\+Sentence\+Tuple\+::$\sim$\+Sentence\+Tuple (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_ac361a79106e555ff199ac6db1d1f321b}{}\label{classmarian_1_1data_1_1SentenceTuple_ac361a79106e555ff199ac6db1d1f321b}
+
+
+Definition at line 28 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+28 \{ \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.clear(); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!back@{back}}
+\index{back@{back}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{back()}{back()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words}\& marian\+::data\+::\+Sentence\+Tuple\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_af3d4f7ca49cf6d7b50c452cf540a1ef3}{}\label{classmarian_1_1data_1_1SentenceTuple_af3d4f7ca49cf6d7b50c452cf540a1ef3}
+
+
+Definition at line 36 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+36 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.back(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!back@{back}}
+\index{back@{back}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{back() const }{back() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Words}\& marian\+::data\+::\+Sentence\+Tuple\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_aa9ac44b432ebb3a219f7d7fbfbed5c0a}{}\label{classmarian_1_1data_1_1SentenceTuple_aa9ac44b432ebb3a219f7d7fbfbed5c0a}
+
+
+Definition at line 37 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+37 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.back(); \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!begin@{begin}}
+\index{begin@{begin}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{begin() -\/$>$ decltype(tuple\+\_\+.\+begin())}{begin() -> decltype(tuple_.begin())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::data\+::\+Sentence\+Tuple\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(tuple\+\_\+.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_ad7fd707bbf2eadcbe8c665b334ec0c38}{}\label{classmarian_1_1data_1_1SentenceTuple_ad7fd707bbf2eadcbe8c665b334ec0c38}
+
+
+Definition at line 43 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+43 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.begin(); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d05/classmarian_1_1data_1_1SentenceTuple_ad7fd707bbf2eadcbe8c665b334ec0c38_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!empty@{empty}}
+\index{empty@{empty}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{empty() const }{empty() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool marian\+::data\+::\+Sentence\+Tuple\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a8a06101b2aa23aa9c93f414c93f1e618}{}\label{classmarian_1_1data_1_1SentenceTuple_a8a06101b2aa23aa9c93f414c93f1e618}
+
+
+Definition at line 41 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+41 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.empty(); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d05/classmarian_1_1data_1_1SentenceTuple_a8a06101b2aa23aa9c93f414c93f1e618_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!end@{end}}
+\index{end@{end}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{end() -\/$>$ decltype(tuple\+\_\+.\+end())}{end() -> decltype(tuple_.end())}}]{\setlength{\rightskip}{0pt plus 5cm}auto marian\+::data\+::\+Sentence\+Tuple\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) -\/$>$ decltype(tuple\+\_\+.\+end()) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a5556b2b70f347a64af8dc31c9d677636}{}\label{classmarian_1_1data_1_1SentenceTuple_a5556b2b70f347a64af8dc31c9d677636}
+
+
+Definition at line 44 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+44 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.end(); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d05/classmarian_1_1data_1_1SentenceTuple_a5556b2b70f347a64af8dc31c9d677636_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{get\+Id() const }{getId() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sentence\+Tuple\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a3ddb9241a86b88d8461a83bce1727f34}{}\label{classmarian_1_1data_1_1SentenceTuple_a3ddb9241a86b88d8461a83bce1727f34}
+
+
+Definition at line 46 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+46 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a5a1ca69d489e8c68bc947775f309b652}{id\_}; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i)}{operator[](size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Words}\& marian\+::data\+::\+Sentence\+Tuple\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_aca744f3dd385b7dfd4d227e5f8bc069e}{}\label{classmarian_1_1data_1_1SentenceTuple_aca744f3dd385b7dfd4d227e5f8bc069e}
+
+
+Definition at line 34 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+34 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}[i]; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i) const }{operator[](size_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Words}\& marian\+::data\+::\+Sentence\+Tuple\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a93d5b03fa677c1ce7bfdccfa009d5ab5}{}\label{classmarian_1_1data_1_1SentenceTuple_a93d5b03fa677c1ce7bfdccfa009d5ab5}
+
+
+Definition at line 39 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+39 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}[i]; \}
+\end{DoxyCode}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const Words \&words)}{push_back(const Words &words)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::data\+::\+Sentence\+Tuple\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const {\bf Words} \&}]{words}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a749e5acf8c894f139153f03abafc5ccb}{}\label{classmarian_1_1data_1_1SentenceTuple_a749e5acf8c894f139153f03abafc5ccb}
+
+
+Definition at line 30 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+30 \{ \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.push\_back(words); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d05/classmarian_1_1data_1_1SentenceTuple_a749e5acf8c894f139153f03abafc5ccb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!size@{size}}
+\index{size@{size}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sentence\+Tuple\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a9b37c6147029e8c2f1f1c595a2a586bf}{}\label{classmarian_1_1data_1_1SentenceTuple_a9b37c6147029e8c2f1f1c595a2a586bf}
+
+
+Definition at line 32 of file corpus.\+h.
+
+
+\begin{DoxyCode}
+32 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{tuple\_}.size(); \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d05/classmarian_1_1data_1_1SentenceTuple_a9b37c6147029e8c2f1f1c595a2a586bf_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!id\+\_\+@{id\+\_\+}}
+\index{id\+\_\+@{id\+\_\+}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{id\+\_\+}{id_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::data\+::\+Sentence\+Tuple\+::id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a5a1ca69d489e8c68bc947775f309b652}{}\label{classmarian_1_1data_1_1SentenceTuple_a5a1ca69d489e8c68bc947775f309b652}
+
+
+Definition at line 22 of file corpus.\+h.
+
+\index{marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}!tuple\+\_\+@{tuple\+\_\+}}
+\index{tuple\+\_\+@{tuple\+\_\+}!marian\+::data\+::\+Sentence\+Tuple@{marian\+::data\+::\+Sentence\+Tuple}}
+\subsubsection[{\texorpdfstring{tuple\+\_\+}{tuple_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Words}$>$ marian\+::data\+::\+Sentence\+Tuple\+::tuple\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}{}\label{classmarian_1_1data_1_1SentenceTuple_a65e31c60b29cd6f4e93f43aa94be6f70}
+
+
+Definition at line 23 of file corpus.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corpus_8h}{corpus.\+h}\end{DoxyCompactItemize}

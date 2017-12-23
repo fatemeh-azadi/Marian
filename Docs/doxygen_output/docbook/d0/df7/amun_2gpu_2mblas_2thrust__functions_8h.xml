@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/df7/amun_2gpu_2mblas_2thrust__functions_8h">
+    <title>amun/gpu/mblas/thrust_functions.h File Reference</title>
+    <programlisting>#include &lt;cmath&gt;</programlisting>
+    <programlisting>#include &lt;cublas_v2.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/device_vector.h&gt;</programlisting>
+    <programlisting>#include &lt;thrust/functional.h&gt;</programlisting>
+<para>Include dependency diagram for amun/gpu/mblas/thrust_functions.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dcd/amun_2gpu_2mblas_2thrust__functions_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for amun/gpu/mblas/thrust_functions.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d78/amun_2gpu_2mblas_2thrust__functions_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d9b/structthrust_1_1detail_1_1functional_1_1unary__exp">thrust::detail::functional::unary_exp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d35/structthrust_1_1detail_1_1functional_1_1unary__log">thrust::detail::functional::unary_log</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/ddf/structthrust_1_1detail_1_1functional_1_1unary__logit">thrust::detail::functional::unary_logit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d69/structthrust_1_1detail_1_1functional_1_1unary__tanh">thrust::detail::functional::unary_tanh</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/de7/namespacethrust">thrust</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dce/namespacethrust_1_1detail">thrust::detail</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d07/namespacethrust_1_1detail_1_1functional">thrust::detail::functional</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file thrust_functions.h</para>
+    </simplesect>
+</section>

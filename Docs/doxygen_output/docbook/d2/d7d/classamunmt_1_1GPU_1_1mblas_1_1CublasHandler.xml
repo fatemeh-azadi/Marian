@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler">
+<title>amunmt::GPU::mblas::CublasHandler class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d23/handles_8h">&lt;handles.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::GPU::mblas::CublasHandler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/ddb/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::mblas::CublasHandler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d27/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static thread_local CublasHandler instance_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cublasHandle_t handle_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static cublasHandle_t &amp; <link linkend="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1a8259296c298b79e8b742e6157a7f8a02">GetHandle</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1aa2e4a863191a149911d71111832b16c9">CublasHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1abe4bb4660639c58fb086d2f308980c0e">~CublasHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1a8259296c298b79e8b742e6157a7f8a02">
+                <title>static cublasHandle_t&amp; amunmt::GPU::mblas::CublasHandler::GetHandle ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1aa2e4a863191a149911d71111832b16c9">
+                <title>amunmt::GPU::mblas::CublasHandler::CublasHandler ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d7d/classamunmt_1_1GPU_1_1mblas_1_1CublasHandler_1abe4bb4660639c58fb086d2f308980c0e">
+                <title>amunmt::GPU::mblas::CublasHandler::~CublasHandler ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

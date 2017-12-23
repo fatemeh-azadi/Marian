@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d33/classamunmt_1_1InputFileStream">
+<title>amunmt::InputFileStream class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/de5/amun_2common_2file__stream_8h">&lt;file_stream.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for amunmt::InputFileStream</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dfc/classamunmt_1_1InputFileStream__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::InputFileStream</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/df4/classamunmt_1_1InputFileStream__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::filesystem::path file_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::filesystem::ifstream ifstream_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boost::iostreams::filtering_istream istream_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d33/classamunmt_1_1InputFileStream_1ae939bab8353146a0507e7b0f598d1b26">InputFileStream</link> (
+const std::string &amp; file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d33/classamunmt_1_1InputFileStream_1a0f63ebe2bf8e68acea999d3b594e717e">InputFileStream</link> (
+std::istream &amp; strm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d33/classamunmt_1_1InputFileStream_1a812fc326641a9f9df73888be0245d16a">operator bool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d33/classamunmt_1_1InputFileStream_1ae939bab8353146a0507e7b0f598d1b26">
+                <title>amunmt::InputFileStream::InputFileStream (const std::string &amp;file)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d33/classamunmt_1_1InputFileStream_1a0f63ebe2bf8e68acea999d3b594e717e">
+                <title>amunmt::InputFileStream::InputFileStream (std::istream &amp;strm)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d33/classamunmt_1_1InputFileStream_1a812fc326641a9f9df73888be0245d16a">
+                <title>amunmt::InputFileStream::operator bool ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,238 @@
+\hypertarget{classmarian_1_1DeviceGPU}{}\section{marian\+:\+:Device\+G\+PU Class Reference}
+\label{classmarian_1_1DeviceGPU}\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+
+
+{\ttfamily \#include $<$device\+\_\+gpu.\+h$>$}
+
+
+
+Collaboration diagram for marian\+:\+:Device\+G\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d1/db0/classmarian_1_1DeviceGPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmarian_1_1DeviceGPU_aa73bbc00ebdf588045570fed6450eb35}{Device\+G\+PU} (size\+\_\+t device, size\+\_\+t alignment=256)
+\item 
+\hyperlink{classmarian_1_1DeviceGPU_adb73cacb9f5cc5db6f150cd0de8e8598}{$\sim$\+Device\+G\+PU} ()
+\item 
+void \hyperlink{classmarian_1_1DeviceGPU_ae11155ac0eb07f883ce502557d7ff324}{reserve} (size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}{size})
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1DeviceGPU_a84dc43cc2d44dd8571ce92f7e29dca93}{data} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}{size} ()
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_a8cf848d6d40bfcdffb34057e266c9a86}{get\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_a85b4d01e6012a14c738eb20c9d065aaa}{align} (size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}{size})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{classmarian_1_1DeviceGPU_a085bcc3d04ff42149b473571be4e41bf}{data\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_a7c218fa5b3219556c87956c046a0e33a}{size\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_a6bd2e043ef027d56ee0d0c734945508b}{device\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}{alignment\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file device\+\_\+gpu.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!Device\+G\+PU@{Device\+G\+PU}}
+\index{Device\+G\+PU@{Device\+G\+PU}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{Device\+G\+P\+U(size\+\_\+t device, size\+\_\+t alignment=256)}{DeviceGPU(size_t device, size_t alignment=256)}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Device\+G\+P\+U\+::\+Device\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{device, }
+\item[{size\+\_\+t}]{alignment = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceGPU_aa73bbc00ebdf588045570fed6450eb35}{}\label{classmarian_1_1DeviceGPU_aa73bbc00ebdf588045570fed6450eb35}
+
+
+Definition at line 20 of file device\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+21    : \hyperlink{classmarian_1_1DeviceGPU_a085bcc3d04ff42149b473571be4e41bf}{data\_}(0), \hyperlink{classmarian_1_1DeviceGPU_a7c218fa5b3219556c87956c046a0e33a}{size\_}(0),
+22      \hyperlink{classmarian_1_1DeviceGPU_a6bd2e043ef027d56ee0d0c734945508b}{device\_}(device),
+23      \hyperlink{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}{alignment\_}(alignment) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df6/classmarian_1_1DeviceGPU_aa73bbc00ebdf588045570fed6450eb35_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!````~Device\+G\+PU@{$\sim$\+Device\+G\+PU}}
+\index{````~Device\+G\+PU@{$\sim$\+Device\+G\+PU}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device\+G\+P\+U()}{~DeviceGPU()}}]{\setlength{\rightskip}{0pt plus 5cm}marian\+::\+Device\+G\+P\+U\+::$\sim$\+Device\+G\+PU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1DeviceGPU_adb73cacb9f5cc5db6f150cd0de8e8598}{}\label{classmarian_1_1DeviceGPU_adb73cacb9f5cc5db6f150cd0de8e8598}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{d2/df6/classmarian_1_1DeviceGPU_adb73cacb9f5cc5db6f150cd0de8e8598_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!align@{align}}
+\index{align@{align}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{align(size\+\_\+t size)}{align(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::align (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceGPU_a85b4d01e6012a14c738eb20c9d065aaa}{}\label{classmarian_1_1DeviceGPU_a85b4d01e6012a14c738eb20c9d065aaa}
+
+
+Definition at line 15 of file device\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+15                             \{
+16     \textcolor{keywordflow}{return} ceil(\hyperlink{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}{size} / (\textcolor{keywordtype}{float})\hyperlink{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}{alignment\_}) * \hyperlink{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}{alignment\_};
+17   \}
+\end{DoxyCode}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!data@{data}}
+\index{data@{data}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Device\+G\+P\+U\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceGPU_a84dc43cc2d44dd8571ce92f7e29dca93}{}\label{classmarian_1_1DeviceGPU_a84dc43cc2d44dd8571ce92f7e29dca93}
+
+
+Definition at line 29 of file device\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DeviceGPU_a085bcc3d04ff42149b473571be4e41bf}{data\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{get\+Device()}{getDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceGPU_a8cf848d6d40bfcdffb34057e266c9a86}{}\label{classmarian_1_1DeviceGPU_a8cf848d6d40bfcdffb34057e266c9a86}
+
+
+Definition at line 33 of file device\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+33 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DeviceGPU_a6bd2e043ef027d56ee0d0c734945508b}{device\_}; \}
+\end{DoxyCode}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!reserve@{reserve}}
+\index{reserve@{reserve}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{reserve(size\+\_\+t size)}{reserve(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Device\+G\+P\+U\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classmarian_1_1DeviceGPU_ae11155ac0eb07f883ce502557d7ff324}{}\label{classmarian_1_1DeviceGPU_ae11155ac0eb07f883ce502557d7ff324}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{d2/df6/classmarian_1_1DeviceGPU_ae11155ac0eb07f883ce502557d7ff324_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!size@{size}}
+\index{size@{size}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}{}\label{classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0}
+
+
+Definition at line 31 of file device\+\_\+gpu.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classmarian_1_1DeviceGPU_a7c218fa5b3219556c87956c046a0e33a}{size\_}; \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df6/classmarian_1_1DeviceGPU_ae1eb5f0991b659f725a4973bf09c87b0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!alignment\+\_\+@{alignment\+\_\+}}
+\index{alignment\+\_\+@{alignment\+\_\+}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{alignment\+\_\+}{alignment_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::alignment\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}{}\label{classmarian_1_1DeviceGPU_a02173fc47bf190cb675cf1ec7a4a7827}
+
+
+Definition at line 13 of file device\+\_\+gpu.\+h.
+
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!data\+\_\+@{data\+\_\+}}
+\index{data\+\_\+@{data\+\_\+}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{data\+\_\+}{data_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ marian\+::\+Device\+G\+P\+U\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceGPU_a085bcc3d04ff42149b473571be4e41bf}{}\label{classmarian_1_1DeviceGPU_a085bcc3d04ff42149b473571be4e41bf}
+
+
+Definition at line 10 of file device\+\_\+gpu.\+h.
+
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{device\+\_\+}{device_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceGPU_a6bd2e043ef027d56ee0d0c734945508b}{}\label{classmarian_1_1DeviceGPU_a6bd2e043ef027d56ee0d0c734945508b}
+
+
+Definition at line 12 of file device\+\_\+gpu.\+h.
+
+\index{marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!marian\+::\+Device\+G\+PU@{marian\+::\+Device\+G\+PU}}
+\subsubsection[{\texorpdfstring{size\+\_\+}{size_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Device\+G\+P\+U\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1DeviceGPU_a7c218fa5b3219556c87956c046a0e33a}{}\label{classmarian_1_1DeviceGPU_a7c218fa5b3219556c87956c046a0e33a}
+
+
+Definition at line 11 of file device\+\_\+gpu.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{device__gpu_8h}{device\+\_\+gpu.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,1523 @@
+\hypertarget{namespaceamunmt}{}\section{amunmt Namespace Reference}
+\label{namespaceamunmt}\index{amunmt@{amunmt}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceamunmt_1_1GPU}{G\+PU}
+\item 
+ \hyperlink{namespaceamunmt_1_1util}{util}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structamunmt_1_1AmunInput}{Amun\+Input}
+\item 
+class \hyperlink{classamunmt_1_1BaseMatrix}{Base\+Matrix}
+\item 
+class \hyperlink{classamunmt_1_1BestHypsBase}{Best\+Hyps\+Base}
+\item 
+class \hyperlink{classamunmt_1_1BPE}{B\+PE}
+\item 
+class \hyperlink{classamunmt_1_1Config}{Config}
+\item 
+struct \hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info}
+\item 
+class \hyperlink{classamunmt_1_1Filter}{Filter}
+\item 
+class \hyperlink{classamunmt_1_1God}{God}
+\item 
+class \hyperlink{classamunmt_1_1Histories}{Histories}
+\item 
+class \hyperlink{classamunmt_1_1History}{History}
+\item 
+struct \hyperlink{structamunmt_1_1HypoState}{Hypo\+State}
+\item 
+class \hyperlink{classamunmt_1_1Hypothesis}{Hypothesis}
+\item 
+class \hyperlink{classamunmt_1_1InputFileStream}{Input\+File\+Stream}
+\item 
+class \hyperlink{classamunmt_1_1LengthOrderer}{Length\+Orderer}
+\item 
+class \hyperlink{classamunmt_1_1LineNumOrderer}{Line\+Num\+Orderer}
+\item 
+class \hyperlink{classamunmt_1_1Loader}{Loader}
+\item 
+class \hyperlink{classamunmt_1_1LoaderFactory}{Loader\+Factory}
+\item 
+class \hyperlink{classamunmt_1_1MosesPlugin}{Moses\+Plugin}
+\item 
+class \hyperlink{classamunmt_1_1NeuralPhrase}{Neural\+Phrase}
+\item 
+class \hyperlink{classamunmt_1_1OutputCollector}{Output\+Collector}
+\item 
+class \hyperlink{classamunmt_1_1Postprocessor}{Postprocessor}
+\item 
+class \hyperlink{classamunmt_1_1Preprocessor}{Preprocessor}
+\item 
+class \hyperlink{classamunmt_1_1Processor}{Processor}
+\item 
+class \hyperlink{classamunmt_1_1Scorer}{Scorer}
+\item 
+class \hyperlink{classamunmt_1_1Search}{Search}
+\item 
+class \hyperlink{classamunmt_1_1Sentence}{Sentence}
+\item 
+class \hyperlink{classamunmt_1_1Sentences}{Sentences}
+\item 
+class \hyperlink{classamunmt_1_1SourceIndependentScorer}{Source\+Independent\+Scorer}
+\item 
+class \hyperlink{classamunmt_1_1State}{State}
+\item 
+class \hyperlink{classamunmt_1_1ThreadPool}{Thread\+Pool}
+\item 
+class \hyperlink{classamunmt_1_1Vocab}{Vocab}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1BestHypsBase}{Best\+Hyps\+Base} $>$ \hyperlink{namespaceamunmt_a4a9522da34de52554ec07cedc30361b8}{Best\+Hyps\+Base\+Ptr}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Hypothesis}{Hypothesis} $>$ \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr} $>$ \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Scorer}{Scorer} $>$ \hyperlink{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{Scorer\+Ptr}
+\item 
+typedef std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Filter}{Filter} $>$ \hyperlink{namespaceamunmt_a03c308343fcd4b59ebe53d562257e483}{Filter\+Ptr}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} $>$ \hyperlink{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}{Beams}
+\item 
+typedef std\+::pair$<$ \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words}, \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr} $>$ \hyperlink{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}{Result}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}{Result} $>$ \hyperlink{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}{N\+Best\+List}
+\item 
+typedef std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Loader}{Loader} $>$ \hyperlink{namespaceamunmt_a7907c3626488deed31e31452d178d78e}{Loader\+Ptr}
+\item 
+using \hyperlink{namespaceamunmt_a01f8e038a68167c344d9e40146064712}{Preprocessor\+Ptr} = std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Preprocessor}{Preprocessor} $>$
+\item 
+using \hyperlink{namespaceamunmt_a93da118427da6be237f0407643816798}{Postprocessor\+Ptr} = std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Postprocessor}{Postprocessor} $>$
+\item 
+using \hyperlink{namespaceamunmt_a2ff87af5187af8bbedac18dd10c48162}{Processor\+Ptr} = std\+::unique\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Processor}{Processor} $>$
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1State}{State} $>$ \hyperlink{namespaceamunmt_a1ea9a0b24d777d2c8dc94c4189c6c359}{State\+Ptr}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespaceamunmt_a1ea9a0b24d777d2c8dc94c4189c6c359}{State\+Ptr} $>$ \hyperlink{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{States}
+\item 
+using \hyperlink{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{Sentence\+Ptr} = std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Sentence}{Sentence} $>$
+\item 
+using \hyperlink{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{Sentences\+Ptr} = std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Sentences}{Sentences} $>$
+\item 
+typedef uint \hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word} $>$ \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words}
+\item 
+typedef std\+::vector$<$ \hyperlink{structamunmt_1_1HypoState}{Hypo\+State} $>$ \hyperlink{namespaceamunmt_acca30714a48f384cccf36370d6869b40}{Hypo\+States}
+\item 
+typedef std\+::vector$<$ \hyperlink{structamunmt_1_1AmunInput}{Amun\+Input} $>$ \hyperlink{namespaceamunmt_a5a9307eef76c887cbe1a67e780437eae}{Amun\+Inputs}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17}{Device\+Type} \{ \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{C\+P\+U\+Device} = 7, 
+\hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{G\+P\+U\+Device} = 11, 
+\hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{F\+P\+G\+A\+Device} = 13
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{Process\+Paths} (Y\+A\+M\+L\+::\+Node \&node, const boost\+::filesystem\+::path \&config\+Path, bool is\+Path)
+\item 
+void \hyperlink{namespaceamunmt_a223f2f561452f574093618cd336c43de}{Overwrite\+Models} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&model\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a}{Overwrite\+Source\+Vocabs} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&source\+Vocab\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3}{Overwrite\+Target\+Vocab} (Y\+A\+M\+L\+::\+Node \&config, std\+::string \&target\+Vocab\+Path)
+\item 
+void \hyperlink{namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18}{Overwrite\+B\+PE} (Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&bpe\+Paths)
+\item 
+void \hyperlink{namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067}{Validate} (const Y\+A\+M\+L\+::\+Node \&config)
+\item 
+void \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{Output\+Rec} (const Y\+A\+M\+L\+::\+Node node, Y\+A\+M\+L\+::\+Emitter \&out)
+\item 
+void \hyperlink{namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2}{Load\+Weights} (Y\+A\+M\+L\+::\+Node \&config, const std\+::string \&path)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a807aed7e91d9c04595d8e32c1157ca4e}{Debug} (const \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} \&vec, size\+\_\+t verbosity)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a6e2a280e85c7e0845ed2c3bb793a86af}{Debug} (const \hyperlink{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}{Beams} \&vec, size\+\_\+t verbosity)
+\item 
+void \hyperlink{namespaceamunmt_a14c0b46e2e86d44662d37f953788043c}{set\+\_\+loglevel} (spdlog\+::logger \&logger, std\+::string const level)
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}{Get\+Alignment} (const \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr} \&hypothesis)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}{Get\+Alignment\+String} (const std\+::vector$<$ size\+\_\+t $>$ \&alignment)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52}{Get\+Soft\+Alignment\+String} (const \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr} \&hypothesis)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a589013f9c66aae2070326dc22d2b547d}{Get\+Nematus\+Alignment\+String} (const \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{Hypothesis\+Ptr} \&hypothesis, std\+::string best, std\+::string source, size\+\_\+t linenum)
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\void \hyperlink{namespaceamunmt_aef108281493b0c3b669c537192eace34}{Printer} (const \hyperlink{classamunmt_1_1God}{God} \&god, const \hyperlink{classamunmt_1_1History}{History} \&history, O\+Stream \&out, const \hyperlink{classamunmt_1_1Sentence}{Sentence} \&sentence)
+\item 
+{\footnotesize template$<$class O\+Stream $>$ }\\void \hyperlink{namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2}{Printer} (const \hyperlink{classamunmt_1_1God}{God} \&god, const \hyperlink{classamunmt_1_1Histories}{Histories} \&histories, O\+Stream \&out, const \hyperlink{classamunmt_1_1Sentence}{Sentence} \&sentence)
+\item 
+void \hyperlink{namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85}{Translation\+Task\+And\+Output} (const \hyperlink{classamunmt_1_1God}{God} \&god, std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Sentences}{Sentences} $>$ sentences)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Histories}{Histories} $>$ \hyperlink{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}{Translation\+Task} (const \hyperlink{classamunmt_1_1God}{God} \&god, std\+::shared\+\_\+ptr$<$ \hyperlink{classamunmt_1_1Sentences}{Sentences} $>$ sentences)
+\item 
+std\+::ostream \& \hyperlink{namespaceamunmt_aa685f28fda5503ea31605ee8812e9f86}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{structamunmt_1_1DeviceInfo}{Device\+Info} \&obj)
+\item 
+void \hyperlink{namespaceamunmt_a4578e863aaec8293556404432d7e8d04}{Trim} (std\+::string \&s)
+\item 
+void \hyperlink{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{Split} (const std\+::string \&line, std\+::vector$<$ std\+::string $>$ \&pieces, const std\+::string del)
+\item 
+std\+::string \hyperlink{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}{Join} (const std\+::vector$<$ std\+::string $>$ \&words, const std\+::string del)
+\item 
+std\+::string \hyperlink{namespaceamunmt_ab250df7f6ac3d2ec5365cceea1056aff}{Join} (const std\+::vector$<$ std\+::string $>$ \&words, const std\+::vector$<$ size\+\_\+t $>$ \&align, const std\+::string del)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespaceamunmt_a7dbfb9dca5a82c17500ab26efe71623e}{Debug} (const std\+::vector$<$ T $>$ \&vec, size\+\_\+t verbosity=1)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \hyperlink{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE} = 4
+\item 
+const \hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word} \hyperlink{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{E\+O\+S\+\_\+\+ID} = 0
+\item 
+const \hyperlink{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{Word} \hyperlink{namespaceamunmt_a7904fd3bd044d608e81e54933a771ec9}{U\+N\+K\+\_\+\+ID} = 1
+\item 
+const std\+::string \hyperlink{namespaceamunmt_a396941d367e0babddc9fa87260a805f7}{E\+O\+S\+\_\+\+S\+TR} = \char`\"{}$<$/s$>$\char`\"{}
+\item 
+const std\+::string \hyperlink{namespaceamunmt_aff26c2cbd5a97e90ecdc5e0dbba13516}{U\+N\+K\+\_\+\+S\+TR} = \char`\"{}$<$unk$>$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{amunmt@{amunmt}!Amun\+Inputs@{Amun\+Inputs}}
+\index{Amun\+Inputs@{Amun\+Inputs}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Amun\+Inputs}{AmunInputs}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Amun\+Input}$>$ {\bf amunmt\+::\+Amun\+Inputs}}\hypertarget{namespaceamunmt_a5a9307eef76c887cbe1a67e780437eae}{}\label{namespaceamunmt_a5a9307eef76c887cbe1a67e780437eae}
+
+
+Definition at line 42 of file hypo\+\_\+info.\+h.
+
+\index{amunmt@{amunmt}!Beam@{Beam}}
+\index{Beam@{Beam}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Beam}{Beam}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$ {\bf Hypothesis\+Ptr} $>$ {\bf amunmt\+::\+Beam}}\hypertarget{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{}\label{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}
+
+
+Definition at line 14 of file base\+\_\+matrix.\+h.
+
+\index{amunmt@{amunmt}!Beams@{Beams}}
+\index{Beams@{Beams}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Beams}{Beams}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Beam}$>$ {\bf amunmt\+::\+Beams}}\hypertarget{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}{}\label{namespaceamunmt_a90a1b353bc62cb90bc8e8da7edc3edc0}
+
+
+Definition at line 76 of file amun/common/hypothesis.\+h.
+
+\index{amunmt@{amunmt}!Best\+Hyps\+Base\+Ptr@{Best\+Hyps\+Base\+Ptr}}
+\index{Best\+Hyps\+Base\+Ptr@{Best\+Hyps\+Base\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Best\+Hyps\+Base\+Ptr}{BestHypsBasePtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<${\bf Best\+Hyps\+Base}$>$ {\bf amunmt\+::\+Best\+Hyps\+Base\+Ptr}}\hypertarget{namespaceamunmt_a4a9522da34de52554ec07cedc30361b8}{}\label{namespaceamunmt_a4a9522da34de52554ec07cedc30361b8}
+
+
+Definition at line 48 of file base\+\_\+best\+\_\+hyps.\+h.
+
+\index{amunmt@{amunmt}!Filter\+Ptr@{Filter\+Ptr}}
+\index{Filter\+Ptr@{Filter\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Filter\+Ptr}{FilterPtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::unique\+\_\+ptr$<${\bf Filter}$>$ {\bf amunmt\+::\+Filter\+Ptr}}\hypertarget{namespaceamunmt_a03c308343fcd4b59ebe53d562257e483}{}\label{namespaceamunmt_a03c308343fcd4b59ebe53d562257e483}
+
+
+Definition at line 60 of file amun/common/filter.\+h.
+
+\index{amunmt@{amunmt}!Hypo\+States@{Hypo\+States}}
+\index{Hypo\+States@{Hypo\+States}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Hypo\+States}{HypoStates}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Hypo\+State}$>$ {\bf amunmt\+::\+Hypo\+States}}\hypertarget{namespaceamunmt_acca30714a48f384cccf36370d6869b40}{}\label{namespaceamunmt_acca30714a48f384cccf36370d6869b40}
+
+
+Definition at line 29 of file hypo\+\_\+info.\+h.
+
+\index{amunmt@{amunmt}!Hypothesis\+Ptr@{Hypothesis\+Ptr}}
+\index{Hypothesis\+Ptr@{Hypothesis\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Hypothesis\+Ptr}{HypothesisPtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<$ {\bf Hypothesis} $>$ {\bf amunmt\+::\+Hypothesis\+Ptr}}\hypertarget{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{}\label{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}
+
+
+Definition at line 12 of file base\+\_\+matrix.\+h.
+
+\index{amunmt@{amunmt}!Loader\+Ptr@{Loader\+Ptr}}
+\index{Loader\+Ptr@{Loader\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Loader\+Ptr}{LoaderPtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::unique\+\_\+ptr$<${\bf Loader}$>$ {\bf amunmt\+::\+Loader\+Ptr}}\hypertarget{namespaceamunmt_a7907c3626488deed31e31452d178d78e}{}\label{namespaceamunmt_a7907c3626488deed31e31452d178d78e}
+
+
+Definition at line 43 of file loader.\+h.
+
+\index{amunmt@{amunmt}!N\+Best\+List@{N\+Best\+List}}
+\index{N\+Best\+List@{N\+Best\+List}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{N\+Best\+List}{NBestList}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Result}$>$ {\bf amunmt\+::\+N\+Best\+List}}\hypertarget{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}{}\label{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}
+
+
+Definition at line 78 of file amun/common/hypothesis.\+h.
+
+\index{amunmt@{amunmt}!Postprocessor\+Ptr@{Postprocessor\+Ptr}}
+\index{Postprocessor\+Ptr@{Postprocessor\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Postprocessor\+Ptr}{PostprocessorPtr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+Postprocessor\+Ptr} = typedef std\+::unique\+\_\+ptr$<${\bf Postprocessor}$>$}\hypertarget{namespaceamunmt_a93da118427da6be237f0407643816798}{}\label{namespaceamunmt_a93da118427da6be237f0407643816798}
+
+
+Definition at line 22 of file processor.\+h.
+
+\index{amunmt@{amunmt}!Preprocessor\+Ptr@{Preprocessor\+Ptr}}
+\index{Preprocessor\+Ptr@{Preprocessor\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Preprocessor\+Ptr}{PreprocessorPtr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+Preprocessor\+Ptr} = typedef std\+::unique\+\_\+ptr$<${\bf Preprocessor}$>$}\hypertarget{namespaceamunmt_a01f8e038a68167c344d9e40146064712}{}\label{namespaceamunmt_a01f8e038a68167c344d9e40146064712}
+
+
+Definition at line 15 of file processor.\+h.
+
+\index{amunmt@{amunmt}!Processor\+Ptr@{Processor\+Ptr}}
+\index{Processor\+Ptr@{Processor\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Processor\+Ptr}{ProcessorPtr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+Processor\+Ptr} = typedef std\+::unique\+\_\+ptr$<${\bf Processor}$>$}\hypertarget{namespaceamunmt_a2ff87af5187af8bbedac18dd10c48162}{}\label{namespaceamunmt_a2ff87af5187af8bbedac18dd10c48162}
+
+
+Definition at line 28 of file processor.\+h.
+
+\index{amunmt@{amunmt}!Result@{Result}}
+\index{Result@{Result}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Result}{Result}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<${\bf Words}, {\bf Hypothesis\+Ptr}$>$ {\bf amunmt\+::\+Result}}\hypertarget{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}{}\label{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}
+
+
+Definition at line 77 of file amun/common/hypothesis.\+h.
+
+\index{amunmt@{amunmt}!Scorer\+Ptr@{Scorer\+Ptr}}
+\index{Scorer\+Ptr@{Scorer\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Scorer\+Ptr}{ScorerPtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<$ {\bf Scorer} $>$ {\bf amunmt\+::\+Scorer\+Ptr}}\hypertarget{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}{}\label{namespaceamunmt_a703e88438d533fef1db5cc95060b36f0}
+
+
+Definition at line 16 of file base\+\_\+matrix.\+h.
+
+\index{amunmt@{amunmt}!Sentence\+Ptr@{Sentence\+Ptr}}
+\index{Sentence\+Ptr@{Sentence\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Sentence\+Ptr}{SentencePtr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+Sentence\+Ptr} = typedef std\+::shared\+\_\+ptr$<${\bf Sentence}$>$}\hypertarget{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}{}\label{namespaceamunmt_a79f0566b0c1ac270d350b2912a3be4a4}
+
+
+Definition at line 31 of file sentence.\+h.
+
+\index{amunmt@{amunmt}!Sentences\+Ptr@{Sentences\+Ptr}}
+\index{Sentences\+Ptr@{Sentences\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Sentences\+Ptr}{SentencesPtr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf amunmt\+::\+Sentences\+Ptr} = typedef std\+::shared\+\_\+ptr$<${\bf Sentences}$>$}\hypertarget{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}{}\label{namespaceamunmt_a06c5762b84aba68e6c69fb409e57829e}
+
+
+Definition at line 8 of file sentences.\+h.
+
+\index{amunmt@{amunmt}!State\+Ptr@{State\+Ptr}}
+\index{State\+Ptr@{State\+Ptr}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{State\+Ptr}{StatePtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<${\bf State}$>$ {\bf amunmt\+::\+State\+Ptr}}\hypertarget{namespaceamunmt_a1ea9a0b24d777d2c8dc94c4189c6c359}{}\label{namespaceamunmt_a1ea9a0b24d777d2c8dc94c4189c6c359}
+
+
+Definition at line 35 of file scorer.\+h.
+
+\index{amunmt@{amunmt}!States@{States}}
+\index{States@{States}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{States}{States}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf State\+Ptr}$>$ {\bf amunmt\+::\+States}}\hypertarget{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}{}\label{namespaceamunmt_a4fe2912e208820f8217fbcf229ebacf7}
+
+
+Definition at line 36 of file scorer.\+h.
+
+\index{amunmt@{amunmt}!Word@{Word}}
+\index{Word@{Word}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Word}{Word}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint {\bf amunmt\+::\+Word}}\hypertarget{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}{}\label{namespaceamunmt_a07c85682e789f72cc2fbbc3caf7d3800}
+
+
+Definition at line 10 of file amun/common/types.\+h.
+
+\index{amunmt@{amunmt}!Words@{Words}}
+\index{Words@{Words}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Words}{Words}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Word}$>$ {\bf amunmt\+::\+Words}}\hypertarget{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{}\label{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}
+
+
+Definition at line 11 of file amun/common/types.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{amunmt@{amunmt}!Device\+Type@{Device\+Type}}
+\index{Device\+Type@{Device\+Type}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Device\+Type}{DeviceType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf amunmt\+::\+Device\+Type}}\hypertarget{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17}{}\label{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+P\+U\+Device@{C\+P\+U\+Device}!amunmt@{amunmt}}\index{amunmt@{amunmt}!C\+P\+U\+Device@{C\+P\+U\+Device}}\item[{\em 
+C\+P\+U\+Device\hypertarget{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{}\label{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}
+}]\index{G\+P\+U\+Device@{G\+P\+U\+Device}!amunmt@{amunmt}}\index{amunmt@{amunmt}!G\+P\+U\+Device@{G\+P\+U\+Device}}\item[{\em 
+G\+P\+U\+Device\hypertarget{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{}\label{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}
+}]\index{F\+P\+G\+A\+Device@{F\+P\+G\+A\+Device}!amunmt@{amunmt}}\index{amunmt@{amunmt}!F\+P\+G\+A\+Device@{F\+P\+G\+A\+Device}}\item[{\em 
+F\+P\+G\+A\+Device\hypertarget{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{}\label{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 19 of file amun/common/types.\+h.
+
+
+\begin{DoxyCode}
+20 \{
+21   \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17aafe1036ae66e30a8f082bda43072162a}{CPUDevice} = 7,
+22   \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a2ff3f7952956ae21ddcfa3564fe4de5f}{GPUDevice} = 11,
+23   \hyperlink{namespaceamunmt_a0f0dad0deb73c5a4c574d8c63833ab17a1fd21d75952419f8b1ab988f28f747fc}{FPGADevice} = 13
+24 \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{amunmt@{amunmt}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Debug(const Beam \&vec, size\+\_\+t verbosity)}{Debug(const Beam &vec, size_t verbosity)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beam} \&}]{vec, }
+\item[{size\+\_\+t}]{verbosity}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a807aed7e91d9c04595d8e32c1157ca4e}{}\label{namespaceamunmt_a807aed7e91d9c04595d8e32c1157ca4e}
+
+
+Definition at line 8 of file hypothesis.\+cpp.
+
+
+\begin{DoxyCode}
+9 \{
+10   std::stringstream strm;
+11 
+12   strm << \textcolor{stringliteral}{"size="} << vec.size();
+13 
+14   \textcolor{keywordflow}{if} (verbosity) \{
+15     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+16       \textcolor{keyword}{const} \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} &hypo = vec[i];
+17       strm << \textcolor{stringliteral}{" "} << hypo->GetWord();
+18     \}
+19   \}
+20 
+21   \textcolor{keywordflow}{return} strm.str();
+22 \}
+\end{DoxyCode}
+\index{amunmt@{amunmt}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Debug(const std\+::vector$<$ T $>$ \&vec, size\+\_\+t verbosity=1)}{Debug(const std::vector< T > &vec, size_t verbosity=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string amunmt\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ T $>$ \&}]{vec, }
+\item[{size\+\_\+t}]{verbosity = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a7dbfb9dca5a82c17500ab26efe71623e}{}\label{namespaceamunmt_a7dbfb9dca5a82c17500ab26efe71623e}
+
+
+Definition at line 20 of file amun/common/utils.\+h.
+
+
+\begin{DoxyCode}
+21 \{
+22   std::stringstream strm;
+23 
+24   strm << \textcolor{stringliteral}{"size="} << vec.size();
+25 
+26   \textcolor{keywordflow}{if} (verbosity) \{
+27     T \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum} = 0;
+28     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+29       sum += vec[i];
+30     \}
+31     strm << \textcolor{stringliteral}{" sum="} << \hyperlink{namespacemarian_a460460a6de63beebc5d968b44d49d11b}{sum};
+32   \}
+33 
+34   \textcolor{keywordflow}{if} (verbosity == 2) \{
+35     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+36       strm << \textcolor{stringliteral}{" "} << vec[i];
+37     \}
+38   \}
+39 
+40   \textcolor{keywordflow}{return} strm.str();
+41 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{d7/dd3/namespaceamunmt_a7dbfb9dca5a82c17500ab26efe71623e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Debug@{Debug}}
+\index{Debug@{Debug}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Debug(const Beams \&vec, size\+\_\+t verbosity)}{Debug(const Beams &vec, size_t verbosity)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Debug (
+\begin{DoxyParamCaption}
+\item[{const {\bf Beams} \&}]{vec, }
+\item[{size\+\_\+t}]{verbosity}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a6e2a280e85c7e0845ed2c3bb793a86af}{}\label{namespaceamunmt_a6e2a280e85c7e0845ed2c3bb793a86af}
+
+
+Definition at line 24 of file hypothesis.\+cpp.
+
+
+\begin{DoxyCode}
+25 \{
+26   std::stringstream strm;
+27 
+28   strm << \textcolor{stringliteral}{"size="} << vec.size();
+29 
+30   \textcolor{keywordflow}{if} (verbosity) \{
+31     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < vec.size(); ++i) \{
+32       \textcolor{keyword}{const} \hyperlink{namespaceamunmt_a534a3a9a1d99c01a5adf05e700a26012}{Beam} &beam = vec[i];
+33       strm << endl << \textcolor{stringliteral}{"\(\backslash\)t"} << \hyperlink{namespaceamunmt_a6e2a280e85c7e0845ed2c3bb793a86af}{Debug}(beam, verbosity);
+34     \}
+35   \}
+36 
+37   \textcolor{keywordflow}{return} strm.str();
+38 \}
+\end{DoxyCode}
+\index{amunmt@{amunmt}!Get\+Alignment@{Get\+Alignment}}
+\index{Get\+Alignment@{Get\+Alignment}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Get\+Alignment(const Hypothesis\+Ptr \&hypothesis)}{GetAlignment(const HypothesisPtr &hypothesis)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ size\+\_\+t $>$ amunmt\+::\+Get\+Alignment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hypothesis\+Ptr} \&}]{hypothesis}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}{}\label{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}
+
+
+Definition at line 5 of file amun/common/printer.\+cpp.
+
+
+\begin{DoxyCode}
+5                                                                 \{
+6   std::vector<SoftAlignment> aligns;
+7   \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} last = hypothesis->GetPrevHyp();
+8   \textcolor{keywordflow}{while} (last->GetPrevHyp().get() != \textcolor{keyword}{nullptr}) \{
+9     aligns.push\_back(*(last->GetAlignment(0)));
+10     last = last->GetPrevHyp();
+11   \}
+12 
+13   std::vector<size\_t> alignment;
+14   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = aligns.rbegin(); it != aligns.rend(); ++it) \{
+15     \textcolor{keywordtype}{size\_t} maxArg = 0;
+16     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < it->size(); ++i) \{
+17       \textcolor{keywordflow}{if} ((*it)[maxArg] < (*it)[i]) \{
+18         maxArg = i;
+19       \}
+20     \}
+21     alignment.push\_back(maxArg);
+22   \}
+23 
+24   \textcolor{keywordflow}{return} alignment;
+25 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_acf078c1279ce98077a069ba41811faa6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Get\+Alignment\+String@{Get\+Alignment\+String}}
+\index{Get\+Alignment\+String@{Get\+Alignment\+String}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Get\+Alignment\+String(const std\+::vector$<$ size\+\_\+t $>$ \&alignment)}{GetAlignmentString(const std::vector< size_t > &alignment)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Get\+Alignment\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{alignment}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}{}\label{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}
+
+
+Definition at line 28 of file amun/common/printer.\+cpp.
+
+
+\begin{DoxyCode}
+28                                                                  \{
+29   std::stringstream alignString;
+30   alignString << \textcolor{stringliteral}{" |||"};
+31   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} wordIdx = 0; wordIdx < alignment.size(); ++wordIdx) \{
+32     alignString << \textcolor{stringliteral}{" "} << wordIdx << \textcolor{stringliteral}{"-"} << alignment[wordIdx];
+33   \}
+34   \textcolor{keywordflow}{return} alignString.str();
+35 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Get\+Nematus\+Alignment\+String@{Get\+Nematus\+Alignment\+String}}
+\index{Get\+Nematus\+Alignment\+String@{Get\+Nematus\+Alignment\+String}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Get\+Nematus\+Alignment\+String(const Hypothesis\+Ptr \&hypothesis, std\+::string best, std\+::string source, size\+\_\+t linenum)}{GetNematusAlignmentString(const HypothesisPtr &hypothesis, std::string best, std::string source, size_t linenum)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Get\+Nematus\+Alignment\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hypothesis\+Ptr} \&}]{hypothesis, }
+\item[{std\+::string}]{best, }
+\item[{std\+::string}]{source, }
+\item[{size\+\_\+t}]{linenum}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a589013f9c66aae2070326dc22d2b547d}{}\label{namespaceamunmt_a589013f9c66aae2070326dc22d2b547d}
+
+
+Definition at line 64 of file amun/common/printer.\+cpp.
+
+
+\begin{DoxyCode}
+64                                                                                                            
+                  \{
+65   std::vector<SoftAlignment> aligns;
+66   \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} last = hypothesis;
+67   \textcolor{keywordflow}{while} (last->GetPrevHyp().get() != \textcolor{keyword}{nullptr}) \{
+68     aligns.push\_back(*(last->GetAlignment(0)));
+69     last = last->GetPrevHyp();
+70   \}
+71   \textcolor{comment}{//<Sentence Number> ||| <Translation> ||| 0 ||| <Source> ||| <Source word count> <Translation word count>}
+72   std::stringstream firstline;
+73   \textcolor{keywordtype}{int} srcspaces = std::count\_if(source.begin(), source.end(), [](\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} c)\{ \textcolor{keywordflow}{return} std::isspace(c); 
+      \});
+74   
+75   firstline << linenum << \textcolor{stringliteral}{" ||| "} << best << \textcolor{stringliteral}{" ||| "} << hypothesis->GetCost() / aligns.size() * -1 
+76   << \textcolor{stringliteral}{" ||| "} << source << \textcolor{stringliteral}{" ||| "} << srcspaces+2 << \textcolor{stringliteral}{" "} << aligns.size();
+77 
+78   std::stringstream alignString;
+79   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = aligns.rbegin(); it != aligns.rend(); ++it) \{
+80     alignString << \textcolor{stringliteral}{"\(\backslash\)n"};
+81     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < srcspaces+2; ++i) \{
+82       \textcolor{keywordflow}{if} (i>0) alignString << \textcolor{stringliteral}{" "};
+83       alignString << (*it)[i];
+84     \}
+85   \}
+86   alignString << \textcolor{stringliteral}{"\(\backslash\)n"};
+87 
+88   \textcolor{keywordflow}{return} firstline.str() + alignString.str();
+89 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a589013f9c66aae2070326dc22d2b547d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Get\+Soft\+Alignment\+String@{Get\+Soft\+Alignment\+String}}
+\index{Get\+Soft\+Alignment\+String@{Get\+Soft\+Alignment\+String}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Get\+Soft\+Alignment\+String(const Hypothesis\+Ptr \&hypothesis)}{GetSoftAlignmentString(const HypothesisPtr &hypothesis)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Get\+Soft\+Alignment\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hypothesis\+Ptr} \&}]{hypothesis}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52}{}\label{namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52}
+
+
+Definition at line 37 of file amun/common/printer.\+cpp.
+
+
+\begin{DoxyCode}
+37                                                                   \{
+38   std::vector<SoftAlignment> aligns;
+39   \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} last = hypothesis->GetPrevHyp();
+40   \textcolor{keywordflow}{while} (last->GetPrevHyp().get() != \textcolor{keyword}{nullptr}) \{
+41     aligns.push\_back(*(last->GetAlignment(0)));
+42     last = last->GetPrevHyp();
+43   \}
+44 
+45   std::stringstream alignString;
+46   alignString << \textcolor{stringliteral}{" |||"};
+47   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = aligns.rbegin(); it != aligns.rend(); ++it) \{
+48     alignString << \textcolor{stringliteral}{" "};
+49     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < it->size(); ++i) \{
+50       \textcolor{keywordflow}{if} (i>0) alignString << \textcolor{stringliteral}{","};
+51       alignString << (*it)[i];
+52     \}
+53     \textcolor{comment}{// alternate code: distribute probability mass from alignment to <eos>}
+54     \textcolor{comment}{// float aligned\_to\_eos = (*it)[it->size()-1];}
+55     \textcolor{comment}{// for (size\_t i = 0; i < it->size()-1; ++i) \{}
+56     \textcolor{comment}{//  if (i>0) alignString << ",";}
+57     \textcolor{comment}{//  alignString << ( (*it)[i] / (1-aligned\_to\_eos) );}
+58     \textcolor{comment}{// \}}
+59   \}
+60 
+61   \textcolor{keywordflow}{return} alignString.str();
+62 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Join@{Join}}
+\index{Join@{Join}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Join(const std\+::vector$<$ std\+::string $>$ \&words, const std\+::string del)}{Join(const std::vector< std::string > &words, const std::string del)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Join (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{words, }
+\item[{const std\+::string}]{del}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}{}\label{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}
+
+
+Definition at line 30 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+30                                                                        \{
+31   std::stringstream ss;
+32   \textcolor{keywordflow}{if} (words.empty()) \{
+33     \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+34   \}
+35   ss << words[0];
+36   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < words.size(); ++i) \{
+37     ss << del << words[i];
+38   \}
+39   \textcolor{keywordflow}{return} ss.str();
+40 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Join@{Join}}
+\index{Join@{Join}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Join(const std\+::vector$<$ std\+::string $>$ \&words, const std\+::vector$<$ size\+\_\+t $>$ \&align, const std\+::string del)}{Join(const std::vector< std::string > &words, const std::vector< size_t > &align, const std::string del)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string amunmt\+::\+Join (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{words, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{align, }
+\item[{const std\+::string}]{del}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_ab250df7f6ac3d2ec5365cceea1056aff}{}\label{namespaceamunmt_ab250df7f6ac3d2ec5365cceea1056aff}
+
+
+Definition at line 42 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+43                                                                       \{
+44   std::stringstream ss;
+45   \textcolor{keywordflow}{if} (words.empty()) \{
+46     \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+47   \}
+48   ss << words[0] << \textcolor{stringliteral}{"|"} << align[0];
+49   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < words.size(); ++i) \{
+50     ss << del << words[i] << \textcolor{stringliteral}{"|"} << align[i];
+51   \}
+52   \textcolor{keywordflow}{return} ss.str();
+53 \}
+\end{DoxyCode}
+\index{amunmt@{amunmt}!Load\+Weights@{Load\+Weights}}
+\index{Load\+Weights@{Load\+Weights}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Load\+Weights(\+Y\+A\+M\+L\+::\+Node \&config, const std\+::string \&path)}{LoadWeights(YAML::Node &config, const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Load\+Weights (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2}{}\label{namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2}
+
+
+Definition at line 150 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+150                                                           \{
+151   \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{"Reading weights from \{\}"}, path);
+152   \hyperlink{classInputFileStream}{InputFileStream} fweights(path);
+153   std::string name;
+154   \textcolor{keywordtype}{float} weight;
+155   \textcolor{keywordtype}{size\_t} i = 0;
+156   \textcolor{keywordflow}{while}(fweights >> name >> weight) \{
+157     \textcolor{keywordflow}{if}(name.back() == \textcolor{charliteral}{'='})
+158       name.pop\_back();
+159     \hyperlink{amun_2common_2logging_8h_a8cad147aca8c526d3c8a03ae14d5c87d}{LOG}(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{info})->info(\textcolor{stringliteral}{" > \{\} = \{\}"}, name , weight);
+160     config[\textcolor{stringliteral}{"weights"}][name] = weight;
+161     i++;
+162   \}
+163 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a18aa660f48877e9279fb9e91dee85ce2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&out, const Device\+Info \&obj)}{operator<<(std::ostream &out, const DeviceInfo &obj)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& amunmt\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Device\+Info} \&}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_aa685f28fda5503ea31605ee8812e9f86}{}\label{namespaceamunmt_aa685f28fda5503ea31605ee8812e9f86}
+
+
+Definition at line 5 of file types.\+cpp.
+
+
+\begin{DoxyCode}
+6 \{
+7   out << obj.deviceType << \textcolor{stringliteral}{" t="} << obj.threadInd << \textcolor{stringliteral}{" d="} << obj.deviceId;
+8   \textcolor{keywordflow}{return} out;
+9 \}
+\end{DoxyCode}
+\index{amunmt@{amunmt}!Output\+Rec@{Output\+Rec}}
+\index{Output\+Rec@{Output\+Rec}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Output\+Rec(const Y\+A\+M\+L\+::\+Node node, Y\+A\+M\+L\+::\+Emitter \&out)}{OutputRec(const YAML::Node node, YAML::Emitter &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Output\+Rec (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node}]{node, }
+\item[{Y\+A\+M\+L\+::\+Emitter \&}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{}\label{namespaceamunmt_aef479ee5514fb431474e91580190fd39}
+
+
+Definition at line 117 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+117                                                       \{
+118   std::set<std::string> flow = \{ \textcolor{stringliteral}{"devices"} \};
+119   std::set<std::string> sorter;
+120   \textcolor{keywordflow}{switch} (node.Type()) \{
+121     \textcolor{keywordflow}{case} YAML::NodeType::Null:
+122       out << node; \textcolor{keywordflow}{break};
+123     \textcolor{keywordflow}{case} YAML::NodeType::Scalar:
+124       out << node; \textcolor{keywordflow}{break};
+125     \textcolor{keywordflow}{case} YAML::NodeType::Sequence:
+126       out << YAML::BeginSeq;
+127       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& n : node)
+128         \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{OutputRec}(n, out);
+129       out << YAML::EndSeq;
+130       \textcolor{keywordflow}{break};
+131     \textcolor{keywordflow}{case} YAML::NodeType::Map:
+132       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& n : node)
+133         sorter.insert(n.first.as<std::string>());
+134       out << YAML::BeginMap;
+135       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& key : sorter) \{
+136         out << YAML::Key;
+137         out << key;
+138         out << YAML::Value;
+139         \textcolor{keywordflow}{if}(flow.count(key))
+140           out << YAML::Flow;
+141         \hyperlink{namespaceamunmt_aef479ee5514fb431474e91580190fd39}{OutputRec}(node[key], out);
+142       \}
+143       out << YAML::EndMap;
+144       \textcolor{keywordflow}{break};
+145     \textcolor{keywordflow}{case} YAML::NodeType::Undefined:
+146       out << node; \textcolor{keywordflow}{break};
+147   \}
+148 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_aef479ee5514fb431474e91580190fd39_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Overwrite\+B\+PE@{Overwrite\+B\+PE}}
+\index{Overwrite\+B\+PE@{Overwrite\+B\+PE}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Overwrite\+B\+P\+E(\+Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&bpe\+Paths)}{OverwriteBPE(YAML::Node &config, std::vector< std::string > &bpePaths)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Overwrite\+B\+PE (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{bpe\+Paths}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18}{}\label{namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18}
+
+
+Definition at line 85 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+85                                                                     \{
+86     config[\textcolor{stringliteral}{"bpe"}] = bpePaths;
+87 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a3d7f2e636dd3e33b80855722d08f9a18_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Overwrite\+Models@{Overwrite\+Models}}
+\index{Overwrite\+Models@{Overwrite\+Models}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Overwrite\+Models(\+Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&model\+Paths)}{OverwriteModels(YAML::Node &config, std::vector< std::string > &modelPaths)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Overwrite\+Models (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{model\+Paths}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a223f2f561452f574093618cd336c43de}{}\label{namespaceamunmt_a223f2f561452f574093618cd336c43de}
+
+
+Definition at line 66 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+66                                                                          \{
+67   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < modelPaths.size(); ++i) \{
+68     std::stringstream name;
+69     name << \textcolor{stringliteral}{"F"} << i;
+70     config[\textcolor{stringliteral}{"scorers"}][name.str()][\textcolor{stringliteral}{"type"}] = \textcolor{stringliteral}{"Nematus"};
+71     config[\textcolor{stringliteral}{"scorers"}][name.str()][\textcolor{stringliteral}{"path"}] = modelPaths[i];
+72     \textcolor{keywordflow}{if}(!config[\textcolor{stringliteral}{"weights"}][name.str()])
+73       config[\textcolor{stringliteral}{"weights"}][name.str()] = 1;
+74   \}
+75 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a223f2f561452f574093618cd336c43de_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Overwrite\+Source\+Vocabs@{Overwrite\+Source\+Vocabs}}
+\index{Overwrite\+Source\+Vocabs@{Overwrite\+Source\+Vocabs}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Overwrite\+Source\+Vocabs(\+Y\+A\+M\+L\+::\+Node \&config, std\+::vector$<$ std\+::string $>$ \&source\+Vocab\+Paths)}{OverwriteSourceVocabs(YAML::Node &config, std::vector< std::string > &sourceVocabPaths)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Overwrite\+Source\+Vocabs (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{source\+Vocab\+Paths}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a}{}\label{namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a}
+
+
+Definition at line 77 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+77                                                                                      \{
+78     config[\textcolor{stringliteral}{"source-vocab"}] = sourceVocabPaths;
+79 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a343a63d53ad92c670141e5740f3eab7a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Overwrite\+Target\+Vocab@{Overwrite\+Target\+Vocab}}
+\index{Overwrite\+Target\+Vocab@{Overwrite\+Target\+Vocab}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Overwrite\+Target\+Vocab(\+Y\+A\+M\+L\+::\+Node \&config, std\+::string \&target\+Vocab\+Path)}{OverwriteTargetVocab(YAML::Node &config, std::string &targetVocabPath)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Overwrite\+Target\+Vocab (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{config, }
+\item[{std\+::string \&}]{target\+Vocab\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3}{}\label{namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3}
+
+
+Definition at line 81 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+81                                                                         \{
+82     config[\textcolor{stringliteral}{"target-vocab"}] = targetVocabPath;
+83 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a1b4b3e3a5cfcb79de4fd92c34e3fa4e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Printer@{Printer}}
+\index{Printer@{Printer}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Printer(const God \&god, const History \&history, O\+Stream \&out, const Sentence \&sentence)}{Printer(const God &god, const History &history, OStream &out, const Sentence &sentence)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O\+Stream $>$ void amunmt\+::\+Printer (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const {\bf History} \&}]{history, }
+\item[{O\+Stream \&}]{out, }
+\item[{const {\bf Sentence} \&}]{sentence}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_aef108281493b0c3b669c537192eace34}{}\label{namespaceamunmt_aef108281493b0c3b669c537192eace34}
+
+
+Definition at line 23 of file amun/common/printer.\+h.
+
+
+\begin{DoxyCode}
+23                                                                                              \{ 
+24   \textcolor{keyword}{auto} bestTranslation = history.Top();
+25   std::vector<std::string> bestSentenceWords = god.Postprocess(god.GetTargetVocab()(bestTranslation.first))
+      ;
+26 
+27   std::string best = \hyperlink{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}{Join}(bestSentenceWords);
+28   \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"return-nematus-alignment"})) \{
+29   \textcolor{comment}{//Get the source sentence for printing Nematus style soft alignments}
+30   std::string source = \hyperlink{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}{Join}(god.Postprocess(god.GetSourceVocab()(sentence.GetWords(0))));
+31     best = \hyperlink{namespaceamunmt_a589013f9c66aae2070326dc22d2b547d}{GetNematusAlignmentString}(bestTranslation.second, best, source, history
+      .GetLineNum());
+32   \}\textcolor{keywordflow}{else}\{
+33     \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"return-alignment"})) \{
+34       best += \hyperlink{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}{GetAlignmentString}(\hyperlink{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}{GetAlignment}(bestTranslation.second));
+35     \}
+36     \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"return-soft-alignment"})) \{
+37       best += \hyperlink{namespaceamunmt_a2cb8f571957aa136afe5b74340ecec52}{GetSoftAlignmentString}(bestTranslation.second);
+38     \}
+39   \}
+40 
+41   \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"n-best"})) \{
+42     std::vector<std::string> scorerNames = god.GetScorerNames();
+43     \textcolor{keyword}{const} \hyperlink{namespaceamunmt_a4ad8f6c25b18c8675040456c6e95e0f6}{NBestList} &nbl = history.NBest(god.Get<\textcolor{keywordtype}{size\_t}>(\textcolor{stringliteral}{"beam-size"}));
+44     \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"wipo"})) \{
+45       out << \textcolor{stringliteral}{"OUT: "} << nbl.size() << std::endl;
+46     \}
+47     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < nbl.size(); ++i) \{
+48       \textcolor{keyword}{const} \hyperlink{namespaceamunmt_af12bd731cf50f363bdcbec0f435bafb1}{Result}& \hyperlink{namespacetest2_a05591d1f1584c3b3d1490fc9ac7519a6}{result} = nbl[i];
+49       \textcolor{keyword}{const} \hyperlink{namespaceamunmt_aa50d0b3a5ba58ba5da8a4d88ddab1b18}{Words} &words = result.first;
+50       \textcolor{keyword}{const} \hyperlink{namespaceamunmt_a9dd9d255e51649b0af19d0e895d52d2f}{HypothesisPtr} &hypo = result.second;
+51 
+52       \textcolor{keywordflow}{if}(god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"wipo"})) \{
+53         out << \textcolor{stringliteral}{"OUT: "};
+54       \}
+55       std::string translation = \hyperlink{namespaceamunmt_a24dbaa0ef7dc1f1fcaa131a0f0eacb43}{Join}(god.Postprocess(god.GetTargetVocab()(words)));
+56       \textcolor{keywordflow}{if} (god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"return-alignment"})) \{
+57         translation += \hyperlink{namespaceamunmt_a33109e5a2b2adf93a3e60ef4197a85f9}{GetAlignmentString}(\hyperlink{namespaceamunmt_acf078c1279ce98077a069ba41811faa6}{GetAlignment}(bestTranslation.second
+      ));
+58       \}
+59       out << history.GetLineNum() << \textcolor{stringliteral}{" ||| "} << translation << \textcolor{stringliteral}{" |||"};
+60 
+61       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < hypo->GetCostBreakdown().size(); ++j) \{
+62         out << \textcolor{stringliteral}{" "} << scorerNames[j] << \textcolor{stringliteral}{"= "} << std::setprecision(3) << 
+      \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{std::fixed} << hypo->GetCostBreakdown()[j];
+63       \}
+64 
+65       \textcolor{keywordflow}{if}(god.Get<\textcolor{keywordtype}{bool}>(\textcolor{stringliteral}{"normalize"})) \{
+66         out << \textcolor{stringliteral}{" ||| "} << std::setprecision(3) << \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{std::fixed} << hypo->GetCost() / words.size();
+67       \}
+68       \textcolor{keywordflow}{else} \{
+69         out << \textcolor{stringliteral}{" ||| "} << std::setprecision(3) << \hyperlink{namespacemarian_1_1keywords_aded1556eedfde0aef209b0e7d5443acd}{std::fixed} << hypo->GetCost();
+70       \}
+71 
+72       \textcolor{keywordflow}{if}(i < nbl.size() - 1)
+73         out << std::endl;
+74       \textcolor{keywordflow}{else}
+75         out << std::flush;
+76 
+77     \}
+78   \} \textcolor{keywordflow}{else} \{
+79     out << best << std::flush;
+80   \}
+81 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_aef108281493b0c3b669c537192eace34_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_aef108281493b0c3b669c537192eace34_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Printer@{Printer}}
+\index{Printer@{Printer}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Printer(const God \&god, const Histories \&histories, O\+Stream \&out, const Sentence \&sentence)}{Printer(const God &god, const Histories &histories, OStream &out, const Sentence &sentence)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O\+Stream $>$ void amunmt\+::\+Printer (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{const {\bf Histories} \&}]{histories, }
+\item[{O\+Stream \&}]{out, }
+\item[{const {\bf Sentence} \&}]{sentence}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2}{}\label{namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2}
+
+
+Definition at line 84 of file amun/common/printer.\+h.
+
+
+\begin{DoxyCode}
+84                                                                                                  \{
+85   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < histories.size(); ++i) \{
+86     \textcolor{keyword}{const} History& history = *histories.at(i).get();
+87     \hyperlink{namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2}{Printer}(god, history, out, sentence);
+88   \}
+89 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a10b27c18333dd8e5b6652acfea64d7d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Process\+Paths@{Process\+Paths}}
+\index{Process\+Paths@{Process\+Paths}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Process\+Paths(\+Y\+A\+M\+L\+::\+Node \&node, const boost\+::filesystem\+::path \&config\+Path, bool is\+Path)}{ProcessPaths(YAML::Node &node, const boost::filesystem::path &configPath, bool isPath)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Process\+Paths (
+\begin{DoxyParamCaption}
+\item[{Y\+A\+M\+L\+::\+Node \&}]{node, }
+\item[{const boost\+::filesystem\+::path \&}]{config\+Path, }
+\item[{bool}]{is\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{}\label{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}
+
+
+Definition at line 32 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+32                                                                                       \{
+33   \textcolor{keyword}{using namespace }boost::filesystem;
+34   std::set<std::string> paths = \{\textcolor{stringliteral}{"path"}, \textcolor{stringliteral}{"paths"}, \textcolor{stringliteral}{"source-vocab"}, \textcolor{stringliteral}{"target-vocab"}, \textcolor{stringliteral}{"bpe"}, \textcolor{stringliteral}{"softmax-filter"}\};
+35 
+36   \textcolor{keywordflow}{if}(isPath) \{
+37     \textcolor{keywordflow}{if}(node.Type() == YAML::NodeType::Scalar) \{
+38       std::string nodePath = node.as<std::string>();
+39       \textcolor{keywordflow}{if} (nodePath.size()) \{
+40         node = canonical(path\{nodePath\}, configPath).\textcolor{keywordtype}{string}();
+41       \}
+42     \}
+43     \textcolor{keywordflow}{if}(node.Type() == YAML::NodeType::Sequence) \{
+44       \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& sub : node) \{
+45         \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{ProcessPaths}(sub, configPath, \textcolor{keyword}{true});
+46         \textcolor{keywordflow}{break};
+47       \}
+48     \}
+49   \}
+50   \textcolor{keywordflow}{else} \{
+51     \textcolor{keywordflow}{switch} (node.Type()) \{
+52       \textcolor{keywordflow}{case} YAML::NodeType::Sequence:
+53         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& sub : node)
+54           \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{ProcessPaths}(sub, configPath, \textcolor{keyword}{false});
+55         \textcolor{keywordflow}{break};
+56       \textcolor{keywordflow}{case} YAML::NodeType::Map:
+57         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& sub : node) \{
+58           std::string key = sub.first.as<std::string>();
+59           \hyperlink{namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1}{ProcessPaths}(sub.second, configPath, paths.count(key) > 0);
+60         \}
+61         \textcolor{keywordflow}{break};
+62     \}
+63   \}
+64 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_aa294dffea2547350d8ba90401bbe85d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!set\+\_\+loglevel@{set\+\_\+loglevel}}
+\index{set\+\_\+loglevel@{set\+\_\+loglevel}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{set\+\_\+loglevel(spdlog\+::logger \&logger, std\+::string const level)}{set_loglevel(spdlog::logger &logger, std::string const level)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::set\+\_\+loglevel (
+\begin{DoxyParamCaption}
+\item[{spdlog\+::logger \&}]{logger, }
+\item[{std\+::string const}]{level}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a14c0b46e2e86d44662d37f953788043c}{}\label{namespaceamunmt_a14c0b46e2e86d44662d37f953788043c}
+
+
+Definition at line 5 of file amun/common/logging.\+cpp.
+
+
+\begin{DoxyCode}
+5                                                                \{
+6   \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"trace"})
+7     logger.set\_level(spdlog::level::trace);
+8   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"debug"})
+9     logger.set\_level(\hyperlink{namespacemarian_a442bfa469f081af4c2665c341efc71ce}{spdlog::level::debug});
+10   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"info"})
+11     logger.set\_level(\hyperlink{namespacefix__hard_a31eedbb056537bc1bef47ad5e40eaa68}{spdlog::level::info});
+12   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"err"} or level == \textcolor{stringliteral}{"error"})
+13     logger.set\_level(spdlog::level::err);
+14   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"critical"})
+15     logger.set\_level(spdlog::level::critical);
+16   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (level == \textcolor{stringliteral}{"off"})
+17     logger.set\_level(spdlog::level::off);
+18   \textcolor{keywordflow}{else}
+19     logger.warn(\textcolor{stringliteral}{"Unknown log level '\{\}' for logger '\{\}'"},
+20     level.c\_str(), logger.name().c\_str());
+21 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d7/dd3/namespaceamunmt_a14c0b46e2e86d44662d37f953788043c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{d7/dd3/namespaceamunmt_a14c0b46e2e86d44662d37f953788043c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Split@{Split}}
+\index{Split@{Split}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Split(const std\+::string \&line, std\+::vector$<$ std\+::string $>$ \&pieces, const std\+::string del)}{Split(const std::string &line, std::vector< std::string > &pieces, const std::string del)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{pieces, }
+\item[{const std\+::string}]{del}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}{}\label{namespaceamunmt_a10b7486d36b130609c77e8356218c0a7}
+
+
+Definition at line 11 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+11                                                                                      \{
+12   \textcolor{keywordtype}{size\_t} begin = 0;
+13   \textcolor{keywordtype}{size\_t} pos = 0;
+14   std::string token;
+15   \textcolor{keywordflow}{while} ((pos = line.find(del, begin)) != std::string::npos) \{
+16     \textcolor{keywordflow}{if} (pos > begin) \{
+17       token = line.substr(begin, pos - begin);
+18       \textcolor{keywordflow}{if}(token.size() > 0)
+19         pieces.push\_back(token);
+20     \}
+21     begin = pos + del.size();
+22   \}
+23   \textcolor{keywordflow}{if} (pos > begin) \{
+24     token = line.substr(begin, pos - begin);
+25   \}
+26   \textcolor{keywordflow}{if}(token.size() > 0)
+27     pieces.push\_back(token);
+28 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a10b7486d36b130609c77e8356218c0a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Translation\+Task@{Translation\+Task}}
+\index{Translation\+Task@{Translation\+Task}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Translation\+Task(const God \&god, std\+::shared\+\_\+ptr$<$ Sentences $>$ sentences)}{TranslationTask(const God &god, std::shared_ptr< Sentences > sentences)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Histories} $>$ amunmt\+::\+Translation\+Task (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Sentences} $>$}]{sentences}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}{}\label{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}
+
+
+Definition at line 35 of file translation\+\_\+task.\+cpp.
+
+
+\begin{DoxyCode}
+35                                                                                              \{
+36   \textcolor{keywordflow}{try} \{
+37     Search& search = god.GetSearch();
+38     \textcolor{keyword}{auto} histories = search.Translate(*\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences});
+39 
+40     \textcolor{keywordflow}{return} histories;
+41   \}
+42 \textcolor{preprocessor}{#ifdef CUDA}
+43   \textcolor{keywordflow}{catch}(thrust::system\_error &e)
+44   \{
+45     std::cerr << \textcolor{stringliteral}{"CUDA error during some\_function: "} << e.what() << std::endl;
+46     abort();
+47   \}
+48 \textcolor{preprocessor}{#endif}
+49   \textcolor{keywordflow}{catch}(std::bad\_alloc &e)
+50   \{
+51     std::cerr << \textcolor{stringliteral}{"Bad memory allocation during some\_function: "} << e.what() << std::endl;
+52     abort();
+53   \}
+54   \textcolor{keywordflow}{catch}(std::runtime\_error &e)
+55   \{
+56     std::cerr << \textcolor{stringliteral}{"Runtime error during some\_function: "} << e.what() << std::endl;
+57     abort();
+58   \}
+59   \textcolor{keywordflow}{catch}(...)
+60   \{
+61     std::cerr << \textcolor{stringliteral}{"Some other kind of error during some\_function"} << std::endl;
+62     abort();
+63   \}
+64 
+65 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Translation\+Task\+And\+Output@{Translation\+Task\+And\+Output}}
+\index{Translation\+Task\+And\+Output@{Translation\+Task\+And\+Output}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Translation\+Task\+And\+Output(const God \&god, std\+::shared\+\_\+ptr$<$ Sentences $>$ sentences)}{TranslationTaskAndOutput(const God &god, std::shared_ptr< Sentences > sentences)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Translation\+Task\+And\+Output (
+\begin{DoxyParamCaption}
+\item[{const {\bf God} \&}]{god, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Sentences} $>$}]{sentences}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85}{}\label{namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85}
+
+
+Definition at line 18 of file translation\+\_\+task.\+cpp.
+
+
+\begin{DoxyCode}
+18                                                                                   \{
+19   OutputCollector &outputCollector = god.GetOutputCollector();
+20 
+21   std::shared\_ptr<Histories> histories = \hyperlink{namespaceamunmt_a54e0c0c0dd1caecba5c17e45d023fd5e}{TranslationTask}(god, 
+      \hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences});
+22 
+23   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < histories->size(); ++i) \{
+24     \textcolor{keyword}{const} History &history = *histories->at(i);
+25     \textcolor{keywordtype}{size\_t} lineNum = history.GetLineNum();
+26   \textcolor{keyword}{const} Sentence &sentence = *\hyperlink{namespacetest_adcc587f95c6a5c19245b161284ca9e0e}{sentences}->at(0);
+27 
+28     std::stringstream strm;
+29     \hyperlink{namespaceamunmt_aef108281493b0c3b669c537192eace34}{Printer}(god, history, strm, sentence);
+30 
+31     outputCollector.Write(lineNum, strm.str());
+32   \}
+33 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{d7/dd3/namespaceamunmt_aac616d7d6dd75bad96a6dcf3afe74e85_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Trim@{Trim}}
+\index{Trim@{Trim}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Trim(std\+::string \&s)}{Trim(std::string &s)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Trim (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_a4578e863aaec8293556404432d7e8d04}{}\label{namespaceamunmt_a4578e863aaec8293556404432d7e8d04}
+
+
+Definition at line 7 of file amun/common/utils.\+cpp.
+
+
+\begin{DoxyCode}
+7                         \{
+8   boost::trim\_if(s, boost::is\_any\_of(\textcolor{stringliteral}{" \(\backslash\)t\(\backslash\)n"}));
+9 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_a4578e863aaec8293556404432d7e8d04_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{amunmt@{amunmt}!Validate@{Validate}}
+\index{Validate@{Validate}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{Validate(const Y\+A\+M\+L\+::\+Node \&config)}{Validate(const YAML::Node &config)}}]{\setlength{\rightskip}{0pt plus 5cm}void amunmt\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067}{}\label{namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067}
+
+
+Definition at line 89 of file amun/common/config.\+cpp.
+
+
+\begin{DoxyCode}
+89                                       \{
+90   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(!config[\textcolor{stringliteral}{"scorers"}] || config[\textcolor{stringliteral}{"scorers"}].size() == 0,
+91                  \textcolor{stringliteral}{"No scorers given in config file"});
+92 
+93   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(!config[\textcolor{stringliteral}{"source-vocab"}],
+94                  \textcolor{stringliteral}{"No source-vocab given in config file"});
+95 
+96   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(!config[\textcolor{stringliteral}{"target-vocab"}],
+97                  \textcolor{stringliteral}{"No target-vocab given in config file"});
+98 
+99   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(config[\textcolor{stringliteral}{"weights"}].size() != config[\textcolor{stringliteral}{"scorers"}].size(),
+100                 \textcolor{stringliteral}{"Different number of models and weights in config file"});
+101 
+102   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& pair: config[\textcolor{stringliteral}{"weights"}])
+103     \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(!(config[\textcolor{stringliteral}{"scorers"}][pair.first.as<std::string>()]),
+104                    \textcolor{stringliteral}{"Weight has no scorer: "} << pair.first.as<std::string>());
+105 
+106   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}&& pair: config[\textcolor{stringliteral}{"scorers"}])
+107     \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(!(config[\textcolor{stringliteral}{"weights"}][pair.first.as<std::string>()]), \textcolor{stringliteral}{"Scorer
+       has no weight: "} << pair.first.as<std::string>());
+108 
+109   \textcolor{comment}{//amunmt\_UTIL\_THROW\_IF2(config["cpu-threads"].as<int>() > 0 && config["batch-size"].as<int>() > 1,}
+110   \textcolor{comment}{//              "Different number of models and weights in config file");}
+111 
+112   \hyperlink{exception_8h_a361c5b6ab6490fc4572337346f390fb1}{amunmt\_UTIL\_THROW\_IF2}(config[\textcolor{stringliteral}{"maxi-batch"}].as<int>() < config[\textcolor{stringliteral}{"mini-batch"}].as<int>(
+      ),
+113                 \textcolor{stringliteral}{"maxi-batch ("} << config[\textcolor{stringliteral}{"maxi-batch"}].as<int>()
+114                 << \textcolor{stringliteral}{") < mini-batch ("} << config[\textcolor{stringliteral}{"mini-batch"}].as<int>() << \textcolor{stringliteral}{")"});
+115 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd3/namespaceamunmt_ad51b66163a1437dc0ffd4aedbb0bd067_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{amunmt@{amunmt}!E\+O\+S\+\_\+\+ID@{E\+O\+S\+\_\+\+ID}}
+\index{E\+O\+S\+\_\+\+ID@{E\+O\+S\+\_\+\+ID}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{E\+O\+S\+\_\+\+ID}{EOS_ID}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Word} amunmt\+::\+E\+O\+S\+\_\+\+ID = 0}\hypertarget{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}{}\label{namespaceamunmt_a89f3b34944649f2108f2b8935e5f46dd}
+
+
+Definition at line 13 of file amun/common/types.\+h.
+
+\index{amunmt@{amunmt}!E\+O\+S\+\_\+\+S\+TR@{E\+O\+S\+\_\+\+S\+TR}}
+\index{E\+O\+S\+\_\+\+S\+TR@{E\+O\+S\+\_\+\+S\+TR}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{E\+O\+S\+\_\+\+S\+TR}{EOS_STR}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string amunmt\+::\+E\+O\+S\+\_\+\+S\+TR = \char`\"{}$<$/s$>$\char`\"{}}\hypertarget{namespaceamunmt_a396941d367e0babddc9fa87260a805f7}{}\label{namespaceamunmt_a396941d367e0babddc9fa87260a805f7}
+
+
+Definition at line 16 of file amun/common/types.\+h.
+
+\index{amunmt@{amunmt}!S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE@{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}}
+\index{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE@{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE}{SHAPE_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t amunmt\+::\+S\+H\+A\+P\+E\+\_\+\+S\+I\+ZE = 4}\hypertarget{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}{}\label{namespaceamunmt_a0c4d3d7c0b1b52dbe7a658b3dc026409}
+
+
+Definition at line 10 of file base\+\_\+matrix.\+h.
+
+\index{amunmt@{amunmt}!U\+N\+K\+\_\+\+ID@{U\+N\+K\+\_\+\+ID}}
+\index{U\+N\+K\+\_\+\+ID@{U\+N\+K\+\_\+\+ID}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{U\+N\+K\+\_\+\+ID}{UNK_ID}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Word} amunmt\+::\+U\+N\+K\+\_\+\+ID = 1}\hypertarget{namespaceamunmt_a7904fd3bd044d608e81e54933a771ec9}{}\label{namespaceamunmt_a7904fd3bd044d608e81e54933a771ec9}
+
+
+Definition at line 14 of file amun/common/types.\+h.
+
+\index{amunmt@{amunmt}!U\+N\+K\+\_\+\+S\+TR@{U\+N\+K\+\_\+\+S\+TR}}
+\index{U\+N\+K\+\_\+\+S\+TR@{U\+N\+K\+\_\+\+S\+TR}!amunmt@{amunmt}}
+\subsubsection[{\texorpdfstring{U\+N\+K\+\_\+\+S\+TR}{UNK_STR}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string amunmt\+::\+U\+N\+K\+\_\+\+S\+TR = \char`\"{}$<$unk$>$\char`\"{}}\hypertarget{namespaceamunmt_aff26c2cbd5a97e90ecdc5e0dbba13516}{}\label{namespaceamunmt_aff26c2cbd5a97e90ecdc5e0dbba13516}
+
+
+Definition at line 17 of file amun/common/types.\+h.
+

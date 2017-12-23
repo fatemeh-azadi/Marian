@@ -1,0 +1,282 @@
+\hypertarget{classLM}{}\section{LM Class Reference}
+\label{classLM}\index{LM@{LM}}
+
+
+{\ttfamily \#include $<$kenlm.\+h$>$}
+
+
+
+Collaboration diagram for LM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d08/classLM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLM_a20c282226e69a993c382f33d2d73b06d}{LM} (const std\+::string \&path, const Vocab \&vocab)
+\item 
+\hyperlink{classLM_a48d4c54484feb8ae313ed1914c768f68}{LM} (\hyperlink{classLM}{LM} \&\&lm)
+\item 
+\hyperlink{classLM_ae515b0598a8be38144f5c031488b4c82}{$\sim$\+LM} ()
+\item 
+float \hyperlink{classLM_aefaa618805be0cdcfe1a358f5d6ed486}{Score} (const \hyperlink{kenlm_8h_ac0671733f284e84250e464637645ade4}{Kenlm\+State} \&in, \hyperlink{namespacelm_aea554f766016a7141535a9f8f648766a}{lm\+::\+Word\+Index} index, \hyperlink{kenlm_8h_ac0671733f284e84250e464637645ade4}{Kenlm\+State} \&out) const 
+\item 
+const \hyperlink{kenlm_8h_ac0671733f284e84250e464637645ade4}{Kenlm\+State} \& \hyperlink{classLM_aa9ddd84b61f439c6369f8daaff0f0244}{Begin\+Sentence\+State} () const 
+\item 
+Word\+Pairs\+::const\+\_\+iterator \hyperlink{classLM_a04fc742595c0ac2642e3b700d329af83}{begin} () const 
+\item 
+Word\+Pairs\+::const\+\_\+iterator \hyperlink{classLM_af4d8e463e48d56919efa04eb2a9dbc40}{end} () const 
+\item 
+size\+\_\+t \hyperlink{classLM_adee9e7617ec788bcf48ca57555aac428}{size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef lm\+::ngram\+::\+Probing\+Model \hyperlink{classLM_adb71040d1b5532d2dcd258815f6f28b7}{Kenlm\+Model}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classLM_adb71040d1b5532d2dcd258815f6f28b7}{Kenlm\+Model} $>$ \hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\+\_\+}
+\item 
+\hyperlink{kenlm_8h_ad28b93df55f44c282bedd86c1e041041}{Word\+Pairs} \hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file kenlm.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{LM@{LM}!Kenlm\+Model@{Kenlm\+Model}}
+\index{Kenlm\+Model@{Kenlm\+Model}!LM@{LM}}
+\subsubsection[{\texorpdfstring{Kenlm\+Model}{KenlmModel}}]{\setlength{\rightskip}{0pt plus 5cm}typedef lm\+::ngram\+::\+Probing\+Model {\bf L\+M\+::\+Kenlm\+Model}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLM_adb71040d1b5532d2dcd258815f6f28b7}{}\label{classLM_adb71040d1b5532d2dcd258815f6f28b7}
+
+
+Definition at line 28 of file kenlm.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{LM@{LM}!LM@{LM}}
+\index{LM@{LM}!LM@{LM}}
+\subsubsection[{\texorpdfstring{L\+M(const std\+::string \&path, const Vocab \&vocab)}{LM(const std::string &path, const Vocab &vocab)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+M\+::\+LM (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{const Vocab \&}]{vocab}
+\end{DoxyParamCaption}
+)}\hypertarget{classLM_a20c282226e69a993c382f33d2d73b06d}{}\label{classLM_a20c282226e69a993c382f33d2d73b06d}
+
+
+Definition at line 25 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+25                                                 \{
+26   lm::ngram::Config config;
+27   \hyperlink{classVocabGetter}{VocabGetter}* vg = \textcolor{keyword}{new} \hyperlink{classVocabGetter}{VocabGetter}(\hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}, vocab);
+28   config.enumerate\_vocab = vg;
+29   \hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\_}.reset(\textcolor{keyword}{new} \hyperlink{classLM_adb71040d1b5532d2dcd258815f6f28b7}{KenlmModel}(path.c\_str(), config));
+30   \textcolor{keyword}{delete} vg;
+31 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d8/de7/classLM_a20c282226e69a993c382f33d2d73b06d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{LM@{LM}!LM@{LM}}
+\index{LM@{LM}!LM@{LM}}
+\subsubsection[{\texorpdfstring{L\+M(\+L\+M \&\&lm)}{LM(LM &&lm)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+M\+::\+LM (
+\begin{DoxyParamCaption}
+\item[{{\bf LM} \&\&}]{lm}
+\end{DoxyParamCaption}
+)}\hypertarget{classLM_a48d4c54484feb8ae313ed1914c768f68}{}\label{classLM_a48d4c54484feb8ae313ed1914c768f68}
+
+
+Definition at line 35 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+36  : \hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\_}(std::move(lm.\hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\_})), \hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}(std::move(lm.\hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}))
+37 \{\}
+\end{DoxyCode}
+\index{LM@{LM}!````~LM@{$\sim$\+LM}}
+\index{````~LM@{$\sim$\+LM}!LM@{LM}}
+\subsubsection[{\texorpdfstring{$\sim$\+L\+M()}{~LM()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+M\+::$\sim$\+LM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classLM_ae515b0598a8be38144f5c031488b4c82}{}\label{classLM_ae515b0598a8be38144f5c031488b4c82}
+
+
+Definition at line 33 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+33 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{LM@{LM}!begin@{begin}}
+\index{begin@{begin}!LM@{LM}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}Word\+Pairs\+::const\+\_\+iterator L\+M\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classLM_a04fc742595c0ac2642e3b700d329af83}{}\label{classLM_a04fc742595c0ac2642e3b700d329af83}
+
+
+Definition at line 48 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+48                                         \{
+49   \textcolor{keywordflow}{return} \hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}.begin();    
+50 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d8/de7/classLM_a04fc742595c0ac2642e3b700d329af83_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{LM@{LM}!Begin\+Sentence\+State@{Begin\+Sentence\+State}}
+\index{Begin\+Sentence\+State@{Begin\+Sentence\+State}!LM@{LM}}
+\subsubsection[{\texorpdfstring{Begin\+Sentence\+State() const }{BeginSentenceState() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Kenlm\+State} \& L\+M\+::\+Begin\+Sentence\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classLM_aa9ddd84b61f439c6369f8daaff0f0244}{}\label{classLM_aa9ddd84b61f439c6369f8daaff0f0244}
+
+
+Definition at line 44 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+44                                                \{
+45   \textcolor{keywordflow}{return} \hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\_}->BeginSentenceState();
+46 \}
+\end{DoxyCode}
+\index{LM@{LM}!end@{end}}
+\index{end@{end}!LM@{LM}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}Word\+Pairs\+::const\+\_\+iterator L\+M\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classLM_af4d8e463e48d56919efa04eb2a9dbc40}{}\label{classLM_af4d8e463e48d56919efa04eb2a9dbc40}
+
+
+Definition at line 52 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+52                                       \{
+53   \textcolor{keywordflow}{return} \hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}.end();    
+54 \}
+\end{DoxyCode}
+\index{LM@{LM}!Score@{Score}}
+\index{Score@{Score}!LM@{LM}}
+\subsubsection[{\texorpdfstring{Score(const Kenlm\+State \&in, lm\+::\+Word\+Index index, Kenlm\+State \&out) const }{Score(const KenlmState &in, lm::WordIndex index, KenlmState &out) const }}]{\setlength{\rightskip}{0pt plus 5cm}float L\+M\+::\+Score (
+\begin{DoxyParamCaption}
+\item[{const {\bf Kenlm\+State} \&}]{in, }
+\item[{{\bf lm\+::\+Word\+Index}}]{index, }
+\item[{{\bf Kenlm\+State} \&}]{out}
+\end{DoxyParamCaption}
+) const}\hypertarget{classLM_aefaa618805be0cdcfe1a358f5d6ed486}{}\label{classLM_aefaa618805be0cdcfe1a358f5d6ed486}
+
+
+Definition at line 39 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+39                                                                               \{
+40   \textcolor{keywordtype}{float} cost = \hyperlink{classLM_aac1ac4397a6739cdb544de26e675d284}{lm\_}->FullScore(in, index, out).prob;
+41   \textcolor{keywordflow}{return} cost;
+42 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{d8/de7/classLM_aefaa618805be0cdcfe1a358f5d6ed486_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{LM@{LM}!size@{size}}
+\index{size@{size}!LM@{LM}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t L\+M\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classLM_adee9e7617ec788bcf48ca57555aac428}{}\label{classLM_adee9e7617ec788bcf48ca57555aac428}
+
+
+Definition at line 56 of file kenlm.\+cpp.
+
+
+\begin{DoxyCode}
+56                       \{
+57   \textcolor{keywordflow}{return} \hyperlink{classLM_ae4104db4aba39ca0723c3cd4a6298068}{vm\_}.size();
+58 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{d8/de7/classLM_adee9e7617ec788bcf48ca57555aac428_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{LM@{LM}!lm\+\_\+@{lm\+\_\+}}
+\index{lm\+\_\+@{lm\+\_\+}!LM@{LM}}
+\subsubsection[{\texorpdfstring{lm\+\_\+}{lm_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Kenlm\+Model}$>$ L\+M\+::lm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLM_aac1ac4397a6739cdb544de26e675d284}{}\label{classLM_aac1ac4397a6739cdb544de26e675d284}
+
+
+Definition at line 42 of file kenlm.\+h.
+
+\index{LM@{LM}!vm\+\_\+@{vm\+\_\+}}
+\index{vm\+\_\+@{vm\+\_\+}!LM@{LM}}
+\subsubsection[{\texorpdfstring{vm\+\_\+}{vm_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Word\+Pairs} L\+M\+::vm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLM_ae4104db4aba39ca0723c3cd4a6298068}{}\label{classLM_ae4104db4aba39ca0723c3cd4a6298068}
+
+
+Definition at line 43 of file kenlm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{kenlm_8h}{kenlm.\+h}\item 
+\hyperlink{kenlm_8cpp}{kenlm.\+cpp}\end{DoxyCompactItemize}

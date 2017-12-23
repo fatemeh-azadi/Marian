@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd5/structmarian_1_1SquareNodeOp">
+<title>marian::SquareNodeOp struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d9b/node__operators__unary_8h">&lt;node_operators_unary.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::SquareNodeOp</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d7a/structmarian_1_1SquareNodeOp__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::SquareNodeOp</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d5a/structmarian_1_1SquareNodeOp__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float epsilon_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd5/structmarian_1_1SquareNodeOp_1aeede6c9b0492c91d0ff0973934161cd9">SquareNodeOp</link> (
+Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="db/dd5/structmarian_1_1SquareNodeOp_1a9830637ea6eb13dfbadf8478e585049b">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="db/dd5/structmarian_1_1SquareNodeOp_1acc9e02797b8bdbbb797033bc0712bee7">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="db/dd5/structmarian_1_1SquareNodeOp_1a1fecb17ca82abda65d0ff9b991221963">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dd5/structmarian_1_1SquareNodeOp_1aeede6c9b0492c91d0ff0973934161cd9">
+                <title>marian::SquareNodeOp::SquareNodeOp (Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/structmarian_1_1SquareNodeOp_1a9830637ea6eb13dfbadf8478e585049b">
+                <title>NodeOps marian::SquareNodeOp::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/structmarian_1_1SquareNodeOp_1acc9e02797b8bdbbb797033bc0712bee7">
+                <title>NodeOps marian::SquareNodeOp::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dd5/structmarian_1_1SquareNodeOp_1a1fecb17ca82abda65d0ff9b991221963">
+                <title>const std::string marian::SquareNodeOp::type ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings">
+<title>amunmt::GPU::Encoder::Embeddings class Reference</title>
+<para>Inheritance diagram for amunmt::GPU::Encoder::Embeddings</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d81/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for amunmt::GPU::Encoder::Embeddings</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d25/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Weights</declname>
+        <defname>Weights</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const Weights &amp; w_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1a3db8a8514e670fbc7b3c9a2b5dc236fc">Embeddings</link> (
+const <link linkend="dc/dce/structamunmt_1_1GPU_1_1Weights">Weights</link> &amp; model)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1a8cb9331defa2af0c29d42a776b2b574b">Lookup</link> (
+<link linkend="d1/d49/namespaceamunmt_1_1GPU_1_1mblas_1ab67821a8254de53e45a623cf73c0aef6">mblas::Matrix</link> &amp; Row, const <link linkend="d7/dd3/namespaceamunmt_1aa50d0b3a5ba58ba5da8a4d88ddab1b18">Words</link> &amp; words)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1ab3ad5a86c18939f8ebbcc05d178b020a">Embeddings</link> (
+const <link linkend="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings">Embeddings</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1a3db8a8514e670fbc7b3c9a2b5dc236fc">
+                <title>amunmt::GPU::Encoder::Embeddings&lt; Weights &gt;::Embeddings (const Weights &amp;model)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1a8cb9331defa2af0c29d42a776b2b574b">
+                <title>void amunmt::GPU::Encoder::Embeddings&lt; Weights &gt;::Lookup (mblas::Matrix &amp;Row, const Words &amp;words)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d4b/classamunmt_1_1GPU_1_1Encoder_1_1Embeddings_1ab3ad5a86c18939f8ebbcc05d178b020a">
+                <title>amunmt::GPU::Encoder::Embeddings&lt; Weights &gt;::Embeddings (const Embeddings &amp;)=delete</title> <emphasis></emphasis>
+                
+            </section>
+</section>

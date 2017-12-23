@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d3f/structmarian_1_1rnn_1_1InputFactory">
+<title>marian::rnn::InputFactory struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d3a/rnn_2constructors_8h">&lt;constructors.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::rnn::InputFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/de7/structmarian_1_1rnn_1_1InputFactory__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::rnn::InputFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d2e/structmarian_1_1rnn_1_1InputFactory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d3f/structmarian_1_1rnn_1_1InputFactory_1a27fda3c2dfb71c9922ffa8b9fda38dad">InputFactory</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dd/d5d/classmarian_1_1rnn_1_1CellInput">CellInput</link> &gt; <link linkend="de/d3f/structmarian_1_1rnn_1_1InputFactory_1a0b02c7e1c29d2cd7decc4d5d2c577621">construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="de/d3f/structmarian_1_1rnn_1_1InputFactory_1a27fda3c2dfb71c9922ffa8b9fda38dad">
+                <title>marian::rnn::InputFactory::InputFactory (Ptr&lt; ExpressionGraph &gt; graph)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d3f/structmarian_1_1rnn_1_1InputFactory_1a0b02c7e1c29d2cd7decc4d5d2c577621">
+                <title>virtual Ptr&lt;CellInput&gt; marian::rnn::InputFactory::construct ()=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

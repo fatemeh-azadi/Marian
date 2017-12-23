@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d7a/classmarian_1_1Node">
+<title>marian::Node class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/d77/node_8h">&lt;node.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for marian::Node</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/de9/classmarian_1_1Node__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for marian::Node</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d98/classmarian_1_1Node__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t id_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t edges_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool trainable_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool destroy_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Expr &gt; children_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Weak&lt; ExpressionGraph &gt; graph_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shape shape_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string name_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Tensor val_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Tensor adj_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool markedForDebug_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string debugMessage_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7a/classmarian_1_1Node_1ab2576bb59c9c4d52bb2f676bb848ebc5">Node</link> (
+<link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; graph, Args... args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d0/d7a/classmarian_1_1Node_1a67ea4aa875ae1fe2143ac9e4dae75c73">~Node</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="d0/d7a/classmarian_1_1Node_1a078122f6a9c2df448139780a1e3a323b">scalar</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d0/d7a/classmarian_1_1Node_1a13a2bc9bdc100205606bbd01acecb659">forwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> <link linkend="d0/d7a/classmarian_1_1Node_1a783915262a9d7af81372c8f0a8363beb">backwardOps</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a2ca87895ccb70368ff3c7168816c860c">runForward</link> (
+const <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> &amp; ops)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a7738def79b94994bd20cf8762ff2fd0c">runBackward</link> (
+const <link linkend="da/d22/namespacemarian_1a4956376218cc236016c20bc4071470da">NodeOps</link> &amp; ops)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a0ace1579b496977ac75fadfffc41416b">forward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a4710c71a35130cf0e382bb0a430725d3">backward</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="d0/d7a/classmarian_1_1Node_1a924457f1be4e8f51fc563118185e3e83">trainable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a04b5aa3633d6a01b074f59fd93d7fb15">setTrainable</link> (
+bool trainable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1ab40b40d8c7e00d1dd1ac9f69e3e510f4">setId</link> (
+size_t id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d0/d7a/classmarian_1_1Node_1afa641168d6cd6994cd29e50f12801296">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a762868fac80689771dde19f36827cebc">increaseEdges</link> (
+size_t edges)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a182d9b696c98f16f72fd3f9db3d1f827">decreaseEdges</link> (
+size_t edges)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d0/d7a/classmarian_1_1Node_1a872b4c21379f8fea84a023d822b0a7f5">edges</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="da/db9/classmarian_1_1ExpressionGraph">ExpressionGraph</link> &gt; <link linkend="d0/d7a/classmarian_1_1Node_1a6a95b0e641febd5f2893e8982f497735">graph</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a3db75b69ad510029816420fd96ee0132">debug</link> (
+const std::string &amp; message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="d0/d7a/classmarian_1_1Node_1ad934732664a396b3df7c64f60a88bbb0">marked_for_debug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string &amp; <link linkend="d0/d7a/classmarian_1_1Node_1a9cc23aff9a5e62bc7f8990e2ad580f43">debug_message</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="d0/d7a/classmarian_1_1Node_1a66c54550ad60cc510329435eb21f8589">allocate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1ab8ceeb421fca5b912330d6b7ac2cb14b">free</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1abf3d18a7c661ba0d3d7fbcfb4e883736">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1a42807d121dc8bc008176a3f922b4a5eb">init_dependent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d7a/classmarian_1_1Node_1ad818ff58b17c5bdcee78c19b9f0df0d6">set_zero_adjoint</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d0/d7a/classmarian_1_1Node_1a0df86f2ff4a169111d6ba0865e6fd935">val</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a88b71ec34bb354564cddc24eb80f7e14">Tensor</link> &amp; <link linkend="d0/d7a/classmarian_1_1Node_1a0497d2c3515385212b1086f8b8502826">grad</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="d5/d54/structmarian_1_1Shape">Shape</link> &amp; <link linkend="d0/d7a/classmarian_1_1Node_1aa631f0244ad94b4c64efab0f140bd1d5">shape</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d7a/classmarian_1_1Node_1a49ccf279e3d19a3d49efca7444c66543">set_name</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string &amp; <link linkend="d0/d7a/classmarian_1_1Node_1ad5437ac41eaa8316791698db9ad46ab0">name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="d0/d7a/classmarian_1_1Node_1a7aaaab594766b33355f2b31821b8af49">form</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="d0/d7a/classmarian_1_1Node_1a19cfc4e99a01cb4a3fe1b20dce3b7db2">color</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const std::string <link linkend="d0/d7a/classmarian_1_1Node_1aa29cd2fb7c4e0b81387e70b318b8f001">label</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="d0/d7a/classmarian_1_1Node_1af2a1cdef73f50b9dd16d3c363cc12222">graphviz</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::vector&lt; <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> &gt; &amp; <link linkend="d0/d7a/classmarian_1_1Node_1a72e48d89624de0ea4ee98c39e60b3ecb">children</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="da/d22/namespacemarian_1a498d8baf75b754011078b890b39c8e12">Expr</link> <link linkend="d0/d7a/classmarian_1_1Node_1a71a9c8ad6ba12d421fa97222d74a90b9">child</link> (
+size_t i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="da/d22/namespacemarian_1ad1a373be43a00ef9ce35666145137b08">Ptr</link>&lt; <link linkend="dc/d10/classmarian_1_1Backend">Backend</link> &gt; <link linkend="d0/d7a/classmarian_1_1Node_1a4aa5aa482c70595fa5d43c1fbabf5c18">getBackend</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ab2576bb59c9c4d52bb2f676bb848ebc5">
+                <title>marian::Node::Node (Ptr&lt; ExpressionGraph &gt; graph, Args...args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a67ea4aa875ae1fe2143ac9e4dae75c73">
+                <title>virtual marian::Node::~Node ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a078122f6a9c2df448139780a1e3a323b">
+                <title>virtual float marian::Node::scalar ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a13a2bc9bdc100205606bbd01acecb659">
+                <title>virtual NodeOps marian::Node::forwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a783915262a9d7af81372c8f0a8363beb">
+                <title>virtual NodeOps marian::Node::backwardOps ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a2ca87895ccb70368ff3c7168816c860c">
+                <title>virtual void marian::Node::runForward (const NodeOps &amp;ops)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a7738def79b94994bd20cf8762ff2fd0c">
+                <title>virtual void marian::Node::runBackward (const NodeOps &amp;ops)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a0ace1579b496977ac75fadfffc41416b">
+                <title>virtual void marian::Node::forward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a4710c71a35130cf0e382bb0a430725d3">
+                <title>virtual void marian::Node::backward ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a924457f1be4e8f51fc563118185e3e83">
+                <title>virtual bool marian::Node::trainable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a04b5aa3633d6a01b074f59fd93d7fb15">
+                <title>virtual void marian::Node::setTrainable (bool trainable)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ab40b40d8c7e00d1dd1ac9f69e3e510f4">
+                <title>virtual void marian::Node::setId (size_t id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1afa641168d6cd6994cd29e50f12801296">
+                <title>virtual size_t marian::Node::getId ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a762868fac80689771dde19f36827cebc">
+                <title>virtual void marian::Node::increaseEdges (size_t edges=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a182d9b696c98f16f72fd3f9db3d1f827">
+                <title>virtual void marian::Node::decreaseEdges (size_t edges=1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a872b4c21379f8fea84a023d822b0a7f5">
+                <title>virtual size_t marian::Node::edges ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a6a95b0e641febd5f2893e8982f497735">
+                <title>virtual Ptr&lt;ExpressionGraph&gt; marian::Node::graph ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a3db75b69ad510029816420fd96ee0132">
+                <title>virtual void marian::Node::debug (const std::string &amp;message)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ad934732664a396b3df7c64f60a88bbb0">
+                <title>virtual bool marian::Node::marked_for_debug ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a9cc23aff9a5e62bc7f8990e2ad580f43">
+                <title>virtual const std::string&amp; marian::Node::debug_message ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a66c54550ad60cc510329435eb21f8589">
+                <title>virtual size_t marian::Node::allocate ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ab8ceeb421fca5b912330d6b7ac2cb14b">
+                <title>virtual void marian::Node::free ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1abf3d18a7c661ba0d3d7fbcfb4e883736">
+                <title>virtual void marian::Node::init ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a42807d121dc8bc008176a3f922b4a5eb">
+                <title>virtual void marian::Node::init_dependent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ad818ff58b17c5bdcee78c19b9f0df0d6">
+                <title>virtual void marian::Node::set_zero_adjoint ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a0df86f2ff4a169111d6ba0865e6fd935">
+                <title>virtual Tensor&amp; marian::Node::val ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a0497d2c3515385212b1086f8b8502826">
+                <title>virtual Tensor&amp; marian::Node::grad ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1aa631f0244ad94b4c64efab0f140bd1d5">
+                <title>virtual const Shape&amp; marian::Node::shape ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a49ccf279e3d19a3d49efca7444c66543">
+                <title>void marian::Node::set_name (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1ad5437ac41eaa8316791698db9ad46ab0">
+                <title>const std::string&amp; marian::Node::name () const </title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a7aaaab594766b33355f2b31821b8af49">
+                <title>virtual const std::string marian::Node::form ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a19cfc4e99a01cb4a3fe1b20dce3b7db2">
+                <title>virtual const std::string marian::Node::color ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1aa29cd2fb7c4e0b81387e70b318b8f001">
+                <title>virtual const std::string marian::Node::label ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1af2a1cdef73f50b9dd16d3c363cc12222">
+                <title>virtual std::string marian::Node::graphviz ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a72e48d89624de0ea4ee98c39e60b3ecb">
+                <title>virtual std::vector&lt;Expr&gt;&amp; marian::Node::children ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a71a9c8ad6ba12d421fa97222d74a90b9">
+                <title>virtual Expr marian::Node::child (size_t i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d7a/classmarian_1_1Node_1a4aa5aa482c70595fa5d43c1fbabf5c18">
+                <title>Ptr&lt;Backend&gt; marian::Node::getBackend ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

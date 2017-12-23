@@ -1,0 +1,174 @@
+\hypertarget{classmarian_1_1Adam}{}\section{marian\+:\+:Adam Class Reference}
+\label{classmarian_1_1Adam}\index{marian\+::\+Adam@{marian\+::\+Adam}}
+
+
+{\ttfamily \#include $<$optimizers.\+h$>$}
+
+
+
+Inheritance diagram for marian\+:\+:Adam\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d7/db2/classmarian_1_1Adam__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marian\+:\+:Adam\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d0/d1a/classmarian_1_1Adam__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classmarian_1_1Adam_a80f76d2db32e227f2879f4ed654505a7}{Adam} (float eta, Args...\+args)
+\item 
+void \hyperlink{classmarian_1_1Adam_a8134d893e68d1be18ea2cdcc98994f56}{update\+Impl} (\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} params, \hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} grads)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classmarian_1_1Adam_af3fd471705356247190b1bb4479b8caa}{beta1\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1Adam_ab9500202203fe54509a1dd1af86f8e22}{beta2\+\_\+}
+\item 
+float \hyperlink{classmarian_1_1Adam_a95c21e42ab91a2b6631702a470a1af81}{eps\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classmarian_1_1Adam_ad51e47f4b687f5df04dedb1222559e9d}{t\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ \hyperlink{classmarian_1_1Adam_a148b6411057a10ca625e4cff3c9f893c}{mt\+Alloc\+\_\+}
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1Adam_a5af2c6b526ebd34160a6c253ff03ac75}{mt\+\_\+}
+\item 
+\hyperlink{namespacemarian_ad1a373be43a00ef9ce35666145137b08}{Ptr}$<$ \hyperlink{classmarian_1_1TensorAllocator}{Tensor\+Allocator} $>$ \hyperlink{classmarian_1_1Adam_a81c15958e30a106cf010d3b6e76f3b19}{vt\+Alloc\+\_\+}
+\item 
+\hyperlink{namespacemarian_a88b71ec34bb354564cddc24eb80f7e14}{Tensor} \hyperlink{classmarian_1_1Adam_a5c819b181f362b33c738d4ffc632c5b4}{vt\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 75 of file optimizers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marian\+::\+Adam@{marian\+::\+Adam}!Adam@{Adam}}
+\index{Adam@{Adam}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{Adam(float eta, Args...\+args)}{Adam(float eta, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ marian\+::\+Adam\+::\+Adam (
+\begin{DoxyParamCaption}
+\item[{float}]{eta, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmarian_1_1Adam_a80f76d2db32e227f2879f4ed654505a7}{}\label{classmarian_1_1Adam_a80f76d2db32e227f2879f4ed654505a7}
+
+
+Definition at line 78 of file optimizers.\+h.
+
+
+\begin{DoxyCode}
+79       : \hyperlink{classmarian_1_1OptimizerBase_ad9dfe9f4b229d38bd9a0f6b53d9f9488}{OptimizerBase}(\hyperlink{namespacemarian_1_1keywords_af8a81aa00fe33fd2eea3287b1bff35be}{eta}, args...),
+80         \hyperlink{classmarian_1_1Adam_af3fd471705356247190b1bb4479b8caa}{beta1\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_aceaa175e141154e5fece90ab49f2c5aa}{keywords::beta1}, 0.9, args...)),
+81         \hyperlink{classmarian_1_1Adam_ab9500202203fe54509a1dd1af86f8e22}{beta2\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a2b99ef30dc7e4dc7780b29dc3059486f}{keywords::beta2}, 0.999, args...)),
+82         \hyperlink{classmarian_1_1Adam_a95c21e42ab91a2b6631702a470a1af81}{eps\_}(\hyperlink{namespacemarian_1_1keywords_a74d7a2502faafdd421ef3dff629e284f}{Get}(\hyperlink{namespacemarian_1_1keywords_a94a12c2471667d9574d8b013796ec1cc}{keywords::eps}, 1e-8, args...)),
+83         \hyperlink{classmarian_1_1Adam_ad51e47f4b687f5df04dedb1222559e9d}{t\_}(0) \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{d5/d1e/classmarian_1_1Adam_a80f76d2db32e227f2879f4ed654505a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{marian\+::\+Adam@{marian\+::\+Adam}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{update\+Impl(\+Tensor params, Tensor grads)}{updateImpl(Tensor params, Tensor grads)}}]{\setlength{\rightskip}{0pt plus 5cm}void marian\+::\+Adam\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor}}]{params, }
+\item[{{\bf Tensor}}]{grads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmarian_1_1Adam_a8134d893e68d1be18ea2cdcc98994f56}{}\label{classmarian_1_1Adam_a8134d893e68d1be18ea2cdcc98994f56}
+
+
+Implements \hyperlink{classmarian_1_1OptimizerBase_ab387a8723637615adaef0134bb38e063}{marian\+::\+Optimizer\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\index{marian\+::\+Adam@{marian\+::\+Adam}!beta1\+\_\+@{beta1\+\_\+}}
+\index{beta1\+\_\+@{beta1\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{beta1\+\_\+}{beta1_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Adam\+::beta1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_af3fd471705356247190b1bb4479b8caa}{}\label{classmarian_1_1Adam_af3fd471705356247190b1bb4479b8caa}
+
+
+Definition at line 88 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!beta2\+\_\+@{beta2\+\_\+}}
+\index{beta2\+\_\+@{beta2\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{beta2\+\_\+}{beta2_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Adam\+::beta2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_ab9500202203fe54509a1dd1af86f8e22}{}\label{classmarian_1_1Adam_ab9500202203fe54509a1dd1af86f8e22}
+
+
+Definition at line 89 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!eps\+\_\+@{eps\+\_\+}}
+\index{eps\+\_\+@{eps\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{eps\+\_\+}{eps_}}]{\setlength{\rightskip}{0pt plus 5cm}float marian\+::\+Adam\+::eps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_a95c21e42ab91a2b6631702a470a1af81}{}\label{classmarian_1_1Adam_a95c21e42ab91a2b6631702a470a1af81}
+
+
+Definition at line 90 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!mt\+\_\+@{mt\+\_\+}}
+\index{mt\+\_\+@{mt\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{mt\+\_\+}{mt_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Adam\+::mt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_a5af2c6b526ebd34160a6c253ff03ac75}{}\label{classmarian_1_1Adam_a5af2c6b526ebd34160a6c253ff03ac75}
+
+
+Definition at line 94 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!mt\+Alloc\+\_\+@{mt\+Alloc\+\_\+}}
+\index{mt\+Alloc\+\_\+@{mt\+Alloc\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{mt\+Alloc\+\_\+}{mtAlloc_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Tensor\+Allocator}$>$ marian\+::\+Adam\+::mt\+Alloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_a148b6411057a10ca625e4cff3c9f893c}{}\label{classmarian_1_1Adam_a148b6411057a10ca625e4cff3c9f893c}
+
+
+Definition at line 93 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!t\+\_\+@{t\+\_\+}}
+\index{t\+\_\+@{t\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{t\+\_\+}{t_}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t marian\+::\+Adam\+::t\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_ad51e47f4b687f5df04dedb1222559e9d}{}\label{classmarian_1_1Adam_ad51e47f4b687f5df04dedb1222559e9d}
+
+
+Definition at line 91 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!vt\+\_\+@{vt\+\_\+}}
+\index{vt\+\_\+@{vt\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{vt\+\_\+}{vt_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} marian\+::\+Adam\+::vt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_a5c819b181f362b33c738d4ffc632c5b4}{}\label{classmarian_1_1Adam_a5c819b181f362b33c738d4ffc632c5b4}
+
+
+Definition at line 96 of file optimizers.\+h.
+
+\index{marian\+::\+Adam@{marian\+::\+Adam}!vt\+Alloc\+\_\+@{vt\+Alloc\+\_\+}}
+\index{vt\+Alloc\+\_\+@{vt\+Alloc\+\_\+}!marian\+::\+Adam@{marian\+::\+Adam}}
+\subsubsection[{\texorpdfstring{vt\+Alloc\+\_\+}{vtAlloc_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ptr}$<${\bf Tensor\+Allocator}$>$ marian\+::\+Adam\+::vt\+Alloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmarian_1_1Adam_a81c15958e30a106cf010d3b6e76f3b19}{}\label{classmarian_1_1Adam_a81c15958e30a106cf010d3b6e76f3b19}
+
+
+Definition at line 95 of file optimizers.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{optimizers_8h}{optimizers.\+h}\end{DoxyCompactItemize}
