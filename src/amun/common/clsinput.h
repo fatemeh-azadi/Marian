@@ -8,12 +8,13 @@
 #include <QSet>
 #include "types.h"
 #include "clsToken.h"
+#include "god.h"
 
 
 
 namespace amunmt {
 
-typedef std::vector<clsToken> Sentence_t;
+typedef QList<clsToken> Sentence_t;
 
 /**
  * @brief class clsInputDecomposer This class is defined to manage input string tokens.
@@ -32,6 +33,8 @@ public:
             foreach(const QString& Tag, UserDefinedTags.split(","))
                 clsInput::SpecialTags.insert(Tag);
     }
+    Sentence_t getSentences(const God &god);
+
 
 //    inline const Sentence_t& tokens() const {return this->Tokens;}
 //    inline const QString& normalizedString() const {return this->NormalizedString;}

@@ -29,6 +29,8 @@ void Printer(const God &god, const History& history, OStream& out, const Sentenc
       std::vector<size_t> alignments = GetAlignment(bestTranslation.second);
 
       for( size_t i = 0; i < bestSentenceWords.size(); i++){
+        std::cout << sentence.GetToken(alignments[i]).tagStr().toStdString() << "\t" << sentence.GetToken(alignments[i]).string().toStdString()
+                  << "\t" << bestSentenceWords[i] << std::endl;
         if(bestSentenceWords[i] == "<unk>"){
           bestSentenceWords[i] = god.GetSourceVocab(0)[sentence.GetWords()[alignments[i]]];
         }

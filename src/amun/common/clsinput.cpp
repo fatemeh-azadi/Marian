@@ -36,7 +36,7 @@ void clsInput::parseRichIXML(const QString &_inputIXML)
     QString TempStr;
     QString AttrName;
     QString AttrValue;
-//    QVariantMap Attributes;
+    QVariantMap Attributes;
     bool NextCharEscaped = false;
     int Index = 0;
 
@@ -111,13 +111,13 @@ void clsInput::parseRichIXML(const QString &_inputIXML)
                 if (NextCharEscaped)
                     AttrValue.append(Ch);
                 else{
-//                    if (Attributes.contains(AttrName)){
-//                        std::cerr << exInput("Attribute: <"+AttrName+"> Was defined later.").toStdString();
-//                        exit(1);
-//                    }
-//                    Attributes.insert(AttrName, AttrValue);
-//                    AttrName.clear();
-//                    AttrValue.clear();
+                    if (Attributes.contains(AttrName)){
+                        std::cerr << ("Attribute: <"+AttrName+"> Was defined later.").toStdString();
+                        exit(1);
+                    }
+                    Attributes.insert(AttrName, AttrValue);
+                    AttrName.clear();
+                    AttrValue.clear();
                     ParsingState = CollectAttrName;
                 }
                 NextCharEscaped = false;
@@ -164,7 +164,7 @@ void clsInput::parseRichIXML(const QString &_inputIXML)
                 Token.clear();
                 TempStr.clear();
                 TagStr.clear();
-//                Attributes.clear();
+                Attributes.clear();
                 AttrName.clear();
                 AttrValue.clear();
                 ParsingState = Look4Open;
@@ -213,6 +213,35 @@ void clsInput::makeSentence(){
 
        std::cout << token.Str.toStdString() << " " << token.TagStr.toStdString() << std::endl;
    }
+}
+
+Sentence_t clsInput::getSentences(const God &god)
+{
+    this->Tokens.clear();
+    for(clsToken::stuInfo& TokenInfo : this->TokenInfoList) {
+        QList<Word> WordIndexes;
+
+//        if (TokenInfo.TagStr.size() )
+//            WordIndexes = IXMLTagHandler::instance().getWordIndexOptions(
+//                        TokenInfo.TagStr, TokenInfo.Str, TokenInfo.Attrs
+//                        );
+
+
+////        if (TokenInfo.Attrs.value(enuDefaultAttrs::toStr(enuDefaultAttrs::NoDecode)).isValid())
+////            return; // User Or IXMLTagHandler says that I must ignore this word when decoding
+
+        if (WordIndexes.isEmpty()){
+            Word WordIndex = god.GetSourceVocab(0)[TokenInfo.Str.toStdString()];
+//            if (WordIndex == UNK_ID ){
+//                WordIndexes = OOVHandler::instance().getWordIndexOptions(TokenInfo.Str, TokenInfo.Attrs);
+
+//            }else
+                WordIndexes.append(WordIndex);
+        }
+        this->Tokens.append(clsToken(TokenInfo, WordIndexes));
+
+    }
+    return this->Tokens;
 }
 
 }

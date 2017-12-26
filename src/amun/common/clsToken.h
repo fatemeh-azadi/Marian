@@ -3,6 +3,9 @@
 #include <memory>
 #include <vector>
 #include <QString>
+#include <QHash>
+#include <QMap>
+#include <QVariant>
 #include "types.h"
 
 namespace amunmt{
@@ -17,32 +20,37 @@ public:
     struct stuInfo{
         QString Str;
         QString TagStr;
-//        QVariantMap Attrs;
+        QVariantMap Attrs;
         stuInfo(const QString &_str = "",
-                     const QString &_tagStr = ""):
-                    // const QVariantMap &_attrs = QVariantMap()):
+                     const QString &_tagStr = "",
+                     const QVariantMap &_attrs = QVariantMap()):
             Str(_str),
-            TagStr(_tagStr)
-            //Attrs(_attrs)
+            TagStr(_tagStr),
+            Attrs(_attrs)
         {}
     };
 
 public:
 
     clsToken(const stuInfo& _info,
+             const QList<Word>& _wordIndexes) {
+        this->Info = _info;
+        this->WordIndexes = _wordIndexes;
+    }
+    clsToken(const stuInfo& _info,
              const Word _wordIndex) {
         this->Info = _info;
-        this->WordIndex = _wordIndex;
+        this->WordIndexes.append(_wordIndex);
     }
 
     inline const QString& string() const {return this->Info.Str;}
-    inline const Word wordIndex() const {return this->WordIndex;}
+    inline const QList<Word> wordIndexes() const {return this->WordIndexes;}
     inline const QString& tagStr() const {return this->Info.TagStr;}
     //inline const QVariantMap& attrs() const {return this->Info.Attrs;}
 
 private:
     stuInfo Info;
-    Word WordIndex;     /**< Indexes of token in hash table. */
+    QList<Word> WordIndexes;     /**< Indexes of token in hash table. */
 
 //    friend class Proxies::NamedEntityRecognition::intfNamedEntityRecognizer;
 };

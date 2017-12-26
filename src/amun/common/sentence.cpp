@@ -26,7 +26,10 @@ Sentence::Sentence(const God &god, size_t vLineNum, const std::string& line)
     }
 
     auto processed = god.Preprocess(i, lineTokens);
-    strWords.insert(strWords.end(), lineTokens.begin(), lineTokens.end());
+    for (size_t i = 0; i < lineTokens.size(); i++){
+        tokens_.append(clsToken(clsToken::stuInfo(QString::fromStdString(lineTokens[i])), god.GetSourceVocab(0)[lineTokens[i]]));
+    }
+//    strWords.insert(strWords.end(), lineTokens.begin(), lineTokens.end());
     words_.push_back(god.GetSourceVocab(i++)(processed));
   }
 }
@@ -34,13 +37,25 @@ Sentence::Sentence(const God &god, size_t vLineNum, const std::string& line)
 Sentence::Sentence(const God &god, size_t lineNum, const std::vector<std::string>& words)
   : lineNum_(lineNum) {
     auto processed = god.Preprocess(0, words);
-    strWords.insert(strWords.end(), words.begin(), words.end());
+    for (size_t i = 0; i < words.size(); i++){
+        tokens_.append(clsToken(clsToken::stuInfo(QString::fromStdString(words[i])), god.GetSourceVocab(0)[words[i]]));
+//        strWords.insert(strWords.end(), words.begin(), words.end());
+    }
 
     words_.push_back(god.GetSourceVocab(0)(processed));
 }
 
 Sentence::Sentence(God&, size_t lineNum, const std::vector<uint>& words)
   : lineNum_(lineNum) {
+    words_.push_back(words);
+}
+
+Sentence::Sentence(God &god, size_t lineNum, const QList<clsToken>& tokens)
+  : lineNum_(lineNum), tokens_(tokens){
+    std::vector<uint> words;
+    for(size_t i = 0; i < tokens.size(); i++){
+        words.push_back(tokens[i].wordIndexes()[0]);
+    }
     words_.push_back(words);
 }
 

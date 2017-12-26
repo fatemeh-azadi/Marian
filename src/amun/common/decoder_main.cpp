@@ -41,8 +41,9 @@ int main(int argc, char* argv[])
   while (std::getline(god.GetInputStream(), line)) {
 
     clsInput input = clsInput(QString::fromUtf8(line.c_str()), true);
+    Sentence_t inputSentence = input.getSentences(god);
 
-    maxiBatch->push_back(SentencePtr(new Sentence(god, lineNum++, line)));
+    maxiBatch->push_back(SentencePtr(new Sentence(god, lineNum++, inputSentence)));
 
     if (maxiBatch->size() >= maxiSize) {
 
